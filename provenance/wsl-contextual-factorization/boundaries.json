@@ -1,0 +1,92 @@
+{
+  "baseline": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101",
+  "term_schemas": 21,
+  "equation_schemas": 61,
+  "unchanged": [
+    {
+      "path": "DosenPetric/ReducedSyntax.lean",
+      "sha256": "d72c123d08a164baaed870a7862b11fc3f268d2b14a8f9ff75b7a3d7f835467d",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "DosenPetric/ReducedEquations.lean",
+      "sha256": "70e9e4b1b55f2d8b53a28f0b990e845296c9978856a932a32fdc587ac913be05",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "DosenPetric/ReducedCategory.lean",
+      "sha256": "5a2f02c86b14c5ce33e282a8a442a33d02e69f09c3d161dca408bc1ba47fea74",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "DosenPetric/ReducedWitnesses.lean",
+      "sha256": "4dd58d4614315d663b4562958c7866b515ab46bf4e753f7c83e270127988f136",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "DosenPetric/ReducedOccurrences.lean",
+      "sha256": "56f1cb468664d03061714131d0478a685f99e745840e1c0b912b958b03110b3c",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "DosenPetric/SignedLiteralReduction.lean",
+      "sha256": "b2990993b058127c0ea9ffa4b38e7f50a79cbed322cef672300e4a773abac0a1",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "DosenPetric/ReductionTransport.lean",
+      "sha256": "d8dc28b9855ae15dcccf89c452f752ec902fe82f0992f6d9b2af74e770e56fe6",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "DosenPetric/PresentationSyntax.lean",
+      "sha256": "66d64bbcd341cd8548d74a7557ca061187b9a43e874f125e6587e6e3bb02bdb0",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "DosenPetric/PresentationEquations.lean",
+      "sha256": "316a6bd90e6bd2a8c287731117c09ff01f15ee3b0239e1fab6931f8f81c305ff",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "01a12079da418a0c2cb55ddb97259aeb6b1a66c9ccc15b222e172b17f56c5822",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.tex",
+      "sha256": "aebd6a8be39dcbdcc1a7e5061b4e65a585de2345784011fb03d28cc3326fc93e",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "manuscript/SHA256SUMS",
+      "sha256": "468275c78a99d11864bcbe55dc081296daabd1f10afd89e14e7a8dd3cf4dc3d3",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.pdf",
+      "sha256": "dd88c37805c889ab420ad11303886a04b8be54857c91dda70bfc91ec23c72b62",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "docs/reviews/SIGNED_LITERAL_REDUCTION_HOSTILE.md",
+      "sha256": "7fc9ff59ac2ecf8135d5f42426ab44db2a8f69be7f0e547bff47e595d75b6bca",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "docs/reviews/SIGNED_LITERAL_REDUCTION_WRITING.md",
+      "sha256": "c5a0fbb6a443c82c316805dcb217848d648fd62cc466f36e57f11458b745178c",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    },
+    {
+      "path": "docs/SIGNED_LITERAL_REDUCTION_REPORT.md",
+      "sha256": "19b04900e02aaa726d342dd874166b8e9bf87baf338c43cd37ba0cdc418aefa3",
+      "unchanged_from": "0f001da5d13a3fd0ccdf33be5e5c5799b9ede101"
+    }
+  ]
+}

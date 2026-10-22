@@ -7,7 +7,10 @@ structural and constructed-zero instances. Its occurrence interpretation is
 well defined. Faithfulness remains open. The three milestones remain separate.
 The reduced signed-literal syntactic category and existential inclusion
 representation are now constructed; reduced faithfulness remains open.
-See [the source map](PRESENTATION_CORRESPONDENCE.md),
+The contextual gη/gε identities and their composed forms are now unconditional
+reduced theorems, with typed context and occurrence actions.
+See [the contextual report](CONTEXTUAL_FACTORIZATION_REPORT.md),
+[the source map](PRESENTATION_CORRESPONDENCE.md),
 [reduction report](SIGNED_LITERAL_REDUCTION_REPORT.md),
 [signed-label report](SIGNED_LABEL_REPORT.md),
 [normalization report](NORMALIZATION_REPORT.md), the historical
@@ -61,6 +64,7 @@ definition is unchanged and can be adapted once that interpretation exists.
 | Double negation | `doubleNegation`, using `Laws.dnOut_in/out`; both inverse equations compiled without coherence. |
 | Signed-literal reduced syntax and representation | `Reduced.Term/Equation/Derives/Hom/category` gives the source p.318 syntactic quotient, with exactly atomic eta/epsilon. Inclusion respects equations/operations; duality and compound witnesses compile; red_sound and representation prove transport compatibility and existential hom-set surjectivity for normal-form endpoints. |
 | Reduced occurrence assignment and transfer | Independent raw tagged relation, quotient descent and inclusion/normalizer compatibility compile. `normal_faithful_of_reduced/global_faithful_of_reduced` explicitly require the unproved `Reduced.Faithful P`. |
+| Typed one-hole contexts and contextual factorization | `Context.plug/mapTerm/map_derives/map`, raw and quotient id/comp laws; source gConj/gDisj, naturality/unit components; unconditional gEta/gEpsilon/gEta_comp/gEpsilon_comp inside Reduced. Reduced zero/uniqueness and required structural unit/d identities are directly derived. Tagged fixed/hole coordinates and well-typed composed relation comparisons compile. No general positive-core coherence is assumed. |
 | Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. Reduced faithfulness and its earlier positive-core coherence inputs are unproved. No complete `OccurrenceInterpretation` instance. Equality reflection and full red-equation preservation remain open. |
 | Normalization and occurrence correspondence | `Presentation.normalization` constructs the existing record for every P by simultaneous sign recursion and source n/r/rho arrows. Both inverse laws, inverse occurrence coordinates, both graph laws, literal/label/polarity correspondence, repeated-tag injectivity, Empty cases, and transport formulas compile. No coherence or arrow-negation premise. |
 | Global signed-label preservation | `Term.relation_signedLabel`, `occurrence_signedLabel`, `occurrence_literal`: all source terms/arrows preserve complete signed literals along edges; letter/polarity and opposite-sign exclusions, plus normalized transport, compile without coherence. `diag_copies/codiag_merges` preserve the copying/merging boundary. No faithful-interface instance is fabricated. |
@@ -71,13 +75,16 @@ definition is unchanged and can be adapted once that interpretation exists.
 
 ## Next concrete proof task
 
-Construct typed one-hole normal-form contexts and the source g-conjunction /
-g-disjunction maps (pp.318–319), then prove the g-eta/g-epsilon contextual
-factorizations (pp.319–320) in Reduced.Hom. The later target is Reduced.Faithful P.
-Track Distributive Dicartesian Coherence (§11.5, used on p.319) and Zero-Identity
-Distributive Dicartesian Coherence (§12.5, used on p.321) separately. The signed-
-literal reduction and conditional transfer are complete; they do not supply
-these remaining coherence proofs, equality reflection, or quotient descent of red.
+Construct the common atomic η/ε factorization of reduced raw terms, with an
+explicit η/ε-free positive middle term and all endpoint embeddings, following
+printed pp.320–321. Contexts and the four contextual factorization identities
+are now proved unconditionally. The source's general Distributive Dicartesian
+Coherence (§11.5, invoked on p.319) is still unproved; only the specific
+structural instances needed here have direct reduced derivations. Zero-Identity
+Distributive Dicartesian Coherence (§12.5, invoked on p.321) remains the separate
+input needed for the later equality of positive middle arrows. Neither is
+silently supplied by the contextual theorem. Reduced.Faithful, inclusion equality
+reflection, full red quotient descent and Boolean Coherence remain open.
 
 ## Verification boundary
 

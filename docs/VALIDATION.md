@@ -1,3 +1,44 @@
+# Contextual factorization validation (current checkpoint)
+
+Clean main baseline 0f001da5d13a3fd0ccdf33be5e5c5799b9ede101 passed strict verification:
+33 Lean files and 1950 declarations. SSH fetch left local and tracking main
+equal. Unrelated work was absent. Completed constructions were reused.
+
+Sequential verification completed at 2026-10-22T22:36:47.745920+00:00.
+`bash scripts/verify.sh` exited 0: **38 Lean source files and 2296 audited
+project declarations**. Both boundary scripts exited 0; direct/private/hidden
+axiom controls and identified-projections/zero-without-witness controls each
+rejected with Lean exit 1 and expected diagnostics. Manuscript SHA256SUMS
+and git diff --check exited 0. Permitted axioms remain propext, Quot.sound,
+Classical.choice; the four contextual equalities print Quot.sound only.
+Pinned Lean 4.35.0, Init-only dependencies, manifest and manuscript v4 are
+unchanged. The 21-constructor reduced grammar and 61 equation schemas are
+byte-identical to baseline. No equation, proof hole or mathematical axiom was
+added. One heavy process ran at a time.
+
+Typed contexts descend through Derives and preserve identity/composition.
+The exact source g recursions, naturality/unit components, reduced zero/top/
+bottom uniqueness and unconditional (gη)/(gε)/(gηf)/(gεf) compile. Fixed and
+hole occurrence tags have inverse coordinates and disjoint injective embeddings;
+composed relation comparisons use explicit endpoint embeddings. The rendered
+p.319 base-case typo is recorded with the correctly typed p.49 unit definition.
+Common atomic factorization, §11.5/§12.5 general coherence and Reduced.Faithful
+remain open. No milestone is promoted to Boolean Coherence or actual maximality.
+
+Evidence and exact source/control hashes are in
+provenance/wsl-contextual-factorization/; runtime, post-commit, SSH and delivery
+receipts are under .codex-work/contextual-factorization/. Both new reviews are
+author-side; the writing source was consulted directly from the verified cache.
+Historical reports/access records remain unchanged. No independent kernel replay,
+independent source audit, Challenge/Solution or Comparator run, official
+preflight/service verification, new manuscript compilation/layout review,
+publication, license or visibility change occurred. See
+[the contextual report](CONTEXTUAL_FACTORIZATION_REPORT.md).
+
+---
+
+## Historical signed-literal reduction validation (unchanged evidence)
+
 # Signed-literal reduction validation (current checkpoint)
 
 Clean baseline c1004b09a53f56a048c813adba053739fb0d4a97 passed strict verification:

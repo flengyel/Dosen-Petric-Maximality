@@ -353,3 +353,75 @@ induction (inherited §11.5), and Zero-Identity Distributive Dicartesian
 Coherence (§12.5) on p.321. Those Lean proofs remain open. The p.314
 equivalence, derived contravariant negation and its laws remain separate too.
 See [the reduction report](SIGNED_LITERAL_REDUCTION_REPORT.md) and both reviews.
+
+## Contextual factorizations in the reduced syntactic category
+
+The September 2007 source, §14.2 printed pp.318–321 (one-based PDF
+pp.330–333), selects one occurrence, rather than every equal subformula.
+`Reduced.Context P` records that position by a hole and left/right binary
+placements, each indexed by `Reduced.Op`. Fixed formulas are arbitrary
+NormalForm P objects. Thus the two placements and two Op cases give exactly
+four recursive cases. `plug` replaces only the distinguished hole.
+
+Write X = K[top], Y = K[bot], E_p = neg p ∨ pos p, and
+D_q = pos q ∧ neg q. Here pos/neg denote complete signed literal leaves.
+For the following tables `aR_o = assocR o`, `aL_o = assocL o`,
+`c_o = swap o`, `d = dist`, and `dR = Term.distRight` (the derived arrow
+of (dR c), p.145). Each semicolon means execute the left arrow first.
+The source writes these paths in reverse order using ◦. Subscripts name
+actual source/target summands; source disjunctive symmetry indices follow
+Table 2, p.49 and are reversed relative to the Lean swap argument convention.
+
+| Source recursion | Typed path defining `Context.gConj` |
+| --- | --- |
+| p.318, hole | `top ∧ B --leftOut conj B--> B` |
+| p.318, C ∧ K | `(C ∧ X) ∧ B --aL_conj--> C ∧ (X ∧ B) --(id C ∧ gConj K B)--> C ∧ K[B]` |
+| p.318, K ∧ C | `(X ∧ C) ∧ B --c_conj--> B ∧ (X ∧ C) --aR_conj--> (B ∧ X) ∧ C --(c_conj B X ∧ id C)--> (X ∧ B) ∧ C --(gConj K B ∧ id C)--> K[B] ∧ C` |
+| p.318, C ∨ K | `(C ∨ X) ∧ B --dR C X B--> C ∨ (X ∧ B) --(id C ∨ gConj K B)--> C ∨ K[B]` |
+| p.319, K ∨ C | `(X ∨ C) ∧ B --c_conj--> B ∧ (X ∨ C) --d B X C--> (B ∧ X) ∨ C --(c_conj B X ∨ id C)--> (X ∧ B) ∨ C --(gConj K B ∨ id C)--> K[B] ∨ C` |
+
+| Source recursion, p.319 | Typed path defining `Context.gDisj` |
+| --- | --- |
+| hole | `B --leftIn disj B--> bot ∨ B` |
+| C ∨ K | `C ∨ K[B] --(id C ∨ gDisj K B)--> C ∨ (Y ∨ B) --aR_disj--> (C ∨ Y) ∨ B` |
+| K ∨ C | `K[B] ∨ C --(gDisj K B ∨ id C)--> (Y ∨ B) ∨ C --(c_disj Y B ∨ id C)--> (B ∨ Y) ∨ C --aL_disj--> B ∨ (Y ∨ C) --c_disj--> (Y ∨ C) ∨ B` |
+| C ∧ K | `C ∧ K[B] --(id C ∧ gDisj K B)--> C ∧ (Y ∨ B) --d C Y B--> (C ∧ Y) ∨ B` |
+| K ∧ C | `K[B] ∧ C --(gDisj K B ∧ id C)--> (Y ∨ B) ∧ C --(c_disj Y B ∧ id C)--> (B ∨ Y) ∧ C --dR B Y C--> B ∨ (Y ∧ C) --c_disj--> (Y ∧ C) ∨ B` |
+
+**Rendered-source discrepancy.** The displayed disjunctive hole case on
+printed p.319 actually reads `B ⊢ top ∨ B`. This is not merely a text-extraction
+artifact: the rendered PDF was inspected. The immediately preceding general
+type is `K[B] ⊢ K[bot] ∨ B`, and Table 2, printed p.49, defines
+sigma-disjunction-left-in as `B ⊢ bot ∨ B`. The implementation uses this
+well-typed named unit map and records the discrepancy. It does not add an
+arrow of the displayed, inconsistent type. Render/source hashes are retained
+in `provenance/wsl-contextual-factorization/source-consultation.json`.
+
+All four factorizations below are now theorems of Reduced.Hom. The source
+instances are obtained by h = ofTerm(eta p) or h = ofTerm(epsilon q).
+The Lean theorems prove the stronger version for every existing h of the
+same unit-domain/codomain type. Write r+ = rightIn conj and
+r− = rightOut disj; 0 means a zero endomorphism only.
+
+| Source equation | Exact execution-order path and compiled declaration |
+| --- | --- |
+| (gη), p.319 | `K[eta p] = r+ X ; (id X ∧ eta p) ; (id X ∧ 0 E_p) ; gConj K E_p`, each path X → K[E_p]. `Context.gEta`. |
+| (gε), p.320 | `K[epsilon q] = gDisj K D_q ; (id Y ∨ 0 D_q) ; (id Y ∨ epsilon q) ; r− Y`, each path K[D_q] → Y. `Context.gEpsilon`. |
+| (gηf), p.320, f : B → X | `f ; K[eta p] = r+ B ; (id B ∧ eta p) ; (f ∧ 0 E_p) ; gConj K E_p`, from B to K[E_p]. `Context.gEta_comp`. |
+| (gεf), p.320, f : Y → C | `K[epsilon q] ; f = gDisj K D_q ; (f ∨ 0 D_q) ; (id C ∨ epsilon q) ; r− C`, from K[D_q] to C. `Context.gEpsilon_comp`. |
+
+| Proof input / source | Actual reduced derivation |
+| --- | --- |
+| Table 2 p.49; (b delta sigma), (b delta), unit inverses, p.101 | `ReducedLaws` lifts only the unchanged inherited schemas to Hom. `ReducedStructure.rightIn_tensor` derives the right-unit/associator equation from pentagon, triangle, naturality and cancellation of explicit inverse arrows. `rightOut_tensor` is its inverse form; shuffle laws additionally use hexagon and symmetry. |
+| (sigma dL), (delta dL), §11.5 p.270 | `dist_top` follows from `dist_snd` and product unit isomorphisms; `dist_bot` follows from `dist_inl` and coproduct unit isomorphisms. `distRight_top`, `disj_shuffle_dist_top`, and `conj_shuffle_dist_bot` expand the actual derived dR when needed. No same-connective medial is substituted. |
+| p.319 induction, (0I) and zero_top = id | Reduced product/coproduct structures are constructed via existing generic DiagonalData derivations. `zero_top`, `zero_bot`, `fromTop_unique`, `toBot_unique` are derived inside Reduced, not reflected from Presentation. |
+| p.319, final sentence of (gη) induction | The source invokes Distributive Dicartesian Coherence (§11.5) for the other context cases. Here all needed identities are derived directly: `gConj_nat/gDisj_nat`, `gConj_top/gDisj_bot`, then zero-based uniqueness and naturality. No general positive-core faithfulness theorem is assumed or claimed. |
+| p.320, relation comparisons following (gηf)/(gεf) | `Context.Fixed`, `encode/decode`, injective disjoint embeddings, and `occurrence_map` give exact context coordinates. `gEta_comp_relation` compares input x with Sum.inl x in B ∧ E_p; `gEpsilon_comp_relation` compares output y with Sum.inl y in C ∨ D_q. No cross-type equality of relations is asserted. |
+| p.321, final common-atomic factorization argument | Source explicitly invokes Zero-Identity Distributive Dicartesian Coherence (§12.5) on f1'' and f2''. Common atomic η/ε factorization, that positive-core theorem and Reduced.Faithful remain unproved. Contextual factorizations alone are not coherence. |
+
+`Context.map_derives` precedes quotient action. `mapTerm_id/mapTerm_comp`
+are actual reduced derivations (Quotient.exact of equalities in the quotient
+whose defining relation is Derives). They do not use inclusion reflection.
+The functor at a fixed context is covariant from Reduced.category P to itself,
+with object map plug and arrow map map; `map_id/map_comp` prove its laws.
+No object-duality arrow operation or descent of full raw reduction is used.

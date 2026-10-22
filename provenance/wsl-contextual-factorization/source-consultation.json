@@ -1,0 +1,30 @@
+{
+  "book": {
+    "url": "https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf",
+    "cache": "/tmp/dp-coh-september-2007.pdf",
+    "sha256": "e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e",
+    "revision": "September 2007",
+    "printed_pages": [
+      49,
+      101,
+      270,
+      318,
+      319,
+      320,
+      321
+    ],
+    "page_conversion": "one-based PDF page = printed page + 12",
+    "rendered_page_319": {
+      "cache": "/tmp/dp-context-p319.png",
+      "sha256": "ed8098dcc6df009b5d86477ba1fc960006765f4e36521e9df722ff8d031c740d",
+      "finding": "Displayed disjunctive base type is B -> top or B; general type and Table 2 p.49 sigma-disj-left-in require B -> bot or B."
+    }
+  },
+  "writing": {
+    "cache": ".codex-work/references/knuth-mathematical-writing-mit-9bf404c2.pdf",
+    "sha256": "9bf404c2c75633a1f39aae97af0b2e9335ce6d83cf386c84906654589b4e82e6",
+    "edition": "119-page MIT-hosted typeset course report; no byte identity with Stanford scan or MAA edition claimed",
+    "consulted": "Section 1; Sections 4-5 printed pp.9-13 / PDF pp.11-15",
+    "historical_access_records": "preserved"
+  }
+}

@@ -31,3 +31,8 @@ public import DosenPetric.ReducedWitnesses
 public import DosenPetric.ReductionTransport
 public import DosenPetric.SignedLiteralReduction
 public import DosenPetric.ReducedOccurrences
+public import DosenPetric.ReducedLaws
+public import DosenPetric.ReducedStructure
+public import DosenPetric.ReducedContexts
+public import DosenPetric.ContextualMaps
+public import DosenPetric.ContextOccurrences

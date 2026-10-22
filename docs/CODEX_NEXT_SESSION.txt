@@ -1,7 +1,8 @@
 Continue the Došen–Petrić maximality formalization in WSL2.
 
 Repository: /home/flengyel/src/Dosen-Petric-Maximality, private, main.
-Read AGENTS.md, SIGNED_LITERAL_REDUCTION_REPORT and both reduction reviews,
+Read AGENTS.md, CONTEXTUAL_FACTORIZATION_REPORT and both contextual reviews,
+SIGNED_LITERAL_REDUCTION_REPORT and both reduction reviews,
 PRESENTATION_CORRESPONDENCE, current statement/coverage maps, VALIDATION,
 PALOMAR_REQUIREMENTS and unchanged manuscript v4. Inspect status and fetch SSH
 origin; preserve unrelated work and other checkouts. Follow new task-specific
@@ -31,15 +32,31 @@ COMPLETED — REUSE
   Reduced.Faithful P to normal-form/global Presentation faithfulness. The
   premise remains unproved. Arbitrary P throughout; no inhabitant or DecidableEq.
 
+- Contextual factorization: ReducedLaws/ReducedStructure derive the inherited
+  reduced structural laws, terminal/initial/zero uniqueness, unit/pentagon/
+  triangle/hexagon consequences and exact unital mixed d/dR laws.
+  ReducedContexts gives one selected hole, plug/mapTerm/map_derives/map and
+  raw/quotient id/comp laws. ContextualMaps gives source gConj/gDisj recursions,
+  naturality/unit components and unconditional gEta/gEpsilon plus composed forms.
+  The theorems apply to every existing top-domain/bottom-codomain h; source
+  atomic η/ε are specializations. No coherence premise or new equation.
+  ContextOccurrences gives fixed/hole inverse coordinates, injective disjoint
+  embeddings, map relation compatibility and composed comparisons using Sum.inl.
+  Source p.319 renders B -> top or B in the disjunctive base case; general type
+  and Table 2 p.49 sigma unit require B -> bot or B. This is documented.
+
 NEXT CONCRETE PROOF TASK
-Define typed one-hole normal-form contexts and the g-conjunction/g-disjunction
-maps on printed pp.318–319. Prove the g-eta/g-epsilon contextual factorization
-identities on pp.319–320 in Reduced.Hom. Check their exact source types and
-all constant/negative-literal cases. Track the source use of Distributive
-Dicartesian Coherence (§11.5, p.319 induction) and Zero-Identity Distributive
-Dicartesian Coherence (§12.5, p.321) as separate unproved Lean obligations.
-The eventual endpoint is Reduced.Faithful P, not another interpretation kernel.
-Once it is proved, the compiled transfer lemmas give full coherence.
+Construct the common atomic η/ε factorization of reduced raw terms, following
+printed pp.320–321. Define the η/ε-free positive structural middle fragment
+explicitly and retain every endpoint embedding. Reuse the completed contexts
+and unconditional gEta/gEpsilon/gEta_comp/gEpsilon_comp proofs; do not restart
+them or assume Reduced.Faithful. The general positive-core coherence theorems
+of §§11.5 and 12.5 remain unproved. The source uses §11.5 in the contextual
+induction (p.319), whose required instances now have direct reduced derivations;
+it uses §12.5 on the common-factorization middle arrows (p.321). Prove the latter
+before concluding Reduced.Faithful. Keep common atomic factorization and
+positive-core faithfulness as separate statements. No equality reflection from
+inclusion or occurrenceMap, and no quotient-level full red function is supplied.
 
 OTHER OPEN WORK
 Inclusion equality reflection; full red-equation preservation/quotient descent;
@@ -51,10 +68,11 @@ every-interpretation corollary. The three milestones remain separate.
 
 VERIFICATION AND REVIEW
 Pinned Lean 4.35.0, Init-only production closure, no new dependencies.
-Current strict result: 33 Lean files and 1950 audited project declarations.
+Current strict result: 38 Lean files and 2296 audited project declarations.
 Permitted axioms: propext, Quot.sound, Classical.choice. Both boundary scripts
 passed with all five expected rejections; manuscript hashes are unchanged.
-Evidence: provenance/wsl-signed-literal-reduction/ and matching .codex-work/.
+Evidence: provenance/wsl-contextual-factorization/ and matching .codex-work/.
+Prior reduction evidence remains in provenance/wsl-signed-literal-reduction/.
 Run strict verification and both boundary scripts after the next change, one
 heavy process at a time, retaining actual statuses/hashes. Inspect WSL memory
 before heavy jobs. Independent kernels, Comparator, official preflight/service
