@@ -45,6 +45,21 @@ At each mathematical milestone, apply the hostile-referee and mathematical-
 writing reviews to the actual argument and correspondence map. Keep process
 reports outside mathematical prose. Never report an unavailable review as done.
 
+## Reports and delivery
+
+Retain required repository copies of reports under `docs/` and review reports
+under `docs/reviews/`. After finalizing a report, copy it to
+`/mnt/c/Users/fleng/Downloads` in WSL2. This delivery step is part of task
+completion for every report, including mathematical and writing reviews.
+
+Verify that each Downloads copy matches the repository copy byte for byte or
+by SHA-256. If a destination filename already contains different material,
+preserve it and use a dated or commit-suffixed filename for the new report;
+do not silently skip delivery or overwrite an unrelated file.
+
+The final response must identify the delivered Downloads paths and the retained
+repository paths. Report any copy or verification failure explicitly.
+
 ## Git and publication
 
 The initial private repository and bootstrap commits are authorized. Respect
