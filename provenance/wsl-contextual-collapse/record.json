@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-22T02:39:56.459170+00:00",
+  "base_commit": "37e1ee3792d04e3634ff6737a3da436e7c1ef476",
+  "verified_source": "base commit plus exact source-SHA256SUMS; build precedes task commit",
+  "commands": [
+    {
+      "command": "bash scripts/verify.sh (baseline)",
+      "exit_status": 0,
+      "declarations": 176
+    },
+    {
+      "command": "lake clean",
+      "exit_status": 0
+    },
+    {
+      "command": "bash scripts/verify.sh (clean integrated build)",
+      "exit_status": 0,
+      "declarations": 645
+    },
+    {
+      "command": "python3 /tmp/dp-contextual-collapse/check-boundaries.py",
+      "exit_status": 0,
+      "controls": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "command": "sha256sum -c SHA256SUMS (cwd manuscript/)",
+      "exit_status": 0
+    },
+    {
+      "command": "git diff --check",
+      "exit_status": 0
+    },
+    {
+      "command": "git fetch origin (SSH)",
+      "exit_status": 0
+    }
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "production_lean_files": 12,
+  "repository_visibility": "private (GitHub repository metadata read during this session)",
+  "not_performed": [
+    "independent Challenge/Solution builds and shared-definition comparison",
+    "independent proof/source closure policy audit",
+    "NanoDa/con-ron kernel replay",
+    "Comparator",
+    "official Palomar preflight",
+    "service verification",
+    "publication"
+  ]
+}

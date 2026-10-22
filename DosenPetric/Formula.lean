@@ -23,7 +23,7 @@ namespace Formula
 variable {P : Type u} {Q : Type v}
 
 /-- Tagged positions distinguish repeated occurrences of a variable. -/
-def Occ : Formula P → Type
+abbrev Occ : Formula P → Type
   | .var _ => Unit
   | .top => Empty
   | .bot => Empty

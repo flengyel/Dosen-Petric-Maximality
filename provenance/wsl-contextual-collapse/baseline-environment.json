@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-22T01:49:35.762239+00:00",
+  "baseline_verify_command": "bash scripts/verify.sh",
+  "baseline_verify_exit_status": 0,
+  "verify_log_sha256": "815066ebb09e69f2b2e112cdf7f129615e965270ae7cd58cfbc57aee4eb26a5a",
+  "commands": [
+    {
+      "command": "git rev-parse HEAD",
+      "exit_status": 0,
+      "stdout": "37e1ee3792d04e3634ff6737a3da436e7c1ef476\n",
+      "stderr": ""
+    },
+    {
+      "command": "git status --short --branch",
+      "exit_status": 0,
+      "stdout": "## codex/contextual-collapse\n",
+      "stderr": ""
+    },
+    {
+      "command": "git remote -v",
+      "exit_status": 0,
+      "stdout": "origin\tgit@github.com:flengyel/Dosen-Petric-Maximality.git (fetch)\norigin\tgit@github.com:flengyel/Dosen-Petric-Maximality.git (push)\n",
+      "stderr": ""
+    },
+    {
+      "command": "uname -a",
+      "exit_status": 0,
+      "stdout": "Linux M2MA3HI 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 GNU/Linux\n",
+      "stderr": ""
+    },
+    {
+      "command": "free -h",
+      "exit_status": 0,
+      "stdout": "               total        used        free      shared  buff/cache   available\nMem:            15Gi       4.0Gi       603Mi       109Mi        11Gi        11Gi\nSwap:             0B          0B          0B\n",
+      "stderr": ""
+    },
+    {
+      "command": "lean --version",
+      "exit_status": 0,
+      "stdout": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)\n",
+      "stderr": ""
+    },
+    {
+      "command": "lake --version",
+      "exit_status": 0,
+      "stdout": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)\n",
+      "stderr": ""
+    }
+  ]
+}

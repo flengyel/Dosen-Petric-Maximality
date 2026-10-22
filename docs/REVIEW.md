@@ -1,5 +1,9 @@
 # Review of the preliminary formalization
 
+Historical baseline report. The current checkpoint review is in
+[CONTEXTUAL_COLLAPSE_HOSTILE.md](reviews/CONTEXTUAL_COLLAPSE_HOSTILE.md) and
+[CONTEXTUAL_COLLAPSE_WRITING.md](reviews/CONTEXTUAL_COLLAPSE_WRITING.md).
+
 This is an author-side automated audit of the initial Lean modules and their
 manuscript correspondence map. It is not independent peer review or a review
 of a completed maximality formalization. The manuscript v4 is preserved.

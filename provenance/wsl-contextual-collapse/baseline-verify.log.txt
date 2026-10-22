@@ -1,0 +1,28 @@
+2026-10-22T01:46:46Z
+37e1ee3792d04e3634ff6737a3da436e7c1ef476
+117871827c7984878e6675b462fdb2a02d59b1d037645d613bc3cf5832fb778f Checks/Axioms.lean
+71f159e1eabc877db6b68c203fd039e6c06185b9702a7ddfdca798f13e3851ff DosenPetric/Category.lean
+956efb23f2358026dcc5b4d61bb4f4d0ac49a170660406a1e56bc978a07effb6 DosenPetric/Formula.lean
+9fae4cf6beba4686b4feb9c8300fbf05e0244dcaea611c784e65f8b428d2fc7c DosenPetric/Relations.lean
+a72ff9ac3661aa49a2b3c8128636585f797d1a949a0def3911ab29fbe43fb550 DosenPetric.lean
+PASS: 5 source files; no proof holes or custom axiom declarations
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)
+Build completed successfully (6 jobs).
+{"version": "1.3.0",
+ "packagesDir": ".lake/packages",
+ "packages": [],
+ "name": "dosen_petric_maximality",
+ "lakeDir": ".lake",
+ "fixedToolchain": false}
+PASS: transitive axiom checks for 176 project declarations
+'DosenPetric.ZeroIdentity.zeroOf_independent' does not depend on any axioms
+'DosenPetric.ZeroIdentity.precompose' does not depend on any axioms
+'DosenPetric.Formula.contract_expand' does not depend on any axioms
+'DosenPetric.Formula.expand_contract' does not depend on any axioms
+'DosenPetric.Relations.hRel_eq_fold' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.hRel_swap' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.second_block' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.first_injection' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.projections_distinct' does not depend on any axioms
+PASS: build and transitive axiom audit. Palomar verification has not run.

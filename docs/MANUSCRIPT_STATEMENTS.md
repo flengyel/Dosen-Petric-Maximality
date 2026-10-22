@@ -30,20 +30,35 @@ interpretation of variables, not one fixed valuation.
 | `eq:occ-substitution` | `Formula.expand`, `contract`, `contract_expand`, `expand_contract` | For every substitution σ : P → Formula Q and formula A, mutually inverse maps between Occ(A[σ]) and Σ x : Occ(A), Occ(σ(label A x)). No nonemptiness assumption is needed. |
 | §3 repeated variables | `Formula.repeated_positions_distinct` | The two positions in p ∧ p are distinct even though their labels coincide. |
 | §3 relation operations | `Relations.comp`, `graph`, `sumMap`, `fstRel`, `sndRel`, `copair`, `reassoc` | Binary relations on types. These operations apply in particular to finite occurrence types. No functor from B(P) has been constructed. |
-| `eq:first-injection` | `Relations.first_injection` | Equality of the interpreted relations of d ∘ (1 ∧ ι₁) and ι₁. The categorical law is not inferred without a faithful interpretation. |
-| `lem:symmetric` relation calculation | `Relations.hRel_eq_fold`, `hRel_independent`, `hRel_swap` | h is computed from the specified relations of sumMap, distributor, projection, and copairing. Independence of the auxiliary type and swap invariance follow. |
-| `eq:second-block` final equality | `Relations.second_block` | Replacing the first copairing component by the empty relation discards the first source block. |
-| §3 distinct projections | `Relations.projections_distinct` | The two relations Sum Unit Unit → Unit differ. This is not yet a nonthin instance of the complete categorical interface. |
-| `thm:coherence` | Not implemented | Published faithfulness theorem; no custom axiom. |
-| Normalization and signed-label preservation, §3 | Not implemented | Specify normalization isomorphisms and prove their occurrence/substitution properties. |
-| `lem:isolation` | Not implemented | Select a differing relation edge and construct typed selector/coselector in the actual category or a precisely delimited interface. |
-| `prop:all-contexts` | Not implemented | Positive literal substitution; negative literal substitution followed by double-negation transport. |
-| `lem:collapse` | Not implemented | From all K_A derive equality of projections by the §5 argument, then thinness. |
-| `thm:main` | Not implemented | Combine isolation, substitution, and contextual collapse with the checked presentation bridge. |
+| `eq:first-injection` | `Relations.first_injection`, `OccurrenceInterpretation.first_injection` | The relation equation is unconditional; its original-category counterpart is derived under the typed faithful-interpretation input. |
+| `lem:symmetric` | `Relations.hRel_eq_fold`, `hRel_independent`, `hRel_swap`; `OccurrenceInterpretation.fold_independent`, `fold_swap` | The relation fold is calculated from operations; categorical independence and swap invariance follow by original-category faithfulness. |
+| `eq:second-block` final equality | `Relations.second_block`, `OccurrenceInterpretation.second_block` | The relation equation discards the first source block; the categorical equation follows by original-category faithfulness. |
+| §3 distinct projections | `Relations.projections_distinct`, `GeneratedModel.nonthin` | Every §5 interface field is instantiated in a generated structural-fragment model, with distinct categorical projections and `GeneratedModel.empty_hom`. This does not identify the model with B(P). |
+| `thm:coherence` | `OccurrenceInterpretation.faithful` is explicit input | The actual published theorem is unproved in Lean. `GeneratedModel.interpretation` proves faithfulness for the structural fragment model only. |
+| Normalization and signed-label preservation, §3 | `Normalization`, `SignedLabelPreservation`, `Normalization.recover` | Typed input data and inverse-arrow transport. The intended instances and occurrence/substitution correspondence remain open. |
+| `lem:isolation` | `Isolation.selector_edge`, `coselector_edge`, `isolate_edge`, `normalized_literal_context` | Normal-form witness equations and the normalized contextual consequence under faithful interpretation, normalization, and signed-label inputs. The full original-category witness formulation is not a separate declaration; no actual presentation is inferred. |
+| `prop:all-contexts` | `ContextualCollapse.context_retract`, `all_contexts` | Typed substitution on arrows and endpoints, separate congruence closure, positive substitution, and negative substitution followed by double-negation transport. |
+| `lem:collapse` | `ContextualCollapse.total` | From all K_A, the structural and faithful-interpretation data imply totality on existing arrows by §5. No faithfulness on the quotient or cancellation of j_A. |
+| `thm:main` | `relative_maximality` is the conditional counterpart | The actual-presentation theorem remains open. The conditional theorem quantifies over every compatible congruence with explicit substitution closure. |
 | `cor:models` | Not implemented | All interpretations; use nonempty P to choose a variable and interpret it as an arbitrary object. |
 | Appendix A | Partial | Tagged block bijection is implemented. Profiles, ordinal encodings, renaming squares, and the bridge to the book's operation remain. |
 
-The structural record fields are hypotheses of preliminary algebraic lemmas.
+The structural record fields are hypotheses of the conditional theorems.
 They are not substitute definitions of the free Boolean category. Adding fields
 such as “every contextual equation implies thinness” would assume the central
 obligation rather than formalize its proof.
+
+`Structure` gives the bicartesian universal equations, truth-constant arrows,
+and distributor with all endpoints. `OccurrenceInterpretation` gives the
+operation-level relation laws. `fold_independent`, `fold_swap`,
+`first_injection`, and `second_block` derive the corresponding categorical
+equations by faithfulness in the original category. The `GeneratedModel`
+checks the entire §5 interface, but includes no full Boolean presentation.
+`Congruence` records the compatibility needed by this argument; a bridge must
+restrict each actual proof congruence to it.
+
+`Substitution.map σ f` has type `Hom (A.subst σ) (B.subst σ)` for
+`f : Hom A B`. Its per-substitution functor/operation laws are inputs;
+composition and identity laws for substitution schemas themselves have not
+been formalized. No closure under substitution is inferred from one
+interpretation kernel. The model corollary still requires every interpretation.

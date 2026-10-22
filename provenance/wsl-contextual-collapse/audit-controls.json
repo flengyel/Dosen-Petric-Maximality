@@ -1,0 +1,69 @@
+{
+  "utc": "2026-10-22T02:32:19.215360+00:00",
+  "base_commit": "37e1ee3792d04e3634ff6737a3da436e7c1ef476",
+  "checks": [
+    {
+      "name": "direct-axiom",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/contextual-collapse/checks/direct-axiom.lean"
+      ],
+      "exit_status": 1,
+      "expected": "nonzero; Unpermitted axiom DosenPetric.AuditNegative.direct",
+      "passed": true,
+      "source_sha256": "b75613c8b482e63e8f7a3818719986bc74ce3ab13f1558a39695bda734110c6b",
+      "log_sha256": "56282e48625681776bc2010745cbcc8a4a5446bc358f2025458c174a5a6fa25b"
+    },
+    {
+      "name": "private-axiom",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/contextual-collapse/checks/private-axiom.lean"
+      ],
+      "exit_status": 1,
+      "expected": "nonzero; Unpermitted axiom DosenPetric.AuditNegative.privateInput",
+      "passed": true,
+      "source_sha256": "83c36d405ce1fe2540dcf625011412821fe3ed8e313248f52c150f01da70c6ae",
+      "log_sha256": "1fc967ba5f33550aed3bf20e024e91e39ee3cda440f207101dce711e0d94414c"
+    },
+    {
+      "name": "hidden-dependency",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/contextual-collapse/checks/hidden-dependency.lean"
+      ],
+      "exit_status": 1,
+      "expected": "nonzero; Unpermitted axiom AuditNegative.external",
+      "passed": true,
+      "source_sha256": "ba0761b0c2ff059aae2f93b345c89536d3e687c98764442232379d9ad46b289b",
+      "log_sha256": "d49e34640b0389c49713b858dd7737f2bac1bf9e50f00ecd2e917bdc58aafbc8"
+    },
+    {
+      "name": "public-import-closure",
+      "passed": true,
+      "source_files": [
+        "DosenPetric.lean",
+        "DosenPetric/Category.lean",
+        "DosenPetric/Collapse.lean",
+        "DosenPetric/Formula.lean",
+        "DosenPetric/GeneratedModel.lean",
+        "DosenPetric/Isolation.lean",
+        "DosenPetric/NormalForm.lean",
+        "DosenPetric/OccurrenceLaws.lean",
+        "DosenPetric/Relations.lean",
+        "DosenPetric/Structure.lean",
+        "DosenPetric/Substitution.lean"
+      ],
+      "boundary": "local library imports; not a Challenge/Solution comparison"
+    }
+  ]
+}

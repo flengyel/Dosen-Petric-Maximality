@@ -2,60 +2,68 @@ Continue the Došen–Petrić maximality formalization in WSL2.
 
 Repository: flengyel/Dosen-Petric-Maximality (private)
 Working directory: /home/flengyel/src/Dosen-Petric-Maximality
+Continuation branch: main (after the authorized integration of codex/contextual-collapse)
 
 Read AGENTS.md, docs/VALIDATION.md, docs/MANUSCRIPT_STATEMENTS.md,
-docs/MANUSCRIPT_COVERAGE.md, docs/PALOMAR_REQUIREMENTS.md, and the unchanged
-manuscript v4. Inspect Git status, HEAD, origin, and the current source before
-editing. Preserve all other projects and any unrelated changes.
+docs/MANUSCRIPT_COVERAGE.md, docs/reviews/CONTEXTUAL_COLLAPSE_HOSTILE.md,
+docs/reviews/CONTEXTUAL_COLLAPSE_WRITING.md, and unchanged manuscript v4.
+Inspect Git status, HEAD, origin, and source before editing; preserve unrelated
+work and all other checkouts. This future continuation alone does not authorize a push,
+merge, publication, license choice, or Palomar/arXiv submission.
 
-Establish the WSL baseline with bash scripts/setup-wsl.sh if the pinned Lean
-toolchain is not installed, then bash scripts/verify.sh. Do not substitute a
-GitHub CI result for this local validation. Record actual environment, versions,
-commands, source SHA, exit statuses, and log hashes.
+The WSL baseline and integrated strict build have run successfully with pinned
+Lean 4.35.0 and no external dependencies. Run bash scripts/verify.sh again for
+the source actually checked out. Retain actual environment, source SHA, exit
+statuses, logs, and hashes in .codex-work. Run one build or replay at a time.
 
-The preliminary development uses only Lean core. Formula.lean proves the
-mutually inverse occurrence-block maps, including empty formulas and repeated
-variables. Category.lean proves witness independence, commutation, absorption,
-and idempotence for zero identities. Relations.lean calculates the distributor
-fold, its independence of the auxiliary type, swap invariance, first-injection
-law, and the second-block equation. Check the actual build state and map.
-These results do not yet constitute contextual collapse or maximality.
+Completed conditional argument:
+- Structure.lean gives the typed bicartesian/distributor interface and congruence.
+- OccurrenceLaws.lean derives fold independence, symmetry, first injection,
+  and second block from relation calculations and original-category faithfulness.
+- Collapse.lean proves all K_A imply totality by §5, without cancelling j_A
+  or using faithfulness on a quotient.
+- GeneratedModel.lean instantiates every §5 field in the generated structural
+  fragment, proves distinct projections and an empty Hom(top,bot). It does not
+  include negation/De Morgan/eta/epsilon operations or identify itself with B(P).
+- NormalForm.lean and Isolation.lean define positive/negative literal forms,
+  typed selectors/coselectors, exact edge relations, normalization transport,
+  and extraction of a literal contextual equation.
+- Substitution.lean has typed arrow/endpoints substitution data, separate
+  congruence closure, the double-negation retract, all-context transport,
+  and relative_maximality conditional on these explicit inputs.
 
-Implement milestone I next. Define the typed structural and interpretation
-interface needed by manuscript §5, including products, coproducts, truth
-constants, zero identities, distributor, congruence compatibility, and faithful
-occurrence interpretation. Derive the fold equations from the existing relation
-calculations and faithfulness; do not put the collapse conclusion into a field.
-Prove K_A for all A implies the congruence is total by the exact §5 argument:
-second-block equation, symmetric fold, terminal injection, terminality of A ∨ ⊤
-in the quotient, reversed injection into ⊤ ∨ A, evaluation at ⊤, equal
-projections, and pairing of arbitrary parallel arrows. Do not cancel j_A or
-apply faithfulness to the quotient. Preserve empty hom-sets.
+The next obligation is the intended presentation bridge, not re-proving the
+conditional collapse. Do not claim milestone I complete until the entire
+interface is shown to admit the intended category or a bridge is established.
+The generated fragment model checks consistency but does not discharge that gate.
 
-Before calling milestone I complete, verify that the whole interface admits
-the intended nonthin category. Distinct relation projections alone are not
-this model check. If Mathlib is needed, use the compatible full commit in
-provenance/pins.json, generate the manifest, and build the exact dependency
-closure. Do not add Foundation.
+Define/import the exact Došen–Petrić arrow presentation from the September 2007
+revision, with typed operations and equations. Bridge its products, coproducts,
+truth constants, distributor, and the displayed zero-identity formula to the
+current interface. Formalize/provide proved occurrence coherence, normalization,
+signed-label preservation, substitution on whole arrow terms/endpoints, and
+double-negation data. Restrict every actual substitution congruence to the
+current laws, then instantiate relative_maximality. Track independently what
+is input, what is proved, and what is a presentation correspondence.
 
-After contextual collapse, continue with signed-literal isolation, uniform
-substitution and double-negation transport. Keep coherence, normalization, and
-the actual presentation bridge explicit. The target theorem quantifies over
-all substitution congruences; its model corollary uses every interpretation.
+The full intended interface for relative_maximality has not been instantiated
+in a nonthin model. Do not infer substitution closure from the kernel of one
+interpretation. Substitution-schema composition laws, normalization occurrence
+correspondence, Appendix A profiles/ordinals/renaming, and the every-interpretation
+model corollary remain explicit obligations. Keep empty hom-sets and negative
+literals; zeroOf always needs an existing arrow. Category.comp f g applies f
+and then g.
 
-Use the FailureOfComposition procedure described in the repository. Recheck
-current official Palomar requirements before designing Challenge/Solution.
-Add independent statement/definition closure checks, proof-dependency audits,
-and focused negative controls when a substantive theorem is selected. Run one
-heavy job at a time and examine complete checker reports. Keep Lean/NanoDa
-acceptance distinct from advisory con-ron declines and from registry publication.
+The axiom audit now decodes private names before filtering DosenPetric; it
+checks 645 visible declarations. Three focused controls (public axiom, private
+axiom, hidden dependency) reject. Keep the local import-closure check distinct
+from independent Challenge/Solution shared-definition comparison.
 
-Apply the hostile-referee and mathematical-writing skills to the actual
-argument and statement map at the milestone. Keep process commentary outside
-the manuscript. Report unproved obligations directly and do not weaken the
-target to obtain a build.
-
-Create a task branch such as codex/contextual-collapse. Make a reproducible
-local checkpoint and report its diff and verification. Follow current session
-authorization for any push or merge; this continuation alone does not authorize
-public release, license selection, arXiv submission, or Palomar registration.
+Apply the hostile-referee and mathematical-writing skills to any new actual
+argument and correspondence map. Preserve manuscript text and diagrams.
+Before designing a Palomar package, recheck official verifier/policy/service
+instructions and follow docs/PALOMAR_REQUIREMENTS.md. Independent builds,
+exact definitions/statements, proof/source closure, negative controls, and
+immutable-source evidence remain to be implemented. No Comparator or service
+acceptance is currently claimed. Use the pinned Mathlib commit only if needed;
+generate and commit the full manifest, and do not add Foundation.

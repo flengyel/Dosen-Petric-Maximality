@@ -1,0 +1,22 @@
+/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/contextual-collapse/checks/direct-axiom.lean:12:0: error: Unpermitted axiom DosenPetric.AuditNegative.direct in DosenPetric.AuditNegative.direct
+'DosenPetric.ZeroIdentity.zeroOf_independent' does not depend on any axioms
+'DosenPetric.ZeroIdentity.precompose' does not depend on any axioms
+'DosenPetric.Formula.contract_expand' does not depend on any axioms
+'DosenPetric.Formula.expand_contract' does not depend on any axioms
+'DosenPetric.Relations.hRel_eq_fold' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.hRel_swap' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.second_block' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.first_injection' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.projections_distinct' does not depend on any axioms
+'DosenPetric.OccurrenceInterpretation.fold_independent' depends on axioms: [propext, Quot.sound]
+'DosenPetric.OccurrenceInterpretation.fold_swap' depends on axioms: [propext, Quot.sound]
+'DosenPetric.OccurrenceInterpretation.first_injection' depends on axioms: [propext, Quot.sound]
+'DosenPetric.OccurrenceInterpretation.second_block' depends on axioms: [propext, Quot.sound]
+'DosenPetric.ContextualCollapse.total' depends on axioms: [propext, Quot.sound]
+'DosenPetric.GeneratedModel.interpretation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.GeneratedModel.nonthin' depends on axioms: [propext, Quot.sound]
+'DosenPetric.GeneratedModel.empty_hom' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Isolation.normalized_literal_context' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.ContextualCollapse.context_retract' does not depend on any axioms
+'DosenPetric.ContextualCollapse.all_contexts' does not depend on any axioms
+'DosenPetric.relative_maximality' depends on axioms: [propext, Classical.choice, Quot.sound]

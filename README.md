@@ -4,11 +4,13 @@ Development for Florian Lengyel's *Maximality of the Došen–Petrić Boolean
 Category*, manuscript v4. The target is maximality of the free zero-identity
 Boolean category under substitution congruences.
 
-The preliminary development builds with Lean 4.35.0. It proves zero-identity
-lemmas, the tagged occurrence bijection for substitution, and relation
-calculations used by the contextual-collapse argument. The axiom audit passes
-for 176 imported project declarations. Contextual collapse, occurrence
-isolation, and maximality remain open. See [validation](docs/VALIDATION.md).
+The WSL2 development builds with Lean 4.35.0. It proves contextual collapse,
+signed-literal isolation, substitution transport, and relative maximality under
+explicit structural, coherence, normalization, and arrow-substitution inputs.
+Every §5 interface field is instantiated in a generated nonthin structural
+model with an empty hom-set. The actual Došen–Petrić presentation bridge remains
+open. The audit covers 645 visible project declarations, including private
+names. See [validation](docs/VALIDATION.md).
 
 ## WSL2 setup
 
@@ -25,8 +27,8 @@ bash scripts/setup-wsl.sh
 If that directory already exists, inspect its Git status and origin before
 updating it. See [WSL2 instructions](docs/WSL2_SETUP.md) for prerequisites.
 The setup installs only the pinned project toolchain and runs verification;
-it does not change Elan's global default. Preparation and CI ran remotely;
-validation on the WSL2 machine is still pending.
+it does not change Elan's global default. The pinned toolchain was already
+installed for this session; local WSL2 build and audit have now passed.
 
 Initial modules use Lean core only. The matching Mathlib release is recorded
 at full commit `56a005855ea17e0b0958f73ec801ae140b0a1679`; it is not an active
@@ -38,7 +40,8 @@ dependency. The committed Lake manifest therefore has no dependency packages.
 2. Maximality relative to explicit coherence, normalization, presentation, and substitution inputs.
 3. Maximality for the actual Došen–Petrić presentation after those inputs are established.
 
-No milestone is completed by the preliminary lemmas. Coherence applies in the
+The conditional theorems do not establish the intended-presentation bridges
+required by the milestone gates. Coherence applies in the
 original category; zero arrows require a witness that the hom-set is inhabited.
 The [statement map](docs/MANUSCRIPT_STATEMENTS.md) and
 [coverage map](docs/MANUSCRIPT_COVERAGE.md) record the precise boundary.
@@ -48,8 +51,9 @@ The unchanged v4 [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Categor
 and [PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.pdf)
 are preserved with [SHA-256 checksums](manuscript/SHA256SUMS).
 The [literature comparison](docs/LITERATURE_REVIEW.md) is bounded and makes no
-exhaustive priority claim. The [automated review](docs/REVIEW.md) records the
-remaining mathematical obligations.
+exhaustive priority claim. The [current automated review](docs/reviews/CONTEXTUAL_COLLAPSE_HOSTILE.md)
+records the remaining mathematical obligations; the
+[initial review](docs/REVIEW.md) is retained as a historical record.
 
 ## Verification and Palomar
 

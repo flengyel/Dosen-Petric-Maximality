@@ -38,6 +38,85 @@ def copair {X : Type u} {Y : Type v} {Z : Type w} (r : Rel X Z) (s : Rel Y Z) :
   | .inl x, z => r x z
   | .inr y, z => s y z
 
+def pair {X : Type u} {Y : Type v} {Z : Type w} (r : Rel X Y) (s : Rel X Z) :
+    Rel X (Sum Y Z)
+  | x, .inl y => r x y
+  | x, .inr z => s x z
+
+theorem comp_assoc {W X Y Z : Type u} (r : Rel W X) (s : Rel X Y) (t : Rel Y Z) :
+    comp (comp r s) t = comp r (comp s t) := by
+  funext w z
+  apply propext
+  constructor
+  · rintro ⟨y, ⟨x, hr, hs⟩, ht⟩
+    exact ⟨x, hr, y, hs, ht⟩
+  · rintro ⟨x, hr, y, hs, ht⟩
+    exact ⟨y, ⟨x, hr, hs⟩, ht⟩
+
+theorem id_comp {X Y : Type u} (r : Rel X Y) : comp (graph id) r = r := by
+  funext x y
+  apply propext
+  simp [comp, graph]
+
+theorem comp_id {X Y : Type u} (r : Rel X Y) : comp r (graph id) = r := by
+  funext x y
+  apply propext
+  simp [comp, graph]
+
+theorem empty_comp {X Y Z : Type u} (r : Rel Y Z) :
+    comp (empty : Rel X Y) r = empty := by
+  funext x z
+  apply propext
+  simp [comp, empty]
+
+theorem comp_empty {X Y Z : Type u} (r : Rel X Y) :
+    comp r (empty : Rel Y Z) = empty := by
+  funext x z
+  apply propext
+  simp [comp, empty]
+
+theorem pair_fst {X Y Z : Type u} (r : Rel X Y) (s : Rel X Z) :
+    comp (pair r s) fstRel = r := by
+  funext x y
+  apply propext
+  simp [comp, pair, fstRel, Sum.exists]
+
+theorem pair_snd {X Y Z : Type u} (r : Rel X Y) (s : Rel X Z) :
+    comp (pair r s) sndRel = s := by
+  funext x z
+  apply propext
+  simp [comp, pair, sndRel, Sum.exists]
+
+theorem pair_eta {X Y Z : Type u} (r : Rel X (Sum Y Z)) :
+    pair (comp r fstRel) (comp r sndRel) = r := by
+  funext x yz
+  apply propext
+  cases yz <;> simp [comp, pair, fstRel, sndRel, Sum.exists]
+
+theorem inl_copair {X Y Z : Type u} (r : Rel X Z) (s : Rel Y Z) :
+    comp (graph Sum.inl) (copair r s) = r := by
+  funext x z
+  apply propext
+  simp [comp, graph, copair]
+
+theorem inr_copair {X Y Z : Type u} (r : Rel X Z) (s : Rel Y Z) :
+    comp (graph Sum.inr) (copair r s) = s := by
+  funext y z
+  apply propext
+  simp [comp, graph, copair]
+
+theorem copair_eta {X Y Z : Type u} (r : Rel (Sum X Y) Z) :
+    copair (comp (graph Sum.inl) r) (comp (graph Sum.inr) r) = r := by
+  funext xy z
+  apply propext
+  cases xy <;> simp [comp, graph, copair]
+
+theorem pair_map {X Y X' Y' : Type u} (r : Rel X X') (s : Rel Y Y') :
+    pair (comp fstRel r) (comp sndRel s) = sumMap r s := by
+  funext xy xy'
+  apply propext
+  cases xy <;> cases xy' <;> simp [pair, comp, fstRel, sndRel, sumMap]
+
 def reassoc {X : Type u} {Y : Type v} {Z : Type w} :
     Sum X (Sum Y Z) → Sum (Sum X Y) Z
   | .inl x => .inl (.inl x)
