@@ -1,0 +1,13 @@
+name = "dosen_petric_maximality"
+version = "0.1.0"
+defaultTargets = ["DosenPetric"]
+
+[leanOptions]
+autoImplicit = false
+warningAsError = true
+
+[[lean_lib]]
+name = "DosenPetric"
+
+[[lean_lib]]
+name = "Checks"

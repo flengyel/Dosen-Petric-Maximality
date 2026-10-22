@@ -1,0 +1,349 @@
+CONTINUATION PROMPT — DOŠEN–PETRIĆ MAXIMALITY IN LEAN
+Prepared 22 October 2026
+
+Continue the work described below. The goal is a Lean formalization of
+“Maximality of the Došen–Petrić Boolean Category,” with a precisely stated
+scope and reproducible verification suitable for a subsequent Palomar
+submission. Follow the mathematical correspondence checks and verification
+practice established for flengyel/Categorical_Rice_Shapiro and especially
+flengyel/FailureOfComposition. Begin by checking the literature and the exact
+meaning of the conjecture, then implement the contextual-collapse argument.
+Do substantive work; do not stop after proposing a plan.
+
+1. MANUSCRIPT AND CURRENT STATE
+
+Author: Florian Lengyel, flengyel@gradcenter.cuny.edu.
+The current manuscript is version 4, dated 21 October 2026:
+
+  Maximality_of_the_Dosen_Petric_Boolean_Category_v4.tex
+  Maximality_of_the_Dosen_Petric_Boolean_Category_v4.pdf
+
+The accompanying bundle contains both files and this prompt. The PDF is
+10 pages. The TeX is self-contained, with an inline bibliography and seven
+TikZ diagrams. SHA-256:
+
+  TeX: aebd6a8be39dcbdcc1a7e5061b4e65a585de2345784011fb03d28cc3326fc93e
+  PDF: dd88c37805c889ab420ad11303886a04b8be54857c91dda70bfc91ec23c72b62
+
+No Lean implementation of this paper has been started. No repository for
+this formalization has been selected or created. No arXiv or Palomar
+submission of this paper has been made in this work.
+
+The mathematical and writing reviews of the manuscript found no remaining
+blocker, while treating the published Boolean Coherence and normalization
+results as inputs. Lean must make that dependency boundary explicit.
+Read the manuscript itself before coding; this prompt is a guide to it.
+
+The substitution conventions come from “The Unbearable Notation of Logic,”
+version 8, §§9.2–9.4:
+https://github.com/flengyel/notes/tree/a89f60bfd36f0141dee879681faa43a23e6cf321/logic
+The maximality manuscript includes the needed material in Appendix A.
+Its first use of Occ(A) points to that appendix. Preserve those references
+and diagrams if revising the exposition.
+
+2. EXACT MATHEMATICAL TARGET
+
+Let P be a nonempty set of propositional variables. B(P) is the free
+zero-identity Boolean category of Došen–Petrić, Proof-Theoretical Coherence,
+September 2007 revision, §§14.2–14.3. A proof congruence is an equivalence
+relation on each hom-set compatible with composition and every arrow
+operation of that presentation. A substitution congruence also respects
+uniform substitution of formulas throughout arrow terms and their types.
+
+The target theorem says: if a substitution congruence identifies distinct
+parallel arrows, it identifies every parallel pair. Equivalently, its quotient is
+thin. This establishes maximality and contradicts the book's conjectured
+nonmaximality, provided the formulation matches the book's schematic
+equational extensions. Verify that correspondence explicitly.
+
+Do not substitute a theorem about derivability, an arbitrary hom-set
+relation, or the kernel of one fixed valuation. The semantic corollary
+quantifies over every interpretation of propositional variables.
+
+Use the actual zero-identity law:
+
+  f ∘ 0_A = 0_C ∘ g                  for parallel f,g : A → C.
+
+Here 0_A : A → A is the specified zero endomorphism. A zero arrow 0_{A,C}
+is defined as f ∘ 0_A only when an arrow f : A → C already exists.
+Prove independence of that witness and absorption. Do not install a
+blanket HasZeroMorphisms instance: it supplies arrows in every hom-set
+and changes this presentation.
+
+The distributor has type
+
+  d_{A,B,C} : A ∧ (B ∨ C) → (A ∧ B) ∨ C
+
+and satisfies
+
+  d_{A,B,C} ∘ (1_A ∧ ι₁^{B,C}) = ι₁^{A∧B,C}.
+
+The faithful occurrence functor G maps formulas to finite sets of tagged
+positions and arrows to binary relations. Repeated occurrences of a
+variable are separate positions. Products and coproducts both have
+disjoint-union occurrence sets. Constants have empty occurrence sets.
+Specify the generator relations, including the distributor's rebracketing
+relation; prove the calculations used below.
+
+3. PROOF TO FORMALIZE
+
+Start with §5. For j_A = ι₁^{A,⊤}, define the contextual equation K_A:
+
+  j_A ∘ π₁^{A,⊥} ≡ 0_{A∧⊥,A∨⊤}.
+
+Define
+
+  u_A^B = d_{A,B,A} ∘ (1_A ∧ ι₂^{B,A}),
+  h_A^B = [π₁^{A,B},1_A] ∘ u_A^B : A ∧ A → A.
+
+The occurrence relation of h_A^B folds both tagged copies onto Occ(A).
+Consequently coherence makes it independent of B and invariant under
+the swap τ_A = ⟨π₂,π₁⟩. Write it h_A.
+
+Assuming K_A for every A, establish the following chain:
+
+  a. Evaluate h_A at B = ⊥. Using K_A and the explicitly proved relation
+     calculation, obtain j_A ∘ h_A ≡ j_A ∘ π₂.
+  b. Symmetry gives j_A ∘ π₁ ≡ j_A ∘ π₂.
+  c. Precompose with ⟨1_A,0_A⟩ to get j_A ≡ ι₂^{A,⊤} ∘ !_A.
+  d. Prove that A ∨ ⊤ is isomorphic to ⊤ modulo the congruence, using
+     the coproduct equations. By symmetry, ⊤ ∨ A is terminal too.
+  e. Evaluate the same h_A at B = ⊤ and apply the first-injection
+     equation to obtain h_A ≡ π₁.
+  f. Its symmetry gives π₁ ≡ π₂. Pairing with any parallel f,g then
+     gives f ≡ g.
+
+Work directly with congruence relations initially if this simplifies the
+proof. Construct the quotient and its inherited products/coproducts when
+needed. Do not cancel j_A or apply faithfulness of G to the quotient:
+coherence is used in the original category, and its equations descend.
+
+Next formalize §§3–4. Normalize to signed literals, select an edge in
+Gf differing from Gg, and construct the selector and coselector isolating
+it. This produces K_ℓ for a signed literal ℓ. Positive literals transfer
+by p ↦ A; negative literals transfer by p ↦ ¬A followed by the specified
+double-negation isomorphism. Prove the occurrence/substitution transport,
+including the empty and repeated-occurrence cases.
+
+Keep three milestones distinct:
+
+  I. Contextual collapse, including the finite-relation calculations,
+     relative to an explicit structural and faithful-interpretation
+     interface.
+  II. Maximality relative to explicitly stated coherence, normalization,
+      and presentation/substitution inputs.
+  III. Maximality for the actual Došen–Petrić presentation, with those
+       inputs proved or supplied by an existing proved formalization
+       and a checked bridge to its definitions.
+
+Milestones I and II are useful formal results, but their theorem names,
+README, Challenge statements, and submission metadata must identify their
+hypotheses. Do not call them an unconditional formalization of III.
+Formalizing all of Boolean Coherence may be the largest part of III.
+
+4. LITERATURE AND PRIORITY CHECK
+
+A targeted primary-source search on 22 October 2026 located no earlier
+resolution of the exact B conjecture. That is the current search result,
+not a certified novelty claim. Citation-index coverage was incomplete;
+no comprehensive MathSciNet/zbMATH search or author contact was performed.
+
+Read and compare these sources:
+
+  • Došen–Petrić, Proof-Theoretical Coherence, September 2007 revision:
+    https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf
+    §14.2, printed p.322 states the open problem and conjectures
+    nonmaximality. §14.3 specifies the zero-identity Boolean categories.
+    Also check §9.3, p.194 (maximality), §2.7, p.51 (substitution rule),
+    §11.1, p.234 (first-injection equation), §14.1, pp.313–315
+    (normalization), and §14.2, pp.317–321 (zero identities/coherence).
+
+  • Došen–Petrić, Bicartesian Coherence Revisited:
+    https://arxiv.org/html/0711.4961v3
+    §§8–10 explain schematic maximality, prove lattice maximality, and
+    discuss dicartesian relative maximality. These are different
+    signatures and do not settle the full Boolean-category conjecture.
+
+  • Došen–Petrić, Isomorphic Formulae in Classical Propositional Logic:
+    https://arxiv.org/pdf/0912.1271
+    Version 3 is dated 4 October 2010. §4 studies the same B.
+    Lemma 6, pp.12–13, isolates a selected matching-letter occurrence
+    pair for formulas in the ∧,∨,⊤,⊥ fragment when their implication is
+    tautological. Compare it carefully with our selectors/coselectors;
+    its linking-relation notation differs from G. Proposition 3
+    characterizes isomorphic formulas. No maximality claim was found.
+
+  • Straßburger, On the Axiomatisation of Boolean Categories with and
+    without Medial:
+    https://arxiv.org/pdf/cs/0512086
+    Its *-autonomous axiomatisations differ from the target presentation.
+
+  • Earlier cartesian and cartesian-closed maximality results:
+    https://arxiv.org/abs/math/9911059
+    https://arxiv.org/abs/math/9911073
+    Follow citations without conflating these fragments with B.
+
+  • Petrić's official publication list/CV:
+    https://www.mi.sanu.ac.rs/~zpetric/cv.pdf
+
+Extend searches through current papers, citation chains, author lists,
+and accessible bibliographic indexes. Search “zero-identity Boolean,”
+“Boolean category maximality/nonmaximality,” the book title and conjecture,
+and both accented/unaccented author names. Compare exact axioms,
+substitution closure, and conclusions; ordinary Boolean algebras,
+zero-adjoined categories, ZIDL, and other Boolean-category definitions
+are not automatically the same problem.
+
+Record sources, dates, proposition/page references, matching hypotheses,
+and inaccessible leads in LITERATURE_REVIEW.md. If a settlement or an
+equivalent earlier proof is found, report it and adjust the attribution;
+the formalization may still be worthwhile. Do not contact authors or
+claim priority without authorization and evidence.
+
+5. ESTABLISHED FORMALIZATION WORKFLOW
+
+Reference repositories:
+https://github.com/flengyel/Categorical_Rice_Shapiro
+https://github.com/flengyel/FailureOfComposition
+
+The registered predecessor is FailureOfComposition:
+Palomar PALOMAR-2026-10-01-000013, version 1; source commit
+fb32a19c4883baad83b286d4594cfbc6b1d2ad5c; nine selected declarations.
+https://palomar-registry.org/entry?id=PALOMAR-2026-10-01-000013&version=1
+Its current root README records registration; some nested READMEs and
+STATUS files retain earlier, unregistered checkpoints.
+
+Inspect especially these FailureOfComposition files:
+
+  Lean/FailureOfComposition/MANUSCRIPT_STATEMENTS.md
+  Lean/FailureOfComposition/MANUSCRIPT_COVERAGE.md
+  scripts/README.md
+  scripts/check-palomar-submission-tree.py
+  scripts/verify-palomar.sh
+  scripts/run-palomar-nine-focused.sh
+  scripts/validate-palomar-nine-config.py
+  scripts/check-palomar-challenge-policy.py
+  scripts/run-palomar-nine-negative.sh
+
+Locate its CheckNineInterface.lean and Checks/NineDependencyAudit.lean.
+Adapt their purposes, not the project-specific “Nine” names or arithmetic
+dependencies. In particular, do not import Foundation merely because
+FailureOfComposition needed it.
+
+Inspect the workspace, existing changes, and applicable AGENTS.md first.
+Use a separate project/branch and preserve unrelated work. Under WSL,
+follow the established Linux-filesystem build practice and avoid changing
+ownership of existing mirrors. Run one heavy build/verifier job at a time.
+Parallelize read-only mathematical and source reviews.
+
+Choose a currently supported, mutually compatible Lean/Mathlib pair and
+pin dependencies to full commit hashes. Record versions and the candidate
+commit. Do not inherit the old release-candidate pins by habit.
+
+Create MANUSCRIPT_STATEMENTS.md and MANUSCRIPT_COVERAGE.md before expanding
+the implementation. Map each mathematical definition and theorem to its
+Lean counterpart, exact hypotheses, quantifiers, declaration, and status.
+State the composition convention: manuscript g ∘ f is Lean f ≫ g.
+
+Use typed syntax and precisely specified structures. Published inputs
+used provisionally belong in explicit parameters or structures. Do not
+introduce custom axioms hiding a missing proof, put the conclusion into
+an assumption, or weaken the quantified statement to make it compile.
+Check that the structural interface admits the intended nonthin model.
+Keep implementation notes and review status outside mathematical prose.
+
+6. PALOMAR PREPARATION AND VERIFICATION
+
+Re-read the current official requirements before choosing submission
+files:
+https://github.com/PalomarRegistry/PalomarSubmission
+https://github.com/PalomarRegistry/PalomarPolicy
+
+The PalomarSubmission revision examined for this prompt is
+5cfaefe2f4c18f237c63d9635f9f54ab68785d89 (21 October 2026).
+Its toolchains.json has schema 2 and minimum v4.35.0-rc2.
+Revalidate this at implementation time.
+
+At that revision:
+
+  • The selected project's formalization.yaml records provenance,
+    authors/contributors, automation, scope, gaps, sources, and licensing.
+    Its current schema is version: v0.4; revalidate before preparing it.
+    The repository-root LICENSE must match project.license. Select an
+    authorized license; do not infer one from unrelated repositories.
+  • A public GitHub repository, full immutable source SHA, and one
+    Comparator configuration identify an entry. A configuration may
+    select multiple declarations.
+  • Challenge statements use permitted canonical imports, are checked
+    independently, and have 1,000-line/100-KiB limits.
+  • Regular submitted .lean files use the module system and have at most
+    10,000 physical lines. lakefile.lean is exempt from the module-header
+    requirement, not the line limit.
+  • Dependencies are pinned public GitHub sources. Submitted submodules,
+    LFS pointers, and prebuilt proof artifacts do not replace source.
+  • The submitted Lean release supplies comparator/export/checker/kernel
+    tools, subject to the verifier's protected checker-update mechanism.
+    Lean and NanoDa acceptance are mandatory. Con-ron is an additional
+    replay: recognized support/fuel/capacity declines may be inconclusive,
+    while rejection, unknown errors, and nonstandard axioms still block.
+    Record successful kernels and declined attempts separately.
+
+Some PalomarPolicy prose still describes older standalone-tool pins.
+Resolve such drift against the pinned verifier implementation and current
+service requirements; document the exact contract used.
+
+Keep Challenge and Solution independently buildable. Challenge must not
+import Solution. Solution must not depend on Challenge's theorem holes.
+Compare the selected statements in separate environments, including the
+transitively reachable definitions in their types.
+
+Audit all transitive proof dependencies and #print axioms output.
+Reject sorryAx, admit/sorry in production proofs, and invented mathematical
+axioms. Check the current permitted standard axioms (historically
+propext, Quot.sound, Classical.choice). Use focused negative tests for
+changed shared definitions and illicit proof dependencies, following FoC.
+Kernel acceptance must be accompanied by a semantic review of the
+statement-to-manuscript correspondence.
+
+Build with warnings treated as errors where supported; run focused
+interface, source-closure, dependency, and policy checks. Then run the
+current Comparator and official verifier on an immutable candidate.
+Inspect complete verdicts and JSON reports, not merely process exit codes.
+Distinguish proof failure from infrastructure/resource failure.
+
+Preserve one final evidence bundle with source inventory and SHA-256
+hashes, exact commands, versions/pins, exit codes, raw logs, comparison
+results, checker results, and the manuscript coverage report. Reconstruct
+and verify from the pinned source snapshot. A result for one commit is
+not evidence for later source changes.
+
+Keep local compilation, local Comparator acceptance, official verifier
+preflight, service verification, automated editorial review, and registry
+publication as distinct statuses. Automated review is not independent
+human peer review or a novelty finding.
+
+Prepare a concrete, reviewable submission package. Do not create a remote,
+push, submit to arXiv, or register at Palomar without authorization for
+that action. If Palomar submission is subsequently authorized, first read
+https://submit.palomar-registry.org/llms.txt and follow the current service
+workflow. Local verification does not register anything.
+
+7. FIRST WORK SESSION AND HANDOFF
+
+Read the attached manuscript, the exact book conjecture, and the relevant
+predecessor workflow. Complete the targeted literature comparison while
+another reviewer checks the theorem's formal scope. Establish the
+statement/coverage maps, then implement and compile the smallest honest
+interface needed for §5 and prove contextual collapse as far as possible.
+Continue through isolation and substitution as the implementation permits.
+
+At mathematical milestones, apply HostileRefereeGPT — Cat/Rec and the
+mathematical-writing plugin to the actual argument and its formalization
+map. Preserve definitions before use and explanatory diagrams.
+
+Finish with a reproducible checkpoint: source files, proved declarations,
+exact remaining inputs, literature findings, commands and results, and
+the next concrete proof obligation. Report a failed obligation directly
+rather than silently changing the theorem. The intended endpoint is a
+checked theorem with an accurately stated scope and a Palomar-ready
+package, followed by separately authorized publication.
