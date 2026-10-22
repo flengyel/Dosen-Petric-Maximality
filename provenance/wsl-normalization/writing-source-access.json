@@ -1,0 +1,29 @@
+{
+  "status": "provisional editorial review; official governing writing source unavailable this session",
+  "source": "Knuth, Larrabee, Roberts, Mathematical Writing, Stanford report STAN-CS-88-1193",
+  "attempts": [
+    {
+      "url": "https://www-cs-faculty.stanford.edu/~knuth/papers/cs1193.pdf",
+      "method": "web open",
+      "outcome": "timeout"
+    },
+    {
+      "url": "https://www-cs-faculty.stanford.edu/~knuth/papers/cs1193.pdf",
+      "method": "escalated curl --fail --location --max-time 25",
+      "exit_status": 7,
+      "outcome": "could not connect"
+    },
+    {
+      "url": "https://i.stanford.edu/pub/cstr/reports/cs/tr/88/1193/CS-TR-88-1193.pdf",
+      "method": "web open",
+      "outcome": "timeout"
+    },
+    {
+      "url": "https://i.stanford.edu/pub/cstr/reports/cs/tr/88/1193/CS-TR-88-1193.pdf",
+      "method": "escalated curl --fail --location --max-time 25",
+      "exit_status": 7,
+      "outcome": "could not connect to i.stanford.edu port 443"
+    }
+  ],
+  "provenance": "Recorded tool outcomes; earlier presentation review source consultation is historical and is not represented as a fresh successful retrieval."
+}

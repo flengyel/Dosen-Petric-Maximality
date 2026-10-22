@@ -1,0 +1,58 @@
+/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/contextual-collapse/checks/direct-axiom.lean:12:0: error: Unpermitted axiom DosenPetric.AuditNegative.direct in DosenPetric.AuditNegative.direct
+'DosenPetric.ZeroIdentity.zeroOf_independent' does not depend on any axioms
+'DosenPetric.ZeroIdentity.precompose' does not depend on any axioms
+'DosenPetric.Formula.contract_expand' does not depend on any axioms
+'DosenPetric.Formula.expand_contract' does not depend on any axioms
+'DosenPetric.Relations.hRel_eq_fold' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.hRel_swap' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.second_block' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.first_injection' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.projections_distinct' does not depend on any axioms
+'DosenPetric.OccurrenceInterpretation.fold_independent' depends on axioms: [propext, Quot.sound]
+'DosenPetric.OccurrenceInterpretation.fold_swap' depends on axioms: [propext, Quot.sound]
+'DosenPetric.OccurrenceInterpretation.first_injection' depends on axioms: [propext, Quot.sound]
+'DosenPetric.OccurrenceInterpretation.second_block' depends on axioms: [propext, Quot.sound]
+'DosenPetric.ContextualCollapse.total' depends on axioms: [propext, Quot.sound]
+'DosenPetric.GeneratedModel.interpretation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.GeneratedModel.nonthin' depends on axioms: [propext, Quot.sound]
+'DosenPetric.GeneratedModel.empty_hom' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Isolation.normalized_literal_context' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.ContextualCollapse.context_retract' does not depend on any axioms
+'DosenPetric.ContextualCollapse.all_contexts' does not depend on any axioms
+'DosenPetric.relative_maximality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Presentation.category' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.operations' depends on axioms: [Quot.sound]
+'DosenPetric.DiagonalData.diag_projections' does not depend on any axioms
+'DosenPetric.Presentation.zeroConstruction_eq' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.zeroIdentity' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.Equation.subst' does not depend on any axioms
+'DosenPetric.Presentation.Derives.subst' does not depend on any axioms
+'DosenPetric.Presentation.substitution' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.doubleNegation' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.Equation.relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.Derives.relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.occurrenceMap' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.occurrence_pair' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.occurrence_zero' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.nonthin' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.empty_hom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Presentation.zeroConstruction_structural' depends on axioms: [Quot.sound]
+'DosenPetric.Literal.flip_flip' does not depend on any axioms
+'DosenPetric.Formula.signedLabel_letter' does not depend on any axioms
+'DosenPetric.NormalForm.signedLabel_eq_literalAt' does not depend on any axioms
+'DosenPetric.Presentation.NormalComparison.inverse_comp' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.NormalComparison.trans' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NormalComparison.conj' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NormalComparison.deMorganConj' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.comparison' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.normalization' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.forward_backward' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.backward_forward' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.forward_graph' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.backward_graph' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.literal_toOcc' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.polarity_toOcc' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.repeated_negative_tags' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.transport_apply' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.transport_recover' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.transport_injective' depends on axioms: [propext, Quot.sound]

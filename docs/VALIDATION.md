@@ -1,3 +1,48 @@
+# Normalization validation (current checkpoint)
+
+The clean starting checkpoint was `a07b3982cd50653c07309daeaa098950f63337ac`
+on main. SSH fetch left local and remote main equal. The cached baseline
+strict build/audit passed: 23 source files and 1457 project declarations.
+Completed conditional and presentation constructions were reused unchanged.
+
+The integrated working-source verification finished at
+2026-10-22T14:53:31.735167+00:00: `bash scripts/verify.sh` exited 0 with
+**25 Lean source files and 1601 project declarations**. The permitted axioms
+remain `propext`, `Quot.sound`, `Classical.choice`; the selected new normalization
+declarations use only the first two. Pinned Lean 4.35.0, Init-only production
+closure, and the dependency-free manifest are unchanged. One build/audit ran
+at a time, with LEAN_NUM_THREADS=1; no clean rebuild of old constructions ran.
+
+Both existing boundary scripts exited 0. All three axiom-injection controls
+and both presentation controls rejected with exit 1 and expected diagnostics.
+Public import closure passed. Manuscript v4 `sha256sum -c SHA256SUMS` and
+`git diff --check` exited 0. Detailed command/result records, source inventory,
+raw evidence, and hashes are in `provenance/wsl-normalization/` and
+`.codex-work/normalization/`. The strict log's HEAD is the baseline; its dirty
+working source is identified by the retained per-file hashes. Post-commit
+verification, SSH ref agreement, and report delivery receipts are separate
+runtime records; the completion response gives the integration commit.
+
+`Presentation.normalization P` now supplies object normal forms, actual
+comparison inverses, inverse tagged coordinates, signed literal correspondence,
+and transport formulas for arbitrary P. Global signed-label preservation,
+Boolean Coherence, derived arrow negation/naturality, congruence restriction,
+remaining substitution-schema/Appendix A laws, and the intended maximality/model
+corollary remain open. No milestone is promoted to complete.
+
+The author-side hostile-referee audit addresses the actual new construction
+and map. The writing report is explicitly provisional because official
+governing-source requests failed; no source-grounded final writing review is
+claimed. No independent kernel replay, Challenge/Solution or Comparator run,
+independent source audit, official preflight, service verification, publication,
+novelty review, or new manuscript compilation ran. Visibility/license and v4
+text/diagrams/references were not changed. See
+[the normalization report](NORMALIZATION_REPORT.md) and its linked reviews.
+
+---
+
+## Historical presentation-bridge validation (unchanged evidence)
+
 # Presentation-bridge validation
 
 The actual source-presentation bridge was verified locally in WSL2 on

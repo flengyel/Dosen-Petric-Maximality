@@ -1,0 +1,75 @@
+2026-10-22T14:44:08Z
+a07b3982cd50653c07309daeaa098950f63337ac
+6e9e750d2f79f7d48d335a109a83195eba44a9cf60a5f83fa7cc70bc7453a91a Checks/Axioms.lean
+c74b0cfe13f6a46c4ad3035e03b1cae2ae0642f50b8667630b59950e5c4d6fcd DosenPetric/CartesianFromDiagonal.lean
+71f159e1eabc877db6b68c203fd039e6c06185b9702a7ddfdca798f13e3851ff DosenPetric/Category.lean
+8427737a19979cad8f6988ea4323982f55602f7ba71d8da9358fc9cf689ebf09 DosenPetric/Collapse.lean
+b76044a71a61bcf7b89e70d707e777ae44b71811570bf6148c696da1c4cdfca4 DosenPetric/Formula.lean
+3057628558ea7a69ec157907ab2675339c59d3accedff9b9da316f84066beaf4 DosenPetric/GeneratedModel.lean
+a870a52179d5a770bd3845a55d26c6d7a493ce5cc6bdeb00320aca99ef95b243 DosenPetric/Isolation.lean
+11f94e20b07e148df206dc93246475560ca41df3ea20735a12c4fdabbf3932b8 DosenPetric/NormalForm.lean
+41d71d55b3a6b436c61725e2b59ba899a3d838030e38ff94c02536779d7162f1 DosenPetric/OccurrenceLaws.lean
+1cc0242b612c689a360d88218d80400029353a120edfda56b84c7cdc5f69828c DosenPetric/PresentationCategory.lean
+afa7e5f88342413807a59b1cb9d1332561a66322b9791681895b954edc4c2c41 DosenPetric/PresentationConsistency.lean
+316a6bd90e6bd2a8c287731117c09ff01f15ee3b0239e1fab6931f8f81c305ff DosenPetric/PresentationEquations.lean
+32875d0b91d5dc7290aa0a2b87ff024d7cc1923d71ba76d31d677577819c6c0c DosenPetric/PresentationInstances.lean
+ad82c75bea9d78a6b00f0206b9a776b057e6eff3816b14a7154d52fb0518d467 DosenPetric/PresentationOccurrenceMap.lean
+21b0b40dba54aafc968f5b9fad57514b95e1dfe3fccd428dad06b937da1a369c DosenPetric/PresentationOccurrences.lean
+00cbd1e86a80ea3773c1fb6ee2ddc8e52bd38062564cb7d1911de7b8b8555a22 DosenPetric/PresentationStructure.lean
+c16d49e33c2798ddee2094b0c4738a286df0400556a0aaf19b38da864c261d4a DosenPetric/PresentationSubstitution.lean
+66d64bbcd341cd8548d74a7557ca061187b9a43e874f125e6587e6e3bb02bdb0 DosenPetric/PresentationSyntax.lean
+72225bf8d7bd4a496054d18e5f356822718d836a73906b988643f7912844857c DosenPetric/PresentationZero.lean
+1dfb14bba0f399144a703ac71e4b7ccad2b16566b66a36e30097320b7b2e98cf DosenPetric/Relations.lean
+82df580ef37d2ee3a67ec395abc999e18ac363b24049904f8cca2169c3018050 DosenPetric/Structure.lean
+b3b46aa06302bf84da6aa0eed9d48c0319591e947aa45d39af8e040755b4f821 DosenPetric/Substitution.lean
+a77edea56b3e039e1de8cb3e90146e3d343eae6cd6137ec08408df72445e32c8 DosenPetric.lean
+PASS: 23 source files; no proof holes or custom axiom declarations
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)
+Build completed successfully (24 jobs).
+{"version": "1.3.0",
+ "packagesDir": ".lake/packages",
+ "packages": [],
+ "name": "dosen_petric_maximality",
+ "lakeDir": ".lake",
+ "fixedToolchain": false}
+PASS: transitive axiom checks for 1457 project declarations
+'DosenPetric.ZeroIdentity.zeroOf_independent' does not depend on any axioms
+'DosenPetric.ZeroIdentity.precompose' does not depend on any axioms
+'DosenPetric.Formula.contract_expand' does not depend on any axioms
+'DosenPetric.Formula.expand_contract' does not depend on any axioms
+'DosenPetric.Relations.hRel_eq_fold' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.hRel_swap' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.second_block' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.first_injection' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.projections_distinct' does not depend on any axioms
+'DosenPetric.OccurrenceInterpretation.fold_independent' depends on axioms: [propext, Quot.sound]
+'DosenPetric.OccurrenceInterpretation.fold_swap' depends on axioms: [propext, Quot.sound]
+'DosenPetric.OccurrenceInterpretation.first_injection' depends on axioms: [propext, Quot.sound]
+'DosenPetric.OccurrenceInterpretation.second_block' depends on axioms: [propext, Quot.sound]
+'DosenPetric.ContextualCollapse.total' depends on axioms: [propext, Quot.sound]
+'DosenPetric.GeneratedModel.interpretation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.GeneratedModel.nonthin' depends on axioms: [propext, Quot.sound]
+'DosenPetric.GeneratedModel.empty_hom' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Isolation.normalized_literal_context' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.ContextualCollapse.context_retract' does not depend on any axioms
+'DosenPetric.ContextualCollapse.all_contexts' does not depend on any axioms
+'DosenPetric.relative_maximality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Presentation.category' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.operations' depends on axioms: [Quot.sound]
+'DosenPetric.DiagonalData.diag_projections' does not depend on any axioms
+'DosenPetric.Presentation.zeroConstruction_eq' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.zeroIdentity' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.Equation.subst' does not depend on any axioms
+'DosenPetric.Presentation.Derives.subst' does not depend on any axioms
+'DosenPetric.Presentation.substitution' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.doubleNegation' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.Equation.relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.Derives.relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.occurrenceMap' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.occurrence_pair' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.occurrence_zero' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.nonthin' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.empty_hom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Presentation.zeroConstruction_structural' depends on axioms: [Quot.sound]
+PASS: build and transitive axiom audit. Palomar verification has not run.

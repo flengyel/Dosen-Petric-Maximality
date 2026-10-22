@@ -1,0 +1,29 @@
+[
+  {
+    "name": "environment",
+    "command": [
+      "uname",
+      "-a"
+    ],
+    "exit_status": 0,
+    "sha256": "34e3970ec44125a14237ebecedcc552983b2d4c8032e1e63debccd6fbbec0513"
+  },
+  {
+    "name": "memory",
+    "command": [
+      "free",
+      "-h"
+    ],
+    "exit_status": 0,
+    "sha256": "76b1c88bd32c2c4b82f2569457eb79152e7502e5a5c0c14cfc0b7d232a016d82"
+  },
+  {
+    "name": "baseline",
+    "command": [
+      "bash",
+      "scripts/verify.sh"
+    ],
+    "exit_status": 0,
+    "sha256": "53e0747816e0fb66172bb6d09313a00751b84a12c0128a8f4e33788643918da6"
+  }
+]

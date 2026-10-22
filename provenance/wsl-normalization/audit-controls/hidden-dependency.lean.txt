@@ -1,0 +1,87 @@
+module
+
+import DosenPetric
+import Lean
+
+open Lean Elab Command
+
+set_option autoImplicit false
+
+axiom AuditNegative.external : False
+public theorem DosenPetric.AuditNegative.hidden : False := AuditNegative.external
+
+run_elab do
+  let env ← getEnv
+  let mut count : Nat := 0
+  for (name, _) in env.constants do
+    if (`DosenPetric).isPrefixOf (privateToUserName name) then
+      -- Imported theorems can appear as axiomInfo in the module interface.
+      -- collectAxioms uses the compiler's exported dependency data to distinguish
+      -- those signatures from actual axioms; inspect every declaration kind.
+      let axioms ← collectAxioms name
+      for a in axioms do
+        unless #[`propext, `Quot.sound, `Classical.choice].contains a do
+          throwError "Unpermitted axiom {a} in {name}"
+      count := count + 1
+  if count == 0 then
+    throwError "No project declarations were audited"
+  logInfo m!"PASS: transitive axiom checks for {count} project declarations"
+
+#print axioms DosenPetric.ZeroIdentity.zeroOf_independent
+#print axioms DosenPetric.ZeroIdentity.precompose
+#print axioms DosenPetric.Formula.contract_expand
+#print axioms DosenPetric.Formula.expand_contract
+#print axioms DosenPetric.Relations.hRel_eq_fold
+#print axioms DosenPetric.Relations.hRel_swap
+#print axioms DosenPetric.Relations.second_block
+#print axioms DosenPetric.Relations.first_injection
+#print axioms DosenPetric.Relations.projections_distinct
+
+#print axioms DosenPetric.OccurrenceInterpretation.fold_independent
+#print axioms DosenPetric.OccurrenceInterpretation.fold_swap
+#print axioms DosenPetric.OccurrenceInterpretation.first_injection
+#print axioms DosenPetric.OccurrenceInterpretation.second_block
+#print axioms DosenPetric.ContextualCollapse.total
+#print axioms DosenPetric.GeneratedModel.interpretation
+#print axioms DosenPetric.GeneratedModel.nonthin
+#print axioms DosenPetric.GeneratedModel.empty_hom
+#print axioms DosenPetric.Isolation.normalized_literal_context
+#print axioms DosenPetric.ContextualCollapse.context_retract
+#print axioms DosenPetric.ContextualCollapse.all_contexts
+#print axioms DosenPetric.relative_maximality
+#print axioms DosenPetric.Presentation.category
+#print axioms DosenPetric.Presentation.operations
+#print axioms DosenPetric.DiagonalData.diag_projections
+#print axioms DosenPetric.Presentation.zeroConstruction_eq
+#print axioms DosenPetric.Presentation.zeroIdentity
+#print axioms DosenPetric.Presentation.Equation.subst
+#print axioms DosenPetric.Presentation.Derives.subst
+#print axioms DosenPetric.Presentation.substitution
+#print axioms DosenPetric.Presentation.doubleNegation
+#print axioms DosenPetric.Presentation.Equation.relation
+#print axioms DosenPetric.Presentation.Derives.relation
+#print axioms DosenPetric.Presentation.occurrenceMap
+#print axioms DosenPetric.Presentation.occurrence_pair
+#print axioms DosenPetric.Presentation.occurrence_zero
+#print axioms DosenPetric.Presentation.nonthin
+#print axioms DosenPetric.Presentation.empty_hom
+#print axioms DosenPetric.Presentation.zeroConstruction_structural
+#print axioms DosenPetric.Literal.flip_flip
+#print axioms DosenPetric.Formula.signedLabel_letter
+#print axioms DosenPetric.NormalForm.signedLabel_eq_literalAt
+#print axioms DosenPetric.Presentation.NormalComparison.inverse_comp
+#print axioms DosenPetric.Presentation.NormalComparison.trans
+#print axioms DosenPetric.Presentation.NormalComparison.conj
+#print axioms DosenPetric.Presentation.NormalComparison.deMorganConj
+#print axioms DosenPetric.Presentation.NegationNormalization.comparison
+#print axioms DosenPetric.Presentation.normalization
+#print axioms DosenPetric.Presentation.NegationNormalization.forward_backward
+#print axioms DosenPetric.Presentation.NegationNormalization.backward_forward
+#print axioms DosenPetric.Presentation.NegationNormalization.forward_graph
+#print axioms DosenPetric.Presentation.NegationNormalization.backward_graph
+#print axioms DosenPetric.Presentation.NegationNormalization.literal_toOcc
+#print axioms DosenPetric.Presentation.NegationNormalization.polarity_toOcc
+#print axioms DosenPetric.Presentation.NegationNormalization.repeated_negative_tags
+#print axioms DosenPetric.Presentation.NegationNormalization.transport_apply
+#print axioms DosenPetric.Presentation.NegationNormalization.transport_recover
+#print axioms DosenPetric.Presentation.NegationNormalization.transport_injective

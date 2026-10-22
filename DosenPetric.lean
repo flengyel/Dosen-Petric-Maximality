@@ -21,3 +21,5 @@ public import DosenPetric.PresentationInstances
 public import DosenPetric.PresentationOccurrences
 public import DosenPetric.PresentationConsistency
 public import DosenPetric.PresentationOccurrenceMap
+public import DosenPetric.NormalizationComparison
+public import DosenPetric.PresentationNormalization

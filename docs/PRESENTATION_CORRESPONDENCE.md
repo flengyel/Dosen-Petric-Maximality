@@ -180,8 +180,51 @@ the category laws from `Laws`. `operations` derives the entire `Structure`
 interface from the published equations, using the generic diagonal argument
 in `CartesianFromDiagonal`. `zeroIdentity` uses the constructed zero.
 
-The final presentation report records exactly which occurrence equations
-and operation preservation laws compile, and keeps well-definedness distinct
-from faithfulness. No Lean proof of Boolean Coherence (§14.2, conclusion
-p.321), nor the full normalization/occurrence correspondence for manuscript
-§3, is supplied by this source table.
+The historical presentation report records the occurrence equations and
+operation-preservation laws, keeping well-definedness distinct from
+faithfulness. The normalization construction below now supplies manuscript
+§3 object normal forms, both inverse comparisons, and their occurrence
+correspondence. Boolean Coherence (§14.2, conclusion p.321) remains open.
+
+
+## Actual normalization comparisons (current checkpoint)
+
+`Presentation.normalization P` instantiates the existing `Normalization` record
+for every `P : Type u`. It constructs the object assignment and comparison
+isomorphisms on printed pp.313–314. It does not claim the complete source
+functor F, its naturality, the p.314 Auxiliary Lemma, or the equivalence.
+The following are derived arrows, not additional primitive operations or
+new generating equations. `NN` denotes `Presentation.NegationNormalization`
+and `NC` denotes `Presentation.NormalComparison` in this table.
+
+| Source anchor / zero-based PDF page | Typed comparison and available equations | Lean construction / status |
+| --- | --- | --- |
+| §14.1 p.310 / 321, n displays | n→ : ¬¬A → A and reverse n←; both inverse displays | `NC.doubleNeg`, using existing `dnOut/dnIn` and `Laws.dnOut_in/out`. |
+| p.310 / 321, r∧ displays | r∧→ : ¬(A∧B) → ¬A∨¬B and reverse; both inverse displays | `NC.deMorganConj`, using `Laws.dmConjOut_in/out`. |
+| p.310 / 321, r∨ displays | r∨→ : ¬(A∨B) → ¬A∧¬B and reverse; both inverse displays | `NC.deMorganDisj`, using `Laws.dmDisjOut_in/out`. |
+| p.312 / 323, rho displays | ρ∧→ : ¬top → bot and ρ∨→ : ¬bot → top, their reverses, both inverse displays | `NC.negTop/negBot`, using `Laws.negTopOut_in/out` and `negBotOut_in/out`. |
+| p.313 / 324, F on objects | Negation only at signed variable leaves; constants retained/swapped as appropriate | `NN.form A false` normalizes A, `form A true` normalizes ¬A; structural recursion on A. |
+| p.313 / 324, i_A and i_A^-1 clauses | Variable and negative variable identities; connective tensors; i_¬¬A = i_A ∘ n→; negative connective via r→ then tensor negative comparisons; inverses reverse the order | `NN.comparison`, with `NC.refl/trans/conj/disj`; arrows and inverse proofs are built simultaneously. |
+| p.314 / 325, constant clauses and following identities | Constants use identities, negative constants use ρ→/ρ←; i_A^-1 ∘ i_A = 1_A and i_A ∘ i_A^-1 = 1_FA | `NN.forward/backward`, `forward_backward/backward_forward`, `Presentation.normalization`. Inverses use only existing category, tensor, and comparison equations. |
+| p.314 / 325, G clauses | G negA = GA and comparison images are identity relations | `NN.toOcc/fromOcc`, inverse coordinate laws, `forward_graph/backward_graph`. In tagged coordinates tensors use Sum.map, so distinct occurrences stay distinct. |
+| Manuscript §3, relation transport | Normal-form transport uses backward_A, f, forward_B | `NN.transport_relation/transport_apply/transport_coordinates`; categorical recovery/injectivity reuse the old `Normalization` lemmas. |
+
+For each Out : X → Y and In : Y → X above, the source's unnumbered displays
+are In ∘ Out = 1_X and Out ∘ In = 1_Y. The Lean equations are
+`comp Out In = id X` and `comp In Out = id Y`. No extra equation labels are
+invented. The inverse proofs do not compare relations to conclude equality.
+
+`Formula.signedLabel` records the letter and parity along a tagged occurrence
+path; it agrees with `NormalForm.literalAt` on normal forms. The coordinate
+maps preserve this full literal in both directions. Constants have Empty
+occurrences, handled by empty elimination; `NN.no_occ` covers any empty source
+occurrence type, and `repeated_negative_tags` checks distinct negative repeats.
+This comparison statement is not signed-label preservation along every arrow.
+
+The n/r naturality consequences discussed on pp.311/316, rho naturality,
+derived contravariant arrow negation, and the p.314 Auxiliary Lemma/equivalence
+remain unproved. No such consequence has been added to `Equation` to complete
+this construction. The raw occurrence preservation proof and its quotient
+well-definedness were reused unchanged. Full Boolean Coherence remains open.
+See [the normalization report](NORMALIZATION_REPORT.md) for exact hypotheses,
+declarations, verification, evidence hashes, and both review boundaries.

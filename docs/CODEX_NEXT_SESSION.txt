@@ -1,63 +1,64 @@
 Continue the Došen–Petrić maximality formalization in WSL2.
 
 Repository: /home/flengyel/src/Dosen-Petric-Maximality, private, main.
-Read AGENTS.md, docs/PRESENTATION_BRIDGE_REPORT.md, both PRESENTATION_BRIDGE
-reviews under docs/reviews/, docs/PRESENTATION_CORRESPONDENCE.md, the statement
-and coverage maps, VALIDATION, PALOMAR_REQUIREMENTS, and unchanged manuscript v4.
-Inspect Git status and fetch the SSH origin before editing. Preserve unrelated
-work and other checkouts. This continuation document does not itself authorize
-a future commit, push, visibility change, or publication; follow task-specific
-authorization. Copy every finalized report to /mnt/c/Users/fleng/Downloads and
-verify it against the retained repository copy, as AGENTS.md requires.
+Read AGENTS.md, docs/NORMALIZATION_REPORT.md and its two NORMALIZATION reviews,
+docs/PRESENTATION_CORRESPONDENCE.md, the current statement and coverage maps,
+VALIDATION, PALOMAR_REQUIREMENTS, and manuscript v4. The presentation-bridge
+report/reviews remain useful historical context. Inspect status and fetch the
+SSH origin before editing. Preserve unrelated work and other checkouts.
+This file does not authorize future commit/push/publication actions; follow
+the new task's authorization. Copy every finalized report to
+/mnt/c/Users/fleng/Downloads and verify against its retained repository copy.
 
-The conditional development at 73003578997d510d0a3ddfabce59366969bcdb8d remains
-proved: collapse, isolation, substitution transport, and relative maximality.
-Do not restart those proofs. The report-delivery commit was d7162e7945c98288fe3640506b8e1471c63150ef.
-
-NEW SOURCE-PRESENTATION CHECKPOINT
-- PresentationSyntax/Equations: source C(B), generated equality, exact September
-  2007 PDF digest and inherited equation index in PRESENTATION_CORRESPONDENCE.
-- PresentationCategory: syntactic quotient, descended comp/tensors and Laws.
-  Equality is Derives, never equality of interpreted relations.
-- CartesianFromDiagonal/PresentationStructure: derive universal properties
-  from actual source laws; product eta is not added as a generator.
-- PresentationZero: prove the displayed (0ηε) construction equals primitive zero,
-  then instantiate ZeroIdentity using the constructed zero.
-- PresentationOccurrences/PresentationOccurrenceMap: raw relation assignment,
-  preservation of all defining schemas, derivations, quotient descent, and
-  all §5 operation images. Well-definedness is proved; faithfulness is NOT.
-- PresentationConsistency: raw terms preserve a genuine classical propositional
-  truth valuation; Hom(top,bot) is empty. nonthin p uses unequal tagged projection
-  relations in the source quotient and needs no faithfulness premise.
-- PresentationSubstitution/PresentationInstances: whole-arrow/endpoints
-  substitution, source (su) admissibility, quotient substitution, the existing
-  Substitution instance, and both double-negation inverse laws.
+COMPLETED CHECKPOINTS — DO NOT RESTART
+- Conditional collapse, isolation, substitution transport, relative maximality:
+  73003578997d510d0a3ddfabce59366969bcdb8d.
+- Report delivery procedure: d7162e7945c98288fe3640506b8e1471c63150ef.
+- Published-equation presentation category, structural/constructed-zero bridge,
+  substitution, double negation, occurrence well-definedness, nonthinness and
+  empty Hom(top,bot): a07b3982cd50653c07309daeaa098950f63337ac.
+- NormalizationComparison / PresentationNormalization now construct
+  Presentation.normalization P for every P with both inverse laws, inverse
+  tagged occurrence coordinates, both graph laws, literal/label/polarity
+  correspondence, Empty cases and transport formulas. Source pp.310,312–314;
+  exact digest and coordinates in PRESENTATION_CORRESPONDENCE. Simultaneous
+  sign recursion uses no arrow negation, naturality, or coherence.
 
 NEXT CONCRETE PROOF TASK
-Construct the negation normalizer of §14.1 using n-r/rho: signed normal forms,
-forward/backward comparison arrows for every formula, both inverse equations,
-and their occurrence correspondence. Use mutual positive/negative recursion
-or an explicitly typed equivalent. Do not assume coherence to obtain inverses
-already derivable from the source isomorphism laws.
+Prove signed-label preservation along every actual raw term:
+  for t : Presentation.Term P A B, x : A.Occ, y : B.Occ,
+  t.relation x y -> A.signedLabel x = B.signedLabel y.
+Use the primitive grammar and explicit tagged relation calculations. Handle
+empty relation constructors and both constants explicitly. Descend to arbitrary
+quotient arrows through occurrenceMap; specialize to normal forms using
+NormalForm.signedLabel_eq_literalAt. This property does not require faithfulness.
+State it separately: the old SignedLabelPreservation definition takes an
+OccurrenceInterpretation, whose faithful field is not yet constructed.
+Do not confuse normalizer-coordinate correspondence with this global invariant.
 
 SEPARATE OPEN OBLIGATIONS
-Boolean Coherence for the actual equation quotient (book p.321, using inherited
-§§11.5,12.5 and pp.318–321); complete OccurrenceInterpretation; signed-label
-preservation; derived contravariant negation and its laws; restriction of full
-proof congruences and separate substitution closure; substitution-schema
-identity/composition and Appendix A profiles/ordinals/renaming; intended
+Boolean Coherence for the actual equation quotient (book p.321, through
+§§11.5,12.5 and pp.318–321); complete OccurrenceInterpretation; derived
+contravariant arrow negation, descent, functor/naturality/dinaturality laws;
+p.314 Auxiliary Lemma and equivalence; restriction of full proof congruences
+and separate substitution closure; substitution-schema id/comp with endpoint
+casts; Appendix A profiles/ordinals/renaming/block correspondence; intended
 relative_maximality instance and every-interpretation model corollary.
-The generated fragment continues to check every §5 field, but supplies none
-of these missing source bridges. No milestone is promoted to completion.
+The generated fragment still checks all §5 fields but identifies none of
+these missing actual-presentation bridges. Milestones I–III stay separate.
 
-VERIFICATION
-Run bash scripts/verify.sh for the checked-out source; pinned Lean 4.35.0,
-Init-only production closure, no external dependencies. Keep one build/replay
-at a time and logs/exit codes in .codex-work. The exhaustive occurrence-schema
-proof may take several minutes on a cold build; monitor memory before raising
-resource limits. Current source file limits and strict warnings remain enforced.
-Run scripts/check-audit-boundaries.py and scripts/check-presentation-boundaries.py;
-all five negative controls must reject. Keep local import/axiom checks separate
-from independent Challenge/Solution comparison, kernels, official preflight,
-service review, and publication, which have not run. Apply hostile-referee and
-mathematical-writing reviews to any new mathematical construction and source map.
+VERIFICATION AND REVIEW
+Pinned Lean 4.35.0, Init-only production closure, no new dependencies.
+Current strict build/audit: 25 source files, 1601 project declarations; only
+propext, Quot.sound, Classical.choice permitted. Both boundary scripts passed
+with all five negative controls rejecting. Manuscript hashes are unchanged.
+Evidence: provenance/wsl-normalization/ and .codex-work/normalization/.
+Run bash scripts/verify.sh and both existing boundary scripts after the next
+change, one build/replay at a time, retaining logs and exit codes. Inspect WSL
+memory before heavy cold jobs; do not clean/rebuild completed proofs needlessly.
+Keep local checks distinct from independent kernels, Comparator, official
+preflight/service reviews, and publication, which have not run.
+The normalization hostile audit is author-side. The writing review is
+provisional: retrieve the official Knuth–Larrabee–Roberts source and complete
+the source-grounded pass when available. Never report unavailable review as done.
+Keep all review commentary outside the unchanged manuscript v4.
