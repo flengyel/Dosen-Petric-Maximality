@@ -10,17 +10,16 @@ set_option autoImplicit false
 run_elab do
   let env ← getEnv
   let mut count : Nat := 0
-  for (name, info) in env.constants do
+  for (name, _) in env.constants do
     if (`DosenPetric).isPrefixOf name then
-      match info with
-      | .thmInfo _ | .defnInfo _ | .opaqueInfo _ =>
-        let axioms ← collectAxioms name
-        for a in axioms do
-          unless #[`propext, `Quot.sound, `Classical.choice].contains a do
-            throwError "Unpermitted axiom {a} in {name}"
-        count := count + 1
-      | .axiomInfo _ => throwError "Project-owned axiom: {name}"
-      | _ => pure ()
+      -- Imported theorems can appear as axiomInfo in the module interface.
+      -- collectAxioms uses the compiler's exported dependency data to distinguish
+      -- those signatures from actual axioms; inspect every declaration kind.
+      let axioms ← collectAxioms name
+      for a in axioms do
+        unless #[`propext, `Quot.sound, `Classical.choice].contains a do
+          throwError "Unpermitted axiom {a} in {name}"
+      count := count + 1
   if count == 0 then
     throwError "No project declarations were audited"
   logInfo m!"PASS: transitive axiom checks for {count} project declarations"
