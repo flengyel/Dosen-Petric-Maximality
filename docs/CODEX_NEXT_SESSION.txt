@@ -1,66 +1,68 @@
 Continue the Došen–Petrić maximality formalization in WSL2.
 
 Repository: /home/flengyel/src/Dosen-Petric-Maximality, private, main.
-Read AGENTS.md, docs/SIGNED_LABEL_REPORT.md and its two SIGNED_LABEL reviews,
-the current correspondence, statement and coverage maps, VALIDATION,
-PALOMAR_REQUIREMENTS, and unchanged manuscript v4. Earlier normalization and
-presentation reports remain historical context. Inspect status and fetch SSH
-origin first; preserve unrelated work and all other checkouts. Follow the new
-task's commit/push authorization. Copy every finalized report to Downloads
-and verify it against the retained repository copy as AGENTS.md requires.
+Read AGENTS.md, SIGNED_LITERAL_REDUCTION_REPORT and both reduction reviews,
+PRESENTATION_CORRESPONDENCE, current statement/coverage maps, VALIDATION,
+PALOMAR_REQUIREMENTS and unchanged manuscript v4. Inspect status and fetch SSH
+origin; preserve unrelated work and other checkouts. Follow new task-specific
+commit/push authorization. Deliver every finalized report to Downloads and
+verify against its retained repository copy, with conflict-preserving names.
 
-COMPLETED — DO NOT RESTART
-- Conditional collapse/isolation/substitution transport/relative maximality:
-  73003578997d510d0a3ddfabce59366969bcdb8d.
-- Published syntax/equations/category, structural/constructed-zero bridge,
-  occurrence well-definedness, substitution, double negation, consistency:
+COMPLETED — REUSE
+- Conditional development: 73003578997d510d0a3ddfabce59366969bcdb8d.
+- Full presentation/structure/zero/substitution/double-negation/occurrences:
   a07b3982cd50653c07309daeaa098950f63337ac.
-- Normalization and inverse signed occurrence coordinates/transport:
-  45a34c8d939aa1d931a8946de209721991750921.
-- PresentationSignedLabels now proves Term.relation_signedLabel for all 31
-  primitive schemas, occurrence_signedLabel for every quotient arrow, full
-  normal-form literal equality, letter/polarity consequences, opposite-sign
-  exclusions, and normalized transport. Arbitrary P; no inhabitant, decidable
-  equality or coherence premise. diag_copies/codiag_merges prove tags remain
-  distinct while copying/merging is possible. The old SignedLabelPreservation
-  definition is unchanged; no faithful interpretation instance exists yet.
+- Normalization and signed coordinates: 45a34c8d939aa1d931a8946de209721991750921.
+- Global signed-label invariant: c1004b09a53f56a048c813adba053739fb0d4a97.
+- Current reduction: ReducedSyntax/Equations/Category give C on NormalForm P,
+  21 constructor schemas and exactly 61 inherited positive equation schemas.
+  Atomic eta/epsilon only; no n/r/rho or arbitrary eta/epsilon constructor.
+  The quotient is syntactic Derives, never a relation or inclusion kernel.
+- ReducedWitnesses gives duality/involution, normalizer compatibility, correctly
+  typed mixedDisj/mixedConj and etaNF/epsilonNF. Compatibility uses zero-based
+  top/bottom uniqueness, never faithfulness.
+- ReductionTransport proves normal-form object fixedness and casted identity
+  comparisons. SignedLiteralReduction.red_sound covers all 31 full constructors.
+  representation proves every full arrow between normal-form formulas has a
+  reduced quotient representative whose inclusion equals it. No quotient-level
+  red function or equality reflection is claimed.
+- ReducedOccurrences gives independent raw tagged relations, quotient descent,
+  inclusion and coordinate compatibility, and conditional transfers from
+  Reduced.Faithful P to normal-form/global Presentation faithfulness. The
+  premise remains unproved. Arbitrary P throughout; no inhabitant or DecidableEq.
 
-NEXT CONCRETE PROOF ENDPOINT
-Normal-form faithfulness in the actual presentation:
-  for A,B : NormalForm P and f,g : Hom A.formula B.formula,
-  occurrenceMap f = occurrenceMap g -> f = g.
-Start constructing the source §14.2 reduction to the signed-literal presentation
-(printed pp.318–321), with typed arrow maps and occurrence compatibility.
-Keep every unproved reduction identity explicit. Existing normalization
-transport/recovery provides the route to global coherence after this endpoint.
-The label invariant alone supplies neither faithfulness nor that reduction.
-Never define equality as equality of occurrence relations and claim coherence.
+NEXT CONCRETE PROOF TASK
+Define typed one-hole normal-form contexts and the g-conjunction/g-disjunction
+maps on printed pp.318–319. Prove the g-eta/g-epsilon contextual factorization
+identities on pp.319–320 in Reduced.Hom. Check their exact source types and
+all constant/negative-literal cases. Track the source use of Distributive
+Dicartesian Coherence (§11.5, p.319 induction) and Zero-Identity Distributive
+Dicartesian Coherence (§12.5, p.321) as separate unproved Lean obligations.
+The eventual endpoint is Reduced.Faithful P, not another interpretation kernel.
+Once it is proved, the compiled transfer lemmas give full coherence.
 
-OTHER OPEN OBLIGATIONS
-Complete faithful OccurrenceInterpretation; derived contravariant arrow negation,
-descent and functor/naturality/dinaturality laws; p.314 Auxiliary Lemma/equivalence;
-restriction of all full proof congruences and separate substitution closure;
-substitution-schema id/comp with endpoint casts; Appendix A profiles/ordinals/
-renaming/block correspondence; intended maximality and every-interpretation
-model corollary. The generated fragment checks the §5 interface but identifies
-none of these missing source bridges. Milestones I–III remain separate.
+OTHER OPEN WORK
+Inclusion equality reflection; full red-equation preservation/quotient descent;
+Boolean Coherence and faithful OccurrenceInterpretation; source p.314
+equivalence; derived contravariant arrow negation and its laws; restriction of
+all proof congruences plus separate substitution closure; substitution-schema
+id/comp and Appendix A profiles/ordinals/renaming; actual maximality and the
+every-interpretation corollary. The three milestones remain separate.
 
 VERIFICATION AND REVIEW
 Pinned Lean 4.35.0, Init-only production closure, no new dependencies.
-Current strict result: 26 files and 1616 audited project declarations; only
-propext, Quot.sound, Classical.choice permitted. Both boundary scripts passed
-with all five controls rejecting; manuscript v4 hashes are unchanged.
-Evidence: provenance/wsl-signed-label/ and .codex-work/signed-label/.
+Current strict result: 33 Lean files and 1950 audited project declarations.
+Permitted axioms: propext, Quot.sound, Classical.choice. Both boundary scripts
+passed with all five expected rejections; manuscript hashes are unchanged.
+Evidence: provenance/wsl-signed-literal-reduction/ and matching .codex-work/.
 Run strict verification and both boundary scripts after the next change, one
-heavy process at a time, retaining exit codes/logs and inspecting WSL memory.
-Keep local checks distinct from independent kernels, Comparator, official
-preflight/service verification and publication, which have not run.
+heavy process at a time, retaining actual statuses/hashes. Inspect WSL memory
+before heavy jobs. Independent kernels, Comparator, official preflight/service
+verification and publication have not run.
 
-The source-grounded SIGNED_LABEL_WRITING review includes the requested
-normalization follow-up; earlier provisional access records are unchanged.
-For later reviews the consulted writing source is cached locally at
-.codex-work/references/knuth-mathematical-writing-mit-9bf404c2.pdf,
+For writing reviews use the hash-verified cache:
+.codex-work/references/knuth-mathematical-writing-mit-9bf404c2.pdf
 SHA256 9bf404c2c75633a1f39aae97af0b2e9335ce6d83cf386c84906654589b4e82e6.
-It is the MIT-hosted typeset course-report copy, not claimed byte-identical
-to the Stanford scan or MAA edition; URL/page mapping in writing-source.json.
-Use it directly after checking its hash. Keep review commentary outside v4.
+It is the MIT-hosted typeset course report; no byte identity with the Stanford
+scan/MAA edition is claimed. Preserve historical access records and keep all
+review/process commentary outside the manuscript and its LaTeX comments.

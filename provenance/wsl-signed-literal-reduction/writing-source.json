@@ -1,0 +1,56 @@
+{
+  "title": "Mathematical Writing",
+  "authors": [
+    "Donald E. Knuth",
+    "Tracy Larrabee",
+    "Paul M. Roberts"
+  ],
+  "url": "https://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf",
+  "local_cache": ".codex-work/references/knuth-mathematical-writing-mit-9bf404c2.pdf",
+  "sha256": "9bf404c2c75633a1f39aae97af0b2e9335ce6d83cf386c84906654589b4e82e6",
+  "bytes": 555031,
+  "pdf_pages": 119,
+  "pdf_creation_metadata": "2005-01-24",
+  "printed_to_zero_based_pdf_offset": 1,
+  "inspected_sections": [
+    "Section 1, printed pp.1-6",
+    "Sections 4-5, printed pp.9-13"
+  ],
+  "visual_checks": [
+    "printed p.2 = one-based PDF p.4",
+    "printed p.9 = one-based PDF p.11"
+  ],
+  "identity_checks": [
+    "title and all three authors",
+    "Stanford CS209 autumn 1987 preface",
+    "section headings and text"
+  ],
+  "edition_boundary": "MIT-hosted typeset course-report copy; no claim of byte identity with unavailable Stanford scan or 1989 MAA edition",
+  "official_access_attempts": [
+    {
+      "url": "https://www-cs-faculty.stanford.edu/~knuth/papers/cs1193.pdf",
+      "method": "web open",
+      "outcome": "timeout"
+    },
+    {
+      "url": "https://i.stanford.edu/pub/cstr/reports/cs/tr/88/1193/CS-TR-88-1193.pdf",
+      "method": "web open",
+      "outcome": "timeout"
+    },
+    {
+      "url": "https://www-cs-faculty.stanford.edu/~knuth/papers/cs1193.pdf",
+      "method": "escalated curl",
+      "exit_status": 7,
+      "outcome": "could not connect"
+    }
+  ],
+  "successful_access": {
+    "method": "web open and escalated curl",
+    "exit_status": 0
+  },
+  "historical_normalization_access_record": "provenance/wsl-normalization/writing-source-access.json",
+  "historical_record_changed": false,
+  "redistributed": false,
+  "access_this_task": "Verified cached PDF directly; Section 1 and Sections 4-5 consulted again",
+  "historical_access_records_changed": false
+}

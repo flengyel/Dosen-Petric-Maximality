@@ -5,7 +5,10 @@ are unchanged. The actual September 2007 arrow presentation now has typed
 syntax, generated equational equality, a quotient category, and proved
 structural and constructed-zero instances. Its occurrence interpretation is
 well defined. Faithfulness remains open. The three milestones remain separate.
+The reduced signed-literal syntactic category and existential inclusion
+representation are now constructed; reduced faithfulness remains open.
 See [the source map](PRESENTATION_CORRESPONDENCE.md),
+[reduction report](SIGNED_LITERAL_REDUCTION_REPORT.md),
 [signed-label report](SIGNED_LABEL_REPORT.md),
 [normalization report](NORMALIZATION_REPORT.md), the historical
 [presentation report](PRESENTATION_BRIDGE_REPORT.md), and [validation](VALIDATION.md).
@@ -13,7 +16,7 @@ See [the source map](PRESENTATION_CORRESPONDENCE.md),
 | Milestone | Required endpoint | Current status |
 | --- | --- | --- |
 | I | Contextual collapse, relation calculations, and the complete structural/faithful-interpretation interface for the intended nonthin category | Conditional collapse proved. The generated fragment still instantiates all §5 fields. The actual source quotient now has `Structure`, constructed `ZeroIdentity`, a well-defined operation-preserving occurrence map, distinct projections for p : P, and an empty Hom(top,bot). Its faithful-interpretation field remains open, so milestone I is not declared complete. |
-| II | Maximality conditional on explicit coherence, normalization, presentation, and substitution inputs | `relative_maximality` proved. The source quotient supplies `Substitution`, `DoubleNegation`, and now `Normalization`, including signed occurrence coordinates and transport. Global signed-label preservation is now proved directly for occurrenceMap. Coherence and the full congruence correspondence remain open; no intended instance of the conditional theorem is claimed. |
+| II | Maximality conditional on explicit coherence, normalization, presentation, and substitution inputs | `relative_maximality` proved. The source quotient supplies `Substitution`, `DoubleNegation`, and now `Normalization`, including signed occurrence coordinates and transport. Global signed-label preservation is now proved directly for occurrenceMap. The signed-literal reduction, surjective inclusion on normal-form hom-sets and conditional coherence transfer are now proved. Reduced faithfulness, Boolean Coherence and the full congruence correspondence remain open; no intended instance of the conditional theorem is claimed. |
 | III | Maximality for the actual Došen–Petrić presentation with all bridges proved | Open. The syntax/category/structural bridge is constructed; Boolean Coherence and the remaining intended instances are not proved. |
 
 ## The unchanged conditional argument and fragment check
@@ -56,7 +59,9 @@ definition is unchanged and can be adapted once that interpretation exists.
 | Nonthinness and empty hom-sets | `nonthin p` for p : P; `empty_hom P` for every P. These require no coherence hypothesis. |
 | Whole-arrow substitution and defining-congruence closure | `Term.subst`, `Constant.subst`, `Equation.subst`, `Derives.subst`, `substitute`, `substitution`. Source `(su)` is admissible with substituted endpoints. |
 | Double negation | `doubleNegation`, using `Laws.dnOut_in/out`; both inverse equations compiled without coherence. |
-| Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. No complete `OccurrenceInterpretation` instance. |
+| Signed-literal reduced syntax and representation | `Reduced.Term/Equation/Derives/Hom/category` gives the source p.318 syntactic quotient, with exactly atomic eta/epsilon. Inclusion respects equations/operations; duality and compound witnesses compile; red_sound and representation prove transport compatibility and existential hom-set surjectivity for normal-form endpoints. |
+| Reduced occurrence assignment and transfer | Independent raw tagged relation, quotient descent and inclusion/normalizer compatibility compile. `normal_faithful_of_reduced/global_faithful_of_reduced` explicitly require the unproved `Reduced.Faithful P`. |
+| Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. Reduced faithfulness and its earlier positive-core coherence inputs are unproved. No complete `OccurrenceInterpretation` instance. Equality reflection and full red-equation preservation remain open. |
 | Normalization and occurrence correspondence | `Presentation.normalization` constructs the existing record for every P by simultaneous sign recursion and source n/r/rho arrows. Both inverse laws, inverse occurrence coordinates, both graph laws, literal/label/polarity correspondence, repeated-tag injectivity, Empty cases, and transport formulas compile. No coherence or arrow-negation premise. |
 | Global signed-label preservation | `Term.relation_signedLabel`, `occurrence_signedLabel`, `occurrence_literal`: all source terms/arrows preserve complete signed literals along edges; letter/polarity and opposite-sign exclusions, plus normalized transport, compile without coherence. `diag_copies/codiag_merges` preserve the copying/merging boundary. No faithful-interface instance is fabricated. |
 | Derived contravariant negation | Open: the exact source clauses, descent, functor laws, and n-r/rho naturality / eta-epsilon dinaturality. |
@@ -66,13 +71,13 @@ definition is unchanged and can be adapted once that interpretation exists.
 
 ## Next concrete proof task
 
-Prove normal-form faithfulness in the actual quotient: for A,B : NormalForm P
-and f,g : Hom A.formula B.formula, `occurrenceMap f = occurrenceMap g → f = g`.
-Begin by constructing the source §14.2 signed-literal reduction (pp.318–321),
-with typed arrow maps and occurrence compatibility. The existing normalizer
-and transport recovery give the route from that endpoint to global coherence;
-the new label invariant does not supply the missing reduction or faithfulness.
-Derived arrow negation/naturality and the p.314 equivalence remain separate.
+Construct typed one-hole normal-form contexts and the source g-conjunction /
+g-disjunction maps (pp.318–319), then prove the g-eta/g-epsilon contextual
+factorizations (pp.319–320) in Reduced.Hom. The later target is Reduced.Faithful P.
+Track Distributive Dicartesian Coherence (§11.5, used on p.319) and Zero-Identity
+Distributive Dicartesian Coherence (§12.5, used on p.321) separately. The signed-
+literal reduction and conditional transfer are complete; they do not supply
+these remaining coherence proofs, equality reflection, or quotient descent of red.
 
 ## Verification boundary
 

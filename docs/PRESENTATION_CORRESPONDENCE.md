@@ -255,3 +255,101 @@ letters and distinct tags, so neither functionality nor injectivity of each
 relation follows. The unchanged `SignedLabelPreservation` definition still
 requires a separately supplied faithful interpretation. See
 [the signed-label report](SIGNED_LABEL_REPORT.md) and both linked reviews.
+
+
+## Signed-literal syntactic reduction (current checkpoint)
+
+Source §14.2 p.318 (one-based PDF p.330) defines C with normal-form objects,
+positive structural families and zero endomorphisms, plus only atomic eta_p
+and epsilon_p. Reduced.Term has 21 constructor schemas. Arbitrary eta/epsilon
+and n/r/rho are not reduced constructors. Equation has exactly the 61 inherited
+positive ZIDL schemas; Derives is their equivalence/operation congruence closure.
+Reduced.Hom is the quotient by Derives, independent of inclusion or relations.
+
+The schema correspondence is exact by name; source anchors below are inherited
+from the earlier positive equation index. Op packages both connectives. The
+constant side condition excludes all literal leaves. No extra atomic eta/epsilon
+or (0eta-epsilon) equation is inserted, and the two source-omitted (m e) laws
+remain omitted. Equation.toFull and Derives.toFull compile for every schema.
+
+| Source anchor | Reduced.Equation and matching Presentation.Equation |
+| --- | --- |
+| (cat 1), p.332 | `id_comp` |
+| (cat 1), p.332 | `comp_id` |
+| (cat 2), p.332 | `assoc` |
+| (xi 1), p.332 | `tensor_id` |
+| (xi 2), p.332 | `tensor_comp` |
+| (bR nat), p.332 | `assocR_nat` |
+| (bL nat), p.332 | `assocL_nat` |
+| (b b), p.333 | `assocR_L` |
+| (b b), p.333 | `assocL_R` |
+| (b 5), p.89; list p.333 | `pentagon` |
+| (c nat), p.333; disjunctive indices reversed | `swap_nat` |
+| (c c), p.107; list p.334 | `swap_swap` |
+| (b c), p.107; list p.334 | `hexagon` |
+| (delta/sigma nat), pp.332–333 | `rightOut_nat` |
+| (delta/sigma nat), pp.332–333 | `rightIn_nat` |
+| (delta delta)/(sigma sigma), p.101 | `rightOut_In` |
+| (delta delta)/(sigma sigma), p.101 | `rightIn_Out` |
+| (delta/sigma nat), pp.332–333 | `leftOut_nat` |
+| (delta/sigma nat), pp.332–333 | `leftIn_nat` |
+| (delta delta)/(sigma sigma), p.101 | `leftOut_In` |
+| (delta delta)/(sigma sigma), p.101 | `leftIn_Out` |
+| (b delta sigma), p.101 | `triangle` |
+| (w nat), p.333 | `diag_nat` |
+| (w nat), p.333 | `codiag_nat` |
+| (k1 nat), p.333 | `fst_nat` |
+| (k1 nat), p.333; disjunctive indices translated | `inl_nat` |
+| (k2 nat), p.333 | `snd_nat` |
+| (k2 nat), p.333; disjunctive indices translated | `inr_nat` |
+| (b w), p.186 | `diag_assoc` |
+| (b w), dual p.186; list p.336 | `codiag_assoc` |
+| (c w), p.186 | `diag_swap` |
+| (c w), dual p.186; list p.336 | `codiag_swap` |
+| (b c w), p.186 | `diag_tensor` |
+| (b c w), dual p.186; list p.336 | `codiag_tensor` |
+| (b k), p.186 | `fst_assoc` |
+| (b k), dual p.186; list p.336 | `inl_assoc` |
+| (c k), p.186 | `snd_swap` |
+| (c k), dual p.186; list p.336 | `inr_swap` |
+| (w k), p.186 | `diag_fst` |
+| (w k), dual p.186; list p.336 | `inl_codiag` |
+| (w k), p.186 | `diag_snd` |
+| (w k), dual p.186; list p.336 | `inr_codiag` |
+| (k delta), p.191 | `fst_top` |
+| (k delta), dual p.191; list p.338 | `inl_bot` |
+| (c bottom)/(c top), p.121, inherited by p.207 | `constant_swap` |
+| (dL nat), p.333 | `dist_nat` |
+| (dR nat), p.333, dR defined by p.145 | `distRight_nat` |
+| (dL and), p.132 | `dist_conj` |
+| (dL or), p.132 | `dist_disj` |
+| (dR and), p.132 | `distRight_conj` |
+| (dR or), p.132 | `distRight_disj` |
+| (d b and), p.132 | `dist_b_conj` |
+| (d b or), p.132 | `dist_b_disj` |
+| (m nat), p.333 | `mix_nat` |
+| (b m), section 8.2; list p.336 | `mix_assoc` |
+| (c m), section 8.4; list p.336 | `mix_swap` |
+| (w m), p.219 | `diag_mix_codiag` |
+| (d k and), p.234 | `dist_snd` |
+| (d k or), p.234 | `dist_inl` |
+| (d m), p.234 | `dist_mix` |
+| (0I), p.288, inherited p.317 | `zero_law` |
+
+| Source / result | Lean correspondence and scope |
+| --- | --- |
+| §14.1 pp.313–314 | NormalForm.dual/dual_dual; form_true/normal_formula/normal_neg_formula; forward_formula/backward_formula after endpoint casts, and transport_formula. |
+| p.317 eta/epsilon connective and constant displays | Term.etaNF/epsilonNF use atomic primitives, symmetry for negative literals, both constant units, and the explicitly typed mixedDisj/mixedConj composites. These are not the same-connective medial. No general equality with a particular e'-abbreviation is claimed. |
+| p.317 zero-arrow argument | Compatibility.etaNF/epsilonNF, using fromTop_unique/toBot_unique from actual category/zero laws, not relational faithfulness. |
+| p.318 C syntax included into B | Term.toFull, Equation.toFull, Derives.toFull, inclusion and its identity/composition/tensor preservation. |
+| Normalization transport on every full constructor | red and red_sound cover all 31 full constructor schemas; structural naturality, comparison inverses, zero_law and compound witnesses suffice. |
+| Full normal-form hom-sets | representation proves every existing full arrow is inclusion of a reduced quotient arrow. It does not prove equality reflection or a quotient-level red function. |
+| Source G on C and normalization coordinates | Independent Term.relation; relation_toFull, occurrence_inclusion, occurrence_red, Coordinates.red_apply/red_coordinates. All occurrence tags are retained. |
+| Coherence transfer | normal_faithful_of_reduced/global_faithful_of_reduced are explicitly conditional on Reduced.Faithful P. No proof/axiom/instance for that premise is supplied. |
+
+The source's remaining argument needs contextual g-eta/g-epsilon maps and
+factorizations on pp.318–320, Distributive Dicartesian Coherence in the p.319
+induction (inherited §11.5), and Zero-Identity Distributive Dicartesian
+Coherence (§12.5) on p.321. Those Lean proofs remain open. The p.314
+equivalence, derived contravariant negation and its laws remain separate too.
+See [the reduction report](SIGNED_LITERAL_REDUCTION_REPORT.md) and both reviews.

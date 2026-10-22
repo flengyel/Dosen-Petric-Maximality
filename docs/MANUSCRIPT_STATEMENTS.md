@@ -35,7 +35,8 @@ interpretation of variables, not one fixed valuation.
 | `lem:symmetric` | `Relations.hRel_eq_fold`, `hRel_independent`, `hRel_swap`; `OccurrenceInterpretation.fold_independent`, `fold_swap` | The relation fold is calculated from operations; categorical independence and swap invariance follow by original-category faithfulness. |
 | `eq:second-block` final equality | `Relations.second_block`, `OccurrenceInterpretation.second_block` | The relation equation discards the first source block; the categorical equation follows by original-category faithfulness. |
 | §3 distinct projections | `Relations.projections_distinct`, `GeneratedModel.nonthin`, `Presentation.nonthin` | Every §5 interface field is instantiated in a generated structural-fragment model, with distinct categorical projections and `GeneratedModel.empty_hom`. This does not identify the fragment model with B(P). Separately, `Presentation.nonthin p` proves distinct projections in the equation-generated source quotient; `Presentation.empty_hom` proves its Hom(top,bot) empty. |
-| `thm:coherence` | `OccurrenceInterpretation.faithful` is explicit input | The actual published theorem is unproved in Lean. `GeneratedModel.interpretation` proves faithfulness for the structural fragment model only. |
+| `thm:coherence` | `OccurrenceInterpretation.faithful` is explicit input; `Reduced.normal_faithful_of_reduced/global_faithful_of_reduced` are conditional transfers | Boolean Coherence remains unproved. Reduced syntactic inclusion is now surjective on normal-form hom-sets, with occurrence compatibility. Faithfulness of Reduced.occurrenceMap is an explicit unproved premise, not an axiom or instance. GeneratedModel faithfulness remains fragment-only. |
+| §14.2 source signed-literal reduction used toward §3 coherence | `Reduced.Term/Equation/Derives/Hom/category`, `inclusion`, `red_sound`, `representation` | Genuine restricted syntactic quotient on NormalForm P; 21 term/61 inherited equation schemas, atomic eta/epsilon only. Every full raw term has a reduced representative equal after inclusion to normalization transport; every full normal-form arrow is in the inclusion image. Equality reflection and quotient descent of red are not proved. |
 | Normalization, §3 | `Presentation.normalization`; `NegationNormalization.forward_backward/backward_forward`, `forward_graph/backward_graph`, `transport_apply` | Actual source-quotient instance for every P, with signed-leaf normal forms, both inverse arrows, inverse tagged coordinates, literal/label/polarity correspondence, Empty cases, and relation transport. Recovery/injectivity reuse the existing theorems. No coherence or naturality premise. |
 | Global signed-label preservation, §3 | `Presentation.Term.relation_signedLabel`, `occurrence_signedLabel`, `occurrence_literal` | Proved directly for every raw term and quotient arrow, with no nonemptiness, decidable-equality or coherence hypothesis. Complete literal equality, letter/polarity consequences, opposite-sign exclusion and normalized transport compile. The unchanged `SignedLabelPreservation` definition still takes the separately unconstructed faithful interpretation; no instance is fabricated. |
 | `lem:isolation` | `Isolation.selector_edge`, `coselector_edge`, `isolate_edge`, `normalized_literal_context` | Normal-form witness equations and the normalized contextual consequence under faithful interpretation, normalization, and signed-label inputs. The full original-category witness formulation is not a separate declaration; no actual presentation is inferred. |
@@ -93,7 +94,11 @@ signed coordinate correspondence. `Presentation.occurrence_signedLabel` now
 proves global signed-label preservation directly, with normal-form literal
 and transport consequences. Derived contravariant arrow negation/naturality,
 congruence restriction, and the remaining Appendix A/model correspondences are
-still open. See the [signed-label report](SIGNED_LABEL_REPORT.md),
+still open. The reduced signed-literal syntax and existential representation
+bridge are now constructed, with occurrence compatibility and conditional
+coherence transfer; reduced faithfulness remains open. See the
+[reduction report](SIGNED_LITERAL_REDUCTION_REPORT.md),
+[signed-label report](SIGNED_LABEL_REPORT.md),
 [normalization report](NORMALIZATION_REPORT.md), and the historical
 [presentation report](PRESENTATION_BRIDGE_REPORT.md) for exact hypotheses,
 source references, commands, evidence, and review boundaries.

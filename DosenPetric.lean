@@ -24,3 +24,10 @@ public import DosenPetric.PresentationOccurrenceMap
 public import DosenPetric.NormalizationComparison
 public import DosenPetric.PresentationNormalization
 public import DosenPetric.PresentationSignedLabels
+public import DosenPetric.ReducedSyntax
+public import DosenPetric.ReducedEquations
+public import DosenPetric.ReducedCategory
+public import DosenPetric.ReducedWitnesses
+public import DosenPetric.ReductionTransport
+public import DosenPetric.SignedLiteralReduction
+public import DosenPetric.ReducedOccurrences

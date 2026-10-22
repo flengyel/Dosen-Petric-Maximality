@@ -1,0 +1,288 @@
+{
+  "constructors": [
+    "id",
+    "comp",
+    "tensor",
+    "assocR",
+    "assocL",
+    "swap",
+    "diag",
+    "codiag",
+    "fst",
+    "snd",
+    "inl",
+    "inr",
+    "rightOut",
+    "rightIn",
+    "leftOut",
+    "leftIn",
+    "mix",
+    "dist",
+    "zero",
+    "eta",
+    "epsilon"
+  ],
+  "constructor_schemas": 21,
+  "equation_schemas": 61,
+  "equations": [
+    {
+      "name": "id_comp",
+      "source_anchor": "(cat 1), p.332"
+    },
+    {
+      "name": "comp_id",
+      "source_anchor": "(cat 1), p.332"
+    },
+    {
+      "name": "assoc",
+      "source_anchor": "(cat 2), p.332"
+    },
+    {
+      "name": "tensor_id",
+      "source_anchor": "(xi 1), p.332"
+    },
+    {
+      "name": "tensor_comp",
+      "source_anchor": "(xi 2), p.332"
+    },
+    {
+      "name": "assocR_nat",
+      "source_anchor": "(bR nat), p.332"
+    },
+    {
+      "name": "assocL_nat",
+      "source_anchor": "(bL nat), p.332"
+    },
+    {
+      "name": "assocR_L",
+      "source_anchor": "(b b), p.333"
+    },
+    {
+      "name": "assocL_R",
+      "source_anchor": "(b b), p.333"
+    },
+    {
+      "name": "pentagon",
+      "source_anchor": "(b 5), p.89; list p.333"
+    },
+    {
+      "name": "swap_nat",
+      "source_anchor": "(c nat), p.333; disjunctive indices reversed"
+    },
+    {
+      "name": "swap_swap",
+      "source_anchor": "(c c), p.107; list p.334"
+    },
+    {
+      "name": "hexagon",
+      "source_anchor": "(b c), p.107; list p.334"
+    },
+    {
+      "name": "rightOut_nat",
+      "source_anchor": "(delta/sigma nat), pp.332\u2013333"
+    },
+    {
+      "name": "rightIn_nat",
+      "source_anchor": "(delta/sigma nat), pp.332\u2013333"
+    },
+    {
+      "name": "rightOut_In",
+      "source_anchor": "(delta delta)/(sigma sigma), p.101"
+    },
+    {
+      "name": "rightIn_Out",
+      "source_anchor": "(delta delta)/(sigma sigma), p.101"
+    },
+    {
+      "name": "leftOut_nat",
+      "source_anchor": "(delta/sigma nat), pp.332\u2013333"
+    },
+    {
+      "name": "leftIn_nat",
+      "source_anchor": "(delta/sigma nat), pp.332\u2013333"
+    },
+    {
+      "name": "leftOut_In",
+      "source_anchor": "(delta delta)/(sigma sigma), p.101"
+    },
+    {
+      "name": "leftIn_Out",
+      "source_anchor": "(delta delta)/(sigma sigma), p.101"
+    },
+    {
+      "name": "triangle",
+      "source_anchor": "(b delta sigma), p.101"
+    },
+    {
+      "name": "diag_nat",
+      "source_anchor": "(w nat), p.333"
+    },
+    {
+      "name": "codiag_nat",
+      "source_anchor": "(w nat), p.333"
+    },
+    {
+      "name": "fst_nat",
+      "source_anchor": "(k1 nat), p.333"
+    },
+    {
+      "name": "inl_nat",
+      "source_anchor": "(k1 nat), p.333; disjunctive indices translated"
+    },
+    {
+      "name": "snd_nat",
+      "source_anchor": "(k2 nat), p.333"
+    },
+    {
+      "name": "inr_nat",
+      "source_anchor": "(k2 nat), p.333; disjunctive indices translated"
+    },
+    {
+      "name": "diag_assoc",
+      "source_anchor": "(b w), p.186"
+    },
+    {
+      "name": "codiag_assoc",
+      "source_anchor": "(b w), dual p.186; list p.336"
+    },
+    {
+      "name": "diag_swap",
+      "source_anchor": "(c w), p.186"
+    },
+    {
+      "name": "codiag_swap",
+      "source_anchor": "(c w), dual p.186; list p.336"
+    },
+    {
+      "name": "diag_tensor",
+      "source_anchor": "(b c w), p.186"
+    },
+    {
+      "name": "codiag_tensor",
+      "source_anchor": "(b c w), dual p.186; list p.336"
+    },
+    {
+      "name": "fst_assoc",
+      "source_anchor": "(b k), p.186"
+    },
+    {
+      "name": "inl_assoc",
+      "source_anchor": "(b k), dual p.186; list p.336"
+    },
+    {
+      "name": "snd_swap",
+      "source_anchor": "(c k), p.186"
+    },
+    {
+      "name": "inr_swap",
+      "source_anchor": "(c k), dual p.186; list p.336"
+    },
+    {
+      "name": "diag_fst",
+      "source_anchor": "(w k), p.186"
+    },
+    {
+      "name": "inl_codiag",
+      "source_anchor": "(w k), dual p.186; list p.336"
+    },
+    {
+      "name": "diag_snd",
+      "source_anchor": "(w k), p.186"
+    },
+    {
+      "name": "inr_codiag",
+      "source_anchor": "(w k), dual p.186; list p.336"
+    },
+    {
+      "name": "fst_top",
+      "source_anchor": "(k delta), p.191"
+    },
+    {
+      "name": "inl_bot",
+      "source_anchor": "(k delta), dual p.191; list p.338"
+    },
+    {
+      "name": "constant_swap",
+      "source_anchor": "(c bottom)/(c top), p.121, inherited by p.207"
+    },
+    {
+      "name": "dist_nat",
+      "source_anchor": "(dL nat), p.333"
+    },
+    {
+      "name": "distRight_nat",
+      "source_anchor": "(dR nat), p.333, dR defined by p.145"
+    },
+    {
+      "name": "dist_conj",
+      "source_anchor": "(dL and), p.132"
+    },
+    {
+      "name": "dist_disj",
+      "source_anchor": "(dL or), p.132"
+    },
+    {
+      "name": "distRight_conj",
+      "source_anchor": "(dR and), p.132"
+    },
+    {
+      "name": "distRight_disj",
+      "source_anchor": "(dR or), p.132"
+    },
+    {
+      "name": "dist_b_conj",
+      "source_anchor": "(d b and), p.132"
+    },
+    {
+      "name": "dist_b_disj",
+      "source_anchor": "(d b or), p.132"
+    },
+    {
+      "name": "mix_nat",
+      "source_anchor": "(m nat), p.333"
+    },
+    {
+      "name": "mix_assoc",
+      "source_anchor": "(b m), section 8.2; list p.336"
+    },
+    {
+      "name": "mix_swap",
+      "source_anchor": "(c m), section 8.4; list p.336"
+    },
+    {
+      "name": "diag_mix_codiag",
+      "source_anchor": "(w m), p.219"
+    },
+    {
+      "name": "dist_snd",
+      "source_anchor": "(d k and), p.234"
+    },
+    {
+      "name": "dist_inl",
+      "source_anchor": "(d k or), p.234"
+    },
+    {
+      "name": "dist_mix",
+      "source_anchor": "(d m), p.234"
+    },
+    {
+      "name": "zero_law",
+      "source_anchor": "(0I), p.288, inherited p.317"
+    }
+  ],
+  "positive_schema_transcription_matches_full_after_object_type_change": true,
+  "omitted_full_comparison_constructors": [
+    "dnOut",
+    "dnIn",
+    "dmConjOut",
+    "dmConjIn",
+    "dmDisjOut",
+    "dmDisjIn",
+    "negTopOut",
+    "negTopIn",
+    "negBotOut",
+    "negBotIn"
+  ],
+  "atomic_eta_epsilon_only": true,
+  "quotient_relation": "Reduced.Derives generated from Reduced.Equation"
+}

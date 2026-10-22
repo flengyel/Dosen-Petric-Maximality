@@ -1,3 +1,46 @@
+# Signed-literal reduction validation (current checkpoint)
+
+Clean baseline c1004b09a53f56a048c813adba053739fb0d4a97 passed strict verification:
+26 source files and 1616 project declarations. Initial SSH fetch left local
+and remote main equal; unrelated work was absent at baseline.
+
+Integrated checks finished at 2026-10-22T21:45:14.684794+00:00.
+Strict verification exited 0 with **33 Lean files and 1950 project declarations**.
+Both boundary scripts exited 0 with all five expected Lean exit-1 rejections;
+public import closure passed. Manuscript SHA256SUMS and git diff --check exited 0.
+Pinned Lean 4.35.0, Init-only production closure, manifest and v4 are unchanged.
+One heavy build/audit ran at a time; no clean rebuild of old constructions ran.
+
+Only propext, Quot.sound and Classical.choice are permitted. Selected new
+raw syntax/equation-inclusion/duality/witness/reduction declarations have no
+axioms; quotient category/inclusion use Quot.sound. The raw relation bridge
+prints propext; principal representation and conditional transfers print
+propext and Quot.sound. No selected new declaration uses Classical.choice.
+No proof hole, custom mathematical axiom or native_decide was added.
+
+Evidence, source/signature inventories and hashes are retained in
+provenance/wsl-signed-literal-reduction/; runtime/post-commit/delivery receipts
+are under .codex-work/signed-literal-reduction/. The working-source log records
+baseline HEAD plus exact dirty-source hashes. The completion response gives
+the integration SHA and live SSH ref equality.
+
+The genuine restricted syntactic quotient, compound witnesses, raw reduction,
+normal-form hom-set surjectivity, and occurrence compatibility are proved.
+Reduced faithfulness, inclusion equality reflection, red quotient descent,
+Boolean Coherence and unconditional maximality are not proved. Conditional
+transfer is recorded as conditional, with no coherence axiom or instance.
+
+Both reviews are author-side. The writing review uses the verified cached
+governing text; historical access records are unchanged. No independent kernel
+replay, independent full source audit, Challenge/Solution or Comparator run,
+official preflight/service verification, new manuscript compilation/layout
+review, publication, visibility change or license change occurred.
+See [the reduction report](SIGNED_LITERAL_REDUCTION_REPORT.md).
+
+---
+
+## Historical signed-label validation (unchanged evidence)
+
 # Signed-label validation (current checkpoint)
 
 The clean starting checkpoint was `45a34c8d939aa1d931a8946de209721991750921`
