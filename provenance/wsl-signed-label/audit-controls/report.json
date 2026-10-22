@@ -1,0 +1,83 @@
+{
+  "utc": "2026-10-22T16:43:06.191810+00:00",
+  "base_commit": "45a34c8d939aa1d931a8946de209721991750921",
+  "checks": [
+    {
+      "name": "direct-axiom",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/contextual-collapse/checks/direct-axiom.lean"
+      ],
+      "exit_status": 1,
+      "expected": "nonzero; Unpermitted axiom DosenPetric.AuditNegative.direct",
+      "passed": true,
+      "source_sha256": "52d3de182eaa38e73327f9fa6736d4f3ec7d076ecf55a4d626261cd60ee34f9b",
+      "log_sha256": "5957e78ac0b5f3ee690fcc290e61bbecf6710ae27171d3b9f81c8451c8e8b946"
+    },
+    {
+      "name": "private-axiom",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/contextual-collapse/checks/private-axiom.lean"
+      ],
+      "exit_status": 1,
+      "expected": "nonzero; Unpermitted axiom DosenPetric.AuditNegative.privateInput",
+      "passed": true,
+      "source_sha256": "496a6377f7b394eb78141dbad79a765bafaac2b3676bee8a2eba89ebf6c92a3c",
+      "log_sha256": "9d2a8d8003035a97442195a67b41aaabb6b299d90b58c8231da118a67a1bd5b2"
+    },
+    {
+      "name": "hidden-dependency",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/contextual-collapse/checks/hidden-dependency.lean"
+      ],
+      "exit_status": 1,
+      "expected": "nonzero; Unpermitted axiom AuditNegative.external",
+      "passed": true,
+      "source_sha256": "eaa059ea38c8e3f6dbfa406dedb5dfa8cc0ec974ad7de1cd5f0e12e994c2d76c",
+      "log_sha256": "9be3e50aa5044b6485fabb731c1056dfb3eb645b341ec1e7adff22ee0ed9a0e6"
+    },
+    {
+      "name": "public-import-closure",
+      "passed": true,
+      "source_files": [
+        "DosenPetric.lean",
+        "DosenPetric/CartesianFromDiagonal.lean",
+        "DosenPetric/Category.lean",
+        "DosenPetric/Collapse.lean",
+        "DosenPetric/Formula.lean",
+        "DosenPetric/GeneratedModel.lean",
+        "DosenPetric/Isolation.lean",
+        "DosenPetric/NormalForm.lean",
+        "DosenPetric/NormalizationComparison.lean",
+        "DosenPetric/OccurrenceLaws.lean",
+        "DosenPetric/PresentationCategory.lean",
+        "DosenPetric/PresentationConsistency.lean",
+        "DosenPetric/PresentationEquations.lean",
+        "DosenPetric/PresentationInstances.lean",
+        "DosenPetric/PresentationNormalization.lean",
+        "DosenPetric/PresentationOccurrenceMap.lean",
+        "DosenPetric/PresentationOccurrences.lean",
+        "DosenPetric/PresentationSignedLabels.lean",
+        "DosenPetric/PresentationStructure.lean",
+        "DosenPetric/PresentationSubstitution.lean",
+        "DosenPetric/PresentationSyntax.lean",
+        "DosenPetric/PresentationZero.lean",
+        "DosenPetric/Relations.lean",
+        "DosenPetric/Structure.lean",
+        "DosenPetric/Substitution.lean"
+      ],
+      "boundary": "local library imports; not a Challenge/Solution comparison"
+    }
+  ]
+}

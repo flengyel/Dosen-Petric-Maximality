@@ -1,0 +1,6 @@
+/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/presentation-bridge/presentation-controls/identified-projections.lean:4:66: error: Tactic `rfl` failed: The left-hand side
+  fst (Formula.var ()) (Formula.var ())
+is not definitionally equal to the right-hand side
+  snd (Formula.var ()) (Formula.var ())
+
+⊢ fst (Formula.var ()) (Formula.var ()) = snd (Formula.var ()) (Formula.var ())

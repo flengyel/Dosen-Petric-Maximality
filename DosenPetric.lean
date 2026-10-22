@@ -23,3 +23,4 @@ public import DosenPetric.PresentationConsistency
 public import DosenPetric.PresentationOccurrenceMap
 public import DosenPetric.NormalizationComparison
 public import DosenPetric.PresentationNormalization
+public import DosenPetric.PresentationSignedLabels

@@ -228,3 +228,30 @@ this construction. The raw occurrence preservation proof and its quotient
 well-definedness were reused unchanged. Full Boolean Coherence remains open.
 See [the normalization report](NORMALIZATION_REPORT.md) for exact hypotheses,
 declarations, verification, evidence hashes, and both review boundaries.
+
+
+## Global signed-edge invariant (current checkpoint)
+
+`Presentation.Term.relation_signedLabel` proves the complete literal invariant
+by induction on all 31 primitive constructor schemas in `Term`. The parameters
+are arbitrary P, formulas A,B, term t : A → B, positions x,y, and an edge.
+There is no nonemptiness, decidable-equality, or coherence premise.
+
+| Source grammar / interpretation anchor | New proof correspondence |
+| --- | --- |
+| §2.7, §14.2 p.316: id, composition, both tensors | Equal position; intermediate occurrence and transitivity; matching Sum branches and child invariants. |
+| b,c,w-k,delta/sigma,m,d families indexed above | Graph equalities and branch decomposition retain the signed subformula label. Unit branches are Empty; diagonals and codiagonals copy/merge without identifying tags. |
+| §14.1 p.310 and G clause p.314: n/r | Both double-negation directions use `Literal.flip_flip`; all four De Morgan cases preserve the flipped child label on each branch. |
+| p.312 and G clause p.314: rho | Empty occurrence endpoints; no chosen dummy coordinate. |
+| §12.5 and §14.2 pp.316–317: 0,eta,epsilon | Empty assigned relations, hence no edge to check. |
+| Existing generated-equation quotient | `occurrence_signedLabel` uses quotient induction and `occurrence_ofTerm`; no equation or definition of equality changes. |
+| Manuscript v4 §3 signed-literal paragraph | `occurrence_literal` specializes through `signedLabel_eq_literalAt`; letter/polarity and both opposite-sign exclusions follow. |
+| Existing normalizer coordinate theorems | `NegationNormalization.transport_literal/transport_literal_coordinates` use `transport_apply`, `literal_fromOcc`, and `transport_coordinates`. |
+
+This direct invariant does not rely on the source's unconstructed signed-literal
+equivalence. It proves a property of the well-defined occurrenceMap, not its
+faithfulness. `diag_copies` and `codiag_merges` exhibit edges between repeated
+letters and distinct tags, so neither functionality nor injectivity of each
+relation follows. The unchanged `SignedLabelPreservation` definition still
+requires a separately supplied faithful interpretation. See
+[the signed-label report](SIGNED_LABEL_REPORT.md) and both linked reviews.

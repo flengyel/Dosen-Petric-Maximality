@@ -1,3 +1,45 @@
+# Signed-label validation (current checkpoint)
+
+The clean starting checkpoint was `45a34c8d939aa1d931a8946de209721991750921`
+on main. SSH fetch left main and origin/main equal. Cached baseline strict
+verification passed: 25 source files and 1601 audited declarations. Existing
+presentation and normalization modules were reused unchanged.
+
+Integrated sequential verification completed at 2026-10-22T16:43:07.271047+00:00:
+`bash scripts/verify.sh` exited 0 with **26 Lean source files and 1616 project
+declarations**. Permitted axioms remain `propext`, `Quot.sound`, `Classical.choice`.
+The new raw theorem prints propext; the fourteen new quotient/corollary theorems
+print propext and Quot.sound. New declarations use no Classical.choice.
+Lean 4.35.0, Init-only production closure, and the manifest remain unchanged.
+
+Both existing boundary scripts exited 0; all five negative controls rejected
+with Lean exit 1 and the required diagnostics. Public import closure, unchanged
+manuscript v4 hashes, and git diff --check passed. Commands, statuses, source
+hashes and raw evidence are in provenance/wsl-signed-label/; runtime logs and
+post-commit/delivery receipts are under .codex-work/signed-label/.
+The working-source log's HEAD is the baseline; its per-file inventory records
+the actual code checked. The completion response gives the integration SHA
+and live SSH ref equality.
+
+Global signed-label preservation is now proved directly for occurrenceMap,
+including full normal-form literals and transport. No faithful interpretation
+instance is fabricated. Boolean Coherence, source reductions, derived arrow
+negation/naturality, and remaining congruence/substitution/model bridges are
+still open. The three coverage milestones stay separate.
+
+The hostile review is author-side. The writing review directly consults the
+MIT-hosted governing text and completes the source-grounded normalization
+follow-up, while preserving the earlier provisional review/access record.
+It is not independent certification. No independent kernel replay, independent
+source-transcription audit, Challenge/Solution or Comparator comparison,
+official preflight/service verification, new manuscript compilation, or
+publication ran. Repository visibility/license and manuscript v4 are unchanged.
+See [the signed-label report](SIGNED_LABEL_REPORT.md).
+
+---
+
+## Historical normalization validation (unchanged evidence)
+
 # Normalization validation (current checkpoint)
 
 The clean starting checkpoint was `a07b3982cd50653c07309daeaa098950f63337ac`

@@ -6,13 +6,14 @@ syntax, generated equational equality, a quotient category, and proved
 structural and constructed-zero instances. Its occurrence interpretation is
 well defined. Faithfulness remains open. The three milestones remain separate.
 See [the source map](PRESENTATION_CORRESPONDENCE.md),
+[signed-label report](SIGNED_LABEL_REPORT.md),
 [normalization report](NORMALIZATION_REPORT.md), the historical
 [presentation report](PRESENTATION_BRIDGE_REPORT.md), and [validation](VALIDATION.md).
 
 | Milestone | Required endpoint | Current status |
 | --- | --- | --- |
 | I | Contextual collapse, relation calculations, and the complete structural/faithful-interpretation interface for the intended nonthin category | Conditional collapse proved. The generated fragment still instantiates all §5 fields. The actual source quotient now has `Structure`, constructed `ZeroIdentity`, a well-defined operation-preserving occurrence map, distinct projections for p : P, and an empty Hom(top,bot). Its faithful-interpretation field remains open, so milestone I is not declared complete. |
-| II | Maximality conditional on explicit coherence, normalization, presentation, and substitution inputs | `relative_maximality` proved. The source quotient supplies `Substitution`, `DoubleNegation`, and now `Normalization`, including signed occurrence coordinates and transport. Coherence, global signed-label preservation, and the full congruence correspondence remain open; no intended instance of the conditional theorem is claimed. |
+| II | Maximality conditional on explicit coherence, normalization, presentation, and substitution inputs | `relative_maximality` proved. The source quotient supplies `Substitution`, `DoubleNegation`, and now `Normalization`, including signed occurrence coordinates and transport. Global signed-label preservation is now proved directly for occurrenceMap. Coherence and the full congruence correspondence remain open; no intended instance of the conditional theorem is claimed. |
 | III | Maximality for the actual Došen–Petrić presentation with all bridges proved | Open. The syntax/category/structural bridge is constructed; Boolean Coherence and the remaining intended instances are not proved. |
 
 ## The unchanged conditional argument and fragment check
@@ -36,7 +37,9 @@ propositional negation. No substitution instance for the fragment is claimed.
 signed normal forms. `Normalization`, signed labels, arrow substitution, and
 double negation were explicit inputs of the conditional result. Normalization,
 arrow substitution, and double negation now have source-quotient instances.
-Global signed-label preservation and the faithful interpretation remain open.
+The global signed-label invariant for occurrenceMap is now proved separately;
+the faithful interpretation remains open. The old SignedLabelPreservation
+definition is unchanged and can be adapted once that interpretation exists.
 
 ## Actual-presentation constructions
 
@@ -55,7 +58,7 @@ Global signed-label preservation and the faithful interpretation remain open.
 | Double negation | `doubleNegation`, using `Laws.dnOut_in/out`; both inverse equations compiled without coherence. |
 | Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. No complete `OccurrenceInterpretation` instance. |
 | Normalization and occurrence correspondence | `Presentation.normalization` constructs the existing record for every P by simultaneous sign recursion and source n/r/rho arrows. Both inverse laws, inverse occurrence coordinates, both graph laws, literal/label/polarity correspondence, repeated-tag injectivity, Empty cases, and transport formulas compile. No coherence or arrow-negation premise. |
-| Global signed-label preservation | Open for arbitrary source terms and quotient arrows; the proved signed correspondence of normalizer coordinates alone does not prove it. The raw/quotient predicate can be proved before faithfulness, then connected to `SignedLabelPreservation` later. |
+| Global signed-label preservation | `Term.relation_signedLabel`, `occurrence_signedLabel`, `occurrence_literal`: all source terms/arrows preserve complete signed literals along edges; letter/polarity and opposite-sign exclusions, plus normalized transport, compile without coherence. `diag_copies/codiag_merges` preserve the copying/merging boundary. No faithful-interface instance is fabricated. |
 | Derived contravariant negation | Open: the exact source clauses, descent, functor laws, and n-r/rho naturality / eta-epsilon dinaturality. |
 | Additional congruences | Open: package restriction of every full-presentation proof congruence and its separately assumed substitution closure. Do not infer closure from one valuation kernel. |
 | Substitution-schema / Appendix A laws | Open: identity/composition with endpoint identifications, profiles, finite ordinals, renaming, and block-coordinate correspondence. |
@@ -63,14 +66,13 @@ Global signed-label preservation and the faithful interpretation remain open.
 
 ## Next concrete proof task
 
-Prove the signed-edge invariant for each actual raw term t : A → B:
-`t.relation x y → A.signedLabel x = B.signedLabel y`. Descend it to arbitrary
-quotient arrows and specialize to normal forms via `signedLabel_eq_literalAt`.
-This does not require faithfulness. The current `SignedLabelPreservation`
-interface takes a faithful interpretation, so record the raw/quotient predicate
-separately until that instance exists. Boolean Coherence remains a separate
-larger task through §§11.5,12.5 and §14.2 pp.318–321. Source comparison
-naturality, derived arrow negation, and the p.314 equivalence are also open.
+Prove normal-form faithfulness in the actual quotient: for A,B : NormalForm P
+and f,g : Hom A.formula B.formula, `occurrenceMap f = occurrenceMap g → f = g`.
+Begin by constructing the source §14.2 signed-literal reduction (pp.318–321),
+with typed arrow maps and occurrence compatibility. The existing normalizer
+and transport recovery give the route from that endpoint to global coherence;
+the new label invariant does not supply the missing reduction or faithfulness.
+Derived arrow negation/naturality and the p.314 equivalence remain separate.
 
 ## Verification boundary
 

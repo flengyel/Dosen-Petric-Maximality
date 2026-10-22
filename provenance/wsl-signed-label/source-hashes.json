@@ -1,0 +1,134 @@
+{
+  "Checks/Axioms.lean": {
+    "sha256": "7dfe15f819af1c895c6065397072f6e77f8e0fe46faab76c3cc4c381a303df64",
+    "bytes": 5228
+  },
+  "DosenPetric/CartesianFromDiagonal.lean": {
+    "sha256": "c74b0cfe13f6a46c4ad3035e03b1cae2ae0642f50b8667630b59950e5c4d6fcd",
+    "bytes": 10262
+  },
+  "DosenPetric/Category.lean": {
+    "sha256": "71f159e1eabc877db6b68c203fd039e6c06185b9702a7ddfdca798f13e3851ff",
+    "bytes": 1844
+  },
+  "DosenPetric/Collapse.lean": {
+    "sha256": "8427737a19979cad8f6988ea4323982f55602f7ba71d8da9358fc9cf689ebf09",
+    "bytes": 4193
+  },
+  "DosenPetric/Formula.lean": {
+    "sha256": "b76044a71a61bcf7b89e70d707e777ae44b71811570bf6148c696da1c4cdfca4",
+    "bytes": 4272
+  },
+  "DosenPetric/GeneratedModel.lean": {
+    "sha256": "3057628558ea7a69ec157907ab2675339c59d3accedff9b9da316f84066beaf4",
+    "bytes": 5737
+  },
+  "DosenPetric/Isolation.lean": {
+    "sha256": "a870a52179d5a770bd3845a55d26c6d7a493ce5cc6bdeb00320aca99ef95b243",
+    "bytes": 9023
+  },
+  "DosenPetric/NormalForm.lean": {
+    "sha256": "11f94e20b07e148df206dc93246475560ca41df3ea20735a12c4fdabbf3932b8",
+    "bytes": 3128
+  },
+  "DosenPetric/NormalizationComparison.lean": {
+    "sha256": "f885d3371263acc23a6c31bdc7b2060dbadb2da8bb23d67db4b08b52cbe77d5f",
+    "bytes": 9188
+  },
+  "DosenPetric/OccurrenceLaws.lean": {
+    "sha256": "41d71d55b3a6b436c61725e2b59ba899a3d838030e38ff94c02536779d7162f1",
+    "bytes": 2826
+  },
+  "DosenPetric/PresentationCategory.lean": {
+    "sha256": "1cc0242b612c689a360d88218d80400029353a120edfda56b84c7cdc5f69828c",
+    "bytes": 26339
+  },
+  "DosenPetric/PresentationConsistency.lean": {
+    "sha256": "afa7e5f88342413807a59b1cb9d1332561a66322b9791681895b954edc4c2c41",
+    "bytes": 3251
+  },
+  "DosenPetric/PresentationEquations.lean": {
+    "sha256": "316a6bd90e6bd2a8c287731117c09ff01f15ee3b0239e1fab6931f8f81c305ff",
+    "bytes": 14116
+  },
+  "DosenPetric/PresentationInstances.lean": {
+    "sha256": "32875d0b91d5dc7290aa0a2b87ff024d7cc1923d71ba76d31d677577819c6c0c",
+    "bytes": 2788
+  },
+  "DosenPetric/PresentationNormalization.lean": {
+    "sha256": "46f88b23b9e045985bfa3315663b64d9cbede8c028ab87ee3a3b35660402b301",
+    "bytes": 7923
+  },
+  "DosenPetric/PresentationOccurrenceMap.lean": {
+    "sha256": "ad82c75bea9d78a6b00f0206b9a776b057e6eff3816b14a7154d52fb0518d467",
+    "bytes": 5092
+  },
+  "DosenPetric/PresentationOccurrences.lean": {
+    "sha256": "21b0b40dba54aafc968f5b9fad57514b95e1dfe3fccd428dad06b937da1a369c",
+    "bytes": 42093
+  },
+  "DosenPetric/PresentationSignedLabels.lean": {
+    "sha256": "01fbc357fa420010ee352b65cb0f25bbd92ec3f92b914fb2de9fe729ee526e8b",
+    "bytes": 6821
+  },
+  "DosenPetric/PresentationStructure.lean": {
+    "sha256": "00cbd1e86a80ea3773c1fb6ee2ddc8e52bd38062564cb7d1911de7b8b8555a22",
+    "bytes": 5147
+  },
+  "DosenPetric/PresentationSubstitution.lean": {
+    "sha256": "c16d49e33c2798ddee2094b0c4738a286df0400556a0aaf19b38da864c261d4a",
+    "bytes": 11123
+  },
+  "DosenPetric/PresentationSyntax.lean": {
+    "sha256": "66d64bbcd341cd8548d74a7557ca061187b9a43e874f125e6587e6e3bb02bdb0",
+    "bytes": 4241
+  },
+  "DosenPetric/PresentationZero.lean": {
+    "sha256": "72225bf8d7bd4a496054d18e5f356822718d836a73906b988643f7912844857c",
+    "bytes": 3022
+  },
+  "DosenPetric/Relations.lean": {
+    "sha256": "1dfb14bba0f399144a703ac71e4b7ccad2b16566b66a36e30097320b7b2e98cf",
+    "bytes": 5908
+  },
+  "DosenPetric/Structure.lean": {
+    "sha256": "82df580ef37d2ee3a67ec395abc999e18ac363b24049904f8cca2169c3018050",
+    "bytes": 6977
+  },
+  "DosenPetric/Substitution.lean": {
+    "sha256": "b3b46aa06302bf84da6aa0eed9d48c0319591e947aa45d39af8e040755b4f821",
+    "bytes": 5072
+  },
+  "DosenPetric.lean": {
+    "sha256": "3899675f9359684c8b340786a6688a46508f6a6f2f0c32a45e09aa2af95200ef",
+    "bytes": 1061
+  },
+  "lake-manifest.json": {
+    "sha256": "01a12079da418a0c2cb55ddb97259aeb6b1a66c9ccc15b222e172b17f56c5822",
+    "bytes": 155
+  },
+  "lakefile.toml": {
+    "sha256": "3ca392199d5a387adb92ae5e290beb8aa4d85996dd71340e2507ded07144b572",
+    "bytes": 207
+  },
+  "lean-toolchain": {
+    "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "bytes": 25
+  },
+  "scripts/check-audit-boundaries.py": {
+    "sha256": "194f6002d7e4f93b838b7f57509d7594a09380699a1f9d9f9bb36739dd85b837",
+    "bytes": 2565
+  },
+  "scripts/check-presentation-boundaries.py": {
+    "sha256": "f9873b007d94c454cb1ef891ecb4f7aa130e9d2b0674e04e3246eef830adbf1a",
+    "bytes": 1744
+  },
+  "scripts/check-source.py": {
+    "sha256": "0a2c555554eb6f3ba01dbf73a1cfaf1fb49706dfa08290f1cc31fc902ddba47e",
+    "bytes": 1445
+  },
+  "scripts/verify.sh": {
+    "sha256": "658abfac32e5055ad4cb577e38798e5916b2d87b56113d4fe5aaf6a746adb3d0",
+    "bytes": 922
+  }
+}

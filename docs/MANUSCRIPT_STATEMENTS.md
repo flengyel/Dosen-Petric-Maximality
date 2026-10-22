@@ -37,7 +37,7 @@ interpretation of variables, not one fixed valuation.
 | §3 distinct projections | `Relations.projections_distinct`, `GeneratedModel.nonthin`, `Presentation.nonthin` | Every §5 interface field is instantiated in a generated structural-fragment model, with distinct categorical projections and `GeneratedModel.empty_hom`. This does not identify the fragment model with B(P). Separately, `Presentation.nonthin p` proves distinct projections in the equation-generated source quotient; `Presentation.empty_hom` proves its Hom(top,bot) empty. |
 | `thm:coherence` | `OccurrenceInterpretation.faithful` is explicit input | The actual published theorem is unproved in Lean. `GeneratedModel.interpretation` proves faithfulness for the structural fragment model only. |
 | Normalization, §3 | `Presentation.normalization`; `NegationNormalization.forward_backward/backward_forward`, `forward_graph/backward_graph`, `transport_apply` | Actual source-quotient instance for every P, with signed-leaf normal forms, both inverse arrows, inverse tagged coordinates, literal/label/polarity correspondence, Empty cases, and relation transport. Recovery/injectivity reuse the existing theorems. No coherence or naturality premise. |
-| Global signed-label preservation, §3 | `SignedLabelPreservation` | Open for arbitrary source-quotient arrows. The proved normalizer coordinate correspondence is not this global property. The current interface packages it with a faithful interpretation, also still open. |
+| Global signed-label preservation, §3 | `Presentation.Term.relation_signedLabel`, `occurrence_signedLabel`, `occurrence_literal` | Proved directly for every raw term and quotient arrow, with no nonemptiness, decidable-equality or coherence hypothesis. Complete literal equality, letter/polarity consequences, opposite-sign exclusion and normalized transport compile. The unchanged `SignedLabelPreservation` definition still takes the separately unconstructed faithful interpretation; no instance is fabricated. |
 | `lem:isolation` | `Isolation.selector_edge`, `coselector_edge`, `isolate_edge`, `normalized_literal_context` | Normal-form witness equations and the normalized contextual consequence under faithful interpretation, normalization, and signed-label inputs. The full original-category witness formulation is not a separate declaration; no actual presentation is inferred. |
 | `prop:all-contexts` | `ContextualCollapse.context_retract`, `all_contexts` | Typed substitution on arrows and endpoints, separate congruence closure, positive substitution, and negative substitution followed by double-negation transport. |
 | `lem:collapse` | `ContextualCollapse.total` | From all K_A, the structural and faithful-interpretation data imply totality on existing arrows by §5. No faithfulness on the quotient or cancellation of j_A. |
@@ -89,9 +89,11 @@ well-definedness of the occurrence interpretation and the operation images.
 Faithfulness remains open, so no complete `OccurrenceInterpretation` instance
 or intended `relative_maximality` instance is claimed. `Presentation.normalization`
 now constructs the existing normalization record with occurrence graphs and
-signed coordinate correspondence. Global signed-label preservation, derived
-contravariant arrow negation/naturality, congruence restriction, and the remaining
-Appendix A/model correspondences are still open. See the
-[normalization report](NORMALIZATION_REPORT.md) and the historical
+signed coordinate correspondence. `Presentation.occurrence_signedLabel` now
+proves global signed-label preservation directly, with normal-form literal
+and transport consequences. Derived contravariant arrow negation/naturality,
+congruence restriction, and the remaining Appendix A/model correspondences are
+still open. See the [signed-label report](SIGNED_LABEL_REPORT.md),
+[normalization report](NORMALIZATION_REPORT.md), and the historical
 [presentation report](PRESENTATION_BRIDGE_REPORT.md) for exact hypotheses,
 source references, commands, evidence, and review boundaries.
