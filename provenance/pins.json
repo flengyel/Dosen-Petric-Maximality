@@ -1,0 +1,28 @@
+{
+  "checked_on": "2026-10-22",
+  "date_basis": "UTC environment date",
+  "lean": {
+    "toolchain": "leanprover/lean4:v4.35.0",
+    "commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+    "linux_archive_sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d"
+  },
+  "mathlib": {
+    "status": "compatible release recorded; not an active dependency",
+    "repository": "https://github.com/leanprover-community/mathlib4",
+    "commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "release": "v4.35.0"
+  },
+  "palomar_submission": {
+    "repository": "https://github.com/PalomarRegistry/PalomarSubmission",
+    "commit": "5cfaefe2f4c18f237c63d9635f9f54ab68785d89"
+  },
+  "palomar_policy": {
+    "repository": "https://github.com/PalomarRegistry/PalomarPolicy",
+    "commit": "28bd48b9b71bbb2a82c718ce761d5a4220ef8e60"
+  },
+  "predecessor": {
+    "repository": "https://github.com/flengyel/FailureOfComposition",
+    "inspected_commit": "506d1f1494d6c05b0ba304edf5fe0bfa6c32864b",
+    "registered_commit": "fb32a19c4883baad83b286d4594cfbc6b1d2ad5c"
+  }
+}

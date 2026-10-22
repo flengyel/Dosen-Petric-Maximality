@@ -1,0 +1,61 @@
+# Project instructions
+
+Work in `/home/flengyel/src/Dosen-Petric-Maximality` under WSL2. Inspect Git
+status and the current task before editing. Preserve unrelated work and all
+other checkouts, including FailureOfComposition and Categorical_Rice_Shapiro.
+
+Read `docs/MANUSCRIPT_STATEMENTS.md`, `docs/MANUSCRIPT_COVERAGE.md`, and
+`docs/PALOMAR_REQUIREMENTS.md`. The manuscript in `manuscript/` is v4; preserve
+its text, diagrams, and Appendix A references unless revision is requested.
+
+## Mathematics
+
+- Keep the three milestones in the coverage map separate. Do not represent a
+  theorem relative to published inputs as a completed formalization of the
+  actual Došen–Petrić presentation.
+- Composition `Category.comp f g` applies `f` and then `g`; it corresponds to
+  manuscript `g ∘ f` and Mathlib `f ≫ g`.
+- Preserve empty hom-sets. Zero arrows require an existing-arrow witness.
+  Do not add `HasZeroMorphisms` for the intended category.
+- Keep uniform substitution on arrow terms and their types explicit. A kernel
+  of one interpretation is not necessarily a substitution congruence.
+- Repeated occurrences have different tags. Check empty occurrence sets and
+  negative literals. Apply coherence only in the original category.
+- No custom mathematical axioms, proof holes, `native_decide`, or assumptions
+  that restate the conclusion in production proofs. Record published inputs as
+  explicit data with typed laws, and record the unproved bridge in coverage.
+- Before claiming milestone I, instantiate the complete interface in an
+  intended nonthin model or establish the bridge to the intended category.
+
+## Implementation and verification
+
+Use the pinned stable Lean toolchain. Initial modules use only `Init`; add
+Mathlib when its API is needed, at the recorded full compatible commit. Do not
+import Foundation because the predecessor used it. Commit the generated Lake
+manifest when adding dependencies. Do not reuse compiled artifacts across
+toolchains or projects.
+
+Use `module` in regular Lean files and keep every source below 10,000 physical
+lines. Run `bash scripts/verify.sh`, with one build or kernel replay at a time.
+Keep logs in `.codex-work/`; preserve command exit codes. `LEAN_NUM_THREADS=1`
+limits concurrency, not total RAM. Inspect WSL memory and swap before large
+Comparator jobs; do not copy the predecessor's machine-specific cgroup values.
+
+At each mathematical milestone, apply the hostile-referee and mathematical-
+writing reviews to the actual argument and correspondence map. Keep process
+reports outside mathematical prose. Never report an unavailable review as done.
+
+## Git and publication
+
+The initial private repository and bootstrap commits are authorized. Respect
+later task-specific branch/commit/push scope. Keep this repository private unless
+publication is explicitly authorized. Do not submit to Palomar or arXiv, contact
+authors, choose a distribution license, or change repository visibility as part
+of an ordinary proof task.
+
+Before a future Palomar submission, recheck the official verifier, policy, and
+service instructions. Require independent Challenge/Solution builds, exact
+statement and shared-definition correspondence, complete proof-dependency and
+source-closure audits, focused negative controls, and immutable-source evidence.
+Keep local build, Comparator, official preflight, service verification, automated
+review, and publication as separate statuses.
