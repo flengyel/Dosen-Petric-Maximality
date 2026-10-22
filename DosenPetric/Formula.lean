@@ -57,10 +57,10 @@ def expand (σ : P → Formula Q) : (A : Formula P) → (A.subst σ).Occ → A.B
   | .var _, x => ⟨(), x⟩
   | .top, x => nomatch x
   | .bot, x => nomatch x
-  | .conj A _, .inl x => let ⟨r,t⟩ := expand σ A x; ⟨.inl r,t⟩
-  | .conj _ B, .inr x => let ⟨r,t⟩ := expand σ B x; ⟨.inr r,t⟩
-  | .disj A _, .inl x => let ⟨r,t⟩ := expand σ A x; ⟨.inl r,t⟩
-  | .disj _ B, .inr x => let ⟨r,t⟩ := expand σ B x; ⟨.inr r,t⟩
+  | .conj A _, .inl x => ⟨.inl (expand σ A x).1, (expand σ A x).2⟩
+  | .conj _ B, .inr x => ⟨.inr (expand σ B x).1, (expand σ B x).2⟩
+  | .disj A _, .inl x => ⟨.inl (expand σ A x).1, (expand σ A x).2⟩
+  | .disj _ B, .inr x => ⟨.inr (expand σ B x).1, (expand σ B x).2⟩
   | .neg A, x => expand σ A x
 
 def contract (σ : P → Formula Q) : (A : Formula P) → A.Block σ → (A.subst σ).Occ
@@ -79,8 +79,22 @@ theorem contract_expand (σ : P → Formula Q) (A : Formula P) (x : (A.subst σ)
   | var p => rfl
   | top => exact Empty.elim x
   | bot => exact Empty.elim x
-  | conj A B ihA ihB => cases x <;> simp [expand, contract, ihA, ihB]
-  | disj A B ihA ihB => cases x <;> simp [expand, contract, ihA, ihB]
+  | conj A B ihA ihB =>
+    cases x with
+    | inl x =>
+      change Sum.inl (A.contract σ (A.expand σ x)) = Sum.inl x
+      exact congrArg Sum.inl (ihA x)
+    | inr x =>
+      change Sum.inr (B.contract σ (B.expand σ x)) = Sum.inr x
+      exact congrArg Sum.inr (ihB x)
+  | disj A B ihA ihB =>
+    cases x with
+    | inl x =>
+      change Sum.inl (A.contract σ (A.expand σ x)) = Sum.inl x
+      exact congrArg Sum.inl (ihA x)
+    | inr x =>
+      change Sum.inr (B.contract σ (B.expand σ x)) = Sum.inr x
+      exact congrArg Sum.inr (ihB x)
   | neg A ih => exact ih x
 
 theorem expand_contract (σ : P → Formula Q) (A : Formula P) (x : A.Block σ) :
@@ -91,10 +105,24 @@ theorem expand_contract (σ : P → Formula Q) (A : Formula P) (x : A.Block σ) 
   | bot => exact Empty.elim x.1
   | conj A B ihA ihB =>
     cases x with
-    | mk r t => cases r <;> simp [expand, contract, ihA, ihB]
+    | mk r t =>
+      cases r with
+      | inl r =>
+        exact congrArg (fun z : A.Block σ => (⟨Sum.inl z.1, z.2⟩ : (conj A B).Block σ))
+          (ihA ⟨r,t⟩)
+      | inr r =>
+        exact congrArg (fun z : B.Block σ => (⟨Sum.inr z.1, z.2⟩ : (conj A B).Block σ))
+          (ihB ⟨r,t⟩)
   | disj A B ihA ihB =>
     cases x with
-    | mk r t => cases r <;> simp [expand, contract, ihA, ihB]
+    | mk r t =>
+      cases r with
+      | inl r =>
+        exact congrArg (fun z : A.Block σ => (⟨Sum.inl z.1, z.2⟩ : (disj A B).Block σ))
+          (ihA ⟨r,t⟩)
+      | inr r =>
+        exact congrArg (fun z : B.Block σ => (⟨Sum.inr z.1, z.2⟩ : (disj A B).Block σ))
+          (ihB ⟨r,t⟩)
   | neg A ih => exact ih x
 
 theorem repeated_positions_distinct (p : P) :

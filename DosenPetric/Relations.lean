@@ -8,7 +8,7 @@ set_option autoImplicit false
 
 namespace DosenPetric.Relations
 
-universe u v w
+universe u v w u₁ v₁
 
 abbrev Rel (X : Type u) (Y : Type v) := X → Y → Prop
 
@@ -19,7 +19,7 @@ def graph {X : Type u} {Y : Type v} (f : X → Y) : Rel X Y := fun x y => f x = 
 
 def empty {X : Type u} {Y : Type v} : Rel X Y := fun _ _ => False
 
-def sumMap {X X' : Type u} {Y Y' : Type v} (r : Rel X X') (s : Rel Y Y') :
+def sumMap {X : Type u} {X' : Type u₁} {Y : Type v} {Y' : Type v₁} (r : Rel X X') (s : Rel Y Y') :
     Rel (Sum X Y) (Sum X' Y')
   | .inl x, .inl x' => r x x'
   | .inr y, .inr y' => s y y'
