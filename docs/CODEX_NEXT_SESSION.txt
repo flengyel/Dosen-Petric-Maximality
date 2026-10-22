@@ -1,69 +1,63 @@
 Continue the Došen–Petrić maximality formalization in WSL2.
 
-Repository: flengyel/Dosen-Petric-Maximality (private)
-Working directory: /home/flengyel/src/Dosen-Petric-Maximality
-Continuation branch: main (after the authorized integration of codex/contextual-collapse)
+Repository: /home/flengyel/src/Dosen-Petric-Maximality, private, main.
+Read AGENTS.md, docs/PRESENTATION_BRIDGE_REPORT.md, both PRESENTATION_BRIDGE
+reviews under docs/reviews/, docs/PRESENTATION_CORRESPONDENCE.md, the statement
+and coverage maps, VALIDATION, PALOMAR_REQUIREMENTS, and unchanged manuscript v4.
+Inspect Git status and fetch the SSH origin before editing. Preserve unrelated
+work and other checkouts. This continuation document does not itself authorize
+a future commit, push, visibility change, or publication; follow task-specific
+authorization. Copy every finalized report to /mnt/c/Users/fleng/Downloads and
+verify it against the retained repository copy, as AGENTS.md requires.
 
-Read AGENTS.md, docs/VALIDATION.md, docs/MANUSCRIPT_STATEMENTS.md,
-docs/MANUSCRIPT_COVERAGE.md, docs/reviews/CONTEXTUAL_COLLAPSE_HOSTILE.md,
-docs/reviews/CONTEXTUAL_COLLAPSE_WRITING.md, and unchanged manuscript v4.
-Inspect Git status, HEAD, origin, and source before editing; preserve unrelated
-work and all other checkouts. This future continuation alone does not authorize a push,
-merge, publication, license choice, or Palomar/arXiv submission.
+The conditional development at 73003578997d510d0a3ddfabce59366969bcdb8d remains
+proved: collapse, isolation, substitution transport, and relative maximality.
+Do not restart those proofs. The report-delivery commit was d7162e7945c98288fe3640506b8e1471c63150ef.
 
-The WSL baseline and integrated strict build have run successfully with pinned
-Lean 4.35.0 and no external dependencies. Run bash scripts/verify.sh again for
-the source actually checked out. Retain actual environment, source SHA, exit
-statuses, logs, and hashes in .codex-work. Run one build or replay at a time.
+NEW SOURCE-PRESENTATION CHECKPOINT
+- PresentationSyntax/Equations: source C(B), generated equality, exact September
+  2007 PDF digest and inherited equation index in PRESENTATION_CORRESPONDENCE.
+- PresentationCategory: syntactic quotient, descended comp/tensors and Laws.
+  Equality is Derives, never equality of interpreted relations.
+- CartesianFromDiagonal/PresentationStructure: derive universal properties
+  from actual source laws; product eta is not added as a generator.
+- PresentationZero: prove the displayed (0ηε) construction equals primitive zero,
+  then instantiate ZeroIdentity using the constructed zero.
+- PresentationOccurrences/PresentationOccurrenceMap: raw relation assignment,
+  preservation of all defining schemas, derivations, quotient descent, and
+  all §5 operation images. Well-definedness is proved; faithfulness is NOT.
+- PresentationConsistency: raw terms preserve a genuine classical propositional
+  truth valuation; Hom(top,bot) is empty. nonthin p uses unequal tagged projection
+  relations in the source quotient and needs no faithfulness premise.
+- PresentationSubstitution/PresentationInstances: whole-arrow/endpoints
+  substitution, source (su) admissibility, quotient substitution, the existing
+  Substitution instance, and both double-negation inverse laws.
 
-Completed conditional argument:
-- Structure.lean gives the typed bicartesian/distributor interface and congruence.
-- OccurrenceLaws.lean derives fold independence, symmetry, first injection,
-  and second block from relation calculations and original-category faithfulness.
-- Collapse.lean proves all K_A imply totality by §5, without cancelling j_A
-  or using faithfulness on a quotient.
-- GeneratedModel.lean instantiates every §5 field in the generated structural
-  fragment, proves distinct projections and an empty Hom(top,bot). It does not
-  include negation/De Morgan/eta/epsilon operations or identify itself with B(P).
-- NormalForm.lean and Isolation.lean define positive/negative literal forms,
-  typed selectors/coselectors, exact edge relations, normalization transport,
-  and extraction of a literal contextual equation.
-- Substitution.lean has typed arrow/endpoints substitution data, separate
-  congruence closure, the double-negation retract, all-context transport,
-  and relative_maximality conditional on these explicit inputs.
+NEXT CONCRETE PROOF TASK
+Construct the negation normalizer of §14.1 using n-r/rho: signed normal forms,
+forward/backward comparison arrows for every formula, both inverse equations,
+and their occurrence correspondence. Use mutual positive/negative recursion
+or an explicitly typed equivalent. Do not assume coherence to obtain inverses
+already derivable from the source isomorphism laws.
 
-The next obligation is the intended presentation bridge, not re-proving the
-conditional collapse. Do not claim milestone I complete until the entire
-interface is shown to admit the intended category or a bridge is established.
-The generated fragment model checks consistency but does not discharge that gate.
+SEPARATE OPEN OBLIGATIONS
+Boolean Coherence for the actual equation quotient (book p.321, using inherited
+§§11.5,12.5 and pp.318–321); complete OccurrenceInterpretation; signed-label
+preservation; derived contravariant negation and its laws; restriction of full
+proof congruences and separate substitution closure; substitution-schema
+identity/composition and Appendix A profiles/ordinals/renaming; intended
+relative_maximality instance and every-interpretation model corollary.
+The generated fragment continues to check every §5 field, but supplies none
+of these missing source bridges. No milestone is promoted to completion.
 
-Define/import the exact Došen–Petrić arrow presentation from the September 2007
-revision, with typed operations and equations. Bridge its products, coproducts,
-truth constants, distributor, and the displayed zero-identity formula to the
-current interface. Formalize/provide proved occurrence coherence, normalization,
-signed-label preservation, substitution on whole arrow terms/endpoints, and
-double-negation data. Restrict every actual substitution congruence to the
-current laws, then instantiate relative_maximality. Track independently what
-is input, what is proved, and what is a presentation correspondence.
-
-The full intended interface for relative_maximality has not been instantiated
-in a nonthin model. Do not infer substitution closure from the kernel of one
-interpretation. Substitution-schema composition laws, normalization occurrence
-correspondence, Appendix A profiles/ordinals/renaming, and the every-interpretation
-model corollary remain explicit obligations. Keep empty hom-sets and negative
-literals; zeroOf always needs an existing arrow. Category.comp f g applies f
-and then g.
-
-The axiom audit now decodes private names before filtering DosenPetric; it
-checks 645 visible declarations. Three focused controls (public axiom, private
-axiom, hidden dependency) reject. Keep the local import-closure check distinct
-from independent Challenge/Solution shared-definition comparison.
-
-Apply the hostile-referee and mathematical-writing skills to any new actual
-argument and correspondence map. Preserve manuscript text and diagrams.
-Before designing a Palomar package, recheck official verifier/policy/service
-instructions and follow docs/PALOMAR_REQUIREMENTS.md. Independent builds,
-exact definitions/statements, proof/source closure, negative controls, and
-immutable-source evidence remain to be implemented. No Comparator or service
-acceptance is currently claimed. Use the pinned Mathlib commit only if needed;
-generate and commit the full manifest, and do not add Foundation.
+VERIFICATION
+Run bash scripts/verify.sh for the checked-out source; pinned Lean 4.35.0,
+Init-only production closure, no external dependencies. Keep one build/replay
+at a time and logs/exit codes in .codex-work. The exhaustive occurrence-schema
+proof may take several minutes on a cold build; monitor memory before raising
+resource limits. Current source file limits and strict warnings remain enforced.
+Run scripts/check-audit-boundaries.py and scripts/check-presentation-boundaries.py;
+all five negative controls must reject. Keep local import/axiom checks separate
+from independent Challenge/Solution comparison, kernels, official preflight,
+service review, and publication, which have not run. Apply hostile-referee and
+mathematical-writing reviews to any new mathematical construction and source map.

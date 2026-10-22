@@ -1,76 +1,78 @@
 # Coverage and next proof obligations
 
-The WSL2 build now proves contextual collapse and a relative maximality theorem
-using explicit typed inputs. It also instantiates the complete §5 interface in
-a generated occurrence-relation model. This model is the structural fragment;
-its identification with the actual Došen–Petrić category remains unproved.
-The three project milestones therefore remain distinct and are not declared
-complete. See [validation](VALIDATION.md) for the checked source and evidence.
+The conditional collapse, isolation, transport, and `relative_maximality` proofs
+are unchanged. The actual September 2007 arrow presentation now has typed
+syntax, generated equational equality, a quotient category, and proved
+structural and constructed-zero instances. Its occurrence interpretation is
+well defined. Faithfulness remains open. The three milestones remain separate.
+See [the source map](PRESENTATION_CORRESPONDENCE.md),
+[presentation report](PRESENTATION_BRIDGE_REPORT.md), and [validation](VALIDATION.md).
 
 | Milestone | Required endpoint | Current status |
 | --- | --- | --- |
-| I | Contextual collapse, relation calculations, and a structural/faithful-interpretation interface admitting the intended nonthin model | `ContextualCollapse.total` proved; every interface field instantiated in `GeneratedModel`, with nonthinness and an empty hom-set proved. The intended-category bridge/model check remains open. |
-| II | Maximality conditional on explicit coherence, normalization, presentation, and substitution inputs | `relative_maximality` proved for a category on formulas with explicit `OccurrenceInterpretation`, `Normalization`, `SignedLabelPreservation`, `Substitution`, and `DoubleNegation` data. Their correspondence with the intended presentation remains open. |
-| III | Maximality for the actual Došen–Petrić presentation with all bridges proved | Open; the actual arrow presentation and its coherence theorem have not been formalized. |
+| I | Contextual collapse, relation calculations, and the complete structural/faithful-interpretation interface for the intended nonthin category | Conditional collapse proved. The generated fragment still instantiates all §5 fields. The actual source quotient now has `Structure`, constructed `ZeroIdentity`, a well-defined operation-preserving occurrence map, distinct projections for p : P, and an empty Hom(top,bot). Its faithful-interpretation field remains open, so milestone I is not declared complete. |
+| II | Maximality conditional on explicit coherence, normalization, presentation, and substitution inputs | `relative_maximality` proved. The source quotient now supplies `Substitution` and `DoubleNegation`. Coherence, normalization, signed-label preservation, and the full congruence correspondence remain open; no intended instance of the conditional theorem is claimed. |
+| III | Maximality for the actual Došen–Petrić presentation with all bridges proved | Open. The syntax/category/structural bridge is constructed; Boolean Coherence and the remaining intended instances are not proved. |
 
-## Checked argument
+## The unchanged conditional argument and fragment check
 
-`Structure` specifies products, coproducts, terminal and initial arrows, and the
-typed distributor. `Congruence` specifies equivalence and compatibility with
-composition, pairing, and copairing, the operations used by §5. A proof
-congruence of the full presentation must restrict to these laws; the record
-does not claim to specify every operation of that presentation.
+`Structure` gives products, coproducts, terminal and initial arrows, and the
+typed distributor. `Congruence` gives equivalence and compatibility with
+composition, pairing, and copairing, as used by §5. `OccurrenceInterpretation`
+includes faithfulness in the original category. Its derived fold, swap,
+first-injection, and second-block equations feed `ContextualCollapse.total`.
+No quotient faithfulness or cancellation of j_A is used.
 
-`OccurrenceInterpretation` interprets original-category arrows in tagged
-relations, preserves the specified operations, and is faithful. The fold,
-swap, first-injection, and second-block equations are proved from the existing
-relation calculations. None is a collapse field. Faithfulness is never applied
-to congruence classes.
+`GeneratedModel` instantiates every §5 interface field with relations denoted
+by typed terms of the structural fragment. It proves distinct projections and
+an empty Hom(top,bot). It establishes consistency and nonthinness of that full
+§5 interface, including empty occurrence sets. It omits the full Boolean arrow
+signature and is not an identification with B(P). Its fragment truth invariant
+treats negation atomically; the new full-presentation invariant instead uses
+propositional negation. No substitution instance for the fragment is claimed.
 
-`Collapse.lean` proves the second-block congruence, injected projections,
-terminal injection, inverse terminal retraction, uniqueness of existing arrows
-into A ∨ top, reversed injection, fold evaluation at top, equal projections,
-and totality on every existing hom-set. The reversed injection is obtained by
-postcomposition with the coproduct swap. No cancellation of j_A is used.
+`Isolation` gives selectors/coselectors and exact single-edge relations for
+signed normal forms. `Normalization`, signed labels, arrow substitution, and
+double negation were explicit inputs of the conditional result. The latter two
+now have source-quotient instances; the former two do not.
 
-`GeneratedModel` uses relations denoted by typed terms of the structural
-fragment as its hom-sets. Category, product, coproduct, truth-constant,
-zero-identity, distributor, and faithful-interpretation laws are all inhabited.
-For any variable its projections are unequal; `Hom(top,bot)` is empty. Negated
-formulas occur as objects, but negation functor, De Morgan, eta, and epsilon
-operations are absent from this fragment. Its auxiliary `Term.Truth` treats
-negated formulas as atomic for the empty-hom proof; it is not Boolean semantics
-for the full presentation. No substitution action on this model is asserted.
+## Actual-presentation constructions
 
-`Isolation` constructs selectors and coselectors for signed normal forms and
-proves their exact single-edge relations. A differing edge gives K for a
-signed literal, under signed-label preservation. `Normalization` supplies
-inverse arrows for transport to these normal forms. `Substitution` acts on
-arrows and both endpoint formulas and preserves the structural operations.
-`Substitution.Closed` is a separate hypothesis on the congruence. Negative
-literals use p ↦ neg A followed by the explicit double-negation retract.
-These results combine in `relative_maximality`; its hypotheses are not proved
-for the actual presentation.
+| Obligation | Declaration / status |
+| --- | --- |
+| Exact primitive grammar and typed endpoints | `Presentation.Term`; only composition, ∧, and ∨ are primitive arrow operations. Negation on arrows is derived in the source and unconstructed here. |
+| Published defining equations | `Presentation.Equation`: 71 constructor schemas with a complete source index. `Op` packages both connectives. No relation-kernel equality is a generator; the two `(m e)` laws removed by §11.5 are omitted. |
+| Generated equivalence and congruence | `Derives`, `termSetoid`; equivalence, composition, and tensor congruence. |
+| Quotient category and operation descent | `Hom`, `ofTerm`, `comp`, `tensor`, `Laws`, `category`. Derived pair/copair/unit/dR/medial/zero composites are typed definitions. |
+| Products, coproducts, terminality, initiality | `operations`; `DiagonalData.diag_projections` derives product eta, with coproduct laws by duality. Universal properties are not extra generators. |
+| Source zero formula and law | `zeroConstruction_eq`, `zeroIdentity`; the constructed `(0ηε)` composite equals primitive zero and satisfies `(0I)`. Zero arrows between different objects still require an existing-arrow witness. |
+| Occurrence equation preservation | `Term.relation`, `Term.relation_distRight`, `Equation.relation`, `Derives.relation`; every defining schema preserves the assigned relation, including empty unit cases. |
+| Quotient occurrence map and operations | `occurrenceMap`, `occurrence_id`, `occurrence_comp`, `occurrence_tensor_conj`, `occurrence_tensor_disj`, projection/injection/pair/copair/top/bot/dist/zero/eta/epsilon images. Well-defined covariant assignment to relations; faithfulness open. |
+| Nonthinness and empty hom-sets | `nonthin p` for p : P; `empty_hom P` for every P. These require no coherence hypothesis. |
+| Whole-arrow substitution and defining-congruence closure | `Term.subst`, `Constant.subst`, `Equation.subst`, `Derives.subst`, `substitute`, `substitution`. Source `(su)` is admissible with substituted endpoints. |
+| Double negation | `doubleNegation`, using `Laws.dnOut_in/out`; both inverse equations compiled without coherence. |
+| Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. No complete `OccurrenceInterpretation` instance. |
+| Normalization and occurrence correspondence | Open: actual inverse comparison arrows to signed normal forms, both inverse laws, and occurrence transport. |
+| Signed-label preservation | Open as a proved source-quotient instance. Negative literal objects alone do not prove it. |
+| Derived contravariant negation | Open: the exact source clauses, descent, functor laws, and n-r/rho naturality / eta-epsilon dinaturality. |
+| Additional congruences | Open: package restriction of every full-presentation proof congruence and its separately assumed substitution closure. Do not infer closure from one valuation kernel. |
+| Substitution-schema / Appendix A laws | Open: identity/composition with endpoint identifications, profiles, finite ordinals, renaming, and block-coordinate correspondence. |
+| Actual maximality and every-interpretation corollary | Open; do not promote the conditional theorem. |
 
-## Next concrete obligations
+## Next concrete proof task
 
-1. Define or import the intended Došen–Petrić arrow presentation and its typed
-   operations and equations, with provenance to the book's exact revision.
-2. Establish its `Structure`, `ZeroIdentity`, and `OccurrenceInterpretation`
-   data, including the zero-identity formula, distributor relation, and proved
-   faithfulness. This is the remaining intended-model gate for milestone I.
-3. Instantiate normalization, signed-label preservation, arrow substitution,
-   double negation, and restriction of every actual substitution congruence.
-   Prove normalization/occurrence and substitution-coordinate correspondence;
-   no kernel of a single valuation may be presumed substitution closed.
-4. Instantiate `relative_maximality` through that bridge. Formalize the model
-   corollary using every interpretation and nonempty variables. Appendix A's
-   profile, ordinal, and renaming correspondences also remain open.
+Construct the §14.1 negation normalizer using n-r/rho comparisons: for every
+A, give a signed normal form N(A), arrows A → N(A) and N(A) → A, and prove
+both inverse equations from the published laws. Handle double negation, both
+De Morgan cases, and both constants explicitly; then prove the induced
+occurrence correspondence. This is separate from the larger coherence proof,
+whose source reduction runs through §§11.5,12.5 and §14.2 pp.318–321.
 
-## Verification boundaries
+## Verification boundary
 
-Source screening, public import closure, and compiler-environment axiom audits
-have run. Direct, private-name, and hidden-dependency axiom controls are
-rejected. These are local checks. Independent Challenge/Solution statement
-and shared-definition comparison, independent kernel replay, official
-preflight, service verification, and publication have not run.
+The strict local build, transitive axiom audit, local import closure, three
+axiom-injection negative controls, and two presentation boundary controls ran
+successfully for the source recorded in the report. Independent
+Challenge/Solution statement/shared-definition comparison, independent kernel
+replay, official preflight, service verification, publication, and an
+independent source-transcription review have not run.

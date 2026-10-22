@@ -22,20 +22,21 @@ interpretation of variables, not one fixed valuation.
 
 | Manuscript definition or result | Formal counterpart | Exact scope or remaining input |
 | --- | --- | --- |
-| §2 category operations | `DosenPetric.Category` | Explicit Hom, identity, composition, identity laws, associativity. No assertion that it presents B(P). |
+| §2 category operations | `DosenPetric.Category`, `Presentation.Term`, `Equation`, `Derives`, `category` | The source quotient is built from the September 2007 primitive grammar and published equations; see `PRESENTATION_CORRESPONDENCE.md`. Composition and both tensors descend by generated congruence. |
+| `eq:zero-identity` | `Presentation.zeroConstruction_structural`, `zeroConstruction_eq`, `zeroIdentity` | The source unit-isomorphism composite equals the manuscript pairing/copairing formula and primitive zero; the constructed zero satisfies the required law. |
 | `eq:zero-law` | `DosenPetric.ZeroIdentity.law` | For all parallel f,g : A → B, `comp (zero A) f = comp g (zero B)`. |
 | §2 zero arrow | `ZeroIdentity.zeroOf` | Requires f : Hom A B. No arrow is supplied to an empty hom-set. |
-| §2 witness independence and absorption | `zeroOf_independent`, `commute`, `postcompose`, `precompose`, `zero_idempotent` | All categories with the explicit zero-identity law. The manuscript formula defining zero from η, ε, d remains to be constructed. |
+| §2 witness independence and absorption | `zeroOf_independent`, `commute`, `postcompose`, `precompose`, `zero_idempotent` | All categories with the explicit zero-identity law. `Presentation.zeroConstruction_eq` now proves that formula equals primitive zero in the source quotient; `Presentation.zeroIdentity` uses the construction. |
 | §3 formulas and positions | `Formula`, `Formula.Occ`, `Formula.label`, `Formula.subst` | Arbitrary variable types; negation preserves positions; each connective uses Sum tags; constants have Empty positions. |
 | `eq:occ-substitution` | `Formula.expand`, `contract`, `contract_expand`, `expand_contract` | For every substitution σ : P → Formula Q and formula A, mutually inverse maps between Occ(A[σ]) and Σ x : Occ(A), Occ(σ(label A x)). No nonemptiness assumption is needed. |
 | §3 repeated variables | `Formula.repeated_positions_distinct` | The two positions in p ∧ p are distinct even though their labels coincide. |
-| §3 relation operations | `Relations.comp`, `graph`, `sumMap`, `fstRel`, `sndRel`, `copair`, `reassoc` | Binary relations on types. These operations apply in particular to finite occurrence types. No functor from B(P) has been constructed. |
+| §3 relation operations | `Relations.comp`, `graph`, `sumMap`, `fstRel`, `sndRel`, `copair`, `reassoc` | Binary relations on types. These operations apply in particular to finite occurrence types. `Presentation.occurrenceMap` now descends from the source equation quotient and preserves identity, composition, and the specified operations; faithfulness remains open. |
 | `eq:first-injection` | `Relations.first_injection`, `OccurrenceInterpretation.first_injection` | The relation equation is unconditional; its original-category counterpart is derived under the typed faithful-interpretation input. |
 | `lem:symmetric` | `Relations.hRel_eq_fold`, `hRel_independent`, `hRel_swap`; `OccurrenceInterpretation.fold_independent`, `fold_swap` | The relation fold is calculated from operations; categorical independence and swap invariance follow by original-category faithfulness. |
 | `eq:second-block` final equality | `Relations.second_block`, `OccurrenceInterpretation.second_block` | The relation equation discards the first source block; the categorical equation follows by original-category faithfulness. |
-| §3 distinct projections | `Relations.projections_distinct`, `GeneratedModel.nonthin` | Every §5 interface field is instantiated in a generated structural-fragment model, with distinct categorical projections and `GeneratedModel.empty_hom`. This does not identify the model with B(P). |
+| §3 distinct projections | `Relations.projections_distinct`, `GeneratedModel.nonthin`, `Presentation.nonthin` | Every §5 interface field is instantiated in a generated structural-fragment model, with distinct categorical projections and `GeneratedModel.empty_hom`. This does not identify the fragment model with B(P). Separately, `Presentation.nonthin p` proves distinct projections in the equation-generated source quotient; `Presentation.empty_hom` proves its Hom(top,bot) empty. |
 | `thm:coherence` | `OccurrenceInterpretation.faithful` is explicit input | The actual published theorem is unproved in Lean. `GeneratedModel.interpretation` proves faithfulness for the structural fragment model only. |
-| Normalization and signed-label preservation, §3 | `Normalization`, `SignedLabelPreservation`, `Normalization.recover` | Typed input data and inverse-arrow transport. The intended instances and occurrence/substitution correspondence remain open. |
+| Normalization and signed-label preservation, §3 | `Normalization`, `SignedLabelPreservation`, `Normalization.recover` | Typed input data and inverse-arrow transport. The normalization and signed-label instances and occurrence/substitution correspondence remain open. |
 | `lem:isolation` | `Isolation.selector_edge`, `coselector_edge`, `isolate_edge`, `normalized_literal_context` | Normal-form witness equations and the normalized contextual consequence under faithful interpretation, normalization, and signed-label inputs. The full original-category witness formulation is not a separate declaration; no actual presentation is inferred. |
 | `prop:all-contexts` | `ContextualCollapse.context_retract`, `all_contexts` | Typed substitution on arrows and endpoints, separate congruence closure, positive substitution, and negative substitution followed by double-negation transport. |
 | `lem:collapse` | `ContextualCollapse.total` | From all K_A, the structural and faithful-interpretation data imply totality on existing arrows by §5. No faithfulness on the quotient or cancellation of j_A. |
@@ -62,3 +63,31 @@ restrict each actual proof congruence to it.
 composition and identity laws for substitution schemas themselves have not
 been formalized. No closure under substitution is inferred from one
 interpretation kernel. The model corollary still requires every interpretation.
+
+## Source-presentation instances
+
+The [source correspondence](PRESENTATION_CORRESPONDENCE.md) gives printed pages,
+equation labels, constructors, and derived arrows for the exact September 2007
+revision. `Presentation.operations` constructs `Structure` for the syntactic
+quotient. `Presentation.zeroIdentity` uses the displayed `(0ηε)` composite;
+`zeroConstruction_eq` proves equality with primitive zero. Empty hom-sets are
+preserved, with `Presentation.empty_hom` for every variable type P.
+
+`Term.subst`, `Equation.subst`, and `Derives.subst` establish whole-arrow and
+endpoint substitution and its preservation of the source-generated equality.
+`Presentation.substitution` instantiates the existing per-substitution
+`Substitution` interface, including the constructed zero.
+`Presentation.doubleNegation` instantiates `DoubleNegation` from the two n-arrows
+and their inverse equations. These instances use no coherence hypothesis.
+Schema identity/composition with endpoint identifications and occurrence-block
+transport remain separate obligations. No arbitrary extra congruence is thereby
+proved substitution closed.
+
+`Presentation.Equation.relation`, `Derives.relation`, and `occurrenceMap` prove
+well-definedness of the occurrence interpretation and the operation images.
+Faithfulness remains open, so no complete `OccurrenceInterpretation` instance
+or intended `relative_maximality` instance is claimed. Normalization,
+signed-label preservation, derived contravariant arrow negation, congruence
+restriction, and the remaining Appendix A/model correspondences are still open.
+See [the presentation report](PRESENTATION_BRIDGE_REPORT.md) for declarations,
+exact hypotheses, commands, evidence, and review boundaries.

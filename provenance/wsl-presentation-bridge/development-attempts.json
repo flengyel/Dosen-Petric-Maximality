@@ -1,0 +1,26 @@
+[
+  {
+    "stage": "monolithic occurrence equations",
+    "seconds": 879,
+    "build_exit_status": 1,
+    "outcome": "doc placement and empty-unit cases failed; corrected"
+  },
+  {
+    "stage": "termination of already-finished first process",
+    "exit_status": 1,
+    "outcome": "no such process; no process terminated"
+  },
+  {
+    "stage": "second monolithic occurrence equations",
+    "seconds": 1025,
+    "lean_exit_status": 143,
+    "build_exit_status": 1,
+    "outcome": "deliberately stopped; replaced by 71 separate schema lemmas"
+  },
+  {
+    "stage": "split occurrence equations",
+    "seconds": 366,
+    "build_exit_status": 1,
+    "outcome": "four dR expansion checks reached heartbeat limits; replaced repeated expansion with a proved shared dR relation lemma"
+  }
+]

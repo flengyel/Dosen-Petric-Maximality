@@ -1,3 +1,44 @@
+# Presentation-bridge validation
+
+The actual source-presentation bridge was verified locally in WSL2 on
+2026-10-22T04:48:37.645568+00:00. Baseline HEAD was
+`d7162e7945c98288fe3640506b8e1471c63150ef`, clean on main; SSH fetch left main
+and origin/main equal. The baseline strict verification exited 0 and audited
+645 declarations. The conditional proof modules and manuscript v4 are unchanged.
+
+The final working-source strict verification exited 0: **23 Lean source
+files and 1457 project declarations**. Only `propext`, `Quot.sound`, and
+`Classical.choice` are permitted by the transitive dependency audit, including
+private declarations. The pinned Lean 4.35.0 and dependency-free manifest are
+unchanged. New production modules ultimately import only Init.
+
+`bash scripts/verify.sh`, `python3 scripts/check-audit-boundaries.py`,
+`python3 scripts/check-presentation-boundaries.py`, manuscript
+`sha256sum -c SHA256SUMS`, and `git diff --check` all exited 0. The three axiom
+controls each rejected with exit 1 for the named illicit dependency. Both
+presentation controls rejected with exit 1: identified tagged projections and
+an attempted zero without a correctly typed existing-arrow witness.
+
+Exact commands, exit codes, environment, source inventory, raw logs, and hashes
+are retained in `provenance/wsl-presentation-bridge/` and
+`.codex-work/presentation-bridge/`. The strict log prints the baseline HEAD and
+a dirty working source; the inventory identifies the code actually checked.
+The final integration SHA and SSH ref equality are recorded in the completion
+response, with post-commit verification under `.codex-work/presentation-bridge/`.
+
+The source quotient has structural, constructed-zero, substitution, and
+double-negation instances, plus a well-defined occurrence assignment.
+Faithfulness, normalization, signed labels, derived arrow negation, remaining
+substitution/congruence correspondence, actual maximality, and the model
+corollary remain open. No independent kernel, Comparator, official preflight,
+service verification, independent peer review, or publication is claimed.
+See [the presentation report](PRESENTATION_BRIDGE_REPORT.md) and its linked
+reviews. Repository visibility and licensing were not changed.
+
+---
+
+## Historical contextual-collapse validation (unchanged evidence)
+
 # Validation record
 
 Local verification ran in the actual WSL2 checkout on 22 October 2026 UTC

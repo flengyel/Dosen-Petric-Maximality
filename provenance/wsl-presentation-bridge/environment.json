@@ -1,0 +1,80 @@
+{
+  "uname": {
+    "command": [
+      "uname",
+      "-a"
+    ],
+    "exit_status": 0,
+    "stdout": "Linux M2MA3HI 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 GNU/Linux\n",
+    "stderr": ""
+  },
+  "memory": {
+    "command": [
+      "free",
+      "-h"
+    ],
+    "exit_status": 0,
+    "stdout": "               total        used        free      shared  buff/cache   available\nMem:            15Gi       2.7Gi       1.9Gi       112Mi        11Gi        12Gi\nSwap:             0B          0B          0B\n",
+    "stderr": ""
+  },
+  "lean": {
+    "command": [
+      "lean",
+      "--version"
+    ],
+    "exit_status": 0,
+    "stdout": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)\n",
+    "stderr": ""
+  },
+  "lake": {
+    "command": [
+      "lake",
+      "--version"
+    ],
+    "exit_status": 0,
+    "stdout": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)\n",
+    "stderr": ""
+  },
+  "head": {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit_status": 0,
+    "stdout": "d7162e7945c98288fe3640506b8e1471c63150ef\n",
+    "stderr": ""
+  },
+  "branch": {
+    "command": [
+      "git",
+      "branch",
+      "--show-current"
+    ],
+    "exit_status": 0,
+    "stdout": "main\n",
+    "stderr": ""
+  },
+  "origin": {
+    "command": [
+      "git",
+      "remote",
+      "get-url",
+      "origin"
+    ],
+    "exit_status": 0,
+    "stdout": "git@github.com:flengyel/Dosen-Petric-Maximality.git\n",
+    "stderr": ""
+  },
+  "status": {
+    "command": [
+      "git",
+      "status",
+      "--short"
+    ],
+    "exit_status": 0,
+    "stdout": " M Checks/Axioms.lean\n M DosenPetric.lean\n?? DosenPetric/CartesianFromDiagonal.lean\n?? DosenPetric/PresentationCategory.lean\n?? DosenPetric/PresentationConsistency.lean\n?? DosenPetric/PresentationEquations.lean\n?? DosenPetric/PresentationInstances.lean\n?? DosenPetric/PresentationOccurrenceMap.lean\n?? DosenPetric/PresentationOccurrences.lean\n?? DosenPetric/PresentationStructure.lean\n?? DosenPetric/PresentationSubstitution.lean\n?? DosenPetric/PresentationSyntax.lean\n?? DosenPetric/PresentationZero.lean\n?? docs/PRESENTATION_CORRESPONDENCE.md\n?? provenance/wsl-presentation-bridge/\n?? scripts/check-presentation-boundaries.py\n",
+    "stderr": ""
+  },
+  "utc": "2026-10-22T04:49:02.120822+00:00"
+}

@@ -10,3 +10,14 @@ public import DosenPetric.GeneratedModel
 public import DosenPetric.NormalForm
 public import DosenPetric.Isolation
 public import DosenPetric.Substitution
+public import DosenPetric.PresentationSyntax
+public import DosenPetric.PresentationEquations
+public import DosenPetric.PresentationCategory
+public import DosenPetric.CartesianFromDiagonal
+public import DosenPetric.PresentationStructure
+public import DosenPetric.PresentationZero
+public import DosenPetric.PresentationSubstitution
+public import DosenPetric.PresentationInstances
+public import DosenPetric.PresentationOccurrences
+public import DosenPetric.PresentationConsistency
+public import DosenPetric.PresentationOccurrenceMap
