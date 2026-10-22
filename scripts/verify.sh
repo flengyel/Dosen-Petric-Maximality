@@ -18,5 +18,7 @@ expected=$(cat lean-toolchain)
 [[ $expected == leanprover/lean4:v4.35.0 ]] || { echo 'Unexpected toolchain pin.'; exit 1; }
 lean --version | grep -Eq 'version 4\.35\.0[, )]' || { echo 'Wrong active Lean version.'; exit 1; }
 lake build
+cp lake-manifest.json "$out/lake-manifest.json"
+cat lake-manifest.json
 lake env lean -DwarningAsError=true Checks/Axioms.lean
 echo 'PASS: build and transitive axiom audit. Palomar verification has not run.'

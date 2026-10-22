@@ -9,7 +9,7 @@ set_option autoImplicit false
 
 run_elab do
   let env ← getEnv
-  let mut count := 0
+  let mut count : Nat := 0
   for (name, info) in env.constants do
     if (`DosenPetric).isPrefixOf name then
       match info with
