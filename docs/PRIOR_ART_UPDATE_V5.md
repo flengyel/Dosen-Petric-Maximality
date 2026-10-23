@@ -49,3 +49,13 @@ Two `pdflatex -interaction=nonstopmode -halt-on-error` passes exited 0. The exac
 | Führmann–Pym | `f4b780a95f4492e21edae838fe5ffd5b06628f909169579734eb2c77dc176ae9` |
 
 The repository manuscript checksum file is updated for the two revised files; its v4 entries are retained. The earlier v5 build evidence is retained separately. Delivery to Windows Downloads is unavailable in this cloud workspace; no WSL copy is claimed. The finalized repository files and downloadable copies are the delivery for this revision.
+
+## URL typesetting correction
+
+After commit `7ddaebb23da983f14cc04ad9e24d070e171f1aa6`, the bibliography's custom link label was replaced by `\url{https://github.com/flengyel/notes/blob/main/logic/The-Unbearable-Notation-of-Logic_v8.pdf}`, using the direct PDF URL supplied by the author. The repository directory was inspected and contains the cited v8 PDF and TeX source; its PDF blob is `7415c7c3c5bd841bec867cb8e69f145109401e60`, matching the previously cited version. The title, version, date, section and all other manuscript text are unchanged. The historical pinned URL remains in the earlier records.
+
+Two LaTeX passes exited 0, with no warnings or overfull/underfull boxes. The 10-page PDF's bibliography displays the supplied URL and its hyperlink has the same destination. The source diff changes one bibliography line; the whitespace check has no diagnostics. Commands and logs are retained under `provenance/manuscript-v5-url/`. The bibliography page was visually inspected. A preliminary text-extraction check failed because it did not allow a line break in a URL; the final check removes extraction whitespace and separately checks the exact hyperlink destination.
+
+Current TeX SHA-256: `1e828807a1351be5aba3d446a6e275c6699d23c9fbdde73ea0d121fac054e2e2`.
+
+Current PDF SHA-256: `482b75840f70d9808ecc213dbb66cc8ec19a277ad2d14e859375aae449537906`.
