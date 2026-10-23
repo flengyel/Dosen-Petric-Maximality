@@ -1,0 +1,37 @@
+{
+  "baseline_commit": "44f4a0239fe5363fc06f448bd8f5181e29159aa8",
+  "scope": "Restore equation (2) to one displayed line. No mathematical text, typing, equation label, or appendix diagram changed.",
+  "commands": [
+    {
+      "command": "pdflatex -interaction=nonstopmode -halt-on-error Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex",
+      "passes": 3,
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "command": "sha256sum -c - (v5 manifest entries)",
+      "exit_code": 0
+    },
+    {
+      "command": "git diff --no-index --check before.tex after.tex",
+      "exit_code": 1,
+      "diagnostics": "Empty; no-index signals the expected content difference."
+    },
+    {
+      "command": "git diff --cached --check",
+      "exit_code": 0
+    }
+  ],
+  "pdf_pages": 11,
+  "latex_diagnostics": [],
+  "visually_checked": "PDF pages 2 and 3: equation (2) occupies one line at unchanged font size, within the text width; adjoining prose is unobstructed.",
+  "sha256": {
+    "Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex": "76ec9cc2167ed432fa42aeaf33ee66ea8979f1fb7cb074baf301c186411c7eee",
+    "Maximality_of_the_Dosen_Petric_Boolean_Category_v5.pdf": "d9e1c5d558b912525b2342847345b4712ff917130bc5bf51e7cc1e02a5b65803"
+  },
+  "lean_changes": false,
+  "lean_build_rerun": false
+}
