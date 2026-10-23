@@ -9,7 +9,10 @@ The reduced signed-literal syntactic category and existential inclusion
 representation are now constructed; reduced faithfulness remains open.
 The contextual gη/gε identities and their composed forms are now unconditional
 reduced theorems, with typed context and occurrence actions.
-See [the contextual report](CONTEXTUAL_FACTORIZATION_REPORT.md),
+Common atomic factorization and complete support are now proved; the remaining
+coherence input is stated precisely as PositiveCoherence P.
+See [the common atomic report](COMMON_ATOMIC_FACTORIZATION_REPORT.md),
+[the contextual report](CONTEXTUAL_FACTORIZATION_REPORT.md),
 [the source map](PRESENTATION_CORRESPONDENCE.md),
 [reduction report](SIGNED_LITERAL_REDUCTION_REPORT.md),
 [signed-label report](SIGNED_LABEL_REPORT.md),
@@ -65,6 +68,8 @@ definition is unchanged and can be adapted once that interpretation exists.
 | Signed-literal reduced syntax and representation | `Reduced.Term/Equation/Derives/Hom/category` gives the source p.318 syntactic quotient, with exactly atomic eta/epsilon. Inclusion respects equations/operations; duality and compound witnesses compile; red_sound and representation prove transport compatibility and existential hom-set surjectivity for normal-form endpoints. |
 | Reduced occurrence assignment and transfer | Independent raw tagged relation, quotient descent and inclusion/normalizer compatibility compile. `normal_faithful_of_reduced/global_faithful_of_reduced` explicitly require the unproved `Reduced.Faithful P`. |
 | Typed one-hole contexts and contextual factorization | `Context.plug/mapTerm/map_derives/map`, raw and quotient id/comp laws; source gConj/gDisj, naturality/unit components; unconditional gEta/gEpsilon/gEta_comp/gEpsilon_comp inside Reduced. Reduced zero/uniqueness and required structural unit/d identities are directly derived. Tagged fixed/hole coordinates and well-typed composed relation comparisons compile. No general positive-core coherence is assumed. |
+| Common atomic factorization and complete support | `Term.Positive` is the recursive eta/epsilon-free arrow predicate, with signed objects unrestricted. `atomicFactor` terminates by atomicCount and records exact lists; `commonAtomicFactor` supplies shared endpoints/outer factors and two positive raw middles with complete support through common tagged embeddings, independently of relation equality. Source padding and separated iterated-factor laws compile. |
+| Positive-fragment coherence input | `PositiveCoherence P` quantifies only over positive raw terms and concludes equality in Reduced.Hom. `faithful_of_positive_coherence` is proved conditionally from that explicit, unsupplied premise. This does not supply Reduced.Faithful or Boolean Coherence. |
 | Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. Reduced faithfulness and its earlier positive-core coherence inputs are unproved. No complete `OccurrenceInterpretation` instance. Equality reflection and full red-equation preservation remain open. |
 | Normalization and occurrence correspondence | `Presentation.normalization` constructs the existing record for every P by simultaneous sign recursion and source n/r/rho arrows. Both inverse laws, inverse occurrence coordinates, both graph laws, literal/label/polarity correspondence, repeated-tag injectivity, Empty cases, and transport formulas compile. No coherence or arrow-negation premise. |
 | Global signed-label preservation | `Term.relation_signedLabel`, `occurrence_signedLabel`, `occurrence_literal`: all source terms/arrows preserve complete signed literals along edges; letter/polarity and opposite-sign exclusions, plus normalized transport, compile without coherence. `diag_copies/codiag_merges` preserve the copying/merging boundary. No faithful-interface instance is fabricated. |
@@ -75,16 +80,14 @@ definition is unchanged and can be adapted once that interpretation exists.
 
 ## Next concrete proof task
 
-Construct the common atomic η/ε factorization of reduced raw terms, with an
-explicit η/ε-free positive middle term and all endpoint embeddings, following
-printed pp.320–321. Contexts and the four contextual factorization identities
-are now proved unconditionally. The source's general Distributive Dicartesian
-Coherence (§11.5, invoked on p.319) is still unproved; only the specific
-structural instances needed here have direct reduced derivations. Zero-Identity
-Distributive Dicartesian Coherence (§12.5, invoked on p.321) remains the separate
-input needed for the later equality of positive middle arrows. Neither is
-silently supplied by the contextual theorem. Reduced.Faithful, inclusion equality
-reflection, full red quotient descent and Boolean Coherence remain open.
+Prove `PositiveCoherence P` for the explicit eta/epsilon-free fragment. Begin
+with the source §12.5 zero-tensor law (0I xi), p.288, and union-unit law,
+pp.290–291, then construct the required positive Gentzenization/cut-elimination
+and coherence argument. Common atomic factorization, checked positive middles,
+complete support and conditional transfer are now proved. The source's §12.5
+faithfulness premise remains open, as does general §11.5 coherence. Reduced
+faithfulness, Boolean Coherence, inclusion equality reflection and full raw
+reduction's quotient descent are not inferred from relation calculations.
 
 ## Verification boundary
 

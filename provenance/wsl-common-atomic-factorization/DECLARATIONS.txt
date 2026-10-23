@@ -1,0 +1,117 @@
+DosenPetric/PositiveFragment.lean:13: inductive Positive : {A B : NormalForm P} → Term P A B → Prop where
+DosenPetric/PositiveFragment.lean:36: def etaLabels : {A B : NormalForm P} → Term P A B → List P
+DosenPetric/PositiveFragment.lean:42: def epsilonLabels : {A B : NormalForm P} → Term P A B → List P
+DosenPetric/PositiveFragment.lean:48: def atomicCount {A B : NormalForm P} (t : Term P A B) : Nat :=
+DosenPetric/PositiveFragment.lean:51: theorem Positive.etaLabels {A B : NormalForm P} {t : Term P A B} (h : t.Positive) : t.etaLabels = [] := by
+DosenPetric/PositiveFragment.lean:54: theorem Positive.epsilonLabels {A B : NormalForm P} {t : Term P A B} (h : t.Positive) : t.epsilonLabels = [] := by
+DosenPetric/PositiveFragment.lean:57: theorem positive_of_labels {A B : NormalForm P} (t : Term P A B)
+DosenPetric/PositiveFragment.lean:88: theorem Positive.distRight (A B C : NormalForm P) : (distRight A B C).Positive :=
+DosenPetric/PositiveFragment.lean:96: theorem gConj_positive (K : Context P) (B : NormalForm P) : (K.gConj B).Positive := by
+DosenPetric/PositiveFragment.lean:110: theorem gDisj_positive (K : Context P) (B : NormalForm P) : (K.gDisj B).Positive := by
+DosenPetric/PositiveFragment.lean:125: def PositiveCoherence (P : Type u) : Prop :=
+DosenPetric/AtomicExtraction.lean:11: inductive Atomic (P : Type u) where
+DosenPetric/AtomicExtraction.lean:17: @[reducible] def etaObject (p : P) : NormalForm P := .disj (.lit (.neg p)) (.lit (.pos p))
+DosenPetric/AtomicExtraction.lean:18: @[reducible] def epsilonObject (p : P) : NormalForm P := .conj (.lit (.pos p)) (.lit (.neg p))
+DosenPetric/AtomicExtraction.lean:19: @[reducible] def source : Atomic P → NormalForm P
+DosenPetric/AtomicExtraction.lean:22: @[reducible] def target : Atomic P → NormalForm P
+DosenPetric/AtomicExtraction.lean:25: @[reducible] def term : (a : Atomic P) → Term P a.source a.target
+DosenPetric/AtomicExtraction.lean:28: def etas : Atomic P → List P | .eta p => [p] | .epsilon _ => []
+DosenPetric/AtomicExtraction.lean:29: def epsilons : Atomic P → List P | .eta _ => [] | .epsilon p => [p]
+DosenPetric/AtomicExtraction.lean:34: structure AtomicSplit {A B : NormalForm P} (a : Atomic P) (t : Term P A B) where
+DosenPetric/AtomicExtraction.lean:46: def thenTerm {f : Term P A B} (s : AtomicSplit a f) (g : Term P B C) : AtomicSplit a (.comp f g) where
+DosenPetric/AtomicExtraction.lean:57: def preTerm (f : Term P A B) (hf : f.Positive) {g : Term P B C} (s : AtomicSplit a g) :
+DosenPetric/AtomicExtraction.lean:69: def tensorLeft (o : Op) {A B C D : NormalForm P} {f : Term P A C}
+DosenPetric/AtomicExtraction.lean:84: def tensorRight (o : Op) {A B C D : NormalForm P} (f : Term P A C) (hf : f.Positive)
+DosenPetric/AtomicExtraction.lean:103: inductive AtomicView {A B : NormalForm P} (t : Term P A B) where
+DosenPetric/AtomicExtraction.lean:108: def atomicView : {A B : NormalForm P} → (t : Term P A B) → AtomicView t
+DosenPetric/AtomicPorts.lean:10: theorem ofTerm_id (A : NormalForm P) : ofTerm (.id A) = id A := rfl
+DosenPetric/AtomicPorts.lean:12: theorem ofTerm_comp {A B C : NormalForm P} (f : Term P A B) (g : Term P B C) :
+DosenPetric/AtomicPorts.lean:15: theorem ofTerm_tensor (o : Op) {A B C D : NormalForm P} (f : Term P A C) (g : Term P B D) :
+DosenPetric/AtomicPorts.lean:20: @[reducible] def block : Op → P → NormalForm P
+DosenPetric/AtomicPorts.lean:25: @[reducible] def expand (o : Op) (A : NormalForm P) : List P → NormalForm P
+DosenPetric/AtomicPorts.lean:29: def mapTerm (o : Op) (w : (p : P) → Term P (block o p) (block o p))
+DosenPetric/AtomicPorts.lean:34: def map (o : Op) (w : (p : P) → Hom (block o p) (block o p))
+DosenPetric/AtomicPorts.lean:39: theorem map_ofTerm (o : Op) (w : (p : P) → Term P (block o p) (block o p))
+DosenPetric/AtomicPorts.lean:46: def lift {A B : NormalForm P} (o : Op) (f : Term P A B) (ps : List P) :=
+DosenPetric/AtomicPorts.lean:49: def zeros {A B : NormalForm P} (o : Op) (f : Term P A B) (ps : List P) :=
+DosenPetric/AtomicPorts.lean:52: def mask (o : Op) (A : NormalForm P) (ps : List P) := zeros o (.id A) ps
+DosenPetric/AtomicPorts.lean:54: theorem mapTerm_positive (o : Op) (w : (p : P) → Term P (block o p) (block o p))
+DosenPetric/AtomicPorts.lean:61: theorem lift_positive {A B : NormalForm P} (o : Op) (f : Term P A B) (hf : f.Positive) (ps : List P) :
+DosenPetric/AtomicPorts.lean:64: theorem zeros_positive {A B : NormalForm P} (o : Op) (f : Term P A B) (hf : f.Positive) (ps : List P) :
+DosenPetric/AtomicPorts.lean:67: def etaOne (A : NormalForm P) (p : P) : Term P A (.conj A (Atomic.etaObject p)) :=
+DosenPetric/AtomicPorts.lean:70: def epsilonOne (A : NormalForm P) (p : P) : Term P (.disj A (Atomic.epsilonObject p)) A :=
+DosenPetric/AtomicPorts.lean:73: def etaPrefix (A : NormalForm P) : (ps : List P) → Term P A (expand .conj A ps)
+DosenPetric/AtomicPorts.lean:77: def epsilonSuffix (A : NormalForm P) : (ps : List P) → Term P (expand .disj A ps) A
+DosenPetric/AtomicPorts.lean:81: theorem etaOne_nat {A B : NormalForm P} (f : Hom A B) (p : P)
+DosenPetric/AtomicPorts.lean:93: theorem epsilonOne_nat {A B : NormalForm P} (f : Hom A B) (p : P)
+DosenPetric/AtomicPorts.lean:105: theorem prefix_natural (w : (p : P) → Hom (block .conj p) (block .conj p))
+DosenPetric/AtomicPorts.lean:115: theorem suffix_natural (w : (p : P) → Hom (block .disj p) (block .disj p))
+DosenPetric/AtomicPorts.lean:126: theorem prefix_mask (A : NormalForm P) (ps : List P) :
+DosenPetric/AtomicPorts.lean:132: theorem mask_suffix (A : NormalForm P) (ps : List P) :
+DosenPetric/AtomicFactorization.lean:13: def etaRemainder (s : AtomicSplit (.eta p) t) : Term P (.conj A (Atomic.etaObject p)) B :=
+DosenPetric/AtomicFactorization.lean:17: def epsilonRemainder (s : AtomicSplit (.epsilon p) t) : Term P A (.disj B (Atomic.epsilonObject p)) :=
+DosenPetric/AtomicFactorization.lean:21: theorem eta_factor (s : AtomicSplit (.eta p) t) :
+DosenPetric/AtomicFactorization.lean:30: theorem epsilon_factor (s : AtomicSplit (.epsilon p) t) :
+DosenPetric/AtomicFactorization.lean:39: theorem etaRemainder_etas (s : AtomicSplit (.eta p) t) : s.etaRemainder.etaLabels = s.after.etaLabels := by
+DosenPetric/AtomicFactorization.lean:43: theorem etaRemainder_epsilons (s : AtomicSplit (.eta p) t) : s.etaRemainder.epsilonLabels = s.after.epsilonLabels := by
+DosenPetric/AtomicFactorization.lean:47: theorem epsilonRemainder_etas (s : AtomicSplit (.epsilon p) t) : s.epsilonRemainder.etaLabels = s.after.etaLabels := by
+DosenPetric/AtomicFactorization.lean:51: theorem epsilonRemainder_epsilons (s : AtomicSplit (.epsilon p) t) : s.epsilonRemainder.epsilonLabels = s.after.epsilonLabels := by
+DosenPetric/AtomicFactorization.lean:55: theorem etaRemainder_lt (s : AtomicSplit (.eta p) t) : s.etaRemainder.atomicCount < t.atomicCount := by
+DosenPetric/AtomicFactorization.lean:61: theorem epsilonRemainder_lt (s : AtomicSplit (.epsilon p) t) : s.epsilonRemainder.atomicCount < t.atomicCount := by
+DosenPetric/AtomicFactorization.lean:70: structure AtomicFactor {A B : NormalForm P} (t : Term P A B) where
+DosenPetric/AtomicFactorization.lean:81: def atomicFactor : {A B : NormalForm P} → (t : Term P A B) → AtomicFactor t
+DosenPetric/AtomicPortOccurrences.lean:14: def embed (o : Op) (A : NormalForm P) : (ps : List P) → A.formula.Occ → (expand o A ps).formula.Occ
+DosenPetric/AtomicPortOccurrences.lean:18: theorem embed_injective (o : Op) (A : NormalForm P) (ps : List P) {x y : A.formula.Occ}
+DosenPetric/AtomicPortOccurrences.lean:26: theorem zeros_relation (o : Op) {A B : NormalForm P} (f : Term P A B) (ps : List P)
+DosenPetric/AtomicPortOccurrences.lean:37: theorem mask_relation (o : Op) (A : NormalForm P) (ps : List P)
+DosenPetric/AtomicPortOccurrences.lean:44: theorem etaOne_relation (A : NormalForm P) (p : P) :
+DosenPetric/AtomicPortOccurrences.lean:47: theorem epsilonOne_relation (A : NormalForm P) (p : P)
+DosenPetric/AtomicPortOccurrences.lean:51: theorem prefix_relation (A : NormalForm P) (ps : List P) :
+DosenPetric/AtomicPortOccurrences.lean:60: theorem suffix_relation (A : NormalForm P) (ps : List P)
+DosenPetric/AtomicPortOccurrences.lean:72: def masked {A B : NormalForm P} {ps qs : List P}
+DosenPetric/AtomicPortOccurrences.lean:76: theorem masked_positive {A B : NormalForm P} {ps qs : List P}
+DosenPetric/AtomicPortOccurrences.lean:82: theorem masked_factor {A B : NormalForm P} {ps qs : List P} {t : Term P A B}
+DosenPetric/AtomicPortOccurrences.lean:90: theorem factor_relation {A B : NormalForm P} {ps qs : List P} {t : Term P A B}
+DosenPetric/AtomicPortOccurrences.lean:103: theorem masked_support {A B : NormalForm P} {ps qs : List P} {t : Term P A B}
+DosenPetric/AtomicPortOccurrences.lean:121: structure SupportedAtomicFactor {A B : NormalForm P} (t : Term P A B) extends AtomicFactor t where
+DosenPetric/AtomicPortOccurrences.lean:125: def supportedAtomicFactor {A B : NormalForm P} (t : Term P A B) : SupportedAtomicFactor t :=
+DosenPetric/AtomicPadding.lean:13: inductive Selection (P : Type u) where
+DosenPetric/AtomicPadding.lean:19: @[reducible] def all : List (Selection P) → List P
+DosenPetric/AtomicPadding.lean:24: @[reducible] def kept : List (Selection P) → List P
+DosenPetric/AtomicPadding.lean:32: def inputPad {A B : NormalForm P} (f : Term P A B) : (xs : List (Selection P)) →
+DosenPetric/AtomicPadding.lean:39: def outputPad {A B : NormalForm P} (f : Term P A B) : (xs : List (Selection P)) →
+DosenPetric/AtomicPadding.lean:45: theorem inputPad_positive {A B : NormalForm P} (f : Term P A B) (hf : f.Positive) (xs : List (Selection P)) :
+DosenPetric/AtomicPadding.lean:54: theorem outputPad_positive {A B : NormalForm P} (f : Term P A B) (hf : f.Positive) (xs : List (Selection P)) :
+DosenPetric/AtomicPadding.lean:63: theorem etaOne_fst (A : NormalForm P) (p : P) :
+DosenPetric/AtomicPadding.lean:68: theorem inl_epsilonOne (A : NormalForm P) (p : P) :
+DosenPetric/AtomicPadding.lean:73: theorem inputPad_natural {A B : NormalForm P} (f : Term P A B) (xs : List (Selection P)) :
+DosenPetric/AtomicPadding.lean:93: theorem outputPad_natural {A B : NormalForm P} (f : Term P A B) (xs : List (Selection P)) :
+DosenPetric/AtomicPadding.lean:113: theorem expand_append (o : Op) (A : NormalForm P) (ps qs : List P) :
+DosenPetric/AtomicIterates.lean:13: @[reducible] def unitObject (o : Op) (A : NormalForm P) : Nat → NormalForm P
+DosenPetric/AtomicIterates.lean:17: def unitIn (A : NormalForm P) : (n : Nat) → Term P A (unitObject .conj A n)
+DosenPetric/AtomicIterates.lean:21: def unitOut (A : NormalForm P) : (n : Nat) → Term P (unitObject .disj A n) A
+DosenPetric/AtomicIterates.lean:25: theorem unitIn_positive (A : NormalForm P) (n : Nat) : (unitIn A n).Positive := by
+DosenPetric/AtomicIterates.lean:30: theorem unitOut_positive (A : NormalForm P) (n : Nat) : (unitOut A n).Positive := by
+DosenPetric/AtomicIterates.lean:36: def etaTensor {A B : NormalForm P} (f : Term P A B) : (ps : List P) →
+DosenPetric/AtomicIterates.lean:42: def epsilonTensor {A B : NormalForm P} (f : Term P A B) : (ps : List P) →
+DosenPetric/AtomicIterates.lean:47: theorem eta_unit_bridge {A B : NormalForm P} (f : Term P A B) (p : P) :
+DosenPetric/AtomicIterates.lean:56: theorem epsilon_unit_bridge {A B : NormalForm P} (f : Term P A B) (p : P) :
+DosenPetric/AtomicIterates.lean:65: theorem etaTensor_units {A B : NormalForm P} (f : Term P A B) (ps : List P) :
+DosenPetric/AtomicIterates.lean:76: theorem epsilonTensor_units {A B : NormalForm P} (f : Term P A B) (ps : List P) :
+DosenPetric/AtomicIterates.lean:87: theorem prefix_separated (A : NormalForm P) (ps : List P) :
+DosenPetric/AtomicIterates.lean:93: theorem suffix_separated (A : NormalForm P) (ps : List P) :
+DosenPetric/CommonAtomicFactorization.lean:13: theorem AtomicFactor.remap {A B X Y : NormalForm P} {t : Term P A B}
+DosenPetric/CommonAtomicFactorization.lean:33: structure CommonAtomicFactor {A B : NormalForm P} (t₁ t₂ : Term P A B) where
+DosenPetric/CommonAtomicFactorization.lean:51: def commonAtomicFactor {A B : NormalForm P} (t₁ t₂ : Term P A B) : CommonAtomicFactor t₁ t₂ := by
+DosenPetric/CommonAtomicFactorization.lean:81: def input (s : CommonAtomicFactor t₁ t₂) := expand .conj A s.etas
+DosenPetric/CommonAtomicFactorization.lean:82: def output (s : CommonAtomicFactor t₁ t₂) := expand .disj B s.epsilons
+DosenPetric/CommonAtomicFactorization.lean:83: def before (s : CommonAtomicFactor t₁ t₂) : Hom A s.input := ofTerm (etaPrefix A s.etas)
+DosenPetric/CommonAtomicFactorization.lean:84: def after (s : CommonAtomicFactor t₁ t₂) : Hom s.output B := ofTerm (epsilonSuffix B s.epsilons)
+DosenPetric/CommonAtomicFactorization.lean:85: def embedA (s : CommonAtomicFactor t₁ t₂) := embed .conj A s.etas
+DosenPetric/CommonAtomicFactorization.lean:86: def embedB (s : CommonAtomicFactor t₁ t₂) := embed .disj B s.epsilons
+DosenPetric/CommonAtomicFactorization.lean:88: theorem embedA_injective (s : CommonAtomicFactor t₁ t₂) {x y : A.formula.Occ}
+DosenPetric/CommonAtomicFactorization.lean:91: theorem embedB_injective (s : CommonAtomicFactor t₁ t₂) {x y : B.formula.Occ}
+DosenPetric/CommonAtomicFactorization.lean:94: theorem embedded₁ (s : CommonAtomicFactor t₁ t₂) (x : A.formula.Occ) (y : B.formula.Occ) :
+DosenPetric/CommonAtomicFactorization.lean:104: theorem embedded₂ (s : CommonAtomicFactor t₁ t₂) (x : A.formula.Occ) (y : B.formula.Occ) :
+DosenPetric/CommonAtomicFactorization.lean:114: theorem relations_equal (s : CommonAtomicFactor t₁ t₂) (h : t₁.relation = t₂.relation) :
+DosenPetric/CommonAtomicFactorization.lean:123: theorem faithful_of_positive_coherence (hC : PositiveCoherence P) : Faithful P := by

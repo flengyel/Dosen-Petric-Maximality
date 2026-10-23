@@ -1,0 +1,28 @@
+{
+  "book": {
+    "url": "https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf",
+    "revision": "September 2007",
+    "cache": ".codex-work/references/dosen-petric-coh-september-2007-e285235f.pdf",
+    "sha256": "e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e",
+    "printed_pages": [
+      320,
+      321,
+      288,
+      290,
+      291
+    ],
+    "page_conversion": "one-based PDF page = printed page + 12",
+    "render": {
+      "path": ".codex-work/common-atomic-factorization/source-p321.png",
+      "sha256": "d2f25c576663e270b979b940ebfaa51ceb3b618b2cad87709bfcd0aab751a316"
+    },
+    "confirmed_discrepancy": "p.321 kept epsilon-padding branch displays identity at q OR neg q; the displayed epsilon domain/expanded output port and source primitive epsilon require q AND neg q."
+  },
+  "writing": {
+    "cache": ".codex-work/references/knuth-mathematical-writing-mit-9bf404c2.pdf",
+    "sha256": "9bf404c2c75633a1f39aae97af0b2e9335ce6d83cf386c84906654589b4e82e6",
+    "edition": "119-page MIT-hosted typeset course report; no byte identity with Stanford scan/MAA edition claimed",
+    "passages": "Section 1 printed pp.1-6/PDF pp.3-8, Sections 4-5 printed pp.9-13/PDF pp.11-15",
+    "historical_access_records": "preserved"
+  }
+}

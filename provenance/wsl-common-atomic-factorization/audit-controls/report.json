@@ -1,0 +1,103 @@
+{
+  "utc": "2026-10-23T00:25:51.218344+00:00",
+  "base_commit": "1bdb28d72db247ce87c6d34bb1f2fc29b357f351",
+  "checks": [
+    {
+      "name": "direct-axiom",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/contextual-collapse/checks/direct-axiom.lean"
+      ],
+      "exit_status": 1,
+      "expected": "nonzero; Unpermitted axiom DosenPetric.AuditNegative.direct",
+      "passed": true,
+      "source_sha256": "fc9f01f5cda45e4c95a220ca20bf03d63b3b2c4e570c8ec5e9c0ff94f7139641",
+      "log_sha256": "83eaa0bb750699f3c2f6ad4953d4872d59749613eb60db667a4997757f80e723"
+    },
+    {
+      "name": "private-axiom",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/contextual-collapse/checks/private-axiom.lean"
+      ],
+      "exit_status": 1,
+      "expected": "nonzero; Unpermitted axiom DosenPetric.AuditNegative.privateInput",
+      "passed": true,
+      "source_sha256": "a4685de1a83da838fa468cb6f8806add1fcf5266f83372e2aadf2ba9719e6c47",
+      "log_sha256": "e43750c30df3efa59e7f07e46456b1297e13f55bf5125b63dea47be31b1e67ec"
+    },
+    {
+      "name": "hidden-dependency",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/contextual-collapse/checks/hidden-dependency.lean"
+      ],
+      "exit_status": 1,
+      "expected": "nonzero; Unpermitted axiom AuditNegative.external",
+      "passed": true,
+      "source_sha256": "6f518b0f3b4d9d2d276999086499e792ad41f9d4037c4866c5d7c4422f1bab81",
+      "log_sha256": "3e466895d5687b747ce1339c7de4b2e789332378400d1bacd44f206ba24c3b9b"
+    },
+    {
+      "name": "public-import-closure",
+      "passed": true,
+      "source_files": [
+        "DosenPetric.lean",
+        "DosenPetric/AtomicExtraction.lean",
+        "DosenPetric/AtomicFactorization.lean",
+        "DosenPetric/AtomicIterates.lean",
+        "DosenPetric/AtomicPadding.lean",
+        "DosenPetric/AtomicPortOccurrences.lean",
+        "DosenPetric/AtomicPorts.lean",
+        "DosenPetric/CartesianFromDiagonal.lean",
+        "DosenPetric/Category.lean",
+        "DosenPetric/Collapse.lean",
+        "DosenPetric/CommonAtomicFactorization.lean",
+        "DosenPetric/ContextOccurrences.lean",
+        "DosenPetric/ContextualMaps.lean",
+        "DosenPetric/Formula.lean",
+        "DosenPetric/GeneratedModel.lean",
+        "DosenPetric/Isolation.lean",
+        "DosenPetric/NormalForm.lean",
+        "DosenPetric/NormalizationComparison.lean",
+        "DosenPetric/OccurrenceLaws.lean",
+        "DosenPetric/PositiveFragment.lean",
+        "DosenPetric/PresentationCategory.lean",
+        "DosenPetric/PresentationConsistency.lean",
+        "DosenPetric/PresentationEquations.lean",
+        "DosenPetric/PresentationInstances.lean",
+        "DosenPetric/PresentationNormalization.lean",
+        "DosenPetric/PresentationOccurrenceMap.lean",
+        "DosenPetric/PresentationOccurrences.lean",
+        "DosenPetric/PresentationSignedLabels.lean",
+        "DosenPetric/PresentationStructure.lean",
+        "DosenPetric/PresentationSubstitution.lean",
+        "DosenPetric/PresentationSyntax.lean",
+        "DosenPetric/PresentationZero.lean",
+        "DosenPetric/ReducedCategory.lean",
+        "DosenPetric/ReducedContexts.lean",
+        "DosenPetric/ReducedEquations.lean",
+        "DosenPetric/ReducedLaws.lean",
+        "DosenPetric/ReducedOccurrences.lean",
+        "DosenPetric/ReducedStructure.lean",
+        "DosenPetric/ReducedSyntax.lean",
+        "DosenPetric/ReducedWitnesses.lean",
+        "DosenPetric/ReductionTransport.lean",
+        "DosenPetric/Relations.lean",
+        "DosenPetric/SignedLiteralReduction.lean",
+        "DosenPetric/Structure.lean",
+        "DosenPetric/Substitution.lean"
+      ],
+      "boundary": "local library imports; not a Challenge/Solution comparison"
+    }
+  ]
+}

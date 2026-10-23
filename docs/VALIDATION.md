@@ -1,3 +1,44 @@
+# Common atomic factorization validation (current checkpoint)
+
+Clean main baseline 1bdb28d72db247ce87c6d34bb1f2fc29b357f351 passed strict verification:
+38 Lean files and 2296 audited project declarations. SSH origin was fetched;
+local/tracking main agreed, and unrelated work was absent. Completed constructions
+were reused without a reset or a clean rebuild.
+
+Sequential verification completed at 2026-10-23T00:25:52.196584+00:00.
+`bash scripts/verify.sh` exited 0: **46 Lean files and 2816 audited declarations**.
+Both boundary scripts exited 0; all five expected fixtures rejected with Lean
+exit 1 and the required diagnostics. Public import closure passed. Manuscript
+SHA256SUMS and git diff --check exited 0. Only propext, Quot.sound and
+Classical.choice are permitted; common factorization/support/conditional
+transfer print the first two, with no selected new Classical.choice use.
+
+The positive predicate, terminating exact-list extraction, individual and common
+factorizations, typed source padding and separated iterates, injective common
+embeddings and complete support are compiled. Full middle-relation equality
+follows from original relation equality. PositiveCoherence P is an explicit
+unsupplied premise, and its transfer to Reduced.Faithful is conditional.
+The rendered p.321 epsilon-padding identity typo is documented. The 21 raw
+constructors and 61 reduced equations, old Lean sources, historical reports,
+pinned Lean 4.35.0, Init-only dependencies, manifest and manuscript v4 are
+unchanged. No production proof hole, new equation or mathematical axiom was
+introduced. One heavy process ran at a time.
+
+Evidence, source/declaration inventories and exact hashes are retained under
+provenance/wsl-common-atomic-factorization/. Runtime, committed-source, SSH and
+Downloads receipts are under .codex-work/common-atomic-factorization/.
+Both reviews are author-side; the governing writing cache was directly consulted.
+Historical access records are preserved. No independent kernel replay,
+independent full source audit, Challenge/Solution or Comparator comparison,
+official preflight/service verification, manuscript recompilation/layout review,
+publication, license or visibility change occurred. Reduced faithfulness,
+Boolean Coherence and unconditional maximality remain open. See
+[the common atomic report](COMMON_ATOMIC_FACTORIZATION_REPORT.md).
+
+---
+
+## Historical contextual factorization validation (unchanged evidence)
+
 # Contextual factorization validation (current checkpoint)
 
 Clean main baseline 0f001da5d13a3fd0ccdf33be5e5c5799b9ede101 passed strict verification:

@@ -36,3 +36,11 @@ public import DosenPetric.ReducedStructure
 public import DosenPetric.ReducedContexts
 public import DosenPetric.ContextualMaps
 public import DosenPetric.ContextOccurrences
+public import DosenPetric.PositiveFragment
+public import DosenPetric.AtomicExtraction
+public import DosenPetric.AtomicPorts
+public import DosenPetric.AtomicFactorization
+public import DosenPetric.AtomicPortOccurrences
+public import DosenPetric.AtomicPadding
+public import DosenPetric.AtomicIterates
+public import DosenPetric.CommonAtomicFactorization

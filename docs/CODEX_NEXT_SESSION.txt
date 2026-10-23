@@ -1,7 +1,8 @@
 Continue the Došen–Petrić maximality formalization in WSL2.
 
 Repository: /home/flengyel/src/Dosen-Petric-Maximality, private, main.
-Read AGENTS.md, CONTEXTUAL_FACTORIZATION_REPORT and both contextual reviews,
+Read AGENTS.md, COMMON_ATOMIC_FACTORIZATION_REPORT and both common atomic reviews,
+CONTEXTUAL_FACTORIZATION_REPORT and both contextual reviews,
 SIGNED_LITERAL_REDUCTION_REPORT and both reduction reviews,
 PRESENTATION_CORRESPONDENCE, current statement/coverage maps, VALIDATION,
 PALOMAR_REQUIREMENTS and unchanged manuscript v4. Inspect status and fetch SSH
@@ -45,18 +46,33 @@ COMPLETED — REUSE
   Source p.319 renders B -> top or B in the disjunctive base case; general type
   and Table 2 p.49 sigma unit require B -> bot or B. This is documented.
 
+- Common atomic factorization: PositiveFragment defines inductive Term.Positive
+  (19 schemas, eta/epsilon-free, including zero; both literal signs allowed).
+  AtomicExtraction selects the first syntactic occurrence with exact lists and
+  positive preterm. AtomicFactorization.atomicFactor terminates by atomicCount;
+  individual lists equal the original traversal lists, preserving repetitions.
+  AtomicPorts gives expanded objects, factors, naturality and zero masks.
+  AtomicPadding proves typed keep/absent input/output padding and its laws.
+  AtomicIterates matches prefix/suffix with source separated units and eta/epsilon
+  tensors. AtomicPortOccurrences gives injective coordinates and complete support;
+  supportedAtomicFactor includes both zero masks.
+  commonAtomicFactor extracts once from t1 tensor-conj t2, with concatenated lists,
+  and uses positive diagonal/projection lifts to obtain shared A'/B' and a/b.
+  Both final raw middles are Positive and have full support, not merely agreement
+  on embedded endpoints. relations_equal gives whole middle-relation equality.
+  faithful_of_positive_coherence takes the explicit unsupplied PositiveCoherence P.
+  No Boolean Coherence or Reduced.Faithful instance is supplied.
+  Rendered p.321 h-disjunction kept branch displays identity at q OR neg q,
+  whereas epsilon domain/expanded port require q AND neg q; map records this.
+
 NEXT CONCRETE PROOF TASK
-Construct the common atomic η/ε factorization of reduced raw terms, following
-printed pp.320–321. Define the η/ε-free positive structural middle fragment
-explicitly and retain every endpoint embedding. Reuse the completed contexts
-and unconditional gEta/gEpsilon/gEta_comp/gEpsilon_comp proofs; do not restart
-them or assume Reduced.Faithful. The general positive-core coherence theorems
-of §§11.5 and 12.5 remain unproved. The source uses §11.5 in the contextual
-induction (p.319), whose required instances now have direct reduced derivations;
-it uses §12.5 on the common-factorization middle arrows (p.321). Prove the latter
-before concluding Reduced.Faithful. Keep common atomic factorization and
-positive-core faithfulness as separate statements. No equality reflection from
-inclusion or occurrenceMap, and no quotient-level full red function is supplied.
+Prove PositiveCoherence P for the explicitly eta/epsilon-free terms, with ambient
+Reduced.Hom equality. Start with §12.5 (0I xi), p.288, and union-unit, pp.290–291,
+inside Reduced, then construct the positive Gentzenization/cut-elimination and
+coherence argument required by the source. Reuse complete common factorization
+and support; do not restart them. General §11.5 coherence also remains open.
+No equality reflection from occurrenceMap or inclusion, no raw factorization or
+full reduction quotient descent, and no contravariant arrow negation is supplied.
 
 OTHER OPEN WORK
 Inclusion equality reflection; full red-equation preservation/quotient descent;
@@ -68,10 +84,11 @@ every-interpretation corollary. The three milestones remain separate.
 
 VERIFICATION AND REVIEW
 Pinned Lean 4.35.0, Init-only production closure, no new dependencies.
-Current strict result: 38 Lean files and 2296 audited project declarations.
+Current strict result: 46 Lean files and 2816 audited project declarations.
 Permitted axioms: propext, Quot.sound, Classical.choice. Both boundary scripts
 passed with all five expected rejections; manuscript hashes are unchanged.
-Evidence: provenance/wsl-contextual-factorization/ and matching .codex-work/.
+Evidence: provenance/wsl-common-atomic-factorization/ and matching .codex-work/.
+Prior contextual evidence remains in provenance/wsl-contextual-factorization/.
 Prior reduction evidence remains in provenance/wsl-signed-literal-reduction/.
 Run strict verification and both boundary scripts after the next change, one
 heavy process at a time, retaining actual statuses/hashes. Inspect WSL memory

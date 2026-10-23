@@ -347,11 +347,13 @@ remain omitted. Equation.toFull and Derives.toFull compile for every schema.
 | Source G on C and normalization coordinates | Independent Term.relation; relation_toFull, occurrence_inclusion, occurrence_red, Coordinates.red_apply/red_coordinates. All occurrence tags are retained. |
 | Coherence transfer | normal_faithful_of_reduced/global_faithful_of_reduced are explicitly conditional on Reduced.Faithful P. No proof/axiom/instance for that premise is supplied. |
 
-The source's remaining argument needs contextual g-eta/g-epsilon maps and
-factorizations on pp.318–320, Distributive Dicartesian Coherence in the p.319
-induction (inherited §11.5), and Zero-Identity Distributive Dicartesian
-Coherence (§12.5) on p.321. Those Lean proofs remain open. The p.314
-equivalence, derived contravariant negation and its laws remain separate too.
+The contextual g-eta/g-epsilon maps and factorizations on pp.318–320 are now
+proved below, with direct reduced derivations of their needed structural
+instances. Common atomic factorization and complete support are also proved.
+General Distributive Dicartesian Coherence (§11.5) remains unformalized, and
+the §12.5 coherence input on p.321 is now isolated as PositiveCoherence P.
+The p.314 equivalence, derived contravariant negation and its laws remain
+separate obligations.
 See [the reduction report](SIGNED_LITERAL_REDUCTION_REPORT.md) and both reviews.
 
 ## Contextual factorizations in the reduced syntactic category
@@ -417,7 +419,7 @@ r− = rightOut disj; 0 means a zero endomorphism only.
 | p.319 induction, (0I) and zero_top = id | Reduced product/coproduct structures are constructed via existing generic DiagonalData derivations. `zero_top`, `zero_bot`, `fromTop_unique`, `toBot_unique` are derived inside Reduced, not reflected from Presentation. |
 | p.319, final sentence of (gη) induction | The source invokes Distributive Dicartesian Coherence (§11.5) for the other context cases. Here all needed identities are derived directly: `gConj_nat/gDisj_nat`, `gConj_top/gDisj_bot`, then zero-based uniqueness and naturality. No general positive-core faithfulness theorem is assumed or claimed. |
 | p.320, relation comparisons following (gηf)/(gεf) | `Context.Fixed`, `encode/decode`, injective disjoint embeddings, and `occurrence_map` give exact context coordinates. `gEta_comp_relation` compares input x with Sum.inl x in B ∧ E_p; `gEpsilon_comp_relation` compares output y with Sum.inl y in C ∨ D_q. No cross-type equality of relations is asserted. |
-| p.321, final common-atomic factorization argument | Source explicitly invokes Zero-Identity Distributive Dicartesian Coherence (§12.5) on f1'' and f2''. Common atomic η/ε factorization, that positive-core theorem and Reduced.Faithful remain unproved. Contextual factorizations alone are not coherence. |
+| p.321, final common-atomic factorization argument | Source explicitly invokes Zero-Identity Distributive Dicartesian Coherence (§12.5) on f1'' and f2''. Common atomic η/ε factorization and complete support are now proved below. The positive-core theorem and Reduced.Faithful remain unproved. Contextual or common factorizations alone are not coherence. |
 
 `Context.map_derives` precedes quotient action. `mapTerm_id/mapTerm_comp`
 are actual reduced derivations (Quotient.exact of equalities in the quotient
@@ -425,3 +427,98 @@ whose defining relation is Derives). They do not use inclusion reflection.
 The functor at a fixed context is covariant from Reduced.category P to itself,
 with object map plug and arrow map map; `map_id/map_comp` prove its laws.
 No object-duality arrow operation or descent of full raw reduction is used.
+
+## Common atomic factorization and positive middle terms
+
+Source: September 2007 §14.2, printed pp.320–321 / one-based PDF
+pp.332–333. Let E_p = neg p ∨ pos p and D_q = pos q ∧ neg q.
+These are normal-form objects, not new primitive arrows. Write X_0 = A,
+X_{k+1} = X_k ∧ E_{p_{k+1}}, Y_0 = B and
+Y_{j+1} = Y_j ∨ D_{q_{j+1}}. All folds are left-associated. Semicolon
+executes the left arrow first; the source writes the reverse order with ◦.
+The source's n and m count atomic occurrences, so repeated equal labels occupy
+different list positions.
+
+| Source notation / location | Exact types and order | Lean correspondence |
+| --- | --- | --- |
+| p.320, eta^0 / eta^{k+1} = eta^k ∧ eta_p | eta^n : A_top^n → X_n, with eta^0 = id A; A_top^{k+1} = A_top^k ∧ top | `AtomicPorts.unitObject conj A n`, `etaTensor (.id A) ps` |
+| p.320, epsilon^0 / epsilon^{j+1} = epsilon^j ∨ epsilon_q | epsilon^m : Y_m → B_bot^m, epsilon^0 = id B; B_bot^{j+1} = B_bot^j ∨ bot | `unitObject disj B m`, `epsilonTensor (.id B) qs` |
+| p.320, conjunctive delta^n | A → A_top^n; insert the next top after the existing unit insertion | `unitIn A n`; `prefix_separated` proves etaPrefix = unitIn ; etaTensor |
+| p.320, disjunctive delta^m | B_bot^m → B; remove the last bot before the earlier removals | `unitOut B m`; `suffix_separated` proves epsilonSuffix = epsilonTensor ; unitOut |
+| pp.320–321, zero^n / zero^m | Endomorphisms X_n → X_n and Y_m → Y_m; id on the original block and a zero endomorphism at each added port | `mask conj A ps`, `mask disj B qs`, using `zeros` with identity accumulator |
+| p.321, h-conjunction | X_all → X_used. At a kept occurrence tensor the accumulator with id E_p. At an absent occurrence project X_all_previous ∧ E_p → X_all_previous before the accumulator | `Selection.keep/absent`, `Selection.all/kept`, `inputPad`; positivity and `inputPad_natural` compile. Selection records positions, without comparing labels. |
+| p.321, h-disjunction | Y_used → Y_all. At a kept occurrence tensor with id D_q. At an absent occurrence postcompose the accumulator with the first injection Y_all_previous → Y_all_previous ∨ D_q | `outputPad`; positivity and `outputPad_natural` compile. |
+| p.321, f_i' | Initial eta/epsilon-free positive raw middle term at the term's own expanded endpoints | `AtomicFactor.middle`, with `positive`, exact eta_list/epsilon_list and quotient factorization. Generated through the earlier contextual identities. |
+| p.321, f_i'' = zero^n ; h_input ; f_i' ; h_output ; zero^m (execution order) | Completed positive middle at common endpoints, including padding and both zero factors | `CommonAtomicFactor.middle₁/middle₂`. The construction uses one extraction of t₁ ∧ t₂ and positive diagonal/projection padding, described below; it does not claim a syntactic identity with a separately chosen source f_i'. `masked_support` proves that the final masks remove every auxiliary edge. |
+| p.321, equal relations of completed middles | Equality of the entire relations, not just the embedded original block | `CommonAtomicFactor.relations_equal`, from support₁/support₂ and the original relation equality |
+| p.321, §12.5 appeal | Faithfulness for the eta/epsilon-free, zero-identity distributive dicartesian arrow fragment | `PositiveCoherence P` is an explicitly unproved proposition. `faithful_of_positive_coherence` proves only its conditional consequence. |
+
+**Confirmed rendered discrepancy.** The kept h-disjunction branch on printed
+p.321 displays identity at `q_{k+1} ∨ neg q_{k+1}`. The epsilon primitive has
+domain `q_{k+1} ∧ neg q_{k+1}`, as does the expanded port displayed immediately
+above on the same page. The branch requires identity at that conjunction.
+The rendered PDF was inspected at high resolution; this is not merely an
+extraction artifact. `outputPad` uses the correctly typed identity at D_q,
+and the discrepancy is retained here. The earlier p.319 unit typo remains
+recorded in the contextual section. Neither display is added as an equation.
+Source and rendering hashes are in the current source-consultation record.
+
+The positive fragment is the inductive `Term.Positive` predicate: all 19
+non-eta/epsilon constructor schemas of the existing Term grammar, recursively
+closed under comp and both tensors. Zero endomorphisms remain included.
+Both signs of literal and both constants remain allowed as objects. There is
+no additional quotient: ambient arrow equality is the unchanged Reduced.Hom
+quotient generated by Reduced.Derives and its 61 Equation schemas.
+
+`Term.atomicView` recursively selects the first atomic syntactic occurrence,
+with a positive preterm, one typed context and a remaining postterm.
+AtomicSplit's eta/epsilon list equations preserve all repeated occurrences.
+Its composition and both tensor clauses prove equality in Reduced, using
+category and tensor laws. Each remainder replaces one contextual eta/epsilon
+by the already proved g maps and zero endomorphisms. The strictly smaller
+atomicCount proves termination of `atomicFactor`. Its lists are exactly the
+original traversal lists, rather than deduplicated collections.
+
+For two parallel raw terms, `commonAtomicFactor` performs one extraction on
+`t₁ ∧ t₂ : A ∧ A → B ∧ B`. Thus the common lists are exactly the two traversal
+lists concatenated in order. If M is that positive middle, the two unmasked
+middle terms are
+
+```
+lift conj (diag A) ps ; M ; lift disj (fst B B) qs
+lift conj (diag A) ps ; M ; lift disj (snd B B) qs.
+```
+
+`AtomicFactor.remap` proves that the same etaPrefix A ps and epsilonSuffix B qs
+are outer factors for both, by `prefix_natural/suffix_natural`, associativity
+and the proved product projection laws. This supplies common endpoints in a
+single construction, not two unrelated existential factorizations. The source's
+keep/absent padding maps and their factor-compatibility laws are also compiled.
+No port permutation is needed in this implementation: every construction uses
+the same left-associated concatenated word, including repeated positions.
+Reassociation of composites uses the existing category law; `expand_append`
+records the left-fold object identity. No unproved permutation or equality
+reflection is invoked.
+
+`embed conj A ps` and `embed disj B qs` are the iterated tagged first-block
+injections; both are injective. `prefix_relation` is their graph and
+`suffix_relation` is the converse graph at the output. `zeros_relation` and
+`mask_relation` prove complete support directly from the raw relation grammar.
+For each completed middle, support₁/support₂ state
+
+```
+relation middle u v ↔ ∃ x y,
+  u = embedA x ∧ v = embedB y ∧ relation original x y.
+```
+
+The zero masks retain exactly the original input/output blocks, not all blocks
+with matching labels. The nil folds are identity terms/maps. When an original
+occurrence type is Empty, the existential support statement has no witnesses,
+so the completed relation is empty; no auxiliary edge remains. These relation
+proofs interpret proved syntactic equalities in the forward direction only.
+
+The next concrete §12.5 work is `PositiveCoherence P`. Initial algebraic steps
+are the zero-tensor law (0I xi), p.288, and the union-unit law, pp.290–291,
+followed by the required positive Gentzenization/cut-elimination and coherence
+argument. Neither that coherence premise nor general §11.5 coherence is
+proved here. Contravariant arrow negation and the other bridges remain separate.
