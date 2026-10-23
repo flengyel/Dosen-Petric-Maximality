@@ -1,0 +1,45 @@
+DosenPetric/ReducedZeroAlgebra.lean:12: def zeroIdentity (P : Type u) : ZeroIdentity (category P) where
+DosenPetric/ReducedZeroAlgebra.lean:17: def zeroOf {A B : NormalForm P} (f : Hom A B) : Hom A B := comp (zero A) f
+DosenPetric/ReducedZeroAlgebra.lean:19: theorem zeroOf_independent {A B : NormalForm P} (f g : Hom A B) :
+DosenPetric/ReducedZeroAlgebra.lean:22: theorem zero_commute {A B : NormalForm P} (f : Hom A B) :
+DosenPetric/ReducedZeroAlgebra.lean:25: theorem zero_idempotent (A : NormalForm P) : comp (zero A) (zero A) = zero A :=
+DosenPetric/ReducedZeroAlgebra.lean:28: theorem zeroOf_post {A B C : NormalForm P} (f : Hom A B) (g : Hom B C) :
+DosenPetric/ReducedZeroAlgebra.lean:31: theorem zeroOf_pre {A B C : NormalForm P} (f : Hom A B) (g : Hom B C) :
+DosenPetric/ReducedZeroAlgebra.lean:34: theorem conj_ext {X A B : NormalForm P} (f g : Hom X (.conj A B))
+DosenPetric/ReducedZeroAlgebra.lean:44: theorem disj_ext {X A B : NormalForm P} (f g : Hom (.disj A B) X)
+DosenPetric/ReducedZeroAlgebra.lean:55: theorem tensor_zero (o : Op) (A B : NormalForm P) :
+DosenPetric/ReducedZeroAlgebra.lean:67: theorem tensor_zeroOf (o : Op) {A B C D : NormalForm P}
+DosenPetric/ReducedZeroAlgebra.lean:73: theorem zeroOf_id (A : NormalForm P) : zeroOf (id A) = zero A := Laws.comp_id _
+DosenPetric/ReducedZeroAlgebra.lean:75: theorem zeroOf_zero (A : NormalForm P) : zeroOf (zero A) = zero A := zero_idempotent A
+DosenPetric/ReducedZeroAlgebra.lean:79: def zeroOf {A B : NormalForm P} (f : Term P A B) : Term P A B := .comp (.zero A) f
+DosenPetric/ReducedZeroAlgebra.lean:81: theorem Positive.zeroOf {A B : NormalForm P} {f : Term P A B} (h : f.Positive) :
+DosenPetric/ReducedZeroAlgebra.lean:84: theorem Positive.tensor_zero (o : Op) (A B : NormalForm P) :
+DosenPetric/ReducedZeroAlgebra.lean:89: theorem ofTerm_zeroOf {A B : NormalForm P} (f : Term P A B) :
+DosenPetric/ReducedUnion.lean:13: def union {A B : NormalForm P} (f g : Term P A B) : Term P A B :=
+DosenPetric/ReducedUnion.lean:16: theorem Positive.union {A B : NormalForm P} {f g : Term P A B}
+DosenPetric/ReducedUnion.lean:21: theorem Derives.union {A B : NormalForm P} {f f' g g' : Term P A B}
+DosenPetric/ReducedUnion.lean:25: def union {A B : NormalForm P} (f g : Hom A B) : Hom A B :=
+DosenPetric/ReducedUnion.lean:29: theorem union_ofTerm {A B : NormalForm P} (f g : Term P A B) :
+DosenPetric/ReducedUnion.lean:33: def merge (A : NormalForm P) : Hom (.conj A A) A := comp (mix A A) (codiag A)
+DosenPetric/ReducedUnion.lean:35: theorem union_def {A B : NormalForm P} (f g : Hom A B) :
+DosenPetric/ReducedUnion.lean:41: theorem union_source {A B : NormalForm P} (f g : Hom A B) :
+DosenPetric/ReducedUnion.lean:45: theorem merge_nat {A B : NormalForm P} (f : Hom A B) :
+DosenPetric/ReducedUnion.lean:50: theorem merge_swap (A : NormalForm P) : comp (swap .conj A A) (merge A) = merge A := by
+DosenPetric/ReducedUnion.lean:54: theorem codiag_assoc_forward (A : NormalForm P) :
+DosenPetric/ReducedUnion.lean:59: theorem merge_assoc (A : NormalForm P) :
+DosenPetric/ReducedUnion.lean:80: theorem union_pre {X A B : NormalForm P} (h : Hom X A) (f g : Hom A B) :
+DosenPetric/ReducedUnion.lean:85: theorem union_post {A B C : NormalForm P} (f g : Hom A B) (h : Hom B C) :
+DosenPetric/ReducedUnion.lean:90: theorem union_comm {A B : NormalForm P} (f g : Hom A B) : union f g = union g f := by
+DosenPetric/ReducedUnion.lean:97: theorem union_idem {A B : NormalForm P} (f : Hom A B) : union f f = f := by
+DosenPetric/ReducedUnion.lean:102: theorem pair_pre {X A B C : NormalForm P} (h : Hom X A) (f : Hom A B) (g : Hom A C) :
+DosenPetric/ReducedUnion.lean:108: theorem pair_post {X A B C D : NormalForm P} (f : Hom X A) (g : Hom X B)
+DosenPetric/ReducedUnion.lean:115: theorem pair_assoc {X A B C : NormalForm P} (f : Hom X A) (g : Hom X B) (h : Hom X C) :
+DosenPetric/ReducedUnion.lean:131: theorem union_assoc {A B : NormalForm P} (f g h : Hom A B) :
+DosenPetric/ReducedUnion.lean:145: theorem union_id_zero (A : NormalForm P) : union (id A) (zero A) = id A := by
+DosenPetric/ReducedUnion.lean:163: theorem union_zeroOf {A B : NormalForm P} (f w : Hom A B) : union f (zeroOf w) = f := by
+DosenPetric/ReducedUnion.lean:169: theorem zeroOf_union {A B : NormalForm P} (f w : Hom A B) : union (zeroOf w) f = f := by
+DosenPetric/ReducedUnionOccurrences.lean:14: theorem relation_union {A B : NormalForm P} (f g : Term P A B)
+DosenPetric/ReducedUnionOccurrences.lean:20: theorem relation_zeroOf {A B : NormalForm P} (f : Term P A B) :
+DosenPetric/ReducedUnionOccurrences.lean:25: theorem occurrence_union {A B : NormalForm P} (f g : Hom A B)
+DosenPetric/ReducedUnionOccurrences.lean:32: theorem occurrence_zero (A : NormalForm P) : occurrenceMap (zero A) = Relations.empty := rfl
+DosenPetric/ReducedUnionOccurrences.lean:34: theorem occurrence_zeroOf {A B : NormalForm P} (f : Hom A B) :

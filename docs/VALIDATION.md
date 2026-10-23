@@ -1,3 +1,43 @@
+# Positive zero and union validation (current checkpoint)
+
+Clean main baseline 16f5d10aea3f1087659a8eddef38fbf428aec4fd passed strict verification:
+46 Lean source files and 2816 audited declarations. SSH origin was fetched;
+local/tracking main agreed, and no unrelated work was present. No reset or
+clean rebuild of completed constructions was needed.
+
+Sequential final verification completed at 2026-10-23T01:05:13.813458+00:00.
+Strict build/axiom audit exited 0: **49 Lean files, 2875 audited project
+declarations**. Both boundary scripts exited 0, with all five expected Lean
+exit-1 rejections and diagnostics retained. Public import closure passed.
+Manuscript SHA256SUMS and git diff --check exited 0; whitespace is checked
+again after documentation and staging. Globally permitted axioms remain
+propext, Quot.sound and Classical.choice. Selected new syntactic laws use
+Quot.sound; occurrence declarations use propext/Quot.sound; raw union,
+congruence and positive membership have no axioms. No selected new use of
+Classical.choice. One heavy process ran at a time with LEAN_NUM_THREADS=1.
+
+Both-zero tensor compatibility and its witnessed version, zero independence/
+absorption/idempotence, derived union with syntactic quotient descent, all
+requested algebraic laws and occurrence union/empty-zero formulas compile.
+The p.291 union-unit proof follows the direct structural alternative, without
+coherence or a new equation. Old Lean files, 21/61/19 schemas, pinned Lean
+4.35.0, Init-only policy, manifest, historical reports and manuscript v4
+remain unchanged. PositiveCoherence, Reduced.Faithful, Boolean Coherence and
+unconditional maximality remain open. The first next construction/theorem is
+G0/G1 positive Gentzen syntax, denotation and existential representation.
+
+Evidence: provenance/wsl-positive-zero-union/; runtime committed-source,
+SSH and report-copy receipts: .codex-work/positive-zero-union/. Both author-side
+reviews were applied, with direct verified writing-cache consultation.
+Historical access records are preserved. Independent kernel/source review,
+Challenge/Solution, Comparator, official preflight/service verification,
+manuscript recompilation/layout review, publication and visibility/license
+changes have not run. See [the report](POSITIVE_ZERO_UNION_REPORT.md).
+
+---
+
+## Historical common atomic factorization validation (unchanged evidence)
+
 # Common atomic factorization validation (current checkpoint)
 
 Clean main baseline 1bdb28d72db247ce87c6d34bb1f2fc29b357f351 passed strict verification:

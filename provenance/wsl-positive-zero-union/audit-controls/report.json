@@ -1,0 +1,106 @@
+{
+  "utc": "2026-10-23T01:05:12.861098+00:00",
+  "base_commit": "16f5d10aea3f1087659a8eddef38fbf428aec4fd",
+  "checks": [
+    {
+      "name": "direct-axiom",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/contextual-collapse/checks/direct-axiom.lean"
+      ],
+      "exit_status": 1,
+      "expected": "nonzero; Unpermitted axiom DosenPetric.AuditNegative.direct",
+      "passed": true,
+      "source_sha256": "1e277540dffef5fa91caf51bfaaf40847853bc64b804ba30e2cc89f4c56e3651",
+      "log_sha256": "9933887922426d8f8f266521bdba2580f066a553a1acc03da5d198fb134a949e"
+    },
+    {
+      "name": "private-axiom",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/contextual-collapse/checks/private-axiom.lean"
+      ],
+      "exit_status": 1,
+      "expected": "nonzero; Unpermitted axiom DosenPetric.AuditNegative.privateInput",
+      "passed": true,
+      "source_sha256": "e34b73b1e06b573dda827232f4206b8d7b1da5b989d5a7d5b23621d581db46b1",
+      "log_sha256": "59b5e9530ff0026b9b4c9320652dd985ab886f9f0758382043413b0dec2032da"
+    },
+    {
+      "name": "hidden-dependency",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/contextual-collapse/checks/hidden-dependency.lean"
+      ],
+      "exit_status": 1,
+      "expected": "nonzero; Unpermitted axiom AuditNegative.external",
+      "passed": true,
+      "source_sha256": "b92e027b9d86b5798c6a82031e0dd3532b0a6ea3da7d2ac5a0b1b439fcbe75fe",
+      "log_sha256": "16eda147cacd2f4368791e90baa03f49ab53b159512631c83ed55d75eeced488"
+    },
+    {
+      "name": "public-import-closure",
+      "passed": true,
+      "source_files": [
+        "DosenPetric.lean",
+        "DosenPetric/AtomicExtraction.lean",
+        "DosenPetric/AtomicFactorization.lean",
+        "DosenPetric/AtomicIterates.lean",
+        "DosenPetric/AtomicPadding.lean",
+        "DosenPetric/AtomicPortOccurrences.lean",
+        "DosenPetric/AtomicPorts.lean",
+        "DosenPetric/CartesianFromDiagonal.lean",
+        "DosenPetric/Category.lean",
+        "DosenPetric/Collapse.lean",
+        "DosenPetric/CommonAtomicFactorization.lean",
+        "DosenPetric/ContextOccurrences.lean",
+        "DosenPetric/ContextualMaps.lean",
+        "DosenPetric/Formula.lean",
+        "DosenPetric/GeneratedModel.lean",
+        "DosenPetric/Isolation.lean",
+        "DosenPetric/NormalForm.lean",
+        "DosenPetric/NormalizationComparison.lean",
+        "DosenPetric/OccurrenceLaws.lean",
+        "DosenPetric/PositiveFragment.lean",
+        "DosenPetric/PresentationCategory.lean",
+        "DosenPetric/PresentationConsistency.lean",
+        "DosenPetric/PresentationEquations.lean",
+        "DosenPetric/PresentationInstances.lean",
+        "DosenPetric/PresentationNormalization.lean",
+        "DosenPetric/PresentationOccurrenceMap.lean",
+        "DosenPetric/PresentationOccurrences.lean",
+        "DosenPetric/PresentationSignedLabels.lean",
+        "DosenPetric/PresentationStructure.lean",
+        "DosenPetric/PresentationSubstitution.lean",
+        "DosenPetric/PresentationSyntax.lean",
+        "DosenPetric/PresentationZero.lean",
+        "DosenPetric/ReducedCategory.lean",
+        "DosenPetric/ReducedContexts.lean",
+        "DosenPetric/ReducedEquations.lean",
+        "DosenPetric/ReducedLaws.lean",
+        "DosenPetric/ReducedOccurrences.lean",
+        "DosenPetric/ReducedStructure.lean",
+        "DosenPetric/ReducedSyntax.lean",
+        "DosenPetric/ReducedUnion.lean",
+        "DosenPetric/ReducedUnionOccurrences.lean",
+        "DosenPetric/ReducedWitnesses.lean",
+        "DosenPetric/ReducedZeroAlgebra.lean",
+        "DosenPetric/ReductionTransport.lean",
+        "DosenPetric/Relations.lean",
+        "DosenPetric/SignedLiteralReduction.lean",
+        "DosenPetric/Structure.lean",
+        "DosenPetric/Substitution.lean"
+      ],
+      "boundary": "local library imports; not a Challenge/Solution comparison"
+    }
+  ]
+}

@@ -69,6 +69,7 @@ definition is unchanged and can be adapted once that interpretation exists.
 | Reduced occurrence assignment and transfer | Independent raw tagged relation, quotient descent and inclusion/normalizer compatibility compile. `normal_faithful_of_reduced/global_faithful_of_reduced` explicitly require the unproved `Reduced.Faithful P`. |
 | Typed one-hole contexts and contextual factorization | `Context.plug/mapTerm/map_derives/map`, raw and quotient id/comp laws; source gConj/gDisj, naturality/unit components; unconditional gEta/gEpsilon/gEta_comp/gEpsilon_comp inside Reduced. Reduced zero/uniqueness and required structural unit/d identities are directly derived. Tagged fixed/hole coordinates and well-typed composed relation comparisons compile. No general positive-core coherence is assumed. |
 | Common atomic factorization and complete support | `Term.Positive` is the recursive eta/epsilon-free arrow predicate, with signed objects unrestricted. `atomicFactor` terminates by atomicCount and records exact lists; `commonAtomicFactor` supplies shared endpoints/outer factors and two positive raw middles with complete support through common tagged embeddings, independently of relation equality. Source padding and separated iterated-factor laws compile. |
+| Positive-fragment zero and derived union algebra | `Reduced.tensor_zero/tensor_zeroOf`, zero witness/absorption laws, raw/quotient union, all requested algebra and pointwise occurrence formulas compile without coherence. Both zeros are required for the tensor law; union-unit is derived by the direct p.291 argument. |
 | Positive-fragment coherence input | `PositiveCoherence P` quantifies only over positive raw terms and concludes equality in Reduced.Hom. `faithful_of_positive_coherence` is proved conditionally from that explicit, unsupplied premise. This does not supply Reduced.Faithful or Boolean Coherence. |
 | Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. Reduced faithfulness and its earlier positive-core coherence inputs are unproved. No complete `OccurrenceInterpretation` instance. Equality reflection and full red-equation preservation remain open. |
 | Normalization and occurrence correspondence | `Presentation.normalization` constructs the existing record for every P by simultaneous sign recursion and source n/r/rho arrows. Both inverse laws, inverse occurrence coordinates, both graph laws, literal/label/polarity correspondence, repeated-tag injectivity, Empty cases, and transport formulas compile. No coherence or arrow-negation premise. |
@@ -80,14 +81,17 @@ definition is unchanged and can be adapted once that interpretation exists.
 
 ## Next concrete proof task
 
-Prove `PositiveCoherence P` for the explicit eta/epsilon-free fragment. Begin
-with the source §12.5 zero-tensor law (0I xi), p.288, and union-unit law,
-pp.290–291, then construct the required positive Gentzenization/cut-elimination
-and coherence argument. Common atomic factorization, checked positive middles,
-complete support and conditional transfer are now proved. The source's §12.5
-faithfulness premise remains open, as does general §11.5 coherence. Reduced
-faithfulness, Boolean Coherence, inclusion equality reflection and full raw
-reduction's quotient descent are not inferred from relation calculations.
+Define the positive Gentzen syntax and typed denotation, then prove G1 in the
+[zero/union report](POSITIVE_ZERO_UNION_REPORT.md#remaining-positive-coherence-dependency-table):
+for every positive raw t : A → B there is a Gentzen term at singleton
+contexts whose denotation equals t with the explicit source/target unit maps.
+The two-zero tensor laws, derived union algebra and occurrence formulas are
+now proved. Gentzenization, cut elimination, restricted zero-identity
+mix-dicartesian coherence and the final PositiveCoherence P remain open;
+the dependency table also appears in CODEX_NEXT_SESSION. Common factorization
+and full support are reused unchanged. No relation or inclusion equality
+reflection, fullness, quotient descent of raw reduction, Reduced.Faithful or
+Boolean Coherence follows from this checkpoint.
 
 ## Verification boundary
 

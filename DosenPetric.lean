@@ -44,3 +44,6 @@ public import DosenPetric.AtomicPortOccurrences
 public import DosenPetric.AtomicPadding
 public import DosenPetric.AtomicIterates
 public import DosenPetric.CommonAtomicFactorization
+public import DosenPetric.ReducedZeroAlgebra
+public import DosenPetric.ReducedUnion
+public import DosenPetric.ReducedUnionOccurrences

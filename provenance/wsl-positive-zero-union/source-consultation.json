@@ -1,0 +1,33 @@
+{
+  "book": {
+    "url": "https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf",
+    "revision": "September 2007",
+    "cache": ".codex-work/references/dosen-petric-coh-september-2007-e285235f.pdf",
+    "sha256": "e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e",
+    "printed_passages": [
+      "219-220: union, (wm), (union composition/association/commutation/idempotence)",
+      "223-227: composition elimination, settled forms, restricted mix-lattice coherence",
+      "227-230: constants and restricted mix-dicartesian coherence",
+      "237-246: sequences, Gentzen syntax and Gentzenization",
+      "247-263: Atomic-k/Blocked-w/rank/cut elimination (dependency inspection, not a complete independent proof audit)",
+      "264-266: dnf/cnf retractions and coherence",
+      "270-274: dicartesian units, omitted (m e) derived, constants and coherence",
+      "287-292: zero identities, witnessed zeros, union unit and zero cut cases"
+    ],
+    "page_conversion": "one-based PDF = printed page + 12",
+    "render": {
+      "path": ".codex-work/positive-zero-union/source-p291.png",
+      "sha256": "38e762ca1d490ad48629a98a87575ea1e2551cc4dd583e2b816f062cfc37af3e",
+      "printed_page": 291,
+      "one_based_pdf_page": 303
+    },
+    "new_discrepancy": "None confirmed in target equations; previously documented p.319/p.321 discrepancies preserved."
+  },
+  "writing": {
+    "cache": ".codex-work/references/knuth-mathematical-writing-mit-9bf404c2.pdf",
+    "sha256": "9bf404c2c75633a1f39aae97af0b2e9335ce6d83cf386c84906654589b4e82e6",
+    "edition": "119-page MIT-hosted typeset course report, not a verified byte copy of the Stanford scan or MAA edition",
+    "consulted": "Section 1, printed pp.1-6/PDF pp.3-8; Sections 4-5 printed pp.9-13/PDF pp.11-15",
+    "historical_access_records": "preserved"
+  }
+}

@@ -517,8 +517,72 @@ occurrence type is Empty, the existential support statement has no witnesses,
 so the completed relation is empty; no auxiliary edge remains. These relation
 proofs interpret proved syntactic equalities in the forward direction only.
 
-The next concrete §12.5 work is `PositiveCoherence P`. Initial algebraic steps
-are the zero-tensor law (0I xi), p.288, and the union-unit law, pp.290–291,
-followed by the required positive Gentzenization/cut-elimination and coherence
-argument. Neither that coherence premise nor general §11.5 coherence is
-proved here. Contravariant arrow negation and the other bridges remain separate.
+The zero-tensor and union-unit algebraic steps are now proved below. The next
+concrete §12.5 construction is typed positive Gentzen syntax and its
+representation theorem, followed by cut elimination and restricted coherence.
+PositiveCoherence P and general §11.5 coherence remain open. Contravariant
+arrow negation and the other bridges remain separate.
+
+## Positive-fragment zero and derived union algebra
+
+Source: September 2007 §10.1, pp.219–220, §11.1 p.234, and §12.5,
+pp.287–292. The target calculation on printed p.291 / one-based PDF p.303
+was also checked in the rendered PDF. Semicolon executes the left arrow first.
+All objects below are NormalForm P; P is arbitrary and literal signs unrestricted.
+
+| Source label / location | Exact type, hypotheses and status in the source | Lean declaration (namespace Reduced) |
+| --- | --- | --- |
+| (0I), pp.287–288 | 0_A ; f = g ; 0_B for existing parallel f,g : A → B; inherited defining schema | Existing `Laws.zero_law`; new `zeroIdentity` packages it. |
+| 0_(A,B) definition, p.288 | 0_A ; f : A → B requires a witness f : A → B; not a primitive arrow for every pair | `zeroOf`, `Term.zeroOf`, `ofTerm_zeroOf`. |
+| p.288 two unlabelled independence consequences; (0 nat), §12.1 | Existing parallel witnesses give the same zero; a zero commutes with every existing arrow; composition absorbs witnessed zeros | `zeroOf_independent`, `zero_commute`, `zeroOf_pre`, `zeroOf_post`. |
+| (00), p.288 | 0_A ; 0_A = 0_A, derived from (0I) | `zero_idempotent`, `zeroOf_zero`; `zeroOf_id` identifies the identity witness. |
+| (0I ξ), p.288 | 0_A ξ 0_B = 0_(A ξ B), ξ = ∧ or ∨; a consequence, not an additional equation | `tensor_zero`, using reduced product/coproduct extensionality `conj_ext/disj_ext`. |
+| (0 ξ), p.288 referring to §12.1 | For existing f : A → C and g : B → D, zeroOf f ξ zeroOf g = zeroOf (f ξ g) | `tensor_zeroOf`, from tensor composition and `tensor_zero`. Both factors are zeros. |
+| Union definition, §10.1 p.220; (wm), p.219 | For parallel f,g : A → B: diag_A ; mix_(A,A) ; (f ∨ g) ; codiag_B | `Term.union` uses the equivalent diag_A ; (f ∧ g) ; mix_(B,B) ; codiag_B. `union_source` proves equality by (m nat); no primitive union constructor. |
+| Generated congruence closure | Congruent f/f' and g/g' give congruent unions; positive inputs give positive union | `Derives.union` precedes quotient `union`; `Term.Positive.union`, `union_ofTerm`, `union_def`. |
+| (∪ com), p.220 | Parallel f,g; consequence in ML, defining equation only in the alternative Gentzen GML system | `union_comm` derives it from diag/swap naturality, (c m) and codiag symmetry. |
+| (∪ assoc), p.220 | Three parallel arrows; same source distinction | `merge_assoc`, `pair_assoc`, `union_assoc` derive it from (b m), mix naturality, and diagonal/codiagonal associativity. |
+| (∪ idemp), p.220 | f ∪ f = f; consequence of (wm) in ML | `union_idem`, from diag naturality and `Laws.diag_mix_codiag`. |
+| Both (∪ ◦), p.220 | h : X → A or k : B → C with parallel f,g : A → B | `union_pre` and `union_post`; `merge_nat` is the typed helper. |
+| (∪0), pp.289–291 | Assumed in ZIML, but derived in ZIDL with (0I); the identity instance id_A ∪ 0_A = id_A suffices | `union_id_zero` uses the direct p.291 structural derivation, then `union_zeroOf` and `zeroOf_union` for any same-type existing witness. No (∪0) Equation is added. |
+| G(f ∪ g) = Gf ∪ Gg, p.220 | Pointwise disjunction at the same tagged endpoints, independently of faithfulness | `Term.relation_union`, `occurrence_union`. |
+| G0 empty, §12.5/§12.1 | Witnessed zero interprets as the empty relation; does not give equality reflection | `Term.relation_zeroOf`, `occurrence_zero`, `occurrence_zeroOf`. |
+
+The derived union path has all intermediate types
+
+```
+A --diag--> A ∧ A --f ∧ g--> B ∧ B --mix--> B ∨ B --codiag--> B.
+```
+
+For the p.291 identity calculation, use B = A, f = id A and g = 0_A,
+then expand mix by (d m), p.234. After diag and id ∧ 0, the remaining path is
+
+```
+A ∧ A --id ∧ inr--> A ∧ (A ∨ A) --d--> (A ∧ A) ∨ A
+      --fst ∨ id--> A ∨ A --codiag--> A.
+```
+
+Witness independence replaces 0_A ; inr by 0_A ; inl. The middle
+`(id ∧ inl) ; d` is `inl : A ∧ A → (A ∧ A) ∨ A` by (d k∨).
+Injection naturality moves fst before inl. Projection naturality eliminates
+the unused zero block, and diag ; fst = id, inl ; codiag = id finish.
+These are reduced syntactic equalities; the alternative coherence appeal in
+the source's last line is not used. No equality is inferred from relations.
+
+Both-zero compatibility does not imply one-zero annihilation: for a literal p,
+the second tagged edge survives in `0_p ∧ id_p` and `0_p ∨ id_p`.
+Witnessed zeros require an existing arrow even when their relation is empty.
+No hom-set bottom or semilattice typeclass is installed. The existing 21 raw
+constructor schemas, 61 generating equations, and 19 positive schemas are
+unchanged. The algebra actually holds for all existing Reduced arrows, so its
+positive restriction requires no additional hypothesis beyond membership for
+raw representatives. Positivity means eta/epsilon-free constructors, not
+positive literal signs.
+
+The direct merge/pair proofs replace only the §10.1 appeal to Lattice
+Coherence for the union laws needed here. They do not replace Gentzenization,
+cut elimination, restricted coherence, or the §12.5 faithfulness argument.
+The dependency table in POSITIVE_ZERO_UNION_REPORT and CODEX_NEXT_SESSION
+records those separate open constructions. Signed-label preservation is not
+fullness: no realization theorem for all signed-label-respecting relations is
+assumed. Historical source discrepancies and access records are preserved.
