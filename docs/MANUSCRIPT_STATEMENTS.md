@@ -1,8 +1,11 @@
 # Manuscript v5: statements and formal scope
 
 Source: Florian Lengyel, *Maximality of the Došen–Petrić Boolean Category*,
-v5, 23 October 2026, in `manuscript/`. Its mathematical definitions, statements,
-proofs and Appendix A are unchanged from v4. Labels below refer to the
+v5, 23 October 2026, in `manuscript/`. Its mathematical results and proofs are unchanged from v4. The current v5
+clarifies endosubstitution and local placeholder indexing, repeats the existing
+nonempty-variable assumption in the model corollary, distinguishes a substituted
+pattern from its skeleton, and gives typed diagrams for equations (1)–(3) in
+Appendix B. The review and verification records are kept outside the manuscript. Labels below refer to the
 manuscript rather than an independently assigned theorem numbering.
 
 Let P be a nonempty set of variables. The target category B(P) is the free

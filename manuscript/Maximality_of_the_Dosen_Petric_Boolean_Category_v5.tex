@@ -143,10 +143,12 @@ $n_A:\neg\neg A\to A$ for the double-negation isomorphism.
 The presentation also has arrows
 $\eta_A:\top\to\neg A\vee A$ and
 $\epsilon_A:A\wedge\neg A\to\bot$.
-The \emph{zero identity} is the endomorphism
+The \emph{zero identity} is the endomorphism $0_A:A\to A$ defined by
 \begin{equation}
- 0_A=[\kappa_A,1_A]\circ(\epsilon_A\vee1_A)\circ d_{A,\neg A,A}
-       \circ(1_A\wedge\eta_A)\circ\langle1_A,!_A\rangle.
+ \begin{aligned}
+ 0_A={}&[\kappa_A,1_A]\circ(\epsilon_A\vee1_A)\circ d_{A,\neg A,A}\\
+      &{}\circ(1_A\wedge\eta_A)\circ\langle1_A,!_A\rangle.
+ \end{aligned}
  \label{eq:zero-identity}
 \end{equation}
 The defining zero-identity equation asserts that
@@ -157,6 +159,11 @@ The defining zero-identity equation asserts that
 \end{equation}
 These are the equations of \cite[\S14.2, p.~317]{DP}, with the
 product and coproduct unit isomorphisms written explicitly.
+
+\noindent\textit{Remark.}
+Appendix~\ref{app:structural-diagrams} gives diagrammatic forms of
+equations~\eqref{eq:first-injection}--\eqref{eq:zero-law}, with the
+source and target of every arrow displayed.
 
 Whenever $\B(A,C)$ is nonempty, define $0_{A,C}=f\circ0_A$ for any
 $f:A\to C$. Equation~\eqref{eq:zero-law} makes this independent of
@@ -171,7 +178,7 @@ target. A \emph{proof congruence} on $\B$ is an equivalence relation
 on each hom-set preserved by composition and every arrow operation
 of the presentation, including pairing, copairing, and negation.
 A \emph{substitution congruence} is a proof congruence also preserved
-by uniform substitution of formulas for propositional variables.
+by every uniform substitution $\sigma:P\to\FormulaSet(P)$.
 Here substitution acts on the entire arrow term, including its source
 and target; this is rule~$(su)$ of \cite[\S2.7, p.~51]{DP}.
 
@@ -558,7 +565,8 @@ specified operations; it induces a structure-preserving functor
 $\B(P)\to\mathcal C$.
 
 \begin{corollary}\label{cor:models}
-Let $f,g:A\to C$ be distinct arrows of $\B(P)$.
+Let $P$ be a nonempty set of propositional variables, and let
+$f,g:A\to C$ be distinct arrows of $\B(P)$.
 If a zero-identity Boolean category $\mathcal C$ satisfies $f=g$
 under every interpretation of the propositional variables, then
 $\mathcal C$ is a preorder.
@@ -601,7 +609,7 @@ $M\in\FormulaSet(U)$ have $m$ occurrences. Its profile is
  \qquad o_M(r)=i\quad\text{when position $r$ contains $p_i$}.
 \]
 For each $i\in\underline k$, choose a set
-$Q_i=\{q_{i,1},\ldots,q_{i,\ell_i}\}$ of local placeholders and a
+$Q_i=\{q_{i,1},\ldots,q_{i,\ell_i}\}$ of distinct local placeholders and a
 pattern $N_i\in\FormulaSet(Q_i)$ with $n_i$ occurrences. The sets
 $Q_i$ are pairwise disjoint. Write
 $o_i:\underline{n_i}\to\underline{\ell_i}$ for the profile of $N_i$.
@@ -717,8 +725,8 @@ formula \cite[\S2.5, p.~46]{DP}. The diagram therefore describes the
 same generalized composition. A pattern can equivalently be
 specified by erasing its placeholder names to one common symbol and
 attaching its occurrence profile. In that notation, the generalized
-composite has the substituted pattern as its skeleton and $\delta$
-as its profile.
+composite is represented by the skeleton of the substituted pattern
+together with the profile $\delta$.
 
 For example, take
 \[
@@ -777,6 +785,58 @@ the substitution $p\mapsto\neg A$ instead gives
 $\neg\neg A\wedge\bot\to\neg\neg A\vee\top$; the
 double-negation square in Proposition~\ref{prop:all-contexts}
 then gives the required equation for $A$.
+
+\section{Diagrammatic forms of the structural equations}
+\label{app:structural-diagrams}
+
+\paragraph{The first-injection equation.}
+For formulas $A,B,C$, equation~\eqref{eq:first-injection} is the
+commutative triangle
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ A\wedge B
+   \arrow[r,"1_A\wedge\iota_1^{B,C}"]
+   \arrow[dr,"{\iota_1^{A\wedge B,C}}"']
+   &A\wedge(B\vee C)\arrow[d,"d_{A,B,C}"]\\
+   &(A\wedge B)\vee C.
+\end{tikzcd}
+\]
+Both paths have source $A\wedge B$ and target $(A\wedge B)\vee C$.
+The upper arrow is induced by $1_A:A\to A$ and
+$\iota_1^{B,C}:B\to B\vee C$.
+
+\paragraph{The zero identity.}
+For a formula $A$, equation~\eqref{eq:zero-identity} is expressed by
+the commutative diagram
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ A\arrow[r,"{\langle1_A,!_A\rangle}"]\arrow[d,"0_A"']
+   &A\wedge\top\arrow[r,"1_A\wedge\eta_A"]
+   &A\wedge(\neg A\vee A)\arrow[d,"d_{A,\neg A,A}"]\\
+ A
+   &\bot\vee A\arrow[l,"{[\kappa_A,1_A]}"']
+   &(A\wedge\neg A)\vee A\arrow[l,"\epsilon_A\vee1_A"'].
+\end{tikzcd}
+\]
+The path across the top, down the right side, and back along the
+bottom is the five-arrow composite in~\eqref{eq:zero-identity}.
+Its first arrow pairs $1_A:A\to A$ with $!_A:A\to\top$;
+its last arrow copairs $\kappa_A:\bot\to A$ with $1_A:A\to A$.
+The arrows between them use
+$\eta_A:\top\to\neg A\vee A$ and
+$\epsilon_A:A\wedge\neg A\to\bot$, together with the distributor.
+
+\paragraph{The zero law.}
+For any parallel arrows $f,g:A\to C$,
+equation~\eqref{eq:zero-law} is the commutative square
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ A\arrow[r,"0_A"]\arrow[d,"g"']&A\arrow[d,"f"]\\
+ C\arrow[r,"0_C"']&C.
+\end{tikzcd}
+\]
+The upper-right path is $f\circ0_A:A\to C$, and the lower-left
+path is $0_C\circ g:A\to C$. The arrows $f$ and $g$ need not be equal.
 
 \paragraph{Use of AI tools.}
 OpenAI's ChatGPT was used to assist with the development of the proof,

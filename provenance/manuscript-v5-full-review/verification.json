@@ -1,0 +1,33 @@
+[
+  {
+    "command": [
+      "pdflatex",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-output-directory=/workspace/scratch/316c37836844/full-review-v5/build",
+      "/workspace/scratch/316c37836844/url-v5/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "pdflatex",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-output-directory=/workspace/scratch/316c37836844/full-review-v5/build",
+      "/workspace/scratch/316c37836844/url-v5/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "pdftoppm",
+      "-scale-to",
+      "1450",
+      "-png",
+      "/workspace/scratch/316c37836844/url-v5/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.pdf",
+      "/workspace/scratch/316c37836844/full-review-v5/render/page"
+    ],
+    "exit_code": 0
+  }
+]
