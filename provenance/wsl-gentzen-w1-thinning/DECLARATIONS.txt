@@ -1,0 +1,46 @@
+DosenPetric/GentzenOppositeThinningRank.lean:13: theorem predecessors_thinR_left (Γ Δ Λ : List (NormalForm P)) (D : NormalForm P)
+DosenPetric/GentzenOppositeThinningRank.lean:21: theorem predecessors_thinL_right (Γ Θ Δ : List (NormalForm P)) (D : NormalForm P)
+DosenPetric/GentzenOppositeThinningRank.lean:30: theorem rho_thinR_left (Γ Δ Λ : List (NormalForm P)) (D : NormalForm P)
+DosenPetric/GentzenOppositeThinningRank.lean:39: theorem rho_thinL_right (Γ Θ Δ : List (NormalForm P)) (D : NormalForm P)
+DosenPetric/GentzenOppositeThinningRank.lean:49: theorem sum_map_one_add {α : Type u} (xs : List α) (r : α → Nat) :
+DosenPetric/GentzenThinningCommutation.lean:20: def oldL : G P (gaps gs ++ C :: Θ) (Δ ++ D :: Λ) :=
+DosenPetric/GentzenThinningCommutation.lean:23: def innerL : G P (gaps gs ++ C :: Θ) (Δ ++ Λ) :=
+DosenPetric/GentzenThinningCommutation.lean:26: def newL : G P (gaps gs ++ C :: Θ) (Δ ++ D :: Λ) :=
+DosenPetric/GentzenThinningCommutation.lean:29: theorem denoteL : ofTerm (newL C D gs Θ Δ Λ hn f).denote =
+DosenPetric/GentzenThinningCommutation.lean:34: theorem cutCountL : (newL C D gs Θ Δ Λ hn f).cutCount =
+DosenPetric/GentzenThinningCommutation.lean:37: theorem cutFreeL : (newL C D gs Θ Δ Λ hn f).CutFree ↔
+DosenPetric/GentzenThinningCommutation.lean:40: theorem atomizedL : (newL C D gs Θ Δ Λ hn f).Atomized ↔
+DosenPetric/GentzenThinningCommutation.lean:43: theorem newL_atomized (hD : AtomicFormula D) (hf : f.Atomized) :
+DosenPetric/GentzenThinningCommutation.lean:46: theorem relationL : (newL C D gs Θ Δ Λ hn f).relation =
+DosenPetric/GentzenThinningCommutation.lean:57: def oldR : G P (Γ ++ D :: Θ) (gaps gs ++ C :: Λ) :=
+DosenPetric/GentzenThinningCommutation.lean:60: def innerR : G P (Γ ++ Θ) (gaps gs ++ C :: Λ) :=
+DosenPetric/GentzenThinningCommutation.lean:63: def newR : G P (Γ ++ D :: Θ) (gaps gs ++ C :: Λ) :=
+DosenPetric/GentzenThinningCommutation.lean:66: theorem denoteR : ofTerm (newR C D gs Γ Θ Λ hn f).denote =
+DosenPetric/GentzenThinningCommutation.lean:71: theorem cutCountR : (newR C D gs Γ Θ Λ hn f).cutCount =
+DosenPetric/GentzenThinningCommutation.lean:74: theorem cutFreeR : (newR C D gs Γ Θ Λ hn f).CutFree ↔
+DosenPetric/GentzenThinningCommutation.lean:77: theorem atomizedR : (newR C D gs Γ Θ Λ hn f).Atomized ↔
+DosenPetric/GentzenThinningCommutation.lean:80: theorem newR_atomized (hD : AtomicFormula D) (hf : f.Atomized) :
+DosenPetric/GentzenThinningCommutation.lean:83: theorem relationR : (newR C D gs Γ Θ Λ hn f).relation =
+DosenPetric/GentzenThinningCommutationExamples.lean:12: theorem three_copy_lossL (C D : NormalForm P) (Δ Λ : List (NormalForm P))
+DosenPetric/GentzenThinningCommutationExamples.lean:19: theorem three_copy_lossR (C D : NormalForm P) (Γ Θ : List (NormalForm P))
+DosenPetric/GentzenThinningCommutationExamples.lean:26: theorem three_copy_endpoint_lossL (C D : NormalForm P) (Δ Λ : List (NormalForm P))
+DosenPetric/GentzenThinningCommutationExamples.lean:38: theorem three_copy_endpoint_lossR (C D : NormalForm P) (Γ Θ : List (NormalForm P))
+DosenPetric/GentzenThinningCommutationExamples.lean:51: def constantPremiseL : G Empty [.top,.top] [.top] :=
+DosenPetric/GentzenThinningCommutationExamples.lean:54: def constantPremiseR : G Empty [.bot] [.bot,.bot] :=
+DosenPetric/GentzenThinningCommutationExamples.lean:57: theorem emptyP_constantsL :
+DosenPetric/GentzenThinningCommutationExamples.lean:65: theorem emptyP_constantsR :
+DosenPetric/GentzenThinningCommutationExamples.lean:74: def cutPremiseL (l : Literal P) : G P [.lit l,.lit l] [.lit l] :=
+DosenPetric/GentzenThinningCommutationExamples.lean:77: def cutPremiseR (l : Literal P) : G P [.lit l] [.lit l,.lit l] :=
+DosenPetric/GentzenThinningCommutationExamples.lean:80: theorem with_cutL (l : Literal P) :
+DosenPetric/GentzenThinningCommutationExamples.lean:88: theorem with_cutR (l : Literal P) :
+DosenPetric/GentzenThinningCommutationExamples.lean:96: theorem both_signs_with_cut (p : P) :
+DosenPetric/GentzenThinningCommutationRank.lean:18: theorem contraction_lossL :
+DosenPetric/GentzenThinningCommutationRank.lean:34: theorem endpoint_rankL :
+DosenPetric/GentzenThinningCommutationRank.lean:40: theorem contraction_decreasesL :
+DosenPetric/GentzenThinningCommutationRank.lean:47: theorem endpoint_lossL :
+DosenPetric/GentzenThinningCommutationRank.lean:55: theorem endpoint_decreasesL :
+DosenPetric/GentzenThinningCommutationRank.lean:68: theorem contraction_lossR :
+DosenPetric/GentzenThinningCommutationRank.lean:84: theorem endpoint_rankR :
+DosenPetric/GentzenThinningCommutationRank.lean:90: theorem contraction_decreasesR :
+DosenPetric/GentzenThinningCommutationRank.lean:96: theorem endpoint_lossR :
+DosenPetric/GentzenThinningCommutationRank.lean:104: theorem endpoint_decreasesR :

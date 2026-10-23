@@ -828,8 +828,41 @@ in TraceNode P s C. `rho_node_list` counts all explicit tree nodes;
 cut-free/atomized label propagation and tied-site characterization compile.
 G.proofSize is the separate termination count, not rho or cutCount.
 
-The cluster/rank prerequisite within G2 is complete. Source blocked patterns
-(p.250), W1–W6 reducibility rewrites (pp.251–252), Blocked-w, cut elimination
-and the positive coherence inputs remain open. No relational reflection,
-quotient rank or transformation decrease is inferred. See
+The cluster/rank prerequisite within G2 is complete. The two opposite-side
+W1 thinning instances are now proved below. Source blocked patterns (p.250),
+other W1 cases, W2–W6, Blocked-w, cut elimination and the positive coherence
+inputs remain open. No relational reflection,
+quotient rank or general transformation decrease is inferred by the cluster
+construction alone. The local W1 rank decreases are proved separately below. See
 [the report](GENTZEN_CLUSTER_RANK_REPORT.md) for exact hypotheses and evidence.
+
+## Opposite-side thinning instances of W1
+
+The source is Došen–Petrić, *Proof-Theoretical Coherence*, September 2007,
+[the pinned PDF](https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf),
+SHA-256 `e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e`.
+Printed page n is PDF page n+12, one-based. Printed pp.249–253, 272–273 and
+291–292 were consulted; p.251 was also inspected in rendering. The verified
+cache and access artifacts are recorded in source-consultation.json.
+Historical source-access records are unchanged; no new discrepancy was confirmed.
+
+| Source location | Typed correspondence and exact scope | Lean declarations / proof input |
+| --- | --- | --- |
+| §11.2 p.251 (W 1), γ = kR | Left contraction after right thinning equals right thinning after left contraction, on the unchanged antecedent copy positions. | `W1.oldL/innerL/newL`, `denoteL`; actual pre/postcomposition and `Reduced.Laws.assoc`. No Semilattice Coherence input. |
+| §11.2 p.252, right analogue of Reducibility, applied to p.251 W1 | Right contraction after left thinning equals left thinning after right contraction. | `oldR/innerR/newR`, `denoteR`; separate checked associativity proof, no arrow-negation operation. |
+| §11.2 pp.248–249, parametric clusters and rank; pp.251–252, rank condition | Opposite-side thinning has exactly one predecessor at the same At position. Contraction sums every selected upper copy. | `G.predecessors_thinR_left/thinL_right`, `rho_thinR_left/thinL_right`; existing `contractionRankL_eq/R_eq` and `selectedCopies_length`; `contraction_lossL/R`, `endpoint_lossL/R`. |
+| §11.5 pp.272–273, constant basis and retained thinnings | Constants remain legitimate selected whole formulas. Left bot and right top thinning are retained operations, not replaced by special constant proofs. | Generic commutations allow all C,D; `emptyP_constantsL/R` at Empty. No literal-occurrence inhabitant is needed. |
+| §12.5 pp.291–292, atomic zero basis and extension | Premise f is arbitrary and may contain atomic zero or cuts. These two calculations need no zero-specific rewrite or new zero. | Generic denotation/rank results depend only on constructors and categorical associativity/predecessor laws. Atomic-zero leaf and all existing zero laws are unchanged. |
+
+These are derived local instances. They are not new defining equations,
+the full W1 family, or a proof of the source's coherence appeal.
+
+Both pairs preserve CutFree/Atomized equivalently, cutCount exactly and the
+complete tagged relation. Let n = gs.length ≥ 2. contraction_lossL/R give
+Rold = Rnew + n; endpoint_rankL/R give rho(new,x) = Rnew + 1;
+endpoint_lossL/R give rho(old,x) + 1 = rho(new,x) + n. Both strict
+inequalities compile for arbitrary P and arbitrary premises, including cuts.
+Rank is syntactic and does not descend through reduced denotation. The
+unchanged-endpoint relation comparison is a consequence of denotation equality.
+See [the report](GENTZEN_W1_THINNING_REPORT.md) for full signatures, paths,
+boundary examples and verification. No all-site replacement result is claimed.

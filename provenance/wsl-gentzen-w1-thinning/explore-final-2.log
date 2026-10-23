@@ -1,0 +1,25 @@
+✖ [96/96] Building DosenPetric.GentzenW1ThinningExamples (1.0s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenW1ThinningExamples.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenW1ThinningExamples.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenW1ThinningExamples.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenW1ThinningExamples.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenW1ThinningExamples.setup.json --json
+error: DosenPetric/GentzenW1ThinningExamples.lean:32:2: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ -1
+  a ≥ 0
+where
+ a := ↑((newL C D [[], [C], []] [] Δ Λ ⋯ f).rho SequentSide.left (At.shift (gaps [[], [C], []]) (At.here C [])))
+ b := ↑((newL C D [[], [C], []] [] Δ Λ ⋯ f).rho SequentSide.left (At.here C []).there)
+ c := ↑((oldL C D [[], [C], []] [] Δ Λ ⋯ f).rho SequentSide.left (At.here C []).there)
+error: DosenPetric/GentzenW1ThinningExamples.lean:40:2: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ -1
+  a ≥ 0
+where
+ a := ↑((newR C D [[], [C], []] Γ Θ [] ⋯ f).rho SequentSide.right (At.shift (gaps [[], [C], []]) (At.here C [])))
+ b := ↑((newR C D [[], [C], []] Γ Θ [] ⋯ f).rho SequentSide.right (At.here C []).there)
+ c := ↑((oldR C D [[], [C], []] Γ Θ [] ⋯ f).rho SequentSide.right (At.here C []).there)
+Some required targets logged failures:
+- DosenPetric.GentzenW1ThinningExamples
+error: build failed

@@ -1,0 +1,222 @@
+§11.2.    Cut elimination in D                                                   249
+
+f , and if h′ is γ2 (f, g), then the label of the successor is f or g, depending
+on whether the upper parametric basic sequence Θ occurs in the type of f
+or in the type of g. With that, we have deﬁned the cluster of x in h.
+     For a cut cut Γ2 ,∆2 (f, g), the two occurrences of the cut formula A in the
+target of f and in the source of g, recognized according to the indices Γ2 and
+∆2 , are called respectively the left cut formula and the right cut formula of
+cut Γ2 ,∆2 (f, g). (Note that the left cut formula is on the right-hand side of
+⊢, while the right cut formula is on the left-hand side of ⊢.)
+     For any Gentzen term h : Γ ⊢ ∆, and x a member of Γ or ∆, let ρh (x)
+be the number of nodes in the cluster of x in h. The left rank of a cut
+cut Γ2 ,∆2 (f, g) is ρf (x) where x is the left cut formula of cut Γ2 ,∆2 (f, g), and
+the right rank of cut Γ2 ,∆2 (f, g) is ρg (y) where y is the right cut formula
+of cut Γ2 ,∆2 (f, g). The rank of a cut is the sum of its left and right ranks.
+The least rank of a cut is 2, and in that case the left rank and the right
+rank are both 1. This deﬁnition of rank is analogous to Gentzen’s, except
+that Gentzen counts the number of nodes in the longest path, while we
+count the total number of nodes—either measure is good. (A very formal
+deﬁnition of rank may be found in [14], Section 3.) As a matter of fact, we
+are interested only in ranks of topmost cuts, but our deﬁnition applies to
+any cut.
+     We announced in the preceding section (after the equations (w y)) that
+we will sometimes omit the subscripts of Gentzen operations. In the deﬁ-
+nition below, and sometimes later on, we take for granted the subscripts of
+wΓL1 ,...,Γn ,Γ , and write just wL . We do the same with wR , and other Gentzen
+operations, when their subscripts are cumbersome, but not important.
+     We say that a Gentzen term of the form wL f is a wL term. Subterms
+that are wL terms are called wL subterms. We have an analogous terminol-
+ogy with wR . The rank of a wL term wL f is ρwL f (x) for x being the lower
+contraction formula of wL f , and analogously for wR terms. We are inter-
+ested below only in ranks of cut-free wL terms, but our deﬁnition applies
+to any wL term.
+     Let x be the left cut formula and y the right cut formula of the cut
+cut Γ,∆ (f, g). Then we say that a wL subterm h of g is tied to cut Γ,∆ (f, g)
+when h is the label of a node of n-ary branching for n ≥ 2 in the cluster of y
+in g, and we say analogously that a wR subterm h of f is tied to cut Γ,∆ (f, g)
+250            CHAPTER 11.                DISTRIBUTIVE LATTICE CATEGORIES
+
+when h is the label of a node of n-ary branching for n ≥ 2 in the cluster of
+x in f .
+    We say that a wL term is blocked when it is of one of the following forms:
+
+(w γ 1)     wΓL′′ ,Γ′′ ∧ Γ′ ,Γ′ mix (f, g) : Γ′′1 ∧ Γ′′2 ∧ Γ′1 ∧ C ∧ Γ′2 ⊢ ∆′′ ∨ ∆′
+               1    2   1   2
+
+            for f : Γ′1 ∧ C ∧ Γ′2 ⊢ ∆′ and g : Γ′′1 ∧ C ∧ Γ′′2 ⊢ ∆′′ ,
+
+(w γ 2)     wΓL′ ,Γ′ ∧ Γ′′ ,Γ′′ ∧R (f, g) : Γ′1 ∧ Γ′2 ∧ Γ′′1 ∧ C ∧ Γ′′2 ⊢ (A ∧ B)∨ ∆′ ∨ ∆′′
+               1   2    1   2
+
+            for f : Γ′1 ∧ C ∧ Γ′2 ⊢ A ∨ ∆′ and g : Γ′′1 ∧ C ∧ Γ′′2 ⊢ B ∨ ∆′′ ,
+
+(w γ 3)     wΓL′ ,Γ′ ∧ Γ′′ ,Γ′′ ∧ (A∨B) ∨L (f, g) : Γ′1 ∧ Γ′2 ∧ Γ′′1 ∧ C ∧ Γ′′2 ∧ (A ∨ B) ⊢ ∆′ ∨ ∆′′
+               1   2    1   2
+
+            for f : Γ′1 ∧ C ∧ Γ′2 ∧ A ⊢ ∆′ and g : Γ′′1 ∧ C ∧ Γ′′2 ∧ B ⊢ ∆′′ ,
+
+(w ∧ 1) wΓL1 ,Γ2 ,∅ ∧L f : Γ1 ∧ Γ2 ∧ (A ∧ B) ⊢ ∆
+            for f : Γ1 ∧ (A ∧ B)∧ Γ2 ∧ A∧ B ⊢ ∆,
+
+(w ∨ 1) wΓL′ ,Γ′ ∧ Γ′′ ,∅ ∨L (f, g) : Γ′1 ∧ Γ′2 ∧ Γ′′ ∧ (A ∨ B) ⊢ ∆′ ∨ ∆′′
+               1   2
+
+            for f : Γ′1 ∧ (A ∨ B)∧ Γ′2 ∧ A ⊢ ∆′ and g : Γ′′ ∧ B ⊢ ∆′′ ,
+
+(w ∨ 2) wΓL′∧ Γ′′ ,Γ′′ ,∅ ∨L (f, g) : Γ′ ∧ Γ′′1 ∧ Γ′′2 ∧ (A ∨ B) ⊢ ∆′ ∨ ∆′′
+                    1   2
+
+            for f : Γ′ ∧ A ⊢ ∆ and g : Γ′′1 ∧ (A ∨ B)∧ Γ′′2 ∧ B ⊢ ∆′′ ,
+
+(w ∨ 3) wΓL′ ,Γ′ ∧ Γ′′ ,Γ′′ ,∅ ∨L (f, g) : Γ′1 ∧ Γ′2 ∧ Γ′′1 ∧ Γ′′2 ∧ (A ∨ B) ⊢ ∆′ ∨ ∆′′
+               1   2    1   2
+
+            for f : Γ′1 ∧ (A ∨ B)∧ Γ′2 ∧ A ⊢ ∆′ and g : Γ′′1 ∧ (A ∨ B)∧ Γ′′2 ∧ B ⊢ ∆′′ .
+
+   A wL subterm wL h of f2 tied to a topmost cut cut Γ,∆ (f1 , f2 ) is reducible
+when it is not blocked and every wL subterm wL t of f2 tied to cut Γ,∆ (f1 , f2 )
+such that wL h is a subterm of t is blocked. We can prove the following
+lemma.
+
+Reducibility Lemma. For every reducible wL h there is a cut-free Gentzen
+term h′ such that wL h = h′ in D and after replacing wL h in cut Γ,∆ (f1 , f2 )
+by h′ all the reducible wL subterms of h′ are of rank lesser than the rank of
+wL h.
+
+Proof. We proceed by cases depending on the form of h.
+§11.2.    Cut elimination in D                                                        251
+
+(W 1) First we have cases where wL h is wΓL′ ,...,Γ′ ,Γ′ h while h is γf :
+                                                            1     n
+Γ′1 ∧ A∧ . . . ∧ Γ′n ∧ A∧ Γ′ ⊢ ∆′ for f : Γ1 ∧ A∧ . . . ∧ Γn ∧ A∧ Γ ⊢ ∆ and γ is either
+one of cL , cR , k R , wR and ∨R , or k L , wL and ∧L with the occurrences of
+A displayed in Γ′1 ∧ A∧ . . . ∧ Γ′n ∧ A∧ Γ′ ⊢ ∆′ members of the lower parametric
+basic sequences of γf . Then, by Semilattice Coherence of §9.1, we have
+either wL γf = γwL f or wL cL f = wL f .
+(W 2) For f : Γ1 ∧ A∧ . . . ∧ Γn ∧ A∧ Γ ⊢ ∆, by Semilattice Coherence, we have
+that
+
+                 wΓL1 ,...,Γn ,Γ,∅ kA
+                                    L
+                                      f = cL                    L
+                                           Γ1 ∧ ...∧ Γn ,Γ,A,∅ wΓ1 ,...,Γn ,Γ f.
+
+
+(W 3) Suppose we have f : Γ1 ∧ A∧ . . . ∧ Γn ∧ A∧ Γ ⊢ ∆ and
+
+                     wΓL1 ,...,Γn ,Γ f : Γ′1 ∧ A∧ . . . ∧ Γ′m ∧ A∧ Γ′ ⊢ ∆,
+
+where Γ′1 ∧ A∧ . . . ∧ Γ′m ∧ A∧ Γ′ and Γ1 ∧ . . . ∧ Γn ∧ A∧ Γ are designations of the
+same basic sequence, and one of the occurrences of A displayed in the ﬁrst
+designation is the occurrence of A displayed in the second. Then we have
+that
+
+                           wΓL′ ,...,Γ′m ,Γ′ wΓL1 ,...,Γn ,Γ f = wL f
+                               1
+
+
+
+with appropriate subscripts for wL in wL f . If the rank of wΓL1 ,...,Γn ,Γ f is
+k+1, and the rank of wΓL′ ,...,Γ′ ,Γ′ wΓL1 ,...,Γn ,Γ f is k+1+l+m, then the rank
+                        1       m
+of wL f on the right-hand side is k+l+1. (Here we have m ≥ 2.)
+(W 4) For f : Γ1 ∧ (A ∧ B)∧ . . . ∧ Γn ∧ (A ∧ B)∧ Γ ∧ A∧ B ⊢ ∆ we have that
+
+             wΓL1 ,...,Γn ,Γ,∅ ∧L f = wΓL1 ∧ ...∧ Γn ,Γ,∅ ∧L wΓL1 ,...,Γn ,Γ ∧A∧B f
+
+by Semilattice Coherence. Here, the right-hand side is blocked according
+to (w ∧ 1). The wL term wΓL1 ,...,Γn ,Γ ∧ A∧ B f need not be blocked and may
+be reducible, but it is of lower rank than the left-hand side (the diﬀerence
+is n+1).
+(W 5) For f : Φ ⊢ Ψ and g : Γ1 ∧ A∧ . . . ∧ Γn ∧ A∧ Γ ⊢ ∆ we have that
+
+                 wΓL1 ,...,Γn ,Γ∧ Φ mix (f, g) = mix (f, wΓL1 ,...,Γn ,Γ g)
+252                 CHAPTER 11.                DISTRIBUTIVE LATTICE CATEGORIES
+
+by Semilattice Coherence and (m nat). We proceed analogously when
+mix (g, f ) replaces mix (f, g).
+   For f : Φ1 ∧ A∧ . . . ∧ Φm ∧ A∧ Φ ⊢ Ψ and g as above we have that
+
+      wΓL1 ,...,Γn ,Γ∧ Φ1 ,Φ2 ,...,Φm ,Φ mix (f, g) =
+                                                                L
+                       wΓL1 ∧ ...∧ Γn ,Γ∧ Φ1 ∧ ...∧ Φm ,Φ mix (wΦ 1 ,...,Φm ,Φ
+                                                                               f, wΓL1 ,...,Γn ,Γ g)
+
+by Semilattice Coherence and (m nat). Here, the right-hand side is blocked
+according to (w γ 1). The wL terms wΦ
+                                    L
+                                      1 ,...,Φm ,Φ
+                                                   f and wΓL1 ,...,Γn ,Γ g need not
+be blocked and may be reducible, but they are both of lower rank than the
+left-hand side.
+    We proceed as in case (W 5) when wL h is wL ∧R (f, g) (one of these cases
+involves a blocked wL term according to (w γ 2)). We have cases analogous
+to (W 5) also when wL h is wL ∨L (f, g) (here we apply Semilattice Coherence
+and (dL nat), and one of these cases involves a blocked wL term according
+to (w γ 3)). We have three additional cases when wL h is wL ∨L (f, g), which
+all yield blocked wL terms according to (w ∨ 1), (w ∨ 2) and (w ∨ 3). One
+of these cases is the following.
+(W 6) For the Gentzen terms f : Γ′1 ∧ (A ∨ B)∧ . . . ∧ Γ′n ∧ (A ∨ B)∧ Γ′ ∧ A ⊢ ∆′
+and g : Γ′′1 ∧ (A ∨ B)∧ . . . ∧ Γ′′m ∧ (A ∨ B)∧ Γ′′ ∧ B ⊢ ∆′′ we have that
+
+   wΓL′ ,...,Γ′ ,Γ′∧ Γ′′ ,Γ′′ ,...,Γ′′ ,Γ′′ ,∅ ∨L (f, g) =
+        1       n        1   2        m
+
+            wΓL′ ∧ ...∧ Γ′ ,Γ′ ∧ Γ′′ ∧ ...∧ Γ′′ ,Γ′′ ,∅ ∨L (wΓL′ ,...,Γ′ ,Γ′∧ A f, wΓL′′ ,...,Γ′′ ,Γ′′ ∧ B g)
+                1        n        1        m                   1      n                1      m
+
+
+
+by Semilattice Coherence and (dL nat). Here, the right-hand side is blocked
+according to (w ∨ 3). The wL terms wΓL′ ,...,Γ′ ,Γ′∧ A f and wΓL′′ ,...,Γ′′ ,Γ′′∧ B g
+                                        1     n                 1        m
+need not be blocked and may be reducible, but they are both of lower rank
+than the left-hand side.
+   To conclude the proof of the lemma we have only to check that the
+condition on ranks is satisﬁed in all cases, even in those where we have not
+noted the fact.                                                            ⊣
+
+   We have an analogous deﬁnition of blocked wR terms and of reducible wR
+subterms. With that, we prove for wR terms a lemma exactly analogous to
+the Reducibility Lemma. As a corollary of these two Reducibility Lemmata,
+we have the following lemma.
+§11.2.    Cut elimination in D                                                    253
+
+Blocked-w Lemma. Every topmost cut Γ,∆ (f, g) is equal in D to a top-
+most cut Γ,∆ (f ′ , g ′ ) in which all wL and wR subterms tied to cut Γ,∆ (f ′ , g ′ )
+are blocked.
+
+The proof of this corollary is based on a multiset-ordering induction, which
+stems from Gentzen (see [61] and [35]).
+   The degree of a cut is the number of occurrences of connectives (in this
+case, the number of occurrences of ∧ and ∨) in the cut formula.
+    The complexity of a topmost cut is a pair (d, r) where d is the degree of
+this cut and r is its rank. These complexities are ordered lexicographically
+(i.e., we have (d1 , r1 ) < (d2 , r2 ) iﬀ either d1 < d2 , or d1 = d2 and r1 < r2 ;
+cf. §7.7).
+   According to the Atomic-k Lemma and the Blocked-w Lemma, every
+topmost cut cut Γ,∆ (f, g) is equal to a topmost cut cut Γ,∆ (f ′ , g ′ ) with the
+same cut formula such that f ′ and g ′ are k-atomized and every wL or wR
+subterm of f ′ and g ′ tied to cut Γ,∆ (f ′ , g ′ ) is blocked. We call topmost cuts
+such as cut Γ,∆ (f ′ , g ′ ) clean cuts.
+   We can then prove the following theorem.
+
+Cut-Elimination Theorem. For every Gentzen term t there is a cut-free
+Gentzen term t′ such that t = t′ in D.
+
+Proof. We show by induction on the complexity of clean cuts that they
+are equal in D to cut-free Gentzen terms. This will suﬃce to prove the
+theorem.
+    For the basis of this induction, take a clean cut of complexity (0, 2). This
+means that this clean cut is of one of the forms displayed on the left-hand
+side of the following equations of D:
+
+                         cut ∅,∅ (1′′p , 1′′p ) = 1′′p ,
+                         cut ∅,∅ (1′′p , kpL g) = kpL g,
+                         cut ∅,∅ (kpR f, 1′′p ) = kpR f,
+                         cut ∅,∅ (kpR f, kpL g) = mix (f, g).
+
+For the ﬁrst three equations we use (cat 1), while the fourth holds by deﬁ-
+nition. With that, we have proved the basis of the induction.
+

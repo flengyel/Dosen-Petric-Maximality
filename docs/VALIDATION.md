@@ -1,3 +1,48 @@
+# W1 opposite-side thinning validation (current checkpoint)
+
+Clean main baseline `f575b6f41da9a8abf0560a3109d22e7f0e55ada4` passed actual
+strict verification: 105 sources / 4,739 audited declarations, exit 0,
+12.481 seconds. SSH origin was fetched and agreed; no unrelated work was
+present or discarded. Final required verification completed at
+2026-10-23T05:57:03.913031+00:00: **109 Lean source files / 4,794 audited declarations**.
+Strict build/audit, both boundary scripts, manuscript SHA256SUMS and git
+diff --check exited 0. All five expected negative controls rejected with
+Lean exit 1 and expected diagnostics; public import closure passed.
+
+Both opposite-side W1 thinning commutations compile with unconditional
+Reduced denotation equality, singleton opposite-side predecessor/rank laws,
+complete selected-copy sums, contraction rank loss n and whole selected
+endpoint loss n−1, and both strict inequalities for n ≥ 2. CutFree and
+Atomized are equivalent across each pair, cutCount is exactly preserved and
+complete tagged relation equality follows from denotation equality.
+Arbitrary D is retained; deriving Atomized from f alone explicitly requires
+AtomicFormula D. Empty P constants, repeated equal gaps, three selected
+copies and actual cut-containing premises are checked.
+
+All heavy work, including exploratory compilation, was sequential. The first
+strict build passed but its following closure check rejected digit-containing
+new module filenames; only those new files were renamed to the existing
+letters-only convention. Audit scripts were preserved and all checks rerun.
+Earlier failures and the exact final outcomes/timings are retained in
+provenance/wsl-gentzen-w1-thinning/. Four new modules / 46 explicit source
+declarations and 34 selected axiom prints are inventoried. Only propext,
+Quot.sound and Classical.choice are permitted; actual prints are retained.
+
+Older Lean modules, syntax/equations/predicates/rank definitions, toolchain,
+Init-only dependency policy, historical reports and manuscript v4 are
+byte-preserved. Both author-side reviews apply to actual proofs and source
+correspondence; the verified writing cache was read directly. No independent
+kernel replay, Challenge/Solution/Comparator, official preflight/service
+verification, fresh manuscript compilation, publication or visibility change
+ran. Committed-byte, live SSH ref and report-delivery checks have separate
+runtime receipts in .codex-work/gentzen-w1-thinning/.
+See [the report](GENTZEN_W1_THINNING_REPORT.md). Other W1, W2–W6, all-site
+replacement, Reducibility, Blocked-w, cut elimination and coherence remain open.
+
+---
+
+## Historical cluster/rank validation (unchanged evidence)
+
 # Gentzen cluster/rank validation (current checkpoint)
 
 Clean main baseline `045ade65a636ae331f3d635e5e6f4a18e0cb8061` passed actual strict verification:

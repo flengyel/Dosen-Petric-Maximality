@@ -1,0 +1,131 @@
+✖ [96/96] Building DosenPetric.GentzenW1ThinningExamples (1.8s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenW1ThinningExamples.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenW1ThinningExamples.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenW1ThinningExamples.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenW1ThinningExamples.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenW1ThinningExamples.setup.json --json
+error: DosenPetric/GentzenW1ThinningExamples.lean:14:58: Expected type must not contain free variables
+  2 ≤ [[], [C], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:16:55: Expected type must not contain free variables
+  2 ≤ [[], [C], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:17:47: Expected type must not contain free variables
+  2 ≤ [[], [C], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:12:8: (kernel) declaration has metavariables 'DosenPetric.Reduced.Gentzen.W1.three_copy_lossL'
+error: DosenPetric/GentzenW1ThinningExamples.lean:21:58: Expected type must not contain free variables
+  2 ≤ [[], [C], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:23:55: Expected type must not contain free variables
+  2 ≤ [[], [C], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:24:47: Expected type must not contain free variables
+  2 ≤ [[], [C], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:19:8: (kernel) declaration has metavariables 'DosenPetric.Reduced.Gentzen.W1.three_copy_lossR'
+error: DosenPetric/GentzenW1ThinningExamples.lean:28:37: Expected type must not contain free variables
+  2 ≤ [[], [C], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:29:39: Expected type must not contain free variables
+  2 ≤ [[], [C], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:30:54: Expected type must not contain free variables
+  2 ≤ [[], [C], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:36:37: Expected type must not contain free variables
+  2 ≤ [[], [C], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:37:39: Expected type must not contain free variables
+  2 ≤ [[], [C], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:38:54: Expected type must not contain free variables
+  2 ≤ [[], [C], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:73:62: Expected type must not contain free variables
+  2 ≤ [[], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:74:64: Expected type must not contain free variables
+  2 ≤ [[], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:75:55: Expected type must not contain free variables
+  2 ≤ [[], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:76:57: Expected type must not contain free variables
+  2 ≤ [[], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:77:55: Expected type must not contain free variables
+  2 ≤ [[], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:78:37: Application type mismatch: The argument
+  rfl
+has type
+  ?m.144 = ?m.144
+but is expected to have type
+  (newL (NormalForm.lit l) (NormalForm.lit l) [[], []] [] [] [NormalForm.lit l] ⋯ (cutPremiseL l)).cutCount = 1
+in the application
+  ⟨endpoint_decreasesL (NormalForm.lit l) (NormalForm.lit l) [[], []] [] [] [NormalForm.lit l] ?m.57 (cutPremiseL l),
+    rfl⟩
+error: DosenPetric/GentzenW1ThinningExamples.lean:81:62: Expected type must not contain free variables
+  2 ≤ [[], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:82:64: Expected type must not contain free variables
+  2 ≤ [[], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:83:55: Expected type must not contain free variables
+  2 ≤ [[], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:84:57: Expected type must not contain free variables
+  2 ≤ [[], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:85:55: Expected type must not contain free variables
+  2 ≤ [[], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:86:37: Application type mismatch: The argument
+  rfl
+has type
+  ?m.144 = ?m.144
+but is expected to have type
+  (newR (NormalForm.lit l) (NormalForm.lit l) [[], []] [NormalForm.lit l] [] [] ⋯ (cutPremiseR l)).cutCount = 1
+in the application
+  ⟨endpoint_decreasesR (NormalForm.lit l) (NormalForm.lit l) [[], []] [NormalForm.lit l] [] [] ?m.57 (cutPremiseR l),
+    rfl⟩
+error: DosenPetric/GentzenW1ThinningExamples.lean:90:10: Expected type must not contain free variables
+  2 ≤ [[], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:92:10: Expected type must not contain free variables
+  2 ≤ [[], []].length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenW1ThinningExamples.lean:92:63: Application type mismatch: The argument
+  rfl
+has type
+  ?m.61 = ?m.61
+but is expected to have type
+  (newR (NormalForm.lit (Literal.neg p)) (NormalForm.lit (Literal.neg p)) [[], []] [NormalForm.lit (Literal.neg p)] []
+        [] ⋯ (cutPremiseR (Literal.neg p))).cutCount =
+    1
+in the application
+  ⟨?m.59, rfl⟩
+Some required targets logged failures:
+- DosenPetric.GentzenW1ThinningExamples
+error: build failed

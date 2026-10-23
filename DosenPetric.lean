@@ -103,3 +103,7 @@ public import DosenPetric.GentzenTraceCompatibility
 public import DosenPetric.GentzenTraceFibers
 public import DosenPetric.GentzenTracePositions
 public import DosenPetric.GentzenUnaryFibers
+public import DosenPetric.GentzenOppositeThinningRank
+public import DosenPetric.GentzenThinningCommutation
+public import DosenPetric.GentzenThinningCommutationRank
+public import DosenPetric.GentzenThinningCommutationExamples

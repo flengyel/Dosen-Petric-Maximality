@@ -1,0 +1,38 @@
+{
+  "module_filename_correction": "Initial strict build passed 109/4794. Import-closure script failed because its regex allows letters only. Renamed only new module filenames W1Thinning to ThinningCommutation; preserved failed check logs and repeated all required checks. Audit scripts unchanged.",
+  "all_builds_sequential": true,
+  "required_complete_logs_and_elapsed_times": true,
+  "retained_example_attempts": [
+    {
+      "mode": "explore",
+      "exit": 1,
+      "diagnostic": "decide on lengths retains free formula/type variables"
+    },
+    {
+      "mode": "explore-2",
+      "exit": 1,
+      "diagnostic": "positional shift not syntactically normalized for omega"
+    },
+    {
+      "mode": "explore-3",
+      "exit": 0
+    }
+  ],
+  "earlier_tool_results": [
+    {
+      "target": "GentzenW1Thinning",
+      "exit": 1,
+      "diagnostic": "doc comment before namespace"
+    },
+    {
+      "target": "GentzenW1ThinningRank",
+      "exit": 1,
+      "diagnostic": "implicit-transparency mismatch At/Place in rewrite"
+    },
+    {
+      "target": "GentzenW1ThinningRank",
+      "exit": 0
+    }
+  ],
+  "limitation": "Earlier direct target-build tool results have no separate retained full transcript/timing; later exploratory examples and all baseline/final required commands have complete logs/timings. No overlap occurred."
+}
