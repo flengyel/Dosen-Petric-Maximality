@@ -582,7 +582,101 @@ positive literal signs.
 The direct merge/pair proofs replace only the §10.1 appeal to Lattice
 Coherence for the union laws needed here. They do not replace Gentzenization,
 cut elimination, restricted coherence, or the §12.5 faithfulness argument.
-The dependency table in POSITIVE_ZERO_UNION_REPORT and CODEX_NEXT_SESSION
-records those separate open constructions. Signed-label preservation is not
+The historical dependency table in POSITIVE_ZERO_UNION_REPORT records the
+then-open constructions. G0/G1 are now proved below; CODEX_NEXT_SESSION gives
+the current open atomization/cut-elimination dependencies. Signed-label preservation is not
 fullness: no realization theorem for all signed-label-respecting relations is
 assumed. Historical source discrepancies and access records are preserved.
+
+## Typed positive Gentzen syntax and existential Gentzenization
+
+Source: September 2007 §11.1 printed pp.238–246 (one-based PDF pp.250–258),
+§11.5 pp.271–273 / PDF pp.283–285, and §12.5 pp.291–292 / PDF pp.303–304.
+The pinned book hash is unchanged. The p.240 mixed composites were checked
+in the rendered PDF. `Gentzen` below means `Reduced.Gentzen`; `G` is its
+indexed syntax. All parameters P, signed normal forms and contexts are arbitrary.
+Semicolon executes its left arrow first.
+
+`fold o` is defined by structural recursion and `fold_as_foldr` proves equality
+with List.foldr o.formula o.unit. Thus ante Γ = Γ.foldr conj top and
+succ Δ = Δ.foldr disj bot, exactly the proposed objects. Empty lists have
+different colours: ante [] = top, succ [] = bot. They are never identified.
+Singletons are A∧top and B∨bot, with explicit right unit comparisons.
+
+| Source / rule | Premises, conclusion and selected positions in G | Positive raw denotation / checked declaration |
+| --- | --- | --- |
+| p.240 identity basis; p.291 zero basis | identity l / zero l : G [lit l] [lit l], for every complete signed l | `encode (.id (.lit l))` / `encode (.zero (.lit l))`; `denote_identity/denote_zero`. No compound identity or zero leaf. |
+| p.272 constant basis | topI : G [] [top]; botE : G [bot] [] | rightIn disj top : top → top∨bot; rightOut conj bot : bot∧top → bot. `denote_topI/denote_botE`. No G [] [] leaf. |
+| cL, p.240 | G (Γ++X++Y++Θ) Δ → G (Γ++Y++X++Θ) Δ | Precompose `(exchange conj Γ X Y Θ).invTerm`; `denote_exchangeL`. Source swapped blocks are nonempty; the implementation also permits their explicit unital extensions. |
+| cR, p.241 | G Γ (Δ++X++Y++Λ) → G Γ (Δ++Y++X++Λ) | Postcompose `exchange disj Δ X Y Λ`; `denote_exchangeR`. Lean swap arguments give execution-domain order; the book's disjunctive symmetry subscripts are reversed. |
+| kL, p.241 | thinL inserts A at the selected gap Γ|Θ; source operation adds at the right | Product routing ignores just that new input. `thinLast` implements the source rightmost case with list-index transport and `thinLast_denote`. No search for all matching A. |
+| kR, p.241 | thinR inserts A at Δ|Λ; the source front case is Δ=[] | Coproduct routing inserts the selected output branch; `denote_thinR`. |
+| wL, p.241; y on pp.239,243 | gs=[Γ1,…,Γn], n≥2; premise repeated C gs ++ Θ, conclusion gaps gs ++ C::Θ | `copies C gs Θ` routes every selected C to the one retained position, fixes every gap/tail position, and uses product pairing. `denote_contractL`, `Route.product_get`, `product_positions`. |
+| wR, pp.241,243 | Dual full separated multiple contraction. Primitive convention retains the last selected C; source retains the first | `contractRFirst` gives source order Δ ++ C::(gaps gs ++ Λ), n=1+length gs≥2. It composes the primitive with explicit block exchange and list transports; `contractRFirst_denote/count`. `denote_contractR`, `Route.coproduct_get`, `coproduct_positions` give component laws. No adjacent-contraction completeness theorem is assumed. |
+| ∧L, p.242 | G (Γ++A::B::Θ) Δ → G (Γ++(A∧B)::Θ) Δ; principal pair selected by prefix/suffix | Precompose the prefix lift of assocL conj A B (ante Θ); `Rules.conjLeft`, `denote_conjL`. Θ=[] is the source's last-pair convention. |
+| ∨R, p.242 | G Γ (Δ++A::B::Λ) → G Γ (Δ++(A∨B)::Λ) | Postcompose the prefix lift of assocR disj A B (succ Λ); `Rules.disjRight`, `denote_disjR`. Δ=[] is the source front-pair case, with its A/B names matched to position order. |
+| ∧R, p.242 | f : Γ |- A,Δ; then g : Θ |- B,Λ; conclusion Γ++Θ |- A∧B,Δ++Λ | Input append inverse; f∧g; `mixedDisj A (succ Δ) B (succ Λ)` (source e'-disjunction indices A,B,succΔ,succΛ); output residue append. `Rules.conjRight`, `denote_conjR`, `sourceDisj_expansion`. Premise and residual order are preserved. |
+| ∨L, p.242 | f : A,Γ |- Δ; then g : B,Θ |- Λ; conclusion A∨B,Γ++Θ |- Δ++Λ | Split residual input; swap principal sum to right; `Rules.sourceConj (ante Γ) (ante Θ) A B`; swap each product branch to principal-first order; f∨g; output append. `denote_disjL`. This is the source rule after explicit principal/premise-order comparisons, not an implicit reassociation. |
+| mix, p.241 | f : Γ |- Δ; then g : Θ |- Λ; conclusion Θ++Γ |- Λ++Δ | Input append inverse; g∧f; mix_(succΛ,succΔ); output append. `Rules.mix`, `denote_mix`; order agrees with the displayed source. |
+| contextual cut, p.241 | Head rule: f : Γ |- C,Δ, g : C,Θ |- Λ; result Θ++Γ |- Λ++Δ | Input append inverse; id_(anteΘ)∧f; d_(anteΘ,C,succΔ); ((swap_(anteΘ,C);g)∨id_(succΔ)); output append. `Rules.cut`, `denote_cut`. The distinguished occurrence is the head C in each premise. |
+| full displayed cut, p.241 | f : Γ3 |- Δ2++[C]++Δ1; g : Γ1++[C]++Γ2 |- Δ3; result (Γ1++Γ2)++Γ3 |- Δ3++(Δ2++Δ1) | `cutAt` moves those selected C occurrences to the heads by block exchange, then cuts; `cutAt_denote/count`. List reassociation is transport of indices, not formula associativity. Extra equal C formulas remain fixed. |
+
+The conjunction mixed comparison is transcribed directly from the rendered
+p.240 definition. For X,Y,A,B its execution-order path is
+
+```
+(X∧Y)∧(A∨B) --id∧swap--> (X∧Y)∧(B∨A)
+ --assocL--> X∧(Y∧(B∨A)) --id∧d--> X∧((Y∧B)∨A)
+ --id∧swap--> X∧(A∨(Y∧B)) --d--> (X∧A)∨(Y∧B).
+```
+
+The old ReducedWitnesses.mixedConj is a separately typed witness composite;
+no general equality with this source e' was available or used. It remains
+unchanged. `sourceConj` supplies the actual source expression. The existing
+mixedDisj does match the source e'-disjunction: `sourceDisj_expansion` proves
+its expanded p.240 steps by tensor/category laws. Neither is same-connective
+medial, and no new generator or equation identifies them.
+
+`Iso` contains positive raw forward/backward terms with proved inverse laws.
+`append`, `under` and `exchange` construct those comparisons from actual
+associators, symmetries and units. `termTransport/reindex` transport only equal
+list indices; their denote/count laws are proved by equality elimination.
+`At` selects a whole-formula position by here/there. Route and copies preserve
+fixed positions even when they contain the same C or repeated equal literals.
+Their product/coproduct component laws and extensionality follow from the
+already derived reduced universal properties, replacing a coherence appeal.
+
+For actual singleton calculations, `appendNil_to`, `single_split/single_join`,
+`append_insert/remove`, `mixedDisj_bot`, `disjInput_out/value` and `cut_pure`
+prove the needed unit specializations. `cut_single` is composition after both
+unit comparisons. No specialized d or mixed composite is merely declared an
+identity. Empty residual contexts are top/bottom objects, never a shared ∅.
+`G.no_empty` maps a putative G [] [] by denotation and inclusion to the proved
+impossible full Hom(top,bot); it uses no faithfulness.
+
+The source Gentzenization proof invokes associativity/symmetry coherence on
+pp.245–246. Here `DiagonalData.assocR_fst/snd/assocR_pair/assocL_pair` derive
+precise product formulas from the existing laws and the proved unit equation;
+coproduct formulas use the opposite category. These provide the required
+instances without assuming any earlier coherence theorem. The zero extension
+uses `zeroNF_value`, both-zero tensor compatibility and zero_top/zero_bot.
+
+`positive_represented` inducts on all 19 Positive schemas; the coverage table
+in POSITIVE_GENTZENIZATION_REPORT identifies each branch. `gentzenization`
+proves the requested singleton equation, and `gentzenization_decode` gives the
+exact original-endpoint equation. These are existential results with cuts.
+No canonical representative, cut elimination, Gentzen quotient, equation
+preservation for a chosen translation or function on quotient arrows is claimed.
+
+`G.relation` is the raw denotation relation; `occurrence_denote` connects it to
+Reduced.occurrenceMap. `singletonOcc/singletonFrom` are inverse tagged maps
+between each original occurrence type and its singleton fold. Their inverses
+eliminate Empty unit branches. `gentzenization_occurrences` proves exact
+pointwise relation agreement in those coordinates. Relations never prove
+syntactic equality. Signed-label preservation is not fullness or faithfulness.
+
+`cutCount`, `CutFree`, `Topmost` and `Atomized` are implemented analysis
+interfaces, with elementary cut-count/closure facts only. Atomic-k atomization,
+blocked contractions/ranks, cut elimination, restricted mix coherence,
+PositiveCoherence and Reduced.Faithful remain open. No source citation supplies
+those missing proofs, and no coherence premise is added to Gentzenization.

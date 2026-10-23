@@ -1,0 +1,344 @@
+{
+  "baseline": "4db7a0d1045fcb070fcafb423558cb97ecaef153",
+  "raw_constructor_schemas": 21,
+  "reduced_equation_schemas": 61,
+  "positive_constructor_schemas": 19,
+  "gentzen_constructor_schemas": 16,
+  "gentzen_constructor_section_has_no_raw_term_or_positive_argument": true,
+  "positive_induction_cases": [
+    "id",
+    "comp",
+    "tensor",
+    "assocR",
+    "assocL",
+    "swap",
+    "diag",
+    "codiag",
+    "fst",
+    "snd",
+    "inl",
+    "inr",
+    "rightOut",
+    "rightIn",
+    "leftOut",
+    "leftIn",
+    "mix",
+    "dist",
+    "zero"
+  ],
+  "boundary_method": "source inventory and conservative text checks, supplemented by Lean typing and author-side review; not a standalone parser proof",
+  "unchanged_from_baseline": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "22fd27a66be9e2ee0a88b0cad25c91f15c79e28afef48d7bd2615d1726ed7e30"
+    },
+    {
+      "path": "DosenPetric/AtomicExtraction.lean",
+      "sha256": "5a99bf6445d0d4be3707ad8333e4f104db9ddae1e6da6bc5f3cfe01600803c4e"
+    },
+    {
+      "path": "DosenPetric/AtomicFactorization.lean",
+      "sha256": "170711ccf6e999a41835e11f1139c0c4b7394296d236550a9b701d1c7a934fef"
+    },
+    {
+      "path": "DosenPetric/AtomicIterates.lean",
+      "sha256": "ef61793f1953114afa3c94a8cb88728298a66803ebfcfe4b5e28c77b39c505b1"
+    },
+    {
+      "path": "DosenPetric/AtomicPadding.lean",
+      "sha256": "9ad1a9605f04abb267e3a7fef69c5326a94451dae3fca64f2a59421bad1327e5"
+    },
+    {
+      "path": "DosenPetric/AtomicPortOccurrences.lean",
+      "sha256": "c532faf608f2fd4fc6d24e7c3d656d95466f751e0dea4620587f5395a4a808af"
+    },
+    {
+      "path": "DosenPetric/AtomicPorts.lean",
+      "sha256": "59cca4098ac2baa5d984e4b05347ae6797a94506370851654fa16ed483b6e693"
+    },
+    {
+      "path": "DosenPetric/CartesianFromDiagonal.lean",
+      "sha256": "c74b0cfe13f6a46c4ad3035e03b1cae2ae0642f50b8667630b59950e5c4d6fcd"
+    },
+    {
+      "path": "DosenPetric/Category.lean",
+      "sha256": "71f159e1eabc877db6b68c203fd039e6c06185b9702a7ddfdca798f13e3851ff"
+    },
+    {
+      "path": "DosenPetric/Collapse.lean",
+      "sha256": "8427737a19979cad8f6988ea4323982f55602f7ba71d8da9358fc9cf689ebf09"
+    },
+    {
+      "path": "DosenPetric/CommonAtomicFactorization.lean",
+      "sha256": "6ed2dc8490b7ded91078fef363b1faf698d476448d8966652a8c52300cef84e6"
+    },
+    {
+      "path": "DosenPetric/ContextOccurrences.lean",
+      "sha256": "22480ca30a7156377b01a716994fca23fe1486c47b725f7f19994614fc7d91f3"
+    },
+    {
+      "path": "DosenPetric/ContextualMaps.lean",
+      "sha256": "98d6124669c1c364792246a1b079a75547ad3d1600214095e984c5f078a49600"
+    },
+    {
+      "path": "DosenPetric/Formula.lean",
+      "sha256": "b76044a71a61bcf7b89e70d707e777ae44b71811570bf6148c696da1c4cdfca4"
+    },
+    {
+      "path": "DosenPetric/GeneratedModel.lean",
+      "sha256": "3057628558ea7a69ec157907ab2675339c59d3accedff9b9da316f84066beaf4"
+    },
+    {
+      "path": "DosenPetric/Isolation.lean",
+      "sha256": "a870a52179d5a770bd3845a55d26c6d7a493ce5cc6bdeb00320aca99ef95b243"
+    },
+    {
+      "path": "DosenPetric/NormalForm.lean",
+      "sha256": "11f94e20b07e148df206dc93246475560ca41df3ea20735a12c4fdabbf3932b8"
+    },
+    {
+      "path": "DosenPetric/NormalizationComparison.lean",
+      "sha256": "f885d3371263acc23a6c31bdc7b2060dbadb2da8bb23d67db4b08b52cbe77d5f"
+    },
+    {
+      "path": "DosenPetric/OccurrenceLaws.lean",
+      "sha256": "41d71d55b3a6b436c61725e2b59ba899a3d838030e38ff94c02536779d7162f1"
+    },
+    {
+      "path": "DosenPetric/PositiveFragment.lean",
+      "sha256": "c27d2341df317eb5293c84b417ebcd6302d71c85320296b9467c4d43bdfd6e36"
+    },
+    {
+      "path": "DosenPetric/PresentationCategory.lean",
+      "sha256": "1cc0242b612c689a360d88218d80400029353a120edfda56b84c7cdc5f69828c"
+    },
+    {
+      "path": "DosenPetric/PresentationConsistency.lean",
+      "sha256": "afa7e5f88342413807a59b1cb9d1332561a66322b9791681895b954edc4c2c41"
+    },
+    {
+      "path": "DosenPetric/PresentationEquations.lean",
+      "sha256": "316a6bd90e6bd2a8c287731117c09ff01f15ee3b0239e1fab6931f8f81c305ff"
+    },
+    {
+      "path": "DosenPetric/PresentationInstances.lean",
+      "sha256": "32875d0b91d5dc7290aa0a2b87ff024d7cc1923d71ba76d31d677577819c6c0c"
+    },
+    {
+      "path": "DosenPetric/PresentationNormalization.lean",
+      "sha256": "46f88b23b9e045985bfa3315663b64d9cbede8c028ab87ee3a3b35660402b301"
+    },
+    {
+      "path": "DosenPetric/PresentationOccurrenceMap.lean",
+      "sha256": "ad82c75bea9d78a6b00f0206b9a776b057e6eff3816b14a7154d52fb0518d467"
+    },
+    {
+      "path": "DosenPetric/PresentationOccurrences.lean",
+      "sha256": "21b0b40dba54aafc968f5b9fad57514b95e1dfe3fccd428dad06b937da1a369c"
+    },
+    {
+      "path": "DosenPetric/PresentationSignedLabels.lean",
+      "sha256": "01fbc357fa420010ee352b65cb0f25bbd92ec3f92b914fb2de9fe729ee526e8b"
+    },
+    {
+      "path": "DosenPetric/PresentationStructure.lean",
+      "sha256": "00cbd1e86a80ea3773c1fb6ee2ddc8e52bd38062564cb7d1911de7b8b8555a22"
+    },
+    {
+      "path": "DosenPetric/PresentationSubstitution.lean",
+      "sha256": "c16d49e33c2798ddee2094b0c4738a286df0400556a0aaf19b38da864c261d4a"
+    },
+    {
+      "path": "DosenPetric/PresentationSyntax.lean",
+      "sha256": "66d64bbcd341cd8548d74a7557ca061187b9a43e874f125e6587e6e3bb02bdb0"
+    },
+    {
+      "path": "DosenPetric/PresentationZero.lean",
+      "sha256": "72225bf8d7bd4a496054d18e5f356822718d836a73906b988643f7912844857c"
+    },
+    {
+      "path": "DosenPetric/ReducedCategory.lean",
+      "sha256": "5a2f02c86b14c5ce33e282a8a442a33d02e69f09c3d161dca408bc1ba47fea74"
+    },
+    {
+      "path": "DosenPetric/ReducedContexts.lean",
+      "sha256": "cd1e9e0198dc102efc2626d8f37fb8974105aee79c1d31e5bccf0f14ba193b37"
+    },
+    {
+      "path": "DosenPetric/ReducedEquations.lean",
+      "sha256": "70e9e4b1b55f2d8b53a28f0b990e845296c9978856a932a32fdc587ac913be05"
+    },
+    {
+      "path": "DosenPetric/ReducedLaws.lean",
+      "sha256": "e73eccefe1f93553d3b9d8215fde43eb55442dc0b8f0372168d6cdae527bac1c"
+    },
+    {
+      "path": "DosenPetric/ReducedOccurrences.lean",
+      "sha256": "56f1cb468664d03061714131d0478a685f99e745840e1c0b912b958b03110b3c"
+    },
+    {
+      "path": "DosenPetric/ReducedStructure.lean",
+      "sha256": "73e180139a07afe563c56119aa9586cfe8ce1b88863a84457b2d6ee2059824b5"
+    },
+    {
+      "path": "DosenPetric/ReducedSyntax.lean",
+      "sha256": "d72c123d08a164baaed870a7862b11fc3f268d2b14a8f9ff75b7a3d7f835467d"
+    },
+    {
+      "path": "DosenPetric/ReducedUnion.lean",
+      "sha256": "44df406c2eaffd930d962262c417f3411cb513ffe1f604aefdf21c030b7a6171"
+    },
+    {
+      "path": "DosenPetric/ReducedUnionOccurrences.lean",
+      "sha256": "588a2baec30b76822e895f4892e536c3ef76e8f31d689b2c16a3caf16391f683"
+    },
+    {
+      "path": "DosenPetric/ReducedWitnesses.lean",
+      "sha256": "4dd58d4614315d663b4562958c7866b515ab46bf4e753f7c83e270127988f136"
+    },
+    {
+      "path": "DosenPetric/ReducedZeroAlgebra.lean",
+      "sha256": "21b0205ef3858ca8c945d52603c837b1b3af29921f6468a48cff55c88e5101a0"
+    },
+    {
+      "path": "DosenPetric/ReductionTransport.lean",
+      "sha256": "d8dc28b9855ae15dcccf89c452f752ec902fe82f0992f6d9b2af74e770e56fe6"
+    },
+    {
+      "path": "DosenPetric/Relations.lean",
+      "sha256": "1dfb14bba0f399144a703ac71e4b7ccad2b16566b66a36e30097320b7b2e98cf"
+    },
+    {
+      "path": "DosenPetric/SignedLiteralReduction.lean",
+      "sha256": "b2990993b058127c0ea9ffa4b38e7f50a79cbed322cef672300e4a773abac0a1"
+    },
+    {
+      "path": "DosenPetric/Structure.lean",
+      "sha256": "82df580ef37d2ee3a67ec395abc999e18ac363b24049904f8cca2169c3018050"
+    },
+    {
+      "path": "DosenPetric/Substitution.lean",
+      "sha256": "b3b46aa06302bf84da6aa0eed9d48c0319591e947aa45d39af8e040755b4f821"
+    },
+    {
+      "path": "docs/COMMON_ATOMIC_FACTORIZATION_REPORT.md",
+      "sha256": "5cc75f5eb5bfc18599b31a6cff36ff382d8b5cca8815cf8314a0c52fc3ec36d7"
+    },
+    {
+      "path": "docs/CONTEXTUAL_COLLAPSE_REPORT.md",
+      "sha256": "a23bd36bc87d5958277f6d100d1893406f0dfa3a9a6f2b61b3eaebfd09e726d6"
+    },
+    {
+      "path": "docs/CONTEXTUAL_FACTORIZATION_REPORT.md",
+      "sha256": "c7b2b535cc6b2f1eca5669b22c88db0362ef430d8abd1aaa2966c031a94b9d08"
+    },
+    {
+      "path": "docs/NORMALIZATION_REPORT.md",
+      "sha256": "3e6587d68ba9258e2641126caa86237c3e3816e3ed6250da22e39eaaa55d8f33"
+    },
+    {
+      "path": "docs/POSITIVE_ZERO_UNION_REPORT.md",
+      "sha256": "d9c373d1c6c223bb688f3ac2cd59f8219fa14cf6b7f5d1515119bf0641915bfa"
+    },
+    {
+      "path": "docs/PRESENTATION_BRIDGE_REPORT.md",
+      "sha256": "4e29d8598ec75864648c74d3c921a8475aea426f3377c720f00c01d510131d0c"
+    },
+    {
+      "path": "docs/SIGNED_LABEL_REPORT.md",
+      "sha256": "57fd5c7b75965f6e6ea5cd8bfbeb3f572fb6bbe04c93acba21911dd80ca6c425"
+    },
+    {
+      "path": "docs/SIGNED_LITERAL_REDUCTION_REPORT.md",
+      "sha256": "19b04900e02aaa726d342dd874166b8e9bf87baf338c43cd37ba0cdc418aefa3"
+    },
+    {
+      "path": "docs/reviews/COMMON_ATOMIC_FACTORIZATION_HOSTILE.md",
+      "sha256": "9e413a00883c282cd0ca2e2a7ef63efff8803c391fde0214d1593e04f0cf9465"
+    },
+    {
+      "path": "docs/reviews/COMMON_ATOMIC_FACTORIZATION_WRITING.md",
+      "sha256": "d0872064fd226b575cd15fdc6035fc2e5eda9a5b093f98c5b4c8f58da381dea4"
+    },
+    {
+      "path": "docs/reviews/CONTEXTUAL_COLLAPSE_HOSTILE.md",
+      "sha256": "940dc982fa7f309d9f8e3f0e4580594adfdd7fea6c630c13decfe18478f6f3ea"
+    },
+    {
+      "path": "docs/reviews/CONTEXTUAL_COLLAPSE_WRITING.md",
+      "sha256": "16170e1e637ba960a259dffcab7a97ec607d4de91038de59c97e3d3dc58e10d2"
+    },
+    {
+      "path": "docs/reviews/CONTEXTUAL_FACTORIZATION_HOSTILE.md",
+      "sha256": "88ad13111b8e7d4b0eb926aa39cd996b3d656fb6da20917c63c230b3aee2e8d5"
+    },
+    {
+      "path": "docs/reviews/CONTEXTUAL_FACTORIZATION_WRITING.md",
+      "sha256": "13e4d5eafbb5eed69e2c7c18b79ec3b3964b6e60dd5ec2f937c951a0a4883a4e"
+    },
+    {
+      "path": "docs/reviews/NORMALIZATION_HOSTILE.md",
+      "sha256": "e8ea61784534a7b0da1c452ce89bef7deaef261bf7070d8530a95d43bf66a0f6"
+    },
+    {
+      "path": "docs/reviews/NORMALIZATION_WRITING.md",
+      "sha256": "f473c59d2707089e8cd4275d391bbf9e73878c3ec41a23fddfe07f40d743c5d4"
+    },
+    {
+      "path": "docs/reviews/POSITIVE_ZERO_UNION_HOSTILE.md",
+      "sha256": "da6a02a274c4bc5e753cb5fd9a79bf9bfb2cc5ee070e80400f3f1320aab71562"
+    },
+    {
+      "path": "docs/reviews/POSITIVE_ZERO_UNION_WRITING.md",
+      "sha256": "b9c744bfe92b50fb047ba94a8283624c4a3dbb016f79cca57aee79851e7f235e"
+    },
+    {
+      "path": "docs/reviews/PRESENTATION_BRIDGE_HOSTILE.md",
+      "sha256": "6eace7ca641946c791169143825210f8993d9c61ca0cc059d059c5783a842309"
+    },
+    {
+      "path": "docs/reviews/PRESENTATION_BRIDGE_WRITING.md",
+      "sha256": "c2b9c66e9092bc01cc120877c30f7c217596e400dca49191acd7fa724440645a"
+    },
+    {
+      "path": "docs/reviews/SIGNED_LABEL_HOSTILE.md",
+      "sha256": "9916b7a8338035cd580d77ab383cab2a6d9abddacac85713633dec47e613e846"
+    },
+    {
+      "path": "docs/reviews/SIGNED_LABEL_WRITING.md",
+      "sha256": "55344661fe11e85b3ef0904ecc69f999799b27a4d2fd060e90d60fc15f8bdf8d"
+    },
+    {
+      "path": "docs/reviews/SIGNED_LITERAL_REDUCTION_HOSTILE.md",
+      "sha256": "7fc9ff59ac2ecf8135d5f42426ab44db2a8f69be7f0e547bff47e595d75b6bca"
+    },
+    {
+      "path": "docs/reviews/SIGNED_LITERAL_REDUCTION_WRITING.md",
+      "sha256": "c5a0fbb6a443c82c316805dcb217848d648fd62cc466f36e57f11458b745178c"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "01a12079da418a0c2cb55ddb97259aeb6b1a66c9ccc15b222e172b17f56c5822"
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "3ca392199d5a387adb92ae5e290beb8aa4d85996dd71340e2507ded07144b572"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+    },
+    {
+      "path": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.pdf",
+      "sha256": "dd88c37805c889ab420ad11303886a04b8be54857c91dda70bfc91ec23c72b62"
+    },
+    {
+      "path": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.tex",
+      "sha256": "aebd6a8be39dcbdcc1a7e5061b4e65a585de2345784011fb03d28cc3326fc93e"
+    },
+    {
+      "path": "manuscript/SHA256SUMS",
+      "sha256": "468275c78a99d11864bcbe55dc081296daabd1f10afd89e14e7a8dd3cf4dc3d3"
+    }
+  ]
+}

@@ -1,3 +1,46 @@
+# Positive Gentzenization validation (current checkpoint)
+
+Clean main baseline 4db7a0d1045fcb070fcafb423558cb97ecaef153 passed the actual strict build/audit:
+49 Lean files and 2875 project declarations. SSH origin was fetched;
+local/tracking main agreed. Unrelated work was absent. No reset or clean
+rebuild of completed constructions was needed.
+
+Sequential final verification completed at 2026-10-23T02:06:28.122781+00:00.
+Strict build/axiom audit exited 0: **70 Lean files, 3448 audited declarations**.
+Both boundary scripts exited 0, including public import closure; all five
+expected controls rejected with Lean exit 1 and required diagnostics.
+Manuscript SHA256SUMS and git diff --check exited 0, with whitespace checked
+again after documentation/staging. Permitted axioms remain propext, Quot.sound,
+Classical.choice. Principal Gentzenization/decoded/occurrence results use
+propext and Quot.sound; G.no_empty additionally inherits Classical.choice
+from the established impossibility theorem. No new custom axiom, proof hole,
+native_decide, generating equation or coherence premise was added.
+
+G0/G1 compile: genuine positional Gentzen syntax with only atomic id/zero and
+two constant leaves, positive raw denotation, actual comparisons, source-order
+operations, both unit-aware existential representation equations, and tagged
+occurrence compatibility. All 19 Positive cases are covered. Source p.240
+mixed comparisons were checked in the rendering; sourceConj transcribes the
+actual e'-conjunction rather than assuming equality with an older typed helper.
+Cuts remain visible through cutCount/CutFree and analysis predicates. No
+empty-sequent leaf; no_empty is proved without faithfulness. Atomization,
+cut elimination, restricted coherence, PositiveCoherence, Reduced.Faithful,
+Boolean Coherence and unconditional maximality remain open.
+
+Twenty-one new modules were added. All old Lean sources, 21/61/19 schemas,
+pinned Lean 4.35.0, Init-only policy, manifest, historical reports and manuscript
+v4 are unchanged. One heavy verification process ran at a time. Evidence and
+hashes are in provenance/wsl-positive-gentzenization/; runtime committed-source,
+SSH and byte-verified delivery receipts are in .codex-work/positive-gentzenization/.
+Both author-side reviews were applied; the verified writing cache was directly
+consulted. No independent kernel/source audit, Challenge/Solution, Comparator,
+official preflight/service verification, manuscript recompilation/layout review,
+publication or visibility/license change ran. See [the report](POSITIVE_GENTZENIZATION_REPORT.md).
+
+---
+
+## Historical positive zero/union validation (unchanged evidence)
+
 # Positive zero and union validation (current checkpoint)
 
 Clean main baseline 16f5d10aea3f1087659a8eddef38fbf428aec4fd passed strict verification:

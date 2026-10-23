@@ -1,7 +1,8 @@
 Continue the Došen–Petrić maximality formalization in WSL2.
 
 Repository: /home/flengyel/src/Dosen-Petric-Maximality, private, main.
-Read AGENTS.md, COMMON_ATOMIC_FACTORIZATION_REPORT and both common atomic reviews,
+Read AGENTS.md, POSITIVE_GENTZENIZATION_REPORT and both Gentzenization reviews,
+POSITIVE_ZERO_UNION_REPORT and both zero/union reviews, COMMON_ATOMIC_FACTORIZATION_REPORT and both common atomic reviews,
 CONTEXTUAL_FACTORIZATION_REPORT and both contextual reviews,
 SIGNED_LITERAL_REDUCTION_REPORT and both reduction reviews,
 PRESENTATION_CORRESPONDENCE, current statement/coverage maps, VALIDATION,
@@ -78,30 +79,82 @@ witnessed zero relations. Existing grammar/equations remain unchanged. The
 algebra holds for every existing reduced arrow; positive raw membership is
 explicit. No one-zero tensor annihilation or hom-set bottom is asserted.
 
+COMPLETED G0/G1 — REUSE
+The 21 Gentzen modules implement G P Γ Δ with 16 genuine schemas, atomic id/
+zero for every signed literal and two correctly coloured constant leaves.
+Denotation is positive. Actual append/association/unit/exchange comparisons
+and positional routing/contraction operations compile. sourceConj is the
+actual rendered p.240 composite; sourceDisj_expansion checks the other mixed
+arrow. Contextual head cut and source cutAt select positional C occurrences.
+Both singleton representation equations compile by exhaustive induction on all
+19 Positive schemas, with recursive identityNF/zeroNF and actual two-zero laws.
+Gentzenization occurrence coordinates preserve every tag, including Empty
+cases. Cuts are visible; cutCount, CutFree, Topmost and Atomized are implemented.
+G.no_empty excludes G P [] [] without faithfulness. No raw embedding, primitive
+general tensor/composition/d/union/compound zero, Gentzen quotient, canonical
+translation, cut elimination or coherence is supplied. Reuse old factorization.
+
 NEXT CONCRETE PROOF TASK
-Implement G0 and prove G1 in the dependency table below: typed positive Gentzen
-syntax, denotation, and existential representation of every positive raw term,
-with explicit unit/associativity maps for context folds. Reuse completed zero/
-union algebra and common factorization. Then cut elimination and restricted
-coherence are required before PositiveCoherence P. No equality from relations,
-no fullness/realization assumption, no axiom or proof hole for proposed targets.
+Prove the Atomic-k statement below using implemented G.Atomized/CutFree and
+raw denotation, preserving denotation and any existing cut-freeness. Then the
+blocked-contraction/rank/cut-elimination and restricted coherence steps remain.
+Do not import source coherence/(m e) appeals as Lean proofs or add equations.
+
+## Next concrete cut-elimination prerequisite
+
+Implement thinning atomization (Atomic-k Lemma), source §11.2 printed
+pp.246–247, extended to constants in §11.5 p.272 and atomic zero leaves in
+§12.5 p.291. The actual implemented types give this next target:
+
+```lean
+∀ {Γ Δ : List (NormalForm P)} (g : G P Γ Δ),
+  ∃ h : G P Γ Δ,
+    h.Atomized ∧
+    (g.CutFree → h.CutFree) ∧
+    ofTerm h.denote = ofTerm g.denote
+```
+
+AtomicFormula permits lit l (both signs), top and bot. G.Atomized recursively
+requires every inserted thinning formula to be atomic, while preserving the
+full proof tree. The first nontrivial task is the source compound-thinning
+rewrite, especially left thinning by a disjunction and its dual. Its source
+proof invokes semilattice/lattice coherence and a derived (m e) law on p.247.
+Those appeals must be replaced with proved reduced structural identities;
+the two omitted (m e) schemas cannot simply be added to Reduced.Equation.
+G0/G1, typed block operations, routing component laws, logical comparisons,
+constant cases and zero/union algebra are available predecessors.
+
+| Obligation | Current status / exact next dependency |
+| --- | --- |
+| G0 typed syntax/positive denotation | **Proved** by G, denote_positive, the sixteen denotation equations, actual comparisons and source-order macros. |
+| G1 existential representation | **Proved** by positive_represented, gentzenization, gentzenization_decode, with gentzenization_occurrences. |
+| G2 Atomic-k / clean topmost cuts | **Open**. The displayed atomization target comes first. G.Topmost f g means the two contextual-cut premises are CutFree. Clusters, rank, blocked contractions and the multiset/lexicographic induction remain to be constructed; cutCount is not a claimed decreasing elimination measure. |
+| G3 cut elimination | **Open**: for every g : G P Γ Δ, construct h of the same type with h.CutFree and ofTerm h.denote = ofTerm g.denote. Source §§11.2,11.5,12.5 supply a mathematical argument to formalize, not a Lean proof. |
+| M0–M3 restricted mix-dicartesian coherence | **Open**: define the smaller mix syntax and settled atomic/path normal forms, prove its composition elimination, zero/constant handling and restricted faithfulness for DNF-to-CNF endpoints (§§10.2–10.3, §12.5 pp.289–290). No such syntax or coherence theorem is supplied here. |
+| R0/R1 and PositiveCoherence | **Open**: typed DNF/CNF retractions, cut-free passage to the restricted mix fragment and its normal-form argument (§11.3 pp.264–266, §11.5 pp.270–274, §12.5 p.292). |
+| Reduced.Faithful / Boolean Coherence | **Open**. Existing faithful_of_positive_coherence and subsequent transfers remain conditional and unchanged. |
+
+This checkpoint is representation with cuts. It does not prove uniqueness,
+cut elimination, restricted coherence, fullness, equality reflection, a quotient
+translation, contravariant arrow negation, or unconditional maximality.
+
 
 ## Remaining positive-coherence dependency table
 
-This is a construction plan with typed targets, not a list of supplied Lean
-proofs. All proposed syntax is parameterized by arbitrary P. For a concrete
-non-strict implementation, take sequent contexts Γ,Δ : List (NormalForm P),
+This table separates completed inputs from the remaining construction plan.
+All syntax is parameterized by arbitrary P. The implemented non-strict
+sequent contexts are Γ,Δ : List (NormalForm P),
 `ante Γ := Γ.foldr NormalForm.conj .top` and
-`succ Δ := Δ.foldr NormalForm.disj .bot`. Proposed
-`G P Γ Δ : Type u` has the source Gentzen rules (exchange, thinning,
-contraction, mix, both logical rules, and cut), atomic id/zero at each
+`succ Δ := Δ.foldr NormalForm.disj .bot`. Implemented
+`Reduced.Gentzen.G P Γ Δ : Type u` has the source Gentzen rules (exchange, thinning,
+contraction, mix, all four logical rule families, and cut), atomic id/zero at each
 `l : Literal P`, and the two constant basis terms. It is not the raw Term
 grammar renamed: d and general composition must be expressed by the rules.
 `G.denote g : Term P (ante Γ) (succ Δ)` uses actual unit/association arrows;
-`G.rel g := (G.denote g).relation`. Equality below is always ambient Reduced.Hom.
+`G.relation g := (G.denote g).relation`. Equality below is always ambient Reduced.Hom.
 This explicit bracketing avoids assuming a strictification theorem. The typed
-unit/associativity simulations replacing strict equalities must themselves be
-proved, including empty contexts; none is supplied merely by this convention.
+unit/associativity comparisons used by G0/G1 are proved, including empty
+contexts; no general strictification theorem is supplied by this convention.
 
 For restricted coherence, proposed `MixTerm P A B` is the structural raw
 fragment with zero and mix but without d, eta or epsilon, together with both
@@ -110,15 +163,17 @@ DNF permits disjunctions of conjunction-only formulas; CNF is dual, with the
 source's constant cases (§9.6, pp.211–212; §10.3). `Settled P A B` is the
 bracket normal syntax, not a relation quotient. `Atomic P A B` is its
 projection/injection path syntax, with literal id/zero and constant bases.
-`ZeroAtomic` selects the zero and constant bases. These types/predicates,
-including exact DNF/CNF constant clauses, remain to be defined. The following
-statements therefore specify proposed interfaces rather than compiling code.
+`ZeroAtomic` selects the zero and constant bases. These proposed
+MixTerm/Atomic/Settled types and DNF/CNF constant clauses remain to be defined;
+Atomic is distinct from the implemented thinning test AtomicFormula. G, denote,
+CutFree and Atomized are implemented above. Rows marked open specify proposed
+interfaces rather than compiling declarations.
 
 | ID / source and hypotheses | Proposed typed target / exact endpoint | Predecessors | Status |
 | --- | --- | --- | --- |
-| Z: §12.5 p.288 (0I ξ), pp.290–291 (∪0); any P and existing arrows | `tensor_zero o A B`; `tensor_zeroOf o f g`; `union_id_zero A`; all seven union algebra laws and witnessed zero unit | Existing Reduced.Laws, product/coproduct derivations | **Proved here**; interpretation and positive raw membership are separate proved declarations. |
-| G0: §11.1 pp.238–243; §11.5 p.272; §12.5 p.291 | Define `G`, `G.denote`; `∀ g : G P Γ Δ, (G.denote g).Positive`; typed interpretation of every rule, including cut as the source d/structural composite and empty contexts | Existing category/units/context laws, Z; no faithfulness | **Open**, first construction. Binary folds require explicit simulations of the source's strictified sequence equations. |
-| G1: §11.1 Gentzenization pp.245–246; §11.5 pp.272–273; §12.5 p.291 zero extension using (0I ξ) | `∀ (t : Term P A B), t.Positive → ∃ g : G P [A] [B], ofTerm (G.denote g) = comp (rightOut .conj A) (comp (ofTerm t) (rightIn .disj B))` | G0; typed rules for each of the 19 positive constructor schemas; zeros expanded recursively with Z; constant identity/zero laws already in ReducedStructure | **Open**, next theorem. Representation is existential; no quotient function is inferred. |
+| Z: §12.5 p.288 (0I ξ), pp.290–291 (∪0); any P and existing arrows | `tensor_zero o A B`; `tensor_zeroOf o f g`; `union_id_zero A`; all seven union algebra laws and witnessed zero unit | Existing Reduced.Laws, product/coproduct derivations | **Proved at the preceding zero/union checkpoint**; interpretation and positive raw membership are separate proved declarations. |
+| G0: §11.1 pp.238–243; §11.5 p.272; §12.5 p.291 | Implemented `Reduced.Gentzen.G/denote/denote_positive`, all rule denotation formulas, source-order macros, actual comparisons and empty boundary | Existing reduced structural/zero laws | **Proved**, see POSITIVE_GENTZENIZATION_REPORT. |
+| G1: §11.1 Gentzenization pp.245–246; §11.5 pp.272–273; §12.5 p.291 zero extension using (0I ξ) | `∀ (t : Term P A B), t.Positive → ∃ g : G P [A] [B], ofTerm (G.denote g) = comp (rightOut .conj A) (comp (ofTerm t) (rightIn .disj B))` | G0; typed rules for each of the 19 positive constructor schemas; zeros expanded recursively with Z; constant identity/zero laws already in ReducedStructure | **Proved** by Reduced.Gentzen.gentzenization and its decoded/occurrence counterparts. Representation is existential with cuts; no quotient function is inferred. |
 | G2: §11.2 pp.247–253 Atomic-k, Reducibility, Blocked-w and clean-cut definitions | For proposed `TopCut g`, `∃ h : G P Γ Δ, Clean h ∧ ofTerm (G.denote h) = ofTerm (G.denote g)`; prove every local rewrite reduces the source rank/multiset measure | G0, source structural/d equations; exact cut-formula positions, clusters and ranks; Z for zero leaves | **Open**. This is normalization of a topmost cut, not arbitrary equality by its relation. |
 | G3: §11.2 pp.253–263 Cut-Elimination; §11.5 p.273 constants; §12.5 pp.291–292 zero atomic cases | `∀ g : G P Γ Δ, ∃ h : G P Γ Δ, CutFree h ∧ ofTerm (G.denote h) = ofTerm (G.denote g)` | G2; well-founded clean-cut complexity and blocked contractions; constant cut cases, (00), zero naturality | **Open**. Source five new zero cases must be derived at actual endpoint folds; unit terms are not arbitrary zeros. |
 | M0: §10.2 pp.223–226; §10.3 pp.229–230; §12.5 pp.289–290 | Define MixTerm/Atomic/Settled; `∀ t : MixTerm P A B, DNF A → CNF B → ∃ n : Settled P A B, ofTerm n.denote = ofTerm t.denote` | Z union laws; cut/composition elimination for the smaller Gentzen lattice syntax, extending §9.4/§9.6; atomic bracket normal forms | **Open**. Smaller-system composition elimination is a real proof obligation, not supplied by the new algebra. |
@@ -130,9 +185,12 @@ statements therefore specify proposed interfaces rather than compiling code.
 | C: §11.3 p.266, §11.5 p.274, §12.5 pp.291–292 | `PositiveCoherence P`, exactly as defined in PositiveFragment.lean | R0/R1/M3, composition interpretation, then cancel the proved retractions | **Open**. Only positive raw terms are quantified; conclusion is Reduced.Hom equality. |
 | F: §14.2 p.321 common-factor argument | `PositiveCoherence P → Faithful P` | Completed commonAtomicFactor, positive middles and full support | **Already proved**, `faithful_of_positive_coherence`; premise remains unsupplied. |
 
-The shorter structural merge/pair argument in this checkpoint replaces only
-the §10.1 coherence appeal for union algebra. No shortcut replaces G0–C.
-One may implement the source's strictified category instead of explicit folds,
+The preceding zero/union checkpoint replaced the §10.1 coherence appeal for
+union algebra with a structural merge/pair proof. G0/G1 are now proved; the
+remaining G2–C elimination and coherence inputs are still open.
+The implementation uses explicit folds and proved comparisons. A separate
+strictified-category equivalence remains unclaimed. One could instead implement
+the source's strictified category,
 but that route also requires proved equivalence/transport of the relevant
 operations; it cannot be assumed. Neither route asserts fullness or realization
 of every signed-label-preserving relation. No proposed unproved declaration
@@ -149,10 +207,11 @@ every-interpretation corollary. The three milestones remain separate.
 
 VERIFICATION AND REVIEW
 Pinned Lean 4.35.0, Init-only production closure, no new dependencies.
-Current strict result: 49 Lean files and 2875 audited project declarations.
+Current strict result: 70 Lean files and 3448 audited project declarations.
 Permitted axioms: propext, Quot.sound, Classical.choice. Both boundary scripts
 passed with all five expected rejections; manuscript hashes are unchanged.
-Current evidence: provenance/wsl-positive-zero-union/ and matching .codex-work/.
+Current evidence: provenance/wsl-positive-gentzenization/ and matching .codex-work/.
+Prior zero/union evidence: provenance/wsl-positive-zero-union/.
 Prior common evidence: provenance/wsl-common-atomic-factorization/.
 Prior contextual evidence remains in provenance/wsl-contextual-factorization/.
 Prior reduction evidence remains in provenance/wsl-signed-literal-reduction/.

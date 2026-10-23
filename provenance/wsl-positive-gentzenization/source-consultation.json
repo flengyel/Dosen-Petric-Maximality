@@ -1,0 +1,30 @@
+{
+  "book": {
+    "url": "https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf",
+    "revision": "September 2007",
+    "cache": ".codex-work/references/dosen-petric-coh-september-2007-e285235f.pdf",
+    "sha256": "e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e",
+    "printed_passages": [
+      "238-240: coloured sequences, auxiliary strictified category, mixed e-prime and exchange",
+      "241-243: structural, contextual cut, mix, four logical rules and contractions",
+      "245-246: Gentzenization",
+      "271-273: differently coloured empty contexts, constant leaves, Gentzenization and Atomic-k extension",
+      "291-292: atomic zero leaves, zero extension and later cut-elimination cases"
+    ],
+    "page_conversion": "one-based PDF = printed page + 12",
+    "render": {
+      "path": ".codex-work/positive-gentzenization/source-p240.png",
+      "sha256": "9bf43802d0857f43ee42574b5e192e1e9c4e97b4defd20d6fcd2e860a908563a",
+      "printed_page": 240,
+      "one_based_pdf_page": 252
+    },
+    "source_correction": "Separate Rules.sourceConj follows the actual displayed e-prime-conjunction; the old typed mixedConj witness remains unchanged and is not silently identified with it. The disjunctive expansion is proved. No new source typo is alleged."
+  },
+  "writing": {
+    "cache": ".codex-work/references/knuth-mathematical-writing-mit-9bf404c2.pdf",
+    "sha256": "9bf404c2c75633a1f39aae97af0b2e9335ce6d83cf386c84906654589b4e82e6",
+    "edition": "119-page MIT-hosted typeset course report, not a verified byte copy of the Stanford scan or MAA edition",
+    "consulted": "Section 1 printed pp.1-6/PDF pp.3-8; Sections 4-5 printed pp.9-13/PDF pp.11-15",
+    "historical_access_records": "preserved"
+  }
+}
