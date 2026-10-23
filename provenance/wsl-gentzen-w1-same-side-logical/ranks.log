@@ -1,0 +1,55 @@
+✔ [116/120] Built DosenPetric.GentzenLogicalEmbeddings (784ms)
+✖ [117/120] Building DosenPetric.GentzenGapLogicalRouting (740ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenGapLogicalRouting.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapLogicalRouting.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapLogicalRouting.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapLogicalRouting.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapLogicalRouting.setup.json --json
+error: DosenPetric/GentzenGapLogicalRouting.lean:47:20: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (side ?m.358 ?o).comp (logicalSide ?o ?Γ ?Θ ?A ?B) (component ?o (At.shift ?Γ (At.here ?A (?B :: ?Θ))))
+in the target expression
+  C.comp (Route.sideArrow o d.c1) (C.comp (logicalSide o d.upBefore d.upAfter d.A d.B) (component o d.aUpper)) =
+    C.comp (C.comp (logicalSide o d.loBefore d.loAfter d.A d.B) (Route.sideArrow o d.c0)) (component o d.aUpper)
+
+case inr.inl.here
+P : Type u
+o : Op
+d : Data P o
+C : Category (NormalForm P) := side P o
+⊢ C.comp (Route.sideArrow o d.c1) (C.comp (logicalSide o d.upBefore d.upAfter d.A d.B) (component o d.aUpper)) =
+    C.comp (C.comp (logicalSide o d.loBefore d.loAfter d.A d.B) (Route.sideArrow o d.c0)) (component o d.aUpper)
+error: DosenPetric/GentzenGapLogicalRouting.lean:54:22: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (side ?m.623 ?o).comp (logicalSide ?o ?Γ ?Θ ?A ?B) (component ?o (At.shift ?Γ (At.here ?B ?Θ).there))
+in the target expression
+  C.comp (Route.sideArrow o d.c1) (C.comp (logicalSide o d.upBefore d.upAfter d.A d.B) (component o d.bUpper)) =
+    C.comp (C.comp (logicalSide o d.loBefore d.loAfter d.A d.B) (Route.sideArrow o d.c0)) (component o d.bUpper)
+
+case inr.inl.there.here
+P : Type u
+o : Op
+d : Data P o
+C : Category (NormalForm P) := side P o
+⊢ C.comp (Route.sideArrow o d.c1) (C.comp (logicalSide o d.upBefore d.upAfter d.A d.B) (component o d.bUpper)) =
+    C.comp (C.comp (logicalSide o d.loBefore d.loAfter d.A d.B) (Route.sideArrow o d.c0)) (component o d.bUpper)
+error: DosenPetric/GentzenGapLogicalRouting.lean:59:2: Type mismatch: After simplification, term
+  categorical_square d
+ has type
+  @Eq ((side P Op.conj).Hom (fold Op.conj d.K1) (fold Op.conj (d.upBefore ++ d.A :: d.B :: d.upAfter)))
+    ((side P Op.conj).comp (ofTerm d.c1.product) (ofTerm (logicalCompare Op.conj d.upBefore d.upAfter d.A d.B).toTerm))
+    ((side P Op.conj).comp (ofTerm (logicalCompare Op.conj d.loBefore d.loAfter d.A d.B).toTerm) (ofTerm d.c0.product))
+but is expected to have type
+  @Eq (Hom (ante d.K1) (ante (d.upBefore ++ d.A :: d.B :: d.upAfter)))
+    (comp (ofTerm d.c1.product) (ofTerm (logicalCompare Op.conj d.upBefore d.upAfter d.A d.B).toTerm))
+    (comp (ofTerm (logicalCompare Op.conj d.loBefore d.loAfter d.A d.B).toTerm) (ofTerm d.c0.product))
+error: DosenPetric/GentzenGapLogicalRouting.lean:64:2: Type mismatch: After simplification, term
+  categorical_square d
+ has type
+  @Eq ((side P Op.disj).Hom (fold Op.disj d.K1) (fold Op.disj (d.upBefore ++ d.A :: d.B :: d.upAfter)))
+    ((side P Op.disj).comp (ofTerm d.c1.coproduct)
+      (ofTerm (logicalCompare Op.disj d.upBefore d.upAfter d.A d.B).invTerm))
+    ((side P Op.disj).comp (ofTerm (logicalCompare Op.disj d.loBefore d.loAfter d.A d.B).invTerm)
+      (ofTerm d.c0.coproduct))
+but is expected to have type
+  @Eq (Hom (succ (d.upBefore ++ d.A :: d.B :: d.upAfter)) (succ d.K1))
+    (comp (ofTerm (logicalCompare Op.disj d.upBefore d.upAfter d.A d.B).invTerm) (ofTerm d.c1.coproduct))
+    (comp (ofTerm d.c0.coproduct) (ofTerm (logicalCompare Op.disj d.loBefore d.loAfter d.A d.B).invTerm))
+✔ [119/120] Built DosenPetric.GentzenLogicalRankSums (418ms)
+Some required targets logged failures:
+- DosenPetric.GentzenGapLogicalRouting
+error: build failed

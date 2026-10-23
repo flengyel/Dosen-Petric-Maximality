@@ -1,0 +1,110 @@
+✖ [107/107] Building DosenPetric.GentzenGapLogicalIndices (1.7s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenGapLogicalIndices.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapLogicalIndices.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapLogicalIndices.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapLogicalIndices.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapLogicalIndices.setup.json --json
+error: DosenPetric/GentzenGapLogicalIndices.lean:16:48: unsolved goals
+case isFalse.isFalse.isFalse.isFalse
+a k n m i : Nat
+h✝³ : ¬a + i < a + k
+h✝² : ¬a + i < a + k + n
+h✝¹ : ¬i < k
+h✝ : ¬i < k + n
+⊢ some (a + i - n + m) = some (a + (i - n + m))
+error: DosenPetric/GentzenGapLogicalIndices.lean:56:87: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≤ 0
+  a ≥ 0
+  0 ≤ a - b ≤ 1
+where
+ a := ↑i
+ b := ↑U.length
+ c := ↑(if i < U.length + (V.length + 1 + 1) then i
+  else
+    if i = U.length + (V.length + 1 + 1) then U.length + (V.length + 1 + 1) + (gaps post).length
+    else U.length + (V.length + 1 + 1) + copyIndex post (i - (U.length + (V.length + 1 + 1)) - 1))
+error: DosenPetric/GentzenGapLogicalIndices.lean:57:10: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  if i < U.length then ?m.167 else ?m.168
+in the target expression
+  none =
+    some
+      (if i < (U ++ A :: B :: V).length then i
+      else
+        if i = (U ++ A :: B :: V).length then (U ++ A :: B :: V).length + (gaps post).length
+        else (U ++ A :: B :: V).length + copyIndex post (i - (U ++ A :: B :: V).length - 1))
+
+case pos
+P : Type u
+C A B D : NormalForm P
+post : List (List (NormalForm P))
+U V : List (NormalForm P)
+i : Nat
+hi : ¬i < U.length
+hm : i < U.length + 2
+⊢ none =
+    some
+      (if i < (U ++ A :: B :: V).length then i
+      else
+        if i = (U ++ A :: B :: V).length then (U ++ A :: B :: V).length + (gaps post).length
+        else (U ++ A :: B :: V).length + copyIndex post (i - (U ++ A :: B :: V).length - 1))
+error: DosenPetric/GentzenGapLogicalIndices.lean:65:10: unsolved goals
+case pos.isFalse.isFalse
+P : Type u
+C A B D : NormalForm P
+post : List (List (NormalForm P))
+U V : List (NormalForm P)
+i : Nat
+hi : ¬i < U.length
+hm : ¬i < U.length + 2
+hv : ¬i < U.length + (V.length + 1 + 1)
+he : i = U.length + (V.length + 1 + 1)
+h✝¹ : ¬U.length + (V.length + 1 + 1) + (gaps post).length < U.length
+h✝ : ¬U.length + (V.length + 1 + 1) + (gaps post).length < U.length + 2
+⊢ some (U.length + (V.length + 1) + (gaps post).length) =
+    some (U.length + (V.length + 1 + 1) + (gaps post).length - 2 + 1)
+error: DosenPetric/GentzenGapLogicalIndices.lean:68:10: unsolved goals
+case neg.isFalse.isFalse
+P : Type u
+C A B D : NormalForm P
+post : List (List (NormalForm P))
+U V : List (NormalForm P)
+i : Nat
+hi : ¬i < U.length
+hm : ¬i < U.length + 2
+hv : ¬i < U.length + (V.length + 1 + 1)
+he : ¬i = U.length + (V.length + 1 + 1)
+hh : i - 2 + 1 - (U.length + (V.length + 1)) - 1 = i - (U.length + (V.length + 1 + 1)) - 1
+h✝¹ : ¬U.length + (V.length + 1 + 1) + copyIndex post (i - (U.length + (V.length + 1 + 1)) - 1) < U.length
+h✝ : ¬U.length + (V.length + 1 + 1) + copyIndex post (i - (U.length + (V.length + 1 + 1)) - 1) < U.length + 2
+⊢ some (U.length + (V.length + 1) + copyIndex post (i - (U.length + (V.length + 1 + 1)) - 1)) =
+    some (U.length + (V.length + 1 + 1) + copyIndex post (i - (U.length + (V.length + 1 + 1)) - 1) - 2 + 1)
+error: DosenPetric/GentzenGapLogicalIndices.lean:81:6: unsolved goals
+case pos.isFalse.isFalse
+P : Type u
+C A B D : NormalForm P
+post : List (List (NormalForm P))
+U V Γ : List (NormalForm P)
+pre : List (List (NormalForm P))
+hl : (gaps (pre ++ (U ++ A :: B :: V) :: post)).length = (gaps (pre ++ (U ++ D :: V) :: post)).length + 1
+ih :
+  ∀ (i : Nat),
+    Option.map (copyIndex (pre ++ (U ++ D :: V) :: post)) (parentIndex ((repeated C pre).length + U.length) 2 1 i) =
+      parentIndex ((gaps pre).length + U.length) 2 1 (copyIndex (pre ++ (U ++ A :: B :: V) :: post) i)
+hk : (gaps pre).length + U.length + 2 ≤ (gaps (pre ++ (U ++ A :: B :: V) :: post)).length
+hi : ¬Γ.length < Γ.length
+h✝¹ : ¬Γ.length + (gaps (pre ++ (U ++ A :: B :: V) :: post)).length < Γ.length + (gaps pre).length + U.length
+h✝ : ¬Γ.length + (gaps (pre ++ (U ++ A :: B :: V) :: post)).length < Γ.length + (gaps pre).length + U.length + 2
+⊢ some (Γ.length + (gaps (pre ++ (U ++ D :: V) :: post)).length) =
+    some (Γ.length + (gaps (pre ++ (U ++ A :: B :: V) :: post)).length - 2 + 1)
+error: DosenPetric/GentzenGapLogicalIndices.lean:107:8: unsolved goals
+case nil.isFalse.isFalse.isFalse.isFalse
+P : Type u
+C : NormalForm P
+u i : Nat
+h✝³ : ¬i < u
+h✝² : ¬i < u + 2
+h✝¹ : ¬i + 1 < 1 + u
+h✝ : ¬i + 1 < 1 + u + 2
+⊢ some (i - 2 + 1 + 1) = some (i + 1 - 2 + 1)
+Some required targets logged failures:
+- DosenPetric.GentzenGapLogicalIndices
+error: build failed

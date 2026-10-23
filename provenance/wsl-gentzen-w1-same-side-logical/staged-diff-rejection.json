@@ -1,0 +1,13 @@
+{
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "exit_status": 2,
+  "diagnostic": "DosenPetric/GentzenLogicalComponents.lean:194: new blank line at EOF.",
+  "repair": "Removed one final blank line; no declaration changed; required full verification repeated.",
+  "seconds": 3.76e-05,
+  "timing_source": "exec_command wall_time_seconds"
+}

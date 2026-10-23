@@ -1,0 +1,32 @@
+✖ [108/108] Building DosenPetric.GentzenLogicalPositions (1.0s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenLogicalPositions.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenLogicalPositions.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenLogicalPositions.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenLogicalPositions.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenLogicalPositions.setup.json --json
+error: DosenPetric/GentzenLogicalPositions.lean:28:4: Type mismatch
+  Eq.symm (GapLogical.parent_before Γ.length ?m.90 ?m.91 a.index (index_lt a))
+has type
+  some a.index = GapLogical.parentIndex Γ.length ?m.90 ?m.91 a.index
+but is expected to have type
+  some a.index = GapLogical.parentIndex Γ.length X.length Y.length (a.before (X ++ Θ)).index
+error: DosenPetric/GentzenLogicalPositions.lean:32:12: unsolved goals
+case inr.inl.isFalse.isTrue
+P : Type u
+Γ X Y Θ : List (NormalForm P)
+E : NormalForm P
+a : At X E
+hl : a.index < X.length
+h✝¹ : ¬Γ.length + a.index < Γ.length
+h✝ : Γ.length + a.index < Γ.length + X.length
+⊢ none = none
+
+case inr.inl.isFalse.isFalse
+P : Type u
+Γ X Y Θ : List (NormalForm P)
+E : NormalForm P
+a : At X E
+hl : a.index < X.length
+h✝¹ : ¬Γ.length + a.index < Γ.length
+h✝ : ¬Γ.length + a.index < Γ.length + X.length
+⊢ none = some (Γ.length + a.index - X.length + Y.length)
+error: DosenPetric/GentzenLogicalPositions.lean:71:12: `simp` made no progress
+Some required targets logged failures:
+- DosenPetric.GentzenLogicalPositions
+error: build failed

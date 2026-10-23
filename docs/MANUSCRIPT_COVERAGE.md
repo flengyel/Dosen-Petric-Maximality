@@ -81,6 +81,7 @@ definition is unchanged and can be adapted once that interpretation exists.
 | Opposite-side W1 unary logical rules | `W1.Logical` proves both unary disjR/conjL commutations, targeted n/n−1 contraction/endpoint losses and principal ranks 2→1, empty principal predecessor lists and predicate/count/full tagged relation preservation. No new atomicity condition. Together with prior thinning/exchange/contraction these complete the specified opposite-side unary families; other same-side exchange/contraction/logical cases remain open. |
 | Fixed-position same-side W1 thinning | Four concrete interior/terminal L/R results compile with explicit G/At/Route casts, the proved structural square, complete ordered selected transport and index exclusion even E=C. Full rank equations give n/n−1 losses and fixed inserted 2→1; predicates/count/tagged relations preserved, exact AtomicFormula E boundary retained. Other W1/W2 and all-site reducibility remain open. |
 | Fixed-parametric same-side W1 exchange | Four concrete interior-gap/terminal-tail L/R results compile with exact casts and structural squares, ordered selected transport using interval exclusion, retained and fixed singleton correspondence. Contraction/retained endpoint losses n/n−1 and unchanged fixed ranks 2+rho compile, including empty blocks. Count/predicates/tagged relations preserved; both Atomized predicates equal f.Atomized. Crossing-selected, multi-gap and absorption configurations remain open. |
+| Fixed-parametric same-side unary logical W1 | Four concrete interior/terminal conjL/disjR cases compile with actual partial ancestry, both consumed slots none, complete ordered selected transport plus survival/lengths, separate categorical A/B component calculations and actual toTerm squares. Retained n/n−1, principal 2→1 and other fixed 2+rho ranks compile; count/predicates/tagged relations preserved. No extra atomicity or coherence. Other W1/W2–W6 and general reducibility remain open. |
 | Positive-fragment coherence input | `PositiveCoherence P` quantifies only over positive raw terms and concludes equality in Reduced.Hom. `faithful_of_positive_coherence` is proved conditionally from that explicit, unsupplied premise. This does not supply Reduced.Faithful or Boolean Coherence. |
 | Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. Reduced faithfulness and its earlier positive-core coherence inputs are unproved. No complete `OccurrenceInterpretation` instance. Equality reflection and full red-equation preservation remain open. |
 | Normalization and occurrence correspondence | `Presentation.normalization` constructs the existing record for every P by simultaneous sign recursion and source n/r/rho arrows. Both inverse laws, inverse occurrence coordinates, both graph laws, literal/label/polarity correspondence, repeated-tag injectivity, Empty cases, and transport formulas compile. No coherence or arrow-negation premise. |
@@ -92,57 +93,57 @@ definition is unchanged and can be adapted once that interpretation exists.
 
 ## Next concrete proof task
 
-Atomic-k, clusters/rank, specified opposite-side unary W1 families,
-fixed-position same-side thinning and now fixed-gap/tail same-side exchange
-in both duals are complete in their local scopes. See
-[the same-side exchange report](GENTZEN_W1_SAME_SIDE_EXCHANGE_REPORT.md).
+Atomic-k, clusters/rank, specified opposite-side unary W1 families and the
+fixed-parametric same-side thinning, exchange and unary logical gap/tail cases
+are complete in their stated scopes. See
+[the same-side logical report](GENTZEN_W1_SAME_SIDE_LOGICAL_REPORT.md).
 
-Next prove same-side unary conjunction-left introduction through contraction
-at a specified fixed interior gap, and its disjunction-right dual (§11.2 p.251
-W1 with γ=∧L; p.252 dual). This is a proposed proof obligation, not a production
-axiom or completed theorem.
+Next prove same-side contraction through contraction when the inner E copies
+lie entirely inside one fixed gap of the outer C contraction, together with
+its right dual (§11.2 p.251 W1, γ=wL, with all outer C copies parametric).
+This is a proposed obligation, not a production axiom or completed theorem.
 
-For arbitrary P : Type u, A,B,C : NormalForm P,
-pre,post : List (List (NormalForm P)) and U,V,Θ,Δ : List (NormalForm P), put:
+For arbitrary P,C,E, lists pre/post, H,U,V,Θ,Δ and hs, put:
 
 ```text
-gs0 = pre ++ (U ++ A :: B :: V) :: post
-gs1 = pre ++ (U ++ .conj A B :: V) :: post
+es = H :: hs
+outer0 = pre ++ (U ++ (repeated E es ++ V)) :: post
+outer1 = pre ++ (U ++ (gaps es ++ E :: V)) :: post
 upBefore = repeated C pre ++ U
 upAfter = V ++ C :: (repeated C post ++ Θ)
 loBefore = gaps pre ++ U
 loAfter = V ++ (gaps post ++ C :: Θ).
 ```
 
-Require 2≤gs0.length and take
-`f : G P (upBefore ++ A :: B :: upAfter) Δ`.
-Construct old by `G.conjL upBefore upAfter Δ A B f`, then contraction at
-gs1/Θ after the proved upper reindexing; construct inner by contraction at
-gs0/Θ and new by `G.conjL loBefore loAfter Δ A B inner`.
-Both outer proofs must have exact type
-`G P (loBefore ++ .conj A B :: loAfter) Δ`.
-Prove all context equalities, the actual copies/conjLeft.toTerm structural
-square and Reduced denotation equality. All selected upper contraction copies
-must avoid the two fixed premise slots of A/B, and all selected lower copies
-must avoid the introduced principal compound slot, even if its label equals C.
-Prove complete selected transport, targeted n/n−1 rank laws and correct
-whole-formula principal ancestry/predicate/tagged-relation preservation.
+Require 2≤outer0.length and 2≤es.length. Take
+`f : G P (upBefore ++ repeated E es ++ upAfter) Δ`.
+Old first contracts E with gaps `(upBefore ++ H) :: hs` and tail upAfter,
+then contracts C using outer1/Θ. New first contracts C using outer0/Θ,
+then contracts E with gaps `(loBefore ++ H) :: hs` and tail loAfter.
+Use actual G.contractL constructors after proved list reindexings. Both final
+types must be exactly:
 
-The dual starts with `f : G P Γ (upBefore ++ A :: B :: upAfter)`, replaces
-conj by disj in gs1, and uses `G.disjR` and `G.contractR`; its final type is
-`G P Γ (loBefore ++ .disj A B :: loAfter)`.
-Use actual Rules.conjLeft/disjRight directions, not an assumed arrow-negation
-functor. Terminal-tail variants and other W1 configurations remain additional
-work unless their constructions are also supplied.
+```text
+G P (loBefore ++ gaps es ++ E :: loAfter) Δ.
+```
 
-Remaining exchange configurations include crossing selected contraction
-positions, spanning several fixed gaps, and exchange absorption by contraction.
-Other same-side W1 contractions/logical cases, W2–W6, arbitrary-context proof
-replacement/all-site decrease, Reducibility, Blocked-w and cut elimination
-remain open. Positive coherence inputs, PositiveCoherence, Reduced.Faithful,
-Boolean Coherence and unconditional maximality are separate/open. Existing
-conditional transfers remain unchanged. Missing formalization of a cited
-published theorem does not by itself establish a manuscript defect.
+The dual starts with `f : G P Γ (upBefore ++ repeated E es ++ upAfter)`,
+uses G.contractR and has final type
+`G P Γ (loBefore ++ gaps es ++ E :: loAfter)`.
+Every selected E position lies in the designated fixed outer gap, outside all
+selected C positions. Every selected C position must remain parametric through
+the E contraction and differ from its retained E position. Derive these from
+indices, even C=E; do not assume freshness. Prove the copies/copies square,
+complete selected transport, Reduced equality and correctly directed rank
+comparisons. Shared-selected-copy configurations (W3) are separate; no general
+all-site decrease follows from a local commutation.
+
+Remaining crossing-selected, multi-gap and absorption exchange configurations,
+other unfinished W1 cases, W2–W6, arbitrary-context replacement, Reducibility,
+Blocked-w, cut elimination, PositiveCoherence, Reduced.Faithful, Boolean Coherence,
+unconditional maximality and Palomar submission preparation remain separate.
+Existing conditional transfers are unchanged. An unformalized cited theorem
+does not by itself establish a manuscript defect.
 
 ## Verification boundary
 

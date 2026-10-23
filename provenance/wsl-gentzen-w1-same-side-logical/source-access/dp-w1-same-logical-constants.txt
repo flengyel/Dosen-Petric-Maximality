@@ -1,0 +1,125 @@
+272            CHAPTER 11.                       DISTRIBUTIVE LATTICE CATEGORIES
+
+     We deﬁne Gentzen terms by induction as in §11.1 with the following
+additions. Besides 1′′p : p ⊢ p, which, as before, denotes the arrow (1p , p, p)
+of D, we put among atomic Gentzen terms 1i⊤ : (∅, ∧) ⊢ ⊤, which denotes
+(1⊤ , (∅, ∧), ⊤), and 1e⊥ : ⊥ ⊢ (∅, ∨), which denotes (1⊥ , ⊥, (∅, ∨)). The
+Gentzen operations cL , cR , k L , k R , wL , wR , cut , mix , ∧L , ∧R , ∨L and ∨R
+are deﬁned as before, save that c, w and d are now replaced by c′′ , w′′ and
+d′′ . In D we have now the equations
+                                                                         ξ
+      c ′′Θ,Ξ = 1Θξ Ξ , if Θ = (∅, ξ ) or Ξ = (∅, ξ ), by (cδ σ) (see §5.3),
+          ξ                                                          ξ       ξ
+
+
+                                     ξ
+      w ′′(∅,ξ) = 1(∅,ξ) , by (wδ) (see §9.2),
+          ξ                      ξ
+
+
+                                                                                     ∨
+      d′′Θ,A,Ξ = 1Θ∧ (A∨ Ξ) , if Θ = (∅, ∧) or Ξ = (∅, ∨), by (σ dL ) or ( δ dL ).
+                                                                                 ∧
+
+
+
+                     ξ                       ξ
+Note that now k 1′′(∅,ξ),Ξ and k 2′′Ξ,(∅,ξ) are deﬁned in D, and they are equal
+to κ ′′Ξ . With this in mind, we may continue using the other abbreviations
+      ξ
+
+
+
+we had before.
+    If 1e⊤ denotes (1⊤ , ⊤, (∅, ∧)), and 1i⊥ denotes (1⊥ , (∅, ∨), ⊥), then for
+f : Γ ⊢ ∆ we have in D the equations
+                                         ∧
+                            f = f ◦ k 1 ′′Γ,⊤ = f ◦ (Γ ∧ κ ′′⊤ ) = f ◦ (Γ ∧ 1e⊤ ),
+                          L                                  ∧
+               (⊤)       k⊤
+                                  ∨
+                            f = k 2 ′′⊥,∆ ◦ f = ( κ ′′⊥ ∨ ∆) ◦ f = (1i⊥ ∨ ∆) ◦ f.
+                          R                              ∨
+               (⊥)       k⊥
+                                                     ∧                                   ∧
+                                                                 ∧           ∧
+For (⊤), we rely on the fact that k 2A,B = σ →
+                                             B
+                                               ◦ (κ
+                                                   A ∧ 1B ) in L⊤ and
+
+σ →′′X = 1X in D, and analogously for (⊥).
+∧
+
+
+      We prove the Gentzenization Lemma as in §11.1, with the following
+ additions. We have that (1⊤ , ⊤, ⊤) is denoted by k⊤   1⊤ , while (1⊥ , ⊥, ⊥) is
+                                                      L i
+
+               R e
+ denoted by k⊥ 1⊥ . To show that, we rely on the equations (⊤) and (⊥). We
+                   ∧                                      ∨
+ also have that (κA , A, ⊤) is denoted by kA  1⊤ , while (κA , ⊥, A) is denoted
+                                            L i
+
+       R e
+ by kA   1⊥ . (We can deﬁne the arrow terms in the family δ-σ in terms of
+ those in the family κ; see §9.2.) If we have a sequent arrow (f, Γ, ∆) and Γ
+ is (∅, ∧) or ∆ is (∅, ∨), then we proceed as before by using 1i⊤ or 1e⊥ .
+      As before, a Gentzen term is k-atomized when for every subterm of it
+                L       R
+ of the form kA    or kA  we have that A is a an atomic formula, which now
+ means that it is a letter or ⊤ or ⊥. We prove the Atomic-k Lemma of §11.2
+ exactly as before.
+§11.5.    Coherence of distributive dicartesian categories                     273
+
+                                                  L       R
+     Note that we keep the Gentzen operations k⊥     and k⊤ , which need not
+be in the spirit of Gentzen. For f : Γ ⊢ ∆, Gentzen would perhaps equate
+k⊥L
+    f with an arrow obtained from 1e⊥ : ⊥ ⊢ (∅, ∨) by thinning with Γ on the
+                                                 R
+left and ∆ on the right, and he would equate k⊤    f with an arrow obtained
+from 1⊤ : (∅, ∧) ⊢ ⊤ by thinning with Γ on the left and ∆ on the right. We
+        i
+
+do not do that.
+     To deﬁne clusters and rank, we now count among the leaf formulae of
+h also the occurrences of ⊤ and ⊥ in the types of 1i⊤ : (∅, ∧) ⊢ ⊤ and
+1e⊥ : ⊥ ⊢ (∅, ∨) when h is one of these Gentzen terms.
+     With the deﬁnition of blocked wL and wR subterms copied from what
+we had in §11.2, we can prove the Blocked-w Lemma as before. The degree
+of a cut is as before the number of occurrences of connectives in the cut
+formula; here we count ⊤ and ⊥ among these connectives. We can then
+prove the Cut-Elimination Theorem for the new category D.
+
+Proof of the Cut-Elimination Theorem. We enlarge the proof in
+§11.2 with the following cases.
+    If the complexity of our clean cut is (d, 2) for d > 0 and the cut formula is
+⊤, then our clean cut can be of the form cut ∅,∅ (1i⊤ , k⊤
+                                                         L
+                                                           f ), which for f : Γ ⊢ ∆
+is equal to f in D by relying on (⊤) and the equation d′′Γ,⊤,(∅,∨) = 1Γ∧⊤ of
+                                                 ∨
+D, which we obtain by using the equation ( δ dL ). The remaining possible
+                                       R      L
+form of our clean cut can be cut ∅,∅ (k⊤ g, k⊤  f ), which is equal to mix (f, g)
+in D. (This last step is not in the spirit of Gentzen, who did not envisage
+our mix .)
+    If the complexity of our clean cut is (d, 2) for d > 0 and the cut formula
+is ⊥, then we proceed analogously. We rely now on the equations (⊥) and
+ ∧
+(σ dL ).
+    If the complexity of our clean cut is (d, r) for r > 2 and the right rank
+of this clean cut is greater than 1, then we proceed as in the proof of the
+                                                    ∧
+Cut-Elimination Theorem in §11.2. Note that k 1 ′′(∅,∧),B is deﬁned in D and
+is equal to κ ′′B . So case (3) can now be handled without distinguishing
+             ∧
+
+
+cases as in §11.2.
+    We proceed analogously if the left rank is greater than 1, and the re-
+mainder of the proof follows the proof of the Cut-Elimination Theorem of
+§11.2.                                                                  ⊣
+

@@ -1,0 +1,416 @@
+✖ [109/109] Building DosenPetric.GentzenLogicalComponents (1.4s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenLogicalComponents.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenLogicalComponents.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenLogicalComponents.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenLogicalComponents.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenLogicalComponents.setup.json --json
+error: DosenPetric/GentzenLogicalComponents.lean:109:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  C.comp ?f (C.comp ?g ?h)
+in the target expression
+  (side P Op.conj).comp ((conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B))
+      ((side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append (A :: B :: Θ))))
+        (component Op.conj (a.before (A :: B :: Θ)))) =
+    (side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append (Op.conj.formula A B :: Θ))))
+      (component Op.conj (a.before (Op.conj.formula A B :: Θ)))
+
+case conj.there
+P : Type u
+Γ✝ Θ : List (NormalForm P)
+A B E✝ : NormalForm P
+C : Category (NormalForm P) := side P Op.conj
+D : DiagonalData (sideM P Op.conj) := sideD P Op.conj
+q : Op := Op.conj
+E H : NormalForm P
+Γ : List (NormalForm P)
+a : At Γ E
+ih :
+  (side P Op.conj).comp (logicalSide Op.conj Γ Θ A B) (component Op.conj (a.before (A :: B :: Θ))) =
+    component Op.conj (a.before (Op.conj.formula A B :: Θ))
+⊢ (side P Op.conj).comp ((conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B))
+      ((side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append (A :: B :: Θ))))
+        (component Op.conj (a.before (A :: B :: Θ)))) =
+    (side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append (Op.conj.formula A B :: Θ))))
+      (component Op.conj (a.before (Op.conj.formula A B :: Θ)))
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    (conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B)
+  has type
+    @Category.Hom (NormalForm P) (category P) ((conjMonoidal P).obj H (fold Op.conj (Γ ++ Op.conj.formula A B :: Θ)))
+      ((conjMonoidal P).obj H (fold Op.conj (Γ ++ A :: B :: Θ)))
+  but is expected to have type
+    @Category.Hom (NormalForm P) (side P Op.conj) (fold Op.conj (H :: Γ ++ Op.conj.formula A B :: Θ))
+      (fold Op.conj (H :: Γ ++ A :: B :: Θ))
+  in the application
+    (side P Op.conj).comp ((conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B))
+error: DosenPetric/GentzenLogicalComponents.lean:109:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  C.comp ?f (C.comp ?g ?h)
+in the target expression
+  (side P Op.disj).comp ((disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B))
+      ((side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append (A :: B :: Θ))))
+        (component Op.disj (a.before (A :: B :: Θ)))) =
+    (side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append (Op.disj.formula A B :: Θ))))
+      (component Op.disj (a.before (Op.disj.formula A B :: Θ)))
+
+case disj.there
+P : Type u
+Γ✝ Θ : List (NormalForm P)
+A B E✝ : NormalForm P
+C : Category (NormalForm P) := side P Op.disj
+D : DiagonalData (sideM P Op.disj) := sideD P Op.disj
+q : Op := Op.disj
+E H : NormalForm P
+Γ : List (NormalForm P)
+a : At Γ E
+ih :
+  (side P Op.disj).comp (logicalSide Op.disj Γ Θ A B) (component Op.disj (a.before (A :: B :: Θ))) =
+    component Op.disj (a.before (Op.disj.formula A B :: Θ))
+⊢ (side P Op.disj).comp ((disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B))
+      ((side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append (A :: B :: Θ))))
+        (component Op.disj (a.before (A :: B :: Θ)))) =
+    (side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append (Op.disj.formula A B :: Θ))))
+      (component Op.disj (a.before (Op.disj.formula A B :: Θ)))
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    (disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B)
+  has type
+    @Category.Hom (NormalForm P) (opposite (category P))
+      ((disjMonoidal P).obj H (fold Op.disj (Γ ++ Op.disj.formula A B :: Θ)))
+      ((disjMonoidal P).obj H (fold Op.disj (Γ ++ A :: B :: Θ)))
+  but is expected to have type
+    @Category.Hom (NormalForm P) (side P Op.disj) (fold Op.disj (H :: Γ ++ Op.disj.formula A B :: Θ))
+      (fold Op.disj (H :: Γ ++ A :: B :: Θ))
+  in the application
+    (side P Op.disj).comp ((disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B))
+error: DosenPetric/GentzenLogicalComponents.lean:119:101: Unknown identifier `o`
+error: DosenPetric/GentzenLogicalComponents.lean:122:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  C.comp ?f (C.comp ?g ?h)
+in the target expression
+  (side P Op.conj).comp ((conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B))
+      ((side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append (A :: B :: Θ))))
+        (component Op.conj (At.shift Γ (At.here A (B :: Θ))))) =
+    (side P Op.conj).comp
+      ((side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append (Op.conj.formula A B :: Θ))))
+        (component Op.conj (At.shift Γ (At.here (Op.conj.formula A B) Θ))))
+      ((sideD P Op.conj).fst A B)
+
+case conj.cons
+P : Type u
+Θ : List (NormalForm P)
+A B : NormalForm P
+C : Category (NormalForm P) := side P Op.conj
+D : DiagonalData (sideM P Op.conj) := sideD P Op.conj
+q : Op := Op.conj
+H : NormalForm P
+Γ : List (NormalForm P)
+ih :
+  (side P Op.conj).comp (logicalSide Op.conj Γ Θ A B) (component Op.conj (At.shift Γ (At.here A (B :: Θ)))) =
+    (side P Op.conj).comp (component Op.conj (At.shift Γ (At.here (Op.conj.formula A B) Θ))) ((sideD P Op.conj).fst A B)
+⊢ (side P Op.conj).comp ((conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B))
+      ((side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append (A :: B :: Θ))))
+        (component Op.conj (At.shift Γ (At.here A (B :: Θ))))) =
+    (side P Op.conj).comp
+      ((side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append (Op.conj.formula A B :: Θ))))
+        (component Op.conj (At.shift Γ (At.here (Op.conj.formula A B) Θ))))
+      ((sideD P Op.conj).fst A B)
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    (conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B)
+  has type
+    @Category.Hom (NormalForm P) (category P) ((conjMonoidal P).obj H (fold Op.conj (Γ ++ Op.conj.formula A B :: Θ)))
+      ((conjMonoidal P).obj H (fold Op.conj (Γ ++ A :: B :: Θ)))
+  but is expected to have type
+    @Category.Hom (NormalForm P) (side P Op.conj) (fold Op.conj (H :: Γ ++ Op.conj.formula A B :: Θ))
+      (fold Op.conj (H :: Γ ++ A :: B :: Θ))
+  in the application
+    (side P Op.conj).comp ((conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B))
+error: DosenPetric/GentzenLogicalComponents.lean:119:101: Unknown identifier `o`
+error: DosenPetric/GentzenLogicalComponents.lean:122:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  C.comp ?f (C.comp ?g ?h)
+in the target expression
+  (side P Op.disj).comp ((disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B))
+      ((side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append (A :: B :: Θ))))
+        (component Op.disj (At.shift Γ (At.here A (B :: Θ))))) =
+    (side P Op.disj).comp
+      ((side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append (Op.disj.formula A B :: Θ))))
+        (component Op.disj (At.shift Γ (At.here (Op.disj.formula A B) Θ))))
+      ((sideD P Op.disj).fst A B)
+
+case disj.cons
+P : Type u
+Θ : List (NormalForm P)
+A B : NormalForm P
+C : Category (NormalForm P) := side P Op.disj
+D : DiagonalData (sideM P Op.disj) := sideD P Op.disj
+q : Op := Op.disj
+H : NormalForm P
+Γ : List (NormalForm P)
+ih :
+  (side P Op.disj).comp (logicalSide Op.disj Γ Θ A B) (component Op.disj (At.shift Γ (At.here A (B :: Θ)))) =
+    (side P Op.disj).comp (component Op.disj (At.shift Γ (At.here (Op.disj.formula A B) Θ))) ((sideD P Op.disj).fst A B)
+⊢ (side P Op.disj).comp ((disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B))
+      ((side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append (A :: B :: Θ))))
+        (component Op.disj (At.shift Γ (At.here A (B :: Θ))))) =
+    (side P Op.disj).comp
+      ((side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append (Op.disj.formula A B :: Θ))))
+        (component Op.disj (At.shift Γ (At.here (Op.disj.formula A B) Θ))))
+      ((sideD P Op.disj).fst A B)
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    (disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B)
+  has type
+    @Category.Hom (NormalForm P) (opposite (category P))
+      ((disjMonoidal P).obj H (fold Op.disj (Γ ++ Op.disj.formula A B :: Θ)))
+      ((disjMonoidal P).obj H (fold Op.disj (Γ ++ A :: B :: Θ)))
+  but is expected to have type
+    @Category.Hom (NormalForm P) (side P Op.disj) (fold Op.disj (H :: Γ ++ Op.disj.formula A B :: Θ))
+      (fold Op.disj (H :: Γ ++ A :: B :: Θ))
+  in the application
+    (side P Op.disj).comp ((disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B))
+error: DosenPetric/GentzenLogicalComponents.lean:132:118: Unknown identifier `o`
+error: DosenPetric/GentzenLogicalComponents.lean:135:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  C.comp ?f (C.comp ?g ?h)
+in the target expression
+  (side P Op.conj).comp ((conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B))
+      ((side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append (A :: B :: Θ))))
+        (component Op.conj (At.shift Γ (At.here B Θ).there))) =
+    (side P Op.conj).comp
+      ((side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append (Op.conj.formula A B :: Θ))))
+        (component Op.conj (At.shift Γ (At.here (Op.conj.formula A B) Θ))))
+      ((sideD P Op.conj).snd A B)
+
+case conj.cons
+P : Type u
+Θ : List (NormalForm P)
+A B : NormalForm P
+C : Category (NormalForm P) := side P Op.conj
+D : DiagonalData (sideM P Op.conj) := sideD P Op.conj
+q : Op := Op.conj
+H : NormalForm P
+Γ : List (NormalForm P)
+ih :
+  (side P Op.conj).comp (logicalSide Op.conj Γ Θ A B) (component Op.conj (At.shift Γ (At.here B Θ).there)) =
+    (side P Op.conj).comp (component Op.conj (At.shift Γ (At.here (Op.conj.formula A B) Θ))) ((sideD P Op.conj).snd A B)
+⊢ (side P Op.conj).comp ((conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B))
+      ((side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append (A :: B :: Θ))))
+        (component Op.conj (At.shift Γ (At.here B Θ).there))) =
+    (side P Op.conj).comp
+      ((side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append (Op.conj.formula A B :: Θ))))
+        (component Op.conj (At.shift Γ (At.here (Op.conj.formula A B) Θ))))
+      ((sideD P Op.conj).snd A B)
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    (conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B)
+  has type
+    @Category.Hom (NormalForm P) (category P) ((conjMonoidal P).obj H (fold Op.conj (Γ ++ Op.conj.formula A B :: Θ)))
+      ((conjMonoidal P).obj H (fold Op.conj (Γ ++ A :: B :: Θ)))
+  but is expected to have type
+    @Category.Hom (NormalForm P) (side P Op.conj) (fold Op.conj (H :: Γ ++ Op.conj.formula A B :: Θ))
+      (fold Op.conj (H :: Γ ++ A :: B :: Θ))
+  in the application
+    (side P Op.conj).comp ((conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B))
+error: DosenPetric/GentzenLogicalComponents.lean:132:118: Unknown identifier `o`
+error: DosenPetric/GentzenLogicalComponents.lean:135:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  C.comp ?f (C.comp ?g ?h)
+in the target expression
+  (side P Op.disj).comp ((disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B))
+      ((side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append (A :: B :: Θ))))
+        (component Op.disj (At.shift Γ (At.here B Θ).there))) =
+    (side P Op.disj).comp
+      ((side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append (Op.disj.formula A B :: Θ))))
+        (component Op.disj (At.shift Γ (At.here (Op.disj.formula A B) Θ))))
+      ((sideD P Op.disj).snd A B)
+
+case disj.cons
+P : Type u
+Θ : List (NormalForm P)
+A B : NormalForm P
+C : Category (NormalForm P) := side P Op.disj
+D : DiagonalData (sideM P Op.disj) := sideD P Op.disj
+q : Op := Op.disj
+H : NormalForm P
+Γ : List (NormalForm P)
+ih :
+  (side P Op.disj).comp (logicalSide Op.disj Γ Θ A B) (component Op.disj (At.shift Γ (At.here B Θ).there)) =
+    (side P Op.disj).comp (component Op.disj (At.shift Γ (At.here (Op.disj.formula A B) Θ))) ((sideD P Op.disj).snd A B)
+⊢ (side P Op.disj).comp ((disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B))
+      ((side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append (A :: B :: Θ))))
+        (component Op.disj (At.shift Γ (At.here B Θ).there))) =
+    (side P Op.disj).comp
+      ((side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append (Op.disj.formula A B :: Θ))))
+        (component Op.disj (At.shift Γ (At.here (Op.disj.formula A B) Θ))))
+      ((sideD P Op.disj).snd A B)
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    (disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B)
+  has type
+    @Category.Hom (NormalForm P) (opposite (category P))
+      ((disjMonoidal P).obj H (fold Op.disj (Γ ++ Op.disj.formula A B :: Θ)))
+      ((disjMonoidal P).obj H (fold Op.disj (Γ ++ A :: B :: Θ)))
+  but is expected to have type
+    @Category.Hom (NormalForm P) (side P Op.disj) (fold Op.disj (H :: Γ ++ Op.disj.formula A B :: Θ))
+      (fold Op.disj (H :: Γ ++ A :: B :: Θ))
+  in the application
+    (side P Op.disj).comp ((disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B))
+error: DosenPetric/GentzenLogicalComponents.lean:147:30: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  C.comp ?f (C.comp ?g ?h)
+in the target expression
+  (side P Op.conj).comp ((conjMonoidal P).assocL A B (fold Op.conj Θ))
+      (C.comp (C.comp (D.snd A (fold Op.conj ([B].append Θ))) ((sideD P Op.conj).snd B (fold Op.conj ([].append Θ))))
+        (component Op.conj a)) =
+    (side P Op.conj).comp ((sideD P Op.conj).snd (Op.conj.formula A B) (fold Op.conj ([].append Θ)))
+      (component Op.conj a)
+
+case conj.nil
+P : Type u
+Θ : List (NormalForm P)
+A B E : NormalForm P
+a : At Θ E
+C : Category (NormalForm P) := side P Op.conj
+D : DiagonalData (sideM P Op.conj) := sideD P Op.conj
+q : Op := Op.conj
+⊢ (side P Op.conj).comp ((conjMonoidal P).assocL A B (fold Op.conj Θ))
+      (C.comp (C.comp (D.snd A (fold Op.conj ([B].append Θ))) ((sideD P Op.conj).snd B (fold Op.conj ([].append Θ))))
+        (component Op.conj a)) =
+    (side P Op.conj).comp ((sideD P Op.conj).snd (Op.conj.formula A B) (fold Op.conj ([].append Θ)))
+      (component Op.conj a)
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    (conjMonoidal P).assocL A B (fold Op.conj Θ)
+  has type
+    @Category.Hom (NormalForm P) (category P) ((conjMonoidal P).obj ((conjMonoidal P).obj A B) (fold Op.conj Θ))
+      ((conjMonoidal P).obj A ((conjMonoidal P).obj B (fold Op.conj Θ)))
+  but is expected to have type
+    @Category.Hom (NormalForm P) (side P Op.conj) (fold Op.conj ([] ++ Op.conj.formula A B :: Θ))
+      (fold Op.conj ([] ++ A :: B :: Θ))
+  in the application
+    (side P Op.conj).comp ((conjMonoidal P).assocL A B (fold Op.conj Θ))
+error: DosenPetric/GentzenLogicalComponents.lean:150:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  C.comp ?f (C.comp ?g ?h)
+in the target expression
+  (side P Op.conj).comp ((conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B))
+      ((side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append (A :: B :: Θ))))
+        (component Op.conj (At.shift Γ a.there.there))) =
+    (side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append ([Op.conj.formula A B] ++ Θ))))
+      (component Op.conj (At.shift Γ a.there))
+
+case conj.cons
+P : Type u
+Θ : List (NormalForm P)
+A B E : NormalForm P
+a : At Θ E
+C : Category (NormalForm P) := side P Op.conj
+D : DiagonalData (sideM P Op.conj) := sideD P Op.conj
+q : Op := Op.conj
+H : NormalForm P
+Γ : List (NormalForm P)
+ih :
+  (side P Op.conj).comp (logicalSide Op.conj Γ Θ A B) (component Op.conj (At.shift Γ (At.shift [A, B] a))) =
+    component Op.conj (At.shift Γ (At.shift [Op.conj.formula A B] a))
+⊢ (side P Op.conj).comp ((conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B))
+      ((side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append (A :: B :: Θ))))
+        (component Op.conj (At.shift Γ a.there.there))) =
+    (side P Op.conj).comp ((sideD P Op.conj).snd H (fold Op.conj (Γ.append ([Op.conj.formula A B] ++ Θ))))
+      (component Op.conj (At.shift Γ a.there))
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    (conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B)
+  has type
+    @Category.Hom (NormalForm P) (category P) ((conjMonoidal P).obj H (fold Op.conj (Γ ++ Op.conj.formula A B :: Θ)))
+      ((conjMonoidal P).obj H (fold Op.conj (Γ ++ A :: B :: Θ)))
+  but is expected to have type
+    @Category.Hom (NormalForm P) (side P Op.conj) (fold Op.conj (H :: Γ ++ Op.conj.formula A B :: Θ))
+      (fold Op.conj (H :: Γ ++ A :: B :: Θ))
+  in the application
+    (side P Op.conj).comp ((conjMonoidal P).tensor ((side P Op.conj).id H) (logicalSide Op.conj Γ Θ A B))
+error: DosenPetric/GentzenLogicalComponents.lean:147:30: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  C.comp ?f (C.comp ?g ?h)
+in the target expression
+  (side P Op.disj).comp ((disjMonoidal P).assocL A B (fold Op.disj Θ))
+      (C.comp (C.comp (D.snd A (fold Op.disj ([B].append Θ))) ((sideD P Op.disj).snd B (fold Op.disj ([].append Θ))))
+        (component Op.disj a)) =
+    (side P Op.disj).comp ((sideD P Op.disj).snd (Op.disj.formula A B) (fold Op.disj ([].append Θ)))
+      (component Op.disj a)
+
+case disj.nil
+P : Type u
+Θ : List (NormalForm P)
+A B E : NormalForm P
+a : At Θ E
+C : Category (NormalForm P) := side P Op.disj
+D : DiagonalData (sideM P Op.disj) := sideD P Op.disj
+q : Op := Op.disj
+⊢ (side P Op.disj).comp ((disjMonoidal P).assocL A B (fold Op.disj Θ))
+      (C.comp (C.comp (D.snd A (fold Op.disj ([B].append Θ))) ((sideD P Op.disj).snd B (fold Op.disj ([].append Θ))))
+        (component Op.disj a)) =
+    (side P Op.disj).comp ((sideD P Op.disj).snd (Op.disj.formula A B) (fold Op.disj ([].append Θ)))
+      (component Op.disj a)
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    (disjMonoidal P).assocL A B (fold Op.disj Θ)
+  has type
+    @Category.Hom (NormalForm P) (opposite (category P))
+      ((disjMonoidal P).obj ((disjMonoidal P).obj A B) (fold Op.disj Θ))
+      ((disjMonoidal P).obj A ((disjMonoidal P).obj B (fold Op.disj Θ)))
+  but is expected to have type
+    @Category.Hom (NormalForm P) (side P Op.disj) (fold Op.disj ([] ++ Op.disj.formula A B :: Θ))
+      (fold Op.disj ([] ++ A :: B :: Θ))
+  in the application
+    (side P Op.disj).comp ((disjMonoidal P).assocL A B (fold Op.disj Θ))
+error: DosenPetric/GentzenLogicalComponents.lean:150:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  C.comp ?f (C.comp ?g ?h)
+in the target expression
+  (side P Op.disj).comp ((disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B))
+      ((side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append (A :: B :: Θ))))
+        (component Op.disj (At.shift Γ a.there.there))) =
+    (side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append ([Op.disj.formula A B] ++ Θ))))
+      (component Op.disj (At.shift Γ a.there))
+
+case disj.cons
+P : Type u
+Θ : List (NormalForm P)
+A B E : NormalForm P
+a : At Θ E
+C : Category (NormalForm P) := side P Op.disj
+D : DiagonalData (sideM P Op.disj) := sideD P Op.disj
+q : Op := Op.disj
+H : NormalForm P
+Γ : List (NormalForm P)
+ih :
+  (side P Op.disj).comp (logicalSide Op.disj Γ Θ A B) (component Op.disj (At.shift Γ (At.shift [A, B] a))) =
+    component Op.disj (At.shift Γ (At.shift [Op.disj.formula A B] a))
+⊢ (side P Op.disj).comp ((disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B))
+      ((side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append (A :: B :: Θ))))
+        (component Op.disj (At.shift Γ a.there.there))) =
+    (side P Op.disj).comp ((sideD P Op.disj).snd H (fold Op.disj (Γ.append ([Op.disj.formula A B] ++ Θ))))
+      (component Op.disj (At.shift Γ a.there))
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    (disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B)
+  has type
+    @Category.Hom (NormalForm P) (opposite (category P))
+      ((disjMonoidal P).obj H (fold Op.disj (Γ ++ Op.disj.formula A B :: Θ)))
+      ((disjMonoidal P).obj H (fold Op.disj (Γ ++ A :: B :: Θ)))
+  but is expected to have type
+    @Category.Hom (NormalForm P) (side P Op.disj) (fold Op.disj (H :: Γ ++ Op.disj.formula A B :: Θ))
+      (fold Op.disj (H :: Γ ++ A :: B :: Θ))
+  in the application
+    (side P Op.disj).comp ((disjMonoidal P).tensor ((side P Op.disj).id H) (logicalSide Op.disj Γ Θ A B))
+Some required targets logged failures:
+- DosenPetric.GentzenLogicalComponents
+error: build failed

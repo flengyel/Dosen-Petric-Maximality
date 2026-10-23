@@ -1046,3 +1046,40 @@ fixed positions transpose even when context lists coincide. See
 [the report](GENTZEN_W1_SAME_SIDE_EXCHANGE_REPORT.md) and both author-side reviews.
 Cross-selected, multi-gap and absorption cases and broader W1/reducibility/
 coherence remain open.
+
+## Fixed-parametric same-side unary logical introduction (four W1 cases)
+
+The source is Došen–Petrić, *Proof-Theoretical Coherence*, September 2007,
+[pinned PDF](https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf), SHA-256
+`e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e`.
+Printed page n is PDF page n+12, one-based. Printed pp.248–253 were consulted,
+p.251 also rendered; constant/zero extensions pp.272–273 and 291–292 were
+checked against the existing syntax. Verified caches/access artifacts are in
+source-consultation.json; historical access records are preserved. No new
+source discrepancy was confirmed.
+
+| Source location | Exact local scope / condition | Lean counterpart and actual proof input |
+| --- | --- | --- |
+| §11.2 p.251 (W 1), γ=∧L | Left conjunction introduction wholly inside one fixed gap or terminal tail; every selected contraction copy is parametric. | `GapLogical.interior/terminal .conj`; `W1.SameSideLogical.interior_left/terminal_left`. Actual conjLeft.toTerm square, not a coherence assumption. |
+| §11.2 p.252, right analogue | Right disjunction introduction at the dual fixed positions. | Concrete .disj data and interior_right/terminal_right; actual disjRight.toTerm coproduct square. |
+| §11.2 pp.248–249, cluster and rank | Consumed whole-formula A/B positions have no descendant; introduced D is a leaf; surviving positions have one predecessor; sum every selected copy. | At.fixed partial map/reverse, complete ordered selected transport, exact predecessor singleton, existing principal-leaf theorems and contraction sums. |
+| §11.2 p.251 W4 / broader configurations | A contraction involving the logical principal formula is a different case. | Excluded here by concrete gap/tail placement and positional distinctions even D=C; W4 and remaining W1/W2–W6 stay separate. |
+| §11.5 pp.272–273; §12.5 pp.291–292 | Constants/atomic zeros remain admitted; whole-formula constants still have positions. | Unchanged syntax, genuine Empty P constant proofs, arbitrary cut-containing premises and witnessed-zero policy. |
+
+The source's broader Semilattice Coherence appeal is replaced for these four
+instances by derived component calculations and universal properties. No
+strictified equality or new presentation equation is assumed.
+
+All four concrete results prove the exact list/count equalities with G/At/Route
+casts. Both consumed whole-formula slots map to none; the all-position partial
+square and ordered selected flatMap transport compile, with every selected
+copy proved to survive and both lengths n. Both consumed categorical component
+cases are separately derived before universal extensionality proves the actual
+toTerm squares. Reduced denotation equality then follows with associativity.
+Retained ranks lose n/n−1 at contraction/whole endpoint, principal ranks are
+2→1, and all other final fixed ranks equal 2+rho of a computed original upper
+position. Count/CutFree/Atomized/full tagged relations are preserved, with both
+Atomized predicates equal f.Atomized. A=B=C and D=C are permitted positionally.
+No new equation/primitive or coherence input. See
+[the report](GENTZEN_W1_SAME_SIDE_LOGICAL_REPORT.md) and both author-side reviews.
+Other W1 configurations, W2–W6 and general reducibility/coherence remain open.

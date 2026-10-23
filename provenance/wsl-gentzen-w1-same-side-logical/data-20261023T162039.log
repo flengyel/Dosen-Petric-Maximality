@@ -1,0 +1,13 @@
+✔ [108/109] Built DosenPetric.GentzenLogicalPositions (1.2s)
+✖ [109/109] Building DosenPetric.GentzenGapLogicalData (1.4s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenGapLogicalData.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapLogicalData.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapLogicalData.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapLogicalData.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapLogicalData.setup.json --json
+error: DosenPetric/GentzenGapLogicalData.lean:108:4: Type mismatch: After simplification, term
+  h
+ has type
+  copyIndex gs (U.length + (1 + (repeated C gs).length)) = U.length + (1 + (1 + (gaps gs).length))
+but is expected to have type
+  copyIndex gs (1 + (U.length + (repeated C gs).length)) = 1 + (U.length + (1 + (gaps gs).length))
+error: DosenPetric/GentzenGapLogicalData.lean:75:4: (kernel) declaration has metavariables 'DosenPetric.Reduced.Gentzen.GapLogical.terminal'
+Some required targets logged failures:
+- DosenPetric.GentzenGapLogicalData
+error: build failed

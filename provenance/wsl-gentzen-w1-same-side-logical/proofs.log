@@ -1,0 +1,42 @@
+✔ [115/118] Built DosenPetric.GentzenGapLogicalPositions (766ms)
+✖ [116/118] Building DosenPetric.GentzenLogicalEmbeddings (630ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenLogicalEmbeddings.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenLogicalEmbeddings.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenLogicalEmbeddings.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenLogicalEmbeddings.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenLogicalEmbeddings.setup.json --json
+error: DosenPetric/GentzenLogicalEmbeddings.lean:19:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  TraceRoute.fiber ?x (TraceRoute.ofMap (?Γ ++ (?Y ++ ?Θ)) (?Γ ++ (?X ++ ?Θ)) fun {A} => At.fixed ?Γ ?X ?Y ?Θ)
+in the target expression
+  TraceRoute.fiber b
+      (TraceRoute.ofMap (Γ ++ ([A.conj B] ++ Θ)) (Γ ++ ([A, B] ++ Θ)) fun {A_1} => At.fixed Γ [A, B] [A.conj B] Θ) =
+    [a]
+
+P : Type u
+Γ Θ Δ : List (NormalForm P)
+A B : NormalForm P
+f : G P (Γ ++ A :: B :: Θ) Δ
+E : NormalForm P
+a : At (Γ ++ A :: B :: Θ) E
+b : At (Γ ++ A.conj B :: Θ) E
+hp : At.fixed Γ [A, B] [A.conj B] Θ a = some b
+⊢ TraceRoute.fiber b
+      (TraceRoute.ofMap (Γ ++ ([A.conj B] ++ Θ)) (Γ ++ ([A, B] ++ Θ)) fun {A_1} => At.fixed Γ [A, B] [A.conj B] Θ) =
+    [a]
+error: DosenPetric/GentzenLogicalEmbeddings.lean:32:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  TraceRoute.fiber ?x (TraceRoute.ofMap (?Γ ++ (?Y ++ ?Θ)) (?Γ ++ (?X ++ ?Θ)) fun {A} => At.fixed ?Γ ?X ?Y ?Θ)
+in the target expression
+  TraceRoute.fiber b
+      (TraceRoute.ofMap (Δ ++ ([A.disj B] ++ Λ)) (Δ ++ ([A, B] ++ Λ)) fun {A_1} => At.fixed Δ [A, B] [A.disj B] Λ) =
+    [a]
+
+P : Type u
+Γ Δ Λ : List (NormalForm P)
+A B : NormalForm P
+f : G P Γ (Δ ++ A :: B :: Λ)
+E : NormalForm P
+a : At (Δ ++ A :: B :: Λ) E
+b : At (Δ ++ A.disj B :: Λ) E
+hp : At.fixed Δ [A, B] [A.disj B] Λ a = some b
+⊢ TraceRoute.fiber b
+      (TraceRoute.ofMap (Δ ++ ([A.disj B] ++ Λ)) (Δ ++ ([A, B] ++ Λ)) fun {A_1} => At.fixed Δ [A, B] [A.disj B] Λ) =
+    [a]
+Some required targets logged failures:
+- DosenPetric.GentzenLogicalEmbeddings
+error: build failed

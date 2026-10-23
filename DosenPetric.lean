@@ -137,3 +137,16 @@ public import DosenPetric.GentzenSameSideExchangeRanks
 public import DosenPetric.GentzenSameSideExchangeFixedRanks
 public import DosenPetric.GentzenSameSideExchangeInstances
 public import DosenPetric.GentzenSameSideExchangeExamples
+public import DosenPetric.GentzenGapLogicalIndices
+public import DosenPetric.GentzenLogicalPositions
+public import DosenPetric.GentzenLogicalComponents
+public import DosenPetric.GentzenGapLogicalData
+public import DosenPetric.GentzenGapLogicalPositions
+public import DosenPetric.GentzenLogicalEmbeddings
+public import DosenPetric.GentzenGapLogicalRouting
+public import DosenPetric.GentzenLogicalRankSums
+public import DosenPetric.GentzenSameSideLogical
+public import DosenPetric.GentzenSameSideLogicalRanks
+public import DosenPetric.GentzenSameSideLogicalFixedRanks
+public import DosenPetric.GentzenSameSideLogicalInstances
+public import DosenPetric.GentzenSameSideLogicalExamples

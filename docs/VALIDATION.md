@@ -1,3 +1,57 @@
+# W1 fixed-parametric unary logical validation (current checkpoint)
+
+Clean main c66c36c95f315b07c1840bd2dd375be21a62a242 agreed with fetched SSH
+origin. Actual strict baseline: 139 files / 5,569 declarations, exit 0, 3.29s.
+Final sequential verification at 2026-10-23T16:59:18.013013+00:00:
+**152 Lean files / 5,942 audited declarations**. Strict build/transitive audit,
+both boundary scripts, manuscript SHA256SUMS and git diff --check all exit 0.
+Five controls reject with expected diagnostics and Lean exit 1: public custom
+axiom, unused private axiom, hidden external axiom, rfl tagged-projection
+identification, zero without correctly typed arrow witness. Public import
+closure passes; only propext, Quot.sound and Classical.choice are permitted.
+Eighty complete selected axiom prints are retained.
+
+Thirteen new modules add 192 explicit source declarations and 373 audited
+declarations including generated ones. All older source/interface bytes,
+grammars/equations/Positive/G/Rewire/predicates/predecessors/ranks, Lean 4.35.0,
+Init-only manifest, AGENTS, manuscript v4 and historical reports/reviews/access
+records are preserved. No proof holes, custom mathematical axioms, native_decide,
+new generating equation or dependency change.
+
+Four fixed interior/terminal conjL/disjR commutations compile with exact
+G/At/Route casts, all-position partial correspondence and both consumed slots
+none. Complete selected transport has separate survival and both length-n
+proofs. Actual categorical equality uses separate surviving and both consumed
+component calculations, universal properties and toTerm directions. Retained
+contraction/endpoint ranks lose n/n−1; principal ranks 2→1; every other final
+fixed position has equal 2+rho ranks through an explicit partial inverse and
+copies fiber. Count/CutFree/Atomized/full tagged relations are preserved; both
+Atomized predicates equal f.Atomized. A=B=C, D=C, compounds, empty/nonempty
+contexts, all four actual Empty P constant cases and signed cuts are checked.
+
+All heavy processes were sequential. Failed Option/Nat, order/cast/component,
+side-category and predecessor elaborations and unused-simp/list arithmetic
+attempts retain commands/logs/exits/timings. A staged diff check also rejected
+one trailing EOF blank line (exit 2); it was removed without changing a
+declaration and the complete required checks reran successfully. That diagnostic
+and timing are retained. Final verification followed this last source-byte
+correction; subsequent changes are documentation only. Evidence and
+source/evidence/report/record inventories: provenance/wsl-gentzen-w1-same-side-logical/.
+Author-side hostile and directly source-grounded writing reviews cover actual
+code and correspondence, not independent certification. Post-commit/ref/Downloads
+receipts: .codex-work/gentzen-w1-same-side-logical/.
+
+Independent kernel/source replay, Challenge/Solution/Comparator, official
+preflight/service, fresh manuscript compilation/layout review, Palomar
+submission preparation, publication, license and visibility changes were not
+performed. Other W1/W2–W6, arbitrary-context Reducibility, Blocked-w, cut
+elimination, coherence and unconditional maximality remain separate/open.
+See [the report](GENTZEN_W1_SAME_SIDE_LOGICAL_REPORT.md).
+
+---
+
+## Historical same-side exchange validation (unchanged evidence)
+
 # W1 fixed-parametric same-side exchange validation (current checkpoint)
 
 Clean main `cae55c378d6e42adcac61f38c5ea12cea4bd98b3` agreed with fetched SSH

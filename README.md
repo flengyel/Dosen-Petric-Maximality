@@ -39,6 +39,12 @@ selected-copy transport and exact local rank laws. Other fixed positions
 have unchanged ranks; equal-labelled fixed tags still transpose. Exchanges
 crossing selected copies, spanning several gaps or absorbed by contraction
 remain separate/open.
+Four fixed-parametric same-side unary logical commutations also compile:
+conjunction-left and disjunction-right, each inside one fixed gap or terminal
+tail. Partial whole-formula ancestry consumes both component slots; separate
+categorical component proofs give denotation equality. Retained ranks lose
+n−1, principal ranks fall 2→1, and other fixed ranks are unchanged. These
+remain local transformations, with broader W1 and Reducibility open.
 The current stage is the remaining local contraction transformations toward
 cut elimination. General W1, W2–W6, blocked-contraction transformations,
 Reducibility, cut elimination, the positive coherence inputs, PositiveCoherence,
@@ -86,10 +92,11 @@ The unchanged v4 [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Categor
 and [PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.pdf)
 are preserved with [SHA-256 checksums](manuscript/SHA256SUMS).
 The [literature comparison](docs/LITERATURE_REVIEW.md) is bounded and makes no
-exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W1_SAME_SIDE_EXCHANGE_HOSTILE.md)
-and [mathematical-writing review](docs/reviews/GENTZEN_W1_SAME_SIDE_EXCHANGE_WRITING.md)
-cover the four fixed-parametric same-side exchange cases and their scope; they are not independent
-certification. The [same-side exchange report](docs/GENTZEN_W1_SAME_SIDE_EXCHANGE_REPORT.md),
+exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W1_SAME_SIDE_LOGICAL_HOSTILE.md)
+and [mathematical-writing review](docs/reviews/GENTZEN_W1_SAME_SIDE_LOGICAL_WRITING.md)
+cover the four fixed-parametric unary logical cases and their scope; they are not independent
+certification. The [same-side logical report](docs/GENTZEN_W1_SAME_SIDE_LOGICAL_REPORT.md),
+[preceding same-side exchange report](docs/GENTZEN_W1_SAME_SIDE_EXCHANGE_REPORT.md),
 [preceding same-side thinning report](docs/GENTZEN_W1_SAME_SIDE_THINNING_REPORT.md),
 [preceding logical report](docs/GENTZEN_W1_LOGICAL_REPORT.md),
 [preceding contraction report](docs/GENTZEN_W1_CONTRACTION_REPORT.md),

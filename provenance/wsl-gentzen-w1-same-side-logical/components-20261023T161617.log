@@ -1,0 +1,114 @@
+✔ [108/109] Built DosenPetric.GentzenLogicalPositions (1.0s)
+✖ [109/109] Building DosenPetric.GentzenLogicalComponents (557ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenLogicalComponents.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenLogicalComponents.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenLogicalComponents.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenLogicalComponents.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenLogicalComponents.setup.json --json
+error: DosenPetric/GentzenLogicalComponents.lean:14:40: Dependent elimination failed: Failed to solve equation
+  Iso A' B' = Iso A B
+error: DosenPetric/GentzenLogicalComponents.lean:42:13: don't know how to synthesize implicit argument `c`
+  @HEq.trans ?m.36 ?m.43 ?m.42 (cast ?m.34 (cast ?m.44 ?m.45)) (cast ?m.44 ?m.45) ?m.45
+    (cast_heq ?m.34 (cast ?m.44 ?m.45)) (cast_heq ?m.44 ?m.45)
+context:
+P : Type u
+Γ Θ : List (NormalForm P)
+A B : NormalForm P
+⊢ ?m.42
+error: DosenPetric/GentzenLogicalComponents.lean:42:13: don't know how to synthesize implicit argument `b`
+  @HEq.trans ?m.36 ?m.43 ?m.42 (cast ?m.34 (cast ?m.44 ?m.45)) (cast ?m.44 ?m.45) ?m.45
+    (cast_heq ?m.34 (cast ?m.44 ?m.45)) (cast_heq ?m.44 ?m.45)
+context:
+P : Type u
+Γ Θ : List (NormalForm P)
+A B : NormalForm P
+⊢ ?m.43
+error: DosenPetric/GentzenLogicalComponents.lean:42:13: don't know how to synthesize implicit argument `a`
+  @HEq.trans ?m.36 ?m.43 ?m.42 (cast ?m.34 (cast ?m.44 ?m.45)) (cast ?m.44 ?m.45) ?m.45
+    (cast_heq ?m.34 (cast ?m.44 ?m.45)) (cast_heq ?m.44 ?m.45)
+context:
+P : Type u
+Γ Θ : List (NormalForm P)
+A B : NormalForm P
+⊢ ?m.36
+error: DosenPetric/GentzenLogicalComponents.lean:42:13: don't know how to synthesize implicit argument `φ`
+  @HEq.trans ?m.36 ?m.43 ?m.42 (cast ?m.34 (cast ?m.44 ?m.45)) (cast ?m.44 ?m.45) ?m.45
+    (cast_heq ?m.34 (cast ?m.44 ?m.45)) (cast_heq ?m.44 ?m.45)
+context:
+P : Type u
+Γ Θ : List (NormalForm P)
+A B : NormalForm P
+⊢ Sort ?u.29
+error: DosenPetric/GentzenLogicalComponents.lean:42:13: don't know how to synthesize implicit argument `β`
+  @HEq.trans ?m.36 ?m.43 ?m.42 (cast ?m.34 (cast ?m.44 ?m.45)) (cast ?m.44 ?m.45) ?m.45
+    (cast_heq ?m.34 (cast ?m.44 ?m.45)) (cast_heq ?m.44 ?m.45)
+context:
+P : Type u
+Γ Θ : List (NormalForm P)
+A B : NormalForm P
+⊢ Sort ?u.29
+error: DosenPetric/GentzenLogicalComponents.lean:42:13: don't know how to synthesize implicit argument `α`
+  @HEq.trans ?m.36 ?m.43 ?m.42 (cast ?m.34 (cast ?m.44 ?m.45)) (cast ?m.44 ?m.45) ?m.45
+    (cast_heq ?m.34 (cast ?m.44 ?m.45)) (cast_heq ?m.44 ?m.45)
+context:
+P : Type u
+Γ Θ : List (NormalForm P)
+A B : NormalForm P
+⊢ Sort ?u.29
+error: DosenPetric/GentzenLogicalComponents.lean:42:35: don't know how to synthesize implicit argument `β`
+  @cast_heq ?m.42 ?m.43 ?m.44 ?m.45
+context:
+P : Type u
+Γ Θ : List (NormalForm P)
+A B : NormalForm P
+⊢ Sort ?u.29
+error: DosenPetric/GentzenLogicalComponents.lean:42:35: don't know how to synthesize implicit argument `α`
+  @cast_heq ?m.42 ?m.43 ?m.44 ?m.45
+context:
+P : Type u
+Γ Θ : List (NormalForm P)
+A B : NormalForm P
+⊢ Sort ?u.29
+error: DosenPetric/GentzenLogicalComponents.lean:42:46: don't know how to synthesize placeholder for argument `a`
+context:
+P : Type u
+Γ Θ : List (NormalForm P)
+A B : NormalForm P
+⊢ ?m.42
+error: DosenPetric/GentzenLogicalComponents.lean:42:44: don't know how to synthesize placeholder for argument `h`
+context:
+P : Type u
+Γ Θ : List (NormalForm P)
+A B : NormalForm P
+⊢ ?m.42 = ?m.43
+error: DosenPetric/GentzenLogicalComponents.lean:42:14: don't know how to synthesize implicit argument `β`
+  @cast_heq ?m.43 ?m.36 ?m.34 (cast ?m.44 ?m.45)
+context:
+P : Type u
+Γ Θ : List (NormalForm P)
+A B : NormalForm P
+⊢ Sort ?u.29
+error: DosenPetric/GentzenLogicalComponents.lean:42:14: don't know how to synthesize implicit argument `α`
+  @cast_heq ?m.43 ?m.36 ?m.34 (cast ?m.44 ?m.45)
+context:
+P : Type u
+Γ Θ : List (NormalForm P)
+A B : NormalForm P
+⊢ Sort ?u.29
+error: DosenPetric/GentzenLogicalComponents.lean:42:25: don't know how to synthesize placeholder for argument `a`
+context:
+P : Type u
+Γ Θ : List (NormalForm P)
+A B : NormalForm P
+⊢ ?m.43
+error: DosenPetric/GentzenLogicalComponents.lean:42:23: don't know how to synthesize placeholder for argument `h`
+context:
+P : Type u
+Γ Θ : List (NormalForm P)
+A B : NormalForm P
+⊢ ?m.43 = ?m.36
+error: DosenPetric/GentzenLogicalComponents.lean:42:7: failed to infer `have` declaration type
+error: DosenPetric/GentzenLogicalComponents.lean:38:69: unsolved goals
+P : Type u
+Γ Θ : List (NormalForm P)
+A B : NormalForm P
+⊢ cast ⋯ (cast ⋯ (under Op.disj Γ (Iso.assoc Op.disj A B (succ Θ)).symm)) ≍ (logicalCompare Op.disj Γ Θ A B).symm
+Some required targets logged failures:
+- DosenPetric.GentzenLogicalComponents
+error: build failed

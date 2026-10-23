@@ -1,0 +1,55 @@
+✖ [109/109] Building DosenPetric.GentzenGapLogicalData (1.6s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenGapLogicalData.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapLogicalData.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapLogicalData.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapLogicalData.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapLogicalData.setup.json --json
+error: DosenPetric/GentzenGapLogicalData.lean:50:12: unsolved goals
+P : Type u
+o : Op
+A B C : NormalForm P
+pre post : List (List (NormalForm P))
+U V Θ : List (NormalForm P)
+⊢ gaps pre ++ (U ++ (A :: B :: V ++ (gaps post ++ C :: Θ))) = gaps pre ++ (U ++ A :: B :: (V ++ (gaps post ++ C :: Θ)))
+error: DosenPetric/GentzenGapLogicalData.lean:51:12: unsolved goals
+P : Type u
+o : Op
+A B C : NormalForm P
+pre post : List (List (NormalForm P))
+U V Θ : List (NormalForm P)
+⊢ gaps pre ++ (U ++ (o.formula A B :: V ++ (gaps post ++ C :: Θ))) =
+    gaps pre ++ (U ++ o.formula A B :: (V ++ (gaps post ++ C :: Θ)))
+error: DosenPetric/GentzenGapLogicalData.lean:69:4: Type mismatch: After simplification, term
+  h
+ has type
+  @Eq Nat (copyIndex (pre ++ (U ++ A :: B :: V) :: post) ((repeated C pre).length + (U.length + (0 + 1))))
+    ((gaps pre).length + (U.length + (0 + 1)))
+but is expected to have type
+  @Eq Nat (copyIndex (pre ++ (U ++ A :: B :: V) :: post) ((repeated C pre).length + U.length + 1))
+    ((gaps pre).length + U.length + 1)
+error: DosenPetric/GentzenGapLogicalData.lean:38:4: (kernel) declaration has metavariables 'DosenPetric.Reduced.Gentzen.GapLogical.interior'
+error: DosenPetric/GentzenGapLogicalData.lean:102:4: Type mismatch: After simplification, term
+  h
+ has type
+  copyIndex gs ((repeated C gs).length + U.length) = (gaps gs).length + (1 + U.length)
+but is expected to have type
+  copyIndex gs ((repeated C gs).length + U.length) = (gaps gs).length + (U.length + 1)
+error: DosenPetric/GentzenGapLogicalData.lean:105:4: Type mismatch: After simplification, term
+  h
+ has type
+  copyIndex gs ((repeated C gs).length + U.length) = (gaps gs).length + (1 + U.length)
+but is expected to have type
+  copyIndex gs ((repeated C gs).length + U.length) = (gaps gs).length + (U.length + 1)
+error: DosenPetric/GentzenGapLogicalData.lean:108:4: Type mismatch: After simplification, term
+  h
+ has type
+  copyIndex gs ((repeated C gs).length + (U.length + 1)) = (gaps gs).length + (1 + (U.length + 1))
+but is expected to have type
+  copyIndex gs ((repeated C gs).length + (U.length + 1)) = (gaps gs).length + (U.length + (1 + 1))
+error: DosenPetric/GentzenGapLogicalData.lean:75:4: (kernel) declaration has metavariables 'DosenPetric.Reduced.Gentzen.GapLogical.terminal'
+error: DosenPetric/GentzenGapLogicalData.lean:175:60: This simp argument is unused:
+  Nat.add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [c0_index, bUpper, bLower, At.index_shift, At.index]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- DosenPetric.GentzenGapLogicalData
+error: build failed
