@@ -1,0 +1,7 @@
+✔ [112/113] Built DosenPetric.GentzenSameSideThinningInstances (933ms)
+✖ [113/113] Building DosenPetric.GentzenSameSideThinningExamples (1.5s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSameSideThinningExamples.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSameSideThinningExamples.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSameSideThinningExamples.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSameSideThinningExamples.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSameSideThinningExamples.setup.json --json
+error: DosenPetric/GentzenSameSideThinningExamples.lean:86:45: Insufficient number of fields for `⟨...⟩` constructor: Constructor `Eq.refl` does not have explicit fields, but 3 were provided
+Some required targets logged failures:
+- DosenPetric.GentzenSameSideThinningExamples
+error: build failed

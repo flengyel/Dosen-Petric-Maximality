@@ -1,0 +1,111 @@
+{
+  "base_commit": "524cbe0c438ce3bcea8049758687c59d494bd597",
+  "baseline_files": 121,
+  "baseline_declarations": 4973,
+  "final_files": 130,
+  "final_declarations": 5275,
+  "new_modules": 9,
+  "explicit_source_declarations": 176,
+  "baseline": {
+    "utc": "2026-10-23T13:49:18.904535+00:00",
+    "checks": [
+      {
+        "name": "environment",
+        "command": [
+          "uname",
+          "-a"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 0.004,
+        "log_sha256": "34e3970ec44125a14237ebecedcc552983b2d4c8032e1e63debccd6fbbec0513"
+      },
+      {
+        "name": "memory",
+        "command": [
+          "free",
+          "-h"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 0.004,
+        "log_sha256": "a4f91f24cc9997f0f08a020ce7ec446c8ea270be7680b5d09a92d938f870e208"
+      },
+      {
+        "name": "baseline",
+        "command": [
+          "bash",
+          "scripts/verify.sh"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 3.663,
+        "log_sha256": "ecb22c695d81024b9071ca4abe6060a854a71c05b84b95653cbb0570fea17a0e"
+      }
+    ]
+  },
+  "final": {
+    "utc": "2026-10-23T14:27:27.456515+00:00",
+    "checks": [
+      {
+        "name": "strict",
+        "command": [
+          "bash",
+          "scripts/verify.sh"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 5.646,
+        "log_sha256": "54772ed9d83904a76b29d71e97122e16a555de6c602e8fba1add344bcb32e72b"
+      },
+      {
+        "name": "audit-boundaries",
+        "command": [
+          "python3",
+          "scripts/check-audit-boundaries.py"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 5.931,
+        "log_sha256": "377643b2b8fc2ff8c9b228992b82e2fd82c36bf57a7c3914aa71572ffbf89ac0"
+      },
+      {
+        "name": "presentation-boundaries",
+        "command": [
+          "python3",
+          "scripts/check-presentation-boundaries.py"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 0.867,
+        "log_sha256": "306041f8b1c343270cc1f8c841a6a6f6aa03451e17bb5f034cd495d3b5f49f66"
+      },
+      {
+        "name": "manuscript",
+        "command": [
+          "sha256sum",
+          "-c",
+          "SHA256SUMS"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/manuscript",
+        "exit_status": 0,
+        "seconds": 0.014,
+        "log_sha256": "6f7aff039d66d8e2cb67a674b3946766011b8010b20e260aa20cbcd952b9bc85"
+      },
+      {
+        "name": "diff-check",
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 0.01,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "strict_sha256": "54772ed9d83904a76b29d71e97122e16a555de6c602e8fba1add344bcb32e72b",
+  "source_inventory_sha256": "c891b846d7952e8303379ee73f0b60dcb6a84e70f9e3fc94330b7cea06a8e2fa"
+}

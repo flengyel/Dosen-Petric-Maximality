@@ -1,0 +1,37 @@
+✔ [100/101] Built DosenPetric.GentzenInsertionPositions (1.1s)
+✖ [101/101] Building DosenPetric.GentzenInsertionRouting (799ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenInsertionRouting.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenInsertionRouting.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenInsertionRouting.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenInsertionRouting.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenInsertionRouting.setup.json --json
+error: DosenPetric/GentzenInsertionRouting.lean:99:18: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce
+
+P : Type u
+d : Data P
+a : At (repeated d.C d.gs1 ++ d.tail1) d.C
+⊢ ?m.24
+error: DosenPetric/GentzenInsertionRouting.lean:101:60: Invalid field `map`: The environment does not contain `Function.map`, so it is not possible to project the field `map` from an expression
+  fun H => List.Pairwise.map ?m.41 H (selectedCopies_ordered d.C d.gs0 d.tail0)
+of type
+  (∀ (a b : At (repeated d.C d.gs0 ++ d.tail0) d.C), a.index < b.index → ?m.40 (?m.41 a) (?m.41 b)) →
+    List.Pairwise ?m.40 (List.map ?m.41 (selectedCopies d.C d.gs0 d.tail0))
+error: DosenPetric/GentzenInsertionRouting.lean:101:18: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce
+
+P : Type u
+d : Data P
+a : At (repeated d.C d.gs0 ++ d.tail0) d.C
+⊢ ?m.36
+error: DosenPetric/GentzenInsertionRouting.lean:102:10: No goals to be solved
+error: DosenPetric/GentzenInsertionRouting.lean:111:11: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (Route.thin d.upBefore d.upAfter d.E).get a
+in the target expression
+  d.tUpper.get a ∈ d.selected1
+
+case hm.mp
+P : Type u
+d : Data P
+y : At d.U1 d.C
+hy : y ∈ d.selected1
+a : At (d.upBefore ++ d.upAfter) d.C
+ha : (Route.thin d.upBefore d.upAfter d.E).get a = y
+⊢ d.tUpper.get a ∈ d.selected1
+Some required targets logged failures:
+- DosenPetric.GentzenInsertionRouting
+error: build failed

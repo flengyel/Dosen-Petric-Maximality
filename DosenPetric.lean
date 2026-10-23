@@ -119,3 +119,12 @@ public import DosenPetric.GentzenOppositeLogicalRank
 public import DosenPetric.GentzenLogicalCommutation
 public import DosenPetric.GentzenLogicalCommutationRank
 public import DosenPetric.GentzenLogicalCommutationExamples
+public import DosenPetric.GentzenGapInsertionIndices
+public import DosenPetric.GentzenGapInsertionData
+public import DosenPetric.GentzenInsertionPositions
+public import DosenPetric.GentzenInsertionRouting
+public import DosenPetric.GentzenFixedContractionRanks
+public import DosenPetric.GentzenSameSideThinning
+public import DosenPetric.GentzenSameSideThinningRanks
+public import DosenPetric.GentzenSameSideThinningInstances
+public import DosenPetric.GentzenSameSideThinningExamples

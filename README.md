@@ -27,7 +27,12 @@ The sum of these endpoint ranks is not a general decreasing measure.
 Both opposite-side unary logical commutations (disjR/conjL) also compile, with
 full selected-copy rank losses and introduced whole-formula principal ranks
 2→1. These complete the specified opposite-side unary W1 families; same-side
-parametric cases and binary logical/reducibility cases remain separate.
+exchange/contraction/logical parametric cases and binary rules remain separate.
+Same-side thinning through contraction now compiles at fixed interior gaps and
+terminal tails, with both duals, explicit positional routing and complete ordered
+selected-copy transport even when the inserted formula equals the contracted
+formula. Exact local rank losses and predicate/tagged-relation preservation
+are proved; these instances do not establish all-site reducibility.
 The current stage is the remaining local contraction transformations toward
 cut elimination. General W1, W2–W6, blocked-contraction transformations,
 Reducibility, cut elimination, the positive coherence inputs, PositiveCoherence,
@@ -75,10 +80,11 @@ The unchanged v4 [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Categor
 and [PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.pdf)
 are preserved with [SHA-256 checksums](manuscript/SHA256SUMS).
 The [literature comparison](docs/LITERATURE_REVIEW.md) is bounded and makes no
-exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W1_LOGICAL_HOSTILE.md)
-and [mathematical-writing review](docs/reviews/GENTZEN_W1_LOGICAL_WRITING.md)
-cover the unary logical checkpoint and its scope; they are not independent
-certification. The [logical report](docs/GENTZEN_W1_LOGICAL_REPORT.md),
+exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W1_SAME_SIDE_THINNING_HOSTILE.md)
+and [mathematical-writing review](docs/reviews/GENTZEN_W1_SAME_SIDE_THINNING_WRITING.md)
+cover the fixed-position same-side thinning checkpoint and its scope; they are not independent
+certification. The [same-side thinning report](docs/GENTZEN_W1_SAME_SIDE_THINNING_REPORT.md),
+[preceding logical report](docs/GENTZEN_W1_LOGICAL_REPORT.md),
 [preceding contraction report](docs/GENTZEN_W1_CONTRACTION_REPORT.md),
 [contraction review](docs/reviews/GENTZEN_W1_CONTRACTION_HOSTILE.md),
 [preceding exchange report](docs/GENTZEN_W1_EXCHANGE_REPORT.md),

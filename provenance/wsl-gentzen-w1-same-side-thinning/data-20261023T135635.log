@@ -1,0 +1,80 @@
+✖ [99/99] Building DosenPetric.GentzenGapInsertionData (860ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenGapInsertionData.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapInsertionData.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapInsertionData.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapInsertionData.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapInsertionData.setup.json --json
+error: DosenPetric/GentzenGapInsertionData.lean:17:20: Application type mismatch: The argument
+  C
+has type
+  ?m.1 → NormalForm P
+but is expected to have type
+  NormalForm ?m.12
+in the application
+  repeated C
+error: DosenPetric/GentzenGapInsertionData.lean:17:37: Unknown identifier `upBefore`
+
+Note: It is not possible to treat `upBefore` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+error: DosenPetric/GentzenGapInsertionData.lean:17:49: Unknown identifier `upAfter`
+
+Note: It is not possible to treat `upAfter` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+error: DosenPetric/GentzenGapInsertionData.lean:17:11: failed to synthesize instance of type class
+  HAppend (List (NormalForm ?m.12))
+    ((tail1 : ?m.3) →
+      (upBefore : ?m.8 tail1) →
+        (upAfter : ?m.9 tail1 upBefore) →
+          (loBefore : ?m.10 tail1 upBefore upAfter) → ?m.11 tail1 upBefore upAfter loBefore → List (NormalForm P))
+    ?m.17
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: DosenPetric/GentzenGapInsertionData.lean:17:2: stuck at solving universe constraint
+  ?u.24 + 1 =?= max (max (max (max (max (u + 1) ?u.13) ?u.14) ?u.15) ?u.16) ?u.17
+while trying to unify
+  (tail1 : ?m.3) →
+    (upBefore : ?m.8 tail1) →
+      (upAfter : ?m.9 tail1 upBefore) →
+        (loBefore : ?m.10 tail1 upBefore upAfter) →
+          ?m.11 tail1 upBefore upAfter loBefore →
+            List (NormalForm P) : Sort (max (max (max (max (max (u + 1) ?u.13) ?u.14) ?u.15) ?u.16) ?u.17)
+with
+  (tail1 : ?m.3) →
+    (upBefore : ?m.8 tail1) →
+      (upAfter : ?m.9 tail1 upBefore) →
+        (loBefore : ?m.10 tail1 upBefore upAfter) →
+          ?m.11 tail1 upBefore upAfter loBefore →
+            List (NormalForm P) : Sort (max (max (max (max (max (u + 1) ?u.13) ?u.14) ?u.15) ?u.16) ?u.17)
+error: DosenPetric/GentzenGapInsertionData.lean:29:36: Unknown identifier `Data`
+
+Note: It is not possible to treat `Data` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+error: DosenPetric/GentzenGapInsertionData.lean:56:34: Unknown identifier `Data`
+
+Note: It is not possible to treat `Data` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+error: DosenPetric/GentzenGapInsertionData.lean:81:14: Unknown identifier `Data`
+
+Note: It is not possible to treat `Data` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+error: DosenPetric/GentzenGapInsertionData.lean:83:13: typeclass instance problem is stuck
+  HAppend ?m.4 ?m.5 ?m.1
+
+Note: Lean will not try to resolve this typeclass instance problem because the first and second type arguments to `HAppend` are metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+error: DosenPetric/GentzenGapInsertionData.lean:84:7: Failed to infer type of definition `U1`
+error: DosenPetric/GentzenGapInsertionData.lean:85:13: typeclass instance problem is stuck
+  HAppend ?m.4 ?m.5 ?m.1
+
+Note: Lean will not try to resolve this typeclass instance problem because the first and second type arguments to `HAppend` are metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+error: DosenPetric/GentzenGapInsertionData.lean:86:7: Failed to infer type of definition `K1`
+error: DosenPetric/GentzenGapInsertionData.lean:101:13: Unknown identifier `c0`
+error: DosenPetric/GentzenGapInsertionData.lean:105:13: Unknown identifier `c1`
+error: DosenPetric/GentzenGapInsertionData.lean:107:8: declaration uses `sorry`
+error: DosenPetric/GentzenGapInsertionData.lean:110:8: declaration uses `sorry`
+error: DosenPetric/GentzenGapInsertionData.lean:114:13: Unknown identifier `keep0`
+error: DosenPetric/GentzenGapInsertionData.lean:117:13: Unknown identifier `keep1`
+error: DosenPetric/GentzenGapInsertionData.lean:120:13: Unknown identifier `zUpper`
+error: DosenPetric/GentzenGapInsertionData.lean:123:13: Unknown identifier `zLower`
+error: DosenPetric/GentzenGapInsertionData.lean:144:6: Unknown identifier `zLower_index`
+error: DosenPetric/GentzenGapInsertionData.lean:143:65: unsolved goals
+⊢ sorry ≠ sorry
+error: DosenPetric/GentzenGapInsertionData.lean:149:8: Unknown identifier `d.inserted_ne_retained`
+error: DosenPetric/GentzenGapInsertionData.lean:150:2: No goals to be solved
+Some required targets logged failures:
+- DosenPetric.GentzenGapInsertionData
+error: build failed

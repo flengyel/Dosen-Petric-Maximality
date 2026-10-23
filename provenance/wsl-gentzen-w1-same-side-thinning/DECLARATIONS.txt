@@ -1,0 +1,176 @@
+DosenPetric/GentzenFixedContractionRanks.lean:13: theorem rho_reindex_left {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ')
+DosenPetric/GentzenFixedContractionRanks.lean:17: theorem rho_reindex_right {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ')
+DosenPetric/GentzenFixedContractionRanks.lean:21: theorem rho_reindex_left_at {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ')
+DosenPetric/GentzenFixedContractionRanks.lean:25: theorem rho_reindex_right_at {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ')
+DosenPetric/GentzenFixedContractionRanks.lean:29: theorem rho_reindex_left_back {Γ Γ' Δ : List (NormalForm P)} (h : Γ = Γ')
+DosenPetric/GentzenFixedContractionRanks.lean:33: theorem rho_reindex_right_back {Γ Δ Δ' : List (NormalForm P)} (h : Δ = Δ')
+DosenPetric/GentzenFixedContractionRanks.lean:37: theorem contractionRankL_cast_eq {U Δ : List (NormalForm P)} (C : NormalForm P)
+DosenPetric/GentzenFixedContractionRanks.lean:52: theorem contractionRankR_cast_eq {Γ U : List (NormalForm P)} (C : NormalForm P)
+DosenPetric/GentzenFixedContractionRanks.lean:68: theorem contraction_fixed_left (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenFixedContractionRanks.lean:88: theorem contraction_fixed_right (Γ : List (NormalForm P)) (C : NormalForm P)
+DosenPetric/GentzenGapInsertionData.lean:13: structure Data (P : Type u) where
+DosenPetric/GentzenGapInsertionData.lean:35: def interior (C E : NormalForm P) (pre post : List (List (NormalForm P)))
+DosenPetric/GentzenGapInsertionData.lean:62: def terminal (C E : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenGapInsertionData.lean:89: theorem index_formula_cast {Γ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenGapInsertionData.lean:95: abbrev U0 := d.upBefore ++ d.upAfter
+DosenPetric/GentzenGapInsertionData.lean:96: abbrev U1 := d.upBefore ++ d.E :: d.upAfter
+DosenPetric/GentzenGapInsertionData.lean:97: abbrev K0 := d.loBefore ++ d.loAfter
+DosenPetric/GentzenGapInsertionData.lean:98: abbrev K1 := d.loBefore ++ d.E :: d.loAfter
+DosenPetric/GentzenGapInsertionData.lean:100: def c0 : Route d.K0 d.U0 := (copies d.C d.gs0 d.tail0).cast d.lower0 d.upper0
+DosenPetric/GentzenGapInsertionData.lean:101: def c1 : Route d.K1 d.U1 := (copies d.C d.gs1 d.tail1).cast d.lower1 d.upper1
+DosenPetric/GentzenGapInsertionData.lean:102: def tUpper : Route d.U1 d.U0 := Route.thin d.upBefore d.upAfter d.E
+DosenPetric/GentzenGapInsertionData.lean:103: def tLower : Route d.K1 d.K0 := Route.thin d.loBefore d.loAfter d.E
+DosenPetric/GentzenGapInsertionData.lean:104: def keep0 : At d.K0 d.C := (At.shift (gaps d.gs0) (.here d.C d.tail0)).cast d.lower0
+DosenPetric/GentzenGapInsertionData.lean:105: def keep1 : At d.K1 d.C := (At.shift (gaps d.gs1) (.here d.C d.tail1)).cast d.lower1
+DosenPetric/GentzenGapInsertionData.lean:106: def zUpper : At d.U1 d.E := At.shift d.upBefore (.here d.E d.upAfter)
+DosenPetric/GentzenGapInsertionData.lean:107: def zLower : At d.K1 d.E := At.shift d.loBefore (.here d.E d.loAfter)
+DosenPetric/GentzenGapInsertionData.lean:108: def selected0 : List (At d.U0 d.C) := (selectedCopies d.C d.gs0 d.tail0).map (At.cast d.upper0)
+DosenPetric/GentzenGapInsertionData.lean:109: def selected1 : List (At d.U1 d.C) := (selectedCopies d.C d.gs1 d.tail1).map (At.cast d.upper1)
+DosenPetric/GentzenGapInsertionData.lean:111: theorem c0_index {A : NormalForm P} (a : At d.U0 A) :
+DosenPetric/GentzenGapInsertionData.lean:115: theorem c1_index {A : NormalForm P} (a : At d.U1 A) :
+DosenPetric/GentzenGapInsertionData.lean:119: theorem tUpper_index {A : NormalForm P} (a : At d.U0 A) :
+DosenPetric/GentzenGapInsertionData.lean:122: theorem tLower_index {A : NormalForm P} (a : At d.K0 A) :
+DosenPetric/GentzenGapInsertionData.lean:125: theorem keep0_index : d.keep0.index = (gaps d.gs0).length := by
+DosenPetric/GentzenGapInsertionData.lean:128: theorem keep1_index : d.keep1.index = (gaps d.gs1).length := by
+DosenPetric/GentzenGapInsertionData.lean:131: theorem zUpper_index : d.zUpper.index = d.upBefore.length := by
+DosenPetric/GentzenGapInsertionData.lean:134: theorem zLower_index : d.zLower.index = d.loBefore.length := by
+DosenPetric/GentzenGapInsertionData.lean:138: theorem square {A : NormalForm P} (a : At d.U0 A) :
+DosenPetric/GentzenGapInsertionData.lean:144: theorem retained : d.tLower.get d.keep0 = d.keep1 := by
+DosenPetric/GentzenGapInsertionData.lean:150: theorem inserted : d.c1.get d.zUpper = d.zLower := by
+DosenPetric/GentzenGapInsertionData.lean:155: theorem inserted_ne_retained : d.zLower.index ≠ d.keep1.index := by
+DosenPetric/GentzenGapInsertionData.lean:159: theorem inserted_distinct {h : d.E = d.C} : d.zLower ≠ h.symm ▸ d.keep1 := by
+DosenPetric/GentzenGapInsertionData.lean:164: theorem canonical_inserted : (copies d.C d.gs1 d.tail1).get (d.zUpper.cast d.upper1.symm) =
+DosenPetric/GentzenGapInsertionData.lean:170: theorem canonical_inserted_fixed : (d.zLower.cast d.lower1.symm).index ≠ (gaps d.gs1).length := by
+DosenPetric/GentzenGapInsertionIndices.lean:13: def liftIndex (k i : Nat) : Nat := if i < k then i else i + 1
+DosenPetric/GentzenGapInsertionIndices.lean:15: theorem liftIndex_ne (k i : Nat) : liftIndex k i ≠ k := by
+DosenPetric/GentzenGapInsertionIndices.lean:19: theorem liftIndex_injective (k i j : Nat) (h : liftIndex k i = liftIndex k j) : i = j := by
+DosenPetric/GentzenGapInsertionIndices.lean:23: theorem liftIndex_add (a k i : Nat) : liftIndex (a+k) (a+i) = a + liftIndex k i := by
+DosenPetric/GentzenGapInsertionIndices.lean:27: theorem gaps_append (pre post : List (List (NormalForm P))) :
+DosenPetric/GentzenGapInsertionIndices.lean:33: theorem repeated_append (C : NormalForm P) (pre post : List (List (NormalForm P))) :
+DosenPetric/GentzenGapInsertionIndices.lean:39: theorem interior_gaps_length (pre post : List (List (NormalForm P)))
+DosenPetric/GentzenGapInsertionIndices.lean:46: theorem interior_cut_le (pre post : List (List (NormalForm P)))
+DosenPetric/GentzenGapInsertionIndices.lean:53: theorem copyIndex_interior (C E : NormalForm P) (pre post : List (List (NormalForm P)))
+DosenPetric/GentzenGapInsertionIndices.lean:101: theorem copyIndex_tail (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenGapInsertionIndices.lean:138: theorem copyIndex_interior_inserted (C E : NormalForm P)
+DosenPetric/GentzenGapInsertionIndices.lean:154: theorem copyIndex_tail_inserted (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenGapInsertionIndices.lean:165: theorem liftIndex_strict (k i j : Nat) (h : i < j) : liftIndex k i < liftIndex k j := by
+DosenPetric/GentzenInsertionPositions.lean:11: theorem thin_get_injective (Γ Θ : List (NormalForm P)) (E : NormalForm P)
+DosenPetric/GentzenInsertionPositions.lean:19: theorem thin_old_position (Γ Θ : List (NormalForm P)) (E : NormalForm P)
+DosenPetric/GentzenInsertionPositions.lean:29: theorem thin_fiber_embedded (Γ Θ : List (NormalForm P)) (E : NormalForm P)
+DosenPetric/GentzenInsertionPositions.lean:39: theorem predecessors_thinL_embedded (Γ Θ Δ : List (NormalForm P)) (E : NormalForm P)
+DosenPetric/GentzenInsertionPositions.lean:48: theorem predecessors_thinR_embedded (Γ Δ Λ : List (NormalForm P)) (E : NormalForm P)
+DosenPetric/GentzenInsertionPositions.lean:57: theorem rho_thinL_embedded (Γ Θ Δ : List (NormalForm P)) (E : NormalForm P)
+DosenPetric/GentzenInsertionPositions.lean:66: theorem rho_thinR_embedded (Γ Δ Λ : List (NormalForm P)) (E : NormalForm P)
+DosenPetric/GentzenInsertionPositions.lean:75: theorem rho_thinL_principal (Γ Θ Δ : List (NormalForm P)) (E : NormalForm P)
+DosenPetric/GentzenInsertionPositions.lean:84: theorem rho_thinR_principal (Γ Δ Λ : List (NormalForm P)) (E : NormalForm P)
+DosenPetric/GentzenInsertionRouting.lean:11: theorem product_square : comp (ofTerm d.c1.product) (ofTerm d.tUpper.product) =
+DosenPetric/GentzenInsertionRouting.lean:18: theorem coproduct_square : comp (ofTerm d.tUpper.coproduct) (ofTerm d.c1.coproduct) =
+DosenPetric/GentzenInsertionRouting.lean:26: theorem selected0_mem (a : At d.U0 d.C) :
+DosenPetric/GentzenInsertionRouting.lean:42: theorem selected1_mem (a : At d.U1 d.C) :
+DosenPetric/GentzenInsertionRouting.lean:58: theorem selected0_iff (a : At d.U0 d.C) : a ∈ d.selected0 ↔ d.c0.get a = d.keep0 := by
+DosenPetric/GentzenInsertionRouting.lean:69: theorem selected1_iff (a : At d.U1 d.C) : a ∈ d.selected1 ↔ d.c1.get a = d.keep1 := by
+DosenPetric/GentzenInsertionRouting.lean:81: theorem selected1_parametric (a : At d.U1 d.C) (ha : a ∈ d.selected1) :
+DosenPetric/GentzenInsertionRouting.lean:90: theorem selected_embedded_iff (a : At d.U0 d.C) :
+DosenPetric/GentzenInsertionRouting.lean:96: theorem selected_transport : d.selected1 = d.selected0.map d.tUpper.get := by
+DosenPetric/GentzenInsertionRouting.lean:122: theorem selected0_length : d.selected0.length = d.gs0.length := by
+DosenPetric/GentzenInsertionRouting.lean:125: theorem selected1_length : d.selected1.length = d.gs1.length := by
+DosenPetric/GentzenInsertionRouting.lean:129: theorem canonical_inserted_fiber :
+DosenPetric/GentzenSameSideThinning.lean:12: theorem contractL_cast_denote {U K Δ : List (NormalForm P)} (C : NormalForm P)
+DosenPetric/GentzenSameSideThinning.lean:21: theorem contractR_cast_denote {Γ U K : List (NormalForm P)} (C : NormalForm P)
+DosenPetric/GentzenSameSideThinning.lean:33: theorem modifiedArity (hn : 2 ≤ d.gs0.length) : 2 ≤ d.gs1.length := d.count_eq.symm ▸ hn
+DosenPetric/GentzenSameSideThinning.lean:38: def innerL : G P d.K0 Δ :=
+DosenPetric/GentzenSameSideThinning.lean:41: def oldL : G P d.K1 Δ :=
+DosenPetric/GentzenSameSideThinning.lean:45: def newL : G P d.K1 Δ := G.thinL d.loBefore d.loAfter Δ d.E (innerL d hn Δ f)
+DosenPetric/GentzenSameSideThinning.lean:47: theorem innerL_denote : ofTerm (innerL d hn Δ f).denote = comp (ofTerm d.c0.product) (ofTerm f.denote) :=
+DosenPetric/GentzenSameSideThinning.lean:50: theorem oldL_denote : ofTerm (oldL d hn Δ f).denote =
+DosenPetric/GentzenSameSideThinning.lean:54: theorem denoteL : ofTerm (newL d hn Δ f).denote = ofTerm (oldL d hn Δ f).denote := by
+DosenPetric/GentzenSameSideThinning.lean:58: theorem cutCountL : (newL d hn Δ f).cutCount = (oldL d hn Δ f).cutCount := by
+DosenPetric/GentzenSameSideThinning.lean:61: theorem cutFreeL : (newL d hn Δ f).CutFree ↔ (oldL d hn Δ f).CutFree := by
+DosenPetric/GentzenSameSideThinning.lean:64: theorem atomizedL : (newL d hn Δ f).Atomized ↔ (oldL d hn Δ f).Atomized := by
+DosenPetric/GentzenSameSideThinning.lean:67: theorem newL_atomized_iff : (newL d hn Δ f).Atomized ↔ AtomicFormula d.E ∧ f.Atomized := by
+DosenPetric/GentzenSameSideThinning.lean:70: theorem oldL_atomized_iff : (oldL d hn Δ f).Atomized ↔ AtomicFormula d.E ∧ f.Atomized := by
+DosenPetric/GentzenSameSideThinning.lean:73: theorem newL_atomized (hE : AtomicFormula d.E) (hf : f.Atomized) : (newL d hn Δ f).Atomized := by
+DosenPetric/GentzenSameSideThinning.lean:76: theorem relationL : (newL d hn Δ f).relation = (oldL d hn Δ f).relation :=
+DosenPetric/GentzenSameSideThinning.lean:84: def innerR : G P Γ d.K0 :=
+DosenPetric/GentzenSameSideThinning.lean:87: def oldR : G P Γ d.K1 :=
+DosenPetric/GentzenSameSideThinning.lean:91: def newR : G P Γ d.K1 := G.thinR Γ d.loBefore d.loAfter d.E (innerR d hn Γ f)
+DosenPetric/GentzenSameSideThinning.lean:93: theorem innerR_denote : ofTerm (innerR d hn Γ f).denote = comp (ofTerm f.denote) (ofTerm d.c0.coproduct) :=
+DosenPetric/GentzenSameSideThinning.lean:96: theorem oldR_denote : ofTerm (oldR d hn Γ f).denote =
+DosenPetric/GentzenSameSideThinning.lean:100: theorem denoteR : ofTerm (newR d hn Γ f).denote = ofTerm (oldR d hn Γ f).denote := by
+DosenPetric/GentzenSameSideThinning.lean:104: theorem cutCountR : (newR d hn Γ f).cutCount = (oldR d hn Γ f).cutCount := by
+DosenPetric/GentzenSameSideThinning.lean:107: theorem cutFreeR : (newR d hn Γ f).CutFree ↔ (oldR d hn Γ f).CutFree := by
+DosenPetric/GentzenSameSideThinning.lean:110: theorem atomizedR : (newR d hn Γ f).Atomized ↔ (oldR d hn Γ f).Atomized := by
+DosenPetric/GentzenSameSideThinning.lean:113: theorem newR_atomized_iff : (newR d hn Γ f).Atomized ↔ AtomicFormula d.E ∧ f.Atomized := by
+DosenPetric/GentzenSameSideThinning.lean:116: theorem oldR_atomized_iff : (oldR d hn Γ f).Atomized ↔ AtomicFormula d.E ∧ f.Atomized := by
+DosenPetric/GentzenSameSideThinning.lean:119: theorem newR_atomized (hE : AtomicFormula d.E) (hf : f.Atomized) : (newR d hn Γ f).Atomized := by
+DosenPetric/GentzenSameSideThinning.lean:122: theorem relationR : (newR d hn Γ f).relation = (oldR d hn Γ f).relation :=
+DosenPetric/GentzenSameSideThinningExamples.lean:13: def repeatedData (l : Literal P) :=
+DosenPetric/GentzenSameSideThinningExamples.lean:16: theorem repeated_left (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:19: theorem repeated_right (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:22: theorem repeated_selected_indices (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:30: theorem repeated_inserted_distinct (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:34: theorem repeated_endpoint_loss (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:44: def beforeData (l : Literal P) := GapInsertion.interior (.lit l) (.lit l) [] [[]] [] [] []
+DosenPetric/GentzenSameSideThinningExamples.lean:47: def betweenData (l : Literal P) := GapInsertion.interior (.lit l) (.lit l) [[]] [] [] [] []
+DosenPetric/GentzenSameSideThinningExamples.lean:49: def afterData (l : Literal P) := GapInsertion.terminal (.lit l) (.lit l) [[],[]] [] []
+DosenPetric/GentzenSameSideThinningExamples.lean:51: theorem before_left (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:54: theorem between_right (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:57: theorem after_left (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:60: theorem after_right (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:63: theorem before_between_after_indices (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:70: def tailPremiseL (l : Literal P) : G P [.lit l,.lit l,.lit l] [.lit l] :=
+DosenPetric/GentzenSameSideThinningExamples.lean:73: def tailPremiseR (l : Literal P) : G P [.lit l] [.lit l,.lit l,.lit l] :=
+DosenPetric/GentzenSameSideThinningExamples.lean:76: def endData (l : Literal P) := GapInsertion.terminal (.lit l) (.lit l) [[],[]] [.lit l] []
+DosenPetric/GentzenSameSideThinningExamples.lean:78: theorem end_left (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:81: theorem end_right (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:84: theorem end_indices (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:89: def tailMiddleData (l : Literal P) :=
+DosenPetric/GentzenSameSideThinningExamples.lean:92: theorem tail_middle_left (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:95: theorem tail_middle_right (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:99: def gapMiddleData (l : Literal P) :=
+DosenPetric/GentzenSameSideThinningExamples.lean:102: theorem gap_middle_left (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:105: theorem gap_middle_right (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:109: def compoundData (l : Literal P) :=
+DosenPetric/GentzenSameSideThinningExamples.lean:112: theorem compound_left (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:115: theorem compound_not_atomized (l : Literal P) :
+DosenPetric/GentzenSameSideThinningExamples.lean:121: theorem emptyP_interior_left :
+DosenPetric/GentzenSameSideThinningExamples.lean:125: theorem emptyP_interior_right :
+DosenPetric/GentzenSameSideThinningExamples.lean:129: theorem emptyP_terminal_left :
+DosenPetric/GentzenSameSideThinningExamples.lean:133: theorem emptyP_terminal_right :
+DosenPetric/GentzenSameSideThinningExamples.lean:137: theorem both_signs_actual_cut (p : P) :
+DosenPetric/GentzenSameSideThinningInstances.lean:13: theorem interior_inserted_before (C E : NormalForm P) (pre post : List (List (NormalForm P)))
+DosenPetric/GentzenSameSideThinningInstances.lean:20: theorem terminal_inserted_after (C E : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenSameSideThinningInstances.lean:32: structure LeftLaws (d : GapInsertion.Data P) (hn : 2 ≤ d.gs0.length)
+DosenPetric/GentzenSameSideThinningInstances.lean:48: structure RightLaws (d : GapInsertion.Data P) (hn : 2 ≤ d.gs0.length)
+DosenPetric/GentzenSameSideThinningInstances.lean:64: theorem leftLaws (d : GapInsertion.Data P) (hn : 2 ≤ d.gs0.length)
+DosenPetric/GentzenSameSideThinningInstances.lean:70: theorem rightLaws (d : GapInsertion.Data P) (hn : 2 ≤ d.gs0.length)
+DosenPetric/GentzenSameSideThinningInstances.lean:77: theorem interior_left (C E : NormalForm P) (pre post : List (List (NormalForm P)))
+DosenPetric/GentzenSameSideThinningInstances.lean:82: theorem interior_right (C E : NormalForm P) (pre post : List (List (NormalForm P)))
+DosenPetric/GentzenSameSideThinningInstances.lean:88: theorem terminal_left (C E : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenSameSideThinningInstances.lean:93: theorem terminal_right (C E : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenSameSideThinningRanks.lean:15: def rankNewL := G.contractionRankL d.C d.gs0 d.tail0 Δ hn (f.reindex d.upper0.symm rfl)
+DosenPetric/GentzenSameSideThinningRanks.lean:16: def rankOldL := G.contractionRankL d.C d.gs1 d.tail1 Δ (modifiedArity d hn)
+DosenPetric/GentzenSameSideThinningRanks.lean:19: theorem innerL_rank : (innerL d hn Δ f).rho .left d.keep0 = rankNewL d hn Δ f :=
+DosenPetric/GentzenSameSideThinningRanks.lean:22: theorem oldL_rank : (oldL d hn Δ f).rho .left d.keep1 = rankOldL d hn Δ f :=
+DosenPetric/GentzenSameSideThinningRanks.lean:25: theorem rankNewL_sum : rankNewL d hn Δ f = 1 +
+DosenPetric/GentzenSameSideThinningRanks.lean:29: theorem rankOldL_sum : rankOldL d hn Δ f = 1 +
+DosenPetric/GentzenSameSideThinningRanks.lean:33: theorem contraction_lossL : rankOldL d hn Δ f = rankNewL d hn Δ f + d.gs0.length := by
+DosenPetric/GentzenSameSideThinningRanks.lean:48: theorem endpoint_rankL : (newL d hn Δ f).rho .left d.keep1 = rankNewL d hn Δ f + 1 := by
+DosenPetric/GentzenSameSideThinningRanks.lean:54: theorem contraction_decreasesL : rankNewL d hn Δ f < rankOldL d hn Δ f := by
+DosenPetric/GentzenSameSideThinningRanks.lean:58: theorem endpoint_lossL : (oldL d hn Δ f).rho .left d.keep1 + 1 =
+DosenPetric/GentzenSameSideThinningRanks.lean:65: theorem endpoint_decreasesL : (newL d hn Δ f).rho .left d.keep1 < (oldL d hn Δ f).rho .left d.keep1 := by
+DosenPetric/GentzenSameSideThinningRanks.lean:69: theorem inserted_newL_rank : (newL d hn Δ f).rho .left d.zLower = 1 :=
+DosenPetric/GentzenSameSideThinningRanks.lean:72: theorem inserted_oldL_rank : (oldL d hn Δ f).rho .left d.zLower = 2 := by
+DosenPetric/GentzenSameSideThinningRanks.lean:86: def rankNewR := G.contractionRankR Γ d.C d.gs0 d.tail0 hn (f.reindex rfl d.upper0.symm)
+DosenPetric/GentzenSameSideThinningRanks.lean:87: def rankOldR := G.contractionRankR Γ d.C d.gs1 d.tail1 (modifiedArity d hn)
+DosenPetric/GentzenSameSideThinningRanks.lean:90: theorem innerR_rank : (innerR d hn Γ f).rho .right d.keep0 = rankNewR d hn Γ f :=
+DosenPetric/GentzenSameSideThinningRanks.lean:93: theorem oldR_rank : (oldR d hn Γ f).rho .right d.keep1 = rankOldR d hn Γ f :=
+DosenPetric/GentzenSameSideThinningRanks.lean:96: theorem rankNewR_sum : rankNewR d hn Γ f = 1 +
+DosenPetric/GentzenSameSideThinningRanks.lean:100: theorem rankOldR_sum : rankOldR d hn Γ f = 1 +
+DosenPetric/GentzenSameSideThinningRanks.lean:104: theorem contraction_lossR : rankOldR d hn Γ f = rankNewR d hn Γ f + d.gs0.length := by
+DosenPetric/GentzenSameSideThinningRanks.lean:119: theorem endpoint_rankR : (newR d hn Γ f).rho .right d.keep1 = rankNewR d hn Γ f + 1 := by
+DosenPetric/GentzenSameSideThinningRanks.lean:125: theorem contraction_decreasesR : rankNewR d hn Γ f < rankOldR d hn Γ f := by
+DosenPetric/GentzenSameSideThinningRanks.lean:129: theorem endpoint_lossR : (oldR d hn Γ f).rho .right d.keep1 + 1 =
+DosenPetric/GentzenSameSideThinningRanks.lean:136: theorem endpoint_decreasesR : (newR d hn Γ f).rho .right d.keep1 < (oldR d hn Γ f).rho .right d.keep1 := by
+DosenPetric/GentzenSameSideThinningRanks.lean:140: theorem inserted_newR_rank : (newR d hn Γ f).rho .right d.zLower = 1 :=
+DosenPetric/GentzenSameSideThinningRanks.lean:143: theorem inserted_oldR_rank : (oldR d hn Γ f).rho .right d.zLower = 2 := by

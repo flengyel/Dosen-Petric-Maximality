@@ -78,7 +78,8 @@ definition is unchanged and can be adapted once that interpretation exists.
 | Opposite-side W1 thinning | `W1.denoteL/R`, predicate/count/relation preservation, exact contraction loss n and whole selected-endpoint loss n−1 compile for arbitrary P and premises, including cuts. These are two local instances only; other W1 cases and all-site reducibility remain open. |
 | Opposite-side W1 exchange | `W1.Exchange` derives both commutations with Reduced equality, exact rank losses n/n−1, proof-predicate/count and tagged-relation preservation. Opposite-side predecessor is the exact same At singleton even for empty blocks. Only two local exchange instances are claimed; other W1 and all-site replacement remain open. |
 | Opposite-side W1 contractions | `W1.Contraction` constructs one pair, equal Reduced denotations and two directed rank comparisons. Four ranks L+n,L+1,R+1,R+m use independent arities and complete selected-copy sums. Each targeted decrease has an other-side increase; S(outerL)+m=S(outerR)+n. No global decrease/termination or all-site replacement is claimed. |
-| Opposite-side W1 unary logical rules | `W1.Logical` proves both unary disjR/conjL commutations, targeted n/n−1 contraction/endpoint losses and principal ranks 2→1, empty principal predecessor lists and predicate/count/full tagged relation preservation. No new atomicity condition. Together with prior thinning/exchange/contraction these complete the specified opposite-side unary families; same-side parametric cases remain open. |
+| Opposite-side W1 unary logical rules | `W1.Logical` proves both unary disjR/conjL commutations, targeted n/n−1 contraction/endpoint losses and principal ranks 2→1, empty principal predecessor lists and predicate/count/full tagged relation preservation. No new atomicity condition. Together with prior thinning/exchange/contraction these complete the specified opposite-side unary families; other same-side exchange/contraction/logical cases remain open. |
+| Fixed-position same-side W1 thinning | Four concrete interior/terminal L/R results compile with explicit G/At/Route casts, the proved structural square, complete ordered selected transport and index exclusion even E=C. Full rank equations give n/n−1 losses and fixed inserted 2→1; predicates/count/tagged relations preserved, exact AtomicFormula E boundary retained. Other W1/W2 and all-site reducibility remain open. |
 | Positive-fragment coherence input | `PositiveCoherence P` quantifies only over positive raw terms and concludes equality in Reduced.Hom. `faithful_of_positive_coherence` is proved conditionally from that explicit, unsupplied premise. This does not supply Reduced.Faithful or Boolean Coherence. |
 | Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. Reduced faithfulness and its earlier positive-core coherence inputs are unproved. No complete `OccurrenceInterpretation` instance. Equality reflection and full red-equation preservation remain open. |
 | Normalization and occurrence correspondence | `Presentation.normalization` constructs the existing record for every P by simultaneous sign recursion and source n/r/rho arrows. Both inverse laws, inverse occurrence coordinates, both graph laws, literal/label/polarity correspondence, repeated-tag injectivity, Empty cases, and transport formulas compile. No coherence or arrow-negation premise. |
@@ -90,78 +91,47 @@ definition is unchanged and can be adapted once that interpretation exists.
 
 ## Next concrete proof task
 
-Atomic-k, clusters/rank and the opposite-side unary W1 thinning, exchange,
-contraction and logical introduction families are complete in their stated
-local scopes. See [the logical report](GENTZEN_W1_LOGICAL_REPORT.md).
+Atomic-k, clusters/rank, specified opposite-side unary W1 instances and now
+same-side thinning at fixed interior gaps and terminal tails, in both duals,
+are complete in their local scopes. See
+[the same-side thinning report](GENTZEN_W1_SAME_SIDE_THINNING_REPORT.md).
 
-The next task is same-side thinning through contraction at a specified
-fixed parametric gap, together with its dual (§11.2 p.251, γ=kL and dual kR).
-Use positional list decomposition, not a search for a matching formula.
-For arbitrary P : Type u, C,E : NormalForm P, pre,post : List (List (NormalForm P)),
-U,V,Θ,Δ : List (NormalForm P), define:
-
-```lean
-gs  := pre ++ (U ++ V) :: post
-gs' := pre ++ (U ++ E :: V) :: post
-upBefore := repeated C pre ++ U
-upAfter  := V ++ C :: (repeated C post ++ Θ)
-loBefore := gaps pre ++ U
-loAfter  := V ++ (gaps post ++ C :: Θ)
-```
-
-Require `2 ≤ gs.length` and derive `gs'.length = gs.length`. Prove the exact
-list identifications, not definitional strictness:
+Next prove same-side exchange within a specified fixed parametric gap,
+together with its right dual (§11.2 p.251 W1, γ=cL; p.252 dual).
+For arbitrary C, pre,post,U,X,Y,V,Θ, set:
 
 ```text
-repeated C gs  ++ Θ = upBefore ++ upAfter
-repeated C gs' ++ Θ = upBefore ++ E :: upAfter
-gaps gs  ++ C :: Θ = loBefore ++ loAfter
-gaps gs' ++ C :: Θ = loBefore ++ E :: loAfter.
+gs0 = pre ++ (U ++ X ++ Y ++ V) :: post
+gs1 = pre ++ (U ++ Y ++ X ++ V) :: post
+upperPrefix = repeated C pre ++ U
+upperTail = V ++ C :: (repeated C post ++ Θ)
+lowerPrefix = gaps pre ++ U
+lowerTail = V ++ (gaps post ++ C :: Θ).
 ```
 
-For `f : G P (upBefore ++ upAfter) Δ`, compare contractL at gs' after
-`G.thinL upBefore upAfter Δ E f` with
-`G.thinL loBefore loAfter Δ E` after contractL at gs. Use G.reindex with
-proved context equalities above; both final proofs must have exactly type
-`G P (loBefore ++ E :: loAfter) Δ`.
+Require 2≤gs0.length. With `f : G P (upperPrefix ++ X ++ Y ++ upperTail) Δ`,
+compare left contraction at gs1 after
+`G.exchangeL upperPrefix X Y upperTail Δ f` against
+`G.exchangeL lowerPrefix X Y lowerTail Δ` after contraction at gs0,
+using proved list equalities and G.reindex. The final antecedent is
+`lowerPrefix ++ Y ++ X ++ lowerTail`. The right dual starts with
+`f : G P Γ (upperPrefix ++ X ++ Y ++ upperTail)` and uses exchangeR/contractR.
+Every selected copy must lie outside the exchanged X/Y blocks; here the blocks
+are inside the fixed gap, so this must be proved from positions, not assumed
+from formula labels. Empty blocks and fixed equal copies are allowed.
+Use actual exchange comparison directions: exchangeL precomposes invTerm,
+exchangeR postcomposes toTerm. Prove the copies/exchange component square,
+complete ordered selected-position transport, exact local rank equations and
+preservation. The existing At.swapBlocks and exchangeBack_component are
+available; no new Route/Rewire constructor or coherence assumption is supplied.
+Include the analogous fixed terminal-tail placement if extending that scope.
 
-Every contracted copy must remain parametric through the thinning. In the
-thinning conclusion context, its new principal position is precisely
-index upBefore.length. Derive from the decomposition:
-
-```text
-∀ x ∈ selectedCopies C gs' Θ, x.index ≠ upBefore.length.
-```
-
-Also prove the positional embedding of every original selected copy under
-Route.thin, with none lost or duplicated. The inserted E belongs to the
-fixed gap and is never a selected copy, even when E=C. No freshness or
-formula disequality assumption is allowed. Prefixes, suffixes and fixed
-gap halves may all be empty; the displayed arity bound is retained.
-
-Include the terminal fixed-tail variant as well: write Θ0=U++V and
-Θ1=U++E::V, keep gs unchanged, and use upBefore=repeated C gs++U,
-upAfter=V, loBefore=gaps gs++C::U and loAfter=V. Derive the analogous
-four context equalities and exclude upBefore.length from every
-selectedCopies C gs Θ1 index. All selected copies lie before that new
-principal position. This covers the fixed tail after the last selected copy,
-including empty halves, without treating any equal fixed formula as selected.
-
-For arbitrary Γ : List (NormalForm P), the dual uses
-`f : G P Γ (upBefore ++ upAfter)`, thinR at upBefore/upAfter,
-contractR at gs/gs' and final type `G P Γ (loBefore ++ E :: loAfter)`.
-Prove the corresponding coproduct routing law and rank equations directly.
-Both commutations require actual Reduced equations for the same-side routing
-composites, beyond merely reassociating pre/postcomposition. Preserve complete
-relations and proof predicates; Atomized equivalence retains AtomicFormula E
-on both sides if E is arbitrary. Every selected copy must be parametric.
-
-Same-side W1 exchanges/contractions/logical parametric cases, W2–W6, blocked
-transformations, arbitrary proof-context replacement/all-site decrease,
-Reducibility, Blocked-w and cut elimination remain open. Positive coherence
-inputs, PositiveCoherence, Reduced.Faithful, Boolean Coherence and unconditional
-maximality are separate/open. Existing conditional transfers remain unchanged;
-a missing formalization of a cited theorem is not itself a manuscript defect.
+Other same-side W1 contractions/logical parametric cases, W2–W6, arbitrary
+proof-context replacement/all-site decrease, Reducibility, Blocked-w and cut
+elimination remain open. Positive coherence inputs, PositiveCoherence,
+Reduced.Faithful, Boolean Coherence and unconditional maximality are separate
+obligations. Existing conditional transfers remain unchanged. An unformalized
+published theorem is not by itself an established manuscript defect.
 
 ## Verification boundary
 

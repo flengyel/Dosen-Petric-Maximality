@@ -1,3 +1,54 @@
+# W1 same-side fixed-position thinning validation (current checkpoint)
+
+Baseline main `524cbe0c438ce3bcea8049758687c59d494bd597` agreed with fetched
+SSH origin and had no unrelated changes. Actual strict baseline: 121 files /
+4,973 audited declarations, exit 0, 3.663 seconds. Final sequential verification
+completed at 2026-10-23T14:27:27.456515+00:00: **130 files / 5,275 audited declarations**.
+Strict build/transitive audit, both boundary scripts, manuscript SHA256SUMS
+and git diff --check all exited 0. Five negative controls rejected with expected
+diagnostics and exit 1: public axiom, unused private axiom, hidden external
+axiom, reflexive tagged-projection identification and unwitnessed zero.
+Public import closure passed. Permitted axioms remain propext, Quot.sound and
+Classical.choice; 56 complete selected prints are retained.
+
+Nine new modules add 176 explicit source declarations, 302 audited declarations
+including generated ones. All older DosenPetric sources, frozen syntax/equations,
+proof predicates, predecessor/rank definitions, Lean 4.35.0, Init-only closure,
+manifest, manuscript v4 and historical reports/reviews/access records are
+byte-preserved. No proof hole, custom mathematical axiom or native_decide.
+
+Four concrete interior-gap/terminal-tail L/R results compile: exact context
+casts, typed routing and structural product/coproduct squares, complete ordered
+selected-copy transport, exclusion of the inserted index even E=C, retained
+transport and separate inserted image/fixed singleton fiber. Full selected sums
+give contraction loss n and whole selected-endpoint loss n−1, strict for n≥2.
+The inserted fixed position has old/new ranks 2/1. Count/predicate/full tagged
+relation preservation has no new atomicity/CutFree hypothesis; both Atomized
+predicates are exactly AtomicFormula E ∧ f.Atomized. Empty/nonempty halves,
+two/three selected copies, repeated equal fixed positions, before/between/after/
+end, compound E, inhabited Empty P constant examples and actual cuts are checked.
+
+All builds and controls were sequential. Retained failed attempts include
+numeric/list/dependent-position elaborations, explicit hn binding, principal
+rank transparency and an example conjunction arity correction. The final strict
+run followed the last Lean change; subsequent edits are documentation only.
+Evidence: provenance/wsl-gentzen-w1-same-side-thinning/, including complete logs,
+commands/exits/timings, source/evidence/report/record inventories and access
+artifacts. Author-side hostile and directly source-grounded writing reviews
+cover actual code and correspondence; independent certification is not claimed.
+Post-commit/ref/Downloads receipts are in .codex-work/gentzen-w1-same-side-thinning/.
+
+Independent kernels/source replay, Challenge/Solution/Comparator, official
+preflight/service verification, new manuscript compilation/layout review,
+publication/license/visibility changes were not performed. Remaining W1/W2–W6,
+all-site replacement/reducibility, Blocked-w, cut elimination and coherence
+remain separate/open. See
+[the report](GENTZEN_W1_SAME_SIDE_THINNING_REPORT.md).
+
+---
+
+## Historical W1 unary logical validation (unchanged evidence)
+
 # W1 opposite-side unary logical validation (current checkpoint)
 
 Clean main at `eb870eeae8a6130d39fe27d235b9316ca95ac563` agreed with fetched

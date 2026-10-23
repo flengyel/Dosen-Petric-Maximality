@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-23T14:01:00.423039+00:00",
+  "checks": [
+    {
+      "name": "proofs",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenSameSideThinning"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 4.708,
+      "log_sha256": "ed20545645590c3a3a6691af9552d5fbcd75bfb75828f36d0175dba5f4f74d58"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-23T13:53:49.772607+00:00",
+  "checks": [
+    {
+      "name": "indices",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenGapInsertionIndices"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 0,
+      "seconds": 5.535,
+      "log_sha256": "17a0cf6700f85fbe262f7361d669fa323173a8fd4e7eba4c6caee2b32a96ea31"
+    }
+  ]
+}

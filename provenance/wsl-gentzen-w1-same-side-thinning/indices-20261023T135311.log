@@ -1,0 +1,200 @@
+✖ [98/98] Building DosenPetric.GentzenGapInsertionIndices (3.0s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenGapInsertionIndices.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapInsertionIndices.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapInsertionIndices.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapInsertionIndices.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapInsertionIndices.setup.json --json
+error: DosenPetric/GentzenGapInsertionIndices.lean:59:8: unsolved goals
+case nil.isFalse.isFalse.isFalse.isFalse.isFalse.isFalse
+P : Type u
+C E : NormalForm P
+post : List (List (NormalForm P))
+U V : List (NormalForm P)
+i : Nat
+h✝⁵ : ¬i < U.length
+h✝⁴ : ¬i + 1 < U.length + (V.length + 1)
+h✝³ : ¬i + 1 = U.length + (V.length + 1)
+h✝² : ¬i < U.length + V.length
+h✝¹ : ¬i = U.length + V.length
+h✝ : ¬U.length + V.length + copyIndex post (i - (U.length + V.length) - 1) < U.length
+⊢ U.length + (V.length + 1) + copyIndex post (i + 1 - (U.length + (V.length + 1)) - 1) =
+    U.length + V.length + copyIndex post (i - (U.length + V.length) - 1) + 1
+error: DosenPetric/GentzenGapInsertionIndices.lean:72:20: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  if i < Γ.length + (1 + (repeated C pre).length) + U.length then ?m.489 else ?m.490
+in the target expression
+  (if (if i < Γ.length + ((repeated C pre).length + 1) + U.length then i else i + 1) < Γ.length then
+      if i < Γ.length + ((repeated C pre).length + 1) + U.length then i else i + 1
+    else
+      if (if i < Γ.length + ((repeated C pre).length + 1) + U.length then i else i + 1) = Γ.length then
+        Γ.length + (gaps (pre ++ (U ++ E :: V) :: post)).length
+      else
+        Γ.length +
+          copyIndex (pre ++ (U ++ E :: V) :: post)
+            ((if i < Γ.length + ((repeated C pre).length + 1) + U.length then i else i + 1) - Γ.length - 1)) =
+    liftIndex (Γ.length + (gaps pre).length + U.length) i
+
+case pos
+P : Type u
+C E : NormalForm P
+post : List (List (NormalForm P))
+U V Γ : List (NormalForm P)
+pre : List (List (NormalForm P))
+i : Nat
+hl : (gaps (pre ++ (U ++ E :: V) :: post)).length = (gaps (pre ++ (U ++ V) :: post)).length + 1
+ih :
+  ∀ (i : Nat),
+    copyIndex (pre ++ (U ++ E :: V) :: post) (liftIndex ((repeated C pre).length + U.length) i) =
+      liftIndex ((gaps pre).length + U.length) (copyIndex (pre ++ (U ++ V) :: post) i)
+hk : (gaps pre).length + U.length ≤ (gaps (pre ++ (U ++ V) :: post)).length
+hi : i < Γ.length
+h₁ : i < Γ.length + (gaps pre).length + U.length
+h₂ : i < Γ.length + (1 + (repeated C pre).length) + U.length
+⊢ (if (if i < Γ.length + ((repeated C pre).length + 1) + U.length then i else i + 1) < Γ.length then
+      if i < Γ.length + ((repeated C pre).length + 1) + U.length then i else i + 1
+    else
+      if (if i < Γ.length + ((repeated C pre).length + 1) + U.length then i else i + 1) = Γ.length then
+        Γ.length + (gaps (pre ++ (U ++ E :: V) :: post)).length
+      else
+        Γ.length +
+          copyIndex (pre ++ (U ++ E :: V) :: post)
+            ((if i < Γ.length + ((repeated C pre).length + 1) + U.length then i else i + 1) - Γ.length - 1)) =
+    liftIndex (Γ.length + (gaps pre).length + U.length) i
+error: DosenPetric/GentzenGapInsertionIndices.lean:76:22: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  if Γ.length < Γ.length + (1 + (repeated C pre).length) + U.length then ?m.546 else ?m.547
+in the target expression
+  copyIndex (Γ :: (pre ++ (U ++ E :: V) :: post))
+      (if Γ.length < Γ.length + ((repeated C pre).length + 1) + U.length then Γ.length else Γ.length + 1) =
+    liftIndex (Γ.length + (gaps pre).length + U.length) (copyIndex (Γ :: (pre ++ (U ++ V) :: post)) Γ.length)
+
+case pos
+P : Type u
+C E : NormalForm P
+post : List (List (NormalForm P))
+U V Γ : List (NormalForm P)
+pre : List (List (NormalForm P))
+hl : (gaps (pre ++ (U ++ E :: V) :: post)).length = (gaps (pre ++ (U ++ V) :: post)).length + 1
+ih :
+  ∀ (i : Nat),
+    copyIndex (pre ++ (U ++ E :: V) :: post) (liftIndex ((repeated C pre).length + U.length) i) =
+      liftIndex ((gaps pre).length + U.length) (copyIndex (pre ++ (U ++ V) :: post) i)
+hk : (gaps pre).length + U.length ≤ (gaps (pre ++ (U ++ V) :: post)).length
+hi : ¬Γ.length < Γ.length
+h₂ : Γ.length < Γ.length + (1 + (repeated C pre).length) + U.length
+⊢ copyIndex (Γ :: (pre ++ (U ++ E :: V) :: post))
+      (if Γ.length < Γ.length + ((repeated C pre).length + 1) + U.length then Γ.length else Γ.length + 1) =
+    liftIndex (Γ.length + (gaps pre).length + U.length) (copyIndex (Γ :: (pre ++ (U ++ V) :: post)) Γ.length)
+error: DosenPetric/GentzenGapInsertionIndices.lean:84:12: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Γ.length + (1 + (repeated C pre).length) + U.length
+in the target expression
+  copyIndex (Γ :: (pre ++ (U ++ E :: V) :: post)) (liftIndex (Γ.length + ((repeated C pre).length + 1) + U.length) i) =
+    liftIndex (Γ.length + (gaps pre).length + U.length) (copyIndex (Γ :: (pre ++ (U ++ V) :: post)) i)
+
+case neg
+P : Type u
+C E : NormalForm P
+post : List (List (NormalForm P))
+U V Γ : List (NormalForm P)
+pre : List (List (NormalForm P))
+i : Nat
+hl : (gaps (pre ++ (U ++ E :: V) :: post)).length = (gaps (pre ++ (U ++ V) :: post)).length + 1
+ih :
+  ∀ (i : Nat),
+    copyIndex (pre ++ (U ++ E :: V) :: post) (liftIndex ((repeated C pre).length + U.length) i) =
+      liftIndex ((gaps pre).length + U.length) (copyIndex (pre ++ (U ++ V) :: post) i)
+hk : (gaps pre).length + U.length ≤ (gaps (pre ++ (U ++ V) :: post)).length
+hi : ¬i < Γ.length
+he : ¬i = Γ.length
+hj : Γ.length + 1 ≤ i
+hi' : i = Γ.length + 1 + (i - Γ.length - 1)
+hc : Γ.length + (1 + (repeated C pre).length) + U.length = Γ.length + 1 + ((repeated C pre).length + U.length)
+⊢ copyIndex (Γ :: (pre ++ (U ++ E :: V) :: post)) (liftIndex (Γ.length + ((repeated C pre).length + 1) + U.length) i) =
+    liftIndex (Γ.length + (gaps pre).length + U.length) (copyIndex (Γ :: (pre ++ (U ++ V) :: post)) i)
+error: DosenPetric/GentzenGapInsertionIndices.lean:60:45: This simp argument is unused:
+  List.length_append
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.nil_append, repeated, gaps, List.length_nil, Nat.zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenGapInsertionIndices.lean:60:64: This simp argument is unused:
+  List.length_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.nil_append, repeated, gaps, List.length_append, Nat.zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenGapInsertionIndices.lean:60:80: This simp argument is unused:
+  Nat.zero_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.nil_append, repeated, gaps, List.length_append, List.length_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenGapInsertionIndices.lean:62:61: This simp argument is unused:
+  gaps
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [copyIndex, List.length_append, List.length_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenGapInsertionIndices.lean:112:20: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  if i < Γ.length + (1 + (repeated C gs).length) + u then ?m.159 else ?m.160
+in the target expression
+  copyIndex (Γ :: gs) (if i < Γ.length + ((repeated C gs).length + 1) + u then i else i + 1) =
+    liftIndex (Γ.length + (gaps gs).length + 1 + u) (copyIndex (Γ :: gs) i)
+
+case pos
+P : Type u
+C : NormalForm P
+u : Nat
+Γ : List (NormalForm P)
+gs : List (List (NormalForm P))
+ih :
+  ∀ (i : Nat),
+    copyIndex gs (liftIndex ((repeated C gs).length + u) i) = liftIndex ((gaps gs).length + 1 + u) (copyIndex gs i)
+i : Nat
+hi : i < Γ.length
+h₁ : i < Γ.length + (1 + (repeated C gs).length) + u
+h₂ : i < Γ.length + (gaps gs).length + 1 + u
+⊢ copyIndex (Γ :: gs) (if i < Γ.length + ((repeated C gs).length + 1) + u then i else i + 1) =
+    liftIndex (Γ.length + (gaps gs).length + 1 + u) (copyIndex (Γ :: gs) i)
+error: DosenPetric/GentzenGapInsertionIndices.lean:116:22: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  if Γ.length < Γ.length + (1 + (repeated C gs).length) + u then ?m.215 else ?m.216
+in the target expression
+  copyIndex (Γ :: gs) (if Γ.length < Γ.length + ((repeated C gs).length + 1) + u then Γ.length else Γ.length + 1) =
+    liftIndex (Γ.length + (gaps gs).length + 1 + u) (copyIndex (Γ :: gs) Γ.length)
+
+case pos
+P : Type u
+C : NormalForm P
+u : Nat
+Γ : List (NormalForm P)
+gs : List (List (NormalForm P))
+ih :
+  ∀ (i : Nat),
+    copyIndex gs (liftIndex ((repeated C gs).length + u) i) = liftIndex ((gaps gs).length + 1 + u) (copyIndex gs i)
+hi : ¬Γ.length < Γ.length
+h₁ : Γ.length < Γ.length + (1 + (repeated C gs).length) + u
+⊢ copyIndex (Γ :: gs) (if Γ.length < Γ.length + ((repeated C gs).length + 1) + u then Γ.length else Γ.length + 1) =
+    liftIndex (Γ.length + (gaps gs).length + 1 + u) (copyIndex (Γ :: gs) Γ.length)
+error: DosenPetric/GentzenGapInsertionIndices.lean:121:12: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Γ.length + (1 + (repeated C gs).length) + u
+in the target expression
+  copyIndex (Γ :: gs) (liftIndex (Γ.length + ((repeated C gs).length + 1) + u) i) =
+    liftIndex (Γ.length + (gaps gs).length + 1 + u) (copyIndex (Γ :: gs) i)
+
+case neg
+P : Type u
+C : NormalForm P
+u : Nat
+Γ : List (NormalForm P)
+gs : List (List (NormalForm P))
+ih :
+  ∀ (i : Nat),
+    copyIndex gs (liftIndex ((repeated C gs).length + u) i) = liftIndex ((gaps gs).length + 1 + u) (copyIndex gs i)
+i : Nat
+hi : ¬i < Γ.length
+he : ¬i = Γ.length
+hi' : i = Γ.length + 1 + (i - Γ.length - 1)
+hc : Γ.length + (1 + (repeated C gs).length) + u = Γ.length + 1 + ((repeated C gs).length + u)
+⊢ copyIndex (Γ :: gs) (liftIndex (Γ.length + ((repeated C gs).length + 1) + u) i) =
+    liftIndex (Γ.length + (gaps gs).length + 1 + u) (copyIndex (Γ :: gs) i)
+Some required targets logged failures:
+- DosenPetric.GentzenGapInsertionIndices
+error: build failed

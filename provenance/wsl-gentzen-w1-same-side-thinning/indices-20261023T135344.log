@@ -1,0 +1,8 @@
+✖ [98/98] Building DosenPetric.GentzenGapInsertionIndices (3.8s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenGapInsertionIndices.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapInsertionIndices.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapInsertionIndices.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapInsertionIndices.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapInsertionIndices.setup.json --json
+error: DosenPetric/GentzenGapInsertionIndices.lean:75:35: Failed to rewrite using equation theorems for `copyIndex`
+
+Hint: Try rewriting with `DosenPetric.Reduced.Gentzen.copyIndex.eq_def`
+Some required targets logged failures:
+- DosenPetric.GentzenGapInsertionIndices
+error: build failed

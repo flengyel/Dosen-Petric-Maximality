@@ -1,0 +1,9 @@
+✔ [101/102] Built DosenPetric.GentzenInsertionRouting (1.8s)
+✖ [102/102] Building DosenPetric.GentzenSameSideThinning (2.3s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSameSideThinning.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSameSideThinning.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSameSideThinning.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSameSideThinning.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSameSideThinning.setup.json --json
+error: DosenPetric/GentzenSameSideThinning.lean:33:0: Definition `modifiedArity` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+Some required targets logged failures:
+- DosenPetric.GentzenSameSideThinning
+error: build failed

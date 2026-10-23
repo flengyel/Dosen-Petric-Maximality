@@ -1,0 +1,234 @@
+   §.   Excerpts from class, October 7                                       [notes by TLL]
+   Our first serious business involved examining “the worst abusers of the ‘Don’t use symbols
+   in titles’ rule.” Professor Knuth (hereafter known as Knuth) displayed a paper by Gauss
+   that had a long displayed formula in the title. He showed us a bibliography he’s preparing
+   that references not only that paper but another with even more symbols in the title.
+   (Such titles make more than bibliographies difficult; they make bibliographic data retrieval
+   systems and keyword-in-context produce all sorts of hiccups.)
+   In his bibliography Knuth has tried to keep his citations true to the original sources.
+   The bibliography contains mathematical formulas, full name spellings (even alternative
+   spellings when common), and completely spelled-out source journal names. (This last
+   may be unusual enough that some members of a field may be surprised to see the full
+   journal name written out, but it’s a big help to novices who want to find it in the library.)
+   We spent the rest of class going over some of the solutions that students had turned in for
+   the exercise of § (each sample anonymous). He cautioned us that while he was generally
+   pleased by the assignments, he was going to be pointing out things that could be improved.
+   The following points were all made in the process of going through these samples.
+
+          In certain instances, people did not understand what constitutes a proof. Fluency
+          in mathematics is important for Computer Science students but will not be taught
+          in this class.
+
+          Not all formulas are equations. Depending on the formula, the terms ‘relation’,
+          ‘definition’, ‘statement’, or ‘theorem’ might be used.
+
+          Computer Scientists must be careful to distinguish between mathematical notation
+          and programming language notation. While it may be appropriate to use p[r] in a
+          program, in a formal paper it is probably better to use p with a subscript of r. As
+          another example, it is not appropriate to use a star (∗) to denote multiplication in
+          a paper about mathematics. Just say xy.
+
+          Some people called p an element of P and pr an element of p. Everything was an
+          “element.” It’s better to call pr a “component” of p, thus distinguishing two kinds
+          of subsidiary relationships.
+
+          It is natural in mathematics to hold off some aspects of your definition—to “place
+          action before definition” (as in ‘p(x) < p(y) for some x < y’). But it is possible
+          to carry this too far, if too much is being held back. The best location for certain
+          definitions is a subjective matter.
+
+          Remember to put words between adjacent formulas.
+
+          When you use ellipses, such as (P1 , . . . , Pn ), remember to put commas before and
+          after the three dots. When placing ellipses between commas the three dots belong
+          on the same level as the commas, but when the ellipsis is bracketed by symbols such
+          as ‘+’ or ‘<’ the dots should be at mid-level.
+
+[§. COMMENTS ON STUDENT ANSWERS (1)                                                               9]
+             Be careful with the spacing around ellipses. The character string ‘. . .;’ looks strange
+             (it should have more space after the last dot). All kinds of accidents happen con-
+             cerning spaces in formulas. Typesetting systems like TEX have built-in rules to
+             cover 99% of the cases, but if you write a lot of mathematics you will get bitten.
+
+             Linebreaks in the middle of formulas are undesirable. There are ways to enforce
+             this with TEX (as well as other text formatting systems). People who use TEX and
+             wish to use the vertical bar and the empty set symbol in notation like ‘{c | c ∈ ∅}’
+             should be aware of the TEX commands \mid and \emptyset.
+
+             Comments such as, “We demonstrate the second conclusion by contradiction,” and
+             “There must be a witness to the unsortedness of P,” are useful because they tell the
+             reader what is going on or bring in new and helpful vocabulary.
+
+             Numbering all displayed formulas is usually a bad idea; number the important ones
+             only. Extraneous parentheses can also be distracting. For example, in the phrase
+             “let k be (ci − cj ) + 1,” the parentheses should be omitted.
+
+             You can overdo the use of any good tool. For instance, you could overuse typo-
+             graphic tools by having 20 different fonts in one paper.
+      Two more topics were touched on (and are sure to be discussed further): the use of ‘I’ in
+      technical writing, and the use of past or present tense in technical writing.
+      Knuth says that Mary-Claire van Leunen defends the use of ‘I’ in scholarly articles, but
+      that he disagrees (unless the identity of the author is important to the reader). Knuth
+      likes the “teamwork” aspect of using ‘we’ to represent the author and reader together. If
+      there are multiple authors, they can either “revel in the ambiguity” of continuing to use
+      ‘we’, or they can use added disambiguating text. If one author needs to be mentioned
+      separately, the text can say ‘one of the authors (DEK)’, or ‘the first author’, but not ‘the
+      senior author’.
+      Knuth (hereafter known as Don) recommends that one of two approaches be used with
+      respect to tenses of verbs: Either use present tense throughout the entire paper, or write
+      sequentially. Sequential writing means that you say things like, “We saw this before. We
+      will see this later.” The sequential approach is more appropriate for lengthy papers. You
+      can use it even more effectively by using words of duration: “We observed this long ago.
+      We saw the other thing recently. We will prove something else soon.”
+
+
+
+
+[10                                                        §. COMMENTS ON STUDENT ANSWERS (1) ]
+   §.   Excerpts from class, October 9                                        [notes by TLL]
+
+   “I’m thinking about running a contest for the best Pascal program that is also a sonnet,”
+   was the one of the first sentences out of Don’s mouth on the topic of the exact definition
+   of “Mathematical Writing.” He admitted that such a contest was “probably not the
+   right topic for this course.” However, a program (presumably even an iambic pentameter
+   program) is among the documents that he will accept as the course term paper. He
+   will accept articles for professional journals, chapters of books or theses, term papers for
+   other courses, computer programs, user manuals or parts thereof: anything that falls into
+   a definite genre where you have a specific audience in mind and the technical aspect is
+   significant.
+   We spent the rest of class continuing to examine the homework assignment. In the interest
+   of succinct notes, I have replaced many literal phrases by their generic equivalents. For
+   example, I might have replaced ‘A > B’ by ‘hrelationi’. This time I have divided the com-
+   ments into two sets: those dealing with what I will call “form” (parentheses, capitalization,
+   fonts, etc.) and those dealing with “content” (wording, sentence construction, tense, etc.).
+   First, the comments concerning form:
+
+          Don’t overdo the use of colons. While the colon in ‘Define it as follows:’ is fine, the
+          one in ‘We have: hformulai’ should be omitted since the formula just completes the
+          sentence. Some papers had more colons than periods.
+
+          Should the first word after a colon be capitalized? Yes, if the phrase following
+          the colon is a full sentence. No, if it is a sentence fragment. (This is not “yet” a
+          standard rule, but Don has been trying it for several years and he likes it.)
+
+          While too many commas will interfere with the smooth flow of a sentence, too
+          few can make a sentence difficult to read. As examples, a sentence beginning with
+          ‘Therefore, ’ does not need the comma following ‘therefore’. But ‘Observe that
+          if hsymboli is hformulai then so is hsymboli because hreasoningi’ at least needs a
+          comma before ‘because’.
+
+          Putting too many things in parentheses is a stylistic thing that can get very tiring.
+          (When Don moves from his original, handwritten draft to a typed, computer-stored
+          version his most frequent change is to remove extra parentheses.)
+
+          Among the parentheses most in need of removal are nested parentheses. To this end,
+          it is better to write ‘(Definition 2)’ than ‘(definition (2))’. Unfortunately, however,
+          you can’t use the former if the definition was given in displayed formula (2). Then
+          it’s probably best to think of a way to avoid the outer parentheses altogether.
+
+          In some cases your audience may expect nested parentheses. In this case (or in any
+          other case when you feel you must have them), should the outer pair be changed to
+          brackets (or curly-braces)? This was once the prevailing convention, but it is now
+          not only obsolete but potentially dangerous; brackets and curly braces have semantic
+          content for many scientific professionals. (“The world is short of delimiters,” says
+
+[§. COMMENTS ON STUDENT ANSWERS (2)                                                                11 ]
+      Don.) Typographers help by using slightly larger parentheses for the outer pair in
+      a nested set.
+
+      An entire paper or proof in capital letters is distracting. It gives the impression of
+      sustained shouting. Same goes for boldface, etc.
+
+      Paul Halmos introduced the handy convention of placing a box at the end of a
+      proof; this box serves the same function as the initials ‘Q.E.D.’. If you use such a
+      box, it seems best to leave a space between it and the final period.
+
+      Try to make it clear where new paragraphs begin. When using displayed formulas,
+      this can become confusing unless you are careful.
+
+      Using notational or typographic conventions can be helpful to your readers (as long
+      as your convention is appropriate to your audience). Boldface symbols or arrows
+      over your vectors are each appropriate in the correct context. When using a raised
+      ‘st’ in phrases such as ‘the i+1st component’, it’s better to use roman type: ‘i+1st ’.
+      Then it’s clear that you aren’t speaking of “1 raised to the power st.”
+
+      Avoid “psychologically bad” line breaks. This is subjective, but you can catch many
+      such awkward breaks by not letting the final symbol lie on a line separate from the
+      rest of its sentence. If you are using TEX, a tilde (~) in place of a space will cause the
+      two symbols on either side of the tilde to be tied together. (Other text processors
+      also have methods to disallow line breaks at specific points.)
+
+      Some of us are much better at spelling than others of us. Those of us who are not
+      naturally wonderful spellers should learn to use spelling checkers.
+
+      Allowing formulas to get so long that they do not format well or are unnecessarily
+      confusing “violates the principle of ‘name and conquer’ that makes mathematics
+      readable.” For example, ‘v = c + u(ci − cj + 1)’ should be ‘v = c + ku, where
+      k = ci − cj + 1’, if you’re going to do a lot of formula manipulation in which
+      ci − cj + 1 remains as a unit.
+
+      Be stingy with your quotation marks. “Three cute things in quotes is a little too
+      cute.”
+
+      Remember to minimize subscripts. For example, ‘pi is an element of P ’ could more
+      easily be ‘p is an element of P ’.
+
+      Remember to capitalize words like theorem and lemma in titles like Lemma 1 and
+      Theorem 23.
+
+      Remember to place words between adjacent formulas. A particularly bad example
+      was, “Add p k times to c.”
+
+      Be careful to define symbols before you use them (or at least to define them very
+      near where you use them).
+
+[12                                                  §. COMMENTS ON STUDENT ANSWERS (2) ]
+         Don’t get hung up on one or two styles of sentences. The following sort of thing
+         can become very monotonous:
+               Thus, – – – – .
+               Consequently, – – – – .
+               Therefore, – – – – .
+               And so, – – – – .
+
+         On the other hand, parallelism should be used when it is the point of the sentence.
+
+   Now the comments involving content:
+
+         Try to make sentences easily comprehensible from left to right. For example, “We
+         prove that hgrunti and hsnorti implies hblahi.” It would be better to write “We
+         prove that the two conditions hgrunti and hsnorti imply hblahi.” Otherwise it seems
+         at first that hgrunti and hsnorti are being proved.
+
+         While guidelines have been given for the use of the word ‘that’, the final placement
+         must be dictated by cadence and clarity. Read your words aloud to yourself.
+
+         The word ‘shall’ seems to be a natural word for definitions to many mathematical
+         readers, but it is considered formal by younger members of the audience.
+
+         Be precise in your wording. If you mean “not nonincreasing,” don’t say “increasing”;
+         the former means that pj < pj+1 for some j, while the latter that pj < pj+1 for
+         all j.
+
+         Mixed tenses on the same subject are awkward. For example, “We assume now
+         hgrunti, hoping to show a contradiction,” is better than, “We assume now hgrunti,
+         and will show that this leads to a contradiction.”
+
+         Many people used the ungainly phrase “Assume by contradiction that hblahi.” It
+         is better to say, “The proof that hblahi is by contradiction,” and even better to say
+         “To prove hgrunti, let us assume the opposite and see what happens.”
+
+         In general, a conversational tone giving signposts and clearly written transition
+         paragraphs provides for pleasant reading. One especially easy-to-read proof con-
+         tained the phrases “The operative word is zero,” “The lemma is half proved,” and
+         “We divide the proof into two parts, first proving hblahi and then proving hgrunti.”
+
+         You can give relations in two ways, either saying ‘pi < pj ’ or ‘pj > pi ’. The latter is
+         for “people who are into dominance,” Don says, but the former is much easier for a
+         reader to visualize after you’ve just said ‘p = (p1 , p2 , . . . , pn ) and i < j’. Similarly,
+         don’t say ‘i < j and pj < pi ’; keep i and j in the same relative position.
+
+
+
+
+[§. COMMENTS ON STUDENT ANSWERS (2)                                                                      13 ]
+

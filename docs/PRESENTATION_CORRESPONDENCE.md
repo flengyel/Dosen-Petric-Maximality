@@ -974,3 +974,39 @@ logical introduction) and their duals. Same-side parametric W1 and binary
 logical/reducibility cases remain separate/open. See
 [the logical report](GENTZEN_W1_LOGICAL_REPORT.md) for signatures, paths,
 fixed equal positions, next-task conditions and verification evidence.
+
+## Same-side thinning at fixed gaps and terminal tails (W1)
+
+The pinned source is Došen–Petrić, *Proof-Theoretical Coherence*, September
+2007, [PDF](https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf), SHA-256
+`e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e`.
+Printed page n is PDF page n+12, one-based. Printed pp.248–253 were consulted,
+including rendered p.251; pp.272–273 and 291–292 supply constant/zero context.
+The verified caches and access artifacts are recorded in source-consultation.json.
+Historical access records are preserved. No new source discrepancy was confirmed.
+
+| Source location | Scope / positional condition | Lean construction and actual proof input |
+| --- | --- | --- |
+| §11.2 p.251 (W 1), γ=kL | Every displayed contracted copy remains parametric; insertion is in a specified fixed gap or terminal tail. | `GapInsertion.interior/terminal`; `W1.SameSideThinning.interior_left/terminal_left`, using the proved copies/thinning product square. |
+| §11.2 p.252, right analogue of Reducibility, applied to W1 | Dual fixed-position kR/wR instance. | `interior_right/terminal_right`; independently typed coproduct square, with reversed route variance. |
+| §11.2 pp.248–249, parametric cluster / all-node rank | An old position crosses thinning once; contraction sums all selected copies. | Complete singleton predecessors, `rho_thinL/R_embedded`, `selected_transport`, existing contractionRankL_eq/R_eq and selectedCopies_length. |
+| §11.2 p.251 (W 2) | Inserted occurrence is selected for contraction. | Excluded here: `selected1_parametric` proves its index absent, even E=C. W2 remains open. |
+| §11.5 pp.272–273; §12.5 pp.291–292 | Constants/atomic zeros remain admitted; empty contexts retain their colours. | Existing unchanged syntax; actual constant proofs over Empty and arbitrary cut-containing premises are checked. |
+
+The broader Semilattice Coherence invocation is replaced for these instances
+by proved product/coproduct universal extensionality. Binary context folds,
+generating equations and syntactic equality remain unchanged.
+
+All four concrete results prove exact list/cast coordinates, the old-position
+copies/thinning square, complete ordered selected-copy transport and its index
+exclusion, retained transport and a separate inserted image/fixed singleton
+fiber. Interior insertion is before the retained lower C, terminal insertion
+after it, including E=C. Product/coproduct universal properties give Reduced
+denotation equality. Full selected sums give Rold=Rnew+n, rho(new,x)=Rnew+1
+and rho(old,x)+1=rho(new,x)+n, strictly decreasing for n≥2. Inserted ranks are
+2→1. Both Atomized predicates equal AtomicFormula E ∧ f.Atomized; count,
+CutFree/Atomized and complete tagged relations are preserved. No grammar,
+equation or old analysis interface changed. See
+[the report](GENTZEN_W1_SAME_SIDE_THINNING_REPORT.md) and its two author-side
+reviews. Remaining same-side exchange/contraction/logical and broader
+reducibility/coherence work remain open.

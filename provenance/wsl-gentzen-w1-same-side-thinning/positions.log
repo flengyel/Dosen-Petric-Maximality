@@ -1,0 +1,12 @@
+✔ [99/100] Built DosenPetric.GentzenGapInsertionData (1.8s)
+✖ [100/100] Building DosenPetric.GentzenInsertionPositions (687ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenInsertionPositions.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenInsertionPositions.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenInsertionPositions.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenInsertionPositions.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenInsertionPositions.setup.json --json
+error: DosenPetric/GentzenInsertionPositions.lean:17:2: Type mismatch: After simplification, term
+  hi
+ has type
+  @Eq Nat (if a.index < Γ.length then a.index else a.index + 1) (if b.index < Γ.length then b.index else b.index + 1)
+but is expected to have type
+  @Eq Nat (GapInsertion.liftIndex Γ.length a.index) (GapInsertion.liftIndex Γ.length b.index)
+Some required targets logged failures:
+- DosenPetric.GentzenInsertionPositions
+error: build failed

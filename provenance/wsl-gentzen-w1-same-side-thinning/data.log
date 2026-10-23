@@ -1,0 +1,22 @@
+✖ [99/99] Building DosenPetric.GentzenGapInsertionData (1.1s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenGapInsertionData.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapInsertionData.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapInsertionData.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapInsertionData.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapInsertionData.setup.json --json
+error: DosenPetric/GentzenGapInsertionData.lean:76:4: Type mismatch: After simplification, term
+  copyIndex_tail C gs U.length i
+ has type
+  copyIndex gs (liftIndex ((repeated C gs).length + U.length) i) =
+    liftIndex ((gaps gs).length + 1 + U.length) (copyIndex gs i)
+but is expected to have type
+  copyIndex gs (liftIndex ((repeated C gs).length + U.length) i) =
+    liftIndex ((gaps gs).length + (U.length + 1)) (copyIndex gs i)
+error: DosenPetric/GentzenGapInsertionData.lean:78:4: Type mismatch: After simplification, term
+  copyIndex_tail_inserted C gs U.length
+ has type
+  copyIndex gs ((repeated C gs).length + U.length) = (gaps gs).length + 1 + U.length
+but is expected to have type
+  copyIndex gs ((repeated C gs).length + U.length) = (gaps gs).length + (U.length + 1)
+error: DosenPetric/GentzenGapInsertionData.lean:62:4: (kernel) declaration has metavariables 'DosenPetric.Reduced.Gentzen.GapInsertion.terminal'
+error: DosenPetric/GentzenGapInsertionData.lean:157:2: Dependent elimination failed: Failed to solve equation
+  d.1 = d.2
+Some required targets logged failures:
+- DosenPetric.GentzenGapInsertionData
+error: build failed
