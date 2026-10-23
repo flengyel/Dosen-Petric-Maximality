@@ -584,7 +584,7 @@ Coherence for the union laws needed here. They do not replace Gentzenization,
 cut elimination, restricted coherence, or the §12.5 faithfulness argument.
 The historical dependency table in POSITIVE_ZERO_UNION_REPORT records the
 then-open constructions. G0/G1 are now proved below; CODEX_NEXT_SESSION gives
-the current open atomization/cut-elimination dependencies. Signed-label preservation is not
+the completed Atomic-k proof and the remaining cut-elimination dependencies. Signed-label preservation is not
 fullness: no realization theorem for all signed-label-respecting relations is
 assumed. Historical source discrepancies and access records are preserved.
 
@@ -676,7 +676,99 @@ pointwise relation agreement in those coordinates. Relations never prove
 syntactic equality. Signed-label preservation is not fullness or faithfulness.
 
 `cutCount`, `CutFree`, `Topmost` and `Atomized` are implemented analysis
-interfaces, with elementary cut-count/closure facts only. Atomic-k atomization,
-blocked contractions/ranks, cut elimination, restricted mix coherence,
-PositiveCoherence and Reduced.Faithful remain open. No source citation supplies
+interfaces. Atomic-k atomization, including denotation equality and preservation
+of existing CutFree, is now proved as recorded below. Blocked contractions/ranks,
+cut elimination, restricted mix coherence, PositiveCoherence and Reduced.Faithful
+remain open. No source citation supplies
 those missing proofs, and no coherence premise is added to Gentzenization.
+
+## Positive thinning atomization (Atomic-k)
+
+
+The source is Došen–Petrić, *Proof-Theoretical Coherence*, September 2007,
+[the pinned PDF](https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf).
+Its SHA-256 is
+`e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e`.
+Printed page n is PDF page n+12 (one-based). Formulas on printed pp.247 and
+271 were inspected in rendering; render hashes/locations are recorded in
+`source-consultation.json`. The source PDF stays in the ignored reference cache.
+
+| Source location | Source role and exact scope used | Lean construction / replacement for source proof appeals |
+| --- | --- | --- |
+| §11.1 p.234, mixed structural equations; p.240 mixed-map definitions | The actual e′∧ has type `(X∧Y)∧(A∨B) → (X∧A)∨(Y∧B)`. e′∨ has type `(A∨X)∧(B∨Y) → (A∧B)∨(X∨Y)`. | Existing `Rules.sourceConj X Y A B` and `Term.mixedDisj A X B Y`; `sourceConj_nat`, `mixedDisj_nat` derive naturality of these composites. |
+| §11.1 pp.241–243, exchange and separated multiple contraction | Exchange specifies prefix, two blocks, tail; contraction selects copies by the intervening gaps. Empty gaps and repeated equal formulas are legal. | Existing constructors are unchanged. New exchange components, `copies_index` and `Rewire.duplicate` derive block contractions from them. |
+| §11.2 pp.246–247, Atomic-k; first compound-k rewrite | Left conjunction thinning becomes two sequential thinnings followed by conjunction-left; the dual handles right disjunction. | `conjLeft_head`, `disjRight_head`, `conj_thin_head`, `disj_thin_head`, `headThinL/R_denote`. Association is a proved arrow comparison. |
+| §11.2 p.247, disjunctive compound-k rewrite; use of contraction and (m e∧) | Branch over A and B, then contract both duplicated surrounding contexts. The source invokes earlier coherence in its calculation. | `sourceConj_fst`, `branchL_core`, `branchL_denote`; proved using existing structural equations, constant specializations and union idempotence. |
+| §11.2 p.247, dual compound-k case; §11.5 pp.270–271, omitted mixed equations | Right conjunction thinning requires the mixed arrow actually used by `Rules.conjRight`, and contraction on both sides. | `mixedDisj_inr`, `branchR_core`, `branchR_denote`; actual mixedDisj, injection naturality and `diag_mix_codiag`. |
+| §11.5 pp.272–273, Atomic-k with constants | Atomic formulas include top/bottom; thinning by bottom on the left and top on the right is retained. The two empty folds have different colours. | `headThinL/R` retain actual primitive thinning at lit/top/bot; no constant-based replacement proof or empty-sequent leaf. |
+| §12.5 pp.291–292, zero extension | Atomic zero leaves are among the bases; later zero cut-elimination cases are separate. | `atomize (.zero l) = .zero l`; existing atomic zero bases remain unchanged. Later zero reduction cases remain open. |
+
+Neither omitted `(m e)` schema was added to `Reduced.Equation`. The results
+below are sufficient projected/injected consequences, **not a claim to prove
+both complete omitted schemas**. No new source discrepancy was confirmed in
+this checkpoint; earlier correspondence entries and access records are retained.
+
+## Categorical calculations before proof transformation
+
+`sourceConj_fst X Y A B` proves, for all four normal forms:
+
+```text
+sourceConj X Y A B ; (fst X A ∨ fst Y B)
+  = fst (X∧Y) (A∨B) ; mix X Y.
+```
+
+Both sides have type `(X∧Y)∧(A∨B) → X∨Y`. The left path goes through
+`(X∧A)∨(Y∧B)`; the right through `X∧Y`. Its proof expands the actual
+source-defined composite only in small structural lemmas, uses the existing
+d-k/d-m laws and naturality, proves the top specialization, and maps A/B to
+top. The specialization uses the established zero-derived top-domain
+uniqueness. It does not use an interpretation to reflect equality.
+
+The required dual calculation is `mixedDisj_inr A B X Y`:
+
+```text
+(inr A X ∧ inr B Y) ; mixedDisj A X B Y
+  = mix X Y ; inr (A∧B) (X∨Y).
+```
+
+Both sides have type `X∧Y → (A∧B)∨(X∨Y)`. The left intermediate object is
+`(A∨X)∧(B∨Y)`. The proof establishes the bottom specialization, its typed
+unit inverse, and naturality along `fromBot A` and `fromBot B`. Initiality
+and existing zero-derived bottom-codomain uniqueness justify the specialization.
+There is no cancellation without an inverse and no appeal to full-Presentation
+uniqueness. Both calculations are inside Reduced.Hom.
+
+For `f : Hom X Y`, the branching left calculation has the complete path:
+
+```text
+(A∨B)∧X → (A∨B)∧(X∧X) → (X∧X)∧(A∨B)
+ → (X∧A)∨(X∧B) → X∨X → Y∨Y → Y.
+```
+
+The arrows are `id ∧ diag`, swap, sourceConj, the two first projections,
+`f∨f`, and codiag. `branchL_core` proves that this equals `snd ; f`.
+After `sourceConj_fst`, its remaining duplicated-f expression is `f ∪ f`,
+which equals f by the already proved syntactic union idempotence.
+
+The branching right path is:
+
+```text
+X → X∧X → (A∨Y)∧(B∨Y) → (A∧B)∨(Y∨Y) → (A∧B)∨Y.
+```
+
+Its arrows are diag, `(f;inr A Y) ∧ (f;inr B Y)`, actual mixedDisj, and
+`id ∨ codiag`. `branchR_core` proves equality to `f ; inr (A∧B) Y`.
+The proof uses `mixedDisj_inr` and the existing diagonal–mix–codiagonal law.
+No same-connective medial or older `ReducedWitnesses.mixedConj` is substituted.
+
+
+The exact public endpoint is `Reduced.Gentzen.G.atomization`; its CutFree and
+complete occurrence variants are `atomization_cutFree/atomization_occurrences`.
+`headThinL/R` recurse on formulas and use no cuts. `atomThinL/R` move the
+selected formula to an arbitrary gap by proved positional exchange. Rewire
+scripts expand to existing exchange/contraction/reindex macros; all duplicated
+context blocks are contracted with index and component proofs. The global
+transformation covers all sixteen unchanged Gentzen schemas. It does not
+give a decreasing rank, cut elimination, quotient translation or coherence.
+See [the Atomic-k report](POSITIVE_THINNING_ATOMIZATION_REPORT.md), including
+its four compound cases, constructor coverage, exact hypotheses and evidence.

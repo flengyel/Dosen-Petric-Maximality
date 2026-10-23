@@ -1,0 +1,12 @@
+{
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "exit_status": 2,
+  "stdout": "DosenPetric/GentzenContextComponents.lean:170: trailing whitespace.\n+    simpa only [C.assoc] using hh' \n",
+  "stderr": "",
+  "correction": "Removed one trailing space on line 170 of GentzenContextComponents.lean; refreshed strict verification afterward."
+}

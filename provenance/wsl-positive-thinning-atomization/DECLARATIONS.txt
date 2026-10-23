@@ -1,0 +1,177 @@
+DosenPetric/GentzenAnalysisMacros.lean:11: theorem atomized_reindex {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ')
+DosenPetric/GentzenAnalysisMacros.lean:15: theorem cutFree_reindex {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ')
+DosenPetric/GentzenAnalysisMacros.lean:19: theorem atomized_exchangeL (Γ X Y Θ Δ : List (NormalForm P))
+DosenPetric/GentzenAnalysisMacros.lean:23: theorem atomized_exchangeR (Γ Δ X Y Λ : List (NormalForm P))
+DosenPetric/GentzenAnalysisMacros.lean:27: theorem cutFree_exchangeL (Γ X Y Θ Δ : List (NormalForm P))
+DosenPetric/GentzenAnalysisMacros.lean:31: theorem cutFree_exchangeR (Γ Δ X Y Λ : List (NormalForm P))
+DosenPetric/GentzenAnalysisMacros.lean:35: theorem atomized_contractL (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenAnalysisMacros.lean:40: theorem atomized_contractR (Γ : List (NormalForm P)) (C : NormalForm P)
+DosenPetric/GentzenAnalysisMacros.lean:45: theorem cutFree_contractL (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenAnalysisMacros.lean:50: theorem cutFree_contractR (Γ : List (NormalForm P)) (C : NormalForm P)
+DosenPetric/GentzenAnalysisMacros.lean:55: theorem atomized_contractRFirst (Γ Δ Λ : List (NormalForm P)) (C : NormalForm P)
+DosenPetric/GentzenAnalysisMacros.lean:61: theorem cutFree_contractRFirst (Γ Δ Λ : List (NormalForm P)) (C : NormalForm P)
+DosenPetric/GentzenAnalysisMacros.lean:67: theorem atomized_thinLast {Γ Δ : List (NormalForm P)} (A : NormalForm P) (g : G P Γ Δ) :
+DosenPetric/GentzenAnalysisMacros.lean:71: theorem cutFree_thinLast {Γ Δ : List (NormalForm P)} (A : NormalForm P) (g : G P Γ Δ) :
+DosenPetric/GentzenBlockComparisons.lean:11: theorem side_ext (o : Op) {X : NormalForm P} {Γ : List (NormalForm P)}
+DosenPetric/GentzenBlockComparisons.lean:21: def dupContext (Γ : List (NormalForm P)) : Rewire P Γ (Γ ++ Γ) :=
+DosenPetric/GentzenBlockComparisons.lean:25: def dupTail (C : NormalForm P) (Γ : List (NormalForm P)) :
+DosenPetric/GentzenBlockComparisons.lean:30: theorem dupContext_index (Γ : List (NormalForm P)) {A : NormalForm P} (a : At (Γ ++ Γ) A) :
+DosenPetric/GentzenBlockComparisons.lean:34: theorem dupTail_index (C : NormalForm P) (Γ : List (NormalForm P))
+DosenPetric/GentzenBlockComparisons.lean:39: theorem dupContext_first (Γ : List (NormalForm P)) {A : NormalForm P} (a : At Γ A) :
+DosenPetric/GentzenBlockComparisons.lean:46: theorem dupContext_second (Γ : List (NormalForm P)) {A : NormalForm P} (a : At Γ A) :
+DosenPetric/GentzenBlockComparisons.lean:53: theorem dupContext_arrow (o : Op) (Γ : List (NormalForm P)) :
+DosenPetric/GentzenBlockComparisons.lean:70: theorem dupTail_here (C : NormalForm P) (Γ : List (NormalForm P)) :
+DosenPetric/GentzenBlockComparisons.lean:77: theorem dupTail_first (C : NormalForm P) (Γ : List (NormalForm P))
+DosenPetric/GentzenBlockComparisons.lean:86: theorem dupTail_second (C : NormalForm P) (Γ : List (NormalForm P))
+DosenPetric/GentzenBlockComparisons.lean:94: theorem dupTail_arrow (o : Op) (C : NormalForm P) (Γ : List (NormalForm P)) :
+DosenPetric/GentzenBlockContraction.lean:12: def duplicate (Ξ Γ Θ : List (NormalForm P)) : Rewire P (Ξ ++ Γ ++ Θ) (Ξ ++ Γ ++ Γ ++ Θ) :=
+DosenPetric/GentzenBlockContraction.lean:28: def duplicateIndex (s g i : Nat) : Nat := if i < s + g then i else i - g
+DosenPetric/GentzenBlockContraction.lean:30: theorem duplicate_index (Ξ Γ Θ : List (NormalForm P)) {A : NormalForm P}
+DosenPetric/GentzenContextComponents.lean:47: def component (o : Op) {Γ : List (NormalForm P)} {A : NormalForm P} (a : At Γ A) :
+DosenPetric/GentzenContextComponents.lean:53: def join (o : Op) (Γ Δ : List (NormalForm P)) :
+DosenPetric/GentzenContextComponents.lean:59: def split (o : Op) (Γ Δ : List (NormalForm P)) :
+DosenPetric/GentzenContextComponents.lean:65: theorem join_split (o : Op) (Γ Δ : List (NormalForm P)) :
+DosenPetric/GentzenContextComponents.lean:71: theorem split_join (o : Op) (Γ Δ : List (NormalForm P)) :
+DosenPetric/GentzenContextComponents.lean:77: theorem component_here (o : Op) (A : NormalForm P) (Γ : List (NormalForm P)) :
+DosenPetric/GentzenContextComponents.lean:80: theorem component_there (o : Op) {Γ : List (NormalForm P)} {A B : NormalForm P} (a : At Γ A) :
+DosenPetric/GentzenContextComponents.lean:84: theorem join_nil (o : Op) (Δ : List (NormalForm P)) :
+DosenPetric/GentzenContextComponents.lean:87: theorem join_cons (o : Op) (A : NormalForm P) (Γ Δ : List (NormalForm P)) :
+DosenPetric/GentzenContextComponents.lean:92: theorem side_unit (o : Op) (A B : NormalForm P) :
+DosenPetric/GentzenContextComponents.lean:100: theorem join_before (o : Op) {Γ : List (NormalForm P)} {A : NormalForm P}
+DosenPetric/GentzenContextComponents.lean:139: theorem join_shift (o : Op) (Γ : List (NormalForm P)) {Δ : List (NormalForm P)}
+DosenPetric/GentzenContextComponents.lean:172: def exchangeSide (o : Op) (Γ X Y Δ : List (NormalForm P)) :
+DosenPetric/GentzenContextComponents.lean:178: theorem exchangeSide_nil (o : Op) (X Y Δ : List (NormalForm P)) :
+DosenPetric/GentzenContextComponents.lean:190: theorem exchangeSide_cons (o : Op) (A : NormalForm P) (Γ X Y Δ : List (NormalForm P)) :
+DosenPetric/GentzenContextComponents.lean:196: def shuffle (o : Op) (X Y : List (NormalForm P)) :
+DosenPetric/GentzenContextComponents.lean:201: theorem shuffle_Y (o : Op) (X : List (NormalForm P)) {Y : List (NormalForm P)}
+DosenPetric/GentzenContextComponents.lean:213: theorem side_swap_snd (o : Op) (A B : NormalForm P) :
+DosenPetric/GentzenContextComponents.lean:219: theorem shuffle_X (o : Op) {X : List (NormalForm P)} (Y : List (NormalForm P))
+DosenPetric/GentzenCopiesPositions.lean:11: def copyHead (C : NormalForm P) (Γ : List (NormalForm P))
+DosenPetric/GentzenCopiesPositions.lean:18: theorem copySource (C : NormalForm P) (Γ : List (NormalForm P))
+DosenPetric/GentzenCopiesPositions.lean:23: theorem copyTarget (C : NormalForm P) (Γ : List (NormalForm P))
+DosenPetric/GentzenCopiesPositions.lean:28: theorem copies_cast (C : NormalForm P) (Γ : List (NormalForm P))
+DosenPetric/GentzenCopiesPositions.lean:37: def copyIndex : List (List (NormalForm P)) → Nat → Nat
+DosenPetric/GentzenCopiesPositions.lean:43: theorem copies_index (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenExchangeComponents.lean:11: theorem exchangeSide_nil_shuffle (o : Op) (X Y Δ : List (NormalForm P)) :
+DosenPetric/GentzenExchangeComponents.lean:16: theorem exchangeSide_nil_Y (o : Op) (X Δ : List (NormalForm P))
+DosenPetric/GentzenExchangeComponents.lean:29: theorem exchangeSide_nil_X (o : Op) (Y Δ : List (NormalForm P))
+DosenPetric/GentzenExchangeComponents.lean:42: theorem exchangeSide_nil_tail (o : Op) (X Y : List (NormalForm P))
+DosenPetric/GentzenExchangeComponents.lean:55: theorem exchangeSide_prefix (o : Op) {Γ : List (NormalForm P)}
+DosenPetric/GentzenExchangeComponents.lean:73: theorem exchangeSide_X (o : Op) (Γ X Y Δ : List (NormalForm P))
+DosenPetric/GentzenExchangeComponents.lean:88: theorem exchangeSide_Y (o : Op) (Γ X Y Δ : List (NormalForm P))
+DosenPetric/GentzenExchangeComponents.lean:103: theorem exchangeSide_tail (o : Op) (Γ X Y Δ : List (NormalForm P))
+DosenPetric/GentzenExchangePositions.lean:13: def splitAppend (Γ Δ : List (NormalForm P)) {A : NormalForm P} : At (Γ ++ Δ) A → At Γ A ⊕ At Δ A :=
+DosenPetric/GentzenExchangePositions.lean:22: theorem splitAppend_before {Γ : List (NormalForm P)} (Δ : List (NormalForm P))
+DosenPetric/GentzenExchangePositions.lean:28: theorem splitAppend_shift (Γ : List (NormalForm P)) {Δ : List (NormalForm P)}
+DosenPetric/GentzenExchangePositions.lean:35: def swapBlocks (Γ X Y Θ : List (NormalForm P)) {A : NormalForm P}
+DosenPetric/GentzenExchangePositions.lean:46: def exchangeIndex (g x y i : Nat) : Nat :=
+DosenPetric/GentzenExchangePositions.lean:49: theorem swapBlocks_index (Γ X Y Θ : List (NormalForm P)) {A : NormalForm P}
+DosenPetric/GentzenExchangePositions.lean:82: def exchangeBack (o : Op) (Γ X Y Θ : List (NormalForm P)) :
+DosenPetric/GentzenExchangePositions.lean:88: theorem exchangeBack_forward (o : Op) (Γ X Y Θ : List (NormalForm P)) :
+DosenPetric/GentzenExchangePositions.lean:94: theorem exchangeBack_component (o : Op) (Γ X Y Θ : List (NormalForm P))
+DosenPetric/GentzenHeadAtomization.lean:12: def headThinL : (A : NormalForm P) → {Γ Δ : List (NormalForm P)} → G P Γ Δ → G P (A :: Γ) Δ
+DosenPetric/GentzenHeadAtomization.lean:21: def headThinR : (A : NormalForm P) → {Γ Δ : List (NormalForm P)} → G P Γ Δ → G P Γ (A :: Δ)
+DosenPetric/GentzenHeadAtomization.lean:29: theorem headThinL_atomized (A : NormalForm P) {Γ Δ : List (NormalForm P)}
+DosenPetric/GentzenHeadAtomization.lean:41: theorem headThinR_atomized (A : NormalForm P) {Γ Δ : List (NormalForm P)}
+DosenPetric/GentzenHeadAtomization.lean:53: theorem headThinL_cutFree (A : NormalForm P) {Γ Δ : List (NormalForm P)}
+DosenPetric/GentzenHeadAtomization.lean:66: theorem headThinR_cutFree (A : NormalForm P) {Γ Δ : List (NormalForm P)}
+DosenPetric/GentzenHeadAtomization.lean:79: theorem headThinL_denote (A : NormalForm P) {Γ Δ : List (NormalForm P)} (f : G P Γ Δ) :
+DosenPetric/GentzenHeadAtomization.lean:108: theorem headThinR_denote (A : NormalForm P) {Γ Δ : List (NormalForm P)} (f : G P Γ Δ) :
+DosenPetric/GentzenHeadThinningLaws.lean:12: theorem thin_head (o : Op) (A : NormalForm P) (Γ : List (NormalForm P)) :
+DosenPetric/GentzenHeadThinningLaws.lean:19: theorem conjLeft_head (Γ : List (NormalForm P)) (A B : NormalForm P) :
+DosenPetric/GentzenHeadThinningLaws.lean:29: theorem disjRight_head (Δ : List (NormalForm P)) (A B : NormalForm P) :
+DosenPetric/GentzenHeadThinningLaws.lean:39: theorem conj_thin_head (A B X : NormalForm P) :
+DosenPetric/GentzenHeadThinningLaws.lean:47: theorem disj_thin_head (A B Y : NormalForm P) :
+DosenPetric/GentzenHeadThinningLaws.lean:56: theorem branchL_denote (Γ Δ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenHeadThinningLaws.lean:84: theorem branchR_denote (Γ Δ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenIsoTransports.lean:13: def cast {A B A' B' : NormalForm P} (hA : A = A') (hB : B = B') (i : Iso A B) : Iso A' B' :=
+DosenPetric/GentzenIsoTransports.lean:16: theorem cast_heq {A B A' B' : NormalForm P} (hA : A = A') (hB : B = B') (i : Iso A B) :
+DosenPetric/GentzenIsoTransports.lean:19: theorem cast_tensor (o : Op) (X : NormalForm P) {A B A' B' : NormalForm P}
+DosenPetric/GentzenIsoTransports.lean:26: def exchangeCore (o : Op) (X Y Δ : List (NormalForm P)) :
+DosenPetric/GentzenIsoTransports.lean:33: theorem prefix_fold (o : Op) (Γ Z : List (NormalForm P)) :
+DosenPetric/GentzenIsoTransports.lean:39: theorem exchange_prefix (o : Op) (Γ X Y Δ : List (NormalForm P)) :
+DosenPetric/GentzenIsoTransports.lean:43: theorem exchange_cast (o : Op) (Γ X Y Δ : List (NormalForm P)) :
+DosenPetric/GentzenIsoTransports.lean:52: theorem exchange_nil (o : Op) (X Y Δ : List (NormalForm P)) :
+DosenPetric/GentzenIsoTransports.lean:57: theorem exchange_cons (o : Op) (A : NormalForm P) (Γ X Y Δ : List (NormalForm P)) :
+DosenPetric/GentzenMixedInjections.lean:12: def innerDisj (A X B : NormalForm P) : Hom (.conj (.disj A X) B) (.disj (.conj A B) X) :=
+DosenPetric/GentzenMixedInjections.lean:16: theorem innerDisj_nat {A X B A' X' B' : NormalForm P}
+DosenPetric/GentzenMixedInjections.lean:32: theorem mixedDisj_eq (A X B Y : NormalForm P) :
+DosenPetric/GentzenMixedInjections.lean:38: theorem mixedDisj_nat {A X B Y A' X' B' Y' : NormalForm P}
+DosenPetric/GentzenMixedInjections.lean:59: theorem innerDisj_fst (A X B : NormalForm P) :
+DosenPetric/GentzenMixedInjections.lean:66: theorem leftOut_assocR (o : Op) (A B : NormalForm P) :
+DosenPetric/GentzenMixedInjections.lean:75: theorem mixedDisj_drop (A X B Y : NormalForm P) :
+DosenPetric/GentzenMixedInjections.lean:86: theorem bot_pair_fst_diag :
+DosenPetric/GentzenMixedInjections.lean:93: theorem fromBotPair_unique {A : NormalForm P} (f g : Hom (.conj .bot .bot) A) : f = g := by
+DosenPetric/GentzenMixedInjections.lean:98: def dropBotPair (W : NormalForm P) : Hom (.disj (.conj .bot .bot) W) W :=
+DosenPetric/GentzenMixedInjections.lean:101: theorem dropBotPair_inr (W : NormalForm P) :
+DosenPetric/GentzenMixedInjections.lean:113: theorem inr_dropBotPair (W : NormalForm P) :
+DosenPetric/GentzenMixedInjections.lean:121: theorem mixedDisj_bot_inr (X Y : NormalForm P) :
+DosenPetric/GentzenMixedInjections.lean:152: theorem mixedDisj_inr (A B X Y : NormalForm P) :
+DosenPetric/GentzenMixedThinning.lean:12: theorem term_dist (A B C : NormalForm P) : ofTerm (.dist A B C) = dist A B C := rfl
+DosenPetric/GentzenMixedThinning.lean:13: theorem term_assocL (o : Op) (A B C : NormalForm P) : ofTerm (.assocL o A B C) = assocL o A B C := rfl
+DosenPetric/GentzenMixedThinning.lean:14: theorem term_swap (o : Op) (A B : NormalForm P) : ofTerm (.swap o A B) = swap o A B := rfl
+DosenPetric/GentzenMixedThinning.lean:16: theorem tensor_factor (o : Op) {A B C D E : NormalForm P}
+DosenPetric/GentzenMixedThinning.lean:21: theorem tensor_separate (o : Op) {A B C D : NormalForm P}
+DosenPetric/GentzenMixedThinning.lean:27: theorem sourceConj_nat {X Y A B X' Y' A' B' : NormalForm P}
+DosenPetric/GentzenMixedThinning.lean:50: theorem top_inr_codiag :
+DosenPetric/GentzenMixedThinning.lean:57: theorem inr_then_swap (A B : NormalForm P) : comp (inr A B) (swap .disj A B) = inl B A := by
+DosenPetric/GentzenMixedThinning.lean:61: theorem sourceConj_inr_fst (X Y A B : NormalForm P) :
+DosenPetric/GentzenMixedThinning.lean:92: theorem sourceConj_top_fst (X Y : NormalForm P) :
+DosenPetric/GentzenMixedThinning.lean:105: theorem sourceConj_fst (X Y A B : NormalForm P) :
+DosenPetric/GentzenPositionalThinning.lean:11: theorem thin_index (Γ Θ : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenPositionalThinning.lean:34: def moveHead (Γ Θ : List (NormalForm P)) (A : NormalForm P) :
+DosenPetric/GentzenPositionalThinning.lean:40: theorem moveHead_index (Γ Θ : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenPositionalThinning.lean:46: theorem moveHead_thin (o : Op) (Γ Θ : List (NormalForm P)) (A : NormalForm P) :
+DosenPetric/GentzenPositionalThinning.lean:59: theorem moveHead_snd (o : Op) (Γ Θ : List (NormalForm P)) (A : NormalForm P) :
+DosenPetric/GentzenPositionalThinning.lean:68: def atomThinL (Γ Θ Δ : List (NormalForm P)) (A : NormalForm P) (f : G P (Γ ++ Θ) Δ) :
+DosenPetric/GentzenPositionalThinning.lean:71: def atomThinR (Γ Δ Λ : List (NormalForm P)) (A : NormalForm P) (f : G P Γ (Δ ++ Λ)) :
+DosenPetric/GentzenPositionalThinning.lean:74: theorem atomThinL_atomized (Γ Θ Δ : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenPositionalThinning.lean:78: theorem atomThinR_atomized (Γ Δ Λ : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenPositionalThinning.lean:82: theorem atomThinL_cutFree (Γ Θ Δ : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenPositionalThinning.lean:88: theorem atomThinR_cutFree (Γ Δ Λ : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenPositionalThinning.lean:94: theorem atomThinL_denote (Γ Θ Δ : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenPositionalThinning.lean:102: theorem atomThinR_denote (Γ Δ Λ : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenPositions.lean:13: def index {Γ : List (NormalForm P)} {A : NormalForm P} : At Γ A → Nat
+DosenPetric/GentzenPositions.lean:17: theorem index_lt {Γ : List (NormalForm P)} {A : NormalForm P} (a : At Γ A) : a.index < Γ.length := by
+DosenPetric/GentzenPositions.lean:22: theorem index_injective {Γ : List (NormalForm P)} {A : NormalForm P} (a b : At Γ A)
+DosenPetric/GentzenPositions.lean:32: theorem index_before {Γ : List (NormalForm P)} {A : NormalForm P} (a : At Γ A) (Δ : List (NormalForm P)) :
+DosenPetric/GentzenPositions.lean:38: theorem index_shift (Γ : List (NormalForm P)) {Δ : List (NormalForm P)} {A : NormalForm P} (a : At Δ A) :
+DosenPetric/GentzenPositions.lean:44: def cast {Γ Δ : List (NormalForm P)} (h : Γ = Δ) {A : NormalForm P} (a : At Γ A) : At Δ A := h ▸ a
+DosenPetric/GentzenPositions.lean:46: theorem index_cast {Γ Δ : List (NormalForm P)} (h : Γ = Δ) {A : NormalForm P} (a : At Γ A) :
+DosenPetric/GentzenPositions.lean:52: def cast {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ') (w : Route Γ Δ) : Route Γ' Δ' :=
+DosenPetric/GentzenPositions.lean:55: theorem cast_heq {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ') (w : Route Γ Δ) :
+DosenPetric/GentzenPositions.lean:58: theorem get_index_cast {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ') (w : Route Γ Δ)
+DosenPetric/GentzenPositions.lean:63: theorem get_append_before {Γ Δ Θ : List (NormalForm P)} (w : Route Γ Δ) (v : Route Γ Θ)
+DosenPetric/GentzenPositions.lean:69: theorem get_append_shift {Γ Δ Θ : List (NormalForm P)} (w : Route Γ Δ) (v : Route Γ Θ)
+DosenPetric/GentzenRewiring.lean:14: inductive Rewire (P : Type u) : List (NormalForm P) → List (NormalForm P) → Type u where
+DosenPetric/GentzenRewiring.lean:23: def arrow (o : Op) : {Γ Δ : List (NormalForm P)} → Rewire P Γ Δ → (side P o).Hom (fold o Γ) (fold o Δ)
+DosenPetric/GentzenRewiring.lean:30: def get : {Γ Δ : List (NormalForm P)} → Rewire P Γ Δ → {A : NormalForm P} → At Δ A → At Γ A
+DosenPetric/GentzenRewiring.lean:37: theorem arrow_component (o : Op) {Γ Δ : List (NormalForm P)} (p : Rewire P Γ Δ)
+DosenPetric/GentzenRewiring.lean:47: def left {Γ Δ : List (NormalForm P)} (p : Rewire P Γ Δ) {Λ : List (NormalForm P)}
+DosenPetric/GentzenRewiring.lean:56: def right {Γ Δ : List (NormalForm P)} (p : Rewire P Γ Δ) {Λ : List (NormalForm P)}
+DosenPetric/GentzenRewiring.lean:65: theorem left_atomized {Γ Δ Λ : List (NormalForm P)} (p : Rewire P Γ Δ) (f : G P Δ Λ) :
+DosenPetric/GentzenRewiring.lean:74: theorem right_atomized {Γ Δ Λ : List (NormalForm P)} (p : Rewire P Γ Δ) (f : G P Λ Δ) :
+DosenPetric/GentzenRewiring.lean:83: theorem left_count {Γ Δ Λ : List (NormalForm P)} (p : Rewire P Γ Δ) (f : G P Δ Λ) :
+DosenPetric/GentzenRewiring.lean:92: theorem right_count {Γ Δ Λ : List (NormalForm P)} (p : Rewire P Γ Δ) (f : G P Λ Δ) :
+DosenPetric/GentzenRewiring.lean:101: theorem left_denote {Γ Δ Λ : List (NormalForm P)} (p : Rewire P Γ Δ) (f : G P Δ Λ) :
+DosenPetric/GentzenRewiring.lean:110: theorem right_denote {Γ Δ Λ : List (NormalForm P)} (p : Rewire P Γ Δ) (f : G P Λ Δ) :
+DosenPetric/GentzenRewiring.lean:119: theorem get_index_reindex {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ')
+DosenPetric/GentzenRouteComponents.lean:13: theorem cases_append (Γ Δ : List (NormalForm P)) {A : NormalForm P} (a : At (Γ ++ Δ) A) :
+DosenPetric/GentzenRouteComponents.lean:30: theorem get_map {Γ Θ Δ : List (NormalForm P)}
+DosenPetric/GentzenRouteComponents.lean:37: theorem get_identity {Γ : List (NormalForm P)} {A : NormalForm P} (a : At Γ A) :
+DosenPetric/GentzenRouteComponents.lean:43: def sideArrow (o : Op) {Γ Δ : List (NormalForm P)} (w : Route Γ Δ) :
+DosenPetric/GentzenRouteComponents.lean:49: theorem sideArrow_get (o : Op) {Γ Δ : List (NormalForm P)} (w : Route Γ Δ)
+DosenPetric/GentzenRuleCongruence.lean:11: theorem conjRight_congr {Γ Θ Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenRuleCongruence.lean:18: theorem disjLeft_congr {Γ Θ Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenRuleCongruence.lean:25: theorem mix_congr {Γ Θ Δ Λ : List (NormalForm P)}
+DosenPetric/GentzenRuleCongruence.lean:32: theorem cut_congr {Γ Θ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenThinningCore.lean:12: theorem branchL_core (X Y A B : NormalForm P) (f : Hom X Y) :
+DosenPetric/GentzenThinningCore.lean:32: theorem branchR_core (X Y A B : NormalForm P) (f : Hom X Y) :
+DosenPetric/PositiveThinningAtomization.lean:12: def atomize : {Γ Δ : List (NormalForm P)} → G P Γ Δ → G P Γ Δ
+DosenPetric/PositiveThinningAtomization.lean:30: theorem atomize_atomized {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) : (atomize g).Atomized := by
+DosenPetric/PositiveThinningAtomization.lean:49: theorem atomize_cutFree {Γ Δ : List (NormalForm P)} (g : G P Γ Δ)
+DosenPetric/PositiveThinningAtomization.lean:75: theorem atomize_denote {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) :
+DosenPetric/PositiveThinningAtomization.lean:106: theorem atomization {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) :
+DosenPetric/PositiveThinningAtomization.lean:110: theorem atomization_cutFree {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (hg : g.CutFree) :
+DosenPetric/PositiveThinningAtomization.lean:114: theorem atomize_relation {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) :
+DosenPetric/PositiveThinningAtomization.lean:118: theorem atomization_occurrences {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) :

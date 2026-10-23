@@ -1,3 +1,44 @@
+# Positive thinning atomization validation (current checkpoint)
+
+Clean main baseline `f5626c562001665829a8b1d6cb11384018eceacb` passed actual
+strict verification: 70 Lean files / 3,448 audited project declarations.
+SSH fetch left local/tracking main equal. No unrelated work was discarded.
+Final sequential working-source checks completed at
+2026-10-23T04:06:29.175338+00:00: strict build/audit exited 0 with **89 Lean
+files / 3,990 declarations**. Both boundary scripts exited 0, all five expected
+Lean exit-1 rejections and public import closure passed, manuscript SHA256SUMS
+and git diff --check exited 0. Whitespace is checked again after reports/staging.
+
+Atomic-k's exact existential, CutFree specialization and complete tagged
+occurrence equality compile. The actual sourceConj/mixedDisj consequences,
+positional block contractions and all four compound cases are derived inside
+Reduced.Hom. No cut is introduced by the replacements and all sixteen G
+schemas are covered. The principal results use the permitted propext,
+Quot.sound and Classical.choice; no choice-free claim is made. No custom
+axiom, proof hole, native_decide, new equation or coherence assumption.
+
+Nineteen modules are new. All pre-existing DosenPetric Lean modules and the
+grammar/equation/analysis interfaces, pinned Lean 4.35.0, Init-only dependencies,
+manifest, historical reports and manuscript v4 are unchanged. Source hashes
+match the checked strict-log inventory; committed-source equality is verified
+separately without another heavy build. Evidence and manifests are retained in
+provenance/wsl-positive-thinning-atomization/; committed-source, SSH-ref and
+Downloads receipts are runtime records in .codex-work/positive-thinning-atomization/.
+
+Both author-side reviews were applied to the new construction and map; the
+verified governing writing cache was directly consulted. They are not
+independent certification. No independent kernel/source audit, Challenge/Solution,
+Comparator, official preflight/service check, manuscript recompilation/layout
+review, publication, visibility or license change ran. Atomic-k is complete;
+the rest of G2, cut elimination, PositiveCoherence, Reduced.Faithful, Boolean
+Coherence and unconditional maximality remain open. The next construction is
+typed proof-local ancestor tracing and clusters/rank for topmost cuts.
+See [the report](POSITIVE_THINNING_ATOMIZATION_REPORT.md).
+
+---
+
+## Historical positive Gentzenization validation (unchanged evidence)
+
 # Positive Gentzenization validation (current checkpoint)
 
 Clean main baseline 4db7a0d1045fcb070fcafb423558cb97ecaef153 passed the actual strict build/audit:

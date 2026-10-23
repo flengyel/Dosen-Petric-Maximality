@@ -1,0 +1,41 @@
+{
+  "book": {
+    "url": "https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf",
+    "revision": "September 2007",
+    "cache": ".codex-work/references/dosen-petric-coh-september-2007-e285235f.pdf",
+    "sha256": "e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e",
+    "consulted_printed_pages": [
+      "234",
+      "240-243",
+      "246-247",
+      "270-273",
+      "291-292"
+    ],
+    "rendered_formulas": [
+      {
+        "printed": 247,
+        "pdf_one_based": 259,
+        "runtime": ".codex-work/positive-thinning-atomization/dp-atomization-p247.png",
+        "sha256": "980cf0bd6c97e3bfdaf47fc5af66d78b694d4d54940d47f02d2f4a3bfc02c2fa"
+      },
+      {
+        "printed": 271,
+        "pdf_one_based": 283,
+        "runtime": ".codex-work/positive-thinning-atomization/dp-atomization-p271.png",
+        "sha256": "3fb74ed4fdca5cfa9f7f082b7905ce7e84defde451bf942bdb2bd957bef634ca"
+      }
+    ]
+  },
+  "writing": {
+    "cache": ".codex-work/references/knuth-mathematical-writing-mit-9bf404c2.pdf",
+    "sha256": "9bf404c2c75633a1f39aae97af0b2e9335ce6d83cf386c84906654589b4e82e6",
+    "edition": "MIT-hosted typeset course-report copy; no byte identity with Stanford scan or MAA edition claimed",
+    "consulted_sections": [
+      "1, printed pp.1-6, PDF pp.3-8",
+      "4-5, printed pp.9-13, PDF pp.11-15"
+    ]
+  },
+  "source_appeals_replaced": "Product/coproduct universal properties, actual mixed-map naturality and constant specializations, existing zero uniqueness and union idempotence.",
+  "omitted_schemas": "Neither omitted (m e) schema added; only sufficient projection/injection consequences proved.",
+  "new_confirmed_source_errata": []
+}
