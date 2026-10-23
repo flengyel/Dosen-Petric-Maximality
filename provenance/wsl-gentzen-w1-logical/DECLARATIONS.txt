@@ -1,0 +1,61 @@
+DosenPetric/GentzenLogicalCommutation.lean:20: def oldL : G P (gaps gs ++ C :: Θ) (Δ ++ .disj A B :: Λ) :=
+DosenPetric/GentzenLogicalCommutation.lean:23: def innerL : G P (gaps gs ++ C :: Θ) (Δ ++ A :: B :: Λ) :=
+DosenPetric/GentzenLogicalCommutation.lean:26: def newL : G P (gaps gs ++ C :: Θ) (Δ ++ .disj A B :: Λ) :=
+DosenPetric/GentzenLogicalCommutation.lean:29: theorem denoteL : ofTerm (newL A B C gs Θ Δ Λ hn f).denote =
+DosenPetric/GentzenLogicalCommutation.lean:34: theorem cutCountL : (newL A B C gs Θ Δ Λ hn f).cutCount =
+DosenPetric/GentzenLogicalCommutation.lean:37: theorem cutFreeL : (newL A B C gs Θ Δ Λ hn f).CutFree ↔
+DosenPetric/GentzenLogicalCommutation.lean:40: theorem atomizedL : (newL A B C gs Θ Δ Λ hn f).Atomized ↔
+DosenPetric/GentzenLogicalCommutation.lean:43: theorem newL_atomized (hf : f.Atomized) :
+DosenPetric/GentzenLogicalCommutation.lean:46: theorem relationL : (newL A B C gs Θ Δ Λ hn f).relation =
+DosenPetric/GentzenLogicalCommutation.lean:57: def oldR : G P (Γ ++ .conj A B :: Θ) (gaps gs ++ C :: Λ) :=
+DosenPetric/GentzenLogicalCommutation.lean:60: def innerR : G P (Γ ++ A :: B :: Θ) (gaps gs ++ C :: Λ) :=
+DosenPetric/GentzenLogicalCommutation.lean:63: def newR : G P (Γ ++ .conj A B :: Θ) (gaps gs ++ C :: Λ) :=
+DosenPetric/GentzenLogicalCommutation.lean:66: theorem denoteR : ofTerm (newR A B C gs Γ Θ Λ hn f).denote =
+DosenPetric/GentzenLogicalCommutation.lean:71: theorem cutCountR : (newR A B C gs Γ Θ Λ hn f).cutCount =
+DosenPetric/GentzenLogicalCommutation.lean:74: theorem cutFreeR : (newR A B C gs Γ Θ Λ hn f).CutFree ↔
+DosenPetric/GentzenLogicalCommutation.lean:77: theorem atomizedR : (newR A B C gs Γ Θ Λ hn f).Atomized ↔
+DosenPetric/GentzenLogicalCommutation.lean:80: theorem newR_atomized (hf : f.Atomized) :
+DosenPetric/GentzenLogicalCommutation.lean:83: theorem relationR : (newR A B C gs Γ Θ Λ hn f).relation =
+DosenPetric/GentzenLogicalCommutationExamples.lean:13: def contextPremiseL (l : Literal P) :
+DosenPetric/GentzenLogicalCommutationExamples.lean:19: def contextPremiseR (l : Literal P) :
+DosenPetric/GentzenLogicalCommutationExamples.lean:25: def contextOldL (l : Literal P) :=
+DosenPetric/GentzenLogicalCommutationExamples.lean:29: def contextNewL (l : Literal P) :=
+DosenPetric/GentzenLogicalCommutationExamples.lean:33: def contextOldR (l : Literal P) :=
+DosenPetric/GentzenLogicalCommutationExamples.lean:37: def contextNewR (l : Literal P) :=
+DosenPetric/GentzenLogicalCommutationExamples.lean:41: theorem context_checkedL (l : Literal P) :
+DosenPetric/GentzenLogicalCommutationExamples.lean:52: theorem context_checkedR (l : Literal P) :
+DosenPetric/GentzenLogicalCommutationExamples.lean:63: theorem context_endpoint_lossL (l : Literal P) :
+DosenPetric/GentzenLogicalCommutationExamples.lean:75: theorem context_endpoint_lossR (l : Literal P) :
+DosenPetric/GentzenLogicalCommutationExamples.lean:88: theorem fixed_compound_distinct (Z : NormalForm P) (Λ : List (NormalForm P)) :
+DosenPetric/GentzenLogicalCommutationExamples.lean:97: theorem internal_literal_tags_distinct (l : Literal P)
+DosenPetric/GentzenLogicalCommutationExamples.lean:103: def constantPremiseL : G Empty [.top,.top] [.top,.top] :=
+DosenPetric/GentzenLogicalCommutationExamples.lean:106: def constantPremiseR : G Empty [.bot,.bot] [.bot,.bot] :=
+DosenPetric/GentzenLogicalCommutationExamples.lean:109: theorem emptyP_top :
+DosenPetric/GentzenLogicalCommutationExamples.lean:118: theorem emptyP_bot :
+DosenPetric/GentzenLogicalCommutationExamples.lean:127: theorem both_signs_with_cut (p : P) :
+DosenPetric/GentzenLogicalCommutationRank.lean:18: theorem contraction_lossL :
+DosenPetric/GentzenLogicalCommutationRank.lean:34: theorem endpoint_rankL :
+DosenPetric/GentzenLogicalCommutationRank.lean:40: theorem contraction_decreasesL :
+DosenPetric/GentzenLogicalCommutationRank.lean:47: theorem endpoint_lossL :
+DosenPetric/GentzenLogicalCommutationRank.lean:55: theorem endpoint_decreasesL :
+DosenPetric/GentzenLogicalCommutationRank.lean:61: theorem newL_principal_predecessors :
+DosenPetric/GentzenLogicalCommutationRank.lean:65: theorem newL_principal_rank :
+DosenPetric/GentzenLogicalCommutationRank.lean:69: theorem oldL_principal_rank :
+DosenPetric/GentzenLogicalCommutationRank.lean:82: theorem contraction_lossR :
+DosenPetric/GentzenLogicalCommutationRank.lean:98: theorem endpoint_rankR :
+DosenPetric/GentzenLogicalCommutationRank.lean:104: theorem contraction_decreasesR :
+DosenPetric/GentzenLogicalCommutationRank.lean:110: theorem endpoint_lossR :
+DosenPetric/GentzenLogicalCommutationRank.lean:118: theorem endpoint_decreasesR :
+DosenPetric/GentzenLogicalCommutationRank.lean:124: theorem newR_principal_predecessors :
+DosenPetric/GentzenLogicalCommutationRank.lean:128: theorem newR_principal_rank :
+DosenPetric/GentzenLogicalCommutationRank.lean:132: theorem oldR_principal_rank :
+DosenPetric/GentzenOppositeLogicalRank.lean:13: theorem predecessors_disjR_left (Γ Δ Λ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenOppositeLogicalRank.lean:21: theorem predecessors_conjL_right (Γ Θ Δ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenOppositeLogicalRank.lean:30: theorem rho_disjR_left (Γ Δ Λ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenOppositeLogicalRank.lean:39: theorem rho_conjL_right (Γ Θ Δ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenOppositeLogicalRank.lean:48: theorem disjR_principal_leaf (Γ Δ Λ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenOppositeLogicalRank.lean:56: theorem conjL_principal_leaf (Γ Θ Δ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenOppositeLogicalRank.lean:65: theorem disjR_principal_predecessors (Γ Δ Λ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenOppositeLogicalRank.lean:71: theorem conjL_principal_predecessors (Γ Θ Δ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenOppositeLogicalRank.lean:77: theorem rho_disjR_principal (Γ Δ Λ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenOppositeLogicalRank.lean:82: theorem rho_conjL_principal (Γ Θ Δ : List (NormalForm P)) (A B : NormalForm P)

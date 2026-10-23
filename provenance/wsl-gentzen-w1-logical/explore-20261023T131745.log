@@ -1,0 +1,22 @@
+✔ [100/108] Built DosenPetric.GentzenOppositeLogicalRank (779ms)
+✔ [104/108] Built DosenPetric.GentzenLogicalCommutation (780ms)
+✔ [106/108] Built DosenPetric.GentzenLogicalCommutationRank (910ms)
+✖ [108/108] Building DosenPetric.GentzenLogicalCommutationExamples (962ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenLogicalCommutationExamples.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenLogicalCommutationExamples.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenLogicalCommutationExamples.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenLogicalCommutationExamples.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenLogicalCommutationExamples.setup.json --json
+error: DosenPetric/GentzenLogicalCommutationExamples.lean:98:13: Application type mismatch: The argument
+  ()
+has type
+  Unit
+but is expected to have type
+  (NormalForm.lit l).formula.Occ
+in the application
+  Sum.inl ()
+error: DosenPetric/GentzenLogicalCommutationExamples.lean:98:74: Type mismatch
+  Sum.inr ()
+has type
+  ?m.8 ⊕ Unit
+but is expected to have type
+  (NormalForm.lit l).formula.Occ ⊕ (NormalForm.lit l).formula.Occ
+Some required targets logged failures:
+- DosenPetric.GentzenLogicalCommutationExamples
+error: build failed

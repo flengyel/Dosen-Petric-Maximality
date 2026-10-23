@@ -115,3 +115,7 @@ public import DosenPetric.GentzenOppositeContractionRank
 public import DosenPetric.GentzenContractionCommutation
 public import DosenPetric.GentzenContractionCommutationRank
 public import DosenPetric.GentzenContractionCommutationExamples
+public import DosenPetric.GentzenOppositeLogicalRank
+public import DosenPetric.GentzenLogicalCommutation
+public import DosenPetric.GentzenLogicalCommutationRank
+public import DosenPetric.GentzenLogicalCommutationExamples

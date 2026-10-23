@@ -938,3 +938,39 @@ this is not a decreasing measure or unrestricted terminating rewrite system.
 No arbitrary-context/all-site decrease is inferred. See
 [the contraction report](GENTZEN_W1_CONTRACTION_REPORT.md) for exact signatures,
 selected-copy proofs, examples, commands and evidence.
+
+## Opposite-side unary logical instances of W1
+
+The consulted source is Došen–Petrić, *Proof-Theoretical Coherence*, September
+2007, [pinned PDF](https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf),
+SHA-256 `e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e`.
+Printed n is PDF page n+12, one-based. Printed pp.248–253 were consulted,
+p.251 also in rendering. Constant/zero extensions on pp.272–273 and 291–292
+were checked against the retained syntax. Source-consultation.json records
+verified caches and access artifacts; historical access records remain intact.
+No new source discrepancy was confirmed.
+
+| Source location | Exact local use / types | Lean correspondence and actual proof input |
+| --- | --- | --- |
+| §11.2 p.251, (W 1), γ = ∨R | Left contraction commutes with unary right disjunction introduction at the specified gap. Both have source gaps gs ++ C::Θ and target Δ ++ (A∨B)::Λ. | `W1.Logical.oldL/innerL/newL`, `denoteL`; actual G.denote uses copies.product then f then Rules.disjRight.toTerm. Reduced associativity only. |
+| §11.2 p.252, right analogue | Right contraction commutes with unary left conjunction introduction. Both have source Γ ++ (A∧B)::Θ and target gaps gs ++ C::Λ. | `oldR/innerR/newR`, `denoteR`; Rules.conjLeft.toTerm precedes f and copies.coproduct follows; reverse associativity. |
+| §11.2 p.248, parametric clusters | Every unchanged-side position has one predecessor at the exact same typed At. | `G.predecessors_disjR_left/conjL_right`, `rho_disjR_left/conjL_right` from actual parent/fiber definitions. |
+| §11.2 pp.247–249, logical leaf / all-node rank | Introduced whole formula is a leaf; tracing stops, without descending into premise A/B. An outer opposite-side contraction adds one node. | Principal Leaf proofs from sourceArity/index; sourceArity_correct proves empty predecessor lists; rho_leaf proves rank 1; `oldL/oldR_principal_rank` prove 2 and `newL/newR_principal_rank` prove 1. |
+| §11.2 pp.249, 251–252, contraction rank and directed requirement | Sum every selected upper copy; each crosses one unary logical proof node. | Existing contractionRankL_eq/R_eq, selectedCopies_length and sum_map_one_add give exact contraction loss n and whole selected-endpoint loss n−1. |
+| §11.5 pp.272–273; §12.5 pp.291–292 | Constants remain whole formulas even when literal-occurrence types are empty; atomic zero leaves remain admitted. | Actual G Empty constant examples; arbitrary premises, including cuts/zero, in generic proofs. No new zero or coherence law is needed. |
+
+The source's Semilattice Coherence appeal is not assumed. These are two
+opposite-side unary logical instances only. Binary disjL/conjR, same-side
+parametric W1 cases and all-site reducibility remain separate. The existing
+syntactic quotient and non-strict binary context folds are unchanged.
+
+Both directions prove Rold=Rnew+n, rho(new,x)=Rnew+1 and
+rho(old,x)+1=rho(new,x)+n, with strict inequalities for n≥2. The introduced
+principal has empty predecessors and rank 1 at the logical root; old/new
+principal ranks are 2/1. Count, CutFree/Atomized and complete tagged relations
+are preserved with no atomicity condition. These finish the specified
+opposite-side unary W1 families (thinning, exchange, contraction, unary
+logical introduction) and their duals. Same-side parametric W1 and binary
+logical/reducibility cases remain separate/open. See
+[the logical report](GENTZEN_W1_LOGICAL_REPORT.md) for signatures, paths,
+fixed equal positions, next-task conditions and verification evidence.

@@ -1,0 +1,623 @@
+/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/contextual-collapse/checks/private-axiom.lean:12:0: error: Unpermitted axiom _private.«.codex-work».«contextual-collapse».checks.«private-axiom».0.DosenPetric.AuditNegative.privateInput in _private.«.codex-work».«contextual-collapse».checks.«private-axiom».0.DosenPetric.AuditNegative.privateInput
+'DosenPetric.ZeroIdentity.zeroOf_independent' does not depend on any axioms
+'DosenPetric.ZeroIdentity.precompose' does not depend on any axioms
+'DosenPetric.Formula.contract_expand' does not depend on any axioms
+'DosenPetric.Formula.expand_contract' does not depend on any axioms
+'DosenPetric.Relations.hRel_eq_fold' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.hRel_swap' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.second_block' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.first_injection' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Relations.projections_distinct' does not depend on any axioms
+'DosenPetric.OccurrenceInterpretation.fold_independent' depends on axioms: [propext, Quot.sound]
+'DosenPetric.OccurrenceInterpretation.fold_swap' depends on axioms: [propext, Quot.sound]
+'DosenPetric.OccurrenceInterpretation.first_injection' depends on axioms: [propext, Quot.sound]
+'DosenPetric.OccurrenceInterpretation.second_block' depends on axioms: [propext, Quot.sound]
+'DosenPetric.ContextualCollapse.total' depends on axioms: [propext, Quot.sound]
+'DosenPetric.GeneratedModel.interpretation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.GeneratedModel.nonthin' depends on axioms: [propext, Quot.sound]
+'DosenPetric.GeneratedModel.empty_hom' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Isolation.normalized_literal_context' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.ContextualCollapse.context_retract' does not depend on any axioms
+'DosenPetric.ContextualCollapse.all_contexts' does not depend on any axioms
+'DosenPetric.relative_maximality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Presentation.category' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.operations' depends on axioms: [Quot.sound]
+'DosenPetric.DiagonalData.diag_projections' does not depend on any axioms
+'DosenPetric.Presentation.zeroConstruction_eq' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.zeroIdentity' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.Equation.subst' does not depend on any axioms
+'DosenPetric.Presentation.Derives.subst' does not depend on any axioms
+'DosenPetric.Presentation.substitution' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.doubleNegation' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.Equation.relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.Derives.relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.occurrenceMap' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.occurrence_pair' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.occurrence_zero' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.nonthin' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.empty_hom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Presentation.zeroConstruction_structural' depends on axioms: [Quot.sound]
+'DosenPetric.Literal.flip_flip' does not depend on any axioms
+'DosenPetric.Formula.signedLabel_letter' does not depend on any axioms
+'DosenPetric.NormalForm.signedLabel_eq_literalAt' does not depend on any axioms
+'DosenPetric.Presentation.NormalComparison.inverse_comp' depends on axioms: [Quot.sound]
+'DosenPetric.Presentation.NormalComparison.trans' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NormalComparison.conj' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NormalComparison.deMorganConj' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.comparison' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.normalization' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.forward_backward' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.backward_forward' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.forward_graph' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.backward_graph' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.literal_toOcc' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.polarity_toOcc' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.repeated_negative_tags' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.transport_apply' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.transport_recover' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.transport_injective' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.Term.relation_signedLabel' depends on axioms: [propext]
+'DosenPetric.Presentation.occurrence_signedLabel' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.occurrence_label' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.occurrence_polarity' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.no_edge_of_polarity_ne' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.no_edge_opposite_literals' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.no_edge_negative_positive_literals' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.occurrence_literal' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.occurrence_literal_letter' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.occurrence_literal_polarity' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.no_edge_of_literal_ne' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.diag_copies' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.codiag_merges' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.transport_literal' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.transport_literal_coordinates' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Equation.toFull' does not depend on any axioms
+'DosenPetric.Reduced.Derives.toFull' does not depend on any axioms
+'DosenPetric.Reduced.category' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.inclusion' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.inclusion_comp' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.inclusion_tensor_conj' depends on axioms: [Quot.sound]
+'DosenPetric.NormalForm.dual_dual' does not depend on any axioms
+'DosenPetric.Presentation.NegationNormalization.form_true' does not depend on any axioms
+'DosenPetric.Presentation.NegationNormalization.normal_formula' does not depend on any axioms
+'DosenPetric.Presentation.NegationNormalization.normal_neg_formula' does not depend on any axioms
+'DosenPetric.Presentation.fromTop_unique' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Term.mixedDisj' does not depend on any axioms
+'DosenPetric.Reduced.Term.mixedConj' does not depend on any axioms
+'DosenPetric.Reduced.Term.etaNF' does not depend on any axioms
+'DosenPetric.Reduced.Term.epsilonNF' does not depend on any axioms
+'DosenPetric.Presentation.NegationNormalization.forward_formula' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.backward_formula' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Presentation.NegationNormalization.transport_formula' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Compatibility.etaNF' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Compatibility.epsilonNF' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.red' does not depend on any axioms
+'DosenPetric.Reduced.red_sound' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.representation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Term.relation_toFull' depends on axioms: [propext]
+'DosenPetric.Reduced.Derives.relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.occurrence_inclusion' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Coordinates.red_apply' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Coordinates.red_coordinates' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.normal_faithful_of_reduced' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.global_faithful_of_reduced' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.conjDiagonal' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.disjDiagonal' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.zero_top' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.zero_bot' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.fromTop_unique' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.toBot_unique' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.rightIn_tensor' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.rightOut_tensor' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.shuffle_unit_out' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.shuffle_unit_in' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.dist_top' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.dist_bot' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.distRight_top' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.conj_shuffle_dist_bot' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Context.map_derives' does not depend on any axioms
+'DosenPetric.Reduced.Context.mapTerm_id' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Context.mapTerm_comp' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Context.map_id' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Context.map_comp' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Context.gConj_nat' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Context.gDisj_nat' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Context.gConj_top' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Context.gDisj_bot' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Context.gEta' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Context.gEpsilon' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Context.gEta_comp' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Context.gEpsilon_comp' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Context.decode_encode' depends on axioms: [propext]
+'DosenPetric.Reduced.Context.encode_decode' depends on axioms: [propext]
+'DosenPetric.Reduced.Context.embeddings_disjoint' depends on axioms: [propext]
+'DosenPetric.Reduced.Context.relation_mapTerm' depends on axioms: [propext]
+'DosenPetric.Reduced.Context.occurrence_map' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Context.top_occ_fixed' depends on axioms: [propext]
+'DosenPetric.Reduced.Context.bot_occ_fixed' depends on axioms: [propext]
+'DosenPetric.Reduced.Context.gEta_comp_relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Context.gEpsilon_comp_relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Term.Positive' does not depend on any axioms
+'DosenPetric.Reduced.Term.Positive.etaLabels' depends on axioms: [propext]
+'DosenPetric.Reduced.Term.positive_of_labels' depends on axioms: [propext]
+'DosenPetric.Reduced.Context.gConj_positive' does not depend on any axioms
+'DosenPetric.Reduced.Context.gDisj_positive' does not depend on any axioms
+'DosenPetric.Reduced.Term.atomicView' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.AtomicSplit.eta_factor' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.AtomicSplit.epsilon_factor' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.AtomicSplit.etaRemainder_lt' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.AtomicSplit.epsilonRemainder_lt' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.atomicFactor' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.AtomicPorts.prefix_natural' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.AtomicPorts.suffix_natural' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.AtomicPorts.prefix_mask' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.AtomicPorts.mask_suffix' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.AtomicPorts.inputPad_positive' does not depend on any axioms
+'DosenPetric.Reduced.AtomicPorts.outputPad_positive' does not depend on any axioms
+'DosenPetric.Reduced.AtomicPorts.inputPad_natural' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.AtomicPorts.outputPad_natural' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.AtomicPorts.prefix_separated' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.AtomicPorts.suffix_separated' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.AtomicPorts.embed_injective' does not depend on any axioms
+'DosenPetric.Reduced.AtomicPorts.zeros_relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.AtomicPorts.mask_relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.AtomicPorts.prefix_relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.AtomicPorts.suffix_relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.AtomicPorts.masked_factor' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.AtomicPorts.masked_support' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.supportedAtomicFactor' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.AtomicFactor.remap' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.commonAtomicFactor' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.CommonAtomicFactor.embedA_injective' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.CommonAtomicFactor.embedB_injective' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.CommonAtomicFactor.embedded₁' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.CommonAtomicFactor.embedded₂' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.CommonAtomicFactor.relations_equal' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.PositiveCoherence' depends on axioms: [propext]
+'DosenPetric.Reduced.faithful_of_positive_coherence' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.zeroIdentity' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.zeroOf' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.zeroOf_independent' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.zero_commute' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.zero_idempotent' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.zeroOf_post' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.zeroOf_pre' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.conj_ext' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.disj_ext' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.tensor_zero' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.tensor_zeroOf' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.zeroOf_id' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.zeroOf_zero' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.ofTerm_zeroOf' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Term.Positive.zeroOf' does not depend on any axioms
+'DosenPetric.Reduced.Term.Positive.tensor_zero' does not depend on any axioms
+'DosenPetric.Reduced.Term.union' does not depend on any axioms
+'DosenPetric.Reduced.Term.Positive.union' does not depend on any axioms
+'DosenPetric.Reduced.Derives.union' does not depend on any axioms
+'DosenPetric.Reduced.union' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.union_ofTerm' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.union_def' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.union_source' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.merge_nat' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.merge_swap' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.merge_assoc' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.union_pre' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.union_post' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.union_comm' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.union_idem' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.union_assoc' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.union_id_zero' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.union_zeroOf' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.zeroOf_union' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Term.relation_union' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Term.relation_zeroOf' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.occurrence_union' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.occurrence_zero' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.occurrence_zeroOf' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.fold_as_foldr' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.Iso.trans' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.Iso.tensor' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.append' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.exchange' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Route.product_get' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.Route.coproduct_get' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.product_positions' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.coproduct_positions' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.Rules.sourceConj' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.G' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.G.denote' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.denote_positive' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.cutAt_denote' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.cutAt_count' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.contractRFirst_denote' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.contractRFirst_count' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.thinLast_denote' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.cut_pure' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.cut_single' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.mixedDisj_bot' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.single_split' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.single_join' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.disjInput_value' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.tensorConj_value' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.tensorDisj_value' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.identityNF_value' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.zeroNF_value' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.fstProof_value' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.sndProof_value' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.inlProof_value' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.inrProof_value' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.diagProof_value' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.codiagProof_value' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Represented.assocR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Represented.assocL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.mixProof_value' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Represented.dist' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.positive_represented' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.gentzenization' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.gentzenization_decode' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.occurrence_denote' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.singletonFrom_to' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.singletonOcc_from' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.singletonOcc_injective' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.encode_relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.gentzenization_occurrences' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.cutCount' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.G.CutFree' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.G.cut_not_cutFree' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.no_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.Atomized' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.G.Topmost' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.G.conjR_cutFree' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.disjL_cutFree' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.mix_cutFree' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.denote_topI' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.denote_botE' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.denote_cut' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.sourceDisj_expansion' depends on axioms: [propext, Quot.sound]
+'DosenPetric.DiagonalData.assocR_fst' does not depend on any axioms
+'DosenPetric.DiagonalData.assocR_snd' does not depend on any axioms
+'DosenPetric.DiagonalData.assocR_pair' does not depend on any axioms
+'DosenPetric.DiagonalData.assocL_pair' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.sourceConj_nat' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.top_inr_codiag' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.sourceConj_inr_fst' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.sourceConj_top_fst' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.sourceConj_fst' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.innerDisj_nat' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.mixedDisj_nat' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.innerDisj_fst' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.leftOut_assocR' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.mixedDisj_drop' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.bot_pair_fst_diag' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.fromBotPair_unique' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.dropBotPair_inr' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.inr_dropBotPair' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.mixedDisj_bot_inr' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.mixedDisj_inr' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Iso.cast_heq' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.Iso.cast_tensor' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.exchange_cast' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.exchange_nil' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.exchange_cons' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.join_before' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.join_shift' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.exchangeSide_nil' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.exchangeSide_cons' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.shuffle_Y' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.shuffle_X' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.exchangeSide_prefix' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.exchangeSide_X' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.exchangeSide_Y' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.exchangeSide_tail' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.At.index_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.At.index_cast' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.Route.get_index_cast' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.copies_cast' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.copies_index' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.swapBlocks_index' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.exchangeBack_component' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Rewire' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.Rewire.arrow_component' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Rewire.left_denote' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Rewire.right_denote' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Rewire.left_atomized' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.Rewire.right_atomized' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.Rewire.left_count' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.Rewire.right_count' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.Rewire.duplicate' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.Rewire.duplicate_index' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Rewire.dupContext_arrow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Rewire.dupTail_arrow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.branchL_core' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.branchR_core' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.thin_head' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.conj_thin_head' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.disj_thin_head' depends on axioms: [Quot.sound]
+'DosenPetric.Reduced.Gentzen.branchL_denote' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.branchR_denote' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.headThinL' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.headThinR' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.headThinL_atomized' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.headThinR_atomized' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.headThinL_cutFree' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.headThinR_cutFree' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.headThinL_denote' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.headThinR_denote' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.thin_index' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Rewire.moveHead_snd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.atomThinL_atomized' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.atomThinR_atomized' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.atomThinL_cutFree' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.atomThinR_cutFree' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.atomThinL_denote' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.atomThinR_denote' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.atomized_reindex' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.G.cutFree_reindex' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.G.atomized_exchangeL' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.G.atomized_exchangeR' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.G.atomized_contractL' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.G.atomized_contractR' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.G.atomized_contractRFirst' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.cutFree_contractRFirst' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.atomized_thinLast' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.cutFree_thinLast' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.atomize' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.atomize_atomized' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.atomize_cutFree' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.atomize_denote' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.atomization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.atomization_cutFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.atomize_relation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.atomization_occurrences' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.TraceTree.count_nodes' depends on axioms: [propext, Quot.sound]
+'DosenPetric.FiniteTrace.tree_correct' depends on axioms: [propext, Quot.sound]
+'DosenPetric.FiniteTrace.rank_eq' depends on axioms: [propext, Quot.sound]
+'DosenPetric.FiniteTrace.rank_one_iff' depends on axioms: [propext, Quot.sound]
+'DosenPetric.FiniteTrace.child_rank_lt' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.At.fixed_reverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.TraceRoute.fiber_correct' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.TraceRoute.fiber_ordered' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Premise.proofSize_lt' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.branches_complete' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.predecessors_correct' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.sourceArity_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.position_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.position_classes_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.lowerContraction_iff_arity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.parametric_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.selectedCopies_indices' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.selectedCopies_length' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.selectedCopies_nodup' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.fiber_copies_selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.fiber_copies_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.contraction_predecessorsL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.contraction_predecessorsR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.TraceNode.cluster_children' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.TraceNode.cluster_nodes' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.TraceNode.cluster_closed' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.cluster_root' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.cluster_correct' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.cluster_address' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_counts_nodes' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_node_list' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_eq' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_pos' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_child_lt' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_one_iff_leaf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_parametric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.contractionRankL_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.contractionRankR_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.leftCutRank' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rightCutRank' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.cutRank_ge_two' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.cutRank_two_iff_leaves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.predecessors_reindex' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.cluster_reindex' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_reindex' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.cluster_cutFree' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.cluster_atomized' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.topmost_cluster_properties' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.tiedRight_iff_branching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.tiedLeft_iff_branching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.three_copy_offsets' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.three_copies_with_fixed_equal' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.repeated_positions_distinct' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.G.duplicate_subproof_addresses' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.topI_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.botE_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.zero_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.signed_identity_ranks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Premise.cut_left_consumed' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.Premise.cut_right_consumed' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.G.predecessors_thinR_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.predecessors_thinL_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_thinR_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_thinL_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.sum_map_one_add' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.denoteL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.cutCountL' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.cutFreeL' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.atomizedL' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.relationL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.contraction_lossL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.endpoint_rankL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.contraction_decreasesL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.endpoint_lossL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.endpoint_decreasesL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.denoteR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.cutCountR' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.cutFreeR' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.atomizedR' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.relationR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.contraction_lossR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.endpoint_rankR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.contraction_decreasesR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.endpoint_lossR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.endpoint_decreasesR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.three_copy_lossL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.three_copy_lossR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.three_copy_endpoint_lossL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.three_copy_endpoint_lossR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.emptyP_constantsL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.emptyP_constantsR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.with_cutL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.with_cutR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.both_signs_with_cut' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.predecessors_exchangeR_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.predecessors_exchangeL_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_exchangeR_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_exchangeL_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.denoteL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.cutCountL' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Exchange.cutFreeL' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Exchange.atomizedL' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Exchange.relationL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.contraction_lossL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.endpoint_rankL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.contraction_decreasesL' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.endpoint_lossL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.endpoint_decreasesL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.denoteR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.cutCountR' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Exchange.cutFreeR' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Exchange.atomizedR' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Exchange.relationR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.contraction_lossR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.endpoint_rankR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.contraction_decreasesR' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.endpoint_lossR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.endpoint_decreasesR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.newL_atomized' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Exchange.newR_atomized' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Exchange.empty_exchangeR_rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.empty_exchangeL_rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.one_empty_blockL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.one_empty_blockR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.emptyP_constantsL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.emptyP_constantsR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.repeated_with_cutL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.repeated_with_cutR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Exchange.both_signs' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.predecessors_contractR_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.predecessors_contractL_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_contractR_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_contractL_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.denote' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.denote_reverse' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.cutCount' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Contraction.cutFree' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Contraction.atomized' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Contraction.relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.outerL_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.outerR_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.outerL_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.outerR_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.innerL_rank_lt_outerL' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.innerR_rank_lt_outerR' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.left_directed_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.right_directed_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.left_directed_decrease' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.right_directed_decrease' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.left_directed_right_increase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.right_directed_left_increase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.endpointSum_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.endpointSum_eq_of_lengths_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.two_three_effects' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.repeated_sum_unchanged' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.repeated_left_decreases_right_increases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.selected_indices' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.fixed_equal_not_selected' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.emptyP_top' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.emptyP_bot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Contraction.both_signs_with_cut' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.predecessors_disjR_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.predecessors_conjL_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_disjR_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_conjL_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.disjR_principal_leaf' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.conjL_principal_leaf' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.disjR_principal_predecessors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.conjL_principal_predecessors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_disjR_principal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.G.rho_conjL_principal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.denoteL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.cutCountL' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Logical.cutFreeL' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Logical.atomizedL' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Logical.relationL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.contraction_lossL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.endpoint_rankL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.contraction_decreasesL' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.endpoint_lossL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.endpoint_decreasesL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.newL_principal_predecessors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.newL_principal_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.oldL_principal_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.denoteR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.cutCountR' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Logical.cutFreeR' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Logical.atomizedR' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Logical.relationR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.contraction_lossR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.endpoint_rankR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.contraction_decreasesR' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.endpoint_lossR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.endpoint_decreasesR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.newR_principal_predecessors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.newR_principal_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.oldR_principal_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.context_checkedL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.context_checkedR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.context_endpoint_lossL' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.context_endpoint_lossR' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.fixed_compound_distinct' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.internal_literal_tags_distinct' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.W1.Logical.emptyP_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.emptyP_bot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W1.Logical.both_signs_with_cut' depends on axioms: [propext, Quot.sound]

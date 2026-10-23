@@ -1,0 +1,73 @@
+✖ [95/97] Building DosenPetric.GentzenOppositeLogicalRank (839ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenOppositeLogicalRank.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenOppositeLogicalRank.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenOppositeLogicalRank.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenOppositeLogicalRank.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenOppositeLogicalRank.setup.json --json
+error: DosenPetric/GentzenOppositeLogicalRank.lean:50:74: unsolved goals
+P : Type u
+Γ Δ Λ : List (NormalForm P)
+A B : NormalForm P
+f : G P Γ (Δ ++ A :: B :: Λ)
+⊢ (if (At.shift Δ (At.here (A.disj B) Λ)).index = Δ.length then 0 else 1) = 0
+error: DosenPetric/GentzenOppositeLogicalRank.lean:51:30: This simp argument is unused:
+  At.index_shift
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Leaf, sourceArity, At.index, Nat.add_zero, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenOppositeLogicalRank.lean:51:45: This simp argument is unused:
+  At.index
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Leaf, sourceArity, At.index_shift, Nat.add_zero, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenOppositeLogicalRank.lean:51:54: This simp argument is unused:
+  Nat.add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Leaf, sourceArity, At.index_shift, At.index, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenOppositeLogicalRank.lean:51:67: This simp argument is unused:
+  ite_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Leaf, sourceArity, At.index_shift, At.index, Nat.add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenOppositeLogicalRank.lean:55:73: unsolved goals
+P : Type u
+Γ Θ Δ : List (NormalForm P)
+A B : NormalForm P
+f : G P (Γ ++ A :: B :: Θ) Δ
+⊢ (if (At.shift Γ (At.here (A.conj B) Θ)).index = Γ.length then 0 else 1) = 0
+error: DosenPetric/GentzenOppositeLogicalRank.lean:56:30: This simp argument is unused:
+  At.index_shift
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Leaf, sourceArity, At.index, Nat.add_zero, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenOppositeLogicalRank.lean:56:45: This simp argument is unused:
+  At.index
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Leaf, sourceArity, At.index_shift, Nat.add_zero, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenOppositeLogicalRank.lean:56:54: This simp argument is unused:
+  Nat.add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Leaf, sourceArity, At.index_shift, At.index, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenOppositeLogicalRank.lean:56:67: This simp argument is unused:
+  ite_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Leaf, sourceArity, At.index_shift, At.index, Nat.add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- DosenPetric.GentzenOppositeLogicalRank
+error: build failed

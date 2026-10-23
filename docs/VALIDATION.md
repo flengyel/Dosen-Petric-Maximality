@@ -1,3 +1,48 @@
+# W1 opposite-side unary logical validation (current checkpoint)
+
+Clean main at `eb870eeae8a6130d39fe27d235b9316ca95ac563` agreed with fetched
+SSH origin. Actual strict baseline passed with 117 files / 4,906 audited
+declarations, exit 0. Final verification completed at 2026-10-23T13:20:48.841975+00:00:
+**121 Lean files / 4,973 audited declarations**. Strict build/audit, both
+boundary scripts, manuscript SHA256SUMS and git diff --check exited 0.
+All five expected controls rejected with Lean exit 1 and expected diagnostics;
+public import closure passed. Permitted axioms remain propext, Quot.sound and
+Classical.choice; 45 complete selected prints are retained.
+
+Both unary disjR/conjL commutations compile with exact endpoints, Reduced
+denotation equality, complete opposite-side singleton predecessors, full
+selected-copy sums and contraction/whole-endpoint losses n/n−1. Principal
+whole-formula predecessors are empty at the logical rule; generic rank is 1,
+and old/new principal ranks are 2/1. Count, CutFree/Atomized and full tagged
+relations are preserved; introducing compounds adds no AtomicFormula premise.
+Fixed equal gap/compound positions, empty/nonempty logical contexts, actual
+Empty P constants, both signs and cut-containing Atomized examples compile.
+
+Four modules / 61 explicit source declarations were added. All older
+DosenPetric modules, syntax/equations/predicates/predecessors/ranks, pinned
+Lean 4.35.0, Init-only dependencies, manifest, manuscript v4 and historical
+reports/access records are byte-preserved. Core/exploratory failures involving
+principal-index elaboration, deprecated conditional API and actual signed-
+literal occurrence typing are retained honestly with commands/exits/timings.
+Final verification followed the last proof changes; all heavy processes were
+sequential. No proof hole, custom mathematical axiom or native_decide appears
+in production; invalid controls remain outside production imports.
+
+Evidence: provenance/wsl-gentzen-w1-logical/, with checked-source, complete
+control/axiom and finalized report/record hash inventories. Author-side hostile
+and source-grounded writing reviews apply to actual proofs/correspondence;
+no independent certification is claimed. Post-commit byte/ref/Downloads checks
+retain separate .codex-work/gentzen-w1-logical/ receipts. Independent kernel/
+source replay, Challenge/Solution/Comparator, official preflight/service,
+manuscript recompilation/layout review, publication/license/visibility changes
+have not run. Same-side W1, binary logical cases, all-site reducibility,
+Blocked-w, cut elimination and coherence remain separate/open. See
+[the report](GENTZEN_W1_LOGICAL_REPORT.md).
+
+---
+
+## Historical W1 contraction validation (unchanged evidence)
+
 # W1 opposite-side contraction validation (current checkpoint)
 
 Clean main at `5c0a77f1e1ebf893e1aeda1fbb208f2a4a90e8de` agreed with fetched
