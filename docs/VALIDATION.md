@@ -1,3 +1,55 @@
+# W1 fixed-parametric same-side exchange validation (current checkpoint)
+
+Clean main `cae55c378d6e42adcac61f38c5ea12cea4bd98b3` agreed with fetched SSH
+origin. Actual strict baseline: 130 files / 5,275 audited declarations, exit 0,
+7.746 seconds. Final verification at 2026-10-23T15:38:11.747806+00:00:
+**139 Lean files / 5,569 audited declarations**. Strict build/transitive audit,
+both boundary scripts, manuscript SHA256SUMS and git diff --check all exited 0.
+Five expected controls reject with exit 1 and expected diagnostics: public
+custom axiom, unused private custom axiom, hidden external axiom, rfl tagged-
+projection identification and zero without correctly typed arrow witness.
+Public import closure passed; permitted axioms remain propext, Quot.sound and
+Classical.choice. Seventy complete selected axiom prints are retained.
+
+Nine modules add 162 explicit declarations, 294 audited declarations including
+generated ones. Every old DosenPetric source/interface, grammar/equations,
+Positive/G/Rewire/predicates/predecessors/ranks, Lean 4.35.0, Init-only manifest,
+AGENTS, manuscript v4 and historical reports/reviews/access records is preserved.
+No proof hole, custom mathematical axiom, native_decide or dependency change.
+
+All four fixed-gap/tail same-side exchange instances compile with genuine
+list/cast coordinates, all-position routing and categorical squares, complete
+ordered selected transport using interval exclusion rather than global
+monotonicity, retained and fixed singleton correspondence. Exact contraction
+loss n and whole retained-endpoint loss n−1 are strict for n≥2; every other
+same-side fixed position has unchanged rank 2+rho(f,a). Exchange creates no
+principal leaf. Empty exchanges still add a syntactic ancestor node.
+Count/CutFree/Atomized/full tagged relations are preserved with no atomicity
+condition; both Atomized predicates equal f.Atomized. Two/three copies,
+nonempty surrounding gaps/tails, unequal/empty blocks, repeated/compound
+formulas, equal-label transpositions, inhabited Empty P constants and actual
+cuts are checked.
+
+All heavy runs were sequential. Failed index/list, unused-simp, At/Place,
+typed rank-map and quantified bundle attempts are retained with original
+commands/exits/timings. Final verification followed the final proof changes;
+later edits are documentation only. Evidence and all checked-source/evidence/
+report/record inventories are in provenance/wsl-gentzen-w1-same-side-exchange/.
+Author-side hostile and directly source-grounded KLR writing reviews cover
+actual code/correspondence, not independent certification. Post-commit/ref/
+Downloads receipts are in .codex-work/gentzen-w1-same-side-exchange/.
+
+Independent kernels/source replay, Challenge/Solution/Comparator, official
+preflight/service, fresh manuscript compilation/layout review, publication,
+license and visibility changes were not performed. Cross-selected/multi-gap/
+absorption exchanges, remaining W1/W2–W6, arbitrary-context reducibility,
+Blocked-w, cut elimination and coherence remain open. See
+[the report](GENTZEN_W1_SAME_SIDE_EXCHANGE_REPORT.md).
+
+---
+
+## Historical same-side thinning validation (unchanged evidence)
+
 # W1 same-side fixed-position thinning validation (current checkpoint)
 
 Baseline main `524cbe0c438ce3bcea8049758687c59d494bd597` agreed with fetched

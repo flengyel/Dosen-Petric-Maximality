@@ -1,0 +1,29 @@
+✔ [107/110] Built DosenPetric.GentzenGapExchangeRouting (933ms)
+✔ [108/110] Built DosenPetric.GentzenSameSideExchange (1.3s)
+✖ [109/110] Building DosenPetric.GentzenSameSideExchangeRanks (717ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSameSideExchangeRanks.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSameSideExchangeRanks.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSameSideExchangeRanks.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSameSideExchangeRanks.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSameSideExchangeRanks.setup.json --json
+error: DosenPetric/GentzenSameSideExchangeRanks.lean:46:2: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 2
+  b ≥ 0
+  b - c ≥ 0
+  a ≥ 0
+  a - b ≤ -1
+where
+ a := ↑(List.map (fun a => 1 + f.rho SequentSide.left a) d.selected0).sum
+ b := ↑(List.map (fun x => 1 + f.rho SequentSide.left x) d.selected0).sum
+ c := ↑d.selected0.length
+error: DosenPetric/GentzenSameSideExchangeRanks.lean:105:2: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 2
+  b ≥ 0
+  b - c ≥ 0
+  a ≥ 0
+  a - b ≤ -1
+where
+ a := ↑(List.map (fun a => 1 + f.rho SequentSide.right a) d.selected0).sum
+ b := ↑(List.map (fun x => 1 + f.rho SequentSide.right x) d.selected0).sum
+ c := ↑d.selected0.length
+Some required targets logged failures:
+- DosenPetric.GentzenSameSideExchangeRanks
+error: build failed

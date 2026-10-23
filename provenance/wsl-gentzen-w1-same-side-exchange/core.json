@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-23T15:27:15.638234+00:00",
+  "checks": [
+    {
+      "name": "core",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenSameSideExchangeFixedRanks"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 0,
+      "seconds": 1.265,
+      "log_sha256": "9ecc7d4bf003b6de6a26166e56eb21d43d14e91ecec742ac4c7160170c46e614"
+    }
+  ]
+}

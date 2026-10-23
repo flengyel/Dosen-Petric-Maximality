@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-23T15:16:19.245234+00:00",
+  "checks": [
+    {
+      "name": "environment",
+      "command": [
+        "uname",
+        "-a"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 0,
+      "seconds": 0.003,
+      "log_sha256": "34e3970ec44125a14237ebecedcc552983b2d4c8032e1e63debccd6fbbec0513"
+    },
+    {
+      "name": "memory",
+      "command": [
+        "free",
+        "-h"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 0,
+      "seconds": 0.006,
+      "log_sha256": "77e92d69c230b8dc7aa23f3b52343fc6735b28097de56600f572b402dfd17c5e"
+    },
+    {
+      "name": "baseline",
+      "command": [
+        "bash",
+        "scripts/verify.sh"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 0,
+      "seconds": 7.746,
+      "log_sha256": "38adcf33db77251e0d12a270b088a20e72552709d2414def2be3c99849998049"
+    }
+  ]
+}

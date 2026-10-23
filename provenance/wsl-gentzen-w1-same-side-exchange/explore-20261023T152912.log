@@ -1,0 +1,27 @@
+✖ [121/122] Building DosenPetric.GentzenSameSideExchangeInstances (787ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSameSideExchangeInstances.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSameSideExchangeInstances.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSameSideExchangeInstances.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSameSideExchangeInstances.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSameSideExchangeInstances.setup.json --json
+error: DosenPetric/GentzenSameSideExchangeInstances.lean:58:4: Type mismatch
+  fixed_oldL_rank ?m.80 ?m.81 ?m.82 ?m.83 ?m.85 ?m.86
+has type
+  (oldL ?m.80 ?m.81 ?m.82 ?m.83).rho SequentSide.left (GapExchange.Data.swapLower ?m.80 ?m.85) =
+    2 + G.rho ?m.83 SequentSide.left (GapExchange.Data.fixed0 ?m.80 ?m.85 ?m.86)
+but is expected to have type
+  ∀ (a : At d.K0 A✝) (ha : a.index ≠ d.keep0.index),
+    (oldL d hn Δ f).rho SequentSide.left (d.swapLower a) = 2 + f.rho SequentSide.left (d.fixed0 a ha)
+the following variables have been introduced by the implicit lambda feature
+  A✝ : NormalForm P
+you can disable implicit lambdas using `@` or writing a lambda expression with `{}` or `[]` binder annotations.
+error: DosenPetric/GentzenSameSideExchangeInstances.lean:65:4: Type mismatch
+  fixed_oldR_rank ?m.80 ?m.81 ?m.82 ?m.83 ?m.85 ?m.86
+has type
+  (oldR ?m.80 ?m.81 ?m.82 ?m.83).rho SequentSide.right (GapExchange.Data.swapLower ?m.80 ?m.85) =
+    2 + G.rho ?m.83 SequentSide.right (GapExchange.Data.fixed0 ?m.80 ?m.85 ?m.86)
+but is expected to have type
+  ∀ (a : At d.K0 A✝) (ha : a.index ≠ d.keep0.index),
+    (oldR d hn Γ f).rho SequentSide.right (d.swapLower a) = 2 + f.rho SequentSide.right (d.fixed0 a ha)
+the following variables have been introduced by the implicit lambda feature
+  A✝ : NormalForm P
+you can disable implicit lambdas using `@` or writing a lambda expression with `{}` or `[]` binder annotations.
+Some required targets logged failures:
+- DosenPetric.GentzenSameSideExchangeInstances
+error: build failed

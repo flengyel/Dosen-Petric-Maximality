@@ -1,0 +1,15 @@
+✔ [106/109] Built DosenPetric.GentzenExchangeEmbeddings (722ms)
+✖ [107/109] Building DosenPetric.GentzenGapExchangeRouting (715ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenGapExchangeRouting.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapExchangeRouting.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenGapExchangeRouting.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapExchangeRouting.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenGapExchangeRouting.setup.json --json
+error: DosenPetric/GentzenGapExchangeRouting.lean:97:25: unexpected '..'
+error: DosenPetric/GentzenGapExchangeRouting.lean:102:9: Application type mismatch: The argument
+  At.swapBlocks_injective ?m.32 ?m.33 ?m.34 ?m.35 ?m.37 ?m.38 ?m.39
+has type
+  ?m.37 = ?m.38
+but is expected to have type
+  d.swapLower (d.c0.get a) = d.swapLower d.keep0 → d.c0.get a = d.keep0
+in the application
+  Iff.intro (At.swapBlocks_injective ?m.32 ?m.33 ?m.34 ?m.35 ?m.37 ?m.38 ?m.39)
+Some required targets logged failures:
+- DosenPetric.GentzenGapExchangeRouting
+error: build failed

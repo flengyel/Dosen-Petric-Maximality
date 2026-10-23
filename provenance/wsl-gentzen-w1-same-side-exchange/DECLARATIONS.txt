@@ -1,0 +1,162 @@
+DosenPetric/GentzenExchangeEmbeddings.lean:14: theorem swapBlocks_inverse (Γ X Y Θ : List (NormalForm P)) {A : NormalForm P}
+DosenPetric/GentzenExchangeEmbeddings.lean:21: theorem swapBlocks_injective (Γ X Y Θ : List (NormalForm P)) {A : NormalForm P}
+DosenPetric/GentzenExchangeEmbeddings.lean:29: theorem exchangeL_projection (Γ X Y Θ : List (NormalForm P)) {A : NormalForm P}
+DosenPetric/GentzenExchangeEmbeddings.lean:34: theorem exchangeR_injection (Γ X Y Θ : List (NormalForm P)) {A : NormalForm P}
+DosenPetric/GentzenExchangeEmbeddings.lean:41: theorem predecessors_exchangeL_embedded (Γ X Y Θ Δ : List (NormalForm P))
+DosenPetric/GentzenExchangeEmbeddings.lean:60: theorem predecessors_exchangeR_embedded (Γ Δ X Y Λ : List (NormalForm P))
+DosenPetric/GentzenExchangeEmbeddings.lean:79: theorem rho_exchangeL_embedded (Γ X Y Θ Δ : List (NormalForm P))
+DosenPetric/GentzenExchangeEmbeddings.lean:88: theorem rho_exchangeR_embedded (Γ Δ X Y Λ : List (NormalForm P))
+DosenPetric/GentzenGapExchangeData.lean:12: structure Data (P : Type u) where
+DosenPetric/GentzenGapExchangeData.lean:34: def interior (C : NormalForm P) (pre post : List (List (NormalForm P)))
+DosenPetric/GentzenGapExchangeData.lean:54: def terminal (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenGapExchangeData.lean:80: abbrev U0 := d.upBefore ++ d.X ++ d.Y ++ d.upAfter
+DosenPetric/GentzenGapExchangeData.lean:81: abbrev U1 := d.upBefore ++ d.Y ++ d.X ++ d.upAfter
+DosenPetric/GentzenGapExchangeData.lean:82: abbrev K0 := d.loBefore ++ d.X ++ d.Y ++ d.loAfter
+DosenPetric/GentzenGapExchangeData.lean:83: abbrev K1 := d.loBefore ++ d.Y ++ d.X ++ d.loAfter
+DosenPetric/GentzenGapExchangeData.lean:85: def c0 : Route d.K0 d.U0 := (copies d.C d.gs0 d.tail0).cast d.lower0 d.upper0
+DosenPetric/GentzenGapExchangeData.lean:86: def c1 : Route d.K1 d.U1 := (copies d.C d.gs1 d.tail1).cast d.lower1 d.upper1
+DosenPetric/GentzenGapExchangeData.lean:88: def swapUpper {A : NormalForm P} (a : At d.U0 A) : At d.U1 A :=
+DosenPetric/GentzenGapExchangeData.lean:91: def swapLower {A : NormalForm P} (a : At d.K0 A) : At d.K1 A :=
+DosenPetric/GentzenGapExchangeData.lean:94: def keep0 : At d.K0 d.C := (At.shift (gaps d.gs0) (.here d.C d.tail0)).cast d.lower0
+DosenPetric/GentzenGapExchangeData.lean:95: def keep1 : At d.K1 d.C := (At.shift (gaps d.gs1) (.here d.C d.tail1)).cast d.lower1
+DosenPetric/GentzenGapExchangeData.lean:97: def selected0 := (selectedCopies d.C d.gs0 d.tail0).map (At.cast d.upper0)
+DosenPetric/GentzenGapExchangeData.lean:98: def selected1 := (selectedCopies d.C d.gs1 d.tail1).map (At.cast d.upper1)
+DosenPetric/GentzenGapExchangeData.lean:100: theorem c0_index {A : NormalForm P} (a : At d.U0 A) :
+DosenPetric/GentzenGapExchangeData.lean:104: theorem c1_index {A : NormalForm P} (a : At d.U1 A) :
+DosenPetric/GentzenGapExchangeData.lean:108: theorem swapUpper_index {A : NormalForm P} (a : At d.U0 A) :
+DosenPetric/GentzenGapExchangeData.lean:111: theorem swapLower_index {A : NormalForm P} (a : At d.K0 A) :
+DosenPetric/GentzenGapExchangeData.lean:114: theorem keep0_index : d.keep0.index = (gaps d.gs0).length := by
+DosenPetric/GentzenGapExchangeData.lean:117: theorem keep1_index : d.keep1.index = (gaps d.gs1).length := by
+DosenPetric/GentzenGapExchangeData.lean:120: theorem square {A : NormalForm P} (a : At d.U0 A) :
+DosenPetric/GentzenGapExchangeData.lean:126: theorem retained : d.swapLower d.keep0 = d.keep1 := by
+DosenPetric/GentzenGapExchangeIndices.lean:11: theorem exchange_add (a g x y i : Nat) :
+DosenPetric/GentzenGapExchangeIndices.lean:16: theorem exchange_inverse (g x y i : Nat) :
+DosenPetric/GentzenGapExchangeIndices.lean:21: theorem exchange_outside (g x y i : Nat) (h : i < g ∨ g+x+y ≤ i) :
+DosenPetric/GentzenGapExchangeIndices.lean:26: theorem exchange_prefix (a g x y i : Nat) (h : i < a) :
+DosenPetric/GentzenGapExchangeIndices.lean:30: theorem exchange_ge (g x y i : Nat) (h : g ≤ i) : g ≤ exchangeIndex g x y i := by
+DosenPetric/GentzenGapExchangeIndices.lean:34: theorem gaps_length (pre post : List (List (NormalForm P))) (U X Y V : List (NormalForm P)) :
+DosenPetric/GentzenGapExchangeIndices.lean:40: theorem lower_end_le (pre post : List (List (NormalForm P))) (U X Y V : List (NormalForm P)) :
+DosenPetric/GentzenGapExchangeIndices.lean:47: theorem copyIndex_interior (C : NormalForm P) (pre post : List (List (NormalForm P)))
+DosenPetric/GentzenGapExchangeIndices.lean:93: theorem copyIndex_tail (C : NormalForm P) (gs : List (List (NormalForm P))) (u x y i : Nat) :
+DosenPetric/GentzenGapExchangeIndices.lean:125: theorem selected_interior_outside (C : NormalForm P) (pre post : List (List (NormalForm P)))
+DosenPetric/GentzenGapExchangeIndices.lean:143: theorem selected_lt_repeated (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenGapExchangeRouting.lean:11: def eUpperL := ofTerm (exchange .conj d.upBefore d.X d.Y d.upAfter).invTerm
+DosenPetric/GentzenGapExchangeRouting.lean:12: def eLowerL := ofTerm (exchange .conj d.loBefore d.X d.Y d.loAfter).invTerm
+DosenPetric/GentzenGapExchangeRouting.lean:13: def eUpperR := ofTerm (exchange .disj d.upBefore d.X d.Y d.upAfter).toTerm
+DosenPetric/GentzenGapExchangeRouting.lean:14: def eLowerR := ofTerm (exchange .disj d.loBefore d.X d.Y d.loAfter).toTerm
+DosenPetric/GentzenGapExchangeRouting.lean:16: theorem product_square : comp (ofTerm d.c1.product) d.eUpperL =
+DosenPetric/GentzenGapExchangeRouting.lean:25: theorem coproduct_square : comp d.eUpperR (ofTerm d.c1.coproduct) =
+DosenPetric/GentzenGapExchangeRouting.lean:34: theorem selected0_mem (a : At d.U0 d.C) :
+DosenPetric/GentzenGapExchangeRouting.lean:50: theorem selected1_mem (a : At d.U1 d.C) :
+DosenPetric/GentzenGapExchangeRouting.lean:66: theorem selected0_iff (a : At d.U0 d.C) : a ∈ d.selected0 ↔ d.c0.get a = d.keep0 := by
+DosenPetric/GentzenGapExchangeRouting.lean:77: theorem selected1_iff (a : At d.U1 d.C) : a ∈ d.selected1 ↔ d.c1.get a = d.keep1 := by
+DosenPetric/GentzenGapExchangeRouting.lean:89: theorem selected0_outside (a : At d.U0 d.C) (ha : a ∈ d.selected0) :
+DosenPetric/GentzenGapExchangeRouting.lean:94: theorem selected0_index_fixed (a : At d.U0 d.C) (ha : a ∈ d.selected0) :
+DosenPetric/GentzenGapExchangeRouting.lean:99: theorem selected_embedded_iff (a : At d.U0 d.C) :
+DosenPetric/GentzenGapExchangeRouting.lean:105: theorem selected_transport : d.selected1 = d.selected0.map d.swapUpper := by
+DosenPetric/GentzenGapExchangeRouting.lean:131: theorem selected1_outside (a : At d.U1 d.C) (ha : a ∈ d.selected1) :
+DosenPetric/GentzenGapExchangeRouting.lean:139: theorem selected0_length : d.selected0.length = d.gs0.length := by
+DosenPetric/GentzenGapExchangeRouting.lean:142: theorem selected1_length : d.selected1.length = d.gs1.length := by
+DosenPetric/GentzenSameSideExchange.lean:16: theorem modifiedArity (hn : 2 ≤ d.gs0.length) : 2 ≤ d.gs1.length := d.count_eq.symm ▸ hn
+DosenPetric/GentzenSameSideExchange.lean:21: def innerL : G P d.K0 Δ :=
+DosenPetric/GentzenSameSideExchange.lean:24: def oldL : G P d.K1 Δ :=
+DosenPetric/GentzenSameSideExchange.lean:28: def newL : G P d.K1 Δ := G.exchangeL d.loBefore d.X d.Y d.loAfter Δ (innerL d hn Δ f)
+DosenPetric/GentzenSameSideExchange.lean:30: theorem innerL_denote : ofTerm (innerL d hn Δ f).denote = comp (ofTerm d.c0.product) (ofTerm f.denote) :=
+DosenPetric/GentzenSameSideExchange.lean:33: theorem oldL_denote : ofTerm (oldL d hn Δ f).denote =
+DosenPetric/GentzenSameSideExchange.lean:37: theorem denoteL : ofTerm (newL d hn Δ f).denote = ofTerm (oldL d hn Δ f).denote := by
+DosenPetric/GentzenSameSideExchange.lean:41: theorem cutCountL : (newL d hn Δ f).cutCount = (oldL d hn Δ f).cutCount := by
+DosenPetric/GentzenSameSideExchange.lean:44: theorem cutFreeL : (newL d hn Δ f).CutFree ↔ (oldL d hn Δ f).CutFree := by
+DosenPetric/GentzenSameSideExchange.lean:47: theorem atomizedL : (newL d hn Δ f).Atomized ↔ (oldL d hn Δ f).Atomized := by
+DosenPetric/GentzenSameSideExchange.lean:50: theorem newL_atomized_iff : (newL d hn Δ f).Atomized ↔ f.Atomized := by
+DosenPetric/GentzenSameSideExchange.lean:53: theorem oldL_atomized_iff : (oldL d hn Δ f).Atomized ↔ f.Atomized := by
+DosenPetric/GentzenSameSideExchange.lean:56: theorem newL_atomized (hf : f.Atomized) : (newL d hn Δ f).Atomized := by
+DosenPetric/GentzenSameSideExchange.lean:59: theorem relationL : (newL d hn Δ f).relation = (oldL d hn Δ f).relation :=
+DosenPetric/GentzenSameSideExchange.lean:67: def innerR : G P Γ d.K0 :=
+DosenPetric/GentzenSameSideExchange.lean:70: def oldR : G P Γ d.K1 :=
+DosenPetric/GentzenSameSideExchange.lean:74: def newR : G P Γ d.K1 := G.exchangeR Γ d.loBefore d.X d.Y d.loAfter (innerR d hn Γ f)
+DosenPetric/GentzenSameSideExchange.lean:76: theorem innerR_denote : ofTerm (innerR d hn Γ f).denote = comp (ofTerm f.denote) (ofTerm d.c0.coproduct) :=
+DosenPetric/GentzenSameSideExchange.lean:79: theorem oldR_denote : ofTerm (oldR d hn Γ f).denote =
+DosenPetric/GentzenSameSideExchange.lean:83: theorem denoteR : ofTerm (newR d hn Γ f).denote = ofTerm (oldR d hn Γ f).denote := by
+DosenPetric/GentzenSameSideExchange.lean:87: theorem cutCountR : (newR d hn Γ f).cutCount = (oldR d hn Γ f).cutCount := by
+DosenPetric/GentzenSameSideExchange.lean:90: theorem cutFreeR : (newR d hn Γ f).CutFree ↔ (oldR d hn Γ f).CutFree := by
+DosenPetric/GentzenSameSideExchange.lean:93: theorem atomizedR : (newR d hn Γ f).Atomized ↔ (oldR d hn Γ f).Atomized := by
+DosenPetric/GentzenSameSideExchange.lean:96: theorem newR_atomized_iff : (newR d hn Γ f).Atomized ↔ f.Atomized := by
+DosenPetric/GentzenSameSideExchange.lean:99: theorem oldR_atomized_iff : (oldR d hn Γ f).Atomized ↔ f.Atomized := by
+DosenPetric/GentzenSameSideExchange.lean:102: theorem newR_atomized (hf : f.Atomized) : (newR d hn Γ f).Atomized := by
+DosenPetric/GentzenSameSideExchange.lean:105: theorem relationR : (newR d hn Γ f).relation = (oldR d hn Γ f).relation :=
+DosenPetric/GentzenSameSideExchangeExamples.lean:14: def repeatedData (l : Literal P) :=
+DosenPetric/GentzenSameSideExchangeExamples.lean:17: def repeatedPremiseL (l : Literal P) : G P [.lit l,.lit l,.lit l,.lit l,.lit l] [.lit l,.lit l,.lit l] :=
+DosenPetric/GentzenSameSideExchangeExamples.lean:20: def repeatedPremiseR (l : Literal P) : G P [.lit l,.lit l,.lit l] [.lit l,.lit l,.lit l,.lit l,.lit l] :=
+DosenPetric/GentzenSameSideExchangeExamples.lean:23: theorem repeated_left (l : Literal P) :
+DosenPetric/GentzenSameSideExchangeExamples.lean:26: theorem repeated_right (l : Literal P) :
+DosenPetric/GentzenSameSideExchangeExamples.lean:29: theorem repeated_selected_indices (l : Literal P) :
+DosenPetric/GentzenSameSideExchangeExamples.lean:34: theorem equal_label_transposition (C : NormalForm P) :
+DosenPetric/GentzenSameSideExchangeExamples.lean:44: theorem fixed_equal_positions_swap (l : Literal P) :
+DosenPetric/GentzenSameSideExchangeExamples.lean:49: theorem repeated_fixed_rank (l : Literal P) :
+DosenPetric/GentzenSameSideExchangeExamples.lean:56: theorem repeated_endpoint_loss (l : Literal P) :
+DosenPetric/GentzenSameSideExchangeExamples.lean:64: def emptyData (l : Literal P) := GapExchange.interior (.lit l) [[]] [] [] [] [] [] []
+DosenPetric/GentzenSameSideExchangeExamples.lean:66: theorem both_empty_left (l : Literal P) :
+DosenPetric/GentzenSameSideExchangeExamples.lean:69: theorem both_empty_right (l : Literal P) :
+DosenPetric/GentzenSameSideExchangeExamples.lean:72: theorem one_empty_left (l : Literal P) :
+DosenPetric/GentzenSameSideExchangeExamples.lean:76: theorem one_empty_right (l : Literal P) :
+DosenPetric/GentzenSameSideExchangeExamples.lean:81: def topPremise : (n : Nat) → G Empty (List.replicate n .top) [.top]
+DosenPetric/GentzenSameSideExchangeExamples.lean:85: def botPremise : (n : Nat) → G Empty [.bot] (List.replicate n .bot)
+DosenPetric/GentzenSameSideExchangeExamples.lean:89: theorem emptyP_interior_left :
+DosenPetric/GentzenSameSideExchangeExamples.lean:93: theorem emptyP_interior_right :
+DosenPetric/GentzenSameSideExchangeExamples.lean:97: theorem emptyP_terminal_left :
+DosenPetric/GentzenSameSideExchangeExamples.lean:101: theorem emptyP_terminal_right :
+DosenPetric/GentzenSameSideExchangeExamples.lean:106: def compoundPremiseL (l : Literal P) : G P [.lit l,.conj (.lit l) (.lit l),.lit l,.lit l] [.lit l] :=
+DosenPetric/GentzenSameSideExchangeExamples.lean:110: theorem compound_left (l : Literal P) :
+DosenPetric/GentzenSameSideExchangeExamples.lean:114: def compoundPremiseR (l : Literal P) : G P [.lit l] [.lit l,.conj (.lit l) (.lit l),.lit l,.lit l] :=
+DosenPetric/GentzenSameSideExchangeExamples.lean:118: theorem compound_right (l : Literal P) :
+DosenPetric/GentzenSameSideExchangeExamples.lean:122: theorem both_signs_actual_cut (p : P) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:15: def fixed0 {A : NormalForm P} (a : At d.K0 A) (ha : a.index ≠ d.keep0.index) : At d.U0 A :=
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:19: theorem fixed0_get {A : NormalForm P} (a : At d.K0 A) (ha : a.index ≠ d.keep0.index) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:25: theorem swapped_fixed {A : NormalForm P} (a : At d.K0 A) (ha : a.index ≠ d.keep0.index) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:34: theorem fixed_canonical_image {A : NormalForm P} (a : At d.K0 A) (ha : a.index ≠ d.keep0.index) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:43: theorem fixed_transport_fiber {A : NormalForm P} (a : At d.K0 A) (ha : a.index ≠ d.keep0.index) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:54: def originalLower {A : NormalForm P} (a : At d.K1 A) : At d.K0 A :=
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:57: theorem swapLower_original {A : NormalForm P} (a : At d.K1 A) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:60: theorem original_fixed {A : NormalForm P} (a : At d.K1 A) (ha : a.index ≠ d.keep1.index) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:70: theorem contractL_cast_fixed_rank {U K Δ : List (NormalForm P)} (C : NormalForm P)
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:81: theorem contractR_cast_fixed_rank {Γ U K : List (NormalForm P)} (C : NormalForm P)
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:98: theorem fixed_innerL_rank {A : NormalForm P} (a : At d.K0 A) (ha : a.index ≠ d.keep0.index) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:103: theorem fixed_oldL_rank {A : NormalForm P} (a : At d.K0 A) (ha : a.index ≠ d.keep0.index) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:114: theorem fixed_newL_rank {A : NormalForm P} (a : At d.K0 A) (ha : a.index ≠ d.keep0.index) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:121: theorem fixed_rankL {A : NormalForm P} (a : At d.K0 A) (ha : a.index ≠ d.keep0.index) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:127: theorem fixed_rankL_at {A : NormalForm P} (z : At d.K1 A) (hz : z.index ≠ d.keep1.index) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:142: theorem fixed_innerR_rank {A : NormalForm P} (a : At d.K0 A) (ha : a.index ≠ d.keep0.index) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:147: theorem fixed_oldR_rank {A : NormalForm P} (a : At d.K0 A) (ha : a.index ≠ d.keep0.index) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:158: theorem fixed_newR_rank {A : NormalForm P} (a : At d.K0 A) (ha : a.index ≠ d.keep0.index) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:165: theorem fixed_rankR {A : NormalForm P} (a : At d.K0 A) (ha : a.index ≠ d.keep0.index) :
+DosenPetric/GentzenSameSideExchangeFixedRanks.lean:171: theorem fixed_rankR_at {A : NormalForm P} (z : At d.K1 A) (hz : z.index ≠ d.keep1.index) :
+DosenPetric/GentzenSameSideExchangeInstances.lean:12: structure LeftLaws (d : GapExchange.Data P) (hn : 2 ≤ d.gs0.length)
+DosenPetric/GentzenSameSideExchangeInstances.lean:33: structure RightLaws (d : GapExchange.Data P) (hn : 2 ≤ d.gs0.length)
+DosenPetric/GentzenSameSideExchangeInstances.lean:53: theorem leftLaws (d : GapExchange.Data P) (hn : 2 ≤ d.gs0.length)
+DosenPetric/GentzenSameSideExchangeInstances.lean:61: theorem rightLaws (d : GapExchange.Data P) (hn : 2 ≤ d.gs0.length)
+DosenPetric/GentzenSameSideExchangeInstances.lean:69: theorem interior_left (C : NormalForm P) (pre post : List (List (NormalForm P)))
+DosenPetric/GentzenSameSideExchangeInstances.lean:74: theorem interior_right (C : NormalForm P) (pre post : List (List (NormalForm P)))
+DosenPetric/GentzenSameSideExchangeInstances.lean:79: theorem terminal_left (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenSameSideExchangeInstances.lean:84: theorem terminal_right (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenSameSideExchangeRanks.lean:15: def rankNewL := G.contractionRankL d.C d.gs0 d.tail0 Δ hn (f.reindex d.upper0.symm rfl)
+DosenPetric/GentzenSameSideExchangeRanks.lean:16: def rankOldL := G.contractionRankL d.C d.gs1 d.tail1 Δ (modifiedArity d hn)
+DosenPetric/GentzenSameSideExchangeRanks.lean:19: theorem innerL_rank : (innerL d hn Δ f).rho .left d.keep0 = rankNewL d hn Δ f :=
+DosenPetric/GentzenSameSideExchangeRanks.lean:22: theorem oldL_rank : (oldL d hn Δ f).rho .left d.keep1 = rankOldL d hn Δ f :=
+DosenPetric/GentzenSameSideExchangeRanks.lean:25: theorem rankNewL_sum : rankNewL d hn Δ f = 1 +
+DosenPetric/GentzenSameSideExchangeRanks.lean:29: theorem rankOldL_sum : rankOldL d hn Δ f = 1 +
+DosenPetric/GentzenSameSideExchangeRanks.lean:33: theorem contraction_lossL : rankOldL d hn Δ f = rankNewL d hn Δ f + d.gs0.length := by
+DosenPetric/GentzenSameSideExchangeRanks.lean:50: theorem endpoint_rankL : (newL d hn Δ f).rho .left d.keep1 = rankNewL d hn Δ f + 1 := by
+DosenPetric/GentzenSameSideExchangeRanks.lean:56: theorem contraction_decreasesL : rankNewL d hn Δ f < rankOldL d hn Δ f := by
+DosenPetric/GentzenSameSideExchangeRanks.lean:60: theorem endpoint_lossL : (oldL d hn Δ f).rho .left d.keep1 + 1 =
+DosenPetric/GentzenSameSideExchangeRanks.lean:67: theorem endpoint_decreasesL : (newL d hn Δ f).rho .left d.keep1 < (oldL d hn Δ f).rho .left d.keep1 := by
+DosenPetric/GentzenSameSideExchangeRanks.lean:76: def rankNewR := G.contractionRankR Γ d.C d.gs0 d.tail0 hn (f.reindex rfl d.upper0.symm)
+DosenPetric/GentzenSameSideExchangeRanks.lean:77: def rankOldR := G.contractionRankR Γ d.C d.gs1 d.tail1 (modifiedArity d hn)
+DosenPetric/GentzenSameSideExchangeRanks.lean:80: theorem innerR_rank : (innerR d hn Γ f).rho .right d.keep0 = rankNewR d hn Γ f :=
+DosenPetric/GentzenSameSideExchangeRanks.lean:83: theorem oldR_rank : (oldR d hn Γ f).rho .right d.keep1 = rankOldR d hn Γ f :=
+DosenPetric/GentzenSameSideExchangeRanks.lean:86: theorem rankNewR_sum : rankNewR d hn Γ f = 1 +
+DosenPetric/GentzenSameSideExchangeRanks.lean:90: theorem rankOldR_sum : rankOldR d hn Γ f = 1 +
+DosenPetric/GentzenSameSideExchangeRanks.lean:94: theorem contraction_lossR : rankOldR d hn Γ f = rankNewR d hn Γ f + d.gs0.length := by
+DosenPetric/GentzenSameSideExchangeRanks.lean:111: theorem endpoint_rankR : (newR d hn Γ f).rho .right d.keep1 = rankNewR d hn Γ f + 1 := by
+DosenPetric/GentzenSameSideExchangeRanks.lean:117: theorem contraction_decreasesR : rankNewR d hn Γ f < rankOldR d hn Γ f := by
+DosenPetric/GentzenSameSideExchangeRanks.lean:121: theorem endpoint_lossR : (oldR d hn Γ f).rho .right d.keep1 + 1 =
+DosenPetric/GentzenSameSideExchangeRanks.lean:128: theorem endpoint_decreasesR : (newR d hn Γ f).rho .right d.keep1 < (oldR d hn Γ f).rho .right d.keep1 := by

@@ -1010,3 +1010,39 @@ equation or old analysis interface changed. See
 [the report](GENTZEN_W1_SAME_SIDE_THINNING_REPORT.md) and its two author-side
 reviews. Remaining same-side exchange/contraction/logical and broader
 reducibility/coherence work remain open.
+
+## Fixed-parametric same-side exchange inside one gap or tail (W1)
+
+The consulted source is Došen–Petrić, *Proof-Theoretical Coherence*, September
+2007, [pinned PDF](https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf),
+SHA-256 `e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e`.
+Printed n is PDF page n+12, one-based. Printed pp.248–253 were consulted,
+p.251 also in rendering. The verified existing cache was used. Constant and
+zero extensions on pp.272–273 and 291–292 remain compatible with the unchanged
+syntax. Source-consultation.json records caches, hashes and access artifacts;
+historical access records remain intact. No new source discrepancy was confirmed.
+
+| Source location | Precise local correspondence / side conditions | Lean declarations and actual proof inputs |
+| --- | --- | --- |
+| §11.2 p.251 (W 1), γ=cL | Left exchange entirely inside one fixed gap or the fixed terminal tail commutes with left contraction. Every selected copy stays outside the exchanged interval. | `GapExchange.interior/terminal`; `W1.SameSideExchange.interior_left/terminal_left`; proved copies/exchange product square and associativity. |
+| §11.2 p.252, right analogue | Right exchange at the corresponding fixed positions commutes with right contraction. | `interior_right/terminal_right`; independently typed coproduct square. |
+| §11.2 pp.248–249, parametric ancestry and all-node rank | Exchange routes every whole-formula position bijectively; complete selected-copy sum counts one exchange node per copy. | At.swapBlocks inverse/injectivity; complete same-side predecessor singleton, rho_exchangeL/R_embedded; selected_transport and existing contraction sums. |
+| §11.2 p.251, broader cL cases and absorption alternative | Exchanges across selected positions, across several gaps, or absorbed by contraction are not covered here. | No such theorem is supplied. The source's Semilattice Coherence appeal is replaced only for the four fixed-position cases by derived universal component laws. |
+| §11.5 pp.272–273; §12.5 pp.291–292 | Constants and atomic zero leaves remain admitted; empty sequent folds remain differently coloured. | Actual constant examples over Empty; generic premises including cuts/zeros. No new zero equation or arrow constructor. |
+
+Composition is left-first throughout. The binary folds are not strictified;
+all needed list equalities and endpoint transports are explicit.
+
+All four concrete results compile with actual list/G/At/Route transports.
+The all-position square gives structural p(c1);eUpperL=eLowerL;p(c0) and
+eUpperR;q(c1)=q(c0);eLowerR, hence Reduced denotation equality. Complete ordered
+selected transport uses interval exclusion, not global monotonicity. Retained
+positions transport; fixed singleton fibers correspond. Exact contraction loss
+n, whole retained endpoint loss n−1 and both strict decreases compile. Every
+other same-side fixed endpoint has unchanged rank 2+rho(f,a); exchange adds no
+principal leaf, including empty blocks. Both Atomized predicates equal
+f.Atomized; count, CutFree and full tagged relations are preserved. Equal-label
+fixed positions transpose even when context lists coincide. See
+[the report](GENTZEN_W1_SAME_SIDE_EXCHANGE_REPORT.md) and both author-side reviews.
+Cross-selected, multi-gap and absorption cases and broader W1/reducibility/
+coherence remain open.

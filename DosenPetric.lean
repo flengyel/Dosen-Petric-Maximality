@@ -128,3 +128,12 @@ public import DosenPetric.GentzenSameSideThinning
 public import DosenPetric.GentzenSameSideThinningRanks
 public import DosenPetric.GentzenSameSideThinningInstances
 public import DosenPetric.GentzenSameSideThinningExamples
+public import DosenPetric.GentzenGapExchangeIndices
+public import DosenPetric.GentzenGapExchangeData
+public import DosenPetric.GentzenExchangeEmbeddings
+public import DosenPetric.GentzenGapExchangeRouting
+public import DosenPetric.GentzenSameSideExchange
+public import DosenPetric.GentzenSameSideExchangeRanks
+public import DosenPetric.GentzenSameSideExchangeFixedRanks
+public import DosenPetric.GentzenSameSideExchangeInstances
+public import DosenPetric.GentzenSameSideExchangeExamples

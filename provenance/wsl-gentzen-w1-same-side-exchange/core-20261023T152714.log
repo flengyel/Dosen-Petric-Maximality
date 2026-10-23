@@ -1,0 +1,36 @@
+✔ [109/110] Built DosenPetric.GentzenSameSideExchangeRanks (1.6s)
+✖ [110/110] Building DosenPetric.GentzenSameSideExchangeFixedRanks (723ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSameSideExchangeFixedRanks.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSameSideExchangeFixedRanks.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSameSideExchangeFixedRanks.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSameSideExchangeFixedRanks.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSameSideExchangeFixedRanks.setup.json --json
+error: DosenPetric/GentzenSameSideExchangeFixedRanks.lean:98:2: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  i ≥ 0
+  g ≥ 0
+  g - i ≥ 1
+  e ≥ 0
+  c ≥ 0
+  c - e ≥ 0
+  b ≥ 2
+where
+ b := ↑d.gs0.length
+ c := ↑(f.rho SequentSide.left (d.fixed0 a ha))
+ e := ↑((G.exchangeL d.upBefore d.X d.Y d.upAfter Δ f).rho SequentSide.left (d.swapUpper (d.fixed0 a ha)))
+ g := ↑d.keep0.index
+ i := ↑a.index
+error: DosenPetric/GentzenSameSideExchangeFixedRanks.lean:129:2: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  i ≥ 0
+  g ≥ 0
+  g - i ≥ 1
+  e ≥ 0
+  c ≥ 0
+  c - e ≥ 0
+  b ≥ 2
+where
+ b := ↑d.gs0.length
+ c := ↑(f.rho SequentSide.right (d.fixed0 a ha))
+ e := ↑((G.exchangeR Γ d.upBefore d.X d.Y d.upAfter f).rho SequentSide.right (d.swapUpper (d.fixed0 a ha)))
+ g := ↑d.keep0.index
+ i := ↑a.index
+Some required targets logged failures:
+- DosenPetric.GentzenSameSideExchangeFixedRanks
+error: build failed

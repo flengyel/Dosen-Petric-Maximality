@@ -1,0 +1,117 @@
+✖ [105/106] Building DosenPetric.GentzenExchangeEmbeddings (1.4s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenExchangeEmbeddings.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenExchangeEmbeddings.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenExchangeEmbeddings.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenExchangeEmbeddings.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenExchangeEmbeddings.setup.json --json
+error: DosenPetric/GentzenExchangeEmbeddings.lean:48:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (Premise.route ?p ?s).get ?a
+in the target expression
+  ((Premise.exchangeL Γ X Y Θ Δ f).route SequentSide.left).get b = some (At.swapBlocks Γ X Y Θ a) ↔ b = a
+
+P : Type u
+Γ X Y Θ Δ : List (NormalForm P)
+f : G P (Γ ++ X ++ Y ++ Θ) Δ
+A : NormalForm P
+a : At (Γ ++ X ++ Y ++ Θ) A
+b : At (SequentSide.left.context (Γ ++ X ++ Y ++ Θ) Δ) A
+⊢ ((Premise.exchangeL Γ X Y Θ Δ f).route SequentSide.left).get b = some (At.swapBlocks Γ X Y Θ a) ↔ b = a
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    (Premise.exchangeL Γ X Y Θ Δ f).route SequentSide.left
+  has type
+    @TraceRoute P (SequentSide.left.context (Γ ++ Y ++ X ++ Θ) Δ) (SequentSide.left.context (Γ ++ X ++ Y ++ Θ) Δ)
+  but is expected to have type
+    @TraceRoute P (Γ ++ Y ++ X ++ Θ) (SequentSide.left.context (Γ ++ X ++ Y ++ Θ) Δ)
+  in the application
+    @TraceRoute.get P (Γ ++ Y ++ X ++ Θ) (SequentSide.left.context (Γ ++ X ++ Y ++ Θ) Δ)
+      ((Premise.exchangeL Γ X Y Θ Δ f).route SequentSide.left)
+error: DosenPetric/GentzenExchangeEmbeddings.lean:53:2: Tactic `rfl` failed: The left-hand side
+  List.map
+    (fun y =>
+      { branch := { source := Γ ++ X ++ Y ++ Θ, target := Δ, proof := f, occurrence := Premise.exchangeL Γ X Y Θ Δ f },
+        position := y })
+    (TraceRoute.fiber (At.swapBlocks Γ X Y Θ a) ((Premise.exchangeL Γ X Y Θ Δ f).route SequentSide.left))
+is not definitionally equal to the right-hand side
+  [{ branch := { source := Γ ++ X ++ Y ++ Θ, target := Δ, proof := f, occurrence := Premise.exchangeL Γ X Y Θ Δ f },
+      position := a }]
+
+P : Type u
+Γ X Y Θ Δ : List (NormalForm P)
+f : G P (Γ ++ X ++ Y ++ Θ) Δ
+A : NormalForm P
+a : At (Γ ++ X ++ Y ++ Θ) A
+hf : TraceRoute.fiber (At.swapBlocks Γ X Y Θ a) ((Premise.exchangeL Γ X Y Θ Δ f).route SequentSide.left) = [a]
+⊢ List.map
+      (fun y =>
+        {
+          branch :=
+            { source := Γ ++ X ++ Y ++ Θ, target := Δ, proof := f, occurrence := Premise.exchangeL Γ X Y Θ Δ f },
+          position := y })
+      (TraceRoute.fiber (At.swapBlocks Γ X Y Θ a) ((Premise.exchangeL Γ X Y Θ Δ f).route SequentSide.left)) =
+    [{ branch := { source := Γ ++ X ++ Y ++ Θ, target := Δ, proof := f, occurrence := Premise.exchangeL Γ X Y Θ Δ f },
+        position := a }]
+error: DosenPetric/GentzenExchangeEmbeddings.lean:52:86: This simp argument is unused:
+  hf
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [predecessors, branches, List.flatMap_cons, List.flatMap_nil, List.append_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenExchangeEmbeddings.lean:62:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (Premise.route ?p ?s).get ?a
+in the target expression
+  ((Premise.exchangeR Γ Δ X Y Λ f).route SequentSide.right).get b = some (At.swapBlocks Δ X Y Λ a) ↔ b = a
+
+P : Type u
+Γ Δ X Y Λ : List (NormalForm P)
+f : G P Γ (Δ ++ X ++ Y ++ Λ)
+A : NormalForm P
+a : At (Δ ++ X ++ Y ++ Λ) A
+b : At (SequentSide.right.context Γ (Δ ++ X ++ Y ++ Λ)) A
+⊢ ((Premise.exchangeR Γ Δ X Y Λ f).route SequentSide.right).get b = some (At.swapBlocks Δ X Y Λ a) ↔ b = a
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    (Premise.exchangeR Γ Δ X Y Λ f).route SequentSide.right
+  has type
+    @TraceRoute P (SequentSide.right.context Γ (Δ ++ Y ++ X ++ Λ)) (SequentSide.right.context Γ (Δ ++ X ++ Y ++ Λ))
+  but is expected to have type
+    @TraceRoute P (Δ ++ Y ++ X ++ Λ) (SequentSide.right.context Γ (Δ ++ X ++ Y ++ Λ))
+  in the application
+    @TraceRoute.get P (Δ ++ Y ++ X ++ Λ) (SequentSide.right.context Γ (Δ ++ X ++ Y ++ Λ))
+      ((Premise.exchangeR Γ Δ X Y Λ f).route SequentSide.right)
+error: DosenPetric/GentzenExchangeEmbeddings.lean:67:2: Tactic `rfl` failed: The left-hand side
+  List.map
+    (fun y =>
+      { branch := { source := Γ, target := Δ ++ X ++ Y ++ Λ, proof := f, occurrence := Premise.exchangeR Γ Δ X Y Λ f },
+        position := y })
+    (TraceRoute.fiber (At.swapBlocks Δ X Y Λ a) ((Premise.exchangeR Γ Δ X Y Λ f).route SequentSide.right))
+is not definitionally equal to the right-hand side
+  [{ branch := { source := Γ, target := Δ ++ X ++ Y ++ Λ, proof := f, occurrence := Premise.exchangeR Γ Δ X Y Λ f },
+      position := a }]
+
+P : Type u
+Γ Δ X Y Λ : List (NormalForm P)
+f : G P Γ (Δ ++ X ++ Y ++ Λ)
+A : NormalForm P
+a : At (Δ ++ X ++ Y ++ Λ) A
+hf : TraceRoute.fiber (At.swapBlocks Δ X Y Λ a) ((Premise.exchangeR Γ Δ X Y Λ f).route SequentSide.right) = [a]
+⊢ List.map
+      (fun y =>
+        {
+          branch :=
+            { source := Γ, target := Δ ++ X ++ Y ++ Λ, proof := f, occurrence := Premise.exchangeR Γ Δ X Y Λ f },
+          position := y })
+      (TraceRoute.fiber (At.swapBlocks Δ X Y Λ a) ((Premise.exchangeR Γ Δ X Y Λ f).route SequentSide.right)) =
+    [{ branch := { source := Γ, target := Δ ++ X ++ Y ++ Λ, proof := f, occurrence := Premise.exchangeR Γ Δ X Y Λ f },
+        position := a }]
+error: DosenPetric/GentzenExchangeEmbeddings.lean:66:86: This simp argument is unused:
+  hf
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [predecessors, branches, List.flatMap_cons, List.flatMap_nil, List.append_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- DosenPetric.GentzenExchangeEmbeddings
+error: build failed
