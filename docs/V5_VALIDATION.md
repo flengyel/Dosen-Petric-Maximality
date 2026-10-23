@@ -1,5 +1,7 @@
 # V5 validation and delivery record
 
+> **Current v5 update.** The Introduction and bibliography were subsequently revised after full-text review of three additional papers. Current hashes, compilation and preservation checks are in [PRIOR_ART_UPDATE_V5.md](PRIOR_ART_UPDATE_V5.md). The build and delivery record below describes the initial v5 bytes and remains preserved.
+
 Date: 23 October 2026 (UTC).
 
 ## Scope

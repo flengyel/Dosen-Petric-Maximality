@@ -1,5 +1,7 @@
 # Literature review for *Maximality of the Došen–Petrić Boolean Category*
 
+> **Full-text update, 23 October 2026.** All three initially screened papers—Cartesian maximality, Lamarche–Straßburger and Führmann–Pym—have now been read in full and cited in v5. See [the source comparison and revision record](PRIOR_ART_UPDATE_V5.md). The initial findings and access records below are historical; the linked update supersedes their abstract-only status and introductory citation recommendation.
+
 Review date: 23 October 2026 (UTC). Baseline: manuscript v4 at repository commit `6192328eccde5e4aa912017409289255bc8c5cb1`. Revision prepared: v5.
 
 ## Finding

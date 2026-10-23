@@ -1,5 +1,7 @@
 # (A) Kill-shots / hard blockers
 
+> **Subsequent scoped revision.** This report records the initial v5 source hash. A later source-comparison review covers the revised Introduction and bibliography; see [PRIOR_ART_UPDATE_V5.md](../PRIOR_ART_UPDATE_V5.md). The mathematical body and Appendix A remain unchanged.
+
 None confirmed in the reviewed changes.
 
 This is an AI-assisted author-side audit of the v5 literature and classification additions, dated October 23, 2026. It is not independent peer review. The complete v5 TeX and its diff against the committed v4 text were read. No manuscript file was edited by this reviewer.

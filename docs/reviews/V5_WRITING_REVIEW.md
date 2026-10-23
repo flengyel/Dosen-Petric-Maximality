@@ -1,5 +1,7 @@
 # Writing review of v5
 
+> **Subsequent scoped revision.** This report records the initial v5 source hash. The later Introduction and bibliography update, with its writing review and current hashes, is recorded in [PRIOR_ART_UPDATE_V5.md](../PRIOR_ART_UPDATE_V5.md). The mathematical body and Appendix A remain unchanged.
+
 Date: 2026-10-23. Scope: the complete LaTeX manuscript, compared with v4, with particular attention to the requested literature and MSC additions. This is an editorial review; the mathematical source audit and rendered-PDF inspection are recorded separately.
 
 Reviewed source: `manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex`.

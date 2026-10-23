@@ -1,0 +1,74 @@
+--- a/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex
++++ b/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex
+@@ -59,6 +59,13 @@
+ identities turn that contextual equation into equality of the product
+ projections. This second step proves the required collapse.
+ 
++Do\v{s}en and Petri\'c prove maximality for cartesian categories
++\cite[\S5]{DPCartesian}. Their proof uses coherence, uniform
++substitution, and precomposition and postcomposition to reduce a new
++cartesian equation to equality of the product projections. The
++corresponding reduction for Boolean arrow equations is proved in
++Sections~\ref{sec:isolation} and~\ref{sec:collapse}.
++
+ Earlier results establish maximality for lattice categories and relative
+ maximality for dicartesian categories
+ \cite[\S\S8--10]{DPBicartesian}; these results concern products and
+@@ -67,12 +74,18 @@
+ argument also proves maximality for presentations of split preorders,
+ split equivalence relations, and binary relations \cite[\S16]{DPSplit}.
+ 
+-Other axiomatizations of Boolean categories use different structures.
+-Stra{\ss}burger's hierarchy is based on
+-$*$-autonomous categories with monoid and comonoid structures
+-\cite{Strassburger}. The category considered here is the
+-zero-identity Boolean category of Do\v{s}en and Petri\'c, with
+-products and coproducts.
++Lamarche and Stra{\ss}burger give a proof-net construction of free
++categories for their Boolean-category axioms
++\cite[Theorem~3.5.4]{LSFree}.
++Stra{\ss}burger studies axioms for $*$-autonomous categories with
++monoid and comonoid structures \cite{Strassburger}.
++F\"uhrmann and Pym interpret cut reduction by an order on arrows and
++prove soundness and completeness for their net theories
++\cite[Theorems~6.4--6.5]{FP}.
++After precomposition with the inverse right unit isomorphism, their
++negation triangle \cite[(11), p.~28]{FP} equates an endomorphism with
++the identity. The corresponding structural composite defines the
++zero identity in \eqref{eq:zero-identity}.
+ 
+ We use the occurrence coordinates of \cite[\S9]{Notation}: occurrences
+ in a compound formula form tagged disjoint unions, and substitution
+@@ -780,6 +793,12 @@
+ Revised author version, September 2007.
+ \url{https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf}.
+ 
++\bibitem{DPCartesian}
++Kosta Do\v{s}en and Zoran Petri\'c,
++The maximality of cartesian categories,
++\emph{Mathematical Logic Quarterly} \textbf{47} (2001), 137--144.
++\url{https://arxiv.org/abs/math/9911059}.
++
+ \bibitem{DPBicartesian}
+ Kosta Do\v{s}en and Zoran Petri\'c,
+ Bicartesian coherence revisited,
+@@ -803,6 +822,19 @@
+ \url{https://arxiv.org/abs/0902.0742}.
+ Author version: arXiv:0902.0742v7, October 18, 2012.
+ 
++\bibitem{LSFree}
++Fran\c{c}ois Lamarche and Lutz Stra{\ss}burger,
++Constructing free Boolean categories,
++in \emph{Proceedings of the 20th Annual IEEE Symposium on Logic in
++Computer Science (LICS 2005)}, IEEE Computer Society, 2005, pp.~209--218.
++\url{https://doi.org/10.1109/LICS.2005.13}.
++
++\bibitem{FP}
++Carsten F\"uhrmann and David Pym,
++Order-enriched categorical models of the classical sequent calculus,
++\emph{Journal of Pure and Applied Algebra} \textbf{204} (2006), 21--78.
++\url{https://doi.org/10.1016/j.jpaa.2005.03.016}.
++
+ \bibitem{Strassburger}
+ Lutz Stra{\ss}burger,
+ On the axiomatisation of Boolean categories with and without medial,

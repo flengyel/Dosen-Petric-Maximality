@@ -1,0 +1,39 @@
+[
+  {
+    "command": [
+      "pdflatex",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-output-directory",
+      "/workspace/scratch/316c37836844/prior-art-v5/evidence",
+      "/workspace/scratch/316c37836844/prior-art-v5/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex"
+    ],
+    "exit_code": 0,
+    "seconds": 0.96
+  },
+  {
+    "command": [
+      "pdflatex",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-output-directory",
+      "/workspace/scratch/316c37836844/prior-art-v5/evidence",
+      "/workspace/scratch/316c37836844/prior-art-v5/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex"
+    ],
+    "exit_code": 0,
+    "seconds": 1.04
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--no-index",
+      "--check",
+      "/workspace/scratch/316c37836844/v5-commit/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex",
+      "/workspace/scratch/316c37836844/prior-art-v5/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex"
+    ],
+    "exit_code": 1,
+    "output": "",
+    "interpretation": "Files differ; no whitespace diagnostics."
+  }
+]
