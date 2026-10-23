@@ -1,0 +1,74 @@
+{
+  "source": {
+    "url": "https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf",
+    "revision": "September 2007",
+    "cache": ".codex-work/references/dosen-petric-coh-september-2007-e285235f.pdf",
+    "sha256": "e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e",
+    "printed_pages": [
+      "247-250",
+      "251-252 (continuation inspection)",
+      "272-273",
+      "291-292"
+    ],
+    "pdf_one_based_pages": [
+      "259-262",
+      "263-264",
+      "284-285",
+      "303-304"
+    ],
+    "rendered_pages": [
+      {
+        "printed": 248,
+        "pdf": 260
+      },
+      {
+        "printed": 249,
+        "pdf": 261
+      }
+    ]
+  },
+  "writing": {
+    "cache": ".codex-work/references/knuth-mathematical-writing-mit-9bf404c2.pdf",
+    "sha256": "9bf404c2c75633a1f39aae97af0b2e9335ce6d83cf386c84906654589b4e82e6",
+    "edition": "Verified MIT-hosted typeset course-report copy; not claimed byte-identical to the Stanford scan or MAA edition",
+    "consulted_sections": [
+      "1 printed pp.1-6/PDF pp.3-8",
+      "4-5 printed pp.9-13/PDF pp.11-15"
+    ]
+  },
+  "extracted_and_rendered_access": [
+    {
+      "runtime": ".codex-work/gentzen-cluster-rank/dp-cluster-source.txt",
+      "sha256": "d7d14637f3f7e508a0400b69f8038d270d9356f5894f35e23dc6425bccac14bd"
+    },
+    {
+      "runtime": ".codex-work/gentzen-cluster-rank/dp-cluster-constants.txt",
+      "sha256": "eff978084830b7fb3e7e3c1af664fc13e9ce14dc2fce2e00089fce1e35e8984a"
+    },
+    {
+      "runtime": ".codex-work/gentzen-cluster-rank/dp-cluster-zero.txt",
+      "sha256": "deb7c04492c8217c50e3c120cf60e0ffdb31bf9bb31603cafd2d41612d46edcf"
+    },
+    {
+      "runtime": ".codex-work/gentzen-cluster-rank/dp-cluster-reducibility-next.txt",
+      "sha256": "fb8158cd114e70d7f291bf4d400c9f721097dc68d86b9712c951057b9a4b8c09"
+    },
+    {
+      "runtime": ".codex-work/gentzen-cluster-rank/dp-cluster-page-260.png",
+      "sha256": "fe4119451f0ba05871e17c08418d0f1eac60d6c5de6f4dff5043b8ab7291ca81"
+    },
+    {
+      "runtime": ".codex-work/gentzen-cluster-rank/dp-cluster-page-261.png",
+      "sha256": "a1898895264196be19fdf253c3a88f7366a5ab136faff26007d5e9a6b4af7939"
+    },
+    {
+      "runtime": ".codex-work/gentzen-cluster-rank/dp-cluster-writing-section1.txt",
+      "sha256": "5e0f9a5216c299584057bfad552368c84227b1bc6772aed994139e95f125a882"
+    },
+    {
+      "runtime": ".codex-work/gentzen-cluster-rank/dp-cluster-writing-definitions.txt",
+      "sha256": "1fc7756043125794377ae9a5e31721582c7f5325f8d7975e5fd0b9cdccc8a3c2"
+    }
+  ],
+  "new_confirmed_source_errata": []
+}

@@ -1,0 +1,215 @@
+DosenPetric/FiniteTraceTree.lean:11: inductive TraceTree (α : Type u) where
+DosenPetric/FiniteTraceTree.lean:17: def root : TraceTree α → α | .node a _ => a
+DosenPetric/FiniteTraceTree.lean:18: def children : TraceTree α → List (TraceTree α) | .node _ ts => ts
+DosenPetric/FiniteTraceTree.lean:19: def nodes : TraceTree α → List α | .node a ts => a :: ts.flatMap nodes
+DosenPetric/FiniteTraceTree.lean:20: def count : TraceTree α → Nat | .node _ ts => 1 + (ts.map count).sum
+DosenPetric/FiniteTraceTree.lean:22: theorem root_mem (t : TraceTree α) : t.root ∈ t.nodes := by cases t; simp [root,nodes]
+DosenPetric/FiniteTraceTree.lean:23: theorem count_pos (t : TraceTree α) : 0 < t.count := by cases t; simp only [count]; omega
+DosenPetric/FiniteTraceTree.lean:25: theorem node_mem (a b : α) (ts : List (TraceTree α)) :
+DosenPetric/FiniteTraceTree.lean:29: theorem count_nodes (t : TraceTree α) : t.count = t.nodes.length := by
+DosenPetric/FiniteTraceTree.lean:47: theorem nat_le_map_sum {α : Type u} (f : α → Nat) {xs : List α} {a : α}
+DosenPetric/FiniteTraceTree.lean:58: structure FiniteTrace (α : Type u) where
+DosenPetric/FiniteTraceTree.lean:68: inductive Reach (R : α → α → Prop) : α → α → Prop where
+DosenPetric/FiniteTraceTree.lean:72: theorem Reach.trans {R : α → α → Prop} {a b c : α}
+DosenPetric/FiniteTraceTree.lean:78: def tree (S : FiniteTrace α) (a : α) : TraceTree α :=
+DosenPetric/FiniteTraceTree.lean:83: theorem tree_eq (a : α) :
+DosenPetric/FiniteTraceTree.lean:86: theorem tree_root (a : α) : (S.tree a).root = a := by rw [tree_eq]; rfl
+DosenPetric/FiniteTraceTree.lean:88: theorem tree_sound (S : FiniteTrace α) (a b : α)
+DosenPetric/FiniteTraceTree.lean:98: theorem tree_complete {a b : α} (h : Reach S.edge a b) : b ∈ (S.tree a).nodes := by
+DosenPetric/FiniteTraceTree.lean:110: theorem tree_correct (a b : α) : b ∈ (S.tree a).nodes ↔ Reach S.edge a b :=
+DosenPetric/FiniteTraceTree.lean:113: def rank (a : α) : Nat := (S.tree a).count
+DosenPetric/FiniteTraceTree.lean:115: theorem map_attach_values (xs : List α) (f : α → Nat) :
+DosenPetric/FiniteTraceTree.lean:121: theorem rank_eq (a : α) : S.rank a = 1 + ((S.next a).map S.rank).sum := by
+DosenPetric/FiniteTraceTree.lean:125: theorem rank_pos (a : α) : 0 < S.rank a := TraceTree.count_pos _
+DosenPetric/FiniteTraceTree.lean:127: theorem child_rank_lt {a b : α} (h : S.edge a b) : S.rank b < S.rank a := by
+DosenPetric/FiniteTraceTree.lean:131: theorem rank_one_iff (a : α) : S.rank a = 1 ↔ S.next a = [] := by
+DosenPetric/GentzenBinaryFibers.lean:13: theorem partition_length (Γ Θ : List (NormalForm P)) {C : NormalForm P} (x : At (Γ ++ Θ) C) :
+DosenPetric/GentzenBinaryFibers.lean:18: theorem wrap_partition_length (Γ Θ : List (NormalForm P)) (H A B : NormalForm P)
+DosenPetric/GentzenBinaryFibers.lean:32: theorem conjR_left_right_route {Γ Θ Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenBinaryFibers.lean:46: theorem conjR_right_right_route {Γ Θ Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenBinaryFibers.lean:60: theorem disjL_left_left_route {Γ Θ Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenBinaryFibers.lean:74: theorem disjL_right_left_route {Γ Θ Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenBinaryFibers.lean:88: theorem cut_left_right_route {Γ Θ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenBinaryFibers.lean:98: theorem cut_right_left_route {Γ Θ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenClassifiedRank.lean:15: inductive LowerContraction : {Γ Δ : List (NormalForm P)} → (g : G P Γ Δ) →
+DosenPetric/GentzenClassifiedRank.lean:22: theorem lowerContractionL_of_index (A : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenClassifiedRank.lean:33: theorem lowerContractionR_of_index (Γ : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenClassifiedRank.lean:45: theorem lowerContraction_iff_arity {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClassifiedRank.lean:70: theorem position_classification {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClassifiedRank.lean:78: theorem position_classes_disjoint {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClassifiedRank.lean:87: theorem rho_one_iff_leaf {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClassifiedRank.lean:91: theorem rho_leaf {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClassifiedRank.lean:95: theorem rho_parametric {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClassifiedRank.lean:104: theorem contraction_predecessorsL (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenClassifiedRank.lean:114: theorem contraction_predecessorsR (Γ : List (NormalForm P)) (C : NormalForm P)
+DosenPetric/GentzenClassifiedRank.lean:125: theorem contractionRankL_eq (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenClassifiedRank.lean:135: theorem contractionRankR_eq (Γ : List (NormalForm P)) (C : NormalForm P)
+DosenPetric/GentzenClassifiedRank.lean:146: theorem cutRank_two_iff_leaves {Γ Θ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenClusterExamples.lean:13: theorem identity_leaf (l : Literal P) (s : SequentSide)
+DosenPetric/GentzenClusterExamples.lean:16: theorem zero_leaf (l : Literal P) (s : SequentSide)
+DosenPetric/GentzenClusterExamples.lean:19: theorem topI_rank : (topI : G P [] [.top]).rho .right (.here .top []) = 1 := rho_leaf _ _ _ rfl
+DosenPetric/GentzenClusterExamples.lean:20: theorem botE_rank : (botE : G P [.bot] []).rho .left (.here .bot []) = 1 := rho_leaf _ _ _ rfl
+DosenPetric/GentzenClusterExamples.lean:22: theorem zero_rank (l : Literal P) (s : SequentSide)
+DosenPetric/GentzenClusterExamples.lean:26: theorem signed_identity_ranks (p : P) :
+DosenPetric/GentzenClusterExamples.lean:31: theorem conjL_principal_leaf (Γ Θ Δ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenClusterExamples.lean:38: theorem disjR_principal_leaf (Γ Δ Λ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenClusterExamples.lean:45: theorem conjR_principal_leaf {Γ Θ Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenClusterExamples.lean:49: theorem disjL_principal_leaf {Γ Θ Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenClusterExamples.lean:53: theorem repeated_positions_distinct (C : NormalForm P) (Γ Δ : List (NormalForm P))
+DosenPetric/GentzenClusterExamples.lean:61: theorem duplicate_subproof_addresses {Γ Δ : List (NormalForm P)} (f : G P Γ Δ) :
+DosenPetric/GentzenClusterExamples.lean:66: theorem three_copy_offsets (C : NormalForm P) :
+DosenPetric/GentzenClusterExamples.lean:70: theorem three_copies_with_fixed_equal (C : NormalForm P) (Δ : List (NormalForm P))
+DosenPetric/GentzenClusterExamples.lean:75: theorem topmost_cluster_properties {Γ Θ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenClusterExamples.lean:86: theorem swap_empty_blocks (Θ : List (NormalForm P)) {C : NormalForm P} (a : At Θ C) :
+DosenPetric/GentzenClusterExamples.lean:94: theorem cut_left_consumed {Γ Θ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenClusterExamples.lean:98: theorem cut_right_consumed {Γ Θ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenClusterExamples.lean:102: theorem cut_left_source {Γ Θ Δ Λ : List (NormalForm P)} {C A : NormalForm P}
+DosenPetric/GentzenClusterExamples.lean:106: theorem cut_left_target {Γ Θ Δ Λ : List (NormalForm P)} {C A : NormalForm P}
+DosenPetric/GentzenClusterExamples.lean:110: theorem cut_right_source {Γ Θ Δ Λ : List (NormalForm P)} {C A : NormalForm P}
+DosenPetric/GentzenClusterExamples.lean:114: theorem cut_right_target {Γ Θ Δ Λ : List (NormalForm P)} {C A : NormalForm P}
+DosenPetric/GentzenClusterRank.lean:14: def rank (n : TraceNode P s C) : Nat := (system P s C).rank n
+DosenPetric/GentzenClusterRank.lean:16: theorem rank_eq (n : TraceNode P s C) :
+DosenPetric/GentzenClusterRank.lean:22: theorem rank_readdress {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClusterRank.lean:40: def rho {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClusterRank.lean:43: theorem rho_counts_nodes {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClusterRank.lean:46: theorem rho_eq {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClusterRank.lean:56: theorem rho_pos {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClusterRank.lean:59: theorem rho_child_lt {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClusterRank.lean:67: theorem rho_one_iff {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClusterRank.lean:85: def leftCutRank {Γ Δ : List (NormalForm P)} {C : NormalForm P} (f : G P Γ (C :: Δ)) : Nat :=
+DosenPetric/GentzenClusterRank.lean:88: def rightCutRank {Θ Λ : List (NormalForm P)} {C : NormalForm P} (g : G P (C :: Θ) Λ) : Nat :=
+DosenPetric/GentzenClusterRank.lean:91: def cutRank {Γ Θ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenClusterRank.lean:94: theorem cutRank_ge_two {Γ Θ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenClusterRank.lean:101: theorem cutRank_eq_two {Γ Θ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenClusterRank.lean:111: def contractionRankL (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenClusterRank.lean:115: def contractionRankR (Γ : List (NormalForm P)) (C : NormalForm P)
+DosenPetric/GentzenClusters.lean:14: structure TraceNode (P : Type u) (s : SequentSide) (C : NormalForm P) where
+DosenPetric/GentzenClusters.lean:24: def descend (n : TraceNode P s C) (a : Upper n.proof s C) : TraceNode P s C :=
+DosenPetric/GentzenClusters.lean:28: def Edge (n m : TraceNode P s C) : Prop :=
+DosenPetric/GentzenClusters.lean:31: def next (n : TraceNode P s C) : List (TraceNode P s C) :=
+DosenPetric/GentzenClusters.lean:34: theorem next_correct (n m : TraceNode P s C) : m ∈ n.next ↔ Edge n m := by
+DosenPetric/GentzenClusters.lean:40: def system (P : Type u) (s : SequentSide) (C : NormalForm P) : FiniteTrace (TraceNode P s C) where
+DosenPetric/GentzenClusters.lean:49: def cluster (n : TraceNode P s C) : TraceTree (TraceNode P s C) := (system P s C).tree n
+DosenPetric/GentzenClusters.lean:51: theorem cluster_root (n : TraceNode P s C) : n.cluster.root = n := (system P s C).tree_root n
+DosenPetric/GentzenClusters.lean:53: theorem cluster_nodes (n m : TraceNode P s C) :
+DosenPetric/GentzenClusters.lean:57: theorem cluster_children (n m : TraceNode P s C) :
+DosenPetric/GentzenClusters.lean:70: theorem cluster_closed {n m k : TraceNode P s C} (hm : m ∈ n.cluster.nodes)
+DosenPetric/GentzenClusters.lean:75: def Valid {Γ Δ : List (NormalForm P)} (root : G P Γ Δ) (n : TraceNode P s C) : Prop :=
+DosenPetric/GentzenClusters.lean:78: theorem valid_descend {Γ Δ : List (NormalForm P)} {root : G P Γ Δ}
+DosenPetric/GentzenClusters.lean:84: theorem reach_valid {Γ Δ : List (NormalForm P)} {root : G P Γ Δ}
+DosenPetric/GentzenClusters.lean:97: def traceRoot {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClusters.lean:100: def cluster {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClusters.lean:103: theorem cluster_root {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClusters.lean:107: theorem cluster_correct {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenClusters.lean:112: theorem cluster_address {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenCopyFibers.lean:12: def copyOffsets : List (List (NormalForm P)) → List Nat
+DosenPetric/GentzenCopyFibers.lean:16: theorem copyIndex_selected (gs : List (List (NormalForm P))) (i : Nat) :
+DosenPetric/GentzenCopyFibers.lean:42: def copyHeadAt (C : NormalForm P) (Γ : List (NormalForm P))
+DosenPetric/GentzenCopyFibers.lean:46: def copyTailAt (C : NormalForm P) (Γ : List (NormalForm P))
+DosenPetric/GentzenCopyFibers.lean:51: theorem copyHeadAt_index (C : NormalForm P) (Γ : List (NormalForm P))
+DosenPetric/GentzenCopyFibers.lean:56: theorem copyTailAt_index (C : NormalForm P) (Γ : List (NormalForm P))
+DosenPetric/GentzenCopyFibers.lean:63: def selectedCopies (C : NormalForm P) : (gs : List (List (NormalForm P))) →
+DosenPetric/GentzenCopyFibers.lean:68: theorem selectedCopies_indices (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenCopyFibers.lean:80: theorem selectedCopies_length (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenCopyFibers.lean:86: theorem selectedCopies_mem (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenCopyFibers.lean:96: theorem selectedCopies_ordered (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenCopyFibers.lean:111: theorem selectedCopies_nodup (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenCopyFibers.lean:119: theorem fiber_copies_selected (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenCopyFibers.lean:136: def fixedCopyIndex : List (List (NormalForm P)) → Nat → Nat
+DosenPetric/GentzenCopyFibers.lean:140: theorem copyIndex_fixed (gs : List (List (NormalForm P))) (i : Nat)
+DosenPetric/GentzenCopyFibers.lean:157: theorem copyIndex_fixed_unique (gs : List (List (NormalForm P))) (i j : Nat)
+DosenPetric/GentzenCopyFibers.lean:180: theorem splitAppend_left_index (Γ Δ : List (NormalForm P)) {A : NormalForm P}
+DosenPetric/GentzenCopyFibers.lean:186: theorem splitAppend_right_index (Γ Δ : List (NormalForm P)) {A : NormalForm P}
+DosenPetric/GentzenCopyFibers.lean:195: def fixedCopyAt (C : NormalForm P) : (gs : List (List (NormalForm P))) →
+DosenPetric/GentzenCopyFibers.lean:212: theorem fixedCopyAt_index (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenCopyFibers.lean:237: theorem fiber_copies_fixed (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenFiberOrder.lean:13: def Ordered {Γ : List (NormalForm P)} {C : NormalForm P} (xs : List (At Γ C)) : Prop :=
+DosenPetric/GentzenFiberOrder.lean:16: theorem ordered_there {Γ : List (NormalForm P)} {A C : NormalForm P}
+DosenPetric/GentzenFiberOrder.lean:23: theorem ordered_ext {Γ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenFiberOrder.lean:69: theorem fiber_ordered {Γ Δ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenFiberOrder.lean:88: theorem fiber_ext {Γ Θ Δ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenFiberOrder.lean:94: theorem fiber_empty {Γ Δ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenFiberOrder.lean:100: theorem fiber_single {Γ Δ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenLinearFibers.lean:13: theorem ext {Γ Δ : List (NormalForm P)} (w v : TraceRoute Γ Δ)
+DosenPetric/GentzenLinearFibers.lean:25: theorem fiber_inverse {Γ Δ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenLinearFibers.lean:35: theorem fiber_identity (Γ : List (NormalForm P)) {C : NormalForm P} (x : At Γ C) :
+DosenPetric/GentzenLinearFibers.lean:41: theorem fiber_fixed (Γ X Y Θ : List (NormalForm P)) {C : NormalForm P}
+DosenPetric/GentzenLinearFibers.lean:49: def before (Γ Θ : List (NormalForm P)) : TraceRoute (Γ ++ Θ) Γ :=
+DosenPetric/GentzenLinearFibers.lean:52: def shift (Γ Θ : List (NormalForm P)) : TraceRoute (Γ ++ Θ) Θ :=
+DosenPetric/GentzenLinearFibers.lean:55: theorem fiber_before (Γ Θ : List (NormalForm P)) {C : NormalForm P} (x : At (Γ ++ Θ) C) :
+DosenPetric/GentzenLinearFibers.lean:81: theorem fiber_shift (Γ Θ : List (NormalForm P)) {C : NormalForm P} (x : At (Γ ++ Θ) C) :
+DosenPetric/GentzenLinearFibers.lean:110: def wrap {Γ Δ : List (NormalForm P)} (A B : NormalForm P) (w : TraceRoute Γ Δ) :
+DosenPetric/GentzenLinearFibers.lean:114: theorem fiber_wrap_here {Γ Δ : List (NormalForm P)} (A B : NormalForm P) (w : TraceRoute Γ Δ) :
+DosenPetric/GentzenLinearFibers.lean:124: theorem fiber_wrap_there {Γ Δ : List (NormalForm P)} (A B : NormalForm P) (w : TraceRoute Γ Δ)
+DosenPetric/GentzenLinearFibers.lean:139: theorem fiber_skip {Γ Δ : List (NormalForm P)} (B : NormalForm P) (w : TraceRoute Γ Δ)
+DosenPetric/GentzenLinearFibers.lean:147: theorem fixed_single_none (Γ Θ Y : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenPredecessors.lean:15: def parent {Γ Δ Θ Λ : List (NormalForm P)} {f : G P Γ Δ} {g : G P Θ Λ}
+DosenPetric/GentzenPredecessors.lean:64: def route {Γ Δ Θ Λ : List (NormalForm P)} {f : G P Γ Δ} {g : G P Θ Λ}
+DosenPetric/GentzenPredecessors.lean:68: theorem route_correct {Γ Δ Θ Λ : List (NormalForm P)} {f : G P Γ Δ} {g : G P Θ Λ}
+DosenPetric/GentzenPredecessors.lean:74: structure Branch {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) where
+DosenPetric/GentzenPredecessors.lean:82: def branches : {Γ Δ : List (NormalForm P)} → (g : G P Γ Δ) → List (Branch g)
+DosenPetric/GentzenPredecessors.lean:97: theorem branches_complete {Γ Δ : List (NormalForm P)} {g : G P Γ Δ} (b : Branch g) :
+DosenPetric/GentzenPredecessors.lean:104: structure Upper {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide) (C : NormalForm P) where
+DosenPetric/GentzenPredecessors.lean:110: def predecessors {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenPredecessors.lean:115: def IsPredecessor {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenPredecessors.lean:119: theorem predecessors_correct {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenPredecessors.lean:132: theorem predecessor_proofSize_lt {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenProofOccurrences.lean:14: def proofSize : {Γ Δ : List (NormalForm P)} → G P Γ Δ → Nat
+DosenPetric/GentzenProofOccurrences.lean:25: inductive Premise : {Γ Δ : List (NormalForm P)} → G P Γ Δ →
+DosenPetric/GentzenProofOccurrences.lean:46: def branch {Γ Δ Θ Λ : List (NormalForm P)} {f : G P Γ Δ} {g : G P Θ Λ} : Premise f g → Nat
+DosenPetric/GentzenProofOccurrences.lean:50: theorem proofSize_lt {Γ Δ Θ Λ : List (NormalForm P)} {f : G P Γ Δ} {g : G P Θ Λ}
+DosenPetric/GentzenProofOccurrences.lean:57: inductive ProofAddress {Γ Δ : List (NormalForm P)} (root : G P Γ Δ) :
+DosenPetric/GentzenProofOccurrences.lean:65: def path {Γ Δ Θ Λ : List (NormalForm P)} {root : G P Γ Δ} {g : G P Θ Λ} :
+DosenPetric/GentzenProofOccurrences.lean:70: theorem down_path {Γ Δ Θ Λ Ξ Ω : List (NormalForm P)} {root : G P Γ Δ}
+DosenPetric/GentzenRuleClassification.lean:16: def sourceArity : {Γ Δ : List (NormalForm P)} → (g : G P Γ Δ) →
+DosenPetric/GentzenRuleClassification.lean:29: def Leaf {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenRuleClassification.lean:32: def Parametric {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenRuleClassification.lean:35: theorem predecessors_length {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenRuleClassification.lean:41: theorem sourceArity_correct {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenRuleClassification.lean:130: theorem leaf_iff_no_predecessor {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenRuleClassification.lean:138: theorem parametric_unique {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenTraceCompatibility.lean:13: theorem cutFree {Γ Δ Θ Λ : List (NormalForm P)} {f : G P Γ Δ} {g : G P Θ Λ}
+DosenPetric/GentzenTraceCompatibility.lean:17: theorem atomized {Γ Δ Θ Λ : List (NormalForm P)} {f : G P Γ Δ} {g : G P Θ Λ}
+DosenPetric/GentzenTraceCompatibility.lean:26: theorem cutFree {Γ Δ Θ Λ : List (NormalForm P)} {root : G P Γ Δ} {g : G P Θ Λ}
+DosenPetric/GentzenTraceCompatibility.lean:32: theorem atomized {Γ Δ Θ Λ : List (NormalForm P)} {root : G P Γ Δ} {g : G P Θ Λ}
+DosenPetric/GentzenTraceCompatibility.lean:42: def reindex {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ')
+DosenPetric/GentzenTraceCompatibility.lean:50: def reindex {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ')
+DosenPetric/GentzenTraceCompatibility.lean:59: theorem predecessors_reindex {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ')
+DosenPetric/GentzenTraceCompatibility.lean:67: theorem cluster_reindex {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ')
+DosenPetric/GentzenTraceCompatibility.lean:72: theorem rho_reindex {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ')
+DosenPetric/GentzenTraceCompatibility.lean:77: theorem rho_node_list {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenTraceCompatibility.lean:81: theorem cluster_cutFree {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenTraceCompatibility.lean:87: theorem cluster_atomized {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenTraceCompatibility.lean:94: def TiedRight {Θ Λ : List (NormalForm P)} {C : NormalForm P} (g : G P (C :: Θ) Λ)
+DosenPetric/GentzenTraceCompatibility.lean:98: def TiedLeft {Γ Δ : List (NormalForm P)} {C : NormalForm P} (f : G P Γ (C :: Δ))
+DosenPetric/GentzenTraceCompatibility.lean:102: theorem tiedRight_iff_branching {Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenTraceCompatibility.lean:109: theorem tiedLeft_iff_branching {Γ Δ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenTraceFibers.lean:15: inductive Comparison : {Γ : List (NormalForm P)} → {A B : NormalForm P} →
+DosenPetric/GentzenTraceFibers.lean:20: def compare {Γ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenTraceFibers.lean:33: inductive TraceRoute (Γ : List (NormalForm P)) : List (NormalForm P) → Type u where
+DosenPetric/GentzenTraceFibers.lean:39: def get {Γ Δ : List (NormalForm P)} : TraceRoute Γ Δ → {A : NormalForm P} → At Δ A → Option (At Γ A)
+DosenPetric/GentzenTraceFibers.lean:43: def ofMap (Γ Δ : List (NormalForm P))
+DosenPetric/GentzenTraceFibers.lean:49: theorem get_ofMap (Γ Δ : List (NormalForm P))
+DosenPetric/GentzenTraceFibers.lean:56: def full {Γ Δ : List (NormalForm P)} (w : Route Γ Δ) : TraceRoute Γ Δ :=
+DosenPetric/GentzenTraceFibers.lean:59: theorem get_full {Γ Δ : List (NormalForm P)} (w : Route Γ Δ)
+DosenPetric/GentzenTraceFibers.lean:63: def fiber {Γ : List (NormalForm P)} {A : NormalForm P} (x : At Γ A) :
+DosenPetric/GentzenTraceFibers.lean:71: theorem mem_there {Γ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenTraceFibers.lean:78: theorem here_not_mem_there {Γ : List (NormalForm P)} {A : NormalForm P}
+DosenPetric/GentzenTraceFibers.lean:83: theorem fiber_correct {Γ Δ : List (NormalForm P)} {A : NormalForm P}
+DosenPetric/GentzenTracePositions.lean:12: inductive SequentSide where
+DosenPetric/GentzenTracePositions.lean:16: def SequentSide.context (s : SequentSide) (Γ Δ : List (NormalForm P)) : List (NormalForm P) :=
+DosenPetric/GentzenTracePositions.lean:21: abbrev Place (s : SequentSide) (Γ Δ : List (NormalForm P)) (C : NormalForm P) :=
+DosenPetric/GentzenTracePositions.lean:24: abbrev SidePos (Γ Δ : List (NormalForm P)) (C : NormalForm P) := At Γ C ⊕ At Δ C
+DosenPetric/GentzenTracePositions.lean:30: def fixed (Γ X Y Θ : List (NormalForm P)) {C : NormalForm P} :
+DosenPetric/GentzenTracePositions.lean:40: theorem fixed_before (Γ X Y Θ : List (NormalForm P)) {C : NormalForm P} (a : At Γ C) :
+DosenPetric/GentzenTracePositions.lean:46: theorem fixed_middle (Γ X Y Θ : List (NormalForm P)) {C : NormalForm P} (a : At X C) :
+DosenPetric/GentzenTracePositions.lean:52: theorem fixed_tail (Γ X Y Θ : List (NormalForm P)) {C : NormalForm P} (a : At Θ C) :
+DosenPetric/GentzenTracePositions.lean:59: theorem fixed_reverse (Γ X Y Θ : List (NormalForm P)) {C : NormalForm P}
+DosenPetric/GentzenUnaryFibers.lean:13: theorem thin_parent_fixed (Γ Θ : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenUnaryFibers.lean:25: theorem exchangeIndex_inverse (g x y i : Nat) :
+DosenPetric/GentzenUnaryFibers.lean:30: theorem swapBlocks_inverse (Γ X Y Θ : List (NormalForm P)) {C : NormalForm P}
+DosenPetric/GentzenUnaryFibers.lean:36: theorem fiber_swap (Γ X Y Θ : List (NormalForm P)) {C : NormalForm P}
+DosenPetric/GentzenUnaryFibers.lean:49: theorem fixed_single_length (Γ Θ Y : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenUnaryFibers.lean:59: theorem fiber_thin_length (Γ Θ : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenUnaryFibers.lean:70: theorem fiber_logical_length (Γ Θ : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenUnaryFibers.lean:75: theorem fiber_copies_length (A : NormalForm P) (gs : List (List (NormalForm P)))

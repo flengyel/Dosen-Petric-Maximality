@@ -73,7 +73,8 @@ definition is unchanged and can be adapted once that interpretation exists.
 | Common atomic factorization and complete support | `Term.Positive` is the recursive eta/epsilon-free arrow predicate, with signed objects unrestricted. `atomicFactor` terminates by atomicCount and records exact lists; `commonAtomicFactor` supplies shared endpoints/outer factors and two positive raw middles with complete support through common tagged embeddings, independently of relation equality. Source padding and separated iterated-factor laws compile. |
 | Positive-fragment zero and derived union algebra | `Reduced.tensor_zero/tensor_zeroOf`, zero witness/absorption laws, raw/quotient union, all requested algebra and pointwise occurrence formulas compile without coherence. Both zeros are required for the tensor law; union-unit is derived by the direct p.291 argument. |
 | Typed positive Gentzen syntax and representation (G0/G1) | `Reduced.Gentzen.G` has 16 genuine rule/leaf schemas with positive denotation, actual structural comparisons and source-order operations. `gentzenization` and decoded/occurrence counterparts cover all 19 Positive schemas. Empty contexts remain top/bot and G [] [] is impossible. Representation may contain cuts; no quotient translation or elimination is claimed. |
-| Atomic-k thinning atomization | `G.atomization/atomization_cutFree/atomization_occurrences` compile for arbitrary P, with unchanged contexts and all sixteen G schemas. Positional formula-recursive helpers cover the four compound cases, contract all duplicated context positions and introduce no cuts. Existing analysis definitions and generating equations are unchanged. Ancestor clusters/rank, blocked contractions and the rest of G2 remain open. |
+| Atomic-k thinning atomization | `G.atomization/atomization_cutFree/atomization_occurrences` compile for arbitrary P, with unchanged contexts and all sixteen G schemas. Positional formula-recursive helpers cover the four compound cases, contract all duplicated context positions and introduce no cuts. Existing analysis definitions and generating equations are unchanged. The cluster/rank prerequisite is now proved below; blocked-contraction transformations and the rest of G2 remain open. |
+| Typed Gentzen cluster/rank prerequisite (G2) | Independent parent routing and complete predecessor enumeration/classification; finite typed cluster root/edge/reachability/address proofs; all-node rho, exact contraction sums, strict child bounds and cut ranks compile for arbitrary P and proofs containing cuts. Reindex/cut-free/topmost specializations and tied-site characterizations compile. Blocked/reducibility transformations and decreasing elimination measures are open. |
 | Positive-fragment coherence input | `PositiveCoherence P` quantifies only over positive raw terms and concludes equality in Reduced.Hom. `faithful_of_positive_coherence` is proved conditionally from that explicit, unsupplied premise. This does not supply Reduced.Faithful or Boolean Coherence. |
 | Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. Reduced faithfulness and its earlier positive-core coherence inputs are unproved. No complete `OccurrenceInterpretation` instance. Equality reflection and full red-equation preservation remain open. |
 | Normalization and occurrence correspondence | `Presentation.normalization` constructs the existing record for every P by simultaneous sign recursion and source n/r/rho arrows. Both inverse laws, inverse occurrence coordinates, both graph laws, literal/label/polarity correspondence, repeated-tag injectivity, Empty cases, and transport formulas compile. No coherence or arrow-negation premise. |
@@ -85,22 +86,20 @@ definition is unchanged and can be adapted once that interpretation exists.
 
 ## Next concrete proof task
 
-Atomic-k is proved in [the report](POSITIVE_THINNING_ATOMIZATION_REPORT.md).
-Construct typed proof-local predecessor/ancestor tracing for selected whole-formula
-positions in `f : G P Γ (C :: Δ)` and `g : G P (C :: Θ) Λ`, with
-`G.Topmost f g`, `f.Atomized` and `g.Atomized`. The roots are `At.here C Δ`
-and `At.here C Θ`. Trace all sixteen rules, branching at every selected upper
-copy of contraction and distinguishing principal from parametric occurrences.
-Use the existing At/index, splitAppend/swapBlocks/copies_index and block laws.
-Finite clusters/rank (§11.2 pp.247–249), tied/blocked contractions,
-Reducibility and Blocked-w (pp.249–253) remain open, including constant/zero
-extensions. cutCount is not a proved decreasing elimination measure.
+The [cluster/rank prerequisite](GENTZEN_CLUSTER_RANK_REPORT.md) is complete.
+Prove the §11.2 p.251 (W1) right-thinning/contraction commutation on the actual
+types displayed in that report, including equal Reduced denotation, CutFree
+preservation and strict decrease of the new contraction subterm's rank.
+Use the established contraction sums and parametric equations; no source
+Semilattice Coherence theorem is supplied by citation.
 
-Keep G3 cut elimination, restricted mix-dicartesian coherence, PositiveCoherence,
-Reduced.Faithful, Boolean Coherence and unconditional maximality separate and
-open. Reuse the conditional transfers and completed factorization unchanged.
-Fullness, inclusion reflection, quotient descent and derived arrow negation
-are not consequences of Atomic-k.
+Define the seven p.250 blocked-left patterns and their duals, and typed proof
+replacement at ProofAddress for the later complete Reducibility argument.
+G.TiedRight/TiedLeft already identify branching sites in the chosen cut
+clusters. Remaining W1–W6 transformations, Blocked-w, cut elimination,
+restricted positive coherence, PositiveCoherence, Reduced.Faithful, Boolean
+Coherence and unconditional maximality remain separate and open. No rank
+invariance under denotation, quotient descent or decrease under Atomic-k.
 
 ## Verification boundary
 

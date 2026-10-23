@@ -1,3 +1,42 @@
+# Gentzen cluster/rank validation (current checkpoint)
+
+Clean main baseline `045ade65a636ae331f3d635e5e6f4a18e0cb8061` passed actual strict verification:
+89 Lean source files / 3,990 audited declarations. SSH origin was fetched and
+agreed; no unrelated work was discarded. Final required checks completed at
+2026-10-23T05:10:02.544782+00:00: **105 sources / 4,739 audited declarations**.
+Strict build and transitive audit, both boundary scripts, manuscript SHA256SUMS
+and git diff --check all exited 0; all five expected controls rejected with
+Lean exit 1 and expected diagnostics. Public import closure passed.
+
+Typed predecessor correctness, independent source classification, finite
+cluster root/edge/reachability/address laws, exact all-node rank equations,
+contraction sums and cut ranks compile. Rank definitions need no Topmost,
+Atomized or CutFree assumption. Reindexing and cut-free/topmost label
+specializations are proved separately. Source constants/zero leaves and
+repeated positional copies are checked. Tied sites are characterized; no
+blocked/reducibility transformation or cut elimination is claimed.
+
+Only propext, Quot.sound and Classical.choice are permitted. Selected axiom
+prints are retained verbatim. Sixteen new modules preserve every older
+DosenPetric module, frozen syntax/equations/analysis interfaces, Lean 4.35.0,
+Init-only dependencies, manifest, historical reports and manuscript v4.
+The proofSize naming correction was followed by fresh required verification;
+the first passing run is retained. One exploratory target-build overlap is
+disclosed separately; all required baseline/final checks were sequential.
+
+Evidence, timings and hashes are in provenance/wsl-gentzen-cluster-rank/.
+Working-source hashes match the strict log; final committed-source, live SSH
+and byte-verified report-delivery receipts are separate runtime records in
+.codex-work/gentzen-cluster-rank/. Both author-side reviews were applied;
+the verified writing cache was consulted directly. No independent kernel/
+source audit, Challenge/Solution, Comparator, official preflight/service
+verification, manuscript recompilation/layout review, publication, license or
+visibility change ran. See [the report](GENTZEN_CLUSTER_RANK_REPORT.md).
+
+---
+
+## Historical Atomic-k validation (unchanged evidence)
+
 # Positive thinning atomization validation (current checkpoint)
 
 Clean main baseline `f5626c562001665829a8b1d6cb11384018eceacb` passed actual

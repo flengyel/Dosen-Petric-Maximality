@@ -1,7 +1,8 @@
 Continue the Došen–Petrić maximality formalization in WSL2.
 
 Repository: /home/flengyel/src/Dosen-Petric-Maximality, private, main.
-Read AGENTS.md, POSITIVE_THINNING_ATOMIZATION_REPORT and both atomization reviews,
+Read AGENTS.md, GENTZEN_CLUSTER_RANK_REPORT and both cluster/rank reviews,
+POSITIVE_THINNING_ATOMIZATION_REPORT and both atomization reviews,
 POSITIVE_GENTZENIZATION_REPORT and both Gentzenization reviews,
 POSITIVE_ZERO_UNION_REPORT and both zero/union reviews, COMMON_ATOMIC_FACTORIZATION_REPORT and both common atomic reviews,
 CONTEXTUAL_FACTORIZATION_REPORT and both contextual reviews,
@@ -96,7 +97,7 @@ general tensor/composition/d/union/compound zero, Gentzen quotient, canonical
 translation, cut elimination or coherence is supplied. Reuse old factorization.
 
 COMPLETED ATOMIC-k — REUSE
-Actual verified checkpoint: 89 Lean source files and 3,990 audited project
+Atomic-k checkpoint: 89 Lean source files and 3,990 audited project
 declarations; all required checks passed and all five controls rejected.
 Nineteen new modules leave every older DosenPetric module unchanged. G.atomize
 transforms all sixteen G schemas; atomization, atomization_cutFree and
@@ -112,45 +113,67 @@ and their denotation/occurrence consequences use Classical.choice, which
 is permitted; do not claim choice-free proofs. Do not claim global cut-count
 or size monotonicity: branching duplicates premises.
 
+COMPLETED CLUSTER/RANK PREREQUISITE — REUSE
+Final actual verification: 105 Lean source files / 4,739 audited declarations;
+all required checks passed and all five negative controls rejected. Sixteen
+new modules preserve older DosenPetric modules and all frozen interfaces.
+Use Place/SidePos and Premise, parent routing, TraceRoute fibers and
+G.predecessors_correct. Independent sourceArity_correct and exhaustive,
+disjoint source classes cover all sixteen rules, including arbitrary cuts.
+selectedCopies and exact contraction predecessor equations retain every
+selected upper copy and fixed equal positions. TraceNode stores proof,
+address and selected At; cluster_address proves actual ProofAddress validity.
+cluster_correct/cluster_children give complete finite reachability and local
+edges. G.rho_node_list, rho_eq, positivity/child bounds, source-leaf rank-one,
+contractionRankL_eq/R_eq and both cut-rank results compile. No ht/hf/hg is
+needed to define rank. Reindexing, cut-free/atomized cluster labels and
+topmost_cluster_properties compile. TiedRight/TiedLeft characterize exactly
+the branching contraction sites. G.proofSize is a separate proof-node count
+for termination, not rho, cutCount, or a decreasing elimination measure.
+
 NEXT CONCRETE PROOF TASK
-Construct typed predecessor/ancestor tracing for selected whole-formula
-positions through existing G proofs, then finite clusters and rank.
-Source §11.2 pp.247–249 supplies the mathematical definitions; tied/blocked
-contractions, Reducibility and Blocked-w pp.249–253 are later separate proofs.
-Use the actual implemented entry data:
+The first concrete reducibility target is the right-thinning instance of
+source (W 1), §11.2 printed p.251. For the actual implemented types, let:
 
 ```lean
-f : G P Γ (C :: Δ)
-g : G P (C :: Θ) Λ
-ht : G.Topmost f g -- f.CutFree ∧ g.CutFree
-hf : f.Atomized
-hg : g.Atomized
--- selected root tags: At.here C Δ; At.here C Θ
+C D : NormalForm P
+gs : List (List (NormalForm P))
+Θ Δ Λ : List (NormalForm P)
+hn : 2 ≤ gs.length
+f : G P (repeated C gs ++ Θ) (Δ ++ Λ)
 ```
 
-A proposed SidePos Γ Δ C := At Γ C ⊕ At Δ C is a documentation interface,
-not yet implemented. A predecessor family must retain proof-node address and
-side, cover all sixteen rules, branch over all selected upper contraction
-copies, preserve exchange/reindex positions, and stop at logical principal,
-leaf and thinning introductions as appropriate. Existing At/index,
-splitAppend/swapBlocks/copies_index, Rewire and block component laws are
-available. Atomic-k supplies atomized CutFree premises without assuming their
-cuts atomic. No ancestor/cluster/rank or blocked-contraction theorem is yet
-implemented. cutCount is not the source rank or a decreasing measure.
+Construct the two existing-rule terms:
 
-| Obligation | Current status / exact next dependency |
-| --- | --- |
-| G0/G1 | Proved; preserve genuine syntax, denotation, representation and source-order macros. |
-| G2 Atomic-k | Proved by G.atomization, with CutFree and complete occurrence variants. |
-| G2 remaining clean-topmost-cut work | Open: typed ancestor traces, finite clusters/rank, tied/blocked contractions, Reducibility and Blocked-w, local denotation laws and a decreasing complexity argument. |
-| G3 cut elimination | Open: for every g : G P Γ Δ, construct CutFree h of the same type with equal Reduced denotation. Include constants and the five zero cases. |
-| Restricted mix-dicartesian coherence / PositiveCoherence | Open; the dependency table below remains the construction plan. |
-| Reduced.Faithful / Boolean Coherence / unconditional maximality | Open; retain all transfers as conditional. |
+```lean
+h := G.contractL C gs Θ (Δ ++ D :: Λ) hn
+       (G.thinR (repeated C gs ++ Θ) Δ Λ D f)
+h' := G.thinR (gaps gs ++ C :: Θ) Δ Λ D
+        (G.contractL C gs Θ (Δ ++ Λ) hn f)
+```
 
-No canonical representative, Gentzen quotient, quotient translation, inclusion
-reflection, fullness or contravariant arrow negation follows from Atomic-k.
-Do not introduce coherence premises, new generating equations, unwitnessed
-zeros or identifications between the empty source and target folds.
+Both have type `G P (gaps gs ++ C :: Θ) (Δ ++ D :: Λ)`.
+Prove equality of their Reduced denotations, preservation of CutFree, and
+the strict inequality between the **new contraction subterm's**
+`contractionRankL C gs Θ (Δ ++ Λ) hn f` and the old contraction rank in h.
+The expected difference is gs.length, from the parametric right-thinning
+rank equation at every selected upper copy. This is a proposed next theorem,
+not a declaration or result of this checkpoint. The denotation calculation
+should use actual pre/postcomposition and associativity, not source
+Semilattice Coherence as an assumed Lean theorem.
+
+In parallel with these local reducibility instances, define the seven exact
+blocked-left patterns (w γ1–3), (w ∧1), (w ∨1–3) on printed p.250 and their
+right counterparts. `G.TiedRight/TiedLeft` already identify their candidate
+sites in the selected clusters. Blocked predicates, proof replacement at an
+address, the remaining (W 1)–(W 6) equations, all-site rank decrease,
+Reducibility and Blocked-w remain open. Their constant/zero extensions are
+separate checks (§11.5 p.273; §12.5 pp.291–292).
+
+Keep the remainder of G2, cut elimination, restricted positive coherence,
+PositiveCoherence, Reduced.Faithful, Boolean Coherence and unconditional
+maximality separate/open. Reuse conditional transfers unchanged. The missing
+Lean proof of a cited theorem does not itself show a manuscript defect.
 
 ## Remaining positive-coherence dependency table
 
@@ -187,7 +210,7 @@ interfaces rather than compiling declarations.
 | Z: §12.5 p.288 (0I ξ), pp.290–291 (∪0); any P and existing arrows | `tensor_zero o A B`; `tensor_zeroOf o f g`; `union_id_zero A`; all seven union algebra laws and witnessed zero unit | Existing Reduced.Laws, product/coproduct derivations | **Proved at the preceding zero/union checkpoint**; interpretation and positive raw membership are separate proved declarations. |
 | G0: §11.1 pp.238–243; §11.5 p.272; §12.5 p.291 | Implemented `Reduced.Gentzen.G/denote/denote_positive`, all rule denotation formulas, source-order macros, actual comparisons and empty boundary | Existing reduced structural/zero laws | **Proved**, see POSITIVE_GENTZENIZATION_REPORT. |
 | G1: §11.1 Gentzenization pp.245–246; §11.5 pp.272–273; §12.5 p.291 zero extension using (0I ξ) | `∀ (t : Term P A B), t.Positive → ∃ g : G P [A] [B], ofTerm (G.denote g) = comp (rightOut .conj A) (comp (ofTerm t) (rightIn .disj B))` | G0; typed rules for each of the 19 positive constructor schemas; zeros expanded recursively with Z; constant identity/zero laws already in ReducedStructure | **Proved** by Reduced.Gentzen.gentzenization and its decoded/occurrence counterparts. Representation is existential with cuts; no quotient function is inferred. |
-| G2 remaining: §11.2 pp.247–253 clusters/rank, Reducibility, Blocked-w and clean-cut definitions; Atomic-k is proved | For proposed `TopCut g`, `∃ h : G P Γ Δ, Clean h ∧ ofTerm (G.denote h) = ofTerm (G.denote g)`; prove every local rewrite reduces the source rank/multiset measure | G0, source structural/d equations; exact cut-formula positions, clusters and ranks; Z for zero leaves | **Open after completed Atomic-k**. First implement typed predecessor/ancestor tracing and clusters/rank. This is normalization of a topmost cut, not arbitrary equality by its relation. |
+| G2 remaining: §11.2 pp.250–253 blocked/reducibility transformations, Blocked-w and clean-cut definitions; Atomic-k and cluster/rank are proved | For proposed `TopCut g`, `∃ h : G P Γ Δ, Clean h ∧ ofTerm (G.denote h) = ofTerm (G.denote g)`; prove every local rewrite reduces the source rank/multiset measure | G0, source structural/d equations; exact cut-formula positions, clusters and ranks; Z for zero leaves | **Open after completed Atomic-k and cluster/rank**. First prove the W1 right-thinning instance above and define blocked patterns/proof replacement. This is normalization of a topmost cut, not arbitrary equality by its relation. |
 | G3: §11.2 pp.253–263 Cut-Elimination; §11.5 p.273 constants; §12.5 pp.291–292 zero atomic cases | `∀ g : G P Γ Δ, ∃ h : G P Γ Δ, CutFree h ∧ ofTerm (G.denote h) = ofTerm (G.denote g)` | G2; well-founded clean-cut complexity and blocked contractions; constant cut cases, (00), zero naturality | **Open**. Source five new zero cases must be derived at actual endpoint folds; unit terms are not arbitrary zeros. |
 | M0: §10.2 pp.223–226; §10.3 pp.229–230; §12.5 pp.289–290 | Define MixTerm/Atomic/Settled; `∀ t : MixTerm P A B, DNF A → CNF B → ∃ n : Settled P A B, ofTerm n.denote = ofTerm t.denote` | Z union laws; cut/composition elimination for the smaller Gentzen lattice syntax, extending §9.4/§9.6; atomic bracket normal forms | **Open**. Smaller-system composition elimination is a real proof obligation, not supplied by the new algebra. |
 | M1: §10.3 pp.229–230 zero constants; §12.5 p.290 zero atomic components | `∀ a : Atomic P A B, ZeroAtomic a → ofTerm a.denote = zeroOf (ofTerm a.denote)`; hence any two such same-type components are equal | Atomic path syntax; zeroOf_pre/post/independent, zero_top/bot and terminal/initial uniqueness; constant bases | **Open** for the proposed syntax; its categorical zero and unit ingredients are already proved. No general empty-relation equality is used. |

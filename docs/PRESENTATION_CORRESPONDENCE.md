@@ -677,8 +677,9 @@ syntactic equality. Signed-label preservation is not fullness or faithfulness.
 
 `cutCount`, `CutFree`, `Topmost` and `Atomized` are implemented analysis
 interfaces. Atomic-k atomization, including denotation equality and preservation
-of existing CutFree, is now proved as recorded below. Blocked contractions/ranks,
-cut elimination, restricted mix coherence, PositiveCoherence and Reduced.Faithful
+of existing CutFree, is now proved as recorded below. The cluster/rank prerequisite
+is also proved below. Blocked-contraction transformations, cut elimination,
+restricted mix coherence, PositiveCoherence and Reduced.Faithful
 remain open. No source citation supplies
 those missing proofs, and no coherence premise is added to Gentzenization.
 
@@ -772,3 +773,63 @@ transformation covers all sixteen unchanged Gentzen schemas. It does not
 give a decreasing rank, cut elimination, quotient translation or coherence.
 See [the Atomic-k report](POSITIVE_THINNING_ATOMIZATION_REPORT.md), including
 its four compound cases, constructor coverage, exact hypotheses and evidence.
+
+## Typed whole-formula ancestors, finite clusters and cut rank
+
+The September 2007 source and source hashes are unchanged. Printed pp.248–249
+were inspected in rendering for this construction. The source's cluster
+traces whole-formula positions and counts every node. Our existing positional
+G rules use explicit context gaps and branch tags; their exact order appears
+in the constructor table below.
+
+| Source location | Definition / repository correspondence | Proved declaration |
+| --- | --- | --- |
+| §11.2 p.247, leaf formulae | Atomic identity leaves both sides. Thinning and logical introduction terminate at the selected principal whole formula. The source's rightmost/leftmost conventions are translated to the explicit list gaps of existing G, rather than matched by formula value. | `G.sourceArity`, `Leaf`; classification/count correctness and principal-leaf lemmas. |
+| §11.2 pp.247–248, lower/upper contraction formulae | Lower position is `At.shift (gaps gs) (At.here C Θ)`; upper copies occur after each selected gap in `repeated C gs ++ Θ`. Fixed equal formulas in gaps are not selected copies. | `G.LowerContraction`, `selectedCopies`, `selectedCopies_length/nodup`, `contraction_predecessorsL/R`. |
+| §11.2 p.248, parametric sequences | Each fixed position has one upper position in the designated premise, with the same side and whole formula. | `Premise.parent`, `G.predecessors_correct`, `sourceArity_correct`, `parametric_unique`. |
+| §11.2 pp.248–249, finite cluster | Root is the selected conclusion position; leaves stop; contractions branch to all selected upper copies; parametric nodes have one successor. Node labels identify proof occurrences. | `TraceNode`, `ProofAddress`, `G.cluster_root`, `cluster_correct`, `cluster_address`, `TraceNode.cluster_children`. |
+| §11.2 p.249, ρ | Total number of nodes, including the root and every branch; not longest-path length. | `G.rho_node_list`, `rho_eq`, `rho_one_iff_leaf`, `rho_child_lt`. |
+| §11.2 p.249, contraction ranks | Apply ρ to the lower contraction position, for arbitrary proofs. | `contractionRankL/R`, `contractionRankL_eq/R_eq` give 1 plus the sum over every selected copy. |
+| §11.2 p.249, left/right cut formulas and ranks | For `f : G P Γ (C::Δ)`, left cut formula is the right-side head of f; for `g : G P (C::Θ) Λ`, right cut formula is the left-side head of g. Sum their ranks. No Topmost premise is required. | `leftCutRank/rightCutRank/cutRank`, `cutRank_ge_two`, `cutRank_two_iff_leaves`. |
+| §11.2 pp.249–250, tied contractions | A branching lower contraction node belongs to the chosen cut-formula cluster, on its specified side. | `TiedRight/TiedLeft`, both `tied*_iff_branching` theorems. Blocked forms and rewrites remain open. |
+| §11.5 pp.272–273, constants | topI has a genuine target top position and botE a genuine source bot position; these are leaves although their literal-occurrence types are empty. Empty context colours remain distinct. | `topI_rank`, `botE_rank`; unchanged G/denotation/no_empty. |
+| §12.5 pp.291–292, atomic zero extension | Both positions of an atomic zero basis term are leaves; later zero cut rewrites are not part of this construction. | `zero_leaf/zero_rank`; old zero grammar/equations unchanged. |
+
+| Existing G schema | Selected conclusion positions and predecessor routing | Source arity |
+| --- | --- | --- |
+| identity | Both singleton literal positions are leaves. | 0 |
+| zero | Both singleton literal positions are leaves. | 0 |
+| topI | Only the target top position exists; it is a leaf. | 0 |
+| botE | Only the source bot position exists; it is a leaf. | 0 |
+| exchangeL | Source routed by inverse positional block exchange; target fixed. Parent map is the existing swapBlocks. | 1 |
+| exchangeR | Target routed by inverse positional block exchange; source fixed. | 1 |
+| thinL | Source principal at index Γ.length is a leaf; other positions invert existing Route.thin. | 0 or 1 |
+| thinR | Target principal at index Δ.length is a leaf; other positions invert existing Route.thin. | 0 or 1 |
+| contractL | Source at index (gaps gs).length branches to selectedCopies; fixed source/target positions have one predecessor. | gs.length or 1 |
+| contractR | Dual target selection and every upper copy; fixed positions have one predecessor. | gs.length or 1 |
+| conjL | Inserted whole A∧B at the source gap is a leaf. Upper A and B are not ancestors of it; fixed positions retain prefix/tail coordinates. | 0 or 1 |
+| disjR | Inserted whole A∨B at the target gap is a leaf; fixed positions retain prefix/tail coordinates. | 0 or 1 |
+| conjR | Source Γ++Θ routes to f/g respectively. Target head A∧B is a leaf; residual Δ++Λ routes to the appropriate premise, after its upper principal head. | 0 or 1 |
+| disjL | Source head A∨B is a leaf; residual Γ++Θ routes to f/g after their principal heads. Target Δ++Λ routes directly to f/g. | 0 or 1 |
+| mix | Conclusion is Θ++Γ and Λ++Δ: first blocks belong to g (branch 1), second to f (branch 0). | 1 |
+| cut | Same conclusion order as mix. Surviving source Θ is in g after consumed C; Γ is in f. Surviving target Λ is in g; Δ is in f after consumed C. Neither consumed C is a conclusion position. | 1 |
+
+`Premise.parent` is specified independently from inverse-fiber enumeration.
+`predecessors_correct` proves local equivalence; `sourceArity_correct` connects
+an independent rule/index classification to computed count. All source
+classes are exhaustive and disjoint. Selected contraction copies have exact
+count and are distinct positions even when labels agree.
+
+`cluster_correct/cluster_children/cluster_address` give finite reachability,
+immediate edges and valid proof-occurrence labels, with side and formula fixed
+in TraceNode P s C. `rho_node_list` counts all explicit tree nodes;
+`contractionRankL_eq/R_eq` sum all selected upper ranks. `cutRank_ge_two` and
+`cutRank_two_iff_leaves` need no Topmost or atomization premise. Reindexing,
+cut-free/atomized label propagation and tied-site characterization compile.
+G.proofSize is the separate termination count, not rho or cutCount.
+
+The cluster/rank prerequisite within G2 is complete. Source blocked patterns
+(p.250), W1–W6 reducibility rewrites (pp.251–252), Blocked-w, cut elimination
+and the positive coherence inputs remain open. No relational reflection,
+quotient rank or transformation decrease is inferred. See
+[the report](GENTZEN_CLUSTER_RANK_REPORT.md) for exact hypotheses and evidence.

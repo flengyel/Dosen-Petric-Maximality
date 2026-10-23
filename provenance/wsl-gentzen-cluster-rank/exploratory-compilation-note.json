@@ -1,0 +1,21 @@
+{
+  "final_required_verification_sequential": true,
+  "exploratory_overlap": "One overlap between target builds of GentzenClusterExamples during correction of its local three-copy example.",
+  "earlier_command": [
+    "lake",
+    "build",
+    "DosenPetric.GentzenClusterExamples"
+  ],
+  "earlier_session": 49400,
+  "earlier_exit": 1,
+  "earlier_diagnostic": "decide expected type contains the free normal-form parameter C; the corrected witness uses explicit Nat.le_succ.",
+  "corrected_command": [
+    "lake",
+    "build",
+    "DosenPetric.GentzenClusterExamples"
+  ],
+  "corrected_session": 25037,
+  "corrected_exit": 0,
+  "both_finished_before_final_verification": true,
+  "limitation": "These exploratory outcomes are recorded from tool results; complete exploratory target-build transcripts/timings were not retained as separate log files. Baseline and final required commands have complete logs and timings."
+}
