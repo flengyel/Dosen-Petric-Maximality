@@ -1,7 +1,8 @@
 Continue the Došen–Petrić maximality formalization in WSL2.
 
 Repository: /home/flengyel/src/Dosen-Petric-Maximality, private, main.
-Read AGENTS.md, GENTZEN_W1_THINNING_REPORT and both W1 reviews,
+Read AGENTS.md, GENTZEN_W1_EXCHANGE_REPORT and both exchange reviews,
+GENTZEN_W1_THINNING_REPORT and both thinning reviews,
 GENTZEN_CLUSTER_RANK_REPORT and both cluster/rank reviews,
 POSITIVE_THINNING_ATOMIZATION_REPORT and both atomization reviews,
 POSITIVE_GENTZENIZATION_REPORT and both Gentzenization reviews,
@@ -148,40 +149,55 @@ commands passed, all five negative controls rejected. No earlier interface
 or generating equation changed. Checked inventories and first closure-failure
 logs are retained in provenance/wsl-gentzen-w1-thinning/.
 
+COMPLETED — OPPOSITE-SIDE W1 EXCHANGE
+Read GENTZEN_W1_EXCHANGE_REPORT and both author-side exchange reviews.
+GentzenOppositeExchangeRank and GentzenExchangeCommutation/Rank/Examples add
+four modules. W1.Exchange keeps all earlier thinning names unchanged.
+Both denotation equalities use actual exchange comparisons and associativity;
+exact opposite-side At predecessor singleton/rank laws include empty blocks.
+Contraction loses n selected-copy nodes; whole selected endpoint loses n−1.
+CutFree/Atomized equivalences, exact cutCount and complete relation equality
+hold with no new atomicity condition. Empty P constants, repeated equal gaps
+and nonempty blocks, both signs and actual cuts are checked.
+Actual final result: 113 sources / 4,850 audited declarations. All required
+commands passed; all five expected controls rejected. Evidence and the failed
+example attempt are in provenance/wsl-gentzen-w1-exchange/. All prior Lean
+modules and frozen interfaces remain unchanged. README/setup now use SSH Git;
+README links the maintained validation count and current author-side reviews.
+
 NEXT CONCRETE PROOF TASK
-The next concrete W1 instance is left contraction commuting with right
-exchange (source p.251, γ = cR), together with its left/right dual. For:
+The next concrete unproved W1 instance is left contraction commuting with
+right contraction (p.251, γ = wR). Let C,D : NormalForm P,
+gs,hs : List (List (NormalForm P)), Θ,Λ : List (NormalForm P),
+hn : 2 ≤ gs.length and hm : 2 ≤ hs.length, with:
 
 ```lean
-C : NormalForm P
-gs : List (List (NormalForm P))
-Θ Δ X Y Λ : List (NormalForm P)
-hn : 2 ≤ gs.length
-f : G P (repeated C gs ++ Θ) (Δ ++ X ++ Y ++ Λ)
+f : G P (repeated C gs ++ Θ) (repeated D hs ++ Λ)
 ```
 
-compare:
+Compare the existing-constructor terms:
 
 ```lean
-G.contractL C gs Θ (Δ ++ Y ++ X ++ Λ) hn
-  (G.exchangeR (repeated C gs ++ Θ) Δ X Y Λ f)
-G.exchangeR (gaps gs ++ C :: Θ) Δ X Y Λ
-  (G.contractL C gs Θ (Δ ++ X ++ Y ++ Λ) hn f)
+G.contractL C gs Θ (gaps hs ++ D :: Λ) hn
+  (G.contractR (repeated C gs ++ Θ) D hs Λ hm f)
+G.contractR (gaps gs ++ C :: Θ) D hs Λ hm
+  (G.contractL C gs Θ (repeated D hs ++ Λ) hn f)
 ```
 
-Both have type `G P (gaps gs ++ C :: Θ) (Δ ++ Y ++ X ++ Λ)`.
-Prove reduced denotation equality, exact selected-copy rank equations and
-proof-property preservation. The opposite-side exchange predecessor should
-be a singleton at the same At position; derive it from Premise.parent and
-the fiber API rather than assume rank invariance under denotation.
+Both have type `G P (gaps gs ++ C :: Θ) (gaps hs ++ D :: Λ)`.
+Prove Reduced denotation equality, proof-property preservation, exact
+opposite-side predecessor/rank equations and the left selected-copy rank
+loss; then check the corresponding right-side local comparison. Opposite-side
+contraction has a singleton predecessor, although its own selected side
+branches. Do not deduce this from denotation equality.
 
-Other W1 cases, W2–W6, blocked-contraction transformations, proof replacement
-at arbitrary ProofAddress, all-site rank decrease, Reducibility, Blocked-w,
-the remainder of G2 and cut elimination remain open. The restricted positive
+Other W1 cases, W2–W6, blocked-contraction transformations, replacement at
+arbitrary ProofAddress, all-site rank decrease, Reducibility, Blocked-w,
+the remainder of G2 and cut elimination remain open. Restricted positive
 coherence inputs, PositiveCoherence, Reduced.Faithful, Boolean Coherence and
-unconditional maximality remain separate/open. Conditional transfers are
-reused unchanged. Missing Lean formalizations of cited results do not by
-themselves establish manuscript defects.
+unconditional maximality remain separate/open. Existing conditional transfers
+are unchanged. An unfinished Lean proof of a cited theorem does not establish
+a defect in the manuscript.
 
 ## Remaining positive-coherence dependency table
 
@@ -218,7 +234,7 @@ interfaces rather than compiling declarations.
 | Z: §12.5 p.288 (0I ξ), pp.290–291 (∪0); any P and existing arrows | `tensor_zero o A B`; `tensor_zeroOf o f g`; `union_id_zero A`; all seven union algebra laws and witnessed zero unit | Existing Reduced.Laws, product/coproduct derivations | **Proved at the preceding zero/union checkpoint**; interpretation and positive raw membership are separate proved declarations. |
 | G0: §11.1 pp.238–243; §11.5 p.272; §12.5 p.291 | Implemented `Reduced.Gentzen.G/denote/denote_positive`, all rule denotation formulas, source-order macros, actual comparisons and empty boundary | Existing reduced structural/zero laws | **Proved**, see POSITIVE_GENTZENIZATION_REPORT. |
 | G1: §11.1 Gentzenization pp.245–246; §11.5 pp.272–273; §12.5 p.291 zero extension using (0I ξ) | `∀ (t : Term P A B), t.Positive → ∃ g : G P [A] [B], ofTerm (G.denote g) = comp (rightOut .conj A) (comp (ofTerm t) (rightIn .disj B))` | G0; typed rules for each of the 19 positive constructor schemas; zeros expanded recursively with Z; constant identity/zero laws already in ReducedStructure | **Proved** by Reduced.Gentzen.gentzenization and its decoded/occurrence counterparts. Representation is existential with cuts; no quotient function is inferred. |
-| G2 remaining: §11.2 pp.250–253 blocked/reducibility transformations, Blocked-w and clean-cut definitions; Atomic-k and cluster/rank are proved | For proposed `TopCut g`, `∃ h : G P Γ Δ, Clean h ∧ ofTerm (G.denote h) = ofTerm (G.denote g)`; prove every local rewrite reduces the source rank/multiset measure | G0, source structural/d equations; exact cut-formula positions, clusters and ranks; Z for zero leaves | **Open after completed Atomic-k and cluster/rank**. The two opposite-side W1 thinning instances are proved. Next prove the exchange instance above; blocked patterns/proof replacement remain open. This is normalization of a topmost cut, not arbitrary equality by its relation. |
+| G2 remaining: §11.2 pp.250–253 blocked/reducibility transformations, Blocked-w and clean-cut definitions; Atomic-k and cluster/rank are proved | For proposed `TopCut g`, `∃ h : G P Γ Δ, Clean h ∧ ofTerm (G.denote h) = ofTerm (G.denote g)`; prove every local rewrite reduces the source rank/multiset measure | G0, source structural/d equations; exact cut-formula positions, clusters and ranks; Z for zero leaves | **Open after completed Atomic-k and cluster/rank**. Opposite-side W1 thinning and exchange instances are proved. Next prove the contraction instance above; blocked patterns/proof replacement remain open. This is normalization of a topmost cut, not arbitrary equality by its relation. |
 | G3: §11.2 pp.253–263 Cut-Elimination; §11.5 p.273 constants; §12.5 pp.291–292 zero atomic cases | `∀ g : G P Γ Δ, ∃ h : G P Γ Δ, CutFree h ∧ ofTerm (G.denote h) = ofTerm (G.denote g)` | G2; well-founded clean-cut complexity and blocked contractions; constant cut cases, (00), zero naturality | **Open**. Source five new zero cases must be derived at actual endpoint folds; unit terms are not arbitrary zeros. |
 | M0: §10.2 pp.223–226; §10.3 pp.229–230; §12.5 pp.289–290 | Define MixTerm/Atomic/Settled; `∀ t : MixTerm P A B, DNF A → CNF B → ∃ n : Settled P A B, ofTerm n.denote = ofTerm t.denote` | Z union laws; cut/composition elimination for the smaller Gentzen lattice syntax, extending §9.4/§9.6; atomic bracket normal forms | **Open**. Smaller-system composition elimination is a real proof obligation, not supplied by the new algebra. |
 | M1: §10.3 pp.229–230 zero constants; §12.5 p.290 zero atomic components | `∀ a : Atomic P A B, ZeroAtomic a → ofTerm a.denote = zeroOf (ofTerm a.denote)`; hence any two such same-type components are equal | Atomic path syntax; zeroOf_pre/post/independent, zero_top/bot and terminal/initial uniqueness; constant bases | **Open** for the proposed syntax; its categorical zero and unit ingredients are already proved. No general empty-relation equality is used. |
@@ -251,10 +267,11 @@ every-interpretation corollary. The three milestones remain separate.
 
 VERIFICATION AND REVIEW
 Pinned Lean 4.35.0, Init-only production closure, no new dependencies.
-Current strict result: 109 Lean files and 4794 audited project declarations.
+Current strict result: 113 Lean files and 4850 audited project declarations.
 Permitted axioms: propext, Quot.sound, Classical.choice. Both boundary scripts
 passed with all five expected rejections; manuscript hashes are unchanged.
-Current evidence: provenance/wsl-gentzen-w1-thinning/ and matching .codex-work/.
+Current evidence: provenance/wsl-gentzen-w1-exchange/ and matching .codex-work/.
+Prior thinning evidence: provenance/wsl-gentzen-w1-thinning/.
 Prior cluster/rank evidence: provenance/wsl-gentzen-cluster-rank/.
 Prior Atomic-k evidence: provenance/wsl-positive-thinning-atomization/.
 Prior Gentzenization evidence: provenance/wsl-positive-gentzenization/.

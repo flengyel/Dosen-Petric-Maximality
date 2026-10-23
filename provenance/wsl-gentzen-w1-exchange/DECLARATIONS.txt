@@ -1,0 +1,47 @@
+DosenPetric/GentzenExchangeCommutation.lean:20: def oldL : G P (gaps gs ++ C :: Θ) (Δ ++ Y ++ X ++ Λ) :=
+DosenPetric/GentzenExchangeCommutation.lean:23: def innerL : G P (gaps gs ++ C :: Θ) (Δ ++ X ++ Y ++ Λ) :=
+DosenPetric/GentzenExchangeCommutation.lean:26: def newL : G P (gaps gs ++ C :: Θ) (Δ ++ Y ++ X ++ Λ) :=
+DosenPetric/GentzenExchangeCommutation.lean:29: theorem denoteL : ofTerm (newL C gs Θ Δ X Y Λ hn f).denote =
+DosenPetric/GentzenExchangeCommutation.lean:34: theorem cutCountL : (newL C gs Θ Δ X Y Λ hn f).cutCount =
+DosenPetric/GentzenExchangeCommutation.lean:37: theorem cutFreeL : (newL C gs Θ Δ X Y Λ hn f).CutFree ↔
+DosenPetric/GentzenExchangeCommutation.lean:40: theorem atomizedL : (newL C gs Θ Δ X Y Λ hn f).Atomized ↔
+DosenPetric/GentzenExchangeCommutation.lean:43: theorem newL_atomized (hf : f.Atomized) :
+DosenPetric/GentzenExchangeCommutation.lean:46: theorem relationL : (newL C gs Θ Δ X Y Λ hn f).relation =
+DosenPetric/GentzenExchangeCommutation.lean:57: def oldR : G P (Γ ++ Y ++ X ++ Θ) (gaps gs ++ C :: Λ) :=
+DosenPetric/GentzenExchangeCommutation.lean:60: def innerR : G P (Γ ++ X ++ Y ++ Θ) (gaps gs ++ C :: Λ) :=
+DosenPetric/GentzenExchangeCommutation.lean:63: def newR : G P (Γ ++ Y ++ X ++ Θ) (gaps gs ++ C :: Λ) :=
+DosenPetric/GentzenExchangeCommutation.lean:66: theorem denoteR : ofTerm (newR C gs Γ X Y Θ Λ hn f).denote =
+DosenPetric/GentzenExchangeCommutation.lean:71: theorem cutCountR : (newR C gs Γ X Y Θ Λ hn f).cutCount =
+DosenPetric/GentzenExchangeCommutation.lean:74: theorem cutFreeR : (newR C gs Γ X Y Θ Λ hn f).CutFree ↔
+DosenPetric/GentzenExchangeCommutation.lean:77: theorem atomizedR : (newR C gs Γ X Y Θ Λ hn f).Atomized ↔
+DosenPetric/GentzenExchangeCommutation.lean:80: theorem newR_atomized (hf : f.Atomized) :
+DosenPetric/GentzenExchangeCommutation.lean:83: theorem relationR : (newR C gs Γ X Y Θ Λ hn f).relation =
+DosenPetric/GentzenExchangeCommutationExamples.lean:13: theorem empty_exchangeR_rank {Γ Δ : List (NormalForm P)} (f : G P Γ Δ)
+DosenPetric/GentzenExchangeCommutationExamples.lean:18: theorem empty_exchangeL_rank {Γ Δ : List (NormalForm P)} (f : G P Γ Δ)
+DosenPetric/GentzenExchangeCommutationExamples.lean:23: theorem one_empty_blockL (C : NormalForm P) (Y Λ : List (NormalForm P))
+DosenPetric/GentzenExchangeCommutationExamples.lean:28: theorem one_empty_blockR (C : NormalForm P) (X Θ : List (NormalForm P))
+DosenPetric/GentzenExchangeCommutationExamples.lean:34: theorem emptyP_constantsL :
+DosenPetric/GentzenExchangeCommutationExamples.lean:41: theorem emptyP_constantsR :
+DosenPetric/GentzenExchangeCommutationExamples.lean:49: def repeatedPremiseL (l : Literal P) : G P [.lit l,.lit l,.lit l,.lit l] [.lit l,.lit l,.lit l] :=
+DosenPetric/GentzenExchangeCommutationExamples.lean:55: def repeatedPremiseR (l : Literal P) : G P [.lit l,.lit l,.lit l] [.lit l,.lit l,.lit l,.lit l] :=
+DosenPetric/GentzenExchangeCommutationExamples.lean:61: def repeatedOldL (l : Literal P) :=
+DosenPetric/GentzenExchangeCommutationExamples.lean:65: def repeatedNewL (l : Literal P) :=
+DosenPetric/GentzenExchangeCommutationExamples.lean:69: def repeatedOldR (l : Literal P) :=
+DosenPetric/GentzenExchangeCommutationExamples.lean:73: def repeatedNewR (l : Literal P) :=
+DosenPetric/GentzenExchangeCommutationExamples.lean:77: theorem repeated_with_cutL (l : Literal P) :
+DosenPetric/GentzenExchangeCommutationExamples.lean:94: theorem repeated_with_cutR (l : Literal P) :
+DosenPetric/GentzenExchangeCommutationExamples.lean:111: theorem both_signs (p : P) :
+DosenPetric/GentzenExchangeCommutationRank.lean:18: theorem contraction_lossL :
+DosenPetric/GentzenExchangeCommutationRank.lean:34: theorem endpoint_rankL :
+DosenPetric/GentzenExchangeCommutationRank.lean:40: theorem contraction_decreasesL :
+DosenPetric/GentzenExchangeCommutationRank.lean:47: theorem endpoint_lossL :
+DosenPetric/GentzenExchangeCommutationRank.lean:55: theorem endpoint_decreasesL :
+DosenPetric/GentzenExchangeCommutationRank.lean:68: theorem contraction_lossR :
+DosenPetric/GentzenExchangeCommutationRank.lean:84: theorem endpoint_rankR :
+DosenPetric/GentzenExchangeCommutationRank.lean:90: theorem contraction_decreasesR :
+DosenPetric/GentzenExchangeCommutationRank.lean:96: theorem endpoint_lossR :
+DosenPetric/GentzenExchangeCommutationRank.lean:104: theorem endpoint_decreasesR :
+DosenPetric/GentzenOppositeExchangeRank.lean:13: theorem predecessors_exchangeR_left (Γ Δ X Y Λ : List (NormalForm P))
+DosenPetric/GentzenOppositeExchangeRank.lean:21: theorem predecessors_exchangeL_right (Γ X Y Θ Δ : List (NormalForm P))
+DosenPetric/GentzenOppositeExchangeRank.lean:30: theorem rho_exchangeR_left (Γ Δ X Y Λ : List (NormalForm P))
+DosenPetric/GentzenOppositeExchangeRank.lean:39: theorem rho_exchangeL_right (Γ X Y Θ Δ : List (NormalForm P))

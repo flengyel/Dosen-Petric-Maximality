@@ -1,0 +1,24 @@
+✔ [95/100] Built DosenPetric.GentzenOppositeExchangeRank (563ms)
+✔ [97/100] Built DosenPetric.GentzenExchangeCommutation (725ms)
+✔ [99/100] Built DosenPetric.GentzenExchangeCommutationRank (1.4s)
+✖ [100/100] Building DosenPetric.GentzenExchangeCommutationExamples (1.0s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenExchangeCommutationExamples.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenExchangeCommutationExamples.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenExchangeCommutationExamples.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenExchangeCommutationExamples.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenExchangeCommutationExamples.setup.json --json
+error: DosenPetric/GentzenExchangeCommutationExamples.lean:30:65: Application type mismatch: The argument
+  f
+has type
+  G P (X ++ Θ) [C, C]
+but is expected to have type
+  G P ([] ++ X ++ [] ++ Θ) (repeated C [[], []] ++ [])
+in the application
+  newR C [[], []] [] X [] Θ [] ?m.20 f
+error: DosenPetric/GentzenExchangeCommutationExamples.lean:31:67: Application type mismatch: The argument
+  f
+has type
+  G P (X ++ Θ) [C, C]
+but is expected to have type
+  G P ([] ++ X ++ [] ++ Θ) (repeated C [[], []] ++ [])
+in the application
+  oldR C [[], []] [] X [] Θ [] ?m.36 f
+Some required targets logged failures:
+- DosenPetric.GentzenExchangeCommutationExamples
+error: build failed

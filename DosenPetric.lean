@@ -107,3 +107,7 @@ public import DosenPetric.GentzenOppositeThinningRank
 public import DosenPetric.GentzenThinningCommutation
 public import DosenPetric.GentzenThinningCommutationRank
 public import DosenPetric.GentzenThinningCommutationExamples
+public import DosenPetric.GentzenOppositeExchangeRank
+public import DosenPetric.GentzenExchangeCommutation
+public import DosenPetric.GentzenExchangeCommutationRank
+public import DosenPetric.GentzenExchangeCommutationExamples

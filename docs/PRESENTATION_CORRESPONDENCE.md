@@ -866,3 +866,39 @@ Rank is syntactic and does not descend through reduced denotation. The
 unchanged-endpoint relation comparison is a consequence of denotation equality.
 See [the report](GENTZEN_W1_THINNING_REPORT.md) for full signatures, paths,
 boundary examples and verification. No all-site replacement result is claimed.
+
+## Opposite-side exchange instances of W1
+
+The source is Došen–Petrić, *Proof-Theoretical Coherence*, September 2007,
+[the pinned PDF](https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf),
+SHA-256 `e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e`.
+Printed n is PDF page n+12, one-based. Printed pp.248–253 were consulted;
+p.251 was also inspected in rendering. The constant/zero extensions on
+pp.272–273 and 291–292 were checked against the existing treatment.
+Source-consultation.json records caches, hashes and access artifacts.
+Historical source-access records are preserved; no new source discrepancy
+was confirmed for these instances.
+
+| Source location | Typed correspondence / scope | Lean declaration and actual proof input |
+| --- | --- | --- |
+| §11.2 p.251, (W 1), γ = cR | wL cR f = cR wL f; right exchange swaps the specified X,Y blocks and leaves antecedent contraction positions unchanged. | `W1.Exchange.oldL/innerL/newL`, `denoteL`; actual G.denote, ofTerm_comp, Reduced.Laws.assoc. |
+| §11.2 p.252, right analogue of Reducibility | wR cL f = cL wR f; left exchange swaps X,Y and leaves succedent contraction positions unchanged. | `oldR/innerR/newR`, `denoteR`; separate checked associativity proof in the opposite direction. |
+| §11.2 p.248, parametric sequences and predecessor definition | On the side opposite exchange, the exact typed At has one predecessor in the unique premise; no formula-label search. | `G.predecessors_exchangeR_left/exchangeL_right` from existing Premise.parent and TraceRoute.fiber_identity. |
+| §11.2 p.249, rho and contraction rank; pp.251–252, rank requirement | Count all cluster nodes. Every selected upper copy contributes an exchange node. | `G.rho_exchangeR_left/exchangeL_right`; existing contractionRankL_eq/R_eq, selectedCopies_length and sum_map_one_add; `contraction_lossL/R`, `endpoint_lossL/R`, strict inequalities. |
+| §11.5 pp.272–273, constants | Constants have whole-formula positions even with no literal occurrences. Empty folds are top/bot and remain differently coloured. | `emptyP_constantsL/R` use actual G Empty constant premises. Both-empty exchange still adds a node via rho equations. |
+| §12.5 pp.291–292, atomic zero extension | Atomic zero leaves and arbitrary premises, including cuts, are allowed. No special zero law is needed for these two associativity calculations. | Generic results impose no restriction on f; atomic-zero constructor/zero equations are unchanged. No unwitnessed zero is added. |
+
+The source invokes Semilattice Coherence for the larger W1 family. These two
+local denotation equations are derived directly; the coherence theorem is
+neither assumed nor claimed as a result. Binary context folds remain explicit,
+with the actual exchange comparison arrows rather than strictified equality.
+
+Both pairs preserve cutCount exactly, CutFree/Atomized equivalently and the
+complete tagged relation. Unlike thinning, exchange adds no AtomicFormula
+condition. With n = gs.length ≥ 2, contraction_lossL/R prove Rold=Rnew+n,
+endpoint_rankL/R prove rho(new,x)=Rnew+1, and endpoint_lossL/R prove
+rho(old,x)+1=rho(new,x)+n, with both strict inequalities. These rank facts
+come from syntax and hold for empty blocks, never from denotation equality.
+Other W1 cases and all-site replacement/reducibility remain open. See
+[the exchange report](GENTZEN_W1_EXCHANGE_REPORT.md) for exact signatures,
+intermediate types, checked examples and evidence.

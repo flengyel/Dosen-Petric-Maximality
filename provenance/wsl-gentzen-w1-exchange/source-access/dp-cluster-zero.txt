@@ -1,0 +1,88 @@
+§12.5.       Zero-identity arrows                                                         291
+
+
+
+                        ∧                                    ∨
+                    ∨                                                         ∧
+ 1A ∪ 0A = wA ◦ (k 1A,A ∨ 1A ) ◦ dA,A,A ◦ (1A ∧ k 2A,A ) ◦ (1A ∧ 0A ) ◦ wA
+                ∧                                  ∨
+         ∨                                                                ∧
+   = wA ◦ (k 1A,A ∨ 1A ) ◦ dA,A,A ◦ (1A ∧ k 1A,A ) ◦ (1A ∧ 0A ) ◦ wA , with (0I),
+                ∧           ∨                                         ∨
+         ∨                                                    ∧
+   = wA ◦ (k 1A,A ∨ 1A ) ◦ k 1A∧A,A ◦ (1A ∧ 0A ) ◦ wA , by (d k) of §11.1,
+   = 1A ,
+
+                                                                  ξ                   ξ
+                                                                                  ξ
+by Zero-Identity Lattice Coherence, or by applying (k 1 nat) and (wk), for
+ ξ ∈ {∧, ∨} (see §9.1 and the List of Equations). From 1A ∪ 0A = 1A we
+easily obtain (∪0), as we remarked above.
+   Then we can prove the following.
+
+Zero-Identity Distributive Lattice Coherence. The functor G
+from ZIDL to Rel is faithful.
+
+Zero-Identity Distributive Dicartesian Coherence. The functor
+G from ZIDL⊤,⊥ to Rel is faithful.
+
+    Let D be now the category obtained as the disjoint union of the stricti-
+ﬁed category ZIDLA and the trivial category with the single object ∅ and
+the single arrow 1∅ : ∅ ⊢ ∅ (cf. §11.1). The Gentzen terms for this category
+D are deﬁned as in §11.1 with the addition in the basis of the inductive
+deﬁnition that 0′′p : p ⊢ p, which denotes the arrow (0p , p, p) of D, is a
+Gentzen term. We prove the Gentzenization Lemma of §11.1 and the Cut-
+Elimination Theorem of §11.2 as before. In the proof of the Gentzenization
+Lemma, we rely on (0I ξ ). To deﬁne clusters and rank, we count among
+leaf formulae the occurrences of p in the type p ⊢ p of 0′′p . In the proof of
+the Cut-Elimination Theorem, we have as the only additional cases, when
+the complexity of our clean cut is (0, 2), the left-hand sides of the following
+equations of D:
+
+                                cut ∅,∅ (0′′p , 1′′p ) = 0′′p ,
+                                cut ∅,∅ (1′′p , 0′′p ) = 0′′p ,
+                                cut ∅,∅ (0′′p , 0′′p ) = 0′′p ,
+                             cut ∅,∅ (0′′p , kpL g) = kpL g,
+                             cut ∅,∅ (kpR f, 0′′p ) = kpR f.
+292                       CHAPTER 12.       ZERO-LATTICE CATEGORIES
+
+For the ﬁrst two equations we use (cat 1), for the third (00), for the fourth
+ ∧                               ∨
+(k 1 nat), and for the ﬁfth (k 2 nat).
+    For the remainder of the proof of the Cut-Elimination Theorem, we can
+proceed as before, but we can also proceed diﬀerently in the cases where
+our clean cut is of the form cut (f, wL g) with blocked wL g tied to our clean
+cut. In all these cases—namely, (w γ 1), (w γ 2), . . . , (w ∨ 3)—we applied an
+equation of D where on the left-hand side we have a single occurrence of
+h : Γ ⊢ ∆, while on the right-hand side we have more than one occurrence
+of h; this is always two occurrences of h, except in case (w ∨ 3), where we
+have three occurrences of h. Now, we can put h on the right-hand side
+for exactly one old occurrence of h, and replace the others by the cut-free
+Gentzen term h0 obtained from the cut-free Gentzen term h by replacing
+every 1′′p in h by 0′′p . It can be shown, by induction on the length of the cut-
+free Gentzen term h, that in D we have h0 = 0′′∆ ◦ h. This new procedure
+would dispense us from applying the equation (wm) in the remainder of
+the proof. Instead, we would rely on the following equations of ZIDL:
+                      ∨                         ∧
+                      wA ◦ (0A ∨ 1A ) ◦ mA,A ◦ wA = 1A ,
+                      ∨                        ∧
+                      wA ◦ (1A ∨ 0A ) ◦ mA,A ◦ wA = 1A ,
+
+which amount to (∪0).
+     For the remainder of the proof of Zero-Identity Distributive Lattice Co-
+herence, we proceed as for the proof of Distributive Lattice Coherence,
+relying on Restricted Zero-Identity Mix-Lattice Coherence. We proceed
+analogously for the proof of Zero-Identity Distributive Dicartesian Coher-
+ence, relying on Restricted Zero-Identity Mix-Dicartesian Coherence.
+     It can be proved that ZIDL is maximal by imitating the proof of the
+maximality of ZL in §12.3. The only diﬀerence in the proof is that for
+f1 , f2 : A ⊢ B we assume that only one letter p occurs in A and B (cf. the
+                          ∧
+proofs of maximality for L and L in §9.3 and §9.5). The category ZIDL⊤,⊥
+is maximal in the relative sense in which L⊤,⊥ is maximal (see §9.7).
+     Consider the natural logical categories ZIDL− and ZIDL−   ⊤,⊥ that diﬀer
+from ZIDL and ZIDL⊤,⊥ respectively by rejecting the equation (wm) for
+m, or alternatively the idempotency equation (∪ idemp) for ∪. In these cat-
+egories hom-sets are not necessarily semilattices with unit—they must be
+only commutative monoids. Union of arrows becomes now disjoint union of
+

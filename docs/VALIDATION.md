@@ -1,3 +1,47 @@
+# W1 opposite-side exchange validation (current checkpoint)
+
+Clean main at `0cee16207484a43a2759c87beb67e0ba5ebc00d1` agreed with fetched
+SSH origin. Actual strict baseline: 109 Lean files / 4,794 audited declarations,
+exit 0. Final sequential verification completed at 2026-10-23T11:59:37.773506+00:00:
+**113 Lean files / 4,850 audited project declarations**. Strict build/audit,
+both boundary scripts, manuscript checksums and git diff --check all exited 0;
+all five expected negative controls rejected with Lean exit 1 and expected
+diagnostics. Public import closure passed. Only propext, Quot.sound and
+Classical.choice are permitted; 35 selected prints are retained verbatim.
+
+Both W1.Exchange commutations, exact unchanged-side predecessor/rank laws,
+complete contraction rank loss n, whole selected-endpoint loss n−1, both
+strict inequalities, predicate/count preservation and complete tagged-relation
+equality compile for arbitrary P and premises. Exchange adds no atomicity
+condition. Empty blocks still contribute a syntactic ancestor node. Actual
+Empty P constant examples and repeated-literal blocks over cut-containing
+premises compile. General W1, arbitrary-context replacement/all-site decrease,
+Reducibility, cut elimination and all coherence inputs remain open.
+
+One exploratory example failed due to shortening X++[]++Θ to X++Θ; the exact
+constructor context is retained, without a strictification assumption. Failed
+and passing attempt logs, exits and times are preserved. All heavy work was
+sequential. Four modules / 47 explicit source declarations are added. All
+older DosenPetric source bytes, syntax/equations/predicates/predecessors/ranks,
+Lean 4.35.0, Init-only dependencies, historical reports and manuscript v4 are
+preserved. README now describes constructed bridges/current Gentzen stage,
+links to maintained validation/current author-side reviews, and uses SSH Git
+setup; revised WSL2 setup does likewise.
+
+Evidence: provenance/wsl-gentzen-w1-exchange/, with source/control/report/record
+inventories and actual timings. Author-side hostile and source-grounded
+writing reviews were applied to actual proofs and correspondence; historical
+source-access records are unchanged. Independent kernel/source replay,
+Challenge/Solution/Comparator, official preflight/service verification,
+manuscript recompilation/layout review, publication, license and visibility
+change have not run. Committed-byte, live SSH and Downloads receipts are
+retained separately in .codex-work/gentzen-w1-exchange/. See
+[the report](GENTZEN_W1_EXCHANGE_REPORT.md).
+
+---
+
+## Historical W1 thinning validation (unchanged evidence)
+
 # W1 opposite-side thinning validation (current checkpoint)
 
 Clean main baseline `f575b6f41da9a8abf0560a3109d22e7f0e55ada4` passed actual
