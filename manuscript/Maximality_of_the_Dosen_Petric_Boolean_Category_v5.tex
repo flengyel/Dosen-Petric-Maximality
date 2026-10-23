@@ -155,8 +155,11 @@ The defining zero-identity equation asserts that
  \qquad(f,g:A\to C).
  \label{eq:zero-law}
 \end{equation}
-These are the equations of \cite[\S14.2, p.~317]{DP}, with the
-product and coproduct unit isomorphisms written explicitly.
+Equation~\eqref{eq:zero-identity} is $(0\eta\epsilon)$ of
+\cite[\S14.2, p.~317]{DP}. Its product and coproduct unit isomorphisms
+are expressed here in pairing and copairing notation.
+Equation~\eqref{eq:zero-law} is the zero-identity law $(0I)$;
+see \cite[\S14.3, p.~322]{DP}.
 
 \noindent\textit{Remark.}
 Appendix~\ref{app:structural-diagrams} gives diagrammatic forms of
@@ -174,7 +177,8 @@ $0_{A,C}\circ k=0_{X,C}$ for $k:X\to A$.
 Two arrows are \emph{parallel} when they have the same source and
 target. A \emph{proof congruence} on $\B$ is an equivalence relation
 on each hom-set preserved by composition and every arrow operation
-of the presentation, including pairing, copairing, and negation.
+of the presentation, including the derived operations of pairing,
+copairing, and negation.
 A \emph{substitution congruence} is a proof congruence also preserved
 by every uniform substitution $\sigma:P\to\FormulaSet(P)$.
 Here substitution acts on the entire arrow term, including its source
@@ -271,10 +275,10 @@ correspondence of positions \cite[\S14.1, pp.~313--315]{DP}.
 For arrows between formulas in negation normal form, every edge of
 the occurrence relation joins occurrences of the same signed literal.
 Indeed, the equivalent presentation of \cite[\S14.2, pp.~318--321]{DP}
-has signed literals as generators. Its lattice generators preserve
-these labels; the arrows $\eta_p$ and $\epsilon_p$ have empty
-relations. Composition, pairing, and copairing preserve label
-agreement. The equivalence with $\B$ preserves the occurrence
+has signed literals as generators. Its positive structural generators
+preserve these labels; zero endomorphisms and the arrows $\eta_p$ and
+$\epsilon_p$ have empty relations. Composition and both tensor
+operations preserve label agreement. The equivalence with $\B$ preserves the occurrence
 interpretation.
 
 Substitution replaces each occurrence of a variable by a separate
@@ -454,14 +458,16 @@ For formulas $A,B$, define
  \end{aligned}
 \]
 The arrow $h_A^B$ is independent of $B$. Writing it as $h_A$ and
-putting $\tau_A=\langle\pi_2^{A,A},\pi_1^{A,A}\rangle$, one has
+putting $\tau_A=\langle\pi_2^{A,A},\pi_1^{A,A}\rangle:
+A\wedge A\to A\wedge A$, one has
 $h_A\circ\tau_A=h_A$.
 \end{lemma}
 
 \begin{proof}
 The relation of $u_A^B$ sends $(1,x)$ to $(1,(1,x))$ and $(2,x)$
 to $(2,x)$ in $\bigl(\Occ(A)\sqcup\Occ(B)\bigr)\sqcup\Occ(A)$.
-Copairing with $\pi_1^{A,B}$ and $1_A$ then gives
+Postcomposing $u_A^B$ with
+$[\pi_1^{A,B},1_A]:(A\wedge B)\vee A\to A$ gives
 \[
  Gh_A^B=\{((1,x),x),((2,x),x):x\in\Occ(A)\}.
 \]
@@ -578,8 +584,8 @@ interpretation. The congruence contains $f=g$, so
 Theorem~\ref{thm:main} makes it total. In particular,
 $\pi_1^{p,p}=\pi_2^{p,p}$ holds under every interpretation, for any
 $p\in P$. Interpret $p$ as an arbitrary object $X$ of $\mathcal C$.
-Its two projections $X\wedge X\to X$ are equal. Pairing any arrows
-$a,b:Y\to X$ with these projections yields $a=b$.
+Its two projections $X\wedge X\to X$ are equal. For any arrows $a,b:Y\to X$, composing
+$\langle a,b\rangle:Y\to X\wedge X$ with the equal projections gives $a=b$.
 \end{proof}
 
 \appendix
@@ -715,13 +721,14 @@ number. In coordinates, commutativity says
 Every source position belongs to exactly one nonempty block, so this
 formula determines $\delta$ even when some blocks are empty.
 
-Do\v{s}en and Petri\'c write $\mu=o_M$ and $\nu_i=o_i$, and denote
-$\delta$ by $\mu(\nu_1,\ldots,\nu_k)$. Their block locator selects the
-unique $r$ for which $s_{r-1}<x\leq s_r$; substituting
-$t=x-s_{r-1}$ in \eqref{eq:app-coordinate} gives exactly their
-formula \cite[\S2.5, p.~46]{DP}. The diagram therefore describes the
-same generalized composition. A pattern can equivalently be
-specified by erasing its placeholder names to one common symbol and
+In Do\v{s}en and Petri\'c's notation, $\mu$ and $\nu_i$ correspond to
+$o_M$ and $o_i$, and $\mu(\nu_1,\ldots,\nu_k)$ corresponds to $\delta$.
+Their block locator selects the unique $r$ for which
+$s_{r-1}<x\leq s_r$; substituting $t=x-s_{r-1}$ in
+\eqref{eq:app-coordinate} gives their formula
+\cite[\S2.5, p.~46]{DP}. The square therefore describes the
+occurrence-profile component of their generalized composition.
+A pattern can equivalently be specified by erasing its placeholder names to one common symbol and
 attaching its occurrence profile. In that notation, the generalized
 composite is represented by the skeleton of the substituted pattern
 together with the profile $\delta$.
@@ -744,8 +751,8 @@ $(a,b)$ and $(c,d)$. Thus
 \end{array}
 \]
 For instance, source position $2$ has coordinates $(1,2)$.
-Square~\eqref{eq:app-fibre} sends it to $(2,1)$, and
-$\theta_C(2,1)=3$. This is the entry $\delta(2)=3$.
+The profile map gives $\gamma(1,2)=(2,1)$, and the target encoding
+then gives $\theta_C(2,1)=3$. Thus $\delta(2)=3$.
 
 \subsection{Shared variables and the maximality argument}\label{app:shared}
 
@@ -840,6 +847,7 @@ path is $0_C\circ g:A\to C$. The arrows $f$ and $g$ need not be equal.
 OpenAI's ChatGPT was used to assist with the development of the proof,
 preparation of the manuscript, and checks of the arguments and references.
 
+\clearpage
 \begin{thebibliography}{9}
 \small
 \setlength{\itemsep}{2pt}
@@ -847,7 +855,7 @@ preparation of the manuscript, and checks of the arguments and references.
 \bibitem{DP}
 Kosta Do\v{s}en and Zoran Petri\'c,
 \emph{Proof-Theoretical Coherence},
-Studies in Logic, vol.~1, KCL Publications, London, 2004.
+Studies in Logic, vol.~1, King's College Publications, London, 2004.
 Revised author version, September 2007.
 \url{https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf}.
 

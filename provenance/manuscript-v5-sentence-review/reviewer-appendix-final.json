@@ -1,0 +1,46 @@
+{
+  "reviewer": "sentence_appendix",
+  "scope": "Final candidate Appendix A, exact diff against the individually reviewed baseline",
+  "candidate_path": "sentence-review-v5/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex",
+  "candidate_sha256": "66e7e3c24dcf986d7f424421903a79a41156282b56c7d6f0b36c1fe8b4b044ea",
+  "resolved_findings": [
+    {
+      "baseline_id": "A042",
+      "status": "resolved",
+      "replacement": "In Do\\v{s}en and Petri\\'c's notation, $\\mu$ and $\\nu_i$ correspond to $o_M$ and $o_i$, and $\\mu(\\nu_1,\\ldots,\\nu_k)$ corresponds to $\\delta$.",
+      "reason": "Identifies correspondence between the two notations without claiming the source writes manuscript-specific symbols."
+    },
+    {
+      "baseline_id": "A044",
+      "status": "resolved",
+      "replacement": "The square therefore describes the occurrence-profile component of their generalized composition.",
+      "reason": "Restricts what the square represents to the component it actually determines; the immediately following skeleton sentence correctly describes the complete result."
+    },
+    {
+      "baseline_id": "A052",
+      "status": "resolved",
+      "replacement": "The profile map gives $\\gamma(1,2)=(2,1)$, and the target encoding then gives $\\theta_C(2,1)=3$. Thus $\\delta(2)=3$.",
+      "reason": "Applies the named map to the tagged coordinate pair and then the named target encoding; the computation is correctly typed and equals the table entry."
+    }
+  ],
+  "other_changed_sentences": [
+    {
+      "claim": "Removing exactly from the block-locator correspondence sentence",
+      "status": "supported",
+      "reason": "The asserted formula equality still follows by the directly checked substitutions pi=s, lambda=t, beta(x)=r, mu=o_M, nu_i=o_i."
+    },
+    {
+      "claim": "A pattern can equivalently be specified ...",
+      "status": "unchanged apart from line wrapping",
+      "reason": "Skeleton plus profile reconstructs the pattern relative to its fixed placeholder list."
+    }
+  ],
+  "remaining_findings": [],
+  "scope_limit": "No new full-manuscript verdict or PDF-layout claim; earlier appendix audit and its source checks remain applicable.",
+  "previous_candidate_sha256": "6074198bff965616555d11dd1c612e7a3dd7412f654367c4036defb4942ca3d2",
+  "integration_followup": {
+    "owned_text_unchanged": true,
+    "appendix_sha256": "518deb0b85b637a94d07a5daf0434eee4e0ace8e56ad23135f23cc5d3640cd94",
+    "scope": "The final integration change is outside Appendix A; comparison with the approved two-hunk reconstruction confirms every owned byte is unchanged."
+  }
+}

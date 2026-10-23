@@ -1,0 +1,34 @@
+{
+  "reviewer": "sentence_core",
+  "review_type": "Author-side hostile follow-up of Sections 4–5",
+  "final_source": "sentence-review-v5/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex",
+  "final_sha256": "66e7e3c24dcf986d7f424421903a79a41156282b56c7d6f0b36c1fe8b4b044ea",
+  "baseline_sha256": "76ec9cc2167ed432fa42aeaf33ee66ea8979f1fb7cb074baf301c186411c7eee",
+  "checked": "Entire Sections 4–5 diff against the individually audited baseline; additional C046 replacement checked against the previously frozen 6074198b candidate.",
+  "resolved": [
+    {
+      "id": "C044",
+      "previous_status": "optional_precision",
+      "final_status": "resolved",
+      "verification": "The explicit τ_A:A∧A→A∧A signature agrees with the pair of projections used to define it."
+    },
+    {
+      "id": "C084",
+      "previous_status": "repair",
+      "final_status": "resolved",
+      "verification": "The final Corollary 5.3 sentence now distinguishes forming ⟨a,b⟩:Y→X∧X from composing with the equal projections. Product β equations give a=b."
+    },
+    {
+      "id": "C046",
+      "previous_status": "optional_precision",
+      "final_status": "resolved",
+      "verification": "The revised sentence explicitly postcomposes u_A^B:A∧A→(A∧B)∨A with the copair [π₁^{A,B},1_A]:(A∧B)∨A→A. The unchanged displayed fold relation follows by the same tagged relation calculation."
+    }
+  ],
+  "remaining_findings": [],
+  "unreviewed_new_claims_in_assigned_scope": false,
+  "mathematical_statement_changes": false,
+  "other_diff": "Only whitespace outside the three assessed sentence changes.",
+  "layout_scope": "Bibliography page break lies outside this reviewer’s assigned mathematical scope. No new rendering claim is made by this follow-up.",
+  "previous_candidate_sha256": "6074198bff965616555d11dd1c612e7a3dd7412f654367c4036defb4942ca3d2"
+}

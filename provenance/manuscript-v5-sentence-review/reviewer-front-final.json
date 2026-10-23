@@ -1,0 +1,120 @@
+{
+  "reviewer": "sentence_front",
+  "candidate_sha256": "66e7e3c24dcf986d7f424421903a79a41156282b56c7d6f0b36c1fe8b4b044ea",
+  "owned_baseline_lines": [
+    [
+      16,
+      197
+    ],
+    [
+      839,
+      909
+    ]
+  ],
+  "baseline_ledger_records": 85,
+  "baseline_coverage_missing_authored_lines": [],
+  "check": "Compared complete baseline/candidate diff, re-read all changed passages in owned scope, checked final rendered pages 2, 3, and 12.",
+  "resolved_ids": [
+    {
+      "id": "F057",
+      "result": "Resolved. Source p317 is no longer represented as omitting the unit maps. Formula (0ηε) is cited to §14.2 p317; (0I) is separately cited to §14.3 p322. Pairing/copairing are described as the notation used here."
+    },
+    {
+      "id": "F064",
+      "result": "Resolved. Pairing, copairing and negation are explicitly identified as derived operations. No altered congruence condition or additional primitive grammar is introduced."
+    },
+    {
+      "id": "F077",
+      "result": "Resolved. Bibliography spells out King’s College Publications."
+    }
+  ],
+  "remaining_findings": [],
+  "visual_checks": {
+    "page_2": "Equation (2) remains on one line; repaired attribution complete and readable.",
+    "page_3": "Derived operations wording complete; remark retains pointer to typed Appendix B diagrams.",
+    "page_12": "All nine bibliography records are together; URLs visibly typeset as URLs without inserted comma punctuation."
+  },
+  "source_consultation": [
+    {
+      "work": "Došen–Petrić, Proof-Theoretical Coherence, September 2007 revised author version",
+      "full_text_url": "https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf",
+      "access": "Cached full PDF and extracted text, not abstract",
+      "checked_passages": "Printed pp.51 (substitution), 194 (maximality), 215–216 (relative-maximality equation), 234 (d∨k), 317 (0ηε and explicit unit maps), 321 (Boolean Coherence), 322 (maximality conjecture, Boolean/zero-identity category distinction, explicit 0I). Printed p283 also inspected exploratorily; not used as a final citation."
+    },
+    {
+      "work": "Došen–Petrić, The Maximality of Cartesian Categories",
+      "access": "User-supplied full PDF upload/dosenMaximalityCartesianCategories1999.pdf; text literature-fulltext/DosenPetricCartesian1999.txt",
+      "reference_url": "https://arxiv.org/abs/math/9911059",
+      "url_status": "Bibliographic reference; full text actually consulted from supplied PDF",
+      "checked_passages": "§5, preprint pp.6–7; title and publication metadata compared with official author bibliography."
+    },
+    {
+      "work": "Došen–Petrić, Bicartesian Coherence Revisited",
+      "full_text_url": "https://arxiv.org/html/0711.4961v3",
+      "access": "Full HTML",
+      "checked_passages": "§§8–10, including lattice maximality and relative dicartesian maximality; HTML has no stable printed page labels."
+    },
+    {
+      "work": "Došen–Petrić, Isomorphic Formulae in Classical Propositional Logic",
+      "full_text_url": "https://arxiv.org/pdf/0912.1271",
+      "access": "Full PDF",
+      "checked_passages": "Lemma 6 and its occurrence-selection construction; title/version and official publication metadata."
+    },
+    {
+      "work": "Došen–Petrić, Syntax for Split Preorders",
+      "full_text_url": "https://arxiv.org/pdf/0902.0742",
+      "access": "Full PDF",
+      "checked_passages": "§16, maximality of PF, EF and RB and the differing-edge argument."
+    },
+    {
+      "work": "Lamarche–Straßburger, Constructing Free Boolean Categories",
+      "access": "User-supplied full PDF upload/LutzFreeBool.pdf and literature-fulltext/LutzFreeBool-columns.txt",
+      "reference_url": "https://doi.org/10.1109/LICS.2005.13",
+      "url_status": "Bibliographic DOI; full text actually consulted from supplied PDF",
+      "checked_passages": "Theorem 3.5.4, author-preprint p.10 (PDF page 11), surrounding definitions of graphical and Δ–∇-strong K-autonomous variants; title/publication metadata."
+    },
+    {
+      "work": "Führmann–Pym, Order-enriched Categorical Models of the Classical Sequent Calculus",
+      "access": "User-supplied full PDF upload/fuhrmannOrderenrichedCategoricalModels2006.pdf and literature-fulltext/FuhrmannPym2006.txt",
+      "reference_url": "https://doi.org/10.1016/j.jpaa.2005.03.016",
+      "url_status": "Bibliographic DOI; full text actually consulted from supplied PDF",
+      "checked_passages": "Equation (11), printed p.28; Theorems 6.4 and 6.5, printed pp.74 and 76; relevant order-enrichment discussion and publication front matter."
+    },
+    {
+      "work": "Straßburger, On the Axiomatisation of Boolean Categories With and Without Medial",
+      "full_text_url": "https://arxiv.org/pdf/cs/0512086",
+      "access": "Full arXiv v3 PDF; official TAC article page separately consulted",
+      "checked_passages": "§§3 and 5, *-autonomous base and monoid/comonoid structure, particularly Definition 5.1. TAC publication details verified at https://tac.mta.ca/tac/volumes/18/18/18-18abs.html."
+    },
+    {
+      "work": "Lengyel, The Unbearable Notation of Logic v8",
+      "full_text_url": "https://api.github.com/repos/flengyel/notes/contents/logic/The-Unbearable-Notation-of-Logic_v8.tex?ref=main",
+      "access": "Shared full-source check by sentence_occurrences reviewer; direct TeX source retrieved",
+      "checked_passages": "Title, author, September 19, 2026 date, and full §9 including §§9.1–9.4. This partition did not independently render its PDF."
+    },
+    {
+      "work": "Official author publication list",
+      "full_text_url": "https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/publications.htm",
+      "checked_passages": "Book 3 publisher and article publication entries for Cartesian maximality, Bicartesian Coherence Revisited, Isomorphic Formulae and Syntax for Split Preorders."
+    },
+    {
+      "work": "AMS MSC2020",
+      "full_text_url": "https://mathscinet.ams.org/mathscinet/msc/pdfs/classifications2020.pdf",
+      "checked_passages": "03G30, 03F07, 18A32 classification entries."
+    }
+  ],
+  "abstract_only_claim_checks": [],
+  "limitations": [
+    "No fresh exhaustive literature census.",
+    "No independent human review or Lean build/audit.",
+    "Mailbox ownership not authenticated.",
+    "Theorem-wide adjudication and other manuscript scopes belong to the other assigned reviewers."
+  ],
+  "conclusion": "All three owned repairs resolved. No remaining factual or mathematical finding established in the owned scope.",
+  "final_integration_check": {
+    "previous_checked_sha256": "6074198bff965616555d11dd1c612e7a3dd7412f654367c4036defb4942ca3d2",
+    "final_sha256": "66e7e3c24dcf986d7f424421903a79a41156282b56c7d6f0b36c1fe8b4b044ea",
+    "owned_front_and_bibliography_text_unchanged": true,
+    "result": "Verified full front scope before Section 3 and entire AI disclosure/bibliography suffix equal the reviewed text. Only the reported C046 precision change is outside this scope. No repeated source consultation was necessary."
+  }
+}

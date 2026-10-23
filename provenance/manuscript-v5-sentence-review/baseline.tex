@@ -1,0 +1,909 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype,tikz-cd}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdftitle={Maximality of the Dosen--Petric Boolean Category},pdfauthor={Florian Lengyel}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\B}{\mathsf B}
+\newcommand{\Occ}{\operatorname{Occ}}
+\newcommand{\Rel}{\mathbf{Rel}_{\mathrm{fin}}}
+\newcommand{\FormulaSet}{\operatorname{Form}}
+\title{Maximality of the Do\v{s}en--Petri\'c Boolean Category}
+\author{Florian Lengyel\thanks{Email: \href{mailto:flengyel@gradcenter.cuny.edu}{\texttt{flengyel@gradcenter.cuny.edu}}}}
+\date{October 23, 2026}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The freely generated zero-identity Boolean category of Do\v{s}en and
+Petri\'c is maximal: every additional equation between distinct parallel
+arrows, closed under the proof operations and uniform formula
+substitution, makes the quotient a preorder. This disproves the
+nonmaximality conjecture in Section~14.2 of the September 2007 revision
+of \emph{Proof-Theoretical Coherence}. Boolean Coherence reduces a new
+equation to a contextual equation involving one literal. Uniform
+substitution extends that equation to every formula. A symmetric arrow
+constructed from the distributor then forces the two product
+projections to coincide. Tagged occurrence sets give explicit
+coordinates for the reduction and substitution.
+\end{abstract}
+
+\medskip
+\noindent\textit{Mathematics Subject Classification (2020).}
+Primary 03G30; Secondary 03F07, 18A32.
+
+\smallskip
+\noindent\textit{Keywords.} Boolean categories, maximality, categorial proof theory,
+coherence, substitution congruences.
+
+\section{Introduction}
+
+Do\v{s}en and Petri\'c's Boolean proof category admits distinct arrows
+with the same source and target. Their Boolean Coherence theorem
+distinguishes these arrows by relations between occurrences of
+propositional variables. In \cite[\S14.2, p.~322]{DP}, they leave open
+whether the category is maximal and conjecture that it is not. We prove
+maximality: adjoining any new arrow equation as a substitution-closed
+schema identifies every pair of parallel arrows.
+
+The proof has two parts. First, a relation distinguishing two arrows
+contains an edge that can be isolated by composition with a selector
+and a coselector. This yields the contextual equation used in
+Do\v{s}en and Petri\'c's relative-maximality argument
+\cite[\S9.7, pp.~215--216]{DP}. Second, the distributor and zero
+identities turn that contextual equation into equality of the product
+projections. This second step proves the required collapse.
+
+Do\v{s}en and Petri\'c prove maximality for cartesian categories
+\cite[\S5]{DPCartesian}. Their proof uses coherence, uniform
+substitution, and precomposition and postcomposition to reduce a new
+cartesian equation to equality of the product projections. The
+corresponding reduction for Boolean arrow equations is proved in
+Sections~\ref{sec:isolation} and~\ref{sec:collapse}.
+
+Earlier results establish maximality for lattice categories and relative
+maximality for dicartesian categories
+\cite[\S\S8--10]{DPBicartesian}; these results concern products and
+coproducts without distribution. Related occurrence-selection
+constructions appear in \cite[Lemma~6]{DPIsomorphic}. A differing-edge
+argument also proves maximality for presentations of split preorders,
+split equivalence relations, and binary relations \cite[\S16]{DPSplit}.
+
+Lamarche and Stra{\ss}burger give a proof-net construction of free
+categories for their Boolean-category axioms
+\cite[Theorem~3.5.4]{LSFree}.
+Stra{\ss}burger studies axioms for $*$-autonomous categories with
+monoid and comonoid structures \cite{Strassburger}.
+F\"uhrmann and Pym interpret cut reduction by an order on arrows and
+prove soundness and completeness for their net theories
+\cite[Theorems~6.4--6.5]{FP}.
+After precomposition with the inverse right unit isomorphism, their
+negation triangle \cite[(11), p.~28]{FP} equates an endomorphism with
+the identity. The corresponding structural composite defines the
+zero identity in \eqref{eq:zero-identity}.
+
+We use the occurrence coordinates of \cite[\S9]{Notation}: occurrences
+in a compound formula form tagged disjoint unions, and substitution
+replaces each occurrence by its own block of occurrences.
+Section~\ref{sec:occurrences} describes these blocks, and
+Appendix~\ref{app:substitution} gives the commutative diagrams relating
+them to Do\v{s}en and Petri\'c's ordinal substitution operation.
+References to \cite{DP} use the printed pagination of its September
+2007 revised version.
+
+\section{The Boolean proof category}\label{sec:category}
+
+Fix a nonempty set $P$ of propositional variables. Write $\FormulaSet(P)$
+for the formulas built from $P$, the constants $\top,\bot$, the binary
+connectives $\wedge,\vee$, and negation $\neg$. Let $\B(P)$ be the
+freely generated zero-identity Boolean category defined in
+\cite[\S\S14.2--14.3]{DP}. Its objects are these formulas, and its
+arrows are the arrow terms of that presentation modulo its equations.
+We write $\B$ when $P$ is fixed. We recall the structure and equations
+used in the proof.
+
+The connectives $\wedge$ and $\vee$ give binary products and coproducts;
+$\top$ is terminal and $\bot$ is initial. For $A_1=A$ and $A_2=B$,
+denote the projections and injections by
+\[
+ \pi_i^{A,B}:A\wedge B\longrightarrow A_i,
+ \qquad
+ \iota_i^{A,B}:A_i\longrightarrow A\vee B
+ \qquad(i=1,2).
+\]
+Pairing and copairing are denoted
+by $\langle f,g\rangle$ and $[f,g]$, respectively. Write
+$!_A:A\to\top$ and $\kappa_A:\bot\to A$ for the terminal and initial
+arrows, and $1_A$ for the identity of $A$. Composition $g\circ f$
+applies $f$ first. The symbols $f\wedge g$ and $f\vee g$ denote the
+arrows induced by the product and coproduct bifunctors.
+
+The distributor is an arrow
+\[
+ d_{A,B,C}:A\wedge(B\vee C)\longrightarrow(A\wedge B)\vee C.
+\]
+Its first-injection equation is
+\begin{equation}
+ d_{A,B,C}\circ(1_A\wedge\iota_1^{B,C})
+   =\iota_1^{A\wedge B,C}.
+ \label{eq:first-injection}
+\end{equation}
+This is the coproduct-injection equation of
+\cite[\S11.1, p.~234]{DP}.
+
+Negation is represented by a functor
+$\neg:\B^{\mathrm{op}}\to\B$, with specified natural
+double-negation and De Morgan isomorphisms. In particular, write
+$n_A:\neg\neg A\to A$ for the double-negation isomorphism.
+The presentation also has arrows
+$\eta_A:\top\to\neg A\vee A$ and
+$\epsilon_A:A\wedge\neg A\to\bot$.
+The \emph{zero identity} is the endomorphism $0_A:A\to A$ defined by
+\begin{equation}
+ 0_A=[\kappa_A,1_A]\circ(\epsilon_A\vee1_A)\circ d_{A,\neg A,A}
+     \circ(1_A\wedge\eta_A)\circ\langle1_A,!_A\rangle.
+ \label{eq:zero-identity}
+\end{equation}
+The defining zero-identity equation asserts that
+\begin{equation}
+ f\circ0_A=0_C\circ g
+ \qquad(f,g:A\to C).
+ \label{eq:zero-law}
+\end{equation}
+These are the equations of \cite[\S14.2, p.~317]{DP}, with the
+product and coproduct unit isomorphisms written explicitly.
+
+\noindent\textit{Remark.}
+Appendix~\ref{app:structural-diagrams} gives diagrammatic forms of
+equations~\eqref{eq:first-injection}--\eqref{eq:zero-law}, with the
+source and target of every arrow displayed.
+
+Whenever $\B(A,C)$ is nonempty, define $0_{A,C}=f\circ0_A$ for any
+$f:A\to C$. Equation~\eqref{eq:zero-law} makes this independent of
+$f$: both $f\circ0_A$ and $g\circ0_A$ equal $0_C\circ g$.
+Taking $f=g$ gives $f\circ0_A=0_C\circ f$. Consequently zero arrows
+absorb composition whenever the composites are defined:
+$h\circ0_{A,C}=0_{A,D}$ for $h:C\to D$, and
+$0_{A,C}\circ k=0_{X,C}$ for $k:X\to A$.
+
+Two arrows are \emph{parallel} when they have the same source and
+target. A \emph{proof congruence} on $\B$ is an equivalence relation
+on each hom-set preserved by composition and every arrow operation
+of the presentation, including pairing, copairing, and negation.
+A \emph{substitution congruence} is a proof congruence also preserved
+by every uniform substitution $\sigma:P\to\FormulaSet(P)$.
+Here substitution acts on the entire arrow term, including its source
+and target; this is rule~$(su)$ of \cite[\S2.7, p.~51]{DP}.
+
+The \emph{total congruence} identifies every parallel pair. A category
+is \emph{thin}, or a \emph{preorder}, when each hom-set has at most one
+element. We call $\B$ \emph{maximal} when its only substitution
+congruences are equality and the total congruence. The main result is
+the following theorem.
+
+\begin{theorem}\label{thm:main}
+Let $P$ be a nonempty set of propositional variables. The freely
+generated zero-identity Boolean category $\B(P)$ of Do\v{s}en and
+Petri\'c is maximal. Equivalently, every substitution congruence on
+$\B(P)$ that identifies two distinct parallel arrows identifies all
+parallel arrows.
+\end{theorem}
+
+The proof is completed in Section~\ref{sec:collapse}.
+
+\section{Occurrences and substitution}\label{sec:occurrences}
+
+For a formula $A$, write $\Occ(A)$ for the finite set of positions
+occupied by propositional variables in $A$.
+Appendix~\ref{app:profiles} describes substitution on these occurrence
+sets by commutative diagrams. Repeated occurrences of the same variable
+occupy distinct positions. We use tagged coordinates for these positions.
+
+For finite sets $X,Y$, let
+$X\sqcup Y=(\{1\}\times X)\cup(\{2\}\times Y)$ be their tagged
+disjoint union. The occurrence sets are defined recursively by
+\[
+ \begin{aligned}
+ \Occ(p)&=\{*\},&
+ \Occ(\top)&=\Occ(\bot)=\varnothing,\\
+ \Occ(\neg A)&=\Occ(A),&
+ \Occ(A\mathbin\star C)&=\Occ(A)\sqcup\Occ(C)
+       \quad(\star\in\{\wedge,\vee\}).
+ \end{aligned}
+\]
+The label map $\lambda_A:\Occ(A)\to P$ assigns to each occurrence
+its underlying variable. Distinct positions may have the same label.
+The left-to-right
+order gives a bijection from $\Occ(A)$ to
+$\{1,\ldots,|\Occ(A)|\}$, interpreted as the empty set when the
+cardinality is zero. This bijection relates the tagged coordinates to
+the finite ordinals used in \cite{DP}; Appendix~\ref{app:ordinals}
+expresses the corresponding change of substitution coordinates by a
+commutative square and a worked example.
+
+Let $\Rel$ be the category of finite sets and binary relations.
+A relation $R:X\to Y$ is a subset of $X\times Y$; identities are
+diagonal relations, and composition is relational composition.
+Transporting the occurrence interpretation of \cite{DP} to the
+tagged coordinates gives a functor
+$G:\B\to\Rel$ with $GA=\Occ(A)$.
+For example,
+\[
+ G\pi_1^{A,C}=\{((1,x),x):x\in\Occ(A)\},\qquad
+ G\iota_1^{A,C}=\{(x,(1,x)):x\in\Occ(A)\}.
+\]
+The second projection and injection use tag~$2$. Pairing takes the
+union of the two relations after tagging their targets; copairing
+takes the union after tagging their sources. The relation $Gd_{A,B,C}$
+is the graph of the rebracketing bijection
+\[
+ \Occ(A)\sqcup\bigl(\Occ(B)\sqcup\Occ(C)\bigr)
+ \longrightarrow
+ \bigl(\Occ(A)\sqcup\Occ(B)\bigr)\sqcup\Occ(C),
+\]
+which preserves each occurrence of $A,B,C$
+\cite[\S2.9, p.~60]{DP}. Zero arrows have empty relations.
+
+\begin{theorem}[Boolean Coherence, Do\v{s}en--Petri\'c]
+\label{thm:coherence}
+The functor $G:\B\to\Rel$ is faithful: parallel arrows $f,g$ of
+$\B$ are equal if and only if $Gf=Gg$.
+\end{theorem}
+
+This is \cite[\S14.2, p.~321]{DP}. In particular, for $p\in P$, the
+two projections $p\wedge p\to p$ have different occurrence
+relations, so $\B$ is nonthin. Below, coherence is applied to
+equations in $\B$; these equations then pass to its quotients.
+
+A \emph{signed literal} is $p$ or $\neg p$ for $p\in P$.
+A formula is in \emph{negation normal form} when negation occurs only
+immediately before a propositional variable. The double-negation and
+De Morgan isomorphisms, including the isomorphisms for the truth
+constants, give an isomorphism $a_A:A\to A^\circ$ to a formula in
+negation normal form. Its occurrence relation is the graph of the
+correspondence of positions \cite[\S14.1, pp.~313--315]{DP}.
+
+For arrows between formulas in negation normal form, every edge of
+the occurrence relation joins occurrences of the same signed literal.
+Indeed, the equivalent presentation of \cite[\S14.2, pp.~318--321]{DP}
+has signed literals as generators. Its lattice generators preserve
+these labels; the arrows $\eta_p$ and $\epsilon_p$ have empty
+relations. Composition, pairing, and copairing preserve label
+agreement. The equivalence with $\B$ preserves the occurrence
+interpretation.
+
+Substitution replaces each occurrence of a variable by a separate
+block of occurrences of its substituted formula.
+Appendix~\ref{app:profiles} describes these blocks and their label maps
+by commutative diagrams, following \cite[\S9]{Notation}.
+Let $Q$ be a set of propositional variables and
+$\sigma:P\to\FormulaSet(Q)$ a substitution. If $A[\sigma]$ denotes the
+result of uniform substitution, there is a canonical bijection
+\begin{equation}
+ \Occ(A[\sigma])\cong D_{A,\sigma},\qquad
+ D_{A,\sigma}=\coprod_{x\in\Occ(A)}
+                  \Occ\bigl(\sigma(\lambda_A(x))\bigr).
+ \label{eq:occ-substitution}
+\end{equation}
+The set on the right consists of pairs $(x,t)$, where $x$ is an old
+occurrence and $t$ is an occurrence within the formula inserted there.
+Induction on $A$ proves the bijection: the variable case has one
+block, the constant cases have none, binary connectives form tagged
+unions, and negation preserves the occurrence set. In particular,
+two occurrences of the same variable give two separately tagged
+copies of its substituted formula.
+
+The organization of these blocks is expressed by a square of sets and
+functions. Put $E_\sigma=\coprod_{p\in P}\Occ(\sigma(p))$.
+Define $\operatorname{pr}_D:D_{A,\sigma}\to\Occ(A)$ and
+$\operatorname{pr}_E:E_\sigma\to P$ by
+$\operatorname{pr}_D(x,t)=x$ and $\operatorname{pr}_E(p,t)=p$.
+The function
+$\widehat\lambda_{A,\sigma}:D_{A,\sigma}\to E_\sigma$ sends
+$(x,t)$ to $(\lambda_A(x),t)$. Thus
+\begin{equation}
+\begin{tikzcd}[column sep=large,row sep=large]
+ D_{A,\sigma}\arrow[r,"\widehat\lambda_{A,\sigma}"]
+   \arrow[d,"\operatorname{pr}_D"']
+   &E_\sigma\arrow[d,"\operatorname{pr}_E"]\\
+ \Occ(A)\arrow[r,"\lambda_A"']&P.
+\end{tikzcd}
+\label{eq:block-square}
+\end{equation}
+Both routes send $(x,t)$ to the variable $\lambda_A(x)$ whose
+substituted formula contains $t$. The upper arrow forgets which
+occurrence of that variable supplied the copy; the source $D_{A,\sigma}$
+retains it.
+
+Substitution on arrow terms induces a functor
+\[
+ F_\sigma:\B(P)\longrightarrow\B(Q),\qquad
+ A\longmapsto A[\sigma],\quad f\longmapsto f[\sigma].
+\]
+Rule~$(su)$ makes this functor well defined on arrow terms modulo the
+defining equations. It preserves identities, composition, and the
+specified arrow operations. For each arrow, the blocks in
+\eqref{eq:occ-substitution} describe the occurrence sets of its
+substituted source and target.
+
+\section{Isolating an occurrence}\label{sec:isolation}
+
+Put $j_A=\iota_1^{A,\top}:A\to A\vee\top$. The contextual equation
+needed in the proof is
+\begin{equation}
+ j_A\circ\pi_1^{A,\bot}
+   =0_{A\wedge\bot,A\vee\top}.
+ \tag{$K_A$}\label{eq:context}
+\end{equation}
+The right-hand side is also
+$\iota_2^{A,\top}\circ!_\bot\circ\pi_2^{A,\bot}$: its occurrence
+relation is empty, so Boolean Coherence identifies it with the zero
+arrow. Thus \eqref{eq:context} is the contextual equation of
+\cite[\S9.7, pp.~215--216]{DP}.
+
+\begin{lemma}[Occurrence isolation]\label{lem:isolation}
+For distinct parallel arrows $f,g:A\to C$ in $\B$, there are a
+signed literal $\ell$ and arrows
+\[
+ i:\ell\wedge\bot\longrightarrow A,
+ \qquad r:C\longrightarrow\ell\vee\top
+\]
+such that, after possibly interchanging $f$ and $g$,
+\[
+ r\circ f\circ i=j_\ell\circ\pi_1^{\ell,\bot},
+ \qquad
+ r\circ g\circ i=0_{\ell\wedge\bot,\ell\vee\top}.
+\]
+\end{lemma}
+
+\begin{proof}
+First replace $f,g$ by $a_C\circ f\circ a_A^{-1}$ and
+$a_C\circ g\circ a_A^{-1}$. These remain distinct, so it suffices to
+construct the arrows for the negation normal forms $A^\circ,C^\circ$.
+If their selector and coselector are $i^\circ,r^\circ$, the required
+arrows for the original formulas are
+$a_A^{-1}\circ i^\circ$ and $r^\circ\circ a_C$.
+We may therefore assume that $A,C$ are in negation normal form.
+
+Faithfulness of $G$ gives an edge belonging to exactly one of $Gf,Gg$.
+Interchange $f,g$ if necessary, and choose
+$(x,y)\in Gf\setminus Gg$. The occurrences $x$ and $y$ have the same
+signed literal $\ell$. Set $D=\ell\wedge\bot$ and $E=\ell\vee\top$.
+For every formula $V$, the arrows
+\[
+ b_V=\kappa_V\circ\pi_2^{\ell,\bot}:D\to V,
+ \qquad
+ t_V=\iota_2^{\ell,\top}\circ!_V:V\to E
+\]
+have empty occurrence relations.
+
+Construct the selector $i:D\to A$ recursively along the tagged path
+to $x$. At the selected literal, use $\pi_1^{\ell,\bot}$.
+At a conjunction, pair the recursively constructed arrow with $b_V$
+for the unselected factor, placing it in the order specified by the
+tag. At a disjunction, compose the recursively constructed arrow
+with the injection of the selected summand. The displayed rules for
+$G$ show inductively that $Gi$ consists of the single edge from the
+sole occurrence of $D$ to $x$.
+
+Construct $r:C\to E$ dually along the path to $y$.
+At the selected literal, use $\iota_1^{\ell,\top}$.
+At a conjunction, first project to the selected factor and then apply
+the recursively constructed arrow. At a disjunction, copair that
+arrow with $t_V$ on the unselected summand. Thus $Gr$ is the single
+edge from $y$ to the sole occurrence of $E$.
+
+Relational composition now makes $G(r\circ f\circ i)$ the one-edge
+relation from $\Occ(D)$ to $\Occ(E)$, whereas
+$G(r\circ g\circ i)$ is empty. Boolean Coherence gives the asserted
+equations.
+\end{proof}
+
+\begin{proposition}\label{prop:all-contexts}
+If a substitution congruence $\theta$ on $\B$ identifies distinct
+parallel arrows, then \eqref{eq:context} holds modulo $\theta$ for
+every formula $A$.
+\end{proposition}
+
+\begin{proof}
+Lemma~\ref{lem:isolation} and compatibility with composition give
+\eqref{eq:context} for a signed literal $\ell$.
+If $\ell=p$, let $\sigma$ substitute $A$ for $p$ and fix the other variables.
+This yields \eqref{eq:context} for $A$: under
+\eqref{eq:occ-substitution}, the literal occurrence in each endpoint
+becomes the block $\Occ(A)$, and the arrow operations are preserved
+by $F_\sigma$. Appendix~\ref{app:shared} describes this
+one-occurrence case of the substitution diagrams.
+
+If $\ell=\neg p$, substitute $\neg A$ for $p$, obtaining the equation
+for $\neg\neg A$. Transport it along $n_A:\neg\neg A\to A$.
+Explicitly, let
+$k_A=j_A\circ\pi_1^{A,\bot}:A\wedge\bot\to A\vee\top$.
+The product and coproduct equations give the commutative square
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ A\wedge\bot\arrow[r,"k_A"]\arrow[d,"n_A^{-1}\wedge1_\bot"']
+   &A\vee\top\\
+ \neg\neg A\wedge\bot\arrow[r,"k_{\neg\neg A}"']
+   &\neg\neg A\vee\top\arrow[u,"n_A\vee1_\top"'].
+\end{tikzcd}
+\]
+Precomposition and postcomposition of the zero arrow give a zero
+arrow by absorption. The equation for $\neg\neg A$ therefore gives
+\eqref{eq:context} for $A$.
+\end{proof}
+
+\section{Contextual collapse}\label{sec:collapse}
+
+The distributor produces an arrow that treats two copies of $A$
+symmetrically. This symmetry converts the contextual equation into
+an equation between the projections.
+
+\begin{lemma}\label{lem:symmetric}
+For formulas $A,B$, define
+\[
+ \begin{aligned}
+ u_A^B&=d_{A,B,A}\circ(1_A\wedge\iota_2^{B,A})
+       :A\wedge A\longrightarrow(A\wedge B)\vee A,\\
+ h_A^B&=[\pi_1^{A,B},1_A]\circ u_A^B:A\wedge A\longrightarrow A.
+ \end{aligned}
+\]
+The arrow $h_A^B$ is independent of $B$. Writing it as $h_A$ and
+putting $\tau_A=\langle\pi_2^{A,A},\pi_1^{A,A}\rangle$, one has
+$h_A\circ\tau_A=h_A$.
+\end{lemma}
+
+\begin{proof}
+The relation of $u_A^B$ sends $(1,x)$ to $(1,(1,x))$ and $(2,x)$
+to $(2,x)$ in $\bigl(\Occ(A)\sqcup\Occ(B)\bigr)\sqcup\Occ(A)$.
+Copairing with $\pi_1^{A,B}$ and $1_A$ then gives
+\[
+ Gh_A^B=\{((1,x),x),((2,x),x):x\in\Occ(A)\}.
+\]
+This relation is independent of $B$ and invariant under exchange of
+the two source tags. Boolean Coherence proves both assertions.
+\end{proof}
+
+\begin{lemma}[Contextual collapse]\label{lem:collapse}
+Let $\theta$ be a proof congruence on $\B$ such that
+\eqref{eq:context} holds modulo $\theta$ for every formula $A$.
+Then $\B/\theta$ is a preorder.
+\end{lemma}
+
+\begin{proof}
+Write $\equiv$ for equality modulo $\theta$.
+The quotient retains products and coproducts: their pairing,
+copairing, and defining equations pass to equivalence classes.
+Using $B=\bot$ in Lemma~\ref{lem:symmetric}, copairing and
+\eqref{eq:context} give
+\begin{equation}
+ \begin{aligned}
+ j_A\circ h_A
+   &=[j_A\circ\pi_1^{A,\bot},j_A]\circ u_A^\bot\\
+   &\equiv[0_{A\wedge\bot,A\vee\top},j_A]\circ u_A^\bot\\
+   &=j_A\circ\pi_2^{A,A}.
+ \end{aligned}
+ \label{eq:second-block}
+\end{equation}
+For the last equality, both occurrence relations discard the first
+source tag and send $(2,x)$ to $(1,x)$ in $\Occ(A)\sqcup\varnothing$.
+Thus it is an equation of $\B$ by Boolean Coherence.
+Precomposing \eqref{eq:second-block} with $\tau_A$ and using
+$h_A\circ\tau_A=h_A$ yields
+\[
+ j_A\circ\pi_1^{A,A}\equiv j_A\circ\pi_2^{A,A}.
+\]
+Now precompose with $\langle1_A,0_A\rangle:A\to A\wedge A$.
+It follows that
+\begin{equation}
+ j_A\equiv j_A\circ0_A
+   =0_{A,A\vee\top}
+   =\iota_2^{A,\top}\circ!_A.
+ \label{eq:terminal-injection}
+\end{equation}
+The last equality holds by coherence, since the composite through
+$\top$ has empty occurrence relation.
+
+The arrows $s=\iota_2^{A,\top}:\top\to A\vee\top$ and
+$t=!_{A\vee\top}:A\vee\top\to\top$ are inverse in the quotient.
+Indeed, $t\circ s=1_\top$ by terminality. Equation
+\eqref{eq:terminal-injection} gives
+$(s\circ t)\circ\iota_1^{A,\top}\equiv\iota_1^{A,\top}$, and
+terminality gives
+$(s\circ t)\circ\iota_2^{A,\top}=\iota_2^{A,\top}$.
+The coproduct property therefore gives $s\circ t\equiv1_{A\vee\top}$.
+Hence $A\vee\top$, and by coproduct symmetry also $\top\vee A$,
+is terminal in the quotient. In particular,
+\begin{equation}
+ \iota_2^{\top,A}\equiv\iota_1^{\top,A}\circ!_A.
+ \label{eq:other-injection}
+\end{equation}
+
+Evaluate the same arrow $h_A$ using $B=\top$.
+Substituting \eqref{eq:other-injection} into its defining expression
+and applying \eqref{eq:first-injection} gives
+\[
+ \begin{aligned}
+ h_A
+   &\equiv[\pi_1^{A,\top},1_A]\circ d_{A,\top,A}
+       \circ(1_A\wedge\iota_1^{\top,A})
+       \circ(1_A\wedge!_A)\\
+   &=[\pi_1^{A,\top},1_A]\circ\iota_1^{A\wedge\top,A}
+       \circ(1_A\wedge!_A)\\
+   &=\pi_1^{A,A}.
+ \end{aligned}
+\]
+Since $h_A$ is invariant under $\tau_A$, this implies
+$\pi_1^{A,A}\equiv\pi_2^{A,A}$.
+For any parallel arrows $f,g:X\to A$, pairing now gives
+\[
+ f=\pi_1^{A,A}\circ\langle f,g\rangle
+   \equiv\pi_2^{A,A}\circ\langle f,g\rangle=g.
+\]
+Thus the quotient is a preorder.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Suppose that a substitution congruence $\theta$ on $\B(P)$ identifies
+two distinct parallel arrows. Proposition~\ref{prop:all-contexts}
+gives \eqref{eq:context} modulo $\theta$ for every formula $A$.
+Lemma~\ref{lem:collapse} then makes $\theta$ total.
+\end{proof}
+
+The same argument gives the formulation of maximality in terms of
+models used in \cite[\S9.3, p.~194]{DP}. An \emph{interpretation} in
+a zero-identity Boolean category $\mathcal C$ assigns an object of
+$\mathcal C$ to each propositional variable and interprets the
+specified operations; it induces a structure-preserving functor
+$\B(P)\to\mathcal C$.
+
+\begin{corollary}\label{cor:models}
+Let $P$ be a nonempty set of propositional variables, and let
+$f,g:A\to C$ be distinct arrows of $\B(P)$.
+If a zero-identity Boolean category $\mathcal C$ satisfies $f=g$
+under every interpretation of the propositional variables, then
+$\mathcal C$ is a preorder.
+\end{corollary}
+
+\begin{proof}
+Declare two parallel arrows of $\B(P)$ equivalent when all their
+interpretations in $\mathcal C$ agree. This defines a substitution
+congruence: composing an interpretation with $F_\sigma$ is another
+interpretation. The congruence contains $f=g$, so
+Theorem~\ref{thm:main} makes it total. In particular,
+$\pi_1^{p,p}=\pi_2^{p,p}$ holds under every interpretation, for any
+$p\in P$. Interpret $p$ as an arbitrary object $X$ of $\mathcal C$.
+Its two projections $X\wedge X\to X$ are equal. Pairing any arrows
+$a,b:Y\to X$ with these projections yields $a=b$.
+\end{proof}
+
+\appendix
+\section{Substitution in occurrence coordinates}\label{app:substitution}
+
+The generalized composition of definable connectives in
+\cite[\S2.5, pp.~45--46]{DP} records how repeated arguments are
+substituted into repeated positions. We give its diagrammatic description
+from \cite[\S\S9.2--9.3]{Notation}. The diagrams separate the choice of
+an outer occurrence, the choice of an occurrence within an inserted
+formula, and the name assigned to that occurrence.
+
+\subsection{Profiles and their fibres}\label{app:profiles}
+
+For an integer $n\geq0$, put $\underline n=\{1,\ldots,n\}$, with
+$\underline0=\varnothing$. A \emph{formula pattern} on a finite set
+of placeholders is a formula in those placeholders. Its
+\emph{occurrence profile} records the placeholder at each position,
+reading positions from left to right.
+
+Let $U=\{p_1,\ldots,p_k\}$ consist of distinct placeholders and let
+$M\in\FormulaSet(U)$ have $m$ occurrences. Its profile is
+\[
+ o_M:\underline m\longrightarrow\underline k,
+ \qquad o_M(r)=i\quad\text{when position $r$ contains $p_i$}.
+\]
+For each $i\in\underline k$, choose a set
+$Q_i=\{q_{i,1},\ldots,q_{i,\ell_i}\}$ of distinct local placeholders and a
+pattern $N_i\in\FormulaSet(Q_i)$ with $n_i$ occurrences. The sets
+$Q_i$ are pairwise disjoint. Write
+$o_i:\underline{n_i}\to\underline{\ell_i}$ for the profile of $N_i$.
+All these numbers may be zero whenever the displayed maps exist.
+
+The occurrences after substitution and the local placeholder indices
+form, respectively, the sets
+\[
+ \begin{aligned}
+ D&=\{(r,t):r\in\underline m,\ t\in\underline{n_{o_M(r)}}\},\\
+ C&=\{(i,s):i\in\underline k,\ s\in\underline{\ell_i}\}.
+ \end{aligned}
+\]
+Thus $(r,t)$ specifies an occurrence in the copy of $N_{o_M(r)}$
+inserted at position $r$ of $M$. The pair $(i,s)$ specifies a local
+placeholder of $N_i$. Define the injections
+\[
+ a_r:\underline{n_{o_M(r)}}\longrightarrow D,\quad a_r(t)=(r,t),
+ \qquad
+ b_i:\underline{\ell_i}\longrightarrow C,\quad b_i(s)=(i,s).
+\]
+There is a unique function $\gamma:D\to C$ for which, for every
+$r\in\underline m$, the following square commutes:
+\begin{equation}\label{eq:app-fibre}
+\begin{tikzcd}[column sep=large,row sep=large]
+ \underline{n_{o_M(r)}}\arrow[r,"a_r"]\arrow[d,"o_{o_M(r)}"']
+   &D\arrow[d,"\gamma"]\\
+ \underline{\ell_{o_M(r)}}\arrow[r,"b_{o_M(r)}"']&C.
+\end{tikzcd}
+\end{equation}
+The square says that an occurrence inside one inserted copy is labelled
+by that pattern's profile and then placed in the corresponding target
+block. Since $D$ is the disjoint union of its source blocks, these
+squares determine $\gamma$ on every element. Explicitly,
+\[
+ \gamma(r,t)=\bigl(o_M(r),o_{o_M(r)}(t)\bigr).
+\]
+
+Define the block projections $p_D:D\to\underline m$ and
+$p_C:C\to\underline k$ by $p_D(r,t)=r$ and $p_C(i,s)=i$.
+The same construction fits over the outer profile:
+\begin{equation}\label{eq:app-profile}
+\begin{tikzcd}[column sep=large,row sep=large]
+ D\arrow[r,"\gamma"]\arrow[d,"p_D"']&C\arrow[d,"p_C"]\\
+ \underline m\arrow[r,"o_M"']&\underline k.
+\end{tikzcd}
+\end{equation}
+Both routes send $(r,t)$ to $o_M(r)$. This square records which
+inserted pattern is used; square~\eqref{eq:app-fibre} specifies the
+map within each such block. Repeated values of $o_M$ give separate
+source blocks, one for each occurrence of the corresponding outer
+placeholder.
+
+To identify this construction with actual pattern substitution,
+replace each $q_{i,s}$ in $N_i$ by $(i,s)$ and denote the resulting
+pattern over $C$ by $\widetilde N_i$. Let
+$\Phi_0:U\to\FormulaSet(C)$ be given by $\Phi_0(p_i)=\widetilde N_i$.
+Every occurrence of $M[\Phi_0]$ has unique coordinates $(r,t)\in D$.
+This gives a bijection $\chi:\Occ(M[\Phi_0])\to D$, and its relation
+to the label map is the commutative square
+\begin{equation}\label{eq:app-occurrence-labels}
+\begin{tikzcd}[column sep=large,row sep=large]
+ \Occ(M[\Phi_0])\arrow[r,"\chi","\cong"']
+    \arrow[d,"\lambda_{M[\Phi_0]}"']&D\arrow[d,"\gamma"]\\
+ C\arrow[r,"1_C"']&C.
+\end{tikzcd}
+\end{equation}
+Indeed, the occurrence with coordinates $(r,t)$ contains precisely
+the placeholder $\bigl(o_M(r),o_{o_M(r)}(t)\bigr)$.
+
+\subsection{The finite-ordinal presentation}\label{app:ordinals}
+
+The finite ordinals used in \cite{DP} number the elements of each
+block consecutively. Put
+\[
+ s_0=t_0=0,\qquad
+ s_r=\sum_{q=1}^{r}n_{o_M(q)}\quad(1\leq r\leq m),\qquad
+ t_i=\sum_{j=1}^{i}\ell_j\quad(1\leq i\leq k).
+\]
+The block encodings are the bijections
+\[
+ \begin{aligned}
+ \theta_D:D&\longrightarrow\underline{s_m},
+       &\theta_D(r,t)&=s_{r-1}+t,\\
+ \theta_C:C&\longrightarrow\underline{t_k},
+       &\theta_C(i,s)&=t_{i-1}+s.
+ \end{aligned}
+\]
+Define $\delta:\underline{s_m}\to\underline{t_k}$ as the unique
+function making the following square commute:
+\begin{equation}\label{eq:app-ordinal}
+\begin{tikzcd}[column sep=large,row sep=large]
+ D\arrow[r,"\gamma"]\arrow[d,"\theta_D","\cong"']
+    &C\arrow[d,"\theta_C","\cong"']\\
+ \underline{s_m}\arrow[r,"\delta"']&\underline{t_k}.
+\end{tikzcd}
+\end{equation}
+The vertical maps change coordinates. The top route keeps the block
+and local position visible; the bottom route uses a single position
+number. In coordinates, commutativity says
+\begin{equation}\label{eq:app-coordinate}
+ \delta(s_{r-1}+t)=t_{o_M(r)-1}+o_{o_M(r)}(t)
+ \qquad\bigl((r,t)\in D\bigr).
+\end{equation}
+Every source position belongs to exactly one nonempty block, so this
+formula determines $\delta$ even when some blocks are empty.
+
+Do\v{s}en and Petri\'c write $\mu=o_M$ and $\nu_i=o_i$, and denote
+$\delta$ by $\mu(\nu_1,\ldots,\nu_k)$. Their block locator selects the
+unique $r$ for which $s_{r-1}<x\leq s_r$; substituting
+$t=x-s_{r-1}$ in \eqref{eq:app-coordinate} gives exactly their
+formula \cite[\S2.5, p.~46]{DP}. The diagram therefore describes the
+same generalized composition. A pattern can equivalently be
+specified by erasing its placeholder names to one common symbol and
+attaching its occurrence profile. In that notation, the generalized
+composite is represented by the skeleton of the substituted pattern
+together with the profile $\delta$.
+
+For example, take
+\[
+ M(p,q)=q\wedge(p\vee q),\qquad
+ N_1(a,b)=a\wedge b,\qquad
+ N_2(c,d)=d\wedge(c\vee d).
+\]
+The profiles, listed by successive values, are
+$o_M=(2,1,2)$, $o_1=(1,2)$, and $o_2=(2,1,2)$.
+The source blocks have sizes $3,2,3$, while the target blocks list
+$(a,b)$ and $(c,d)$. Thus
+\[
+\begin{array}{c|ccc|cc|ccc}
+ \text{source position}&1&2&3&4&5&6&7&8\\\hline
+ \text{placeholder}&d&c&d&a&b&d&c&d\\
+ \delta&4&3&4&1&2&4&3&4
+\end{array}
+\]
+For instance, source position $2$ has coordinates $(1,2)$.
+Square~\eqref{eq:app-fibre} sends it to $(2,1)$, and
+$\theta_C(2,1)=3$. This is the entry $\delta(2)=3$.
+
+\subsection{Shared variables and the maximality argument}\label{app:shared}
+
+The local placeholders may be assigned names in a common variable
+set $Q$. Let $\rho:C\to Q$ be that assignment; different elements
+of $C$ may have the same image. Replace each placeholder $c\in C$
+by the variable $\rho(c)$, obtaining the renaming map
+$(-)[\rho]:\FormulaSet(C)\to\FormulaSet(Q)$. Define
+$\sigma:U\to\FormulaSet(Q)$ by
+$\sigma(p_i)=\widetilde N_i[\rho]$.
+Then the following square commutes:
+\begin{equation}\label{eq:app-renaming}
+\begin{tikzcd}[column sep=large,row sep=large]
+ \FormulaSet(U)\arrow[r,"{(-)[\Phi_0]}"]
+    \arrow[d,"{(-)[\sigma]}"']
+   &\FormulaSet(C)\arrow[d,"{(-)[\rho]}"]\\
+ \FormulaSet(Q)\arrow[r,"1"']&\FormulaSet(Q).
+\end{tikzcd}
+\end{equation}
+At $p_i$, both routes give $\sigma(p_i)$. The constant and connective
+clauses agree, so structural induction proves commutativity.
+Renaming changes the labels on the occurrences, while the pairs
+$(r,t)$ continue to distinguish their positions. This permits the
+same actual variable to occur in several inserted patterns without
+identifying their separate occurrences.
+
+For the substitution $p\mapsto A$ in
+Proposition~\ref{prop:all-contexts}, the outer pattern is $p$,
+so there is a single source block. This block is $\Occ(A)$.
+The source and target formulas of the contextual equation are
+$p\wedge\bot$ and $p\vee\top$; each has one occurrence of $p$. Their substituted occurrence sets therefore each
+contain one copy of $\Occ(A)$, and the substituted arrow has type
+$A\wedge\bot\to A\vee\top$. If the isolated literal is $\neg p$,
+the substitution $p\mapsto\neg A$ instead gives
+$\neg\neg A\wedge\bot\to\neg\neg A\vee\top$; the
+double-negation square in Proposition~\ref{prop:all-contexts}
+then gives the required equation for $A$.
+
+\section{Diagrammatic forms of the structural equations}
+\label{app:structural-diagrams}
+
+\paragraph{The first-injection equation.}
+For formulas $A,B,C$, equation~\eqref{eq:first-injection} is the
+commutative triangle
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ A\wedge B
+   \arrow[r,"1_A\wedge\iota_1^{B,C}"]
+   \arrow[dr,"{\iota_1^{A\wedge B,C}}"']
+   &A\wedge(B\vee C)\arrow[d,"d_{A,B,C}"]\\
+   &(A\wedge B)\vee C.
+\end{tikzcd}
+\]
+Both paths have source $A\wedge B$ and target $(A\wedge B)\vee C$.
+The upper arrow is induced by $1_A:A\to A$ and
+$\iota_1^{B,C}:B\to B\vee C$.
+
+\paragraph{The zero identity.}
+For a formula $A$, equation~\eqref{eq:zero-identity} is expressed by
+the commutative diagram
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ A\arrow[r,"{\langle1_A,!_A\rangle}"]\arrow[d,"0_A"']
+   &A\wedge\top\arrow[r,"1_A\wedge\eta_A"]
+   &A\wedge(\neg A\vee A)\arrow[d,"d_{A,\neg A,A}"]\\
+ A
+   &\bot\vee A\arrow[l,"{[\kappa_A,1_A]}"']
+   &(A\wedge\neg A)\vee A\arrow[l,"\epsilon_A\vee1_A"'].
+\end{tikzcd}
+\]
+The path across the top, down the right side, and back along the
+bottom is the five-arrow composite in~\eqref{eq:zero-identity}.
+Its first arrow pairs $1_A:A\to A$ with $!_A:A\to\top$;
+its last arrow copairs $\kappa_A:\bot\to A$ with $1_A:A\to A$.
+The arrows between them use
+$\eta_A:\top\to\neg A\vee A$ and
+$\epsilon_A:A\wedge\neg A\to\bot$, together with the distributor.
+
+\paragraph{The zero law.}
+For any parallel arrows $f,g:A\to C$,
+equation~\eqref{eq:zero-law} is the commutative square
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ A\arrow[r,"0_A"]\arrow[d,"g"']&A\arrow[d,"f"]\\
+ C\arrow[r,"0_C"']&C.
+\end{tikzcd}
+\]
+The upper-right path is $f\circ0_A:A\to C$, and the lower-left
+path is $0_C\circ g:A\to C$. The arrows $f$ and $g$ need not be equal.
+
+\paragraph{Use of AI tools.}
+OpenAI's ChatGPT was used to assist with the development of the proof,
+preparation of the manuscript, and checks of the arguments and references.
+
+\begin{thebibliography}{9}
+\small
+\setlength{\itemsep}{2pt}
+\setlength{\parskip}{0pt}
+\bibitem{DP}
+Kosta Do\v{s}en and Zoran Petri\'c,
+\emph{Proof-Theoretical Coherence},
+Studies in Logic, vol.~1, KCL Publications, London, 2004.
+Revised author version, September 2007.
+\url{https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf}.
+
+\bibitem{DPCartesian}
+Kosta Do\v{s}en and Zoran Petri\'c,
+The maximality of cartesian categories,
+\emph{Mathematical Logic Quarterly} \textbf{47} (2001), 137--144.
+\url{https://arxiv.org/abs/math/9911059}.
+
+\bibitem{DPBicartesian}
+Kosta Do\v{s}en and Zoran Petri\'c,
+Bicartesian coherence revisited,
+in Zoran Ognjanovi\'c (ed.), \emph{Logic in Computer Science},
+Zbornik radova \textbf{12(20)} (2009), 5--34.
+\url{https://arxiv.org/abs/0711.4961}.
+Author version: arXiv:0711.4961v3, December 8, 2008.
+
+\bibitem{DPIsomorphic}
+Kosta Do\v{s}en and Zoran Petri\'c,
+Isomorphic formulae in classical propositional logic,
+\emph{Mathematical Logic Quarterly} \textbf{58} (2012), 5--17.
+\url{https://doi.org/10.1002/malq.201020020}.
+Author version: \url{https://arxiv.org/abs/0912.1271},
+arXiv:0912.1271v3, October 4, 2010.
+
+\bibitem{DPSplit}
+Kosta Do\v{s}en and Zoran Petri\'c,
+Syntax for split preorders,
+\emph{Annals of Pure and Applied Logic} \textbf{164} (2013), 443--481.
+\url{https://arxiv.org/abs/0902.0742}.
+Author version: arXiv:0902.0742v7, October 18, 2012.
+
+\bibitem{LSFree}
+Fran\c{c}ois Lamarche and Lutz Stra{\ss}burger,
+Constructing free Boolean categories,
+in \emph{Proceedings of the 20th Annual IEEE Symposium on Logic in
+Computer Science (LICS 2005)}, IEEE Computer Society, 2005, pp.~209--218.
+\url{https://doi.org/10.1109/LICS.2005.13}.
+
+\bibitem{FP}
+Carsten F\"uhrmann and David Pym,
+Order-enriched categorical models of the classical sequent calculus,
+\emph{Journal of Pure and Applied Algebra} \textbf{204} (2006), 21--78.
+\url{https://doi.org/10.1016/j.jpaa.2005.03.016}.
+
+\bibitem{Strassburger}
+Lutz Stra{\ss}burger,
+On the axiomatisation of Boolean categories with and without medial,
+\emph{Theory and Applications of Categories} \textbf{18} (2007),
+536--601.
+\url{https://www.tac.mta.ca/tac/volumes/18/18/18-18abs.html}.
+
+\bibitem{Notation}
+Florian Lengyel,
+\emph{The Unbearable Notation of Logic},
+version~8, September 19, 2026, Section~9.
+\url{https://github.com/flengyel/notes/blob/main/logic/The-Unbearable-Notation-of-Logic_v8.pdf}.
+\end{thebibliography}
+\end{document}

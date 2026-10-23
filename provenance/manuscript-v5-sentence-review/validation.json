@@ -1,0 +1,66 @@
+{
+  "baseline_commit": "c03fb490a799eb0cbbd762aaf3bc927e2abad806",
+  "source_sha256": "66e7e3c24dcf986d7f424421903a79a41156282b56c7d6f0b36c1fe8b4b044ea",
+  "pdf_sha256": "2a44447a3cf511acf6828aba851f3582f506e3e26f9676113887aed2c38160f6",
+  "pdf_bytes": 429300,
+  "pdf_pages": 12,
+  "pdflatex_command": [
+    "pdflatex",
+    "-interaction=nonstopmode",
+    "-halt-on-error",
+    "Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex"
+  ],
+  "initial_candidate_passes": [
+    {
+      "pass": 1,
+      "exit_code": 0
+    },
+    {
+      "pass": 2,
+      "exit_code": 0
+    },
+    {
+      "pass": 3,
+      "exit_code": 0
+    }
+  ],
+  "final_source_passes": [
+    {
+      "pass": 7,
+      "exit_code": 0
+    },
+    {
+      "pass": 8,
+      "exit_code": 0
+    }
+  ],
+  "latex_diagnostics": [],
+  "sha256sum_v5_exit_code": 0,
+  "citation_keys": 9,
+  "bibliography_records": 9,
+  "exact_v8_url_in_pdf": true,
+  "equation_2_source_unchanged_from_single_line_baseline": true,
+  "source_comments": 0,
+  "visual_inspection": "All 12 pages rendered and inspected; affected pages 2,3,6,7,9,10,11,12 checked at full-page resolution. Equation (2) is one line; Appendix B arrows and labels remain unobstructed. References occupy one page.",
+  "lean_files_changed": 0,
+  "lean_verification_rerun": false,
+  "downloads_mount_available": false,
+  "appendix_check_exit_code": 0,
+  "intermediate_candidate_passes": [
+    {
+      "pass": 4,
+      "exit_code": 0
+    },
+    {
+      "pass": 5,
+      "exit_code": 0
+    },
+    {
+      "pass": 6,
+      "exit_code": 0
+    }
+  ],
+  "git_diff_cached_check_exit_code": 0,
+  "coverage_check_exit_code": 0,
+  "review_units": 303
+}

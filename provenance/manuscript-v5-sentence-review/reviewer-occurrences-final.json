@@ -1,0 +1,21 @@
+{
+  "review": "Section 3 and Appendix B final followup",
+  "source_sha256": "66e7e3c24dcf986d7f424421903a79a41156282b56c7d6f0b36c1fe8b4b044ea",
+  "resolved_ids": [
+    "O30",
+    "O31"
+  ],
+  "rechecked_scope": "Compared actual complete owned sections with the audited baseline. Only the reduced-generator paragraph changed; Appendix B is byte-for-byte unchanged.",
+  "changed_sentences_checked": [
+    "Its positive structural generators preserve these labels; zero endomorphisms and the arrows eta_p and epsilon_p have empty relations.",
+    "Composition and both tensor operations preserve label agreement."
+  ],
+  "evidence": "DP printed p318 gives the structural/zero/atomic grammar with composition and both tensors; each tensor tags component occurrence relations and preserves agreement of signed labels. Empty zero/eta/epsilon relations contain no violating edge.",
+  "remaining_findings": [],
+  "new_unreviewed_claims": false,
+  "scope_limit": "No full reproof of the published coherence theorem and no Lean verification performed.",
+  "previously_reviewed_source_hashes": [
+    "6074198bff965616555d11dd1c612e7a3dd7412f654367c4036defb4942ca3d2"
+  ],
+  "integration_check": "Owned Section 3 equals the previously checked revised paragraph plus the unchanged baseline remainder; Appendix B equals the baseline exactly. The new typed copairing change is outside this assigned scope."
+}

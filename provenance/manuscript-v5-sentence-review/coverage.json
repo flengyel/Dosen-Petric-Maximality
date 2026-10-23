@@ -1,0 +1,27 @@
+{
+  "baseline_units": 301,
+  "final_units": 303,
+  "changed_baseline_units": 13,
+  "final_kind_counts": {
+    "metadata": 5,
+    "sentence": 164,
+    "heading": 14,
+    "sentence-with-display": 5,
+    "definition/display": 1,
+    "example/display": 1,
+    "sentence/display": 2,
+    "theorem": 1,
+    "diagram claim": 1,
+    "functor/display": 1,
+    "sentence-or-claim": 82,
+    "sentence-and-display": 10,
+    "display-claim": 1,
+    "display-definition": 1,
+    "example-definition": 1,
+    "example-calculation": 1,
+    "sentence/diagram": 3,
+    "bibliography": 9
+  },
+  "uncovered_nonempty_authored_lines": [],
+  "method": "Every exact ledger text was matched to the final TeX after whitespace normalization; source spans are derived from the match. LaTeX preamble, environment wrappers and spacing commands are checked separately and are not prose sentences."
+}
