@@ -1,0 +1,40 @@
+[
+  {
+    "command": [
+      "pdflatex",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-output-directory",
+      "/workspace/scratch/316c37836844/v5/evidence",
+      "/workspace/scratch/316c37836844/v5/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "pdflatex",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-output-directory",
+      "/workspace/scratch/316c37836844/v5/evidence",
+      "/workspace/scratch/316c37836844/v5/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex"
+    ],
+    "exit_code": 0
+  },
+  {
+    "operation": "Render all ten pages with PyMuPDF 1.26.6 at 1.5x; fully load every PNG with PIL; generate contact sheet and text extraction",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--no-index",
+      "--check",
+      "/workspace/scratch/316c37836844/arxiv-review/manuscript.tex",
+      "/workspace/scratch/316c37836844/v5/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex"
+    ],
+    "exit_code": 1,
+    "output": ""
+  }
+]

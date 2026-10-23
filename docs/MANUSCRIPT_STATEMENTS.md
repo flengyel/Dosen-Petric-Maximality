@@ -1,8 +1,9 @@
-# Manuscript v4: statements and formal scope
+# Manuscript v5: statements and formal scope
 
 Source: Florian Lengyel, *Maximality of the Došen–Petrić Boolean Category*,
-21 October 2026. The unchanged source is in `manuscript/`. Labels below refer
-to that source rather than an independently assigned theorem numbering.
+v5, 23 October 2026, in `manuscript/`. Its mathematical definitions, statements,
+proofs and Appendix A are unchanged from v4. Labels below refer to the
+manuscript rather than an independently assigned theorem numbering.
 
 Let P be a nonempty set of variables. The target category B(P) is the free
 zero-identity Boolean category of Došen–Petrić, *Proof-Theoretical Coherence*,

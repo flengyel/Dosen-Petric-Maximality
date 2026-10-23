@@ -1,0 +1,85 @@
+--- v4/manuscript.tex
++++ v5/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex
+@@ -15,7 +15,7 @@
+ \newcommand{\FormulaSet}{\operatorname{Form}}
+ \title{Maximality of the Do\v{s}en--Petri\'c Boolean Category}
+ \author{Florian Lengyel\thanks{Email: \href{mailto:flengyel@gradcenter.cuny.edu}{\texttt{flengyel@gradcenter.cuny.edu}}}}
+-\date{October 21, 2026}
++\date{October 23, 2026}
+ \begin{document}
+ \maketitle
+ 
+@@ -33,6 +33,14 @@
+ coordinates for the reduction and substitution.
+ \end{abstract}
+ 
++\medskip
++\noindent\textit{Mathematics Subject Classification (2020).}
++Primary 03G30; Secondary 03F07, 18A32.
++
++\smallskip
++\noindent\textit{Keywords.} Boolean categories, maximality, categorial proof theory,
++coherence, substitution congruences.
++
+ \section{Introduction}
+ 
+ Do\v{s}en and Petri\'c's Boolean proof category admits distinct arrows
+@@ -50,6 +58,21 @@
+ \cite[\S9.7, pp.~215--216]{DP}. Second, the distributor and zero
+ identities turn that contextual equation into equality of the product
+ projections. This second step proves the required collapse.
++
++Earlier results establish maximality for lattice categories and relative
++maximality for dicartesian categories
++\cite[\S\S8--10]{DPBicartesian}; these results concern products and
++coproducts without distribution. Related occurrence-selection
++constructions appear in \cite[Lemma~6]{DPIsomorphic}. A differing-edge
++argument also proves maximality for presentations of split preorders,
++split equivalence relations, and binary relations \cite[\S16]{DPSplit}.
++
++Other axiomatizations of Boolean categories use different structures.
++Stra{\ss}burger's hierarchy is based on
++$*$-autonomous categories with monoid and comonoid structures
++\cite{Strassburger}. The category considered here is the
++zero-identity Boolean category of Do\v{s}en and Petri\'c, with
++products and coproducts.
+ 
+ We use the occurrence coordinates of \cite[\S9]{Notation}: occurrences
+ in a compound formula form tagged disjoint unions, and substitution
+@@ -757,6 +780,36 @@
+ Revised author version, September 2007.
+ \url{https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf}.
+ 
++\bibitem{DPBicartesian}
++Kosta Do\v{s}en and Zoran Petri\'c,
++Bicartesian coherence revisited,
++in Zoran Ognjanovi\'c (ed.), \emph{Logic in Computer Science},
++Zbornik radova \textbf{12(20)} (2009), 5--34.
++\url{https://arxiv.org/abs/0711.4961}.
++Author version: arXiv:0711.4961v3, December 8, 2008.
++
++\bibitem{DPIsomorphic}
++Kosta Do\v{s}en and Zoran Petri\'c,
++Isomorphic formulae in classical propositional logic,
++\emph{Mathematical Logic Quarterly} \textbf{58} (2012), 5--17.
++\url{https://doi.org/10.1002/malq.201020020}.
++Author version: \url{https://arxiv.org/abs/0912.1271},
++arXiv:0912.1271v3, October 4, 2010.
++
++\bibitem{DPSplit}
++Kosta Do\v{s}en and Zoran Petri\'c,
++Syntax for split preorders,
++\emph{Annals of Pure and Applied Logic} \textbf{164} (2013), 443--481.
++\url{https://arxiv.org/abs/0902.0742}.
++Author version: arXiv:0902.0742v7, October 18, 2012.
++
++\bibitem{Strassburger}
++Lutz Stra{\ss}burger,
++On the axiomatisation of Boolean categories with and without medial,
++\emph{Theory and Applications of Categories} \textbf{18} (2007),
++536--601.
++\url{https://www.tac.mta.ca/tac/volumes/18/18/18-18abs.html}.
++
+ \bibitem{Notation}
+ Florian Lengyel,
+ \emph{The Unbearable Notation of Logic},

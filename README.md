@@ -1,7 +1,7 @@
 # Došen–Petrić maximality in Lean
 
 Development for Florian Lengyel's *Maximality of the Došen–Petrić Boolean
-Category*, manuscript v4. The target is maximality of the free zero-identity
+Category*, manuscript v5. The target is maximality of the free zero-identity
 Boolean category under substitution congruences.
 
 The WSL2 development uses pinned Lean 4.35.0 with an Init-only dependency
@@ -88,11 +88,18 @@ The [statement map](docs/MANUSCRIPT_STATEMENTS.md) and
 [coverage map](docs/MANUSCRIPT_COVERAGE.md) record the precise boundary.
 Use [the next-session prompt](docs/CODEX_NEXT_SESSION.txt) to continue in WSL2.
 
-The unchanged v4 [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.tex)
+The current manuscript is v5: [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex)
+and [PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.pdf).
+MSC2020: primary 03G30; secondary 03F07 and 18A32.
+The v4 [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.tex)
 and [PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.pdf)
-are preserved with [SHA-256 checksums](manuscript/SHA256SUMS).
-The [literature comparison](docs/LITERATURE_REVIEW.md) is bounded and makes no
-exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W1_SAME_SIDE_LOGICAL_HOSTILE.md)
+remain preserved; [SHA-256 checksums](manuscript/SHA256SUMS) cover both versions.
+The [v5 literature review](docs/LITERATURE_REVIEW_V5_2026-10-23.md),
+[manuscript hostile review](docs/reviews/V5_HOSTILE_REVIEW.md),
+[writing review](docs/reviews/V5_WRITING_REVIEW.md), and
+[manuscript validation](docs/V5_VALIDATION.md) accompany v5.
+The [earlier literature comparison](docs/LITERATURE_REVIEW.md) remains available.
+The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W1_SAME_SIDE_LOGICAL_HOSTILE.md)
 and [mathematical-writing review](docs/reviews/GENTZEN_W1_SAME_SIDE_LOGICAL_WRITING.md)
 cover the four fixed-parametric unary logical cases and their scope; they are not independent
 certification. The [same-side logical report](docs/GENTZEN_W1_SAME_SIDE_LOGICAL_REPORT.md),
