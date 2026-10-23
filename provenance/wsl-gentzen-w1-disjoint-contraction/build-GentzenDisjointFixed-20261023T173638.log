@@ -1,0 +1,21 @@
+✖ [126/127] Building DosenPetric.GentzenDisjointTransport (1.9s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenDisjointTransport.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointTransport.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointTransport.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointTransport.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointTransport.setup.json --json
+error: DosenPetric/GentzenDisjointTransport.lean:28:84: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≤ -1
+where
+ b := ↑d.xE.index
+ c := ↑d.be1.keep.index
+error: DosenPetric/GentzenDisjointTransport.lean:34:84: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 1
+where
+ b := ↑d.xC.index
+ c := ↑d.bc1.keep.index
+Some required targets logged failures:
+- DosenPetric.GentzenDisjointTransport
+error: build failed

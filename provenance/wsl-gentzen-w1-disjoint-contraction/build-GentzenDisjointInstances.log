@@ -1,0 +1,13 @@
+✖ [127/130] Building DosenPetric.GentzenDisjointTransport (1.5s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenDisjointTransport.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointTransport.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointTransport.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointTransport.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointTransport.setup.json --json
+error: DosenPetric/GentzenDisjointTransport.lean:110:2: Type mismatch: After simplification, term
+  h
+ has type
+  a.index < (repeated d.C d.pre).length ∨
+    (repeated d.C d.pre).length + (d.U.length + (d.H.length + (d.E :: repeated d.E d.hs).length + d.V.length)) ≤ a.index
+but is expected to have type
+  a.index < (repeated d.C d.pre).length ∨
+    (repeated d.C d.pre).length + d.U.length + (d.H.length + (d.E :: repeated d.E d.hs).length) + d.V.length ≤ a.index
+Some required targets logged failures:
+- DosenPetric.GentzenDisjointTransport
+error: build failed

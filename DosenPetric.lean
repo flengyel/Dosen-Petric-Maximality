@@ -150,3 +150,13 @@ public import DosenPetric.GentzenSameSideLogicalRanks
 public import DosenPetric.GentzenSameSideLogicalFixedRanks
 public import DosenPetric.GentzenSameSideLogicalInstances
 public import DosenPetric.GentzenSameSideLogicalExamples
+public import DosenPetric.GentzenContractionBlocks
+public import DosenPetric.GentzenDisjointIndices
+public import DosenPetric.GentzenDisjointData
+public import DosenPetric.GentzenDisjointPositions
+public import DosenPetric.GentzenDisjointTransport
+public import DosenPetric.GentzenDisjointFixed
+public import DosenPetric.GentzenDisjointCommutation
+public import DosenPetric.GentzenDisjointRanks
+public import DosenPetric.GentzenDisjointInstances
+public import DosenPetric.GentzenDisjointExamples

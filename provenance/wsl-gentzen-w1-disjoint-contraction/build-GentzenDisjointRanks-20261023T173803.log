@@ -1,0 +1,208 @@
+✖ [127/129] Building DosenPetric.GentzenDisjointCommutation (7.4s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenDisjointCommutation.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointCommutation.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointCommutation.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointCommutation.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointCommutation.setup.json --json
+error: DosenPetric/GentzenDisjointCommutation.lean:11:60: Unknown identifier `hn`
+error: DosenPetric/GentzenDisjointCommutation.lean:18:38: Function expected at
+  outerArity d
+but this term has type
+  2 ≤ d.bc1.gs.length
+
+Note: Expected a function because this term is being applied to the argument
+  hn
+error: DosenPetric/GentzenDisjointCommutation.lean:21:68: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldL d hn
+error: DosenPetric/GentzenDisjointCommutation.lean:22:18: declaration uses `sorry`
+error: DosenPetric/GentzenDisjointCommutation.lean:22:18: This simp argument is unused:
+  oldL
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [newL, innerCL, innerEL, ContractionBlock.denoteL]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointCommutation.lean:22:31: This simp argument is unused:
+  innerEL
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [newL, oldL, innerCL, ContractionBlock.denoteL]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointCommutation.lean:25:29: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldL d hn
+error: DosenPetric/GentzenDisjointCommutation.lean:26:13: declaration uses `sorry`
+error: DosenPetric/GentzenDisjointCommutation.lean:28:31: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldL d hn
+error: DosenPetric/GentzenDisjointCommutation.lean:28:65: unsolved goals
+P : Type u
+d : Disjoint.Data P
+Δ : List (NormalForm P)
+f : G P d.F Δ
+⊢ sorry ↔ f.cutCount = 0
+error: DosenPetric/GentzenDisjointCommutation.lean:29:23: This simp argument is unused:
+  oldL_count
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [G.CutFree]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointCommutation.lean:31:32: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldL d hn
+error: DosenPetric/GentzenDisjointCommutation.lean:32:13: declaration uses `sorry`
+error: DosenPetric/GentzenDisjointCommutation.lean:43:58: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldL d hn
+error: DosenPetric/GentzenDisjointCommutation.lean:46:56: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldL d hn
+error: DosenPetric/GentzenDisjointCommutation.lean:49:58: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldL d hn
+error: DosenPetric/GentzenDisjointCommutation.lean:52:58: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldL d hn
+error: DosenPetric/GentzenDisjointCommutation.lean:61:38: Function expected at
+  outerArity d
+but this term has type
+  2 ≤ d.bc1.gs.length
+
+Note: Expected a function because this term is being applied to the argument
+  hn
+error: DosenPetric/GentzenDisjointCommutation.lean:64:68: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldR d hn
+error: DosenPetric/GentzenDisjointCommutation.lean:65:18: declaration uses `sorry`
+error: DosenPetric/GentzenDisjointCommutation.lean:65:18: This simp argument is unused:
+  oldR
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [newR, innerCR, innerER, ContractionBlock.denoteR]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointCommutation.lean:65:31: This simp argument is unused:
+  innerER
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [newR, oldR, innerCR, ContractionBlock.denoteR]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointCommutation.lean:68:29: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldR d hn
+error: DosenPetric/GentzenDisjointCommutation.lean:69:13: declaration uses `sorry`
+error: DosenPetric/GentzenDisjointCommutation.lean:71:31: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldR d hn
+error: DosenPetric/GentzenDisjointCommutation.lean:71:65: unsolved goals
+P : Type u
+d : Disjoint.Data P
+Γ : List (NormalForm P)
+f : G P Γ d.F
+⊢ sorry ↔ f.cutCount = 0
+error: DosenPetric/GentzenDisjointCommutation.lean:72:23: This simp argument is unused:
+  oldR_count
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [G.CutFree]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointCommutation.lean:74:32: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldR d hn
+error: DosenPetric/GentzenDisjointCommutation.lean:75:13: declaration uses `sorry`
+error: DosenPetric/GentzenDisjointCommutation.lean:86:58: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldR d hn
+error: DosenPetric/GentzenDisjointCommutation.lean:89:56: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldR d hn
+error: DosenPetric/GentzenDisjointCommutation.lean:92:58: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldR d hn
+error: DosenPetric/GentzenDisjointCommutation.lean:95:58: Application type mismatch: The argument
+  hn
+has type
+  2 ≤ d.outer0.length
+but is expected to have type
+  2 ≤ d.es.length
+in the application
+  oldR d hn
+Some required targets logged failures:
+- DosenPetric.GentzenDisjointCommutation
+error: build failed

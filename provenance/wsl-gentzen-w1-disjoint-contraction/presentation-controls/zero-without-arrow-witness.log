@@ -1,0 +1,8 @@
+/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/presentation-bridge/presentation-controls/zero-without-arrow-witness.lean:4:66: error: Application type mismatch: The argument
+  (category Unit).id Formula.top
+has type
+  (category Unit).Hom Formula.top Formula.top
+but is expected to have type
+  (category Unit).Hom Formula.top Formula.bot
+in the application
+  (zeroIdentity Unit).zeroOf ((category Unit).id Formula.top)

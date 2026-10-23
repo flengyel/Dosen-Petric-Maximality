@@ -1,0 +1,61 @@
+✖ [129/129] Building DosenPetric.GentzenDisjointRanks (6.8s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenDisjointRanks.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointRanks.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointRanks.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointRanks.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointRanks.setup.json --json
+error: DosenPetric/GentzenDisjointRanks.lean:111:2: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  e ≥ 0
+  c ≥ 0
+  b ≥ 2
+  a ≥ 2
+  a + c - g ≥ 2
+where
+ a := ↑d.outer0.length
+ b := ↑d.es.length
+ c := ↑((newL d hn hm Δ f).rho SequentSide.left d.xC)
+ e := ↑(LEL d hm Δ f)
+ g := ↑((oldL d hn hm Δ f).rho SequentSide.left d.xC)
+error: DosenPetric/GentzenDisjointRanks.lean:110:26: This simp argument is unused:
+  old_xCL
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [endpointSumL, old_xEL, new_xCL, new_xEL]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointRanks.lean:110:42: This simp argument is unused:
+  new_xCL
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [endpointSumL, old_xCL, old_xEL, new_xEL]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointRanks.lean:223:2: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  e ≥ 0
+  c ≥ 0
+  b ≥ 2
+  a ≥ 2
+  a + c - g ≥ 2
+where
+ a := ↑d.outer0.length
+ b := ↑d.es.length
+ c := ↑((newR d hn hm Γ f).rho SequentSide.right d.xC)
+ e := ↑(LER d hm Γ f)
+ g := ↑((oldR d hn hm Γ f).rho SequentSide.right d.xC)
+error: DosenPetric/GentzenDisjointRanks.lean:222:26: This simp argument is unused:
+  old_xCR
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [endpointSumR, old_xER, new_xCR, new_xER]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointRanks.lean:222:42: This simp argument is unused:
+  new_xCR
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [endpointSumR, old_xCR, old_xER, new_xER]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- DosenPetric.GentzenDisjointRanks
+error: build failed

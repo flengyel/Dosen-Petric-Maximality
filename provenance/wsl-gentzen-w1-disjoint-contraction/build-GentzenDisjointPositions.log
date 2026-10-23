@@ -1,0 +1,135 @@
+✔ [124/125] Built DosenPetric.GentzenDisjointData (3.4s)
+✖ [125/125] Building DosenPetric.GentzenDisjointPositions (4.2s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenDisjointPositions.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointPositions.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointPositions.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointPositions.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointPositions.setup.json --json
+error: DosenPetric/GentzenDisjointPositions.lean:48:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  copyOffsets d.bc0.gs
+in the target expression
+  a.index ∈ copyOffsets d.outer0
+
+P : Type u
+d : Data P
+a : At d.F d.C
+ha : a ∈ d.selectedC0
+⊢ a.index ∈ copyOffsets d.outer0
+error: DosenPetric/GentzenDisjointPositions.lean:54:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  copyOffsets d.bc1.gs
+in the target expression
+  a.index ∈ copyOffsets d.outer1
+
+P : Type u
+d : Data P
+a : At d.FE d.C
+ha : a ∈ d.selectedC1
+⊢ a.index ∈ copyOffsets d.outer1
+error: DosenPetric/GentzenDisjointPositions.lean:56:8: Type mismatch: After simplification, term
+  hm
+ has type
+  a.index ∈ copyOffsets d.outer1
+but is expected to have type
+  a.index ∈ copyOffsets (d.pre ++ (d.U ++ (d.H ++ (gaps d.hs ++ d.E :: d.V))) :: d.post)
+error: DosenPetric/GentzenDisjointPositions.lean:62:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  copyOffsets d.be0.gs
+in the target expression
+  a.index ∈ copyOffsets d.eUpper
+
+P : Type u
+d : Data P
+a : At d.F d.E
+ha : a ∈ d.selectedE0
+⊢ a.index ∈ copyOffsets d.eUpper
+error: DosenPetric/GentzenDisjointPositions.lean:71:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  copyOffsets d.be1.gs
+in the target expression
+  a.index ∈ copyOffsets d.eLower
+
+P : Type u
+d : Data P
+a : At d.FC d.E
+ha : a ∈ d.selectedE1
+⊢ a.index ∈ copyOffsets d.eLower
+error: DosenPetric/GentzenDisjointPositions.lean:85:2: Type mismatch
+  h
+has type
+  copyIndex (d.pre ++ (d.U ++ (repeated d.E d.es ++ d.V)) :: d.post)
+      ((repeated d.C d.pre ++ d.U).length + (a.index - d.upBefore.length)) =
+    (gaps d.pre ++ d.U).length + (a.index - d.upBefore.length)
+but is expected to have type
+  copyIndex d.bc0.gs (d.upBefore.length + (a.index - d.upBefore.length)) =
+    d.loBefore.length + (d.upBefore.length + (a.index - d.upBefore.length) - d.upBefore.length)
+error: DosenPetric/GentzenDisjointPositions.lean:92:90: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  i ≥ 0
+  h ≥ 0
+  g ≥ 0
+  f ≥ 0
+  e ≥ 0
+  e - f - g ≥ 1
+  e ≥ 0
+  e + h + i ≥ 0
+  c ≥ 0
+  b ≥ 0
+  b - e - h - i ≤ 0
+  b + c - e - h - i ≥ 0
+where
+ b := ↑d.upBefore.length
+ c := ↑(gaps d.es).length
+ e := ↑(a.index - ((repeated d.C d.pre).length + d.U.length))
+ f := ↑d.H.length
+ g := ↑(gaps d.hs).length
+ h := ↑(repeated d.C d.pre).length
+ i := ↑d.U.length
+error: DosenPetric/GentzenDisjointPositions.lean:95:2: Type mismatch: After simplification, term
+  h
+ has type
+  copyIndex (d.pre ++ (d.U ++ (d.H ++ (gaps d.hs ++ d.E :: d.V))) :: d.post)
+      ((repeated d.C d.pre ++ d.U).length + (a.index - d.upBefore.length)) =
+    (gaps d.pre ++ d.U).length + (a.index - d.upBefore.length)
+but is expected to have type
+  copyIndex (d.pre ++ (d.U ++ (d.H ++ (gaps d.hs ++ d.E :: d.V))) :: d.post)
+      (d.upBefore.length + (a.index - d.upBefore.length)) =
+    d.loBefore.length + (d.upBefore.length + (a.index - d.upBefore.length) - d.upBefore.length)
+error: DosenPetric/GentzenDisjointPositions.lean:99:99: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  d.xE.index
+in the target expression
+  d.loBefore.length + (d.upBefore.length + (gaps d.es).length - d.upBefore.length) = d.xE.index
+
+P : Type u
+d : Data P
+⊢ d.loBefore.length + (d.upBefore.length + (gaps d.es).length - d.upBefore.length) = d.xE.index
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    d.xE
+  has type
+    @At P d.K d.be1.C
+  but is expected to have type
+    @At P d.K d.be0.C
+  in the application
+    d.xE.index
+error: DosenPetric/GentzenDisjointPositions.lean:104:87: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  d.xC.index
+in the target expression
+  d.loBefore.length + (repeated d.E d.es).length + d.V.length + (gaps d.post).length - (repeated d.E d.es).length +
+      ((gaps d.es).length + 1) =
+    d.xC.index
+
+P : Type u
+d : Data P
+⊢ d.loBefore.length + (repeated d.E d.es).length + d.V.length + (gaps d.post).length - (repeated d.E d.es).length +
+      ((gaps d.es).length + 1) =
+    d.xC.index
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    d.xC
+  has type
+    @At P d.K d.bc1.C
+  but is expected to have type
+    @At P d.K d.bc0.C
+  in the application
+    d.xC.index
+Some required targets logged failures:
+- DosenPetric.GentzenDisjointPositions
+error: build failed

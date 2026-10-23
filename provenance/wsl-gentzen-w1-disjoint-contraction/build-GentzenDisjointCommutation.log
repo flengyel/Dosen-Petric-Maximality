@@ -1,0 +1,47 @@
+✖ [124/126] Building DosenPetric.GentzenDisjointData (3.1s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenDisjointData.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointData.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointData.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointData.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointData.setup.json --json
+error: DosenPetric/GentzenDisjointData.lean:81:13: This simp argument is unused:
+  be1
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [eLower, gaps, List.length_append]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointData.lean:81:17: This simp argument is unused:
+  eLower
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [be1, gaps, List.length_append]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointData.lean:86:13: This simp argument is unused:
+  bc1
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [outer1, GapInsertion.gaps_append, gaps, List.length_append, List.length_cons, loBefore]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointData.lean:93:13: This simp argument is unused:
+  be0
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [eUpper, gaps, List.length_append]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointData.lean:93:17: This simp argument is unused:
+  eUpper
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [be0, gaps, List.length_append]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointData.lean:98:13: This simp argument is unused:
+  bc0
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [outer0, GapInsertion.gaps_append, gaps, List.length_append, loBefore]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- DosenPetric.GentzenDisjointData
+error: build failed

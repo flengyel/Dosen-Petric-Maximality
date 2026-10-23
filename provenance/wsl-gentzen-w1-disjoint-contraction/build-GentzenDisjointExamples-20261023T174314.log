@@ -1,0 +1,24 @@
+✔ [141/145] Built DosenPetric.GentzenDisjointTransport (1.9s)
+✔ [142/145] Built DosenPetric.GentzenDisjointFixed (1.2s)
+✔ [143/145] Built DosenPetric.GentzenDisjointRanks (3.1s)
+✔ [144/145] Built DosenPetric.GentzenDisjointInstances (1.3s)
+✖ [145/145] Building DosenPetric.GentzenDisjointExamples (68s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenDisjointExamples.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointExamples.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointExamples.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointExamples.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointExamples.setup.json --json
+error: DosenPetric/GentzenDisjointExamples.lean:20:0: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: DosenPetric/GentzenDisjointExamples.lean:37:32: Invalid argument name `f` for function `Iff.mpr`
+
+Hint: Perhaps you meant one of the following parameter names:
+  • `a`: f̵a̲
+  • `b`: f̵b̲
+error: DosenPetric/GentzenDisjointExamples.lean:42:32: Invalid argument name `f` for function `Iff.mpr`
+
+Hint: Perhaps you meant one of the following parameter names:
+  • `a`: f̵a̲
+  • `b`: f̵b̲
+Some required targets logged failures:
+- DosenPetric.GentzenDisjointExamples
+error: build failed

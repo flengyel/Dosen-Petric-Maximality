@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-23T17:40:00.805116+00:00",
+  "checks": [
+    {
+      "name": "build-GentzenDisjointInstances",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenDisjointInstances"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 2.014,
+      "log_sha256": "1de2c48260d5f8311e2941382701bf803d6fb710a4d384300c8b75850876dd6c"
+    }
+  ]
+}

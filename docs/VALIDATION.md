@@ -1,3 +1,64 @@
+# W1 fixed-gap disjoint contraction validation (current checkpoint)
+
+Clean main 6192328eccde5e4aa912017409289255bc8c5cb1 matched fetched SSH origin.
+Actual strict baseline: 152 files / 5,942 declarations, exit 0, 3.918 seconds.
+Final sequential verification at 2026-10-23T18:50:31.062709+00:00:
+**162 Lean files / 6,310 audited declarations**. Strict build/transitive audit,
+both boundary scripts, manuscript SHA256SUMS and git diff --check exit 0;
+the staged diff check also passes. All five controls reject with expected
+diagnostics and Lean exit 1. Only propext, Quot.sound and Classical.choice
+are permitted. Complete public import closure and 95 selected axiom prints.
+
+An intervening SSH-origin commit, 2d240b2aa578b84277f59524d9f8819a41273a0d,
+added manuscript v5 while retaining v4, with no Lean-source change. Verified
+checkpoint work was preserved in local stash dedfd8fc8cd49930e9a162d5be585215b062a43c;
+main fast-forwarded, then the work was reapplied. The README conflict was
+resolved by retaining both the upstream v5/literature/review links and the new
+proof-stage links. The statement map retained its upstream v5 header and the
+new proof row. All other upstream changed/new files, including AGENTS, both
+manuscript versions, checksums and v5 reports/evidence, were verified byte-for-
+byte against that commit. No manuscript prose was edited by this checkpoint.
+All required checks were repeated on the integrated tree; their new results
+are the final verification record. The backup stash is retained locally.
+
+Ten new modules add 245 explicit source declarations and 368 audited ones
+including generated declarations. All older DosenPetric source/interface bytes,
+21/61 reduced term/equation schemas, 19 Positive/16 G schemas, proof predicates,
+predecessors/ranks, Lean 4.35.0, Init-only manifest, manuscript v4, AGENTS and
+historical reports/access records are preserved.
+
+Both concrete interior-gap disjoint contraction cases compile with all eight
+list equalities/counts, genuine casts, all-position copies/copies and Reduced
+categorical squares, complete ordered transport and restricted order/injectivity
+for both selected families. Same-side fixed singleton fibers apply even C=E;
+retained xE<xC and unique original coordinates for every other final position
+are proved. Independent n,m give old=(LC+n,LE+1), new=(LC+1,LE+m), exact directed
+loss/increase, sum balance and unchanged other ranks 2+rho. Counts, CutFree,
+Atomized and full tagged relations are preserved. The exact equal-label 2/3
+coordinate test, actual Empty constants/sum increase, compounds, empty/nonempty
+contexts and signed actual cuts compile.
+
+Every heavy process was sequential. Failed numeric/list/simp/arity and typed
+rank elaborations are retained. A combined example reached the default 200000
+heartbeat limit in 68 seconds; small checked index/component lemmas replaced
+it without raising limits. No target/interface/equation changed. Final required
+verification followed the last proof edits; later changes are documentation.
+Evidence/source/report/record inventories: provenance/wsl-gentzen-w1-disjoint-contraction/.
+Author-side hostile and source-grounded writing reviews cover actual proofs
+and correspondence. Commit/source/ref/Downloads checks have separate receipts
+under .codex-work/gentzen-w1-disjoint-contraction/.
+
+No independent kernel/source replay, Challenge/Solution/Comparator, official
+preflight/service, fresh manuscript compilation/layout review, Palomar
+preparation/submission, publication, license or visibility changes. Terminal-tail,
+shared-selected/W3, other W1/W2–W6, arbitrary-context Reducibility, Blocked-w,
+cut elimination, coherence and unconditional maximality remain separate/open.
+See [the report](GENTZEN_W1_DISJOINT_CONTRACTION_REPORT.md).
+
+---
+
+## Historical same-side logical validation (unchanged evidence)
+
 # W1 fixed-parametric unary logical validation (current checkpoint)
 
 Clean main c66c36c95f315b07c1840bd2dd375be21a62a242 agreed with fetched SSH

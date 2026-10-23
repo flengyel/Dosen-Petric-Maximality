@@ -1,0 +1,99 @@
+✔ [123/124] Built DosenPetric.GentzenDisjointIndices (15s)
+✖ [124/124] Building DosenPetric.GentzenDisjointData (3.0s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenDisjointData.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointData.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointData.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointData.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointData.setup.json --json
+error: DosenPetric/GentzenDisjointData.lean:48:55: unsolved goals
+P : Type u
+d : Data P
+⊢ gaps d.pre ++ (d.U ++ (d.H ++ (gaps d.hs ++ (d.E :: d.V ++ (gaps d.post ++ d.C :: d.Θ))))) =
+    gaps d.pre ++ (d.U ++ (d.H ++ (gaps d.hs ++ d.E :: (d.V ++ (gaps d.post ++ d.C :: d.Θ)))))
+error: DosenPetric/GentzenDisjointData.lean:51:13: This simp argument is unused:
+  eUpper
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [F, es, repeated, List.append_assoc, List.cons_append]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointData.lean:51:22: This simp argument is unused:
+  es
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [eUpper, F, repeated, List.append_assoc, List.cons_append]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointData.lean:53:13: This simp argument is unused:
+  eUpper
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FE, es, gaps, List.append_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointData.lean:53:23: This simp argument is unused:
+  es
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [eUpper, FE, gaps, List.append_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointData.lean:55:13: This simp argument is unused:
+  eLower
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [FC, es, repeated, List.append_assoc, List.cons_append]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointData.lean:55:23: This simp argument is unused:
+  es
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [eLower, FC, repeated, List.append_assoc, List.cons_append]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointData.lean:57:13: This simp argument is unused:
+  eLower
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [K, es, gaps, List.append_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointData.lean:57:22: This simp argument is unused:
+  es
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [eLower, K, gaps, List.append_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointData.lean:81:24: This simp argument is unused:
+  es
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [be1, eLower, gaps, List.length_append]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointData.lean:93:24: This simp argument is unused:
+  es
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [be0, eUpper, gaps, List.length_append]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenDisjointData.lean:118:2: Type mismatch: After simplification, term
+  h
+ has type
+  @Eq Nat
+    (copyIndex (d.pre ++ (d.U ++ (d.H ++ (gaps d.hs ++ d.E :: d.V))) :: d.post)
+      (splice ((repeated d.C d.pre).length + d.U.length) (d.H.length + (d.E :: repeated d.E d.hs).length)
+        (d.H.length + ((gaps d.hs).length + 1)) (copyIndex d.es) a.index))
+    (splice ((gaps d.pre).length + d.U.length) (d.H.length + (d.E :: repeated d.E d.hs).length)
+      (d.H.length + ((gaps d.hs).length + 1)) (copyIndex d.es)
+      (copyIndex (d.pre ++ (d.U ++ (d.H ++ (d.E :: repeated d.E d.hs ++ d.V))) :: d.post) a.index))
+but is expected to have type
+  @Eq Nat
+    (copyIndex (d.pre ++ (d.U ++ (d.H ++ (gaps d.hs ++ d.E :: d.V))) :: d.post)
+      (splice ((repeated d.C d.pre).length + d.U.length) (d.H.length + (d.E :: repeated d.E d.hs).length)
+        (d.H.length + (gaps d.hs).length + 1) (copyIndex d.es) a.index))
+    (splice ((gaps d.pre).length + d.U.length) (d.H.length + (d.E :: repeated d.E d.hs).length)
+      (d.H.length + (gaps d.hs).length + 1) (copyIndex d.es)
+      (copyIndex (d.pre ++ (d.U ++ (d.H ++ (d.E :: repeated d.E d.hs ++ d.V))) :: d.post) a.index))
+Some required targets logged failures:
+- DosenPetric.GentzenDisjointData
+error: build failed

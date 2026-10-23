@@ -1,0 +1,37 @@
+✔ [124/126] Built DosenPetric.GentzenDisjointData (2.9s)
+✔ [125/126] Built DosenPetric.GentzenDisjointPositions (2.0s)
+✖ [126/126] Building DosenPetric.GentzenDisjointTransport (1.2s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenDisjointTransport.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointTransport.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointTransport.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointTransport.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointTransport.setup.json --json
+error: DosenPetric/GentzenDisjointTransport.lean:25:53: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  d.xC
+in the target expression
+  d.e1.get (d.c0.get a) = d.bc1.keep ↔ d.bc0.route.get a = d.bc0.keep
+
+P : Type u
+d : Data P
+a : At d.F d.C
+⊢ d.e1.get (d.c0.get a) = d.bc1.keep ↔ d.bc0.route.get a = d.bc0.keep
+error: DosenPetric/GentzenDisjointTransport.lean:29:55: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  d.xE
+in the target expression
+  d.c1.get (d.e0.get a) = d.be1.keep ↔ d.be0.route.get a = d.be0.keep
+
+P : Type u
+d : Data P
+a : At d.F d.E
+⊢ d.c1.get (d.e0.get a) = d.be1.keep ↔ d.be0.route.get a = d.be0.keep
+error: DosenPetric/GentzenDisjointTransport.lean:75:48: Variable name `ha` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: DosenPetric/GentzenDisjointTransport.lean:79:48: Variable name `ha` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Some required targets logged failures:
+- DosenPetric.GentzenDisjointTransport
+error: build failed

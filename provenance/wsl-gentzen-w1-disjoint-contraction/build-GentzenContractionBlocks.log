@@ -1,0 +1,18 @@
+✖ [122/122] Building DosenPetric.GentzenContractionBlocks (2.1s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenContractionBlocks.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionBlocks.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionBlocks.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionBlocks.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionBlocks.setup.json --json
+error: DosenPetric/GentzenContractionBlocks.lean:32:2: Type mismatch
+  selectedCopies_indices ?m.17 ?m.18 ?m.19
+has type
+  List.map At.index (selectedCopies ?m.17 ?m.18 ?m.19) = copyOffsets ?m.18
+but is expected to have type
+  List.map (At.index ∘ At.cast ⋯) (selectedCopies d.C d.gs d.tail) = copyOffsets d.gs
+error: DosenPetric/GentzenContractionBlocks.lean:31:35: This simp argument is unused:
+  At.index_cast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [selected, List.map_map]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- DosenPetric.GentzenContractionBlocks
+error: build failed

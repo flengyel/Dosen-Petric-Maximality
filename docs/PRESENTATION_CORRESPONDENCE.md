@@ -1083,3 +1083,39 @@ Atomized predicates equal f.Atomized. A=B=C and D=C are permitted positionally.
 No new equation/primitive or coherence input. See
 [the report](GENTZEN_W1_SAME_SIDE_LOGICAL_REPORT.md) and both author-side reviews.
 Other W1 configurations, W2–W6 and general reducibility/coherence remain open.
+
+## Fixed-gap disjoint same-side contractions (two W1 cases)
+
+The directly consulted source is Došen–Petrić, *Proof-Theoretical Coherence*,
+September 2007, [pinned PDF](https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf),
+SHA-256 `e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e`.
+Printed pp.248–253 correspond to PDF pp.260–265, one-based. Printed p.251
+was also inspected in rendering. Source-access artifacts and hashes are
+retained; historical access records are unchanged. No new source discrepancy
+was confirmed.
+
+| Source location | Typed local condition | Lean construction / actual proof input |
+| --- | --- | --- |
+| §11.2 p.251 (W1), γ=wL | Inner E contraction is entirely inside one fixed outer C gap; every outer selected C occurrence is parametric through it. Independent n,m≥2. | `Disjoint.fixedGap`, all eight `Data.upper/lowerC0/C1/E0/E1` equalities, `W1.DisjointContraction.fixedGap_left`. |
+| §11.2 p.252, right analogue | Same fixed-gap placement in the succedent, actual G.contractR constructor order. | `fixedGap_right`; separately typed coproduct square and denotation calculation, without arrow negation. |
+| §11.2 p.248, clusters / upper parametric sequences | Selected copies of one family have singleton fibers through the other contraction, with all equal-label tags retained. | `selectedC/E_transport`, `selectedC/E_singleton`, `xC/xE_fiber`, `other_fiber`. |
+| §11.2 p.249, rank counts all cluster nodes | Sum all n or m selected copies; count a single node on the other retained/fixed path. | Actual `ContractionBlock.rankL/R_sum/fixed`; four table entries for each side, both balances, strict comparisons and other-position 2+rho. |
+| §11.2 p.251 (W3) | Shared-selected-copy contraction, where a retained inner position is itself selected by the outer contraction. | Separate/open; excluded here by the proved fixed-gap separation and distinct retained indices, including C=E. |
+| §11.2 pp.250–253, Reducibility/Blocked-w | Later applications tie a contraction to a cut and control replacement at all affected sites. | Not supplied by these two local commutations or the displayed two-position sum. |
+
+The source's Semilattice Coherence appeal is replaced for these instances by
+a concrete positional square and the already proved product/coproduct universal
+component laws in Reduced.Hom. No source citation is treated as a Lean proof.
+Constants and atomic-zero bases remain available through the unchanged Gentzen
+syntax; no new constant/zero equation or empty-context identification is used.
+
+The exact eight equalities/routes, ordered selected-list transports and both
+families' complete fixed fibers are constructed from original Data only.
+Retained E/C positions satisfy xE<xC even C=E. The rank table is old=(LC+n,LE+1)
+and new=(LC+1,LE+m), independently on either sequent side. Other final fixed
+positions have equal 2+rho at a unique common original coordinate. Exact
+count/predicate/full tagged occurrence preservation follows without coherence;
+S(old)+m=S(new)+n permits an actual 2/3 increase. See
+[the report](GENTZEN_W1_DISJOINT_CONTRACTION_REPORT.md) and both author-side reviews.
+Terminal-tail, interleaved/shared-selected/W3 and broader W1/reducibility remain
+separate/open.

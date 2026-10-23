@@ -1,0 +1,6 @@
+{
+  "all_builds_sequential": true,
+  "complete_command_logs_exits_timings": true,
+  "failed_attempt": "Option-free splice/copy arithmetic, non-progress/unused simp, actual list associativity, abbreviations/typed positions, explicit arity binding, normalization of rank sums and At/Place equality composition needed local corrections. The first combined coordinate example reached the default 200000-heartbeat limit (68-second Lean run); it was replaced by small index and component lemmas, without raising limits. A List.mem_map argument placement was corrected. All original failure logs/exits/timings retained. No statement/interface/equation was weakened.",
+  "production_sources_unchanged_after_final_verification": true
+}

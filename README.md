@@ -45,6 +45,12 @@ tail. Partial whole-formula ancestry consumes both component slots; separate
 categorical component proofs give denotation equality. Retained ranks lose
 n−1, principal ranks fall 2→1, and other fixed ranks are unchanged. These
 remain local transformations, with broader W1 and Reducibility open.
+Two fixed-gap disjoint same-side contraction commutations now compile, with
+complete selected-copy transports, actual copies/copies squares and singleton
+fibers. Their independent arities give old ranks LC+n,LE+1 and new ranks
+LC+1,LE+m: the targeted decrease accompanies an untargeted increase. The exact
+sum balance and a checked unequal-arity increase rule out a general decreasing
+sum claim. Terminal-tail and shared-selected contractions remain separate.
 The current stage is the remaining local contraction transformations toward
 cut elimination. General W1, W2–W6, blocked-contraction transformations,
 Reducibility, cut elimination, the positive coherence inputs, PositiveCoherence,
@@ -99,10 +105,11 @@ The [v5 literature review](docs/LITERATURE_REVIEW_V5_2026-10-23.md),
 [writing review](docs/reviews/V5_WRITING_REVIEW.md), and
 [manuscript validation](docs/V5_VALIDATION.md) accompany v5.
 The [earlier literature comparison](docs/LITERATURE_REVIEW.md) remains available.
-The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W1_SAME_SIDE_LOGICAL_HOSTILE.md)
-and [mathematical-writing review](docs/reviews/GENTZEN_W1_SAME_SIDE_LOGICAL_WRITING.md)
-cover the four fixed-parametric unary logical cases and their scope; they are not independent
-certification. The [same-side logical report](docs/GENTZEN_W1_SAME_SIDE_LOGICAL_REPORT.md),
+The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W1_DISJOINT_CONTRACTION_HOSTILE.md)
+and [mathematical-writing review](docs/reviews/GENTZEN_W1_DISJOINT_CONTRACTION_WRITING.md)
+cover the two fixed-gap disjoint contraction cases and their scope; they are not independent
+certification. The [disjoint-contraction report](docs/GENTZEN_W1_DISJOINT_CONTRACTION_REPORT.md),
+[preceding same-side logical report](docs/GENTZEN_W1_SAME_SIDE_LOGICAL_REPORT.md),
 [preceding same-side exchange report](docs/GENTZEN_W1_SAME_SIDE_EXCHANGE_REPORT.md),
 [preceding same-side thinning report](docs/GENTZEN_W1_SAME_SIDE_THINNING_REPORT.md),
 [preceding logical report](docs/GENTZEN_W1_LOGICAL_REPORT.md),

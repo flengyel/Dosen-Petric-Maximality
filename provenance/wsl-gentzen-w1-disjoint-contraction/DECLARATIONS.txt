@@ -1,0 +1,245 @@
+DosenPetric/GentzenContractionBlocks.lean:12: structure ContractionBlock (P : Type u) (U K : List (NormalForm P)) where
+DosenPetric/GentzenContractionBlocks.lean:21: def route : Route K U := (copies d.C d.gs d.tail).cast d.lower d.upper
+DosenPetric/GentzenContractionBlocks.lean:22: def keep : At K d.C := (At.shift (gaps d.gs) (.here d.C d.tail)).cast d.lower
+DosenPetric/GentzenContractionBlocks.lean:23: def selected : List (At U d.C) := (selectedCopies d.C d.gs d.tail).map (At.cast d.upper)
+DosenPetric/GentzenContractionBlocks.lean:24: theorem get_index {A : NormalForm P} (a : At U A) : (d.route.get a).index = copyIndex d.gs a.index := by
+DosenPetric/GentzenContractionBlocks.lean:26: theorem keep_index : d.keep.index = (gaps d.gs).length := by
+DosenPetric/GentzenContractionBlocks.lean:28: theorem selected_length : d.selected.length = d.gs.length := by
+DosenPetric/GentzenContractionBlocks.lean:30: theorem selected_indices : d.selected.map At.index = copyOffsets d.gs := by
+DosenPetric/GentzenContractionBlocks.lean:33: theorem selected_ordered : At.Ordered d.selected := by
+DosenPetric/GentzenContractionBlocks.lean:37: theorem selected_iff (a : At U d.C) : a ∈ d.selected ↔ d.route.get a = d.keep := by
+DosenPetric/GentzenContractionBlocks.lean:44: def fixed {A : NormalForm P} (z : At K A) (hz : z.index ≠ d.keep.index) : At U A :=
+DosenPetric/GentzenContractionBlocks.lean:47: theorem fixed_get {A : NormalForm P} (z : At K A) (hz : z.index ≠ d.keep.index) : d.route.get (d.fixed z hz) = z := by
+DosenPetric/GentzenContractionBlocks.lean:51: theorem fixed_unique {A : NormalForm P} (z : At K A) (hz : z.index ≠ d.keep.index)
+DosenPetric/GentzenContractionBlocks.lean:57: theorem fixed_fiber {A : NormalForm P} (z : At K A) (hz : z.index ≠ d.keep.index) :
+DosenPetric/GentzenContractionBlocks.lean:64: def applyL (hn : 2 ≤ d.gs.length) (Δ : List (NormalForm P)) (f : G P U Δ) : G P K Δ :=
+DosenPetric/GentzenContractionBlocks.lean:67: def rankL (hn : 2 ≤ d.gs.length) (Δ : List (NormalForm P)) (f : G P U Δ) : Nat :=
+DosenPetric/GentzenContractionBlocks.lean:70: theorem rankL_keep (hn : 2 ≤ d.gs.length) (Δ : List (NormalForm P)) (f : G P U Δ) :
+DosenPetric/GentzenContractionBlocks.lean:74: theorem rankL_sum (hn : 2 ≤ d.gs.length) (Δ : List (NormalForm P)) (f : G P U Δ) :
+DosenPetric/GentzenContractionBlocks.lean:78: theorem rankL_fixed (hn : 2 ≤ d.gs.length) (Δ : List (NormalForm P)) (f : G P U Δ)
+DosenPetric/GentzenContractionBlocks.lean:84: theorem denoteL (hn : 2 ≤ d.gs.length) (Δ : List (NormalForm P)) (f : G P U Δ) :
+DosenPetric/GentzenContractionBlocks.lean:88: theorem countL (hn : 2 ≤ d.gs.length) (Δ : List (NormalForm P)) (f : G P U Δ) :
+DosenPetric/GentzenContractionBlocks.lean:92: theorem atomizedL (hn : 2 ≤ d.gs.length) (Δ : List (NormalForm P)) (f : G P U Δ) :
+DosenPetric/GentzenContractionBlocks.lean:96: def applyR (hn : 2 ≤ d.gs.length) (Γ : List (NormalForm P)) (f : G P Γ U) : G P Γ K :=
+DosenPetric/GentzenContractionBlocks.lean:99: def rankR (hn : 2 ≤ d.gs.length) (Γ : List (NormalForm P)) (f : G P Γ U) : Nat :=
+DosenPetric/GentzenContractionBlocks.lean:102: theorem rankR_keep (hn : 2 ≤ d.gs.length) (Γ : List (NormalForm P)) (f : G P Γ U) :
+DosenPetric/GentzenContractionBlocks.lean:106: theorem rankR_sum (hn : 2 ≤ d.gs.length) (Γ : List (NormalForm P)) (f : G P Γ U) :
+DosenPetric/GentzenContractionBlocks.lean:110: theorem rankR_fixed (hn : 2 ≤ d.gs.length) (Γ : List (NormalForm P)) (f : G P Γ U)
+DosenPetric/GentzenContractionBlocks.lean:116: theorem denoteR (hn : 2 ≤ d.gs.length) (Γ : List (NormalForm P)) (f : G P Γ U) :
+DosenPetric/GentzenContractionBlocks.lean:120: theorem countR (hn : 2 ≤ d.gs.length) (Γ : List (NormalForm P)) (f : G P Γ U) :
+DosenPetric/GentzenContractionBlocks.lean:124: theorem atomizedR (hn : 2 ≤ d.gs.length) (Γ : List (NormalForm P)) (f : G P Γ U) :
+DosenPetric/GentzenDisjointCommutation.lean:11: theorem outerArity (hn : 2 ≤ d.outer0.length) : 2 ≤ d.bc1.gs.length := d.countC.symm ▸ hn
+DosenPetric/GentzenDisjointCommutation.lean:16: def innerCL : G P d.FC Δ := d.bc0.applyL hn Δ f
+DosenPetric/GentzenDisjointCommutation.lean:17: def innerEL : G P d.FE Δ := d.be0.applyL hm Δ f
+DosenPetric/GentzenDisjointCommutation.lean:18: def oldL : G P d.K Δ := d.bc1.applyL (outerArity d hn) Δ (innerEL d hm Δ f)
+DosenPetric/GentzenDisjointCommutation.lean:19: def newL : G P d.K Δ := d.be1.applyL hm Δ (innerCL d hn Δ f)
+DosenPetric/GentzenDisjointCommutation.lean:21: theorem denoteL : ofTerm (newL d hn hm Δ f).denote = ofTerm (oldL d hn hm Δ f).denote := by
+DosenPetric/GentzenDisjointCommutation.lean:25: theorem oldL_count : (oldL d hn hm Δ f).cutCount = f.cutCount := by
+DosenPetric/GentzenDisjointCommutation.lean:28: theorem oldL_cutFree : (oldL d hn hm Δ f).CutFree ↔ f.CutFree := by
+DosenPetric/GentzenDisjointCommutation.lean:31: theorem oldL_atomized : (oldL d hn hm Δ f).Atomized ↔ f.Atomized := by
+DosenPetric/GentzenDisjointCommutation.lean:34: theorem newL_count : (newL d hn hm Δ f).cutCount = f.cutCount := by
+DosenPetric/GentzenDisjointCommutation.lean:37: theorem newL_cutFree : (newL d hn hm Δ f).CutFree ↔ f.CutFree := by
+DosenPetric/GentzenDisjointCommutation.lean:40: theorem newL_atomized : (newL d hn hm Δ f).Atomized ↔ f.Atomized := by
+DosenPetric/GentzenDisjointCommutation.lean:43: theorem cutCountL : (newL d hn hm Δ f).cutCount = (oldL d hn hm Δ f).cutCount :=
+DosenPetric/GentzenDisjointCommutation.lean:46: theorem cutFreeL : (newL d hn hm Δ f).CutFree ↔ (oldL d hn hm Δ f).CutFree :=
+DosenPetric/GentzenDisjointCommutation.lean:49: theorem atomizedL : (newL d hn hm Δ f).Atomized ↔ (oldL d hn hm Δ f).Atomized :=
+DosenPetric/GentzenDisjointCommutation.lean:52: theorem relationL : (newL d hn hm Δ f).relation = (oldL d hn hm Δ f).relation :=
+DosenPetric/GentzenDisjointCommutation.lean:59: def innerCR : G P Γ d.FC := d.bc0.applyR hn Γ f
+DosenPetric/GentzenDisjointCommutation.lean:60: def innerER : G P Γ d.FE := d.be0.applyR hm Γ f
+DosenPetric/GentzenDisjointCommutation.lean:61: def oldR : G P Γ d.K := d.bc1.applyR (outerArity d hn) Γ (innerER d hm Γ f)
+DosenPetric/GentzenDisjointCommutation.lean:62: def newR : G P Γ d.K := d.be1.applyR hm Γ (innerCR d hn Γ f)
+DosenPetric/GentzenDisjointCommutation.lean:64: theorem denoteR : ofTerm (newR d hn hm Γ f).denote = ofTerm (oldR d hn hm Γ f).denote := by
+DosenPetric/GentzenDisjointCommutation.lean:68: theorem oldR_count : (oldR d hn hm Γ f).cutCount = f.cutCount := by
+DosenPetric/GentzenDisjointCommutation.lean:71: theorem oldR_cutFree : (oldR d hn hm Γ f).CutFree ↔ f.CutFree := by
+DosenPetric/GentzenDisjointCommutation.lean:74: theorem oldR_atomized : (oldR d hn hm Γ f).Atomized ↔ f.Atomized := by
+DosenPetric/GentzenDisjointCommutation.lean:77: theorem newR_count : (newR d hn hm Γ f).cutCount = f.cutCount := by
+DosenPetric/GentzenDisjointCommutation.lean:80: theorem newR_cutFree : (newR d hn hm Γ f).CutFree ↔ f.CutFree := by
+DosenPetric/GentzenDisjointCommutation.lean:83: theorem newR_atomized : (newR d hn hm Γ f).Atomized ↔ f.Atomized := by
+DosenPetric/GentzenDisjointCommutation.lean:86: theorem cutCountR : (newR d hn hm Γ f).cutCount = (oldR d hn hm Γ f).cutCount :=
+DosenPetric/GentzenDisjointCommutation.lean:89: theorem cutFreeR : (newR d hn hm Γ f).CutFree ↔ (oldR d hn hm Γ f).CutFree :=
+DosenPetric/GentzenDisjointCommutation.lean:92: theorem atomizedR : (newR d hn hm Γ f).Atomized ↔ (oldR d hn hm Γ f).Atomized :=
+DosenPetric/GentzenDisjointCommutation.lean:95: theorem relationR : (newR d hn hm Γ f).relation = (oldR d hn hm Γ f).relation :=
+DosenPetric/GentzenDisjointData.lean:12: structure Data (P : Type u) where
+DosenPetric/GentzenDisjointData.lean:23: def fixedGap (C E : NormalForm P) (pre post hs : List (List (NormalForm P)))
+DosenPetric/GentzenDisjointData.lean:28: abbrev es := d.H :: d.hs
+DosenPetric/GentzenDisjointData.lean:29: abbrev outer0 := d.pre ++ (d.U ++ (repeated d.E d.es ++ d.V)) :: d.post
+DosenPetric/GentzenDisjointData.lean:30: abbrev outer1 := d.pre ++ (d.U ++ (gaps d.es ++ d.E :: d.V)) :: d.post
+DosenPetric/GentzenDisjointData.lean:31: abbrev upBefore := repeated d.C d.pre ++ d.U
+DosenPetric/GentzenDisjointData.lean:32: abbrev upAfter := d.V ++ d.C :: (repeated d.C d.post ++ d.Θ)
+DosenPetric/GentzenDisjointData.lean:33: abbrev loBefore := gaps d.pre ++ d.U
+DosenPetric/GentzenDisjointData.lean:34: abbrev loAfter := d.V ++ (gaps d.post ++ d.C :: d.Θ)
+DosenPetric/GentzenDisjointData.lean:35: abbrev eUpper := (d.upBefore ++ d.H) :: d.hs
+DosenPetric/GentzenDisjointData.lean:36: abbrev eLower := (d.loBefore ++ d.H) :: d.hs
+DosenPetric/GentzenDisjointData.lean:37: abbrev F := d.upBefore ++ repeated d.E d.es ++ d.upAfter
+DosenPetric/GentzenDisjointData.lean:38: abbrev FE := d.upBefore ++ gaps d.es ++ d.E :: d.upAfter
+DosenPetric/GentzenDisjointData.lean:39: abbrev FC := d.loBefore ++ repeated d.E d.es ++ d.loAfter
+DosenPetric/GentzenDisjointData.lean:40: abbrev K := d.loBefore ++ gaps d.es ++ d.E :: d.loAfter
+DosenPetric/GentzenDisjointData.lean:42: theorem upperC0 : repeated d.C d.outer0 ++ d.Θ = d.F := by
+DosenPetric/GentzenDisjointData.lean:44: theorem lowerC0 : gaps d.outer0 ++ d.C :: d.Θ = d.FC := by
+DosenPetric/GentzenDisjointData.lean:46: theorem upperC1 : repeated d.C d.outer1 ++ d.Θ = d.FE := by
+DosenPetric/GentzenDisjointData.lean:48: theorem lowerC1 : gaps d.outer1 ++ d.C :: d.Θ = d.K := by
+DosenPetric/GentzenDisjointData.lean:50: theorem upperE0 : repeated d.E d.eUpper ++ d.upAfter = d.F := by
+DosenPetric/GentzenDisjointData.lean:52: theorem lowerE0 : gaps d.eUpper ++ d.E :: d.upAfter = d.FE := by
+DosenPetric/GentzenDisjointData.lean:54: theorem upperE1 : repeated d.E d.eLower ++ d.loAfter = d.FC := by
+DosenPetric/GentzenDisjointData.lean:56: theorem lowerE1 : gaps d.eLower ++ d.E :: d.loAfter = d.K := by
+DosenPetric/GentzenDisjointData.lean:58: theorem countC : d.outer1.length = d.outer0.length := by simp only [outer0,outer1,List.length_append,List.length_cons]
+DosenPetric/GentzenDisjointData.lean:59: theorem countE0 : d.eUpper.length = d.es.length := rfl
+DosenPetric/GentzenDisjointData.lean:60: theorem countE1 : d.eLower.length = d.es.length := rfl
+DosenPetric/GentzenDisjointData.lean:62: abbrev bc0 : ContractionBlock P d.F d.FC := ⟨d.C,d.outer0,d.Θ,d.upperC0,d.lowerC0⟩
+DosenPetric/GentzenDisjointData.lean:63: abbrev bc1 : ContractionBlock P d.FE d.K := ⟨d.C,d.outer1,d.Θ,d.upperC1,d.lowerC1⟩
+DosenPetric/GentzenDisjointData.lean:64: abbrev be0 : ContractionBlock P d.F d.FE := ⟨d.E,d.eUpper,d.upAfter,d.upperE0,d.lowerE0⟩
+DosenPetric/GentzenDisjointData.lean:65: abbrev be1 : ContractionBlock P d.FC d.K := ⟨d.E,d.eLower,d.loAfter,d.upperE1,d.lowerE1⟩
+DosenPetric/GentzenDisjointData.lean:66: abbrev c0 := d.bc0.route
+DosenPetric/GentzenDisjointData.lean:67: abbrev c1 := d.bc1.route
+DosenPetric/GentzenDisjointData.lean:68: abbrev e0 := d.be0.route
+DosenPetric/GentzenDisjointData.lean:69: abbrev e1 := d.be1.route
+DosenPetric/GentzenDisjointData.lean:70: abbrev selectedC0 := d.bc0.selected
+DosenPetric/GentzenDisjointData.lean:71: abbrev selectedC1 := d.bc1.selected
+DosenPetric/GentzenDisjointData.lean:72: abbrev selectedE0 := d.be0.selected
+DosenPetric/GentzenDisjointData.lean:73: abbrev selectedE1 := d.be1.selected
+DosenPetric/GentzenDisjointData.lean:74: abbrev keepC0 := d.bc0.keep
+DosenPetric/GentzenDisjointData.lean:75: abbrev keepE0 := d.be0.keep
+DosenPetric/GentzenDisjointData.lean:76: abbrev xC := d.bc1.keep
+DosenPetric/GentzenDisjointData.lean:77: abbrev xE := d.be1.keep
+DosenPetric/GentzenDisjointData.lean:79: theorem xE_index : d.xE.index = d.loBefore.length+(gaps d.es).length := by
+DosenPetric/GentzenDisjointData.lean:84: theorem xC_index : d.xC.index = d.xE.index+1+d.V.length+(gaps d.post).length := by
+DosenPetric/GentzenDisjointData.lean:89: theorem retained_order : d.xE.index < d.xC.index := by have h := d.xC_index; omega
+DosenPetric/GentzenDisjointData.lean:91: theorem keepE0_index : d.keepE0.index = d.upBefore.length+(gaps d.es).length := by
+DosenPetric/GentzenDisjointData.lean:96: theorem keepC0_index : d.keepC0.index = d.loBefore.length+(repeated d.E d.es).length+d.V.length+(gaps d.post).length := by
+DosenPetric/GentzenDisjointData.lean:101: theorem e0_index {A : NormalForm P} (a : At d.F A) :
+DosenPetric/GentzenDisjointData.lean:107: theorem e1_index {A : NormalForm P} (a : At d.FC A) :
+DosenPetric/GentzenDisjointData.lean:113: theorem square {A : NormalForm P} (a : At d.F A) : d.c1.get (d.e0.get a) = d.e1.get (d.c0.get a) := by
+DosenPetric/GentzenDisjointData.lean:120: theorem product_square : comp (ofTerm d.c1.product) (ofTerm d.e0.product) = comp (ofTerm d.e1.product) (ofTerm d.c0.product) := by
+DosenPetric/GentzenDisjointData.lean:126: theorem coproduct_square : comp (ofTerm d.e0.coproduct) (ofTerm d.c1.coproduct) = comp (ofTerm d.c0.coproduct) (ofTerm d.e1.coproduct) := by
+DosenPetric/GentzenDisjointExamples.lean:13: def twoThree (T : NormalForm P) := Disjoint.fixedGap T T [[]] [] [[],[]] [T] [] [] []
+DosenPetric/GentzenDisjointExamples.lean:15: def sixTags (T : NormalForm P) : List (At (twoThree T).F T) :=
+DosenPetric/GentzenDisjointExamples.lean:20: theorem selectedC0_indices (T : NormalForm P) : ((twoThree T).selectedC0.map At.index) = [0,5] :=
+DosenPetric/GentzenDisjointExamples.lean:23: theorem selectedE0_indices (T : NormalForm P) : ((twoThree T).selectedE0.map At.index) = [2,3,4] :=
+DosenPetric/GentzenDisjointExamples.lean:26: theorem selectedC1_indices (T : NormalForm P) : ((twoThree T).selectedC1.map At.index) = [0,3] :=
+DosenPetric/GentzenDisjointExamples.lean:29: theorem selectedE1_indices (T : NormalForm P) : ((twoThree T).selectedE1.map At.index) = [1,2,3] :=
+DosenPetric/GentzenDisjointExamples.lean:32: theorem old_composite_indices (T : NormalForm P) :
+DosenPetric/GentzenDisjointExamples.lean:41: theorem new_composite_indices (T : NormalForm P) :
+DosenPetric/GentzenDisjointExamples.lean:50: theorem equal_label_indices (T : NormalForm P) :
+DosenPetric/GentzenDisjointExamples.lean:61: theorem equal_label_fixed_tag (T : NormalForm P) :
+DosenPetric/GentzenDisjointExamples.lean:78: def literalPremiseL (l : Literal P) : G P (twoThree (.lit l)).F [.lit l,.lit l,.lit l] :=
+DosenPetric/GentzenDisjointExamples.lean:80: def literalPremiseR (l : Literal P) : G P [.lit l,.lit l,.lit l] (twoThree (.lit l)).F :=
+DosenPetric/GentzenDisjointExamples.lean:83: theorem literal_left (l : Literal P) : LeftLaws (twoThree (.lit l)) (by change 2 ≤ 2; omega)
+DosenPetric/GentzenDisjointExamples.lean:85: theorem literal_right (l : Literal P) : RightLaws (twoThree (.lit l)) (by change 2 ≤ 2; omega)
+DosenPetric/GentzenDisjointExamples.lean:88: theorem two_three_sum_increases_left (l : Literal P) :
+DosenPetric/GentzenDisjointExamples.lean:97: theorem two_three_sum_increases_right (l : Literal P) :
+DosenPetric/GentzenDisjointExamples.lean:106: def equalTwo (T : NormalForm P) := Disjoint.fixedGap T T [[]] [] [[]] [] [] [] []
+DosenPetric/GentzenDisjointExamples.lean:107: def compoundThreeTwo := Disjoint.fixedGap (.conj (.top : NormalForm Empty) .bot) (.disj .top .bot)
+DosenPetric/GentzenDisjointExamples.lean:110: theorem emptyP_two_three_left : LeftLaws (twoThree (.top : NormalForm Empty)) (by change 2 ≤ 2; omega)
+DosenPetric/GentzenDisjointExamples.lean:112: theorem emptyP_two_three_right : RightLaws (twoThree (.top : NormalForm Empty)) (by change 2 ≤ 2; omega)
+DosenPetric/GentzenDisjointExamples.lean:114: theorem emptyP_compound_left : LeftLaws compoundThreeTwo (by change 2 ≤ 3; omega)
+DosenPetric/GentzenDisjointExamples.lean:116: theorem emptyP_compound_right : RightLaws compoundThreeTwo (by change 2 ≤ 3; omega)
+DosenPetric/GentzenDisjointExamples.lean:119: theorem emptyP_equal_arity :
+DosenPetric/GentzenDisjointExamples.lean:126: theorem emptyP_sum_increases :
+DosenPetric/GentzenDisjointExamples.lean:135: theorem emptyP_fixed_rank :
+DosenPetric/GentzenDisjointExamples.lean:143: theorem both_signs_actual_cuts (p : P) :
+DosenPetric/GentzenDisjointFixed.lean:12: theorem fiber_at {A : NormalForm P} (a : At U A) (ha : (d.route.get a).index ≠ d.keep.index) :
+DosenPetric/GentzenDisjointFixed.lean:20: theorem selectedC_singleton (a : At d.F d.C) (ha : a ∈ d.selectedC0) :
+DosenPetric/GentzenDisjointFixed.lean:22: theorem selectedE_singleton (a : At d.F d.E) (ha : a ∈ d.selectedE0) :
+DosenPetric/GentzenDisjointFixed.lean:25: theorem xC_fiber : (TraceRoute.full d.e1).fiber d.xC = [d.keepC0] := by
+DosenPetric/GentzenDisjointFixed.lean:28: theorem xE_fiber : (TraceRoute.full d.c1).fiber d.xE = [d.keepE0] := by
+DosenPetric/GentzenDisjointFixed.lean:32: def middleE {A : NormalForm P} (z : At d.K A) (hc : z.index ≠ d.xC.index) : At d.FE A := d.bc1.fixed z hc
+DosenPetric/GentzenDisjointFixed.lean:33: def middleC {A : NormalForm P} (z : At d.K A) (he : z.index ≠ d.xE.index) : At d.FC A := d.be1.fixed z he
+DosenPetric/GentzenDisjointFixed.lean:35: theorem middleE_get {A : NormalForm P} (z : At d.K A) (hc : z.index ≠ d.xC.index) : d.c1.get (d.middleE z hc) = z := d.bc1.fixed_get z hc
+DosenPetric/GentzenDisjointFixed.lean:36: theorem middleC_get {A : NormalForm P} (z : At d.K A) (he : z.index ≠ d.xE.index) : d.e1.get (d.middleC z he) = z := d.be1.fixed_get z he
+DosenPetric/GentzenDisjointFixed.lean:38: theorem middleE_fixed {A : NormalForm P} (z : At d.K A) (hc : z.index ≠ d.xC.index)
+DosenPetric/GentzenDisjointFixed.lean:47: theorem middleC_fixed {A : NormalForm P} (z : At d.K A) (hc : z.index ≠ d.xC.index)
+DosenPetric/GentzenDisjointFixed.lean:56: def originalViaE {A : NormalForm P} (z : At d.K A) (hc : z.index ≠ d.xC.index)
+DosenPetric/GentzenDisjointFixed.lean:58: def originalViaC {A : NormalForm P} (z : At d.K A) (hc : z.index ≠ d.xC.index)
+DosenPetric/GentzenDisjointFixed.lean:61: theorem originalViaE_get {A : NormalForm P} (z : At d.K A) (hc : z.index ≠ d.xC.index)
+DosenPetric/GentzenDisjointFixed.lean:63: theorem originalViaC_get {A : NormalForm P} (z : At d.K A) (hc : z.index ≠ d.xC.index)
+DosenPetric/GentzenDisjointFixed.lean:66: theorem original_unique {A : NormalForm P} (z : At d.K A) (hc : z.index ≠ d.xC.index)
+DosenPetric/GentzenDisjointFixed.lean:72: theorem original_agree {A : NormalForm P} (z : At d.K A) (hc : z.index ≠ d.xC.index)
+DosenPetric/GentzenDisjointFixed.lean:77: theorem other_c0_get {A : NormalForm P} (z : At d.K A) (hc : z.index ≠ d.xC.index)
+DosenPetric/GentzenDisjointFixed.lean:82: theorem other_fiber {A : NormalForm P} (z : At d.K A) (hc : z.index ≠ d.xC.index)
+DosenPetric/GentzenDisjointIndices.lean:12: def splice (k r s : Nat) (f : Nat → Nat) (i : Nat) : Nat :=
+DosenPetric/GentzenDisjointIndices.lean:15: theorem splice_before (k r s : Nat) (f : Nat → Nat) (i : Nat) (h : i < k) :
+DosenPetric/GentzenDisjointIndices.lean:17: theorem splice_inside (k r s : Nat) (f : Nat → Nat) (i : Nat) (h : k ≤ i) (h' : i < k+r) :
+DosenPetric/GentzenDisjointIndices.lean:19: theorem splice_after (k r s : Nat) (f : Nat → Nat) (i : Nat) (h : k+r ≤ i) :
+DosenPetric/GentzenDisjointIndices.lean:21: theorem splice_add (a k r s : Nat) (f : Nat → Nat) (i : Nat) :
+DosenPetric/GentzenDisjointIndices.lean:32: theorem copy_tail (C : NormalForm P) (gs : List (List (NormalForm P))) (i : Nat)
+DosenPetric/GentzenDisjointIndices.lean:42: theorem copy_bound (C : NormalForm P) (gs : List (List (NormalForm P))) (i : Nat)
+DosenPetric/GentzenDisjointIndices.lean:56: theorem copy_prefix (W H : List (NormalForm P)) (hs : List (List (NormalForm P))) (i : Nat) :
+DosenPetric/GentzenDisjointIndices.lean:62: theorem copy_splice (E : NormalForm P) (W H : List (NormalForm P))
+DosenPetric/GentzenDisjointIndices.lean:77: theorem copy_splice_square (C : NormalForm P) (pre post : List (List (NormalForm P)))
+DosenPetric/GentzenDisjointInstances.lean:12: structure LeftLaws (d : Disjoint.Data P) (hn : 2 ≤ d.outer0.length) (hm : 2 ≤ d.es.length)
+DosenPetric/GentzenDisjointInstances.lean:35: theorem leftLaws (d : Disjoint.Data P) (hn : 2 ≤ d.outer0.length) (hm : 2 ≤ d.es.length)
+DosenPetric/GentzenDisjointInstances.lean:43: theorem fixedGap_left (C E : NormalForm P) (pre post hs : List (List (NormalForm P)))
+DosenPetric/GentzenDisjointInstances.lean:50: structure RightLaws (d : Disjoint.Data P) (hn : 2 ≤ d.outer0.length) (hm : 2 ≤ d.es.length)
+DosenPetric/GentzenDisjointInstances.lean:73: theorem rightLaws (d : Disjoint.Data P) (hn : 2 ≤ d.outer0.length) (hm : 2 ≤ d.es.length)
+DosenPetric/GentzenDisjointInstances.lean:81: theorem fixedGap_right (C E : NormalForm P) (pre post hs : List (List (NormalForm P)))
+DosenPetric/GentzenDisjointPositions.lean:11: theorem copy_inside (C : NormalForm P) (pre post : List (List (NormalForm P)))
+DosenPetric/GentzenDisjointPositions.lean:24: theorem offsets_prefix (W H : List (NormalForm P)) (hs : List (List (NormalForm P))) :
+DosenPetric/GentzenDisjointPositions.lean:33: theorem splice_outside_strict (k r s : Nat) (f : Nat → Nat) (i j : Nat)
+DosenPetric/GentzenDisjointPositions.lean:45: theorem selectedC0_outside (a : At d.F d.C) (ha : a ∈ d.selectedC0) :
+DosenPetric/GentzenDisjointPositions.lean:51: theorem selectedC1_outside (a : At d.FE d.C) (ha : a ∈ d.selectedC1) :
+DosenPetric/GentzenDisjointPositions.lean:59: theorem selectedE0_inside (a : At d.F d.E) (ha : a ∈ d.selectedE0) :
+DosenPetric/GentzenDisjointPositions.lean:68: theorem selectedE1_inside (a : At d.FC d.E) (ha : a ∈ d.selectedE1) :
+DosenPetric/GentzenDisjointPositions.lean:77: theorem c0_inside {A : NormalForm P} (a : At d.F A)
+DosenPetric/GentzenDisjointPositions.lean:87: theorem c1_inside {A : NormalForm P} (a : At d.FE A)
+DosenPetric/GentzenDisjointPositions.lean:99: theorem c1_keepE0 : d.c1.get d.keepE0 = d.xE := by
+DosenPetric/GentzenDisjointPositions.lean:104: theorem e1_keepC0 : d.e1.get d.keepC0 = d.xC := by
+DosenPetric/GentzenDisjointPositions.lean:109: theorem selectedC0_parametric (a : At d.F d.C) (ha : a ∈ d.selectedC0) :
+DosenPetric/GentzenDisjointPositions.lean:117: theorem selectedE0_parametric (a : At d.F d.E) (ha : a ∈ d.selectedE0) :
+DosenPetric/GentzenDisjointPositions.lean:123: theorem selectedC1_fixed (a : At d.FE d.C) (ha : a ∈ d.selectedC1) : a.index ≠ d.keepE0.index := by
+DosenPetric/GentzenDisjointPositions.lean:128: theorem selectedE1_fixed (a : At d.FC d.E) (ha : a ∈ d.selectedE1) : a.index ≠ d.keepC0.index := by
+DosenPetric/GentzenDisjointRanks.lean:12: theorem sum_transport_one {α β : Type u} (xs : List α) (ys : List β) (φ : α → β)
+DosenPetric/GentzenDisjointRanks.lean:27: def LCL := d.bc0.rankL hn Δ f
+DosenPetric/GentzenDisjointRanks.lean:28: def LEL := d.be0.rankL hm Δ f
+DosenPetric/GentzenDisjointRanks.lean:30: theorem oldC_contractionL : d.bc1.rankL (outerArity d hn) Δ (innerEL d hm Δ f) = LCL d hn Δ f+d.outer0.length := by
+DosenPetric/GentzenDisjointRanks.lean:44: theorem newE_contractionL : d.be1.rankL hm Δ (innerCL d hn Δ f) = LEL d hm Δ f+d.es.length := by
+DosenPetric/GentzenDisjointRanks.lean:58: theorem old_xCL : (oldL d hn hm Δ f).rho .left d.xC = LCL d hn Δ f+d.outer0.length :=
+DosenPetric/GentzenDisjointRanks.lean:61: theorem new_xEL : (newL d hn hm Δ f).rho .left d.xE = LEL d hm Δ f+d.es.length :=
+DosenPetric/GentzenDisjointRanks.lean:64: theorem new_xCL : (newL d hn hm Δ f).rho .left d.xC = LCL d hn Δ f+1 := by
+DosenPetric/GentzenDisjointRanks.lean:71: theorem old_xEL : (oldL d hn hm Δ f).rho .left d.xE = LEL d hm Δ f+1 := by
+DosenPetric/GentzenDisjointRanks.lean:78: theorem C_balanceL : (oldL d hn hm Δ f).rho .left d.xC+1 = (newL d hn hm Δ f).rho .left d.xC+d.outer0.length := by
+DosenPetric/GentzenDisjointRanks.lean:83: theorem E_balanceL : (newL d hn hm Δ f).rho .left d.xE+1 = (oldL d hn hm Δ f).rho .left d.xE+d.es.length := by
+DosenPetric/GentzenDisjointRanks.lean:88: theorem C_decreasesL : (newL d hn hm Δ f).rho .left d.xC < (oldL d hn hm Δ f).rho .left d.xC := by
+DosenPetric/GentzenDisjointRanks.lean:93: theorem E_increasesL : (oldL d hn hm Δ f).rho .left d.xE < (newL d hn hm Δ f).rho .left d.xE := by
+DosenPetric/GentzenDisjointRanks.lean:98: theorem C_subterm_ltL : LCL d hn Δ f < (oldL d hn hm Δ f).rho .left d.xC := by
+DosenPetric/GentzenDisjointRanks.lean:102: theorem E_subterm_ltL : LEL d hm Δ f < (newL d hn hm Δ f).rho .left d.xE := by
+DosenPetric/GentzenDisjointRanks.lean:106: def endpointSumL (g : G P d.K Δ) : Nat := g.rho .left d.xC+g.rho .left d.xE
+DosenPetric/GentzenDisjointRanks.lean:108: theorem sum_balanceL : endpointSumL d Δ (oldL d hn hm Δ f)+d.es.length =
+DosenPetric/GentzenDisjointRanks.lean:118: theorem sum_eq_of_arity_eqL (h : d.outer0.length = d.es.length) :
+DosenPetric/GentzenDisjointRanks.lean:123: theorem other_oldL {A : NormalForm P} (z : At d.K A)
+DosenPetric/GentzenDisjointRanks.lean:131: theorem other_newL {A : NormalForm P} (z : At d.K A)
+DosenPetric/GentzenDisjointRanks.lean:144: def LCR := d.bc0.rankR hn Γ f
+DosenPetric/GentzenDisjointRanks.lean:145: def LER := d.be0.rankR hm Γ f
+DosenPetric/GentzenDisjointRanks.lean:147: theorem oldC_contractionR : d.bc1.rankR (outerArity d hn) Γ (innerER d hm Γ f) = LCR d hn Γ f+d.outer0.length := by
+DosenPetric/GentzenDisjointRanks.lean:161: theorem newE_contractionR : d.be1.rankR hm Γ (innerCR d hn Γ f) = LER d hm Γ f+d.es.length := by
+DosenPetric/GentzenDisjointRanks.lean:175: theorem old_xCR : (oldR d hn hm Γ f).rho .right d.xC = LCR d hn Γ f+d.outer0.length :=
+DosenPetric/GentzenDisjointRanks.lean:178: theorem new_xER : (newR d hn hm Γ f).rho .right d.xE = LER d hm Γ f+d.es.length :=
+DosenPetric/GentzenDisjointRanks.lean:181: theorem new_xCR : (newR d hn hm Γ f).rho .right d.xC = LCR d hn Γ f+1 := by
+DosenPetric/GentzenDisjointRanks.lean:188: theorem old_xER : (oldR d hn hm Γ f).rho .right d.xE = LER d hm Γ f+1 := by
+DosenPetric/GentzenDisjointRanks.lean:195: theorem C_balanceR : (oldR d hn hm Γ f).rho .right d.xC+1 = (newR d hn hm Γ f).rho .right d.xC+d.outer0.length := by
+DosenPetric/GentzenDisjointRanks.lean:200: theorem E_balanceR : (newR d hn hm Γ f).rho .right d.xE+1 = (oldR d hn hm Γ f).rho .right d.xE+d.es.length := by
+DosenPetric/GentzenDisjointRanks.lean:205: theorem C_decreasesR : (newR d hn hm Γ f).rho .right d.xC < (oldR d hn hm Γ f).rho .right d.xC := by
+DosenPetric/GentzenDisjointRanks.lean:210: theorem E_increasesR : (oldR d hn hm Γ f).rho .right d.xE < (newR d hn hm Γ f).rho .right d.xE := by
+DosenPetric/GentzenDisjointRanks.lean:215: theorem C_subterm_ltR : LCR d hn Γ f < (oldR d hn hm Γ f).rho .right d.xC := by
+DosenPetric/GentzenDisjointRanks.lean:219: theorem E_subterm_ltR : LER d hm Γ f < (newR d hn hm Γ f).rho .right d.xE := by
+DosenPetric/GentzenDisjointRanks.lean:223: def endpointSumR (g : G P Γ d.K) : Nat := g.rho .right d.xC+g.rho .right d.xE
+DosenPetric/GentzenDisjointRanks.lean:225: theorem sum_balanceR : endpointSumR d Γ (oldR d hn hm Γ f)+d.es.length =
+DosenPetric/GentzenDisjointRanks.lean:235: theorem sum_eq_of_arity_eqR (h : d.outer0.length = d.es.length) :
+DosenPetric/GentzenDisjointRanks.lean:240: theorem other_oldR {A : NormalForm P} (z : At d.K A)
+DosenPetric/GentzenDisjointRanks.lean:248: theorem other_newR {A : NormalForm P} (z : At d.K A)
+DosenPetric/GentzenDisjointTransport.lean:13: theorem get_eq_iff {A : NormalForm P} (b : At U A) (hb : (d.route.get b).index ≠ d.keep.index) (a : At U A) :
+DosenPetric/GentzenDisjointTransport.lean:24: theorem selectedC_iff (a : At d.F d.C) : d.e0.get a ∈ d.selectedC1 ↔ a ∈ d.selectedC0 := by
+DosenPetric/GentzenDisjointTransport.lean:30: theorem selectedE_iff (a : At d.F d.E) : d.c0.get a ∈ d.selectedE1 ↔ a ∈ d.selectedE0 := by
+DosenPetric/GentzenDisjointTransport.lean:36: theorem selectedC_transport : d.selectedC1 = d.selectedC0.map d.e0.get := by
+DosenPetric/GentzenDisjointTransport.lean:54: theorem selectedE_transport : d.selectedE1 = d.selectedE0.map d.c0.get := by
+DosenPetric/GentzenDisjointTransport.lean:74: theorem selectedC0_length : d.selectedC0.length = d.outer0.length := d.bc0.selected_length
+DosenPetric/GentzenDisjointTransport.lean:75: theorem selectedC1_length : d.selectedC1.length = d.outer0.length := d.bc1.selected_length.trans d.countC
+DosenPetric/GentzenDisjointTransport.lean:76: theorem selectedE0_length : d.selectedE0.length = d.es.length := d.be0.selected_length
+DosenPetric/GentzenDisjointTransport.lean:77: theorem selectedE1_length : d.selectedE1.length = d.es.length := d.be1.selected_length
+DosenPetric/GentzenDisjointTransport.lean:79: theorem selectedC_injective (a b : At d.F d.C) (hb : b ∈ d.selectedC0)
+DosenPetric/GentzenDisjointTransport.lean:83: theorem selectedE_injective (a b : At d.F d.E) (hb : b ∈ d.selectedE0)
+DosenPetric/GentzenDisjointTransport.lean:87: theorem selectedC_final (a : At d.F d.C) (ha : a ∈ d.selectedC0) :
+DosenPetric/GentzenDisjointTransport.lean:92: theorem selectedE_final (a : At d.F d.E) (ha : a ∈ d.selectedE0) :
+DosenPetric/GentzenDisjointTransport.lean:97: theorem selected_disjoint (a : At d.F d.C) (b : At d.F d.E)
+DosenPetric/GentzenDisjointTransport.lean:103: theorem selectedC0_gap_exclusion (a : At d.F d.C) (ha : a ∈ d.selectedC0) :
+DosenPetric/GentzenDisjointTransport.lean:112: theorem selectedC_order (a b : At d.F d.C) (ha : a ∈ d.selectedC0)
+DosenPetric/GentzenDisjointTransport.lean:117: theorem selectedE_order (a b : At d.F d.E) (ha : a ∈ d.selectedE0)

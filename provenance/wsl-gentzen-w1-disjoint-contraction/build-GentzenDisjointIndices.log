@@ -1,0 +1,255 @@
+✔ [122/123] Built DosenPetric.GentzenContractionBlocks (1.8s)
+✖ [123/123] Building DosenPetric.GentzenDisjointIndices (9.5s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenDisjointIndices.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointIndices.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDisjointIndices.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointIndices.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDisjointIndices.setup.json --json
+error: DosenPetric/GentzenDisjointIndices.lean:16:53: unsolved goals
+case isFalse.isTrue.isFalse.isTrue
+a k r s : Nat
+f : Nat → Nat
+i : Nat
+h✝³ : ¬a + i < a + k
+h✝² : a + i < a + k + r
+h✝¹ : ¬i < k
+h✝ : i < k + r
+⊢ a + k + f (a + i - (a + k)) = a + (k + f (i - k))
+
+case isFalse.isTrue.isFalse.isFalse
+a k r s : Nat
+f : Nat → Nat
+i : Nat
+h✝³ : ¬a + i < a + k
+h✝² : a + i < a + k + r
+h✝¹ : ¬i < k
+h✝ : ¬i < k + r
+⊢ a + k + f (a + i - (a + k)) = a + (i - r + s)
+
+case isFalse.isFalse
+a k r s : Nat
+f : Nat → Nat
+i : Nat
+h✝¹ : ¬a + i < a + k
+h✝ : ¬a + i < a + k + r
+⊢ a + i - r + s = a + if i < k then i else if i < k + r then k + f (i - k) else i - r + s
+error: DosenPetric/GentzenDisjointIndices.lean:28:4: `simp` made no progress
+error: DosenPetric/GentzenDisjointIndices.lean:39:6: `simp` made no progress
+error: DosenPetric/GentzenDisjointIndices.lean:41:8: `simp` made no progress
+error: DosenPetric/GentzenDisjointIndices.lean:45:8: `simp` made no progress
+error: DosenPetric/GentzenDisjointIndices.lean:49:102: unsolved goals
+case isFalse.isFalse.isFalse.isFalse.isFalse
+P : Type u
+W H : List (NormalForm P)
+hs : List (List (NormalForm P))
+i : Nat
+h✝⁴ : ¬i < W.length + H.length
+h✝³ : ¬i = W.length + H.length
+h✝² : ¬i < W.length
+h✝¹ : ¬i - W.length < H.length
+h✝ : ¬i - W.length = H.length
+⊢ W.length + H.length + copyIndex hs (i - (W.length + H.length) - 1) =
+    W.length + (H.length + copyIndex hs (i - W.length - H.length - 1))
+error: DosenPetric/GentzenDisjointIndices.lean:80:49: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+  a - c ≤ 0
+where
+ a := ↑U.length
+ b := ↑i
+ c := ↑(if i < U.length + X.length + V.length then i
+  else
+    if i = U.length + X.length + V.length then U.length + X.length + V.length + (gaps post).length
+    else U.length + X.length + V.length + copyIndex post (i - (U.length + X.length + V.length) - 1))
+error: DosenPetric/GentzenDisjointIndices.lean:80:56: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  if i < U.length then ?m.109 else ?m.110
+in the target expression
+  i =
+    if i < U.length + X.length + V.length then i
+    else
+      if i = U.length + X.length + V.length then U.length + X.length + V.length + (gaps post).length
+      else U.length + X.length + V.length + copyIndex post (i - (U.length + X.length + V.length) - 1)
+
+case pos
+P : Type u
+C : NormalForm P
+post : List (List (NormalForm P))
+U X Y V : List (NormalForm P)
+f : Nat → Nat
+hf : ∀ (j : Nat), j < X.length → f j < Y.length
+i : Nat
+hp : i < U.length
+⊢ i =
+    if i < U.length + X.length + V.length then i
+    else
+      if i = U.length + X.length + V.length then U.length + X.length + V.length + (gaps post).length
+      else U.length + X.length + V.length + copyIndex post (i - (U.length + X.length + V.length) - 1)
+error: DosenPetric/GentzenDisjointIndices.lean:84:51: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  e ≥ 0
+  d ≥ 0
+  d - e ≥ 1
+  c ≥ 0
+  b ≥ 0
+  b - g ≤ 0
+  a ≥ 0
+  a - b ≥ 0
+  a - b - c ≤ -1
+where
+ a := ↑i
+ b := ↑U.length
+ c := ↑X.length
+ d := ↑Y.length
+ e := ↑(f (i - U.length))
+ g := ↑(if i < U.length + X.length + V.length then i
+  else
+    if i = U.length + X.length + V.length then U.length + X.length + V.length + (gaps post).length
+    else U.length + X.length + V.length + copyIndex post (i - (U.length + X.length + V.length) - 1))
+error: DosenPetric/GentzenDisjointIndices.lean:84:58: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  if i < U.length then ?m.173 else ?m.174
+in the target expression
+  U.length + f (i - U.length) =
+    if i < U.length + X.length + V.length then i
+    else
+      if i = U.length + X.length + V.length then U.length + X.length + V.length + (gaps post).length
+      else U.length + X.length + V.length + copyIndex post (i - (U.length + X.length + V.length) - 1)
+
+case pos
+P : Type u
+C : NormalForm P
+post : List (List (NormalForm P))
+U X Y V : List (NormalForm P)
+f : Nat → Nat
+hf : ∀ (j : Nat), j < X.length → f j < Y.length
+i : Nat
+hp : ¬i < U.length
+hx : i < U.length + X.length
+h : f (i - U.length) < Y.length
+⊢ U.length + f (i - U.length) =
+    if i < U.length + X.length + V.length then i
+    else
+      if i = U.length + X.length + V.length then U.length + X.length + V.length + (gaps post).length
+      else U.length + X.length + V.length + copyIndex post (i - (U.length + X.length + V.length) - 1)
+error: DosenPetric/GentzenDisjointIndices.lean:89:10: unsolved goals
+case pos.isFalse.isFalse.isTrue.isFalse.isFalse.isFalse
+P : Type u
+C : NormalForm P
+post : List (List (NormalForm P))
+U X Y V : List (NormalForm P)
+f : Nat → Nat
+hf : ∀ (j : Nat), j < X.length → f j < Y.length
+hp : ¬U.length + X.length + V.length < U.length
+hx : ¬U.length + X.length + V.length < U.length + X.length
+hv : ¬U.length + X.length + V.length < U.length + X.length + V.length
+h✝⁵ : ¬U.length + X.length + V.length < U.length
+h✝⁴ : ¬U.length + X.length + V.length - X.length + Y.length < U.length + Y.length + V.length
+h✝³ : U.length + X.length + V.length - X.length + Y.length = U.length + Y.length + V.length
+h✝² : ¬True
+h✝¹ :
+  ¬U.length + X.length + V.length +
+        copyIndex post (U.length + X.length + V.length - (U.length + X.length + V.length) - 1) <
+      U.length
+h✝ :
+  ¬U.length + X.length + V.length +
+        copyIndex post (U.length + X.length + V.length - (U.length + X.length + V.length) - 1) <
+      U.length + X.length
+⊢ U.length + Y.length + V.length + (gaps post).length =
+    U.length + X.length + V.length +
+          copyIndex post (U.length + X.length + V.length - (U.length + X.length + V.length) - 1) -
+        X.length +
+      Y.length
+
+case pos.isFalse.isFalse.isFalse
+P : Type u
+C : NormalForm P
+post : List (List (NormalForm P))
+U X Y V : List (NormalForm P)
+f : Nat → Nat
+hf : ∀ (j : Nat), j < X.length → f j < Y.length
+hp : ¬U.length + X.length + V.length < U.length
+hx : ¬U.length + X.length + V.length < U.length + X.length
+hv : ¬U.length + X.length + V.length < U.length + X.length + V.length
+h✝² : ¬U.length + X.length + V.length < U.length
+h✝¹ : ¬U.length + X.length + V.length - X.length + Y.length < U.length + Y.length + V.length
+h✝ : ¬U.length + X.length + V.length - X.length + Y.length = U.length + Y.length + V.length
+⊢ U.length + Y.length + V.length +
+      copyIndex post (U.length + X.length + V.length - X.length + Y.length - (U.length + Y.length + V.length) - 1) =
+    if
+        (if True then U.length + X.length + V.length + (gaps post).length
+          else
+            U.length + X.length + V.length +
+              copyIndex post (U.length + X.length + V.length - (U.length + X.length + V.length) - 1)) <
+          U.length then
+      if True then U.length + X.length + V.length + (gaps post).length
+      else
+        U.length + X.length + V.length +
+          copyIndex post (U.length + X.length + V.length - (U.length + X.length + V.length) - 1)
+    else
+      if
+          (if True then U.length + X.length + V.length + (gaps post).length
+            else
+              U.length + X.length + V.length +
+                copyIndex post (U.length + X.length + V.length - (U.length + X.length + V.length) - 1)) <
+            U.length + X.length then
+        U.length +
+          f
+            ((if True then U.length + X.length + V.length + (gaps post).length
+              else
+                U.length + X.length + V.length +
+                  copyIndex post (U.length + X.length + V.length - (U.length + X.length + V.length) - 1)) -
+              U.length)
+      else
+        (if True then U.length + X.length + V.length + (gaps post).length
+            else
+              U.length + X.length + V.length +
+                copyIndex post (U.length + X.length + V.length - (U.length + X.length + V.length) - 1)) -
+            X.length +
+          Y.length
+error: DosenPetric/GentzenDisjointIndices.lean:100:12: `simp` made no progress
+error: DosenPetric/GentzenDisjointIndices.lean:124:51: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  copyIndex (pre ++ (U ++ Y ++ V) :: post) (splice (repeated C pre ++ U).length X.length Y.length f ?i)
+in the target expression
+  Γ.length +
+      copyIndex (pre ++ (U ++ Y ++ V) :: post)
+        (splice ((repeated C pre).length + U.length) X.length Y.length f (i - Γ.length - 1)) =
+    splice (Γ.length + (gaps pre).length + U.length) X.length Y.length f
+      (copyIndex (Γ :: (pre ++ (U ++ X ++ V) :: post)) (Γ.length + 1 + (i - Γ.length - 1)))
+
+case neg
+P : Type u
+C : NormalForm P
+post : List (List (NormalForm P))
+U X Y V : List (NormalForm P)
+f : Nat → Nat
+hf : ∀ (j : Nat), j < X.length → f j < Y.length
+Γ : List (NormalForm P)
+pre : List (List (NormalForm P))
+ih :
+  ∀ (i : Nat),
+    copyIndex (pre ++ (U ++ Y ++ V) :: post) (splice (repeated C pre ++ U).length X.length Y.length f i) =
+      splice (gaps pre ++ U).length X.length Y.length f (copyIndex (pre ++ (U ++ X ++ V) :: post) i)
+i : Nat
+hgX :
+  (gaps (pre ++ (U ++ X ++ V) :: post)).length = (gaps pre).length + U.length + X.length + V.length + (gaps post).length
+hgY :
+  (gaps (pre ++ (U ++ Y ++ V) :: post)).length = (gaps pre).length + U.length + Y.length + V.length + (gaps post).length
+hp : ¬i < Γ.length
+he : ¬i = Γ.length
+hi : i = Γ.length + 1 + (i - Γ.length - 1)
+hk : Γ.length + ((repeated C pre).length + 1) + U.length = Γ.length + 1 + ((repeated C pre).length + U.length)
+hl : Γ.length + (gaps pre).length + U.length = Γ.length + ((gaps pre).length + U.length)
+⊢ Γ.length +
+      copyIndex (pre ++ (U ++ Y ++ V) :: post)
+        (splice ((repeated C pre).length + U.length) X.length Y.length f (i - Γ.length - 1)) =
+    splice (Γ.length + (gaps pre).length + U.length) X.length Y.length f
+      (copyIndex (Γ :: (pre ++ (U ++ X ++ V) :: post)) (Γ.length + 1 + (i - Γ.length - 1)))
+error: DosenPetric/GentzenDisjointIndices.lean:77:56: This simp argument is unused:
+  List.length_append
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.nil_append, repeated, List.nil_append]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- DosenPetric.GentzenDisjointIndices
+error: build failed
