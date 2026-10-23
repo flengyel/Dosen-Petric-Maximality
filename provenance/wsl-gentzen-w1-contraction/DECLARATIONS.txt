@@ -1,0 +1,47 @@
+DosenPetric/GentzenContractionCommutation.lean:15: def innerL : G P (gaps gs ++ C :: Θ) (repeated D hs ++ Λ) :=
+DosenPetric/GentzenContractionCommutation.lean:18: def innerR : G P (repeated C gs ++ Θ) (gaps hs ++ D :: Λ) :=
+DosenPetric/GentzenContractionCommutation.lean:21: def outerL : G P (gaps gs ++ C :: Θ) (gaps hs ++ D :: Λ) :=
+DosenPetric/GentzenContractionCommutation.lean:24: def outerR : G P (gaps gs ++ C :: Θ) (gaps hs ++ D :: Λ) :=
+DosenPetric/GentzenContractionCommutation.lean:28: theorem denote : ofTerm (outerR C D gs hs Θ Λ hn hm f).denote =
+DosenPetric/GentzenContractionCommutation.lean:33: theorem denote_reverse : ofTerm (outerL C D gs hs Θ Λ hn hm f).denote =
+DosenPetric/GentzenContractionCommutation.lean:36: theorem cutCount : (outerR C D gs hs Θ Λ hn hm f).cutCount =
+DosenPetric/GentzenContractionCommutation.lean:39: theorem cutFree : (outerR C D gs hs Θ Λ hn hm f).CutFree ↔
+DosenPetric/GentzenContractionCommutation.lean:42: theorem atomized : (outerR C D gs hs Θ Λ hn hm f).Atomized ↔
+DosenPetric/GentzenContractionCommutation.lean:45: theorem relation : (outerR C D gs hs Θ Λ hn hm f).relation =
+DosenPetric/GentzenContractionCommutation.lean:50: def leftRank : Nat := G.contractionRankL C gs Θ (repeated D hs ++ Λ) hn f
+DosenPetric/GentzenContractionCommutation.lean:52: def rightRank : Nat := G.contractionRankR (repeated C gs ++ Θ) D hs Λ hm f
+DosenPetric/GentzenContractionCommutation.lean:55: def endpointSum (g : G P (gaps gs ++ C :: Θ) (gaps hs ++ D :: Λ)) : Nat :=
+DosenPetric/GentzenContractionCommutationExamples.lean:13: def twoThreePremise (l : Literal P) : G P [.lit l,.lit l] [.lit l,.lit l,.lit l] :=
+DosenPetric/GentzenContractionCommutationExamples.lean:17: def twoThreeL (l : Literal P) :=
+DosenPetric/GentzenContractionCommutationExamples.lean:21: def twoThreeR (l : Literal P) :=
+DosenPetric/GentzenContractionCommutationExamples.lean:25: theorem two_three_effects (l : Literal P) :
+DosenPetric/GentzenContractionCommutationExamples.lean:52: def repeatedPremise (l : Literal P) :
+DosenPetric/GentzenContractionCommutationExamples.lean:56: def repeatedL (l : Literal P) :=
+DosenPetric/GentzenContractionCommutationExamples.lean:60: def repeatedR (l : Literal P) :=
+DosenPetric/GentzenContractionCommutationExamples.lean:64: theorem repeated_sum_unchanged (l : Literal P) :
+DosenPetric/GentzenContractionCommutationExamples.lean:69: theorem repeated_left_decreases_right_increases (l : Literal P) :
+DosenPetric/GentzenContractionCommutationExamples.lean:84: theorem selected_indices (C : NormalForm P) :
+DosenPetric/GentzenContractionCommutationExamples.lean:87: theorem fixed_equal_not_selected (C : NormalForm P) :
+DosenPetric/GentzenContractionCommutationExamples.lean:94: def constantTop : G Empty [.top,.top] [.top,.top,.top] :=
+DosenPetric/GentzenContractionCommutationExamples.lean:97: def constantBot : G Empty [.bot,.bot] [.bot,.bot,.bot] :=
+DosenPetric/GentzenContractionCommutationExamples.lean:100: theorem emptyP_top :
+DosenPetric/GentzenContractionCommutationExamples.lean:106: theorem emptyP_bot :
+DosenPetric/GentzenContractionCommutationExamples.lean:113: theorem both_signs_with_cut (p : P) :
+DosenPetric/GentzenContractionCommutationRank.lean:14: theorem outerL_left :
+DosenPetric/GentzenContractionCommutationRank.lean:32: theorem outerR_left :
+DosenPetric/GentzenContractionCommutationRank.lean:38: theorem outerL_right :
+DosenPetric/GentzenContractionCommutationRank.lean:44: theorem outerR_right :
+DosenPetric/GentzenContractionCommutationRank.lean:62: theorem innerL_rank_lt_outerL : leftRank C D gs hs Θ Λ hn f <
+DosenPetric/GentzenContractionCommutationRank.lean:67: theorem innerR_rank_lt_outerR : rightRank C D gs hs Θ Λ hm f <
+DosenPetric/GentzenContractionCommutationRank.lean:73: theorem left_directed_balance :
+DosenPetric/GentzenContractionCommutationRank.lean:81: theorem right_directed_balance :
+DosenPetric/GentzenContractionCommutationRank.lean:88: theorem left_directed_decrease :
+DosenPetric/GentzenContractionCommutationRank.lean:94: theorem right_directed_decrease :
+DosenPetric/GentzenContractionCommutationRank.lean:101: theorem left_directed_right_increase :
+DosenPetric/GentzenContractionCommutationRank.lean:106: theorem right_directed_left_increase :
+DosenPetric/GentzenContractionCommutationRank.lean:111: theorem endpointSum_balance :
+DosenPetric/GentzenContractionCommutationRank.lean:119: theorem endpointSum_eq_of_lengths_eq (h : gs.length = hs.length) :
+DosenPetric/GentzenOppositeContractionRank.lean:12: theorem predecessors_contractR_left (Γ : List (NormalForm P)) (D : NormalForm P)
+DosenPetric/GentzenOppositeContractionRank.lean:21: theorem predecessors_contractL_right (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenOppositeContractionRank.lean:31: theorem rho_contractR_left (Γ : List (NormalForm P)) (D : NormalForm P)
+DosenPetric/GentzenOppositeContractionRank.lean:41: theorem rho_contractL_right (C : NormalForm P) (gs : List (List (NormalForm P)))

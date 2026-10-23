@@ -1,0 +1,6 @@
+{
+  "all_builds_sequential": true,
+  "complete_command_logs_exits_timings": true,
+  "failed_attempt": "First explore: all general proofs compiled; examples failed because omega saw an unfolded proof alias as a separate expression and List.mem_map_of_mem expects an implicit f argument. Corrected by explicit endpointSum expressions and (f := At.index).",
+  "production_sources_unchanged_after_final_verification": true
+}

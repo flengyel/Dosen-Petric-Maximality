@@ -111,3 +111,7 @@ public import DosenPetric.GentzenOppositeExchangeRank
 public import DosenPetric.GentzenExchangeCommutation
 public import DosenPetric.GentzenExchangeCommutationRank
 public import DosenPetric.GentzenExchangeCommutationExamples
+public import DosenPetric.GentzenOppositeContractionRank
+public import DosenPetric.GentzenContractionCommutation
+public import DosenPetric.GentzenContractionCommutationRank
+public import DosenPetric.GentzenContractionCommutationExamples

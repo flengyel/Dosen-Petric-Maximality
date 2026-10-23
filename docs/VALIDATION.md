@@ -1,3 +1,47 @@
+# W1 opposite-side contraction validation (current checkpoint)
+
+Clean main at `5c0a77f1e1ebf893e1aeda1fbb208f2a4a90e8de` agreed with fetched
+SSH origin. Actual strict baseline passed: 113 files / 4,850 audited declarations,
+exit 0, 3.423 seconds. Final sequential verification completed at
+2026-10-23T12:37:59.126131+00:00: **117 Lean files / 4,906 audited declarations**.
+Strict build/audit, both boundary scripts, manuscript SHA256SUMS and git diff
+--check exited 0. All five expected negative controls rejected with Lean exit 1
+and expected diagnostics. Public import closure passed. Only propext,
+Quot.sound and Classical.choice are permitted; 32 complete selected prints
+are retained, including wrapped lines.
+
+One exactly typed commuting pair and its symmetric equality compile, with
+independent n,m≥2, four selected endpoint equations L+n,L+1,R+1,R+m,
+both inner-rank inequalities and directed balances/decreases/other-side
+increases. The two-endpoint sum obeys S(outerL)+m=S(outerR)+n and is unchanged
+for equal arities. The actual 2/3 example increases S in the left-directed
+orientation. This is no general decreasing measure or unrestricted terminating
+bidirectional rewrite. Count/CutFree/Atomized and complete tagged relations
+are preserved with arbitrary P,C,D and f, including cuts. No new atomicity
+or coherence premise appears. General Reducibility/all-site decrease is open.
+
+Four modules / 47 explicit source declarations were added. Older DosenPetric
+modules, syntax/equations/predicates/predecessors/ranks, pinned Lean 4.35.0,
+Init-only dependencies, manifest, manuscript v4 and historical reports/access
+records are byte-preserved. The failed initial example compilation and its
+successful correction retain logs, exits and timings. Final verification
+followed the last proof changes; all heavy processes were sequential.
+
+Evidence: provenance/wsl-gentzen-w1-contraction/, including checked sources,
+complete control fixtures/logs, axiom prints and hash inventories. Current maps,
+README links and continuation distinguish the directed uses and wider open
+work. Author-side hostile and source-grounded writing reviews were applied
+to actual proofs and correspondence; they are not independent certification.
+Independent kernel/source replay, Challenge/Solution/Comparator, official
+preflight/service verification, manuscript recompilation/layout review,
+publication/license/visibility changes have not run. Post-commit source/ref/
+Downloads checks retain separate .codex-work/gentzen-w1-contraction/ receipts.
+See [the report](GENTZEN_W1_CONTRACTION_REPORT.md).
+
+---
+
+## Historical W1 exchange validation (unchanged evidence)
+
 # W1 opposite-side exchange validation (current checkpoint)
 
 Clean main at `0cee16207484a43a2759c87beb67e0ba5ebc00d1` agreed with fetched

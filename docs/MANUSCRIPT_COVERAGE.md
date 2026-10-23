@@ -77,6 +77,7 @@ definition is unchanged and can be adapted once that interpretation exists.
 | Typed Gentzen cluster/rank prerequisite (G2) | Independent parent routing and complete predecessor enumeration/classification; finite typed cluster root/edge/reachability/address proofs; all-node rho, exact contraction sums, strict child bounds and cut ranks compile for arbitrary P and proofs containing cuts. Reindex/cut-free/topmost specializations and tied-site characterizations compile. Blocked/reducibility transformations and decreasing elimination measures are open. |
 | Opposite-side W1 thinning | `W1.denoteL/R`, predicate/count/relation preservation, exact contraction loss n and whole selected-endpoint loss n−1 compile for arbitrary P and premises, including cuts. These are two local instances only; other W1 cases and all-site reducibility remain open. |
 | Opposite-side W1 exchange | `W1.Exchange` derives both commutations with Reduced equality, exact rank losses n/n−1, proof-predicate/count and tagged-relation preservation. Opposite-side predecessor is the exact same At singleton even for empty blocks. Only two local exchange instances are claimed; other W1 and all-site replacement remain open. |
+| Opposite-side W1 contractions | `W1.Contraction` constructs one pair, equal Reduced denotations and two directed rank comparisons. Four ranks L+n,L+1,R+1,R+m use independent arities and complete selected-copy sums. Each targeted decrease has an other-side increase; S(outerL)+m=S(outerR)+n. No global decrease/termination or all-site replacement is claimed. |
 | Positive-fragment coherence input | `PositiveCoherence P` quantifies only over positive raw terms and concludes equality in Reduced.Hom. `faithful_of_positive_coherence` is proved conditionally from that explicit, unsupplied premise. This does not supply Reduced.Faithful or Boolean Coherence. |
 | Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. Reduced faithfulness and its earlier positive-core coherence inputs are unproved. No complete `OccurrenceInterpretation` instance. Equality reflection and full red-equation preservation remain open. |
 | Normalization and occurrence correspondence | `Presentation.normalization` constructs the existing record for every P by simultaneous sign recursion and source n/r/rho arrows. Both inverse laws, inverse occurrence coordinates, both graph laws, literal/label/polarity correspondence, repeated-tag injectivity, Empty cases, and transport formulas compile. No coherence or arrow-negation premise. |
@@ -88,41 +89,43 @@ definition is unchanged and can be adapted once that interpretation exists.
 
 ## Next concrete proof task
 
-Atomic-k, clusters/rank, opposite-side W1 thinning and both opposite-side
-exchange commutations are complete. See [the exchange report](GENTZEN_W1_EXCHANGE_REPORT.md).
+Atomic-k, clusters/rank and opposite-side W1 thinning, exchange and contraction
+commutations are complete within their exact local scopes. See
+[the contraction report](GENTZEN_W1_CONTRACTION_REPORT.md).
 
-The next concrete unproved W1 instance is left contraction commuting with
-right contraction (p.251, γ = wR). Let C,D : NormalForm P,
-gs,hs : List (List (NormalForm P)), Θ,Λ : List (NormalForm P),
-hn : 2 ≤ gs.length and hm : 2 ≤ hs.length, with:
-
-```lean
-f : G P (repeated C gs ++ Θ) (repeated D hs ++ Λ)
-```
-
-Compare the existing-constructor terms:
+The next concrete unproved W1 case is left contraction commuting with right
+disjunction introduction (p.251, γ = ∨R), and the dual right contraction
+commuting with left conjunction introduction. For arbitrary A,B,C,
+gs, Θ,Δ,Λ and hn : 2 ≤ gs.length, take:
 
 ```lean
-G.contractL C gs Θ (gaps hs ++ D :: Λ) hn
-  (G.contractR (repeated C gs ++ Θ) D hs Λ hm f)
-G.contractR (gaps gs ++ C :: Θ) D hs Λ hm
-  (G.contractL C gs Θ (repeated D hs ++ Λ) hn f)
+f : G P (repeated C gs ++ Θ) (Δ ++ A :: B :: Λ)
 ```
 
-Both have type `G P (gaps gs ++ C :: Θ) (gaps hs ++ D :: Λ)`.
-Prove Reduced denotation equality, proof-property preservation, exact
-opposite-side predecessor/rank equations and the left selected-copy rank
-loss; then check the corresponding right-side local comparison. Opposite-side
-contraction has a singleton predecessor, although its own selected side
-branches. Do not deduce this from denotation equality.
+Compare:
 
-Other W1 cases, W2–W6, blocked-contraction transformations, replacement at
-arbitrary ProofAddress, all-site rank decrease, Reducibility, Blocked-w,
-the remainder of G2 and cut elimination remain open. Restricted positive
-coherence inputs, PositiveCoherence, Reduced.Faithful, Boolean Coherence and
-unconditional maximality remain separate/open. Existing conditional transfers
-are unchanged. An unfinished Lean proof of a cited theorem does not establish
-a defect in the manuscript.
+```lean
+G.contractL C gs Θ (Δ ++ .disj A B :: Λ) hn
+  (G.disjR (repeated C gs ++ Θ) Δ Λ A B f)
+G.disjR (gaps gs ++ C :: Θ) Δ Λ A B
+  (G.contractL C gs Θ (Δ ++ A :: B :: Λ) hn f)
+```
+
+Both have type `G P (gaps gs ++ C :: Θ) (Δ ++ .disj A B :: Λ)`.
+Prove Reduced denotation equality, proof-property preservation and the
+selected left rank equations using the unchanged-side singleton predecessor.
+For the dual use `f : G P (Γ ++ A :: B :: Θ) (repeated C gs ++ Λ)` and
+compare contractR(conjL f) with conjL(contractR f), at exactly
+`G P (Γ ++ .conj A B :: Θ) (gaps gs ++ C :: Λ)`.
+The logical principal formula on the changed side is a new whole-formula
+leaf; do not trace it into A/B or infer that side's rank from denotation.
+
+Other W1 cases, W2–W6, blocked-contraction transformations, arbitrary proof
+replacement/all-site decrease, Reducibility, Blocked-w, the rest of G2 and
+cut elimination remain open. Positive coherence inputs, PositiveCoherence,
+Reduced.Faithful, Boolean Coherence and unconditional maximality remain
+separate/open; reuse the existing conditional transfers. A missing Lean
+construction of a cited theorem does not by itself establish a manuscript defect.
 
 ## Verification boundary
 

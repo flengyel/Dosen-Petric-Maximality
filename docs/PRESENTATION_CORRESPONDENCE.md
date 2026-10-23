@@ -902,3 +902,39 @@ come from syntax and hold for empty blocks, never from denotation equality.
 Other W1 cases and all-site replacement/reducibility remain open. See
 [the exchange report](GENTZEN_W1_EXCHANGE_REPORT.md) for exact signatures,
 intermediate types, checked examples and evidence.
+
+## Opposite-side contraction instance of W1
+
+The consulted source is Došen–Petrić, *Proof-Theoretical Coherence*, September
+2007, [pinned PDF](https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf),
+SHA-256 `e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e`.
+Printed n corresponds to PDF page n+12, one-based. Printed pp.248–253 were
+consulted, with p.251 also inspected in rendering. Constant and atomic-zero
+extensions on pp.272–273 and 291–292 were checked against the existing
+syntax. Access artifacts/hashes are retained; historical access records are
+unchanged. No new source discrepancy was confirmed.
+
+| Source location | Precisely used construction / condition | Lean correspondence / proof |
+| --- | --- | --- |
+| §11.2 p.251, (W 1), γ = wR | Move a left contraction through an opposite-side right contraction: wL wR f = wR wL f, with independent selected-copy lists. | `W1.Contraction.innerL/innerR/outerL/outerR`; `denote` uses actual pre/postcomposition and Reduced.Laws.assoc, not Semilattice Coherence. |
+| §11.2 p.252, right-directed analogue of Reducibility | The same equality is used in reverse when targeting the right contraction. | `denote_reverse` is symmetry of denote; separate `right_directed_balance/decrease` prove the targeted right rank claim. No duplicate pair or arrow-negation construction. |
+| §11.2 p.248, parametric sequences / clusters | A contraction has one proof premise. A position on its opposite side has one predecessor; its own lower contraction position branches to all selected upper copies. | `G.predecessors_contractR_left/contractL_right`, `rho_contractR_left/contractL_right`; existing parent/fiber and complete contraction-sum APIs. |
+| §11.2 p.249, contraction rank; pp.251–252, directed rank requirement | Count all ancestry nodes, independently for the n selected left copies and m selected right copies. | `outerL_left/outerR_left/outerL_right/outerR_right`, inner-rank inequalities, two directed balances/decreases and named other-side increases. |
+| §11.2 p.253, multiset-ordering argument for Blocked-w | Later elimination concerns contractions tied to a chosen cut and all affected sites; the displayed two-rank sum is not a supplied decreasing measure. | Only `endpointSum_balance` and equality for equal arities are proved. No all-site replacement, multiset measure, Reducibility or Blocked-w result is claimed. |
+| §11.5 pp.272–273; §12.5 pp.291–292 | Constants have whole-formula positions; atomic-zero bases are permitted and thinnings retained. | Arbitrary C,D/f in the theorem, actual constantTop/constantBot at Empty P, unchanged zero grammar and witnessed-zero policy. No new zero-specific equation is needed. |
+
+The source's broader Semilattice Coherence appeal is not a Lean proof input.
+These local instances follow from existing categorical equations and typed
+ancestry. Context folds remain binary and explicitly typed; no strictification
+or relation-kernel quotient is introduced.
+
+With final selected positions x,y and inner ranks L,R, the exact table is:
+outerL(left,x)=L+n; outerR(left,x)=L+1; outerL(right,y)=R+1;
+outerR(right,y)=R+m. The left-directed move lowers left and raises right;
+the reverse targets right and raises left. Both have equal Reduced denotation,
+count/predicate preservation and complete tagged-relation equality.
+endpointSum_balance gives S(outerL)+m=S(outerR)+n, with equality at n=m;
+this is not a decreasing measure or unrestricted terminating rewrite system.
+No arbitrary-context/all-site decrease is inferred. See
+[the contraction report](GENTZEN_W1_CONTRACTION_REPORT.md) for exact signatures,
+selected-copy proofs, examples, commands and evidence.

@@ -21,6 +21,9 @@ are proved. These constructions do not establish occurrence faithfulness.
 Typed positive Gentzen syntax and existential representation with cuts,
 Atomic-k thinning atomization, finite ancestor clusters/rank, and the two
 opposite-side thinning and two opposite-side exchange instances of W1 compile.
+The opposite-side contraction commutation also compiles as one pair with two
+directed rank comparisons: each lowers its targeted side and raises the other.
+The sum of these endpoint ranks is not a general decreasing measure.
 The current stage is the remaining local contraction transformations toward
 cut elimination. General W1, W2–W6, blocked-contraction transformations,
 Reducibility, cut elimination, the positive coherence inputs, PositiveCoherence,
@@ -68,10 +71,12 @@ The unchanged v4 [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Categor
 and [PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.pdf)
 are preserved with [SHA-256 checksums](manuscript/SHA256SUMS).
 The [literature comparison](docs/LITERATURE_REVIEW.md) is bounded and makes no
-exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W1_EXCHANGE_HOSTILE.md)
-and [mathematical-writing review](docs/reviews/GENTZEN_W1_EXCHANGE_WRITING.md)
-cover the exchange checkpoint and its scope; they are not independent
-certification. The [exchange report](docs/GENTZEN_W1_EXCHANGE_REPORT.md),
+exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W1_CONTRACTION_HOSTILE.md)
+and [mathematical-writing review](docs/reviews/GENTZEN_W1_CONTRACTION_WRITING.md)
+cover the contraction checkpoint and its scope; they are not independent
+certification. The [contraction report](docs/GENTZEN_W1_CONTRACTION_REPORT.md),
+[preceding exchange report](docs/GENTZEN_W1_EXCHANGE_REPORT.md),
+[exchange review](docs/reviews/GENTZEN_W1_EXCHANGE_HOSTILE.md),
 [preceding thinning review](docs/reviews/GENTZEN_W1_THINNING_HOSTILE.md),
 [historical contextual-collapse review](docs/reviews/CONTEXTUAL_COLLAPSE_HOSTILE.md)
 and [initial review](docs/REVIEW.md) remain available.
