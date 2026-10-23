@@ -85,6 +85,16 @@ byte against that commit. No manuscript prose was edited by this checkpoint.
 All required checks were repeated on the integrated tree; their new results
 are the final verification record. The backup stash is retained locally.
 
+A later non-force push of the proved checkpoint f75bfb2399106f7570e75953354b1d0965769e29
+was rejected because SSH origin advanced again. The manuscript-only commits
+7ddaebb23da983f14cc04ad9e24d070e171f1aa6 and cfa37604e539dc85d854959b20aca752d06774ce
+were inspected and retained by clean merge c80d71f46e01afce4828c4d207e1c320533298ec.
+They update v5 literature comparisons/bibliography and its PDF/checksums, with
+no Lean-source change. All twenty changed/new upstream files were checked
+byte-for-byte against cfa3760; v4 and this checkpoint's proof bytes remain
+unchanged. Verification was repeated on this combined tree. This checkpoint
+does not re-certify the unrelated literature review or compile its manuscript.
+
 ## Source correspondence
 
 The directly consulted source is Došen–Petrić, *Proof-Theoretical Coherence*,
@@ -270,11 +280,11 @@ positions even when their literal-occurrence types are empty.
 | Command | Exit | Seconds | Log |
 | --- | --- | --- | --- |
 | `bash scripts/verify.sh` (baseline) | 0 | 3.918 | baseline.log |
-| `bash scripts/verify.sh` | 0 | 11.231 | strict.log |
-| `python3 scripts/check-audit-boundaries.py` | 0 | 12.885 | audit-boundaries.log |
-| `python3 scripts/check-presentation-boundaries.py` | 0 | 2.281 | presentation-boundaries.log |
-| `(cd manuscript && sha256sum -c SHA256SUMS)` | 0 | 0.03 | manuscript.log |
-| `git diff --check` | 0 | 0.025 | diff-check.log |
+| `bash scripts/verify.sh` | 0 | 4.127 | strict.log |
+| `python3 scripts/check-audit-boundaries.py` | 0 | 8.023 | audit-boundaries.log |
+| `python3 scripts/check-presentation-boundaries.py` | 0 | 1.108 | presentation-boundaries.log |
+| `(cd manuscript && sha256sum -c SHA256SUMS)` | 0 | 0.013 | manuscript.log |
+| `git diff --check` | 0 | 0.007 | diff-check.log |
 
 
 Final actual result: **162 Lean files / 6,310 audited project declarations**,
@@ -303,9 +313,9 @@ EVIDENCE_SHA256SUMS covers logs, failures, controls, access artifacts, complete
 signatures and boundary records. REPORT_SHA256SUMS and RECORD_SHA256SUMS cover
 final reports and current maps/README.
 
-- Strict log: `670c74b89fa1173ecdfdda6698ef230f08d04532a3e4c0ede7e49b82e3f48541`.
+- Strict log: `cfbc5d260b21eb9080c736e1f063ceea3763b4e57d614b07dfa9c1f45bacacaa`.
 - Checked source inventory: `fa060fac608c7f551d08ee2957cfb13e8eb674b40aa71ce7843a2566792dba13`.
-- Evidence inventory: `56addc2e809764a55e92c9852470070efbe98c4f63bbe4e5ad10b2536fec0908`.
+- Evidence inventory: `68284d3796c9cb02f4c776c8291b9930516a6534f00d39bb7f03c4b69cf2a09c`.
 
 Baseline, checked working sources and final committed bytes are distinct.
 Post-commit source/evidence checks, live SSH ref agreement and byte-for-byte

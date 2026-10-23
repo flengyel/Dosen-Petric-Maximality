@@ -87,5 +87,127 @@
     "seconds": 0.004662731,
     "timing_source": "exec_command wall_time_seconds",
     "diagnostic": "README content conflict; MANUSCRIPT_STATEMENTS auto-merged; resolved retaining both upstream and task content"
+  },
+  "second_integration": {
+    "remote_commits": [
+      "7ddaebb23da983f14cc04ad9e24d070e171f1aa6",
+      "cfa37604e539dc85d854959b20aca752d06774ce"
+    ],
+    "merge": "c80d71f46e01afce4828c4d207e1c320533298ec",
+    "push_rejection": {
+      "command": [
+        "git",
+        "push",
+        "origin",
+        "main"
+      ],
+      "exit_status": 1,
+      "seconds": 0.987640041,
+      "diagnostic": "rejected: fetch first; remote advanced",
+      "force": false
+    },
+    "upstream_files_preserved": [
+      {
+        "path": "docs/LITERATURE_REVIEW_V5_2026-10-23.md",
+        "sha256": "8651b9542af9aa125c0acca79321d748309aca699ac84f02c178f84afc4a93df",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "docs/PRIOR_ART_UPDATE_V5.md",
+        "sha256": "7454a3d02e30f685d2574bb34d7f412e2f09b7843b89916a3a1b474b0d9c70ad",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "docs/V5_VALIDATION.md",
+        "sha256": "61959d612ebe98d3663e15447ea5f5bf894a41431f78791065a18dd0e8d35b52",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "docs/reviews/V5_HOSTILE_REVIEW.md",
+        "sha256": "f4499d50058367ced1bd83b27c50608731ab853260e7956168dc84f3af7ff341",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "docs/reviews/V5_WRITING_REVIEW.md",
+        "sha256": "833a4acce76d59871a1c5e194fc0ce8b319a57f3f27ec550736df7e611ac7307",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.pdf",
+        "sha256": "482b75840f70d9808ecc213dbb66cc8ec19a277ad2d14e859375aae449537906",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex",
+        "sha256": "1e828807a1351be5aba3d446a6e275c6699d23c9fbdde73ea0d121fac054e2e2",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "manuscript/SHA256SUMS",
+        "sha256": "85b96a6f2a723a194f7bfabd26a975fb459d0f54c2f45a0f45142b8b6c28efbc",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "provenance/manuscript-v5-prior-art/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.log",
+        "sha256": "68617f9ab22d6f97065e16827bcc7b5a6dca5c99c52b47df54109ea7d8565354",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "provenance/manuscript-v5-prior-art/SHA256SUMS",
+        "sha256": "dd345623ca9c8975eec866a7470e8e2271a9eaa4fa9c4a8dfaf90485fb42f141",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "provenance/manuscript-v5-prior-art/commands.json",
+        "sha256": "ae60e34bc42409c513613b32fb3afd76ca495f4dbf877a88a289756d28dcc2ae",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "provenance/manuscript-v5-prior-art/pdflatex-pass-1.log",
+        "sha256": "d22a5f7cd399c092da45d95b89e109e1f25c4b3fe89a12afee672b3e9da2a697",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "provenance/manuscript-v5-prior-art/pdflatex-pass-2.log",
+        "sha256": "1316f04cbf52d90024f3ebf4a312ad389118107acc1b698fa2852445e97c277e",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "provenance/manuscript-v5-prior-art/prior-art.patch",
+        "sha256": "f402a1beda1e593476c45d71a4cc24ae60709d7a436c4303bfbecc724b5a4ce5",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "provenance/manuscript-v5-url/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.log",
+        "sha256": "e866780f77194df5aa923c5a799d69bac2995222177f6e930c5ef052bf15dd24",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "provenance/manuscript-v5-url/SHA256SUMS",
+        "sha256": "f5b3fe4d373fc058bac3f6193d2254a03578770106ac79e1304dd7186ad87256",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "provenance/manuscript-v5-url/commands.json",
+        "sha256": "5dec5977d7b226890638123b1165c890e01ab1b07967c9fe25ad8bd86e099e70",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "provenance/manuscript-v5-url/pass-1.log",
+        "sha256": "4a57e5724ae559b57c32c051249e880c81640b81eb55f9026d3abd1e7d4e903f",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "provenance/manuscript-v5-url/pass-2.log",
+        "sha256": "4a57e5724ae559b57c32c051249e880c81640b81eb55f9026d3abd1e7d4e903f",
+        "bytes_equal_to_upstream": true
+      },
+      {
+        "path": "provenance/manuscript-v5-url/url.patch",
+        "sha256": "8fe4e03c2ff884bf6deafdd923938b3ebbb0f357bff9ae7e13065b991fe52122",
+        "bytes_equal_to_upstream": true
+      }
+    ],
+    "no_lean_source_change": true
   }
 }

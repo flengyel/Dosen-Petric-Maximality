@@ -102,6 +102,16 @@ byte against that commit. No manuscript prose was edited by this checkpoint.
 All required checks were repeated on the integrated tree; their new results
 are the final verification record. The backup stash is retained locally.
 
+A later non-force push of the proved checkpoint f75bfb2399106f7570e75953354b1d0965769e29
+was rejected because SSH origin advanced again. The manuscript-only commits
+7ddaebb23da983f14cc04ad9e24d070e171f1aa6 and cfa37604e539dc85d854959b20aca752d06774ce
+were inspected and retained by clean merge c80d71f46e01afce4828c4d207e1c320533298ec.
+They update v5 literature comparisons/bibliography and its PDF/checksums, with
+no Lean-source change. All twenty changed/new upstream files were checked
+byte-for-byte against cfa3760; v4 and this checkpoint's proof bytes remain
+unchanged. Verification was repeated on this combined tree. This checkpoint
+does not re-certify the unrelated literature review or compile its manuscript.
+
 ## (E) Acceptance conditions, non-negotiable
 
 Failure rejects the corresponding completion claim:
