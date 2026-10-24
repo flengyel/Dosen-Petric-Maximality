@@ -1,0 +1,38 @@
+✖ [129/130] Building DosenPetric.GentzenSelectedLogicalData (3.9s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectedLogicalData.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedLogicalData.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedLogicalData.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedLogicalData.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedLogicalData.setup.json --json
+error: DosenPetric/GentzenSelectedLogicalData.lean:70:60: This simp argument is unused:
+  Nat.not_lt_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [copyIndex, gaps, List.append_nil, List.length_nil, ite_false, Nat.zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectedLogicalData.lean:70:76: This simp argument is unused:
+  ite_false
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [copyIndex, gaps, List.append_nil, List.length_nil, Nat.not_lt_zero, Nat.zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectedLogicalData.lean:70:86: This simp argument is unused:
+  Nat.zero_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [copyIndex, gaps, List.append_nil, List.length_nil, Nat.not_lt_zero, ite_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectedLogicalData.lean:100:11: unsolved goals
+case inr.here
+P : Type u
+o : Op
+d : Data P o
+⊢ none = Option.map d.last.route.get none
+error: DosenPetric/GentzenSelectedLogicalData.lean:103:13: unsolved goals
+case inr.there.here
+P : Type u
+o : Op
+d : Data P o
+⊢ none = Option.map d.last.route.get none
+Some required targets logged failures:
+- DosenPetric.GentzenSelectedLogicalData
+error: build failed

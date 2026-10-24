@@ -1,0 +1,111 @@
+✔ [133/135] Built DosenPetric.GentzenSelectedLogicalComponents (1.5s)
+✔ [134/135] Built DosenPetric.GentzenSelectedLogicalRules (1.5s)
+✖ [135/135] Building DosenPetric.GentzenSelectedLogicalRanks (1.5s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectedLogicalRanks.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedLogicalRanks.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedLogicalRanks.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedLogicalRanks.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedLogicalRanks.setup.json --json
+error: DosenPetric/GentzenSelectedLogicalRanks.lean:79:2: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 1
+  b - c ≤ 2
+  a ≥ 2
+where
+ a := ↑d.gs.length
+ b := ↑((newL d hn Δ f).rho SequentSide.left d.x)
+ c := ↑(rankInnerL d hn Δ f)
+error: DosenPetric/GentzenSelectedLogicalRanks.lean:76:13: This simp argument is unused:
+  List.map_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_nil, List.sum_cons, List.sum_nil, middle_retainedL, middle_principalL] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectedLogicalRanks.lean:76:27: This simp argument is unused:
+  List.map_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_cons, List.sum_cons, List.sum_nil, middle_retainedL, middle_principalL] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectedLogicalRanks.lean:76:40: This simp argument is unused:
+  List.sum_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_cons, List.map_nil, List.sum_nil, middle_retainedL, middle_principalL] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectedLogicalRanks.lean:76:54: This simp argument is unused:
+  List.sum_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_cons, List.map_nil, List.sum_cons, middle_retainedL, middle_principalL] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectedLogicalRanks.lean:77:4: This simp argument is unused:
+  middle_retainedL
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_cons, List.map_nil, List.sum_cons, List.sum_nil, middle_principalL] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectedLogicalRanks.lean:77:21: This simp argument is unused:
+  middle_principalL
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_cons, List.map_nil, List.sum_cons, List.sum_nil, middle_retainedL] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectedLogicalRanks.lean:166:2: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 1
+  b - c ≤ 2
+  a ≥ 2
+where
+ a := ↑d.gs.length
+ b := ↑((newR d hn Γ f).rho SequentSide.right d.x)
+ c := ↑(rankInnerR d hn Γ f)
+error: DosenPetric/GentzenSelectedLogicalRanks.lean:163:13: This simp argument is unused:
+  List.map_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_nil, List.sum_cons, List.sum_nil, middle_retainedR, middle_principalR] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectedLogicalRanks.lean:163:27: This simp argument is unused:
+  List.map_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_cons, List.sum_cons, List.sum_nil, middle_retainedR, middle_principalR] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectedLogicalRanks.lean:163:40: This simp argument is unused:
+  List.sum_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_cons, List.map_nil, List.sum_nil, middle_retainedR, middle_principalR] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectedLogicalRanks.lean:163:54: This simp argument is unused:
+  List.sum_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_cons, List.map_nil, List.sum_cons, middle_retainedR, middle_principalR] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectedLogicalRanks.lean:164:4: This simp argument is unused:
+  middle_retainedR
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_cons, List.map_nil, List.sum_cons, List.sum_nil, middle_principalR] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectedLogicalRanks.lean:164:21: This simp argument is unused:
+  middle_principalR
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_cons, List.map_nil, List.sum_cons, List.sum_nil, middle_retainedR] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- DosenPetric.GentzenSelectedLogicalRanks
+error: build failed

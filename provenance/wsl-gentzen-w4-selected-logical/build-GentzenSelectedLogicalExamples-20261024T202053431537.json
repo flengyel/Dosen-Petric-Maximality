@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-24T20:21:08.302069+00:00",
+  "checks": [
+    {
+      "name": "build-GentzenSelectedLogicalExamples",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenSelectedLogicalExamples"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 14.87,
+      "log": ".codex-work/gentzen-w4-selected-logical/build-GentzenSelectedLogicalExamples-20261024T202053431537.log",
+      "log_sha256": "f51b6537ba2a445b00991a5370f14e8011a4932d6b0d1d262f67bc8c5abc4cee"
+    }
+  ]
+}

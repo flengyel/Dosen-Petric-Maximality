@@ -1,0 +1,29 @@
+Terminal selected-thinning W2 and its right dual are complete. See
+[the W2 report](GENTZEN_W2_SELECTED_THINNING_REPORT.md).
+
+Next prove source W4 terminal logical introduction selected by contraction,
+and its right dual. On the left C=conj A B, n=gs.length≥2, put
+F=(repeated C gs++Θ)++[A,B], U=(repeated C gs++Θ)++[C] and
+K=(gaps gs++Θ)++[C]. Old applies terminal conjL then contracts all n+1
+selected C positions. New contracts the n original C positions on f, applies
+terminal conjL and then contracts the retained and new principal C positions
+with two gaps [gaps gs,Θ]. Prove actual casts and equations at G P K Δ.
+On the right use C=disj A B and actual disjR/contractR at G P Γ K.
+
+Logical ancestry consumes both A/B slots. Prove the partial positional and
+component calculations, complete selected/fixed fibers, exact preservation
+and inhabited examples. No total whole-formula A/B→C parent map is available.
+If LC is the new inner n-ary contraction rank, target old outer/end rank
+LC+n+1 and new final retained rank LC+3. The source comparison is to the
+new inner rank LC; the n=2 final-endpoint tie must not be hidden. Other fixed
+positions target old 2+rho and new 3+rho. Both Atomized predicates should
+equal f.Atomized, without W2's atomicity condition. These are next proof
+targets, not completed W4 claims. The concrete continuation is
+[CODEX_W4_SELECTED_LOGICAL.txt](CODEX_W4_SELECTED_LOGICAL.txt).
+
+Disjoint interleaving, remaining exchange/W1/W2/W4–W6 cases, arbitrary-context
+replacement, Reducibility, Blocked-w, cut elimination, restricted coherence
+inputs, PositiveCoherence, Reduced.Faithful, Boolean Coherence, unconditional
+maximality and Palomar preparation remain separate/open. Existing conditional
+transfers and the three milestone boundaries are unchanged. An unfinished
+reconstruction of published results does not establish a manuscript defect.

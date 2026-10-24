@@ -1,3 +1,49 @@
+# W4 terminal selected-logical validation (current checkpoint)
+
+Clean main b89167f7b9d37476464d5826f06dd9de2ffb3d9a matched fetched SSH
+origin. Strict baseline: 185 files / 7,299 declarations, exit 0, 9.950s.
+Final sequential checks completed at 2026-10-24T20:23:08.140343+00:00:
+**192 source files / 7,543 audited declarations**, an increase of 244.
+Strict build/transitive audit: exit 0, 4.020s; audit boundaries: exit 0,
+9.940s; presentation boundaries: exit 0, 2.335s; manuscript checksums:
+exit 0, 0.023s. Both whitespace checks pass. All five controls reject with
+expected diagnostics and Lean exit 1. Public import closure passes. Only
+propext, Quot.sound and Classical.choice are permitted. Exact type queries
+pass in 2.133s; 134 selected axiom prints supplement full transitive collection.
+
+Seven new modules construct terminal selected logical introduction and its
+right dual from original A,B,gs,Θ, n≥2 and existing premises at exact K.
+Actual partial ancestry consumes both slots; complete ordered selected
+survival/transport, principal/retained/fixed fibers and both consumed component
+calculations give Reduced equality without coherence/reflection.
+Old outer rank LC+n+1 versus new inner LC gives strict loss n+1.
+New final retained LC+3 gives n=2 tie and n≥3 decrease; other fixed ranks
+increase one. Counts/CutFree/Atomized/full tagged relations are preserved.
+Actual Empty constants, compounds, equal labels, ties/increases and signed
+cut-containing examples compile; compound logical principals need no atomicity.
+
+All older modules/interfaces, Lean 4.35.0 Init-only dependencies/manifest,
+AGENTS, manuscript v4/v5, diagrams, references/checksums, historical reports/
+access records, other checkouts and integration stash are preserved.
+Existing Lean edits only add root imports/axiom prints. Failures remain
+retained; no target/source equation/heartbeat limit was weakened.
+Final example build command passes in 14.161s.
+
+Heavy checks were sequential after the final proof edit. Evidence:
+provenance/wsl-gentzen-w4-selected-logical/ and matching .codex-work/.
+Author-side hostile/source-grounded writing reviews inspect actual proofs/maps;
+committed-source/ref/Downloads comparisons have separate receipts.
+Independent source/kernel replay, Challenge/Solution/Comparator, official
+preflight/service, fresh manuscript layout/compilation, publication, licensing
+and visibility changes did not run. Single-premise mix W5 is next; broader
+local cases, all-site replacement, Reducibility, Blocked-w, elimination,
+coherence and unconditional maximality stay open.
+See [the W4 report](GENTZEN_W4_SELECTED_LOGICAL_REPORT.md).
+
+---
+
+## Historical W2 selected-thinning validation (unchanged evidence)
+
 # W2 terminal selected-thinning validation (current checkpoint)
 
 Clean main 31922370e7ce5ffa0286a88e8cffe6e232aa824f matched fetched SSH origin.

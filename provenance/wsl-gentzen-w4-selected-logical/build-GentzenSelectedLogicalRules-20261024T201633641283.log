@@ -1,0 +1,34 @@
+✔ [130/131] Built DosenPetric.GentzenSelectedLogicalComponents (2.5s)
+✖ [131/131] Building DosenPetric.GentzenSelectedLogicalRules (2.6s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectedLogicalRules.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedLogicalRules.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedLogicalRules.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedLogicalRules.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedLogicalRules.setup.json --json
+error: DosenPetric/GentzenSelectedLogicalRules.lean:34:62: unsolved goals
+P : Type u
+d : SelectedLogical.Data P Op.conj
+hn : 2 ≤ d.gs.length
+Δ : List (NormalForm P)
+f : G P d.F Δ
+⊢ (d.inner.applyL hn Δ f).cutCount = f.cutCount
+error: DosenPetric/GentzenSelectedLogicalRules.lean:42:65: unsolved goals
+P : Type u
+d : SelectedLogical.Data P Op.conj
+hn : 2 ≤ d.gs.length
+Δ : List (NormalForm P)
+f : G P d.F Δ
+⊢ (d.inner.applyL hn Δ f).Atomized ↔ f.Atomized
+error: DosenPetric/GentzenSelectedLogicalRules.lean:70:62: unsolved goals
+P : Type u
+d : SelectedLogical.Data P Op.disj
+hn : 2 ≤ d.gs.length
+Γ : List (NormalForm P)
+f : G P Γ d.F
+⊢ (d.inner.applyR hn Γ f).cutCount = f.cutCount
+error: DosenPetric/GentzenSelectedLogicalRules.lean:78:65: unsolved goals
+P : Type u
+d : SelectedLogical.Data P Op.disj
+hn : 2 ≤ d.gs.length
+Γ : List (NormalForm P)
+f : G P Γ d.F
+⊢ (d.inner.applyR hn Γ f).Atomized ↔ f.Atomized
+Some required targets logged failures:
+- DosenPetric.GentzenSelectedLogicalRules
+error: build failed

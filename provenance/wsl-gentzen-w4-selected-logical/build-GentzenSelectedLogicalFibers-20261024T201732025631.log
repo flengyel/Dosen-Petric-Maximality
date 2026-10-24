@@ -1,0 +1,98 @@
+✖ [130/130] Building DosenPetric.GentzenSelectedLogicalFibers (1.2s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectedLogicalFibers.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedLogicalFibers.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedLogicalFibers.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedLogicalFibers.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedLogicalFibers.setup.json --json
+error: DosenPetric/GentzenSelectedLogicalFibers.lean:16:43: Type mismatch
+  partial_square d a
+has type
+  Option.map d.outer.route.get (d.uParent a) = Option.map d.last.route.get (d.iParent (d.inner.route.get a))
+but is expected to have type
+  d.oldTrace.get a = d.newTrace.get a
+error: DosenPetric/GentzenSelectedLogicalFibers.lean:39:23: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?m.40 ∈ List.map ?m.41 ?m.42
+in the target expression
+  a.before [d.A, d.B] ∈ List.map (fun a => a.before [d.A, d.B]) d.s.inner.selected ↔ a ∈ d.s.inner.selected
+
+P : Type u
+o : Op
+d : Data P o
+a : At d.s.F d.C
+⊢ a.before [d.A, d.B] ∈ List.map (fun a => a.before [d.A, d.B]) d.s.inner.selected ↔ a ∈ d.s.inner.selected
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    List.instMembership
+  has type
+    Membership (At d.F d.inner.C) (List (At d.F d.inner.C))
+  but is expected to have type
+    Membership (At (d.s.F ++ [d.A, d.B]) d.C) (List (At d.F d.inner.C))
+  in the application
+    @Membership.mem (At (d.s.F ++ [d.A, d.B]) d.C) (List (At d.F d.inner.C)) List.instMembership
+error: DosenPetric/GentzenSelectedLogicalFibers.lean:50:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?y ∈ TraceRoute.fiber ?x ?w
+in the target expression
+  a ∈ TraceRoute.fiber d.x d.oldTrace ↔ a ∈ d.inner.selected
+
+P : Type u
+o : Op
+d : Data P o
+a : At d.F d.inner.C
+⊢ a ∈ TraceRoute.fiber d.x d.oldTrace ↔ a ∈ d.inner.selected
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    d.x
+  has type
+    @At P d.K d.outer.C
+  but is expected to have type
+    @At P d.K d.inner.C
+  in the application
+    @TraceRoute.fiber P d.K d.inner.C d.x
+error: DosenPetric/GentzenSelectedLogicalFibers.lean:80:47: Application type mismatch: The argument
+  ha
+has type
+  (TraceRoute.ofMap d.U d.F fun {A} => d.uParent).get a = some d.s.z
+but is expected to have type
+  d.uParent a = some d.s.z
+in the application
+  parent_original d a d.s.z ha
+error: DosenPetric/GentzenSelectedLogicalFibers.lean:101:2: Type mismatch
+  congrArg (fun a => ?m.56) (ContractionBlock.fixed_get d.s.inner ?m.65 ?m.66)
+has type
+  @Eq (At (d.s.I ++ [d.A, d.B]) ?m.70) (?m.57 (d.s.inner.route.get (d.s.inner.fixed ?m.65 ?m.66))) (?m.57 ?m.65)
+but is expected to have type
+  @Eq (At d.I E) ((d.s.inner.route.get (d.s.original z hz)).before [d.A, d.B]) ((d.s.back z).before [d.A, d.B])
+error: DosenPetric/GentzenSelectedLogicalFibers.lean:111:62: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (At.before ?a ?Δ).index
+in the target expression
+  (d.s.back z).index ≠ (d.s.inner.keep.before [d.A, d.B]).index
+
+P : Type u
+o : Op
+d : Data P o
+E : NormalForm P
+z : At d.K E
+hz : z.index ≠ d.x.index
+⊢ (d.s.back z).index ≠ (d.s.inner.keep.before [d.A, d.B]).index
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    d.s.inner.keep.before [d.A, d.B]
+  has type
+    @At P (d.s.I ++ [d.A, d.B]) d.s.inner.C
+  but is expected to have type
+    @At P d.I d.inner.C
+  in the application
+    (d.s.inner.keep.before [d.A, d.B]).index
+error: DosenPetric/GentzenSelectedLogicalFibers.lean:120:4: 'change' tactic failed, pattern
+  Option.map d.outer.route.get (d.uParent a) = some z
+is not definitionally equal to target
+  d.oldTrace.get a = some z
+error: DosenPetric/GentzenSelectedLogicalFibers.lean:131:4: 'change' tactic failed, pattern
+  Option.map d.outer.route.get (d.uParent (d.original z hz)) = some z
+is not definitionally equal to target
+  d.oldTrace.get (d.original z hz) = some z
+Some required targets logged failures:
+- DosenPetric.GentzenSelectedLogicalFibers
+error: build failed

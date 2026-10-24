@@ -1230,8 +1230,49 @@ counterexamples rule out an unconditional reverse predicate implication.
 Actual Empty P constants, equal-tag calculations and signed cuts compile.
 See [the W2 report](GENTZEN_W2_SELECTED_THINNING_REPORT.md) and both reviews.
 
-Next prove W4 terminal selected logical introduction and its right dual,
-as specified in [the continuation](CODEX_W4_SELECTED_LOGICAL.txt). Its proposed
-rank table has an n=2 endpoint tie; no W4 proof is claimed here. Remaining
-local cases, arbitrary-context replacement, Reducibility, Blocked-w, cut
-elimination, coherence and unconditional maximality remain separate/open.
+Terminal selected-logical W4 and its right dual are now proved below,
+including the n=2 endpoint tie and fixed-position increases. Remaining local
+cases, arbitrary-context replacement, Reducibility, Blocked-w, cut elimination,
+coherence and unconditional maximality remain separate/open.
+
+
+## Terminal selected logical introduction (W4)
+
+The same hash-verified September 2007 source was consulted at §11.2,
+printed pp.248–253/PDF pp.260–265, with p.251 inspected in rendering.
+No new discrepancy is asserted. Source-access material:
+`provenance/wsl-gentzen-w4-selected-logical/source-access/`.
+
+| Source location | Exact correspondence | Actual Lean proof |
+| --- | --- | --- |
+| p.251 W4 | Selected terminal logical principal; inner n-copy contraction, introduction, final two-copy contraction. | SelectedLogical.Data and W4.SelectedLogical.terminal_left. |
+| p.250 (w ∧ 1), p.251 W4 | Final contraction selects retained and principal C at gaps [gaps gs,Θ]. | Actual last block/constructors and last_selected=[k,q]; local shape only, no general Blocked-w input. |
+| pp.248–249 ancestry | Both A/B slots consumed, every original selected C survives. | partial_square, selected_survives/transport, both principal empty fibers, full retained/fixed fibers. |
+| p.251 source rank comparison | New inner rank is below old outer by n+1. | selected_sumL/R, contraction_lossL/R and strictness. |
+| p.252 right analogue | Actual disjR/contractR, without arrow negation. | Separately typed terminal_right, coproduct_square, ranks and preservation. |
+
+For C=conj A B on the left or disj A B on the right, set
+R=repeated C gs++Θ, S=gaps gs++C::Θ, F=R++[A,B], I=S++[A,B],
+U=R++[C], J=S++[C], K=(gaps gs++Θ)++[C]. Original A,B,gs,Θ,
+n≥2 and existing f give actual outputs G P K Δ / G P Γ K. No atomicity,
+freshness, nonempty P, DecidableEq or coherence premise. The positional W2
+facts are reused without replacing logical introduction by thinning.
+
+Complete ordered selections have lengths n/n+1/two at the three contractions.
+Both original partial retained fibers have n entries; every other final
+position has a computed common original and complete singleton fibers.
+The partial whole-formula square is supplemented by both consumed categorical
+components before universal extensionality. Product paths are ante K→ante F;
+coproduct paths succ F→succ K, in the original Reduced category.
+
+Old outer rank=LC+n+1, new inner=LC, new final retained=LC+3.
+Final rank ties for n=2 and decreases for n≥3. Every other fixed same-side
+rank increases from 2+rho to 3+rho. Counts, CutFree/Atomized and complete
+tagged relations are preserved. Compound principals need no atomicity condition.
+Inhabited Empty/compound/equal-tag/tie/increase/signed-cut examples compile.
+See [the W4 report](GENTZEN_W4_SELECTED_LOGICAL_REPORT.md) and reviews.
+
+Next prove [single-premise mix W5](CODEX_W5_SINGLE_PREMISE_MIX.txt), keeping
+actual G.mix argument/context order. Other local cases, arbitrary-context
+replacement, Reducibility, Blocked-w, cut elimination, coherence and
+unconditional maximality remain separate/open.

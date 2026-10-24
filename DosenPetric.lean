@@ -183,3 +183,10 @@ public import DosenPetric.GentzenSelectedThinningFibers
 public import DosenPetric.GentzenSelectedThinningRules
 public import DosenPetric.GentzenSelectedThinningRanks
 public import DosenPetric.GentzenSelectedThinningExamples
+public import DosenPetric.GentzenContractionAppend
+public import DosenPetric.GentzenSelectedLogicalData
+public import DosenPetric.GentzenSelectedLogicalComponents
+public import DosenPetric.GentzenSelectedLogicalFibers
+public import DosenPetric.GentzenSelectedLogicalRules
+public import DosenPetric.GentzenSelectedLogicalRanks
+public import DosenPetric.GentzenSelectedLogicalExamples

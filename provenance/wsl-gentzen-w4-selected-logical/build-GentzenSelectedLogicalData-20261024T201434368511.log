@@ -1,0 +1,18 @@
+✖ [128/129] Building DosenPetric.GentzenContractionAppend (1.3s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenContractionAppend.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionAppend.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionAppend.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionAppend.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionAppend.setup.json --json
+error: DosenPetric/GentzenContractionAppend.lean:60:93: unsolved goals
+P : Type u
+F K : List (NormalForm P)
+d : ContractionBlock P F K
+Ξ : List (NormalForm P)
+⊢ List.map (At.index ∘ fun a => a.before Ξ) d.selected = List.map At.index d.selected
+error: DosenPetric/GentzenContractionAppend.lean:61:28: This simp argument is unused:
+  At.index_before
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_map]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- DosenPetric.GentzenContractionAppend
+error: build failed

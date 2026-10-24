@@ -1,0 +1,44 @@
+✔ [129/130] Built DosenPetric.GentzenSelectedLogicalData (2.5s)
+✖ [130/130] Building DosenPetric.GentzenSelectedLogicalComponents (1.1s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectedLogicalComponents.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedLogicalComponents.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedLogicalComponents.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedLogicalComponents.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedLogicalComponents.setup.json --json
+error: DosenPetric/GentzenSelectedLogicalComponents.lean:33:18: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (side ?m.374 ?o).comp (logicalSide ?o ?Γ ?Θ ?A ?B) (component ?o (At.shift ?Γ (At.here ?A (?B :: ?Θ))))
+in the target expression
+  C.comp (Route.sideArrow o d.outer.route) (C.comp (logicalSide o d.s.F [] d.A d.B) (component o d.a)) =
+    C.comp
+      (C.comp (C.comp (Route.sideArrow o d.last.route) (logicalSide o d.s.I [] d.A d.B))
+        (Route.sideArrow o d.inner.route))
+      (component o d.a)
+
+case inr.here
+P : Type u
+o : Op
+d : Data P o
+C : Category (NormalForm P) := side P o
+⊢ C.comp (Route.sideArrow o d.outer.route) (C.comp (logicalSide o d.s.F [] d.A d.B) (component o d.a)) =
+    C.comp
+      (C.comp (C.comp (Route.sideArrow o d.last.route) (logicalSide o d.s.I [] d.A d.B))
+        (Route.sideArrow o d.inner.route))
+      (component o d.a)
+error: DosenPetric/GentzenSelectedLogicalComponents.lean:43:20: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (side ?m.582 ?o).comp (logicalSide ?o ?Γ ?Θ ?A ?B) (component ?o (At.shift ?Γ (At.here ?B ?Θ).there))
+in the target expression
+  C.comp (Route.sideArrow o d.outer.route) (C.comp (logicalSide o d.s.F [] d.A d.B) (component o d.b)) =
+    C.comp
+      (C.comp (C.comp (Route.sideArrow o d.last.route) (logicalSide o d.s.I [] d.A d.B))
+        (Route.sideArrow o d.inner.route))
+      (component o d.b)
+
+case inr.there.here
+P : Type u
+o : Op
+d : Data P o
+C : Category (NormalForm P) := side P o
+⊢ C.comp (Route.sideArrow o d.outer.route) (C.comp (logicalSide o d.s.F [] d.A d.B) (component o d.b)) =
+    C.comp
+      (C.comp (C.comp (Route.sideArrow o d.last.route) (logicalSide o d.s.I [] d.A d.B))
+        (Route.sideArrow o d.inner.route))
+      (component o d.b)
+Some required targets logged failures:
+- DosenPetric.GentzenSelectedLogicalComponents
+error: build failed

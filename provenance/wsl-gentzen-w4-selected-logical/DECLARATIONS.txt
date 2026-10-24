@@ -1,0 +1,563 @@
+DosenPetric/GentzenContractionAppend.lean:12 DosenPetric.Reduced.Gentzen.At.list_index_injective
+theorem list_index_injective {Γ : List (NormalForm P)} {A : NormalForm P}
+
+DosenPetric/GentzenContractionAppend.lean:27 DosenPetric.Reduced.Gentzen.ContractionBlock.extend
+abbrev extend (Ξ : List (NormalForm P)) : ContractionBlock P (F++Ξ) (K++Ξ) where
+
+DosenPetric/GentzenContractionAppend.lean:34 DosenPetric.Reduced.Gentzen.ContractionBlock.extend_before
+theorem extend_before (Ξ : List (NormalForm P)) {A : NormalForm P} (a : At F A) :
+
+DosenPetric/GentzenContractionAppend.lean:39 DosenPetric.Reduced.Gentzen.ContractionBlock.extend_shift
+theorem extend_shift (Ξ : List (NormalForm P)) {A : NormalForm P} (a : At Ξ A) :
+
+DosenPetric/GentzenContractionAppend.lean:53 DosenPetric.Reduced.Gentzen.ContractionBlock.extend_keep
+theorem extend_keep (Ξ : List (NormalForm P)) : (d.extend Ξ).keep = d.keep.before Ξ := by
+
+DosenPetric/GentzenContractionAppend.lean:57 DosenPetric.Reduced.Gentzen.ContractionBlock.extend_selected
+theorem extend_selected (Ξ : List (NormalForm P)) :
+
+DosenPetric/GentzenSelectedLogicalData.lean:11 DosenPetric.Reduced.Gentzen.SelectedLogical.Data
+structure Data (P : Type u) (o : Op) where
+
+DosenPetric/GentzenSelectedLogicalData.lean:19 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.C
+abbrev C := o.formula d.A d.B
+
+DosenPetric/GentzenSelectedLogicalData.lean:20 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.s
+abbrev s : SelectedThinning.Data P := ⟨d.C,d.gs,d.Θ⟩
+
+DosenPetric/GentzenSelectedLogicalData.lean:21 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.F
+abbrev F := d.s.F++[d.A,d.B]
+
+DosenPetric/GentzenSelectedLogicalData.lean:22 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.I
+abbrev I := d.s.I++[d.A,d.B]
+
+DosenPetric/GentzenSelectedLogicalData.lean:23 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.U
+abbrev U := d.s.U
+
+DosenPetric/GentzenSelectedLogicalData.lean:24 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.J
+abbrev J := d.s.I++[d.C]
+
+DosenPetric/GentzenSelectedLogicalData.lean:25 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.K
+abbrev K := d.s.K
+
+DosenPetric/GentzenSelectedLogicalData.lean:26 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner
+abbrev inner : ContractionBlock P d.F d.I := d.s.inner.extend [d.A,d.B]
+
+DosenPetric/GentzenSelectedLogicalData.lean:27 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.outer
+abbrev outer : ContractionBlock P d.U d.K := d.s.outer
+
+DosenPetric/GentzenSelectedLogicalData.lean:29 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.lastSource
+theorem lastSource : repeated d.C [gaps d.gs,d.Θ]++[] = d.J := by
+
+DosenPetric/GentzenSelectedLogicalData.lean:31 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.lastTarget
+theorem lastTarget : gaps [gaps d.gs,d.Θ]++d.C::[] = d.K := by
+
+DosenPetric/GentzenSelectedLogicalData.lean:33 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last
+abbrev last : ContractionBlock P d.J d.K :=
+
+DosenPetric/GentzenSelectedLogicalData.lean:35 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.x
+abbrev x := d.outer.keep
+
+DosenPetric/GentzenSelectedLogicalData.lean:36 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.q
+def q : At d.J d.C := At.shift d.s.I (.here d.C [])
+
+DosenPetric/GentzenSelectedLogicalData.lean:37 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.k
+def k : At d.J d.C := d.s.inner.keep.before [d.C]
+
+DosenPetric/GentzenSelectedLogicalData.lean:38 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.a
+def a : At d.F d.A := At.shift d.s.F (.here d.A [d.B])
+
+DosenPetric/GentzenSelectedLogicalData.lean:39 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.b
+def b : At d.F d.B := At.shift d.s.F (.there (.here d.B []))
+
+DosenPetric/GentzenSelectedLogicalData.lean:40 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.aI
+def aI : At d.I d.A := At.shift d.s.I (.here d.A [d.B])
+
+DosenPetric/GentzenSelectedLogicalData.lean:41 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.bI
+def bI : At d.I d.B := At.shift d.s.I (.there (.here d.B []))
+
+DosenPetric/GentzenSelectedLogicalData.lean:42 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.uParent
+def uParent {E : NormalForm P} (a : At d.F E) : Option (At d.U E) :=
+
+DosenPetric/GentzenSelectedLogicalData.lean:44 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.iParent
+def iParent {E : NormalForm P} (a : At d.I E) : Option (At d.J E) :=
+
+DosenPetric/GentzenSelectedLogicalData.lean:47 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.t_before
+theorem t_before {E : NormalForm P} (a : At d.s.F E) : d.s.t.get a = a.before [d.C] :=
+
+DosenPetric/GentzenSelectedLogicalData.lean:49 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_keep
+theorem last_keep : d.last.keep = d.x := by
+
+DosenPetric/GentzenSelectedLogicalData.lean:53 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_prefix
+theorem last_prefix {E : NormalForm P} (a : At d.s.I E) :
+
+DosenPetric/GentzenSelectedLogicalData.lean:64 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_principal
+theorem last_principal : d.last.route.get d.q = d.x := by
+
+DosenPetric/GentzenSelectedLogicalData.lean:72 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_retained
+theorem last_retained : d.last.route.get d.k = d.x := by
+
+DosenPetric/GentzenSelectedLogicalData.lean:74 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.prefix_square
+theorem prefix_square {E : NormalForm P} (a : At d.s.F E) :
+
+DosenPetric/GentzenSelectedLogicalData.lean:79 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_a
+theorem inner_a : d.inner.route.get d.a = d.aI := d.s.inner.extend_shift _ _
+
+DosenPetric/GentzenSelectedLogicalData.lean:80 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_b
+theorem inner_b : d.inner.route.get d.b = d.bI := d.s.inner.extend_shift _ _
+
+DosenPetric/GentzenSelectedLogicalData.lean:81 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.consumed_a
+theorem consumed_a : d.uParent d.a = none := At.fixed_middle _ _ _ _ (.here d.A [d.B])
+
+DosenPetric/GentzenSelectedLogicalData.lean:82 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.consumed_b
+theorem consumed_b : d.uParent d.b = none := At.fixed_middle _ _ _ _ (.there (.here d.B []))
+
+DosenPetric/GentzenSelectedLogicalData.lean:83 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_consumed_a
+theorem inner_consumed_a : d.iParent d.aI = none := At.fixed_middle _ _ _ _ (.here d.A [d.B])
+
+DosenPetric/GentzenSelectedLogicalData.lean:84 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_consumed_b
+theorem inner_consumed_b : d.iParent d.bI = none := At.fixed_middle _ _ _ _ (.there (.here d.B []))
+
+DosenPetric/GentzenSelectedLogicalData.lean:85 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.u_prefix
+theorem u_prefix {E : NormalForm P} (a : At d.s.F E) :
+
+DosenPetric/GentzenSelectedLogicalData.lean:87 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.i_prefix
+theorem i_prefix {E : NormalForm P} (a : At d.s.I E) :
+
+DosenPetric/GentzenSelectedLogicalData.lean:90 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.partial_square
+theorem partial_square {E : NormalForm P} (a : At d.F E) :
+
+DosenPetric/GentzenSelectedLogicalData.lean:106 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_selected
+theorem last_selected : d.last.selected = [d.k,d.q] := by
+
+DosenPetric/GentzenSelectedLogicalData.lean:113 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_selected
+theorem inner_selected : d.inner.selected = d.s.inner.selected.map (fun a => a.before [d.A,d.B]) :=
+
+DosenPetric/GentzenSelectedLogicalData.lean:115 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.outer_selected
+theorem outer_selected : d.outer.selected = d.s.inner.selected.map (fun a => a.before [d.C])++[d.s.z] := by
+
+DosenPetric/GentzenSelectedLogicalComponents.lean:11 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.categorical_square
+theorem categorical_square :
+
+DosenPetric/GentzenSelectedLogicalComponents.lean:56 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.product_square
+theorem product_square (d : Data P .conj) :
+
+DosenPetric/GentzenSelectedLogicalComponents.lean:62 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.coproduct_square
+theorem coproduct_square (d : Data P .disj) :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:11 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.oldTrace
+def oldTrace : TraceRoute d.K d.F :=
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:13 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.newTrace
+def newTrace : TraceRoute d.K d.F :=
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:15 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.trace_square
+theorem trace_square {E : NormalForm P} (a : At d.F E) :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:19 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.old_prefix
+theorem old_prefix {E : NormalForm P} (a : At d.s.F E) :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:23 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.parent_original
+theorem parent_original {E : NormalForm P} (a : At d.F E) (v : At d.U E)
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:39 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.selected_prefix
+theorem selected_prefix (a : At d.s.F d.C) :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:49 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.selected_transport
+theorem selected_transport :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:62 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.selected_survives
+theorem selected_survives (a : At d.F d.C) (ha : a ∈ d.inner.selected) :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:67 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_selected_length
+theorem inner_selected_length : d.inner.selected.length = d.gs.length := d.inner.selected_length
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:68 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.outer_selected_length
+theorem outer_selected_length : d.outer.selected.length = d.gs.length+1 :=
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:70 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_selected_length
+theorem last_selected_length : d.last.selected.length = 2 := d.last.selected_length
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:72 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.old_retained_fiber
+theorem old_retained_fiber : d.oldTrace.fiber d.x = d.inner.selected := by
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:94 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.new_retained_fiber
+theorem new_retained_fiber : d.newTrace.fiber d.x = d.inner.selected :=
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:96 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.outer_retained_fiber
+theorem outer_retained_fiber : (TraceRoute.full d.outer.route).fiber d.x =
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:99 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_retained_fiber
+theorem last_retained_fiber : (TraceRoute.full d.last.route).fiber d.x = [d.k,d.q] := by
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:102 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.logical_principal_fiber
+theorem logical_principal_fiber : (TraceRoute.ofMap _ _ d.uParent).fiber d.s.z = [] := by
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:111 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.middle_parent_original
+theorem middle_parent_original {E : NormalForm P} (a : At d.I E) (v : At d.J E)
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:126 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.middle_principal_fiber
+theorem middle_principal_fiber : (TraceRoute.ofMap _ _ d.iParent).fiber d.q = [] := by
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:136 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.original
+def original {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) : At d.F E :=
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:138 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.oldFixed
+def oldFixed {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) : At d.U E :=
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:140 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.innerFixed
+def innerFixed {E : NormalForm P} (z : At d.K E) : At d.I E :=
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:142 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.newFixed
+def newFixed {E : NormalForm P} (z : At d.K E) : At d.J E :=
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:144 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.original_old
+theorem original_old {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:148 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.original_inner
+theorem original_inner {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:152 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.original_last
+theorem original_last {E : NormalForm P} (z : At d.K E) :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:155 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.original_parent
+theorem original_parent {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:157 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.fixed_parent
+theorem fixed_parent {E : NormalForm P} (z : At d.K E) :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:159 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_fixed
+theorem inner_fixed {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:164 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.outer_fixed_fiber
+theorem outer_fixed_fiber {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:169 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_fixed_fiber
+theorem last_fixed_fiber {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:175 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_fixed_fiber
+theorem inner_fixed_fiber {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:181 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.other_old_fiber
+theorem other_old_fiber {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) :
+
+DosenPetric/GentzenSelectedLogicalFibers.lean:200 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.other_new_fiber
+theorem other_new_fiber {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) :
+
+DosenPetric/GentzenSelectedLogicalRules.lean:15 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.logicalL
+def logicalL : G P d.U Δ := G.conjL d.s.F [] Δ d.A d.B f
+
+DosenPetric/GentzenSelectedLogicalRules.lean:16 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.innerL
+def innerL : G P d.I Δ := d.inner.applyL hn Δ f
+
+DosenPetric/GentzenSelectedLogicalRules.lean:17 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.middleL
+def middleL : G P d.J Δ := G.conjL d.s.I [] Δ d.A d.B (innerL d hn Δ f)
+
+DosenPetric/GentzenSelectedLogicalRules.lean:18 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.oldL
+def oldL : G P d.K Δ := d.outer.applyL (d.s.outer_bound hn) Δ (logicalL d Δ f)
+
+DosenPetric/GentzenSelectedLogicalRules.lean:19 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.newL
+def newL : G P d.K Δ := d.last.applyL (Nat.le_refl 2) Δ (middleL d hn Δ f)
+
+DosenPetric/GentzenSelectedLogicalRules.lean:21 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_denoteL
+theorem old_denoteL : ofTerm (oldL d hn Δ f).denote =
+
+DosenPetric/GentzenSelectedLogicalRules.lean:23 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_denoteL
+theorem new_denoteL : ofTerm (newL d hn Δ f).denote =
+
+DosenPetric/GentzenSelectedLogicalRules.lean:29 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.denoteL
+theorem denoteL : ofTerm (newL d hn Δ f).denote = ofTerm (oldL d hn Δ f).denote := by
+
+DosenPetric/GentzenSelectedLogicalRules.lean:32 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_countL
+theorem old_countL : (oldL d hn Δ f).cutCount = f.cutCount := by
+
+DosenPetric/GentzenSelectedLogicalRules.lean:34 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_countL
+theorem new_countL : (newL d hn Δ f).cutCount = f.cutCount := by
+
+DosenPetric/GentzenSelectedLogicalRules.lean:36 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_cutFreeL
+theorem old_cutFreeL : (oldL d hn Δ f).CutFree ↔ f.CutFree := by
+
+DosenPetric/GentzenSelectedLogicalRules.lean:38 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_cutFreeL
+theorem new_cutFreeL : (newL d hn Δ f).CutFree ↔ f.CutFree := by
+
+DosenPetric/GentzenSelectedLogicalRules.lean:40 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_atomizedL
+theorem old_atomizedL : (oldL d hn Δ f).Atomized ↔ f.Atomized := by
+
+DosenPetric/GentzenSelectedLogicalRules.lean:42 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_atomizedL
+theorem new_atomizedL : (newL d hn Δ f).Atomized ↔ f.Atomized := by
+
+DosenPetric/GentzenSelectedLogicalRules.lean:44 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.relationL
+theorem relationL : (newL d hn Δ f).relation = (oldL d hn Δ f).relation :=
+
+DosenPetric/GentzenSelectedLogicalRules.lean:51 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.logicalR
+def logicalR : G P Γ d.U := G.disjR Γ d.s.F [] d.A d.B f
+
+DosenPetric/GentzenSelectedLogicalRules.lean:52 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.innerR
+def innerR : G P Γ d.I := d.inner.applyR hn Γ f
+
+DosenPetric/GentzenSelectedLogicalRules.lean:53 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.middleR
+def middleR : G P Γ d.J := G.disjR Γ d.s.I [] d.A d.B (innerR d hn Γ f)
+
+DosenPetric/GentzenSelectedLogicalRules.lean:54 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.oldR
+def oldR : G P Γ d.K := d.outer.applyR (d.s.outer_bound hn) Γ (logicalR d Γ f)
+
+DosenPetric/GentzenSelectedLogicalRules.lean:55 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.newR
+def newR : G P Γ d.K := d.last.applyR (Nat.le_refl 2) Γ (middleR d hn Γ f)
+
+DosenPetric/GentzenSelectedLogicalRules.lean:57 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_denoteR
+theorem old_denoteR : ofTerm (oldR d hn Γ f).denote =
+
+DosenPetric/GentzenSelectedLogicalRules.lean:59 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_denoteR
+theorem new_denoteR : ofTerm (newR d hn Γ f).denote =
+
+DosenPetric/GentzenSelectedLogicalRules.lean:65 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.denoteR
+theorem denoteR : ofTerm (newR d hn Γ f).denote = ofTerm (oldR d hn Γ f).denote := by
+
+DosenPetric/GentzenSelectedLogicalRules.lean:68 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_countR
+theorem old_countR : (oldR d hn Γ f).cutCount = f.cutCount := by
+
+DosenPetric/GentzenSelectedLogicalRules.lean:70 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_countR
+theorem new_countR : (newR d hn Γ f).cutCount = f.cutCount := by
+
+DosenPetric/GentzenSelectedLogicalRules.lean:72 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_cutFreeR
+theorem old_cutFreeR : (oldR d hn Γ f).CutFree ↔ f.CutFree := by
+
+DosenPetric/GentzenSelectedLogicalRules.lean:74 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_cutFreeR
+theorem new_cutFreeR : (newR d hn Γ f).CutFree ↔ f.CutFree := by
+
+DosenPetric/GentzenSelectedLogicalRules.lean:76 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_atomizedR
+theorem old_atomizedR : (oldR d hn Γ f).Atomized ↔ f.Atomized := by
+
+DosenPetric/GentzenSelectedLogicalRules.lean:78 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_atomizedR
+theorem new_atomizedR : (newR d hn Γ f).Atomized ↔ f.Atomized := by
+
+DosenPetric/GentzenSelectedLogicalRules.lean:80 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.relationR
+theorem relationR : (newR d hn Γ f).relation = (oldR d hn Γ f).relation :=
+
+DosenPetric/GentzenSelectedLogicalRules.lean:84 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.terminal_left
+theorem terminal_left (A B : NormalForm P) (gs : List (List (NormalForm P)))
+
+DosenPetric/GentzenSelectedLogicalRules.lean:88 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.terminal_right
+theorem terminal_right (A B : NormalForm P) (gs : List (List (NormalForm P)))
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:15 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.selected_sum
+theorem selected_sum (r : At d.U d.C → Nat) (s : At d.F d.C → Nat)
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:26 DosenPetric.Reduced.Gentzen.SelectedLogical.Data.retained_parent
+theorem retained_parent : d.iParent d.inner.keep = some d.k := by
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:36 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.rankInnerL
+def rankInnerL := d.inner.rankL hn Δ f
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:37 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.rankOuterL
+def rankOuterL := d.outer.rankL (d.s.outer_bound hn) Δ (logicalL d Δ f)
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:39 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.logical_embeddedL
+theorem logical_embeddedL {E : NormalForm P} (a : At d.s.F E) :
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:43 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.logical_principalL
+theorem logical_principalL : (logicalL d Δ f).rho .left d.s.z = 1 :=
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:45 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.selected_sumL
+theorem selected_sumL :
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:49 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.contraction_lossL
+theorem contraction_lossL : rankOuterL d hn Δ f =
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:57 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.contraction_decreasesL
+theorem contraction_decreasesL : rankInnerL d hn Δ f < rankOuterL d hn Δ f := by
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:60 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_endpointL
+theorem old_endpointL : (oldL d hn Δ f).rho .left d.x =
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:64 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.middle_retainedL
+theorem middle_retainedL : (middleL d hn Δ f).rho .left d.k =
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:68 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.middle_principalL
+theorem middle_principalL : (middleL d hn Δ f).rho .left d.q = 1 :=
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:70 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_endpointL
+theorem new_endpointL : (newL d hn Δ f).rho .left d.x =
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:83 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_balanceL
+theorem endpoint_balanceL : (oldL d hn Δ f).rho .left d.x+2 =
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:88 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_leL
+theorem endpoint_leL : (newL d hn Δ f).rho .left d.x ≤
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:92 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_tieL
+theorem endpoint_tieL (he : d.gs.length = 2) :
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:96 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_decreasesL
+theorem endpoint_decreasesL (he : 3 ≤ d.gs.length) :
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:101 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.fixed_oldL
+theorem fixed_oldL {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) :
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:107 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.fixed_newL
+theorem fixed_newL {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) :
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:116 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.fixed_increasesL
+theorem fixed_increasesL {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) :
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:126 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.rankInnerR
+def rankInnerR := d.inner.rankR hn Γ f
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:127 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.rankOuterR
+def rankOuterR := d.outer.rankR (d.s.outer_bound hn) Γ (logicalR d Γ f)
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:129 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.logical_embeddedR
+theorem logical_embeddedR {E : NormalForm P} (a : At d.s.F E) :
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:133 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.logical_principalR
+theorem logical_principalR : (logicalR d Γ f).rho .right d.s.z = 1 :=
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:135 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.selected_sumR
+theorem selected_sumR :
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:139 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.contraction_lossR
+theorem contraction_lossR : rankOuterR d hn Γ f =
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:147 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.contraction_decreasesR
+theorem contraction_decreasesR : rankInnerR d hn Γ f < rankOuterR d hn Γ f := by
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:150 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_endpointR
+theorem old_endpointR : (oldR d hn Γ f).rho .right d.x =
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:154 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.middle_retainedR
+theorem middle_retainedR : (middleR d hn Γ f).rho .right d.k =
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:158 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.middle_principalR
+theorem middle_principalR : (middleR d hn Γ f).rho .right d.q = 1 :=
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:160 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_endpointR
+theorem new_endpointR : (newR d hn Γ f).rho .right d.x =
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:173 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_balanceR
+theorem endpoint_balanceR : (oldR d hn Γ f).rho .right d.x+2 =
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:178 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_leR
+theorem endpoint_leR : (newR d hn Γ f).rho .right d.x ≤
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:182 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_tieR
+theorem endpoint_tieR (he : d.gs.length = 2) :
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:186 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_decreasesR
+theorem endpoint_decreasesR (he : 3 ≤ d.gs.length) :
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:191 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.fixed_oldR
+theorem fixed_oldR {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) :
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:197 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.fixed_newR
+theorem fixed_newR {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) :
+
+DosenPetric/GentzenSelectedLogicalRanks.lean:206 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.fixed_increasesR
+theorem fixed_increasesR {E : NormalForm P} (z : At d.K E) (hz : z.index ≠ d.x.index) :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:12 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.two
+abbrev two (o : Op) (A B : NormalForm P) : Gentzen.SelectedLogical.Data P o := ⟨A,B,[[],[]],[]⟩
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:13 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.three
+abbrev three (o : Op) (A B : NormalForm P) : Gentzen.SelectedLogical.Data P o := ⟨A,B,[[],[],[]],[]⟩
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:14 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.tagged
+abbrev tagged (o : Op) (A B : NormalForm P) : Gentzen.SelectedLogical.Data P o :=
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:16 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.tagsU
+def tagsU (o : Op) (A B : NormalForm P) : List (At (tagged o A B).U (o.formula A B)) :=
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:18 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.tagsJ
+def tagsJ (o : Op) (A B : NormalForm P) : List (At (tagged o A B).J (o.formula A B)) :=
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:20 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.originals
+def originals (o : Op) (A B : NormalForm P) : List (At (tagged o A B).F (o.formula A B)) :=
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:23 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.selections
+theorem selections (o : Op) (A B : NormalForm P) :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:29 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.outer_map
+theorem outer_map (o : Op) (A B : NormalForm P) :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:32 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.last_map
+theorem last_map (o : Op) (A B : NormalForm P) :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:35 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.old_partial_map
+theorem old_partial_map (o : Op) (A B : NormalForm P) :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:46 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.new_partial_map
+theorem new_partial_map (o : Op) (A B : NormalForm P) :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:51 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.both_consumed
+theorem both_consumed (o : Op) (T : NormalForm P) :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:60 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.complete_fibers
+theorem complete_fibers (o : Op) (A B : NormalForm P) :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:66 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.fixed0
+def fixed0 (o : Op) (A B : NormalForm P) : At (tagged o A B).K (o.formula A B) :=
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:68 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.fixed_original
+theorem fixed_original (o : Op) (A B : NormalForm P) :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:71 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.constLeft
+def constLeft (d : Gentzen.SelectedLogical.Data Empty .conj) : G Empty d.F [.top] :=
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:73 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.constRight
+def constRight (d : Gentzen.SelectedLogical.Data Empty .disj) : G Empty [.bot] d.F :=
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:75 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.empty_left
+theorem empty_left :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:78 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.empty_right
+theorem empty_right :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:81 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.tie_left
+theorem tie_left :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:84 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.tie_right
+theorem tie_right :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:87 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.fixed_increase_left
+theorem fixed_increase_left :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:91 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.fixed_increase_right
+theorem fixed_increase_right :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:95 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.compound_atomized_left
+theorem compound_atomized_left :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:99 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.compound_atomized_right
+theorem compound_atomized_right :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:103 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.compound_components_left
+theorem compound_components_left :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:107 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.compound_components_right
+theorem compound_components_right :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:112 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.prefixL
+def prefixL {Γ Δ : List (NormalForm P)} (Ξ : List (NormalForm P)) (f : G P Γ Δ) : G P (Ξ++Γ) Δ :=
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:116 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.prefixR
+def prefixR {Γ Δ : List (NormalForm P)} (Ξ : List (NormalForm P)) (f : G P Γ Δ) : G P Γ (Ξ++Δ) :=
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:120 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.literalLeft
+def literalLeft (l : Literal P) : G P (three .conj (.lit l) (.lit l)).F [.lit l] :=
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:122 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.literalRight
+def literalRight (l : Literal P) : G P [.lit l] (three .disj (.lit l) (.lit l)).F :=
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:124 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.literal_left
+theorem literal_left (l : Literal P) :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:127 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.literal_right
+theorem literal_right (l : Literal P) :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:130 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.both_signs_actual_cuts
+theorem both_signs_actual_cuts (p : P) :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:134 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.three_strict_left
+theorem three_strict_left (l : Literal P) :
+
+DosenPetric/GentzenSelectedLogicalExamples.lean:138 DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.three_strict_right
+theorem three_strict_right (l : Literal P) :

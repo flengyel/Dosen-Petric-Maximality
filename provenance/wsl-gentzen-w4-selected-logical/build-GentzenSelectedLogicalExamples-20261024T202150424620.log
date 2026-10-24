@@ -1,0 +1,11 @@
+✖ [155/167] Building DosenPetric.GentzenSelectedLogicalFibers (996ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectedLogicalFibers.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedLogicalFibers.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedLogicalFibers.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedLogicalFibers.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedLogicalFibers.setup.json --json
+error: DosenPetric/GentzenSelectedLogicalFibers.lean:126:4: Dependent elimination failed: Failed to solve equation
+  (match (motive := Op → NormalForm P → NormalForm P → NormalForm P) o with
+      | Op.conj => NormalForm.conj
+      | Op.disj => NormalForm.disj)
+      d.A d.B =
+    d.1
+Some required targets logged failures:
+- DosenPetric.GentzenSelectedLogicalFibers
+error: build failed

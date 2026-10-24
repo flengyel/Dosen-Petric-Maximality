@@ -1,0 +1,33 @@
+✔ [155/167] Built DosenPetric.GentzenSelectedLogicalFibers (1.3s)
+✔ [160/167] Built DosenPetric.GentzenSelectedLogicalRanks (1.8s)
+✖ [167/167] Building DosenPetric.GentzenSelectedLogicalExamples (11s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectedLogicalExamples.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedLogicalExamples.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedLogicalExamples.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedLogicalExamples.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedLogicalExamples.setup.json --json
+error: DosenPetric/GentzenSelectedLogicalExamples.lean:39:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  List.map ?m.51 (List.map ?m.52 ?m.53)
+in the target expression
+  List.map (fun a => Option.map At.index ((tagged o A B).oldTrace.get a))
+      (List.map (fun a => a.before [A, B]) (selectedCopies (o.formula A B) [[], [], [], [], [], []] [])) =
+    [some 0, some 4, some 1, some 4, some 2, some 3]
+
+P : Type u
+o : Op
+A B : NormalForm P
+⊢ List.map (fun a => Option.map At.index ((tagged o A B).oldTrace.get a))
+      (List.map (fun a => a.before [A, B]) (selectedCopies (o.formula A B) [[], [], [], [], [], []] [])) =
+    [some 0, some 4, some 1, some 4, some 2, some 3]
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    fun a => a.before [A, B]
+  has type
+    At (repeated (o.formula A B) [[], [], [], [], [], []] ++ []) (o.formula A B) →
+      @At P (repeated (o.formula A B) [[], [], [], [], [], []] ++ [] ++ [A, B]) (o.formula A B)
+  but is expected to have type
+    At (repeated (o.formula A B) [[], [], [], [], [], []] ++ []) (o.formula A B) →
+      @At P (tagged o A B).F (o.formula A B)
+  in the application
+    List.map fun a => a.before [A, B]
+Some required targets logged failures:
+- DosenPetric.GentzenSelectedLogicalExamples
+error: build failed

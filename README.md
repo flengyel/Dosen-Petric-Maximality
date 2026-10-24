@@ -62,9 +62,14 @@ dual now compile: complete ordered selection includes the new leaf, exact
 contraction/endpoint losses are n+1/n, and other fixed ranks are unchanged.
 Both cut counts and CutFree predicates are preserved; old Atomized iff
 AtomicFormula C and f.Atomized, while new Atomized iff f.Atomized.
-Terminal selected-logical W4 is next; disjoint interleaving remains separate.
+Terminal selected-logical W4 and its right dual now compile with actual
+partial ancestry and both consumed component equations. The source contraction
+loss is n+1; final retained ranks tie for n=2 and decrease for n≥3.
+Other fixed same-side ranks increase by one. Counts, CutFree/Atomized and
+tagged relations are preserved. Single-premise mix W5 is next; disjoint
+interleaving remains separate.
 The current stage is the remaining local contraction transformations toward
-cut elimination. General W1, W2–W6, blocked-contraction transformations,
+cut elimination. Remaining W1/W2/W5–W6, blocked-contraction transformations,
 Reducibility, cut elimination, the positive coherence inputs, PositiveCoherence,
 Reduced.Faithful, Boolean Coherence and unconditional maximality remain open.
 See [validation](docs/VALIDATION.md) for the maintained audited declaration
@@ -117,11 +122,12 @@ The [v5 literature review](docs/LITERATURE_REVIEW_V5_2026-10-23.md),
 [writing review](docs/reviews/V5_WRITING_REVIEW.md), and
 [manuscript validation](docs/V5_VALIDATION.md) accompany v5.
 The [earlier literature comparison](docs/LITERATURE_REVIEW.md) remains available.
-The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W2_SELECTED_THINNING_HOSTILE.md)
-and [mathematical-writing review](docs/reviews/GENTZEN_W2_SELECTED_THINNING_WRITING.md)
-cover terminal selected-thinning W2 and its right dual; they are not independent
-certification. The [W2 report](docs/GENTZEN_W2_SELECTED_THINNING_REPORT.md),
-[ready-to-paste W4 continuation](docs/CODEX_W4_SELECTED_LOGICAL.txt),
+The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W4_SELECTED_LOGICAL_HOSTILE.md)
+and [mathematical-writing review](docs/reviews/GENTZEN_W4_SELECTED_LOGICAL_WRITING.md)
+cover terminal selected-logical W4 and its right dual; they are not independent
+certification. The [W4 report](docs/GENTZEN_W4_SELECTED_LOGICAL_REPORT.md),
+[ready-to-paste W5 continuation](docs/CODEX_W5_SINGLE_PREMISE_MIX.txt),
+[preceding W2 report](docs/GENTZEN_W2_SELECTED_THINNING_REPORT.md),
 [preceding W3 report](docs/GENTZEN_W3_SHARED_SELECTED_CONTRACTION_REPORT.md),
 [preceding terminal-tail report](docs/GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT.md),
 [preceding disjoint-contraction report](docs/GENTZEN_W1_DISJOINT_CONTRACTION_REPORT.md),

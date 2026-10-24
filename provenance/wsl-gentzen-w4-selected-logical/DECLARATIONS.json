@@ -1,0 +1,1318 @@
+[
+  {
+    "name": "DosenPetric.Reduced.Gentzen.At.list_index_injective",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionAppend.lean",
+    "line": 12,
+    "source": "theorem list_index_injective {\u0393 : List (NormalForm P)} {A : NormalForm P}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.extend",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenContractionAppend.lean",
+    "line": 27,
+    "source": "abbrev extend (\u039e : List (NormalForm P)) : ContractionBlock P (F++\u039e) (K++\u039e) where"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.extend_before",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionAppend.lean",
+    "line": 34,
+    "source": "theorem extend_before (\u039e : List (NormalForm P)) {A : NormalForm P} (a : At F A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.extend_shift",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionAppend.lean",
+    "line": 39,
+    "source": "theorem extend_shift (\u039e : List (NormalForm P)) {A : NormalForm P} (a : At \u039e A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.extend_keep",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionAppend.lean",
+    "line": 53,
+    "source": "theorem extend_keep (\u039e : List (NormalForm P)) : (d.extend \u039e).keep = d.keep.before \u039e := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.extend_selected",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionAppend.lean",
+    "line": 57,
+    "source": "theorem extend_selected (\u039e : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data",
+    "kind": "structure",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 11,
+    "source": "structure Data (P : Type u) (o : Op) where"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.C",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 19,
+    "source": "abbrev C := o.formula d.A d.B"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.s",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 20,
+    "source": "abbrev s : SelectedThinning.Data P := \u27e8d.C,d.gs,d.\u0398\u27e9"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.F",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 21,
+    "source": "abbrev F := d.s.F++[d.A,d.B]"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.I",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 22,
+    "source": "abbrev I := d.s.I++[d.A,d.B]"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.U",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 23,
+    "source": "abbrev U := d.s.U"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.J",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 24,
+    "source": "abbrev J := d.s.I++[d.C]"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.K",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 25,
+    "source": "abbrev K := d.s.K"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 26,
+    "source": "abbrev inner : ContractionBlock P d.F d.I := d.s.inner.extend [d.A,d.B]"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.outer",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 27,
+    "source": "abbrev outer : ContractionBlock P d.U d.K := d.s.outer"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.lastSource",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 29,
+    "source": "theorem lastSource : repeated d.C [gaps d.gs,d.\u0398]++[] = d.J := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.lastTarget",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 31,
+    "source": "theorem lastTarget : gaps [gaps d.gs,d.\u0398]++d.C::[] = d.K := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 33,
+    "source": "abbrev last : ContractionBlock P d.J d.K :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.x",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 35,
+    "source": "abbrev x := d.outer.keep"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.q",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 36,
+    "source": "def q : At d.J d.C := At.shift d.s.I (.here d.C [])"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.k",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 37,
+    "source": "def k : At d.J d.C := d.s.inner.keep.before [d.C]"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.a",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 38,
+    "source": "def a : At d.F d.A := At.shift d.s.F (.here d.A [d.B])"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.b",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 39,
+    "source": "def b : At d.F d.B := At.shift d.s.F (.there (.here d.B []))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.aI",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 40,
+    "source": "def aI : At d.I d.A := At.shift d.s.I (.here d.A [d.B])"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.bI",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 41,
+    "source": "def bI : At d.I d.B := At.shift d.s.I (.there (.here d.B []))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.uParent",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 42,
+    "source": "def uParent {E : NormalForm P} (a : At d.F E) : Option (At d.U E) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.iParent",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 44,
+    "source": "def iParent {E : NormalForm P} (a : At d.I E) : Option (At d.J E) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.t_before",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 47,
+    "source": "theorem t_before {E : NormalForm P} (a : At d.s.F E) : d.s.t.get a = a.before [d.C] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_keep",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 49,
+    "source": "theorem last_keep : d.last.keep = d.x := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_prefix",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 53,
+    "source": "theorem last_prefix {E : NormalForm P} (a : At d.s.I E) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_principal",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 64,
+    "source": "theorem last_principal : d.last.route.get d.q = d.x := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_retained",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 72,
+    "source": "theorem last_retained : d.last.route.get d.k = d.x := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.prefix_square",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 74,
+    "source": "theorem prefix_square {E : NormalForm P} (a : At d.s.F E) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_a",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 79,
+    "source": "theorem inner_a : d.inner.route.get d.a = d.aI := d.s.inner.extend_shift _ _"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_b",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 80,
+    "source": "theorem inner_b : d.inner.route.get d.b = d.bI := d.s.inner.extend_shift _ _"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.consumed_a",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 81,
+    "source": "theorem consumed_a : d.uParent d.a = none := At.fixed_middle _ _ _ _ (.here d.A [d.B])"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.consumed_b",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 82,
+    "source": "theorem consumed_b : d.uParent d.b = none := At.fixed_middle _ _ _ _ (.there (.here d.B []))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_consumed_a",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 83,
+    "source": "theorem inner_consumed_a : d.iParent d.aI = none := At.fixed_middle _ _ _ _ (.here d.A [d.B])"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_consumed_b",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 84,
+    "source": "theorem inner_consumed_b : d.iParent d.bI = none := At.fixed_middle _ _ _ _ (.there (.here d.B []))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.u_prefix",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 85,
+    "source": "theorem u_prefix {E : NormalForm P} (a : At d.s.F E) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.i_prefix",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 87,
+    "source": "theorem i_prefix {E : NormalForm P} (a : At d.s.I E) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.partial_square",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 90,
+    "source": "theorem partial_square {E : NormalForm P} (a : At d.F E) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_selected",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 106,
+    "source": "theorem last_selected : d.last.selected = [d.k,d.q] := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_selected",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 113,
+    "source": "theorem inner_selected : d.inner.selected = d.s.inner.selected.map (fun a => a.before [d.A,d.B]) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.outer_selected",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalData.lean",
+    "line": 115,
+    "source": "theorem outer_selected : d.outer.selected = d.s.inner.selected.map (fun a => a.before [d.C])++[d.s.z] := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.categorical_square",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalComponents.lean",
+    "line": 11,
+    "source": "theorem categorical_square :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.product_square",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalComponents.lean",
+    "line": 56,
+    "source": "theorem product_square (d : Data P .conj) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.coproduct_square",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalComponents.lean",
+    "line": 62,
+    "source": "theorem coproduct_square (d : Data P .disj) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.oldTrace",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 11,
+    "source": "def oldTrace : TraceRoute d.K d.F :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.newTrace",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 13,
+    "source": "def newTrace : TraceRoute d.K d.F :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.trace_square",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 15,
+    "source": "theorem trace_square {E : NormalForm P} (a : At d.F E) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.old_prefix",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 19,
+    "source": "theorem old_prefix {E : NormalForm P} (a : At d.s.F E) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.parent_original",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 23,
+    "source": "theorem parent_original {E : NormalForm P} (a : At d.F E) (v : At d.U E)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.selected_prefix",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 39,
+    "source": "theorem selected_prefix (a : At d.s.F d.C) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.selected_transport",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 49,
+    "source": "theorem selected_transport :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.selected_survives",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 62,
+    "source": "theorem selected_survives (a : At d.F d.C) (ha : a \u2208 d.inner.selected) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_selected_length",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 67,
+    "source": "theorem inner_selected_length : d.inner.selected.length = d.gs.length := d.inner.selected_length"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.outer_selected_length",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 68,
+    "source": "theorem outer_selected_length : d.outer.selected.length = d.gs.length+1 :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_selected_length",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 70,
+    "source": "theorem last_selected_length : d.last.selected.length = 2 := d.last.selected_length"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.old_retained_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 72,
+    "source": "theorem old_retained_fiber : d.oldTrace.fiber d.x = d.inner.selected := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.new_retained_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 94,
+    "source": "theorem new_retained_fiber : d.newTrace.fiber d.x = d.inner.selected :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.outer_retained_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 96,
+    "source": "theorem outer_retained_fiber : (TraceRoute.full d.outer.route).fiber d.x ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_retained_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 99,
+    "source": "theorem last_retained_fiber : (TraceRoute.full d.last.route).fiber d.x = [d.k,d.q] := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.logical_principal_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 102,
+    "source": "theorem logical_principal_fiber : (TraceRoute.ofMap _ _ d.uParent).fiber d.s.z = [] := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.middle_parent_original",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 111,
+    "source": "theorem middle_parent_original {E : NormalForm P} (a : At d.I E) (v : At d.J E)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.middle_principal_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 126,
+    "source": "theorem middle_principal_fiber : (TraceRoute.ofMap _ _ d.iParent).fiber d.q = [] := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.original",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 136,
+    "source": "def original {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) : At d.F E :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.oldFixed",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 138,
+    "source": "def oldFixed {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) : At d.U E :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.innerFixed",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 140,
+    "source": "def innerFixed {E : NormalForm P} (z : At d.K E) : At d.I E :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.newFixed",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 142,
+    "source": "def newFixed {E : NormalForm P} (z : At d.K E) : At d.J E :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.original_old",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 144,
+    "source": "theorem original_old {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.original_inner",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 148,
+    "source": "theorem original_inner {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.original_last",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 152,
+    "source": "theorem original_last {E : NormalForm P} (z : At d.K E) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.original_parent",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 155,
+    "source": "theorem original_parent {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.fixed_parent",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 157,
+    "source": "theorem fixed_parent {E : NormalForm P} (z : At d.K E) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_fixed",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 159,
+    "source": "theorem inner_fixed {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.outer_fixed_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 164,
+    "source": "theorem outer_fixed_fiber {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.last_fixed_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 169,
+    "source": "theorem last_fixed_fiber {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.inner_fixed_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 175,
+    "source": "theorem inner_fixed_fiber {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.other_old_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 181,
+    "source": "theorem other_old_fiber {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.other_new_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalFibers.lean",
+    "line": 200,
+    "source": "theorem other_new_fiber {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.logicalL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 15,
+    "source": "def logicalL : G P d.U \u0394 := G.conjL d.s.F [] \u0394 d.A d.B f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.innerL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 16,
+    "source": "def innerL : G P d.I \u0394 := d.inner.applyL hn \u0394 f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.middleL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 17,
+    "source": "def middleL : G P d.J \u0394 := G.conjL d.s.I [] \u0394 d.A d.B (innerL d hn \u0394 f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.oldL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 18,
+    "source": "def oldL : G P d.K \u0394 := d.outer.applyL (d.s.outer_bound hn) \u0394 (logicalL d \u0394 f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.newL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 19,
+    "source": "def newL : G P d.K \u0394 := d.last.applyL (Nat.le_refl 2) \u0394 (middleL d hn \u0394 f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_denoteL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 21,
+    "source": "theorem old_denoteL : ofTerm (oldL d hn \u0394 f).denote ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_denoteL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 23,
+    "source": "theorem new_denoteL : ofTerm (newL d hn \u0394 f).denote ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.denoteL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 29,
+    "source": "theorem denoteL : ofTerm (newL d hn \u0394 f).denote = ofTerm (oldL d hn \u0394 f).denote := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_countL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 32,
+    "source": "theorem old_countL : (oldL d hn \u0394 f).cutCount = f.cutCount := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_countL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 34,
+    "source": "theorem new_countL : (newL d hn \u0394 f).cutCount = f.cutCount := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_cutFreeL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 36,
+    "source": "theorem old_cutFreeL : (oldL d hn \u0394 f).CutFree \u2194 f.CutFree := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_cutFreeL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 38,
+    "source": "theorem new_cutFreeL : (newL d hn \u0394 f).CutFree \u2194 f.CutFree := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_atomizedL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 40,
+    "source": "theorem old_atomizedL : (oldL d hn \u0394 f).Atomized \u2194 f.Atomized := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_atomizedL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 42,
+    "source": "theorem new_atomizedL : (newL d hn \u0394 f).Atomized \u2194 f.Atomized := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.relationL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 44,
+    "source": "theorem relationL : (newL d hn \u0394 f).relation = (oldL d hn \u0394 f).relation :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.logicalR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 51,
+    "source": "def logicalR : G P \u0393 d.U := G.disjR \u0393 d.s.F [] d.A d.B f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.innerR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 52,
+    "source": "def innerR : G P \u0393 d.I := d.inner.applyR hn \u0393 f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.middleR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 53,
+    "source": "def middleR : G P \u0393 d.J := G.disjR \u0393 d.s.I [] d.A d.B (innerR d hn \u0393 f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.oldR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 54,
+    "source": "def oldR : G P \u0393 d.K := d.outer.applyR (d.s.outer_bound hn) \u0393 (logicalR d \u0393 f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.newR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 55,
+    "source": "def newR : G P \u0393 d.K := d.last.applyR (Nat.le_refl 2) \u0393 (middleR d hn \u0393 f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_denoteR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 57,
+    "source": "theorem old_denoteR : ofTerm (oldR d hn \u0393 f).denote ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_denoteR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 59,
+    "source": "theorem new_denoteR : ofTerm (newR d hn \u0393 f).denote ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.denoteR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 65,
+    "source": "theorem denoteR : ofTerm (newR d hn \u0393 f).denote = ofTerm (oldR d hn \u0393 f).denote := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_countR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 68,
+    "source": "theorem old_countR : (oldR d hn \u0393 f).cutCount = f.cutCount := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_countR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 70,
+    "source": "theorem new_countR : (newR d hn \u0393 f).cutCount = f.cutCount := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_cutFreeR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 72,
+    "source": "theorem old_cutFreeR : (oldR d hn \u0393 f).CutFree \u2194 f.CutFree := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_cutFreeR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 74,
+    "source": "theorem new_cutFreeR : (newR d hn \u0393 f).CutFree \u2194 f.CutFree := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_atomizedR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 76,
+    "source": "theorem old_atomizedR : (oldR d hn \u0393 f).Atomized \u2194 f.Atomized := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_atomizedR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 78,
+    "source": "theorem new_atomizedR : (newR d hn \u0393 f).Atomized \u2194 f.Atomized := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.relationR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 80,
+    "source": "theorem relationR : (newR d hn \u0393 f).relation = (oldR d hn \u0393 f).relation :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.terminal_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 84,
+    "source": "theorem terminal_left (A B : NormalForm P) (gs : List (List (NormalForm P)))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.terminal_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRules.lean",
+    "line": 88,
+    "source": "theorem terminal_right (A B : NormalForm P) (gs : List (List (NormalForm P)))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.selected_sum",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 15,
+    "source": "theorem selected_sum (r : At d.U d.C \u2192 Nat) (s : At d.F d.C \u2192 Nat)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedLogical.Data.retained_parent",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 26,
+    "source": "theorem retained_parent : d.iParent d.inner.keep = some d.k := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.rankInnerL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 36,
+    "source": "def rankInnerL := d.inner.rankL hn \u0394 f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.rankOuterL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 37,
+    "source": "def rankOuterL := d.outer.rankL (d.s.outer_bound hn) \u0394 (logicalL d \u0394 f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.logical_embeddedL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 39,
+    "source": "theorem logical_embeddedL {E : NormalForm P} (a : At d.s.F E) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.logical_principalL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 43,
+    "source": "theorem logical_principalL : (logicalL d \u0394 f).rho .left d.s.z = 1 :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.selected_sumL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 45,
+    "source": "theorem selected_sumL :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.contraction_lossL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 49,
+    "source": "theorem contraction_lossL : rankOuterL d hn \u0394 f ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.contraction_decreasesL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 57,
+    "source": "theorem contraction_decreasesL : rankInnerL d hn \u0394 f < rankOuterL d hn \u0394 f := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_endpointL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 60,
+    "source": "theorem old_endpointL : (oldL d hn \u0394 f).rho .left d.x ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.middle_retainedL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 64,
+    "source": "theorem middle_retainedL : (middleL d hn \u0394 f).rho .left d.k ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.middle_principalL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 68,
+    "source": "theorem middle_principalL : (middleL d hn \u0394 f).rho .left d.q = 1 :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_endpointL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 70,
+    "source": "theorem new_endpointL : (newL d hn \u0394 f).rho .left d.x ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_balanceL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 83,
+    "source": "theorem endpoint_balanceL : (oldL d hn \u0394 f).rho .left d.x+2 ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_leL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 88,
+    "source": "theorem endpoint_leL : (newL d hn \u0394 f).rho .left d.x \u2264"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_tieL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 92,
+    "source": "theorem endpoint_tieL (he : d.gs.length = 2) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_decreasesL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 96,
+    "source": "theorem endpoint_decreasesL (he : 3 \u2264 d.gs.length) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.fixed_oldL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 101,
+    "source": "theorem fixed_oldL {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.fixed_newL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 107,
+    "source": "theorem fixed_newL {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.fixed_increasesL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 116,
+    "source": "theorem fixed_increasesL {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.rankInnerR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 126,
+    "source": "def rankInnerR := d.inner.rankR hn \u0393 f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.rankOuterR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 127,
+    "source": "def rankOuterR := d.outer.rankR (d.s.outer_bound hn) \u0393 (logicalR d \u0393 f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.logical_embeddedR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 129,
+    "source": "theorem logical_embeddedR {E : NormalForm P} (a : At d.s.F E) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.logical_principalR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 133,
+    "source": "theorem logical_principalR : (logicalR d \u0393 f).rho .right d.s.z = 1 :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.selected_sumR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 135,
+    "source": "theorem selected_sumR :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.contraction_lossR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 139,
+    "source": "theorem contraction_lossR : rankOuterR d hn \u0393 f ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.contraction_decreasesR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 147,
+    "source": "theorem contraction_decreasesR : rankInnerR d hn \u0393 f < rankOuterR d hn \u0393 f := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.old_endpointR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 150,
+    "source": "theorem old_endpointR : (oldR d hn \u0393 f).rho .right d.x ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.middle_retainedR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 154,
+    "source": "theorem middle_retainedR : (middleR d hn \u0393 f).rho .right d.k ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.middle_principalR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 158,
+    "source": "theorem middle_principalR : (middleR d hn \u0393 f).rho .right d.q = 1 :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.new_endpointR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 160,
+    "source": "theorem new_endpointR : (newR d hn \u0393 f).rho .right d.x ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_balanceR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 173,
+    "source": "theorem endpoint_balanceR : (oldR d hn \u0393 f).rho .right d.x+2 ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_leR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 178,
+    "source": "theorem endpoint_leR : (newR d hn \u0393 f).rho .right d.x \u2264"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_tieR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 182,
+    "source": "theorem endpoint_tieR (he : d.gs.length = 2) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.endpoint_decreasesR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 186,
+    "source": "theorem endpoint_decreasesR (he : 3 \u2264 d.gs.length) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.fixed_oldR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 191,
+    "source": "theorem fixed_oldR {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.fixed_newR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 197,
+    "source": "theorem fixed_newR {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.fixed_increasesR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalRanks.lean",
+    "line": 206,
+    "source": "theorem fixed_increasesR {E : NormalForm P} (z : At d.K E) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.two",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 12,
+    "source": "abbrev two (o : Op) (A B : NormalForm P) : Gentzen.SelectedLogical.Data P o := \u27e8A,B,[[],[]],[]\u27e9"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.three",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 13,
+    "source": "abbrev three (o : Op) (A B : NormalForm P) : Gentzen.SelectedLogical.Data P o := \u27e8A,B,[[],[],[]],[]\u27e9"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.tagged",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 14,
+    "source": "abbrev tagged (o : Op) (A B : NormalForm P) : Gentzen.SelectedLogical.Data P o :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.tagsU",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 16,
+    "source": "def tagsU (o : Op) (A B : NormalForm P) : List (At (tagged o A B).U (o.formula A B)) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.tagsJ",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 18,
+    "source": "def tagsJ (o : Op) (A B : NormalForm P) : List (At (tagged o A B).J (o.formula A B)) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.originals",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 20,
+    "source": "def originals (o : Op) (A B : NormalForm P) : List (At (tagged o A B).F (o.formula A B)) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.selections",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 23,
+    "source": "theorem selections (o : Op) (A B : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.outer_map",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 29,
+    "source": "theorem outer_map (o : Op) (A B : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.last_map",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 32,
+    "source": "theorem last_map (o : Op) (A B : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.old_partial_map",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 35,
+    "source": "theorem old_partial_map (o : Op) (A B : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.new_partial_map",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 46,
+    "source": "theorem new_partial_map (o : Op) (A B : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.both_consumed",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 51,
+    "source": "theorem both_consumed (o : Op) (T : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.complete_fibers",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 60,
+    "source": "theorem complete_fibers (o : Op) (A B : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.fixed0",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 66,
+    "source": "def fixed0 (o : Op) (A B : NormalForm P) : At (tagged o A B).K (o.formula A B) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.fixed_original",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 68,
+    "source": "theorem fixed_original (o : Op) (A B : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.constLeft",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 71,
+    "source": "def constLeft (d : Gentzen.SelectedLogical.Data Empty .conj) : G Empty d.F [.top] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.constRight",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 73,
+    "source": "def constRight (d : Gentzen.SelectedLogical.Data Empty .disj) : G Empty [.bot] d.F :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.empty_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 75,
+    "source": "theorem empty_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.empty_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 78,
+    "source": "theorem empty_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.tie_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 81,
+    "source": "theorem tie_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.tie_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 84,
+    "source": "theorem tie_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.fixed_increase_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 87,
+    "source": "theorem fixed_increase_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.fixed_increase_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 91,
+    "source": "theorem fixed_increase_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.compound_atomized_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 95,
+    "source": "theorem compound_atomized_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.compound_atomized_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 99,
+    "source": "theorem compound_atomized_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.compound_components_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 103,
+    "source": "theorem compound_components_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.compound_components_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 107,
+    "source": "theorem compound_components_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.prefixL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 112,
+    "source": "def prefixL {\u0393 \u0394 : List (NormalForm P)} (\u039e : List (NormalForm P)) (f : G P \u0393 \u0394) : G P (\u039e++\u0393) \u0394 :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.prefixR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 116,
+    "source": "def prefixR {\u0393 \u0394 : List (NormalForm P)} (\u039e : List (NormalForm P)) (f : G P \u0393 \u0394) : G P \u0393 (\u039e++\u0394) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.literalLeft",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 120,
+    "source": "def literalLeft (l : Literal P) : G P (three .conj (.lit l) (.lit l)).F [.lit l] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.literalRight",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 122,
+    "source": "def literalRight (l : Literal P) : G P [.lit l] (three .disj (.lit l) (.lit l)).F :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.literal_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 124,
+    "source": "theorem literal_left (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.literal_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 127,
+    "source": "theorem literal_right (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.both_signs_actual_cuts",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 130,
+    "source": "theorem both_signs_actual_cuts (p : P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.three_strict_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 134,
+    "source": "theorem three_strict_left (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W4.SelectedLogical.Examples.three_strict_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedLogicalExamples.lean",
+    "line": 138,
+    "source": "theorem three_strict_right (l : Literal P) :"
+  }
+]

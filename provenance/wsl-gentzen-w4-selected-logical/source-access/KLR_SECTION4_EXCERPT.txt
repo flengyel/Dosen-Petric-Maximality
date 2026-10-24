@@ -1,0 +1,55 @@
+          We have proved that bj − bi ≤ 0 for all i < j, so the vector (b1 , . . . , bn ) must be an
+     element of An .
+          This form of the proof has other virtues too: It doesn’t assume that the bi ’s are
+     integer-valued, and it doesn’t require stating that c1 ≥ · · · ≥ cn .
+
+
+
+
+[8                                                                        §. AN ANSWER TO THE EXERCISE ]
+
+   §.   Excerpts from class, October 7                                       [notes by TLL]
+   Our first serious business involved examining “the worst abusers of the ‘Don’t use symbols
+   in titles’ rule.” Professor Knuth (hereafter known as Knuth) displayed a paper by Gauss
+   that had a long displayed formula in the title. He showed us a bibliography he’s preparing
+   that references not only that paper but another with even more symbols in the title.
+   (Such titles make more than bibliographies difficult; they make bibliographic data retrieval
+   systems and keyword-in-context produce all sorts of hiccups.)
+   In his bibliography Knuth has tried to keep his citations true to the original sources.
+   The bibliography contains mathematical formulas, full name spellings (even alternative
+   spellings when common), and completely spelled-out source journal names. (This last
+   may be unusual enough that some members of a field may be surprised to see the full
+   journal name written out, but it’s a big help to novices who want to find it in the library.)
+   We spent the rest of class going over some of the solutions that students had turned in for
+   the exercise of § (each sample anonymous). He cautioned us that while he was generally
+   pleased by the assignments, he was going to be pointing out things that could be improved.
+   The following points were all made in the process of going through these samples.
+
+          In certain instances, people did not understand what constitutes a proof. Fluency
+          in mathematics is important for Computer Science students but will not be taught
+          in this class.
+
+          Not all formulas are equations. Depending on the formula, the terms ‘relation’,
+          ‘definition’, ‘statement’, or ‘theorem’ might be used.
+
+          Computer Scientists must be careful to distinguish between mathematical notation
+          and programming language notation. While it may be appropriate to use p[r] in a
+          program, in a formal paper it is probably better to use p with a subscript of r. As
+          another example, it is not appropriate to use a star (∗) to denote multiplication in
+          a paper about mathematics. Just say xy.
+
+          Some people called p an element of P and pr an element of p. Everything was an
+          “element.” It’s better to call pr a “component” of p, thus distinguishing two kinds
+          of subsidiary relationships.
+
+          It is natural in mathematics to hold off some aspects of your definition—to “place
+          action before definition” (as in ‘p(x) < p(y) for some x < y’). But it is possible
+          to carry this too far, if too much is being held back. The best location for certain
+          definitions is a subjective matter.
+
+          Remember to put words between adjacent formulas.
+
+          When you use ellipses, such as (P1 , . . . , Pn ), remember to put commas before and
+          after the three dots. When placing ellipses between commas the three dots belong
+          on the same level as the commas, but when the ellipsis is bracketed by symbols such
+          as ‘+’ or ‘<’ the dots should be at mid-level.

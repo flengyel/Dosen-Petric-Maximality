@@ -1,0 +1,180 @@
+{
+  "utc": "2026-10-24T20:29:28.711279+00:00",
+  "base_commit": "b89167f7b9d37476464d5826f06dd9de2ffb3d9a",
+  "baseline": {
+    "utc": "2026-10-24T20:12:42.294096+00:00",
+    "checks": [
+      {
+        "name": "environment",
+        "command": [
+          "uname",
+          "-a"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 0.007,
+        "log": ".codex-work/gentzen-w4-selected-logical/environment-20261024T201232324205.log",
+        "log_sha256": "34e3970ec44125a14237ebecedcc552983b2d4c8032e1e63debccd6fbbec0513"
+      },
+      {
+        "name": "memory",
+        "command": [
+          "free",
+          "-h"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 0.009,
+        "log": ".codex-work/gentzen-w4-selected-logical/memory-20261024T201232324205.log",
+        "log_sha256": "69697da1dabc8fb6e2eb2d36ca22e5acd81c5e289c5548a0a0f5d2efe1f11e3a"
+      },
+      {
+        "name": "baseline",
+        "command": [
+          "bash",
+          "scripts/verify.sh"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 9.95,
+        "log": ".codex-work/gentzen-w4-selected-logical/baseline-20261024T201232324205.log",
+        "log_sha256": "8d67fdc6ef3f2a1156718fded6c339261e284e11e25bd09b6e73babe72eff32a"
+      }
+    ]
+  },
+  "final": {
+    "utc": "2026-10-24T20:23:08.140343+00:00",
+    "checks": [
+      {
+        "name": "strict",
+        "command": [
+          "bash",
+          "scripts/verify.sh"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 4.02,
+        "log": ".codex-work/gentzen-w4-selected-logical/strict-20261024T202251795933.log",
+        "log_sha256": "f0f3b3e4e8b08eaccc59711a62a6083cbf5377089c60354fcf1b88418904955b"
+      },
+      {
+        "name": "audit-boundaries",
+        "command": [
+          "python3",
+          "scripts/check-audit-boundaries.py"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 9.94,
+        "log": ".codex-work/gentzen-w4-selected-logical/audit-boundaries-20261024T202251795933.log",
+        "log_sha256": "377643b2b8fc2ff8c9b228992b82e2fd82c36bf57a7c3914aa71572ffbf89ac0"
+      },
+      {
+        "name": "presentation-boundaries",
+        "command": [
+          "python3",
+          "scripts/check-presentation-boundaries.py"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 2.335,
+        "log": ".codex-work/gentzen-w4-selected-logical/presentation-boundaries-20261024T202251795933.log",
+        "log_sha256": "306041f8b1c343270cc1f8c841a6a6f6aa03451e17bb5f034cd495d3b5f49f66"
+      },
+      {
+        "name": "manuscript",
+        "command": [
+          "sha256sum",
+          "-c",
+          "SHA256SUMS"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/manuscript",
+        "exit_status": 0,
+        "seconds": 0.023,
+        "log": ".codex-work/gentzen-w4-selected-logical/manuscript-20261024T202251795933.log",
+        "log_sha256": "517f442db9e0b644dc19fe8fc1d1337a4d03014e4722fe9907e39db5c618479f"
+      },
+      {
+        "name": "diff-check",
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 0.009,
+        "log": ".codex-work/gentzen-w4-selected-logical/diff-check-20261024T202251795933.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "cached-diff-check",
+        "command": [
+          "git",
+          "diff",
+          "--cached",
+          "--check"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 0.01,
+        "log": ".codex-work/gentzen-w4-selected-logical/cached-diff-check-20261024T202251795933.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "public_types": {
+    "utc": "2026-10-24T20:23:13.454939+00:00",
+    "checks": [
+      {
+        "name": "public-types",
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-DwarningAsError=true",
+          "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-w4-selected-logical/PublicTypes.lean"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 2.133,
+        "log": ".codex-work/gentzen-w4-selected-logical/public-types-20261024T202311320598.log",
+        "log_sha256": "0669eabe55ae67e2ee4d000efd03d3fd68de81756445d5862626a4a761f287fb"
+      }
+    ]
+  },
+  "baseline_files": 185,
+  "baseline_declarations": 7299,
+  "final_files": 192,
+  "final_declarations": 7543,
+  "new_modules": [
+    "GentzenContractionAppend",
+    "GentzenSelectedLogicalData",
+    "GentzenSelectedLogicalComponents",
+    "GentzenSelectedLogicalFibers",
+    "GentzenSelectedLogicalRules",
+    "GentzenSelectedLogicalRanks",
+    "GentzenSelectedLogicalExamples"
+  ],
+  "explicit_source_declarations": 188,
+  "selected_axiom_prints": 134,
+  "all_five_negative_controls_rejected": true,
+  "public_import_closure_passed": true,
+  "checked_source_inventory_entries": 199,
+  "frozen_baseline_paths_unchanged": true,
+  "intentional_modified_baseline_paths": [
+    "Checks/Axioms.lean",
+    "DosenPetric.lean",
+    "README.md",
+    "docs/CODEX_NEXT_SESSION.txt",
+    "docs/CONTINUATION.txt",
+    "docs/MANUSCRIPT_COVERAGE.md",
+    "docs/MANUSCRIPT_STATEMENTS.md",
+    "docs/PRESENTATION_CORRESPONDENCE.md",
+    "docs/VALIDATION.md"
+  ],
+  "all_proof_bytes_match_final_strict_inventory": true,
+  "reviews": "Author-side AI-assisted hostile and source-grounded mathematical-writing reviews; not independent certification",
+  "next_task": "Source W5 single-premise mix with all selected copies in g in G.mix f g, and separately typed right dual",
+  "commit_ref_and_delivery_receipts": ".codex-work/gentzen-w4-selected-logical/"
+}
