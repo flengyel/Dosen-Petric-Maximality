@@ -1,0 +1,40 @@
+from pathlib import Path
+import datetime, hashlib, json, os, shutil, subprocess, sys, time
+r=Path('/home/flengyel/src/Dosen-Petric-Maximality')
+w=r/'.codex-work/gentzen-w1-terminal-tail-contraction';w.mkdir(parents=True,exist_ok=True)
+mode=sys.argv[1]
+if mode=='build':
+    module=sys.argv[2]
+    mode='build-'+module.rsplit('.',1)[-1]
+commands={
+ 'versions':[('lean-version',['lake','env','lean','--version'],r),('lake-version',['lake','--version'],r),('git-version',['git','--version'],r),('python-version',['python3','--version'],r)],
+ 'types':[('public-types',['lake','env','lean','-DwarningAsError=true','/tmp/dp-terminal-tail-public-types.lean'],r)],
+ 'coordinates':[('coordinates',['lake','build','DosenPetric.GentzenGapLogicalPositions'],r)],
+ 'components':[('components',['lake','build','DosenPetric.GentzenLogicalComponents'],r)],
+ 'ranks':[('ranks',['lake','build','DosenPetric.GentzenSameSideLogicalRanks'],r)],
+ 'proofs':[('proofs',['lake','build','DosenPetric.GentzenSameSideLogical'],r)],
+ 'routing':[('routing',['lake','build','DosenPetric.GentzenGapLogicalRouting'],r)],
+ 'positions':[('positions',['lake','build','DosenPetric.GentzenLogicalPositions'],r)],
+ 'data':[('data',['lake','build','DosenPetric.GentzenGapLogicalData'],r)],
+ 'indices':[('indices',['lake','build','DosenPetric.GentzenGapLogicalIndices'],r)],
+ 'core':[('core',['lake','build','DosenPetric.GentzenSameSideLogicalFixedRanks'],r)],
+ 'explore':[('explore',['lake','build','DosenPetric.GentzenSameSideLogicalExamples'],r)],
+ 'baseline':[('environment',['uname','-a'],r),('memory',['free','-h'],r),('baseline',['bash','scripts/verify.sh'],r)],
+ 'verify':[('strict',['bash','scripts/verify.sh'],r),('audit-boundaries',['python3','scripts/check-audit-boundaries.py'],r),
+           ('presentation-boundaries',['python3','scripts/check-presentation-boundaries.py'],r),
+           ('manuscript',['sha256sum','-c','SHA256SUMS'],r/'manuscript'),('diff-check',['git','diff','--check'],r),('cached-diff-check',['git','diff','--cached','--check'],r)]}
+if mode.startswith('build-'):commands[mode]=[(mode,['lake','build',module],r)]
+rows=[]
+for name,cmd,cwd in commands[mode]:
+    start=time.monotonic();log=w/(name+'.log')
+    if log.exists():
+        stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S');old=w/(name+'-'+stamp+'.log');shutil.copy2(log,old)
+        if (w/(mode+'.json')).exists():shutil.copy2(w/(mode+'.json'),w/(mode+'-'+stamp+'.json'))
+    with log.open('w') as f:q=subprocess.run(cmd,cwd=cwd,env=dict(os.environ,LEAN_NUM_THREADS='1'),stdout=f,stderr=subprocess.STDOUT)
+    rows.append(dict(name=name,command=cmd,cwd=str(cwd),exit_status=q.returncode,seconds=round(time.monotonic()-start,3),log_sha256=hashlib.sha256(log.read_bytes()).hexdigest()))
+    (w/(mode+'.json')).write_text(json.dumps(dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),checks=rows),indent=2)+'\n')
+    print(name,q.returncode,flush=True)
+    if q.returncode:raise SystemExit(log.read_text())
+if mode=='verify':
+    shutil.copytree(r/'.codex-work/contextual-collapse/checks',w/'audit-controls',dirs_exist_ok=True)
+    shutil.copytree(r/'.codex-work/presentation-bridge/presentation-controls',w/'presentation-controls',dirs_exist_ok=True)

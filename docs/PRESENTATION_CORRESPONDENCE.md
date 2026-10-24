@@ -1117,5 +1117,43 @@ positions have equal 2+rho at a unique common original coordinate. Exact
 count/predicate/full tagged occurrence preservation follows without coherence;
 S(old)+m=S(new)+n permits an actual 2/3 increase. See
 [the report](GENTZEN_W1_DISJOINT_CONTRACTION_REPORT.md) and both author-side reviews.
-Terminal-tail, interleaved/shared-selected/W3 and broader W1/reducibility remain
-separate/open.
+Terminal-tail cases are now proved below; interleaved/shared-selected/W3 and
+broader W1/reducibility remain separate/open.
+
+
+## Terminal-tail disjoint same-side contractions (two W1 cases)
+
+The same hash-verified September 2007 source was consulted at §11.2,
+printed pp.248–253/PDF pp.260–265, including rendered p.251. No new source
+discrepancy is asserted; access evidence is retained under
+`provenance/wsl-gentzen-w1-terminal-tail-contraction/source-access/`.
+
+| Source location | Typed local condition | Actual Lean proof |
+| --- | --- | --- |
+| p.251, W1, γ=wL | E contraction lies in the fixed terminal tail of the C contraction; all C-selected copies remain parametric. | `TerminalContraction.terminalTail`, eight proved `Data.upper/lowerC0/C1/E0/E1` identities and `W1.DisjointContraction.terminalTail_left`. |
+| p.252, right analogue | Same placement in the succedent with actual G.contractR. | `terminalTail_right`, separately typed coproduct square, no arrow-negation principle. |
+| pp.248–249, parametric ancestry and ranks | Complete ordered selected families and fixed singleton contributions. | `selectedC/E_transport`, lengths n/n/m/m, concrete prefix/tail separation, complete singleton/composite fibers and full rank sums. |
+| p.251, W3 | Retained inner occurrence is selected by the outer contraction. | Still open; excluded by distinct retained terminal indices and positional separation, including C=E. |
+
+For es=H::hs, F=(repeated C gs++U)++repeated E es++V and
+K=(gaps gs++C::U)++gaps es++E::V, both actual old/new pairs have exact
+types G P K Δ or G P Γ K. The generic ContractionFrame stores raw contraction
+descriptions and endpoint identifications, not desired squares or rank laws.
+The concrete terminal Data proves every required law. Its all-position
+copy_splice_tail identity and universal components derive product/coproduct
+squares; actual contraction denotations and associativity give Reduced
+equality without coherence or reflection of occurrence equality.
+
+The retained indices are xC=(gaps gs).length and
+xE=(gaps gs).length+1+U.length+(gaps es).length, so xC<xE. This differs
+from the preserved interior construction's xE<xC. For independent n,m≥2,
+old ranks are LC+n,LE+1 and new ranks are LC+1,LE+m on either side.
+S(old)+m=S(new)+n; the actual 2/3 example increases S by one. Other fixed
+positions have equal 2+rho ranks at the unique common original. Cut counts,
+CutFree/Atomized and complete tagged relations are preserved without a new
+atomicity hypothesis. See [the report](GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT.md)
+and both author-side reviews for exact examples and verification.
+
+Shared-selected W3 fusion is the next concrete proof task. Disjoint interleaving,
+remaining exchange/W1/W2–W6, all-site replacement, Reducibility, Blocked-w,
+cut elimination and coherence/maximality remain separate/open.

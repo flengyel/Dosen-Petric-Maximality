@@ -50,7 +50,11 @@ complete selected-copy transports, actual copies/copies squares and singleton
 fibers. Their independent arities give old ranks LC+n,LE+1 and new ranks
 LC+1,LE+m: the targeted decrease accompanies an untargeted increase. The exact
 sum balance and a checked unequal-arity increase rule out a general decreasing
-sum claim. Terminal-tail and shared-selected contractions remain separate.
+sum claim. Both terminal-tail disjoint contraction cases also compile, using
+a shared proved interface that is instantiated in the preserved interior case.
+Their complete selected transports/fibers and independent rank table are proved;
+the terminal retained order is C before E. Shared-selected W3 fusion is next;
+disjoint interleaving remains separate.
 The current stage is the remaining local contraction transformations toward
 cut elimination. General W1, W2–W6, blocked-contraction transformations,
 Reducibility, cut elimination, the positive coherence inputs, PositiveCoherence,
@@ -105,10 +109,12 @@ The [v5 literature review](docs/LITERATURE_REVIEW_V5_2026-10-23.md),
 [writing review](docs/reviews/V5_WRITING_REVIEW.md), and
 [manuscript validation](docs/V5_VALIDATION.md) accompany v5.
 The [earlier literature comparison](docs/LITERATURE_REVIEW.md) remains available.
-The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W1_DISJOINT_CONTRACTION_HOSTILE.md)
-and [mathematical-writing review](docs/reviews/GENTZEN_W1_DISJOINT_CONTRACTION_WRITING.md)
-cover the two fixed-gap disjoint contraction cases and their scope; they are not independent
-certification. The [disjoint-contraction report](docs/GENTZEN_W1_DISJOINT_CONTRACTION_REPORT.md),
+The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_HOSTILE.md)
+and [mathematical-writing review](docs/reviews/GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_WRITING.md)
+cover the two terminal-tail disjoint contraction cases and their scope; they are not independent
+certification. The [terminal-tail report](docs/GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT.md),
+[ready-to-paste W3 continuation](docs/CODEX_W3_SHARED_SELECTED_CONTRACTION.txt),
+[preceding disjoint-contraction report](docs/GENTZEN_W1_DISJOINT_CONTRACTION_REPORT.md),
 [preceding same-side logical report](docs/GENTZEN_W1_SAME_SIDE_LOGICAL_REPORT.md),
 [preceding same-side exchange report](docs/GENTZEN_W1_SAME_SIDE_EXCHANGE_REPORT.md),
 [preceding same-side thinning report](docs/GENTZEN_W1_SAME_SIDE_THINNING_REPORT.md),

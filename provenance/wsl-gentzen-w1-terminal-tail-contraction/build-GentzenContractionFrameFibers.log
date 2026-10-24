@@ -1,0 +1,35 @@
+✔ [130/131] Built DosenPetric.GentzenContractionFrame (2.3s)
+✖ [131/131] Building DosenPetric.GentzenContractionFrameFibers (2.2s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenContractionFrameFibers.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionFrameFibers.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionFrameFibers.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionFrameFibers.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionFrameFibers.setup.json --json
+error: DosenPetric/GentzenContractionFrameFibers.lean:157:72: unexpected token 'include'; expected '#guard_msgs', 'abbrev', 'add_decl_doc', 'axiom', 'binder_predicate', 'builtin_cbv_simproc', 'builtin_cbv_simproc_decl', 'builtin_dsimproc', 'builtin_dsimproc_decl', 'builtin_grind_propagator', 'builtin_initialize', 'builtin_simproc', 'builtin_simproc_decl', 'cbv_simproc', 'cbv_simproc_decl', 'class', 'coinductive', 'declare_simp_like_tactic', 'declare_syntax_cat', 'def', 'dsimproc', 'dsimproc_decl', 'elab', 'elab_rules', 'example', 'grind_propagator', 'inductive', 'infix', 'infixl', 'infixr', 'initialize', 'instance', 'macro', 'macro_rules', 'notation', 'opaque', 'postfix', 'prefix', 'recall', 'recommended_spelling', 'register_error_explanation', 'register_tactic_tag', 'register_try?_tactic', 'simproc', 'simproc_decl', 'structure', 'syntax', 'tactic_extension', 'theorem' or 'unif_hint'
+error: DosenPetric/GentzenContractionFrameFibers.lean:167:15: unsolved goals
+case hSq
+P : Type u
+d : ContractionFrame P
+hSq : ∀ {A : NormalForm P} (a : At d.F A), d.c1.get (d.e0.get a) = d.e1.get (d.c0.get a)
+hC : d.e1.get d.keepC0 = d.xC
+hE : d.c1.get d.keepE0 = d.xE
+A : NormalForm P
+z : At d.K A
+hc : z.index ≠ d.xC.index
+he : z.index ≠ d.xE.index
+a : At d.F A
+h : a = d.originalViaE hE z hc he
+⊢ ∀ {A : NormalForm P} (a : At d.F A), d.c1.get (d.e0.get a) = d.e1.get (d.c0.get a)
+
+case hC
+P : Type u
+d : ContractionFrame P
+hSq : ∀ {A : NormalForm P} (a : At d.F A), d.c1.get (d.e0.get a) = d.e1.get (d.c0.get a)
+hC : d.e1.get d.keepC0 = d.xC
+hE : d.c1.get d.keepE0 = d.xE
+A : NormalForm P
+z : At d.K A
+hc : z.index ≠ d.xC.index
+he : z.index ≠ d.xE.index
+a : At d.F A
+h : a = d.originalViaE hE z hc he
+⊢ d.e1.get d.keepC0 = d.xC
+Some required targets logged failures:
+- DosenPetric.GentzenContractionFrameFibers
+error: build failed

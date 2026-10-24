@@ -1,0 +1,51 @@
+✔ [151/153] Built DosenPetric.GentzenTerminalContractionRouting (1.3s)
+✔ [152/153] Built DosenPetric.GentzenTerminalContractionInstances (1.6s)
+✖ [153/153] Building DosenPetric.GentzenTerminalContractionExamples (28s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenTerminalContractionExamples.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenTerminalContractionExamples.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenTerminalContractionExamples.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenTerminalContractionExamples.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenTerminalContractionExamples.setup.json --json
+error: DosenPetric/GentzenTerminalContractionExamples.lean:17:92: Type mismatch
+  selectedCopies_indices ?m.28 ?m.29 ?m.30
+has type
+  List.map (@At.index ?m.27 (repeated ?m.28 ?m.29 ++ ?m.30) ?m.28) (selectedCopies ?m.28 ?m.29 ?m.30) =
+    copyOffsets ?m.29
+but is expected to have type
+  List.map (@At.index P (twoThree T).F T) (sourceTags T) = [0, 1, 2, 3, 4, 5]
+error: DosenPetric/GentzenTerminalContractionExamples.lean:105:2: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 0
+  a ≥ 1
+where
+ a := ↑(ContractionFrame.endpointSumL (twoThree NormalForm.top).frame [NormalForm.top]
+    (ContractionFrame.newL (twoThree NormalForm.top).frame ⋯ ⋯ [NormalForm.top]
+      (SameSideLogical.constantLeft (twoThree NormalForm.top).F)))
+ b := ↑(terminalSumL (twoThree NormalForm.top) [NormalForm.top]
+    (terminalOldL (twoThree NormalForm.top) emptyP_left_ranks._proof_1 emptyP_left_ranks._proof_2 [NormalForm.top]
+      (SameSideLogical.constantLeft (twoThree NormalForm.top).F)))
+ c := ↑(terminalSumL (twoThree NormalForm.top) [NormalForm.top]
+    (terminalNewL (twoThree NormalForm.top) emptyP_left_ranks._proof_1 emptyP_left_ranks._proof_2 [NormalForm.top]
+      (SameSideLogical.constantLeft (twoThree NormalForm.top).F)))
+error: DosenPetric/GentzenTerminalContractionExamples.lean:130:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (twoThree ?T).original (fixedFinal ?T) ⋯ ⋯
+in the target expression
+  (terminalNewL (twoThree NormalForm.top) ⋯ ⋯ [NormalForm.top]
+          (SameSideLogical.constantLeft (twoThree NormalForm.top).F)).rho
+      SequentSide.left (fixedFinal NormalForm.top) =
+    2 +
+      (SameSideLogical.constantLeft (twoThree NormalForm.top).F).rho SequentSide.left
+        ((twoThree NormalForm.top).frame.originalViaE ⋯ (fixedFinal NormalForm.top) ⋯ ⋯)
+
+h :
+  (terminalNewL (twoThree NormalForm.top) ⋯ ⋯ [NormalForm.top]
+          (SameSideLogical.constantLeft (twoThree NormalForm.top).F)).rho
+      SequentSide.left (fixedFinal NormalForm.top) =
+    2 +
+      (SameSideLogical.constantLeft (twoThree NormalForm.top).F).rho SequentSide.left
+        ((twoThree NormalForm.top).frame.originalViaE ⋯ (fixedFinal NormalForm.top) ⋯ ⋯)
+⊢ (terminalNewL (twoThree NormalForm.top) emptyP_left_ranks._proof_1 emptyP_left_ranks._proof_2 [NormalForm.top]
+          (SameSideLogical.constantLeft (twoThree NormalForm.top).F)).rho
+      SequentSide.left (fixedFinal NormalForm.top) =
+    2 + (SameSideLogical.constantLeft (twoThree NormalForm.top).F).rho SequentSide.left (fixedSource NormalForm.top)
+Some required targets logged failures:
+- DosenPetric.GentzenTerminalContractionExamples
+error: build failed

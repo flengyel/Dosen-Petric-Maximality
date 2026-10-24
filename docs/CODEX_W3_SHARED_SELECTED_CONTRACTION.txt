@@ -1,0 +1,119 @@
+Continue the Došen–Petrić maximality formalization in WSL2 at
+/home/flengyel/src/Dosen-Petric-Maximality. Complete source W3 shared-selected
+contraction fusion and its separately typed right dual. Do substantive proof
+work, verify and review it, retain and deliver verified reports, commit scoped
+completed work to main and push over SSH without force. This prompt authorizes
+that scoped commit/push, but no publication, license or visibility change.
+
+Inspect Git status, remotes and retained stashes; fetch SSH origin and preserve
+all newer/unrelated work. Read AGENTS.md, current statement/coverage maps,
+PRESENTATION_CORRESPONDENCE, VALIDATION, PALOMAR_REQUIREMENTS and
+CODEX_NEXT_SESSION.txt. Read GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT and
+its hostile/writing reviews, the preceding fixed-gap report/reviews and the
+actual ContractionBlock, ContractionFrame, Disjoint and TerminalContraction
+modules. Reuse completed results. Do not redo disjoint terminal-tail W1.
+
+The completed terminal checkpoint has 171 Lean files and 6,705 audited
+declarations, with both exact terminalTail_left/right equations, reversed
+retained ordering xC<xE, complete positional fibers and independent rank table.
+Keep pinned Lean 4.35.0, Init-only dependencies, source grammar/equations,
+denotations, G/Positive/Rewire, tags, predecessor/rank definitions and analysis
+predicates unchanged. Preserve manuscript v4/v5, diagrams, references/checksums,
+earlier reports and other checkouts. Run and retain a fresh baseline check.
+
+Consult the pinned September 2007 Došen–Petrić Proof-Theoretical Coherence,
+§11.2 printed pp.248–253, especially p.251 W3 and p.252's right analogue.
+The cached full PDF has SHA256
+e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e;
+printed pp.248–253 are PDF pp.260–265, one-based. Retain source/page evidence.
+This is fusion at a shared retained occurrence, not the already proved
+disjoint W1 commutation. Do not assume Semilattice Coherence or reflect
+occurrence/inclusion equality into Reduced equality.
+
+Concrete target: arbitrary P : Type u, C : NormalForm P, gs/hs gap lists,
+tails Θ/Λ, independent n=gs.length≥2, m=hs.length≥2. Put
+
+  F = repeated C gs ++ Θ
+  I = gaps gs ++ C :: Θ
+  K = gaps hs ++ C :: Λ.
+
+Take an actual endpoint identification
+
+  hI : repeated C hs ++ Λ = I
+
+and the genuine positional hypothesis that the retained inner C position
+At.shift (gaps gs) (.here C Θ) is a member of the outer selectedCopies list
+after its At.cast hI transport. This is an input placement condition, not a
+routing-square, denotation or rank conclusion. Do not identify positions by
+formula labels or assume decidable equality of P.
+
+For every existing f : G P F Δ, form inner by G.contractL on gs/Θ and old
+by G.contractL on hs/Λ after the explicit hI reindex. Construct a single
+flat contraction on f, with exactly the same final type G P K Δ. Separately
+use G.contractR for f : G P Γ F and final G P Γ K. Premises may contain cuts.
+
+Construct the flat gap list and tail from original positional data, not
+from assumed conclusions. Its ordered selected family must be all n original
+inner selected copies together with the unique fixed originals of the m−1
+other outer selected positions. Prove completeness, order, multiplicity,
+length n+m−1, all endpoint identifications and constructor bounds. An outer
+selected occurrence equal in label to another fixed occurrence must not
+collapse that fixed tag.
+
+Prove the all-position composite-route identity with the actual flat route,
+complete retained/fixed fibers, and correctly variant product/coproduct
+identities by the proved universal components. Derive
+
+  ofTerm flat.denote = ofTerm old.denote
+
+in Reduced.Hom separately on both sides. Do not use an unproved arrow-negation
+operation for the dual, a relation-kernel quotient or a new generating equation.
+
+Prove the source W3 rank calculation. At the final retained position, the
+outer contraction rank in old is the flat contraction rank plus m, so the
+retained endpoint strictly decreases. Relate the two complete selected-copy
+sums and identify which m−1 parametric paths contributed their extra nodes.
+Keep contraction-subterm rank distinct from endpoint rank and prove the
+appropriate other-position rank law using the computed common original.
+Do not claim global/all-site decrease, Reducibility, termination or quotient
+rank invariance. Prove exact cut-count preservation, CutFree/Atomized
+equivalences and full tagged relation equality from Reduced equality.
+
+Include inhabited examples on both sides: empty/nonempty gaps and tails;
+independent 2/3 and 3/2 arities; a shared retained position at different
+outer selected offsets; fixed equal-labelled occurrences; Empty P constants;
+compound formulas; positive/negative literals and actual cut-containing
+premises. Derive exact selected lists and complete route maps. Preserve
+diagnostics and use small coordinate lemmas within existing heartbeat limits.
+
+After the last proof edit, run one heavy check at a time:
+  bash scripts/verify.sh
+  python3 scripts/check-audit-boundaries.py
+  python3 scripts/check-presentation-boundaries.py
+  sha256sum -c SHA256SUMS (working directory manuscript/)
+  git diff --check
+  git diff --cached --check
+Retain commands, versions, exits, elapsed times, full source/import/declaration
+closure, transitive axiom audit and all five expected negative-control
+rejections. No custom mathematical axioms, proof holes, native_decide,
+conclusion-equivalent assumptions or arbitrary empty-hom-set zeros.
+
+Apply hostile-referee and source-grounded mathematical-writing reviews to
+actual proofs, types, examples, report and correspondence. Use the verified
+KLR cache specified in CODEX_NEXT_SESSION.txt; preserve historical access
+records. Update current maps, correspondence, validation, README and
+continuation with exactly the proved W3 scope. Keep all process commentary
+outside the manuscript. Retain reports under docs/ and docs/reviews/ and
+evidence under provenance/. Deliver every finalized report to
+/mnt/c/Users/fleng/Downloads with conflict-preserving names and byte/SHA256
+verification against the committed repository version.
+
+Verify checked source against the commit and local main/origin/main/live SSH
+refs agree after a non-force push. Preserve the retained integration stash.
+Finish with the commit, exact results and limits, actual verification,
+working-tree/ref status, repository/Downloads paths and one explicit next
+proof obligation. Keep remaining disjoint interleaving/exchange/W1/W2–W6,
+all-site replacement, Reducibility, Blocked-w, cut elimination, restricted
+coherence inputs, PositiveCoherence, Reduced.Faithful, Boolean Coherence and
+unconditional maximality separate/open. An unfinished reconstruction of a
+published result does not establish a manuscript defect.

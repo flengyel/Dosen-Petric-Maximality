@@ -1,3 +1,60 @@
+# W1 terminal-tail disjoint contraction validation (current checkpoint)
+
+The proof baseline is main 14c0f7dad53ef2267a99afe11d76f1612f5b9836,
+including the corrected manuscript v5/sentence audit. Actual baseline strict
+verification passed: 162 files / 6,310 declarations, exit 0, 7.089 seconds.
+On resumption, SSH origin was fetched and remained at that baseline.
+
+Fresh sequential verification completed at
+2026-10-24T16:44:27.831850+00:00: **171 Lean files / 6,705 audited declarations**.
+Strict build/transitive axiom audit: exit 0, 11.795s. Audit-boundary script:
+exit 0, 10.980s; presentation-boundary script: exit 0, 2.678s. Manuscript
+SHA256SUMS: exit 0, 0.034s. Both unstaged/staged whitespace checks passed.
+All five controls reject with expected diagnostics and Lean exit 1: direct
+custom axiom, unused private custom axiom, hidden external axiom, rfl
+identification of distinct tagged projections, and zero without a correctly
+typed existing-arrow witness. Complete public import closure passes. Only
+propext, Quot.sound and Classical.choice are permitted; 122 selected axiom
+prints supplement the full audit.
+
+Nine new modules add 307 explicit declarations and 395 audited declarations
+including generated ones. Every older DosenPetric source/interface, the pinned
+Lean 4.35.0 Init-only manifest, AGENTS, manuscript v4/v5, diagrams/references,
+checksums and historical reports/access records are preserved. Existing Lean
+edits only add root imports and selected axiom prints. The retained integration
+backup stash is unchanged. No new dependency or generating equation is added.
+
+Two terminalTail_left/right results compile at exact K endpoints, with all
+eight context identities, actual G/At/Route casts, a concrete all-position
+copies/copies square and correctly variant categorical squares. Complete ordered
+selected transports and positional separation even C=E give full selected,
+retained and other fixed fibers. Terminal xC<xE is derived, not copied from
+the interior case. Independent n,m give old=(LC+n,LE+1), new=(LC+1,LE+m),
+both directed balances, strict comparisons, sum balance/equal-arity invariance
+and other ranks 2+rho at the common original. Counts/predicates/full tagged
+relations and inhabited equal-label/Empty/compound/signed-cut examples compile.
+The actual 2/3 example increases the two-endpoint sum by one. No general
+decreasing measure is claimed. The reusable frame is instantiated in the
+preserved interior construction with four rfl old/new comparisons.
+
+All heavy checks were sequential. Original baseline, exploratory failures,
+initial verification and resumed verification are preserved separately in
+provenance/wsl-gentzen-w1-terminal-tail-contraction/ and matching .codex-work/.
+Source hashes match the inspected proof bytes. Author-side hostile and
+source-grounded writing reviews cover the actual proofs and current maps.
+Committed-source/ref/Downloads checks have separate completion receipts.
+
+No independent source/kernel replay, Challenge/Solution/Comparator, official
+preflight/service, fresh manuscript compilation/layout review, publication,
+license or visibility action ran. Shared-selected W3 fusion is next. Disjoint
+interleaving, remaining W1/W2–W6, all-site replacement, Reducibility, Blocked-w,
+cut elimination, coherence and unconditional maximality remain separate/open.
+See [the report](GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT.md).
+
+---
+
+## Historical fixed-gap disjoint contraction validation (unchanged evidence)
+
 # W1 fixed-gap disjoint contraction validation (current checkpoint)
 
 Clean main 6192328eccde5e4aa912017409289255bc8c5cb1 matched fetched SSH origin.

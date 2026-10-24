@@ -1,0 +1,51 @@
+✖ [130/130] Building DosenPetric.GentzenContractionFrame (2.1s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenContractionFrame.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionFrame.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionFrame.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionFrame.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionFrame.setup.json --json
+error: DosenPetric/GentzenContractionFrame.lean:105:49: Unknown identifier `hSq`
+error: DosenPetric/GentzenContractionFrame.lean:105:34: Invalid field notation: Type of
+  x
+is not known; cannot resolve field `projection`
+
+Hint: Consider replacing the field projection `.projection` with a call to the function `At.projection`.
+error: DosenPetric/GentzenContractionFrame.lean:111:48: Unknown identifier `hSq`
+error: DosenPetric/GentzenContractionFrame.lean:111:34: Invalid field notation: Type of
+  x
+is not known; cannot resolve field `injection`
+
+Hint: Consider replacing the field projection with a call to one of the following:
+  • `Lean.Parser.Tactic.injection`
+  • `At.injection`
+error: DosenPetric/GentzenContractionFrame.lean:115:33: Unknown identifier `hSq`
+error: DosenPetric/GentzenContractionFrame.lean:113:112: unsolved goals
+P : Type u
+d : ContractionFrame P
+a : At d.F d.C
+ha : a ∈ d.selectedC0
+h₀ : d.bc0.route.get a = d.bc0.keep
+⊢ (d.e0.get a).index ≠ d.keepE0.index
+error: DosenPetric/GentzenContractionFrame.lean:124:33: Unknown identifier `hSq`
+error: DosenPetric/GentzenContractionFrame.lean:122:112: unsolved goals
+P : Type u
+d : ContractionFrame P
+a : At d.F d.E
+ha : a ∈ d.selectedE0
+h₀ : d.be0.route.get a = d.be0.keep
+⊢ (d.c0.get a).index ≠ d.keepC0.index
+error: DosenPetric/GentzenContractionFrame.lean:133:31: Unknown identifier `hE`
+error: DosenPetric/GentzenContractionFrame.lean:131:97: unsolved goals
+P : Type u
+d : ContractionFrame P
+a : At d.FE d.C
+ha : a ∈ d.selectedC1
+h₁ : (d.bc1.route.get a).index = d.bc1.keep.index
+⊢ a.index ≠ d.keepE0.index
+error: DosenPetric/GentzenContractionFrame.lean:141:31: Unknown identifier `hC`
+error: DosenPetric/GentzenContractionFrame.lean:139:97: unsolved goals
+P : Type u
+d : ContractionFrame P
+a : At d.FC d.E
+ha : a ∈ d.selectedE1
+h₁ : (d.be1.route.get a).index = d.be1.keep.index
+⊢ a.index ≠ d.keepC0.index
+Some required targets logged failures:
+- DosenPetric.GentzenContractionFrame
+error: build failed

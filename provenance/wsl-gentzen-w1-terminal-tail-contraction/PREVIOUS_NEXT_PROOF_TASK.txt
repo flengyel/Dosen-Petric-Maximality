@@ -1,0 +1,44 @@
+Historical next-task excerpt from baseline 14c0f7dad53ef2267a99afe11d76f1612f5b9836.
+This terminal-tail task is now completed; see the current report/maps.
+
+## Next concrete proof task
+
+Fixed-gap disjoint same-side contraction and its dual are complete. See
+[the current report](GENTZEN_W1_DISJOINT_CONTRACTION_REPORT.md).
+
+Next prove terminal-tail disjoint same-side contraction and its right dual.
+For arbitrary P,C,E, gs,hs,H,U,V and Δ/Γ, set es=H::hs and require independent
+2≤gs.length and 2≤es.length. Define:
+
+```text
+upBefore = repeated C gs ++ U
+loBefore = gaps gs ++ C :: U
+F  = upBefore ++ repeated E es ++ V
+FE = upBefore ++ gaps es ++ E :: V
+FC = loBefore ++ repeated E es ++ V
+K  = loBefore ++ gaps es ++ E :: V.
+```
+
+For f : G P F Δ, old first applies E contraction with gaps
+`(upBefore ++ H)::hs` and tail V, then C contraction with gaps gs and tail
+`U ++ gaps es ++ E :: V`. New first applies C contraction with gaps gs and
+tail `U ++ repeated E es ++ V`, then E contraction with gaps
+`(loBefore ++ H)::hs` and tail V. Both results must have type G P K Δ.
+The right dual starts with f : G P Γ F and must finish at G P Γ K using
+G.contractR. All endpoint identifications must be proved and used explicitly.
+Every selected E occurrence lies in the fixed terminal tail; every selected
+C occurrence lies before that tail and remains parametric through E. Prove
+these positional conditions even C=E, the copies/copies square, complete
+ordered transports, fixed fibers, exact denotation and independently directed
+rank table. The retained C position precedes retained E here; the completed
+interior-gap index ordering cannot simply be copied. No terminal construction
+or conclusion is assumed by this checkpoint.
+
+Interleaved/shared-selected contractions, including source W3, crossing-selected,
+multi-gap and absorption exchange configurations, remaining W1, W2–W6,
+arbitrary-context replacement/all-site decrease, Reducibility, Blocked-w,
+cut elimination, required positive coherence inputs, PositiveCoherence,
+Reduced.Faithful, Boolean Coherence, unconditional maximality and Palomar
+preparation remain separate/open. Existing conditional transfers are unchanged.
+An unfinished formalization of cited published work does not establish a
+manuscript defect.

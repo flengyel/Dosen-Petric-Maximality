@@ -160,3 +160,12 @@ public import DosenPetric.GentzenDisjointCommutation
 public import DosenPetric.GentzenDisjointRanks
 public import DosenPetric.GentzenDisjointInstances
 public import DosenPetric.GentzenDisjointExamples
+public import DosenPetric.GentzenContractionFrame
+public import DosenPetric.GentzenContractionFrameFibers
+public import DosenPetric.GentzenContractionFrameCommutation
+public import DosenPetric.GentzenContractionFrameRanks
+public import DosenPetric.GentzenContractionFrameInterior
+public import DosenPetric.GentzenTerminalContractionData
+public import DosenPetric.GentzenTerminalContractionRouting
+public import DosenPetric.GentzenTerminalContractionInstances
+public import DosenPetric.GentzenTerminalContractionExamples

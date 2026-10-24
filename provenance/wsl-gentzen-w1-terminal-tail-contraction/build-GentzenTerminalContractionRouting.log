@@ -1,0 +1,19 @@
+✖ [133/133] Building DosenPetric.GentzenTerminalContractionRouting (1.4s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenTerminalContractionRouting.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenTerminalContractionRouting.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenTerminalContractionRouting.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenTerminalContractionRouting.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenTerminalContractionRouting.setup.json --json
+error: DosenPetric/GentzenTerminalContractionRouting.lean:56:2: Type mismatch: After simplification, term
+  h
+ has type
+  copyIndex d.gs
+      (splice ((repeated d.C d.gs).length + d.U.length) (d.H.length + ((repeated d.E d.hs).length + 1))
+        (d.H.length + (gaps d.hs).length + 1) (copyIndex d.es) a.index) =
+    splice ((gaps d.gs).length + 1 + d.U.length) (d.H.length + ((repeated d.E d.hs).length + 1))
+      (d.H.length + (gaps d.hs).length + 1) (copyIndex d.es) (copyIndex d.gs a.index)
+but is expected to have type
+  copyIndex d.gs
+      (splice ((repeated d.C d.gs).length + d.U.length) (d.H.length + ((repeated d.E d.hs).length + 1))
+        (d.H.length + (gaps d.hs).length + 1) (copyIndex d.es) a.index) =
+    splice ((gaps d.gs).length + (d.U.length + 1)) (d.H.length + ((repeated d.E d.hs).length + 1))
+      (d.H.length + (gaps d.hs).length + 1) (copyIndex d.es) (copyIndex d.gs a.index)
+Some required targets logged failures:
+- DosenPetric.GentzenTerminalContractionRouting
+error: build failed

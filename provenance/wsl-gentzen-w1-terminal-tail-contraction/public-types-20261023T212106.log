@@ -1,0 +1,1716 @@
+/tmp/dp-terminal-tail-public-types.lean:4:0: error: Unknown option `pp.width`
+@DosenPetric.Reduced.Gentzen.copyIndex_strict_fixed.{u_1} : ∀ {P : Type u_1}
+  (gs : List.{u_1} (List.{u_1} (DosenPetric.NormalForm.{u_1} P))) (i j : Nat),
+  Ne.{1} (DosenPetric.Reduced.Gentzen.copyIndex.{u_1} gs i)
+      (List.length.{u_1} (DosenPetric.Reduced.Gentzen.gaps.{u_1} gs)) →
+    Ne.{1} (DosenPetric.Reduced.Gentzen.copyIndex.{u_1} gs j)
+        (List.length.{u_1} (DosenPetric.Reduced.Gentzen.gaps.{u_1} gs)) →
+      LT.lt.{0} i j →
+        LT.lt.{0} (DosenPetric.Reduced.Gentzen.copyIndex.{u_1} gs i) (DosenPetric.Reduced.Gentzen.copyIndex.{u_1} gs j)
+@DosenPetric.Reduced.Gentzen.ContractionFrame.selectedC_transport.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.ContractionFrame.{u_1} P),
+  (∀ {A : DosenPetric.NormalForm.{u_1} P}
+      (a : DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.F.{u_1} d) A),
+      Eq.{u_1 + 1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e0.{u_1} d) a))
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c0.{u_1} d) a))) →
+    Eq.{u_1 + 1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.ContractionFrame.keepC0.{u_1} d))
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1} d) →
+      Eq.{u_1 + 1}
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c1.{u_1} d)
+            (DosenPetric.Reduced.Gentzen.ContractionFrame.keepE0.{u_1} d))
+          (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1} d) →
+        Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1} d))
+            (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1} d)) →
+          Eq.{u_1 + 1} (DosenPetric.Reduced.Gentzen.ContractionFrame.selectedC1.{u_1} d)
+            (List.map.{u_1, u_1}
+              (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e0.{u_1} d))
+              (DosenPetric.Reduced.Gentzen.ContractionFrame.selectedC0.{u_1} d))
+@DosenPetric.Reduced.Gentzen.ContractionFrame.selectedE_transport.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.ContractionFrame.{u_1} P),
+  (∀ {A : DosenPetric.NormalForm.{u_1} P}
+      (a : DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.F.{u_1} d) A),
+      Eq.{u_1 + 1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e0.{u_1} d) a))
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c0.{u_1} d) a))) →
+    Eq.{u_1 + 1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.ContractionFrame.keepC0.{u_1} d))
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1} d) →
+      Eq.{u_1 + 1}
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c1.{u_1} d)
+            (DosenPetric.Reduced.Gentzen.ContractionFrame.keepE0.{u_1} d))
+          (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1} d) →
+        Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1} d))
+            (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1} d)) →
+          Eq.{u_1 + 1} (DosenPetric.Reduced.Gentzen.ContractionFrame.selectedE1.{u_1} d)
+            (List.map.{u_1, u_1}
+              (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c0.{u_1} d))
+              (DosenPetric.Reduced.Gentzen.ContractionFrame.selectedE0.{u_1} d))
+@DosenPetric.Reduced.Gentzen.ContractionFrame.selectedC_singleton.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.ContractionFrame.{u_1} P),
+  (∀ {A : DosenPetric.NormalForm.{u_1} P}
+      (a : DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.F.{u_1} d) A),
+      Eq.{u_1 + 1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e0.{u_1} d) a))
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c0.{u_1} d) a))) →
+    Eq.{u_1 + 1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.ContractionFrame.keepC0.{u_1} d))
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1} d) →
+      Eq.{u_1 + 1}
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c1.{u_1} d)
+            (DosenPetric.Reduced.Gentzen.ContractionFrame.keepE0.{u_1} d))
+          (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1} d) →
+        Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1} d))
+            (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1} d)) →
+          ∀
+            (a :
+              DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.F.{u_1} d)
+                (DosenPetric.Reduced.Gentzen.ContractionFrame.C.{u_1} d)),
+            Membership.mem.{u_1, u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.selectedC0.{u_1} d) a →
+              Eq.{u_1 + 1}
+                (DosenPetric.Reduced.Gentzen.TraceRoute.fiber.{u_1}
+                  (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e0.{u_1} d)
+                    a)
+                  (DosenPetric.Reduced.Gentzen.TraceRoute.full.{u_1}
+                    (DosenPetric.Reduced.Gentzen.ContractionFrame.e0.{u_1} d)))
+                (List.cons.{u_1} a List.nil.{u_1})
+@DosenPetric.Reduced.Gentzen.ContractionFrame.selectedE_singleton.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.ContractionFrame.{u_1} P),
+  (∀ {A : DosenPetric.NormalForm.{u_1} P}
+      (a : DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.F.{u_1} d) A),
+      Eq.{u_1 + 1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e0.{u_1} d) a))
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c0.{u_1} d) a))) →
+    Eq.{u_1 + 1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.ContractionFrame.keepC0.{u_1} d))
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1} d) →
+      Eq.{u_1 + 1}
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c1.{u_1} d)
+            (DosenPetric.Reduced.Gentzen.ContractionFrame.keepE0.{u_1} d))
+          (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1} d) →
+        Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1} d))
+            (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1} d)) →
+          ∀
+            (a :
+              DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.F.{u_1} d)
+                (DosenPetric.Reduced.Gentzen.ContractionFrame.E.{u_1} d)),
+            Membership.mem.{u_1, u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.selectedE0.{u_1} d) a →
+              Eq.{u_1 + 1}
+                (DosenPetric.Reduced.Gentzen.TraceRoute.fiber.{u_1}
+                  (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c0.{u_1} d)
+                    a)
+                  (DosenPetric.Reduced.Gentzen.TraceRoute.full.{u_1}
+                    (DosenPetric.Reduced.Gentzen.ContractionFrame.c0.{u_1} d)))
+                (List.cons.{u_1} a List.nil.{u_1})
+@DosenPetric.Reduced.Gentzen.ContractionFrame.other_fiber.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.ContractionFrame.{u_1} P),
+  (∀ {A : DosenPetric.NormalForm.{u_1} P}
+      (a : DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.F.{u_1} d) A),
+      Eq.{u_1 + 1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e0.{u_1} d) a))
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c0.{u_1} d) a))) →
+    Eq.{u_1 + 1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.ContractionFrame.keepC0.{u_1} d))
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1} d) →
+      ∀
+        (hE :
+          Eq.{u_1 + 1}
+            (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c1.{u_1} d)
+              (DosenPetric.Reduced.Gentzen.ContractionFrame.keepE0.{u_1} d))
+            (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1} d))
+        {A : DosenPetric.NormalForm.{u_1} P}
+        (z : DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.K.{u_1} d) A)
+        (hc :
+          Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+            (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1} d)))
+        (he :
+          Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+            (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1} d))),
+        Eq.{u_1 + 1}
+            (DosenPetric.Reduced.Gentzen.TraceRoute.fiber.{u_1} z
+              (DosenPetric.Reduced.Gentzen.TraceRoute.full.{u_1}
+                (DosenPetric.Reduced.Gentzen.Route.map.{u_1}
+                  (fun {A} =>
+                    DosenPetric.Reduced.Gentzen.Route.get.{u_1}
+                      (DosenPetric.Reduced.Gentzen.ContractionFrame.c1.{u_1} d))
+                  (DosenPetric.Reduced.Gentzen.ContractionFrame.e0.{u_1} d))))
+            (List.cons.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.originalViaE.{u_1} d hE z hc he)
+              List.nil.{u_1}) ∧
+          Eq.{u_1 + 1}
+            (DosenPetric.Reduced.Gentzen.TraceRoute.fiber.{u_1} z
+              (DosenPetric.Reduced.Gentzen.TraceRoute.full.{u_1}
+                (DosenPetric.Reduced.Gentzen.Route.map.{u_1}
+                  (fun {A} =>
+                    DosenPetric.Reduced.Gentzen.Route.get.{u_1}
+                      (DosenPetric.Reduced.Gentzen.ContractionFrame.e1.{u_1} d))
+                  (DosenPetric.Reduced.Gentzen.ContractionFrame.c0.{u_1} d))))
+            (List.cons.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.originalViaE.{u_1} d hE z hc he)
+              List.nil.{u_1})
+@DosenPetric.Reduced.Gentzen.ContractionFrame.original_agree.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.ContractionFrame.{u_1} P),
+  (∀ {A : DosenPetric.NormalForm.{u_1} P}
+      (a : DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.F.{u_1} d) A),
+      Eq.{u_1 + 1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e0.{u_1} d) a))
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c0.{u_1} d) a))) →
+    ∀
+      (hC :
+        Eq.{u_1 + 1}
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.e1.{u_1} d)
+            (DosenPetric.Reduced.Gentzen.ContractionFrame.keepC0.{u_1} d))
+          (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1} d))
+      (hE :
+        Eq.{u_1 + 1}
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.c1.{u_1} d)
+            (DosenPetric.Reduced.Gentzen.ContractionFrame.keepE0.{u_1} d))
+          (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1} d))
+      {A : DosenPetric.NormalForm.{u_1} P}
+      (z : DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.K.{u_1} d) A)
+      (hc :
+        Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+          (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1} d)))
+      (he :
+        Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+          (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1} d))),
+      Eq.{u_1 + 1} (DosenPetric.Reduced.Gentzen.ContractionFrame.originalViaC.{u_1} d hC z hc he)
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.originalViaE.{u_1} d hE z hc he)
+@DosenPetric.Reduced.Gentzen.W1.ContractionFrame.interior_oldL_eq.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.Disjoint.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.Disjoint.Data.outer0.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.Disjoint.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.Disjoint.Data.F.{u_1} d) Δ),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.oldL.{u_1}
+      (DosenPetric.Reduced.Gentzen.Disjoint.Data.frame.{u_1} d) hn hm Δ f)
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.oldL.{u_1} d hn hm Δ f)
+@DosenPetric.Reduced.Gentzen.W1.ContractionFrame.interior_newL_eq.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.Disjoint.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.Disjoint.Data.outer0.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.Disjoint.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.Disjoint.Data.F.{u_1} d) Δ),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.newL.{u_1}
+      (DosenPetric.Reduced.Gentzen.Disjoint.Data.frame.{u_1} d) hn hm Δ f)
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.newL.{u_1} d hn hm Δ f)
+@DosenPetric.Reduced.Gentzen.W1.ContractionFrame.interior_oldR_eq.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.Disjoint.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.Disjoint.Data.outer0.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.Disjoint.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.Disjoint.Data.F.{u_1} d)),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.oldR.{u_1}
+      (DosenPetric.Reduced.Gentzen.Disjoint.Data.frame.{u_1} d) hn hm Γ f)
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.oldR.{u_1} d hn hm Γ f)
+@DosenPetric.Reduced.Gentzen.W1.ContractionFrame.interior_newR_eq.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.Disjoint.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.Disjoint.Data.outer0.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.Disjoint.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.Disjoint.Data.F.{u_1} d)),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.newR.{u_1}
+      (DosenPetric.Reduced.Gentzen.Disjoint.Data.frame.{u_1} d) hn hm Γ f)
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.newR.{u_1} d hn hm Γ f)
+@DosenPetric.Reduced.Gentzen.W1.ContractionFrame.interior_rankC.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.Disjoint.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.Disjoint.Data.outer0.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.Disjoint.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.Disjoint.Data.F.{u_1} d) Δ),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.oldL.{u_1} d hn hm Δ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.left (DosenPetric.Reduced.Gentzen.Disjoint.Data.xC.{u_1} d))
+    (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.LCL.{u_1} d hn Δ f)
+      (List.length.{u_1} (DosenPetric.Reduced.Gentzen.Disjoint.Data.outer0.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.W1.ContractionFrame.interior_sumR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.Disjoint.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.Disjoint.Data.outer0.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.Disjoint.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.Disjoint.Data.F.{u_1} d)),
+  Eq.{1}
+    (HAdd.hAdd.{0, 0, 0}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.endpointSumR.{u_1} d Γ
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.oldR.{u_1} d hn hm Γ f))
+      (List.length.{u_1} (DosenPetric.Reduced.Gentzen.Disjoint.Data.es.{u_1} d)))
+    (HAdd.hAdd.{0, 0, 0}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.endpointSumR.{u_1} d Γ
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.newR.{u_1} d hn hm Γ f))
+      (List.length.{u_1} (DosenPetric.Reduced.Gentzen.Disjoint.Data.outer0.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.upperC0.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1}
+    (HAppend.hAppend.{u_1, u_1, u_1}
+      (DosenPetric.Reduced.Gentzen.repeated.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.C.{u_1} d)
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d))
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.tailC0.{u_1} d))
+    (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.lowerC0.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1}
+    (HAppend.hAppend.{u_1, u_1, u_1}
+      (DosenPetric.Reduced.Gentzen.gaps.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d))
+      (List.cons.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.C.{u_1} d)
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.tailC0.{u_1} d)))
+    (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.FC.{u_1} d)
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.upperC1.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1}
+    (HAppend.hAppend.{u_1, u_1, u_1}
+      (DosenPetric.Reduced.Gentzen.repeated.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.C.{u_1} d)
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d))
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.tailC1.{u_1} d))
+    (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.FE.{u_1} d)
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.lowerC1.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1}
+    (HAppend.hAppend.{u_1, u_1, u_1}
+      (DosenPetric.Reduced.Gentzen.gaps.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d))
+      (List.cons.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.C.{u_1} d)
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.tailC1.{u_1} d)))
+    (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.K.{u_1} d)
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.upperE0.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1}
+    (HAppend.hAppend.{u_1, u_1, u_1}
+      (DosenPetric.Reduced.Gentzen.repeated.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.E.{u_1} d)
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.eUpper.{u_1} d))
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.V.{u_1} d))
+    (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.lowerE0.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1}
+    (HAppend.hAppend.{u_1, u_1, u_1}
+      (DosenPetric.Reduced.Gentzen.gaps.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.eUpper.{u_1} d))
+      (List.cons.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.E.{u_1} d)
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.V.{u_1} d)))
+    (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.FE.{u_1} d)
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.upperE1.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1}
+    (HAppend.hAppend.{u_1, u_1, u_1}
+      (DosenPetric.Reduced.Gentzen.repeated.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.E.{u_1} d)
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.eLower.{u_1} d))
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.V.{u_1} d))
+    (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.FC.{u_1} d)
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.lowerE1.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1}
+    (HAppend.hAppend.{u_1, u_1, u_1}
+      (DosenPetric.Reduced.Gentzen.gaps.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.eLower.{u_1} d))
+      (List.cons.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.E.{u_1} d)
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.V.{u_1} d)))
+    (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.K.{u_1} d)
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.countE0.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{1} (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.eUpper.{u_1} d))
+    (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.countE1.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{1} (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.eLower.{u_1} d))
+    (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.square.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P) {A : DosenPetric.NormalForm.{u_1} P}
+  (a : DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) A),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c1.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e0.{u_1} d) a))
+    (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e1.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c0.{u_1} d) a))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.product_square.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.comp.{u_1}
+      (DosenPetric.Reduced.ofTerm.{u_1}
+        (DosenPetric.Reduced.Gentzen.Route.product.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c1.{u_1} d)))
+      (DosenPetric.Reduced.ofTerm.{u_1}
+        (DosenPetric.Reduced.Gentzen.Route.product.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e0.{u_1} d))))
+    (DosenPetric.Reduced.comp.{u_1}
+      (DosenPetric.Reduced.ofTerm.{u_1}
+        (DosenPetric.Reduced.Gentzen.Route.product.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e1.{u_1} d)))
+      (DosenPetric.Reduced.ofTerm.{u_1}
+        (DosenPetric.Reduced.Gentzen.Route.product.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c0.{u_1} d))))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.coproduct_square.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.comp.{u_1}
+      (DosenPetric.Reduced.ofTerm.{u_1}
+        (DosenPetric.Reduced.Gentzen.Route.coproduct.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e0.{u_1} d)))
+      (DosenPetric.Reduced.ofTerm.{u_1}
+        (DosenPetric.Reduced.Gentzen.Route.coproduct.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c1.{u_1} d))))
+    (DosenPetric.Reduced.comp.{u_1}
+      (DosenPetric.Reduced.ofTerm.{u_1}
+        (DosenPetric.Reduced.Gentzen.Route.coproduct.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c0.{u_1} d)))
+      (DosenPetric.Reduced.ofTerm.{u_1}
+        (DosenPetric.Reduced.Gentzen.Route.coproduct.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e1.{u_1} d))))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC_index.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d))
+    (List.length.{u_1}
+      (DosenPetric.Reduced.Gentzen.gaps.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE_index.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))
+    (HAdd.hAdd.{0, 0, 0}
+      (HAdd.hAdd.{0, 0, 0}
+        (HAdd.hAdd.{0, 0, 0}
+          (List.length.{u_1}
+            (DosenPetric.Reduced.Gentzen.gaps.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+          1)
+        (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.U.{u_1} d)))
+      (List.length.{u_1}
+        (DosenPetric.Reduced.Gentzen.gaps.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d))))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.retained_order.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  LT.lt.{0}
+    (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d))
+    (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.retained_distinct.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Ne.{1}
+    (DosenPetric.Reduced.Gentzen.At.index.{u_1}
+      (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d)))
+    (DosenPetric.Reduced.Gentzen.At.index.{u_1}
+      (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e1_keepC0.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e1.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.keepC0.{u_1} d))
+    (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d)
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c1_keepE0.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c1.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.keepE0.{u_1} d))
+    (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d)
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC_before.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (a :
+    DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.C.{u_1} d)),
+  Membership.mem.{u_1, u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC0.{u_1} d) a →
+    LT.lt.{0} (DosenPetric.Reduced.Gentzen.At.index.{u_1} a)
+      (List.length.{u_1}
+        (DosenPetric.Reduced.Gentzen.repeated.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.C.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC1_before.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (a :
+    DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.FE.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.C.{u_1} d)),
+  Membership.mem.{u_1, u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC1.{u_1} d) a →
+    LT.lt.{0} (DosenPetric.Reduced.Gentzen.At.index.{u_1} a)
+      (List.length.{u_1}
+        (DosenPetric.Reduced.Gentzen.repeated.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.C.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE_inside.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (a :
+    DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.E.{u_1} d)),
+  Membership.mem.{u_1, u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE0.{u_1} d) a →
+    LE.le.{0} (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.upBefore.{u_1} d))
+        (DosenPetric.Reduced.Gentzen.At.index.{u_1} a) ∧
+      LT.lt.{0} (DosenPetric.Reduced.Gentzen.At.index.{u_1} a)
+        (HAdd.hAdd.{0, 0, 0} (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.upBefore.{u_1} d))
+          (List.length.{u_1}
+            (DosenPetric.Reduced.Gentzen.repeated.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.E.{u_1} d)
+              (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d))))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE1_inside.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (a :
+    DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.FC.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.E.{u_1} d)),
+  Membership.mem.{u_1, u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE1.{u_1} d) a →
+    LE.le.{0} (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.loBefore.{u_1} d))
+        (DosenPetric.Reduced.Gentzen.At.index.{u_1} a) ∧
+      LT.lt.{0} (DosenPetric.Reduced.Gentzen.At.index.{u_1} a)
+        (HAdd.hAdd.{0, 0, 0} (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.loBefore.{u_1} d))
+          (List.length.{u_1}
+            (DosenPetric.Reduced.Gentzen.repeated.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.E.{u_1} d)
+              (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d))))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selected_separated.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (a :
+    DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.C.{u_1} d))
+  (b :
+    DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.E.{u_1} d)),
+  Membership.mem.{u_1, u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC0.{u_1} d) a →
+    Membership.mem.{u_1, u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE0.{u_1} d) b →
+      LT.lt.{0} (DosenPetric.Reduced.Gentzen.At.index.{u_1} a) (DosenPetric.Reduced.Gentzen.At.index.{u_1} b)
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC_transport.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC1.{u_1} d)
+    (List.map.{u_1, u_1}
+      (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e0.{u_1} d))
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC0.{u_1} d))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE_transport.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE1.{u_1} d)
+    (List.map.{u_1, u_1}
+      (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c0.{u_1} d))
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE0.{u_1} d))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC0_length.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{1} (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC0.{u_1} d))
+    (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC1_length.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{1} (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC1.{u_1} d))
+    (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE0_length.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{1} (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE0.{u_1} d))
+    (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE1_length.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{1} (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE1.{u_1} d))
+    (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC_singleton.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (a :
+    DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.C.{u_1} d)),
+  Membership.mem.{u_1, u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC0.{u_1} d) a →
+    Eq.{u_1 + 1}
+      (DosenPetric.Reduced.Gentzen.TraceRoute.fiber.{u_1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e0.{u_1} d)
+          a)
+        (DosenPetric.Reduced.Gentzen.TraceRoute.full.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e0.{u_1} d)))
+      (List.cons.{u_1} a List.nil.{u_1})
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE_singleton.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (a :
+    DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.E.{u_1} d)),
+  Membership.mem.{u_1, u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE0.{u_1} d) a →
+    Eq.{u_1 + 1}
+      (DosenPetric.Reduced.Gentzen.TraceRoute.fiber.{u_1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c0.{u_1} d)
+          a)
+        (DosenPetric.Reduced.Gentzen.TraceRoute.full.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c0.{u_1} d)))
+      (List.cons.{u_1} a List.nil.{u_1})
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC_fiber.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.Gentzen.TraceRoute.fiber.{u_1}
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TraceRoute.full.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e1.{u_1} d)))
+    (List.cons.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.keepC0.{u_1} d) List.nil.{u_1})
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE_fiber.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.Gentzen.TraceRoute.fiber.{u_1}
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TraceRoute.full.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c1.{u_1} d)))
+    (List.cons.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.keepE0.{u_1} d) List.nil.{u_1})
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC_parametric.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (a :
+    DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.C.{u_1} d)),
+  Membership.mem.{u_1, u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC0.{u_1} d) a →
+    Ne.{1}
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e0.{u_1} d)
+          a))
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.keepE0.{u_1} d))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE_parametric.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (a :
+    DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.E.{u_1} d)),
+  Membership.mem.{u_1, u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE0.{u_1} d) a →
+    Ne.{1}
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c0.{u_1} d)
+          a))
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.keepC0.{u_1} d))
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC_final.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (a :
+    DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.C.{u_1} d)),
+  Membership.mem.{u_1, u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC0.{u_1} d) a →
+    Eq.{u_1 + 1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e0.{u_1} d)
+            a))
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d) ∧
+      Eq.{u_1 + 1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c0.{u_1} d)
+            a))
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d)
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE_final.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (a :
+    DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.E.{u_1} d)),
+  Membership.mem.{u_1, u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE0.{u_1} d) a →
+    Eq.{u_1 + 1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e0.{u_1} d)
+            a))
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d) ∧
+      Eq.{u_1 + 1}
+        (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e1.{u_1} d)
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c0.{u_1} d)
+            a))
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d)
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.original_agree.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P) {A : DosenPetric.NormalForm.{u_1} P}
+  (z : DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.K.{u_1} d) A)
+  (hc :
+    Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d)))
+  (he :
+    Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.Gentzen.ContractionFrame.originalViaC.{u_1}
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) ⋯ z hc he)
+    (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.original.{u_1} d z hc he)
+@DosenPetric.Reduced.Gentzen.TerminalContraction.Data.other_fiber.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P) {A : DosenPetric.NormalForm.{u_1} P}
+  (z : DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.K.{u_1} d) A)
+  (hc :
+    Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d)))
+  (he :
+    Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))),
+  Eq.{u_1 + 1}
+      (DosenPetric.Reduced.Gentzen.TraceRoute.fiber.{u_1} z
+        (DosenPetric.Reduced.Gentzen.TraceRoute.full.{u_1}
+          (DosenPetric.Reduced.Gentzen.Route.map.{u_1}
+            (fun {A} =>
+              DosenPetric.Reduced.Gentzen.Route.get.{u_1}
+                (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c1.{u_1} d))
+            (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e0.{u_1} d))))
+      (List.cons.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.original.{u_1} d z hc he) List.nil.{u_1}) ∧
+    Eq.{u_1 + 1}
+      (DosenPetric.Reduced.Gentzen.TraceRoute.fiber.{u_1} z
+        (DosenPetric.Reduced.Gentzen.TraceRoute.full.{u_1}
+          (DosenPetric.Reduced.Gentzen.Route.map.{u_1}
+            (fun {A} =>
+              DosenPetric.Reduced.Gentzen.Route.get.{u_1}
+                (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e1.{u_1} d))
+            (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c0.{u_1} d))))
+      (List.cons.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.original.{u_1} d z hc he) List.nil.{u_1})
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalTail_left.{u_1} : ∀ {P : Type u_1}
+  (C E : DosenPetric.NormalForm.{u_1} P) (gs hs : List.{u_1} (List.{u_1} (DosenPetric.NormalForm.{u_1} P)))
+  (H U V Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P)) (hn : LE.le.{0} 2 (List.length.{u_1} gs))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (List.cons.{u_1} H hs)))
+  (f :
+    DosenPetric.Reduced.Gentzen.G.{u_1} P
+      (HAppend.hAppend.{u_1, u_1, u_1}
+        (HAppend.hAppend.{u_1, u_1, u_1}
+          (HAppend.hAppend.{u_1, u_1, u_1} (DosenPetric.Reduced.Gentzen.repeated.{u_1} C gs) U)
+          (DosenPetric.Reduced.Gentzen.repeated.{u_1} E (List.cons.{u_1} H hs)))
+        V)
+      Δ),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.ofTerm.{u_1}
+      (DosenPetric.Reduced.Gentzen.G.denote.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.terminalTail.{u_1} C E gs hs H U V) hn hm Δ f)))
+    (DosenPetric.Reduced.ofTerm.{u_1}
+      (DosenPetric.Reduced.Gentzen.G.denote.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.terminalTail.{u_1} C E gs hs H U V) hn hm Δ f)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalTail_right.{u_1} : ∀ {P : Type u_1}
+  (C E : DosenPetric.NormalForm.{u_1} P) (gs hs : List.{u_1} (List.{u_1} (DosenPetric.NormalForm.{u_1} P)))
+  (H U V Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P)) (hn : LE.le.{0} 2 (List.length.{u_1} gs))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (List.cons.{u_1} H hs)))
+  (f :
+    DosenPetric.Reduced.Gentzen.G.{u_1} P Γ
+      (HAppend.hAppend.{u_1, u_1, u_1}
+        (HAppend.hAppend.{u_1, u_1, u_1}
+          (HAppend.hAppend.{u_1, u_1, u_1} (DosenPetric.Reduced.Gentzen.repeated.{u_1} C gs) U)
+          (DosenPetric.Reduced.Gentzen.repeated.{u_1} E (List.cons.{u_1} H hs)))
+        V)),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.ofTerm.{u_1}
+      (DosenPetric.Reduced.Gentzen.G.denote.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.terminalTail.{u_1} C E gs hs H U V) hn hm Γ f)))
+    (DosenPetric.Reduced.ofTerm.{u_1}
+      (DosenPetric.Reduced.Gentzen.G.denote.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldR.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.terminalTail.{u_1} C E gs hs H U V) hn hm Γ f)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalDenoteL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.ofTerm.{u_1}
+      (DosenPetric.Reduced.Gentzen.G.denote.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{u_1} d hn hm Δ f)))
+    (DosenPetric.Reduced.ofTerm.{u_1}
+      (DosenPetric.Reduced.Gentzen.G.denote.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{u_1} d hn hm Δ f)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalDenoteR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.ofTerm.{u_1}
+      (DosenPetric.Reduced.Gentzen.G.denote.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{u_1} d hn hm Γ f)))
+    (DosenPetric.Reduced.ofTerm.{u_1}
+      (DosenPetric.Reduced.Gentzen.G.denote.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldR.{u_1} d hn hm Γ f)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalRelationL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.relation.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{u_1} d hn hm Δ f))
+    (DosenPetric.Reduced.Gentzen.G.relation.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{u_1} d hn hm Δ f))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalRelationR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.relation.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{u_1} d hn hm Γ f))
+    (DosenPetric.Reduced.Gentzen.G.relation.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldR.{u_1} d hn hm Γ f))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalRankTableL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  Eq.{1}
+      (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{u_1} d hn hm Δ f)
+        DosenPetric.Reduced.Gentzen.SequentSide.left (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d))
+      (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLCL.{u_1} d hn Δ f)
+        (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d))) ∧
+    Eq.{1}
+        (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{u_1} d hn hm Δ f)
+          DosenPetric.Reduced.Gentzen.SequentSide.left
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d))
+        (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLCL.{u_1} d hn Δ f) 1) ∧
+      Eq.{1}
+          (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+            (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{u_1} d hn hm Δ f)
+            DosenPetric.Reduced.Gentzen.SequentSide.left
+            (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))
+          (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLEL.{u_1} d hm Δ f) 1) ∧
+        Eq.{1}
+          (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+            (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{u_1} d hn hm Δ f)
+            DosenPetric.Reduced.Gentzen.SequentSide.left
+            (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))
+          (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLEL.{u_1} d hm Δ f)
+            (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalRankTableR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  Eq.{1}
+      (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldR.{u_1} d hn hm Γ f)
+        DosenPetric.Reduced.Gentzen.SequentSide.right (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d))
+      (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLCR.{u_1} d hn Γ f)
+        (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d))) ∧
+    Eq.{1}
+        (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{u_1} d hn hm Γ f)
+          DosenPetric.Reduced.Gentzen.SequentSide.right
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d))
+        (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLCR.{u_1} d hn Γ f) 1) ∧
+      Eq.{1}
+          (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+            (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldR.{u_1} d hn hm Γ f)
+            DosenPetric.Reduced.Gentzen.SequentSide.right
+            (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))
+          (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLER.{u_1} d hm Γ f) 1) ∧
+        Eq.{1}
+          (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+            (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{u_1} d hn hm Γ f)
+            DosenPetric.Reduced.Gentzen.SequentSide.right
+            (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))
+          (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLER.{u_1} d hm Γ f)
+            (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_old_xCL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{u_1} d hn hm Δ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.left (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d))
+    (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLCL.{u_1} d hn Δ f)
+      (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_new_xCL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{u_1} d hn hm Δ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.left (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d))
+    (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLCL.{u_1} d hn Δ f) 1)
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_old_xEL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{u_1} d hn hm Δ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.left (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))
+    (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLEL.{u_1} d hm Δ f) 1)
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_new_xEL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{u_1} d hn hm Δ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.left (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))
+    (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLEL.{u_1} d hm Δ f)
+      (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_old_xCR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldR.{u_1} d hn hm Γ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.right (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d))
+    (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLCR.{u_1} d hn Γ f)
+      (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_new_xCR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{u_1} d hn hm Γ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.right (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d))
+    (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLCR.{u_1} d hn Γ f) 1)
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_old_xER.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldR.{u_1} d hn hm Γ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.right (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))
+    (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLER.{u_1} d hm Γ f) 1)
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_new_xER.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{u_1} d hn hm Γ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.right (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))
+    (HAdd.hAdd.{0, 0, 0} (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLER.{u_1} d hm Γ f)
+      (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_oldC_contractionL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.ContractionBlock.rankL.{u_1}
+      (DosenPetric.Reduced.Gentzen.ContractionFrame.bc1.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d))
+      ⋯ Δ
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.innerEL.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hm Δ f))
+    (HAdd.hAdd.{0, 0, 0}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.LCL.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn Δ f)
+      (List.length.{u_1}
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.cgs0.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_newE_contractionL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.ContractionBlock.rankL.{u_1}
+      (DosenPetric.Reduced.Gentzen.ContractionFrame.be1.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d))
+      ⋯ Δ
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.innerCL.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn Δ f))
+    (HAdd.hAdd.{0, 0, 0}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.LEL.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hm Δ f)
+      (List.length.{u_1}
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.egs0.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_oldC_contractionR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.ContractionBlock.rankR.{u_1}
+      (DosenPetric.Reduced.Gentzen.ContractionFrame.bc1.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d))
+      ⋯ Γ
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.innerER.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hm Γ f))
+    (HAdd.hAdd.{0, 0, 0}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.LCR.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn Γ f)
+      (List.length.{u_1}
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.cgs0.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_newE_contractionR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.ContractionBlock.rankR.{u_1}
+      (DosenPetric.Reduced.Gentzen.ContractionFrame.be1.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d))
+      ⋯ Γ
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.innerCR.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn Γ f))
+    (HAdd.hAdd.{0, 0, 0}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.LER.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hm Γ f)
+      (List.length.{u_1}
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.egs0.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_C_balanceL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  Eq.{1}
+    (HAdd.hAdd.{0, 0, 0}
+      (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.oldL.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Δ f)
+        DosenPetric.Reduced.Gentzen.SequentSide.left
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d)))
+      1)
+    (HAdd.hAdd.{0, 0, 0}
+      (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.newL.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Δ f)
+        DosenPetric.Reduced.Gentzen.SequentSide.left
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d)))
+      (List.length.{u_1}
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.cgs0.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_E_balanceL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  Eq.{1}
+    (HAdd.hAdd.{0, 0, 0}
+      (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.newL.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Δ f)
+        DosenPetric.Reduced.Gentzen.SequentSide.left
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d)))
+      1)
+    (HAdd.hAdd.{0, 0, 0}
+      (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.oldL.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Δ f)
+        DosenPetric.Reduced.Gentzen.SequentSide.left
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d)))
+      (List.length.{u_1}
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.egs0.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_C_decreasesL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  LT.lt.{0}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.newL.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Δ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.left
+      (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d)))
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.oldL.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Δ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.left
+      (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_E_increasesL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  LT.lt.{0}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.oldL.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Δ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.left
+      (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d)))
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.newL.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Δ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.left
+      (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_C_decreasesR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  LT.lt.{0}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.newR.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Γ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.right
+      (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d)))
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.oldR.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Γ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.right
+      (DosenPetric.Reduced.Gentzen.ContractionFrame.xC.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_E_increasesR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  LT.lt.{0}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.oldR.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Γ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.right
+      (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d)))
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.newR.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Γ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.right
+      (DosenPetric.Reduced.Gentzen.ContractionFrame.xE.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_sum_balanceL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  Eq.{1}
+    (HAdd.hAdd.{0, 0, 0}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.endpointSumL.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) Δ
+        (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.oldL.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Δ f))
+      (List.length.{u_1}
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.egs0.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d))))
+    (HAdd.hAdd.{0, 0, 0}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.endpointSumL.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) Δ
+        (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.newL.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Δ f))
+      (List.length.{u_1}
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.cgs0.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_sum_balanceR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  Eq.{1}
+    (HAdd.hAdd.{0, 0, 0}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.endpointSumR.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) Γ
+        (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.oldR.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Γ f))
+      (List.length.{u_1}
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.egs0.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d))))
+    (HAdd.hAdd.{0, 0, 0}
+      (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.endpointSumR.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) Γ
+        (DosenPetric.Reduced.Gentzen.W1.ContractionFrame.newR.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) hn hm Γ f))
+      (List.length.{u_1}
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.cgs0.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_sum_eqL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  Eq.{1} (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d))
+      (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)) →
+    Eq.{1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalSumL.{u_1} d Δ
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{u_1} d hn hm Δ f))
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalSumL.{u_1} d Δ
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{u_1} d hn hm Δ f))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_sum_eqR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  Eq.{1} (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d))
+      (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)) →
+    Eq.{1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalSumR.{u_1} d Γ
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldR.{u_1} d hn hm Γ f))
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalSumR.{u_1} d Γ
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{u_1} d hn hm Γ f))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_other_oldL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ)
+  {A : DosenPetric.NormalForm.{u_1} P}
+  (z : DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.K.{u_1} d) A)
+  (hc :
+    Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d)))
+  (he :
+    Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{u_1} d hn hm Δ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.left z)
+    (HAdd.hAdd.{0, 0, 0} 2
+      (DosenPetric.Reduced.Gentzen.G.rho.{u_1} f DosenPetric.Reduced.Gentzen.SequentSide.left
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.originalViaE.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) ⋯ z hc he)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_other_newL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ)
+  {A : DosenPetric.NormalForm.{u_1} P}
+  (z : DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.K.{u_1} d) A)
+  (hc :
+    Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d)))
+  (he :
+    Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{u_1} d hn hm Δ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.left z)
+    (HAdd.hAdd.{0, 0, 0} 2
+      (DosenPetric.Reduced.Gentzen.G.rho.{u_1} f DosenPetric.Reduced.Gentzen.SequentSide.left
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.originalViaE.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) ⋯ z hc he)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_other_oldR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d))
+  {A : DosenPetric.NormalForm.{u_1} P}
+  (z : DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.K.{u_1} d) A)
+  (hc :
+    Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d)))
+  (he :
+    Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldR.{u_1} d hn hm Γ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.right z)
+    (HAdd.hAdd.{0, 0, 0} 2
+      (DosenPetric.Reduced.Gentzen.G.rho.{u_1} f DosenPetric.Reduced.Gentzen.SequentSide.right
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.originalViaE.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) ⋯ z hc he)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminal_other_newR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d))
+  {A : DosenPetric.NormalForm.{u_1} P}
+  (z : DosenPetric.Reduced.Gentzen.At.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.K.{u_1} d) A)
+  (hc :
+    Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1} d)))
+  (he :
+    Ne.{1} (DosenPetric.Reduced.Gentzen.At.index.{u_1} z)
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1} d))),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.rho.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{u_1} d hn hm Γ f)
+      DosenPetric.Reduced.Gentzen.SequentSide.right z)
+    (HAdd.hAdd.{0, 0, 0} 2
+      (DosenPetric.Reduced.Gentzen.G.rho.{u_1} f DosenPetric.Reduced.Gentzen.SequentSide.right
+        (DosenPetric.Reduced.Gentzen.ContractionFrame.originalViaE.{u_1}
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.frame.{u_1} d) ⋯ z hc he)))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOld_countL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.cutCount.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{u_1} d hn hm Δ f))
+    (DosenPetric.Reduced.Gentzen.G.cutCount.{u_1} f)
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNew_countL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.cutCount.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{u_1} d hn hm Δ f))
+    (DosenPetric.Reduced.Gentzen.G.cutCount.{u_1} f)
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOld_countR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.cutCount.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldR.{u_1} d hn hm Γ f))
+    (DosenPetric.Reduced.Gentzen.G.cutCount.{u_1} f)
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNew_countR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  Eq.{1}
+    (DosenPetric.Reduced.Gentzen.G.cutCount.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{u_1} d hn hm Γ f))
+    (DosenPetric.Reduced.Gentzen.G.cutCount.{u_1} f)
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOld_cutFreeL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  DosenPetric.Reduced.Gentzen.G.CutFree.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{u_1} d hn hm Δ f) ↔
+    DosenPetric.Reduced.Gentzen.G.CutFree.{u_1} f
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNew_cutFreeL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  DosenPetric.Reduced.Gentzen.G.CutFree.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{u_1} d hn hm Δ f) ↔
+    DosenPetric.Reduced.Gentzen.G.CutFree.{u_1} f
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOld_cutFreeR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  DosenPetric.Reduced.Gentzen.G.CutFree.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldR.{u_1} d hn hm Γ f) ↔
+    DosenPetric.Reduced.Gentzen.G.CutFree.{u_1} f
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNew_cutFreeR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  DosenPetric.Reduced.Gentzen.G.CutFree.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{u_1} d hn hm Γ f) ↔
+    DosenPetric.Reduced.Gentzen.G.CutFree.{u_1} f
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOld_atomizedL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  DosenPetric.Reduced.Gentzen.G.Atomized.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{u_1} d hn hm Δ f) ↔
+    DosenPetric.Reduced.Gentzen.G.Atomized.{u_1} f
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNew_atomizedL.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Δ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d) Δ),
+  DosenPetric.Reduced.Gentzen.G.Atomized.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{u_1} d hn hm Δ f) ↔
+    DosenPetric.Reduced.Gentzen.G.Atomized.{u_1} f
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOld_atomizedR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  DosenPetric.Reduced.Gentzen.G.Atomized.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldR.{u_1} d hn hm Γ f) ↔
+    DosenPetric.Reduced.Gentzen.G.Atomized.{u_1} f
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNew_atomizedR.{u_1} : ∀ {P : Type u_1}
+  (d : DosenPetric.Reduced.Gentzen.TerminalContraction.Data.{u_1} P)
+  (hn : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.gs.{u_1} d)))
+  (hm : LE.le.{0} 2 (List.length.{u_1} (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.es.{u_1} d)))
+  (Γ : List.{u_1} (DosenPetric.NormalForm.{u_1} P))
+  (f : DosenPetric.Reduced.Gentzen.G.{u_1} P Γ (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{u_1} d)),
+  DosenPetric.Reduced.Gentzen.G.Atomized.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{u_1} d hn hm Γ f) ↔
+    DosenPetric.Reduced.Gentzen.G.Atomized.{u_1} f
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.all_source_tags.{u_1} : ∀ {P : Type u_1}
+  (T : DosenPetric.NormalForm.{u_1} P),
+  Eq.{1}
+    (List.map.{u_1, 0} DosenPetric.Reduced.Gentzen.At.index.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.sourceTags.{u_1} T))
+    (List.cons.{0} 0
+      (List.cons.{0} 1 (List.cons.{0} 2 (List.cons.{0} 3 (List.cons.{0} 4 (List.cons.{0} 5 List.nil.{0}))))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.C0_indices.{u_1} : ∀ {P : Type u_1}
+  (T : DosenPetric.NormalForm.{u_1} P),
+  Eq.{1}
+    (List.map.{u_1, 0} DosenPetric.Reduced.Gentzen.At.index.{u_1}
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC0.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1} T)))
+    (List.cons.{0} 0 (List.cons.{0} 1 List.nil.{0}))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.C1_indices.{u_1} : ∀ {P : Type u_1}
+  (T : DosenPetric.NormalForm.{u_1} P),
+  Eq.{1}
+    (List.map.{u_1, 0} DosenPetric.Reduced.Gentzen.At.index.{u_1}
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedC1.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1} T)))
+    (List.cons.{0} 0 (List.cons.{0} 1 List.nil.{0}))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.E0_indices.{u_1} : ∀ {P : Type u_1}
+  (T : DosenPetric.NormalForm.{u_1} P),
+  Eq.{1}
+    (List.map.{u_1, 0} DosenPetric.Reduced.Gentzen.At.index.{u_1}
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE0.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1} T)))
+    (List.cons.{0} 3 (List.cons.{0} 4 (List.cons.{0} 5 List.nil.{0})))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.E1_indices.{u_1} : ∀ {P : Type u_1}
+  (T : DosenPetric.NormalForm.{u_1} P),
+  Eq.{1}
+    (List.map.{u_1, 0} DosenPetric.Reduced.Gentzen.At.index.{u_1}
+      (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.selectedE1.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1} T)))
+    (List.cons.{0} 2 (List.cons.{0} 3 (List.cons.{0} 4 List.nil.{0})))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.c0_indices.{u_1} : ∀ {P : Type u_1}
+  (T : DosenPetric.NormalForm.{u_1} P),
+  Eq.{1}
+    (List.map.{u_1, 0}
+      (fun a =>
+        DosenPetric.Reduced.Gentzen.At.index.{u_1}
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1}
+            (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c0.{u_1}
+              (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1} T))
+            a))
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.sourceTags.{u_1} T))
+    (List.cons.{0} 0
+      (List.cons.{0} 0 (List.cons.{0} 1 (List.cons.{0} 2 (List.cons.{0} 3 (List.cons.{0} 4 List.nil.{0}))))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.e0_indices.{u_1} : ∀ {P : Type u_1}
+  (T : DosenPetric.NormalForm.{u_1} P),
+  Eq.{1}
+    (List.map.{u_1, 0}
+      (fun a =>
+        DosenPetric.Reduced.Gentzen.At.index.{u_1}
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1}
+            (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e0.{u_1}
+              (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1} T))
+            a))
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.sourceTags.{u_1} T))
+    (List.cons.{0} 0
+      (List.cons.{0} 1 (List.cons.{0} 2 (List.cons.{0} 3 (List.cons.{0} 3 (List.cons.{0} 3 List.nil.{0}))))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.c1_indices.{u_1} : ∀ {P : Type u_1}
+  (T : DosenPetric.NormalForm.{u_1} P),
+  Eq.{1}
+    (List.map.{u_1, 0}
+      (fun a =>
+        DosenPetric.Reduced.Gentzen.At.index.{u_1}
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1}
+            (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c1.{u_1}
+              (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1} T))
+            a))
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.tagsFE.{u_1} T))
+    (List.cons.{0} 0 (List.cons.{0} 0 (List.cons.{0} 1 (List.cons.{0} 2 List.nil.{0}))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.e1_indices.{u_1} : ∀ {P : Type u_1}
+  (T : DosenPetric.NormalForm.{u_1} P),
+  Eq.{1}
+    (List.map.{u_1, 0}
+      (fun a =>
+        DosenPetric.Reduced.Gentzen.At.index.{u_1}
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1}
+            (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e1.{u_1}
+              (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1} T))
+            a))
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.tagsFC.{u_1} T))
+    (List.cons.{0} 0 (List.cons.{0} 1 (List.cons.{0} 2 (List.cons.{0} 2 (List.cons.{0} 2 List.nil.{0})))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.old_composite_indices.{u_1} : ∀ {P : Type u_1}
+  (T : DosenPetric.NormalForm.{u_1} P),
+  Eq.{1}
+    (List.map.{u_1, 0}
+      (fun a =>
+        DosenPetric.Reduced.Gentzen.At.index.{u_1}
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1}
+            (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c1.{u_1}
+              (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1} T))
+            (DosenPetric.Reduced.Gentzen.Route.get.{u_1}
+              (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e0.{u_1}
+                (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1} T))
+              a)))
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.sourceTags.{u_1} T))
+    (List.cons.{0} 0
+      (List.cons.{0} 0 (List.cons.{0} 1 (List.cons.{0} 2 (List.cons.{0} 2 (List.cons.{0} 2 List.nil.{0}))))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.new_composite_indices.{u_1} : ∀ {P : Type u_1}
+  (T : DosenPetric.NormalForm.{u_1} P),
+  Eq.{1}
+    (List.map.{u_1, 0}
+      (fun a =>
+        DosenPetric.Reduced.Gentzen.At.index.{u_1}
+          (DosenPetric.Reduced.Gentzen.Route.get.{u_1}
+            (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.e1.{u_1}
+              (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1} T))
+            (DosenPetric.Reduced.Gentzen.Route.get.{u_1}
+              (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.c0.{u_1}
+                (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1} T))
+              a)))
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.sourceTags.{u_1} T))
+    (List.cons.{0} 0
+      (List.cons.{0} 0 (List.cons.{0} 1 (List.cons.{0} 2 (List.cons.{0} 2 (List.cons.{0} 2 List.nil.{0}))))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.retained_indices.{u_1} : ∀ {P : Type u_1}
+  (T : DosenPetric.NormalForm.{u_1} P),
+  Eq.{1}
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{u_1}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1} T)))
+      0 ∧
+    Eq.{1}
+      (DosenPetric.Reduced.Gentzen.At.index.{u_1}
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{u_1}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1} T)))
+      2
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.fixed_original.{u_1} : ∀ {P : Type u_1}
+  (T : DosenPetric.NormalForm.{u_1} P),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.original.{u_1}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1} T)
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.fixedFinal.{u_1} T) ⋯ ⋯)
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.fixedSource.{u_1} T)
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.literal_left.{u_1} : ∀ {P : Type u_1}
+  (l : DosenPetric.Literal.{u_1} P),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.ofTerm.{u_1}
+      (DosenPetric.Reduced.Gentzen.G.denote.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{u_1}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1}
+            (DosenPetric.NormalForm.lit.{u_1} l))
+          ⋯ ⋯
+          (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} l)
+            (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} l)
+              (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} l) List.nil.{u_1})))
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.premiseL.{u_1} l))))
+    (DosenPetric.Reduced.ofTerm.{u_1}
+      (DosenPetric.Reduced.Gentzen.G.denote.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{u_1}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1}
+            (DosenPetric.NormalForm.lit.{u_1} l))
+          ⋯ ⋯
+          (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} l)
+            (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} l)
+              (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} l) List.nil.{u_1})))
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.premiseL.{u_1} l))))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.literal_right.{u_1} : ∀ {P : Type u_1}
+  (l : DosenPetric.Literal.{u_1} P),
+  Eq.{u_1 + 1}
+    (DosenPetric.Reduced.ofTerm.{u_1}
+      (DosenPetric.Reduced.Gentzen.G.denote.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{u_1}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1}
+            (DosenPetric.NormalForm.lit.{u_1} l))
+          ⋯ ⋯
+          (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} l)
+            (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} l)
+              (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} l) List.nil.{u_1})))
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.premiseR.{u_1} l))))
+    (DosenPetric.Reduced.ofTerm.{u_1}
+      (DosenPetric.Reduced.Gentzen.G.denote.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldR.{u_1}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1}
+            (DosenPetric.NormalForm.lit.{u_1} l))
+          ⋯ ⋯
+          (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} l)
+            (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} l)
+              (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} l) List.nil.{u_1})))
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.premiseR.{u_1} l))))
+DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.emptyP_left_ranks : Eq.{1}
+  (DosenPetric.Reduced.Gentzen.G.rho.{0}
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{0}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0})
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.emptyP_left_ranks._proof_1
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.emptyP_left_ranks._proof_2
+      (List.cons.{0} DosenPetric.NormalForm.top.{0} List.nil.{0})
+      (DosenPetric.Reduced.Gentzen.W1.SameSideLogical.constantLeft
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{0}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0}))))
+    DosenPetric.Reduced.Gentzen.SequentSide.left
+    (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xC.{0}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0})))
+  (HAdd.hAdd.{0, 0, 0}
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLCL.{0}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0})
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.emptyP_left_ranks._proof_1
+      (List.cons.{0} DosenPetric.NormalForm.top.{0} List.nil.{0})
+      (DosenPetric.Reduced.Gentzen.W1.SameSideLogical.constantLeft
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{0}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0}))))
+    2)
+DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.emptyP_right_ranks : Eq.{1}
+  (DosenPetric.Reduced.Gentzen.G.rho.{0}
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{0}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0})
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.emptyP_left_ranks._proof_1
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.emptyP_left_ranks._proof_2
+      (List.cons.{0} DosenPetric.NormalForm.bot.{0} List.nil.{0})
+      (DosenPetric.Reduced.Gentzen.W1.SameSideLogical.constantRight
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{0}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0}))))
+    DosenPetric.Reduced.Gentzen.SequentSide.right
+    (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.xE.{0}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0})))
+  (HAdd.hAdd.{0, 0, 0}
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalLER.{0}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0})
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.emptyP_left_ranks._proof_2
+      (List.cons.{0} DosenPetric.NormalForm.bot.{0} List.nil.{0})
+      (DosenPetric.Reduced.Gentzen.W1.SameSideLogical.constantRight
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{0}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0}))))
+    3)
+DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.emptyP_sum_increases : Eq.{1}
+  (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalSumL.{0}
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0})
+    (List.cons.{0} DosenPetric.NormalForm.top.{0} List.nil.{0})
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{0}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0})
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.emptyP_left_ranks._proof_1
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.emptyP_left_ranks._proof_2
+      (List.cons.{0} DosenPetric.NormalForm.top.{0} List.nil.{0})
+      (DosenPetric.Reduced.Gentzen.W1.SameSideLogical.constantLeft
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{0}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0})))))
+  (HAdd.hAdd.{0, 0, 0}
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalSumL.{0}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0})
+      (List.cons.{0} DosenPetric.NormalForm.top.{0} List.nil.{0})
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{0}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0})
+        DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.emptyP_left_ranks._proof_1
+        DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.emptyP_left_ranks._proof_2
+        (List.cons.{0} DosenPetric.NormalForm.top.{0} List.nil.{0})
+        (DosenPetric.Reduced.Gentzen.W1.SameSideLogical.constantLeft
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{0}
+            (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0}
+              DosenPetric.NormalForm.top.{0})))))
+    1)
+DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound_left : Eq.{1}
+  (DosenPetric.Reduced.ofTerm.{0}
+    (DosenPetric.Reduced.Gentzen.G.denote.{0}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{0}
+        DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound
+        DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound_left._proof_1
+        DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound_left._proof_2
+        (List.cons.{0} DosenPetric.NormalForm.top.{0} List.nil.{0})
+        (DosenPetric.Reduced.Gentzen.W1.SameSideLogical.constantLeft
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{0}
+            DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound)))))
+  (DosenPetric.Reduced.ofTerm.{0}
+    (DosenPetric.Reduced.Gentzen.G.denote.{0}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{0}
+        DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound
+        DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound_left._proof_1
+        DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound_left._proof_2
+        (List.cons.{0} DosenPetric.NormalForm.top.{0} List.nil.{0})
+        (DosenPetric.Reduced.Gentzen.W1.SameSideLogical.constantLeft
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{0}
+            DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound)))))
+DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound_right : Eq.{1}
+  (DosenPetric.Reduced.ofTerm.{0}
+    (DosenPetric.Reduced.Gentzen.G.denote.{0}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{0}
+        DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound
+        DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound_left._proof_1
+        DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound_left._proof_2
+        (List.cons.{0} DosenPetric.NormalForm.bot.{0} List.nil.{0})
+        (DosenPetric.Reduced.Gentzen.W1.SameSideLogical.constantRight
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{0}
+            DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound)))))
+  (DosenPetric.Reduced.ofTerm.{0}
+    (DosenPetric.Reduced.Gentzen.G.denote.{0}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldR.{0}
+        DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound
+        DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound_left._proof_1
+        DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound_left._proof_2
+        (List.cons.{0} DosenPetric.NormalForm.bot.{0} List.nil.{0})
+        (DosenPetric.Reduced.Gentzen.W1.SameSideLogical.constantRight
+          (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{0}
+            DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.compound)))))
+DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.equal_arity_sum : Eq.{1}
+  (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalSumL.{0}
+    DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.equalTwo
+    (List.cons.{0} DosenPetric.NormalForm.top.{0} List.nil.{0})
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalOldL.{0}
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.equalTwo
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.equal_arity_sum._proof_1
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.equal_arity_sum._proof_2
+      (List.cons.{0} DosenPetric.NormalForm.top.{0} List.nil.{0})
+      (DosenPetric.Reduced.Gentzen.W1.SameSideLogical.constantLeft
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{0}
+          DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.equalTwo))))
+  (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalSumL.{0}
+    DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.equalTwo
+    (List.cons.{0} DosenPetric.NormalForm.top.{0} List.nil.{0})
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{0}
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.equalTwo
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.equal_arity_sum._proof_1
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.equal_arity_sum._proof_2
+      (List.cons.{0} DosenPetric.NormalForm.top.{0} List.nil.{0})
+      (DosenPetric.Reduced.Gentzen.W1.SameSideLogical.constantLeft
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{0}
+          DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.equalTwo))))
+DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.fixed_rank_formula : Eq.{1}
+  (DosenPetric.Reduced.Gentzen.G.rho.{0}
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{0}
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0})
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.emptyP_left_ranks._proof_1
+      DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.emptyP_left_ranks._proof_2
+      (List.cons.{0} DosenPetric.NormalForm.top.{0} List.nil.{0})
+      (DosenPetric.Reduced.Gentzen.W1.SameSideLogical.constantLeft
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{0}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0}))))
+    DosenPetric.Reduced.Gentzen.SequentSide.left
+    (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.fixedFinal.{0} DosenPetric.NormalForm.top.{0}))
+  (HAdd.hAdd.{0, 0, 0} 2
+    (DosenPetric.Reduced.Gentzen.G.rho.{0}
+      (DosenPetric.Reduced.Gentzen.W1.SameSideLogical.constantLeft
+        (DosenPetric.Reduced.Gentzen.TerminalContraction.Data.F.{0}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{0} DosenPetric.NormalForm.top.{0})))
+      DosenPetric.Reduced.Gentzen.SequentSide.left
+      (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.fixedSource.{0} DosenPetric.NormalForm.top.{0})))
+@DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.both_signs_actual_cuts.{u_1} : ∀ {P : Type u_1} (p : P),
+  Eq.{1}
+      (DosenPetric.Reduced.Gentzen.G.cutCount.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewL.{u_1}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1}
+            (DosenPetric.NormalForm.lit.{u_1} (DosenPetric.Literal.pos.{u_1} p)))
+          ⋯ ⋯
+          (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} (DosenPetric.Literal.pos.{u_1} p))
+            (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} (DosenPetric.Literal.pos.{u_1} p))
+              (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} (DosenPetric.Literal.pos.{u_1} p)) List.nil.{u_1})))
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.premiseL.{u_1}
+            (DosenPetric.Literal.pos.{u_1} p))))
+      1 ∧
+    Eq.{1}
+      (DosenPetric.Reduced.Gentzen.G.cutCount.{u_1}
+        (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.terminalNewR.{u_1}
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.twoThree.{u_1}
+            (DosenPetric.NormalForm.lit.{u_1} (DosenPetric.Literal.neg.{u_1} p)))
+          ⋯ ⋯
+          (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} (DosenPetric.Literal.neg.{u_1} p))
+            (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} (DosenPetric.Literal.neg.{u_1} p))
+              (List.cons.{u_1} (DosenPetric.NormalForm.lit.{u_1} (DosenPetric.Literal.neg.{u_1} p)) List.nil.{u_1})))
+          (DosenPetric.Reduced.Gentzen.W1.DisjointContraction.Terminal.premiseR.{u_1}
+            (DosenPetric.Literal.neg.{u_1} p))))
+      1

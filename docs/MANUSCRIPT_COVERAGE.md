@@ -82,7 +82,8 @@ definition is unchanged and can be adapted once that interpretation exists.
 | Fixed-position same-side W1 thinning | Four concrete interior/terminal L/R results compile with explicit G/At/Route casts, the proved structural square, complete ordered selected transport and index exclusion even E=C. Full rank equations give n/n−1 losses and fixed inserted 2→1; predicates/count/tagged relations preserved, exact AtomicFormula E boundary retained. Other W1/W2 and all-site reducibility remain open. |
 | Fixed-parametric same-side W1 exchange | Four concrete interior-gap/terminal-tail L/R results compile with exact casts and structural squares, ordered selected transport using interval exclusion, retained and fixed singleton correspondence. Contraction/retained endpoint losses n/n−1 and unchanged fixed ranks 2+rho compile, including empty blocks. Count/predicates/tagged relations preserved; both Atomized predicates equal f.Atomized. Crossing-selected, multi-gap and absorption configurations remain open. |
 | Fixed-parametric same-side unary logical W1 | Four concrete interior/terminal conjL/disjR cases compile with actual partial ancestry, both consumed slots none, complete ordered selected transport plus survival/lengths, separate categorical A/B component calculations and actual toTerm squares. Retained n/n−1, principal 2→1 and other fixed 2+rho ranks compile; count/predicates/tagged relations preserved. No extra atomicity or coherence. Other W1/W2–W6 and general reducibility remain open. |
-| Fixed-gap disjoint same-side W1 contractions | Two concrete left/right results compile with eight actual context equalities and casts, all-position copies/copies and categorical squares, complete ordered selected transports and genuine same-side fixed fibers. Independent n,m: old ranks LC+n,LE+1; new LC+1,LE+m. Sum balance, actual unequal-arity increase, other fixed 2+rho and count/predicate/full tagged relations compile. Terminal-tail/shared-selected/W3 and general reducibility/coherence remain open. |
+| Fixed-gap disjoint same-side W1 contractions | Two concrete left/right results compile with eight actual context equalities and casts, all-position copies/copies and categorical squares, complete ordered selected transports and genuine same-side fixed fibers. Independent n,m: old ranks LC+n,LE+1; new LC+1,LE+m. Sum balance, actual unequal-arity increase, other fixed 2+rho and count/predicate/full tagged relations compile. Shared-selected/W3 and general reducibility/coherence remain open. |
+| Terminal-tail disjoint same-side W1 contractions | Two concrete terminalTail_left/right results compile with eight actual context equalities/casts, a concrete copies/copies square, full ordered selected transports, positional separation even C=E and complete fibers. Retained xC<xE; independent n,m give old=(LC+n,LE+1), new=(LC+1,LE+m), exact balances and S(old)+m=S(new)+n. Other same-side ranks are 2+rho at the unique common original. Count/predicates/full tagged relations and inhabited examples compile. Shared-selected/W3, disjoint interleaving and general reducibility/coherence remain open. |
 | Positive-fragment coherence input | `PositiveCoherence P` quantifies only over positive raw terms and concludes equality in Reduced.Hom. `faithful_of_positive_coherence` is proved conditionally from that explicit, unsupplied premise. This does not supply Reduced.Faithful or Boolean Coherence. |
 | Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. Reduced faithfulness and its earlier positive-core coherence inputs are unproved. No complete `OccurrenceInterpretation` instance. Equality reflection and full red-equation preservation remain open. |
 | Normalization and occurrence correspondence | `Presentation.normalization` constructs the existing record for every P by simultaneous sign recursion and source n/r/rho arrows. Both inverse laws, inverse occurrence coordinates, both graph laws, literal/label/polarity correspondence, repeated-tag injectivity, Empty cases, and transport formulas compile. No coherence or arrow-negation premise. |
@@ -94,45 +95,35 @@ definition is unchanged and can be adapted once that interpretation exists.
 
 ## Next concrete proof task
 
-Fixed-gap disjoint same-side contraction and its dual are complete. See
-[the current report](GENTZEN_W1_DISJOINT_CONTRACTION_REPORT.md).
+Both fixed-gap and terminal-tail disjoint same-side contractions and their
+right duals are complete. See the [terminal-tail report](GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT.md).
 
-Next prove terminal-tail disjoint same-side contraction and its right dual.
-For arbitrary P,C,E, gs,hs,H,U,V and Δ/Γ, set es=H::hs and require independent
-2≤gs.length and 2≤es.length. Define:
+Next prove source W3 shared-selected contraction fusion and its right dual.
+For arbitrary P,C, gap lists gs/hs and tails Θ/Λ, let n=gs.length≥2,
+m=hs.length≥2, F=repeated C gs++Θ, I=gaps gs++C::Θ and
+K=gaps hs++C::Λ. Take an actual identification
+repeated C hs++Λ=I and require the retained inner position to belong to
+the casted outer selected list. This is a positional placement hypothesis,
+not a routing or equality conclusion.
 
-```text
-upBefore = repeated C gs ++ U
-loBefore = gaps gs ++ C :: U
-F  = upBefore ++ repeated E es ++ V
-FE = upBefore ++ gaps es ++ E :: V
-FC = loBefore ++ repeated E es ++ V
-K  = loBefore ++ gaps es ++ E :: V.
-```
+For every existing f:G P F Δ, fuse the two actual left contractions into a
+single contraction at exact G P K Δ; separately prove the G P Γ K right
+dual. Construct the complete ordered original selected family of length
+n+m−1: all inner copies and the unique fixed originals of the other outer
+copies. Prove the flat gap/tail endpoints, all-position route identity,
+complete fibers and structural product/coproduct identities before deriving
+Reduced equality. Prove the source retained-rank equation old=flat+m,
+preservation and inhabited equal-label/constant/compound/signed-cut examples.
+This W3 result is not assumed by the present checkpoint. The ready-to-paste
+task is [CODEX_W3_SHARED_SELECTED_CONTRACTION.txt](CODEX_W3_SHARED_SELECTED_CONTRACTION.txt).
 
-For f : G P F Δ, old first applies E contraction with gaps
-`(upBefore ++ H)::hs` and tail V, then C contraction with gaps gs and tail
-`U ++ gaps es ++ E :: V`. New first applies C contraction with gaps gs and
-tail `U ++ repeated E es ++ V`, then E contraction with gaps
-`(loBefore ++ H)::hs` and tail V. Both results must have type G P K Δ.
-The right dual starts with f : G P Γ F and must finish at G P Γ K using
-G.contractR. All endpoint identifications must be proved and used explicitly.
-Every selected E occurrence lies in the fixed terminal tail; every selected
-C occurrence lies before that tail and remains parametric through E. Prove
-these positional conditions even C=E, the copies/copies square, complete
-ordered transports, fixed fibers, exact denotation and independently directed
-rank table. The retained C position precedes retained E here; the completed
-interior-gap index ordering cannot simply be copied. No terminal construction
-or conclusion is assumed by this checkpoint.
-
-Interleaved/shared-selected contractions, including source W3, crossing-selected,
-multi-gap and absorption exchange configurations, remaining W1, W2–W6,
-arbitrary-context replacement/all-site decrease, Reducibility, Blocked-w,
-cut elimination, required positive coherence inputs, PositiveCoherence,
-Reduced.Faithful, Boolean Coherence, unconditional maximality and Palomar
-preparation remain separate/open. Existing conditional transfers are unchanged.
-An unfinished formalization of cited published work does not establish a
-manuscript defect.
+Disjoint interleaved contractions, crossing-selected/multi-gap/absorption
+exchanges, remaining W1/W2–W6, arbitrary-context replacement/all-site decrease,
+Reducibility, Blocked-w, cut elimination, restricted positive-coherence inputs,
+PositiveCoherence, Reduced.Faithful, Boolean Coherence, unconditional maximality
+and Palomar preparation remain separate/open. Conditional transfers and the
+three milestones are unchanged. An unfinished reconstruction of cited
+published results does not establish a manuscript defect.
 
 ## Verification boundary
 

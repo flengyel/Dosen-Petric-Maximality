@@ -1,0 +1,46 @@
+✔ [132/133] Built DosenPetric.GentzenContractionFrameCommutation (1.8s)
+✖ [133/133] Building DosenPetric.GentzenContractionFrameRanks (1.9s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenContractionFrameRanks.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionFrameRanks.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionFrameRanks.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionFrameRanks.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionFrameRanks.setup.json --json
+error: DosenPetric/GentzenContractionFrameRanks.lean:30:45: Application type mismatch: The argument
+  ContractionFrame.selectedC_transport d
+has type
+  (∀ {A : NormalForm P} (a : At d.F A), d.c1.get (d.e0.get a) = d.e1.get (d.c0.get a)) →
+    d.e1.get d.keepC0 = d.xC →
+      d.c1.get d.keepE0 = d.xE → d.xC.index ≠ d.xE.index → d.selectedC1 = List.map d.e0.get d.selectedC0
+but is expected to have type
+  ?m.131 = List.map d.e0.get ?m.130
+in the application
+  sum_transport_one ?m.130 ?m.131 d.e0.get ?m.137 ?m.138 (ContractionFrame.selectedC_transport d)
+error: DosenPetric/GentzenContractionFrameRanks.lean:45:45: Application type mismatch: The argument
+  ContractionFrame.selectedE_transport d
+has type
+  (∀ {A : NormalForm P} (a : At d.F A), d.c1.get (d.e0.get a) = d.e1.get (d.c0.get a)) →
+    d.e1.get d.keepC0 = d.xC →
+      d.c1.get d.keepE0 = d.xE → d.xC.index ≠ d.xE.index → d.selectedE1 = List.map d.c0.get d.selectedE0
+but is expected to have type
+  ?m.131 = List.map d.c0.get ?m.130
+in the application
+  sum_transport_one ?m.130 ?m.131 d.c0.get ?m.137 ?m.138 (ContractionFrame.selectedE_transport d)
+error: DosenPetric/GentzenContractionFrameRanks.lean:162:45: Application type mismatch: The argument
+  ContractionFrame.selectedC_transport d
+has type
+  (∀ {A : NormalForm P} (a : At d.F A), d.c1.get (d.e0.get a) = d.e1.get (d.c0.get a)) →
+    d.e1.get d.keepC0 = d.xC →
+      d.c1.get d.keepE0 = d.xE → d.xC.index ≠ d.xE.index → d.selectedC1 = List.map d.e0.get d.selectedC0
+but is expected to have type
+  ?m.131 = List.map d.e0.get ?m.130
+in the application
+  sum_transport_one ?m.130 ?m.131 d.e0.get ?m.137 ?m.138 (ContractionFrame.selectedC_transport d)
+error: DosenPetric/GentzenContractionFrameRanks.lean:177:45: Application type mismatch: The argument
+  ContractionFrame.selectedE_transport d
+has type
+  (∀ {A : NormalForm P} (a : At d.F A), d.c1.get (d.e0.get a) = d.e1.get (d.c0.get a)) →
+    d.e1.get d.keepC0 = d.xC →
+      d.c1.get d.keepE0 = d.xE → d.xC.index ≠ d.xE.index → d.selectedE1 = List.map d.c0.get d.selectedE0
+but is expected to have type
+  ?m.131 = List.map d.c0.get ?m.130
+in the application
+  sum_transport_one ?m.130 ?m.131 d.c0.get ?m.137 ?m.138 (ContractionFrame.selectedE_transport d)
+Some required targets logged failures:
+- DosenPetric.GentzenContractionFrameRanks
+error: build failed

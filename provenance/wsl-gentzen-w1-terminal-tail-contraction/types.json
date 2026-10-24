@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-23T21:21:08.042156+00:00",
+  "checks": [
+    {
+      "name": "public-types",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "/tmp/dp-terminal-tail-public-types.lean"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 0,
+      "seconds": 1.553,
+      "log_sha256": "2188b44475f1bd0df63b25b32d7292a98e08d5fe1e1a35004fab6202787c568d"
+    }
+  ]
+}
