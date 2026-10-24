@@ -87,6 +87,7 @@ definition is unchanged and can be adapted once that interpretation exists.
 | W3 shared-selected contraction fusion | `W3.SharedContraction.fusion_left/right` prove exact G P K Δ / G P Γ K outputs for original C,gs,hs,Θ,Λ, intermediate hI and shared-position membership, independent n,m≥2. Computed single contraction has n+m−1 ordered selected originals, full retained/fixed fibers and universal-component Reduced equality. Complete fiber permutations/sums give retained and contraction-subterm drop exactly m; other final same-side positions have old=2+rho, flat=1+rho. Count/predicates/full tagged relations and inhabited boundaries compile. Arbitrary-context Reducibility, cut elimination and coherence remain open. |
 | Terminal selected-thinning W2 | `W2.SelectedThinning.terminal_left/right` compile for original C,gs,Θ, n≥2 and existing premises at exact K endpoints. Concrete old-position square, complete ordered n+1 selection including the new leaf, full outer versus n-member original composite fibers and unique fixed originals give component/Reduced equality. Exact contraction/endpoint losses n+1/n and unchanged other fixed ranks compile. Counts/CutFree/tagged relations preserved; old Atomized iff AtomicFormula C and f.Atomized, new iff f.Atomized. Inhabited constants/compounds/signed cuts compile. General Reducibility/coherence remain open. |
 | Terminal selected-logical W4 | `W4.SelectedLogical.terminal_left/right` compile from original A,B,gs,Θ,n≥2 and existing f. Actual conjL/disjR and contraction constructors, complete ordered n/n+1/two-copy families, consumed A/B slots, principal empty fibers, complete retained/fixed fibers and both consumed component calculations give exact Reduced equality. Source contraction loss n+1; final endpoint LC+n+1 versus LC+3 gives n=2 tie and n≥3 decrease. Other fixed ranks increase one. Counts/CutFree/Atomized/full tagged relations and inhabited boundaries compile. General Reducibility/Blocked-w/coherence remain open. |
+| W5 single-premise mix, selected g in G.mix f g | Original-data left/right theorems compile with actual mix/contraction and exact K++Φ / K++Ψ endpoints. Component extension/naturality and both complete branch squares/fibers preserve ordered selected copies, premise tags and unique originals even for equal labels. Complete sums give n/n−1 losses. Fixed/opposite g ranks both 2+rho; f old 2+rho/new 1+rho on both sides. The historical opposite-rank prediction omitted the old outer node; actual counterexamples and corrected laws compile. Counts/CutFree/Atomized/full relations and inhabited boundaries compile. Other placement, mixed-premise W5 and broader elimination/coherence open. |
 | Positive-fragment coherence input | `PositiveCoherence P` quantifies only over positive raw terms and concludes equality in Reduced.Hom. `faithful_of_positive_coherence` is proved conditionally from that explicit, unsupplied premise. This does not supply Reduced.Faithful or Boolean Coherence. |
 | Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. Reduced faithfulness and its earlier positive-core coherence inputs are unproved. No complete `OccurrenceInterpretation` instance. Equality reflection and full red-equation preservation remain open. |
 | Normalization and occurrence correspondence | `Presentation.normalization` constructs the existing record for every P by simultaneous sign recursion and source n/r/rho arrows. Both inverse laws, inverse occurrence coordinates, both graph laws, literal/label/polarity correspondence, repeated-tag injectivity, Empty cases, and transport formulas compile. No coherence or arrow-negation premise. |
@@ -98,34 +99,36 @@ definition is unchanged and can be adapted once that interpretation exists.
 
 ## Next concrete proof task
 
-Terminal selected-logical W4 and its right dual are complete. See
-[the W4 report](GENTZEN_W4_SELECTED_LOGICAL_REPORT.md).
+W5 single-premise mix with selected g in G.mix f g and its right dual are
+complete. See [the W5 report](GENTZEN_W5_SINGLE_PREMISE_MIX_REPORT.md).
 
-Next prove source W5 single-premise mix with every selected C in g in
-G.mix f g, and its right dual. For n=gs.length≥2 set F=repeated C gs++Θ,
-K=gaps gs++C::Θ. On the left f:G P Φ Ψ, g:G P F Δ; mix gives
-G P (F++Φ) (Δ++Ψ). Old contracts gs with tail Θ++Φ; new mixes f with
-the direct contraction of g. Both outputs must have G P (K++Φ) (Δ++Ψ).
-On the right f:G P Φ Ψ, g:G P Δ F; both outputs have
-G P (Δ++Φ) (K++Ψ). Actual mix puts the second argument's contexts first.
+Next prove the other placement G.mix g f, selecting only g, and its right
+dual. For F=repeated C gs++Θ, K=gaps gs++C::Θ, n=gs.length≥2,
+left inputs are g:G P F Δ and f:G P Φ Ψ. Mix has
+G P (Φ++F) (Ψ++Δ). If gs=H::hs, old uses actual contraction gaps
+(Φ++H)::hs, tail Θ; new is G.mix (contractL gs/Θ g) f, at
+G P (Φ++K) (Ψ++Δ). Right inputs g:G P Δ F and f:G P Φ Ψ
+give outputs G P (Φ++Δ) (Ψ++K), with old gaps (Ψ++H)::hs.
+Derive gs≠[] from n≥2 and preserve original-gs public scope.
 
-Prove actual endpoint casts, binary positional/component equations, complete
-ordered selected transport, both premise fibers and fixed common originals.
-If LC is the inner contraction rank on g, target old outer rank LC+n,
-new retained rank LC+1 and contraction/endpoint losses n/n−1. Compute
-other ranks by premise and side; opposite-side g positions can increase.
-Prove exact count, CutFree/Atomized and tagged-relation laws with actual
-Empty/compound/equal-label/signed-cut examples. These are next proof targets,
-not completed W5 claims. See
-[CODEX_W5_SINGLE_PREMISE_MIX.txt](CODEX_W5_SINGLE_PREMISE_MIX.txt).
+Prove prefix extension, concrete component/positional squares, full ordered
+selected transport, both branch fibers/common originals and actual denotation
+equality. Target old outer LC+n, new retained LC+1 and losses n/n−1.
+Fixed same-side and opposite-side g ranks should both be 2+rho on old/new;
+f ranks old 2+rho/new 1+rho on either side. The preceding continuation
+omitted the old outer contraction node; the completed report proves the
+correction. Verify this new placement independently from actual routing.
+Prove counts, CutFree/Atomized and tagged relations with inhabited constants,
+compounds, repeated labels, n=2/3 and actual signed cuts in either/both
+premises. These are next proof targets, not completed other-placement claims.
+See [CODEX_W5_OTHER_PREMISE_MIX.txt](CODEX_W5_OTHER_PREMISE_MIX.txt).
 
-Mixed-premise W5, other mix placement, binary logical W5/W6, remaining
-W1/W2 and disjoint interleaving/exchange, arbitrary-context replacement,
-Reducibility, Blocked-w, cut elimination, restricted coherence inputs,
-PositiveCoherence, Reduced.Faithful, Boolean Coherence, unconditional maximality
-and Palomar preparation remain separate/open. Existing conditional transfers
-and three milestone boundaries are unchanged. An unfinished reconstruction
-of published results does not establish a manuscript defect.
+Mixed-premise/binary logical W5/W6, remaining W1/W2 and disjoint interleaving/
+exchange, arbitrary-context replacement, Reducibility, Blocked-w, cut
+elimination, restricted coherence inputs, PositiveCoherence, Reduced.Faithful,
+Boolean Coherence, unconditional maximality and Palomar preparation remain
+separate/open. Conditional transfers and three milestones are unchanged.
+Unfinished reconstruction of published results does not establish a manuscript defect.
 
 ## Verification boundary
 

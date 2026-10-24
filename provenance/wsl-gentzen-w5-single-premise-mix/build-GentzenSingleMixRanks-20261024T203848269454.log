@@ -1,0 +1,55 @@
+✖ [133/133] Building DosenPetric.GentzenSingleMixRanks (1.3s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSingleMixRanks.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSingleMixRanks.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSingleMixRanks.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSingleMixRanks.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSingleMixRanks.setup.json --json
+error: DosenPetric/GentzenSingleMixRanks.lean:20:24: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  List.map ?m.63 (List.map ?m.64 ?m.65)
+in the target expression
+  (List.map (fun a => (f.mix g).rho SequentSide.left a) (List.map (fun a => a.before Φ) d.selected)).sum =
+    (List.map (fun a => g.rho SequentSide.left a) d.selected).sum + d.gs.length
+
+P : Type u
+F K : List (NormalForm P)
+d : ContractionBlock P F K
+Φ Ψ Δ : List (NormalForm P)
+f : G P Φ Ψ
+g : G P F Δ
+⊢ (List.map (fun a => (f.mix g).rho SequentSide.left a) (List.map (fun a => a.before Φ) d.selected)).sum =
+    (List.map (fun a => g.rho SequentSide.left a) d.selected).sum + d.gs.length
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    List.map (fun a => a.before Φ) d.selected
+  has type
+    List (At (F ++ Φ) d.C)
+  but is expected to have type
+    List (Place SequentSide.left (F ++ Φ) (Δ ++ Ψ) (d.extend Φ).C)
+  in the application
+    List.map (fun a => (f.mix g).rho SequentSide.left a) (List.map (fun a => a.before Φ) d.selected)
+error: DosenPetric/GentzenSingleMixRanks.lean:104:24: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  List.map ?m.63 (List.map ?m.64 ?m.65)
+in the target expression
+  (List.map (fun a => (f.mix g).rho SequentSide.right a) (List.map (fun a => a.before Ψ) d.selected)).sum =
+    (List.map (fun a => g.rho SequentSide.right a) d.selected).sum + d.gs.length
+
+P : Type u
+F K : List (NormalForm P)
+d : ContractionBlock P F K
+Φ Ψ Δ : List (NormalForm P)
+f : G P Φ Ψ
+g : G P Δ F
+⊢ (List.map (fun a => (f.mix g).rho SequentSide.right a) (List.map (fun a => a.before Ψ) d.selected)).sum =
+    (List.map (fun a => g.rho SequentSide.right a) d.selected).sum + d.gs.length
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    List.map (fun a => a.before Ψ) d.selected
+  has type
+    List (At (F ++ Ψ) d.C)
+  but is expected to have type
+    List (Place SequentSide.right (Δ ++ Φ) (F ++ Ψ) (d.extend Ψ).C)
+  in the application
+    List.map (fun a => (f.mix g).rho SequentSide.right a) (List.map (fun a => a.before Ψ) d.selected)
+Some required targets logged failures:
+- DosenPetric.GentzenSingleMixRanks
+error: build failed

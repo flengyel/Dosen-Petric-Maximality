@@ -1,0 +1,47 @@
+✖ [129/129] Building DosenPetric.GentzenContractionMixComponents (1.1s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenContractionMixComponents.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionMixComponents.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionMixComponents.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionMixComponents.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionMixComponents.setup.json --json
+error: DosenPetric/GentzenContractionMixComponents.lean:30:47: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  C.comp (C.id ?m.266) ?f
+in the target expression
+  (side P o).comp ((sideD P o).snd (fold o K) (fold o Ξ)) (component o a) =
+    C.comp ((side P o).comp (D.snd (fold o K) (fold o Ξ)) ((side P o).id (fold o Ξ))) (component o a)
+
+case inr
+P : Type u
+F K : List (NormalForm P)
+d : ContractionBlock P F K
+o : Op
+Ξ : List (NormalForm P)
+C : Category (NormalForm P) := side P o
+D : DiagonalData (sideM P o) := sideD P o
+A : NormalForm P
+a : At Ξ A
+⊢ (side P o).comp ((sideD P o).snd (fold o K) (fold o Ξ)) (component o a) =
+    C.comp ((side P o).comp (D.snd (fold o K) (fold o Ξ)) ((side P o).id (fold o Ξ))) (component o a)
+error: DosenPetric/GentzenContractionMixComponents.lean:64:4: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  comp (mix ?m.88 ?m.89) (comp ?g ?h)
+in the target expression
+  comp (ofTerm (append Op.conj Δ Φ).invTerm)
+      (comp (tensor Op.conj (ofTerm g) (ofTerm f))
+        (comp (ofTerm (Term.mix (succ F) (succ Ψ)))
+          (comp (tensor Op.disj (ofTerm d.route.coproduct) (id (succ Ψ))) (ofTerm (append Op.disj K Ψ).toTerm)))) =
+    comp (ofTerm (append Op.conj Δ Φ).invTerm)
+      (comp (tensor Op.conj (comp (ofTerm g) (ofTerm d.route.coproduct)) (ofTerm f))
+        (comp (ofTerm (Term.mix (succ K) (succ Ψ))) (ofTerm (append Op.disj K Ψ).toTerm)))
+
+P : Type u
+F K : List (NormalForm P)
+d : ContractionBlock P F K
+Φ Ψ Δ : List (NormalForm P)
+f : Term P (ante Φ) (succ Ψ)
+g : Term P (ante Δ) (succ F)
+⊢ comp (ofTerm (append Op.conj Δ Φ).invTerm)
+      (comp (tensor Op.conj (ofTerm g) (ofTerm f))
+        (comp (ofTerm (Term.mix (succ F) (succ Ψ)))
+          (comp (tensor Op.disj (ofTerm d.route.coproduct) (id (succ Ψ))) (ofTerm (append Op.disj K Ψ).toTerm)))) =
+    comp (ofTerm (append Op.conj Δ Φ).invTerm)
+      (comp (tensor Op.conj (comp (ofTerm g) (ofTerm d.route.coproduct)) (ofTerm f))
+        (comp (ofTerm (Term.mix (succ K) (succ Ψ))) (ofTerm (append Op.disj K Ψ).toTerm)))
+Some required targets logged failures:
+- DosenPetric.GentzenContractionMixComponents
+error: build failed

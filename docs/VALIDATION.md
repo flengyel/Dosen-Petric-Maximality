@@ -1,3 +1,49 @@
+# W5 single-premise mix validation (current checkpoint)
+
+Clean main 230152d412044a4948d639ed43e7812a739a9df5 matched fetched SSH origin.
+Strict baseline: 192 files / 7,543 declarations, exit 0, 4.033s.
+Final sequential checks completed at 2026-10-24T20:43:09.494024+00:00:
+**198 source files / 7,702 audited declarations**, an increase of 159.
+Strict build/transitive audit: exit 0, 3.961s; audit boundaries: exit 0,
+7.974s; presentation boundaries: exit 0, 1.163s; manuscript checksums:
+exit 0, 0.012s. Both whitespace checks pass. All five controls reject with
+expected diagnostics and Lean exit 1. Complete public import closure passes.
+Only propext, Quot.sound and Classical.choice are permitted. Exact public
+types pass in 3.628s; 118 selected axiom prints supplement full collection.
+
+Six new modules construct actual G.mix f g single-premise W5 and right dual
+at exact original-data endpoints. Complete ordered selected transport, both
+branch squares/fibers, unique fixed originals and component/mix naturality
+give Reduced equality without coherence or reflection. Old outer LC+n,
+new retained LC+1 give n/n−1 losses. Every fixed/opposite g rank is 2+rho
+on both, f old 2+rho/new 1+rho on both sides. This corrects the incoming
+planning prompt's omitted old outer node; an actual cut regression refutes
+the old=1+rho prediction. The historical prompt and all definitions are preserved.
+Counts=f.cutCount+g.cutCount, CutFree/Atomized conjunctions and full tagged
+relations compile with Empty/compound/equal-label/n=2/3/signed-cut examples.
+
+All older modules/interfaces, Lean 4.35.0 Init-only dependencies/manifest,
+AGENTS, manuscript v4/v5, diagrams, references/checksums, historical reports/
+source access, other checkouts and integration stash are preserved.
+Existing Lean changes only add root imports/axiom prints. Failed elaborations
+are retained; no target/source equation/heartbeat limit was weakened.
+Final example build command passes in 5.284s. Heavy checks were sequential
+after the last proof edit.
+
+Evidence: provenance/wsl-gentzen-w5-single-premise-mix/ and matching
+.codex-work/. Author-side hostile/source-grounded writing reviews inspect
+actual proofs/maps and corrected ranks. Committed-source/ref/Downloads
+comparisons have separate receipts. Independent source/kernel replay,
+Challenge/Solution/Comparator, official preflight/service, fresh manuscript
+layout/compilation, publication, licensing and visibility changes did not run.
+The G.mix g f placement is next; broader local cases, all-site replacement,
+Reducibility, Blocked-w, elimination, coherence and unconditional maximality
+remain open. See [the W5 report](GENTZEN_W5_SINGLE_PREMISE_MIX_REPORT.md).
+
+---
+
+## Historical W4 selected-logical validation (unchanged evidence)
+
 # W4 terminal selected-logical validation (current checkpoint)
 
 Clean main b89167f7b9d37476464d5826f06dd9de2ffb3d9a matched fetched SSH

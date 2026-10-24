@@ -1,0 +1,97 @@
+✖ [129/129] Building DosenPetric.GentzenSingleMixFibers (917ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSingleMixFibers.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSingleMixFibers.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSingleMixFibers.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSingleMixFibers.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSingleMixFibers.setup.json --json
+error: DosenPetric/GentzenSingleMixFibers.lean:37:34: Application type mismatch: The argument
+  d
+has type
+  ContractionBlock P F K
+but is expected to have type
+  List (NormalForm ?m.4)
+in the application
+  newF d
+error: DosenPetric/GentzenSingleMixFibers.lean:37:41: unsolved goals
+P : Type u
+F K : List (NormalForm P)
+d : ContractionBlock P F K
+Ξ : List (NormalForm P)
+A : NormalForm P
+a : At Ξ A
+⊢ some (At.shift K a) = sorry.get a
+error: DosenPetric/GentzenSingleMixFibers.lean:40:18: This simp argument is unused:
+  newF
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [oldF, TraceRoute.shift, TraceRoute.get_ofMap, d.extend_shift]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSingleMixFibers.lean:40:23: This simp argument is unused:
+  TraceRoute.shift
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [oldF, newF, TraceRoute.get_ofMap, d.extend_shift]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSingleMixFibers.lean:46:54: Invalid field notation: Type of
+  a
+is not known; cannot resolve field `before`
+
+Hint: Consider replacing the field projection with a call to one of the following:
+  • `AtomicSplit.before`
+  • `At.before`
+  • `TraceRoute.before`
+error: DosenPetric/GentzenSingleMixFibers.lean:46:35: Application type mismatch: The argument
+  congrArg fun a => ?m.76
+has type
+  ?m.73 = ?m.74 → ?m.77 ?m.73 = ?m.77 ?m.74
+but is expected to have type
+  d.route.get a = z → (d.route.get a).before Ξ = z.before Ξ
+in the application
+  { mp := At.before_injective Ξ (d.route.get a) z, mpr := congrArg fun a => ?m.76 }
+error: DosenPetric/GentzenSingleMixFibers.lean:48:10: Application type mismatch: The argument
+  d
+has type
+  ContractionBlock P F K
+but is expected to have type
+  List (NormalForm ?m.6)
+in the application
+  newF d
+error: DosenPetric/GentzenSingleMixFibers.lean:49:6: Failed to rewrite using equation theorems for `newF`
+error: DosenPetric/GentzenSingleMixFibers.lean:57:10: Application type mismatch: The argument
+  d
+has type
+  ContractionBlock P F K
+but is expected to have type
+  List (NormalForm ?m.7)
+in the application
+  newF d
+error: DosenPetric/GentzenSingleMixFibers.lean:58:6: Failed to rewrite using equation theorems for `newF`
+error: DosenPetric/GentzenSingleMixFibers.lean:61:10: Application type mismatch: The argument
+  d
+has type
+  ContractionBlock P F K
+but is expected to have type
+  List (NormalForm ?m.22)
+in the application
+  newF d
+error: DosenPetric/GentzenSingleMixFibers.lean:62:48: Unknown identifier `fiberF_before`
+error: DosenPetric/GentzenSingleMixFibers.lean:65:10: Application type mismatch: The argument
+  d
+has type
+  ContractionBlock P F K
+but is expected to have type
+  List (NormalForm ?m.33)
+in the application
+  newF d
+error: DosenPetric/GentzenSingleMixFibers.lean:66:52: Unknown identifier `fiberF_before`
+error: DosenPetric/GentzenSingleMixFibers.lean:71:8: Unknown identifier `retained_fibers`
+error: DosenPetric/GentzenSingleMixFibers.lean:76:8: Unknown identifier `fixed_fibers`
+error: DosenPetric/GentzenSingleMixFibers.lean:80:41: Application type mismatch: The argument
+  d
+has type
+  ContractionBlock P F K
+but is expected to have type
+  List (NormalForm ?m.46)
+in the application
+  @fiberF_shift ?m.46 d
+Some required targets logged failures:
+- DosenPetric.GentzenSingleMixFibers
+error: build failed

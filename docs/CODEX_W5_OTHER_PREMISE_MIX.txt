@@ -1,0 +1,84 @@
+Continue the Došen–Petrić maximality formalization in WSL2 at
+/home/flengyel/src/Dosen-Petric-Maximality. Prove the other source W5
+single-premise mix placement: all selected C copies lie in g in G.mix g f,
+and prove its separately typed right dual. Complete proofs/examples/checks,
+author-side reviews/current records and verified Downloads delivery. Commit
+completed scoped work to main and push SSH origin without force. Preserve
+repository privacy and manuscript v4/v5.
+
+Inspect status/remotes/stashes, fetch origin, preserve newer/unrelated work,
+the integration stash and all other checkouts. Read AGENTS.md, current
+statement/coverage maps, correspondence/validation/continuation,
+PALOMAR_REQUIREMENTS and the completed W5 single-premise report/reviews.
+Reuse existing ContractionBlock.extend, mix component/naturality, branch
+fibers/ranks and W1–W4 as appropriate. Inspect actual G.mix/Rules.mix order.
+Preserve Lean 4.35.0, Init-only dependencies/manifest, grammar/equations/
+denotations/tags/predecessors/ranks/predicates, diagrams/references/checksums
+and historical reports. Run a fresh strict baseline.
+
+Consult pinned September 2007 Proof-Theoretical Coherence §11.2, printed
+pp.251–252 W5, especially the statement that mix(g,f) is analogous, and
+the right analogue on p.252; use pp.248–253 for ranks. PDF SHA256:
+e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e.
+Printed pp.248–253 are PDF pp.260–265, one-based. Retain access/page evidence.
+Mixed-premise W5 and its blocked outer contraction remain a separate equation.
+
+For arbitrary P,C,gs,Θ with n=gs.length≥2 set F=repeated C gs++Θ and
+K=gaps gs++C::Θ. Left: existing g:G P F Δ and f:G P Φ Ψ.
+G.mix g f has type G P (Φ++F) (Ψ++Δ). Old contracts the selected
+copies in its suffix g block. For gs=H::hs, actual outer gaps are
+(Φ++H)::hs, tail Θ; new is G.mix (direct contractL gs/Θ g) f.
+Both must have exact G P (Φ++K) (Ψ++Δ).
+
+Right: existing g:G P Δ F and f:G P Φ Ψ. G.mix g f has type
+G P (Φ++Δ) (Ψ++F). Old contractR uses gaps (Ψ++H)::hs, tail Θ;
+new is G.mix (direct contractR gs/Θ g) f. Both must have exact
+G P (Φ++Δ) (Ψ++K). Derive gs≠[] from n≥2 and retain an original-gs
+public wrapper if decomposition is used. Derive all context/cast/arity facts.
+Do not reverse mix's actual argument/context order or invoke arrow negation.
+
+Derive prefix extension, concrete positional/component squares and Reduced
+denotation equality from original inputs and actual constructors. No desired
+square/rank law as data, Semilattice Coherence or occurrence/inclusion
+reflection. Complete ordered selected transport, both branch-tagged premise
+fibers, retained indices, fixed common originals and equal-label exclusion
+are required, including empty blocks and empty literal-occurrence types.
+
+Let LC be the direct contraction rank on g. Target old outer LC+n, new
+retained LC+1, contraction loss n and endpoint loss n−1. Same-side fixed
+g positions should have 2+rho on both proofs; f positions old 2+rho and
+new 1+rho. On the opposite side g positions also have 2+rho on both, and
+f positions old 2+rho/new 1+rho. The preceding planning prompt's opposite-
+side target omitted the outer contraction node; its correction is proved
+in the completed W5 report. Verify this placement independently from actual
+routing, preserving branch tags. No global measure or all-site claim.
+
+Prove both cut counts=f.cutCount+g.cutCount (with actual mix-order arithmetic
+made explicit), both CutFree iff f.CutFree and g.CutFree, both Atomized iff
+f.Atomized and g.Atomized, and full tagged relation equality from Reduced
+equality. Allow compound C and actual cuts; no extra atomicity, freshness,
+DecidableEq, nonempty P, faithfulness or empty-hom-set zero.
+Use inhabited left/right n=2/3, Empty constants/compound/equal-label examples,
+empty/nonempty Φ/Ψ/Θ/gaps and cuts in either/both premises with both signs.
+Check exact maps, fibers and directed rank tables. G [] [] is impossible.
+
+After the last proof edit run bash scripts/verify.sh, both boundary scripts,
+manuscript SHA256SUMS and staged/unstaged whitespace checks, one heavy process
+at a time. Retain versions/commands/exits/timings, source/declaration/import
+closure, full transitive axiom audit, five expected control rejections and
+failed attempts. No holes, custom axioms, native_decide, conclusion-equivalent
+assumptions, weakened targets or raised heartbeat limits.
+Apply hostile-referee and source-grounded mathematical-writing reviews to
+actual proofs/types/examples/report/maps, keeping process outside manuscript.
+
+Retain reports under docs/ and docs/reviews/ and evidence under provenance/.
+Deliver finalized reports and next continuation to /mnt/c/Users/fleng/Downloads,
+preserving conflicting filenames and comparing bytes/SHA256 to committed
+versions. Verify checked source against commit and main/origin/main/live SSH
+refs after non-force push. Finish with exact scope/results/limits, checks,
+commit/ref/tree status, retained/delivered paths and one concrete next task.
+Mixed-premise/binary logical W5/W6, remaining W1/W2, all-site replacement,
+Reducibility, Blocked-w, cut elimination, restricted coherence, PositiveCoherence,
+Reduced.Faithful, Boolean Coherence and unconditional maximality remain open.
+Keep three milestones separate. Unfinished reconstruction of published work
+does not establish a manuscript defect.

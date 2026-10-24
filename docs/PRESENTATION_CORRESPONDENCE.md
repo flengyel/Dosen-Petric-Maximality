@@ -1272,7 +1272,45 @@ tagged relations are preserved. Compound principals need no atomicity condition.
 Inhabited Empty/compound/equal-tag/tie/increase/signed-cut examples compile.
 See [the W4 report](GENTZEN_W4_SELECTED_LOGICAL_REPORT.md) and reviews.
 
-Next prove [single-premise mix W5](CODEX_W5_SINGLE_PREMISE_MIX.txt), keeping
-actual G.mix argument/context order. Other local cases, arbitrary-context
-replacement, Reducibility, Blocked-w, cut elimination, coherence and
-unconditional maximality remain separate/open.
+The G.mix f g single-premise W5 placement and right dual are now proved
+below. Other local cases, arbitrary-context replacement, Reducibility,
+Blocked-w, cut elimination, coherence and unconditional maximality remain open.
+
+
+## W5 single-premise mix, selected g in G.mix f g
+
+The same hash-verified September 2007 source §11.2 was consulted at printed
+pp.248–253/PDF pp.260–265, including rendered p.251 and p.252 continuation.
+No new source discrepancy. Source material:
+`provenance/wsl-gentzen-w5-single-premise-mix/source-access/`.
+
+| Source location | Exact correspondence | Actual Lean proof |
+| --- | --- | --- |
+| p.251 first W5 equation | Contract only g in mix(f,g), with f a fixed suffix. | W5.SinglePremiseMix.single_premise_left and actual oldL/newL. |
+| p.252 (m nat) | Actual append comparison and mix naturality in Reduced. | ContractionBlock.extend_join/split/product/coproduct/mixL/R. |
+| pp.248–249 complete clusters | All selected paths belong to g; every actual mix and opposite contraction node is counted. | Complete branch predecessors/fibers, ordered transport, selected sums and full rank table. |
+| p.252 right analogue | Actual right-side contraction and coproduct comparison. | single_premise_right, right component/rank/preservation laws; no arrow negation. |
+| p.252 other placements/both-premise case | Separate from the first W5 equation. | G.mix g f is next; mixed-premise/binary logical cases remain open. |
+
+For F=repeated C gs++Θ, K=gaps gs++C::Θ and n≥2, original existing
+f/g give exact G P (K++Φ) (Δ++Ψ) / G P (Δ++Φ) (K++Ψ).
+No atomicity, freshness, DecidableEq, nonempty-P or coherence hypothesis.
+Actual extension with unchanged gs, universal components and inherited mix
+naturality give denotation equality; occurrence equality follows afterward.
+The complete selected list comes only from g, even for equal labels.
+Both branch traces, retained/fixed/suffix fibers and common originals compile.
+
+Old outer=LC+n; new retained=LC+1. Losses n/n−1 are strict.
+Every fixed/opposite g rank is 2+rho on both; f ranks old 2+rho/new
+1+rho on either side. The historical task predicted opposite old=1+rho,
+omitting the outer contraction node. Existing opposite-contraction laws and
+actual cut examples refute that prediction; definitions/source/manuscript are
+unchanged. Current records use the proved correction.
+Counts, CutFree/Atomized conjunctions and full tagged relations are preserved.
+Empty/compound/equal-label/two-three-copy/signed-cut examples compile.
+See [the W5 report](GENTZEN_W5_SINGLE_PREMISE_MIX_REPORT.md) and reviews.
+
+Next prove [the G.mix g f placement](CODEX_W5_OTHER_PREMISE_MIX.txt).
+Mixed-premise/binary W5/W6, remaining W1/W2, arbitrary-context replacement,
+Reducibility, Blocked-w, cut elimination, coherence and unconditional
+maximality remain separate/open.

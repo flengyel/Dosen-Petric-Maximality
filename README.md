@@ -66,8 +66,13 @@ Terminal selected-logical W4 and its right dual now compile with actual
 partial ancestry and both consumed component equations. The source contraction
 loss is n+1; final retained ranks tie for n=2 and decrease for n≥3.
 Other fixed same-side ranks increase by one. Counts, CutFree/Atomized and
-tagged relations are preserved. Single-premise mix W5 is next; disjoint
-interleaving remains separate.
+tagged relations are preserved. Single-premise mix W5 now compiles when
+all selected copies lie in g in G.mix f g, with its right dual, complete premise
+fibers and n/n−1 rank losses. Fixed/opposite g ranks are unchanged at
+2+rho; f ranks drop from 2+rho to 1+rho on both sides. This corrects
+the continuation's omitted outer-node prediction. Counts, CutFree/Atomized
+and tagged relations are preserved. The other placement G.mix g f is next;
+disjoint interleaving remains separate.
 The current stage is the remaining local contraction transformations toward
 cut elimination. Remaining W1/W2/W5–W6, blocked-contraction transformations,
 Reducibility, cut elimination, the positive coherence inputs, PositiveCoherence,
@@ -122,11 +127,12 @@ The [v5 literature review](docs/LITERATURE_REVIEW_V5_2026-10-23.md),
 [writing review](docs/reviews/V5_WRITING_REVIEW.md), and
 [manuscript validation](docs/V5_VALIDATION.md) accompany v5.
 The [earlier literature comparison](docs/LITERATURE_REVIEW.md) remains available.
-The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W4_SELECTED_LOGICAL_HOSTILE.md)
-and [mathematical-writing review](docs/reviews/GENTZEN_W4_SELECTED_LOGICAL_WRITING.md)
-cover terminal selected-logical W4 and its right dual; they are not independent
-certification. The [W4 report](docs/GENTZEN_W4_SELECTED_LOGICAL_REPORT.md),
-[ready-to-paste W5 continuation](docs/CODEX_W5_SINGLE_PREMISE_MIX.txt),
+The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W5_SINGLE_PREMISE_MIX_HOSTILE.md)
+and [mathematical-writing review](docs/reviews/GENTZEN_W5_SINGLE_PREMISE_MIX_WRITING.md)
+cover the G.mix f g single-premise W5 placement and its right dual; they are
+not independent certification. The [W5 report](docs/GENTZEN_W5_SINGLE_PREMISE_MIX_REPORT.md),
+[ready-to-paste other-placement continuation](docs/CODEX_W5_OTHER_PREMISE_MIX.txt),
+[preceding W4 report](docs/GENTZEN_W4_SELECTED_LOGICAL_REPORT.md),
 [preceding W2 report](docs/GENTZEN_W2_SELECTED_THINNING_REPORT.md),
 [preceding W3 report](docs/GENTZEN_W3_SHARED_SELECTED_CONTRACTION_REPORT.md),
 [preceding terminal-tail report](docs/GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT.md),

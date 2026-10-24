@@ -1,0 +1,428 @@
+DosenPetric/GentzenContractionMixComponents.lean:12 DosenPetric.Reduced.Gentzen.mix_term
+theorem mix_term (A B : NormalForm P) : ofTerm (Term.mix A B) = mix A B := rfl
+
+DosenPetric/GentzenContractionMixComponents.lean:16 DosenPetric.Reduced.Gentzen.ContractionBlock.extend_join
+theorem extend_join (o : Op) (Ξ : List (NormalForm P)) :
+
+DosenPetric/GentzenContractionMixComponents.lean:34 DosenPetric.Reduced.Gentzen.ContractionBlock.extend_split
+theorem extend_split (o : Op) (Ξ : List (NormalForm P)) :
+
+DosenPetric/GentzenContractionMixComponents.lean:43 DosenPetric.Reduced.Gentzen.ContractionBlock.extend_product
+theorem extend_product (Ξ : List (NormalForm P)) :
+
+DosenPetric/GentzenContractionMixComponents.lean:47 DosenPetric.Reduced.Gentzen.ContractionBlock.extend_coproduct
+theorem extend_coproduct (Ξ : List (NormalForm P)) :
+
+DosenPetric/GentzenContractionMixComponents.lean:52 DosenPetric.Reduced.Gentzen.ContractionBlock.mixL
+theorem mixL {Φ Ψ Δ : List (NormalForm P)}
+
+DosenPetric/GentzenContractionMixComponents.lean:60 DosenPetric.Reduced.Gentzen.ContractionBlock.mixR
+theorem mixR {Φ Ψ Δ : List (NormalForm P)}
+
+DosenPetric/GentzenMixRanks.lean:14 DosenPetric.Reduced.Gentzen.G.predecessors_mix_g_left
+theorem predecessors_mix_g_left {A : NormalForm P} (a : At Θ A) :
+
+DosenPetric/GentzenMixRanks.lean:22 DosenPetric.Reduced.Gentzen.G.rho_mix_g_left
+theorem rho_mix_g_left {A : NormalForm P} (a : At Θ A) :
+
+DosenPetric/GentzenMixRanks.lean:30 DosenPetric.Reduced.Gentzen.G.predecessors_mix_f_left
+theorem predecessors_mix_f_left {A : NormalForm P} (a : At Γ A) :
+
+DosenPetric/GentzenMixRanks.lean:38 DosenPetric.Reduced.Gentzen.G.rho_mix_f_left
+theorem rho_mix_f_left {A : NormalForm P} (a : At Γ A) :
+
+DosenPetric/GentzenMixRanks.lean:46 DosenPetric.Reduced.Gentzen.G.predecessors_mix_g_right
+theorem predecessors_mix_g_right {A : NormalForm P} (a : At Λ A) :
+
+DosenPetric/GentzenMixRanks.lean:54 DosenPetric.Reduced.Gentzen.G.rho_mix_g_right
+theorem rho_mix_g_right {A : NormalForm P} (a : At Λ A) :
+
+DosenPetric/GentzenMixRanks.lean:62 DosenPetric.Reduced.Gentzen.G.predecessors_mix_f_right
+theorem predecessors_mix_f_right {A : NormalForm P} (a : At Δ A) :
+
+DosenPetric/GentzenMixRanks.lean:70 DosenPetric.Reduced.Gentzen.G.rho_mix_f_right
+theorem rho_mix_f_right {A : NormalForm P} (a : At Δ A) :
+
+DosenPetric/GentzenMixRanks.lean:81 DosenPetric.Reduced.Gentzen.ContractionBlock.oppositeL
+theorem oppositeL (hn : 2 ≤ d.gs.length) {Δ : List (NormalForm P)} (f : G P F Δ)
+
+DosenPetric/GentzenMixRanks.lean:87 DosenPetric.Reduced.Gentzen.ContractionBlock.oppositeR
+theorem oppositeR (hn : 2 ≤ d.gs.length) {Γ : List (NormalForm P)} (f : G P Γ F)
+
+DosenPetric/GentzenSingleMixFibers.lean:11 DosenPetric.Reduced.Gentzen.At.before_injective
+theorem before_injective {Γ : List (NormalForm P)} (Ξ : List (NormalForm P))
+
+DosenPetric/GentzenSingleMixFibers.lean:15 DosenPetric.Reduced.Gentzen.At.shift_injective
+theorem shift_injective (Γ : List (NormalForm P)) {Ξ : List (NormalForm P)}
+
+DosenPetric/GentzenSingleMixFibers.lean:19 DosenPetric.Reduced.Gentzen.At.before_ne_shift
+theorem before_ne_shift {Γ Ξ : List (NormalForm P)} {A : NormalForm P}
+
+DosenPetric/GentzenSingleMixFibers.lean:29 DosenPetric.Reduced.Gentzen.SingleMix.oldG
+def oldG : TraceRoute (K++Ξ) F := TraceRoute.ofMap _ _ (fun a => some ((d.extend Ξ).route.get (a.before Ξ)))
+
+DosenPetric/GentzenSingleMixFibers.lean:30 DosenPetric.Reduced.Gentzen.SingleMix.newG
+def newG : TraceRoute (K++Ξ) F := TraceRoute.ofMap _ _ (fun a => some ((d.route.get a).before Ξ))
+
+DosenPetric/GentzenSingleMixFibers.lean:31 DosenPetric.Reduced.Gentzen.SingleMix.oldF
+def oldF : TraceRoute (K++Ξ) Ξ := TraceRoute.ofMap _ _ (fun a => some ((d.extend Ξ).route.get (At.shift F a)))
+
+DosenPetric/GentzenSingleMixFibers.lean:32 DosenPetric.Reduced.Gentzen.SingleMix.newF
+def newF (_d : ContractionBlock P F K) (Ξ : List (NormalForm P)) : TraceRoute (K++Ξ) Ξ := TraceRoute.shift K Ξ
+
+DosenPetric/GentzenSingleMixFibers.lean:33 DosenPetric.Reduced.Gentzen.SingleMix.squareG
+theorem squareG : oldG d Ξ = newG d Ξ := by
+
+DosenPetric/GentzenSingleMixFibers.lean:37 DosenPetric.Reduced.Gentzen.SingleMix.squareF
+theorem squareF : oldF d Ξ = newF d Ξ := by
+
+DosenPetric/GentzenSingleMixFibers.lean:41 DosenPetric.Reduced.Gentzen.SingleMix.fiberG_before
+theorem fiberG_before {A : NormalForm P} (z : At K A) :
+
+DosenPetric/GentzenSingleMixFibers.lean:47 DosenPetric.Reduced.Gentzen.SingleMix.fiberF_before
+theorem fiberF_before {A : NormalForm P} (z : At K A) :
+
+DosenPetric/GentzenSingleMixFibers.lean:50 DosenPetric.Reduced.Gentzen.SingleMix.fiberG_shift
+theorem fiberG_shift {A : NormalForm P} (z : At Ξ A) :
+
+DosenPetric/GentzenSingleMixFibers.lean:56 DosenPetric.Reduced.Gentzen.SingleMix.fiberF_shift
+theorem fiberF_shift {A : NormalForm P} (z : At Ξ A) :
+
+DosenPetric/GentzenSingleMixFibers.lean:59 DosenPetric.Reduced.Gentzen.SingleMix.retained_fibers
+theorem retained_fibers :
+
+DosenPetric/GentzenSingleMixFibers.lean:63 DosenPetric.Reduced.Gentzen.SingleMix.fixed_fibers
+theorem fixed_fibers {A : NormalForm P} (z : At K A) (hz : z.index ≠ d.keep.index) :
+
+DosenPetric/GentzenSingleMixFibers.lean:67 DosenPetric.Reduced.Gentzen.SingleMix.old_retained_fibers
+theorem old_retained_fibers :
+
+DosenPetric/GentzenSingleMixFibers.lean:72 DosenPetric.Reduced.Gentzen.SingleMix.old_fixed_fibers
+theorem old_fixed_fibers {A : NormalForm P} (z : At K A) (hz : z.index ≠ d.keep.index) :
+
+DosenPetric/GentzenSingleMixFibers.lean:77 DosenPetric.Reduced.Gentzen.SingleMix.old_suffix_fibers
+theorem old_suffix_fibers {A : NormalForm P} (z : At Ξ A) :
+
+DosenPetric/GentzenSingleMixFibers.lean:81 DosenPetric.Reduced.Gentzen.SingleMix.selected_transport
+theorem selected_transport : (d.extend Ξ).selected = d.selected.map (fun a => a.before Ξ) :=
+
+DosenPetric/GentzenSingleMixFibers.lean:83 DosenPetric.Reduced.Gentzen.SingleMix.selected_length
+theorem selected_length : (d.extend Ξ).selected.length = d.gs.length :=
+
+DosenPetric/GentzenSingleMixFibers.lean:85 DosenPetric.Reduced.Gentzen.SingleMix.selected_from_g
+theorem selected_from_g (a : At (F++Ξ) d.C) (ha : a ∈ (d.extend Ξ).selected) :
+
+DosenPetric/GentzenSingleMixFibers.lean:90 DosenPetric.Reduced.Gentzen.SingleMix.f_not_selected
+theorem f_not_selected (a : At Ξ d.C) : At.shift F a ∉ (d.extend Ξ).selected := by
+
+DosenPetric/GentzenSingleMixFibers.lean:94 DosenPetric.Reduced.Gentzen.SingleMix.retained_index
+theorem retained_index : (d.keep.before Ξ).index = (gaps d.gs).length := by
+
+DosenPetric/GentzenSingleMixFibers.lean:96 DosenPetric.Reduced.Gentzen.SingleMix.suffix_fixed
+theorem suffix_fixed {A : NormalForm P} (a : At Ξ A) :
+
+DosenPetric/GentzenSingleMixFibers.lean:101 DosenPetric.Reduced.Gentzen.SingleMix.prefix_fixed
+theorem prefix_fixed {A : NormalForm P} (z : At K A) (hz : z.index ≠ d.keep.index) :
+
+DosenPetric/GentzenSingleMixFibers.lean:105 DosenPetric.Reduced.Gentzen.SingleMix.outer_retained_fiber
+theorem outer_retained_fiber :
+
+DosenPetric/GentzenSingleMixFibers.lean:110 DosenPetric.Reduced.Gentzen.SingleMix.outer_fixed_fiber
+theorem outer_fixed_fiber {A : NormalForm P} (z : At K A) (hz : z.index ≠ d.keep.index) :
+
+DosenPetric/GentzenSingleMixFibers.lean:116 DosenPetric.Reduced.Gentzen.SingleMix.outer_suffix_fiber
+theorem outer_suffix_fiber {A : NormalForm P} (z : At Ξ A) :
+
+DosenPetric/GentzenSingleMixRules.lean:16 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.innerL
+def innerL : G P K Δ := d.applyL hn Δ g
+
+DosenPetric/GentzenSingleMixRules.lean:17 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.oldL
+def oldL : G P (K++Φ) (Δ++Ψ) := (d.extend Φ).applyL hn _ (G.mix f g)
+
+DosenPetric/GentzenSingleMixRules.lean:18 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.newL
+def newL : G P (K++Φ) (Δ++Ψ) := G.mix f (innerL d hn g)
+
+DosenPetric/GentzenSingleMixRules.lean:19 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.denoteL
+theorem denoteL : ofTerm (newL d hn f g).denote = ofTerm (oldL d hn f g).denote := by
+
+DosenPetric/GentzenSingleMixRules.lean:25 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.old_countL
+theorem old_countL : (oldL d hn f g).cutCount = f.cutCount+g.cutCount := by
+
+DosenPetric/GentzenSingleMixRules.lean:27 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.new_countL
+theorem new_countL : (newL d hn f g).cutCount = f.cutCount+g.cutCount := by
+
+DosenPetric/GentzenSingleMixRules.lean:29 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.old_cutFreeL
+theorem old_cutFreeL : (oldL d hn f g).CutFree ↔ f.CutFree ∧ g.CutFree := by
+
+DosenPetric/GentzenSingleMixRules.lean:31 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.new_cutFreeL
+theorem new_cutFreeL : (newL d hn f g).CutFree ↔ f.CutFree ∧ g.CutFree := by
+
+DosenPetric/GentzenSingleMixRules.lean:33 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.old_atomizedL
+theorem old_atomizedL : (oldL d hn f g).Atomized ↔ f.Atomized ∧ g.Atomized := by
+
+DosenPetric/GentzenSingleMixRules.lean:35 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.new_atomizedL
+theorem new_atomizedL : (newL d hn f g).Atomized ↔ f.Atomized ∧ g.Atomized := by
+
+DosenPetric/GentzenSingleMixRules.lean:37 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.relationL
+theorem relationL : (newL d hn f g).relation = (oldL d hn f g).relation :=
+
+DosenPetric/GentzenSingleMixRules.lean:43 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.innerR
+def innerR : G P Δ K := d.applyR hn Δ g
+
+DosenPetric/GentzenSingleMixRules.lean:44 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.oldR
+def oldR : G P (Δ++Φ) (K++Ψ) := (d.extend Ψ).applyR hn _ (G.mix f g)
+
+DosenPetric/GentzenSingleMixRules.lean:45 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.newR
+def newR : G P (Δ++Φ) (K++Ψ) := G.mix f (innerR d hn g)
+
+DosenPetric/GentzenSingleMixRules.lean:46 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.denoteR
+theorem denoteR : ofTerm (newR d hn f g).denote = ofTerm (oldR d hn f g).denote := by
+
+DosenPetric/GentzenSingleMixRules.lean:52 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.old_countR
+theorem old_countR : (oldR d hn f g).cutCount = f.cutCount+g.cutCount := by
+
+DosenPetric/GentzenSingleMixRules.lean:54 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.new_countR
+theorem new_countR : (newR d hn f g).cutCount = f.cutCount+g.cutCount := by
+
+DosenPetric/GentzenSingleMixRules.lean:56 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.old_cutFreeR
+theorem old_cutFreeR : (oldR d hn f g).CutFree ↔ f.CutFree ∧ g.CutFree := by
+
+DosenPetric/GentzenSingleMixRules.lean:58 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.new_cutFreeR
+theorem new_cutFreeR : (newR d hn f g).CutFree ↔ f.CutFree ∧ g.CutFree := by
+
+DosenPetric/GentzenSingleMixRules.lean:60 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.old_atomizedR
+theorem old_atomizedR : (oldR d hn f g).Atomized ↔ f.Atomized ∧ g.Atomized := by
+
+DosenPetric/GentzenSingleMixRules.lean:62 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.new_atomizedR
+theorem new_atomizedR : (newR d hn f g).Atomized ↔ f.Atomized ∧ g.Atomized := by
+
+DosenPetric/GentzenSingleMixRules.lean:64 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.relationR
+theorem relationR : (newR d hn f g).relation = (oldR d hn f g).relation :=
+
+DosenPetric/GentzenSingleMixRules.lean:68 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.block
+abbrev block (C : NormalForm P) (gs : List (List (NormalForm P))) (Θ : List (NormalForm P)) :
+
+DosenPetric/GentzenSingleMixRules.lean:70 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.single_premise_left
+theorem single_premise_left (C : NormalForm P) (gs : List (List (NormalForm P)))
+
+DosenPetric/GentzenSingleMixRules.lean:74 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.single_premise_right
+theorem single_premise_right (C : NormalForm P) (gs : List (List (NormalForm P)))
+
+DosenPetric/GentzenSingleMixRanks.lean:15 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.rankInnerL
+def rankInnerL := d.rankL hn Δ g
+
+DosenPetric/GentzenSingleMixRanks.lean:16 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.rankOuterL
+def rankOuterL := (d.extend Φ).rankL hn _ (G.mix f g)
+
+DosenPetric/GentzenSingleMixRanks.lean:17 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.selected_sumL
+theorem selected_sumL :
+
+DosenPetric/GentzenSingleMixRanks.lean:28 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.contraction_lossL
+theorem contraction_lossL : rankOuterL d hn f g = rankInnerL d hn g+d.gs.length := by
+
+DosenPetric/GentzenSingleMixRanks.lean:35 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.old_endpointL
+theorem old_endpointL : (oldL d hn f g).rho .left (d.keep.before Φ) = rankOuterL d hn f g := by
+
+DosenPetric/GentzenSingleMixRanks.lean:39 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.new_endpointL
+theorem new_endpointL : (newL d hn f g).rho .left (d.keep.before Φ) = rankInnerL d hn g+1 := by
+
+DosenPetric/GentzenSingleMixRanks.lean:42 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.endpoint_balanceL
+theorem endpoint_balanceL : (oldL d hn f g).rho .left (d.keep.before Φ)+1 =
+
+DosenPetric/GentzenSingleMixRanks.lean:48 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.contraction_decreasesL
+theorem contraction_decreasesL : rankInnerL d hn g < rankOuterL d hn f g := by
+
+DosenPetric/GentzenSingleMixRanks.lean:51 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.endpoint_decreasesL
+theorem endpoint_decreasesL : (newL d hn f g).rho .left (d.keep.before Φ) < (oldL d hn f g).rho .left (d.keep.before Φ) := by
+
+DosenPetric/GentzenSingleMixRanks.lean:55 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.fixed_g_oldL
+theorem fixed_g_oldL {A : NormalForm P} (z : At K A) (hz : z.index ≠ d.keep.index) :
+
+DosenPetric/GentzenSingleMixRanks.lean:62 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.fixed_g_newL
+theorem fixed_g_newL {A : NormalForm P} (z : At K A) (hz : z.index ≠ d.keep.index) :
+
+DosenPetric/GentzenSingleMixRanks.lean:67 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.fixed_f_oldL
+theorem fixed_f_oldL {A : NormalForm P} (a : At Φ A) :
+
+DosenPetric/GentzenSingleMixRanks.lean:73 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.fixed_f_newL
+theorem fixed_f_newL {A : NormalForm P} (a : At Φ A) :
+
+DosenPetric/GentzenSingleMixRanks.lean:77 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.opposite_g_oldL
+theorem opposite_g_oldL {A : NormalForm P} (a : At Δ A) :
+
+DosenPetric/GentzenSingleMixRanks.lean:82 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.opposite_g_newL
+theorem opposite_g_newL {A : NormalForm P} (a : At Δ A) :
+
+DosenPetric/GentzenSingleMixRanks.lean:87 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.opposite_f_oldL
+theorem opposite_f_oldL {A : NormalForm P} (a : At Ψ A) :
+
+DosenPetric/GentzenSingleMixRanks.lean:92 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.opposite_f_newL
+theorem opposite_f_newL {A : NormalForm P} (a : At Ψ A) :
+
+DosenPetric/GentzenSingleMixRanks.lean:95 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.opposite_g_equalL
+theorem opposite_g_equalL {A : NormalForm P} (a : At Δ A) :
+
+DosenPetric/GentzenSingleMixRanks.lean:102 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.rankInnerR
+def rankInnerR := d.rankR hn Δ g
+
+DosenPetric/GentzenSingleMixRanks.lean:103 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.rankOuterR
+def rankOuterR := (d.extend Ψ).rankR hn _ (G.mix f g)
+
+DosenPetric/GentzenSingleMixRanks.lean:104 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.selected_sumR
+theorem selected_sumR :
+
+DosenPetric/GentzenSingleMixRanks.lean:115 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.contraction_lossR
+theorem contraction_lossR : rankOuterR d hn f g = rankInnerR d hn g+d.gs.length := by
+
+DosenPetric/GentzenSingleMixRanks.lean:122 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.old_endpointR
+theorem old_endpointR : (oldR d hn f g).rho .right (d.keep.before Ψ) = rankOuterR d hn f g := by
+
+DosenPetric/GentzenSingleMixRanks.lean:126 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.new_endpointR
+theorem new_endpointR : (newR d hn f g).rho .right (d.keep.before Ψ) = rankInnerR d hn g+1 := by
+
+DosenPetric/GentzenSingleMixRanks.lean:129 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.endpoint_balanceR
+theorem endpoint_balanceR : (oldR d hn f g).rho .right (d.keep.before Ψ)+1 =
+
+DosenPetric/GentzenSingleMixRanks.lean:135 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.contraction_decreasesR
+theorem contraction_decreasesR : rankInnerR d hn g < rankOuterR d hn f g := by
+
+DosenPetric/GentzenSingleMixRanks.lean:138 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.endpoint_decreasesR
+theorem endpoint_decreasesR : (newR d hn f g).rho .right (d.keep.before Ψ) < (oldR d hn f g).rho .right (d.keep.before Ψ) := by
+
+DosenPetric/GentzenSingleMixRanks.lean:142 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.fixed_g_oldR
+theorem fixed_g_oldR {A : NormalForm P} (z : At K A) (hz : z.index ≠ d.keep.index) :
+
+DosenPetric/GentzenSingleMixRanks.lean:149 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.fixed_g_newR
+theorem fixed_g_newR {A : NormalForm P} (z : At K A) (hz : z.index ≠ d.keep.index) :
+
+DosenPetric/GentzenSingleMixRanks.lean:154 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.fixed_f_oldR
+theorem fixed_f_oldR {A : NormalForm P} (a : At Ψ A) :
+
+DosenPetric/GentzenSingleMixRanks.lean:160 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.fixed_f_newR
+theorem fixed_f_newR {A : NormalForm P} (a : At Ψ A) :
+
+DosenPetric/GentzenSingleMixRanks.lean:164 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.opposite_g_oldR
+theorem opposite_g_oldR {A : NormalForm P} (a : At Δ A) :
+
+DosenPetric/GentzenSingleMixRanks.lean:169 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.opposite_g_newR
+theorem opposite_g_newR {A : NormalForm P} (a : At Δ A) :
+
+DosenPetric/GentzenSingleMixRanks.lean:174 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.opposite_f_oldR
+theorem opposite_f_oldR {A : NormalForm P} (a : At Φ A) :
+
+DosenPetric/GentzenSingleMixRanks.lean:179 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.opposite_f_newR
+theorem opposite_f_newR {A : NormalForm P} (a : At Φ A) :
+
+DosenPetric/GentzenSingleMixRanks.lean:182 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.opposite_g_equalR
+theorem opposite_g_equalR {A : NormalForm P} (a : At Δ A) :
+
+DosenPetric/GentzenSingleMixExamples.lean:11 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.two
+abbrev two (C : NormalForm P) := block C [[],[]] []
+
+DosenPetric/GentzenSingleMixExamples.lean:12 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.three
+abbrev three (C : NormalForm P) := block C [[],[],[]] []
+
+DosenPetric/GentzenSingleMixExamples.lean:13 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.tagged
+abbrev tagged (C : NormalForm P) := block C [[C],[C]] [C]
+
+DosenPetric/GentzenSingleMixExamples.lean:14 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.tagsF
+def tagsF (C : NormalForm P) : List (At (repeated C [[C],[C]]++[C]) C) :=
+
+DosenPetric/GentzenSingleMixExamples.lean:16 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.tagsU
+def tagsU (C : NormalForm P) : List (At ((repeated C [[C],[C]]++[C])++[C]) C) :=
+
+DosenPetric/GentzenSingleMixExamples.lean:18 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.selected_indices
+theorem selected_indices (C : NormalForm P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:22 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.outer_map
+theorem outer_map (C : NormalForm P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:25 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.g_map
+theorem g_map (C : NormalForm P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:34 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.old_g_map
+theorem old_g_map (C : NormalForm P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:39 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.f_map
+theorem f_map (C : NormalForm P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:43 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.retained_fibers
+theorem retained_fibers (C : NormalForm P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:48 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.equal_f_label_not_selected
+theorem equal_f_label_not_selected (C : NormalForm P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:52 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.cutIdentity
+def cutIdentity (l : Literal P) : G P [.lit l] [.lit l] := G.cut (G.identity l) (G.identity l)
+
+DosenPetric/GentzenSingleMixExamples.lean:53 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.gLeft
+def gLeft (l : Literal P) : G P (repeated (.lit l) [[.lit l],[.lit l]]++[.lit l]) [.lit l] :=
+
+DosenPetric/GentzenSingleMixExamples.lean:55 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.gRight
+def gRight (l : Literal P) : G P [.lit l] (repeated (.lit l) [[.lit l],[.lit l]]++[.lit l]) :=
+
+DosenPetric/GentzenSingleMixExamples.lean:57 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.literal_left
+theorem literal_left (l : Literal P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:60 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.literal_right
+theorem literal_right (l : Literal P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:63 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.both_signs_two_actual_cuts
+theorem both_signs_two_actual_cuts (p : P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:67 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.only_g_cut
+theorem only_g_cut (l : Literal P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:70 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.only_f_cut
+theorem only_f_cut (l : Literal P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:75 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.constLeft
+def constLeft (C : NormalForm Empty) (n : Nat) :
+
+DosenPetric/GentzenSingleMixExamples.lean:77 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.constRight
+def constRight (C : NormalForm Empty) (n : Nat) :
+
+DosenPetric/GentzenSingleMixExamples.lean:79 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.empty_f_source_left
+theorem empty_f_source_left :
+
+DosenPetric/GentzenSingleMixExamples.lean:82 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.empty_f_target_right
+theorem empty_f_target_right :
+
+DosenPetric/GentzenSingleMixExamples.lean:85 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.compound_atomized_left
+theorem compound_atomized_left :
+
+DosenPetric/GentzenSingleMixExamples.lean:89 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.compound_atomized_right
+theorem compound_atomized_right :
+
+DosenPetric/GentzenSingleMixExamples.lean:93 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.compound_equality_left
+theorem compound_equality_left :
+
+DosenPetric/GentzenSingleMixExamples.lean:98 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.compound_equality_right
+theorem compound_equality_right :
+
+DosenPetric/GentzenSingleMixExamples.lean:103 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.empty_mix_adds_node
+theorem empty_mix_adds_node :
+
+DosenPetric/GentzenSingleMixExamples.lean:106 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.three_loss_left
+theorem three_loss_left :
+
+DosenPetric/GentzenSingleMixExamples.lean:114 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.three_loss_right
+theorem three_loss_right :
+
+DosenPetric/GentzenSingleMixExamples.lean:122 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.fixed_f_drops_left
+theorem fixed_f_drops_left (l : Literal P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:130 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.corrected_opposite_left
+theorem corrected_opposite_left (l : Literal P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:135 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.corrected_opposite_right
+theorem corrected_opposite_right (l : Literal P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:140 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.fixed_g_unchanged_left
+theorem fixed_g_unchanged_left (l : Literal P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:147 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.fixed_f_drops_right
+theorem fixed_f_drops_right (l : Literal P) :
+
+DosenPetric/GentzenSingleMixExamples.lean:155 DosenPetric.Reduced.Gentzen.W5.SinglePremiseMix.Examples.old_opposite_not_one
+theorem old_opposite_not_one (l : Literal P) :

@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-24T20:36:08.500953+00:00",
+  "checks": [
+    {
+      "name": "build-GentzenMixRanks",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenMixRanks"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 0,
+      "seconds": 1.542,
+      "log": ".codex-work/gentzen-w5-single-premise-mix/build-GentzenMixRanks-20261024T203606957964.log",
+      "log_sha256": "6a3dc6d3f03d7793876e342fb1eef8585f749cc1ce13d1e2c7da6b63a4b3d209"
+    }
+  ]
+}

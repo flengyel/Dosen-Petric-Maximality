@@ -190,3 +190,9 @@ public import DosenPetric.GentzenSelectedLogicalFibers
 public import DosenPetric.GentzenSelectedLogicalRules
 public import DosenPetric.GentzenSelectedLogicalRanks
 public import DosenPetric.GentzenSelectedLogicalExamples
+public import DosenPetric.GentzenContractionMixComponents
+public import DosenPetric.GentzenMixRanks
+public import DosenPetric.GentzenSingleMixFibers
+public import DosenPetric.GentzenSingleMixRules
+public import DosenPetric.GentzenSingleMixRanks
+public import DosenPetric.GentzenSingleMixExamples

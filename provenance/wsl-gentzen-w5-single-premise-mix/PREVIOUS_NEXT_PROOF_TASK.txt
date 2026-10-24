@@ -1,0 +1,28 @@
+Terminal selected-logical W4 and its right dual are complete. See
+[the W4 report](GENTZEN_W4_SELECTED_LOGICAL_REPORT.md).
+
+Next prove source W5 single-premise mix with every selected C in g in
+G.mix f g, and its right dual. For n=gs.length≥2 set F=repeated C gs++Θ,
+K=gaps gs++C::Θ. On the left f:G P Φ Ψ, g:G P F Δ; mix gives
+G P (F++Φ) (Δ++Ψ). Old contracts gs with tail Θ++Φ; new mixes f with
+the direct contraction of g. Both outputs must have G P (K++Φ) (Δ++Ψ).
+On the right f:G P Φ Ψ, g:G P Δ F; both outputs have
+G P (Δ++Φ) (K++Ψ). Actual mix puts the second argument's contexts first.
+
+Prove actual endpoint casts, binary positional/component equations, complete
+ordered selected transport, both premise fibers and fixed common originals.
+If LC is the inner contraction rank on g, target old outer rank LC+n,
+new retained rank LC+1 and contraction/endpoint losses n/n−1. Compute
+other ranks by premise and side; opposite-side g positions can increase.
+Prove exact count, CutFree/Atomized and tagged-relation laws with actual
+Empty/compound/equal-label/signed-cut examples. These are next proof targets,
+not completed W5 claims. See
+[CODEX_W5_SINGLE_PREMISE_MIX.txt](CODEX_W5_SINGLE_PREMISE_MIX.txt).
+
+Mixed-premise W5, other mix placement, binary logical W5/W6, remaining
+W1/W2 and disjoint interleaving/exchange, arbitrary-context replacement,
+Reducibility, Blocked-w, cut elimination, restricted coherence inputs,
+PositiveCoherence, Reduced.Faithful, Boolean Coherence, unconditional maximality
+and Palomar preparation remain separate/open. Existing conditional transfers
+and three milestone boundaries are unchanged. An unfinished reconstruction
+of published results does not establish a manuscript defect.
