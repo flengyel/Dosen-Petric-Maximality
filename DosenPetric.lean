@@ -177,3 +177,9 @@ public import DosenPetric.GentzenSharedContractionCommutation
 public import DosenPetric.GentzenSharedContractionRanks
 public import DosenPetric.GentzenSharedContractionInstances
 public import DosenPetric.GentzenSharedContractionExamples
+public import DosenPetric.GentzenUnaryCasts
+public import DosenPetric.GentzenSelectedThinningData
+public import DosenPetric.GentzenSelectedThinningFibers
+public import DosenPetric.GentzenSelectedThinningRules
+public import DosenPetric.GentzenSelectedThinningRanks
+public import DosenPetric.GentzenSelectedThinningExamples

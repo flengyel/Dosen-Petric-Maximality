@@ -1190,6 +1190,48 @@ Inhabited equal-label, 2/3 and 3/2 arities, three shared offsets, Empty-variable
 constants, compounds and actual signed cuts compile. See
 [the W3 report](GENTZEN_W3_SHARED_SELECTED_CONTRACTION_REPORT.md) and reviews.
 
-Next prove terminal selected-thinning W2 and its right dual. Remaining disjoint
-interleaving/exchange/W1/W2–W6, arbitrary-context replacement, Reducibility,
-Blocked-w, cut elimination, coherence and unconditional maximality stay open.
+Terminal selected-thinning W2 and its right dual are now proved below.
+Remaining disjoint interleaving/exchange/W1/W2/W4–W6, arbitrary-context
+replacement, Reducibility, Blocked-w, cut elimination, coherence and
+unconditional maximality stay open.
+
+
+## Terminal selected thinning (W2)
+
+The same hash-verified September 2007 source was consulted at §11.2,
+printed pp.248–253/PDF pp.260–265. Printed p.251 W2/W4 was inspected in
+rendering; p.252 states the right analogue. No new source discrepancy is
+asserted. Source-access evidence is retained under
+`provenance/wsl-gentzen-w2-selected-thinning/source-access/`.
+
+| Source location | Exact correspondence | Lean proof |
+| --- | --- | --- |
+| p.251 W2 | A terminal thinning appends C and is selected with the n original gs copies. Replace by direct contraction and exchange past Θ. | SelectedThinning.Data and W2.SelectedThinning.terminal_left. |
+| p.252 right analogue | Actual succedent thinning/contraction/exchange, without arrow negation. | terminal_right and separately typed denoteR, ranks and preservation. |
+| pp.248–249 complete ancestry | All original positions embed; the new selected leaf has no original predecessor. | Bounded copyIndex_old, separate copyIndex_last, square, selected_transport and complete retained/fixed fibers. |
+| p.251 W2 and cluster ranks | Each of n old selected paths gains a node, and the new leaf has rank one. | selected_sumL/R, contraction_lossL/R, endpoint_lossL/R and fixed_equalL/R. |
+| p.251 W1 versus W2 | The inserted thinning is selected here, rather than fixed-parametric. | inserted_selected and the appended singleton in outer.selected. |
+
+For arbitrary P,C,gs,Θ, n≥2 and existing premises, F=repeated C gs++Θ,
+I=gaps gs++C::Θ, U=F++[C], K=(gaps gs++Θ)++[C]. Both actual outputs
+have exact G P K Δ or G P Γ K. Data contains no assumed square or rank
+conclusion. The actual all-position square and universal components derive
+Reduced equality, without Semilattice Coherence or occurrence/inclusion
+reflection. The full outer retained fiber has n+1 positions; either composite
+from original F has n. Each other final position has a computed unique common
+original, including when all labels equal C.
+
+Old outer rank is LC+n+1, new inner rank LC, and new final retained rank
+LC+1. Exact losses n+1/n are strict; every other final same-side rank is
+2+rho(f,a) on both proofs. An empty exchange still adds a node. Counts,
+CutFree and full tagged relations are preserved. Old Atomized iff
+AtomicFormula C and f.Atomized; new iff f.Atomized. Concrete compound
+counterexamples rule out an unconditional reverse predicate implication.
+Actual Empty P constants, equal-tag calculations and signed cuts compile.
+See [the W2 report](GENTZEN_W2_SELECTED_THINNING_REPORT.md) and both reviews.
+
+Next prove W4 terminal selected logical introduction and its right dual,
+as specified in [the continuation](CODEX_W4_SELECTED_LOGICAL.txt). Its proposed
+rank table has an n=2 endpoint tie; no W4 proof is claimed here. Remaining
+local cases, arbitrary-context replacement, Reducibility, Blocked-w, cut
+elimination, coherence and unconditional maximality remain separate/open.

@@ -1,0 +1,14 @@
+✖ [127/128] Building DosenPetric.GentzenSelectedThinningFibers (1.4s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectedThinningFibers.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedThinningFibers.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedThinningFibers.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedThinningFibers.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedThinningFibers.setup.json --json
+error: DosenPetric/GentzenSelectedThinningFibers.lean:27:57: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  d.x
+in the target expression
+  d.e.get (d.inner.route.get a) = d.outer.keep ↔ d.inner.route.get a = d.inner.keep
+
+P : Type u
+d : Data P
+a : At d.F d.C
+⊢ d.e.get (d.inner.route.get a) = d.outer.keep ↔ d.inner.route.get a = d.inner.keep
+Some required targets logged failures:
+- DosenPetric.GentzenSelectedThinningFibers
+error: build failed

@@ -1,0 +1,94 @@
+Continue the Došen–Petrić maximality formalization in WSL2 at
+/home/flengyel/src/Dosen-Petric-Maximality. Prove source W4 terminal selected
+logical introduction and its separately typed right dual. Complete the actual
+proofs, examples, checks, reviews, current records and verified Downloads
+delivery. Commit the completed scoped work to main and push over SSH without
+force. This authorizes that scoped commit/push, not publication, licensing or
+a repository-visibility change.
+
+Inspect Git status, remotes and stashes; fetch SSH origin, preserving all newer
+and unrelated work and other checkouts. Read AGENTS.md, current maps,
+correspondence/validation/continuation and PALOMAR_REQUIREMENTS; the W2
+selected-thinning report/reviews, W3 report/reviews and earlier unary logical
+reports where used; and the actual G, ContractionBlock, UnaryCast, component,
+partial-ancestry, fiber and rank definitions. Reuse completed proofs. Preserve
+Lean 4.35.0, Init-only dependencies, original syntax/equations/denotations,
+tags, predecessor/rank definitions and analysis predicates. Preserve manuscript
+v4/v5, diagrams, references/checksums and historical reports. Run a fresh baseline.
+
+Consult the pinned September 2007 Proof-Theoretical Coherence, §11.2,
+printed p.251 W4 and p.252's right analogue, with pp.248–253 for ancestry/ranks.
+The full PDF SHA256 is
+e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e;
+printed pp.248–253 are PDF pp.260–265, one-based. Retain access/page evidence.
+The new logical principal formula is selected by contraction. This differs
+from the completed fixed-parametric logical W1 and selected-thinning W2 cases.
+
+Left target: arbitrary P,A,B, gs,Θ, n=gs.length≥2, with C=conj A B and
+  F = (repeated C gs ++ Θ) ++ [A,B]
+  U = (repeated C gs ++ Θ) ++ [C]
+  K = (gaps gs ++ Θ) ++ [C].
+For each existing f:G P F Δ, old applies actual terminal G.conjL, then
+contracts C at gaps gs++[Θ], tail []. New first contracts the n original
+C copies on f, with tail Θ++[A,B], then applies terminal G.conjL, then
+contracts the retained C and new principal C with the two gaps [gaps gs,Θ],
+tail []. Both must have exact G P K Δ.
+
+Right target: C=disj A B, f:G P Γ F, actual terminal G.disjR and G.contractR
+in the analogous three-step new proof, with final G P Γ K. Do not invoke
+an unproved contravariant arrow-negation operation. Prove and use every
+endpoint equality/cast and the n+1 / two-copy constructor bounds.
+
+Prove ofTerm new.denote=ofTerm old.denote in Reduced.Hom by actual structural
+components and the concrete positional calculations, not Semilattice Coherence
+or occurrence/inclusion reflection. Logical ancestry consumes both A and B
+slots; use a genuinely partial whole-formula parent map. Do not manufacture
+a total At A/B to At C map. Keep literal Sum coordinates separate. Prove
+complete selected-family transport, the principal position/fiber, every other
+fixed fiber/common original and equal-label positional exclusions.
+
+Let LC be the direct n-ary contraction rank on f before logical introduction.
+Prove the source comparison: old outer contraction rank is LC+n+1 and the
+new inner n-ary contraction rank is LC, a strict difference n+1. Also compute
+the actual final retained ranks: old LC+n+1, new LC+3. The n=2 endpoint tie
+must remain visible; do not require a general strict final-endpoint decrease.
+For other final fixed positions, target old 2+rho(f,a) and new 3+rho(f,a),
+at a proved common original. Do not claim all-position decrease, global
+termination, general Reducibility or Blocked-w from this local table.
+Identify the displayed source blocked pattern without assuming an unproved
+general Blocked-w interface or treating its conclusion as input.
+
+Prove exact cut-count preservation, CutFree equivalences and full tagged
+relation equality from Reduced equality. Both old/new Atomized predicates
+should be equivalent to f.Atomized: logical introduction may have compound
+principal formulas. Do not import W2's AtomicFormula C restriction here.
+Premises may contain cuts; no new atomicity, freshness, nonempty-P,
+DecidableEq, equal-label exclusion or coherence hypothesis.
+
+Include inhabited left/right examples: n=2 with an exact endpoint tie;
+n=3; Empty P constants, compounds, both literal signs and actual cuts;
+empty/nonempty Θ and internal gaps; fixed formulas labelled C; repeated
+A/B labels and empty literal-occurrence types. Check exact selected lists,
+partial parent maps and appropriate component comparisons. Retain failures
+and use small lemmas without raising heartbeat limits or weakening targets.
+
+After the last proof edit run strict verification, both boundary scripts,
+manuscript SHA256SUMS and staged/unstaged whitespace checks, one heavy process
+at a time. Retain commands/versions/exits/timings, source/import/declaration
+closure, full transitive axiom audit and all five expected negative controls.
+Apply hostile-referee and source-grounded mathematical-writing reviews to
+actual proofs/types/examples/report/correspondence. Keep process commentary
+outside the manuscript. No proof holes, custom mathematical axioms,
+native_decide, conclusion-equivalent assumptions or empty-hom-set zeros.
+
+Retain reports under docs/ and docs/reviews/, evidence under provenance/.
+Copy every finalized report to /mnt/c/Users/fleng/Downloads with conflict-
+preserving names and byte/SHA256 verification against its committed version.
+Verify checked source against the commit and main/origin/main/live SSH refs
+after a non-force push. Preserve the integration stash. Finish with exact
+scope/results/limits, checks, commit/ref/tree status, repository/Downloads
+paths and one concrete next proof obligation. Remaining W1/W2/W4–W6,
+all-site replacement, Reducibility, Blocked-w, cut elimination, restricted
+coherence inputs, PositiveCoherence, Reduced.Faithful, Boolean Coherence and
+unconditional maximality stay separate/open. An unfinished reconstruction
+of published work does not establish a manuscript defect.

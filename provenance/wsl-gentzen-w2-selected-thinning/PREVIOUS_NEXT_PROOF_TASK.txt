@@ -1,0 +1,26 @@
+W3 shared-selected contraction fusion and its right dual are complete. See
+[the W3 report](GENTZEN_W3_SHARED_SELECTED_CONTRACTION_REPORT.md).
+
+Next prove source W2 selected thinning at the terminal position and its right
+dual. For arbitrary P,C,gs,Θ, n=gs.length≥2, set F=repeated C gs++Θ,
+I=gaps gs++C::Θ, U=F++[C] and K=(gaps gs++Θ)++[C]. Old appends a new C by
+actual thinning, then contracts the n original selected copies and that new
+position with gaps gs++[Θ], tail []. New contracts gs/Θ on f, then exchanges
+the retained singleton C past Θ. Prove the actual endpoint casts and concrete
+route/component equations at G P K Δ or G P Γ K before Reduced equality.
+
+If LC is the direct n-ary contraction rank, target old retained/outer rank
+LC+n+1 and new retained rank LC+1, with new contraction-subterm rank LC.
+Keep empty-block exchange nodes when counting ranks. Prove complete selected
+and fixed fibers, exact preservation and inhabited positional examples.
+The predicate boundary is asymmetric: old.Atomized iff AtomicFormula C and
+f.Atomized; new.Atomized iff f.Atomized. Atomicity is not a hypothesis of the
+denotation/rank equalities. No W2 construction is assumed here. The concrete
+continuation is [CODEX_W2_SELECTED_THINNING.txt](CODEX_W2_SELECTED_THINNING.txt).
+
+Disjoint interleaving, remaining exchange/W1/W2–W6 cases, arbitrary-context
+replacement, Reducibility, Blocked-w, cut elimination, restricted coherence
+inputs, PositiveCoherence, Reduced.Faithful, Boolean Coherence, unconditional
+maximality and Palomar preparation remain separate/open. Existing conditional
+transfers and the three milestone boundaries are unchanged. An unfinished
+reconstruction of published results does not establish a manuscript defect.

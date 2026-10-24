@@ -1,0 +1,137 @@
+'DosenPetric.Reduced.Gentzen.Route.get_cast' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.Route.exchange_get' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.Route.exchange_product' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Route.exchange_coproduct' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.UnaryCast.thinL_denote' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.UnaryCast.thinR_denote' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.UnaryCast.thinL_embedded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.UnaryCast.thinR_embedded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.UnaryCast.thinL_principal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.UnaryCast.thinR_principal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.UnaryCast.exchangeL_denote' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.UnaryCast.exchangeR_denote' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.UnaryCast.exchangeL_embedded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.UnaryCast.exchangeR_embedded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.copyIndex_old' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.copyIndex_last' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.thinSource' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.outerSource' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.outerTarget' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.exchangeSource' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.exchangeTarget' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.outer_count' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.outer_bound' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.t_index' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.z_index' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.x_index' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.e_index' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.retained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.inserted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.inserted_selected' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.t_injective' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.e_injective' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.old_not_inserted' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.back_index' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.e_back' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.back_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.old_position' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.selected_embedded' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.selected_transport' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.selected_length' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.old_selected_length' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.t_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.e_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.outer_retained_fiber' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.old_composite_fiber' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.new_composite_fiber' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.back_fixed' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.original_new' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.original_old' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.original_unique' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.outer_fixed_fiber' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.other_fibers' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.product_square' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.coproduct_square' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.thin_denoteL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.inner_denoteL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_denoteL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_denoteL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.denoteL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_countL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_countL' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_cutFreeL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_cutFreeL' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_atomizedL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_atomizedL' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.atomized_forwardL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.atomized_reverseL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.relationL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.thin_denoteR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.inner_denoteR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_denoteR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_denoteR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.denoteR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_countR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_countR' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_cutFreeR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_cutFreeR' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_atomizedR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_atomizedR' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.atomized_forwardR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.atomized_reverseR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.relationR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.terminal_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.terminal_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SelectedThinning.Data.selected_sum' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.thin_embeddedL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.thin_principalL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.selected_sumL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.contraction_lossL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_endpointL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_endpointL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.endpoint_lossL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.endpoint_decreasesL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.contraction_decreasesL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.fixed_oldL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.fixed_newL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.fixed_equalL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.thin_embeddedR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.thin_principalR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.selected_sumR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.contraction_lossR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_endpointR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_endpointR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.endpoint_lossR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.endpoint_decreasesR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.contraction_decreasesR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.fixed_oldR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.fixed_newR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.fixed_equalR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.inner_selected' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.outer_selected' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.inserted_retained' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.outer_map' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.inner_map' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.thinning_map' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.exchange_map' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.old_composite_map' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.new_composite_map' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.outer_retained_indices' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.original_retained_indices' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.fixed_original_indices' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.empty_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.empty_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.empty_exchange_adds_node_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.empty_exchange_adds_node_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.fixed_rank_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.fixed_rank_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.compound_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.compound_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.compound_atomized_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.compound_atomized_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.literal_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.literal_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.three_loss_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.three_loss_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.both_signs_actual_cuts' depends on axioms: [propext]

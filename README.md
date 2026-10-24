@@ -57,8 +57,12 @@ the terminal retained order is C before E. Shared-selected W3 fusion and its
 right dual now compile: one constructed contraction has n+m−1 selected copies,
 exact Reduced equality and retained rank drop m. Complete positional fibers
 and weighted sums preserve equal-labelled fixed tags; counts, predicates and
-tagged relations are preserved. Selected-thinning W2 is next; disjoint
-interleaving remains separate.
+tagged relations are preserved. Terminal selected-thinning W2 and its right
+dual now compile: complete ordered selection includes the new leaf, exact
+contraction/endpoint losses are n+1/n, and other fixed ranks are unchanged.
+Both cut counts and CutFree predicates are preserved; old Atomized iff
+AtomicFormula C and f.Atomized, while new Atomized iff f.Atomized.
+Terminal selected-logical W4 is next; disjoint interleaving remains separate.
 The current stage is the remaining local contraction transformations toward
 cut elimination. General W1, W2–W6, blocked-contraction transformations,
 Reducibility, cut elimination, the positive coherence inputs, PositiveCoherence,
@@ -113,11 +117,12 @@ The [v5 literature review](docs/LITERATURE_REVIEW_V5_2026-10-23.md),
 [writing review](docs/reviews/V5_WRITING_REVIEW.md), and
 [manuscript validation](docs/V5_VALIDATION.md) accompany v5.
 The [earlier literature comparison](docs/LITERATURE_REVIEW.md) remains available.
-The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W3_SHARED_SELECTED_CONTRACTION_HOSTILE.md)
-and [mathematical-writing review](docs/reviews/GENTZEN_W3_SHARED_SELECTED_CONTRACTION_WRITING.md)
-cover shared-selected W3 fusion and its right dual; they are not independent
-certification. The [W3 report](docs/GENTZEN_W3_SHARED_SELECTED_CONTRACTION_REPORT.md),
-[ready-to-paste W2 continuation](docs/CODEX_W2_SELECTED_THINNING.txt),
+The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W2_SELECTED_THINNING_HOSTILE.md)
+and [mathematical-writing review](docs/reviews/GENTZEN_W2_SELECTED_THINNING_WRITING.md)
+cover terminal selected-thinning W2 and its right dual; they are not independent
+certification. The [W2 report](docs/GENTZEN_W2_SELECTED_THINNING_REPORT.md),
+[ready-to-paste W4 continuation](docs/CODEX_W4_SELECTED_LOGICAL.txt),
+[preceding W3 report](docs/GENTZEN_W3_SHARED_SELECTED_CONTRACTION_REPORT.md),
 [preceding terminal-tail report](docs/GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT.md),
 [preceding disjoint-contraction report](docs/GENTZEN_W1_DISJOINT_CONTRACTION_REPORT.md),
 [preceding same-side logical report](docs/GENTZEN_W1_SAME_SIDE_LOGICAL_REPORT.md),

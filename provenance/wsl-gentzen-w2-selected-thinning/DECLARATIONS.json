@@ -1,0 +1,1269 @@
+[
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Route.get_cast",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 13,
+    "source": "theorem get_cast {\u0393 \u0394 \u0393' \u0394' : List (NormalForm P)} (h\u0393 : \u0393 = \u0393') (h\u0394 : \u0394 = \u0394')"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Route.exchange",
+    "kind": "def",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 18,
+    "source": "def exchange (\u0393 X Y \u0398 : List (NormalForm P)) : Route (\u0393++Y++X++\u0398) (\u0393++X++Y++\u0398) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Route.exchange_get",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 21,
+    "source": "theorem exchange_get (\u0393 X Y \u0398 : List (NormalForm P)) {A : NormalForm P}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Route.exchange_product",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 25,
+    "source": "theorem exchange_product (\u0393 X Y \u0398 : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Route.exchange_coproduct",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 31,
+    "source": "theorem exchange_coproduct (\u0393 X Y \u0398 : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.UnaryCast.thinL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 41,
+    "source": "def thinL (\u0393 \u0398 : List (NormalForm P)) (C : NormalForm P)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.UnaryCast.thinR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 44,
+    "source": "def thinR (\u0394 \u039b : List (NormalForm P)) (C : NormalForm P)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.UnaryCast.thinL_denote",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 48,
+    "source": "theorem thinL_denote (\u0393 \u0398 : List (NormalForm P)) (C : NormalForm P)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.UnaryCast.thinR_denote",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 53,
+    "source": "theorem thinR_denote (\u0394 \u039b : List (NormalForm P)) (C : NormalForm P)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.UnaryCast.thinL_embedded",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 59,
+    "source": "theorem thinL_embedded (\u0393 \u0398 : List (NormalForm P)) (C : NormalForm P)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.UnaryCast.thinR_embedded",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 65,
+    "source": "theorem thinR_embedded (\u0394 \u039b : List (NormalForm P)) (C : NormalForm P)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.UnaryCast.thinL_principal",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 72,
+    "source": "theorem thinL_principal (\u0393 \u0398 : List (NormalForm P)) (C : NormalForm P)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.UnaryCast.thinR_principal",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 76,
+    "source": "theorem thinR_principal (\u0394 \u039b : List (NormalForm P)) (C : NormalForm P)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.UnaryCast.exchangeL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 81,
+    "source": "def exchangeL (\u0393 X Y \u0398 : List (NormalForm P)) (hF : \u0393++X++Y++\u0398 = F)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.UnaryCast.exchangeR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 84,
+    "source": "def exchangeR (\u0394 X Y \u039b : List (NormalForm P)) (hF : \u0394++X++Y++\u039b = F)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.UnaryCast.exchangeL_denote",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 88,
+    "source": "theorem exchangeL_denote (\u0393 X Y \u0398 : List (NormalForm P)) (hF : \u0393++X++Y++\u0398 = F)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.UnaryCast.exchangeR_denote",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 96,
+    "source": "theorem exchangeR_denote (\u0394 X Y \u039b : List (NormalForm P)) (hF : \u0394++X++Y++\u039b = F)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.UnaryCast.exchangeL_embedded",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 105,
+    "source": "theorem exchangeL_embedded (\u0393 X Y \u0398 : List (NormalForm P)) (hF : \u0393++X++Y++\u0398 = F)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.UnaryCast.exchangeR_embedded",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenUnaryCasts.lean",
+    "line": 113,
+    "source": "theorem exchangeR_embedded (\u0394 X Y \u039b : List (NormalForm P)) (hF : \u0394++X++Y++\u039b = F)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.copyIndex_old",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 11,
+    "source": "theorem copyIndex_old (C : NormalForm P) (gs : List (List (NormalForm P)))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.copyIndex_last",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 37,
+    "source": "theorem copyIndex_last (C : NormalForm P) (gs : List (List (NormalForm P)))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data",
+    "kind": "structure",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 53,
+    "source": "structure Data (P : Type u) where"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.F",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 60,
+    "source": "abbrev F := repeated d.C d.gs ++ d.\u0398"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.I",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 61,
+    "source": "abbrev I := gaps d.gs ++ d.C :: d.\u0398"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.U",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 62,
+    "source": "abbrev U := d.F ++ [d.C]"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.K",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 63,
+    "source": "abbrev K := (gaps d.gs ++ d.\u0398) ++ [d.C]"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.outerGaps",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 64,
+    "source": "abbrev outerGaps := d.gs ++ [d.\u0398]"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.thinSource",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 66,
+    "source": "theorem thinSource : d.F++[] = d.F := List.append_nil _"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.outerSource",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 67,
+    "source": "theorem outerSource : repeated d.C d.outerGaps++[] = d.U := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.outerTarget",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 70,
+    "source": "theorem outerTarget : gaps d.outerGaps++d.C::[] = d.K := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.exchangeSource",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 72,
+    "source": "theorem exchangeSource : gaps d.gs++[d.C]++d.\u0398++[] = d.I := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.exchangeTarget",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 74,
+    "source": "theorem exchangeTarget : gaps d.gs++d.\u0398++[d.C]++[] = d.K := List.append_nil _"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.outer_count",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 75,
+    "source": "theorem outer_count : d.outerGaps.length = d.gs.length+1 := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.outer_bound",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 77,
+    "source": "theorem outer_bound (hn : 2 \u2264 d.gs.length) : 2 \u2264 d.outerGaps.length := by rw [d.outer_count]; omega"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.inner",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 79,
+    "source": "abbrev inner : ContractionBlock P d.F d.I := \u27e8d.C,d.gs,d.\u0398,rfl,rfl\u27e9"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.outer",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 80,
+    "source": "abbrev outer : ContractionBlock P d.U d.K := \u27e8d.C,d.outerGaps,[],d.outerSource,d.outerTarget\u27e9"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.t",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 81,
+    "source": "def t : Route d.U d.F := (Route.thin d.F [] d.C).cast rfl d.thinSource"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.e",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 82,
+    "source": "def e : Route d.K d.I := (Route.exchange (gaps d.gs) [d.C] d.\u0398 []).cast d.exchangeTarget d.exchangeSource"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.z",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 83,
+    "source": "def z : At d.U d.C := At.shift d.F (.here d.C [])"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.x",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 84,
+    "source": "abbrev x := d.outer.keep"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.t_index",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 86,
+    "source": "theorem t_index {A : NormalForm P} (a : At d.F A) : (d.t.get a).index = a.index := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.z_index",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 89,
+    "source": "theorem z_index : d.z.index = d.F.length := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.x_index",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 91,
+    "source": "theorem x_index : d.x.index = (gaps d.gs).length+d.\u0398.length := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.e_index",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 94,
+    "source": "theorem e_index {A : NormalForm P} (a : At d.I A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.square",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 99,
+    "source": "theorem square {A : NormalForm P} (a : At d.F A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.retained",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 104,
+    "source": "theorem retained : d.e.get d.inner.keep = d.x := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.inserted",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 111,
+    "source": "theorem inserted : d.outer.route.get d.z = d.x := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.inserted_selected",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 115,
+    "source": "theorem inserted_selected : d.z \u2208 d.outer.selected := (d.outer.selected_iff _).mpr d.inserted"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.t_injective",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 117,
+    "source": "theorem t_injective {A : NormalForm P} (a b : At d.F A) (h : d.t.get a = d.t.get b) : a = b := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.e_injective",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 120,
+    "source": "theorem e_injective {A : NormalForm P} (a b : At d.I A) (h : d.e.get a = d.e.get b) : a = b := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.old_not_inserted",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 126,
+    "source": "theorem old_not_inserted {A : NormalForm P} (a : At d.F A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.back",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 132,
+    "source": "def back {A : NormalForm P} (a : At d.K A) : At d.I A :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.back_index",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 134,
+    "source": "theorem back_index {A : NormalForm P} (a : At d.K A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.e_back",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 137,
+    "source": "theorem e_back {A : NormalForm P} (a : At d.K A) : d.e.get (d.back a) = a := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.back_e",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningData.lean",
+    "line": 140,
+    "source": "theorem back_e {A : NormalForm P} (a : At d.I A) : d.back (d.e.get a) = a := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.old_position",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 12,
+    "source": "theorem old_position {A : NormalForm P} (b : At d.U A) (hb : b.index \u2260 d.z.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.selected_embedded",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 25,
+    "source": "theorem selected_embedded (a : At d.F d.C) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.selected_transport",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 32,
+    "source": "theorem selected_transport : d.outer.selected = d.inner.selected.map d.t.get ++ [d.z] := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.selected_length",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 59,
+    "source": "theorem selected_length : d.outer.selected.length = d.gs.length+1 := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.old_selected_length",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 61,
+    "source": "theorem old_selected_length : d.inner.selected.length = d.gs.length := d.inner.selected_length"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.t_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 63,
+    "source": "theorem t_fiber {A : NormalForm P} (a : At d.F A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.e_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 69,
+    "source": "theorem e_fiber {A : NormalForm P} (z : At d.K A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.outer_retained_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 77,
+    "source": "theorem outer_retained_fiber : (TraceRoute.full d.outer.route).fiber d.x ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.old_composite_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 81,
+    "source": "theorem old_composite_fiber : (TraceRoute.full (d.t.map d.outer.route.get)).fiber d.x = d.inner.selected := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.new_composite_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 86,
+    "source": "theorem new_composite_fiber : (TraceRoute.full (d.inner.route.map d.e.get)).fiber d.x = d.inner.selected := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.back_fixed",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 92,
+    "source": "theorem back_fixed {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.original",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 101,
+    "source": "def original {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.x.index) : At d.F A :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.original_new",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 103,
+    "source": "theorem original_new {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.original_old",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 106,
+    "source": "theorem original_old {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.original_unique",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 109,
+    "source": "theorem original_unique {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.x.index)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.outer_fixed_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 114,
+    "source": "theorem outer_fixed_fiber {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.other_fibers",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 121,
+    "source": "theorem other_fibers {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.product_square",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 130,
+    "source": "theorem product_square :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.coproduct_square",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningFibers.lean",
+    "line": 137,
+    "source": "theorem coproduct_square :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.thinL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 15,
+    "source": "def thinL : G P d.U \u0394 := UnaryCast.thinL d.F [] d.C d.thinSource rfl \u0394 f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.innerL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 16,
+    "source": "def innerL : G P d.I \u0394 := d.inner.applyL hn \u0394 f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.oldL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 17,
+    "source": "def oldL : G P d.K \u0394 := d.outer.applyL (d.outer_bound hn) \u0394 (thinL d \u0394 f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.newL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 18,
+    "source": "def newL : G P d.K \u0394 :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.thin_denoteL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 21,
+    "source": "theorem thin_denoteL : ofTerm (thinL d \u0394 f).denote ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.inner_denoteL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 23,
+    "source": "theorem inner_denoteL : ofTerm (innerL d hn \u0394 f).denote ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_denoteL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 25,
+    "source": "theorem old_denoteL : ofTerm (oldL d hn \u0394 f).denote ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_denoteL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 29,
+    "source": "theorem new_denoteL : ofTerm (newL d hn \u0394 f).denote ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.denoteL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 31,
+    "source": "theorem denoteL : ofTerm (newL d hn \u0394 f).denote = ofTerm (oldL d hn \u0394 f).denote := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_countL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 34,
+    "source": "theorem old_countL : (oldL d hn \u0394 f).cutCount = f.cutCount := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_countL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 36,
+    "source": "theorem new_countL : (newL d hn \u0394 f).cutCount = f.cutCount := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_cutFreeL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 38,
+    "source": "theorem old_cutFreeL : (oldL d hn \u0394 f).CutFree \u2194 f.CutFree := by simp only [G.CutFree,old_countL]"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_cutFreeL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 39,
+    "source": "theorem new_cutFreeL : (newL d hn \u0394 f).CutFree \u2194 f.CutFree := by simp only [G.CutFree,new_countL]"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_atomizedL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 40,
+    "source": "theorem old_atomizedL : (oldL d hn \u0394 f).Atomized \u2194 AtomicFormula d.C \u2227 f.Atomized := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_atomizedL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 42,
+    "source": "theorem new_atomizedL : (newL d hn \u0394 f).Atomized \u2194 f.Atomized := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.atomized_forwardL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 44,
+    "source": "theorem atomized_forwardL (ha : (oldL d hn \u0394 f).Atomized) : (newL d hn \u0394 f).Atomized :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.atomized_reverseL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 46,
+    "source": "theorem atomized_reverseL (hc : AtomicFormula d.C) (ha : (newL d hn \u0394 f).Atomized) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.relationL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 49,
+    "source": "theorem relationL : (newL d hn \u0394 f).relation = (oldL d hn \u0394 f).relation :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.thinR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 56,
+    "source": "def thinR : G P \u0393 d.U := UnaryCast.thinR d.F [] d.C d.thinSource rfl \u0393 f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.innerR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 57,
+    "source": "def innerR : G P \u0393 d.I := d.inner.applyR hn \u0393 f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.oldR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 58,
+    "source": "def oldR : G P \u0393 d.K := d.outer.applyR (d.outer_bound hn) \u0393 (thinR d \u0393 f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.newR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 59,
+    "source": "def newR : G P \u0393 d.K :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.thin_denoteR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 62,
+    "source": "theorem thin_denoteR : ofTerm (thinR d \u0393 f).denote ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.inner_denoteR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 64,
+    "source": "theorem inner_denoteR : ofTerm (innerR d hn \u0393 f).denote ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_denoteR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 66,
+    "source": "theorem old_denoteR : ofTerm (oldR d hn \u0393 f).denote ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_denoteR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 70,
+    "source": "theorem new_denoteR : ofTerm (newR d hn \u0393 f).denote ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.denoteR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 72,
+    "source": "theorem denoteR : ofTerm (newR d hn \u0393 f).denote = ofTerm (oldR d hn \u0393 f).denote := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_countR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 75,
+    "source": "theorem old_countR : (oldR d hn \u0393 f).cutCount = f.cutCount := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_countR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 77,
+    "source": "theorem new_countR : (newR d hn \u0393 f).cutCount = f.cutCount := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_cutFreeR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 79,
+    "source": "theorem old_cutFreeR : (oldR d hn \u0393 f).CutFree \u2194 f.CutFree := by simp only [G.CutFree,old_countR]"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_cutFreeR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 80,
+    "source": "theorem new_cutFreeR : (newR d hn \u0393 f).CutFree \u2194 f.CutFree := by simp only [G.CutFree,new_countR]"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_atomizedR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 81,
+    "source": "theorem old_atomizedR : (oldR d hn \u0393 f).Atomized \u2194 AtomicFormula d.C \u2227 f.Atomized := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_atomizedR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 83,
+    "source": "theorem new_atomizedR : (newR d hn \u0393 f).Atomized \u2194 f.Atomized := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.atomized_forwardR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 85,
+    "source": "theorem atomized_forwardR (ha : (oldR d hn \u0393 f).Atomized) : (newR d hn \u0393 f).Atomized :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.atomized_reverseR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 87,
+    "source": "theorem atomized_reverseR (hc : AtomicFormula d.C) (ha : (newR d hn \u0393 f).Atomized) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.relationR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 90,
+    "source": "theorem relationR : (newR d hn \u0393 f).relation = (oldR d hn \u0393 f).relation :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.terminal_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 94,
+    "source": "theorem terminal_left (C : NormalForm P) (gs : List (List (NormalForm P)))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.terminal_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRules.lean",
+    "line": 97,
+    "source": "theorem terminal_right (C : NormalForm P) (gs : List (List (NormalForm P)))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectedThinning.Data.selected_sum",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 13,
+    "source": "theorem selected_sum (r : At d.U d.C \u2192 Nat) (s : At d.F d.C \u2192 Nat)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.rankNewL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 37,
+    "source": "def rankNewL := d.inner.rankL hn \u0394 f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.rankOldL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 38,
+    "source": "def rankOldL := d.outer.rankL (d.outer_bound hn) \u0394 (thinL d \u0394 f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.thin_embeddedL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 40,
+    "source": "theorem thin_embeddedL {A : NormalForm P} (a : At d.F A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.thin_principalL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 42,
+    "source": "theorem thin_principalL : (thinL d \u0394 f).rho .left d.z = 1 := UnaryCast.thinL_principal .."
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.selected_sumL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 43,
+    "source": "theorem selected_sumL :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.contraction_lossL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 48,
+    "source": "theorem contraction_lossL : rankOldL d hn \u0394 f = rankNewL d hn \u0394 f+d.gs.length+1 := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_endpointL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 55,
+    "source": "theorem old_endpointL : (oldL d hn \u0394 f).rho .left d.x = rankOldL d hn \u0394 f :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_endpointL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 57,
+    "source": "theorem new_endpointL : (newL d hn \u0394 f).rho .left d.x = rankNewL d hn \u0394 f+1 := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.endpoint_lossL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 62,
+    "source": "theorem endpoint_lossL : (oldL d hn \u0394 f).rho .left d.x ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.endpoint_decreasesL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 68,
+    "source": "theorem endpoint_decreasesL : (newL d hn \u0394 f).rho .left d.x < (oldL d hn \u0394 f).rho .left d.x := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.contraction_decreasesL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 71,
+    "source": "theorem contraction_decreasesL : rankNewL d hn \u0394 f < rankOldL d hn \u0394 f := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.fixed_oldL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 75,
+    "source": "theorem fixed_oldL {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.fixed_newL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 81,
+    "source": "theorem fixed_newL {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.fixed_equalL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 89,
+    "source": "theorem fixed_equalL {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.rankNewR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 96,
+    "source": "def rankNewR := d.inner.rankR hn \u0393 f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.rankOldR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 97,
+    "source": "def rankOldR := d.outer.rankR (d.outer_bound hn) \u0393 (thinR d \u0393 f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.thin_embeddedR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 99,
+    "source": "theorem thin_embeddedR {A : NormalForm P} (a : At d.F A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.thin_principalR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 101,
+    "source": "theorem thin_principalR : (thinR d \u0393 f).rho .right d.z = 1 := UnaryCast.thinR_principal .."
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.selected_sumR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 102,
+    "source": "theorem selected_sumR :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.contraction_lossR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 107,
+    "source": "theorem contraction_lossR : rankOldR d hn \u0393 f = rankNewR d hn \u0393 f+d.gs.length+1 := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.old_endpointR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 114,
+    "source": "theorem old_endpointR : (oldR d hn \u0393 f).rho .right d.x = rankOldR d hn \u0393 f :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.new_endpointR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 116,
+    "source": "theorem new_endpointR : (newR d hn \u0393 f).rho .right d.x = rankNewR d hn \u0393 f+1 := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.endpoint_lossR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 121,
+    "source": "theorem endpoint_lossR : (oldR d hn \u0393 f).rho .right d.x ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.endpoint_decreasesR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 127,
+    "source": "theorem endpoint_decreasesR : (newR d hn \u0393 f).rho .right d.x < (oldR d hn \u0393 f).rho .right d.x := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.contraction_decreasesR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 130,
+    "source": "theorem contraction_decreasesR : rankNewR d hn \u0393 f < rankOldR d hn \u0393 f := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.fixed_oldR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 134,
+    "source": "theorem fixed_oldR {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.fixed_newR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 140,
+    "source": "theorem fixed_newR {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.fixed_equalR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningRanks.lean",
+    "line": 148,
+    "source": "theorem fixed_equalR {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.x.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.two",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 13,
+    "source": "def two (C : NormalForm P) : Gentzen.SelectedThinning.Data P := \u27e8C,[[],[]],[]\u27e9"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.tagged",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 14,
+    "source": "def tagged (C : NormalForm P) : Gentzen.SelectedThinning.Data P := \u27e8C,[[C],[C]],[C,C]\u27e9"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.three",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 15,
+    "source": "def three (C : NormalForm P) : Gentzen.SelectedThinning.Data P := \u27e8C,[[],[],[]],[C]\u27e9"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.tagsF",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 17,
+    "source": "def tagsF (C : NormalForm P) : List (At (tagged C).F C) := selectedCopies C [[],[],[],[],[],[]] []"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.tagsU",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 18,
+    "source": "def tagsU (C : NormalForm P) : List (At (tagged C).U C) := selectedCopies C [[],[],[],[],[],[],[]] []"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.tagsI",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 19,
+    "source": "def tagsI (C : NormalForm P) : List (At (tagged C).I C) := selectedCopies C [[],[],[],[],[]] []"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.inner_selected",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 21,
+    "source": "theorem inner_selected (C : NormalForm P) : (tagged C).inner.selected.map At.index = [1,3] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.outer_selected",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 23,
+    "source": "theorem outer_selected (C : NormalForm P) : (tagged C).outer.selected.map At.index = [1,3,6] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.inserted_retained",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 25,
+    "source": "theorem inserted_retained (C : NormalForm P) : (tagged C).z.index = 6 \u2227 (tagged C).x.index = 4 :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.outer_map",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 27,
+    "source": "theorem outer_map (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.inner_map",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 30,
+    "source": "theorem inner_map (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.thinning_map",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 33,
+    "source": "theorem thinning_map (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.exchange_map",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 37,
+    "source": "theorem exchange_map (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.old_composite_map",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 41,
+    "source": "theorem old_composite_map (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.new_composite_map",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 49,
+    "source": "theorem new_composite_map (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.outer_retained_indices",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 54,
+    "source": "theorem outer_retained_indices (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.original_retained_indices",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 57,
+    "source": "theorem original_retained_indices (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.fixed0",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 61,
+    "source": "def fixed0 (C : NormalForm P) : At (tagged C).K C := .here C [C,C,C,C]"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.fixed2",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 62,
+    "source": "def fixed2 (C : NormalForm P) : At (tagged C).K C := .there (.there (.here C [C,C]))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.fixed_original_indices",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 63,
+    "source": "theorem fixed_original_indices (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.empty_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 67,
+    "source": "theorem empty_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.empty_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 72,
+    "source": "theorem empty_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.empty_exchange_adds_node_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 78,
+    "source": "theorem empty_exchange_adds_node_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.empty_exchange_adds_node_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 83,
+    "source": "theorem empty_exchange_adds_node_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.fixed_rank_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 89,
+    "source": "theorem fixed_rank_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.fixed_rank_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 95,
+    "source": "theorem fixed_rank_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.compound",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 102,
+    "source": "def compound : NormalForm Empty := .conj .top .bot"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.compoundLeft",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 103,
+    "source": "def compoundLeft : G Empty (two compound).F [.top] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.compoundRight",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 105,
+    "source": "def compoundRight : G Empty [.bot] (three compound).F :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.compound_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 108,
+    "source": "theorem compound_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.compound_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 111,
+    "source": "theorem compound_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.compound_atomized_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 114,
+    "source": "theorem compound_atomized_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.compound_atomized_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 121,
+    "source": "theorem compound_atomized_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.literalLeft",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 129,
+    "source": "def literalLeft (l : Literal P) : G P (three (.lit l)).F [.lit l,.lit l,.lit l] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.literalRight",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 131,
+    "source": "def literalRight (l : Literal P) : G P [.lit l,.lit l,.lit l] (three (.lit l)).F :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.literal_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 133,
+    "source": "theorem literal_left (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.literal_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 136,
+    "source": "theorem literal_right (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.three_loss_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 139,
+    "source": "theorem three_loss_left (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.three_loss_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 143,
+    "source": "theorem three_loss_right (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W2.SelectedThinning.Examples.both_signs_actual_cuts",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectedThinningExamples.lean",
+    "line": 147,
+    "source": "theorem both_signs_actual_cuts (p : P) :"
+  }
+]

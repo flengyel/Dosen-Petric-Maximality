@@ -1,0 +1,29 @@
+✖ [123/123] Building DosenPetric.GentzenUnaryCasts (804ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenUnaryCasts.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenUnaryCasts.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenUnaryCasts.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenUnaryCasts.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenUnaryCasts.setup.json --json
+error: DosenPetric/GentzenUnaryCasts.lean:93:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ofTerm (Route.exchange ?Γ ?X ?Y ?Θ).product
+in the target expression
+  ofTerm (exchangeL Γ X Y Θ ⋯ ⋯ Δ f).denote =
+    comp (ofTerm (Route.cast ⋯ ⋯ (Route.exchange Γ X Y Θ)).product) (ofTerm f.denote)
+
+case refl.refl
+P : Type u
+Γ X Y Θ Δ : List (NormalForm P)
+f : G P (Γ ++ X ++ Y ++ Θ) Δ
+⊢ ofTerm (exchangeL Γ X Y Θ ⋯ ⋯ Δ f).denote =
+    comp (ofTerm (Route.cast ⋯ ⋯ (Route.exchange Γ X Y Θ)).product) (ofTerm f.denote)
+error: DosenPetric/GentzenUnaryCasts.lean:100:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ofTerm (Route.exchange ?Γ ?X ?Y ?Θ).coproduct
+in the target expression
+  ofTerm (exchangeR Δ X Y Λ ⋯ ⋯ Γ f).denote =
+    comp (ofTerm f.denote) (ofTerm (Route.cast ⋯ ⋯ (Route.exchange Δ X Y Λ)).coproduct)
+
+case refl.refl
+P : Type u
+Δ X Y Λ Γ : List (NormalForm P)
+f : G P Γ (Δ ++ X ++ Y ++ Λ)
+⊢ ofTerm (exchangeR Δ X Y Λ ⋯ ⋯ Γ f).denote =
+    comp (ofTerm f.denote) (ofTerm (Route.cast ⋯ ⋯ (Route.exchange Δ X Y Λ)).coproduct)
+Some required targets logged failures:
+- DosenPetric.GentzenUnaryCasts
+error: build failed

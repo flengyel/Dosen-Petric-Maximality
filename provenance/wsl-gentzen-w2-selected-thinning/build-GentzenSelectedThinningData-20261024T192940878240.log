@@ -1,0 +1,53 @@
+✖ [124/124] Building DosenPetric.GentzenSelectedThinningData (3.0s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectedThinningData.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedThinningData.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedThinningData.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedThinningData.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedThinningData.setup.json --json
+error: DosenPetric/GentzenSelectedThinningData.lean:34:41: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≥ 0
+  d ≥ 0
+  d - f ≥ 1
+  c ≥ 0
+  b ≥ 0
+  b + c - f ≥ 1
+  a ≥ 0
+  a + b ≥ 0
+where
+ a := ↑(gaps gs).length
+ b := ↑Θ.length
+ c := ↑(repeated C gs).length
+ d := ↑i
+ f := ↑(i - (Γ.length + 1))
+ g := ↑(repeated C gs ++ Θ).length
+error: DosenPetric/GentzenSelectedThinningData.lean:41:8: unsolved goals
+case nil
+P : Type u
+C : NormalForm P
+Θ : List (NormalForm P)
+⊢ Θ.length + 0 = Θ.length
+error: DosenPetric/GentzenSelectedThinningData.lean:69:4: This simp argument is unused:
+  List.cons_append
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [outerGaps, GapInsertion.repeated_append, repeated, List.append_nil, List.append_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectedThinningData.lean:104:49: unsolved goals
+case isTrue
+P : Type u
+d : Data P
+h✝ : (gaps d.inner.gs).length < (gaps d.gs).length
+⊢ (gaps d.inner.gs).length = (gaps d.gs).length + d.Θ.length
+
+case isFalse
+P : Type u
+d : Data P
+h✝ : ¬(gaps d.inner.gs).length < (gaps d.gs).length
+⊢ (if (gaps d.inner.gs).length < (gaps d.gs).length + 1 then (gaps d.inner.gs).length + d.Θ.length
+    else
+      if (gaps d.inner.gs).length < (gaps d.gs).length + 1 + d.Θ.length then (gaps d.inner.gs).length - 1
+      else (gaps d.inner.gs).length) =
+    (gaps d.gs).length + d.Θ.length
+Some required targets logged failures:
+- DosenPetric.GentzenSelectedThinningData
+error: build failed

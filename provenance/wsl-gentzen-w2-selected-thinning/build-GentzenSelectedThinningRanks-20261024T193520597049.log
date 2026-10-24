@@ -1,0 +1,16 @@
+✖ [129/129] Building DosenPetric.GentzenSelectedThinningRanks (1.2s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectedThinningRanks.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedThinningRanks.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedThinningRanks.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedThinningRanks.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedThinningRanks.setup.json --json
+error: DosenPetric/GentzenSelectedThinningRanks.lean:26:2: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  a ≥ 0
+  a + b ≥ 0
+  a + b - c ≥ 1
+where
+ a := ↑(List.map s d.inner.selected).sum
+ b := ↑d.gs.length
+ c := ↑(List.map (fun a => 1 + s a) d.inner.selected).sum
+Some required targets logged failures:
+- DosenPetric.GentzenSelectedThinningRanks
+error: build failed

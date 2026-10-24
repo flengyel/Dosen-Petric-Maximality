@@ -1,0 +1,31 @@
+✖ [161/161] Building DosenPetric.GentzenSelectedThinningExamples (15s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectedThinningExamples.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedThinningExamples.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectedThinningExamples.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedThinningExamples.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectedThinningExamples.setup.json --json
+error: DosenPetric/GentzenSelectedThinningExamples.lean:130:2: Type mismatch
+  W1.SameSideExchange.repeatedPremiseL l
+has type
+  G P [NormalForm.lit l, NormalForm.lit l, NormalForm.lit l, NormalForm.lit l, NormalForm.lit l]
+    [NormalForm.lit l, NormalForm.lit l, NormalForm.lit l]
+but is expected to have type
+  G P (three (NormalForm.lit l)).F [NormalForm.lit l, NormalForm.lit l, NormalForm.lit l]
+error: DosenPetric/GentzenSelectedThinningExamples.lean:132:2: Type mismatch
+  W1.SameSideExchange.repeatedPremiseR l
+has type
+  G P [NormalForm.lit l, NormalForm.lit l, NormalForm.lit l]
+    [NormalForm.lit l, NormalForm.lit l, NormalForm.lit l, NormalForm.lit l, NormalForm.lit l]
+but is expected to have type
+  G P [NormalForm.lit l, NormalForm.lit l, NormalForm.lit l] (three (NormalForm.lit l)).F
+error: DosenPetric/GentzenSelectedThinningExamples.lean:150:51: Application type mismatch: The argument
+  rfl
+has type
+  ?m.55 = ?m.55
+but is expected to have type
+  (literalRight (Literal.neg p)).cutCount = 1
+in the application
+  Eq.trans
+    (new_countR (three (NormalForm.lit (Literal.neg p))) (Nat.le_succ 2)
+      [NormalForm.lit (Literal.neg p), NormalForm.lit (Literal.neg p), NormalForm.lit (Literal.neg p)]
+      (literalRight (Literal.neg p)))
+    rfl
+Some required targets logged failures:
+- DosenPetric.GentzenSelectedThinningExamples
+error: build failed

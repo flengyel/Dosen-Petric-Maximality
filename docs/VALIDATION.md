@@ -1,3 +1,57 @@
+# W2 terminal selected-thinning validation (current checkpoint)
+
+Clean main 31922370e7ce5ffa0286a88e8cffe6e232aa824f matched fetched SSH origin.
+Strict baseline: 179 files / 7,069 declarations, exit 0, 10.311s.
+Final sequential verification completed at 2026-10-24T19:42:19.278561+00:00:
+**185 source files / 7,299 audited declarations**, an increase of 230.
+Strict build/transitive audit: exit 0, 19.596s; audit-boundary script: exit 0,
+23.899s; presentation-boundary script: exit 0, 2.215s; manuscript checksums:
+exit 0, 0.051s. Both staged/unstaged whitespace checks pass. All five controls
+reject with expected diagnostics and Lean exit 1. Complete public import
+closure passes; only propext, Quot.sound and Classical.choice are permitted.
+Exact public-type queries exit 0 in 9.667s and 137 selected axiom prints
+supplement the full transitive audit.
+
+Six new modules construct terminal selected thinning and its right dual at
+exact G P K Δ / G P Γ K endpoints from original C,gs,Θ, n≥2 and existing
+premises. All casts/bounds, concrete all-position square, complete ordered
+selected transport, n+1 outer versus n original composite fibers and fixed
+unique originals are proved. Universal components give Reduced equality.
+Old outer rank=LC+n+1, new endpoint=LC+1, so contraction/endpoint losses
+are n+1/n; other fixed ranks are unchanged 2+rho. The empty exchange node
+is counted. Counts/CutFree/tagged relations are preserved. Old Atomized iff
+AtomicFormula C and f.Atomized; new iff f.Atomized, with actual compound
+counterexamples to an unconditional reverse implication.
+Empty-variable constants, equal tags, n=2/3, empty/nonempty gaps/tails,
+signed literals and actual cut-containing examples compile.
+
+Every older DosenPetric module and frozen syntax/equation/denotation/tag/
+predecessor/rank/predicate interface remains byte-preserved. Existing Lean
+changes only add root imports and selected prints. Lean 4.35.0 and Init-only
+dependencies/manifest are unchanged. AGENTS, manuscript v4/v5, diagrams,
+references/checksums, historical reports/access evidence, other checkouts and
+the integration stash are preserved. Failed elaborations remain retained;
+no target or heartbeat limit was weakened. Final examples compile in 14.533s.
+
+Heavy checks were sequential and followed the final proof edit. Evidence is
+retained under provenance/wsl-gentzen-w2-selected-thinning/ and matching
+.codex-work/. Author-side hostile and source-grounded mathematical-writing
+reviews inspect the actual argument and maps; these are not independent
+certification. Committed-source, SSH-ref and Downloads comparisons have
+separate completion receipts.
+
+Independent source/kernel replay, Challenge/Solution/Comparator, official
+preflight/service verification, fresh manuscript layout/compilation, publication,
+license and visibility changes did not run. Terminal selected-logical W4 and
+its right dual are next, with the proposed n=2 endpoint tie explicit.
+Remaining local cases, all-site replacement, Reducibility, Blocked-w, cut
+elimination, coherence and unconditional maximality remain separate/open.
+See [the W2 report](GENTZEN_W2_SELECTED_THINNING_REPORT.md).
+
+---
+
+## Historical W3 shared-selected contraction validation (unchanged evidence)
+
 # W3 shared-selected contraction validation (current checkpoint)
 
 Clean baseline main 1ef1c8226ae1d5b3da102c243e4e555525b19bea matched fetched

@@ -85,6 +85,7 @@ definition is unchanged and can be adapted once that interpretation exists.
 | Fixed-gap disjoint same-side W1 contractions | Two concrete left/right results compile with eight actual context equalities and casts, all-position copies/copies and categorical squares, complete ordered selected transports and genuine same-side fixed fibers. Independent n,m: old ranks LC+n,LE+1; new LC+1,LE+m. Sum balance, actual unequal-arity increase, other fixed 2+rho and count/predicate/full tagged relations compile. General reducibility/coherence remain open; W3 is now supplied below. |
 | Terminal-tail disjoint same-side W1 contractions | Two concrete terminalTail_left/right results compile with eight actual context equalities/casts, a concrete copies/copies square, full ordered selected transports, positional separation even C=E and complete fibers. Retained xC<xE; independent n,m give old=(LC+n,LE+1), new=(LC+1,LE+m), exact balances and S(old)+m=S(new)+n. Other same-side ranks are 2+rho at the unique common original. Count/predicates/full tagged relations and inhabited examples compile. Disjoint interleaving and general reducibility/coherence remain open; W3 is now supplied below. |
 | W3 shared-selected contraction fusion | `W3.SharedContraction.fusion_left/right` prove exact G P K Δ / G P Γ K outputs for original C,gs,hs,Θ,Λ, intermediate hI and shared-position membership, independent n,m≥2. Computed single contraction has n+m−1 ordered selected originals, full retained/fixed fibers and universal-component Reduced equality. Complete fiber permutations/sums give retained and contraction-subterm drop exactly m; other final same-side positions have old=2+rho, flat=1+rho. Count/predicates/full tagged relations and inhabited boundaries compile. Arbitrary-context Reducibility, cut elimination and coherence remain open. |
+| Terminal selected-thinning W2 | `W2.SelectedThinning.terminal_left/right` compile for original C,gs,Θ, n≥2 and existing premises at exact K endpoints. Concrete old-position square, complete ordered n+1 selection including the new leaf, full outer versus n-member original composite fibers and unique fixed originals give component/Reduced equality. Exact contraction/endpoint losses n+1/n and unchanged other fixed ranks compile. Counts/CutFree/tagged relations preserved; old Atomized iff AtomicFormula C and f.Atomized, new iff f.Atomized. Inhabited constants/compounds/signed cuts compile. General Reducibility/coherence remain open. |
 | Positive-fragment coherence input | `PositiveCoherence P` quantifies only over positive raw terms and concludes equality in Reduced.Hom. `faithful_of_positive_coherence` is proved conditionally from that explicit, unsupplied premise. This does not supply Reduced.Faithful or Boolean Coherence. |
 | Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. Reduced faithfulness and its earlier positive-core coherence inputs are unproved. No complete `OccurrenceInterpretation` instance. Equality reflection and full red-equation preservation remain open. |
 | Normalization and occurrence correspondence | `Presentation.normalization` constructs the existing record for every P by simultaneous sign recursion and source n/r/rho arrows. Both inverse laws, inverse occurrence coordinates, both graph laws, literal/label/polarity correspondence, repeated-tag injectivity, Empty cases, and transport formulas compile. No coherence or arrow-negation premise. |
@@ -96,27 +97,30 @@ definition is unchanged and can be adapted once that interpretation exists.
 
 ## Next concrete proof task
 
-W3 shared-selected contraction fusion and its right dual are complete. See
-[the W3 report](GENTZEN_W3_SHARED_SELECTED_CONTRACTION_REPORT.md).
+Terminal selected-thinning W2 and its right dual are complete. See
+[the W2 report](GENTZEN_W2_SELECTED_THINNING_REPORT.md).
 
-Next prove source W2 selected thinning at the terminal position and its right
-dual. For arbitrary P,C,gs,Θ, n=gs.length≥2, set F=repeated C gs++Θ,
-I=gaps gs++C::Θ, U=F++[C] and K=(gaps gs++Θ)++[C]. Old appends a new C by
-actual thinning, then contracts the n original selected copies and that new
-position with gaps gs++[Θ], tail []. New contracts gs/Θ on f, then exchanges
-the retained singleton C past Θ. Prove the actual endpoint casts and concrete
-route/component equations at G P K Δ or G P Γ K before Reduced equality.
+Next prove source W4 terminal logical introduction selected by contraction,
+and its right dual. On the left C=conj A B, n=gs.length≥2, put
+F=(repeated C gs++Θ)++[A,B], U=(repeated C gs++Θ)++[C] and
+K=(gaps gs++Θ)++[C]. Old applies terminal conjL then contracts all n+1
+selected C positions. New contracts the n original C positions on f, applies
+terminal conjL and then contracts the retained and new principal C positions
+with two gaps [gaps gs,Θ]. Prove actual casts and equations at G P K Δ.
+On the right use C=disj A B and actual disjR/contractR at G P Γ K.
 
-If LC is the direct n-ary contraction rank, target old retained/outer rank
-LC+n+1 and new retained rank LC+1, with new contraction-subterm rank LC.
-Keep empty-block exchange nodes when counting ranks. Prove complete selected
-and fixed fibers, exact preservation and inhabited positional examples.
-The predicate boundary is asymmetric: old.Atomized iff AtomicFormula C and
-f.Atomized; new.Atomized iff f.Atomized. Atomicity is not a hypothesis of the
-denotation/rank equalities. No W2 construction is assumed here. The concrete
-continuation is [CODEX_W2_SELECTED_THINNING.txt](CODEX_W2_SELECTED_THINNING.txt).
+Logical ancestry consumes both A/B slots. Prove the partial positional and
+component calculations, complete selected/fixed fibers, exact preservation
+and inhabited examples. No total whole-formula A/B→C parent map is available.
+If LC is the new inner n-ary contraction rank, target old outer/end rank
+LC+n+1 and new final retained rank LC+3. The source comparison is to the
+new inner rank LC; the n=2 final-endpoint tie must not be hidden. Other fixed
+positions target old 2+rho and new 3+rho. Both Atomized predicates should
+equal f.Atomized, without W2's atomicity condition. These are next proof
+targets, not completed W4 claims. The concrete continuation is
+[CODEX_W4_SELECTED_LOGICAL.txt](CODEX_W4_SELECTED_LOGICAL.txt).
 
-Disjoint interleaving, remaining exchange/W1/W2–W6 cases, arbitrary-context
+Disjoint interleaving, remaining exchange/W1/W2/W4–W6 cases, arbitrary-context
 replacement, Reducibility, Blocked-w, cut elimination, restricted coherence
 inputs, PositiveCoherence, Reduced.Faithful, Boolean Coherence, unconditional
 maximality and Palomar preparation remain separate/open. Existing conditional
