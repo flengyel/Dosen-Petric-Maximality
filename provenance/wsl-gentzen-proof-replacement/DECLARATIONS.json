@@ -1,0 +1,471 @@
+[
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Premise.rebuild",
+    "kind": "def",
+    "path": "DosenPetric/GentzenPremiseReplacement.lean",
+    "line": 14,
+    "source": "def rebuild (p : Premise f g) : G P \u0398 \u039b \u2192 G P \u0393 \u0394 := match p with"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Premise.rebuild_original",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenPremiseReplacement.lean",
+    "line": 32,
+    "source": "theorem rebuild_original (p : Premise f g) : p.rebuild g = f := by cases p <;> rfl"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Premise.inserted",
+    "kind": "def",
+    "path": "DosenPetric/GentzenPremiseReplacement.lean",
+    "line": 35,
+    "source": "def inserted (p : Premise f g) : (h : G P \u0398 \u039b) \u2192 Premise (p.rebuild h) h := match p with"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Premise.inserted_branch",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenPremiseReplacement.lean",
+    "line": 53,
+    "source": "theorem inserted_branch (p : Premise f g) (h : G P \u0398 \u039b) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Premise.rebuild_inserted",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenPremiseReplacement.lean",
+    "line": 56,
+    "source": "theorem rebuild_inserted (p : Premise f g) (h k : G P \u0398 \u039b) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Premise.rebuild_denote",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenPremiseReplacement.lean",
+    "line": 59,
+    "source": "theorem rebuild_denote (p : Premise f g) (h : G P \u0398 \u039b)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Premise.rebuild_cutCount",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenPremiseReplacement.lean",
+    "line": 74,
+    "source": "theorem rebuild_cutCount (p : Premise f g) (h : G P \u0398 \u039b) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Premise.rebuild_proofSize",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenPremiseReplacement.lean",
+    "line": 78,
+    "source": "theorem rebuild_proofSize (p : Premise f g) (h : G P \u0398 \u039b) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Premise.rebuild_cutFree",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenPremiseReplacement.lean",
+    "line": 82,
+    "source": "theorem rebuild_cutFree (p : Premise f g) (h : G P \u0398 \u039b)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Premise.rebuild_atomized",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenPremiseReplacement.lean",
+    "line": 88,
+    "source": "theorem rebuild_atomized (p : Premise f g) (h : G P \u0398 \u039b)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.replace",
+    "kind": "def",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 13,
+    "source": "def replace : {\u0398 \u039b : List (NormalForm P)} \u2192 {g : G P \u0398 \u039b} \u2192"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.replace_root",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 18,
+    "source": "theorem replace_root (g h : G P \u0393 \u0394) : (.root : ProofAddress g g).replace h = h := rfl"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.replace_down",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 20,
+    "source": "theorem replace_down (a : ProofAddress root g) (p : Premise g k) (h : G P \u039e \u03a9) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.replace_original",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 23,
+    "source": "theorem replace_original (a : ProofAddress root g) : a.replace g = root := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.inserted",
+    "kind": "def",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 29,
+    "source": "def inserted : {\u0398 \u039b : List (NormalForm P)} \u2192 {g : G P \u0398 \u039b} \u2192"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.inserted_path",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 34,
+    "source": "theorem inserted_path (a : ProofAddress root g) (h : G P \u0398 \u039b) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.replace_inserted",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 42,
+    "source": "theorem replace_inserted (a : ProofAddress root g) (h j : G P \u0398 \u039b) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.append",
+    "kind": "def",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 51,
+    "source": "def append (a : ProofAddress root g) : {\u039e \u03a9 : List (NormalForm P)} \u2192 {k : G P \u039e \u03a9} \u2192"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.append_root",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 56,
+    "source": "theorem append_root (a : ProofAddress root g) : a.append .root = a := rfl"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.root_append",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 58,
+    "source": "theorem root_append (b : ProofAddress g k) : (.root : ProofAddress g g).append b = b := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.append_path",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 63,
+    "source": "theorem append_path (a : ProofAddress root g) (b : ProofAddress g k) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.replace_append",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 71,
+    "source": "theorem replace_append (a : ProofAddress root g) (b : ProofAddress g k) (h : G P \u039e \u03a9) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.append_assoc",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 77,
+    "source": "theorem append_assoc {I J : List (NormalForm P)} {j : G P I J}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.replace_denote",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 84,
+    "source": "theorem replace_denote (a : ProofAddress root g) (h : G P \u0398 \u039b)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.replace_relation",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 91,
+    "source": "theorem replace_relation (a : ProofAddress root g) (h : G P \u0398 \u039b)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.replace_congr",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 95,
+    "source": "theorem replace_congr (a : ProofAddress root g) (h j : G P \u0398 \u039b)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.replace_cutCount",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 102,
+    "source": "theorem replace_cutCount (a : ProofAddress root g) (h : G P \u0398 \u039b) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.replace_proofSize",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 112,
+    "source": "theorem replace_proofSize (a : ProofAddress root g) (h : G P \u0398 \u039b) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.replace_count_eq",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 122,
+    "source": "theorem replace_count_eq (a : ProofAddress root g) (h : G P \u0398 \u039b)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.replace_cutFree",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 127,
+    "source": "theorem replace_cutFree (a : ProofAddress root g) (h : G P \u0398 \u039b)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.replace_atomized",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenProofReplacement.lean",
+    "line": 133,
+    "source": "theorem replace_atomized (a : ProofAddress root g) (h : G P \u0398 \u039b)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.mix_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 15,
+    "source": "theorem mix_left (f h : G P \u0393 \u0394) (g : G P \u0398 \u039b) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.mix_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 19,
+    "source": "theorem mix_right (f : G P \u0393 \u0394) (g h : G P \u0398 \u039b) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.cut_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 23,
+    "source": "theorem cut_left (f h : G P \u0393 (C::\u0394)) (g : G P (C::\u0398) \u039b) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.cut_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 27,
+    "source": "theorem cut_right (f : G P \u0393 (C::\u0394)) (g h : G P (C::\u0398) \u039b) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.conjR_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 31,
+    "source": "theorem conjR_left (f h : G P \u0393 (A::\u0394)) (g : G P \u0398 (B::\u039b)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.conjR_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 35,
+    "source": "theorem conjR_right (f : G P \u0393 (A::\u0394)) (g h : G P \u0398 (B::\u039b)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.disjL_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 39,
+    "source": "theorem disjL_left (f h : G P (A::\u0393) \u0394) (g : G P (B::\u0398) \u039b) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.disjL_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 43,
+    "source": "theorem disjL_right (f : G P (A::\u0393) \u0394) (g h : G P (B::\u0398) \u039b) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.identical_siblings",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 49,
+    "source": "theorem identical_siblings (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.nested",
+    "kind": "def",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 61,
+    "source": "def nested (l : Literal P) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.nestedAddress",
+    "kind": "def",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 63,
+    "source": "def nestedAddress (l : Literal P) : ProofAddress (nested l) (G.identity l) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.nested_path",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 68,
+    "source": "theorem nested_path (l : Literal P) : (nestedAddress l).path = [1,0] := rfl"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.nested_one_cut_inserted",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 70,
+    "source": "theorem nested_one_cut_inserted (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.signed_nested",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 79,
+    "source": "theorem signed_nested (p : P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.emptyRoot",
+    "kind": "def",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 84,
+    "source": "def emptyRoot : G Empty [] [.conj .top .top] := G.conjR G.topI G.topI"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.emptyLeft",
+    "kind": "def",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 85,
+    "source": "def emptyLeft : ProofAddress emptyRoot (G.topI : G Empty [] [.top]) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReplacementExamples.empty_constants",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReplacementExamples.lean",
+    "line": 88,
+    "source": "theorem empty_constants :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_denoteL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 19,
+    "source": "theorem replace_denoteL :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_relationL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 22,
+    "source": "theorem replace_relationL : (a.replace (newL d hn f g)).relation = root.relation :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_countL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 24,
+    "source": "theorem replace_countL : (a.replace (newL d hn f g)).cutCount = root.cutCount :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_cutFreeL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 26,
+    "source": "theorem replace_cutFreeL (hr : root.CutFree) : (a.replace (newL d hn f g)).CutFree :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_atomizedL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 28,
+    "source": "theorem replace_atomizedL (hr : root.Atomized) : (a.replace (newL d hn f g)).Atomized :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_denoteR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 36,
+    "source": "theorem replace_denoteR :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_relationR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 39,
+    "source": "theorem replace_relationR : (a.replace (newR d hn f g)).relation = root.relation :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_countR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 41,
+    "source": "theorem replace_countR : (a.replace (newR d hn f g)).cutCount = root.cutCount :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_cutFreeR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 43,
+    "source": "theorem replace_cutFreeR (hr : root.CutFree) : (a.replace (newR d hn f g)).CutFree :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_atomizedR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 45,
+    "source": "theorem replace_atomizedR (hr : root.Atomized) : (a.replace (newR d hn f g)).Atomized :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.RewriteIntegration.surround",
+    "kind": "def",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 55,
+    "source": "def surround (A : NormalForm P) (s : G P \u0398 \u039b) (q : G P \u0393 \u0394) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.RewriteIntegration.address",
+    "kind": "def",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 58,
+    "source": "def address (A : NormalForm P) (s : G P \u0398 \u039b) (q : G P \u0393 \u0394) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.RewriteIntegration.address_path",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 63,
+    "source": "theorem address_path (A : NormalForm P) (s : G P \u0398 \u039b) (q : G P \u0393 \u0394) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.RewriteIntegration.replace_surround",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 66,
+    "source": "theorem replace_surround (A : NormalForm P) (s : G P \u0398 \u039b) (q h : G P \u0393 \u0394) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.RewriteIntegration.actual_w5",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 71,
+    "source": "theorem actual_w5 (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.RewriteIntegration.actual_w5_count",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 81,
+    "source": "theorem actual_w5_count (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.RewriteIntegration.actual_w5_atomized",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 93,
+    "source": "theorem actual_w5_atomized (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.RewriteIntegration.actual_w5_cutFree",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 103,
+    "source": "theorem actual_w5_cutFree (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.RewriteIntegration.empty_w5_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRewriteIntegration.lean",
+    "line": 112,
+    "source": "theorem empty_w5_right :"
+  }
+]

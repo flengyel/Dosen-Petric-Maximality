@@ -202,3 +202,7 @@ public import DosenPetric.GentzenOtherMixFibers
 public import DosenPetric.GentzenOtherMixRules
 public import DosenPetric.GentzenOtherMixRanks
 public import DosenPetric.GentzenOtherMixExamples
+public import DosenPetric.GentzenPremiseReplacement
+public import DosenPetric.GentzenProofReplacement
+public import DosenPetric.GentzenReplacementExamples
+public import DosenPetric.GentzenRewriteIntegration

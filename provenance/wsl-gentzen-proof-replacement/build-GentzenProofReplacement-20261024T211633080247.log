@@ -1,0 +1,506 @@
+✖ [94/95] Building DosenPetric.GentzenPremiseReplacement (18s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenPremiseReplacement.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenPremiseReplacement.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenPremiseReplacement.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenPremiseReplacement.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenPremiseReplacement.setup.json --json
+error: DosenPetric/GentzenPremiseReplacement.lean:23:2: Application type mismatch: The argument
+  g
+has type
+  G P Θ (?m.153 :: ?m.154)
+but is expected to have type
+  G P Θ (A✝ :: Δ✝)
+in the application
+  g.conjR
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (exchangeL Γ✝ X✝ Y✝ Θ✝ Δ f✝).rebuild f✝
+is not definitionally equal to the right-hand side
+  G.exchangeL Γ✝ X✝ Y✝ Θ✝ Δ f✝
+
+case exchangeL
+P : Type u
+Δ Γ✝ X✝ Y✝ Θ✝ : List (NormalForm P)
+f✝ : G P (Γ✝ ++ X✝ ++ Y✝ ++ Θ✝) Δ
+⊢ (exchangeL Γ✝ X✝ Y✝ Θ✝ Δ f✝).rebuild f✝ = G.exchangeL Γ✝ X✝ Y✝ Θ✝ Δ f✝
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (exchangeR Γ Δ✝ X✝ Y✝ Λ✝ f✝).rebuild f✝
+is not definitionally equal to the right-hand side
+  G.exchangeR Γ Δ✝ X✝ Y✝ Λ✝ f✝
+
+case exchangeR
+P : Type u
+Γ Δ✝ X✝ Y✝ Λ✝ : List (NormalForm P)
+f✝ : G P Γ (Δ✝ ++ X✝ ++ Y✝ ++ Λ✝)
+⊢ (exchangeR Γ Δ✝ X✝ Y✝ Λ✝ f✝).rebuild f✝ = G.exchangeR Γ Δ✝ X✝ Y✝ Λ✝ f✝
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (thinL Γ✝ Θ✝ Δ A✝ f✝).rebuild f✝
+is not definitionally equal to the right-hand side
+  G.thinL Γ✝ Θ✝ Δ A✝ f✝
+
+case thinL
+P : Type u
+Δ Γ✝ Θ✝ : List (NormalForm P)
+A✝ : NormalForm P
+f✝ : G P (Γ✝ ++ Θ✝) Δ
+⊢ (thinL Γ✝ Θ✝ Δ A✝ f✝).rebuild f✝ = G.thinL Γ✝ Θ✝ Δ A✝ f✝
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (thinR Γ Δ✝ Λ✝ A✝ f✝).rebuild f✝
+is not definitionally equal to the right-hand side
+  G.thinR Γ Δ✝ Λ✝ A✝ f✝
+
+case thinR
+P : Type u
+Γ Δ✝ Λ✝ : List (NormalForm P)
+A✝ : NormalForm P
+f✝ : G P Γ (Δ✝ ++ Λ✝)
+⊢ (thinR Γ Δ✝ Λ✝ A✝ f✝).rebuild f✝ = G.thinR Γ Δ✝ Λ✝ A✝ f✝
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (contractL C✝ gs✝ Θ✝ Δ hn✝ f✝).rebuild f✝
+is not definitionally equal to the right-hand side
+  G.contractL C✝ gs✝ Θ✝ Δ hn✝ f✝
+
+case contractL
+P : Type u
+Δ : List (NormalForm P)
+C✝ : NormalForm P
+gs✝ : List (List (NormalForm P))
+Θ✝ : List (NormalForm P)
+hn✝ : 2 ≤ gs✝.length
+f✝ : G P (repeated C✝ gs✝ ++ Θ✝) Δ
+⊢ (contractL C✝ gs✝ Θ✝ Δ hn✝ f✝).rebuild f✝ = G.contractL C✝ gs✝ Θ✝ Δ hn✝ f✝
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (contractR Γ C✝ gs✝ Λ✝ hn✝ f✝).rebuild f✝
+is not definitionally equal to the right-hand side
+  G.contractR Γ C✝ gs✝ Λ✝ hn✝ f✝
+
+case contractR
+P : Type u
+Γ : List (NormalForm P)
+C✝ : NormalForm P
+gs✝ : List (List (NormalForm P))
+Λ✝ : List (NormalForm P)
+hn✝ : 2 ≤ gs✝.length
+f✝ : G P Γ (repeated C✝ gs✝ ++ Λ✝)
+⊢ (contractR Γ C✝ gs✝ Λ✝ hn✝ f✝).rebuild f✝ = G.contractR Γ C✝ gs✝ Λ✝ hn✝ f✝
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (conjL Γ✝ Θ✝ Δ A✝ B✝ f✝).rebuild f✝
+is not definitionally equal to the right-hand side
+  G.conjL Γ✝ Θ✝ Δ A✝ B✝ f✝
+
+case conjL
+P : Type u
+Δ Γ✝ Θ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+f✝ : G P (Γ✝ ++ A✝ :: B✝ :: Θ✝) Δ
+⊢ (conjL Γ✝ Θ✝ Δ A✝ B✝ f✝).rebuild f✝ = G.conjL Γ✝ Θ✝ Δ A✝ B✝ f✝
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (disjR Γ Δ✝ Λ✝ A✝ B✝ f✝).rebuild f✝
+is not definitionally equal to the right-hand side
+  G.disjR Γ Δ✝ Λ✝ A✝ B✝ f✝
+
+case disjR
+P : Type u
+Γ Δ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+f✝ : G P Γ (Δ✝ ++ A✝ :: B✝ :: Λ✝)
+⊢ (disjR Γ Δ✝ Λ✝ A✝ B✝ f✝).rebuild f✝ = G.disjR Γ Δ✝ Λ✝ A✝ B✝ f✝
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (conjR_left f✝ g✝).rebuild f✝
+is not definitionally equal to the right-hand side
+  f✝.conjR g✝
+
+case conjR_left
+P : Type u
+Θ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+g✝ : G P Θ✝ (B✝ :: Λ✝)
+f✝ : G P Θ (A✝ :: Δ✝)
+⊢ (conjR_left f✝ g✝).rebuild f✝ = f✝.conjR g✝
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (conjR_right f✝ g✝).rebuild g✝
+is not definitionally equal to the right-hand side
+  f✝.conjR g✝
+
+case conjR_right
+P : Type u
+Θ Γ✝ Δ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+f✝ : G P Γ✝ (A✝ :: Δ✝)
+g✝ : G P Θ (B✝ :: Λ✝)
+⊢ (conjR_right f✝ g✝).rebuild g✝ = f✝.conjR g✝
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (disjL_left g g✝).rebuild g
+is not definitionally equal to the right-hand side
+  g.disjL g✝
+
+case disjL_left
+P : Type u
+Λ Γ✝ Θ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+g✝ : G P (B✝ :: Θ✝) Λ✝
+g : G P (A✝ :: Γ✝) Λ
+⊢ (disjL_left g g✝).rebuild g = g.disjL g✝
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (disjL_right f✝ g).rebuild g
+is not definitionally equal to the right-hand side
+  f✝.disjL g
+
+case disjL_right
+P : Type u
+Λ Γ✝ Θ✝ Δ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+f✝ : G P (A✝ :: Γ✝) Δ✝
+g : G P (B✝ :: Θ✝) Λ
+⊢ (disjL_right f✝ g).rebuild g = f✝.disjL g
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (mix_left g g✝).rebuild g
+is not definitionally equal to the right-hand side
+  g.mix g✝
+
+case mix_left
+P : Type u
+Θ Λ : List (NormalForm P)
+g : G P Θ Λ
+Θ✝ Λ✝ : List (NormalForm P)
+g✝ : G P Θ✝ Λ✝
+⊢ (mix_left g g✝).rebuild g = g.mix g✝
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (mix_right f✝ g).rebuild g
+is not definitionally equal to the right-hand side
+  f✝.mix g
+
+case mix_right
+P : Type u
+Θ Λ : List (NormalForm P)
+g : G P Θ Λ
+Γ✝ Δ✝ : List (NormalForm P)
+f✝ : G P Γ✝ Δ✝
+⊢ (mix_right f✝ g).rebuild g = f✝.mix g
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (cut_left f✝ g✝).rebuild f✝
+is not definitionally equal to the right-hand side
+  f✝.cut g✝
+
+case cut_left
+P : Type u
+Θ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+C✝ : NormalForm P
+g✝ : G P (C✝ :: Θ✝) Λ✝
+f✝ : G P Θ (C✝ :: Δ✝)
+⊢ (cut_left f✝ g✝).rebuild f✝ = f✝.cut g✝
+error: DosenPetric/GentzenPremiseReplacement.lean:32:79: Tactic `rfl` failed: The left-hand side
+  (cut_right f✝ g).rebuild g
+is not definitionally equal to the right-hand side
+  f✝.cut g
+
+case cut_right
+P : Type u
+Λ Γ✝ Θ✝ Δ✝ : List (NormalForm P)
+C✝ : NormalForm P
+f✝ : G P Γ✝ (C✝ :: Δ✝)
+g : G P (C✝ :: Θ✝) Λ
+⊢ (cut_right f✝ g).rebuild g = f✝.cut g
+error: DosenPetric/GentzenPremiseReplacement.lean:36:4: Type mismatch
+  exchangeL Γ X Y Θ Δ ?m.25
+has type
+  Premise (G.exchangeL Γ X Y Θ Δ ?m.25) ?m.25
+but is expected to have type
+  Premise f g
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((exchangeL Γ✝ X✝ Y✝ Θ✝ Δ f✝).inserted h).branch
+is not definitionally equal to the right-hand side
+  (exchangeL Γ✝ X✝ Y✝ Θ✝ Δ f✝).branch
+
+case exchangeL
+P : Type u
+Δ Γ✝ X✝ Y✝ Θ✝ : List (NormalForm P)
+f✝ h : G P (Γ✝ ++ X✝ ++ Y✝ ++ Θ✝) Δ
+⊢ ((exchangeL Γ✝ X✝ Y✝ Θ✝ Δ f✝).inserted h).branch = (exchangeL Γ✝ X✝ Y✝ Θ✝ Δ f✝).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((exchangeR Γ Δ✝ X✝ Y✝ Λ✝ f✝).inserted h).branch
+is not definitionally equal to the right-hand side
+  (exchangeR Γ Δ✝ X✝ Y✝ Λ✝ f✝).branch
+
+case exchangeR
+P : Type u
+Γ Δ✝ X✝ Y✝ Λ✝ : List (NormalForm P)
+f✝ h : G P Γ (Δ✝ ++ X✝ ++ Y✝ ++ Λ✝)
+⊢ ((exchangeR Γ Δ✝ X✝ Y✝ Λ✝ f✝).inserted h).branch = (exchangeR Γ Δ✝ X✝ Y✝ Λ✝ f✝).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((thinL Γ✝ Θ✝ Δ A✝ f✝).inserted h).branch
+is not definitionally equal to the right-hand side
+  (thinL Γ✝ Θ✝ Δ A✝ f✝).branch
+
+case thinL
+P : Type u
+Δ Γ✝ Θ✝ : List (NormalForm P)
+A✝ : NormalForm P
+f✝ h : G P (Γ✝ ++ Θ✝) Δ
+⊢ ((thinL Γ✝ Θ✝ Δ A✝ f✝).inserted h).branch = (thinL Γ✝ Θ✝ Δ A✝ f✝).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((thinR Γ Δ✝ Λ✝ A✝ f✝).inserted h).branch
+is not definitionally equal to the right-hand side
+  (thinR Γ Δ✝ Λ✝ A✝ f✝).branch
+
+case thinR
+P : Type u
+Γ Δ✝ Λ✝ : List (NormalForm P)
+A✝ : NormalForm P
+f✝ h : G P Γ (Δ✝ ++ Λ✝)
+⊢ ((thinR Γ Δ✝ Λ✝ A✝ f✝).inserted h).branch = (thinR Γ Δ✝ Λ✝ A✝ f✝).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((contractL C✝ gs✝ Θ✝ Δ hn✝ f✝).inserted h).branch
+is not definitionally equal to the right-hand side
+  (contractL C✝ gs✝ Θ✝ Δ hn✝ f✝).branch
+
+case contractL
+P : Type u
+Δ : List (NormalForm P)
+C✝ : NormalForm P
+gs✝ : List (List (NormalForm P))
+Θ✝ : List (NormalForm P)
+hn✝ : 2 ≤ gs✝.length
+f✝ h : G P (repeated C✝ gs✝ ++ Θ✝) Δ
+⊢ ((contractL C✝ gs✝ Θ✝ Δ hn✝ f✝).inserted h).branch = (contractL C✝ gs✝ Θ✝ Δ hn✝ f✝).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((contractR Γ C✝ gs✝ Λ✝ hn✝ f✝).inserted h).branch
+is not definitionally equal to the right-hand side
+  (contractR Γ C✝ gs✝ Λ✝ hn✝ f✝).branch
+
+case contractR
+P : Type u
+Γ : List (NormalForm P)
+C✝ : NormalForm P
+gs✝ : List (List (NormalForm P))
+Λ✝ : List (NormalForm P)
+hn✝ : 2 ≤ gs✝.length
+f✝ h : G P Γ (repeated C✝ gs✝ ++ Λ✝)
+⊢ ((contractR Γ C✝ gs✝ Λ✝ hn✝ f✝).inserted h).branch = (contractR Γ C✝ gs✝ Λ✝ hn✝ f✝).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((conjL Γ✝ Θ✝ Δ A✝ B✝ f✝).inserted h).branch
+is not definitionally equal to the right-hand side
+  (conjL Γ✝ Θ✝ Δ A✝ B✝ f✝).branch
+
+case conjL
+P : Type u
+Δ Γ✝ Θ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+f✝ h : G P (Γ✝ ++ A✝ :: B✝ :: Θ✝) Δ
+⊢ ((conjL Γ✝ Θ✝ Δ A✝ B✝ f✝).inserted h).branch = (conjL Γ✝ Θ✝ Δ A✝ B✝ f✝).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((disjR Γ Δ✝ Λ✝ A✝ B✝ f✝).inserted h).branch
+is not definitionally equal to the right-hand side
+  (disjR Γ Δ✝ Λ✝ A✝ B✝ f✝).branch
+
+case disjR
+P : Type u
+Γ Δ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+f✝ h : G P Γ (Δ✝ ++ A✝ :: B✝ :: Λ✝)
+⊢ ((disjR Γ Δ✝ Λ✝ A✝ B✝ f✝).inserted h).branch = (disjR Γ Δ✝ Λ✝ A✝ B✝ f✝).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((conjR_left f✝ g✝).inserted h).branch
+is not definitionally equal to the right-hand side
+  (conjR_left f✝ g✝).branch
+
+case conjR_left
+P : Type u
+Θ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+g✝ : G P Θ✝ (B✝ :: Λ✝)
+f✝ h : G P Θ (A✝ :: Δ✝)
+⊢ ((conjR_left f✝ g✝).inserted h).branch = (conjR_left f✝ g✝).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((conjR_right f✝ g✝).inserted h).branch
+is not definitionally equal to the right-hand side
+  (conjR_right f✝ g✝).branch
+
+case conjR_right
+P : Type u
+Θ Γ✝ Δ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+f✝ : G P Γ✝ (A✝ :: Δ✝)
+g✝ h : G P Θ (B✝ :: Λ✝)
+⊢ ((conjR_right f✝ g✝).inserted h).branch = (conjR_right f✝ g✝).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((disjL_left g g✝).inserted h).branch
+is not definitionally equal to the right-hand side
+  (disjL_left g g✝).branch
+
+case disjL_left
+P : Type u
+Λ Γ✝ Θ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+g✝ : G P (B✝ :: Θ✝) Λ✝
+g h : G P (A✝ :: Γ✝) Λ
+⊢ ((disjL_left g g✝).inserted h).branch = (disjL_left g g✝).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((disjL_right f✝ g).inserted h).branch
+is not definitionally equal to the right-hand side
+  (disjL_right f✝ g).branch
+
+case disjL_right
+P : Type u
+Λ Γ✝ Θ✝ Δ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+f✝ : G P (A✝ :: Γ✝) Δ✝
+g h : G P (B✝ :: Θ✝) Λ
+⊢ ((disjL_right f✝ g).inserted h).branch = (disjL_right f✝ g).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((mix_left g g✝).inserted h).branch
+is not definitionally equal to the right-hand side
+  (mix_left g g✝).branch
+
+case mix_left
+P : Type u
+Θ Λ : List (NormalForm P)
+g h : G P Θ Λ
+Θ✝ Λ✝ : List (NormalForm P)
+g✝ : G P Θ✝ Λ✝
+⊢ ((mix_left g g✝).inserted h).branch = (mix_left g g✝).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((mix_right f✝ g).inserted h).branch
+is not definitionally equal to the right-hand side
+  (mix_right f✝ g).branch
+
+case mix_right
+P : Type u
+Θ Λ : List (NormalForm P)
+g h : G P Θ Λ
+Γ✝ Δ✝ : List (NormalForm P)
+f✝ : G P Γ✝ Δ✝
+⊢ ((mix_right f✝ g).inserted h).branch = (mix_right f✝ g).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((cut_left f✝ g✝).inserted h).branch
+is not definitionally equal to the right-hand side
+  (cut_left f✝ g✝).branch
+
+case cut_left
+P : Type u
+Θ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+C✝ : NormalForm P
+g✝ : G P (C✝ :: Θ✝) Λ✝
+f✝ h : G P Θ (C✝ :: Δ✝)
+⊢ ((cut_left f✝ g✝).inserted h).branch = (cut_left f✝ g✝).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:54:55: Tactic `rfl` failed: The left-hand side
+  ((cut_right f✝ g).inserted h).branch
+is not definitionally equal to the right-hand side
+  (cut_right f✝ g).branch
+
+case cut_right
+P : Type u
+Λ Γ✝ Θ✝ Δ✝ : List (NormalForm P)
+C✝ : NormalForm P
+f✝ : G P Γ✝ (C✝ :: Δ✝)
+g h : G P (C✝ :: Θ✝) Λ
+⊢ ((cut_right f✝ g).inserted h).branch = (cut_right f✝ g).branch
+error: DosenPetric/GentzenPremiseReplacement.lean:72:32: Application type mismatch: The argument
+  he
+has type
+  ofTerm h.denote = ofTerm f✝.denote
+but is expected to have type
+  ofTerm ?m.1437 = ofTerm ?m.1438
+in the application
+  Rules.cut_congr rfl he
+error: DosenPetric/GentzenPremiseReplacement.lean:72:32: Application type mismatch: The argument
+  he
+has type
+  ofTerm h.denote = ofTerm f✝.denote
+but is expected to have type
+  ofTerm ?m.1437 = ofTerm ?m.1438
+in the application
+  Rules.cut_congr rfl he
+error: DosenPetric/GentzenPremiseReplacement.lean:72:32: Application type mismatch: The argument
+  he
+has type
+  ofTerm h.denote = ofTerm f✝.denote
+but is expected to have type
+  ofTerm ?m.1437 = ofTerm ?m.1438
+in the application
+  Rules.cut_congr rfl he
+error: DosenPetric/GentzenPremiseReplacement.lean:72:32: Application type mismatch: The argument
+  he
+has type
+  ofTerm h.denote = ofTerm f✝.denote
+but is expected to have type
+  ofTerm ?m.1437 = ofTerm ?m.1438
+in the application
+  Rules.cut_congr rfl he
+error: DosenPetric/GentzenPremiseReplacement.lean:72:32: Application type mismatch: The argument
+  he
+has type
+  ofTerm h.denote = ofTerm f✝.denote
+but is expected to have type
+  ofTerm ?m.1437 = ofTerm ?m.1438
+in the application
+  Rules.cut_congr rfl he
+error: DosenPetric/GentzenPremiseReplacement.lean:72:32: Application type mismatch: The argument
+  he
+has type
+  ofTerm h.denote = ofTerm f✝.denote
+but is expected to have type
+  ofTerm ?m.1437 = ofTerm ?m.1438
+in the application
+  Rules.cut_congr rfl he
+error: DosenPetric/GentzenPremiseReplacement.lean:72:32: Application type mismatch: The argument
+  he
+has type
+  ofTerm h.denote = ofTerm f✝.denote
+but is expected to have type
+  ofTerm ?m.1437 = ofTerm ?m.1438
+in the application
+  Rules.cut_congr rfl he
+error: DosenPetric/GentzenPremiseReplacement.lean:72:32: Application type mismatch: The argument
+  he
+has type
+  ofTerm h.denote = ofTerm f✝.denote
+but is expected to have type
+  ofTerm ?m.1437 = ofTerm ?m.1438
+in the application
+  Rules.cut_congr rfl he
+error: DosenPetric/GentzenPremiseReplacement.lean:72:32: Application type mismatch: The argument
+  he
+has type
+  ofTerm h.denote = ofTerm f✝.denote
+but is expected to have type
+  ofTerm ?m.1437 = ofTerm ?m.1438
+in the application
+  Rules.cut_congr rfl he
+error: DosenPetric/GentzenPremiseReplacement.lean:72:32: Application type mismatch: The argument
+  he
+has type
+  ofTerm h.denote = ofTerm g✝.denote
+but is expected to have type
+  ofTerm ?m.1437 = ofTerm ?m.1438
+in the application
+  Rules.cut_congr rfl he
+error: DosenPetric/GentzenPremiseReplacement.lean:72:32: Application type mismatch: The argument
+  he
+has type
+  ofTerm h.denote = ofTerm g.denote
+but is expected to have type
+  ofTerm ?m.1437 = ofTerm ?m.1438
+in the application
+  Rules.cut_congr rfl he
+error: DosenPetric/GentzenPremiseReplacement.lean:72:32: Application type mismatch: The argument
+  he
+has type
+  ofTerm h.denote = ofTerm g.denote
+but is expected to have type
+  ofTerm ?m.1437 = ofTerm ?m.1438
+in the application
+  Rules.cut_congr rfl he
+error: DosenPetric/GentzenPremiseReplacement.lean:72:32: Application type mismatch: The argument
+  he
+has type
+  ofTerm h.denote = ofTerm f✝.denote
+but is expected to have type
+  ofTerm ?m.1437 = ofTerm ?m.1438
+in the application
+  Rules.cut_congr rfl he
+error: DosenPetric/GentzenPremiseReplacement.lean:62:25: declaration uses `sorry`
+error: DosenPetric/GentzenPremiseReplacement.lean:76:25: declaration uses `sorry`
+error: DosenPetric/GentzenPremiseReplacement.lean:74:8: declaration uses `sorry`
+error: DosenPetric/GentzenPremiseReplacement.lean:80:25: declaration uses `sorry`
+error: DosenPetric/GentzenPremiseReplacement.lean:78:8: declaration uses `sorry`
+error: DosenPetric/GentzenPremiseReplacement.lean:90:25: declaration uses `sorry`
+error: DosenPetric/GentzenPremiseReplacement.lean:88:8: declaration uses `sorry`
+Some required targets logged failures:
+- DosenPetric.GentzenPremiseReplacement
+error: build failed

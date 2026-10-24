@@ -1,0 +1,177 @@
+{
+  "utc": "2026-10-24T21:26:57.223210+00:00",
+  "base_commit": "6bbf0a4143d395fc339972f86f25d3b74203a9b0",
+  "baseline": {
+    "utc": "2026-10-24T21:15:32.350705+00:00",
+    "checks": [
+      {
+        "name": "environment",
+        "command": [
+          "uname",
+          "-a"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 0.006,
+        "log": ".codex-work/gentzen-proof-replacement/environment-20261024T211526657775.log",
+        "log_sha256": "34e3970ec44125a14237ebecedcc552983b2d4c8032e1e63debccd6fbbec0513"
+      },
+      {
+        "name": "memory",
+        "command": [
+          "free",
+          "-h"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 0.017,
+        "log": ".codex-work/gentzen-proof-replacement/memory-20261024T211526657775.log",
+        "log_sha256": "15d1869dffcca5e57c5034b4d33e58eca49d51afe22538f7026970703d96100b"
+      },
+      {
+        "name": "baseline",
+        "command": [
+          "bash",
+          "scripts/verify.sh"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 5.659,
+        "log": ".codex-work/gentzen-proof-replacement/baseline-20261024T211526657775.log",
+        "log_sha256": "2560c04533b5216c4d3e2548a138a3cd79f2e56ba95b4039e87fbf9bb10c2043"
+      }
+    ]
+  },
+  "final": {
+    "utc": "2026-10-24T21:21:24.231158+00:00",
+    "checks": [
+      {
+        "name": "strict",
+        "command": [
+          "bash",
+          "scripts/verify.sh"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 6.076,
+        "log": ".codex-work/gentzen-proof-replacement/strict-20261024T212107385646.log",
+        "log_sha256": "3e0032c6db788338e892ed83c67f33e98ddd88f492fc4f72acf55f89a5ed951e"
+      },
+      {
+        "name": "audit-boundaries",
+        "command": [
+          "python3",
+          "scripts/check-audit-boundaries.py"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 9.536,
+        "log": ".codex-work/gentzen-proof-replacement/audit-boundaries-20261024T212107385646.log",
+        "log_sha256": "377643b2b8fc2ff8c9b228992b82e2fd82c36bf57a7c3914aa71572ffbf89ac0"
+      },
+      {
+        "name": "presentation-boundaries",
+        "command": [
+          "python3",
+          "scripts/check-presentation-boundaries.py"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 1.198,
+        "log": ".codex-work/gentzen-proof-replacement/presentation-boundaries-20261024T212107385646.log",
+        "log_sha256": "306041f8b1c343270cc1f8c841a6a6f6aa03451e17bb5f034cd495d3b5f49f66"
+      },
+      {
+        "name": "manuscript",
+        "command": [
+          "sha256sum",
+          "-c",
+          "SHA256SUMS"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/manuscript",
+        "exit_status": 0,
+        "seconds": 0.011,
+        "log": ".codex-work/gentzen-proof-replacement/manuscript-20261024T212107385646.log",
+        "log_sha256": "517f442db9e0b644dc19fe8fc1d1337a4d03014e4722fe9907e39db5c618479f"
+      },
+      {
+        "name": "diff-check",
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 0.01,
+        "log": ".codex-work/gentzen-proof-replacement/diff-check-20261024T212107385646.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "cached-diff-check",
+        "command": [
+          "git",
+          "diff",
+          "--cached",
+          "--check"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 0.009,
+        "log": ".codex-work/gentzen-proof-replacement/cached-diff-check-20261024T212107385646.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "public_types": {
+    "utc": "2026-10-24T21:22:01.896283+00:00",
+    "checks": [
+      {
+        "name": "public-types",
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-DwarningAsError=true",
+          "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-proof-replacement/PublicTypes.lean"
+        ],
+        "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+        "exit_status": 0,
+        "seconds": 2.835,
+        "log": ".codex-work/gentzen-proof-replacement/public-types-20261024T212159060172.log",
+        "log_sha256": "1a694f5145abe67e5fc0e3535fe96e3c629d69f38941001426a3e6f39f5f9585"
+      }
+    ]
+  },
+  "baseline_files": 204,
+  "baseline_declarations": 7859,
+  "final_files": 208,
+  "final_declarations": 7972,
+  "new_modules": [
+    "GentzenPremiseReplacement",
+    "GentzenProofReplacement",
+    "GentzenReplacementExamples",
+    "GentzenRewriteIntegration"
+  ],
+  "explicit_source_declarations": 67,
+  "selected_axiom_prints": 56,
+  "all_five_negative_controls_rejected": true,
+  "public_import_closure_passed": true,
+  "checked_source_inventory_entries": 215,
+  "frozen_baseline_paths_unchanged": true,
+  "intentional_modified_baseline_paths": [
+    "Checks/Axioms.lean",
+    "DosenPetric.lean",
+    "README.md",
+    "docs/CODEX_NEXT_SESSION.txt",
+    "docs/CONTINUATION.txt",
+    "docs/MANUSCRIPT_COVERAGE.md",
+    "docs/MANUSCRIPT_STATEMENTS.md",
+    "docs/PRESENTATION_CORRESPONDENCE.md",
+    "docs/VALIDATION.md"
+  ],
+  "all_proof_bytes_match_final_strict_inventory": true,
+  "reviews": "Author-side AI-assisted hostile and source-grounded mathematical-writing reviews; not independent certification",
+  "next_task": "Source-faithful Blocked/Reducible definitions and finite immediate-rule/selected-ancestry classification; global reduction and rank control remain open",
+  "commit_ref_and_delivery_receipts": ".codex-work/gentzen-proof-replacement/"
+}

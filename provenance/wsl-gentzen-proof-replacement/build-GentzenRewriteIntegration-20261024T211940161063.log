@@ -1,0 +1,41 @@
+✖ [182/182] Building DosenPetric.GentzenRewriteIntegration (3.1s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenRewriteIntegration.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenRewriteIntegration.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenRewriteIntegration.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenRewriteIntegration.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenRewriteIntegration.setup.json --json
+error: DosenPetric/GentzenRewriteIntegration.lean:76:2: Type mismatch
+  ProofAddress.replace_denote (address (NormalForm.lit l) (cutIdentity l) (oldL ?m.71 ?m.72 ?m.76 ?m.77))
+    (newL ?m.71 ?m.72 ?m.76 ?m.77) (denoteL ?m.71 ?m.72 ?m.76 ?m.77)
+has type
+  @ofTerm P (ante ([NormalForm.lit l] ++ NormalForm.lit l :: (?m.73 ++ ?m.70)))
+      (succ ([NormalForm.lit l] ++ (?m.74 ++ ?m.75)))
+      ((address (NormalForm.lit l) (cutIdentity l) (oldL ?m.71 ?m.72 ?m.76 ?m.77)).replace
+          (newL ?m.71 ?m.72 ?m.76 ?m.77)).denote =
+    ofTerm (surround (NormalForm.lit l) (cutIdentity l) (oldL ?m.71 ?m.72 ?m.76 ?m.77)).denote
+but is expected to have type
+  @ofTerm P
+      (ante
+        ([NormalForm.lit l] ++
+          NormalForm.lit l ::
+            ([NormalForm.lit l] ++
+              (gaps [[NormalForm.lit l], [NormalForm.lit l]] ++ [NormalForm.lit l, NormalForm.lit l]))))
+      (succ ([NormalForm.lit l] ++ ([NormalForm.lit l] ++ [NormalForm.lit l])))
+      (surround (NormalForm.lit l) (cutIdentity l)
+          (newL (tagged (NormalForm.lit l)) ⋯ (cutIdentity l) (gLeft l))).denote =
+    ofTerm
+      (surround (NormalForm.lit l) (cutIdentity l)
+          (oldL (tagged (NormalForm.lit l)) ⋯ (cutIdentity l) (gLeft l))).denote
+error: DosenPetric/GentzenRewriteIntegration.lean:85:6: Failed to rewrite using equation theorems for `surround`
+error: DosenPetric/GentzenRewriteIntegration.lean:106:2: No goals to be solved
+error: DosenPetric/GentzenRewriteIntegration.lean:113:2: Type mismatch
+  ProofAddress.replace_denote (address NormalForm.top G.topI (oldR ?m.75 ?m.76 ?m.80 ?m.81))
+    (newR ?m.75 ?m.76 ?m.80 ?m.81) (denoteR ?m.75 ?m.76 ?m.80 ?m.81)
+has type
+  @ofTerm Empty (ante ([] ++ NormalForm.top :: (?m.77 ++ ?m.79))) (succ ([NormalForm.top] ++ (?m.78 ++ ?m.74)))
+      ((address NormalForm.top G.topI (oldR ?m.75 ?m.76 ?m.80 ?m.81)).replace (newR ?m.75 ?m.76 ?m.80 ?m.81)).denote =
+    ofTerm (surround NormalForm.top G.topI (oldR ?m.75 ?m.76 ?m.80 ?m.81)).denote
+but is expected to have type
+  @ofTerm Empty (ante ([] ++ NormalForm.top :: ([NormalForm.bot] ++ [NormalForm.bot])))
+      (succ ([NormalForm.top] ++ ([] ++ (gaps [[], []] ++ [NormalForm.bot]))))
+      (surround NormalForm.top G.topI (newR (two NormalForm.bot) ⋯ G.botE (constRight NormalForm.bot 2))).denote =
+    ofTerm (surround NormalForm.top G.topI (oldR (two NormalForm.bot) ⋯ G.botE (constRight NormalForm.bot 2))).denote
+Some required targets logged failures:
+- DosenPetric.GentzenRewriteIntegration
+error: build failed

@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-24T21:20:16.151508+00:00",
+  "checks": [
+    {
+      "name": "build-GentzenRewriteIntegration",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenRewriteIntegration"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 0,
+      "seconds": 12.153,
+      "log": ".codex-work/gentzen-proof-replacement/build-GentzenRewriteIntegration-20261024T212003998624.log",
+      "log_sha256": "7d593c13ae31dd8f5b6d477d92523efb24920775665f153c9af92511bed0239a"
+    }
+  ]
+}

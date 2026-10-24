@@ -1,0 +1,56 @@
+'DosenPetric.Reduced.Gentzen.Premise.rebuild_original' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.Premise.inserted_branch' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.Premise.rebuild_inserted' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.Premise.rebuild_denote' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Premise.rebuild_cutCount' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Premise.rebuild_proofSize' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Premise.rebuild_cutFree' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.Premise.rebuild_atomized' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ProofAddress.replace_root' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ProofAddress.replace_down' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ProofAddress.replace_original' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ProofAddress.inserted_path' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.ProofAddress.replace_inserted' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ProofAddress.append_root' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ProofAddress.root_append' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ProofAddress.append_path' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.ProofAddress.replace_append' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ProofAddress.append_assoc' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ProofAddress.replace_denote' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ProofAddress.replace_relation' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ProofAddress.replace_congr' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ProofAddress.replace_cutCount' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ProofAddress.replace_proofSize' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ProofAddress.replace_count_eq' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ProofAddress.replace_cutFree' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ProofAddress.replace_atomized' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ReplacementExamples.mix_left' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ReplacementExamples.mix_right' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ReplacementExamples.cut_left' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ReplacementExamples.cut_right' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ReplacementExamples.conjR_left' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ReplacementExamples.conjR_right' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ReplacementExamples.disjL_left' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ReplacementExamples.disjL_right' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ReplacementExamples.identical_siblings' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ReplacementExamples.nested_path' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.ReplacementExamples.nested_one_cut_inserted' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.ReplacementExamples.signed_nested' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.ReplacementExamples.empty_constants' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_denoteL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_relationL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_countL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_cutFreeL' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_atomizedL' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_denoteR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_relationR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_countR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_cutFreeR' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_atomizedR' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.RewriteIntegration.address_path' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.RewriteIntegration.replace_surround' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.RewriteIntegration.actual_w5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.RewriteIntegration.actual_w5_count' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.RewriteIntegration.actual_w5_atomized' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.RewriteIntegration.actual_w5_cutFree' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.RewriteIntegration.empty_w5_right' depends on axioms: [propext,

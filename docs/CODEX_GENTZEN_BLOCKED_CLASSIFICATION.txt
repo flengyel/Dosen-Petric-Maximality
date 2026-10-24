@@ -1,0 +1,88 @@
+Continue the Došen–Petrić maximality formalization in WSL2 at
+/home/flengyel/src/Dosen-Petric-Maximality. Complete the next integration
+checkpoint: source-faithful Blocked/Reducible definitions on typed Gentzen
+proof occurrences and a finite immediate-rule/selected-ancestry classification
+that identifies the remaining obligations for the source Reducibility Lemma.
+Complete proofs/examples/checks, author-side reviews/current records and
+verified Downloads delivery. Commit scoped completed work to main and push
+SSH origin without force. Keep repository privacy and preserve manuscript v4/v5.
+
+Inspect status/remotes/stashes, fetch SSH origin and preserve newer/unrelated
+work, the integration stash and other checkouts. Read AGENTS.md, current
+statement/coverage/correspondence/validation/continuation, PALOMAR_REQUIREMENTS,
+GENTZEN_PROOF_REPLACEMENT_REPORT and both reviews, the two single-premise W5
+reports/reviews and the source case analysis. Reuse unchanged G, Premise,
+ProofAddress/replace/inserted/append, sourceArity, whole-formula tracing,
+ContractionBlock selections, TiedLeft/TiedRight and existing W1–W5 results.
+Preserve Lean 4.35.0, Init-only closure/manifest, old interfaces, tags, ranks,
+manuscript/checksums and historical reports/prompts. Run a fresh strict baseline.
+
+Directly consult pinned September 2007 Proof-Theoretical Coherence §11.2,
+printed pp.248–253, especially the seven blocked wL patterns, reducibility
+condition and lemma on p.250, W1–W6 on pp.251–253 and right analogues.
+PDF SHA256 e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e.
+These are PDF pp.260–265 one-based. Use rendered formulas, retain access/page
+evidence and distinguish positional data from a string rendering of a rule name.
+
+Define BlockedL and a separately typed BlockedR for the actual contraction
+proof and its selected positions. The seven source p.250 configurations are
+(w gamma 1–3), (w conjunction 1) and (w disjunction 1–3), with the displayed
+premise types and selected principal/parametric tags. Supply concrete syntax/
+context data, derive endpoint casts and arity bounds, and explain how the
+explicit non-strict folds realize each source pattern. Do not replace the
+source definition with an arbitrary convenient predicate, a rank comparison,
+a relation kernel or the failure of an implemented rewrite search.
+
+Define a reducible occurrence tied to an existing topmost cut using its
+ProofAddress and exact retained contraction position. Retain repeated occurrences
+even when proof values and formula labels coincide. Check proper ancestry:
+the source condition concerns a containing contraction w t with the chosen
+w h occurring inside t. It must not require the same chosen occurrence both
+blocked and unblocked. Prove the address/path/ancestor facts actually used,
+with examples of identical siblings, nested contractions and both cut sides.
+Do not assume a desired reduct, normal form, rank law or coherence as data.
+
+Prove an exhaustive immediate-rule/selected-ancestry classification for a
+cut-free contraction premise at the source arity bound. Reuse actual predecessor
+and positional routing data. Separate unary parametric versus selected
+positions, shared/disjoint contractions, binary selected copies in the first,
+second or both premises, and selected logical principal positions. Include
+whole-formula consumed/introduced boundaries; label equality cannot select a
+tag. Exclude leaf and cut branches only by derivation. Do not assert mutual
+exclusivity of overlapping source descriptions unless it is proved or refine
+the classifier with an explicit justified priority.
+
+Maintain a finite case ledger linking each classified regime to its actual
+existing public rewrite or a precise unproved endpoint/rank obligation.
+A case-name enumeration alone is not the classifier. Prove that every allowed
+input has a typed classification witness; no caller-supplied classification or
+conclusion-equivalent coverage assumption. Avoid building additional isolated
+rewrite families unless a demonstrated classification case needs them.
+
+Use inhabited left/right examples, Empty constants, compounds, equal formula
+labels at selected/fixed positions, identical proof siblings and both literal
+signs. Demonstrate why source CutFree excludes a cut case using existing
+cut_not_cutFree; do not weaken the classification by imposing extra atomicity,
+freshness, DecidableEq or nonempty-P. Keep empty hom-sets and witnessed zeros.
+
+After the last proof edit run bash scripts/verify.sh, both boundary scripts,
+manuscript SHA256SUMS and staged/unstaged whitespace checks, one heavy process
+at a time. Preserve commands/exits/timings, versions, public types/axioms,
+source/declaration/import closure and all five expected negative-control
+rejections. No holes, custom axioms, native_decide, weakened targets or raised
+heartbeat limits. Apply hostile-referee and source-grounded mathematical-writing
+reviews to actual proofs, source correspondence, report and current maps.
+
+Retain reports under docs/ and docs/reviews/, evidence under provenance/.
+Deliver finalized reports, validation and next continuation to
+/mnt/c/Users/fleng/Downloads, preserve conflicting filenames and verify bytes/
+SHA256 against committed versions. Verify checked proof bytes, clean tree and
+main/origin/main/live SSH refs after non-force push. Finish with exact scope,
+remaining gates, checks, commit/ref/tree status and retained/Downloads paths.
+
+This checkpoint must not claim the Reducibility Lemma, global tied-site rank/
+multiset decrease, Blocked-w, clean-cut normalization, cut elimination,
+restricted coherence, PositiveCoherence, Reduced.Faithful, Boolean Coherence
+or unconditional maximality. The existing proof-replacement layer is proved;
+it does not discharge those statements. Keep the three milestones distinct.
+No submission, author contact, license or visibility change is authorized.

@@ -1,0 +1,31 @@
+Both single-premise W5 mix placements and their right duals are proved.
+The next task is typed replacement at a chosen Gentzen proof occurrence.
+This is the integration gate between local transformations and the source
+Reducibility Lemma, not another isolated W5 case.
+
+Reuse Premise and ProofAddress from GentzenProofOccurrences. For arbitrary
+root:G P Γ Δ, g:G P Θ Λ, a:ProofAddress root g and h:G P Θ Λ,
+construct replacement at precisely a, with output G P Γ Δ. Prove rebuilding
+with g recovers root; derive the correct constructor in every unary/binary
+branch, retaining every sibling. Equal-valued binary premises must still
+have different addresses and independently replaceable occurrences.
+
+Prove Reduced-denotation congruence from ofTerm h.denote=ofTerm g.denote,
+and derive full tagged relation equality afterward. Prove CutFree and
+Atomized preservation under original-root and replacement hypotheses.
+Prove exact additive balances for cutCount and proofSize along one hole;
+do not claim rank/termination monotonicity without additional hypotheses.
+Exercise root/nested addresses and both branches of mix, cut, conjR and
+disjL, including identical siblings, Empty constants and actual signed cuts.
+
+A source-faithful Blocked/Reducible classification, remaining mixed-premise/
+binary W5/W6 and crossing/absorption W1/W2 cases, tied-site rank/multiset
+control, Reducibility, Blocked-w and cut elimination remain separate gates.
+The replacement task must not assume any of their conclusions. See
+[the concrete continuation](CODEX_GENTZEN_PROOF_REPLACEMENT.txt).
+
+Restricted coherence M0–M3, retractions/positive normal forms R0–R1,
+PositiveCoherence C, Reduced.Faithful, Boolean Coherence and unconditional
+maximality remain open. F transfers PositiveCoherence to faithfulness but
+its premise is unsupplied. The three milestone boundaries are unchanged.
+Unfinished reconstruction of published results does not establish a manuscript defect.

@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-24T21:26:56.536451+00:00",
+  "closed_gate": "Typed replacement of one proof occurrence and integration of existing local W5 rewrites into arbitrary surrounding G proofs",
+  "construction": "ProofAddress.replace via Premise.rebuild; existing address syntax reused",
+  "laws": [
+    "original-hole recovery",
+    "inserted address at same branch path",
+    "repeat replacement",
+    "address units/associativity/path composition",
+    "replace_append",
+    "Reduced denotation congruence",
+    "tagged relation consequence",
+    "exact additive cutCount/proofSize balances",
+    "CutFree/Atomized preservation"
+  ],
+  "integrated_local_theorems": [
+    "W5.OtherPremiseMix.denoteL",
+    "W5.OtherPremiseMix.denoteR"
+  ],
+  "arbitrary_address_api": "W5.OtherPremiseMix.replace_denote/count/cutFree/atomizedL/R",
+  "concrete_tests": [
+    "RewriteIntegration.actual_w5: depth-two left W5 under thinning/mix, unchanged cut-containing sibling",
+    "RewriteIntegration.actual_w5_count: three actual cuts",
+    "RewriteIntegration.actual_w5_atomized and actual_w5_cutFree",
+    "RewriteIntegration.empty_w5_right: depth-two right dual with Empty constants",
+    "ReplacementExamples: both branches of all four binary schemas, identical siblings, nested signed cuts and Empty constants"
+  ],
+  "unproved_gates": [
+    "source Blocked/Reducible/clean-cut definitions",
+    "exhaustive source case classification and missing local cases",
+    "tied-site rank/multiset control",
+    "Reducibility and Blocked-w",
+    "cut elimination",
+    "restricted coherence and PositiveCoherence",
+    "faithfulness/Boolean Coherence and actual maximality"
+  ],
+  "next_checkpoint": "Source-faithful Blocked/Reducible definitions and finite immediate-rule/selected-ancestry classification; link every case to existing rewrite or precise gap",
+  "completion_percentage": null,
+  "current_links_resolve": true
+}

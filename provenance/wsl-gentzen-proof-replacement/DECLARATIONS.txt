@@ -1,0 +1,200 @@
+DosenPetric/GentzenPremiseReplacement.lean:14 DosenPetric.Reduced.Gentzen.Premise.rebuild
+def rebuild (p : Premise f g) : G P Θ Λ → G P Γ Δ := match p with
+
+DosenPetric/GentzenPremiseReplacement.lean:32 DosenPetric.Reduced.Gentzen.Premise.rebuild_original
+theorem rebuild_original (p : Premise f g) : p.rebuild g = f := by cases p <;> rfl
+
+DosenPetric/GentzenPremiseReplacement.lean:35 DosenPetric.Reduced.Gentzen.Premise.inserted
+def inserted (p : Premise f g) : (h : G P Θ Λ) → Premise (p.rebuild h) h := match p with
+
+DosenPetric/GentzenPremiseReplacement.lean:53 DosenPetric.Reduced.Gentzen.Premise.inserted_branch
+theorem inserted_branch (p : Premise f g) (h : G P Θ Λ) :
+
+DosenPetric/GentzenPremiseReplacement.lean:56 DosenPetric.Reduced.Gentzen.Premise.rebuild_inserted
+theorem rebuild_inserted (p : Premise f g) (h k : G P Θ Λ) :
+
+DosenPetric/GentzenPremiseReplacement.lean:59 DosenPetric.Reduced.Gentzen.Premise.rebuild_denote
+theorem rebuild_denote (p : Premise f g) (h : G P Θ Λ)
+
+DosenPetric/GentzenPremiseReplacement.lean:74 DosenPetric.Reduced.Gentzen.Premise.rebuild_cutCount
+theorem rebuild_cutCount (p : Premise f g) (h : G P Θ Λ) :
+
+DosenPetric/GentzenPremiseReplacement.lean:78 DosenPetric.Reduced.Gentzen.Premise.rebuild_proofSize
+theorem rebuild_proofSize (p : Premise f g) (h : G P Θ Λ) :
+
+DosenPetric/GentzenPremiseReplacement.lean:82 DosenPetric.Reduced.Gentzen.Premise.rebuild_cutFree
+theorem rebuild_cutFree (p : Premise f g) (h : G P Θ Λ)
+
+DosenPetric/GentzenPremiseReplacement.lean:88 DosenPetric.Reduced.Gentzen.Premise.rebuild_atomized
+theorem rebuild_atomized (p : Premise f g) (h : G P Θ Λ)
+
+DosenPetric/GentzenProofReplacement.lean:13 DosenPetric.Reduced.Gentzen.ProofAddress.replace
+def replace : {Θ Λ : List (NormalForm P)} → {g : G P Θ Λ} →
+
+DosenPetric/GentzenProofReplacement.lean:18 DosenPetric.Reduced.Gentzen.ProofAddress.replace_root
+theorem replace_root (g h : G P Γ Δ) : (.root : ProofAddress g g).replace h = h := rfl
+
+DosenPetric/GentzenProofReplacement.lean:20 DosenPetric.Reduced.Gentzen.ProofAddress.replace_down
+theorem replace_down (a : ProofAddress root g) (p : Premise g k) (h : G P Ξ Ω) :
+
+DosenPetric/GentzenProofReplacement.lean:23 DosenPetric.Reduced.Gentzen.ProofAddress.replace_original
+theorem replace_original (a : ProofAddress root g) : a.replace g = root := by
+
+DosenPetric/GentzenProofReplacement.lean:29 DosenPetric.Reduced.Gentzen.ProofAddress.inserted
+def inserted : {Θ Λ : List (NormalForm P)} → {g : G P Θ Λ} →
+
+DosenPetric/GentzenProofReplacement.lean:34 DosenPetric.Reduced.Gentzen.ProofAddress.inserted_path
+theorem inserted_path (a : ProofAddress root g) (h : G P Θ Λ) :
+
+DosenPetric/GentzenProofReplacement.lean:42 DosenPetric.Reduced.Gentzen.ProofAddress.replace_inserted
+theorem replace_inserted (a : ProofAddress root g) (h j : G P Θ Λ) :
+
+DosenPetric/GentzenProofReplacement.lean:51 DosenPetric.Reduced.Gentzen.ProofAddress.append
+def append (a : ProofAddress root g) : {Ξ Ω : List (NormalForm P)} → {k : G P Ξ Ω} →
+
+DosenPetric/GentzenProofReplacement.lean:56 DosenPetric.Reduced.Gentzen.ProofAddress.append_root
+theorem append_root (a : ProofAddress root g) : a.append .root = a := rfl
+
+DosenPetric/GentzenProofReplacement.lean:58 DosenPetric.Reduced.Gentzen.ProofAddress.root_append
+theorem root_append (b : ProofAddress g k) : (.root : ProofAddress g g).append b = b := by
+
+DosenPetric/GentzenProofReplacement.lean:63 DosenPetric.Reduced.Gentzen.ProofAddress.append_path
+theorem append_path (a : ProofAddress root g) (b : ProofAddress g k) :
+
+DosenPetric/GentzenProofReplacement.lean:71 DosenPetric.Reduced.Gentzen.ProofAddress.replace_append
+theorem replace_append (a : ProofAddress root g) (b : ProofAddress g k) (h : G P Ξ Ω) :
+
+DosenPetric/GentzenProofReplacement.lean:77 DosenPetric.Reduced.Gentzen.ProofAddress.append_assoc
+theorem append_assoc {I J : List (NormalForm P)} {j : G P I J}
+
+DosenPetric/GentzenProofReplacement.lean:84 DosenPetric.Reduced.Gentzen.ProofAddress.replace_denote
+theorem replace_denote (a : ProofAddress root g) (h : G P Θ Λ)
+
+DosenPetric/GentzenProofReplacement.lean:91 DosenPetric.Reduced.Gentzen.ProofAddress.replace_relation
+theorem replace_relation (a : ProofAddress root g) (h : G P Θ Λ)
+
+DosenPetric/GentzenProofReplacement.lean:95 DosenPetric.Reduced.Gentzen.ProofAddress.replace_congr
+theorem replace_congr (a : ProofAddress root g) (h j : G P Θ Λ)
+
+DosenPetric/GentzenProofReplacement.lean:102 DosenPetric.Reduced.Gentzen.ProofAddress.replace_cutCount
+theorem replace_cutCount (a : ProofAddress root g) (h : G P Θ Λ) :
+
+DosenPetric/GentzenProofReplacement.lean:112 DosenPetric.Reduced.Gentzen.ProofAddress.replace_proofSize
+theorem replace_proofSize (a : ProofAddress root g) (h : G P Θ Λ) :
+
+DosenPetric/GentzenProofReplacement.lean:122 DosenPetric.Reduced.Gentzen.ProofAddress.replace_count_eq
+theorem replace_count_eq (a : ProofAddress root g) (h : G P Θ Λ)
+
+DosenPetric/GentzenProofReplacement.lean:127 DosenPetric.Reduced.Gentzen.ProofAddress.replace_cutFree
+theorem replace_cutFree (a : ProofAddress root g) (h : G P Θ Λ)
+
+DosenPetric/GentzenProofReplacement.lean:133 DosenPetric.Reduced.Gentzen.ProofAddress.replace_atomized
+theorem replace_atomized (a : ProofAddress root g) (h : G P Θ Λ)
+
+DosenPetric/GentzenReplacementExamples.lean:15 DosenPetric.Reduced.Gentzen.ReplacementExamples.mix_left
+theorem mix_left (f h : G P Γ Δ) (g : G P Θ Λ) :
+
+DosenPetric/GentzenReplacementExamples.lean:19 DosenPetric.Reduced.Gentzen.ReplacementExamples.mix_right
+theorem mix_right (f : G P Γ Δ) (g h : G P Θ Λ) :
+
+DosenPetric/GentzenReplacementExamples.lean:23 DosenPetric.Reduced.Gentzen.ReplacementExamples.cut_left
+theorem cut_left (f h : G P Γ (C::Δ)) (g : G P (C::Θ) Λ) :
+
+DosenPetric/GentzenReplacementExamples.lean:27 DosenPetric.Reduced.Gentzen.ReplacementExamples.cut_right
+theorem cut_right (f : G P Γ (C::Δ)) (g h : G P (C::Θ) Λ) :
+
+DosenPetric/GentzenReplacementExamples.lean:31 DosenPetric.Reduced.Gentzen.ReplacementExamples.conjR_left
+theorem conjR_left (f h : G P Γ (A::Δ)) (g : G P Θ (B::Λ)) :
+
+DosenPetric/GentzenReplacementExamples.lean:35 DosenPetric.Reduced.Gentzen.ReplacementExamples.conjR_right
+theorem conjR_right (f : G P Γ (A::Δ)) (g h : G P Θ (B::Λ)) :
+
+DosenPetric/GentzenReplacementExamples.lean:39 DosenPetric.Reduced.Gentzen.ReplacementExamples.disjL_left
+theorem disjL_left (f h : G P (A::Γ) Δ) (g : G P (B::Θ) Λ) :
+
+DosenPetric/GentzenReplacementExamples.lean:43 DosenPetric.Reduced.Gentzen.ReplacementExamples.disjL_right
+theorem disjL_right (f : G P (A::Γ) Δ) (g h : G P (B::Θ) Λ) :
+
+DosenPetric/GentzenReplacementExamples.lean:49 DosenPetric.Reduced.Gentzen.ReplacementExamples.identical_siblings
+theorem identical_siblings (l : Literal P) :
+
+DosenPetric/GentzenReplacementExamples.lean:61 DosenPetric.Reduced.Gentzen.ReplacementExamples.nested
+def nested (l : Literal P) :=
+
+DosenPetric/GentzenReplacementExamples.lean:63 DosenPetric.Reduced.Gentzen.ReplacementExamples.nestedAddress
+def nestedAddress (l : Literal P) : ProofAddress (nested l) (G.identity l) :=
+
+DosenPetric/GentzenReplacementExamples.lean:68 DosenPetric.Reduced.Gentzen.ReplacementExamples.nested_path
+theorem nested_path (l : Literal P) : (nestedAddress l).path = [1,0] := rfl
+
+DosenPetric/GentzenReplacementExamples.lean:70 DosenPetric.Reduced.Gentzen.ReplacementExamples.nested_one_cut_inserted
+theorem nested_one_cut_inserted (l : Literal P) :
+
+DosenPetric/GentzenReplacementExamples.lean:79 DosenPetric.Reduced.Gentzen.ReplacementExamples.signed_nested
+theorem signed_nested (p : P) :
+
+DosenPetric/GentzenReplacementExamples.lean:84 DosenPetric.Reduced.Gentzen.ReplacementExamples.emptyRoot
+def emptyRoot : G Empty [] [.conj .top .top] := G.conjR G.topI G.topI
+
+DosenPetric/GentzenReplacementExamples.lean:85 DosenPetric.Reduced.Gentzen.ReplacementExamples.emptyLeft
+def emptyLeft : ProofAddress emptyRoot (G.topI : G Empty [] [.top]) :=
+
+DosenPetric/GentzenReplacementExamples.lean:88 DosenPetric.Reduced.Gentzen.ReplacementExamples.empty_constants
+theorem empty_constants :
+
+DosenPetric/GentzenRewriteIntegration.lean:19 DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_denoteL
+theorem replace_denoteL :
+
+DosenPetric/GentzenRewriteIntegration.lean:22 DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_relationL
+theorem replace_relationL : (a.replace (newL d hn f g)).relation = root.relation :=
+
+DosenPetric/GentzenRewriteIntegration.lean:24 DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_countL
+theorem replace_countL : (a.replace (newL d hn f g)).cutCount = root.cutCount :=
+
+DosenPetric/GentzenRewriteIntegration.lean:26 DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_cutFreeL
+theorem replace_cutFreeL (hr : root.CutFree) : (a.replace (newL d hn f g)).CutFree :=
+
+DosenPetric/GentzenRewriteIntegration.lean:28 DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_atomizedL
+theorem replace_atomizedL (hr : root.Atomized) : (a.replace (newL d hn f g)).Atomized :=
+
+DosenPetric/GentzenRewriteIntegration.lean:36 DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_denoteR
+theorem replace_denoteR :
+
+DosenPetric/GentzenRewriteIntegration.lean:39 DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_relationR
+theorem replace_relationR : (a.replace (newR d hn f g)).relation = root.relation :=
+
+DosenPetric/GentzenRewriteIntegration.lean:41 DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_countR
+theorem replace_countR : (a.replace (newR d hn f g)).cutCount = root.cutCount :=
+
+DosenPetric/GentzenRewriteIntegration.lean:43 DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_cutFreeR
+theorem replace_cutFreeR (hr : root.CutFree) : (a.replace (newR d hn f g)).CutFree :=
+
+DosenPetric/GentzenRewriteIntegration.lean:45 DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.replace_atomizedR
+theorem replace_atomizedR (hr : root.Atomized) : (a.replace (newR d hn f g)).Atomized :=
+
+DosenPetric/GentzenRewriteIntegration.lean:55 DosenPetric.Reduced.Gentzen.RewriteIntegration.surround
+def surround (A : NormalForm P) (s : G P Θ Λ) (q : G P Γ Δ) :
+
+DosenPetric/GentzenRewriteIntegration.lean:58 DosenPetric.Reduced.Gentzen.RewriteIntegration.address
+def address (A : NormalForm P) (s : G P Θ Λ) (q : G P Γ Δ) :
+
+DosenPetric/GentzenRewriteIntegration.lean:63 DosenPetric.Reduced.Gentzen.RewriteIntegration.address_path
+theorem address_path (A : NormalForm P) (s : G P Θ Λ) (q : G P Γ Δ) :
+
+DosenPetric/GentzenRewriteIntegration.lean:66 DosenPetric.Reduced.Gentzen.RewriteIntegration.replace_surround
+theorem replace_surround (A : NormalForm P) (s : G P Θ Λ) (q h : G P Γ Δ) :
+
+DosenPetric/GentzenRewriteIntegration.lean:71 DosenPetric.Reduced.Gentzen.RewriteIntegration.actual_w5
+theorem actual_w5 (l : Literal P) :
+
+DosenPetric/GentzenRewriteIntegration.lean:81 DosenPetric.Reduced.Gentzen.RewriteIntegration.actual_w5_count
+theorem actual_w5_count (l : Literal P) :
+
+DosenPetric/GentzenRewriteIntegration.lean:93 DosenPetric.Reduced.Gentzen.RewriteIntegration.actual_w5_atomized
+theorem actual_w5_atomized (l : Literal P) :
+
+DosenPetric/GentzenRewriteIntegration.lean:103 DosenPetric.Reduced.Gentzen.RewriteIntegration.actual_w5_cutFree
+theorem actual_w5_cutFree (l : Literal P) :
+
+DosenPetric/GentzenRewriteIntegration.lean:112 DosenPetric.Reduced.Gentzen.RewriteIntegration.empty_w5_right
+theorem empty_w5_right :

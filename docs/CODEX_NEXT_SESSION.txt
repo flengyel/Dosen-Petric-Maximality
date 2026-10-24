@@ -1,7 +1,8 @@
 Continue the Došen–Petrić maximality formalization in WSL2.
 
 Repository: /home/flengyel/src/Dosen-Petric-Maximality, private, main.
-Read AGENTS.md, GENTZEN_W5_OTHER_PREMISE_MIX_REPORT (including track/drift audit)
+Read AGENTS.md, GENTZEN_PROOF_REPLACEMENT_REPORT and both author-side reviews,
+GENTZEN_W5_OTHER_PREMISE_MIX_REPORT (including track/drift audit)
 and both author-side reviews, GENTZEN_W5_SINGLE_PREMISE_MIX_REPORT and both reviews,
 GENTZEN_W4_SELECTED_LOGICAL_REPORT and both author-side reviews,
 GENTZEN_W2_SELECTED_THINNING_REPORT and both author-side reviews,
@@ -193,7 +194,7 @@ n=m gives equal sums, and the actual n=2,m=3 example raises S left-to-right.
 Count/predicate/tagged-relation preservation has no new atomicity/CutFree
 premise. Empty P constants, fixed equal positions on both sides, repeated
 literals, both signs and actual cuts are checked. These are local statements,
-not an unrestricted terminating rewrite system or all-site replacement theorem.
+not an unrestricted terminating rewrite system or all-site rank control theorem.
 Actual final checks: 117 files / 4,906 audited declarations; all required
 commands passed and five expected controls rejected. Evidence and the failed
 example attempt: provenance/wsl-gentzen-w1-contraction/. All older Lean source
@@ -217,7 +218,7 @@ Actual final checks: 121 files / 4,973 audited declarations; all required
 commands pass and five expected controls reject. Failed attempts and complete
 evidence are in provenance/wsl-gentzen-w1-logical/. The specified opposite-side
 unary W1 families are complete at their local scopes; same-side parametric
-cases and all-site replacement/termination remain open.
+cases and all-site rank control/termination remain open.
 
 COMPLETED — SAME-SIDE W1 THINNING AT FIXED POSITIONS
 Read GENTZEN_W1_SAME_SIDE_THINNING_REPORT and both author-side reviews.
@@ -392,7 +393,7 @@ all five expected controls reject. Exact public types and 137 selected axiom
 prints supplement the full audit. Evidence:
 provenance/wsl-gentzen-w2-selected-thinning/ and matching .codex-work/.
 Author-side reviews, committed-source/ref and Downloads checks are separate.
-No all-site replacement, Reducibility, cut elimination or coherence is supplied.
+No all-site rank control, Reducibility, cut elimination or coherence is supplied.
 
 COMPLETED — W4 TERMINAL SELECTED LOGICAL INTRODUCTION
 Read GENTZEN_W4_SELECTED_LOGICAL_REPORT and both author-side reviews.
@@ -457,42 +458,58 @@ Final strict: 204 files / 7,859 audited declarations; all required checks pass,
 five controls reject. 126 selected axiom prints and all 142 explicit public
 types supplement full collection. Evidence:
 provenance/wsl-gentzen-w5-other-premise-mix/ and matching .codex-work/.
-Track/drift audit confirms addresses exist but proof-occurrence replacement
-and source Blocked/Reducible/clean-cut definitions do not. Next integrate
-rather than automatically selecting another isolated local case.
+At that checkpoint the audit found addresses but no proof-occurrence
+reconstruction or source Blocked/Reducible/clean-cut definitions. Reconstruction
+is now proved below; source classification and global rank control remain open.
+
+COMPLETED — PROOF-OCCURRENCE REPLACEMENT AND W5 INTEGRATION
+Read GENTZEN_PROOF_REPLACEMENT_REPORT and both author-side reviews.
+Four new modules reuse Premise/ProofAddress. Typed rebuild/replace retains
+all outer endpoints, rule parameters and siblings; recovery, inserted path,
+repeated replacement, address composition/associativity and Reduced congruence
+compile. Exact additive cutCount/proofSize balances and CutFree/Atomized
+preservation compile; full tagged relation equality follows. Both existing
+other-placement W5 duals lift at arbitrary proof addresses, with concrete
+depth-two signed-cut/Empty constant examples and unchanged siblings. All four
+binary schemas have both branch reconstruction examples; identical siblings
+remain separately replaceable. No rank/cluster transport or normalization claim.
+Final strict: 208 files / 7,972 audited declarations, all required checks pass
+and five controls reject. 56 selected theorem axiom prints and all 67 explicit
+public types supplement full collection. Evidence:
+provenance/wsl-gentzen-proof-replacement/ and matching .codex-work/.
+The preceding missing reconstruction layer is closed. Source classification
+and the tied-site rank argument now block the next global integration step.
 
 NEXT CONCRETE PROOF TASK
-Both single-premise W5 mix placements and their right duals are proved.
-The next task is typed replacement at a chosen Gentzen proof occurrence.
-This is the integration gate between local transformations and the source
-Reducibility Lemma, not another isolated W5 case.
+Typed proof-occurrence replacement is proved, including an existing W5
+rewrite lifted into arbitrary surrounding proofs and concrete nested examples.
+The next checkpoint is the source Blocked/Reducible classification and a
+finite account of the local cases needed by Reducibility.
 
-Reuse Premise and ProofAddress from GentzenProofOccurrences. For arbitrary
-root:G P Γ Δ, g:G P Θ Λ, a:ProofAddress root g and h:G P Θ Λ,
-construct replacement at precisely a, with output G P Γ Δ. Prove rebuilding
-with g recovers root; derive the correct constructor in every unary/binary
-branch, retaining every sibling. Equal-valued binary premises must still
-have different addresses and independently replaceable occurrences.
+Define the seven p.250 blocked left-contraction patterns and their separately
+typed right analogues on actual G terms and selected positions. Derive their
+context and arity conditions. Define reducibility for a contraction occurrence
+tied to an existing topmost cut, retaining its ProofAddress and exact formula
+position. Match the source's ancestor condition carefully: it concerns proper
+containing contractions, not the occurrence itself. Do not define Blocked by
+failure of a rewrite search or Reducible by the existence of its desired reduct.
 
-Prove Reduced-denotation congruence from ofTerm h.denote=ofTerm g.denote,
-and derive full tagged relation equality afterward. Prove CutFree and
-Atomized preservation under original-root and replacement hypotheses.
-Prove exact additive balances for cutCount and proofSize along one hole;
-do not claim rank/termination monotonicity without additional hypotheses.
-Exercise root/nested addresses and both branches of mix, cut, conjR and
-disjL, including identical siblings, Empty constants and actual signed cuts.
+Prove a complete immediate-rule/selected-ancestry case classification under
+the source CutFree hypotheses. Distinguish unary parametric/selected cases,
+shared versus disjoint contractions, binary selection in either or both
+premises, and selected logical principal positions. Keep equal labels at
+distinct positions separate. Reuse existing sourceArity/classification/fibers;
+exclude leaves/cut cases only by proof. Map every case to an existing typed
+rewrite or a precise remaining obligation. The classifier must not assert a
+rank decrease for cases where only a local equality is known.
 
-A source-faithful Blocked/Reducible classification, remaining mixed-premise/
-binary W5/W6 and crossing/absorption W1/W2 cases, tied-site rank/multiset
-control, Reducibility, Blocked-w and cut elimination remain separate gates.
-The replacement task must not assume any of their conclusions. See
-[the concrete continuation](CODEX_GENTZEN_PROOF_REPLACEMENT.txt).
-
-Restricted coherence M0–M3, retractions/positive normal forms R0–R1,
-PositiveCoherence C, Reduced.Faithful, Boolean Coherence and unconditional
-maximality remain open. F transfers PositiveCoherence to faithfulness but
-its premise is unsupplied. The three milestone boundaries are unchanged.
-Unfinished reconstruction of published results does not establish a manuscript defect.
+This checkpoint supplies source-faithful dispatch for a later Reducibility
+proof. The global tied-site/rank argument, missing local W1/W2/W5–W6 cases,
+Blocked-w, clean-cut normalization and cut elimination remain separate gates.
+See [the concrete continuation](CODEX_GENTZEN_BLOCKED_CLASSIFICATION.txt).
+Restricted coherence M0–M3, retractions/normal forms R0–R1, PositiveCoherence,
+Reduced.Faithful, Boolean Coherence and actual maximality remain open. The
+conditional transfer and three milestone boundaries are unchanged.
 
 ## Remaining positive-coherence dependency table
 
@@ -529,7 +546,7 @@ interfaces rather than compiling declarations.
 | Z: §12.5 p.288 (0I ξ), pp.290–291 (∪0); any P and existing arrows | `tensor_zero o A B`; `tensor_zeroOf o f g`; `union_id_zero A`; all seven union algebra laws and witnessed zero unit | Existing Reduced.Laws, product/coproduct derivations | **Proved at the preceding zero/union checkpoint**; interpretation and positive raw membership are separate proved declarations. |
 | G0: §11.1 pp.238–243; §11.5 p.272; §12.5 p.291 | Implemented `Reduced.Gentzen.G/denote/denote_positive`, all rule denotation formulas, source-order macros, actual comparisons and empty boundary | Existing reduced structural/zero laws | **Proved**, see POSITIVE_GENTZENIZATION_REPORT. |
 | G1: §11.1 Gentzenization pp.245–246; §11.5 pp.272–273; §12.5 p.291 zero extension using (0I ξ) | `∀ (t : Term P A B), t.Positive → ∃ g : G P [A] [B], ofTerm (G.denote g) = comp (rightOut .conj A) (comp (ofTerm t) (rightIn .disj B))` | G0; typed rules for each of the 19 positive constructor schemas; zeros expanded recursively with Z; constant identity/zero laws already in ReducedStructure | **Proved** by Reduced.Gentzen.gentzenization and its decoded/occurrence counterparts. Representation is existential with cuts; no quotient function is inferred. |
-| G2 remaining: §11.2 pp.250–253 blocked/reducibility transformations, Blocked-w and clean-cut definitions; Atomic-k and cluster/rank are proved | For proposed `TopCut g`, `∃ h : G P Γ Δ, Clean h ∧ ofTerm (G.denote h) = ofTerm (G.denote g)`; prove every local rewrite reduces the source rank/multiset measure | G0, source structural/d equations; exact cut-formula positions, clusters and ranks; Z for zero leaves | **Open after completed Atomic-k and cluster/rank**. Opposite-side unary W1 thinning, exchange, contraction and logical instances are proved in their local scopes. Fixed-gap and terminal-tail same-side thinning in both duals is now proved. Fixed-gap and terminal-tail same-side exchange in both duals is now proved. Fixed-gap and terminal-tail same-side unary logical cases are now proved. Fixed-gap and terminal-tail disjoint same-side contractions in both duals are now proved. Shared-selected W3 fusion and its dual are now proved with retained drop m. Terminal selected-thinning W2 and its dual are now proved with n+1/n losses and asymmetric Atomized laws. Terminal selected-logical W4 and its dual are now proved, with n+1 source contraction loss, n=2 endpoint tie and other fixed-rank increases. The G.mix f g single-premise W5 placement and right dual are proved with n/n−1 losses and corrected opposite ranks (g both 2+rho; f old 2+rho/new 1+rho). The G.mix g f placement and right dual are now proved with derived prefix gaps and the same complete table. Next construct typed proof-occurrence replacement and lift an existing local rewrite beneath a context. Addresses exist but reconstruction, source Blocked/Reducible/clean-cut definitions and tied-site/multiset control remain absent. Crossing-selected/multi-gap/absorption exchange, other W1/W2/W5–W6 and blocked patterns remain open. This is normalization of a topmost cut, not arbitrary equality by its relation. |
+| G2 remaining: §11.2 pp.250–253 blocked/reducibility transformations, Blocked-w and clean-cut definitions; Atomic-k and cluster/rank are proved | For proposed `TopCut g`, `∃ h : G P Γ Δ, Clean h ∧ ofTerm (G.denote h) = ofTerm (G.denote g)`; prove every local rewrite reduces the source rank/multiset measure | G0, source structural/d equations; exact cut-formula positions, clusters and ranks; Z for zero leaves | **Open after completed Atomic-k and cluster/rank**. Opposite-side unary W1 thinning, exchange, contraction and logical instances are proved in their local scopes. Fixed-gap and terminal-tail same-side thinning in both duals is now proved. Fixed-gap and terminal-tail same-side exchange in both duals is now proved. Fixed-gap and terminal-tail same-side unary logical cases are now proved. Fixed-gap and terminal-tail disjoint same-side contractions in both duals are now proved. Shared-selected W3 fusion and its dual are now proved with retained drop m. Terminal selected-thinning W2 and its dual are now proved with n+1/n losses and asymmetric Atomized laws. Terminal selected-logical W4 and its dual are now proved, with n+1 source contraction loss, n=2 endpoint tie and other fixed-rank increases. The G.mix f g single-premise W5 placement and right dual are proved with n/n−1 losses and corrected opposite ranks (g both 2+rho; f old 2+rho/new 1+rho). The G.mix g f placement and right dual are now proved with derived prefix gaps and the same complete table. Typed proof-occurrence replacement and arbitrary-address integration of both W5 duals are now proved, with exact count/predicate laws and concrete nested examples. Next define source Blocked/Reducible and prove a finite case classification. Clean-cut definitions, missing local cases and tied-site/multiset control remain open. Crossing-selected/multi-gap/absorption exchange, other W1/W2/W5–W6 and blocked patterns remain open. This is normalization of a topmost cut, not arbitrary equality by its relation. |
 | G3: §11.2 pp.253–263 Cut-Elimination; §11.5 p.273 constants; §12.5 pp.291–292 zero atomic cases | `∀ g : G P Γ Δ, ∃ h : G P Γ Δ, CutFree h ∧ ofTerm (G.denote h) = ofTerm (G.denote g)` | G2; well-founded clean-cut complexity and blocked contractions; constant cut cases, (00), zero naturality | **Open**. Source five new zero cases must be derived at actual endpoint folds; unit terms are not arbitrary zeros. |
 | M0: §10.2 pp.223–226; §10.3 pp.229–230; §12.5 pp.289–290 | Define MixTerm/Atomic/Settled; `∀ t : MixTerm P A B, DNF A → CNF B → ∃ n : Settled P A B, ofTerm n.denote = ofTerm t.denote` | Z union laws; cut/composition elimination for the smaller Gentzen lattice syntax, extending §9.4/§9.6; atomic bracket normal forms | **Open**. Smaller-system composition elimination is a real proof obligation, not supplied by the new algebra. |
 | M1: §10.3 pp.229–230 zero constants; §12.5 p.290 zero atomic components | `∀ a : Atomic P A B, ZeroAtomic a → ofTerm a.denote = zeroOf (ofTerm a.denote)`; hence any two such same-type components are equal | Atomic path syntax; zeroOf_pre/post/independent, zero_top/bot and terminal/initial uniqueness; constant bases | **Open** for the proposed syntax; its categorical zero and unit ingredients are already proved. No general empty-relation equality is used. |
@@ -562,10 +579,11 @@ every-interpretation corollary. The three milestones remain separate.
 
 VERIFICATION AND REVIEW
 Pinned Lean 4.35.0, Init-only production closure, no new dependencies.
-Current strict result: 204 Lean files and 7859 audited project declarations.
+Current strict result: 208 Lean files and 7972 audited project declarations.
 Permitted axioms: propext, Quot.sound, Classical.choice. Both boundary scripts
 passed with all five expected rejections; manuscript hashes are unchanged.
-Current evidence: provenance/wsl-gentzen-w5-other-premise-mix/ and matching .codex-work/.
+Current evidence: provenance/wsl-gentzen-proof-replacement/ and matching .codex-work/.
+Prior W5 other placement: provenance/wsl-gentzen-w5-other-premise-mix/.
 Prior W5 first placement: provenance/wsl-gentzen-w5-single-premise-mix/.
 Prior selected-logical W4 evidence: provenance/wsl-gentzen-w4-selected-logical/.
 Prior selected-thinning W2 evidence: provenance/wsl-gentzen-w2-selected-thinning/.

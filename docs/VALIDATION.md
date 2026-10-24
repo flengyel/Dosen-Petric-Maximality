@@ -1,3 +1,56 @@
+# Gentzen proof-replacement validation (current checkpoint)
+
+Clean main 6bbf0a4143d395fc339972f86f25d3b74203a9b0 matched fetched SSH origin.
+Fresh strict baseline: 204 files / 7,859 declarations, exit 0, 5.659s.
+Final sequential checks completed at 2026-10-24T21:21:24.231158+00:00:
+**208 source files / 7,972 audited declarations**, an increase of 113.
+
+| Command | Exit | Seconds |
+| --- | --- | --- |
+| bash scripts/verify.sh | 0 | 6.076 |
+| python3 scripts/check-audit-boundaries.py | 0 | 9.536 |
+| python3 scripts/check-presentation-boundaries.py | 0 | 1.198 |
+| manuscript SHA256SUMS | 0 | 0.011 |
+| git diff --check | 0 | 0.01 |
+| git diff --cached --check | 0 | 0.009 |
+
+Exact public types pass in 2.835s; 56 new theorem axiom prints and all 67
+explicit declarations supplement full transitive audit/public import closure.
+Only propext, Quot.sound and Classical.choice are permitted. All five negative
+controls reject with expected diagnostics and Lean exit 1. Final integration
+module build passes in 14.500s; failed attempts/diagnostics remain retained.
+Heavy checks were sequential after the last proof edit.
+
+Four new modules prove typed reconstruction at chosen proof occurrences,
+retaining outer endpoints and siblings. Recovery, inserted path, repeated
+replacement, address units/composition/associativity, Reduced congruence,
+tagged relation consequence, exact cutCount/proofSize balances and
+CutFree/Atomized preservation compile. Both existing W5 duals lift at arbitrary
+addresses. Actual nested signed-cut/Empty constant examples exercise this API;
+identical siblings remain independently replaceable. No rank/cluster transport
+or global normalization conclusion is asserted.
+
+All older modules/interfaces, toolchain/manifest, AGENTS, manuscript v4/v5,
+diagrams/references/checksums, historical reports/prompts, other checkouts
+and integration stash are preserved. Existing Lean edits only add imports/
+axiom prints. No target, old equation/rank or heartbeat was changed.
+Evidence: provenance/wsl-gentzen-proof-replacement/ and matching .codex-work/.
+Author-side hostile/source-grounded writing reviews inspect actual proofs/maps;
+committed-source/ref/Downloads comparisons have separate receipts.
+
+The [integration report](GENTZEN_PROOF_REPLACEMENT_REPORT.md) closes the missing
+reconstruction layer identified by the earlier direction audit. Next define
+the source blocked/reducible patterns and prove a finite selected-ancestry
+classification. Missing local cases, tied-site rank control, Reducibility,
+Blocked-w, clean cuts, elimination/coherence and actual maximality remain open.
+Three milestones stay separate. Independent source/kernel replay,
+Challenge/Solution/Comparator, official preflight/service, fresh manuscript
+layout/compilation, publication/licensing/visibility changes did not run.
+
+---
+
+## Historical W5 other-placement validation (unchanged evidence)
+
 # W5 other single-premise mix validation (current checkpoint)
 
 Clean main c319ceec00f1a3304648c2044dd0453af78adb9c matched fetched SSH origin.

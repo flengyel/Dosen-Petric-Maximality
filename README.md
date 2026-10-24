@@ -74,14 +74,16 @@ the continuation's omitted outer-node prediction. Counts, CutFree/Atomized
 and tagged relations are preserved. The G.mix g f placement and its right
 dual now compile with prefixed gaps, complete branch fibers and the same
 rank table. Disjoint interleaving remains separate.
-The next integration checkpoint is typed proof-tree replacement at a chosen
-address, with an existing local rewrite lifted beneath a context. Typed
-addresses exist; replacement and the source Blocked/Reducible layer do not.
-The current stage is integrating local contraction transformations toward
-cut elimination; repeated isolated cases alone do not close G2. Remaining
-W1/W2/W5–W6, blocked-contraction transformations,
-Reducibility, cut elimination, the positive coherence inputs, PositiveCoherence,
-Reduced.Faithful, Boolean Coherence and unconditional maximality remain open.
+Typed proof-tree replacement now compiles at any chosen address, preserving
+outer endpoints and siblings, denotation, inserted paths and exact cut/size
+balances. Both other-placement W5 duals lift into arbitrary surrounding proofs;
+actual nested signed-cut and Empty constant examples exercise the integration.
+The next checkpoint is source-faithful Blocked/Reducible definitions and a
+complete immediate-rule/selected-ancestry classification. Remaining local
+W1/W2/W5–W6 cases, the tied-site rank argument, Reducibility, Blocked-w, cut
+elimination, PositiveCoherence, faithfulness/Boolean Coherence and unconditional
+maximality remain open. This integration step closes a concrete construction
+gap; it does not close G2 or supply a global decreasing measure.
 See [validation](docs/VALIDATION.md) for the maintained audited declaration
 count, commands, evidence and limits of the local checks.
 
@@ -132,11 +134,12 @@ The [v5 literature review](docs/LITERATURE_REVIEW_V5_2026-10-23.md),
 [writing review](docs/reviews/V5_WRITING_REVIEW.md), and
 [manuscript validation](docs/V5_VALIDATION.md) accompany v5.
 The [earlier literature comparison](docs/LITERATURE_REVIEW.md) remains available.
-The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W5_OTHER_PREMISE_MIX_HOSTILE.md)
-and [mathematical-writing review](docs/reviews/GENTZEN_W5_OTHER_PREMISE_MIX_WRITING.md)
-cover the G.mix g f single-premise W5 placement and its right dual; they are
-not independent certification. The [current W5 report and track/drift audit](docs/GENTZEN_W5_OTHER_PREMISE_MIX_REPORT.md),
-[ready-to-paste replacement continuation](docs/CODEX_GENTZEN_PROOF_REPLACEMENT.txt),
+The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_PROOF_REPLACEMENT_HOSTILE.md)
+and [mathematical-writing review](docs/reviews/GENTZEN_PROOF_REPLACEMENT_WRITING.md)
+cover typed proof replacement and both W5 integrations; they are
+not independent certification. The [current integration report](docs/GENTZEN_PROOF_REPLACEMENT_REPORT.md),
+[ready-to-paste classification continuation](docs/CODEX_GENTZEN_BLOCKED_CLASSIFICATION.txt),
+[preceding W5 report and track/drift audit](docs/GENTZEN_W5_OTHER_PREMISE_MIX_REPORT.md),
 [preceding W5 report](docs/GENTZEN_W5_SINGLE_PREMISE_MIX_REPORT.md),
 [preceding W4 report](docs/GENTZEN_W4_SELECTED_LOGICAL_REPORT.md),
 [preceding W2 report](docs/GENTZEN_W2_SELECTED_THINNING_REPORT.md),

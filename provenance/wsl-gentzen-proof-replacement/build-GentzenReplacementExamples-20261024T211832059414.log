@@ -1,0 +1,192 @@
+✖ [97/160] Building DosenPetric.GentzenProofReplacement (1.6s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenProofReplacement.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenProofReplacement.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenProofReplacement.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenProofReplacement.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenProofReplacement.setup.json --json
+error: DosenPetric/GentzenProofReplacement.lean:15:17: Application type mismatch: The argument
+  a
+has type
+  ProofAddress root f✝
+but is expected to have type
+  ProofAddress root g✝
+in the application
+  replace a
+error: DosenPetric/GentzenProofReplacement.lean:17:39: Type mismatch
+  root
+has type
+  G P Γ Δ
+but is expected to have type
+  ProofAddress g g
+error: DosenPetric/GentzenProofReplacement.lean:19:0: Not a definitional equality: the left-hand side
+  (a.down p).replace h
+is not definitionally equal to the right-hand side
+  a.replace (p.rebuild h)
+error: DosenPetric/GentzenProofReplacement.lean:20:54: Type mismatch
+  rfl
+has type
+  ?m.44 = ?m.44
+but is expected to have type
+  (a.down p).replace h = a.replace (p.rebuild h)
+error: DosenPetric/GentzenProofReplacement.lean:24:12: Tactic `rfl` failed: The left-hand side
+  ProofAddress.root.replace root
+is not definitionally equal to the right-hand side
+  root
+
+case root
+P : Type u
+Γ Δ Θ Λ : List (NormalForm P)
+root : G P Γ Δ
+g : G P Θ Λ
+⊢ ProofAddress.root.replace root = root
+error: DosenPetric/GentzenProofReplacement.lean:29:4: Type mismatch
+  ProofAddress.root
+has type
+  ProofAddress ?m.21 ?m.21
+but is expected to have type
+  ProofAddress root g
+error: DosenPetric/GentzenProofReplacement.lean:34:2: Unnecessary `generalizing` argument: Variable `h` is generalized automatically
+error: DosenPetric/GentzenProofReplacement.lean:35:12: Tactic `rfl` failed: The left-hand side
+  (ProofAddress.root.inserted h).path
+is not definitionally equal to the right-hand side
+  ProofAddress.root.path
+
+case root
+P : Type u
+Γ Δ Θ Λ : List (NormalForm P)
+root : G P Γ Δ
+g : G P Θ Λ
+h : G P Γ Δ
+⊢ (ProofAddress.root.inserted h).path = ProofAddress.root.path
+error: DosenPetric/GentzenProofReplacement.lean:37:4: 'change' tactic failed, pattern
+  (a.inserted (p.rebuild h)).path ++ [(p.inserted h).branch] = a.path ++ [p.branch]
+is not definitionally equal to target
+  ((a.down p).inserted h).path = (a.down p).path
+error: DosenPetric/GentzenProofReplacement.lean:42:2: Unnecessary `generalizing` argument: Variable `h` is generalized automatically
+error: DosenPetric/GentzenProofReplacement.lean:42:2: Unnecessary `generalizing` argument: Variable `j` is generalized automatically
+error: DosenPetric/GentzenProofReplacement.lean:43:12: Tactic `rfl` failed: The left-hand side
+  (ProofAddress.root.inserted h).replace j
+is not definitionally equal to the right-hand side
+  ProofAddress.root.replace j
+
+case root
+P : Type u
+Γ Δ Θ Λ : List (NormalForm P)
+root : G P Γ Δ
+g : G P Θ Λ
+h j : G P Γ Δ
+⊢ (ProofAddress.root.inserted h).replace j = ProofAddress.root.replace j
+error: DosenPetric/GentzenProofReplacement.lean:45:4: 'change' tactic failed, pattern
+  (a.inserted (p.rebuild h)).replace ((p.inserted h).rebuild j) = a.replace (p.rebuild j)
+is not definitionally equal to target
+  ((a.down p).inserted h).replace j = (a.down p).replace j
+error: DosenPetric/GentzenProofReplacement.lean:51:27: Application type mismatch: The argument
+  b
+has type
+  ProofAddress g f✝
+but is expected to have type
+  ProofAddress g k✝
+in the application
+  append a b
+error: DosenPetric/GentzenProofReplacement.lean:53:0: Not a definitional equality: the left-hand side
+  a.append ProofAddress.root
+is not definitionally equal to the right-hand side
+  a
+error: DosenPetric/GentzenProofReplacement.lean:53:70: Type mismatch
+  rfl
+has type
+  ?m.22 = ?m.22
+but is expected to have type
+  a.append ProofAddress.root = a
+error: DosenPetric/GentzenProofReplacement.lean:55:45: Type mismatch
+  root
+has type
+  G P Γ Δ
+but is expected to have type
+  ProofAddress g g
+error: DosenPetric/GentzenProofReplacement.lean:63:12: Type mismatch
+  Eq.symm (List.append_nil ?m.70)
+has type
+  ?m.70 = ?m.70 ++ []
+but is expected to have type
+  (a.append ProofAddress.root).path = a.path ++ ProofAddress.root.path
+error: DosenPetric/GentzenProofReplacement.lean:65:4: 'change' tactic failed, pattern
+  (a.append b).path ++ [p.branch] = a.path ++ (b.path ++ [p.branch])
+is not definitionally equal to target
+  (a.append (b.down p)).path = a.path ++ (b.down p).path
+error: DosenPetric/GentzenProofReplacement.lean:70:2: Unnecessary `generalizing` argument: Variable `h` is generalized automatically
+error: DosenPetric/GentzenProofReplacement.lean:71:12: Tactic `rfl` failed: The left-hand side
+  (a.append ProofAddress.root).replace h
+is not definitionally equal to the right-hand side
+  a.replace (ProofAddress.root.replace h)
+
+case root
+P : Type u
+Γ Δ Θ Λ Ξ Ω : List (NormalForm P)
+root : G P Γ Δ
+g : G P Θ Λ
+k : G P Ξ Ω
+a : ProofAddress root g
+h : G P Θ Λ
+⊢ (a.append ProofAddress.root).replace h = a.replace (ProofAddress.root.replace h)
+error: DosenPetric/GentzenProofReplacement.lean:72:19: Type mismatch
+  ih (p.rebuild h)
+has type
+  (a.append b).replace (p.rebuild h) = a.replace (b.replace (p.rebuild h))
+but is expected to have type
+  (a.append (b.down p)).replace h = a.replace ((b.down p).replace h)
+error: DosenPetric/GentzenProofReplacement.lean:77:2: Unnecessary `generalizing` argument: Variable `h` is generalized automatically
+error: DosenPetric/GentzenProofReplacement.lean:78:12: Type mismatch
+  he
+has type
+  ofTerm h.denote = ofTerm root.denote
+but is expected to have type
+  ofTerm (ProofAddress.root.replace h).denote = ofTerm root.denote
+error: DosenPetric/GentzenProofReplacement.lean:79:19: Type mismatch
+  ih (p.rebuild h) (Premise.rebuild_denote p h he)
+has type
+  ofTerm (a.replace (p.rebuild h)).denote = ofTerm root.denote
+but is expected to have type
+  ofTerm ((a.down p).replace h).denote = ofTerm root.denote
+error: DosenPetric/GentzenProofReplacement.lean:87:2: Unnecessary `generalizing` argument: Variable `h` is generalized automatically
+error: DosenPetric/GentzenProofReplacement.lean:88:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 1
+  a ≥ 0
+where
+ a := ↑root.cutCount
+ b := ↑h.cutCount
+ c := ↑(ProofAddress.root.replace h).cutCount
+error: DosenPetric/GentzenProofReplacement.lean:92:4: 'change' tactic failed, pattern
+  (a.replace (p.rebuild h)).cutCount + ?m.105 = ?m.107
+is not definitionally equal to target
+  ((a.down p).replace h).cutCount + g✝.cutCount = root.cutCount + h.cutCount
+error: DosenPetric/GentzenProofReplacement.lean:97:2: Unnecessary `generalizing` argument: Variable `h` is generalized automatically
+error: DosenPetric/GentzenProofReplacement.lean:98:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 1
+  a ≥ 0
+where
+ a := ↑root.proofSize
+ b := ↑h.proofSize
+ c := ↑(ProofAddress.root.replace h).proofSize
+error: DosenPetric/GentzenProofReplacement.lean:102:4: 'change' tactic failed, pattern
+  (a.replace (p.rebuild h)).proofSize + ?m.105 = ?m.107
+is not definitionally equal to target
+  ((a.down p).replace h).proofSize + g✝.proofSize = root.proofSize + h.proofSize
+error: DosenPetric/GentzenProofReplacement.lean:118:2: Unnecessary `generalizing` argument: Variable `h` is generalized automatically
+error: DosenPetric/GentzenProofReplacement.lean:119:12: Type mismatch
+  hh
+has type
+  h.Atomized
+but is expected to have type
+  (ProofAddress.root.replace h).Atomized
+error: DosenPetric/GentzenProofReplacement.lean:120:19: Type mismatch
+  ih (p.rebuild h) (Premise.rebuild_atomized p h (atomized a hr) hh)
+has type
+  (a.replace (p.rebuild h)).Atomized
+but is expected to have type
+  ((a.down p).replace h).Atomized
+Some required targets logged failures:
+- DosenPetric.GentzenProofReplacement
+error: build failed

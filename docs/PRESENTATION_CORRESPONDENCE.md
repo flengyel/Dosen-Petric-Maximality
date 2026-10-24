@@ -865,7 +865,7 @@ inequalities compile for arbitrary P and arbitrary premises, including cuts.
 Rank is syntactic and does not descend through reduced denotation. The
 unchanged-endpoint relation comparison is a consequence of denotation equality.
 See [the report](GENTZEN_W1_THINNING_REPORT.md) for full signatures, paths,
-boundary examples and verification. No all-site replacement result is claimed.
+boundary examples and verification. No all-site rank control result is claimed.
 
 ## Opposite-side exchange instances of W1
 
@@ -899,7 +899,7 @@ condition. With n = gs.length ≥ 2, contraction_lossL/R prove Rold=Rnew+n,
 endpoint_rankL/R prove rho(new,x)=Rnew+1, and endpoint_lossL/R prove
 rho(old,x)+1=rho(new,x)+n, with both strict inequalities. These rank facts
 come from syntax and hold for empty blocks, never from denotation equality.
-Other W1 cases and all-site replacement/reducibility remain open. See
+Other W1 cases and all-site rank control/reducibility remain open. See
 [the exchange report](GENTZEN_W1_EXCHANGE_REPORT.md) for exact signatures,
 intermediate types, checked examples and evidence.
 
@@ -920,7 +920,7 @@ unchanged. No new source discrepancy was confirmed.
 | §11.2 p.252, right-directed analogue of Reducibility | The same equality is used in reverse when targeting the right contraction. | `denote_reverse` is symmetry of denote; separate `right_directed_balance/decrease` prove the targeted right rank claim. No duplicate pair or arrow-negation construction. |
 | §11.2 p.248, parametric sequences / clusters | A contraction has one proof premise. A position on its opposite side has one predecessor; its own lower contraction position branches to all selected upper copies. | `G.predecessors_contractR_left/contractL_right`, `rho_contractR_left/contractL_right`; existing parent/fiber and complete contraction-sum APIs. |
 | §11.2 p.249, contraction rank; pp.251–252, directed rank requirement | Count all ancestry nodes, independently for the n selected left copies and m selected right copies. | `outerL_left/outerR_left/outerL_right/outerR_right`, inner-rank inequalities, two directed balances/decreases and named other-side increases. |
-| §11.2 p.253, multiset-ordering argument for Blocked-w | Later elimination concerns contractions tied to a chosen cut and all affected sites; the displayed two-rank sum is not a supplied decreasing measure. | Only `endpointSum_balance` and equality for equal arities are proved. No all-site replacement, multiset measure, Reducibility or Blocked-w result is claimed. |
+| §11.2 p.253, multiset-ordering argument for Blocked-w | Later elimination concerns contractions tied to a chosen cut and all affected sites; the displayed two-rank sum is not a supplied decreasing measure. | Only `endpointSum_balance` and equality for equal arities are proved. No all-site rank control, multiset measure, Reducibility or Blocked-w result is claimed. |
 | §11.5 pp.272–273; §12.5 pp.291–292 | Constants have whole-formula positions; atomic-zero bases are permitted and thinnings retained. | Arbitrary C,D/f in the theorem, actual constantTop/constantBot at Empty P, unchanged zero grammar and witnessed-zero policy. No new zero-specific equation is needed. |
 
 The source's broader Semilattice Coherence appeal is not a Lean proof input.
@@ -1155,7 +1155,7 @@ atomicity hypothesis. See [the report](GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPO
 and both author-side reviews for exact examples and verification.
 
 Shared-selected W3 fusion is now proved below. Disjoint interleaving,
-remaining exchange/W1/W2–W6, all-site replacement, Reducibility, Blocked-w,
+remaining exchange/W1/W2–W6, all-site rank control, Reducibility, Blocked-w,
 cut elimination and coherence/maximality remain separate/open.
 
 
@@ -1232,7 +1232,7 @@ See [the W2 report](GENTZEN_W2_SELECTED_THINNING_REPORT.md) and both reviews.
 
 Terminal selected-logical W4 and its right dual are now proved below,
 including the n=2 endpoint tie and fixed-position increases. Remaining local
-cases, arbitrary-context replacement, Reducibility, Blocked-w, cut elimination,
+cases, arbitrary-context rank control, Reducibility, Blocked-w, cut elimination,
 coherence and unconditional maximality remain separate/open.
 
 
@@ -1273,7 +1273,7 @@ Inhabited Empty/compound/equal-tag/tie/increase/signed-cut examples compile.
 See [the W4 report](GENTZEN_W4_SELECTED_LOGICAL_REPORT.md) and reviews.
 
 The G.mix f g single-premise W5 placement and right dual are now proved
-below. Other local cases, arbitrary-context replacement, Reducibility,
+below. Other local cases, arbitrary-context rank control, Reducibility,
 Blocked-w, cut elimination, coherence and unconditional maximality remain open.
 
 
@@ -1311,7 +1311,7 @@ Empty/compound/equal-label/two-three-copy/signed-cut examples compile.
 See [the W5 report](GENTZEN_W5_SINGLE_PREMISE_MIX_REPORT.md) and reviews.
 
 The G.mix g f placement is now proved below.
-Mixed-premise/binary W5/W6, remaining W1/W2, arbitrary-context replacement,
+Mixed-premise/binary W5/W6, remaining W1/W2, arbitrary-context rank control,
 Reducibility, Blocked-w, cut elimination, coherence and unconditional
 maximality remain separate/open.
 
@@ -1329,7 +1329,7 @@ provenance/wsl-gentzen-w5-other-premise-mix/. No new source discrepancy.
 | p.252 right analogue | Actual contractR on g's suffix, with f's target prefix. | other_premise_right; output G P (Φ++Δ) (Ψ++K), prefix gaps (Ψ++H)::hs. |
 | p.252 (m nat) | Concrete prefix product/coproduct comparisons before inherited naturality. | prepend_join/split, prepend_product/coproduct, otherMixL/R; no coherence/reflection. |
 | pp.248–249 clusters | Whole ordered g selection and all fixed/opposite branch positions. | OtherMix branch squares/fibers and W5.OtherPremiseMix selected/fixed/opposite rank laws. |
-| p.250 Reducibility subterm replacement | One selected proof occurrence must be rebuilt inside a surrounding proof. | Typed addresses exist; reconstruction is the next task, not proved by local equalities. |
+| p.250 Reducibility subterm replacement | One selected proof occurrence must be rebuilt inside a surrounding proof. | Typed addresses and reconstruction are now proved below; local equality alone still does not prove Reducibility. |
 
 For n≥2, derive gs≠[] and reuse ContractionSelection.prependFixed. Exact
 selected list is d.selected.map (At.shift Ξ); retained index is
@@ -1342,8 +1342,36 @@ Counts, CutFree/Atomized and complete tagged relations are preserved.
 Inhabited Empty/compound/equal-label/n=2/3/signed-cut examples compile.
 
 See [the report and track/drift audit](GENTZEN_W5_OTHER_PREMISE_MIX_REPORT.md)
-and [the replacement continuation](CODEX_GENTZEN_PROOF_REPLACEMENT.txt).
+and the completed replacement checkpoint below.
 Mixed-premise/binary W5–W6, crossing/absorption and other W1/W2 cases,
 source classification, tied-site rank/multiset control, Reducibility,
 Blocked-w, cut elimination, restricted coherence, PositiveCoherence,
 Reduced.Faithful, Boolean Coherence and unconditional maximality remain open.
+
+## Proof-occurrence replacement and integration into surrounding Gentzen proofs
+
+Pinned September 2007 §11.2 p.250's Reducibility Lemma replaces one selected
+subterm in a topmost cut. Printed pp.248–253 are PDF pp.260–265 one-based;
+rendered p.250/PDF p.262 and cached text were consulted. Access evidence is
+retained under provenance/wsl-gentzen-proof-replacement/; no new discrepancy.
+
+| Source anchor | Actual typed construction | Boundary |
+| --- | --- | --- |
+| pp.248–249 subterm occurrences | Existing Premise/ProofAddress reused; inserted proof has a new address with the same branch path, even with identical siblings. | No new tracing/rank definition; cluster transport is not asserted. |
+| p.250 replacing the chosen subterm | Premise.rebuild and ProofAddress.replace preserve exact outer endpoints, all rule parameters and unchanged siblings; recovery/composition laws compile. | Any replacement needs the same local sequent; no global normalization assumption. |
+| p.250 equality after replacement | replace_denote derives outer equality from local Reduced equality using actual G.denote and rule congruences; tagged relation follows. | No occurrence reflection or coherence. |
+| pp.251–252 W5 | Existing OtherPremiseMix left/right equations now lift at any valid address, preserving counts and existing CutFree/Atomized. Concrete nested signed-cut and Empty examples compile. | No global rank decrease is inferred. |
+| p.250 blocked/reducible definitions; W1–W6 | Next source-faithful classification will select the required local transformation. | Still open, with missing cases and tied-site rank control separate. |
+
+Both cutCount and proofSize obey exact additive one-occurrence balances;
+proofSize is not an asserted elimination measure. Address append has unit,
+associativity and path laws; replacement at a composed address agrees with
+nested reconstruction. Root/replacement predicates supply CutFree/Atomized
+preservation; arbitrary inputs need no atomicity or CutFree to construct replace.
+
+See [the integration report](GENTZEN_PROOF_REPLACEMENT_REPORT.md) and
+[the classification continuation](CODEX_GENTZEN_BLOCKED_CLASSIFICATION.txt).
+Source Blocked/Reducible definitions, complete dispatch, remaining local cases,
+tied-site rank/multiset control, Reducibility/Blocked-w/clean cuts, cut
+elimination, restricted coherence, PositiveCoherence, faithfulness/Boolean
+Coherence and unconditional maximality remain open.
