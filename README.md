@@ -71,10 +71,15 @@ all selected copies lie in g in G.mix f g, with its right dual, complete premise
 fibers and n/n−1 rank losses. Fixed/opposite g ranks are unchanged at
 2+rho; f ranks drop from 2+rho to 1+rho on both sides. This corrects
 the continuation's omitted outer-node prediction. Counts, CutFree/Atomized
-and tagged relations are preserved. The other placement G.mix g f is next;
-disjoint interleaving remains separate.
-The current stage is the remaining local contraction transformations toward
-cut elimination. Remaining W1/W2/W5–W6, blocked-contraction transformations,
+and tagged relations are preserved. The G.mix g f placement and its right
+dual now compile with prefixed gaps, complete branch fibers and the same
+rank table. Disjoint interleaving remains separate.
+The next integration checkpoint is typed proof-tree replacement at a chosen
+address, with an existing local rewrite lifted beneath a context. Typed
+addresses exist; replacement and the source Blocked/Reducible layer do not.
+The current stage is integrating local contraction transformations toward
+cut elimination; repeated isolated cases alone do not close G2. Remaining
+W1/W2/W5–W6, blocked-contraction transformations,
 Reducibility, cut elimination, the positive coherence inputs, PositiveCoherence,
 Reduced.Faithful, Boolean Coherence and unconditional maximality remain open.
 See [validation](docs/VALIDATION.md) for the maintained audited declaration
@@ -127,11 +132,12 @@ The [v5 literature review](docs/LITERATURE_REVIEW_V5_2026-10-23.md),
 [writing review](docs/reviews/V5_WRITING_REVIEW.md), and
 [manuscript validation](docs/V5_VALIDATION.md) accompany v5.
 The [earlier literature comparison](docs/LITERATURE_REVIEW.md) remains available.
-The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W5_SINGLE_PREMISE_MIX_HOSTILE.md)
-and [mathematical-writing review](docs/reviews/GENTZEN_W5_SINGLE_PREMISE_MIX_WRITING.md)
-cover the G.mix f g single-premise W5 placement and its right dual; they are
-not independent certification. The [W5 report](docs/GENTZEN_W5_SINGLE_PREMISE_MIX_REPORT.md),
-[ready-to-paste other-placement continuation](docs/CODEX_W5_OTHER_PREMISE_MIX.txt),
+The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W5_OTHER_PREMISE_MIX_HOSTILE.md)
+and [mathematical-writing review](docs/reviews/GENTZEN_W5_OTHER_PREMISE_MIX_WRITING.md)
+cover the G.mix g f single-premise W5 placement and its right dual; they are
+not independent certification. The [current W5 report and track/drift audit](docs/GENTZEN_W5_OTHER_PREMISE_MIX_REPORT.md),
+[ready-to-paste replacement continuation](docs/CODEX_GENTZEN_PROOF_REPLACEMENT.txt),
+[preceding W5 report](docs/GENTZEN_W5_SINGLE_PREMISE_MIX_REPORT.md),
 [preceding W4 report](docs/GENTZEN_W4_SELECTED_LOGICAL_REPORT.md),
 [preceding W2 report](docs/GENTZEN_W2_SELECTED_THINNING_REPORT.md),
 [preceding W3 report](docs/GENTZEN_W3_SHARED_SELECTED_CONTRACTION_REPORT.md),

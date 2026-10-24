@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-24T21:08:05.434458+00:00",
+  "checks": [
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_status": 0,
+      "seconds": 0.012,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_status": 0,
+      "seconds": 0.043,
+      "output": ""
+    }
+  ],
+  "validated_inventory_entries": {
+    "SOURCE_SHA256SUMS": 211,
+    "REPORT_SHA256SUMS": 3,
+    "RECORD_SHA256SUMS": 8,
+    "EVIDENCE_SHA256SUMS": 78
+  },
+  "exact_staged_scope": true,
+  "proof_bytes_match_final_strict_inventory": true,
+  "all_changes_staged": true,
+  "fetched_ssh_origin_matches_baseline": "c319ceec00f1a3304648c2044dd0453af78adb9c",
+  "integration_stash_preserved": true
+}

@@ -1,0 +1,47 @@
+✖ [138/138] Building DosenPetric.GentzenOtherMixRanks (2.3s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenOtherMixRanks.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenOtherMixRanks.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenOtherMixRanks.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenOtherMixRanks.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenOtherMixRanks.setup.json --json
+error: DosenPetric/GentzenOtherMixRanks.lean:31:29: Application type mismatch: The argument
+  f
+has type
+  G P Φ Ψ
+of sort `Type u` but is expected to have type
+  2 ≤ d.gs.length
+of sort `Prop` in the application
+  @selected_sumL P F K d f
+error: DosenPetric/GentzenOtherMixRanks.lean:28:83: unsolved goals
+P : Type u
+F K : List (NormalForm P)
+d : ContractionBlock P F K
+hn : 2 ≤ d.gs.length
+Φ Ψ Δ : List (NormalForm P)
+f : G P Φ Ψ
+g : G P F Δ
+ho :
+  (d.prepend hn Φ).rankL ⋯ (Ψ ++ Δ) (g.mix f) =
+    1 + (List.map (fun a => (g.mix f).rho SequentSide.left a) (d.prepend hn Φ).selected).sum
+hi : d.rankL hn Δ g = 1 + (List.map (fun a => g.rho SequentSide.left a) d.selected).sum
+⊢ rankOuterL d hn f g = rankInnerL d hn g + d.gs.length
+error: DosenPetric/GentzenOtherMixRanks.lean:118:29: Application type mismatch: The argument
+  f
+has type
+  G P Φ Ψ
+of sort `Type u` but is expected to have type
+  2 ≤ d.gs.length
+of sort `Prop` in the application
+  @selected_sumR P F K d f
+error: DosenPetric/GentzenOtherMixRanks.lean:115:83: unsolved goals
+P : Type u
+F K : List (NormalForm P)
+d : ContractionBlock P F K
+hn : 2 ≤ d.gs.length
+Φ Ψ Δ : List (NormalForm P)
+f : G P Φ Ψ
+g : G P Δ F
+ho :
+  (d.prepend hn Ψ).rankR ⋯ (Φ ++ Δ) (g.mix f) =
+    1 + (List.map (fun a => (g.mix f).rho SequentSide.right a) (d.prepend hn Ψ).selected).sum
+hi : d.rankR hn Δ g = 1 + (List.map (fun a => g.rho SequentSide.right a) d.selected).sum
+⊢ rankOuterR d hn f g = rankInnerR d hn g + d.gs.length
+Some required targets logged failures:
+- DosenPetric.GentzenOtherMixRanks
+error: build failed

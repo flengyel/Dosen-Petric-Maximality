@@ -1,0 +1,14 @@
+✔ [171/180] Built DosenPetric.GentzenOtherMixRanks (1.6s)
+✖ [180/180] Building DosenPetric.GentzenOtherMixExamples (6.5s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenOtherMixExamples.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenOtherMixExamples.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenOtherMixExamples.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenOtherMixExamples.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenOtherMixExamples.setup.json --json
+error: DosenPetric/GentzenOtherMixExamples.lean:42:66: This simp argument is unused:
+  Nat.add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [OtherMix.newG, TraceRoute.get_ofMap, Option.map_some, At.index_shift, ContractionBlock.get_index,
+    List.length_cons, List.length_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- DosenPetric.GentzenOtherMixExamples
+error: build failed

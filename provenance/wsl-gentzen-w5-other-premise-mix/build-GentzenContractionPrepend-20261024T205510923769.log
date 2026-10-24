@@ -1,0 +1,21 @@
+✖ [125/125] Building DosenPetric.GentzenContractionPrepend (1.2s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenContractionPrepend.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionPrepend.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionPrepend.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionPrepend.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionPrepend.setup.json --json
+error: DosenPetric/GentzenContractionPrepend.lean:58:46: Application type mismatch: The argument
+  congrArg ?m.45 (selection_block d ?m.49)
+has type
+  ?m.45 (d.selection ?m.49).block = ?m.45 d
+but is expected to have type
+  (d.selection ⋯).block.keep = d.keep
+in the application
+  Eq.trans (ContractionSelection.keep_eq (d.selection (nonempty d hn))) (congrArg ?m.45 (selection_block d ?m.49))
+error: DosenPetric/GentzenContractionPrepend.lean:60:50: Application type mismatch: The argument
+  congrArg ?m.45 (selection_block d ?m.49)
+has type
+  ?m.45 (d.selection ?m.49).block = ?m.45 d
+but is expected to have type
+  (d.selection ⋯).block.selected = d.selected
+in the application
+  Eq.trans (ContractionSelection.selected_eq (d.selection (nonempty d hn))) (congrArg ?m.45 (selection_block d ?m.49))
+Some required targets logged failures:
+- DosenPetric.GentzenContractionPrepend
+error: build failed

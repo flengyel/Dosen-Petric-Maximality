@@ -1,0 +1,13 @@
+✖ [180/180] Building DosenPetric.GentzenOtherMixExamples (6.9s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenOtherMixExamples.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenOtherMixExamples.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenOtherMixExamples.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenOtherMixExamples.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenOtherMixExamples.setup.json --json
+error: DosenPetric/GentzenOtherMixExamples.lean:68:38: Application type mismatch: The argument
+  Nat.le_refl 2
+has type
+  2 ≤ 2
+of sort `Prop` but is expected to have type
+  List (NormalForm P)
+of sort `Type u` in the application
+  OtherMix.retained_index (tagged C) (Nat.le_refl 2)
+Some required targets logged failures:
+- DosenPetric.GentzenOtherMixExamples
+error: build failed

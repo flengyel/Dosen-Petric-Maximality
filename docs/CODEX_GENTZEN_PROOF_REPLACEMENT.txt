@@ -1,0 +1,85 @@
+Continue the Došen–Petrić maximality formalization in WSL2 at
+/home/flengyel/src/Dosen-Petric-Maximality. Implement typed replacement
+at a chosen Gentzen proof occurrence, then instantiate it with a completed
+local contraction rewrite below a nontrivial surrounding proof. Complete
+proofs/examples/checks, author-side reviews/current records and verified
+Downloads delivery. Commit scoped completed work to main and push SSH origin
+without force. Keep the repository private and preserve manuscript v4/v5.
+
+Inspect status/remotes/stashes, fetch origin and preserve newer/unrelated
+work, the integration stash and all other checkouts. Read AGENTS.md,
+MANUSCRIPT_STATEMENTS, MANUSCRIPT_COVERAGE, PRESENTATION_CORRESPONDENCE,
+VALIDATION, PALOMAR_REQUIREMENTS and CODEX_NEXT_SESSION. Read both W5
+single-premise reports and their reviews, especially the current report's
+track/drift audit. Reuse the actual G grammar with sixteen schemas,
+GentzenProofOccurrences.Premise/ProofAddress, TraceCompatibility and existing
+G.denote/cutCount/CutFree/Atomized/proofSize and local W1–W5 transformations.
+Do not restart completed W5. Preserve Lean 4.35.0, Init-only closure/manifest,
+all older interfaces, positional tags, manuscript/checksums and historical
+reports/prompts. Run a fresh strict baseline.
+
+Consult pinned September 2007 Proof-Theoretical Coherence §11.2, printed
+pp.248–253, especially the Reducibility Lemma's replacement of one subterm
+on p.250 and the tied/blocked restrictions. PDF SHA256:
+e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e.
+Printed pp.248–253 are PDF pp.260–265 one-based. Retain page/access evidence.
+The operation below is a prerequisite for that lemma, not its proof.
+
+For arbitrary P and existing root:G P Γ Δ, g:G P Θ Λ,
+a:ProofAddress root g and h:G P Θ Λ, produce G P Γ Δ by replacing
+precisely the proof occurrence a. Use a typed one-hole proof context or
+an equivalent recursive reconstruction of a. Preserve exact outer endpoint
+types and every sibling/constructor parameter, including contraction bounds
+and cut formula positions. Do not replace every subproof equal to g.
+Use actual Premise branches, not untagged proof values or mere endpoint lists.
+A context stores syntactic frames and existing siblings, never the desired
+congruence or normalization theorem as a field.
+
+Prove original-hole recovery, root replacement and reconstruction laws for
+every unary and each binary branch; compose contexts/addresses with a proved
+path law. Retain an address to the inserted proof at the same branch path in
+the rebuilt root. Binary left/right occurrences remain distinct even when
+both siblings are definitionally equal. Derive all endpoint casts explicitly.
+
+Prove ofTerm h.denote=ofTerm g.denote implies equal Reduced denotations
+for rebuilt and original roots, using the actual rule denotations and inherited
+congruence laws. Full tagged relation equality is a consequence, not a
+reflection premise. Prove preservation of CutFree and Atomized when both
+root and h have those predicates. Prove exact additive balances
+  rebuilt.cutCount + g.cutCount = root.cutCount + h.cutCount,
+  rebuilt.proofSize + g.proofSize = root.proofSize + h.proofSize.
+These concern one occurrence; no global rank decrease follows. Do not alter
+rho, its predecessor definition or any earlier transformation to force it.
+
+Use actual root/nested/multiple-depth examples, both branches of all four
+binary schemas mix/cut/conjR/disjL, identical siblings at distinct addresses,
+Empty constants, empty literal-occurrence sets, repeated equal tags and both
+literal signs. Include actual cuts. Lift at least one completed W1–W5 old/new
+pair beneath a nontrivial context using the public replacement congruence,
+with unchanged siblings, exact endpoints and predicate/count consequences.
+Avoid impossible G [] [] or any assumption of a reverse arrow.
+
+After the last proof edit run bash scripts/verify.sh, both boundary scripts,
+manuscript SHA256SUMS and staged/unstaged whitespace checks, one heavy process
+at a time. Preserve commands/exits/timings, versions, exact public types,
+source/declaration inventories, full import/transitive axiom audit and all
+five expected negative-control rejections. No holes, custom axioms,
+native_decide, conclusion-equivalent assumptions, weakened targets or raised
+heartbeat limits. Apply hostile-referee and source-grounded mathematical-
+writing reviews to the actual argument, correspondence, report and current maps.
+
+Retain finalized reports under docs/ and docs/reviews/, evidence under
+provenance/. Deliver reports, validation and next continuation to
+/mnt/c/Users/fleng/Downloads with conflict-preserving names, comparing bytes/
+SHA256 against committed versions. Verify checked proof bytes against commit,
+clean main/origin/main/live SSH refs after the non-force push. Finish with
+scope/results/limits, actual checks, commit/ref/tree status, repository and
+Downloads paths and one concrete next integration obligation.
+
+Do not claim Reducibility, Blocked-w, clean-cut normalization, cut elimination,
+restricted coherence, PositiveCoherence, Reduced.Faithful, Boolean Coherence
+or unconditional maximality. Remaining W1/W2/mixed-premise W5/binary W5–W6,
+source classification and tied-site rank/multiset control are separate gates.
+Audit which of those blocks the next integration step instead of automatically
+scheduling another isolated case. Keep three milestones separate. No Palomar/
+arXiv submission, author contact, license or visibility change is authorized.

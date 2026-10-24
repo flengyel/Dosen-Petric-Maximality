@@ -1,3 +1,59 @@
+# W5 other single-premise mix validation (current checkpoint)
+
+Clean main c319ceec00f1a3304648c2044dd0453af78adb9c matched fetched SSH origin.
+Fresh strict baseline: 198 files / 7,702 declarations, exit 0, 7.782s.
+Final sequential checks completed at 2026-10-24T21:06:14.840573+00:00:
+**204 source files / 7,859 audited declarations**, an increase of 157.
+
+| Command | Exit | Seconds |
+| --- | --- | --- |
+| bash scripts/verify.sh | 0 | 19.163 |
+| python3 scripts/check-audit-boundaries.py | 0 | 8.25 |
+| python3 scripts/check-presentation-boundaries.py | 0 | 1.198 |
+| manuscript SHA256SUMS | 0 | 0.011 |
+| git diff --check | 0 | 0.023 |
+| git diff --cached --check | 0 | 0.011 |
+
+Public types pass in 4.376s; all 126 new theorem axiom prints supplement
+complete transitive collection and public import closure. Only propext,
+Quot.sound and Classical.choice are permitted; no choice-free claim.
+All five controls reject with expected diagnostics and Lean exit 1.
+Standalone example build passed in 5.252s; failed attempts/exits are retained.
+Heavy checks were sequential after the last proof edit.
+
+Six new modules prove actual G.mix g f single-premise W5 and separately typed
+right dual, with original-data public scope, derived nonempty gs and prefix
+gaps, concrete component/naturality equalities, complete ordered selected
+transport, branch fibers/unique originals and equal-label f exclusion.
+Old outer LC+n, new retained LC+1, n/n−1 losses; fixed/opposite g both
+2+rho, f 2+rho→1+rho on both sides. Counts/CutFree/Atomized/full tagged
+relations are preserved. Empty constants/compounds, repeated labels, n=2/3
+and cuts in either/both premises with both signs compile.
+
+All older modules/interfaces, toolchain/manifest, AGENTS, manuscript v4/v5,
+diagrams/references/checksums, historical reports/prompts, other checkouts
+and the integration stash are preserved. Existing Lean edits only add root
+imports/axiom prints. No theorem target/rank/heartbeat was weakened.
+Evidence: provenance/wsl-gentzen-w5-other-premise-mix/ and matching .codex-work/.
+Author-side hostile/source-grounded writing reviews inspect actual proofs/maps;
+committed-source/ref/Downloads checks have separate receipts.
+
+The [report's track/drift audit](GENTZEN_W5_OTHER_PREMISE_MIX_REPORT.md) confirms
+a missing integration layer: typed addresses exist, but proof-occurrence
+replacement and source Blocked/Reducible/clean-cut definitions do not.
+Next construct replacement and lift a completed local rewrite beneath a
+context; file/declaration counts are not a global completion percentage.
+Other local case families, Reducibility, Blocked-w, cut elimination,
+restricted coherence, PositiveCoherence, Reduced.Faithful, Boolean Coherence
+and unconditional maximality remain open. Three milestones stay distinct.
+Independent source/kernel replay, Challenge/Solution/Comparator, official
+preflight/service, fresh manuscript layout/compilation, publication,
+licensing and visibility changes did not run.
+
+---
+
+## Historical W5 first-placement validation (unchanged evidence)
+
 # W5 single-premise mix validation (current checkpoint)
 
 Clean main 230152d412044a4948d639ed43e7812a739a9df5 matched fetched SSH origin.

@@ -1,0 +1,126 @@
+'DosenPetric.Reduced.Gentzen.ContractionSelection.prepend_before' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ContractionSelection.prepend_shift' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ContractionSelection.prepend_keep' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ContractionSelection.prepend_selected' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ContractionSelection.prepend_count' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.ContractionBlock.nonempty' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ContractionBlock.selection_route' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.ContractionBlock.selection_keep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ContractionBlock.selection_selected' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_count' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_bound' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_before' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_keep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_selected' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_gaps' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_product' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_coproduct' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.ContractionBlock.otherMixL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ContractionBlock.otherMixR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.squareG' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.squareF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.fiberG_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.fiberF_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.fiberG_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.fiberF_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.retained_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.fixed_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.old_retained_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.old_fixed_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.old_prefix_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.selected_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.selected_length' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.OtherMix.selected_from_g' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.f_not_selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.retained_index' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.prefix_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.suffix_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.outer_retained_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.outer_fixed_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.OtherMix.outer_prefix_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.denoteL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_countL' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_countL' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_cutFreeL' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_cutFreeL' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_atomizedL' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_atomizedL' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.relationL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.denoteR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_countR' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_countR' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_cutFreeR' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_cutFreeR' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_atomizedR' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_atomizedR' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.relationR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.other_premise_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.other_premise_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.selected_sumL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.contraction_lossL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_endpointL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_endpointL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.endpoint_balanceL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.contraction_decreasesL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.endpoint_decreasesL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_g_oldL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_g_newL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_f_oldL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_f_newL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_g_oldL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_g_newL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_f_oldL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_f_newL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_g_equalL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.selected_sumR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.contraction_lossR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_endpointR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_endpointR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.endpoint_balanceR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.contraction_decreasesR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.endpoint_decreasesR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_g_oldR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_g_newR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_f_oldR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_f_newR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_g_oldR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_g_newR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_f_oldR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_f_newR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_g_equalR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.selected_indices' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.raw_gaps' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.outer_map' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.g_map' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.old_g_map' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.f_map' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.retained_fibers' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.outer_retained_fiber_indices' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.retained_index' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.equal_f_label_not_selected' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.literal_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.literal_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.both_signs_two_actual_cuts' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.only_g_cut' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.only_f_cut' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.empty_f_source_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.empty_f_target_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.compound_atomized_left' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.compound_atomized_right' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.compound_equality_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.compound_equality_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.empty_mix_adds_node' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.three_loss_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.three_loss_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.fixed_f_drops_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.corrected_opposite_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.corrected_opposite_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.fixed_g_unchanged_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.fixed_f_drops_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.old_opposite_not_one' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.empty_mix_adds_node_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.fixed_g_unchanged_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_tail' depends on axioms: [propext]

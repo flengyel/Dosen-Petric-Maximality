@@ -1,0 +1,30 @@
+W5 single-premise mix with selected g in G.mix f g and its right dual are
+complete. See [the W5 report](GENTZEN_W5_SINGLE_PREMISE_MIX_REPORT.md).
+
+Next prove the other placement G.mix g f, selecting only g, and its right
+dual. For F=repeated C gs++Θ, K=gaps gs++C::Θ, n=gs.length≥2,
+left inputs are g:G P F Δ and f:G P Φ Ψ. Mix has
+G P (Φ++F) (Ψ++Δ). If gs=H::hs, old uses actual contraction gaps
+(Φ++H)::hs, tail Θ; new is G.mix (contractL gs/Θ g) f, at
+G P (Φ++K) (Ψ++Δ). Right inputs g:G P Δ F and f:G P Φ Ψ
+give outputs G P (Φ++Δ) (Ψ++K), with old gaps (Ψ++H)::hs.
+Derive gs≠[] from n≥2 and preserve original-gs public scope.
+
+Prove prefix extension, concrete component/positional squares, full ordered
+selected transport, both branch fibers/common originals and actual denotation
+equality. Target old outer LC+n, new retained LC+1 and losses n/n−1.
+Fixed same-side and opposite-side g ranks should both be 2+rho on old/new;
+f ranks old 2+rho/new 1+rho on either side. The preceding continuation
+omitted the old outer contraction node; the completed report proves the
+correction. Verify this new placement independently from actual routing.
+Prove counts, CutFree/Atomized and tagged relations with inhabited constants,
+compounds, repeated labels, n=2/3 and actual signed cuts in either/both
+premises. These are next proof targets, not completed other-placement claims.
+See [CODEX_W5_OTHER_PREMISE_MIX.txt](CODEX_W5_OTHER_PREMISE_MIX.txt).
+
+Mixed-premise/binary logical W5/W6, remaining W1/W2 and disjoint interleaving/
+exchange, arbitrary-context replacement, Reducibility, Blocked-w, cut
+elimination, restricted coherence inputs, PositiveCoherence, Reduced.Faithful,
+Boolean Coherence, unconditional maximality and Palomar preparation remain
+separate/open. Conditional transfers and three milestones are unchanged.
+Unfinished reconstruction of published results does not establish a manuscript defect.

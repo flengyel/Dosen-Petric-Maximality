@@ -1290,7 +1290,7 @@ No new source discrepancy. Source material:
 | p.252 (m nat) | Actual append comparison and mix naturality in Reduced. | ContractionBlock.extend_join/split/product/coproduct/mixL/R. |
 | pp.248–249 complete clusters | All selected paths belong to g; every actual mix and opposite contraction node is counted. | Complete branch predecessors/fibers, ordered transport, selected sums and full rank table. |
 | p.252 right analogue | Actual right-side contraction and coproduct comparison. | single_premise_right, right component/rank/preservation laws; no arrow negation. |
-| p.252 other placements/both-premise case | Separate from the first W5 equation. | G.mix g f is next; mixed-premise/binary logical cases remain open. |
+| p.252 other placements/both-premise case | Separate from the first W5 equation. | G.mix g f is now proved below; mixed-premise/binary logical cases remain open. |
 
 For F=repeated C gs++Θ, K=gaps gs++C::Θ and n≥2, original existing
 f/g give exact G P (K++Φ) (Δ++Ψ) / G P (Δ++Φ) (K++Ψ).
@@ -1310,7 +1310,40 @@ Counts, CutFree/Atomized conjunctions and full tagged relations are preserved.
 Empty/compound/equal-label/two-three-copy/signed-cut examples compile.
 See [the W5 report](GENTZEN_W5_SINGLE_PREMISE_MIX_REPORT.md) and reviews.
 
-Next prove [the G.mix g f placement](CODEX_W5_OTHER_PREMISE_MIX.txt).
+The G.mix g f placement is now proved below.
 Mixed-premise/binary W5/W6, remaining W1/W2, arbitrary-context replacement,
 Reducibility, Blocked-w, cut elimination, coherence and unconditional
 maximality remain separate/open.
+
+## W5 other single-premise mix, selected g in G.mix g f
+
+Pinned September 2007 §11.2 p.252 explicitly gives the analogous mix(g,f)
+placement; the right analogue follows later on the same page. Printed
+pp.248–253 are PDF pp.260–265 one-based. Rendered p.252/PDF p.264 and the
+cached full PDF/text were consulted; hashes/access evidence are retained under
+provenance/wsl-gentzen-w5-other-premise-mix/. No new source discrepancy.
+
+| Source anchor | Typed correspondence | Actual proof |
+| --- | --- | --- |
+| p.252 mix(g,f) analogue | g contains every selected copy; f's contexts precede g's. | W5.OtherPremiseMix.other_premise_left; output G P (Φ++K) (Ψ++Δ), prefix gaps (Φ++H)::hs derived from original gs. |
+| p.252 right analogue | Actual contractR on g's suffix, with f's target prefix. | other_premise_right; output G P (Φ++Δ) (Ψ++K), prefix gaps (Ψ++H)::hs. |
+| p.252 (m nat) | Concrete prefix product/coproduct comparisons before inherited naturality. | prepend_join/split, prepend_product/coproduct, otherMixL/R; no coherence/reflection. |
+| pp.248–249 clusters | Whole ordered g selection and all fixed/opposite branch positions. | OtherMix branch squares/fibers and W5.OtherPremiseMix selected/fixed/opposite rank laws. |
+| p.250 Reducibility subterm replacement | One selected proof occurrence must be rebuilt inside a surrounding proof. | Typed addresses exist; reconstruction is the next task, not proved by local equalities. |
+
+For n≥2, derive gs≠[] and reuse ContractionSelection.prependFixed. Exact
+selected list is d.selected.map (At.shift Ξ); retained index is
+Ξ.length+(gaps gs).length. g-suffix fibers are full original contraction
+fibers, f-prefix fibers are singleton, with other branch empty. Equal-label
+f positions are excluded. Full old outer fibers are separately proved.
+Old outer=LC+n, new retained=LC+1; contraction loss n, endpoint loss n−1.
+Fixed/opposite g ranks are 2+rho on both, f 2+rho→1+rho on both sides.
+Counts, CutFree/Atomized and complete tagged relations are preserved.
+Inhabited Empty/compound/equal-label/n=2/3/signed-cut examples compile.
+
+See [the report and track/drift audit](GENTZEN_W5_OTHER_PREMISE_MIX_REPORT.md)
+and [the replacement continuation](CODEX_GENTZEN_PROOF_REPLACEMENT.txt).
+Mixed-premise/binary W5–W6, crossing/absorption and other W1/W2 cases,
+source classification, tied-site rank/multiset control, Reducibility,
+Blocked-w, cut elimination, restricted coherence, PositiveCoherence,
+Reduced.Faithful, Boolean Coherence and unconditional maximality remain open.

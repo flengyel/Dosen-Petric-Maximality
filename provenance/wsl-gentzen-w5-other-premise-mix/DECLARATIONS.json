@@ -1,0 +1,996 @@
+[
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.prepend_before",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 13,
+    "source": "theorem prepend_before (\u039e : List (NormalForm P)) {A : NormalForm P} (a : At \u039e A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.prepend_shift",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 22,
+    "source": "theorem prepend_shift (\u039e : List (NormalForm P)) {A : NormalForm P} (a : At F A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.prepend_keep",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 28,
+    "source": "theorem prepend_keep (\u039e : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.prepend_selected",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 33,
+    "source": "theorem prepend_selected (\u039e : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.prepend_count",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 40,
+    "source": "theorem prepend_count (\u039e : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.nonempty",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 50,
+    "source": "theorem nonempty : d.gs \u2260 [] := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.prepend",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 54,
+    "source": "abbrev prepend (\u039e : List (NormalForm P)) : ContractionBlock P (\u039e++F) (\u039e++K) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.selection_route",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 56,
+    "source": "theorem selection_route : (d.selection (d.nonempty hn)).route = d.route :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.selection_keep",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 58,
+    "source": "theorem selection_keep : (d.selection (d.nonempty hn)).keep = d.keep := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.selection_selected",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 62,
+    "source": "theorem selection_selected : (d.selection (d.nonempty hn)).selected = d.selected := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_count",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 67,
+    "source": "theorem prepend_count (\u039e : List (NormalForm P)) : (d.prepend hn \u039e).gs.length = d.gs.length :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_bound",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 70,
+    "source": "theorem prepend_bound (\u039e : List (NormalForm P)) : 2 \u2264 (d.prepend hn \u039e).gs.length := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_tail",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 73,
+    "source": "theorem prepend_tail (\u039e : List (NormalForm P)) : (d.prepend hn \u039e).tail = d.tail := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_before",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 77,
+    "source": "theorem prepend_before (\u039e : List (NormalForm P)) {A : NormalForm P} (a : At \u039e A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_shift",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 81,
+    "source": "theorem prepend_shift (\u039e : List (NormalForm P)) {A : NormalForm P} (a : At F A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_keep",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 86,
+    "source": "theorem prepend_keep (\u039e : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_selected",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 91,
+    "source": "theorem prepend_selected (\u039e : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_gaps",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionPrepend.lean",
+    "line": 96,
+    "source": "theorem prepend_gaps (\u039e H : List (NormalForm P)) (hs : List (List (NormalForm P)))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_join",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenPrependMixComponents.lean",
+    "line": 13,
+    "source": "theorem prepend_join (o : Op) (\u039e : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_split",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenPrependMixComponents.lean",
+    "line": 30,
+    "source": "theorem prepend_split (o : Op) (\u039e : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_product",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenPrependMixComponents.lean",
+    "line": 38,
+    "source": "theorem prepend_product (\u039e : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.prepend_coproduct",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenPrependMixComponents.lean",
+    "line": 42,
+    "source": "theorem prepend_coproduct (\u039e : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.otherMixL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenPrependMixComponents.lean",
+    "line": 46,
+    "source": "theorem otherMixL {\u03a6 \u03a8 \u0394 : List (NormalForm P)}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.otherMixR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenPrependMixComponents.lean",
+    "line": 53,
+    "source": "theorem otherMixR {\u03a6 \u03a8 \u0394 : List (NormalForm P)}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.oldG",
+    "kind": "def",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 12,
+    "source": "def oldG : TraceRoute (\u039e++K) F := TraceRoute.ofMap _ _ (fun a => some ((d.prepend hn \u039e).route.get (At.shift \u039e a)))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.newG",
+    "kind": "def",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 13,
+    "source": "def newG (d : ContractionBlock P F K) (_hn : 2 \u2264 d.gs.length) (\u039e : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.oldF",
+    "kind": "def",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 15,
+    "source": "def oldF : TraceRoute (\u039e++K) \u039e := TraceRoute.ofMap _ _ (fun a => some ((d.prepend hn \u039e).route.get (a.before F)))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.newF",
+    "kind": "def",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 16,
+    "source": "def newF (_d : ContractionBlock P F K) (_hn : 2 \u2264 _d.gs.length) (\u039e : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.squareG",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 18,
+    "source": "theorem squareG : oldG d hn \u039e = newG d hn \u039e := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.squareF",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 22,
+    "source": "theorem squareF : oldF d hn \u039e = newF d hn \u039e := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.fiberG_suffix",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 26,
+    "source": "theorem fiberG_suffix {A : NormalForm P} (z : At K A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.fiberF_suffix",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 32,
+    "source": "theorem fiberF_suffix {A : NormalForm P} (z : At K A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.fiberG_prefix",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 35,
+    "source": "theorem fiberG_prefix {A : NormalForm P} (z : At \u039e A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.fiberF_prefix",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 41,
+    "source": "theorem fiberF_prefix {A : NormalForm P} (z : At \u039e A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.retained_fibers",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 44,
+    "source": "theorem retained_fibers :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.fixed_fibers",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 48,
+    "source": "theorem fixed_fibers {A : NormalForm P} (z : At K A) (hz : z.index \u2260 d.keep.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.old_retained_fibers",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 52,
+    "source": "theorem old_retained_fibers :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.old_fixed_fibers",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 57,
+    "source": "theorem old_fixed_fibers {A : NormalForm P} (z : At K A) (hz : z.index \u2260 d.keep.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.old_prefix_fibers",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 62,
+    "source": "theorem old_prefix_fibers {A : NormalForm P} (z : At \u039e A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.selected_transport",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 66,
+    "source": "theorem selected_transport : (d.prepend hn \u039e).selected = d.selected.map (At.shift \u039e) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.selected_length",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 68,
+    "source": "theorem selected_length : (d.prepend hn \u039e).selected.length = d.gs.length :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.selected_from_g",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 70,
+    "source": "theorem selected_from_g (a : At (\u039e++F) d.C) (ha : a \u2208 (d.prepend hn \u039e).selected) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.f_not_selected",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 75,
+    "source": "theorem f_not_selected (a : At \u039e d.C) : a.before F \u2209 (d.prepend hn \u039e).selected := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.retained_index",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 79,
+    "source": "theorem retained_index : (At.shift \u039e d.keep).index = \u039e.length+(gaps d.gs).length := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.prefix_fixed",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 81,
+    "source": "theorem prefix_fixed {A : NormalForm P} (a : At \u039e A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.suffix_fixed",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 86,
+    "source": "theorem suffix_fixed {A : NormalForm P} (z : At K A) (hz : z.index \u2260 d.keep.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.outer_retained_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 90,
+    "source": "theorem outer_retained_fiber :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.outer_fixed_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 95,
+    "source": "theorem outer_fixed_fiber {A : NormalForm P} (z : At K A) (hz : z.index \u2260 d.keep.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.OtherMix.outer_prefix_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixFibers.lean",
+    "line": 101,
+    "source": "theorem outer_prefix_fiber {A : NormalForm P} (z : At \u039e A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.innerL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 17,
+    "source": "def innerL : G P K \u0394 := d.applyL hn \u0394 g"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.oldL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 18,
+    "source": "def oldL : G P (\u03a6++K) (\u03a8++\u0394) := (d.prepend hn \u03a6).applyL (d.prepend_bound hn \u03a6) _ (G.mix g f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.newL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 19,
+    "source": "def newL : G P (\u03a6++K) (\u03a8++\u0394) := G.mix (innerL d hn g) f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.denoteL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 20,
+    "source": "theorem denoteL : ofTerm (newL d hn f g).denote = ofTerm (oldL d hn f g).denote := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_countL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 26,
+    "source": "theorem old_countL : (oldL d hn f g).cutCount = f.cutCount+g.cutCount := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_countL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 29,
+    "source": "theorem new_countL : (newL d hn f g).cutCount = f.cutCount+g.cutCount := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_cutFreeL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 32,
+    "source": "theorem old_cutFreeL : (oldL d hn f g).CutFree \u2194 f.CutFree \u2227 g.CutFree := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_cutFreeL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 34,
+    "source": "theorem new_cutFreeL : (newL d hn f g).CutFree \u2194 f.CutFree \u2227 g.CutFree := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_atomizedL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 36,
+    "source": "theorem old_atomizedL : (oldL d hn f g).Atomized \u2194 f.Atomized \u2227 g.Atomized := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_atomizedL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 39,
+    "source": "theorem new_atomizedL : (newL d hn f g).Atomized \u2194 f.Atomized \u2227 g.Atomized := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.relationL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 42,
+    "source": "theorem relationL : (newL d hn f g).relation = (oldL d hn f g).relation :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.innerR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 48,
+    "source": "def innerR : G P \u0394 K := d.applyR hn \u0394 g"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.oldR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 49,
+    "source": "def oldR : G P (\u03a6++\u0394) (\u03a8++K) := (d.prepend hn \u03a8).applyR (d.prepend_bound hn \u03a8) _ (G.mix g f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.newR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 50,
+    "source": "def newR : G P (\u03a6++\u0394) (\u03a8++K) := G.mix (innerR d hn g) f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.denoteR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 51,
+    "source": "theorem denoteR : ofTerm (newR d hn f g).denote = ofTerm (oldR d hn f g).denote := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_countR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 57,
+    "source": "theorem old_countR : (oldR d hn f g).cutCount = f.cutCount+g.cutCount := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_countR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 60,
+    "source": "theorem new_countR : (newR d hn f g).cutCount = f.cutCount+g.cutCount := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_cutFreeR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 63,
+    "source": "theorem old_cutFreeR : (oldR d hn f g).CutFree \u2194 f.CutFree \u2227 g.CutFree := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_cutFreeR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 65,
+    "source": "theorem new_cutFreeR : (newR d hn f g).CutFree \u2194 f.CutFree \u2227 g.CutFree := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_atomizedR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 67,
+    "source": "theorem old_atomizedR : (oldR d hn f g).Atomized \u2194 f.Atomized \u2227 g.Atomized := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_atomizedR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 70,
+    "source": "theorem new_atomizedR : (newR d hn f g).Atomized \u2194 f.Atomized \u2227 g.Atomized := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.relationR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 73,
+    "source": "theorem relationR : (newR d hn f g).relation = (oldR d hn f g).relation :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.other_premise_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 77,
+    "source": "theorem other_premise_left (C : NormalForm P) (gs : List (List (NormalForm P)))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.other_premise_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRules.lean",
+    "line": 81,
+    "source": "theorem other_premise_right (C : NormalForm P) (gs : List (List (NormalForm P)))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.rankInnerL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 15,
+    "source": "def rankInnerL := d.rankL hn \u0394 g"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.rankOuterL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 16,
+    "source": "def rankOuterL := (d.prepend hn \u03a6).rankL (d.prepend_bound hn \u03a6) _ (G.mix g f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.selected_sumL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 17,
+    "source": "theorem selected_sumL :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.contraction_lossL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 28,
+    "source": "theorem contraction_lossL : rankOuterL d hn f g = rankInnerL d hn g+d.gs.length := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_endpointL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 35,
+    "source": "theorem old_endpointL : (oldL d hn f g).rho .left (At.shift \u03a6 d.keep) = rankOuterL d hn f g := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_endpointL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 39,
+    "source": "theorem new_endpointL : (newL d hn f g).rho .left (At.shift \u03a6 d.keep) = rankInnerL d hn g+1 := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.endpoint_balanceL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 42,
+    "source": "theorem endpoint_balanceL : (oldL d hn f g).rho .left (At.shift \u03a6 d.keep)+1 ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.contraction_decreasesL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 48,
+    "source": "theorem contraction_decreasesL : rankInnerL d hn g < rankOuterL d hn f g := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.endpoint_decreasesL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 51,
+    "source": "theorem endpoint_decreasesL : (newL d hn f g).rho .left (At.shift \u03a6 d.keep) < (oldL d hn f g).rho .left (At.shift \u03a6 d.keep) := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_g_oldL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 55,
+    "source": "theorem fixed_g_oldL {A : NormalForm P} (z : At K A) (hz : z.index \u2260 d.keep.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_g_newL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 62,
+    "source": "theorem fixed_g_newL {A : NormalForm P} (z : At K A) (hz : z.index \u2260 d.keep.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_f_oldL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 67,
+    "source": "theorem fixed_f_oldL {A : NormalForm P} (a : At \u03a6 A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_f_newL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 73,
+    "source": "theorem fixed_f_newL {A : NormalForm P} (a : At \u03a6 A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_g_oldL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 77,
+    "source": "theorem opposite_g_oldL {A : NormalForm P} (a : At \u0394 A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_g_newL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 82,
+    "source": "theorem opposite_g_newL {A : NormalForm P} (a : At \u0394 A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_f_oldL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 87,
+    "source": "theorem opposite_f_oldL {A : NormalForm P} (a : At \u03a8 A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_f_newL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 92,
+    "source": "theorem opposite_f_newL {A : NormalForm P} (a : At \u03a8 A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_g_equalL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 95,
+    "source": "theorem opposite_g_equalL {A : NormalForm P} (a : At \u0394 A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.rankInnerR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 102,
+    "source": "def rankInnerR := d.rankR hn \u0394 g"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.rankOuterR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 103,
+    "source": "def rankOuterR := (d.prepend hn \u03a8).rankR (d.prepend_bound hn \u03a8) _ (G.mix g f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.selected_sumR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 104,
+    "source": "theorem selected_sumR :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.contraction_lossR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 115,
+    "source": "theorem contraction_lossR : rankOuterR d hn f g = rankInnerR d hn g+d.gs.length := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.old_endpointR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 122,
+    "source": "theorem old_endpointR : (oldR d hn f g).rho .right (At.shift \u03a8 d.keep) = rankOuterR d hn f g := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.new_endpointR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 126,
+    "source": "theorem new_endpointR : (newR d hn f g).rho .right (At.shift \u03a8 d.keep) = rankInnerR d hn g+1 := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.endpoint_balanceR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 129,
+    "source": "theorem endpoint_balanceR : (oldR d hn f g).rho .right (At.shift \u03a8 d.keep)+1 ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.contraction_decreasesR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 135,
+    "source": "theorem contraction_decreasesR : rankInnerR d hn g < rankOuterR d hn f g := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.endpoint_decreasesR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 138,
+    "source": "theorem endpoint_decreasesR : (newR d hn f g).rho .right (At.shift \u03a8 d.keep) < (oldR d hn f g).rho .right (At.shift \u03a8 d.keep) := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_g_oldR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 142,
+    "source": "theorem fixed_g_oldR {A : NormalForm P} (z : At K A) (hz : z.index \u2260 d.keep.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_g_newR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 149,
+    "source": "theorem fixed_g_newR {A : NormalForm P} (z : At K A) (hz : z.index \u2260 d.keep.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_f_oldR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 154,
+    "source": "theorem fixed_f_oldR {A : NormalForm P} (a : At \u03a8 A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.fixed_f_newR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 160,
+    "source": "theorem fixed_f_newR {A : NormalForm P} (a : At \u03a8 A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_g_oldR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 164,
+    "source": "theorem opposite_g_oldR {A : NormalForm P} (a : At \u0394 A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_g_newR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 169,
+    "source": "theorem opposite_g_newR {A : NormalForm P} (a : At \u0394 A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_f_oldR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 174,
+    "source": "theorem opposite_f_oldR {A : NormalForm P} (a : At \u03a6 A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_f_newR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 179,
+    "source": "theorem opposite_f_newR {A : NormalForm P} (a : At \u03a6 A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.opposite_g_equalR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixRanks.lean",
+    "line": 182,
+    "source": "theorem opposite_g_equalR {A : NormalForm P} (a : At \u0394 A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.tagsU",
+    "kind": "def",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 12,
+    "source": "def tagsU (C : NormalForm P) : List (At ([C]++(repeated C [[C],[C]]++[C])) C) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.selected_indices",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 14,
+    "source": "theorem selected_indices (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.raw_gaps",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 21,
+    "source": "theorem raw_gaps (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.outer_map",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 24,
+    "source": "theorem outer_map (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.g_map",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 32,
+    "source": "theorem g_map (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.old_g_map",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 44,
+    "source": "theorem old_g_map (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.f_map",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 50,
+    "source": "theorem f_map (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.retained_fibers",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 54,
+    "source": "theorem retained_fibers (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.outer_retained_fiber_indices",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 59,
+    "source": "theorem outer_retained_fiber_indices (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.retained_index",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 66,
+    "source": "theorem retained_index (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.equal_f_label_not_selected",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 70,
+    "source": "theorem equal_f_label_not_selected (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.literal_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 75,
+    "source": "theorem literal_left (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.literal_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 78,
+    "source": "theorem literal_right (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.both_signs_two_actual_cuts",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 81,
+    "source": "theorem both_signs_two_actual_cuts (p : P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.only_g_cut",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 85,
+    "source": "theorem only_g_cut (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.only_f_cut",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 88,
+    "source": "theorem only_f_cut (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.empty_f_source_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 93,
+    "source": "theorem empty_f_source_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.empty_f_target_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 96,
+    "source": "theorem empty_f_target_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.compound_atomized_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 99,
+    "source": "theorem compound_atomized_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.compound_atomized_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 103,
+    "source": "theorem compound_atomized_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.compound_equality_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 107,
+    "source": "theorem compound_equality_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.compound_equality_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 112,
+    "source": "theorem compound_equality_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.empty_mix_adds_node",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 117,
+    "source": "theorem empty_mix_adds_node :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.three_loss_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 120,
+    "source": "theorem three_loss_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.three_loss_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 128,
+    "source": "theorem three_loss_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.fixed_f_drops_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 136,
+    "source": "theorem fixed_f_drops_left (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.corrected_opposite_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 144,
+    "source": "theorem corrected_opposite_left (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.corrected_opposite_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 149,
+    "source": "theorem corrected_opposite_right (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.fixed_g_unchanged_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 154,
+    "source": "theorem fixed_g_unchanged_left (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.fixed_f_drops_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 161,
+    "source": "theorem fixed_f_drops_right (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.old_opposite_not_one",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 169,
+    "source": "theorem old_opposite_not_one (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.empty_mix_adds_node_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 175,
+    "source": "theorem empty_mix_adds_node_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W5.OtherPremiseMix.Examples.fixed_g_unchanged_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenOtherMixExamples.lean",
+    "line": 178,
+    "source": "theorem fixed_g_unchanged_right (l : Literal P) :"
+  }
+]

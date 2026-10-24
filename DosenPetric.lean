@@ -196,3 +196,9 @@ public import DosenPetric.GentzenSingleMixFibers
 public import DosenPetric.GentzenSingleMixRules
 public import DosenPetric.GentzenSingleMixRanks
 public import DosenPetric.GentzenSingleMixExamples
+public import DosenPetric.GentzenContractionPrepend
+public import DosenPetric.GentzenPrependMixComponents
+public import DosenPetric.GentzenOtherMixFibers
+public import DosenPetric.GentzenOtherMixRules
+public import DosenPetric.GentzenOtherMixRanks
+public import DosenPetric.GentzenOtherMixExamples
