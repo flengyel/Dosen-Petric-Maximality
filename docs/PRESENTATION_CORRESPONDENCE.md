@@ -1375,3 +1375,34 @@ Source Blocked/Reducible definitions, complete dispatch, remaining local cases,
 tied-site rank/multiset control, Reducibility/Blocked-w/clean cuts, cut
 elimination, restricted coherence, PositiveCoherence, faithfulness/Boolean
 Coherence and unconditional maximality remain open.
+
+## Source blocked patterns, reducible occurrences and selection dispatch
+
+Pinned September 2007 §11.2 pp.248–253, especially p.250's seven patterns,
+reducibility condition and pp.251–253 W1–W6/right analogue, were consulted.
+The [classification report](GENTZEN_BLOCKED_CLASSIFICATION_REPORT.md) maps each
+pattern to actual typed constructors/gaps and records the full finite case ledger.
+
+BlockedL/R use actual two/three-copy contractions. disjLLast explicitly moves
+the source terminal inputs/principal through the head-form primitive; sourceRight2/3
+use the existing first-retaining right exchange macro around the canonical
+last-retaining contraction. No macro rank-invariance or strictification is claimed.
+ProperContains uses a nonempty typed suffix address. ReducibleL/R retain the
+actual cut-side cluster membership and contraction position and require only
+proper containing tied contractions blocked. Root, sibling and nested signed
+examples distinguish the occurrence from its proof value.
+
+PortOrigin gives each complete selected position empty/singleton/branching
+predecessor evidence with actual premise tags. Ordered profiles have a unique
+shared/introduced/parametric and first/second/both regime. Actual arity≥2 and
+CutFree exclude basis/cut heads by proof. selected_fresh_rule,
+selected_second_binary and selected_shared_rule restrict the possible head/
+regime pairs. This is exhaustive logical classification, not certified rewrite
+dispatch. Administrative exchanges remain actual heads. All fourteen blocked
+patterns and all seven profile regimes have inhabited tests, including Empty
+constants, compounds, equal labels, both signs and nested tied contractions.
+
+Next close [mixed-premise W5](CODEX_GENTZEN_MIXED_W5_DISPATCH.txt), with singleton
+branch boundaries, explicit blocked outer contraction, profile extraction and
+nested replacement. Other missing local cases, complete dispatch, all affected
+tied-site ranks, Reducibility/Blocked-w/cut elimination and coherence remain open.

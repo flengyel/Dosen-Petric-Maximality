@@ -1,0 +1,16 @@
+✔ [129/130] Built DosenPetric.GentzenBlockedPatterns (2.4s)
+✖ [130/130] Building DosenPetric.GentzenReducibleOccurrences (664ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenReducibleOccurrences.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenReducibleOccurrences.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenReducibleOccurrences.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenReducibleOccurrences.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenReducibleOccurrences.setup.json --json
+error: DosenPetric/GentzenReducibleOccurrences.lean:48:37: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce
+
+P : Type u
+Γ Δ Θ Λ Ξ Ω : List (NormalForm P)
+root : G P Γ Δ
+g : G P Θ Λ
+h : G P Ξ Ω
+a : ProofAddress root g
+p : Premise g h
+⊢ (ProofAddress.root.down p).path ≠ [] ∧ a.append (ProofAddress.root.down p) = a.down p
+Some required targets logged failures:
+- DosenPetric.GentzenReducibleOccurrences
+error: build failed

@@ -1,0 +1,34 @@
+{
+  "reason": "Import closure encountered newly appearing untracked overlapping APIs; left untouched and excluded from staged candidate",
+  "files": [
+    {
+      "path": "DosenPetric/GentzenBlockedSelections.lean",
+      "sha256": "14455660728c16ab518242e0835ca6d07a4edaded4d51762346956df5d76b83a",
+      "bytes": 5449,
+      "preserved_in_place": true,
+      "snapshot": ".codex-work/gentzen-blocked-classification/concurrent-work-snapshot/DosenPetric/GentzenBlockedSelections.lean"
+    },
+    {
+      "path": "DosenPetric/GentzenReducibleSites.lean",
+      "sha256": "dc25550bbbe05ccf85583a8953da4893c4ea502a406312eba8113723903059e8",
+      "bytes": 4562,
+      "preserved_in_place": true,
+      "snapshot": ".codex-work/gentzen-blocked-classification/concurrent-work-snapshot/DosenPetric/GentzenReducibleSites.lean"
+    },
+    {
+      "path": "DosenPetric/GentzenImmediateClassification.lean",
+      "sha256": "82697d91cd68ddef2c2b3f557defbefea5b1ca950a3f1d5fbff0b85e64a9c474",
+      "bytes": 6500,
+      "preserved_in_place": true,
+      "snapshot": ".codex-work/gentzen-blocked-classification/concurrent-work-snapshot/DosenPetric/GentzenImmediateClassification.lean"
+    },
+    {
+      "path": "DosenPetric/GentzenSelectionClassification.lean",
+      "sha256": "56b9e936728fd44d119a4be0325dc153763bb40ae7574e799c7b8e05a2211b47",
+      "bytes": 7159,
+      "preserved_in_place": true,
+      "snapshot": ".codex-work/gentzen-blocked-classification/concurrent-work-snapshot/DosenPetric/GentzenSelectionClassification.lean"
+    }
+  ],
+  "candidate_patch_sha256": "87909b72af9069f9adba00bdfb1f41cb4135fd6b59dde5d15452a53d77d5885f"
+}

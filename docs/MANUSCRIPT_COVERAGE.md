@@ -89,7 +89,8 @@ definition is unchanged and can be adapted once that interpretation exists.
 | Terminal selected-logical W4 | `W4.SelectedLogical.terminal_left/right` compile from original A,B,gs,Θ,n≥2 and existing f. Actual conjL/disjR and contraction constructors, complete ordered n/n+1/two-copy families, consumed A/B slots, principal empty fibers, complete retained/fixed fibers and both consumed component calculations give exact Reduced equality. Source contraction loss n+1; final endpoint LC+n+1 versus LC+3 gives n=2 tie and n≥3 decrease. Other fixed ranks increase one. Counts/CutFree/Atomized/full tagged relations and inhabited boundaries compile. General Reducibility/Blocked-w/coherence remain open. |
 | W5 single-premise mix, selected g in G.mix f g | Original-data left/right theorems compile with actual mix/contraction and exact K++Φ / K++Ψ endpoints. Component extension/naturality and both complete branch squares/fibers preserve ordered selected copies, premise tags and unique originals even for equal labels. Complete sums give n/n−1 losses. Fixed/opposite g ranks both 2+rho; f old 2+rho/new 1+rho on both sides. The historical opposite-rank prediction omitted the old outer node; actual counterexamples and corrected laws compile. Counts/CutFree/Atomized/full relations and inhabited boundaries compile. The other placement is now proved below; mixed-premise W5 and broader elimination/coherence open. |
 | W5 other single-premise mix, selected g in G.mix g f | Original-data left/right theorems compile with exact Φ++K / Ψ++K selected endpoints, derived nonempty gs, raw prefixed gaps and unchanged n. Reused selection infrastructure gives full ordered shifted selection, both branch squares/fibers, unique fixed originals and equal-label f exclusion. Component/naturality proofs give Reduced equality. Losses n/n−1, fixed/opposite g unchanged 2+rho and f 2+rho→1+rho, counts/predicates/full relations and inhabited boundary examples compile. Typed proof replacement is now proved below; mixed-premise/binary W5–W6 and broader elimination/coherence remain open. |
-| Gentzen proof-occurrence replacement and W5 integration | Typed reconstruction at any existing ProofAddress preserves the outer sequent and every sibling/parameter; original-hole recovery, inserted path, repeated replacement, address composition/associativity and Reduced congruence compile. Exact cutCount/proofSize balances, CutFree/Atomized preservation and tagged relation consequence compile. Both other-placement W5 duals lift to arbitrary addresses, with concrete depth-two signed-cut and Empty constant examples. Reconstruction gap closed; source Blocked/Reducible definitions, complete case dispatch and tied-site rank control remain open. |
+| Gentzen proof-occurrence replacement and W5 integration | Typed reconstruction at any existing ProofAddress preserves the outer sequent and every sibling/parameter; original-hole recovery, inserted path, repeated replacement, address composition/associativity and Reduced congruence compile. Exact cutCount/proofSize balances, CutFree/Atomized preservation and tagged relation consequence compile. Both other-placement W5 duals lift to arbitrary addresses, with concrete depth-two signed-cut and Empty constant examples. Reconstruction gap closed; blocked/reducible encodings and profiles are proved below, while complete rewrite dispatch and tied-site rank control remain open. |
+| Blocked/reducible encodings and finite selected-ancestry classification | Actual seven left blocked-pattern constructors and separately typed right analogues, explicit source-order exchanges, exact selected offsets and proper occurrence ancestry compile. Typed reducibility retains topmost/tied/position/unblocked/proper blocked-ancestor conditions. Unique per-position origin evidence and seven ordered profile regimes cover every original arity≥2 cut-free input, excluding basis/cut by proof. All fourteen blocked and seven regime examples compile. The finite ledger separates available local scopes from missing certified dispatch, mixed-premise/binary W5/W6 and tied-site rank control. |
 | Positive-fragment coherence input | `PositiveCoherence P` quantifies only over positive raw terms and concludes equality in Reduced.Hom. `faithful_of_positive_coherence` is proved conditionally from that explicit, unsupplied premise. This does not supply Reduced.Faithful or Boolean Coherence. |
 | Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. Reduced faithfulness and its earlier positive-core coherence inputs are unproved. No complete `OccurrenceInterpretation` instance. Equality reflection and full red-equation preservation remain open. |
 | Normalization and occurrence correspondence | `Presentation.normalization` constructs the existing record for every P by simultaneous sign recursion and source n/r/rho arrows. Both inverse laws, inverse occurrence coordinates, both graph laws, literal/label/polarity correspondence, repeated-tag injectivity, Empty cases, and transport formulas compile. No coherence or arrow-negation premise. |
@@ -101,35 +102,27 @@ definition is unchanged and can be adapted once that interpretation exists.
 
 ## Next concrete proof task
 
-Typed proof-occurrence replacement is proved, including an existing W5
-rewrite lifted into arbitrary surrounding proofs and concrete nested examples.
-The next checkpoint is the source Blocked/Reducible classification and a
-finite account of the local cases needed by Reducibility.
+Blocked-pattern encodings, typed reducible occurrences and finite selection
+classification are proved. The next demonstrated gap is mixed-premise W5:
+the classifier permits parametricBoth at mix, while existing W5 theorems
+require every selected copy in one premise.
 
-Define the seven p.250 blocked left-contraction patterns and their separately
-typed right analogues on actual G terms and selected positions. Derive their
-context and arity conditions. Define reducibility for a contraction occurrence
-tied to an existing topmost cut, retaining its ProofAddress and exact formula
-position. Match the source's ancestor condition carefully: it concerns proper
-containing contractions, not the occurrence itself. Do not define Blocked by
-failure of a rewrite search or Reducible by the existence of its desired reduct.
+Construct the mixed-premise transformation with its separately typed right
+dual, including a singleton selected copy in either premise. Prove the
+one-copy-per-premise base case has the appropriate blocked pattern. For the
+remaining cases construct only genuine inner contractions of arity≥2; a
+singleton branch needs explicit endpoint transport and no contraction node.
+Derive complete selected data, component/denotation equations, predicates,
+branch fibers and exact ranks. Connect the actual port profile to the mixed
+case data, then use ProofAddress.replace to lift the result into a larger
+proof. See [the concrete continuation](CODEX_GENTZEN_MIXED_W5_DISPATCH.txt).
 
-Prove a complete immediate-rule/selected-ancestry case classification under
-the source CutFree hypotheses. Distinguish unary parametric/selected cases,
-shared versus disjoint contractions, binary selection in either or both
-premises, and selected logical principal positions. Keep equal labels at
-distinct positions separate. Reuse existing sourceArity/classification/fibers;
-exclude leaves/cut cases only by proof. Map every case to an existing typed
-rewrite or a precise remaining obligation. The classifier must not assert a
-rank decrease for cases where only a local equality is known.
-
-This checkpoint supplies source-faithful dispatch for a later Reducibility
-proof. The global tied-site/rank argument, missing local W1/W2/W5–W6 cases,
-Blocked-w, clean-cut normalization and cut elimination remain separate gates.
-See [the concrete continuation](CODEX_GENTZEN_BLOCKED_CLASSIFICATION.txt).
-Restricted coherence M0–M3, retractions/normal forms R0–R1, PositiveCoherence,
-Reduced.Faithful, Boolean Coherence and actual maximality remain open. The
-conditional transfer and three milestone boundaries are unchanged.
+The finite case ledger is in GENTZEN_BLOCKED_CLASSIFICATION_REPORT.md.
+Other unary placements, crossing/absorption/interleaving W1 cases, binary
+logical W5/W6, complete certified rewrite dispatch and all affected tied-site
+rank control remain open. Reducibility, Blocked-w, cut elimination, restricted
+coherence, PositiveCoherence, faithfulness/Boolean Coherence and unconditional
+maximality are not supplied. Three milestone boundaries remain unchanged.
 
 ## Verification boundary
 

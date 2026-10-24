@@ -1,0 +1,18 @@
+✔ [128/129] Built DosenPetric.GentzenSelectionClassification (15s)
+✖ [129/129] Building DosenPetric.GentzenImmediateClassification (7.4s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenImmediateClassification.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenImmediateClassification.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenImmediateClassification.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenImmediateClassification.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenImmediateClassification.setup.json --json
+error: DosenPetric/GentzenImmediateClassification.lean:128:2: Type mismatch: After simplification, term
+  h
+ has type
+  (d.classifyL hn Δ f hc).roles.length = d.selected.length
+but is expected to have type
+  (d.classifyL hn Δ f hc).roles.length = d.gs.length
+error: DosenPetric/GentzenImmediateClassification.lean:133:2: Type mismatch: After simplification, term
+  h
+ has type
+  (d.classifyR hn Γ f hc).roles.length = d.selected.length
+but is expected to have type
+  (d.classifyR hn Γ f hc).roles.length = d.gs.length
+Some required targets logged failures:
+- DosenPetric.GentzenImmediateClassification
+error: build failed

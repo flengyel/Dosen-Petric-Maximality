@@ -1,0 +1,400 @@
+✖ [128/129] Building DosenPetric.GentzenSelectionOrigins (7.0s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectionOrigins.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectionOrigins.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectionOrigins.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectionOrigins.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectionOrigins.setup.json --json
+error: DosenPetric/GentzenSelectionOrigins.lean:21:25: unsolved goals
+case identity.left
+P : Type u
+C : NormalForm P
+l✝ : Literal P
+x y : Place SequentSide.left [NormalForm.lit l✝] [NormalForm.lit l✝] C
+hi : At.index x < 0 + 1
+hj : At.index y < 0 + 1
+hx hy : True
+⊢ At.index x = At.index y
+
+case identity.right
+P : Type u
+C : NormalForm P
+l✝ : Literal P
+x y : Place SequentSide.right [NormalForm.lit l✝] [NormalForm.lit l✝] C
+hi : At.index x < 0 + 1
+hj : At.index y < 0 + 1
+hx hy : True
+⊢ At.index x = At.index y
+
+case zero.left
+P : Type u
+C : NormalForm P
+l✝ : Literal P
+x y : Place SequentSide.left [NormalForm.lit l✝] [NormalForm.lit l✝] C
+hi : At.index x < 0 + 1
+hj : At.index y < 0 + 1
+hx hy : True
+⊢ At.index x = At.index y
+
+case zero.right
+P : Type u
+C : NormalForm P
+l✝ : Literal P
+x y : Place SequentSide.right [NormalForm.lit l✝] [NormalForm.lit l✝] C
+hi : At.index x < 0 + 1
+hj : At.index y < 0 + 1
+hx hy : True
+⊢ At.index x = At.index y
+
+case topI.left
+P : Type u
+C : NormalForm P
+x y : Place SequentSide.left [] [NormalForm.top] C
+hi : At.index x < 0
+hj : At.index y < 0
+hx hy : True
+⊢ At.index x = At.index y
+
+case topI.right
+P : Type u
+C : NormalForm P
+x y : Place SequentSide.right [] [NormalForm.top] C
+hi : At.index x < 0 + 1
+hj : At.index y < 0 + 1
+hx hy : True
+⊢ At.index x = At.index y
+
+case botE.left
+P : Type u
+C : NormalForm P
+x y : Place SequentSide.left [NormalForm.bot] [] C
+hi : At.index x < 0 + 1
+hj : At.index y < 0 + 1
+hx hy : True
+⊢ At.index x = At.index y
+
+case botE.right
+P : Type u
+C : NormalForm P
+x y : Place SequentSide.right [NormalForm.bot] [] C
+hi : At.index x < 0
+hj : At.index y < 0
+hx hy : True
+⊢ At.index x = At.index y
+
+case exchangeL.left
+P : Type u
+Δ : List (NormalForm P)
+C : NormalForm P
+Γ✝ X✝ Y✝ Θ✝ : List (NormalForm P)
+a✝ : G P (Γ✝ ++ X✝ ++ Y✝ ++ Θ✝) Δ
+x y : Place SequentSide.left (Γ✝ ++ Y✝ ++ X✝ ++ Θ✝) Δ C
+hi : At.index x < (Γ✝ ++ Y✝ ++ X✝ ++ Θ✝).length
+hj : At.index y < (Γ✝ ++ Y✝ ++ X✝ ++ Θ✝).length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+
+case exchangeL.right
+P : Type u
+Δ : List (NormalForm P)
+C : NormalForm P
+Γ✝ X✝ Y✝ Θ✝ : List (NormalForm P)
+a✝ : G P (Γ✝ ++ X✝ ++ Y✝ ++ Θ✝) Δ
+x y : Place SequentSide.right (Γ✝ ++ Y✝ ++ X✝ ++ Θ✝) Δ C
+hi : At.index x < Δ.length
+hj : At.index y < Δ.length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+
+case exchangeR.left
+P : Type u
+Γ : List (NormalForm P)
+C : NormalForm P
+Δ✝ X✝ Y✝ Λ✝ : List (NormalForm P)
+a✝ : G P Γ (Δ✝ ++ X✝ ++ Y✝ ++ Λ✝)
+x y : Place SequentSide.left Γ (Δ✝ ++ Y✝ ++ X✝ ++ Λ✝) C
+hi : At.index x < Γ.length
+hj : At.index y < Γ.length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+
+case exchangeR.right
+P : Type u
+Γ : List (NormalForm P)
+C : NormalForm P
+Δ✝ X✝ Y✝ Λ✝ : List (NormalForm P)
+a✝ : G P Γ (Δ✝ ++ X✝ ++ Y✝ ++ Λ✝)
+x y : Place SequentSide.right Γ (Δ✝ ++ Y✝ ++ X✝ ++ Λ✝) C
+hi : At.index x < (Δ✝ ++ Y✝ ++ X✝ ++ Λ✝).length
+hj : At.index y < (Δ✝ ++ Y✝ ++ X✝ ++ Λ✝).length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+
+case thinL.left
+P : Type u
+Δ : List (NormalForm P)
+C : NormalForm P
+Γ✝ Θ✝ : List (NormalForm P)
+A✝ : NormalForm P
+a✝ : G P (Γ✝ ++ Θ✝) Δ
+x y : Place SequentSide.left (Γ✝ ++ A✝ :: Θ✝) Δ C
+hi : At.index x < (Γ✝ ++ A✝ :: Θ✝).length
+hj : At.index y < (Γ✝ ++ A✝ :: Θ✝).length
+hx : (if At.index x = Γ✝.length then 0 else 1) = 0
+hy : (if At.index y = Γ✝.length then 0 else 1) = 0
+⊢ At.index x = At.index y
+
+case thinL.right
+P : Type u
+Δ : List (NormalForm P)
+C : NormalForm P
+Γ✝ Θ✝ : List (NormalForm P)
+A✝ : NormalForm P
+a✝ : G P (Γ✝ ++ Θ✝) Δ
+x y : Place SequentSide.right (Γ✝ ++ A✝ :: Θ✝) Δ C
+hi : At.index x < Δ.length
+hj : At.index y < Δ.length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+
+case thinR.left
+P : Type u
+Γ : List (NormalForm P)
+C : NormalForm P
+Δ✝ Λ✝ : List (NormalForm P)
+A✝ : NormalForm P
+a✝ : G P Γ (Δ✝ ++ Λ✝)
+x y : Place SequentSide.left Γ (Δ✝ ++ A✝ :: Λ✝) C
+hi : At.index x < Γ.length
+hj : At.index y < Γ.length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+
+case thinR.right
+P : Type u
+Γ : List (NormalForm P)
+C : NormalForm P
+Δ✝ Λ✝ : List (NormalForm P)
+A✝ : NormalForm P
+a✝ : G P Γ (Δ✝ ++ Λ✝)
+x y : Place SequentSide.right Γ (Δ✝ ++ A✝ :: Λ✝) C
+hi : At.index x < (Δ✝ ++ A✝ :: Λ✝).length
+hj : At.index y < (Δ✝ ++ A✝ :: Λ✝).length
+hx : (if At.index x = Δ✝.length then 0 else 1) = 0
+hy : (if At.index y = Δ✝.length then 0 else 1) = 0
+⊢ At.index x = At.index y
+
+case contractL.left
+P : Type u
+Δ : List (NormalForm P)
+C C✝ : NormalForm P
+gs✝ : List (List (NormalForm P))
+Θ✝ : List (NormalForm P)
+a✝¹ : 2 ≤ gs✝.length
+a✝ : G P (repeated C✝ gs✝ ++ Θ✝) Δ
+x y : Place SequentSide.left (gaps gs✝ ++ C✝ :: Θ✝) Δ C
+hi : At.index x < (gaps gs✝ ++ C✝ :: Θ✝).length
+hj : At.index y < (gaps gs✝ ++ C✝ :: Θ✝).length
+hx : (if At.index x = (gaps gs✝).length then gs✝.length else 1) = 0
+hy : (if At.index y = (gaps gs✝).length then gs✝.length else 1) = 0
+⊢ At.index x = At.index y
+
+case contractL.right
+P : Type u
+Δ : List (NormalForm P)
+C C✝ : NormalForm P
+gs✝ : List (List (NormalForm P))
+Θ✝ : List (NormalForm P)
+a✝¹ : 2 ≤ gs✝.length
+a✝ : G P (repeated C✝ gs✝ ++ Θ✝) Δ
+x y : Place SequentSide.right (gaps gs✝ ++ C✝ :: Θ✝) Δ C
+hi : At.index x < Δ.length
+hj : At.index y < Δ.length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+
+case contractR.left
+P : Type u
+Γ : List (NormalForm P)
+C C✝ : NormalForm P
+gs✝ : List (List (NormalForm P))
+Λ✝ : List (NormalForm P)
+a✝¹ : 2 ≤ gs✝.length
+a✝ : G P Γ (repeated C✝ gs✝ ++ Λ✝)
+x y : Place SequentSide.left Γ (gaps gs✝ ++ C✝ :: Λ✝) C
+hi : At.index x < Γ.length
+hj : At.index y < Γ.length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+
+case contractR.right
+P : Type u
+Γ : List (NormalForm P)
+C C✝ : NormalForm P
+gs✝ : List (List (NormalForm P))
+Λ✝ : List (NormalForm P)
+a✝¹ : 2 ≤ gs✝.length
+a✝ : G P Γ (repeated C✝ gs✝ ++ Λ✝)
+x y : Place SequentSide.right Γ (gaps gs✝ ++ C✝ :: Λ✝) C
+hi : At.index x < (gaps gs✝ ++ C✝ :: Λ✝).length
+hj : At.index y < (gaps gs✝ ++ C✝ :: Λ✝).length
+hx : (if At.index x = (gaps gs✝).length then gs✝.length else 1) = 0
+hy : (if At.index y = (gaps gs✝).length then gs✝.length else 1) = 0
+⊢ At.index x = At.index y
+
+case conjL.left
+P : Type u
+Δ : List (NormalForm P)
+C : NormalForm P
+Γ✝ Θ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+a✝ : G P (Γ✝ ++ A✝ :: B✝ :: Θ✝) Δ
+x y : Place SequentSide.left (Γ✝ ++ A✝.conj B✝ :: Θ✝) Δ C
+hi : At.index x < (Γ✝ ++ A✝.conj B✝ :: Θ✝).length
+hj : At.index y < (Γ✝ ++ A✝.conj B✝ :: Θ✝).length
+hx : (if At.index x = Γ✝.length then 0 else 1) = 0
+hy : (if At.index y = Γ✝.length then 0 else 1) = 0
+⊢ At.index x = At.index y
+
+case conjL.right
+P : Type u
+Δ : List (NormalForm P)
+C : NormalForm P
+Γ✝ Θ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+a✝ : G P (Γ✝ ++ A✝ :: B✝ :: Θ✝) Δ
+x y : Place SequentSide.right (Γ✝ ++ A✝.conj B✝ :: Θ✝) Δ C
+hi : At.index x < Δ.length
+hj : At.index y < Δ.length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+
+case disjR.left
+P : Type u
+Γ : List (NormalForm P)
+C : NormalForm P
+Δ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+a✝ : G P Γ (Δ✝ ++ A✝ :: B✝ :: Λ✝)
+x y : Place SequentSide.left Γ (Δ✝ ++ A✝.disj B✝ :: Λ✝) C
+hi : At.index x < Γ.length
+hj : At.index y < Γ.length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+
+case disjR.right
+P : Type u
+Γ : List (NormalForm P)
+C : NormalForm P
+Δ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+a✝ : G P Γ (Δ✝ ++ A✝ :: B✝ :: Λ✝)
+x y : Place SequentSide.right Γ (Δ✝ ++ A✝.disj B✝ :: Λ✝) C
+hi : At.index x < (Δ✝ ++ A✝.disj B✝ :: Λ✝).length
+hj : At.index y < (Δ✝ ++ A✝.disj B✝ :: Λ✝).length
+hx : (if At.index x = Δ✝.length then 0 else 1) = 0
+hy : (if At.index y = Δ✝.length then 0 else 1) = 0
+⊢ At.index x = At.index y
+
+case conjR.left
+P : Type u
+C : NormalForm P
+Γ✝ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+a✝¹ : G P Γ✝ (A✝ :: Δ✝)
+a✝ : G P Θ✝ (B✝ :: Λ✝)
+x y : Place SequentSide.left (Γ✝ ++ Θ✝) (A✝.conj B✝ :: (Δ✝ ++ Λ✝)) C
+hi : At.index x < (Γ✝ ++ Θ✝).length
+hj : At.index y < (Γ✝ ++ Θ✝).length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+
+case conjR.right
+P : Type u
+C : NormalForm P
+Γ✝ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+a✝¹ : G P Γ✝ (A✝ :: Δ✝)
+a✝ : G P Θ✝ (B✝ :: Λ✝)
+x y : Place SequentSide.right (Γ✝ ++ Θ✝) (A✝.conj B✝ :: (Δ✝ ++ Λ✝)) C
+hi : At.index x < (Δ✝ ++ Λ✝).length + 1
+hj : At.index y < (Δ✝ ++ Λ✝).length + 1
+hx : (if At.index x = 0 then 0 else 1) = 0
+hy : (if At.index y = 0 then 0 else 1) = 0
+⊢ At.index x = At.index y
+
+case disjL.left
+P : Type u
+C : NormalForm P
+Γ✝ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+a✝¹ : G P (A✝ :: Γ✝) Δ✝
+a✝ : G P (B✝ :: Θ✝) Λ✝
+x y : Place SequentSide.left (A✝.disj B✝ :: (Γ✝ ++ Θ✝)) (Δ✝ ++ Λ✝) C
+hi : At.index x < (Γ✝ ++ Θ✝).length + 1
+hj : At.index y < (Γ✝ ++ Θ✝).length + 1
+hx : (if At.index x = 0 then 0 else 1) = 0
+hy : (if At.index y = 0 then 0 else 1) = 0
+⊢ At.index x = At.index y
+
+case disjL.right
+P : Type u
+C : NormalForm P
+Γ✝ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+a✝¹ : G P (A✝ :: Γ✝) Δ✝
+a✝ : G P (B✝ :: Θ✝) Λ✝
+x y : Place SequentSide.right (A✝.disj B✝ :: (Γ✝ ++ Θ✝)) (Δ✝ ++ Λ✝) C
+hi : At.index x < (Δ✝ ++ Λ✝).length
+hj : At.index y < (Δ✝ ++ Λ✝).length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+
+case mix.left
+P : Type u
+C : NormalForm P
+Γ✝ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+a✝¹ : G P Γ✝ Δ✝
+a✝ : G P Θ✝ Λ✝
+x y : Place SequentSide.left (Θ✝ ++ Γ✝) (Λ✝ ++ Δ✝) C
+hi : At.index x < (Θ✝ ++ Γ✝).length
+hj : At.index y < (Θ✝ ++ Γ✝).length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+
+case mix.right
+P : Type u
+C : NormalForm P
+Γ✝ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+a✝¹ : G P Γ✝ Δ✝
+a✝ : G P Θ✝ Λ✝
+x y : Place SequentSide.right (Θ✝ ++ Γ✝) (Λ✝ ++ Δ✝) C
+hi : At.index x < (Λ✝ ++ Δ✝).length
+hj : At.index y < (Λ✝ ++ Δ✝).length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+
+case cut.left
+P : Type u
+C : NormalForm P
+Γ✝ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+C✝ : NormalForm P
+a✝¹ : G P Γ✝ (C✝ :: Δ✝)
+a✝ : G P (C✝ :: Θ✝) Λ✝
+x y : Place SequentSide.left (Θ✝ ++ Γ✝) (Λ✝ ++ Δ✝) C
+hi : At.index x < (Θ✝ ++ Γ✝).length
+hj : At.index y < (Θ✝ ++ Γ✝).length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+
+case cut.right
+P : Type u
+C : NormalForm P
+Γ✝ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+C✝ : NormalForm P
+a✝¹ : G P Γ✝ (C✝ :: Δ✝)
+a✝ : G P (C✝ :: Θ✝) Λ✝
+x y : Place SequentSide.right (Θ✝ ++ Γ✝) (Λ✝ ++ Δ✝) C
+hi : At.index x < (Λ✝ ++ Δ✝).length
+hj : At.index y < (Λ✝ ++ Δ✝).length
+hx hy : 1 = 0
+⊢ At.index x = At.index y
+error: DosenPetric/GentzenSelectionOrigins.lean:27:4: unexpected token '('; expected command
+Some required targets logged failures:
+- DosenPetric.GentzenSelectionOrigins
+error: build failed

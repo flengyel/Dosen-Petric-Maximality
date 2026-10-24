@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-24T22:42:30.046402+00:00",
+  "command": [
+    "python3",
+    "/tmp/dp-blocked-candidate-run.py",
+    "final"
+  ],
+  "cwd": "/tmp/dp-blocked-candidate-20261024T2228",
+  "session": 76064,
+  "exit_status": 130,
+  "completed": false,
+  "last_completed_module": "DosenPetric.PresentationConsistency (19/217)",
+  "reason": "Working proof, staged index and frozen candidate match and no untracked Lean sources remain. Stop optional from-scratch rebuild of unchanged dependencies; run final serial checks in original pinned-toolchain checkout. No acceptance claimed for interrupted attempt.",
+  "log_sha256": "afa5e3ecb51c7b022f7049ec84b839c8823b29e5234afbd0dc652a7772d7234e"
+}

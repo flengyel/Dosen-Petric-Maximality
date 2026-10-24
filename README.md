@@ -78,12 +78,13 @@ Typed proof-tree replacement now compiles at any chosen address, preserving
 outer endpoints and siblings, denotation, inserted paths and exact cut/size
 balances. Both other-placement W5 duals lift into arbitrary surrounding proofs;
 actual nested signed-cut and Empty constant examples exercise the integration.
-The next checkpoint is source-faithful Blocked/Reducible definitions and a
-complete immediate-rule/selected-ancestry classification. Remaining local
-W1/W2/W5–W6 cases, the tied-site rank argument, Reducibility, Blocked-w, cut
-elimination, PositiveCoherence, faithfulness/Boolean Coherence and unconditional
-maximality remain open. This integration step closes a concrete construction
-gap; it does not close G2 or supply a global decreasing measure.
+Source blocked-pattern encodings and typed reducible occurrences now compile,
+with proper-ancestor laws and exhaustive selection profiles retaining actual
+predecessor/premise tags. All fourteen blocked patterns and all seven profile
+regimes have inhabited tests. The finite case ledger identifies mixed-premise
+W5 as the next demonstrated gap; one-premise W5 alone does not cover it.
+Complete rewrite dispatch, all affected tied-site ranks, Reducibility,
+Blocked-w, cut elimination, coherence and actual maximality remain open.
 See [validation](docs/VALIDATION.md) for the maintained audited declaration
 count, commands, evidence and limits of the local checks.
 
@@ -134,11 +135,12 @@ The [v5 literature review](docs/LITERATURE_REVIEW_V5_2026-10-23.md),
 [writing review](docs/reviews/V5_WRITING_REVIEW.md), and
 [manuscript validation](docs/V5_VALIDATION.md) accompany v5.
 The [earlier literature comparison](docs/LITERATURE_REVIEW.md) remains available.
-The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_PROOF_REPLACEMENT_HOSTILE.md)
-and [mathematical-writing review](docs/reviews/GENTZEN_PROOF_REPLACEMENT_WRITING.md)
-cover typed proof replacement and both W5 integrations; they are
-not independent certification. The [current integration report](docs/GENTZEN_PROOF_REPLACEMENT_REPORT.md),
-[ready-to-paste classification continuation](docs/CODEX_GENTZEN_BLOCKED_CLASSIFICATION.txt),
+The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_BLOCKED_CLASSIFICATION_HOSTILE.md)
+and [mathematical-writing review](docs/reviews/GENTZEN_BLOCKED_CLASSIFICATION_WRITING.md)
+cover blocked/reducible encodings and the finite selection classification; they are
+not independent certification. The [current classification report and case ledger](docs/GENTZEN_BLOCKED_CLASSIFICATION_REPORT.md),
+[ready-to-paste mixed-W5 continuation](docs/CODEX_GENTZEN_MIXED_W5_DISPATCH.txt),
+[preceding integration report](docs/GENTZEN_PROOF_REPLACEMENT_REPORT.md),
 [preceding W5 report and track/drift audit](docs/GENTZEN_W5_OTHER_PREMISE_MIX_REPORT.md),
 [preceding W5 report](docs/GENTZEN_W5_SINGLE_PREMISE_MIX_REPORT.md),
 [preceding W4 report](docs/GENTZEN_W4_SELECTED_LOGICAL_REPORT.md),

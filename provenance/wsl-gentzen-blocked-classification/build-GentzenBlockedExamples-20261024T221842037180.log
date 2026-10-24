@@ -1,0 +1,28 @@
+✖ [157/184] Building DosenPetric.GentzenReducibleOccurrences (2.5s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenReducibleOccurrences.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenReducibleOccurrences.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenReducibleOccurrences.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenReducibleOccurrences.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenReducibleOccurrences.setup.json --json
+error: DosenPetric/GentzenReducibleOccurrences.lean:26:12: `simp` made no progress
+error: DosenPetric/GentzenReducibleOccurrences.lean:26:12: `simp` made no progress
+error: DosenPetric/GentzenReducibleOccurrences.lean:24:85: unsolved goals
+case disjunctionBoth
+P : Type u
+A✝ B✝ : NormalForm P
+X✝ Y✝ Z✝ T✝ Δ✝ Λ✝ : List (NormalForm P)
+f✝ : G P (X✝ ++ A✝.disj B✝ :: Y✝ ++ [A✝]) Δ✝
+g✝ : G P (Z✝ ++ A✝.disj B✝ :: T✝ ++ [B✝]) Λ✝
+⊢ some
+      (G.exchangeL [] [A✝.disj B✝] (X✝ ++ A✝.disj B✝ :: Y✝ ++ (Z✝ ++ A✝.disj B✝ :: T✝)) [] (Δ✝ ++ Λ✝)
+          (G.reindex ⋯ ⋯
+            ((G.reindex ⋯ ⋯ (G.exchangeL [] (X✝ ++ A✝.disj B✝ :: Y✝) [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+              (G.reindex ⋯ ⋯ (G.exchangeL [] (Z✝ ++ A✝.disj B✝ :: T✝) [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))).ruleKind ∈
+    [some G.RuleKind.mix, some G.RuleKind.conjR, some G.RuleKind.exchangeL, some G.RuleKind.conjL]
+error: DosenPetric/GentzenReducibleOccurrences.lean:23:8: (kernel) declaration has metavariables 'DosenPetric.Reduced.Gentzen.BlockedL.premise_kind'
+error: DosenPetric/GentzenReducibleOccurrences.lean:32:12: `simp` made no progress
+error: DosenPetric/GentzenReducibleOccurrences.lean:32:12: `simp` made no progress
+error: DosenPetric/GentzenReducibleOccurrences.lean:32:12: `simp` made no progress
+error: DosenPetric/GentzenReducibleOccurrences.lean:32:12: `simp` made no progress
+error: DosenPetric/GentzenReducibleOccurrences.lean:32:12: `simp` made no progress
+error: DosenPetric/GentzenReducibleOccurrences.lean:32:12: `simp` made no progress
+error: DosenPetric/GentzenReducibleOccurrences.lean:29:8: (kernel) declaration has metavariables 'DosenPetric.Reduced.Gentzen.BlockedR.premise_kind'
+Some required targets logged failures:
+- DosenPetric.GentzenReducibleOccurrences
+error: build failed

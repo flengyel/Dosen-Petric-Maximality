@@ -1,0 +1,43 @@
+✔ [128/129] Built DosenPetric.GentzenSelectionOrigins (10s)
+✖ [129/129] Building DosenPetric.GentzenSelectionDispatch (1.6s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectionDispatch.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectionDispatch.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectionDispatch.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectionDispatch.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectionDispatch.setup.json --json
+error: DosenPetric/GentzenSelectionDispatch.lean:29:60: Invalid field notation: Type of
+  r
+is not known; cannot resolve field `Holds`
+
+Hint: Consider replacing the field projection `.Holds` with a call to the function `Holds`.
+error: DosenPetric/GentzenSelectionDispatch.lean:48:4: failed to compile definition, consider marking it as 'noncomputable' because it depends on 'selectionPort', which is 'noncomputable'
+error: DosenPetric/GentzenSelectionDispatch.lean:60:3: unknown tactic
+error: DosenPetric/GentzenSelectionDispatch.lean:58:72: unsolved goals
+P : Type u
+Γ Δ : List (NormalForm P)
+g : G P Γ Δ
+s : SequentSide
+C : NormalForm P
+xs : List (Place s Γ Δ C)
+hp : ∃ a b, a ∈ xs ∧ b ∈ xs ∧ At.index a < At.index b
+hs : ¬SelectionPort.shared ∈ g.selectionPorts s xs
+⊢ SelectionPort.first ∈ g.selectionPorts s xs ∨ SelectionPort.second ∈ g.selectionPorts s xs
+error: DosenPetric/GentzenSelectionDispatch.lean:78:9: Invalid field notation: Type of
+  r
+is not known; cannot resolve field `Holds`
+
+Hint: Consider replacing the field projection `.Holds` with a call to the function `SelectionRegime.Holds`.
+error: DosenPetric/GentzenSelectionDispatch.lean:79:2: Unknown constant `DosenPetric.Reduced.Gentzen.SelectionRegime.classify`
+error: DosenPetric/GentzenSelectionDispatch.lean:88:11: Invalid field notation: Type of
+  r
+is not known; cannot resolve field `Holds`
+
+Hint: Consider replacing the field projection `.Holds` with a call to the function `SelectionRegime.Holds`.
+error: DosenPetric/GentzenSelectionDispatch.lean:89:3: Unknown identifier `d.not_basisL`
+error: DosenPetric/GentzenSelectionDispatch.lean:89:2: Invalid `⟨...⟩` notation: The expected type of this term could not be determined
+error: DosenPetric/GentzenSelectionDispatch.lean:93:11: Invalid field notation: Type of
+  r
+is not known; cannot resolve field `Holds`
+
+Hint: Consider replacing the field projection `.Holds` with a call to the function `SelectionRegime.Holds`.
+error: DosenPetric/GentzenSelectionDispatch.lean:94:3: Unknown identifier `d.not_basisR`
+error: DosenPetric/GentzenSelectionDispatch.lean:94:2: Invalid `⟨...⟩` notation: The expected type of this term could not be determined
+Some required targets logged failures:
+- DosenPetric.GentzenSelectionDispatch
+error: build failed

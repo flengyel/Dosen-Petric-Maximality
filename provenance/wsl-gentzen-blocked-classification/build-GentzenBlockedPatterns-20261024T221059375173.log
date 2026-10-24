@@ -1,0 +1,29 @@
+✖ [125/126] Building DosenPetric.GentzenBlockedSource (1.8s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenBlockedSource.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedSource.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedSource.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedSource.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedSource.setup.json --json
+error: DosenPetric/GentzenBlockedSource.lean:24:7: tactic execution is stuck, goal contains metavariables
+  [] ++ [A] ++ Γ ++ [] = ?m.58
+error: DosenPetric/GentzenBlockedSource.lean:35:56: unsolved goals
+P : Type u
+Γ Θ Δ Λ : List (NormalForm P)
+A B : NormalForm P
+f : G P (Γ ++ [A]) Δ
+g : G P (Θ ++ [B]) Λ
+⊢ sorry.cutCount = f.cutCount + g.cutCount
+error: DosenPetric/GentzenBlockedSource.lean:36:13: declaration uses `sorry`
+error: DosenPetric/GentzenBlockedSource.lean:36:23: This simp argument is unused:
+  G.count_reindex
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [disjLLast, G.cutCount]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedSource.lean:36:39: This simp argument is unused:
+  G.cutCount
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [disjLLast, G.count_reindex]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- DosenPetric.GentzenBlockedSource
+error: build failed

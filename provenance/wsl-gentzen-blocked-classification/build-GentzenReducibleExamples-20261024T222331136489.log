@@ -1,0 +1,11 @@
+✔ [140/174] Built DosenPetric.GentzenBlockedSource (2.2s)
+✔ [147/175] Built DosenPetric.GentzenBlockedPatterns (4.0s)
+✔ [157/185] Built DosenPetric.GentzenReducibleOccurrences (4.5s)
+✖ [184/185] Building DosenPetric.GentzenBlockedExamples (40s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenBlockedExamples.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedExamples.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedExamples.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedExamples.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedExamples.setup.json --json
+error: DosenPetric/GentzenBlockedExamples.lean:58:8: Unknown identifier `congrArg₂`
+error: DosenPetric/GentzenBlockedExamples.lean:132:8: Unknown identifier `congrArg₂`
+error: DosenPetric/GentzenBlockedExamples.lean:141:8: Unknown identifier `congrArg₂`
+Some required targets logged failures:
+- DosenPetric.GentzenBlockedExamples
+error: build failed

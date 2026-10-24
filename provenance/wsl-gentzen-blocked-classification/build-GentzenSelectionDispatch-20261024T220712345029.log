@@ -1,0 +1,81 @@
+✖ [128/129] Building DosenPetric.GentzenSelectionOrigins (4.2s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectionOrigins.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectionOrigins.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectionOrigins.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectionOrigins.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectionOrigins.setup.json --json
+error: DosenPetric/GentzenSelectionOrigins.lean:27:12: Tactic `split` failed: Could not split an `if` or `match` expression in the type `True` of `hx`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case identity.left
+P : Type u
+C : NormalForm P
+l✝ : Literal P
+x y : Place SequentSide.left [NormalForm.lit l✝] [NormalForm.lit l✝] C
+hi : At.index x < 0 + 1
+hj : At.index y < 0 + 1
+hx hy : True
+⊢ At.index x = At.index y
+error: DosenPetric/GentzenSelectionOrigins.lean:27:12: Tactic `split` failed: Could not split an `if` or `match` expression in the type `True` of `hx`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case identity.right
+P : Type u
+C : NormalForm P
+l✝ : Literal P
+x y : Place SequentSide.right [NormalForm.lit l✝] [NormalForm.lit l✝] C
+hi : At.index x < 0 + 1
+hj : At.index y < 0 + 1
+hx hy : True
+⊢ At.index x = At.index y
+error: DosenPetric/GentzenSelectionOrigins.lean:27:12: Tactic `split` failed: Could not split an `if` or `match` expression in the type `True` of `hx`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case zero.left
+P : Type u
+C : NormalForm P
+l✝ : Literal P
+x y : Place SequentSide.left [NormalForm.lit l✝] [NormalForm.lit l✝] C
+hi : At.index x < 0 + 1
+hj : At.index y < 0 + 1
+hx hy : True
+⊢ At.index x = At.index y
+error: DosenPetric/GentzenSelectionOrigins.lean:27:12: Tactic `split` failed: Could not split an `if` or `match` expression in the type `True` of `hx`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case zero.right
+P : Type u
+C : NormalForm P
+l✝ : Literal P
+x y : Place SequentSide.right [NormalForm.lit l✝] [NormalForm.lit l✝] C
+hi : At.index x < 0 + 1
+hj : At.index y < 0 + 1
+hx hy : True
+⊢ At.index x = At.index y
+error: DosenPetric/GentzenSelectionOrigins.lean:27:12: Tactic `split` failed: Could not split an `if` or `match` expression in the type `True` of `hx`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case topI.right
+P : Type u
+C : NormalForm P
+x y : Place SequentSide.right [] [NormalForm.top] C
+hi : At.index x < 0 + 1
+hj : At.index y < 0 + 1
+hx hy : True
+⊢ At.index x = At.index y
+error: DosenPetric/GentzenSelectionOrigins.lean:27:12: Tactic `split` failed: Could not split an `if` or `match` expression in the type `True` of `hx`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case botE.left
+P : Type u
+C : NormalForm P
+x y : Place SequentSide.left [NormalForm.bot] [] C
+hi : At.index x < 0 + 1
+hj : At.index y < 0 + 1
+hx hy : True
+⊢ At.index x = At.index y
+Some required targets logged failures:
+- DosenPetric.GentzenSelectionOrigins
+error: build failed

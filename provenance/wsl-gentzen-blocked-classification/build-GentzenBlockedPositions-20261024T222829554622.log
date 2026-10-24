@@ -1,0 +1,37 @@
+✖ [130/130] Building DosenPetric.GentzenBlockedPositions (5.3s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenBlockedPositions.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedPositions.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedPositions.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedPositions.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedPositions.setup.json --json
+error: DosenPetric/GentzenBlockedPositions.lean:125:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  List.map _root_.id ?l
+in the target expression
+  BlockedSelectionL f (selectedCopies C gs tail) ↔
+    BlockedSelectionL f (List.map (fun a => a) (selectedCopies C gs tail))
+
+case refl.refl
+P : Type u
+Δ : List (NormalForm P)
+C : NormalForm P
+gs : List (List (NormalForm P))
+tail : List (NormalForm P)
+f : G P (repeated C gs ++ tail) Δ
+hn : 2 ≤ { C := C, gs := gs, tail := tail, upper := ⋯, lower := ⋯ }.gs.length
+⊢ BlockedSelectionL f (selectedCopies C gs tail) ↔
+    BlockedSelectionL f (List.map (fun a => a) (selectedCopies C gs tail))
+error: DosenPetric/GentzenBlockedPositions.lean:134:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  List.map _root_.id ?l
+in the target expression
+  BlockedSelectionR f (selectedCopies C gs tail) ↔
+    BlockedSelectionR f (List.map (fun a => a) (selectedCopies C gs tail))
+
+case refl.refl
+P : Type u
+Γ : List (NormalForm P)
+C : NormalForm P
+gs : List (List (NormalForm P))
+tail : List (NormalForm P)
+f : G P Γ (repeated C gs ++ tail)
+hn : 2 ≤ { C := C, gs := gs, tail := tail, upper := ⋯, lower := ⋯ }.gs.length
+⊢ BlockedSelectionR f (selectedCopies C gs tail) ↔
+    BlockedSelectionR f (List.map (fun a => a) (selectedCopies C gs tail))
+Some required targets logged failures:
+- DosenPetric.GentzenBlockedPositions
+error: build failed

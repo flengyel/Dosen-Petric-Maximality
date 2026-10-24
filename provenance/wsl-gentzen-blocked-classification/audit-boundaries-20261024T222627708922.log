@@ -1,0 +1,4 @@
+direct-axiom PASS (rejected) 1
+private-axiom PASS (rejected) 1
+hidden-dependency PASS (rejected) 1
+Import closure differs: {PosixPath('DosenPetric/GentzenBlockedSelections.lean'), PosixPath('DosenPetric/GentzenReducibleSites.lean'), PosixPath('DosenPetric/GentzenImmediateClassification.lean'), PosixPath('DosenPetric/GentzenSelectionClassification.lean')}

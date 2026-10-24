@@ -1,0 +1,279 @@
+✔ [129/130] Built DosenPetric.GentzenImmediateClassification (5.4s)
+✖ [130/130] Building DosenPetric.GentzenBlockedPositions (1.6s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenBlockedPositions.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedPositions.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedPositions.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedPositions.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedPositions.setup.json --json
+error: DosenPetric/GentzenBlockedPositions.lean:13:3: unexpected token 'prefix'; expected identifier
+error: DosenPetric/GentzenBlockedPositions.lean:22:10: Invalid field `prefix`: The environment does not contain `DosenPetric.Reduced.Gentzen.At.prefix`, so it is not possible to project the field `prefix` from an expression
+  a
+of type `At Γ C`
+error: DosenPetric/GentzenBlockedPositions.lean:28:6: Invalid field `prefix`: The environment does not contain `DosenPetric.Reduced.Gentzen.At.prefix`, so it is not possible to project the field `prefix` from an expression
+  a
+of type `At Γ C`
+error: DosenPetric/GentzenBlockedPositions.lean:34:40: Invalid field `prefix`: The environment does not contain `DosenPetric.Reduced.Gentzen.At.prefix`, so it is not possible to project the field `prefix` from an expression
+  a
+of type `At Γ C`
+error: DosenPetric/GentzenBlockedPositions.lean:34:69: unsolved goals
+P : Type u
+Γ : List (NormalForm P)
+C : NormalForm P
+a : At Γ C
+⊢ a.index = sorry.length
+error: DosenPetric/GentzenBlockedPositions.lean:36:64: This simp argument is unused:
+  a.prefix_length
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.index_cast, At.index_shift, At.index, Nat.add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:66:45: Unknown constant `List.pairwise_nil`
+error: DosenPetric/GentzenBlockedPositions.lean:68:4: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑Θ✝.length
+ b := ↑y.index
+error: DosenPetric/GentzenBlockedPositions.lean:71:45: Unknown constant `List.pairwise_nil`
+error: DosenPetric/GentzenBlockedPositions.lean:73:4: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑Γ✝.length
+ b := ↑x.index
+error: DosenPetric/GentzenBlockedPositions.lean:76:45: Unknown constant `List.pairwise_nil`
+error: DosenPetric/GentzenBlockedPositions.lean:78:4: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑Γ✝.length
+ b := ↑x.index
+error: DosenPetric/GentzenBlockedPositions.lean:81:45: Unknown constant `List.pairwise_nil`
+error: DosenPetric/GentzenBlockedPositions.lean:83:4: Type mismatch
+  hx
+has type
+  x.index < Γ✝.length
+but is expected to have type
+  x.index < Γ✝.length ∧
+    (∀ (a' : At (Γ✝ ++ [A✝.conj B✝]) (A✝.conj B✝)), False → Γ✝.length < a'.index) ∧
+      List.Pairwise (fun a b => a.index < b.index) []
+error: DosenPetric/GentzenBlockedPositions.lean:90:45: Unknown constant `List.pairwise_nil`
+error: DosenPetric/GentzenBlockedPositions.lean:92:4: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑Γ✝.length
+ b := ↑x.index
+error: DosenPetric/GentzenBlockedPositions.lean:67:56: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index_before, At.index_shift, and_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:67:65: This simp argument is unused:
+  and_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index_before, At.index_shift, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:72:56: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index_before, At.index_shift, and_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:72:65: This simp argument is unused:
+  and_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index_before, At.index_shift, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:77:65: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index, At.index_before, At.index_shift, and_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:77:74: This simp argument is unused:
+  and_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index, At.index_before, At.index_shift, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:82:78: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index_before, At.index_shift, At.index, Nat.add_zero, and_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:82:87: This simp argument is unused:
+  and_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index_before, At.index_shift, At.index, Nat.add_zero, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:91:82: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, forall_eq_or_imp, At.index, At.index_before, At.index_shift, and_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:91:91: This simp argument is unused:
+  and_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, forall_eq_or_imp, At.index, At.index_before, At.index_shift, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:99:45: Unknown constant `List.pairwise_nil`
+error: DosenPetric/GentzenBlockedPositions.lean:101:4: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑Λ✝.length
+ b := ↑y.index
+error: DosenPetric/GentzenBlockedPositions.lean:104:45: Unknown constant `List.pairwise_nil`
+error: DosenPetric/GentzenBlockedPositions.lean:106:4: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑Δ✝.length
+ b := ↑x.index
+error: DosenPetric/GentzenBlockedPositions.lean:109:45: Unknown constant `List.pairwise_nil`
+error: DosenPetric/GentzenBlockedPositions.lean:111:4: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑Δ✝.length
+ b := ↑x.index
+error: DosenPetric/GentzenBlockedPositions.lean:114:45: Unknown constant `List.pairwise_nil`
+error: DosenPetric/GentzenBlockedPositions.lean:116:4: Type mismatch
+  hx
+has type
+  x.index < Δ✝.length
+but is expected to have type
+  x.index < Δ✝.length ∧
+    (∀ (a' : At (Δ✝ ++ [A✝.disj B✝]) (A✝.disj B✝)), False → Δ✝.length < a'.index) ∧
+      List.Pairwise (fun a b => a.index < b.index) []
+error: DosenPetric/GentzenBlockedPositions.lean:121:45: Unknown constant `List.pairwise_nil`
+error: DosenPetric/GentzenBlockedPositions.lean:123:4: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑Δ✝.length
+ b := ↑x.index
+error: DosenPetric/GentzenBlockedPositions.lean:100:56: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index_before, At.index_shift, and_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:100:65: This simp argument is unused:
+  and_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index_before, At.index_shift, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:105:56: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index_before, At.index_shift, and_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:105:65: This simp argument is unused:
+  and_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index_before, At.index_shift, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:110:65: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index, At.index_before, At.index_shift, and_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:110:74: This simp argument is unused:
+  and_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index, At.index_before, At.index_shift, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:115:78: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index_before, At.index_shift, At.index, Nat.add_zero, and_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:115:87: This simp argument is unused:
+  and_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, At.index_before, At.index_shift, At.index, Nat.add_zero, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:122:82: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, forall_eq_or_imp, At.index, At.index_before, At.index_shift, and_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedPositions.lean:122:91: This simp argument is unused:
+  and_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [At.Ordered, List.pairwise_cons, List.pairwise_nil, List.mem_cons, List.not_mem_nil, or_false,
+    forall_eq, forall_eq_or_imp, At.index, At.index_before, At.index_shift, true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- DosenPetric.GentzenBlockedPositions
+error: build failed

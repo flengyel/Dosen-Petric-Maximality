@@ -1,0 +1,776 @@
+✖ [128/128] Building DosenPetric.GentzenSelectionOrigins (12s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectionOrigins.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectionOrigins.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectionOrigins.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectionOrigins.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectionOrigins.setup.json --json
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a ≥ 2
+where
+ a := ↑gs✝.length
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a ≥ 2
+where
+ a := ↑gs✝.length
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+error: DosenPetric/GentzenSelectionOrigins.lean:14:93: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+error: DosenPetric/GentzenSelectionOrigins.lean:26:12: Tactic `split` failed: Could not split an `if` or `match` expression in the type `True` of `hx`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case identity.left
+P : Type u
+C : NormalForm P
+l✝ : Literal P
+x y : Place SequentSide.left [NormalForm.lit l✝] [NormalForm.lit l✝] C
+hi : At.index x < (SequentSide.left.context [NormalForm.lit l✝] [NormalForm.lit l✝]).length
+hj : At.index y < (SequentSide.left.context [NormalForm.lit l✝] [NormalForm.lit l✝]).length
+hx hy : True
+⊢ At.index x = At.index y
+error: DosenPetric/GentzenSelectionOrigins.lean:26:12: Tactic `split` failed: Could not split an `if` or `match` expression in the type `True` of `hx`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case identity.right
+P : Type u
+C : NormalForm P
+l✝ : Literal P
+x y : Place SequentSide.right [NormalForm.lit l✝] [NormalForm.lit l✝] C
+hi : At.index x < (SequentSide.right.context [NormalForm.lit l✝] [NormalForm.lit l✝]).length
+hj : At.index y < (SequentSide.right.context [NormalForm.lit l✝] [NormalForm.lit l✝]).length
+hx hy : True
+⊢ At.index x = At.index y
+error: DosenPetric/GentzenSelectionOrigins.lean:26:12: Tactic `split` failed: Could not split an `if` or `match` expression in the type `True` of `hx`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case zero.left
+P : Type u
+C : NormalForm P
+l✝ : Literal P
+x y : Place SequentSide.left [NormalForm.lit l✝] [NormalForm.lit l✝] C
+hi : At.index x < (SequentSide.left.context [NormalForm.lit l✝] [NormalForm.lit l✝]).length
+hj : At.index y < (SequentSide.left.context [NormalForm.lit l✝] [NormalForm.lit l✝]).length
+hx hy : True
+⊢ At.index x = At.index y
+error: DosenPetric/GentzenSelectionOrigins.lean:26:12: Tactic `split` failed: Could not split an `if` or `match` expression in the type `True` of `hx`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case zero.right
+P : Type u
+C : NormalForm P
+l✝ : Literal P
+x y : Place SequentSide.right [NormalForm.lit l✝] [NormalForm.lit l✝] C
+hi : At.index x < (SequentSide.right.context [NormalForm.lit l✝] [NormalForm.lit l✝]).length
+hj : At.index y < (SequentSide.right.context [NormalForm.lit l✝] [NormalForm.lit l✝]).length
+hx hy : True
+⊢ At.index x = At.index y
+error: DosenPetric/GentzenSelectionOrigins.lean:26:12: Tactic `split` failed: Could not split an `if` or `match` expression in the type `True` of `hx`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case topI.left
+P : Type u
+C : NormalForm P
+x y : Place SequentSide.left [] [NormalForm.top] C
+hi : At.index x < (SequentSide.left.context [] [NormalForm.top]).length
+hj : At.index y < (SequentSide.left.context [] [NormalForm.top]).length
+hx hy : True
+⊢ At.index x = At.index y
+error: DosenPetric/GentzenSelectionOrigins.lean:26:12: Tactic `split` failed: Could not split an `if` or `match` expression in the type `True` of `hx`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case topI.right
+P : Type u
+C : NormalForm P
+x y : Place SequentSide.right [] [NormalForm.top] C
+hi : At.index x < (SequentSide.right.context [] [NormalForm.top]).length
+hj : At.index y < (SequentSide.right.context [] [NormalForm.top]).length
+hx hy : True
+⊢ At.index x = At.index y
+error: DosenPetric/GentzenSelectionOrigins.lean:26:12: Tactic `split` failed: Could not split an `if` or `match` expression in the type `True` of `hx`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case botE.left
+P : Type u
+C : NormalForm P
+x y : Place SequentSide.left [NormalForm.bot] [] C
+hi : At.index x < (SequentSide.left.context [NormalForm.bot] []).length
+hj : At.index y < (SequentSide.left.context [NormalForm.bot] []).length
+hx hy : True
+⊢ At.index x = At.index y
+error: DosenPetric/GentzenSelectionOrigins.lean:26:12: Tactic `split` failed: Could not split an `if` or `match` expression in the type `True` of `hx`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case botE.right
+P : Type u
+C : NormalForm P
+x y : Place SequentSide.right [NormalForm.bot] [] C
+hi : At.index x < (SequentSide.right.context [NormalForm.bot] []).length
+hj : At.index y < (SequentSide.right.context [NormalForm.bot] []).length
+hx hy : True
+⊢ At.index x = At.index y
+error: DosenPetric/GentzenSelectionOrigins.lean:58:40: Application type mismatch: The argument
+  hg
+has type
+  (identity l✝).CutFree
+but is expected to have type
+  (cut ?m.647 ?m.648).CutFree
+in the application
+  cut_not_cutFree ?m.647 ?m.648 hg
+error: DosenPetric/GentzenSelectionOrigins.lean:56:25: unsolved goals
+case identity
+P : Type u
+l✝ : Literal P
+hg : (identity l✝).CutFree
+⊢ RuleKind.identity ≠ RuleKind.cut
+
+case zero
+P : Type u
+l✝ : Literal P
+hg : (zero l✝).CutFree
+⊢ RuleKind.zero ≠ RuleKind.cut
+
+case topI
+P : Type u
+hg : topI.CutFree
+⊢ RuleKind.topI ≠ RuleKind.cut
+
+case botE
+P : Type u
+hg : botE.CutFree
+⊢ RuleKind.botE ≠ RuleKind.cut
+
+case exchangeL
+P : Type u
+Δ Γ✝ X✝ Y✝ Θ✝ : List (NormalForm P)
+a✝ : G P (Γ✝ ++ X✝ ++ Y✝ ++ Θ✝) Δ
+hg : (exchangeL Γ✝ X✝ Y✝ Θ✝ Δ a✝).CutFree
+⊢ RuleKind.exchangeL ≠ RuleKind.cut
+
+case exchangeR
+P : Type u
+Γ Δ✝ X✝ Y✝ Λ✝ : List (NormalForm P)
+a✝ : G P Γ (Δ✝ ++ X✝ ++ Y✝ ++ Λ✝)
+hg : (exchangeR Γ Δ✝ X✝ Y✝ Λ✝ a✝).CutFree
+⊢ RuleKind.exchangeR ≠ RuleKind.cut
+
+case thinL
+P : Type u
+Δ Γ✝ Θ✝ : List (NormalForm P)
+A✝ : NormalForm P
+a✝ : G P (Γ✝ ++ Θ✝) Δ
+hg : (thinL Γ✝ Θ✝ Δ A✝ a✝).CutFree
+⊢ RuleKind.thinL ≠ RuleKind.cut
+
+case thinR
+P : Type u
+Γ Δ✝ Λ✝ : List (NormalForm P)
+A✝ : NormalForm P
+a✝ : G P Γ (Δ✝ ++ Λ✝)
+hg : (thinR Γ Δ✝ Λ✝ A✝ a✝).CutFree
+⊢ RuleKind.thinR ≠ RuleKind.cut
+
+case contractL
+P : Type u
+Δ : List (NormalForm P)
+C✝ : NormalForm P
+gs✝ : List (List (NormalForm P))
+Θ✝ : List (NormalForm P)
+a✝¹ : 2 ≤ gs✝.length
+a✝ : G P (repeated C✝ gs✝ ++ Θ✝) Δ
+hg : (contractL C✝ gs✝ Θ✝ Δ a✝¹ a✝).CutFree
+⊢ RuleKind.contractL ≠ RuleKind.cut
+
+case contractR
+P : Type u
+Γ : List (NormalForm P)
+C✝ : NormalForm P
+gs✝ : List (List (NormalForm P))
+Λ✝ : List (NormalForm P)
+a✝¹ : 2 ≤ gs✝.length
+a✝ : G P Γ (repeated C✝ gs✝ ++ Λ✝)
+hg : (contractR Γ C✝ gs✝ Λ✝ a✝¹ a✝).CutFree
+⊢ RuleKind.contractR ≠ RuleKind.cut
+
+case conjL
+P : Type u
+Δ Γ✝ Θ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+a✝ : G P (Γ✝ ++ A✝ :: B✝ :: Θ✝) Δ
+hg : (conjL Γ✝ Θ✝ Δ A✝ B✝ a✝).CutFree
+⊢ RuleKind.conjL ≠ RuleKind.cut
+
+case disjR
+P : Type u
+Γ Δ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+a✝ : G P Γ (Δ✝ ++ A✝ :: B✝ :: Λ✝)
+hg : (disjR Γ Δ✝ Λ✝ A✝ B✝ a✝).CutFree
+⊢ RuleKind.disjR ≠ RuleKind.cut
+
+case conjR
+P : Type u
+Γ✝ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+a✝¹ : G P Γ✝ (A✝ :: Δ✝)
+a✝ : G P Θ✝ (B✝ :: Λ✝)
+hg : (a✝¹.conjR a✝).CutFree
+⊢ RuleKind.conjR ≠ RuleKind.cut
+
+case disjL
+P : Type u
+Γ✝ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+a✝¹ : G P (A✝ :: Γ✝) Δ✝
+a✝ : G P (B✝ :: Θ✝) Λ✝
+hg : (a✝¹.disjL a✝).CutFree
+⊢ RuleKind.disjL ≠ RuleKind.cut
+
+case mix
+P : Type u
+Γ✝ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+a✝¹ : G P Γ✝ Δ✝
+a✝ : G P Θ✝ Λ✝
+hg : (a✝¹.mix a✝).CutFree
+⊢ RuleKind.mix ≠ RuleKind.cut
+
+case cut
+P : Type u
+Γ✝ Θ✝ Δ✝ Λ✝ : List (NormalForm P)
+C✝ : NormalForm P
+a✝¹ : G P Γ✝ (C✝ :: Δ✝)
+a✝ : G P (C✝ :: Θ✝) Λ✝
+hg : (a✝¹.cut a✝).CutFree
+⊢ RuleKind.cut ≠ RuleKind.cut
+error: DosenPetric/GentzenSelectionOrigins.lean:57:34: This simp argument is unused:
+  reduceCtorEq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ruleKind, not_false_eq_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectionOrigins.lean:57:47: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ruleKind, reduceCtorEq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenSelectionOrigins.lean:142:24: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  d.selected
+in the target expression
+  a ∈ a :: b :: bs
+
+P : Type u
+U K : List (NormalForm P)
+d : ContractionBlock P U K
+hn : 2 ≤ d.gs.length
+hl : d.selected.length = d.gs.length
+a b : At U d.C
+bs : List (At U d.C)
+ho : At.Ordered (a :: b :: bs)
+he : d.selected = a :: b :: bs
+⊢ a ∈ a :: b :: bs
+error: DosenPetric/GentzenSelectionOrigins.lean:143:15: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  d.selected
+in the target expression
+  b ∈ a :: b :: bs
+
+P : Type u
+U K : List (NormalForm P)
+d : ContractionBlock P U K
+hn : 2 ≤ d.gs.length
+hl : d.selected.length = d.gs.length
+a b : At U d.C
+bs : List (At U d.C)
+ho : At.Ordered (a :: b :: bs)
+he : d.selected = a :: b :: bs
+⊢ b ∈ a :: b :: bs
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑[NormalForm.lit l✝].length
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑[NormalForm.lit l✝].length
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑[].length
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑[NormalForm.bot].length
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑(Γ✝ ++ Y✝ ++ X✝ ++ Θ✝).length
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑U.length
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑(Γ✝ ++ A✝ :: Θ✝).length
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑U.length
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  g ≥ 0
+  g - h ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  e ≥ 2
+  c ≥ 2
+where
+ c := ↑gs✝.length
+ e := ↑d.gs.length
+ f := ↑b.index
+ g := ↑a.index
+ h := ↑(gaps gs✝ ++ C✝ :: Θ✝).length
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 2
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑U.length
+ h := ↑gs✝.length
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑(Γ✝ ++ A✝.conj B✝ :: Θ✝).length
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑U.length
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑(Γ✝ ++ Θ✝).length
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑(A✝.disj B✝ :: (Γ✝ ++ Θ✝)).length
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑(Θ✝ ++ Γ✝).length
+error: DosenPetric/GentzenSelectionOrigins.lean:152:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑(Θ✝ ++ Γ✝).length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑[NormalForm.lit l✝].length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑[NormalForm.lit l✝].length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑[NormalForm.top].length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑[].length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑U.length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑(Δ✝ ++ Y✝ ++ X✝ ++ Λ✝).length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑U.length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑(Δ✝ ++ A✝ :: Λ✝).length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 2
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑U.length
+ h := ↑gs✝.length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  g ≥ 0
+  g - h ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  e ≥ 2
+  c ≥ 2
+where
+ c := ↑gs✝.length
+ e := ↑d.gs.length
+ f := ↑b.index
+ g := ↑a.index
+ h := ↑(gaps gs✝ ++ C✝ :: Λ✝).length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑U.length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑(Δ✝ ++ A✝.disj B✝ :: Λ✝).length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑(A✝.conj B✝ :: (Δ✝ ++ Λ✝)).length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑(Δ✝ ++ Λ✝).length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑(Λ✝ ++ Δ✝).length
+error: DosenPetric/GentzenSelectionOrigins.lean:160:12: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  e - f ≥ 1
+  e - g ≤ -1
+  c ≥ 2
+where
+ c := ↑d.gs.length
+ e := ↑b.index
+ f := ↑a.index
+ g := ↑(Λ✝ ++ Δ✝).length
+Some required targets logged failures:
+- DosenPetric.GentzenSelectionOrigins
+error: build failed

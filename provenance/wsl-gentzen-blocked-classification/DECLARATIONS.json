@@ -1,0 +1,863 @@
+[
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Premise.branch_zero_or_one",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 13,
+    "source": "theorem branch_zero_or_one {\u0393 \u0394 \u0398 \u039b : List (NormalForm P)} {f : G P \u0393 \u0394} {g : G P \u0398 \u039b}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.leaf_indices",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 19,
+    "source": "theorem leaf_indices {\u0393 \u0394 : List (NormalForm P)} (g : G P \u0393 \u0394) (s : SequentSide)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.RuleKind",
+    "kind": "inductive",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 30,
+    "source": "inductive RuleKind where"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.ruleKind",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 35,
+    "source": "def ruleKind : {\u0393 \u0394 : List (NormalForm P)} \u2192 G P \u0393 \u0394 \u2192 RuleKind"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.RuleKind.Basis",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 53,
+    "source": "def RuleKind.Basis : RuleKind \u2192 Prop"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.cutFree_not_cut",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 57,
+    "source": "theorem cutFree_not_cut {\u0393 \u0394 : List (NormalForm P)} (g : G P \u0393 \u0394) (hg : g.CutFree) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectionPort",
+    "kind": "inductive",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 64,
+    "source": "inductive SelectionPort where"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.PortOrigin",
+    "kind": "inductive",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 69,
+    "source": "inductive PortOrigin {\u0393 \u0394 : List (NormalForm P)} (g : G P \u0393 \u0394) (s : SequentSide)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.port_exists",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 80,
+    "source": "theorem port_exists {\u0393 \u0394 : List (NormalForm P)} (g : G P \u0393 \u0394) (s : SequentSide)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.selectionPort",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 93,
+    "source": "noncomputable def selectionPort {\u0393 \u0394 : List (NormalForm P)} (g : G P \u0393 \u0394) (s : SequentSide)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.selectionPort_spec",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 96,
+    "source": "theorem selectionPort_spec {\u0393 \u0394 : List (NormalForm P)} (g : G P \u0393 \u0394) (s : SequentSide)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.PortOrigin.arity",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 106,
+    "source": "theorem arity (h : PortOrigin g s x p) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.PortOrigin.unique",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 117,
+    "source": "theorem unique {q : SelectionPort} (h : PortOrigin g s x p) (k : PortOrigin g s x q) : p = q := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.selectionPort_eq",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 131,
+    "source": "theorem selectionPort_eq {\u0393 \u0394 : List (NormalForm P)} (g : G P \u0393 \u0394) (s : SequentSide)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.selected_pair",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 139,
+    "source": "theorem selected_pair (hn : 2 \u2264 d.gs.length) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.not_basisL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 154,
+    "source": "theorem not_basisL (hn : 2 \u2264 d.gs.length) {\u0394 : List (NormalForm P)} (g : G P U \u0394) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.not_basisR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionOrigins.lean",
+    "line": 165,
+    "source": "theorem not_basisR (hn : 2 \u2264 d.gs.length) {\u0393 : List (NormalForm P)} (g : G P \u0393 U) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectionRegime",
+    "kind": "inductive",
+    "path": "DosenPetric/GentzenSelectionDispatch.lean",
+    "line": 12,
+    "source": "inductive SelectionRegime where"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectionRegime.Holds",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectionDispatch.lean",
+    "line": 19,
+    "source": "def Holds (ps : List SelectionPort) : SelectionRegime \u2192 Prop"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectionRegime.classify",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionDispatch.lean",
+    "line": 28,
+    "source": "theorem classify (ps : List SelectionPort)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SelectionRegime.unique",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionDispatch.lean",
+    "line": 43,
+    "source": "theorem unique (ps : List SelectionPort) (r q : SelectionRegime)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.selectionPorts",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSelectionDispatch.lean",
+    "line": 52,
+    "source": "noncomputable def selectionPorts (xs : List (Place s \u0393 \u0394 C)) : List SelectionPort := xs.map (g.selectionPort s)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.ports_complete",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionDispatch.lean",
+    "line": 54,
+    "source": "theorem ports_complete (xs : List (Place s \u0393 \u0394 C)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.ports_branch_exists",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionDispatch.lean",
+    "line": 59,
+    "source": "theorem ports_branch_exists (xs : List (Place s \u0393 \u0394 C))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.selection_classification",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionDispatch.lean",
+    "line": 81,
+    "source": "theorem selection_classification (xs : List (Place s \u0393 \u0394 C))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.classificationL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionDispatch.lean",
+    "line": 92,
+    "source": "theorem classificationL {\u0394 : List (NormalForm P)} (g : G P U \u0394) (hg : g.CutFree) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.classificationR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSelectionDispatch.lean",
+    "line": 97,
+    "source": "theorem classificationR {\u0393 : List (NormalForm P)} (g : G P \u0393 U) (hg : g.CutFree) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.RuleKind.Binary",
+    "kind": "def",
+    "path": "DosenPetric/GentzenDispatchRules.lean",
+    "line": 13,
+    "source": "def Binary : G.RuleKind \u2192 Prop"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.RuleKind.FreshOn",
+    "kind": "def",
+    "path": "DosenPetric/GentzenDispatchRules.lean",
+    "line": 17,
+    "source": "def FreshOn : SequentSide \u2192 G.RuleKind \u2192 Prop"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Premise.second_binary",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenDispatchRules.lean",
+    "line": 25,
+    "source": "theorem second_binary {\u0393 \u0394 \u0398 \u039b : List (NormalForm P)} {g : G P \u0393 \u0394} {f : G P \u0398 \u039b}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.fresh_rule",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenDispatchRules.lean",
+    "line": 32,
+    "source": "theorem fresh_rule {\u0393 \u0394 : List (NormalForm P)} (g : G P \u0393 \u0394) (s : SequentSide)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.PortOrigin.second_binary",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenDispatchRules.lean",
+    "line": 43,
+    "source": "theorem second_binary (h : PortOrigin g s x .second) : g.ruleKind.Binary := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.PortOrigin.shared_rule",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenDispatchRules.lean",
+    "line": 46,
+    "source": "theorem shared_rule (h : PortOrigin g s x .shared) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.PortOrigin.fresh_rule",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenDispatchRules.lean",
+    "line": 52,
+    "source": "theorem fresh_rule (h : PortOrigin g s x .fresh) (hb : \u00ac g.ruleKind.Basis) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.port_member",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenDispatchRules.lean",
+    "line": 59,
+    "source": "theorem port_member (xs : List (Place s \u0393 \u0394 C)) (p : SelectionPort) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.selected_second_binary",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenDispatchRules.lean",
+    "line": 69,
+    "source": "theorem selected_second_binary (xs : List (Place s \u0393 \u0394 C))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.selected_shared_rule",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenDispatchRules.lean",
+    "line": 74,
+    "source": "theorem selected_shared_rule (xs : List (Place s \u0393 \u0394 C))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.selected_fresh_rule",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenDispatchRules.lean",
+    "line": 82,
+    "source": "theorem selected_fresh_rule (xs : List (Place s \u0393 \u0394 C))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedSource.conjLLast",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedSource.lean",
+    "line": 13,
+    "source": "def conjLLast (\u0393 \u0394 : List (NormalForm P)) (A B : NormalForm P)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedSource.disjLLast",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedSource.lean",
+    "line": 19,
+    "source": "def disjLLast {\u0393 \u0398 \u0394 \u039b : List (NormalForm P)} {A B : NormalForm P}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedSource.disjLLast_count",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedSource.lean",
+    "line": 33,
+    "source": "theorem disjLLast_count {\u0393 \u0398 \u0394 \u039b : List (NormalForm P)} {A B : NormalForm P}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedSource.left2",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedSource.lean",
+    "line": 38,
+    "source": "def left2 (C : NormalForm P) (X Y T \u0394 : List (NormalForm P))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedSource.left3",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedSource.lean",
+    "line": 43,
+    "source": "def left3 (C : NormalForm P) (X Y Z T \u0394 : List (NormalForm P))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedSource.right2",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedSource.lean",
+    "line": 48,
+    "source": "def right2 (C : NormalForm P) (\u0393 X Y T : List (NormalForm P))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedSource.right3",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedSource.lean",
+    "line": 53,
+    "source": "def right3 (C : NormalForm P) (\u0393 X Y Z T : List (NormalForm P))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedSource.sourceRight2",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedSource.lean",
+    "line": 60,
+    "source": "def sourceRight2 (C : NormalForm P) (\u0393 X Y T : List (NormalForm P))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedSource.sourceRight2_count",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedSource.lean",
+    "line": 65,
+    "source": "theorem sourceRight2_count (C : NormalForm P) (\u0393 X Y T : List (NormalForm P))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedSource.sourceRight3",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedSource.lean",
+    "line": 70,
+    "source": "def sourceRight3 (C : NormalForm P) (\u0393 X Y Z T : List (NormalForm P))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedSource.sourceRight3_count",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedSource.lean",
+    "line": 75,
+    "source": "theorem sourceRight3_count (C : NormalForm P) (\u0393 X Y Z T : List (NormalForm P))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedSource.selected2_indices",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedSource.lean",
+    "line": 80,
+    "source": "theorem selected2_indices (C : NormalForm P) (X Y T : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedSource.selected3_indices",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedSource.lean",
+    "line": 84,
+    "source": "theorem selected3_indices (C : NormalForm P) (X Y Z T : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedL",
+    "kind": "inductive",
+    "path": "DosenPetric/GentzenBlockedPatterns.lean",
+    "line": 13,
+    "source": "inductive BlockedL {P : Type u} : {\u0393 \u0394 : List (NormalForm P)} \u2192 G P \u0393 \u0394 \u2192 Prop where"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedR",
+    "kind": "inductive",
+    "path": "DosenPetric/GentzenBlockedPatterns.lean",
+    "line": 38,
+    "source": "inductive BlockedR {P : Type u} : {\u0393 \u0394 : List (NormalForm P)} \u2192 G P \u0393 \u0394 \u2192 Prop where"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedL.lower",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedPatterns.lean",
+    "line": 63,
+    "source": "theorem lower (h : BlockedL g) : \u2203 (C : NormalForm P) (x : At \u0393 C), G.LowerContraction g .left x := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedR.lower",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedPatterns.lean",
+    "line": 68,
+    "source": "theorem lower (h : BlockedR g) : \u2203 (C : NormalForm P) (x : At \u0394 C), G.LowerContraction g .right x := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.ruleKind_reindex",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 15,
+    "source": "theorem ruleKind_reindex {\u0393 \u0394 \u0393' \u0394' : List (NormalForm P)} (h\u0393 : \u0393 = \u0393') (h\u0394 : \u0394 = \u0394')"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.G.contractedPremiseKind",
+    "kind": "def",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 18,
+    "source": "def contractedPremiseKind : {\u0393 \u0394 : List (NormalForm P)} \u2192 G P \u0393 \u0394 \u2192 Option RuleKind"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedL.premise_kind",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 23,
+    "source": "theorem BlockedL.premise_kind {\u0393 \u0394 : List (NormalForm P)} {g : G P \u0393 \u0394} (h : BlockedL g) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedR.premise_kind",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 29,
+    "source": "theorem BlockedR.premise_kind {\u0393 \u0394 : List (NormalForm P)} {g : G P \u0393 \u0394} (h : BlockedR g) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.ProperContains",
+    "kind": "def",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 40,
+    "source": "def ProperContains (a : ProofAddress root g) (b : ProofAddress root h) : Prop :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.proper_length",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 43,
+    "source": "theorem proper_length {a : ProofAddress root g} {b : ProofAddress root h}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.proper_irrefl",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 51,
+    "source": "theorem proper_irrefl (a : ProofAddress root g) : \u00ac a.ProperContains a := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.proper_trans",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 56,
+    "source": "theorem proper_trans {I J : List (NormalForm P)} {k : G P I J}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.down_proper",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 70,
+    "source": "theorem down_proper (a : ProofAddress root g) (p : Premise g h) : a.ProperContains (a.down p) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ProofAddress.traceAt",
+    "kind": "def",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 79,
+    "source": "def traceAt (a : ProofAddress root g) (s : SequentSide) {C : NormalForm P}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 90,
+    "source": "def ReducibleL {U V : List (NormalForm P)} {w : G P U V}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleL.cutFree",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 97,
+    "source": "theorem ReducibleL.cutFree {U V : List (NormalForm P)} {w : G P U V}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleL.incomparable",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 101,
+    "source": "theorem ReducibleL.incomparable {U V I J : List (NormalForm P)}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 112,
+    "source": "def ReducibleR {U V : List (NormalForm P)} {w : G P U V}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleR.cutFree",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 119,
+    "source": "theorem ReducibleR.cutFree {U V : List (NormalForm P)} {w : G P U V}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleR.incomparable",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleOccurrences.lean",
+    "line": 123,
+    "source": "theorem ReducibleR.incomparable {U V I J : List (NormalForm P)}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.l",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 14,
+    "source": "def l (\u0393 : List (NormalForm Empty)) := G.atomize (W1.SameSideLogical.constantLeft \u0393)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.r",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 15,
+    "source": "def r (\u0394 : List (NormalForm Empty)) := G.atomize (W1.SameSideLogical.constantRight \u0394)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.left_gamma_mix",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 17,
+    "source": "theorem left_gamma_mix : \u2203 g : G Empty [.top] [.top,.top], BlockedL g :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.left_gamma_conj",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 19,
+    "source": "theorem left_gamma_conj : \u2203 g : G Empty [.top] [.conj .top .top], BlockedL g :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.left_gamma_disj",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 21,
+    "source": "theorem left_gamma_disj : \u2203 g : G Empty [.top,.disj .top .bot] [.top,.top], BlockedL g :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.left_conjunction",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 23,
+    "source": "theorem left_conjunction : \u2203 g : G Empty [.conj .top .bot] [.top], BlockedL g :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.left_disj_first",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 25,
+    "source": "theorem left_disj_first : \u2203 g : G Empty [.disj .top .bot] [.top,.top], BlockedL g :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.left_disj_second",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 27,
+    "source": "theorem left_disj_second : \u2203 g : G Empty [.disj .top .bot] [.top,.top], BlockedL g :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.left_disj_both",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 29,
+    "source": "theorem left_disj_both : \u2203 g : G Empty [.disj .top .bot] [.top,.top], BlockedL g :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.right_gamma_mix",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 33,
+    "source": "theorem right_gamma_mix : \u2203 g : G Empty [.bot,.bot] [.top], BlockedR g :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.right_gamma_disj",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 35,
+    "source": "theorem right_gamma_disj : \u2203 g : G Empty [.disj .bot .bot] [.top], BlockedR g :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.right_gamma_conj",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 37,
+    "source": "theorem right_gamma_conj : \u2203 g : G Empty [.bot,.bot] [.conj .bot .bot,.top], BlockedR g :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.right_disjunction",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 39,
+    "source": "theorem right_disjunction : \u2203 g : G Empty [.bot] [.disj .bot .bot], BlockedR g :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.right_conj_first",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 41,
+    "source": "theorem right_conj_first : \u2203 g : G Empty [.bot,.bot] [.conj .bot .bot], BlockedR g :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.right_conj_second",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 43,
+    "source": "theorem right_conj_second : \u2203 g : G Empty [.bot,.bot] [.conj .bot .bot], BlockedR g :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.right_conj_both",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 45,
+    "source": "theorem right_conj_both : \u2203 g : G Empty [.bot,.bot] [.conj .bot .bot], BlockedR g :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.splitMix",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 49,
+    "source": "def splitMix (t : Literal P) := G.mix (G.identity t) (G.identity t)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.splitMix_ports",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 50,
+    "source": "theorem splitMix_ports (t : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.splitMix_regime",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 60,
+    "source": "theorem splitMix_regime (t : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.freshBoth",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 66,
+    "source": "def freshBoth : G Empty [.disj .top .bot,.disj .top .bot,.disj .top .bot] [.top,.top] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.freshBoth_ports",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 68,
+    "source": "theorem freshBoth_ports : freshBoth.selectionPorts .left (three (.disj .top .bot)).selected ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.freshBoth_regime",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 79,
+    "source": "theorem freshBoth_regime : SelectionRegime.selectedBoth.Holds"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.freshFirst",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 85,
+    "source": "def freshFirst : G Empty [.disj .top .bot,.disj .top .bot] [.top,.top] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.freshFirst_ports",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 87,
+    "source": "theorem freshFirst_ports : freshFirst.selectionPorts .left (two (.disj .top .bot)).selected ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.freshSecond",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 93,
+    "source": "def freshSecond : G Empty [.disj .top .bot,.disj .top .bot] [.top,.top] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.freshSecond_ports",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 95,
+    "source": "theorem freshSecond_ports : freshSecond.selectionPorts .left (two (.disj .top .bot)).selected ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.fresh_single_branch_regimes",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 101,
+    "source": "theorem fresh_single_branch_regimes :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.shared",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 108,
+    "source": "def shared (t : Literal P) : G P [.lit t,.lit t] [.lit t] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.shared_regime",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 111,
+    "source": "theorem shared_regime (t : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.same_label_fixed_principal",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 116,
+    "source": "theorem same_label_fixed_principal (t : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.unaryFixed",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 122,
+    "source": "def unaryFixed : G Empty [.top,.top,.top] [.top] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.unaryFixed_ports",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 124,
+    "source": "theorem unaryFixed_ports : unaryFixed.selectionPorts .left"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.onlySecond",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 134,
+    "source": "def onlySecond : G Empty [.top,.top] [.top,.top] := G.mix G.topI (l [.top,.top])"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.onlySecond_ports",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 135,
+    "source": "theorem onlySecond_ports : onlySecond.selectionPorts .left (two .top).selected = [.second,.second] := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.single_branch_parametric_regimes",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 143,
+    "source": "theorem single_branch_parametric_regimes :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.three_selected_principal_indices",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 151,
+    "source": "theorem three_selected_principal_indices :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.sourceRightNonempty",
+    "kind": "def",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 155,
+    "source": "def sourceRightNonempty : G Empty [.bot] [.top,.top,.bot] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.sourceRightNonempty_count",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 158,
+    "source": "theorem sourceRightNonempty_count : sourceRightNonempty.cutCount = (r [.top,.top,.bot,.top]).cutCount :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.sibling_ancestry",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 161,
+    "source": "theorem sibling_ancestry {\u0393 \u0394 : List (NormalForm P)} (f : G P \u0393 \u0394) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.BlockedExamples.proper_nested",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenBlockedExamples.lean",
+    "line": 169,
+    "source": "theorem proper_nested (t : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleExamples.left",
+    "kind": "def",
+    "path": "DosenPetric/GentzenReducibleExamples.lean",
+    "line": 11,
+    "source": "def left (t : Literal P) : G P [.lit t] [.lit t] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleExamples.right",
+    "kind": "def",
+    "path": "DosenPetric/GentzenReducibleExamples.lean",
+    "line": 14,
+    "source": "def right (t : Literal P) : G P [.lit t] [.lit t] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleExamples.left_unblocked",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleExamples.lean",
+    "line": 18,
+    "source": "theorem left_unblocked (t : Literal P) : \u00ac BlockedL (left t) := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleExamples.right_unblocked",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleExamples.lean",
+    "line": 25,
+    "source": "theorem right_unblocked (t : Literal P) : \u00ac BlockedR (right t) := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleExamples.left_reducible",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleExamples.lean",
+    "line": 32,
+    "source": "theorem left_reducible (t : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleExamples.right_reducible",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleExamples.lean",
+    "line": 43,
+    "source": "theorem right_reducible (t : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleExamples.both_signs",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleExamples.lean",
+    "line": 54,
+    "source": "theorem both_signs (p : P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleExamples.nested",
+    "kind": "def",
+    "path": "DosenPetric/GentzenReducibleExamples.lean",
+    "line": 59,
+    "source": "def nested (t : Literal P) : G P [.lit t] [.lit t] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleExamples.inner",
+    "kind": "def",
+    "path": "DosenPetric/GentzenReducibleExamples.lean",
+    "line": 61,
+    "source": "def inner (t : Literal P) : ProofAddress (nested t) (BlockedExamples.shared t) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleExamples.nested_unblocked",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleExamples.lean",
+    "line": 65,
+    "source": "theorem nested_unblocked (t : Literal P) : \u00ac BlockedL (nested t) := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleExamples.nested_inner_tied",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleExamples.lean",
+    "line": 72,
+    "source": "theorem nested_inner_tied (t : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ReducibleExamples.nested_inner_not_reducible",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenReducibleExamples.lean",
+    "line": 83,
+    "source": "theorem nested_inner_not_reducible (t : Literal P) :"
+  }
+]

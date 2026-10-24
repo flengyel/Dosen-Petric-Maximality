@@ -1,0 +1,29 @@
+Typed proof-occurrence replacement is proved, including an existing W5
+rewrite lifted into arbitrary surrounding proofs and concrete nested examples.
+The next checkpoint is the source Blocked/Reducible classification and a
+finite account of the local cases needed by Reducibility.
+
+Define the seven p.250 blocked left-contraction patterns and their separately
+typed right analogues on actual G terms and selected positions. Derive their
+context and arity conditions. Define reducibility for a contraction occurrence
+tied to an existing topmost cut, retaining its ProofAddress and exact formula
+position. Match the source's ancestor condition carefully: it concerns proper
+containing contractions, not the occurrence itself. Do not define Blocked by
+failure of a rewrite search or Reducible by the existence of its desired reduct.
+
+Prove a complete immediate-rule/selected-ancestry case classification under
+the source CutFree hypotheses. Distinguish unary parametric/selected cases,
+shared versus disjoint contractions, binary selection in either or both
+premises, and selected logical principal positions. Keep equal labels at
+distinct positions separate. Reuse existing sourceArity/classification/fibers;
+exclude leaves/cut cases only by proof. Map every case to an existing typed
+rewrite or a precise remaining obligation. The classifier must not assert a
+rank decrease for cases where only a local equality is known.
+
+This checkpoint supplies source-faithful dispatch for a later Reducibility
+proof. The global tied-site/rank argument, missing local W1/W2/W5–W6 cases,
+Blocked-w, clean-cut normalization and cut elimination remain separate gates.
+See [the concrete continuation](CODEX_GENTZEN_BLOCKED_CLASSIFICATION.txt).
+Restricted coherence M0–M3, retractions/normal forms R0–R1, PositiveCoherence,
+Reduced.Faithful, Boolean Coherence and actual maximality remain open. The
+conditional transfer and three milestone boundaries are unchanged.

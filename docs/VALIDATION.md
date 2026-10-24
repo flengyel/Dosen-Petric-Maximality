@@ -1,3 +1,72 @@
+# Blocked/reducible selection-classification validation (current checkpoint)
+
+Clean baseline main 6b860df5fdb6e4c1c50dc583e0de0d04c102eb25 matched fetched
+SSH origin. Fresh strict baseline: 208 files / 7,972 declarations, exit 0,
+7.612s. The final fetch still matches that baseline before the scoped commit.
+
+Completed final sequential checks at 2026-10-24T22:45:22.905851+00:00: **216 source files /
+8,406 audited project declarations**, an increase of 434 from the baseline.
+
+| Command | Exit | Seconds |
+| --- | --- | --- |
+| bash scripts/verify.sh | 0 | 122.936 |
+| python3 scripts/check-audit-boundaries.py | 0 | 44.598 |
+| python3 scripts/check-presentation-boundaries.py | 0 | 4.891 |
+| manuscript SHA256SUMS | 0 | 0.065 |
+| git diff --check | 0 | 0.059 |
+| git diff --cached --check | 0 | 0.055 |
+
+All five negative controls reject with the expected diagnostics and Lean exit 1;
+public import closure passes. All 137 exact public type queries (123 explicit
+declarations plus fourteen blocked constructors) pass in 8.203s.
+The 83 selected theorem axiom prints supplement the complete transitive audit.
+Only propext, Quot.sound and Classical.choice are permitted. Selected outputs,
+source/record hashes, all command exits/timings and versions are retained.
+
+Eight new modules (924 physical lines) encode seven blocked left patterns and
+separately typed canonical right patterns with explicit source-order exchange
+macros. Typed reducibility retains a topmost cut, actual tied proof address and
+formula position, an unblocked chosen contraction and blocked proper containing
+tied contractions. Proper-ancestry laws and actual root/nested/sibling examples
+compile. Complete positional predecessor evidence derives exhaustive unique
+seven-regime profiles for every original arity≥2 cut-free premise, with basis
+and cut excluded by proof. All fourteen blocked and seven profile examples,
+Empty constants, compounds, equal-label fixed/selected tags and both signs compile.
+
+The final aggregate module build passed in 49.226s. Failed elaborations and
+two briefly overlapping failed exploratory builds remain recorded; subsequent
+builds and final checks were serial. An earlier import-closure check failed
+when transient untracked overlapping APIs appeared. They were left untouched.
+An optional isolated fresh build was interrupted, exit 130, while compiling
+unchanged dependencies and is not acceptance. Final successful checks use the
+original checkout after all staged/working proof bytes matched the frozen
+candidate and no extra Lean sources remained. No artifacts were reused across
+projects or toolchains; this is local build/audit, not independent kernel replay.
+
+All older modules/interfaces, toolchain/manifest, AGENTS, manuscript v4/v5,
+diagrams/references/checksums, historical reports/prompts and integration stash
+are preserved. Existing Lean changes only add eight root imports and axiom
+prints. No target, equation, rank or heartbeat was weakened. Exact evidence:
+provenance/wsl-gentzen-blocked-classification/ and matching .codex-work/.
+Author-side hostile/source-grounded writing reviews examine actual proofs,
+source correspondence and current maps. Separate final receipts compare
+committed bytes, SSH refs and conflict-preserving Downloads copies.
+
+The [report and finite case ledger](GENTZEN_BLOCKED_CLASSIFICATION_REPORT.md)
+identify [mixed-premise W5](CODEX_GENTZEN_MIXED_W5_DISPATCH.txt) as the next
+missing classifier regime. Macro-level dispatch/rank transport, other missing
+local cases, certified dispatch and all affected tied-site ranks remain open.
+The Reducibility Lemma, Blocked-w, clean-cut normalization, cut elimination,
+restricted coherence, PositiveCoherence, faithfulness/Boolean Coherence and
+unconditional maximality remain unproved. Three milestone boundaries stay
+separate. Independent source/kernel validation, Challenge/Solution/Comparator,
+official preflight/service, fresh manuscript layout/compilation and independent
+peer review did not run. No publication, license or visibility change was made.
+
+---
+
+## Historical proof-replacement validation (unchanged evidence)
+
 # Gentzen proof-replacement validation (current checkpoint)
 
 Clean main 6bbf0a4143d395fc339972f86f25d3b74203a9b0 matched fetched SSH origin.

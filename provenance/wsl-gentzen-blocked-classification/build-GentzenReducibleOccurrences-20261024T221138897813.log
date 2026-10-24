@@ -1,0 +1,26 @@
+✔ [128/130] Built DosenPetric.GentzenBlockedSource (1.1s)
+✖ [129/130] Building DosenPetric.GentzenBlockedPatterns (1.6s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenBlockedPatterns.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedPatterns.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedPatterns.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedPatterns.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedPatterns.setup.json --json
+error: DosenPetric/GentzenBlockedPatterns.lean:65:8: Type mismatch: After simplification, term
+  f.conjR g
+ has type
+  G P (Γ ++ Θ) (A.conj B :: (X ++ A.conj B :: (Y ++ Λ)))
+but is expected to have type
+  G P (Γ ++ Θ) ([] ++ A.conj B :: (X ++ A.conj B :: (Y ++ Λ)))
+error: DosenPetric/GentzenBlockedPatterns.lean:69:8: Type mismatch: After simplification, term
+  f.conjR g
+ has type
+  G P (Γ ++ Θ) (A.conj B :: (Δ ++ (Z ++ A.conj B :: T)))
+but is expected to have type
+  G P (Γ ++ Θ) ([] ++ A.conj B :: (Δ ++ (Z ++ A.conj B :: T)))
+error: DosenPetric/GentzenBlockedPatterns.lean:73:8: Type mismatch: After simplification, term
+  f.conjR g
+ has type
+  G P (Γ ++ Θ) (A.conj B :: (X ++ A.conj B :: (Y ++ (Z ++ A.conj B :: T))))
+but is expected to have type
+  G P (Γ ++ Θ) ([] ++ A.conj B :: (X ++ A.conj B :: (Y ++ (Z ++ A.conj B :: T))))
+error: DosenPetric/GentzenBlockedPatterns.lean:77:36: unexpected token '('; expected ',' or binderPred
+error: DosenPetric/GentzenBlockedPatterns.lean:82:36: unexpected token '('; expected ',' or binderPred
+Some required targets logged failures:
+- DosenPetric.GentzenBlockedPatterns
+error: build failed

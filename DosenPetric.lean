@@ -206,3 +206,11 @@ public import DosenPetric.GentzenPremiseReplacement
 public import DosenPetric.GentzenProofReplacement
 public import DosenPetric.GentzenReplacementExamples
 public import DosenPetric.GentzenRewriteIntegration
+public import DosenPetric.GentzenSelectionOrigins
+public import DosenPetric.GentzenSelectionDispatch
+public import DosenPetric.GentzenDispatchRules
+public import DosenPetric.GentzenBlockedSource
+public import DosenPetric.GentzenBlockedPatterns
+public import DosenPetric.GentzenReducibleOccurrences
+public import DosenPetric.GentzenBlockedExamples
+public import DosenPetric.GentzenReducibleExamples

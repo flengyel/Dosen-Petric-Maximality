@@ -1,0 +1,63 @@
+✖ [125/126] Building DosenPetric.GentzenBlockedSource (1.7s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenBlockedSource.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedSource.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedSource.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedSource.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedSource.setup.json --json
+error: DosenPetric/GentzenBlockedSource.lean:24:32: Application type mismatch: The argument
+  f
+has type
+  G P (Γ ++ [A]) Δ
+but is expected to have type
+  G P ([] ++ Γ ++ [A] ++ []) Δ
+in the application
+  G.exchangeL [] Γ [A] [] Δ f
+error: DosenPetric/GentzenBlockedSource.lean:27:32: Application type mismatch: The argument
+  g
+has type
+  G P (Θ ++ [B]) Λ
+but is expected to have type
+  G P ([] ++ Θ ++ [B] ++ []) Λ
+in the application
+  G.exchangeL [] Θ [B] [] Λ g
+error: DosenPetric/GentzenBlockedSource.lean:29:57: Application type mismatch: The argument
+  f'
+has type
+  G P (A :: Γ) Δ
+but is expected to have type
+  G P (A :: [].append (Γ ++ Θ)) Δ
+in the application
+  f'.disjL
+error: DosenPetric/GentzenBlockedSource.lean:33:56: unsolved goals
+P : Type u
+Γ Θ Δ Λ : List (NormalForm P)
+A B : NormalForm P
+f : G P (Γ ++ [A]) Δ
+g : G P (Θ ++ [B]) Λ
+⊢ (⋯.mp (G.exchangeL [] [A.disj B] (Γ ++ Θ) [] (Δ ++ Λ) (sorry.disjL sorry))).cutCount = f.cutCount + g.cutCount
+error: DosenPetric/GentzenBlockedSource.lean:34:13: declaration uses `sorry`
+error: DosenPetric/GentzenBlockedSource.lean:34:23: This simp argument is unused:
+  G.count_reindex
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [disjLLast, G.cutCount]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedSource.lean:34:39: This simp argument is unused:
+  G.cutCount
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [disjLLast, G.count_reindex]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenBlockedSource.lean:60:2: Type mismatch
+  G.contractRFirst Γ X T C [Y] ⋯ f
+has type
+  G P Γ (X ++ C :: (gaps [Y] ++ T))
+but is expected to have type
+  G P Γ (X ++ C :: (Y ++ T))
+error: DosenPetric/GentzenBlockedSource.lean:65:2: Type mismatch
+  G.contractRFirst_count ?m.18 ?m.19 ?m.20 ?m.21 ?m.22 ?m.23 ?m.24
+has type
+  (G.contractRFirst ?m.18 ?m.19 ?m.20 ?m.21 ?m.22 ?m.23 ?m.24).cutCount = G.cutCount ?m.24
+but is expected to have type
+  (sourceRight2 C Γ X Y T f).cutCount = f.cutCount
+Some required targets logged failures:
+- DosenPetric.GentzenBlockedSource
+error: build failed

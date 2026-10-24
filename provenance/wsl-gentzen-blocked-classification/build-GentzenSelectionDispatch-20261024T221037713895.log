@@ -1,0 +1,16 @@
+✖ [129/129] Building DosenPetric.GentzenSelectionDispatch (1.3s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSelectionDispatch.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectionDispatch.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSelectionDispatch.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectionDispatch.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSelectionDispatch.setup.json --json
+error: DosenPetric/GentzenSelectionDispatch.lean:66:61: Function expected at
+  List.mem_map_of_mem ?m.107
+but this term has type
+  ?m.106 ?m.105 ∈ List.map ?m.106 ?m.104
+
+Note: Expected a function because this term is being applied to the argument
+  hx
+error: DosenPetric/GentzenSelectionDispatch.lean:90:16: Unknown identifier `hn`
+error: DosenPetric/GentzenSelectionDispatch.lean:90:94: Unknown identifier `hn`
+error: DosenPetric/GentzenSelectionDispatch.lean:95:16: Unknown identifier `hn`
+error: DosenPetric/GentzenSelectionDispatch.lean:95:95: Unknown identifier `hn`
+Some required targets logged failures:
+- DosenPetric.GentzenSelectionDispatch
+error: build failed

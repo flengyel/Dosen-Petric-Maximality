@@ -1,0 +1,1079 @@
+diff --git a/Checks/Axioms.lean b/Checks/Axioms.lean
+index 79b934b..ff9b393 100644
+--- a/Checks/Axioms.lean
++++ b/Checks/Axioms.lean
+@@ -1705,3 +1705,86 @@ run_elab do
+ #print axioms DosenPetric.Reduced.Gentzen.RewriteIntegration.actual_w5_atomized
+ #print axioms DosenPetric.Reduced.Gentzen.RewriteIntegration.actual_w5_cutFree
+ #print axioms DosenPetric.Reduced.Gentzen.RewriteIntegration.empty_w5_right
++#print axioms DosenPetric.Reduced.Gentzen.Premise.branch_zero_or_one
++#print axioms DosenPetric.Reduced.Gentzen.G.leaf_indices
++#print axioms DosenPetric.Reduced.Gentzen.G.cutFree_not_cut
++#print axioms DosenPetric.Reduced.Gentzen.G.port_exists
++#print axioms DosenPetric.Reduced.Gentzen.G.selectionPort_spec
++#print axioms DosenPetric.Reduced.Gentzen.PortOrigin.arity
++#print axioms DosenPetric.Reduced.Gentzen.PortOrigin.unique
++#print axioms DosenPetric.Reduced.Gentzen.G.selectionPort_eq
++#print axioms DosenPetric.Reduced.Gentzen.ContractionBlock.selected_pair
++#print axioms DosenPetric.Reduced.Gentzen.ContractionBlock.not_basisL
++#print axioms DosenPetric.Reduced.Gentzen.ContractionBlock.not_basisR
++#print axioms DosenPetric.Reduced.Gentzen.SelectionRegime.classify
++#print axioms DosenPetric.Reduced.Gentzen.SelectionRegime.unique
++#print axioms DosenPetric.Reduced.Gentzen.G.ports_complete
++#print axioms DosenPetric.Reduced.Gentzen.G.ports_branch_exists
++#print axioms DosenPetric.Reduced.Gentzen.G.selection_classification
++#print axioms DosenPetric.Reduced.Gentzen.ContractionBlock.classificationL
++#print axioms DosenPetric.Reduced.Gentzen.ContractionBlock.classificationR
++#print axioms DosenPetric.Reduced.Gentzen.Premise.second_binary
++#print axioms DosenPetric.Reduced.Gentzen.G.fresh_rule
++#print axioms DosenPetric.Reduced.Gentzen.PortOrigin.second_binary
++#print axioms DosenPetric.Reduced.Gentzen.PortOrigin.shared_rule
++#print axioms DosenPetric.Reduced.Gentzen.PortOrigin.fresh_rule
++#print axioms DosenPetric.Reduced.Gentzen.G.port_member
++#print axioms DosenPetric.Reduced.Gentzen.G.selected_second_binary
++#print axioms DosenPetric.Reduced.Gentzen.G.selected_shared_rule
++#print axioms DosenPetric.Reduced.Gentzen.G.selected_fresh_rule
++#print axioms DosenPetric.Reduced.Gentzen.BlockedSource.disjLLast_count
++#print axioms DosenPetric.Reduced.Gentzen.BlockedSource.sourceRight2_count
++#print axioms DosenPetric.Reduced.Gentzen.BlockedSource.sourceRight3_count
++#print axioms DosenPetric.Reduced.Gentzen.BlockedSource.selected2_indices
++#print axioms DosenPetric.Reduced.Gentzen.BlockedSource.selected3_indices
++#print axioms DosenPetric.Reduced.Gentzen.BlockedL.lower
++#print axioms DosenPetric.Reduced.Gentzen.BlockedR.lower
++#print axioms DosenPetric.Reduced.Gentzen.G.ruleKind_reindex
++#print axioms DosenPetric.Reduced.Gentzen.BlockedL.premise_kind
++#print axioms DosenPetric.Reduced.Gentzen.BlockedR.premise_kind
++#print axioms DosenPetric.Reduced.Gentzen.ProofAddress.proper_length
++#print axioms DosenPetric.Reduced.Gentzen.ProofAddress.proper_irrefl
++#print axioms DosenPetric.Reduced.Gentzen.ProofAddress.proper_trans
++#print axioms DosenPetric.Reduced.Gentzen.ProofAddress.down_proper
++#print axioms DosenPetric.Reduced.Gentzen.ReducibleL.cutFree
++#print axioms DosenPetric.Reduced.Gentzen.ReducibleL.incomparable
++#print axioms DosenPetric.Reduced.Gentzen.ReducibleR.cutFree
++#print axioms DosenPetric.Reduced.Gentzen.ReducibleR.incomparable
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.left_gamma_mix
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.left_gamma_conj
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.left_gamma_disj
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.left_conjunction
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.left_disj_first
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.left_disj_second
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.left_disj_both
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.right_gamma_mix
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.right_gamma_disj
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.right_gamma_conj
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.right_disjunction
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.right_conj_first
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.right_conj_second
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.right_conj_both
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.splitMix_ports
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.splitMix_regime
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.freshBoth_ports
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.freshBoth_regime
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.freshFirst_ports
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.freshSecond_ports
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.fresh_single_branch_regimes
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.shared_regime
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.same_label_fixed_principal
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.unaryFixed_ports
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.onlySecond_ports
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.single_branch_parametric_regimes
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.three_selected_principal_indices
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.sourceRightNonempty_count
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.sibling_ancestry
++#print axioms DosenPetric.Reduced.Gentzen.BlockedExamples.proper_nested
++#print axioms DosenPetric.Reduced.Gentzen.ReducibleExamples.left_unblocked
++#print axioms DosenPetric.Reduced.Gentzen.ReducibleExamples.right_unblocked
++#print axioms DosenPetric.Reduced.Gentzen.ReducibleExamples.left_reducible
++#print axioms DosenPetric.Reduced.Gentzen.ReducibleExamples.right_reducible
++#print axioms DosenPetric.Reduced.Gentzen.ReducibleExamples.both_signs
++#print axioms DosenPetric.Reduced.Gentzen.ReducibleExamples.nested_unblocked
++#print axioms DosenPetric.Reduced.Gentzen.ReducibleExamples.nested_inner_tied
++#print axioms DosenPetric.Reduced.Gentzen.ReducibleExamples.nested_inner_not_reducible
+diff --git a/DosenPetric.lean b/DosenPetric.lean
+index a1c546e..913804e 100644
+--- a/DosenPetric.lean
++++ b/DosenPetric.lean
+@@ -206,3 +206,11 @@ public import DosenPetric.GentzenPremiseReplacement
+ public import DosenPetric.GentzenProofReplacement
+ public import DosenPetric.GentzenReplacementExamples
+ public import DosenPetric.GentzenRewriteIntegration
++public import DosenPetric.GentzenSelectionOrigins
++public import DosenPetric.GentzenSelectionDispatch
++public import DosenPetric.GentzenDispatchRules
++public import DosenPetric.GentzenBlockedSource
++public import DosenPetric.GentzenBlockedPatterns
++public import DosenPetric.GentzenReducibleOccurrences
++public import DosenPetric.GentzenBlockedExamples
++public import DosenPetric.GentzenReducibleExamples
+diff --git a/DosenPetric/GentzenBlockedExamples.lean b/DosenPetric/GentzenBlockedExamples.lean
+new file mode 100644
+index 0000000..9acbdfe
+--- /dev/null
++++ b/DosenPetric/GentzenBlockedExamples.lean
+@@ -0,0 +1,173 @@
++module
++
++public import DosenPetric.GentzenDispatchRules
++public import DosenPetric.GentzenReducibleOccurrences
++public import DosenPetric.GentzenSingleMixExamples
++
++@[expose] public section
++set_option autoImplicit false
++namespace DosenPetric.Reduced.Gentzen.BlockedExamples
++universe u
++variable {P : Type u}
++open BlockedSource W5.SinglePremiseMix.Examples
++
++def l (Γ : List (NormalForm Empty)) := G.atomize (W1.SameSideLogical.constantLeft Γ)
++def r (Δ : List (NormalForm Empty)) := G.atomize (W1.SameSideLogical.constantRight Δ)
++
++theorem left_gamma_mix : ∃ g : G Empty [.top] [.top,.top], BlockedL g :=
++  ⟨_,.gammaMix .top [] [] [] [] [.top] [.top] (l [.top]) (l [.top])⟩
++theorem left_gamma_conj : ∃ g : G Empty [.top] [.conj .top .top], BlockedL g :=
++  ⟨_,.gammaConj .top .top .top [] [] [] [] [] [] (l [.top]) (l [.top])⟩
++theorem left_gamma_disj : ∃ g : G Empty [.top,.disj .top .bot] [.top,.top], BlockedL g :=
++  ⟨_,.gammaDisj .top .top .bot [] [] [] [] [.top] [.top] (l [.top,.top]) (l [.top,.bot])⟩
++theorem left_conjunction : ∃ g : G Empty [.conj .top .bot] [.top], BlockedL g :=
++  ⟨_,.conjunction .top .bot [] [] [.top] (l [.conj .top .bot,.top,.bot])⟩
++theorem left_disj_first : ∃ g : G Empty [.disj .top .bot] [.top,.top], BlockedL g :=
++  ⟨_,.disjunctionFirst .top .bot [] [] [] [.top] [.top] (l [.disj .top .bot,.top]) (l [.bot])⟩
++theorem left_disj_second : ∃ g : G Empty [.disj .top .bot] [.top,.top], BlockedL g :=
++  ⟨_,.disjunctionSecond .top .bot [] [] [] [.top] [.top] (l [.top]) (l [.disj .top .bot,.bot])⟩
++theorem left_disj_both : ∃ g : G Empty [.disj .top .bot] [.top,.top], BlockedL g :=
++  ⟨_,.disjunctionBoth .top .bot [] [] [] [] [.top] [.top]
++    (l [.disj .top .bot,.top]) (l [.disj .top .bot,.bot])⟩
++
++theorem right_gamma_mix : ∃ g : G Empty [.bot,.bot] [.top], BlockedR g :=
++  ⟨_,.gammaMix .top [.bot] [.bot] [] [] [] [] (r [.top]) (r [.top])⟩
++theorem right_gamma_disj : ∃ g : G Empty [.disj .bot .bot] [.top], BlockedR g :=
++  ⟨_,.gammaDisj .top .bot .bot [] [] [] [] [] [] (r [.top]) (r [.top])⟩
++theorem right_gamma_conj : ∃ g : G Empty [.bot,.bot] [.conj .bot .bot,.top], BlockedR g :=
++  ⟨_,.gammaConj .top .bot .bot [.bot] [.bot] [] [] [] [] (r [.bot,.top]) (r [.bot,.top])⟩
++theorem right_disjunction : ∃ g : G Empty [.bot] [.disj .bot .bot], BlockedR g :=
++  ⟨_,.disjunction .bot .bot [.bot] [] [] (r [.bot,.bot,.disj .bot .bot])⟩
++theorem right_conj_first : ∃ g : G Empty [.bot,.bot] [.conj .bot .bot], BlockedR g :=
++  ⟨_,.conjunctionFirst .bot .bot [.bot] [.bot] [] [] [] (r [.bot,.conj .bot .bot]) (r [.bot])⟩
++theorem right_conj_second : ∃ g : G Empty [.bot,.bot] [.conj .bot .bot], BlockedR g :=
++  ⟨_,.conjunctionSecond .bot .bot [.bot] [.bot] [] [] [] (r [.bot]) (r [.bot,.conj .bot .bot])⟩
++theorem right_conj_both : ∃ g : G Empty [.bot,.bot] [.conj .bot .bot], BlockedR g :=
++  ⟨_,.conjunctionBoth .bot .bot [.bot] [.bot] [] [] [] []
++    (r [.bot,.conj .bot .bot]) (r [.bot,.conj .bot .bot])⟩
++
++def splitMix (t : Literal P) := G.mix (G.identity t) (G.identity t)
++theorem splitMix_ports (t : Literal P) :
++    (splitMix t).selectionPorts .left (two (.lit t)).selected = [.second,.first] := by
++  change [(splitMix t).selectionPort .left (.here (.lit t) [.lit t]),
++    (splitMix t).selectionPort .left (.there (.here (.lit t) []))] = _
++  have h₀ := G.selectionPort_eq (splitMix t) .left (.here _ _) .second (PortOrigin.second
++    ⟨⟨_,_,G.identity t,Premise.mix_right _ _⟩,.here (.lit t) []⟩ rfl rfl)
++  have h₁ := G.selectionPort_eq (splitMix t) .left (.there (.here _ _)) .first (PortOrigin.first
++    ⟨⟨_,_,G.identity t,Premise.mix_left _ _⟩,.here (.lit t) []⟩ rfl rfl)
++  exact congr (congrArg List.cons h₀) (congrArg (fun p => [p]) h₁)
++
++theorem splitMix_regime (t : Literal P) :
++    SelectionRegime.parametricBoth.Holds ((splitMix t).selectionPorts .left (two (.lit t)).selected) := by
++  rw [splitMix_ports]
++  unfold SelectionRegime.Holds
++  decide
++
++def freshBoth : G Empty [.disj .top .bot,.disj .top .bot,.disj .top .bot] [.top,.top] :=
++  G.disjL (l [.top,.disj .top .bot]) (l [.bot,.disj .top .bot])
++theorem freshBoth_ports : freshBoth.selectionPorts .left (three (.disj .top .bot)).selected =
++    [.fresh,.first,.second] := by
++  change [freshBoth.selectionPort .left (.here _ _),
++    freshBoth.selectionPort .left (.there (.here _ _)),
++    freshBoth.selectionPort .left (.there (.there (.here _ _)))] = _
++  rw [G.selectionPort_eq freshBoth .left (.here _ _) .fresh (.fresh rfl),
++    G.selectionPort_eq freshBoth .left (.there (.here _ _)) .first (.first
++      ⟨⟨_,_,l [.top,.disj .top .bot],Premise.disjL_left _ _⟩,.there (.here _ _)⟩ rfl rfl),
++    G.selectionPort_eq freshBoth .left (.there (.there (.here _ _))) .second (.second
++      ⟨⟨_,_,l [.bot,.disj .top .bot],Premise.disjL_right _ _⟩,.there (.here _ _)⟩ rfl rfl)]
++
++theorem freshBoth_regime : SelectionRegime.selectedBoth.Holds
++    (freshBoth.selectionPorts .left (three (.disj .top .bot)).selected) := by
++  rw [freshBoth_ports]
++  unfold SelectionRegime.Holds
++  decide
++
++def freshFirst : G Empty [.disj .top .bot,.disj .top .bot] [.top,.top] :=
++  G.disjL (l [.top,.disj .top .bot]) (l [.bot])
++theorem freshFirst_ports : freshFirst.selectionPorts .left (two (.disj .top .bot)).selected =
++    [.fresh,.first] := by
++  change [freshFirst.selectionPort .left (.here _ _),freshFirst.selectionPort .left (.there (.here _ _))] = _
++  rw [G.selectionPort_eq freshFirst .left (.here _ _) .fresh (.fresh rfl),G.selectionPort_eq freshFirst .left (.there (.here _ _)) .first (.first
++    ⟨⟨_,_,l [.top,.disj .top .bot],Premise.disjL_left _ _⟩,.there (.here _ _)⟩ rfl rfl)]
++
++def freshSecond : G Empty [.disj .top .bot,.disj .top .bot] [.top,.top] :=
++  G.disjL (l [.top]) (l [.bot,.disj .top .bot])
++theorem freshSecond_ports : freshSecond.selectionPorts .left (two (.disj .top .bot)).selected =
++    [.fresh,.second] := by
++  change [freshSecond.selectionPort .left (.here _ _),freshSecond.selectionPort .left (.there (.here _ _))] = _
++  rw [G.selectionPort_eq freshSecond .left (.here _ _) .fresh (.fresh rfl),G.selectionPort_eq freshSecond .left (.there (.here _ _)) .second (.second
++    ⟨⟨_,_,l [.bot,.disj .top .bot],Premise.disjL_right _ _⟩,.there (.here _ _)⟩ rfl rfl)]
++
++theorem fresh_single_branch_regimes :
++    SelectionRegime.selectedFirst.Holds (freshFirst.selectionPorts .left (two (.disj .top .bot)).selected) ∧
++    SelectionRegime.selectedSecond.Holds (freshSecond.selectionPorts .left (two (.disj .top .bot)).selected) := by
++  rw [freshFirst_ports,freshSecond_ports]
++  unfold SelectionRegime.Holds
++  decide
++
++def shared (t : Literal P) : G P [.lit t,.lit t] [.lit t] :=
++  G.contractL (.lit t) [[],[]] [.lit t] [.lit t] (Nat.le_refl 2)
++    (W4.SelectedLogical.Examples.prefixL [.lit t,.lit t] (G.identity t))
++theorem shared_regime (t : Literal P) :
++    SelectionRegime.shared.Holds ((shared t).selectionPorts .left (two (.lit t)).selected) := by
++  apply (shared t).port_member .left (two (.lit t)).selected .shared |>.mpr
++  exact ⟨.here _ _,List.mem_cons_self,.shared (.left ..)⟩
++
++theorem same_label_fixed_principal (t : Literal P) :
++    (shared t).selectionPort .left (.there (.here (.lit t) [])) = .first :=
++  G.selectionPort_eq (shared t) .left (.there (.here _ _)) .first (.first
++    ⟨⟨_,_,_,Premise.contractL (.lit t) [[],[]] [.lit t] [.lit t] (Nat.le_refl 2) _⟩,
++      .there (.there (.here _ _))⟩ rfl rfl)
++
++def unaryFixed : G Empty [.top,.top,.top] [.top] :=
++  G.thinL [] [.top,.top] [.top] .top (l [.top,.top])
++theorem unaryFixed_ports : unaryFixed.selectionPorts .left
++    (W5.SinglePremiseMix.block .top [[.top],[]] []).selected = [.first,.first] := by
++  change [unaryFixed.selectionPort .left (.there (.here _ _)),
++    unaryFixed.selectionPort .left (.there (.there (.here _ _)))] = _
++  have h₀ := G.selectionPort_eq unaryFixed .left (.there (.here _ _)) .first (.first
++    ⟨⟨_,_,l [.top,.top],Premise.thinL [] [.top,.top] [.top] .top _⟩,.here _ _⟩ rfl rfl)
++  have h₁ := G.selectionPort_eq unaryFixed .left (.there (.there (.here _ _))) .first (.first
++    ⟨⟨_,_,l [.top,.top],Premise.thinL [] [.top,.top] [.top] .top _⟩,.there (.here _ _)⟩ rfl rfl)
++  exact congr (congrArg List.cons h₀) (congrArg (fun p => [p]) h₁)
++
++def onlySecond : G Empty [.top,.top] [.top,.top] := G.mix G.topI (l [.top,.top])
++theorem onlySecond_ports : onlySecond.selectionPorts .left (two .top).selected = [.second,.second] := by
++  change [onlySecond.selectionPort .left (.here _ _),onlySecond.selectionPort .left (.there (.here _ _))] = _
++  have h₀ := G.selectionPort_eq onlySecond .left (.here _ _) .second (.second
++    ⟨⟨_,_,l [.top,.top],Premise.mix_right G.topI _⟩,.here _ _⟩ rfl rfl)
++  have h₁ := G.selectionPort_eq onlySecond .left (.there (.here _ _)) .second (.second
++    ⟨⟨_,_,l [.top,.top],Premise.mix_right G.topI _⟩,.there (.here _ _)⟩ rfl rfl)
++  exact congr (congrArg List.cons h₀) (congrArg (fun p => [p]) h₁)
++
++theorem single_branch_parametric_regimes :
++    SelectionRegime.parametricFirst.Holds (unaryFixed.selectionPorts .left
++      (W5.SinglePremiseMix.block .top [[.top],[]] []).selected) ∧
++    SelectionRegime.parametricSecond.Holds (onlySecond.selectionPorts .left (two .top).selected) := by
++  rw [unaryFixed_ports,onlySecond_ports]
++  unfold SelectionRegime.Holds
++  decide
++
++theorem three_selected_principal_indices :
++    (selectedCopies (.disj (.top : NormalForm Empty) .bot) [[],[],[]] []).map At.index = [0,1,2] :=
++  (selectedCopies_indices ..).trans rfl
++
++def sourceRightNonempty : G Empty [.bot] [.top,.top,.bot] :=
++  sourceRight2 .top [.bot] [.top] [.bot] [] (r [.top,.top,.bot,.top])
++
++theorem sourceRightNonempty_count : sourceRightNonempty.cutCount = (r [.top,.top,.bot,.top]).cutCount :=
++  sourceRight2_count ..
++
++theorem sibling_ancestry {Γ Δ : List (NormalForm P)} (f : G P Γ Δ) :
++    ¬ (ProofAddress.root.down (Premise.mix_left f f)).ProperContains
++      (ProofAddress.root.down (Premise.mix_right f f)) := by
++  intro h
++  have he := ProofAddress.proper_length h
++  change 1 < 1 at he
++  omega
++
++theorem proper_nested (t : Literal P) :
++    (ProofAddress.root : ProofAddress (G.mix (shared t) (shared t)) (G.mix (shared t) (shared t))).ProperContains
++      (ProofAddress.root.down (Premise.mix_left (shared t) (shared t))) := ProofAddress.down_proper ..
++
++end DosenPetric.Reduced.Gentzen.BlockedExamples
+diff --git a/DosenPetric/GentzenBlockedPatterns.lean b/DosenPetric/GentzenBlockedPatterns.lean
+new file mode 100644
+index 0000000..98afc4f
+--- /dev/null
++++ b/DosenPetric/GentzenBlockedPatterns.lean
+@@ -0,0 +1,72 @@
++module
++
++public import DosenPetric.GentzenBlockedSource
++
++@[expose] public section
++set_option autoImplicit false
++namespace DosenPetric.Reduced.Gentzen
++universe u
++open BlockedSource
++
++/-- The seven displayed source left patterns, with actual selected gaps.
++    Terminal logical order is realized by explicit proof constructors. -/
++inductive BlockedL {P : Type u} : {Γ Δ : List (NormalForm P)} → G P Γ Δ → Prop where
++  | gammaMix (C : NormalForm P) (X Y Z T Δ Λ : List (NormalForm P))
++      (f : G P (X++C::Y) Δ) (g : G P (Z++C::T) Λ) :
++      BlockedL (left2 C Z (T++X) Y (Λ++Δ) ((G.mix f g).reindex (by simp only [List.append_assoc,List.cons_append]) rfl))
++  | gammaConj (C A B : NormalForm P) (X Y Z T Δ Λ : List (NormalForm P))
++      (f : G P (X++C::Y) (A::Δ)) (g : G P (Z++C::T) (B::Λ)) :
++      BlockedL (left2 C X (Y++Z) T (.conj A B::(Δ++Λ)) ((G.conjR f g).reindex (by simp only [List.append_assoc,List.cons_append]) rfl))
++  | gammaDisj (C A B : NormalForm P) (X Y Z T Δ Λ : List (NormalForm P))
++      (f : G P ((X++C::Y)++[A]) Δ) (g : G P ((Z++C::T)++[B]) Λ) :
++      BlockedL (left2 C X (Y++Z) (T++[.disj A B]) (Δ++Λ) ((disjLLast f g).reindex (by simp only [List.append_assoc,List.cons_append]) rfl))
++  | conjunction (A B : NormalForm P) (X Y Δ : List (NormalForm P))
++      (f : G P ((X++.conj A B::Y)++[A,B]) Δ) :
++      BlockedL (left2 (.conj A B) X Y [] Δ ((conjLLast (X++.conj A B::Y) Δ A B f).reindex (by simp only [List.append_assoc,List.cons_append]) rfl))
++  | disjunctionFirst (A B : NormalForm P) (X Y Z Δ Λ : List (NormalForm P))
++      (f : G P ((X++.disj A B::Y)++[A]) Δ) (g : G P (Z++[B]) Λ) :
++      BlockedL (left2 (.disj A B) X (Y++Z) [] (Δ++Λ) ((disjLLast f g).reindex (by simp only [List.append_assoc,List.cons_append]) rfl))
++  | disjunctionSecond (A B : NormalForm P) (X Z T Δ Λ : List (NormalForm P))
++      (f : G P (X++[A]) Δ) (g : G P ((Z++.disj A B::T)++[B]) Λ) :
++      BlockedL (left2 (.disj A B) (X++Z) T [] (Δ++Λ) ((disjLLast f g).reindex (by simp only [List.append_assoc,List.cons_append]) rfl))
++  | disjunctionBoth (A B : NormalForm P) (X Y Z T Δ Λ : List (NormalForm P))
++      (f : G P ((X++.disj A B::Y)++[A]) Δ) (g : G P ((Z++.disj A B::T)++[B]) Λ) :
++      BlockedL (left3 (.disj A B) X (Y++Z) T [] (Δ++Λ) ((disjLLast f g).reindex (by simp only [List.append_assoc,List.cons_append]) rfl))
++
++/-- Separately typed right-dual patterns for the primitive last-retaining
++    contraction. The source first-retaining order uses contractRFirst. -/
++inductive BlockedR {P : Type u} : {Γ Δ : List (NormalForm P)} → G P Γ Δ → Prop where
++  | gammaMix (C : NormalForm P) (Γ Θ X Y Z T : List (NormalForm P))
++      (f : G P Γ (X++C::Y)) (g : G P Θ (Z++C::T)) :
++      BlockedR (right2 C (Θ++Γ) Z (T++X) Y ((G.mix f g).reindex rfl (by simp only [List.append_assoc,List.cons_append])))
++  | gammaDisj (C A B : NormalForm P) (Γ Θ X Y Z T : List (NormalForm P))
++      (f : G P (Γ++[A]) (X++C::Y)) (g : G P (Θ++[B]) (Z++C::T)) :
++      BlockedR (right2 C ((Γ++Θ)++[.disj A B]) X (Y++Z) T ((disjLLast f g).reindex rfl (by simp only [List.append_assoc,List.cons_append])))
++  | gammaConj (C A B : NormalForm P) (Γ Θ X Y Z T : List (NormalForm P))
++      (f : G P Γ (A::(X++C::Y))) (g : G P Θ (B::(Z++C::T))) :
++      BlockedR (right2 C (Γ++Θ) (.conj A B::X) (Y++Z) T ((G.conjR f g).reindex rfl (by simp only [List.append_assoc,List.cons_append])))
++  | disjunction (A B : NormalForm P) (Γ X Y : List (NormalForm P))
++      (f : G P Γ (A::B::(X++.disj A B::Y))) :
++      BlockedR (right2 (.disj A B) Γ [] X Y (G.disjR Γ [] (X++.disj A B::Y) A B f))
++  | conjunctionFirst (A B : NormalForm P) (Γ Θ X Y Λ : List (NormalForm P))
++      (f : G P Γ (A::(X++.conj A B::Y))) (g : G P Θ (B::Λ)) :
++      BlockedR (right2 (.conj A B) (Γ++Θ) [] X (Y++Λ) ((G.conjR f g).reindex rfl (by simp only [List.nil_append,List.append_assoc,List.cons_append])))
++  | conjunctionSecond (A B : NormalForm P) (Γ Θ Δ Z T : List (NormalForm P))
++      (f : G P Γ (A::Δ)) (g : G P Θ (B::(Z++.conj A B::T))) :
++      BlockedR (right2 (.conj A B) (Γ++Θ) [] (Δ++Z) T ((G.conjR f g).reindex rfl (by simp only [List.nil_append,List.append_assoc])))
++  | conjunctionBoth (A B : NormalForm P) (Γ Θ X Y Z T : List (NormalForm P))
++      (f : G P Γ (A::(X++.conj A B::Y))) (g : G P Θ (B::(Z++.conj A B::T))) :
++      BlockedR (right3 (.conj A B) (Γ++Θ) [] X (Y++Z) T ((G.conjR f g).reindex rfl (by simp only [List.nil_append,List.append_assoc,List.cons_append])))
++
++namespace BlockedL
++variable {P : Type u} {Γ Δ : List (NormalForm P)} {g : G P Γ Δ}
++theorem lower (h : BlockedL g) : ∃ (C : NormalForm P) (x : At Γ C), G.LowerContraction g .left x := by
++  cases h <;> exact ⟨_,_,G.LowerContraction.left ..⟩
++end BlockedL
++namespace BlockedR
++variable {P : Type u} {Γ Δ : List (NormalForm P)} {g : G P Γ Δ}
++theorem lower (h : BlockedR g) : ∃ (C : NormalForm P) (x : At Δ C), G.LowerContraction g .right x := by
++  cases h <;> exact ⟨_,_,G.LowerContraction.right ..⟩
++end BlockedR
++
++end DosenPetric.Reduced.Gentzen
+diff --git a/DosenPetric/GentzenBlockedSource.lean b/DosenPetric/GentzenBlockedSource.lean
+new file mode 100644
+index 0000000..281b013
+--- /dev/null
++++ b/DosenPetric/GentzenBlockedSource.lean
+@@ -0,0 +1,89 @@
++module
++
++public import DosenPetric.GentzenContractionSelectionCoordinates
++public import DosenPetric.GentzenAnalysisMacros
++
++@[expose] public section
++set_option autoImplicit false
++namespace DosenPetric.Reduced.Gentzen.BlockedSource
++universe u
++variable {P : Type u}
++
++/-- The source's terminal conjunction-left, with explicit empty fixed tail. -/
++def conjLLast (Γ Δ : List (NormalForm P)) (A B : NormalForm P)
++    (f : G P (Γ++[A,B]) Δ) : G P (Γ++[.conj A B]) Δ :=
++  G.conjL Γ [] Δ A B f
++
++/-- Move the source's terminal inputs to the primitive heads, then move the
++    introduced disjunction from the primitive head to the source's tail. -/
++def disjLLast {Γ Θ Δ Λ : List (NormalForm P)} {A B : NormalForm P}
++    (f : G P (Γ++[A]) Δ) (g : G P (Θ++[B]) Λ) :
++    G P ((Γ++Θ)++[.disj A B]) (Δ++Λ) := by
++  let f' : G P (A::Γ) Δ := (G.exchangeL [] Γ [A] [] Δ
++    (f.reindex (List.append_nil (Γ++[A])).symm rfl)).reindex
++      (by simp only [List.nil_append,List.singleton_append,List.append_nil]) rfl
++  let g' : G P (B::Θ) Λ := (G.exchangeL [] Θ [B] [] Λ
++    (g.reindex (List.append_nil (Θ++[B])).symm rfl)).reindex
++      (by simp only [List.nil_append,List.singleton_append,List.append_nil]) rfl
++  let t := @G.disjL P Γ Θ Δ Λ A B f' g'
++  exact (G.exchangeL [] [.disj A B] (Γ++Θ) [] (Δ++Λ)
++    (t.reindex (by simp only [List.nil_append,List.singleton_append,List.append_nil]) rfl)).reindex
++      (by simp only [List.nil_append,List.append_nil]) rfl
++
++theorem disjLLast_count {Γ Θ Δ Λ : List (NormalForm P)} {A B : NormalForm P}
++    (f : G P (Γ++[A]) Δ) (g : G P (Θ++[B]) Λ) :
++    (disjLLast f g).cutCount = f.cutCount+g.cutCount := by
++  simp only [disjLLast,G.count_reindex,G.cutCount]
++
++def left2 (C : NormalForm P) (X Y T Δ : List (NormalForm P))
++    (f : G P (X++C::(Y++C::T)) Δ) : G P (gaps [X,Y]++C::T) Δ :=
++  G.contractL C [X,Y] T Δ (Nat.le_refl 2)
++    (f.reindex (by simp only [repeated,List.append_assoc,List.cons_append,List.nil_append]) rfl)
++
++def left3 (C : NormalForm P) (X Y Z T Δ : List (NormalForm P))
++    (f : G P (X++C::(Y++C::(Z++C::T))) Δ) : G P (gaps [X,Y,Z]++C::T) Δ :=
++  G.contractL C [X,Y,Z] T Δ (Nat.le_succ 2)
++    (f.reindex (by simp only [repeated,List.append_assoc,List.cons_append,List.nil_append]) rfl)
++
++def right2 (C : NormalForm P) (Γ X Y T : List (NormalForm P))
++    (f : G P Γ (X++C::(Y++C::T))) : G P Γ (gaps [X,Y]++C::T) :=
++  G.contractR Γ C [X,Y] T (Nat.le_refl 2)
++    (f.reindex rfl (by simp only [repeated,List.append_assoc,List.cons_append,List.nil_append]))
++
++def right3 (C : NormalForm P) (Γ X Y Z T : List (NormalForm P))
++    (f : G P Γ (X++C::(Y++C::(Z++C::T)))) : G P Γ (gaps [X,Y,Z]++C::T) :=
++  G.contractR Γ C [X,Y,Z] T (Nat.le_succ 2)
++    (f.reindex rfl (by simp only [repeated,List.append_assoc,List.cons_append,List.nil_append]))
++
++/-- The source right-retention order is realized by the existing explicit
++    exchange macro, without changing the primitive contraction or its rank. -/
++def sourceRight2 (C : NormalForm P) (Γ X Y T : List (NormalForm P))
++    (f : G P Γ (repeated C [X,Y]++T)) : G P Γ (X++C::(Y++T)) :=
++  (G.contractRFirst Γ X T C [Y] (Nat.le_refl 1) f).reindex rfl
++    (by simp only [gaps,List.append_nil])
++
++theorem sourceRight2_count (C : NormalForm P) (Γ X Y T : List (NormalForm P))
++    (f : G P Γ (repeated C [X,Y]++T)) :
++    (sourceRight2 C Γ X Y T f).cutCount = f.cutCount :=
++  by simp only [sourceRight2,G.count_reindex,G.contractRFirst_count]
++
++def sourceRight3 (C : NormalForm P) (Γ X Y Z T : List (NormalForm P))
++    (f : G P Γ (repeated C [X,Y,Z]++T)) : G P Γ (X++C::((Y++Z)++T)) :=
++  (G.contractRFirst Γ X T C [Y,Z] (Nat.le_succ 1) f).reindex rfl
++    (by simp only [gaps,List.append_nil])
++
++theorem sourceRight3_count (C : NormalForm P) (Γ X Y Z T : List (NormalForm P))
++    (f : G P Γ (repeated C [X,Y,Z]++T)) :
++    (sourceRight3 C Γ X Y Z T f).cutCount = f.cutCount := by
++  simp only [sourceRight3,G.count_reindex,G.contractRFirst_count]
++
++theorem selected2_indices (C : NormalForm P) (X Y T : List (NormalForm P)) :
++    (selectedCopies C [X,Y] T).map At.index = [X.length,X.length+1+Y.length] :=
++  (selectedCopies_indices ..).trans rfl
++
++theorem selected3_indices (C : NormalForm P) (X Y Z T : List (NormalForm P)) :
++    (selectedCopies C [X,Y,Z] T).map At.index =
++      [X.length,X.length+1+Y.length,X.length+1+(Y.length+1+Z.length)] :=
++  (selectedCopies_indices ..).trans rfl
++
++end DosenPetric.Reduced.Gentzen.BlockedSource
+diff --git a/DosenPetric/GentzenDispatchRules.lean b/DosenPetric/GentzenDispatchRules.lean
+new file mode 100644
+index 0000000..b19d945
+--- /dev/null
++++ b/DosenPetric/GentzenDispatchRules.lean
+@@ -0,0 +1,88 @@
++module
++
++public import DosenPetric.GentzenSelectionDispatch
++
++@[expose] public section
++set_option autoImplicit false
++namespace DosenPetric.Reduced.Gentzen
++universe u
++variable {P : Type u}
++
++namespace G.RuleKind
++
++def Binary : G.RuleKind → Prop
++  | .conjR | .disjL | .mix | .cut => True
++  | _ => False
++
++def FreshOn : SequentSide → G.RuleKind → Prop
++  | .left,.thinL | .left,.conjL | .left,.disjL => True
++  | .right,.thinR | .right,.disjR | .right,.conjR => True
++  | _,_ => False
++end G.RuleKind
++
++namespace Premise
++
++theorem second_binary {Γ Δ Θ Λ : List (NormalForm P)} {g : G P Γ Δ} {f : G P Θ Λ}
++    (p : Premise g f) (hp : p.branch = 1) : g.ruleKind.Binary := by
++  cases p <;> simp_all [branch,G.ruleKind,G.RuleKind.Binary]
++end Premise
++
++namespace G
++
++theorem fresh_rule {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
++    {C : NormalForm P} (x : Place s Γ Δ C) (hb : ¬ g.ruleKind.Basis)
++    (hx : g.Leaf s x) : g.ruleKind.FreshOn s := by
++  cases g <;> cases s <;> simp only [ruleKind,RuleKind.Basis,RuleKind.FreshOn,Leaf,sourceArity] at hb hx ⊢
++  all_goals first | exact True.intro | contradiction | omega | (split at hx <;> omega)
++end G
++
++namespace PortOrigin
++variable {Γ Δ : List (NormalForm P)} {g : G P Γ Δ} {s : SequentSide}
++variable {C : NormalForm P} {x : Place s Γ Δ C}
++
++theorem second_binary (h : PortOrigin g s x .second) : g.ruleKind.Binary := by
++  cases h with | second a _ hb => exact a.branch.occurrence.second_binary hb
++
++theorem shared_rule (h : PortOrigin g s x .shared) :
++    match s with
++    | .left => g.ruleKind = .contractL
++    | .right => g.ruleKind = .contractR := by
++  cases h with | shared h => cases h <;> rfl
++
++theorem fresh_rule (h : PortOrigin g s x .fresh) (hb : ¬ g.ruleKind.Basis) :
++    g.ruleKind.FreshOn s := g.fresh_rule s x hb h.arity
++end PortOrigin
++
++namespace G
++variable {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide) {C : NormalForm P}
++
++theorem port_member (xs : List (Place s Γ Δ C)) (p : SelectionPort) :
++    p ∈ g.selectionPorts s xs ↔ ∃ x, x ∈ xs ∧ PortOrigin g s x p := by
++  constructor
++  · intro hp
++    obtain ⟨x,hx,he⟩ := List.mem_map.mp hp
++    exact ⟨x,hx,he ▸ g.selectionPort_spec s x⟩
++  · rintro ⟨x,hx,hp⟩
++    have he := (g.selectionPort_spec s x).unique hp
++    exact List.mem_map.mpr ⟨x,hx,he⟩
++
++theorem selected_second_binary (xs : List (Place s Γ Δ C))
++    (hs : .second ∈ g.selectionPorts s xs) : g.ruleKind.Binary := by
++  obtain ⟨_,_,h⟩ := (g.port_member s xs .second).mp hs
++  exact h.second_binary
++
++theorem selected_shared_rule (xs : List (Place s Γ Δ C))
++    (hs : .shared ∈ g.selectionPorts s xs) :
++    match s with
++    | .left => g.ruleKind = .contractL
++    | .right => g.ruleKind = .contractR := by
++  obtain ⟨_,_,h⟩ := (g.port_member s xs .shared).mp hs
++  cases s <;> exact h.shared_rule
++
++theorem selected_fresh_rule (xs : List (Place s Γ Δ C))
++    (hb : ¬ g.ruleKind.Basis) (hs : .fresh ∈ g.selectionPorts s xs) : g.ruleKind.FreshOn s := by
++  obtain ⟨_,_,h⟩ := (g.port_member s xs .fresh).mp hs
++  exact h.fresh_rule hb
++
++end G
++end DosenPetric.Reduced.Gentzen
+diff --git a/DosenPetric/GentzenReducibleExamples.lean b/DosenPetric/GentzenReducibleExamples.lean
+new file mode 100644
+index 0000000..24709ab
+--- /dev/null
++++ b/DosenPetric/GentzenReducibleExamples.lean
+@@ -0,0 +1,93 @@
++module
++
++public import DosenPetric.GentzenBlockedExamples
++
++@[expose] public section
++set_option autoImplicit false
++namespace DosenPetric.Reduced.Gentzen.ReducibleExamples
++universe u
++variable {P : Type u}
++
++def left (t : Literal P) : G P [.lit t] [.lit t] :=
++  G.contractL (.lit t) [[],[]] [] [.lit t] (Nat.le_refl 2)
++    (G.thinL [] [.lit t] [.lit t] (.lit t) (G.identity t))
++def right (t : Literal P) : G P [.lit t] [.lit t] :=
++  G.contractR [.lit t] (.lit t) [[],[]] [] (Nat.le_refl 2)
++    (G.thinR [.lit t] [] [.lit t] (.lit t) (G.identity t))
++
++theorem left_unblocked (t : Literal P) : ¬ BlockedL (left t) := by
++  intro h
++  have hk := h.premise_kind
++  change some G.RuleKind.thinL ∈ [some .mix,some .conjR,some .exchangeL,some .conjL] at hk
++  have hn : some G.RuleKind.thinL ∉ [some .mix,some .conjR,some .exchangeL,some .conjL] := by decide
++  exact hn hk
++
++theorem right_unblocked (t : Literal P) : ¬ BlockedR (right t) := by
++  intro h
++  have hk := h.premise_kind
++  change some G.RuleKind.thinR ∈ [some .mix,some .exchangeL,some .conjR,some .disjR] at hk
++  have hn : some G.RuleKind.thinR ∉ [some .mix,some .exchangeL,some .conjR,some .disjR] := by decide
++  exact hn hk
++
++theorem left_reducible (t : Literal P) :
++    ReducibleL (G.identity t) (left t) ProofAddress.root (.here (.lit t) []) := by
++  refine ⟨⟨rfl,rfl⟩,?_,left_unblocked t,?_⟩
++  · constructor
++    · exact ((left t).cluster_correct .left (.here (.lit t) []) _).mpr (.root _)
++    · exact .left ..
++  · intro I J v b y _ hba
++    have hh := ProofAddress.proper_length hba
++    change b.path.length < 0 at hh
++    exact False.elim (Nat.not_lt_zero _ hh)
++
++theorem right_reducible (t : Literal P) :
++    ReducibleR (right t) (G.identity t) ProofAddress.root (.here (.lit t) []) := by
++  refine ⟨⟨rfl,rfl⟩,?_,right_unblocked t,?_⟩
++  · constructor
++    · exact ((right t).cluster_correct .right (.here (.lit t) []) _).mpr (.root _)
++    · exact .right ..
++  · intro I J v b y _ hba
++    have hh := ProofAddress.proper_length hba
++    change b.path.length < 0 at hh
++    exact False.elim (Nat.not_lt_zero _ hh)
++
++theorem both_signs (p : P) :
++    ReducibleL (G.identity (.neg p)) (left (.neg p)) ProofAddress.root (.here (.lit (.neg p)) []) ∧
++    ReducibleR (right (.pos p)) (G.identity (.pos p)) ProofAddress.root (.here (.lit (.pos p)) []) :=
++  ⟨left_reducible _,right_reducible _⟩
++
++def nested (t : Literal P) : G P [.lit t] [.lit t] :=
++  G.contractL (.lit t) [[],[]] [] [.lit t] (Nat.le_refl 2) (BlockedExamples.shared t)
++def inner (t : Literal P) : ProofAddress (nested t) (BlockedExamples.shared t) :=
++  ProofAddress.root.down (Premise.contractL (.lit t) [[],[]] [] [.lit t]
++    (Nat.le_refl 2) (BlockedExamples.shared t))
++
++theorem nested_unblocked (t : Literal P) : ¬ BlockedL (nested t) := by
++  intro h
++  have hk := h.premise_kind
++  change some G.RuleKind.contractL ∈ [some .mix,some .conjR,some .exchangeL,some .conjL] at hk
++  have hn : some G.RuleKind.contractL ∉ [some .mix,some .conjR,some .exchangeL,some .conjL] := by decide
++  exact hn hk
++
++theorem nested_inner_tied (t : Literal P) :
++    (nested t).TiedRight ((inner t).traceAt .left (.here (.lit t) [.lit t])) := by
++  constructor
++  · apply ((nested t).cluster_correct .left (.here (.lit t) []) _).mpr
++    apply FiniteTrace.Reach.step
++    · exact ⟨⟨⟨_,_,BlockedExamples.shared t,
++        Premise.contractL (.lit t) [[],[]] [] [.lit t] (Nat.le_refl 2) (BlockedExamples.shared t)⟩,
++        .here (.lit t) [.lit t]⟩,rfl,rfl⟩
++    · exact .root _
++  · exact .left ..
++
++theorem nested_inner_not_reducible (t : Literal P) :
++    ¬ ReducibleL (G.identity t) (nested t) (inner t) (.here (.lit t) [.lit t]) := by
++  intro h
++  apply nested_unblocked t
++  apply h.2.2.2 ProofAddress.root (.here (.lit t) [])
++  · constructor
++    · exact ((nested t).cluster_correct .left (.here (.lit t) []) _).mpr (.root _)
++    · exact .left ..
++  · exact ProofAddress.down_proper ..
++
++end DosenPetric.Reduced.Gentzen.ReducibleExamples
+diff --git a/DosenPetric/GentzenReducibleOccurrences.lean b/DosenPetric/GentzenReducibleOccurrences.lean
+new file mode 100644
+index 0000000..708471b
+--- /dev/null
++++ b/DosenPetric/GentzenReducibleOccurrences.lean
+@@ -0,0 +1,129 @@
++module
++
++public import DosenPetric.GentzenBlockedPatterns
++public import DosenPetric.GentzenProofReplacement
++public import DosenPetric.GentzenSelectionOrigins
++
++@[expose] public section
++set_option autoImplicit false
++namespace DosenPetric.Reduced.Gentzen
++universe u
++variable {P : Type u}
++
++namespace G
++
++theorem ruleKind_reindex {Γ Δ Γ' Δ' : List (NormalForm P)} (hΓ : Γ = Γ') (hΔ : Δ = Δ')
++    (g : G P Γ Δ) : (g.reindex hΓ hΔ).ruleKind = g.ruleKind := by cases hΓ; cases hΔ; rfl
++
++def contractedPremiseKind : {Γ Δ : List (NormalForm P)} → G P Γ Δ → Option RuleKind
++  | _,_,.contractL _ _ _ _ _ f | _,_,.contractR _ _ _ _ _ f => some f.ruleKind
++  | _,_,_ => none
++end G
++
++theorem BlockedL.premise_kind {Γ Δ : List (NormalForm P)} {g : G P Γ Δ} (h : BlockedL g) :
++    g.contractedPremiseKind ∈ [some .mix,some .conjR,some .exchangeL,some .conjL] := by
++  cases h <;> simp only [BlockedSource.left2,BlockedSource.left3,G.contractedPremiseKind,G.ruleKind_reindex]
++  all_goals try simp only [BlockedSource.disjLLast,BlockedSource.conjLLast,G.ruleKind_reindex]
++  all_goals simp [G.ruleKind]
++
++theorem BlockedR.premise_kind {Γ Δ : List (NormalForm P)} {g : G P Γ Δ} (h : BlockedR g) :
++    g.contractedPremiseKind ∈ [some .mix,some .exchangeL,some .conjR,some .disjR] := by
++  cases h <;> simp only [BlockedSource.right2,BlockedSource.right3,G.contractedPremiseKind,G.ruleKind_reindex]
++  all_goals try simp only [BlockedSource.disjLLast,G.ruleKind_reindex]
++  all_goals simp [G.ruleKind]
++
++namespace ProofAddress
++variable {Γ Δ Θ Λ Ξ Ω : List (NormalForm P)}
++variable {root : G P Γ Δ} {g : G P Θ Λ} {h : G P Ξ Ω}
++
++/-- Proper containment is witnessed by a nonempty typed suffix address. -/
++def ProperContains (a : ProofAddress root g) (b : ProofAddress root h) : Prop :=
++  ∃ c : ProofAddress g h, c.path ≠ [] ∧ a.append c = b
++
++theorem proper_length {a : ProofAddress root g} {b : ProofAddress root h}
++    (hab : a.ProperContains b) : a.path.length < b.path.length := by
++  obtain ⟨c,hc,he⟩ := hab
++  have hp := congrArg (fun d => d.path.length) he
++  rw [append_path,List.length_append] at hp
++  have hl : 0 < c.path.length := List.length_pos_iff.mpr hc
++  omega
++
++theorem proper_irrefl (a : ProofAddress root g) : ¬ a.ProperContains a := by
++  intro he
++  have hh := proper_length he
++  omega
++
++theorem proper_trans {I J : List (NormalForm P)} {k : G P I J}
++    {a : ProofAddress root g} {b : ProofAddress root h} {c : ProofAddress root k}
++    (hab : a.ProperContains b) (hbc : b.ProperContains c) : a.ProperContains c := by
++  obtain ⟨d,hd,he⟩ := hab
++  obtain ⟨e,_,hf⟩ := hbc
++  refine ⟨d.append e,?_,?_⟩
++  · intro hn
++    have hl := congrArg List.length hn
++    rw [append_path,List.length_append] at hl
++    have hp := List.length_pos_iff.mpr hd
++    simp only [List.length_nil] at hl
++    omega
++  · rw [← append_assoc,he,hf]
++
++theorem down_proper (a : ProofAddress root g) (p : Premise g h) : a.ProperContains (a.down p) :=
++  by
++    refine Exists.intro (ProofAddress.root.down p) ?_
++    constructor
++    · intro he
++      cases he
++    · rfl
++
++/-- The selected whole-formula position and proof branch path are both retained. -/
++def traceAt (a : ProofAddress root g) (s : SequentSide) {C : NormalForm P}
++    (x : Place s Θ Λ C) : TraceNode P s C := ⟨Θ,Λ,g,a.path,x⟩
++
++end ProofAddress
++
++section Left
++variable {Γ Θ Δ Λ : List (NormalForm P)} {C : NormalForm P}
++variable (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ)
++
++/-- Source reducibility of a tied left contraction in the right cut-premise.
++    Only proper containing tied contractions are required to be blocked. -/
++def ReducibleL {U V : List (NormalForm P)} {w : G P U V}
++    (a : ProofAddress g w) (x : At U C) : Prop :=
++  G.Topmost f g ∧ g.TiedRight (a.traceAt .left x) ∧ ¬ BlockedL w ∧
++    ∀ {I J : List (NormalForm P)} {v : G P I J}
++      (b : ProofAddress g v) (y : At I C),
++      g.TiedRight (b.traceAt .left y) → b.ProperContains a → BlockedL v
++
++theorem ReducibleL.cutFree {U V : List (NormalForm P)} {w : G P U V}
++    {a : ProofAddress g w} {x : At U C} (h : ReducibleL f g a x) : w.CutFree :=
++  a.cutFree h.1.2
++
++theorem ReducibleL.incomparable {U V I J : List (NormalForm P)}
++    {w : G P U V} {v : G P I J} {a : ProofAddress g w} {b : ProofAddress g v}
++    {x : At U C} {y : At I C} (ha : ReducibleL f g a x) (hb : ReducibleL f g b y) :
++    ¬ b.ProperContains a := fun he => hb.2.2.1 (ha.2.2.2 b y hb.2.1 he)
++end Left
++
++section Right
++variable {Γ Θ Δ Λ : List (NormalForm P)} {C : NormalForm P}
++variable (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ)
++
++/-- Separately typed source reducibility of a right contraction in the left premise. -/
++def ReducibleR {U V : List (NormalForm P)} {w : G P U V}
++    (a : ProofAddress f w) (x : At V C) : Prop :=
++  G.Topmost f g ∧ f.TiedLeft (a.traceAt .right x) ∧ ¬ BlockedR w ∧
++    ∀ {I J : List (NormalForm P)} {v : G P I J}
++      (b : ProofAddress f v) (y : At J C),
++      f.TiedLeft (b.traceAt .right y) → b.ProperContains a → BlockedR v
++
++theorem ReducibleR.cutFree {U V : List (NormalForm P)} {w : G P U V}
++    {a : ProofAddress f w} {x : At V C} (h : ReducibleR f g a x) : w.CutFree :=
++  a.cutFree h.1.1
++
++theorem ReducibleR.incomparable {U V I J : List (NormalForm P)}
++    {w : G P U V} {v : G P I J} {a : ProofAddress f w} {b : ProofAddress f v}
++    {x : At V C} {y : At J C} (ha : ReducibleR f g a x) (hb : ReducibleR f g b y) :
++    ¬ b.ProperContains a := fun he => hb.2.2.1 (ha.2.2.2 b y hb.2.1 he)
++end Right
++
++end DosenPetric.Reduced.Gentzen
+diff --git a/DosenPetric/GentzenSelectionDispatch.lean b/DosenPetric/GentzenSelectionDispatch.lean
+new file mode 100644
+index 0000000..7c9fdce
+--- /dev/null
++++ b/DosenPetric/GentzenSelectionDispatch.lean
+@@ -0,0 +1,103 @@
++module
++
++public import DosenPetric.GentzenSelectionOrigins
++
++@[expose] public section
++set_option autoImplicit false
++namespace DosenPetric.Reduced.Gentzen
++universe u
++variable {P : Type u}
++
++/-- The first applicable shared/introduced/parametric regime, with premise tags. -/
++inductive SelectionRegime where
++  | shared | selectedFirst | selectedSecond | selectedBoth
++  | parametricFirst | parametricSecond | parametricBoth
++  deriving DecidableEq
++
++namespace SelectionRegime
++
++def Holds (ps : List SelectionPort) : SelectionRegime → Prop
++  | .shared => .shared ∈ ps
++  | .selectedFirst => .shared ∉ ps ∧ .fresh ∈ ps ∧ .first ∈ ps ∧ .second ∉ ps
++  | .selectedSecond => .shared ∉ ps ∧ .fresh ∈ ps ∧ .first ∉ ps ∧ .second ∈ ps
++  | .selectedBoth => .shared ∉ ps ∧ .fresh ∈ ps ∧ .first ∈ ps ∧ .second ∈ ps
++  | .parametricFirst => .shared ∉ ps ∧ .fresh ∉ ps ∧ .first ∈ ps ∧ .second ∉ ps
++  | .parametricSecond => .shared ∉ ps ∧ .fresh ∉ ps ∧ .first ∉ ps ∧ .second ∈ ps
++  | .parametricBoth => .shared ∉ ps ∧ .fresh ∉ ps ∧ .first ∈ ps ∧ .second ∈ ps
++
++theorem classify (ps : List SelectionPort)
++    (hp : .shared ∉ ps → .first ∈ ps ∨ .second ∈ ps) : ∃ r : SelectionRegime, r.Holds ps := by
++  by_cases hs : .shared ∈ ps
++  · exact ⟨.shared,hs⟩
++  · have hb := hp hs
++    by_cases hf : .fresh ∈ ps <;> by_cases h₀ : .first ∈ ps <;> by_cases h₁ : .second ∈ ps
++    · exact ⟨.selectedBoth,hs,hf,h₀,h₁⟩
++    · exact ⟨.selectedFirst,hs,hf,h₀,h₁⟩
++    · exact ⟨.selectedSecond,hs,hf,h₀,h₁⟩
++    · exact False.elim (hb.elim h₀ h₁)
++    · exact ⟨.parametricBoth,hs,hf,h₀,h₁⟩
++    · exact ⟨.parametricFirst,hs,hf,h₀,h₁⟩
++    · exact ⟨.parametricSecond,hs,hf,h₀,h₁⟩
++    · exact False.elim (hb.elim h₀ h₁)
++
++theorem unique (ps : List SelectionPort) (r q : SelectionRegime)
++    (hr : r.Holds ps) (hq : q.Holds ps) : r = q := by
++  cases r <;> cases q <;> simp_all [Holds]
++
++end SelectionRegime
++
++namespace G
++variable {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide) {C : NormalForm P}
++
++noncomputable def selectionPorts (xs : List (Place s Γ Δ C)) : List SelectionPort := xs.map (g.selectionPort s)
++
++theorem ports_complete (xs : List (Place s Γ Δ C)) :
++    ∀ x ∈ xs, PortOrigin g s x (g.selectionPort s x) := by
++  intro x _
++  exact g.selectionPort_spec s x
++
++theorem ports_branch_exists (xs : List (Place s Γ Δ C))
++    (hp : ∃ a b, a ∈ xs ∧ b ∈ xs ∧ a.index < b.index)
++    (hs : .shared ∉ g.selectionPorts s xs) :
++    .first ∈ g.selectionPorts s xs ∨ .second ∈ g.selectionPorts s xs := by
++  classical
++  apply Classical.byContradiction
++  intro hb
++  have h₀ : .first ∉ g.selectionPorts s xs := fun h => hb (.inl h)
++  have h₁ : .second ∉ g.selectionPorts s xs := fun h => hb (.inr h)
++  have fresh : ∀ x ∈ xs, g.Leaf s x := by
++    intro x hx
++    have hm : g.selectionPort s x ∈ g.selectionPorts s xs := List.mem_map_of_mem hx
++    have ho := g.selectionPort_spec s x
++    cases he : g.selectionPort s x <;> rw [he] at hm ho
++    · exact ho.arity
++    · exact False.elim (h₀ hm)
++    · exact False.elim (h₁ hm)
++    · exact False.elim (hs hm)
++  obtain ⟨a,b,ha,hb,hab⟩ := hp
++  have he := g.leaf_indices s a b (fresh a ha) (fresh b hb)
++  omega
++
++theorem selection_classification (xs : List (Place s Γ Δ C))
++    (hp : ∃ a b, a ∈ xs ∧ b ∈ xs ∧ a.index < b.index) :
++    ∃ r : SelectionRegime, r.Holds (g.selectionPorts s xs) :=
++  SelectionRegime.classify _ (g.ports_branch_exists s xs hp)
++
++end G
++
++namespace ContractionBlock
++variable {U K : List (NormalForm P)} (d : ContractionBlock P U K) (hn : 2 ≤ d.gs.length)
++include hn
++
++theorem classificationL {Δ : List (NormalForm P)} (g : G P U Δ) (hg : g.CutFree) :
++    ¬ g.ruleKind.Basis ∧ g.ruleKind ≠ .cut ∧
++      ∃ r : SelectionRegime, r.Holds (g.selectionPorts .left d.selected) :=
++  ⟨d.not_basisL hn g,g.cutFree_not_cut hg,g.selection_classification .left _ (d.selected_pair hn)⟩
++
++theorem classificationR {Γ : List (NormalForm P)} (g : G P Γ U) (hg : g.CutFree) :
++    ¬ g.ruleKind.Basis ∧ g.ruleKind ≠ .cut ∧
++      ∃ r : SelectionRegime, r.Holds (g.selectionPorts .right d.selected) :=
++  ⟨d.not_basisR hn g,g.cutFree_not_cut hg,g.selection_classification .right _ (d.selected_pair hn)⟩
++
++end ContractionBlock
++end DosenPetric.Reduced.Gentzen
+diff --git a/DosenPetric/GentzenSelectionOrigins.lean b/DosenPetric/GentzenSelectionOrigins.lean
+new file mode 100644
+index 0000000..4f9ab63
+--- /dev/null
++++ b/DosenPetric/GentzenSelectionOrigins.lean
+@@ -0,0 +1,177 @@
++module
++
++public import DosenPetric.GentzenProofReplacement
++public import DosenPetric.GentzenContractionSelectionCoordinates
++
++@[expose] public section
++set_option autoImplicit false
++namespace DosenPetric.Reduced.Gentzen
++universe u
++variable {P : Type u}
++
++namespace Premise
++theorem branch_zero_or_one {Γ Δ Θ Λ : List (NormalForm P)} {f : G P Γ Δ} {g : G P Θ Λ}
++    (p : Premise f g) : p.branch = 0 ∨ p.branch = 1 := by cases p <;> first | exact Or.inl rfl | exact Or.inr rfl
++end Premise
++
++namespace G
++
++theorem leaf_indices {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
++    {C : NormalForm P} (x y : Place s Γ Δ C) (hx : g.Leaf s x) (hy : g.Leaf s y) :
++    x.index = y.index := by
++  have hi := x.index_lt
++  have hj := y.index_lt
++  cases g <;> cases s <;> simp only [Leaf,sourceArity] at hx hy
++  all_goals simp only [SequentSide.context,List.length_cons,List.length_nil] at hi hj
++  all_goals try exact (Nat.eq_zero_of_le_zero (Nat.le_of_lt_succ hi)).trans (Nat.eq_zero_of_le_zero (Nat.le_of_lt_succ hj)).symm
++  all_goals try omega
++  all_goals split at hx <;> split at hy <;> omega
++
++inductive RuleKind where
++  | identity | zero | topI | botE | exchangeL | exchangeR | thinL | thinR
++  | contractL | contractR | conjL | disjR | conjR | disjL | mix | cut
++  deriving DecidableEq
++
++def ruleKind : {Γ Δ : List (NormalForm P)} → G P Γ Δ → RuleKind
++  | _,_,.identity _ => .identity
++  | _,_,.zero _ => .zero
++  | _,_,.topI => .topI
++  | _,_,.botE => .botE
++  | _,_,.exchangeL .. => .exchangeL
++  | _,_,.exchangeR .. => .exchangeR
++  | _,_,.thinL .. => .thinL
++  | _,_,.thinR .. => .thinR
++  | _,_,.contractL .. => .contractL
++  | _,_,.contractR .. => .contractR
++  | _,_,.conjL .. => .conjL
++  | _,_,.disjR .. => .disjR
++  | _,_,.conjR .. => .conjR
++  | _,_,.disjL .. => .disjL
++  | _,_,.mix .. => .mix
++  | _,_,.cut .. => .cut
++
++def RuleKind.Basis : RuleKind → Prop
++  | .identity | .zero | .topI | .botE => True
++  | _ => False
++
++theorem cutFree_not_cut {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (hg : g.CutFree) :
++    g.ruleKind ≠ .cut := by
++  cases g <;> simp only [ruleKind]
++  all_goals first | decide | exact False.elim (cut_not_cutFree _ _ hg)
++
++end G
++
++inductive SelectionPort where
++  | fresh | first | second | shared
++  deriving DecidableEq
++
++/-- A port carries complete predecessor data, not a test on formula labels. -/
++inductive PortOrigin {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
++    {C : NormalForm P} (x : Place s Γ Δ C) : SelectionPort → Prop where
++  | fresh : g.Leaf s x → PortOrigin g s x .fresh
++  | first (a : Upper g s C) : g.predecessors s x = [a] →
++      a.branch.occurrence.branch = 0 → PortOrigin g s x .first
++  | second (a : Upper g s C) : g.predecessors s x = [a] →
++      a.branch.occurrence.branch = 1 → PortOrigin g s x .second
++  | shared : G.LowerContraction g s x → PortOrigin g s x .shared
++
++namespace G
++
++theorem port_exists {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
++    {C : NormalForm P} (x : Place s Γ Δ C) : ∃ p, PortOrigin g s x p := by
++  cases g.position_classification s x with
++  | inl h => exact ⟨.fresh,.fresh h⟩
++  | inr h =>
++    cases h with
++    | inr h => exact ⟨.shared,.shared h⟩
++    | inl h =>
++      obtain ⟨a,ha,_⟩ := g.parametric_unique s x h
++      cases a.branch.occurrence.branch_zero_or_one with
++      | inl hb => exact ⟨.first,.first a ha hb⟩
++      | inr hb => exact ⟨.second,.second a ha hb⟩
++
++noncomputable def selectionPort {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
++    {C : NormalForm P} (x : Place s Γ Δ C) : SelectionPort := Classical.choose (g.port_exists s x)
++
++theorem selectionPort_spec {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
++    {C : NormalForm P} (x : Place s Γ Δ C) : PortOrigin g s x (g.selectionPort s x) :=
++  Classical.choose_spec (g.port_exists s x)
++
++end G
++
++namespace PortOrigin
++variable {Γ Δ : List (NormalForm P)} {g : G P Γ Δ} {s : SequentSide} {C : NormalForm P}
++variable {x : Place s Γ Δ C} {p : SelectionPort}
++
++theorem arity (h : PortOrigin g s x p) :
++    match p with
++    | .fresh => g.sourceArity s x = 0
++    | .first | .second => g.sourceArity s x = 1
++    | .shared => 2 ≤ g.sourceArity s x := by
++  cases h with
++  | fresh h => exact h
++  | first a ha _ => exact (g.sourceArity_correct s x).symm.trans (congrArg List.length ha)
++  | second a ha _ => exact (g.sourceArity_correct s x).symm.trans (congrArg List.length ha)
++  | shared h => exact (g.lowerContraction_iff_arity s x).mp h
++
++theorem unique {q : SelectionPort} (h : PortOrigin g s x p) (k : PortOrigin g s x q) : p = q := by
++  have hp := h.arity
++  have hq := k.arity
++  cases h <;> cases k <;> first
++    | rfl
++    | omega
++    | rename_i a ha hb b hc hd
++      have he := List.cons.inj (ha.symm.trans hc)
++      cases he.1
++      omega
++
++end PortOrigin
++
++namespace G
++theorem selectionPort_eq {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
++    {C : NormalForm P} (x : Place s Γ Δ C) (p : SelectionPort) (h : PortOrigin g s x p) :
++    g.selectionPort s x = p := (g.selectionPort_spec s x).unique h
++end G
++
++namespace ContractionBlock
++variable {U K : List (NormalForm P)} (d : ContractionBlock P U K)
++
++theorem selected_pair (hn : 2 ≤ d.gs.length) :
++    ∃ a b, a ∈ d.selected ∧ b ∈ d.selected ∧ a.index < b.index := by
++  have hl := d.selected_length
++  have ho := d.selected_ordered
++  cases he : d.selected with
++  | nil => rw [he] at hl; simp only [List.length_nil] at hl; omega
++  | cons a as =>
++    cases as with
++    | nil => rw [he] at hl; simp only [List.length_cons,List.length_nil] at hl; omega
++    | cons b bs =>
++      rw [he] at ho
++      exact ⟨a,b,List.mem_cons_self,
++        List.mem_cons_of_mem _ List.mem_cons_self,
++        (List.pairwise_cons.mp ho).1 b List.mem_cons_self⟩
++
++theorem not_basisL (hn : 2 ≤ d.gs.length) {Δ : List (NormalForm P)} (g : G P U Δ) :
++    ¬ g.ruleKind.Basis := by
++  obtain ⟨a,b,_,_,hab⟩ := d.selected_pair hn
++  have hi := a.index_lt
++  have hj := b.index_lt
++  intro hb
++  cases g <;> simp only [G.ruleKind,G.RuleKind.Basis] at hb
++  all_goals try contradiction
++  all_goals simp only [List.length_cons,List.length_nil] at hi hj
++  all_goals omega
++
++theorem not_basisR (hn : 2 ≤ d.gs.length) {Γ : List (NormalForm P)} (g : G P Γ U) :
++    ¬ g.ruleKind.Basis := by
++  obtain ⟨a,b,_,_,hab⟩ := d.selected_pair hn
++  have hi := a.index_lt
++  have hj := b.index_lt
++  intro hb
++  cases g <;> simp only [G.ruleKind,G.RuleKind.Basis] at hb
++  all_goals try contradiction
++  all_goals simp only [List.length_cons,List.length_nil] at hi hj
++  all_goals omega
++
++end ContractionBlock
++end DosenPetric.Reduced.Gentzen

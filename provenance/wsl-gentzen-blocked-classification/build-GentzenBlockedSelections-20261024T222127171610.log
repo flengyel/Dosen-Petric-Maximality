@@ -1,0 +1,10 @@
+✖ [126/126] Building DosenPetric.GentzenBlockedSelections (1.9s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenBlockedSelections.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedSelections.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedSelections.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedSelections.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedSelections.setup.json --json
+error: DosenPetric/GentzenBlockedSelections.lean:86:2: Dependent elimination failed: Failed to solve equation
+  (gaps gs).append (C :: Θ) = (gaps gs✝).append (C✝ :: Θ✝)
+error: DosenPetric/GentzenBlockedSelections.lean:94:2: Too many variable names provided at alternative `contraction`: 7 provided, but 6 expected
+error: DosenPetric/GentzenBlockedSelections.lean:94:2: Dependent elimination failed: Failed to solve equation
+  (gaps gs).append (C :: Λ) = (gaps gs✝).append (C✝ :: Λ✝)
+Some required targets logged failures:
+- DosenPetric.GentzenBlockedSelections
+error: build failed

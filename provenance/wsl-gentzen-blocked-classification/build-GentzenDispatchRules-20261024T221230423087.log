@@ -1,0 +1,16 @@
+✔ [129/130] Built DosenPetric.GentzenSelectionDispatch (2.7s)
+✖ [130/130] Building DosenPetric.GentzenDispatchRules (15s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenDispatchRules.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDispatchRules.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenDispatchRules.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDispatchRules.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenDispatchRules.setup.json --json
+error: DosenPetric/GentzenDispatchRules.lean:80:2: Type mismatch
+  PortOrigin.shared_rule h
+has type
+  match s, w✝, h with
+  | SequentSide.left, x, h => g.ruleKind = RuleKind.contractL
+  | SequentSide.right, x, h => g.ruleKind = RuleKind.contractR
+but is expected to have type
+  match s with
+  | SequentSide.left => g.ruleKind = RuleKind.contractL
+  | SequentSide.right => g.ruleKind = RuleKind.contractR
+Some required targets logged failures:
+- DosenPetric.GentzenDispatchRules
+error: build failed

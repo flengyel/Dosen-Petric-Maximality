@@ -1,0 +1,99 @@
+✔ [152/184] Built DosenPetric.GentzenReducibleOccurrences (1.0s)
+✖ [184/184] Building DosenPetric.GentzenBlockedExamples (30s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenBlockedExamples.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedExamples.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenBlockedExamples.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedExamples.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenBlockedExamples.setup.json --json
+error: DosenPetric/GentzenBlockedExamples.lean:55:48: Application type mismatch: The argument
+  At.here (NormalForm.lit t) []
+has type
+  At [NormalForm.lit t] (NormalForm.lit t)
+but is expected to have type
+  Place ?m.65
+    { source := [NormalForm.lit t], target := [NormalForm.lit t], proof := G.identity t,
+        occurrence := Premise.mix_right ?m.79 (G.identity t) }.source
+    { source := [NormalForm.lit t], target := [NormalForm.lit t], proof := G.identity t,
+        occurrence := Premise.mix_right ?m.79 (G.identity t) }.target
+    ?m.66
+in the application
+  {
+    branch :=
+      { source := [NormalForm.lit t], target := [NormalForm.lit t], proof := G.identity t,
+        occurrence := Premise.mix_right ?m.79 (G.identity t) },
+    position := At.here (NormalForm.lit t) [] }
+error: DosenPetric/GentzenBlockedExamples.lean:51:84: unsolved goals
+P : Type u
+t : Literal P
+⊢ [(splitMix t).selectionPort SequentSide.left (At.here (NormalForm.lit t) [NormalForm.lit t]),
+      (splitMix t).selectionPort SequentSide.left (At.here (NormalForm.lit t) []).there] =
+    [SelectionPort.second, SelectionPort.first]
+error: DosenPetric/GentzenBlockedExamples.lean:62:2: failed to synthesize
+  Decidable (SelectionRegime.Holds [SelectionPort.second, SelectionPort.first] SelectionRegime.parametricBoth)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: DosenPetric/GentzenBlockedExamples.lean:71:46: Application type mismatch: The argument
+  rfl
+has type
+  ?m.77 = ?m.77
+but is expected to have type
+  G.Leaf ?m.72 ?m.73 ?m.75
+in the application
+  PortOrigin.fresh rfl
+error: DosenPetric/GentzenBlockedExamples.lean:67:31: unsolved goals
+⊢ [freshBoth.selectionPort SequentSide.left
+        (At.here (NormalForm.top.disj NormalForm.bot)
+          [NormalForm.top.disj NormalForm.bot, NormalForm.top.disj NormalForm.bot]),
+      freshBoth.selectionPort SequentSide.left
+        (At.here (NormalForm.top.disj NormalForm.bot) [NormalForm.top.disj NormalForm.bot]).there,
+      freshBoth.selectionPort SequentSide.left (At.here (NormalForm.top.disj NormalForm.bot) []).there.there] =
+    [SelectionPort.fresh, SelectionPort.first, SelectionPort.second]
+error: DosenPetric/GentzenBlockedExamples.lean:80:2: failed to synthesize
+  Decidable
+    (SelectionRegime.Holds [SelectionPort.fresh, SelectionPort.first, SelectionPort.second]
+      SelectionRegime.selectedBoth)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: DosenPetric/GentzenBlockedExamples.lean:87:46: Application type mismatch: The argument
+  rfl
+has type
+  ?m.59 = ?m.59
+but is expected to have type
+  G.Leaf ?m.54 ?m.55 ?m.57
+in the application
+  PortOrigin.fresh rfl
+error: DosenPetric/GentzenBlockedExamples.lean:85:23: unsolved goals
+⊢ [freshFirst.selectionPort SequentSide.left
+        (At.here (NormalForm.top.disj NormalForm.bot) [NormalForm.top.disj NormalForm.bot]),
+      freshFirst.selectionPort SequentSide.left (At.here (NormalForm.top.disj NormalForm.bot) []).there] =
+    [SelectionPort.fresh, SelectionPort.first]
+error: DosenPetric/GentzenBlockedExamples.lean:95:46: Application type mismatch: The argument
+  rfl
+has type
+  ?m.59 = ?m.59
+but is expected to have type
+  G.Leaf ?m.54 ?m.55 ?m.57
+in the application
+  PortOrigin.fresh rfl
+error: DosenPetric/GentzenBlockedExamples.lean:93:24: unsolved goals
+⊢ [freshSecond.selectionPort SequentSide.left
+        (At.here (NormalForm.top.disj NormalForm.bot) [NormalForm.top.disj NormalForm.bot]),
+      freshSecond.selectionPort SequentSide.left (At.here (NormalForm.top.disj NormalForm.bot) []).there] =
+    [SelectionPort.fresh, SelectionPort.second]
+error: DosenPetric/GentzenBlockedExamples.lean:102:2: failed to synthesize
+  Decidable
+    (SelectionRegime.Holds [SelectionPort.fresh, SelectionPort.first] SelectionRegime.selectedFirst ∧
+      SelectionRegime.Holds [SelectionPort.fresh, SelectionPort.second] SelectionRegime.selectedSecond)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: DosenPetric/GentzenBlockedExamples.lean:122:15: Invalid field `proper_length`: The environment does not contain `Exists.proper_length`, so it is not possible to project the field `proper_length` from an expression
+  h
+of type
+  ∃ c,
+    c.path ≠ [] ∧
+      (ProofAddress.root.down (Premise.mix_left f f)).append c = ProofAddress.root.down (Premise.mix_right f f)
+error: DosenPetric/GentzenBlockedExamples.lean:120:58: unsolved goals
+P : Type u
+Γ Δ : List (NormalForm P)
+f : G P Γ Δ
+h : (ProofAddress.root.down (Premise.mix_left f f)).ProperContains (ProofAddress.root.down (Premise.mix_right f f))
+⊢ False
+Some required targets logged failures:
+- DosenPetric.GentzenBlockedExamples
+error: build failed

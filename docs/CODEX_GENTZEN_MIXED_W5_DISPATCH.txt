@@ -1,0 +1,89 @@
+Continue the Došen–Petrić maximality formalization in WSL2 at
+/home/flengyel/src/Dosen-Petric-Maximality. Close the mixed-premise W5 gap
+identified by the finite classification: selected copies occur in both actual
+mix premises. Prove its separately typed right dual and connect the positional
+case to the classifier and proof-replacement API. Complete proofs/examples/
+checks, author-side reviews/current records and verified Downloads delivery.
+Commit only completed scoped work to main and push SSH origin without force.
+Keep the repository private and preserve manuscript v4/v5.
+
+Inspect Git status/remotes/stashes, fetch origin, and identify concurrent work
+before editing. The preceding session encountered transient untracked
+blocked/classification modules; none remained at final verification. Preserve
+any newly encountered unrelated work and all other checkouts;
+do not mix colliding definitions or silently stage unrelated work. If other
+work remains in the source directory, verify an isolated staged candidate
+from a fresh checkout, using no compiled artifacts from another checkout.
+Read AGENTS.md, statement/coverage/correspondence/validation/continuation,
+PALOMAR_REQUIREMENTS, GENTZEN_BLOCKED_CLASSIFICATION_REPORT and both reviews,
+the proof-replacement and both single-premise W5 reports/reviews. Reuse the
+actual G grammar, ContractionBlock/Selection routes, PortOrigin/SelectionRegime,
+BlockedL/R, ReducibleL/R, complete branch fibers/ranks and ProofAddress.replace.
+Keep Lean 4.35.0, Init-only closure/manifest, old interfaces, tags/ranks,
+manuscript/checksums and historical reports/prompts. Run a fresh strict baseline.
+
+Consult pinned September 2007 Proof-Theoretical Coherence §11.2, printed
+pp.248–253, especially p.252 mixed-premise W5 and p.250 (w gamma 1), plus
+the right analogue. PDF SHA256:
+e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e.
+These are PDF pp.260–265 one-based. Retain rendered/text access evidence.
+The primitive mix puts the second argument's contexts first. Source right
+contraction retains first, while the primitive retains last; keep the existing
+explicit contractRFirst comparison and its extra nodes visible.
+
+For arbitrary P,C, nonempty gs/hs and tails Θ/Λ let
+F=repeated C gs++Θ, K=gaps gs++C::Θ,
+H=repeated C hs++Λ, J=gaps hs++C::Λ.
+Use existing left premises f:G P F Δ and g:G P H Ψ. G.mix f g has source
+H++F and target Ψ++Δ. Build the actual outer selected contraction combining
+the hs copies in g and gs copies in f in that order. Derive every raw gap,
+tail, retained index, list equality, endpoint cast and arity bound. The final
+source Kout is the result of contracting exactly those n+m original tags.
+The reduct mixes individually contracted premises and then contracts their
+two retained copies, yielding the same Kout and target Ψ++Δ. Prove its
+outer contraction satisfies the actual blocked mix encoding.
+
+Allow n=gs.length≥1 and m=hs.length≥1. For n=m=1 prove the old selection
+already has the blocked two-premise pattern. For n+m≥3, a branch with one
+selected copy has no genuine contraction node: derive its explicit identity
+route/endpoint transport. Contract a branch only when its arity is at least
+two. Do not change G.contractL/R bounds or install an arity-one primitive.
+Prove the separately typed right construction with actual contractR and
+correct coproduct variance, without arrow negation or coherence/reflection.
+
+Prove full ordered selected transport, complete branch-tagged fibers and
+unique fixed originals, retaining same-label fixed tags. Compute the profile
+of the old selected mix positions as parametricBoth. In the reverse direction,
+derive the nonempty branch data needed from that profile and ordered selection,
+rather than asking the caller to supply the desired classification or square.
+Obtain Reduced equality from concrete component/mix naturality calculations;
+relation equality follows. Prove cutCount and CutFree/Atomized preservation,
+including the singleton branches. Derive exact old/inner/new ranks from actual
+predecessors and all selected sums. Identify which new inner contractions
+have strictly smaller source rank; the outer two-copy contraction is blocked.
+Do not infer a global decreasing sum, rank invariance or all-site theorem.
+
+Use actual n/m=1/2/3 cases, unequal arities, Empty constants/compounds,
+repeated equal fixed/selected labels, nonempty gaps/tails and both literal
+signs. Include cut-containing inputs where the local equality permits them.
+Lift at least one nontrivial mixed-premise rewrite at a nested ProofAddress
+with unchanged siblings and checked total count/predicate consequences.
+No impossible G [] [] or unwitnessed hom-set zero.
+
+After the final proof edit run bash scripts/verify.sh, both boundary scripts,
+manuscript SHA256SUMS and staged/unstaged whitespace checks, one heavy process
+at a time. Retain commands/exits/timings, versions, exact public types/axioms,
+source/declaration/import closure, five expected control rejections and failed
+attempts. No proof holes, custom axioms, native_decide, weakened targets or
+raised heartbeat limits. Apply hostile-referee and source-grounded mathematical-
+writing reviews to actual proofs, correspondence, report and current maps.
+
+Retain reports under docs/ and docs/reviews/, evidence under provenance/.
+Deliver finalized reports, validation and next continuation to Downloads,
+preserve conflicting filenames and verify bytes/SHA256 against the commit.
+Verify checked source against committed bytes and main/origin/main/live SSH
+refs. Report any preserved concurrent work and verification limitations honestly.
+No submission, author contact, license or visibility change is authorized.
+This closes one identified classifier regime; it must not claim complete
+rewrite dispatch, all affected tied-site rank control, Reducibility, Blocked-w,
+cut elimination, coherence or unconditional maximality. Keep milestones separate.

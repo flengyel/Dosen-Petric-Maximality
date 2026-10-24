@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-24T22:07:16.912711+00:00",
+  "checks": [
+    {
+      "name": "build-GentzenSelectionDispatch",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenSelectionDispatch"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 4.567,
+      "log": ".codex-work/gentzen-blocked-classification/build-GentzenSelectionDispatch-20261024T220712345029.log",
+      "log_sha256": "da0d697da830b59c45038924a89ea1820e02dbf9de3bf0f0397afdb456696e13"
+    }
+  ]
+}

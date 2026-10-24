@@ -1,0 +1,1298 @@
+✔ [148/184] Built DosenPetric.GentzenBlockedPatterns (1.5s)
+✖ [157/184] Building DosenPetric.GentzenReducibleOccurrences (13s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenReducibleOccurrences.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenReducibleOccurrences.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenReducibleOccurrences.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenReducibleOccurrences.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenReducibleOccurrences.setup.json --json
+error: DosenPetric/GentzenReducibleOccurrences.lean:24:85: unsolved goals
+case gammaMix
+P : Type u
+C✝ : NormalForm P
+X✝ Y✝ Z✝ T✝ Δ✝ Λ✝ : List (NormalForm P)
+f✝ : G P (X✝ ++ C✝ :: Y✝) Δ✝
+g✝ : G P (Z✝ ++ C✝ :: T✝) Λ✝
+⊢ (match repeated C✝ [Z✝, T✝ ++ X✝] ++ Y✝, Λ✝ ++ Δ✝, G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.mix g✝)) with
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+      | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+      | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+      | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+      | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+      | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+      | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+      | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+      | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+      | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+      | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+      | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+      | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+      G.RuleKind.mix ∨
+    (match repeated C✝ [Z✝, T✝ ++ X✝] ++ Y✝, Λ✝ ++ Δ✝, G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.mix g✝)) with
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+        | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+        | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+        | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+        | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+        | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+        | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+        | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+        | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+        | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+        | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+        | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+        | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+        G.RuleKind.conjR ∨
+      (match repeated C✝ [Z✝, T✝ ++ X✝] ++ Y✝, Λ✝ ++ Δ✝, G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.mix g✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.exchangeL ∨
+        (match repeated C✝ [Z✝, T✝ ++ X✝] ++ Y✝, Λ✝ ++ Δ✝, G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.mix g✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.conjL
+
+case gammaConj
+P : Type u
+C✝ A✝ B✝ : NormalForm P
+X✝ Y✝ Z✝ T✝ Δ✝ Λ✝ : List (NormalForm P)
+f✝ : G P (X✝ ++ C✝ :: Y✝) (A✝ :: Δ✝)
+g✝ : G P (Z✝ ++ C✝ :: T✝) (B✝ :: Λ✝)
+⊢ (match repeated C✝ [X✝, Y✝ ++ Z✝] ++ T✝, A✝.conj B✝ :: (Δ✝ ++ Λ✝), G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+      | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+      | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+      | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+      | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+      | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+      | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+      | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+      | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+      | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+      | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+      | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+      | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+      G.RuleKind.mix ∨
+    (match repeated C✝ [X✝, Y✝ ++ Z✝] ++ T✝, A✝.conj B✝ :: (Δ✝ ++ Λ✝), G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+        | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+        | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+        | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+        | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+        | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+        | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+        | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+        | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+        | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+        | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+        | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+        | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+        G.RuleKind.conjR ∨
+      (match repeated C✝ [X✝, Y✝ ++ Z✝] ++ T✝, A✝.conj B✝ :: (Δ✝ ++ Λ✝),
+            G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.exchangeL ∨
+        (match repeated C✝ [X✝, Y✝ ++ Z✝] ++ T✝, A✝.conj B✝ :: (Δ✝ ++ Λ✝),
+            G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.conjL
+
+case gammaDisj
+P : Type u
+C✝ A✝ B✝ : NormalForm P
+X✝ Y✝ Z✝ T✝ Δ✝ Λ✝ : List (NormalForm P)
+f✝ : G P (X✝ ++ C✝ :: Y✝ ++ [A✝]) Δ✝
+g✝ : G P (Z✝ ++ C✝ :: T✝ ++ [B✝]) Λ✝
+⊢ (match repeated C✝ [X✝, Y✝ ++ Z✝] ++ (T✝ ++ [A✝.disj B✝]), Δ✝ ++ Λ✝,
+        G.reindex ⋯ ⋯
+          (G.reindex ⋯ ⋯
+            (G.reindex ⋯ ⋯
+              (G.exchangeL [] [A✝.disj B✝] (X✝ ++ C✝ :: Y✝ ++ (Z✝ ++ C✝ :: T✝)) [] (Δ✝ ++ Λ✝)
+                (G.reindex ⋯ ⋯
+                  ((G.reindex ⋯ ⋯ (G.exchangeL [] (X✝ ++ C✝ :: Y✝) [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                    (G.reindex ⋯ ⋯ (G.exchangeL [] (Z✝ ++ C✝ :: T✝) [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+      | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+      | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+      | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+      | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+      | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+      | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+      | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+      | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+      | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+      | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+      | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+      | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+      G.RuleKind.mix ∨
+    (match repeated C✝ [X✝, Y✝ ++ Z✝] ++ (T✝ ++ [A✝.disj B✝]), Δ✝ ++ Λ✝,
+          G.reindex ⋯ ⋯
+            (G.reindex ⋯ ⋯
+              (G.reindex ⋯ ⋯
+                (G.exchangeL [] [A✝.disj B✝] (X✝ ++ C✝ :: Y✝ ++ (Z✝ ++ C✝ :: T✝)) [] (Δ✝ ++ Λ✝)
+                  (G.reindex ⋯ ⋯
+                    ((G.reindex ⋯ ⋯ (G.exchangeL [] (X✝ ++ C✝ :: Y✝) [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                      (G.reindex ⋯ ⋯ (G.exchangeL [] (Z✝ ++ C✝ :: T✝) [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+        | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+        | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+        | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+        | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+        | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+        | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+        | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+        | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+        | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+        | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+        | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+        | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+        G.RuleKind.conjR ∨
+      (match repeated C✝ [X✝, Y✝ ++ Z✝] ++ (T✝ ++ [A✝.disj B✝]), Δ✝ ++ Λ✝,
+            G.reindex ⋯ ⋯
+              (G.reindex ⋯ ⋯
+                (G.reindex ⋯ ⋯
+                  (G.exchangeL [] [A✝.disj B✝] (X✝ ++ C✝ :: Y✝ ++ (Z✝ ++ C✝ :: T✝)) [] (Δ✝ ++ Λ✝)
+                    (G.reindex ⋯ ⋯
+                      ((G.reindex ⋯ ⋯ (G.exchangeL [] (X✝ ++ C✝ :: Y✝) [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                        (G.reindex ⋯ ⋯ (G.exchangeL [] (Z✝ ++ C✝ :: T✝) [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.exchangeL ∨
+        (match repeated C✝ [X✝, Y✝ ++ Z✝] ++ (T✝ ++ [A✝.disj B✝]), Δ✝ ++ Λ✝,
+            G.reindex ⋯ ⋯
+              (G.reindex ⋯ ⋯
+                (G.reindex ⋯ ⋯
+                  (G.exchangeL [] [A✝.disj B✝] (X✝ ++ C✝ :: Y✝ ++ (Z✝ ++ C✝ :: T✝)) [] (Δ✝ ++ Λ✝)
+                    (G.reindex ⋯ ⋯
+                      ((G.reindex ⋯ ⋯ (G.exchangeL [] (X✝ ++ C✝ :: Y✝) [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                        (G.reindex ⋯ ⋯ (G.exchangeL [] (Z✝ ++ C✝ :: T✝) [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.conjL
+
+case conjunction
+P : Type u
+Δ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+X✝ Y✝ : List (NormalForm P)
+f✝ : G P (X✝ ++ A✝.conj B✝ :: Y✝ ++ [A✝, B✝]) Δ
+⊢ (match repeated (A✝.conj B✝) [X✝, Y✝] ++ [], Δ,
+        G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (G.conjL (X✝ ++ A✝.conj B✝ :: Y✝) [] Δ A✝ B✝ f✝)) with
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+      | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+      | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+      | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+      | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+      | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+      | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+      | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+      | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+      | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+      | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+      | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+      | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+      G.RuleKind.mix ∨
+    (match repeated (A✝.conj B✝) [X✝, Y✝] ++ [], Δ,
+          G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (G.conjL (X✝ ++ A✝.conj B✝ :: Y✝) [] Δ A✝ B✝ f✝)) with
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+        | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+        | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+        | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+        | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+        | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+        | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+        | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+        | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+        | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+        | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+        | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+        | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+        G.RuleKind.conjR ∨
+      (match repeated (A✝.conj B✝) [X✝, Y✝] ++ [], Δ,
+            G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (G.conjL (X✝ ++ A✝.conj B✝ :: Y✝) [] Δ A✝ B✝ f✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.exchangeL ∨
+        (match repeated (A✝.conj B✝) [X✝, Y✝] ++ [], Δ,
+            G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (G.conjL (X✝ ++ A✝.conj B✝ :: Y✝) [] Δ A✝ B✝ f✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.conjL
+
+case disjunctionFirst
+P : Type u
+A✝ B✝ : NormalForm P
+X✝ Y✝ Z✝ Δ✝ Λ✝ : List (NormalForm P)
+f✝ : G P (X✝ ++ A✝.disj B✝ :: Y✝ ++ [A✝]) Δ✝
+g✝ : G P (Z✝ ++ [B✝]) Λ✝
+⊢ (match repeated (A✝.disj B✝) [X✝, Y✝ ++ Z✝] ++ [], Δ✝ ++ Λ✝,
+        G.reindex ⋯ ⋯
+          (G.reindex ⋯ ⋯
+            (G.reindex ⋯ ⋯
+              (G.exchangeL [] [A✝.disj B✝] (X✝ ++ A✝.disj B✝ :: Y✝ ++ Z✝) [] (Δ✝ ++ Λ✝)
+                (G.reindex ⋯ ⋯
+                  ((G.reindex ⋯ ⋯ (G.exchangeL [] (X✝ ++ A✝.disj B✝ :: Y✝) [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                    (G.reindex ⋯ ⋯ (G.exchangeL [] Z✝ [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+      | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+      | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+      | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+      | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+      | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+      | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+      | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+      | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+      | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+      | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+      | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+      | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+      G.RuleKind.mix ∨
+    (match repeated (A✝.disj B✝) [X✝, Y✝ ++ Z✝] ++ [], Δ✝ ++ Λ✝,
+          G.reindex ⋯ ⋯
+            (G.reindex ⋯ ⋯
+              (G.reindex ⋯ ⋯
+                (G.exchangeL [] [A✝.disj B✝] (X✝ ++ A✝.disj B✝ :: Y✝ ++ Z✝) [] (Δ✝ ++ Λ✝)
+                  (G.reindex ⋯ ⋯
+                    ((G.reindex ⋯ ⋯ (G.exchangeL [] (X✝ ++ A✝.disj B✝ :: Y✝) [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                      (G.reindex ⋯ ⋯ (G.exchangeL [] Z✝ [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+        | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+        | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+        | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+        | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+        | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+        | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+        | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+        | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+        | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+        | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+        | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+        | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+        G.RuleKind.conjR ∨
+      (match repeated (A✝.disj B✝) [X✝, Y✝ ++ Z✝] ++ [], Δ✝ ++ Λ✝,
+            G.reindex ⋯ ⋯
+              (G.reindex ⋯ ⋯
+                (G.reindex ⋯ ⋯
+                  (G.exchangeL [] [A✝.disj B✝] (X✝ ++ A✝.disj B✝ :: Y✝ ++ Z✝) [] (Δ✝ ++ Λ✝)
+                    (G.reindex ⋯ ⋯
+                      ((G.reindex ⋯ ⋯ (G.exchangeL [] (X✝ ++ A✝.disj B✝ :: Y✝) [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                        (G.reindex ⋯ ⋯ (G.exchangeL [] Z✝ [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.exchangeL ∨
+        (match repeated (A✝.disj B✝) [X✝, Y✝ ++ Z✝] ++ [], Δ✝ ++ Λ✝,
+            G.reindex ⋯ ⋯
+              (G.reindex ⋯ ⋯
+                (G.reindex ⋯ ⋯
+                  (G.exchangeL [] [A✝.disj B✝] (X✝ ++ A✝.disj B✝ :: Y✝ ++ Z✝) [] (Δ✝ ++ Λ✝)
+                    (G.reindex ⋯ ⋯
+                      ((G.reindex ⋯ ⋯ (G.exchangeL [] (X✝ ++ A✝.disj B✝ :: Y✝) [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                        (G.reindex ⋯ ⋯ (G.exchangeL [] Z✝ [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.conjL
+
+case disjunctionSecond
+P : Type u
+A✝ B✝ : NormalForm P
+X✝ Z✝ T✝ Δ✝ Λ✝ : List (NormalForm P)
+f✝ : G P (X✝ ++ [A✝]) Δ✝
+g✝ : G P (Z✝ ++ A✝.disj B✝ :: T✝ ++ [B✝]) Λ✝
+⊢ (match repeated (A✝.disj B✝) [X✝ ++ Z✝, T✝] ++ [], Δ✝ ++ Λ✝,
+        G.reindex ⋯ ⋯
+          (G.reindex ⋯ ⋯
+            (G.reindex ⋯ ⋯
+              (G.exchangeL [] [A✝.disj B✝] (X✝ ++ (Z✝ ++ A✝.disj B✝ :: T✝)) [] (Δ✝ ++ Λ✝)
+                (G.reindex ⋯ ⋯
+                  ((G.reindex ⋯ ⋯ (G.exchangeL [] X✝ [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                    (G.reindex ⋯ ⋯ (G.exchangeL [] (Z✝ ++ A✝.disj B✝ :: T✝) [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+      | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+      | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+      | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+      | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+      | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+      | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+      | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+      | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+      | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+      | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+      | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+      | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+      G.RuleKind.mix ∨
+    (match repeated (A✝.disj B✝) [X✝ ++ Z✝, T✝] ++ [], Δ✝ ++ Λ✝,
+          G.reindex ⋯ ⋯
+            (G.reindex ⋯ ⋯
+              (G.reindex ⋯ ⋯
+                (G.exchangeL [] [A✝.disj B✝] (X✝ ++ (Z✝ ++ A✝.disj B✝ :: T✝)) [] (Δ✝ ++ Λ✝)
+                  (G.reindex ⋯ ⋯
+                    ((G.reindex ⋯ ⋯ (G.exchangeL [] X✝ [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                      (G.reindex ⋯ ⋯ (G.exchangeL [] (Z✝ ++ A✝.disj B✝ :: T✝) [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+        | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+        | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+        | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+        | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+        | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+        | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+        | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+        | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+        | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+        | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+        | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+        | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+        G.RuleKind.conjR ∨
+      (match repeated (A✝.disj B✝) [X✝ ++ Z✝, T✝] ++ [], Δ✝ ++ Λ✝,
+            G.reindex ⋯ ⋯
+              (G.reindex ⋯ ⋯
+                (G.reindex ⋯ ⋯
+                  (G.exchangeL [] [A✝.disj B✝] (X✝ ++ (Z✝ ++ A✝.disj B✝ :: T✝)) [] (Δ✝ ++ Λ✝)
+                    (G.reindex ⋯ ⋯
+                      ((G.reindex ⋯ ⋯ (G.exchangeL [] X✝ [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                        (G.reindex ⋯ ⋯
+                          (G.exchangeL [] (Z✝ ++ A✝.disj B✝ :: T✝) [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.exchangeL ∨
+        (match repeated (A✝.disj B✝) [X✝ ++ Z✝, T✝] ++ [], Δ✝ ++ Λ✝,
+            G.reindex ⋯ ⋯
+              (G.reindex ⋯ ⋯
+                (G.reindex ⋯ ⋯
+                  (G.exchangeL [] [A✝.disj B✝] (X✝ ++ (Z✝ ++ A✝.disj B✝ :: T✝)) [] (Δ✝ ++ Λ✝)
+                    (G.reindex ⋯ ⋯
+                      ((G.reindex ⋯ ⋯ (G.exchangeL [] X✝ [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                        (G.reindex ⋯ ⋯
+                          (G.exchangeL [] (Z✝ ++ A✝.disj B✝ :: T✝) [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.conjL
+
+case disjunctionBoth
+P : Type u
+A✝ B✝ : NormalForm P
+X✝ Y✝ Z✝ T✝ Δ✝ Λ✝ : List (NormalForm P)
+f✝ : G P (X✝ ++ A✝.disj B✝ :: Y✝ ++ [A✝]) Δ✝
+g✝ : G P (Z✝ ++ A✝.disj B✝ :: T✝ ++ [B✝]) Λ✝
+⊢ (match repeated (A✝.disj B✝) [X✝, Y✝ ++ Z✝, T✝] ++ [], Δ✝ ++ Λ✝,
+        G.reindex ⋯ ⋯
+          (G.reindex ⋯ ⋯
+            (G.reindex ⋯ ⋯
+              (G.exchangeL [] [A✝.disj B✝] (X✝ ++ A✝.disj B✝ :: Y✝ ++ (Z✝ ++ A✝.disj B✝ :: T✝)) [] (Δ✝ ++ Λ✝)
+                (G.reindex ⋯ ⋯
+                  ((G.reindex ⋯ ⋯ (G.exchangeL [] (X✝ ++ A✝.disj B✝ :: Y✝) [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                    (G.reindex ⋯ ⋯ (G.exchangeL [] (Z✝ ++ A✝.disj B✝ :: T✝) [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+      | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+      | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+      | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+      | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+      | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+      | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+      | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+      | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+      | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+      | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+      | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+      | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+      G.RuleKind.mix ∨
+    (match repeated (A✝.disj B✝) [X✝, Y✝ ++ Z✝, T✝] ++ [], Δ✝ ++ Λ✝,
+          G.reindex ⋯ ⋯
+            (G.reindex ⋯ ⋯
+              (G.reindex ⋯ ⋯
+                (G.exchangeL [] [A✝.disj B✝] (X✝ ++ A✝.disj B✝ :: Y✝ ++ (Z✝ ++ A✝.disj B✝ :: T✝)) [] (Δ✝ ++ Λ✝)
+                  (G.reindex ⋯ ⋯
+                    ((G.reindex ⋯ ⋯ (G.exchangeL [] (X✝ ++ A✝.disj B✝ :: Y✝) [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                      (G.reindex ⋯ ⋯ (G.exchangeL [] (Z✝ ++ A✝.disj B✝ :: T✝) [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+        | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+        | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+        | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+        | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+        | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+        | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+        | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+        | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+        | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+        | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+        | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+        | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+        G.RuleKind.conjR ∨
+      (match repeated (A✝.disj B✝) [X✝, Y✝ ++ Z✝, T✝] ++ [], Δ✝ ++ Λ✝,
+            G.reindex ⋯ ⋯
+              (G.reindex ⋯ ⋯
+                (G.reindex ⋯ ⋯
+                  (G.exchangeL [] [A✝.disj B✝] (X✝ ++ A✝.disj B✝ :: Y✝ ++ (Z✝ ++ A✝.disj B✝ :: T✝)) [] (Δ✝ ++ Λ✝)
+                    (G.reindex ⋯ ⋯
+                      ((G.reindex ⋯ ⋯ (G.exchangeL [] (X✝ ++ A✝.disj B✝ :: Y✝) [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                        (G.reindex ⋯ ⋯
+                          (G.exchangeL [] (Z✝ ++ A✝.disj B✝ :: T✝) [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.exchangeL ∨
+        (match repeated (A✝.disj B✝) [X✝, Y✝ ++ Z✝, T✝] ++ [], Δ✝ ++ Λ✝,
+            G.reindex ⋯ ⋯
+              (G.reindex ⋯ ⋯
+                (G.reindex ⋯ ⋯
+                  (G.exchangeL [] [A✝.disj B✝] (X✝ ++ A✝.disj B✝ :: Y✝ ++ (Z✝ ++ A✝.disj B✝ :: T✝)) [] (Δ✝ ++ Λ✝)
+                    (G.reindex ⋯ ⋯
+                      ((G.reindex ⋯ ⋯ (G.exchangeL [] (X✝ ++ A✝.disj B✝ :: Y✝) [A✝] [] Δ✝ (G.reindex ⋯ ⋯ f✝))).disjL
+                        (G.reindex ⋯ ⋯
+                          (G.exchangeL [] (Z✝ ++ A✝.disj B✝ :: T✝) [B✝] [] Λ✝ (G.reindex ⋯ ⋯ g✝)))))))) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.conjL
+error: DosenPetric/GentzenReducibleOccurrences.lean:26:4: This simp argument is unused:
+  G.ruleKind_reindex
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [BlockedSource.left2, BlockedSource.left3, G.contractedPremiseKind, BlockedSource.disjLLast,
+    BlockedSource.conjLLast, G.ruleKind]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenReducibleOccurrences.lean:29:85: unsolved goals
+case gammaMix
+P : Type u
+C✝ : NormalForm P
+Γ✝ Θ✝ X✝ Y✝ Z✝ T✝ : List (NormalForm P)
+f✝ : G P Γ✝ (X✝ ++ C✝ :: Y✝)
+g✝ : G P Θ✝ (Z✝ ++ C✝ :: T✝)
+⊢ (match Θ✝ ++ Γ✝, repeated C✝ [Z✝, T✝ ++ X✝] ++ Y✝, G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.mix g✝)) with
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+      | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+      | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+      | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+      | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+      | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+      | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+      | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+      | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+      | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+      | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+      | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+      | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+      G.RuleKind.mix ∨
+    (match Θ✝ ++ Γ✝, repeated C✝ [Z✝, T✝ ++ X✝] ++ Y✝, G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.mix g✝)) with
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+        | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+        | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+        | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+        | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+        | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+        | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+        | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+        | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+        | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+        | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+        | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+        | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+        G.RuleKind.exchangeL ∨
+      (match Θ✝ ++ Γ✝, repeated C✝ [Z✝, T✝ ++ X✝] ++ Y✝, G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.mix g✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.conjR ∨
+        (match Θ✝ ++ Γ✝, repeated C✝ [Z✝, T✝ ++ X✝] ++ Y✝, G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.mix g✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.disjR
+
+case gammaDisj
+P : Type u
+C✝ A✝ B✝ : NormalForm P
+Γ✝ Θ✝ X✝ Y✝ Z✝ T✝ : List (NormalForm P)
+f✝ : G P (Γ✝ ++ [A✝]) (X✝ ++ C✝ :: Y✝)
+g✝ : G P (Θ✝ ++ [B✝]) (Z✝ ++ C✝ :: T✝)
+⊢ (match Γ✝ ++ Θ✝ ++ [A✝.disj B✝], repeated C✝ [X✝, Y✝ ++ Z✝] ++ T✝,
+        G.reindex ⋯ ⋯
+          (G.reindex ⋯ ⋯
+            (G.reindex ⋯ ⋯
+              (G.exchangeL [] [A✝.disj B✝] (Γ✝ ++ Θ✝) [] (X✝ ++ C✝ :: Y✝ ++ (Z✝ ++ C✝ :: T✝))
+                (G.reindex ⋯ ⋯
+                  ((G.reindex ⋯ ⋯ (G.exchangeL [] Γ✝ [A✝] [] (X✝ ++ C✝ :: Y✝) (G.reindex ⋯ ⋯ f✝))).disjL
+                    (G.reindex ⋯ ⋯ (G.exchangeL [] Θ✝ [B✝] [] (Z✝ ++ C✝ :: T✝) (G.reindex ⋯ ⋯ g✝)))))))) with
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+      | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+      | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+      | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+      | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+      | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+      | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+      | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+      | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+      | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+      | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+      | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+      | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+      G.RuleKind.mix ∨
+    (match Γ✝ ++ Θ✝ ++ [A✝.disj B✝], repeated C✝ [X✝, Y✝ ++ Z✝] ++ T✝,
+          G.reindex ⋯ ⋯
+            (G.reindex ⋯ ⋯
+              (G.reindex ⋯ ⋯
+                (G.exchangeL [] [A✝.disj B✝] (Γ✝ ++ Θ✝) [] (X✝ ++ C✝ :: Y✝ ++ (Z✝ ++ C✝ :: T✝))
+                  (G.reindex ⋯ ⋯
+                    ((G.reindex ⋯ ⋯ (G.exchangeL [] Γ✝ [A✝] [] (X✝ ++ C✝ :: Y✝) (G.reindex ⋯ ⋯ f✝))).disjL
+                      (G.reindex ⋯ ⋯ (G.exchangeL [] Θ✝ [B✝] [] (Z✝ ++ C✝ :: T✝) (G.reindex ⋯ ⋯ g✝)))))))) with
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+        | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+        | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+        | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+        | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+        | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+        | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+        | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+        | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+        | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+        | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+        | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+        | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+        G.RuleKind.exchangeL ∨
+      (match Γ✝ ++ Θ✝ ++ [A✝.disj B✝], repeated C✝ [X✝, Y✝ ++ Z✝] ++ T✝,
+            G.reindex ⋯ ⋯
+              (G.reindex ⋯ ⋯
+                (G.reindex ⋯ ⋯
+                  (G.exchangeL [] [A✝.disj B✝] (Γ✝ ++ Θ✝) [] (X✝ ++ C✝ :: Y✝ ++ (Z✝ ++ C✝ :: T✝))
+                    (G.reindex ⋯ ⋯
+                      ((G.reindex ⋯ ⋯ (G.exchangeL [] Γ✝ [A✝] [] (X✝ ++ C✝ :: Y✝) (G.reindex ⋯ ⋯ f✝))).disjL
+                        (G.reindex ⋯ ⋯ (G.exchangeL [] Θ✝ [B✝] [] (Z✝ ++ C✝ :: T✝) (G.reindex ⋯ ⋯ g✝)))))))) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.conjR ∨
+        (match Γ✝ ++ Θ✝ ++ [A✝.disj B✝], repeated C✝ [X✝, Y✝ ++ Z✝] ++ T✝,
+            G.reindex ⋯ ⋯
+              (G.reindex ⋯ ⋯
+                (G.reindex ⋯ ⋯
+                  (G.exchangeL [] [A✝.disj B✝] (Γ✝ ++ Θ✝) [] (X✝ ++ C✝ :: Y✝ ++ (Z✝ ++ C✝ :: T✝))
+                    (G.reindex ⋯ ⋯
+                      ((G.reindex ⋯ ⋯ (G.exchangeL [] Γ✝ [A✝] [] (X✝ ++ C✝ :: Y✝) (G.reindex ⋯ ⋯ f✝))).disjL
+                        (G.reindex ⋯ ⋯ (G.exchangeL [] Θ✝ [B✝] [] (Z✝ ++ C✝ :: T✝) (G.reindex ⋯ ⋯ g✝)))))))) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.disjR
+
+case gammaConj
+P : Type u
+C✝ A✝ B✝ : NormalForm P
+Γ✝ Θ✝ X✝ Y✝ Z✝ T✝ : List (NormalForm P)
+f✝ : G P Γ✝ (A✝ :: (X✝ ++ C✝ :: Y✝))
+g✝ : G P Θ✝ (B✝ :: (Z✝ ++ C✝ :: T✝))
+⊢ (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (X✝ ++ C✝ :: repeated C✝ [Y✝ ++ Z✝] ++ T✝),
+        G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+      | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+      | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+      | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+      | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+      | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+      | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+      | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+      | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+      | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+      | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+      | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+      | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+      G.RuleKind.mix ∨
+    (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (X✝ ++ C✝ :: repeated C✝ [Y✝ ++ Z✝] ++ T✝),
+          G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+        | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+        | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+        | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+        | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+        | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+        | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+        | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+        | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+        | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+        | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+        | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+        | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+        G.RuleKind.exchangeL ∨
+      (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (X✝ ++ C✝ :: repeated C✝ [Y✝ ++ Z✝] ++ T✝),
+            G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.conjR ∨
+        (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (X✝ ++ C✝ :: repeated C✝ [Y✝ ++ Z✝] ++ T✝),
+            G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.disjR
+
+case disjunction
+P : Type u
+Γ : List (NormalForm P)
+A✝ B✝ : NormalForm P
+X✝ Y✝ : List (NormalForm P)
+f✝ : G P Γ (A✝ :: B✝ :: (X✝ ++ A✝.disj B✝ :: Y✝))
+⊢ (match Γ, A✝.disj B✝ :: (repeated (A✝.disj B✝) [X✝] ++ Y✝),
+        G.reindex ⋯ ⋯ (G.disjR Γ [] (X✝ ++ A✝.disj B✝ :: Y✝) A✝ B✝ f✝) with
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+      | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+      | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+      | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+      | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+      | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+      | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+      | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+      | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+      | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+      | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+      | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+      | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+      G.RuleKind.mix ∨
+    (match Γ, A✝.disj B✝ :: (repeated (A✝.disj B✝) [X✝] ++ Y✝),
+          G.reindex ⋯ ⋯ (G.disjR Γ [] (X✝ ++ A✝.disj B✝ :: Y✝) A✝ B✝ f✝) with
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+        | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+        | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+        | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+        | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+        | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+        | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+        | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+        | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+        | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+        | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+        | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+        | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+        G.RuleKind.exchangeL ∨
+      (match Γ, A✝.disj B✝ :: (repeated (A✝.disj B✝) [X✝] ++ Y✝),
+            G.reindex ⋯ ⋯ (G.disjR Γ [] (X✝ ++ A✝.disj B✝ :: Y✝) A✝ B✝ f✝) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.conjR ∨
+        (match Γ, A✝.disj B✝ :: (repeated (A✝.disj B✝) [X✝] ++ Y✝),
+            G.reindex ⋯ ⋯ (G.disjR Γ [] (X✝ ++ A✝.disj B✝ :: Y✝) A✝ B✝ f✝) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.disjR
+
+case conjunctionFirst
+P : Type u
+A✝ B✝ : NormalForm P
+Γ✝ Θ✝ X✝ Y✝ Λ✝ : List (NormalForm P)
+f✝ : G P Γ✝ (A✝ :: (X✝ ++ A✝.conj B✝ :: Y✝))
+g✝ : G P Θ✝ (B✝ :: Λ✝)
+⊢ (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (repeated (A✝.conj B✝) [X✝] ++ (Y✝ ++ Λ✝)),
+        G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+      | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+      | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+      | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+      | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+      | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+      | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+      | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+      | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+      | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+      | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+      | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+      | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+      G.RuleKind.mix ∨
+    (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (repeated (A✝.conj B✝) [X✝] ++ (Y✝ ++ Λ✝)),
+          G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+        | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+        | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+        | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+        | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+        | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+        | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+        | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+        | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+        | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+        | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+        | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+        | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+        G.RuleKind.exchangeL ∨
+      (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (repeated (A✝.conj B✝) [X✝] ++ (Y✝ ++ Λ✝)),
+            G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.conjR ∨
+        (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (repeated (A✝.conj B✝) [X✝] ++ (Y✝ ++ Λ✝)),
+            G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.disjR
+
+case conjunctionSecond
+P : Type u
+A✝ B✝ : NormalForm P
+Γ✝ Θ✝ Δ✝ Z✝ T✝ : List (NormalForm P)
+f✝ : G P Γ✝ (A✝ :: Δ✝)
+g✝ : G P Θ✝ (B✝ :: (Z✝ ++ A✝.conj B✝ :: T✝))
+⊢ (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (repeated (A✝.conj B✝) [Δ✝ ++ Z✝] ++ T✝),
+        G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+      | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+      | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+      | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+      | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+      | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+      | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+      | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+      | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+      | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+      | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+      | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+      | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+      G.RuleKind.mix ∨
+    (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (repeated (A✝.conj B✝) [Δ✝ ++ Z✝] ++ T✝),
+          G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+        | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+        | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+        | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+        | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+        | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+        | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+        | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+        | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+        | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+        | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+        | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+        | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+        G.RuleKind.exchangeL ∨
+      (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (repeated (A✝.conj B✝) [Δ✝ ++ Z✝] ++ T✝),
+            G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.conjR ∨
+        (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (repeated (A✝.conj B✝) [Δ✝ ++ Z✝] ++ T✝),
+            G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.disjR
+
+case conjunctionBoth
+P : Type u
+A✝ B✝ : NormalForm P
+Γ✝ Θ✝ X✝ Y✝ Z✝ T✝ : List (NormalForm P)
+f✝ : G P Γ✝ (A✝ :: (X✝ ++ A✝.conj B✝ :: Y✝))
+g✝ : G P Θ✝ (B✝ :: (Z✝ ++ A✝.conj B✝ :: T✝))
+⊢ (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (repeated (A✝.conj B✝) [X✝, Y✝ ++ Z✝] ++ T✝),
+        G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+      | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+      | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+      | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+      | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+      | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+      | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+      | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+      | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+      | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+      | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+      | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+      | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+      | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+      | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+      G.RuleKind.mix ∨
+    (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (repeated (A✝.conj B✝) [X✝, Y✝ ++ Z✝] ++ T✝),
+          G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+        | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+        | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+        | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+        | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+        | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+        | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+        | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+        | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+        | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+        | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+        | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+        | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+        | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+        | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+        G.RuleKind.exchangeL ∨
+      (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (repeated (A✝.conj B✝) [X✝, Y✝ ++ Z✝] ++ T✝),
+            G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.conjR ∨
+        (match Γ✝ ++ Θ✝, A✝.conj B✝ :: (repeated (A✝.conj B✝) [X✝, Y✝ ++ Z✝] ++ T✝),
+            G.reindex ⋯ ⋯ (G.reindex ⋯ ⋯ (f✝.conjR g✝)) with
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.identity l => G.RuleKind.identity
+          | .([NormalForm.lit l]), .([NormalForm.lit l]), G.zero l => G.RuleKind.zero
+          | .([]), .([NormalForm.top]), G.topI => G.RuleKind.topI
+          | .([NormalForm.bot]), .([]), G.botE => G.RuleKind.botE
+          | .(Γ ++ Y ++ X ++ Θ), x, G.exchangeL Γ X Y Θ .(x) a => G.RuleKind.exchangeL
+          | x, .(Δ ++ Y ++ X ++ Λ), G.exchangeR .(x) Δ X Y Λ a => G.RuleKind.exchangeR
+          | .(Γ ++ A :: Θ), x, G.thinL Γ Θ .(x) A a => G.RuleKind.thinL
+          | x, .(Δ ++ A :: Λ), G.thinR .(x) Δ Λ A a => G.RuleKind.thinR
+          | .(gaps gs ++ C :: Θ), x, G.contractL C gs Θ .(x) a a_1 => G.RuleKind.contractL
+          | x, .(gaps gs ++ C :: Λ), G.contractR .(x) C gs Λ a a_1 => G.RuleKind.contractR
+          | .(Γ ++ A.conj B :: Θ), x, G.conjL Γ Θ .(x) A B a => G.RuleKind.conjL
+          | x, .(Δ ++ A.disj B :: Λ), G.disjR .(x) Δ Λ A B a => G.RuleKind.disjR
+          | .(Γ ++ Θ), .(A.conj B :: (Δ ++ Λ)), a.conjR a_1 => G.RuleKind.conjR
+          | .(A.disj B :: (Γ ++ Θ)), .(Δ ++ Λ), a.disjL a_1 => G.RuleKind.disjL
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.mix a_1 => G.RuleKind.mix
+          | .(Θ ++ Γ), .(Λ ++ Δ), a.cut a_1 => G.RuleKind.cut) =
+          G.RuleKind.disjR
+error: DosenPetric/GentzenReducibleOccurrences.lean:31:4: This simp argument is unused:
+  G.ruleKind_reindex
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [BlockedSource.right2, BlockedSource.right3, G.contractedPremiseKind, BlockedSource.disjLLast,
+    G.ruleKind]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- DosenPetric.GentzenReducibleOccurrences
+error: build failed
