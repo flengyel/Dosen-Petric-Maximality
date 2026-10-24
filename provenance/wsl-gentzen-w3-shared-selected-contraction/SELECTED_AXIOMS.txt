@@ -1,0 +1,98 @@
+'DosenPetric.Reduced.Gentzen.ContractionSelection.upper' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ContractionSelection.lower' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ContractionSelection.count' does not depend on any axioms
+'DosenPetric.Reduced.Gentzen.ContractionSelection.selected_iff' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ContractionSelection.fuse_count' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ContractionSelection.fuse_keep' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ContractionSelection.fuse_get' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ContractionSelection.keep_index' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ContractionSelection.route_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ContractionSelection.selected_eq' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.ContractionSelection.ofGaps_gs' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.ContractionSelection.ofGaps_tail' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.ContractionBlock.selection_block' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.ContractionBlock.rankL_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.ContractionBlock.rankR_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.TraceRoute.fiber_comp_perm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.TraceRoute.sum_fiber_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.shared_pattern' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.arity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.flat_bound' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.keep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.selected_complete' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.selected_originals' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.selected_ordered' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.selected_length' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.retained_fiber' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.middle_fixed' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.original_get' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.original_flat' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.other_fiber' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.product_square' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.coproduct_square' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.SharedContraction.Data.weights' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.denoteL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.denoteR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_countL' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_countL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_countR' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_countR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_cutFreeL' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_cutFreeL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_cutFreeR' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_cutFreeR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_atomizedL' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_atomizedL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_atomizedR' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_atomizedR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.relationL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.relationR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.selected_sumsL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.selected_sumsR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.outer_rankL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.outer_rankR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_endpointL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_endpointR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.retained_rankL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.retained_rankR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.retained_decreasesL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.retained_decreasesR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_otherL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_otherL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.other_lossL' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_otherR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_otherR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.other_lossR' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.fusion_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.fusion_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.shared23' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.shared32' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.sharedMiddle' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.sharedEqual' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.inner_indices23' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.outer_indices23' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.inner_map23' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.outer_map23' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.composite_map23' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_gaps23' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_selected23' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_map23' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.fixed_original23' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_gaps32' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_selected32' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.composite_map32' depends on axioms: [propext, Quot.sound]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.shared_offsets' depends on axioms: [propext]
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.empty_left_rank_drop' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.empty_right_rank_drop' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.fixed_other_loss_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.fixed_other_loss_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.compound_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.compound_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.middle_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.middle_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.equal_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.equal_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.literal_left' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.literal_right' depends on axioms: [propext,
+'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.both_signs_actual_cuts' depends on axioms: [propext,

@@ -1,0 +1,75 @@
+✖ [124/124] Building DosenPetric.GentzenContractionSelectionCoordinates (2.2s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenContractionSelectionCoordinates.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionSelectionCoordinates.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionSelectionCoordinates.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionSelectionCoordinates.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionSelectionCoordinates.setup.json --json
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:55:6: 'change' tactic failed, pattern
+  a.index + 1 = copyIndex [[]] (a.index + 1)
+is not definitionally equal to target
+  ((last Θ).route.get a.there).index = copyIndex (last Θ).gs a.there.index
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:63:6: 'change' tactic failed, pattern
+  (p.route.get a).index + 1 = copyIndex ((B :: p.first) :: p.rest) (a.index + 1)
+is not definitionally equal to target
+  ((fixed B p).route.get a.there).index = copyIndex (fixed B p).gs a.there.index
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:69:37: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a ≥ 1
+where
+ a := ↑[].length
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:69:44: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  if ?m.454 = ?m.454 then ?m.456 else ?m.457
+in the target expression
+  p.keep.index =
+    if 0 = [].length then [].length + (gaps p.gs).length else [].length + copyIndex p.gs (0 - [].length - 1)
+
+case more.here
+P : Type u
+C : NormalForm P
+F K F✝ K✝ : List (NormalForm P)
+p : ContractionSelection C F✝ K✝
+ih : ∀ (a : At F✝ C), (p.route.get a).index = copyIndex p.gs a.index
+⊢ p.keep.index =
+    if 0 = [].length then [].length + (gaps p.gs).length else [].length + copyIndex p.gs (0 - [].length - 1)
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:73:37: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 2
+where
+ b := ↑[].length
+ c := ↑a.index
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:73:61: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 1
+where
+ b := ↑[].length
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:75:10: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  a.index + 1 - 0 - 1
+in the target expression
+  (p.route.get a).index = [].length + copyIndex p.gs (a.index + 1 - [].length - 1)
+
+case more.there
+P : Type u
+C : NormalForm P
+F K : List (NormalForm P)
+A : NormalForm P
+F✝ K✝ : List (NormalForm P)
+p : ContractionSelection C F✝ K✝
+ih : ∀ (a : At F✝ A), (p.route.get a).index = copyIndex p.gs a.index
+a : At F✝ A
+hi : a.index + 1 - 0 - 1 = a.index
+⊢ (p.route.get a).index = [].length + copyIndex p.gs (a.index + 1 - [].length - 1)
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:131:7: unsolved goals
+P : Type u
+C✝ : NormalForm P
+F K : List (NormalForm P)
+C : NormalForm P
+Γ Θ : List (NormalForm P)
+⊢ Γ ++ C :: Θ = Γ ++ C :: ([] ++ Θ)
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:131:30: This simp argument is unused:
+  List.append_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [repeated, List.cons_append, List.append_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- DosenPetric.GentzenContractionSelectionCoordinates
+error: build failed

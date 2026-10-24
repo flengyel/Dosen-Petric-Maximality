@@ -1100,7 +1100,7 @@ was confirmed.
 | §11.2 p.252, right analogue | Same fixed-gap placement in the succedent, actual G.contractR constructor order. | `fixedGap_right`; separately typed coproduct square and denotation calculation, without arrow negation. |
 | §11.2 p.248, clusters / upper parametric sequences | Selected copies of one family have singleton fibers through the other contraction, with all equal-label tags retained. | `selectedC/E_transport`, `selectedC/E_singleton`, `xC/xE_fiber`, `other_fiber`. |
 | §11.2 p.249, rank counts all cluster nodes | Sum all n or m selected copies; count a single node on the other retained/fixed path. | Actual `ContractionBlock.rankL/R_sum/fixed`; four table entries for each side, both balances, strict comparisons and other-position 2+rho. |
-| §11.2 p.251 (W3) | Shared-selected-copy contraction, where a retained inner position is itself selected by the outer contraction. | Separate/open; excluded here by the proved fixed-gap separation and distinct retained indices, including C=E. |
+| §11.2 p.251 (W3) | Shared-selected-copy contraction, where a retained inner position is itself selected by the outer contraction. | Separate from these W1 instances and now proved in the W3 section below; excluded here by fixed-gap separation and distinct retained indices, including C=E. |
 | §11.2 pp.250–253, Reducibility/Blocked-w | Later applications tie a contraction to a cut and control replacement at all affected sites. | Not supplied by these two local commutations or the displayed two-position sum. |
 
 The source's Semilattice Coherence appeal is replaced for these instances by
@@ -1117,8 +1117,8 @@ positions have equal 2+rho at a unique common original coordinate. Exact
 count/predicate/full tagged occurrence preservation follows without coherence;
 S(old)+m=S(new)+n permits an actual 2/3 increase. See
 [the report](GENTZEN_W1_DISJOINT_CONTRACTION_REPORT.md) and both author-side reviews.
-Terminal-tail cases are now proved below; interleaved/shared-selected/W3 and
-broader W1/reducibility remain separate/open.
+Terminal-tail and shared-selected W3 cases are now proved below; interleaved
+disjoint cases and broader W1/reducibility remain separate/open.
 
 
 ## Terminal-tail disjoint same-side contractions (two W1 cases)
@@ -1133,7 +1133,7 @@ discrepancy is asserted; access evidence is retained under
 | p.251, W1, γ=wL | E contraction lies in the fixed terminal tail of the C contraction; all C-selected copies remain parametric. | `TerminalContraction.terminalTail`, eight proved `Data.upper/lowerC0/C1/E0/E1` identities and `W1.DisjointContraction.terminalTail_left`. |
 | p.252, right analogue | Same placement in the succedent with actual G.contractR. | `terminalTail_right`, separately typed coproduct square, no arrow-negation principle. |
 | pp.248–249, parametric ancestry and ranks | Complete ordered selected families and fixed singleton contributions. | `selectedC/E_transport`, lengths n/n/m/m, concrete prefix/tail separation, complete singleton/composite fibers and full rank sums. |
-| p.251, W3 | Retained inner occurrence is selected by the outer contraction. | Still open; excluded by distinct retained terminal indices and positional separation, including C=E. |
+| p.251, W3 | Retained inner occurrence is selected by the outer contraction. | Now proved in the W3 section below; excluded from these terminal W1 instances by distinct retained indices and positional separation, including C=E. |
 
 For es=H::hs, F=(repeated C gs++U)++repeated E es++V and
 K=(gaps gs++C::U)++gaps es++E::V, both actual old/new pairs have exact
@@ -1154,6 +1154,42 @@ CutFree/Atomized and complete tagged relations are preserved without a new
 atomicity hypothesis. See [the report](GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT.md)
 and both author-side reviews for exact examples and verification.
 
-Shared-selected W3 fusion is the next concrete proof task. Disjoint interleaving,
+Shared-selected W3 fusion is now proved below. Disjoint interleaving,
 remaining exchange/W1/W2–W6, all-site replacement, Reducibility, Blocked-w,
 cut elimination and coherence/maximality remain separate/open.
+
+
+## Shared-selected contraction fusion (W3)
+
+The same hash-verified September 2007 source was consulted at §11.2,
+printed pp.248–253/PDF pp.260–265, with printed p.251 inspected in rendering.
+W3 requires the retained inner occurrence to be selected by the outer
+contraction. This is the positional hypothesis of the concrete public theorems,
+not an inferred property of equal formula labels or a disjoint W1 condition.
+
+| Source location | Exact correspondence | Lean proof |
+| --- | --- | --- |
+| p.251 W3, same basic sequence with two descriptions | repeated C hs++Λ = gaps gs++C::Θ, with explicit casted shared membership. | SharedContraction.Data.identify/Shared and W3.SharedContraction.fusion_left/right. |
+| p.251 W3, suitable single-contraction subscripts | Compute ordered original selected family and actual flat gaps/tail, n+m−1 copies. | ContractionSelection.fuse; upper/lower/count; conversion back to existing ContractionBlock; Data.arity/selected_originals. |
+| pp.248–249, complete cluster ancestry | Retained composite fiber is the complete ordered flat selection; every other final fiber is a computed unique original. | Data.square/retained_fiber/other_fiber/original_flat. |
+| p.251 W3, old rank k+1+l+m versus flat k+l+1 | Complete grouped fibers are a permutation; all m intermediate nodes contribute. | TraceRoute.fiber_comp_perm/sum_fiber_comp, selected_sumsL/R, outer_rankL/R, retained_rankL/R. |
+| p.252 right analogue | Actual right-side constructors and correctly variant coproduct equation. | Separately typed fusion_right, denoteR and all right rank/preservation laws. |
+
+The actual endpoint types are G P K Δ and G P Γ K, K=gaps hs++C::Λ,
+under arbitrary P,C and existing premises, independent n,m≥2, hI and shared
+membership. No atomicity, CutFree, Atomized, DecidableEq, nonempty P or
+coherence premise is required. The auxiliary selection stores positional
+choices, not an assumed fusion law or new Gentzen primitive. Universal
+component extensionality gives product/coproduct identities before Reduced
+equality; occurrence equality is derived afterward.
+
+Old retained/outer rank equals the flat counterpart plus m. Every other final
+same-side position has ranks 2+rho(f,a) and 1+rho(f,a) at its proved common
+original. Counts, CutFree/Atomized and complete tagged relations are preserved.
+Inhabited equal-label, 2/3 and 3/2 arities, three shared offsets, Empty-variable
+constants, compounds and actual signed cuts compile. See
+[the W3 report](GENTZEN_W3_SHARED_SELECTED_CONTRACTION_REPORT.md) and reviews.
+
+Next prove terminal selected-thinning W2 and its right dual. Remaining disjoint
+interleaving/exchange/W1/W2–W6, arbitrary-context replacement, Reducibility,
+Blocked-w, cut elimination, coherence and unconditional maximality stay open.

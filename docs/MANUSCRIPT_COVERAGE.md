@@ -82,8 +82,9 @@ definition is unchanged and can be adapted once that interpretation exists.
 | Fixed-position same-side W1 thinning | Four concrete interior/terminal L/R results compile with explicit G/At/Route casts, the proved structural square, complete ordered selected transport and index exclusion even E=C. Full rank equations give n/n−1 losses and fixed inserted 2→1; predicates/count/tagged relations preserved, exact AtomicFormula E boundary retained. Other W1/W2 and all-site reducibility remain open. |
 | Fixed-parametric same-side W1 exchange | Four concrete interior-gap/terminal-tail L/R results compile with exact casts and structural squares, ordered selected transport using interval exclusion, retained and fixed singleton correspondence. Contraction/retained endpoint losses n/n−1 and unchanged fixed ranks 2+rho compile, including empty blocks. Count/predicates/tagged relations preserved; both Atomized predicates equal f.Atomized. Crossing-selected, multi-gap and absorption configurations remain open. |
 | Fixed-parametric same-side unary logical W1 | Four concrete interior/terminal conjL/disjR cases compile with actual partial ancestry, both consumed slots none, complete ordered selected transport plus survival/lengths, separate categorical A/B component calculations and actual toTerm squares. Retained n/n−1, principal 2→1 and other fixed 2+rho ranks compile; count/predicates/tagged relations preserved. No extra atomicity or coherence. Other W1/W2–W6 and general reducibility remain open. |
-| Fixed-gap disjoint same-side W1 contractions | Two concrete left/right results compile with eight actual context equalities and casts, all-position copies/copies and categorical squares, complete ordered selected transports and genuine same-side fixed fibers. Independent n,m: old ranks LC+n,LE+1; new LC+1,LE+m. Sum balance, actual unequal-arity increase, other fixed 2+rho and count/predicate/full tagged relations compile. Shared-selected/W3 and general reducibility/coherence remain open. |
-| Terminal-tail disjoint same-side W1 contractions | Two concrete terminalTail_left/right results compile with eight actual context equalities/casts, a concrete copies/copies square, full ordered selected transports, positional separation even C=E and complete fibers. Retained xC<xE; independent n,m give old=(LC+n,LE+1), new=(LC+1,LE+m), exact balances and S(old)+m=S(new)+n. Other same-side ranks are 2+rho at the unique common original. Count/predicates/full tagged relations and inhabited examples compile. Shared-selected/W3, disjoint interleaving and general reducibility/coherence remain open. |
+| Fixed-gap disjoint same-side W1 contractions | Two concrete left/right results compile with eight actual context equalities and casts, all-position copies/copies and categorical squares, complete ordered selected transports and genuine same-side fixed fibers. Independent n,m: old ranks LC+n,LE+1; new LC+1,LE+m. Sum balance, actual unequal-arity increase, other fixed 2+rho and count/predicate/full tagged relations compile. General reducibility/coherence remain open; W3 is now supplied below. |
+| Terminal-tail disjoint same-side W1 contractions | Two concrete terminalTail_left/right results compile with eight actual context equalities/casts, a concrete copies/copies square, full ordered selected transports, positional separation even C=E and complete fibers. Retained xC<xE; independent n,m give old=(LC+n,LE+1), new=(LC+1,LE+m), exact balances and S(old)+m=S(new)+n. Other same-side ranks are 2+rho at the unique common original. Count/predicates/full tagged relations and inhabited examples compile. Disjoint interleaving and general reducibility/coherence remain open; W3 is now supplied below. |
+| W3 shared-selected contraction fusion | `W3.SharedContraction.fusion_left/right` prove exact G P K Δ / G P Γ K outputs for original C,gs,hs,Θ,Λ, intermediate hI and shared-position membership, independent n,m≥2. Computed single contraction has n+m−1 ordered selected originals, full retained/fixed fibers and universal-component Reduced equality. Complete fiber permutations/sums give retained and contraction-subterm drop exactly m; other final same-side positions have old=2+rho, flat=1+rho. Count/predicates/full tagged relations and inhabited boundaries compile. Arbitrary-context Reducibility, cut elimination and coherence remain open. |
 | Positive-fragment coherence input | `PositiveCoherence P` quantifies only over positive raw terms and concludes equality in Reduced.Hom. `faithful_of_positive_coherence` is proved conditionally from that explicit, unsupplied premise. This does not supply Reduced.Faithful or Boolean Coherence. |
 | Boolean Coherence / faithful interpretation | Open: `occurrenceMap f = occurrenceMap g → f = g` for every parallel pair. Reduced faithfulness and its earlier positive-core coherence inputs are unproved. No complete `OccurrenceInterpretation` instance. Equality reflection and full red-equation preservation remain open. |
 | Normalization and occurrence correspondence | `Presentation.normalization` constructs the existing record for every P by simultaneous sign recursion and source n/r/rho arrows. Both inverse laws, inverse occurrence coordinates, both graph laws, literal/label/polarity correspondence, repeated-tag injectivity, Empty cases, and transport formulas compile. No coherence or arrow-negation premise. |
@@ -95,35 +96,32 @@ definition is unchanged and can be adapted once that interpretation exists.
 
 ## Next concrete proof task
 
-Both fixed-gap and terminal-tail disjoint same-side contractions and their
-right duals are complete. See the [terminal-tail report](GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT.md).
+W3 shared-selected contraction fusion and its right dual are complete. See
+[the W3 report](GENTZEN_W3_SHARED_SELECTED_CONTRACTION_REPORT.md).
 
-Next prove source W3 shared-selected contraction fusion and its right dual.
-For arbitrary P,C, gap lists gs/hs and tails Θ/Λ, let n=gs.length≥2,
-m=hs.length≥2, F=repeated C gs++Θ, I=gaps gs++C::Θ and
-K=gaps hs++C::Λ. Take an actual identification
-repeated C hs++Λ=I and require the retained inner position to belong to
-the casted outer selected list. This is a positional placement hypothesis,
-not a routing or equality conclusion.
+Next prove source W2 selected thinning at the terminal position and its right
+dual. For arbitrary P,C,gs,Θ, n=gs.length≥2, set F=repeated C gs++Θ,
+I=gaps gs++C::Θ, U=F++[C] and K=(gaps gs++Θ)++[C]. Old appends a new C by
+actual thinning, then contracts the n original selected copies and that new
+position with gaps gs++[Θ], tail []. New contracts gs/Θ on f, then exchanges
+the retained singleton C past Θ. Prove the actual endpoint casts and concrete
+route/component equations at G P K Δ or G P Γ K before Reduced equality.
 
-For every existing f:G P F Δ, fuse the two actual left contractions into a
-single contraction at exact G P K Δ; separately prove the G P Γ K right
-dual. Construct the complete ordered original selected family of length
-n+m−1: all inner copies and the unique fixed originals of the other outer
-copies. Prove the flat gap/tail endpoints, all-position route identity,
-complete fibers and structural product/coproduct identities before deriving
-Reduced equality. Prove the source retained-rank equation old=flat+m,
-preservation and inhabited equal-label/constant/compound/signed-cut examples.
-This W3 result is not assumed by the present checkpoint. The ready-to-paste
-task is [CODEX_W3_SHARED_SELECTED_CONTRACTION.txt](CODEX_W3_SHARED_SELECTED_CONTRACTION.txt).
+If LC is the direct n-ary contraction rank, target old retained/outer rank
+LC+n+1 and new retained rank LC+1, with new contraction-subterm rank LC.
+Keep empty-block exchange nodes when counting ranks. Prove complete selected
+and fixed fibers, exact preservation and inhabited positional examples.
+The predicate boundary is asymmetric: old.Atomized iff AtomicFormula C and
+f.Atomized; new.Atomized iff f.Atomized. Atomicity is not a hypothesis of the
+denotation/rank equalities. No W2 construction is assumed here. The concrete
+continuation is [CODEX_W2_SELECTED_THINNING.txt](CODEX_W2_SELECTED_THINNING.txt).
 
-Disjoint interleaved contractions, crossing-selected/multi-gap/absorption
-exchanges, remaining W1/W2–W6, arbitrary-context replacement/all-site decrease,
-Reducibility, Blocked-w, cut elimination, restricted positive-coherence inputs,
-PositiveCoherence, Reduced.Faithful, Boolean Coherence, unconditional maximality
-and Palomar preparation remain separate/open. Conditional transfers and the
-three milestones are unchanged. An unfinished reconstruction of cited
-published results does not establish a manuscript defect.
+Disjoint interleaving, remaining exchange/W1/W2–W6 cases, arbitrary-context
+replacement, Reducibility, Blocked-w, cut elimination, restricted coherence
+inputs, PositiveCoherence, Reduced.Faithful, Boolean Coherence, unconditional
+maximality and Palomar preparation remain separate/open. Existing conditional
+transfers and the three milestone boundaries are unchanged. An unfinished
+reconstruction of published results does not establish a manuscript defect.
 
 ## Verification boundary
 

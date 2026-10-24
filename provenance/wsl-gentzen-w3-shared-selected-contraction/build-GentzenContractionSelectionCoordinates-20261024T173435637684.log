@@ -1,0 +1,246 @@
+✖ [124/124] Building DosenPetric.GentzenContractionSelectionCoordinates (2.9s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenContractionSelectionCoordinates.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionSelectionCoordinates.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionSelectionCoordinates.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionSelectionCoordinates.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionSelectionCoordinates.setup.json --json
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:31:29: This simp argument is unused:
+  gs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [keep, At.index, first, rest, gaps, List.length_append, List.length_cons] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:40:47: No goals to be solved
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:54:41: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a ≥ 1
+where
+ a := ↑(if True then 0 else 0 - 0 - 1 + 1)
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:54:41: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 2
+where
+ a := ↑(if a✝¹.index + 1 = 0 then 0 else a✝¹.index + 1 - 0 - 1 + 1)
+ b := ↑a✝¹.index
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:67:54: Unknown identifier `one_ne_zero`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:69:6: Type mismatch
+  ih a
+has type
+  (p.route.get a).index = copyIndex p.gs a.index
+but is expected to have type
+  (p.route.get a).index =
+    if a.index = 0 ∧ 1 = 0 then (gaps (p.first :: p.rest)).length
+    else
+      if a.index < p.first.length then a.index
+      else
+        if a.index = p.first.length then p.first.length + (gaps p.rest).length
+        else p.first.length + copyIndex p.rest (a.index - p.first.length - 1)
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:52:40: This simp argument is unused:
+  gs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [route, Route.get_identity, first, rest, copyIndex, List.length_nil, Nat.not_lt_zero, ite_false,
+    gaps, Nat.zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:57:36: This simp argument is unused:
+  gs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [route, Route.get, first, rest, copyIndex, At.index]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:57:45: This simp argument is unused:
+  rest
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [route, Route.get, gs, first, copyIndex, At.index]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:66:42: This simp argument is unused:
+  gs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [route, Route.get, At.index, first, rest, copyIndex, List.length_nil, Nat.not_lt_zero, ite_false,
+    Nat.add_eq_zero_iff, one_ne_zero, and_false, Nat.add_sub_cancel, Nat.sub_zero, Nat.zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:67:66: This simp argument is unused:
+  and_false
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [route, Route.get, At.index, gs, first, rest, copyIndex, List.length_nil, Nat.not_lt_zero,
+    ite_false, Nat.add_eq_zero_iff, one_ne_zero, Nat.add_sub_cancel, Nat.sub_zero, Nat.zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:105:3: unexpected token 'prefix'; expected identifier
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:108:22: unexpected token 'prefix'; expected ')' or term
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:108:28: unexpected identifier; expected ':'
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:111:5: unexpected token 'prefix'; expected ')', '_', identifier or term
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:111:11: unexpected identifier; expected ':'
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:116:5: unexpected token 'prefix'; expected ')', '_', identifier or term
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:116:11: unexpected identifier; expected ':'
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:116:74: unexpected token ','; expected ':'
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:118:5: unexpected token 'prefix'; expected ')', '_', identifier or term
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:118:11: unexpected identifier; expected ':'
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:118:74: unexpected token ','; expected ':'
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:123:13: unexpected token 'prefix'; expected ')', '_', identifier or term
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:123:19: unexpected identifier; expected ':'
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:126:22: unexpected identifier; expected ':'
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:132:8: unsolved goals
+case nil
+P : Type u
+C : NormalForm P
+Θ Γ : List (NormalForm P)
+⊢ sorry.first :: sorry.rest = [Γ]
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:135:22: Invalid argument: Variable `gs` is not a proposition or let-declaration
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:132:22: declaration uses `sorry`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:132:32: This simp argument is unused:
+  first_cast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, gs, rest_cast, first_prefix, rest_prefix, first, rest, List.append_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:132:43: This simp argument is unused:
+  rest_cast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, gs, first_cast, first_prefix, rest_prefix, first, rest, List.append_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:132:53: This simp argument is unused:
+  first_prefix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, gs, first_cast, rest_cast, rest_prefix, first, rest, List.append_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:132:66: This simp argument is unused:
+  rest_prefix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, gs, first_cast, rest_cast, first_prefix, first, rest, List.append_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:132:78: This simp argument is unused:
+  first
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, gs, first_cast, rest_cast, first_prefix, rest_prefix, rest, List.append_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:132:84: This simp argument is unused:
+  rest
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, gs, first_cast, rest_cast, first_prefix, rest_prefix, first, List.append_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:132:89: This simp argument is unused:
+  List.append_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, gs, first_cast, rest_cast, first_prefix, rest_prefix, first, rest]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:135:25: This simp argument is unused:
+  first_cast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, gs, rest_cast, first_prefix, rest_prefix, first, rest, List.append_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:135:36: This simp argument is unused:
+  rest_cast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, gs, first_cast, first_prefix, rest_prefix, first, rest, List.append_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:135:46: This simp argument is unused:
+  first_prefix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, gs, first_cast, rest_cast, rest_prefix, first, rest, List.append_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:135:59: This simp argument is unused:
+  rest_prefix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, gs, first_cast, rest_cast, first_prefix, first, rest, List.append_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:135:71: This simp argument is unused:
+  first
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, gs, first_cast, rest_cast, first_prefix, rest_prefix, rest, List.append_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:135:77: This simp argument is unused:
+  rest
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, gs, first_cast, rest_cast, first_prefix, rest_prefix, first, List.append_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:135:82: This simp argument is unused:
+  List.append_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, gs, first_cast, rest_cast, first_prefix, rest_prefix, first, rest]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:141:8: unsolved goals
+case nil
+P : Type u
+C : NormalForm P
+Θ Γ : List (NormalForm P)
+⊢ sorry.tail = Θ
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:141:22: declaration uses `sorry`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:141:29: This simp argument is unused:
+  tail_cast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, tail_prefix, tail]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:141:39: This simp argument is unused:
+  tail_prefix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, tail_cast, tail]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:141:51: This simp argument is unused:
+  tail
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, tail_cast, tail_prefix]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:142:38: This simp argument is unused:
+  tail_cast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, tail_prefix, tail]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:142:48: This simp argument is unused:
+  tail_prefix
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, tail_cast, tail]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: DosenPetric/GentzenContractionSelectionCoordinates.lean:142:60: This simp argument is unused:
+  tail
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ofGaps, tail_cast, tail_prefix]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- DosenPetric.GentzenContractionSelectionCoordinates
+error: build failed

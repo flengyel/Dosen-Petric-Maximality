@@ -1,0 +1,1206 @@
+[
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection",
+    "kind": "inductive",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 13,
+    "source": "inductive ContractionSelection (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.keep",
+    "kind": "def",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 23,
+    "source": "def keep : {F K : List (NormalForm P)} \u2192 ContractionSelection C F K \u2192 At K C"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.selected",
+    "kind": "def",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 28,
+    "source": "def selected : {F K : List (NormalForm P)} \u2192 ContractionSelection C F K \u2192 List (At F C)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.arity",
+    "kind": "def",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 33,
+    "source": "def arity : {F K : List (NormalForm P)} \u2192 ContractionSelection C F K \u2192 Nat"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.selected_length",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 38,
+    "source": "theorem selected_length (p : ContractionSelection C F K) : p.selected.length = p.arity := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.route",
+    "kind": "def",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 44,
+    "source": "def route : {F K : List (NormalForm P)} \u2192 ContractionSelection C F K \u2192 Route K F"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.first",
+    "kind": "def",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 49,
+    "source": "def first : {F K : List (NormalForm P)} \u2192 ContractionSelection C F K \u2192 List (NormalForm P)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.rest",
+    "kind": "def",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 54,
+    "source": "def rest : {F K : List (NormalForm P)} \u2192 ContractionSelection C F K \u2192 List (List (NormalForm P))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.tail",
+    "kind": "def",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 59,
+    "source": "def tail : {F K : List (NormalForm P)} \u2192 ContractionSelection C F K \u2192 List (NormalForm P)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.gs",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 64,
+    "source": "abbrev gs (p : ContractionSelection C F K) := p.first :: p.rest"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.upper",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 66,
+    "source": "theorem upper (p : ContractionSelection C F K) : repeated C p.gs ++ p.tail = F := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.lower",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 72,
+    "source": "theorem lower (p : ContractionSelection C F K) : gaps p.gs ++ C :: p.tail = K := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.count",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 78,
+    "source": "theorem count (p : ContractionSelection C F K) : p.gs.length = p.arity := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.block",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 84,
+    "source": "abbrev block (p : ContractionSelection C F K) : ContractionBlock P F K :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.fuse",
+    "kind": "def",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 87,
+    "source": "def fuse : {F I K : List (NormalForm P)} \u2192 (p : ContractionSelection C F I) \u2192"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.selected_iff",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 98,
+    "source": "theorem selected_iff (p : ContractionSelection C F K) (a : At F C) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.fuse_keep",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 113,
+    "source": "theorem fuse_keep (p : ContractionSelection C F I) (q : ContractionSelection C I K)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.fuse_count",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 124,
+    "source": "theorem fuse_count (p : ContractionSelection C F I) (q : ContractionSelection C I K)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.fuse_get",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelection.lean",
+    "line": 138,
+    "source": "theorem fuse_get (p : ContractionSelection C F I) (q : ContractionSelection C I K)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.Route.ext_get",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 12,
+    "source": "theorem ext_get {\u0393 \u0394 : List (NormalForm P)} (w v : Route \u0393 \u0394)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.keep_index",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 27,
+    "source": "theorem keep_index (p : ContractionSelection C F K) : p.keep.index = (gaps p.gs).length := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.copyIndex_front",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 35,
+    "source": "theorem copyIndex_front (A : NormalForm P) (\u0393 : List (NormalForm P))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.get_index",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 48,
+    "source": "theorem get_index (p : ContractionSelection C F K) {A : NormalForm P} (a : At F A) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.keep_eq",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 82,
+    "source": "theorem keep_eq (p : ContractionSelection C F K) : p.keep = p.block.keep :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.route_eq",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 85,
+    "source": "theorem route_eq (p : ContractionSelection C F K) : p.route = p.block.route := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.selected_ordered",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 90,
+    "source": "theorem selected_ordered (p : ContractionSelection C F K) : At.Ordered p.selected := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.selected_eq",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 101,
+    "source": "theorem selected_eq (p : ContractionSelection C F K) : p.selected = p.block.selected := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.cast",
+    "kind": "def",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 106,
+    "source": "def cast {F' K' : List (NormalForm P)} (hF : F = F') (hK : K = K')"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.first_cast",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 109,
+    "source": "theorem first_cast {F' K' : List (NormalForm P)} (hF : F = F') (hK : K = K')"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.rest_cast",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 111,
+    "source": "theorem rest_cast {F' K' : List (NormalForm P)} (hF : F = F') (hK : K = K')"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.tail_cast",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 113,
+    "source": "theorem tail_cast {F' K' : List (NormalForm P)} (hF : F = F') (hK : K = K')"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.prependFixed",
+    "kind": "def",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 116,
+    "source": "def prependFixed (\u0393 : List (NormalForm P)) (p : ContractionSelection C F K) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.first_prependFixed",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 121,
+    "source": "theorem first_prependFixed (\u0393 : List (NormalForm P)) (p : ContractionSelection C F K) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.rest_prependFixed",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 126,
+    "source": "theorem rest_prependFixed (\u0393 : List (NormalForm P)) (p : ContractionSelection C F K) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.tail_prependFixed",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 128,
+    "source": "theorem tail_prependFixed (\u0393 : List (NormalForm P)) (p : ContractionSelection C F K) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.ofGaps",
+    "kind": "def",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 131,
+    "source": "def ofGaps (C : NormalForm P) (\u0393 : List (NormalForm P)) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.ofGaps_gs",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 140,
+    "source": "theorem ofGaps_gs (\u0393 : List (NormalForm P)) (gss : List (List (NormalForm P)))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.ofGaps_tail",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 149,
+    "source": "theorem ofGaps_tail (\u0393 : List (NormalForm P)) (gs : List (List (NormalForm P)))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.gs_cast",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 155,
+    "source": "theorem gs_cast {F' K' : List (NormalForm P)} (hF : F = F') (hK : K = K')"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.ofList",
+    "kind": "def",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 160,
+    "source": "def ofList (C : NormalForm P) : (gss : List (List (NormalForm P))) \u2192"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.ofList_gs",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 166,
+    "source": "theorem ofList_gs (gss : List (List (NormalForm P))) (\u0398 : List (NormalForm P)) (h : gss \u2260 []) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.ofList_tail",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 172,
+    "source": "theorem ofList_tail (gss : List (List (NormalForm P))) (\u0398 : List (NormalForm P)) (h : gss \u2260 []) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionSelection.block_match",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 178,
+    "source": "theorem block_match (p : ContractionSelection C F K) (b : ContractionBlock P F K)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.selection",
+    "kind": "def",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 195,
+    "source": "def selection (h : b.gs \u2260 []) : ContractionSelection b.C F K :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.selection_block",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenContractionSelectionCoordinates.lean",
+    "line": 198,
+    "source": "theorem selection_block (h : b.gs \u2260 []) : (b.selection h).block = b := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.TraceRoute.fiber_nodup",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRouteFiberSums.lean",
+    "line": 13,
+    "source": "theorem fiber_nodup {\u0393 \u0394 : List (NormalForm P)} {C : NormalForm P}"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.TraceRoute.fiber_comp_perm",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRouteFiberSums.lean",
+    "line": 22,
+    "source": "theorem fiber_comp_perm {F I K : List (NormalForm P)} (p : Route I F) (q : Route K I)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.TraceRoute.sum_flatMap_map",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRouteFiberSums.lean",
+    "line": 50,
+    "source": "theorem sum_flatMap_map {\u03b1 \u03b2 : Type u} (xs : List \u03b1) (f : \u03b1 \u2192 List \u03b2) (r : \u03b2 \u2192 Nat) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.TraceRoute.sum_fiber_comp",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRouteFiberSums.lean",
+    "line": 57,
+    "source": "theorem sum_fiber_comp {F I K : List (NormalForm P)} (p : Route I F) (q : Route K I)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.selected_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRouteFiberSums.lean",
+    "line": 67,
+    "source": "theorem selected_fiber : (TraceRoute.full d.route).fiber d.keep = d.selected := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.rankL_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRouteFiberSums.lean",
+    "line": 72,
+    "source": "theorem rankL_fiber (hn : 2 \u2264 d.gs.length) (\u0394 : List (NormalForm P))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.ContractionBlock.rankR_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenRouteFiberSums.lean",
+    "line": 83,
+    "source": "theorem rankR_fiber (hn : 2 \u2264 d.gs.length) (\u0393 : List (NormalForm P))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data",
+    "kind": "structure",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 13,
+    "source": "structure Data (P : Type u) where"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.F",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 23,
+    "source": "abbrev F := repeated d.C d.gs ++ d.\u0398"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.I",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 24,
+    "source": "abbrev I := gaps d.gs ++ d.C :: d.\u0398"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.K",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 25,
+    "source": "abbrev K := gaps d.hs ++ d.C :: d.\u039b"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.inner",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 26,
+    "source": "abbrev inner : ContractionBlock P d.F d.I := \u27e8d.C,d.gs,d.\u0398,rfl,rfl\u27e9"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.outer",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 27,
+    "source": "abbrev outer : ContractionBlock P d.I d.K := \u27e8d.C,d.hs,d.\u039b,d.identify,rfl\u27e9"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.Shared",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 28,
+    "source": "abbrev Shared : Prop := d.inner.keep \u2208 d.outer.selected"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.inner_nonempty",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 30,
+    "source": "theorem inner_nonempty (hn : 2 \u2264 d.gs.length) : d.gs \u2260 [] := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.outer_nonempty",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 32,
+    "source": "theorem outer_nonempty (hm : 2 \u2264 d.hs.length) : d.hs \u2260 [] := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.p",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 35,
+    "source": "abbrev p (hn : 2 \u2264 d.gs.length) := d.inner.selection (d.inner_nonempty hn)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.q",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 36,
+    "source": "abbrev q (hm : 2 \u2264 d.hs.length) := d.outer.selection (d.outer_nonempty hm)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.p_block",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 38,
+    "source": "theorem p_block (hn : 2 \u2264 d.gs.length) : (d.p hn).block = d.inner := d.inner.selection_block _"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.q_block",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 39,
+    "source": "theorem q_block (hm : 2 \u2264 d.hs.length) : (d.q hm).block = d.outer := d.outer.selection_block _"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.p_route",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 41,
+    "source": "theorem p_route (hn : 2 \u2264 d.gs.length) : (d.p hn).route = d.inner.route :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.q_route",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 43,
+    "source": "theorem q_route (hm : 2 \u2264 d.hs.length) : (d.q hm).route = d.outer.route :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.p_keep",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 45,
+    "source": "theorem p_keep (hn : 2 \u2264 d.gs.length) : (d.p hn).keep = d.inner.keep := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.q_keep",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 49,
+    "source": "theorem q_keep (hm : 2 \u2264 d.hs.length) : (d.q hm).keep = d.outer.keep := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.q_selected",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 53,
+    "source": "theorem q_selected (hm : 2 \u2264 d.hs.length) : (d.q hm).selected = d.outer.selected := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.shared_pattern",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 58,
+    "source": "theorem shared_pattern (hn : 2 \u2264 d.gs.length) (hm : 2 \u2264 d.hs.length) (h : d.Shared) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.selection",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 63,
+    "source": "abbrev selection (hn : 2 \u2264 d.gs.length) (hm : 2 \u2264 d.hs.length) (h : d.Shared) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.flat",
+    "kind": "abbrev",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 66,
+    "source": "abbrev flat (hn : 2 \u2264 d.gs.length) (hm : 2 \u2264 d.hs.length) (h : d.Shared) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.arity",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 69,
+    "source": "theorem arity (hn : 2 \u2264 d.gs.length) (hm : 2 \u2264 d.hs.length) (h : d.Shared) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.flat_bound",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 78,
+    "source": "theorem flat_bound (hn : 2 \u2264 d.gs.length) (hm : 2 \u2264 d.hs.length) (h : d.Shared) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.keep",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 81,
+    "source": "theorem keep (hn : 2 \u2264 d.gs.length) (hm : 2 \u2264 d.hs.length) (h : d.Shared) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.square",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 86,
+    "source": "theorem square (hn : 2 \u2264 d.gs.length) (hm : 2 \u2264 d.hs.length) (h : d.Shared)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.composite",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 93,
+    "source": "theorem composite (hn : 2 \u2264 d.gs.length) (hm : 2 \u2264 d.hs.length) (h : d.Shared) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.selected_complete",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 99,
+    "source": "theorem selected_complete (hn : 2 \u2264 d.gs.length) (hm : 2 \u2264 d.hs.length) (h : d.Shared)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.selected_originals",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 103,
+    "source": "theorem selected_originals (hn : 2 \u2264 d.gs.length) (hm : 2 \u2264 d.hs.length) (h : d.Shared)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.selected_ordered",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 118,
+    "source": "theorem selected_ordered (hn : 2 \u2264 d.gs.length) (hm : 2 \u2264 d.hs.length) (h : d.Shared) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.selected_length",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 121,
+    "source": "theorem selected_length (hn : 2 \u2264 d.gs.length) (hm : 2 \u2264 d.hs.length) (h : d.Shared) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.retained_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 125,
+    "source": "theorem retained_fiber (hn : 2 \u2264 d.gs.length) (hm : 2 \u2264 d.hs.length) (h : d.Shared) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.middle",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 130,
+    "source": "def middle {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.outer.keep.index) : At d.I A :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.middle_fixed",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 133,
+    "source": "theorem middle_fixed (h : d.Shared) {A : NormalForm P} (z : At d.K A)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.original",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 143,
+    "source": "def original (h : d.Shared) {A : NormalForm P} (z : At d.K A)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.original_get",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 147,
+    "source": "theorem original_get (h : d.Shared) {A : NormalForm P} (z : At d.K A)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.original_flat",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 152,
+    "source": "theorem original_flat (hn : 2 \u2264 d.gs.length) (hm : 2 \u2264 d.hs.length) (h : d.Shared)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.other_fiber",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionData.lean",
+    "line": 158,
+    "source": "theorem other_fiber (hn : 2 \u2264 d.gs.length) (hm : 2 \u2264 d.hs.length) (h : d.Shared)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.product_square",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 14,
+    "source": "theorem product_square :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.coproduct_square",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 22,
+    "source": "theorem coproduct_square :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.SharedContraction.Data.weights",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 30,
+    "source": "theorem weights (r : At d.F d.C \u2192 Nat) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.innerL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 45,
+    "source": "def innerL : G P d.I \u0394 := d.inner.applyL hn \u0394 f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.oldL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 46,
+    "source": "def oldL : G P d.K \u0394 := d.outer.applyL hm \u0394 (innerL d hn \u0394 f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.flatL",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 47,
+    "source": "def flatL : G P d.K \u0394 := (d.flat hn hm h).applyL (d.flat_bound hn hm h) \u0394 f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.denoteL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 49,
+    "source": "theorem denoteL : ofTerm (flatL d hn hm h \u0394 f).denote = ofTerm (oldL d hn hm \u0394 f).denote := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_countL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 53,
+    "source": "theorem old_countL : (oldL d hn hm \u0394 f).cutCount = f.cutCount := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_countL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 55,
+    "source": "theorem flat_countL : (flatL d hn hm h \u0394 f).cutCount = f.cutCount :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_cutFreeL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 57,
+    "source": "theorem old_cutFreeL : (oldL d hn hm \u0394 f).CutFree \u2194 f.CutFree := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_cutFreeL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 59,
+    "source": "theorem flat_cutFreeL : (flatL d hn hm h \u0394 f).CutFree \u2194 f.CutFree := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_atomizedL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 61,
+    "source": "theorem old_atomizedL : (oldL d hn hm \u0394 f).Atomized \u2194 f.Atomized := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_atomizedL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 63,
+    "source": "theorem flat_atomizedL : (flatL d hn hm h \u0394 f).Atomized \u2194 f.Atomized :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.relationL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 65,
+    "source": "theorem relationL : (flatL d hn hm h \u0394 f).relation = (oldL d hn hm \u0394 f).relation :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.innerR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 71,
+    "source": "def innerR : G P \u0393 d.I := d.inner.applyR hn \u0393 f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.oldR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 72,
+    "source": "def oldR : G P \u0393 d.K := d.outer.applyR hm \u0393 (innerR d hn \u0393 f)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.flatR",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 73,
+    "source": "def flatR : G P \u0393 d.K := (d.flat hn hm h).applyR (d.flat_bound hn hm h) \u0393 f"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.denoteR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 75,
+    "source": "theorem denoteR : ofTerm (flatR d hn hm h \u0393 f).denote = ofTerm (oldR d hn hm \u0393 f).denote := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_countR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 79,
+    "source": "theorem old_countR : (oldR d hn hm \u0393 f).cutCount = f.cutCount := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_countR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 81,
+    "source": "theorem flat_countR : (flatR d hn hm h \u0393 f).cutCount = f.cutCount :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_cutFreeR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 83,
+    "source": "theorem old_cutFreeR : (oldR d hn hm \u0393 f).CutFree \u2194 f.CutFree := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_cutFreeR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 85,
+    "source": "theorem flat_cutFreeR : (flatR d hn hm h \u0393 f).CutFree \u2194 f.CutFree := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_atomizedR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 87,
+    "source": "theorem old_atomizedR : (oldR d hn hm \u0393 f).Atomized \u2194 f.Atomized := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_atomizedR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 89,
+    "source": "theorem flat_atomizedR : (flatR d hn hm h \u0393 f).Atomized \u2194 f.Atomized :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.relationR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionCommutation.lean",
+    "line": 91,
+    "source": "theorem relationR : (flatR d hn hm h \u0393 f).relation = (oldR d hn hm \u0393 f).relation :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.selected_sumsL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 15,
+    "source": "theorem selected_sumsL :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.outer_rankL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 35,
+    "source": "theorem outer_rankL : d.outer.rankL hm \u0394 (innerL d hn \u0394 f) ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_endpointL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 42,
+    "source": "theorem flat_endpointL : (flatL d hn hm h \u0394 f).rho .left d.outer.keep ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.retained_rankL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 47,
+    "source": "theorem retained_rankL : (oldL d hn hm \u0394 f).rho .left d.outer.keep ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.retained_decreasesL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 53,
+    "source": "theorem retained_decreasesL : (flatL d hn hm h \u0394 f).rho .left d.outer.keep <"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_otherL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 58,
+    "source": "theorem old_otherL {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.outer.keep.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_otherL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 65,
+    "source": "theorem flat_otherL {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.outer.keep.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.other_lossL",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 70,
+    "source": "theorem other_lossL {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.outer.keep.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.selected_sumsR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 80,
+    "source": "theorem selected_sumsR :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.outer_rankR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 100,
+    "source": "theorem outer_rankR : d.outer.rankR hm \u0393 (innerR d hn \u0393 f) ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_endpointR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 107,
+    "source": "theorem flat_endpointR : (flatR d hn hm h \u0393 f).rho .right d.outer.keep ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.retained_rankR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 112,
+    "source": "theorem retained_rankR : (oldR d hn hm \u0393 f).rho .right d.outer.keep ="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.retained_decreasesR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 118,
+    "source": "theorem retained_decreasesR : (flatR d hn hm h \u0393 f).rho .right d.outer.keep <"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_otherR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 123,
+    "source": "theorem old_otherR {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.outer.keep.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_otherR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 130,
+    "source": "theorem flat_otherR {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.outer.keep.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.other_lossR",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionRanks.lean",
+    "line": 135,
+    "source": "theorem other_lossR {A : NormalForm P} (z : At d.K A) (hz : z.index \u2260 d.outer.keep.index) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.fusion_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionInstances.lean",
+    "line": 11,
+    "source": "theorem fusion_left (C : NormalForm P) (gs hs : List (List (NormalForm P)))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.fusion_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionInstances.lean",
+    "line": 20,
+    "source": "theorem fusion_right (C : NormalForm P) (gs hs : List (List (NormalForm P)))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.twoThree",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 12,
+    "source": "def twoThree (C : NormalForm P) : Gentzen.SharedContraction.Data P :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.threeTwo",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 14,
+    "source": "def threeTwo (C : NormalForm P) : Gentzen.SharedContraction.Data P :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.middleThree",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 16,
+    "source": "def middleThree (C : NormalForm P) : Gentzen.SharedContraction.Data P :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.equalTwo",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 18,
+    "source": "def equalTwo (C : NormalForm P) : Gentzen.SharedContraction.Data P :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.shared23",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 21,
+    "source": "theorem shared23 (C : NormalForm P) : (twoThree C).Shared := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.shared32",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 26,
+    "source": "theorem shared32 (C : NormalForm P) : (threeTwo C).Shared := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.sharedMiddle",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 31,
+    "source": "theorem sharedMiddle (C : NormalForm P) : (middleThree C).Shared := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.sharedEqual",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 36,
+    "source": "theorem sharedEqual (C : NormalForm P) : (equalTwo C).Shared := by"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.tags23",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 42,
+    "source": "def tags23 (C : NormalForm P) : List (At (twoThree C).F C) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.tagsI23",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 44,
+    "source": "def tagsI23 (C : NormalForm P) : List (At (twoThree C).I C) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.tags32",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 46,
+    "source": "def tags32 (C : NormalForm P) : List (At (threeTwo C).F C) :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.inner_indices23",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 49,
+    "source": "theorem inner_indices23 (C : NormalForm P) : (twoThree C).inner.selected.map At.index = [0,2] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.outer_indices23",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 51,
+    "source": "theorem outer_indices23 (C : NormalForm P) : (twoThree C).outer.selected.map At.index = [1,2,3] :="
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.inner_map23",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 53,
+    "source": "theorem inner_map23 (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.outer_map23",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 56,
+    "source": "theorem outer_map23 (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.composite_map23",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 59,
+    "source": "theorem composite_map23 (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_gaps23",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 64,
+    "source": "theorem flat_gaps23 (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_selected23",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 66,
+    "source": "theorem flat_selected23 (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_map23",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 69,
+    "source": "theorem flat_map23 (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.fixedBefore",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 75,
+    "source": "def fixedBefore (C : NormalForm P) : At (twoThree C).K C := .here C [C,C]"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.fixedAfter",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 76,
+    "source": "def fixedAfter (C : NormalForm P) : At (twoThree C).K C := .there (.there (.here C []))"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.fixed_original23",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 77,
+    "source": "theorem fixed_original23 (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_gaps32",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 81,
+    "source": "theorem flat_gaps32 (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_selected32",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 83,
+    "source": "theorem flat_selected32 (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.composite_map32",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 86,
+    "source": "theorem composite_map32 (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.shared_offsets",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 91,
+    "source": "theorem shared_offsets (C : NormalForm P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.empty_left_rank_drop",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 97,
+    "source": "theorem empty_left_rank_drop :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.empty_right_rank_drop",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 102,
+    "source": "theorem empty_right_rank_drop :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.fixed_other_loss_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 108,
+    "source": "theorem fixed_other_loss_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.fixed_other_loss_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 115,
+    "source": "theorem fixed_other_loss_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.compound",
+    "kind": "def",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 122,
+    "source": "def compound : NormalForm Empty := .conj .top (.disj .bot .top)"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.compound_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 123,
+    "source": "theorem compound_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.compound_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 128,
+    "source": "theorem compound_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.middle_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 134,
+    "source": "theorem middle_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.middle_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 139,
+    "source": "theorem middle_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.equal_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 144,
+    "source": "theorem equal_left :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.equal_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 149,
+    "source": "theorem equal_right :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.literal_left",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 155,
+    "source": "theorem literal_left (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.literal_right",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 160,
+    "source": "theorem literal_right (l : Literal P) :"
+  },
+  {
+    "name": "DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.both_signs_actual_cuts",
+    "kind": "theorem",
+    "path": "DosenPetric/GentzenSharedContractionExamples.lean",
+    "line": 166,
+    "source": "theorem both_signs_actual_cuts (p : P) :"
+  }
+]

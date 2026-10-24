@@ -1,0 +1,84 @@
+✖ [126/126] Building DosenPetric.GentzenSharedContractionData (3.8s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSharedContractionData.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSharedContractionData.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSharedContractionData.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSharedContractionData.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSharedContractionData.setup.json --json
+error: DosenPetric/GentzenSharedContractionData.lean:43:44: Tactic `rewrite` failed: motive is not type correct:
+  fun _a => _a.keep ∈ (d.q hm).block.selected
+Error: Application type mismatch: The argument
+  _a.keep
+has type
+  At d.I _a.C
+but is expected to have type
+  At d.I d.inner.C
+in the application
+  _a.keep ∈ (d.q hm).block.selected
+
+Explanation: The rewrite tactic rewrites an expression 'e' using an equality 'a = b' by the following process. First, it looks for all 'a' in 'e'. Second, it tries to abstract these occurrences of 'a' to create a function 'm := fun _a => ...', called the *motive*, with the property that 'm a' is definitionally equal to 'e'. Third, we observe that 'congrArg' implies that 'm a = m b', which can be used with lemmas such as 'Eq.mpr' to change the goal. However, if 'e' depends on specific properties of 'a', then the motive 'm' might not typecheck.
+
+Possible solutions: use rewrite's 'occs' configuration option to limit which occurrences are rewritten, or use 'simp' or 'conv' mode, which have strategies for certain kinds of dependencies (these tactics can handle proofs and 'Decidable' instances whose types depend on the rewritten term, and 'simp' can apply user-defined '@[congr]' theorems as well).
+
+P : Type u
+d : Data P
+hn : 2 ≤ d.gs.length
+hm : 2 ≤ d.hs.length
+h : d.Shared
+⊢ (d.p hn).block.keep ∈ (d.q hm).block.selected
+error: DosenPetric/GentzenSharedContractionData.lean:67:53: Tactic `rewrite` failed: motive is not type correct:
+  fun _a => (d.selection hn hm h).block.keep = _a.keep
+Error: Application type mismatch: The argument
+  _a.keep
+has type
+  At d.K _a.C
+but is expected to have type
+  At d.K d.inner.C
+in the application
+  (d.selection hn hm h).block.keep = _a.keep
+
+Explanation: The rewrite tactic rewrites an expression 'e' using an equality 'a = b' by the following process. First, it looks for all 'a' in 'e'. Second, it tries to abstract these occurrences of 'a' to create a function 'm := fun _a => ...', called the *motive*, with the property that 'm a' is definitionally equal to 'e'. Third, we observe that 'congrArg' implies that 'm a = m b', which can be used with lemmas such as 'Eq.mpr' to change the goal. However, if 'e' depends on specific properties of 'a', then the motive 'm' might not typecheck.
+
+Possible solutions: use rewrite's 'occs' configuration option to limit which occurrences are rewritten, or use 'simp' or 'conv' mode, which have strategies for certain kinds of dependencies (these tactics can handle proofs and 'Decidable' instances whose types depend on the rewritten term, and 'simp' can apply user-defined '@[congr]' theorems as well).
+
+P : Type u
+d : Data P
+hn : 2 ≤ d.gs.length
+hm : 2 ≤ d.hs.length
+h : d.Shared
+he : (d.selection hn hm h).block.keep = (d.q hm).block.keep
+⊢ (d.flat hn hm h).keep = d.outer.keep
+error: DosenPetric/GentzenSharedContractionData.lean:111:35: unsolved goals
+case hn
+P : Type u
+d : Data P
+hn : 2 ≤ d.gs.length
+hm : 2 ≤ d.hs.length
+h : d.Shared
+⊢ 2 ≤ d.gs.length
+
+case hm
+P : Type u
+d : Data P
+hn : 2 ≤ d.gs.length
+hm : 2 ≤ d.hs.length
+h : d.Shared
+⊢ 2 ≤ d.hs.length
+
+case h
+P : Type u
+d : Data P
+hn : 2 ≤ d.gs.length
+hm : 2 ≤ d.hs.length
+h : d.Shared
+⊢ d.Shared
+error: DosenPetric/GentzenSharedContractionData.lean:134:33: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  d.outer.route.get (d.outer.fixed ?z ?hz)
+in the target expression
+  d.outer.route.get (d.middle z hz) = z
+
+P : Type u
+d : Data P
+h : d.Shared
+A : NormalForm P
+z : At d.K A
+hz : z.index ≠ d.outer.keep.index
+⊢ d.outer.route.get (d.middle z hz) = z
+Some required targets logged failures:
+- DosenPetric.GentzenSharedContractionData
+error: build failed

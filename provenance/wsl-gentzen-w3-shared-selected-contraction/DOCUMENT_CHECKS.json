@@ -1,0 +1,37 @@
+{
+  "checks": [
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_status": 2,
+      "output": "provenance/wsl-gentzen-w3-shared-selected-contraction/DECLARATIONS.txt:516: new blank line at EOF.\n",
+      "resolution": "Removed the extra final blank line in the declaration inventory; no proof source changed."
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_status": 0,
+      "seconds": 0.014,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_status": 0,
+      "seconds": 0.044,
+      "output": ""
+    }
+  ],
+  "utc": "2026-10-24T18:02:25.267742+00:00"
+}

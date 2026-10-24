@@ -1,0 +1,34 @@
+Historical next-task excerpt at baseline 1ef1c8226ae1d5b3da102c243e4e555525b19bea.
+The W3 task is now complete; use the current W2 continuation.
+
+## Next concrete proof task
+
+Both fixed-gap and terminal-tail disjoint same-side contractions and their
+right duals are complete. See the [terminal-tail report](GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT.md).
+
+Next prove source W3 shared-selected contraction fusion and its right dual.
+For arbitrary P,C, gap lists gs/hs and tails Θ/Λ, let n=gs.length≥2,
+m=hs.length≥2, F=repeated C gs++Θ, I=gaps gs++C::Θ and
+K=gaps hs++C::Λ. Take an actual identification
+repeated C hs++Λ=I and require the retained inner position to belong to
+the casted outer selected list. This is a positional placement hypothesis,
+not a routing or equality conclusion.
+
+For every existing f:G P F Δ, fuse the two actual left contractions into a
+single contraction at exact G P K Δ; separately prove the G P Γ K right
+dual. Construct the complete ordered original selected family of length
+n+m−1: all inner copies and the unique fixed originals of the other outer
+copies. Prove the flat gap/tail endpoints, all-position route identity,
+complete fibers and structural product/coproduct identities before deriving
+Reduced equality. Prove the source retained-rank equation old=flat+m,
+preservation and inhabited equal-label/constant/compound/signed-cut examples.
+This W3 result is not assumed by the present checkpoint. The ready-to-paste
+task is [CODEX_W3_SHARED_SELECTED_CONTRACTION.txt](CODEX_W3_SHARED_SELECTED_CONTRACTION.txt).
+
+Disjoint interleaved contractions, crossing-selected/multi-gap/absorption
+exchanges, remaining W1/W2–W6, arbitrary-context replacement/all-site decrease,
+Reducibility, Blocked-w, cut elimination, restricted positive-coherence inputs,
+PositiveCoherence, Reduced.Faithful, Boolean Coherence, unconditional maximality
+and Palomar preparation remain separate/open. Conditional transfers and the
+three milestones are unchanged. An unfinished reconstruction of cited
+published results does not establish a manuscript defect.

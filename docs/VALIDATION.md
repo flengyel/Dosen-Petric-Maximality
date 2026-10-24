@@ -1,3 +1,55 @@
+# W3 shared-selected contraction validation (current checkpoint)
+
+Clean baseline main 1ef1c8226ae1d5b3da102c243e4e555525b19bea matched fetched
+SSH origin. Fresh baseline verification: 171 files / 6,705 declarations,
+exit 0, 11.879s. Final sequential verification completed at
+2026-10-24T17:51:12.065820+00:00: **179 source files / 7,069 audited declarations**.
+Strict build/transitive audit: exit 0, 6.084s; audit-boundary script: exit 0,
+20.468s; presentation-boundary script: exit 0, 1.890s; manuscript checksums:
+exit 0, 0.020s. Both staged/unstaged whitespace checks pass. All five controls
+reject with expected diagnostics and Lean exit 1. Public import closure passes;
+only propext, Quot.sound and Classical.choice are permitted. Ninety-eight new
+selected axiom prints and exact public-type queries supplement the full audit;
+the type query exits 0 in 2.091s.
+
+Eight new modules add 364 audited declarations. They compute the fused gaps
+and tail, with n+m−1 ordered selected originals, complete shared/fixed fibers,
+correctly variant structural equations and actual contractL/R equalities at
+the exact K endpoints. Original inputs include only raw C,gs/hs,Θ/Λ, hI,
+independent n,m≥2, actual shared-position membership and an existing premise.
+The rank calculation uses a complete fiber permutation and weighted sums:
+old retained/outer rank = flat rank+m; other final same-side ranks are
+2+rho(f,a) and 1+rho(f,a). No quotient rank or global reducibility is claimed.
+Counts, CutFree/Atomized and full tagged relations are preserved. Inhabited
+equal-label/fixed-tag, three shared-offset, 2/3,3/2,2/2, constant/compound and
+signed actual-cut examples compile.
+
+All older DosenPetric modules, source equations/denotations/tags, predecessors,
+ranks and predicates remain byte-preserved. Existing Lean changes only add
+root imports and selected prints. Lean 4.35.0 and the Init-only package closure
+are unchanged; Init.Data.List.Perm is now explicitly imported for permutations.
+No dependency package or manifest changed. AGENTS, manuscript v4/v5, diagrams,
+references/checksums, earlier reports/access records and the integration stash
+are preserved. Failed elaborations and diagnostics are retained; no heartbeat
+limit or target was weakened. Final example compilation took 85.205s.
+
+All heavy checks were sequential and followed the final proof changes.
+Evidence is retained under provenance/wsl-gentzen-w3-shared-selected-contraction/
+and matching .codex-work/. Author-side hostile and source-grounded writing
+reviews inspect the actual proof and current correspondence. Committed-source,
+SSH-ref and Downloads comparisons have separate receipts.
+
+Independent source/kernel replay, Challenge/Solution/Comparator, official
+preflight/service verification, fresh manuscript layout/compilation, publication,
+license and visibility changes did not run. Selected-thinning W2 and its dual
+are next. Remaining W1/W2–W6, all-site replacement, Reducibility, Blocked-w,
+cut elimination, coherence and unconditional maximality remain separate/open.
+See [the report](GENTZEN_W3_SHARED_SELECTED_CONTRACTION_REPORT.md).
+
+---
+
+## Historical terminal-tail contraction validation (unchanged evidence)
+
 # W1 terminal-tail disjoint contraction validation (current checkpoint)
 
 The proof baseline is main 14c0f7dad53ef2267a99afe11d76f1612f5b9836,

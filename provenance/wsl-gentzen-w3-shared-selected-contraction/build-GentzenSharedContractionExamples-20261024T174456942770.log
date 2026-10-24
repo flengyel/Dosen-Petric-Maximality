@@ -1,0 +1,73 @@
+✖ [148/161] Building DosenPetric.GentzenSharedContractionRanks (1.6s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSharedContractionRanks.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSharedContractionRanks.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSharedContractionRanks.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSharedContractionRanks.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSharedContractionRanks.setup.json --json
+error: DosenPetric/GentzenSharedContractionRanks.lean:28:20: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (List.map (fun b => (List.map ?r (TraceRoute.fiber b (TraceRoute.full d.inner.route))).sum) d.outer.selected).sum
+in the target expression
+  (List.map
+          (fun b =>
+            (List.map (fun a => f.rho SequentSide.left a) (TraceRoute.fiber b (TraceRoute.full d.inner.route))).sum)
+          d.outer.selected).sum +
+      d.outer.selected.length =
+    (List.map (fun a => f.rho SequentSide.left a) (d.flat hn hm h).selected).sum + d.hs.length
+
+P : Type u
+d : SharedContraction.Data P
+hn : 2 ≤ d.gs.length
+hm : 2 ≤ d.hs.length
+h : d.Shared
+Δ : List (NormalForm P)
+f : G P d.F Δ
+⊢ (List.map
+          (fun b =>
+            (List.map (fun a => f.rho SequentSide.left a) (TraceRoute.fiber b (TraceRoute.full d.inner.route))).sum)
+          d.outer.selected).sum +
+      d.outer.selected.length =
+    (List.map (fun a => f.rho SequentSide.left a) (d.flat hn hm h).selected).sum + d.hs.length
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    TraceRoute.fiber b (TraceRoute.full d.inner.route)
+  has type
+    List (At d.F d.outer.C)
+  but is expected to have type
+    List (Place SequentSide.left d.F Δ d.outer.C)
+  in the application
+    List.map (fun a => f.rho SequentSide.left a) (TraceRoute.fiber b (TraceRoute.full d.inner.route))
+error: DosenPetric/GentzenSharedContractionRanks.lean:88:20: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (List.map (fun b => (List.map ?r (TraceRoute.fiber b (TraceRoute.full d.inner.route))).sum) d.outer.selected).sum
+in the target expression
+  (List.map
+          (fun b =>
+            (List.map (fun a => f.rho SequentSide.right a) (TraceRoute.fiber b (TraceRoute.full d.inner.route))).sum)
+          d.outer.selected).sum +
+      d.outer.selected.length =
+    (List.map (fun a => f.rho SequentSide.right a) (d.flat hn hm h).selected).sum + d.hs.length
+
+P : Type u
+d : SharedContraction.Data P
+hn : 2 ≤ d.gs.length
+hm : 2 ≤ d.hs.length
+h : d.Shared
+Γ : List (NormalForm P)
+f : G P Γ d.F
+⊢ (List.map
+          (fun b =>
+            (List.map (fun a => f.rho SequentSide.right a) (TraceRoute.fiber b (TraceRoute.full d.inner.route))).sum)
+          d.outer.selected).sum +
+      d.outer.selected.length =
+    (List.map (fun a => f.rho SequentSide.right a) (d.flat hn hm h).selected).sum + d.hs.length
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    TraceRoute.fiber b (TraceRoute.full d.inner.route)
+  has type
+    List (At d.F d.outer.C)
+  but is expected to have type
+    List (Place SequentSide.right Γ d.F d.outer.C)
+  in the application
+    List.map (fun a => f.rho SequentSide.right a) (TraceRoute.fiber b (TraceRoute.full d.inner.route))
+Some required targets logged failures:
+- DosenPetric.GentzenSharedContractionRanks
+error: build failed

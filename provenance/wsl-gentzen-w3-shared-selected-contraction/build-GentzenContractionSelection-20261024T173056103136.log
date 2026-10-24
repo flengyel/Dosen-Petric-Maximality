@@ -1,0 +1,14 @@
+✖ [123/123] Building DosenPetric.GentzenContractionSelection (3.1s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenContractionSelection.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionSelection.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionSelection.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionSelection.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionSelection.setup.json --json
+error: DosenPetric/GentzenContractionSelection.lean:91:49: Type mismatch: After simplification, term
+  h
+ has type
+  p.keep.there = At.here C K✝
+but is expected to have type
+  False
+error: DosenPetric/GentzenContractionSelection.lean:87:4: (kernel) declaration has metavariables 'DosenPetric.Reduced.Gentzen.ContractionSelection.fuse._f'
+error: DosenPetric/GentzenContractionSelection.lean:87:4: (kernel) declaration has metavariables 'DosenPetric.Reduced.Gentzen.ContractionSelection.fuse._unsafe_rec'
+error: DosenPetric/GentzenContractionSelection.lean:87:4: (kernel) declaration has metavariables 'DosenPetric.Reduced.Gentzen.ContractionSelection.fuse._sunfold'
+Some required targets logged failures:
+- DosenPetric.GentzenContractionSelection
+error: build failed

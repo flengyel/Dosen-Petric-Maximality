@@ -1,0 +1,515 @@
+DosenPetric/GentzenContractionSelection.lean:13 DosenPetric.Reduced.Gentzen.ContractionSelection
+inductive ContractionSelection (C : NormalForm P) :
+
+DosenPetric/GentzenContractionSelection.lean:23 DosenPetric.Reduced.Gentzen.ContractionSelection.keep
+def keep : {F K : List (NormalForm P)} → ContractionSelection C F K → At K C
+
+DosenPetric/GentzenContractionSelection.lean:28 DosenPetric.Reduced.Gentzen.ContractionSelection.selected
+def selected : {F K : List (NormalForm P)} → ContractionSelection C F K → List (At F C)
+
+DosenPetric/GentzenContractionSelection.lean:33 DosenPetric.Reduced.Gentzen.ContractionSelection.arity
+def arity : {F K : List (NormalForm P)} → ContractionSelection C F K → Nat
+
+DosenPetric/GentzenContractionSelection.lean:38 DosenPetric.Reduced.Gentzen.ContractionSelection.selected_length
+theorem selected_length (p : ContractionSelection C F K) : p.selected.length = p.arity := by
+
+DosenPetric/GentzenContractionSelection.lean:44 DosenPetric.Reduced.Gentzen.ContractionSelection.route
+def route : {F K : List (NormalForm P)} → ContractionSelection C F K → Route K F
+
+DosenPetric/GentzenContractionSelection.lean:49 DosenPetric.Reduced.Gentzen.ContractionSelection.first
+def first : {F K : List (NormalForm P)} → ContractionSelection C F K → List (NormalForm P)
+
+DosenPetric/GentzenContractionSelection.lean:54 DosenPetric.Reduced.Gentzen.ContractionSelection.rest
+def rest : {F K : List (NormalForm P)} → ContractionSelection C F K → List (List (NormalForm P))
+
+DosenPetric/GentzenContractionSelection.lean:59 DosenPetric.Reduced.Gentzen.ContractionSelection.tail
+def tail : {F K : List (NormalForm P)} → ContractionSelection C F K → List (NormalForm P)
+
+DosenPetric/GentzenContractionSelection.lean:64 DosenPetric.Reduced.Gentzen.ContractionSelection.gs
+abbrev gs (p : ContractionSelection C F K) := p.first :: p.rest
+
+DosenPetric/GentzenContractionSelection.lean:66 DosenPetric.Reduced.Gentzen.ContractionSelection.upper
+theorem upper (p : ContractionSelection C F K) : repeated C p.gs ++ p.tail = F := by
+
+DosenPetric/GentzenContractionSelection.lean:72 DosenPetric.Reduced.Gentzen.ContractionSelection.lower
+theorem lower (p : ContractionSelection C F K) : gaps p.gs ++ C :: p.tail = K := by
+
+DosenPetric/GentzenContractionSelection.lean:78 DosenPetric.Reduced.Gentzen.ContractionSelection.count
+theorem count (p : ContractionSelection C F K) : p.gs.length = p.arity := by
+
+DosenPetric/GentzenContractionSelection.lean:84 DosenPetric.Reduced.Gentzen.ContractionSelection.block
+abbrev block (p : ContractionSelection C F K) : ContractionBlock P F K :=
+
+DosenPetric/GentzenContractionSelection.lean:87 DosenPetric.Reduced.Gentzen.ContractionSelection.fuse
+def fuse : {F I K : List (NormalForm P)} → (p : ContractionSelection C F I) →
+
+DosenPetric/GentzenContractionSelection.lean:98 DosenPetric.Reduced.Gentzen.ContractionSelection.selected_iff
+theorem selected_iff (p : ContractionSelection C F K) (a : At F C) :
+
+DosenPetric/GentzenContractionSelection.lean:113 DosenPetric.Reduced.Gentzen.ContractionSelection.fuse_keep
+theorem fuse_keep (p : ContractionSelection C F I) (q : ContractionSelection C I K)
+
+DosenPetric/GentzenContractionSelection.lean:124 DosenPetric.Reduced.Gentzen.ContractionSelection.fuse_count
+theorem fuse_count (p : ContractionSelection C F I) (q : ContractionSelection C I K)
+
+DosenPetric/GentzenContractionSelection.lean:138 DosenPetric.Reduced.Gentzen.ContractionSelection.fuse_get
+theorem fuse_get (p : ContractionSelection C F I) (q : ContractionSelection C I K)
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:12 DosenPetric.Reduced.Gentzen.Route.ext_get
+theorem ext_get {Γ Δ : List (NormalForm P)} (w v : Route Γ Δ)
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:27 DosenPetric.Reduced.Gentzen.ContractionSelection.keep_index
+theorem keep_index (p : ContractionSelection C F K) : p.keep.index = (gaps p.gs).length := by
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:35 DosenPetric.Reduced.Gentzen.ContractionSelection.copyIndex_front
+theorem copyIndex_front (A : NormalForm P) (Γ : List (NormalForm P))
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:48 DosenPetric.Reduced.Gentzen.ContractionSelection.get_index
+theorem get_index (p : ContractionSelection C F K) {A : NormalForm P} (a : At F A) :
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:82 DosenPetric.Reduced.Gentzen.ContractionSelection.keep_eq
+theorem keep_eq (p : ContractionSelection C F K) : p.keep = p.block.keep :=
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:85 DosenPetric.Reduced.Gentzen.ContractionSelection.route_eq
+theorem route_eq (p : ContractionSelection C F K) : p.route = p.block.route := by
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:90 DosenPetric.Reduced.Gentzen.ContractionSelection.selected_ordered
+theorem selected_ordered (p : ContractionSelection C F K) : At.Ordered p.selected := by
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:101 DosenPetric.Reduced.Gentzen.ContractionSelection.selected_eq
+theorem selected_eq (p : ContractionSelection C F K) : p.selected = p.block.selected := by
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:106 DosenPetric.Reduced.Gentzen.ContractionSelection.cast
+def cast {F' K' : List (NormalForm P)} (hF : F = F') (hK : K = K')
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:109 DosenPetric.Reduced.Gentzen.ContractionSelection.first_cast
+theorem first_cast {F' K' : List (NormalForm P)} (hF : F = F') (hK : K = K')
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:111 DosenPetric.Reduced.Gentzen.ContractionSelection.rest_cast
+theorem rest_cast {F' K' : List (NormalForm P)} (hF : F = F') (hK : K = K')
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:113 DosenPetric.Reduced.Gentzen.ContractionSelection.tail_cast
+theorem tail_cast {F' K' : List (NormalForm P)} (hF : F = F') (hK : K = K')
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:116 DosenPetric.Reduced.Gentzen.ContractionSelection.prependFixed
+def prependFixed (Γ : List (NormalForm P)) (p : ContractionSelection C F K) :
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:121 DosenPetric.Reduced.Gentzen.ContractionSelection.first_prependFixed
+theorem first_prependFixed (Γ : List (NormalForm P)) (p : ContractionSelection C F K) :
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:126 DosenPetric.Reduced.Gentzen.ContractionSelection.rest_prependFixed
+theorem rest_prependFixed (Γ : List (NormalForm P)) (p : ContractionSelection C F K) :
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:128 DosenPetric.Reduced.Gentzen.ContractionSelection.tail_prependFixed
+theorem tail_prependFixed (Γ : List (NormalForm P)) (p : ContractionSelection C F K) :
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:131 DosenPetric.Reduced.Gentzen.ContractionSelection.ofGaps
+def ofGaps (C : NormalForm P) (Γ : List (NormalForm P)) :
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:140 DosenPetric.Reduced.Gentzen.ContractionSelection.ofGaps_gs
+theorem ofGaps_gs (Γ : List (NormalForm P)) (gss : List (List (NormalForm P)))
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:149 DosenPetric.Reduced.Gentzen.ContractionSelection.ofGaps_tail
+theorem ofGaps_tail (Γ : List (NormalForm P)) (gs : List (List (NormalForm P)))
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:155 DosenPetric.Reduced.Gentzen.ContractionSelection.gs_cast
+theorem gs_cast {F' K' : List (NormalForm P)} (hF : F = F') (hK : K = K')
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:160 DosenPetric.Reduced.Gentzen.ContractionSelection.ofList
+def ofList (C : NormalForm P) : (gss : List (List (NormalForm P))) →
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:166 DosenPetric.Reduced.Gentzen.ContractionSelection.ofList_gs
+theorem ofList_gs (gss : List (List (NormalForm P))) (Θ : List (NormalForm P)) (h : gss ≠ []) :
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:172 DosenPetric.Reduced.Gentzen.ContractionSelection.ofList_tail
+theorem ofList_tail (gss : List (List (NormalForm P))) (Θ : List (NormalForm P)) (h : gss ≠ []) :
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:178 DosenPetric.Reduced.Gentzen.ContractionSelection.block_match
+theorem block_match (p : ContractionSelection C F K) (b : ContractionBlock P F K)
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:195 DosenPetric.Reduced.Gentzen.ContractionBlock.selection
+def selection (h : b.gs ≠ []) : ContractionSelection b.C F K :=
+
+DosenPetric/GentzenContractionSelectionCoordinates.lean:198 DosenPetric.Reduced.Gentzen.ContractionBlock.selection_block
+theorem selection_block (h : b.gs ≠ []) : (b.selection h).block = b := by
+
+DosenPetric/GentzenRouteFiberSums.lean:13 DosenPetric.Reduced.Gentzen.TraceRoute.fiber_nodup
+theorem fiber_nodup {Γ Δ : List (NormalForm P)} {C : NormalForm P}
+
+DosenPetric/GentzenRouteFiberSums.lean:22 DosenPetric.Reduced.Gentzen.TraceRoute.fiber_comp_perm
+theorem fiber_comp_perm {F I K : List (NormalForm P)} (p : Route I F) (q : Route K I)
+
+DosenPetric/GentzenRouteFiberSums.lean:50 DosenPetric.Reduced.Gentzen.TraceRoute.sum_flatMap_map
+theorem sum_flatMap_map {α β : Type u} (xs : List α) (f : α → List β) (r : β → Nat) :
+
+DosenPetric/GentzenRouteFiberSums.lean:57 DosenPetric.Reduced.Gentzen.TraceRoute.sum_fiber_comp
+theorem sum_fiber_comp {F I K : List (NormalForm P)} (p : Route I F) (q : Route K I)
+
+DosenPetric/GentzenRouteFiberSums.lean:67 DosenPetric.Reduced.Gentzen.ContractionBlock.selected_fiber
+theorem selected_fiber : (TraceRoute.full d.route).fiber d.keep = d.selected := by
+
+DosenPetric/GentzenRouteFiberSums.lean:72 DosenPetric.Reduced.Gentzen.ContractionBlock.rankL_fiber
+theorem rankL_fiber (hn : 2 ≤ d.gs.length) (Δ : List (NormalForm P))
+
+DosenPetric/GentzenRouteFiberSums.lean:83 DosenPetric.Reduced.Gentzen.ContractionBlock.rankR_fiber
+theorem rankR_fiber (hn : 2 ≤ d.gs.length) (Γ : List (NormalForm P))
+
+DosenPetric/GentzenSharedContractionData.lean:13 DosenPetric.Reduced.Gentzen.SharedContraction.Data
+structure Data (P : Type u) where
+
+DosenPetric/GentzenSharedContractionData.lean:23 DosenPetric.Reduced.Gentzen.SharedContraction.Data.F
+abbrev F := repeated d.C d.gs ++ d.Θ
+
+DosenPetric/GentzenSharedContractionData.lean:24 DosenPetric.Reduced.Gentzen.SharedContraction.Data.I
+abbrev I := gaps d.gs ++ d.C :: d.Θ
+
+DosenPetric/GentzenSharedContractionData.lean:25 DosenPetric.Reduced.Gentzen.SharedContraction.Data.K
+abbrev K := gaps d.hs ++ d.C :: d.Λ
+
+DosenPetric/GentzenSharedContractionData.lean:26 DosenPetric.Reduced.Gentzen.SharedContraction.Data.inner
+abbrev inner : ContractionBlock P d.F d.I := ⟨d.C,d.gs,d.Θ,rfl,rfl⟩
+
+DosenPetric/GentzenSharedContractionData.lean:27 DosenPetric.Reduced.Gentzen.SharedContraction.Data.outer
+abbrev outer : ContractionBlock P d.I d.K := ⟨d.C,d.hs,d.Λ,d.identify,rfl⟩
+
+DosenPetric/GentzenSharedContractionData.lean:28 DosenPetric.Reduced.Gentzen.SharedContraction.Data.Shared
+abbrev Shared : Prop := d.inner.keep ∈ d.outer.selected
+
+DosenPetric/GentzenSharedContractionData.lean:30 DosenPetric.Reduced.Gentzen.SharedContraction.Data.inner_nonempty
+theorem inner_nonempty (hn : 2 ≤ d.gs.length) : d.gs ≠ [] := by
+
+DosenPetric/GentzenSharedContractionData.lean:32 DosenPetric.Reduced.Gentzen.SharedContraction.Data.outer_nonempty
+theorem outer_nonempty (hm : 2 ≤ d.hs.length) : d.hs ≠ [] := by
+
+DosenPetric/GentzenSharedContractionData.lean:35 DosenPetric.Reduced.Gentzen.SharedContraction.Data.p
+abbrev p (hn : 2 ≤ d.gs.length) := d.inner.selection (d.inner_nonempty hn)
+
+DosenPetric/GentzenSharedContractionData.lean:36 DosenPetric.Reduced.Gentzen.SharedContraction.Data.q
+abbrev q (hm : 2 ≤ d.hs.length) := d.outer.selection (d.outer_nonempty hm)
+
+DosenPetric/GentzenSharedContractionData.lean:38 DosenPetric.Reduced.Gentzen.SharedContraction.Data.p_block
+theorem p_block (hn : 2 ≤ d.gs.length) : (d.p hn).block = d.inner := d.inner.selection_block _
+
+DosenPetric/GentzenSharedContractionData.lean:39 DosenPetric.Reduced.Gentzen.SharedContraction.Data.q_block
+theorem q_block (hm : 2 ≤ d.hs.length) : (d.q hm).block = d.outer := d.outer.selection_block _
+
+DosenPetric/GentzenSharedContractionData.lean:41 DosenPetric.Reduced.Gentzen.SharedContraction.Data.p_route
+theorem p_route (hn : 2 ≤ d.gs.length) : (d.p hn).route = d.inner.route :=
+
+DosenPetric/GentzenSharedContractionData.lean:43 DosenPetric.Reduced.Gentzen.SharedContraction.Data.q_route
+theorem q_route (hm : 2 ≤ d.hs.length) : (d.q hm).route = d.outer.route :=
+
+DosenPetric/GentzenSharedContractionData.lean:45 DosenPetric.Reduced.Gentzen.SharedContraction.Data.p_keep
+theorem p_keep (hn : 2 ≤ d.gs.length) : (d.p hn).keep = d.inner.keep := by
+
+DosenPetric/GentzenSharedContractionData.lean:49 DosenPetric.Reduced.Gentzen.SharedContraction.Data.q_keep
+theorem q_keep (hm : 2 ≤ d.hs.length) : (d.q hm).keep = d.outer.keep := by
+
+DosenPetric/GentzenSharedContractionData.lean:53 DosenPetric.Reduced.Gentzen.SharedContraction.Data.q_selected
+theorem q_selected (hm : 2 ≤ d.hs.length) : (d.q hm).selected = d.outer.selected := by
+
+DosenPetric/GentzenSharedContractionData.lean:58 DosenPetric.Reduced.Gentzen.SharedContraction.Data.shared_pattern
+theorem shared_pattern (hn : 2 ≤ d.gs.length) (hm : 2 ≤ d.hs.length) (h : d.Shared) :
+
+DosenPetric/GentzenSharedContractionData.lean:63 DosenPetric.Reduced.Gentzen.SharedContraction.Data.selection
+abbrev selection (hn : 2 ≤ d.gs.length) (hm : 2 ≤ d.hs.length) (h : d.Shared) :=
+
+DosenPetric/GentzenSharedContractionData.lean:66 DosenPetric.Reduced.Gentzen.SharedContraction.Data.flat
+abbrev flat (hn : 2 ≤ d.gs.length) (hm : 2 ≤ d.hs.length) (h : d.Shared) :=
+
+DosenPetric/GentzenSharedContractionData.lean:69 DosenPetric.Reduced.Gentzen.SharedContraction.Data.arity
+theorem arity (hn : 2 ≤ d.gs.length) (hm : 2 ≤ d.hs.length) (h : d.Shared) :
+
+DosenPetric/GentzenSharedContractionData.lean:78 DosenPetric.Reduced.Gentzen.SharedContraction.Data.flat_bound
+theorem flat_bound (hn : 2 ≤ d.gs.length) (hm : 2 ≤ d.hs.length) (h : d.Shared) :
+
+DosenPetric/GentzenSharedContractionData.lean:81 DosenPetric.Reduced.Gentzen.SharedContraction.Data.keep
+theorem keep (hn : 2 ≤ d.gs.length) (hm : 2 ≤ d.hs.length) (h : d.Shared) :
+
+DosenPetric/GentzenSharedContractionData.lean:86 DosenPetric.Reduced.Gentzen.SharedContraction.Data.square
+theorem square (hn : 2 ≤ d.gs.length) (hm : 2 ≤ d.hs.length) (h : d.Shared)
+
+DosenPetric/GentzenSharedContractionData.lean:93 DosenPetric.Reduced.Gentzen.SharedContraction.Data.composite
+theorem composite (hn : 2 ≤ d.gs.length) (hm : 2 ≤ d.hs.length) (h : d.Shared) :
+
+DosenPetric/GentzenSharedContractionData.lean:99 DosenPetric.Reduced.Gentzen.SharedContraction.Data.selected_complete
+theorem selected_complete (hn : 2 ≤ d.gs.length) (hm : 2 ≤ d.hs.length) (h : d.Shared)
+
+DosenPetric/GentzenSharedContractionData.lean:103 DosenPetric.Reduced.Gentzen.SharedContraction.Data.selected_originals
+theorem selected_originals (hn : 2 ≤ d.gs.length) (hm : 2 ≤ d.hs.length) (h : d.Shared)
+
+DosenPetric/GentzenSharedContractionData.lean:118 DosenPetric.Reduced.Gentzen.SharedContraction.Data.selected_ordered
+theorem selected_ordered (hn : 2 ≤ d.gs.length) (hm : 2 ≤ d.hs.length) (h : d.Shared) :
+
+DosenPetric/GentzenSharedContractionData.lean:121 DosenPetric.Reduced.Gentzen.SharedContraction.Data.selected_length
+theorem selected_length (hn : 2 ≤ d.gs.length) (hm : 2 ≤ d.hs.length) (h : d.Shared) :
+
+DosenPetric/GentzenSharedContractionData.lean:125 DosenPetric.Reduced.Gentzen.SharedContraction.Data.retained_fiber
+theorem retained_fiber (hn : 2 ≤ d.gs.length) (hm : 2 ≤ d.hs.length) (h : d.Shared) :
+
+DosenPetric/GentzenSharedContractionData.lean:130 DosenPetric.Reduced.Gentzen.SharedContraction.Data.middle
+def middle {A : NormalForm P} (z : At d.K A) (hz : z.index ≠ d.outer.keep.index) : At d.I A :=
+
+DosenPetric/GentzenSharedContractionData.lean:133 DosenPetric.Reduced.Gentzen.SharedContraction.Data.middle_fixed
+theorem middle_fixed (h : d.Shared) {A : NormalForm P} (z : At d.K A)
+
+DosenPetric/GentzenSharedContractionData.lean:143 DosenPetric.Reduced.Gentzen.SharedContraction.Data.original
+def original (h : d.Shared) {A : NormalForm P} (z : At d.K A)
+
+DosenPetric/GentzenSharedContractionData.lean:147 DosenPetric.Reduced.Gentzen.SharedContraction.Data.original_get
+theorem original_get (h : d.Shared) {A : NormalForm P} (z : At d.K A)
+
+DosenPetric/GentzenSharedContractionData.lean:152 DosenPetric.Reduced.Gentzen.SharedContraction.Data.original_flat
+theorem original_flat (hn : 2 ≤ d.gs.length) (hm : 2 ≤ d.hs.length) (h : d.Shared)
+
+DosenPetric/GentzenSharedContractionData.lean:158 DosenPetric.Reduced.Gentzen.SharedContraction.Data.other_fiber
+theorem other_fiber (hn : 2 ≤ d.gs.length) (hm : 2 ≤ d.hs.length) (h : d.Shared)
+
+DosenPetric/GentzenSharedContractionCommutation.lean:14 DosenPetric.Reduced.Gentzen.SharedContraction.Data.product_square
+theorem product_square :
+
+DosenPetric/GentzenSharedContractionCommutation.lean:22 DosenPetric.Reduced.Gentzen.SharedContraction.Data.coproduct_square
+theorem coproduct_square :
+
+DosenPetric/GentzenSharedContractionCommutation.lean:30 DosenPetric.Reduced.Gentzen.SharedContraction.Data.weights
+theorem weights (r : At d.F d.C → Nat) :
+
+DosenPetric/GentzenSharedContractionCommutation.lean:45 DosenPetric.Reduced.Gentzen.W3.SharedContraction.innerL
+def innerL : G P d.I Δ := d.inner.applyL hn Δ f
+
+DosenPetric/GentzenSharedContractionCommutation.lean:46 DosenPetric.Reduced.Gentzen.W3.SharedContraction.oldL
+def oldL : G P d.K Δ := d.outer.applyL hm Δ (innerL d hn Δ f)
+
+DosenPetric/GentzenSharedContractionCommutation.lean:47 DosenPetric.Reduced.Gentzen.W3.SharedContraction.flatL
+def flatL : G P d.K Δ := (d.flat hn hm h).applyL (d.flat_bound hn hm h) Δ f
+
+DosenPetric/GentzenSharedContractionCommutation.lean:49 DosenPetric.Reduced.Gentzen.W3.SharedContraction.denoteL
+theorem denoteL : ofTerm (flatL d hn hm h Δ f).denote = ofTerm (oldL d hn hm Δ f).denote := by
+
+DosenPetric/GentzenSharedContractionCommutation.lean:53 DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_countL
+theorem old_countL : (oldL d hn hm Δ f).cutCount = f.cutCount := by
+
+DosenPetric/GentzenSharedContractionCommutation.lean:55 DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_countL
+theorem flat_countL : (flatL d hn hm h Δ f).cutCount = f.cutCount :=
+
+DosenPetric/GentzenSharedContractionCommutation.lean:57 DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_cutFreeL
+theorem old_cutFreeL : (oldL d hn hm Δ f).CutFree ↔ f.CutFree := by
+
+DosenPetric/GentzenSharedContractionCommutation.lean:59 DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_cutFreeL
+theorem flat_cutFreeL : (flatL d hn hm h Δ f).CutFree ↔ f.CutFree := by
+
+DosenPetric/GentzenSharedContractionCommutation.lean:61 DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_atomizedL
+theorem old_atomizedL : (oldL d hn hm Δ f).Atomized ↔ f.Atomized := by
+
+DosenPetric/GentzenSharedContractionCommutation.lean:63 DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_atomizedL
+theorem flat_atomizedL : (flatL d hn hm h Δ f).Atomized ↔ f.Atomized :=
+
+DosenPetric/GentzenSharedContractionCommutation.lean:65 DosenPetric.Reduced.Gentzen.W3.SharedContraction.relationL
+theorem relationL : (flatL d hn hm h Δ f).relation = (oldL d hn hm Δ f).relation :=
+
+DosenPetric/GentzenSharedContractionCommutation.lean:71 DosenPetric.Reduced.Gentzen.W3.SharedContraction.innerR
+def innerR : G P Γ d.I := d.inner.applyR hn Γ f
+
+DosenPetric/GentzenSharedContractionCommutation.lean:72 DosenPetric.Reduced.Gentzen.W3.SharedContraction.oldR
+def oldR : G P Γ d.K := d.outer.applyR hm Γ (innerR d hn Γ f)
+
+DosenPetric/GentzenSharedContractionCommutation.lean:73 DosenPetric.Reduced.Gentzen.W3.SharedContraction.flatR
+def flatR : G P Γ d.K := (d.flat hn hm h).applyR (d.flat_bound hn hm h) Γ f
+
+DosenPetric/GentzenSharedContractionCommutation.lean:75 DosenPetric.Reduced.Gentzen.W3.SharedContraction.denoteR
+theorem denoteR : ofTerm (flatR d hn hm h Γ f).denote = ofTerm (oldR d hn hm Γ f).denote := by
+
+DosenPetric/GentzenSharedContractionCommutation.lean:79 DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_countR
+theorem old_countR : (oldR d hn hm Γ f).cutCount = f.cutCount := by
+
+DosenPetric/GentzenSharedContractionCommutation.lean:81 DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_countR
+theorem flat_countR : (flatR d hn hm h Γ f).cutCount = f.cutCount :=
+
+DosenPetric/GentzenSharedContractionCommutation.lean:83 DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_cutFreeR
+theorem old_cutFreeR : (oldR d hn hm Γ f).CutFree ↔ f.CutFree := by
+
+DosenPetric/GentzenSharedContractionCommutation.lean:85 DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_cutFreeR
+theorem flat_cutFreeR : (flatR d hn hm h Γ f).CutFree ↔ f.CutFree := by
+
+DosenPetric/GentzenSharedContractionCommutation.lean:87 DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_atomizedR
+theorem old_atomizedR : (oldR d hn hm Γ f).Atomized ↔ f.Atomized := by
+
+DosenPetric/GentzenSharedContractionCommutation.lean:89 DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_atomizedR
+theorem flat_atomizedR : (flatR d hn hm h Γ f).Atomized ↔ f.Atomized :=
+
+DosenPetric/GentzenSharedContractionCommutation.lean:91 DosenPetric.Reduced.Gentzen.W3.SharedContraction.relationR
+theorem relationR : (flatR d hn hm h Γ f).relation = (oldR d hn hm Γ f).relation :=
+
+DosenPetric/GentzenSharedContractionRanks.lean:15 DosenPetric.Reduced.Gentzen.W3.SharedContraction.selected_sumsL
+theorem selected_sumsL :
+
+DosenPetric/GentzenSharedContractionRanks.lean:35 DosenPetric.Reduced.Gentzen.W3.SharedContraction.outer_rankL
+theorem outer_rankL : d.outer.rankL hm Δ (innerL d hn Δ f) =
+
+DosenPetric/GentzenSharedContractionRanks.lean:42 DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_endpointL
+theorem flat_endpointL : (flatL d hn hm h Δ f).rho .left d.outer.keep =
+
+DosenPetric/GentzenSharedContractionRanks.lean:47 DosenPetric.Reduced.Gentzen.W3.SharedContraction.retained_rankL
+theorem retained_rankL : (oldL d hn hm Δ f).rho .left d.outer.keep =
+
+DosenPetric/GentzenSharedContractionRanks.lean:53 DosenPetric.Reduced.Gentzen.W3.SharedContraction.retained_decreasesL
+theorem retained_decreasesL : (flatL d hn hm h Δ f).rho .left d.outer.keep <
+
+DosenPetric/GentzenSharedContractionRanks.lean:58 DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_otherL
+theorem old_otherL {A : NormalForm P} (z : At d.K A) (hz : z.index ≠ d.outer.keep.index) :
+
+DosenPetric/GentzenSharedContractionRanks.lean:65 DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_otherL
+theorem flat_otherL {A : NormalForm P} (z : At d.K A) (hz : z.index ≠ d.outer.keep.index) :
+
+DosenPetric/GentzenSharedContractionRanks.lean:70 DosenPetric.Reduced.Gentzen.W3.SharedContraction.other_lossL
+theorem other_lossL {A : NormalForm P} (z : At d.K A) (hz : z.index ≠ d.outer.keep.index) :
+
+DosenPetric/GentzenSharedContractionRanks.lean:80 DosenPetric.Reduced.Gentzen.W3.SharedContraction.selected_sumsR
+theorem selected_sumsR :
+
+DosenPetric/GentzenSharedContractionRanks.lean:100 DosenPetric.Reduced.Gentzen.W3.SharedContraction.outer_rankR
+theorem outer_rankR : d.outer.rankR hm Γ (innerR d hn Γ f) =
+
+DosenPetric/GentzenSharedContractionRanks.lean:107 DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_endpointR
+theorem flat_endpointR : (flatR d hn hm h Γ f).rho .right d.outer.keep =
+
+DosenPetric/GentzenSharedContractionRanks.lean:112 DosenPetric.Reduced.Gentzen.W3.SharedContraction.retained_rankR
+theorem retained_rankR : (oldR d hn hm Γ f).rho .right d.outer.keep =
+
+DosenPetric/GentzenSharedContractionRanks.lean:118 DosenPetric.Reduced.Gentzen.W3.SharedContraction.retained_decreasesR
+theorem retained_decreasesR : (flatR d hn hm h Γ f).rho .right d.outer.keep <
+
+DosenPetric/GentzenSharedContractionRanks.lean:123 DosenPetric.Reduced.Gentzen.W3.SharedContraction.old_otherR
+theorem old_otherR {A : NormalForm P} (z : At d.K A) (hz : z.index ≠ d.outer.keep.index) :
+
+DosenPetric/GentzenSharedContractionRanks.lean:130 DosenPetric.Reduced.Gentzen.W3.SharedContraction.flat_otherR
+theorem flat_otherR {A : NormalForm P} (z : At d.K A) (hz : z.index ≠ d.outer.keep.index) :
+
+DosenPetric/GentzenSharedContractionRanks.lean:135 DosenPetric.Reduced.Gentzen.W3.SharedContraction.other_lossR
+theorem other_lossR {A : NormalForm P} (z : At d.K A) (hz : z.index ≠ d.outer.keep.index) :
+
+DosenPetric/GentzenSharedContractionInstances.lean:11 DosenPetric.Reduced.Gentzen.W3.SharedContraction.fusion_left
+theorem fusion_left (C : NormalForm P) (gs hs : List (List (NormalForm P)))
+
+DosenPetric/GentzenSharedContractionInstances.lean:20 DosenPetric.Reduced.Gentzen.W3.SharedContraction.fusion_right
+theorem fusion_right (C : NormalForm P) (gs hs : List (List (NormalForm P)))
+
+DosenPetric/GentzenSharedContractionExamples.lean:12 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.twoThree
+def twoThree (C : NormalForm P) : Gentzen.SharedContraction.Data P :=
+
+DosenPetric/GentzenSharedContractionExamples.lean:14 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.threeTwo
+def threeTwo (C : NormalForm P) : Gentzen.SharedContraction.Data P :=
+
+DosenPetric/GentzenSharedContractionExamples.lean:16 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.middleThree
+def middleThree (C : NormalForm P) : Gentzen.SharedContraction.Data P :=
+
+DosenPetric/GentzenSharedContractionExamples.lean:18 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.equalTwo
+def equalTwo (C : NormalForm P) : Gentzen.SharedContraction.Data P :=
+
+DosenPetric/GentzenSharedContractionExamples.lean:21 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.shared23
+theorem shared23 (C : NormalForm P) : (twoThree C).Shared := by
+
+DosenPetric/GentzenSharedContractionExamples.lean:26 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.shared32
+theorem shared32 (C : NormalForm P) : (threeTwo C).Shared := by
+
+DosenPetric/GentzenSharedContractionExamples.lean:31 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.sharedMiddle
+theorem sharedMiddle (C : NormalForm P) : (middleThree C).Shared := by
+
+DosenPetric/GentzenSharedContractionExamples.lean:36 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.sharedEqual
+theorem sharedEqual (C : NormalForm P) : (equalTwo C).Shared := by
+
+DosenPetric/GentzenSharedContractionExamples.lean:42 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.tags23
+def tags23 (C : NormalForm P) : List (At (twoThree C).F C) :=
+
+DosenPetric/GentzenSharedContractionExamples.lean:44 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.tagsI23
+def tagsI23 (C : NormalForm P) : List (At (twoThree C).I C) :=
+
+DosenPetric/GentzenSharedContractionExamples.lean:46 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.tags32
+def tags32 (C : NormalForm P) : List (At (threeTwo C).F C) :=
+
+DosenPetric/GentzenSharedContractionExamples.lean:49 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.inner_indices23
+theorem inner_indices23 (C : NormalForm P) : (twoThree C).inner.selected.map At.index = [0,2] :=
+
+DosenPetric/GentzenSharedContractionExamples.lean:51 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.outer_indices23
+theorem outer_indices23 (C : NormalForm P) : (twoThree C).outer.selected.map At.index = [1,2,3] :=
+
+DosenPetric/GentzenSharedContractionExamples.lean:53 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.inner_map23
+theorem inner_map23 (C : NormalForm P) :
+
+DosenPetric/GentzenSharedContractionExamples.lean:56 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.outer_map23
+theorem outer_map23 (C : NormalForm P) :
+
+DosenPetric/GentzenSharedContractionExamples.lean:59 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.composite_map23
+theorem composite_map23 (C : NormalForm P) :
+
+DosenPetric/GentzenSharedContractionExamples.lean:64 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_gaps23
+theorem flat_gaps23 (C : NormalForm P) :
+
+DosenPetric/GentzenSharedContractionExamples.lean:66 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_selected23
+theorem flat_selected23 (C : NormalForm P) :
+
+DosenPetric/GentzenSharedContractionExamples.lean:69 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_map23
+theorem flat_map23 (C : NormalForm P) :
+
+DosenPetric/GentzenSharedContractionExamples.lean:75 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.fixedBefore
+def fixedBefore (C : NormalForm P) : At (twoThree C).K C := .here C [C,C]
+
+DosenPetric/GentzenSharedContractionExamples.lean:76 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.fixedAfter
+def fixedAfter (C : NormalForm P) : At (twoThree C).K C := .there (.there (.here C []))
+
+DosenPetric/GentzenSharedContractionExamples.lean:77 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.fixed_original23
+theorem fixed_original23 (C : NormalForm P) :
+
+DosenPetric/GentzenSharedContractionExamples.lean:81 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_gaps32
+theorem flat_gaps32 (C : NormalForm P) :
+
+DosenPetric/GentzenSharedContractionExamples.lean:83 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_selected32
+theorem flat_selected32 (C : NormalForm P) :
+
+DosenPetric/GentzenSharedContractionExamples.lean:86 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.composite_map32
+theorem composite_map32 (C : NormalForm P) :
+
+DosenPetric/GentzenSharedContractionExamples.lean:91 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.shared_offsets
+theorem shared_offsets (C : NormalForm P) :
+
+DosenPetric/GentzenSharedContractionExamples.lean:97 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.empty_left_rank_drop
+theorem empty_left_rank_drop :
+
+DosenPetric/GentzenSharedContractionExamples.lean:102 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.empty_right_rank_drop
+theorem empty_right_rank_drop :
+
+DosenPetric/GentzenSharedContractionExamples.lean:108 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.fixed_other_loss_left
+theorem fixed_other_loss_left :
+
+DosenPetric/GentzenSharedContractionExamples.lean:115 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.fixed_other_loss_right
+theorem fixed_other_loss_right :
+
+DosenPetric/GentzenSharedContractionExamples.lean:122 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.compound
+def compound : NormalForm Empty := .conj .top (.disj .bot .top)
+
+DosenPetric/GentzenSharedContractionExamples.lean:123 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.compound_left
+theorem compound_left :
+
+DosenPetric/GentzenSharedContractionExamples.lean:128 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.compound_right
+theorem compound_right :
+
+DosenPetric/GentzenSharedContractionExamples.lean:134 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.middle_left
+theorem middle_left :
+
+DosenPetric/GentzenSharedContractionExamples.lean:139 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.middle_right
+theorem middle_right :
+
+DosenPetric/GentzenSharedContractionExamples.lean:144 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.equal_left
+theorem equal_left :
+
+DosenPetric/GentzenSharedContractionExamples.lean:149 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.equal_right
+theorem equal_right :
+
+DosenPetric/GentzenSharedContractionExamples.lean:155 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.literal_left
+theorem literal_left (l : Literal P) :
+
+DosenPetric/GentzenSharedContractionExamples.lean:160 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.literal_right
+theorem literal_right (l : Literal P) :
+
+DosenPetric/GentzenSharedContractionExamples.lean:166 DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.both_signs_actual_cuts
+theorem both_signs_actual_cuts (p : P) :

@@ -1,0 +1,125 @@
+✔ [148/161] Built DosenPetric.GentzenSharedContractionRanks (1.1s)
+✔ [150/161] Built DosenPetric.GentzenSharedContractionInstances (770ms)
+✖ [161/161] Building DosenPetric.GentzenSharedContractionExamples (56s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSharedContractionExamples.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSharedContractionExamples.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSharedContractionExamples.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSharedContractionExamples.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSharedContractionExamples.setup.json --json
+error: DosenPetric/GentzenSharedContractionExamples.lean:65:27: Expected type must not contain free variables
+  2 ≤ (twoThree C).gs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:65:39: Expected type must not contain free variables
+  2 ≤ (twoThree C).hs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:65:84: Type mismatch
+  rfl
+has type
+  ?m.25 = ?m.25
+but is expected to have type
+  ((twoThree C).flat ⋯ ⋯ ⋯).gs = [[], [C], [], []]
+error: DosenPetric/GentzenSharedContractionExamples.lean:64:8: Not a definitional equality: the left-hand side
+  ((twoThree C).flat (@?_mvar.4099 P C) (@?_mvar.4100 P C) ⋯).gs
+is not definitionally equal to the right-hand side
+  [[], [C], [], []]
+error: DosenPetric/GentzenSharedContractionExamples.lean:64:8: (kernel) declaration has metavariables 'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_gaps23'
+error: DosenPetric/GentzenSharedContractionExamples.lean:67:27: Expected type must not contain free variables
+  2 ≤ (twoThree C).gs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:67:39: Expected type must not contain free variables
+  2 ≤ (twoThree C).hs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:68:26: Expected type must not contain free variables
+  2 ≤ (twoThree C).gs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:68:38: Expected type must not contain free variables
+  2 ≤ (twoThree C).hs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:70:53: Expected type must not contain free variables
+  2 ≤ (twoThree C).gs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:70:65: Expected type must not contain free variables
+  2 ≤ (twoThree C).hs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:73:29: Expected type must not contain free variables
+  2 ≤ (twoThree C).gs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:73:41: Expected type must not contain free variables
+  2 ≤ (twoThree C).hs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:82:27: Expected type must not contain free variables
+  2 ≤ (threeTwo C).gs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:82:39: Expected type must not contain free variables
+  2 ≤ (threeTwo C).hs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:82:83: Type mismatch
+  rfl
+has type
+  ?m.24 = ?m.24
+but is expected to have type
+  ((threeTwo C).flat ⋯ ⋯ ⋯).gs = [[], [], [], []]
+error: DosenPetric/GentzenSharedContractionExamples.lean:81:8: Not a definitional equality: the left-hand side
+  ((threeTwo C).flat (@?_mvar.193991 P C) (@?_mvar.193992 P C) ⋯).gs
+is not definitionally equal to the right-hand side
+  [[], [], [], []]
+error: DosenPetric/GentzenSharedContractionExamples.lean:81:8: (kernel) declaration has metavariables 'DosenPetric.Reduced.Gentzen.W3.SharedContraction.Examples.flat_gaps32'
+error: DosenPetric/GentzenSharedContractionExamples.lean:129:42: Expected type must not contain free variables
+  2 ≤ (twoThree (NormalForm.lit l)).gs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:129:54: Expected type must not contain free variables
+  2 ≤ (twoThree (NormalForm.lit l)).hs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:131:41: Expected type must not contain free variables
+  2 ≤ (twoThree (NormalForm.lit l)).gs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:131:53: Expected type must not contain free variables
+  2 ≤ (twoThree (NormalForm.lit l)).hs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:134:42: Expected type must not contain free variables
+  2 ≤ (twoThree (NormalForm.lit l)).gs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:134:54: Expected type must not contain free variables
+  2 ≤ (twoThree (NormalForm.lit l)).hs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:136:41: Expected type must not contain free variables
+  2 ≤ (twoThree (NormalForm.lit l)).gs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:136:53: Expected type must not contain free variables
+  2 ≤ (twoThree (NormalForm.lit l)).hs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:140:42: Expected type must not contain free variables
+  2 ≤ (twoThree (NormalForm.lit (Literal.pos p))).gs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:140:54: Expected type must not contain free variables
+  2 ≤ (twoThree (NormalForm.lit (Literal.pos p))).hs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:142:42: Expected type must not contain free variables
+  2 ≤ (twoThree (NormalForm.lit (Literal.neg p))).gs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+error: DosenPetric/GentzenSharedContractionExamples.lean:142:54: Expected type must not contain free variables
+  2 ≤ (twoThree (NormalForm.lit (Literal.neg p))).hs.length
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+Some required targets logged failures:
+- DosenPetric.GentzenSharedContractionExamples
+error: build failed

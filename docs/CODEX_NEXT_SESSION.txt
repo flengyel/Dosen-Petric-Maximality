@@ -1,7 +1,8 @@
 Continue the Došen–Petrić maximality formalization in WSL2.
 
 Repository: /home/flengyel/src/Dosen-Petric-Maximality, private, main.
-Read AGENTS.md, GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT and both author-side reviews,
+Read AGENTS.md, GENTZEN_W3_SHARED_SELECTED_CONTRACTION_REPORT and both author-side reviews,
+GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT and both author-side reviews,
 GENTZEN_W1_DISJOINT_CONTRACTION_REPORT and both author-side reviews,
 GENTZEN_W1_SAME_SIDE_LOGICAL_REPORT and both author-side reviews,
 GENTZEN_W1_SAME_SIDE_EXCHANGE_REPORT and both author-side reviews,
@@ -343,36 +344,55 @@ provenance/wsl-gentzen-w1-terminal-tail-contraction/. Working bytes, committed
 source, SSH refs and Downloads copies have separate receipts. W3, general
 Reducibility, all-site decrease and coherence are not supplied.
 
+COMPLETED — W3 SHARED-SELECTED CONTRACTION FUSION
+Eight new modules preserve every older DosenPetric module/interface. The
+auxiliary nonempty ContractionSelection computes its gaps/tail and converts
+back to existing ContractionBlock. Recursive fusion takes original two context
+descriptions and genuine shared-retained-position membership; no desired
+route/equality/rank conclusion is stored. The single flat contraction has
+n+m−1 ordered selected originals, all-position composite identity, complete
+retained/fixed fibers and a common unique original for every other final tag.
+Product/coproduct universal components give exact Reduced equalities for actual
+contractL/R, with fusion_left/right at G P K Δ / G P Γ K. Full fiber grouping
+is a permutation, not an ordered concatenation; weighted sums give old=flat+m
+at the retained endpoint and contraction subterm, and other final same-side
+ranks old=2+rho versus flat=1+rho. Counts/CutFree/Atomized/tagged relations are
+preserved. Actual equal-labelled fixed tags, 2/3 and 3/2 arities, shared first/
+middle/last offsets, Empty constants, compounds, equal arities and signed cuts
+compile. Final strict result: 179 files / 7,069 audited declarations, all five
+expected controls reject and all required checks pass. Exact public-type
+query passes; 98 new selected axiom prints supplement the full audit.
+Evidence: provenance/wsl-gentzen-w3-shared-selected-contraction/ and matching
+.codex-work/. Existing manuscript/review bytes and integration stash remain
+preserved. No arbitrary-context Reducibility or coherence is supplied.
+
 NEXT CONCRETE PROOF TASK
-Both fixed-gap and terminal-tail disjoint same-side contractions and their
-right duals are complete. See the [terminal-tail report](GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT.md).
+W3 shared-selected contraction fusion and its right dual are complete. See
+[the W3 report](GENTZEN_W3_SHARED_SELECTED_CONTRACTION_REPORT.md).
 
-Next prove source W3 shared-selected contraction fusion and its right dual.
-For arbitrary P,C, gap lists gs/hs and tails Θ/Λ, let n=gs.length≥2,
-m=hs.length≥2, F=repeated C gs++Θ, I=gaps gs++C::Θ and
-K=gaps hs++C::Λ. Take an actual identification
-repeated C hs++Λ=I and require the retained inner position to belong to
-the casted outer selected list. This is a positional placement hypothesis,
-not a routing or equality conclusion.
+Next prove source W2 selected thinning at the terminal position and its right
+dual. For arbitrary P,C,gs,Θ, n=gs.length≥2, set F=repeated C gs++Θ,
+I=gaps gs++C::Θ, U=F++[C] and K=(gaps gs++Θ)++[C]. Old appends a new C by
+actual thinning, then contracts the n original selected copies and that new
+position with gaps gs++[Θ], tail []. New contracts gs/Θ on f, then exchanges
+the retained singleton C past Θ. Prove the actual endpoint casts and concrete
+route/component equations at G P K Δ or G P Γ K before Reduced equality.
 
-For every existing f:G P F Δ, fuse the two actual left contractions into a
-single contraction at exact G P K Δ; separately prove the G P Γ K right
-dual. Construct the complete ordered original selected family of length
-n+m−1: all inner copies and the unique fixed originals of the other outer
-copies. Prove the flat gap/tail endpoints, all-position route identity,
-complete fibers and structural product/coproduct identities before deriving
-Reduced equality. Prove the source retained-rank equation old=flat+m,
-preservation and inhabited equal-label/constant/compound/signed-cut examples.
-This W3 result is not assumed by the present checkpoint. The ready-to-paste
-task is [CODEX_W3_SHARED_SELECTED_CONTRACTION.txt](CODEX_W3_SHARED_SELECTED_CONTRACTION.txt).
+If LC is the direct n-ary contraction rank, target old retained/outer rank
+LC+n+1 and new retained rank LC+1, with new contraction-subterm rank LC.
+Keep empty-block exchange nodes when counting ranks. Prove complete selected
+and fixed fibers, exact preservation and inhabited positional examples.
+The predicate boundary is asymmetric: old.Atomized iff AtomicFormula C and
+f.Atomized; new.Atomized iff f.Atomized. Atomicity is not a hypothesis of the
+denotation/rank equalities. No W2 construction is assumed here. The concrete
+continuation is [CODEX_W2_SELECTED_THINNING.txt](CODEX_W2_SELECTED_THINNING.txt).
 
-Disjoint interleaved contractions, crossing-selected/multi-gap/absorption
-exchanges, remaining W1/W2–W6, arbitrary-context replacement/all-site decrease,
-Reducibility, Blocked-w, cut elimination, restricted positive-coherence inputs,
-PositiveCoherence, Reduced.Faithful, Boolean Coherence, unconditional maximality
-and Palomar preparation remain separate/open. Conditional transfers and the
-three milestones are unchanged. An unfinished reconstruction of cited
-published results does not establish a manuscript defect.
+Disjoint interleaving, remaining exchange/W1/W2–W6 cases, arbitrary-context
+replacement, Reducibility, Blocked-w, cut elimination, restricted coherence
+inputs, PositiveCoherence, Reduced.Faithful, Boolean Coherence, unconditional
+maximality and Palomar preparation remain separate/open. Existing conditional
+transfers and the three milestone boundaries are unchanged. An unfinished
+reconstruction of published results does not establish a manuscript defect.
 
 ## Remaining positive-coherence dependency table
 
@@ -409,7 +429,7 @@ interfaces rather than compiling declarations.
 | Z: §12.5 p.288 (0I ξ), pp.290–291 (∪0); any P and existing arrows | `tensor_zero o A B`; `tensor_zeroOf o f g`; `union_id_zero A`; all seven union algebra laws and witnessed zero unit | Existing Reduced.Laws, product/coproduct derivations | **Proved at the preceding zero/union checkpoint**; interpretation and positive raw membership are separate proved declarations. |
 | G0: §11.1 pp.238–243; §11.5 p.272; §12.5 p.291 | Implemented `Reduced.Gentzen.G/denote/denote_positive`, all rule denotation formulas, source-order macros, actual comparisons and empty boundary | Existing reduced structural/zero laws | **Proved**, see POSITIVE_GENTZENIZATION_REPORT. |
 | G1: §11.1 Gentzenization pp.245–246; §11.5 pp.272–273; §12.5 p.291 zero extension using (0I ξ) | `∀ (t : Term P A B), t.Positive → ∃ g : G P [A] [B], ofTerm (G.denote g) = comp (rightOut .conj A) (comp (ofTerm t) (rightIn .disj B))` | G0; typed rules for each of the 19 positive constructor schemas; zeros expanded recursively with Z; constant identity/zero laws already in ReducedStructure | **Proved** by Reduced.Gentzen.gentzenization and its decoded/occurrence counterparts. Representation is existential with cuts; no quotient function is inferred. |
-| G2 remaining: §11.2 pp.250–253 blocked/reducibility transformations, Blocked-w and clean-cut definitions; Atomic-k and cluster/rank are proved | For proposed `TopCut g`, `∃ h : G P Γ Δ, Clean h ∧ ofTerm (G.denote h) = ofTerm (G.denote g)`; prove every local rewrite reduces the source rank/multiset measure | G0, source structural/d equations; exact cut-formula positions, clusters and ranks; Z for zero leaves | **Open after completed Atomic-k and cluster/rank**. Opposite-side unary W1 thinning, exchange, contraction and logical instances are proved in their local scopes. Fixed-gap and terminal-tail same-side thinning in both duals is now proved. Fixed-gap and terminal-tail same-side exchange in both duals is now proved. Fixed-gap and terminal-tail same-side unary logical cases are now proved. Fixed-gap and terminal-tail disjoint same-side contractions in both duals are now proved. Next prove shared-selected W3 fusion as specified above; crossing-selected/multi-gap/absorption exchange cases, other W1/W2 and blocked patterns/proof replacement remain open. This is normalization of a topmost cut, not arbitrary equality by its relation. |
+| G2 remaining: §11.2 pp.250–253 blocked/reducibility transformations, Blocked-w and clean-cut definitions; Atomic-k and cluster/rank are proved | For proposed `TopCut g`, `∃ h : G P Γ Δ, Clean h ∧ ofTerm (G.denote h) = ofTerm (G.denote g)`; prove every local rewrite reduces the source rank/multiset measure | G0, source structural/d equations; exact cut-formula positions, clusters and ranks; Z for zero leaves | **Open after completed Atomic-k and cluster/rank**. Opposite-side unary W1 thinning, exchange, contraction and logical instances are proved in their local scopes. Fixed-gap and terminal-tail same-side thinning in both duals is now proved. Fixed-gap and terminal-tail same-side exchange in both duals is now proved. Fixed-gap and terminal-tail same-side unary logical cases are now proved. Fixed-gap and terminal-tail disjoint same-side contractions in both duals are now proved. Shared-selected W3 fusion and its dual are now proved with retained drop m. Next prove selected-thinning W2 as specified above; crossing-selected/multi-gap/absorption exchange cases, other W1/W2 and blocked patterns/proof replacement remain open. This is normalization of a topmost cut, not arbitrary equality by its relation. |
 | G3: §11.2 pp.253–263 Cut-Elimination; §11.5 p.273 constants; §12.5 pp.291–292 zero atomic cases | `∀ g : G P Γ Δ, ∃ h : G P Γ Δ, CutFree h ∧ ofTerm (G.denote h) = ofTerm (G.denote g)` | G2; well-founded clean-cut complexity and blocked contractions; constant cut cases, (00), zero naturality | **Open**. Source five new zero cases must be derived at actual endpoint folds; unit terms are not arbitrary zeros. |
 | M0: §10.2 pp.223–226; §10.3 pp.229–230; §12.5 pp.289–290 | Define MixTerm/Atomic/Settled; `∀ t : MixTerm P A B, DNF A → CNF B → ∃ n : Settled P A B, ofTerm n.denote = ofTerm t.denote` | Z union laws; cut/composition elimination for the smaller Gentzen lattice syntax, extending §9.4/§9.6; atomic bracket normal forms | **Open**. Smaller-system composition elimination is a real proof obligation, not supplied by the new algebra. |
 | M1: §10.3 pp.229–230 zero constants; §12.5 p.290 zero atomic components | `∀ a : Atomic P A B, ZeroAtomic a → ofTerm a.denote = zeroOf (ofTerm a.denote)`; hence any two such same-type components are equal | Atomic path syntax; zeroOf_pre/post/independent, zero_top/bot and terminal/initial uniqueness; constant bases | **Open** for the proposed syntax; its categorical zero and unit ingredients are already proved. No general empty-relation equality is used. |
@@ -442,10 +462,11 @@ every-interpretation corollary. The three milestones remain separate.
 
 VERIFICATION AND REVIEW
 Pinned Lean 4.35.0, Init-only production closure, no new dependencies.
-Current strict result: 171 Lean files and 6705 audited project declarations.
+Current strict result: 179 Lean files and 7069 audited project declarations.
 Permitted axioms: propext, Quot.sound, Classical.choice. Both boundary scripts
 passed with all five expected rejections; manuscript hashes are unchanged.
-Current evidence: provenance/wsl-gentzen-w1-terminal-tail-contraction/ and matching .codex-work/.
+Current evidence: provenance/wsl-gentzen-w3-shared-selected-contraction/ and matching .codex-work/.
+Prior terminal-tail evidence: provenance/wsl-gentzen-w1-terminal-tail-contraction/.
 Prior fixed-gap disjoint evidence: provenance/wsl-gentzen-w1-disjoint-contraction/.
 Prior same-side logical evidence: provenance/wsl-gentzen-w1-same-side-logical/.
 Prior same-side exchange evidence: provenance/wsl-gentzen-w1-same-side-exchange/.

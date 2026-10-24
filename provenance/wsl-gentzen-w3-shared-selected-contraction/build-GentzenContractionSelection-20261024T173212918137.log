@@ -1,0 +1,17 @@
+✖ [123/123] Building DosenPetric.GentzenContractionSelection (5.1s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenContractionSelection.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionSelection.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenContractionSelection.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionSelection.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenContractionSelection.setup.json --json
+error: DosenPetric/GentzenContractionSelection.lean:91:49: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp only [keep, selected, List.mem_singleton, reduceCtorEq] at h
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+error: DosenPetric/GentzenContractionSelection.lean:134:6: Type mismatch: After simplification, term
+  congrArg (fun n => n + 1) hh
+ has type
+  1 + (p.fuse q ⋯).arity + 1 = p.arity + q.arity + 1
+but is expected to have type
+  1 + (1 + (p.fuse q ⋯).arity) = 1 + (p.arity + q.arity)
+Some required targets logged failures:
+- DosenPetric.GentzenContractionSelection
+error: build failed

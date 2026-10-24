@@ -1,0 +1,234 @@
+✖ [128/128] Building DosenPetric.GentzenSharedContractionRanks (3.7s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenSharedContractionRanks.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSharedContractionRanks.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenSharedContractionRanks.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSharedContractionRanks.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenSharedContractionRanks.setup.json --json
+error: DosenPetric/GentzenSharedContractionRanks.lean:28:13: Unknown identifier `congrArg₂`
+error: DosenPetric/GentzenSharedContractionRanks.lean:76:51: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  innerR d hn Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:77:7: Application type mismatch: The argument
+  (d.flat hn hm h).selected
+has type
+  List (At d.F (d.flat hn hm h).C)
+but is expected to have type
+  List (Place SequentSide.right d.F Γ ?m.42)
+in the application
+  List.map (fun a => f.rho SequentSide.right a) (d.flat hn hm h).selected
+error: DosenPetric/GentzenSharedContractionRanks.lean:80:11: Application type mismatch: The argument
+  TraceRoute.fiber b (TraceRoute.full d.inner.route)
+has type
+  List (At d.F ?m.77)
+but is expected to have type
+  List (Place SequentSide.right d.F Γ ?m.86)
+in the application
+  List.map (fun a => f.rho SequentSide.right a) (TraceRoute.fiber b (TraceRoute.full d.inner.route))
+error: DosenPetric/GentzenSharedContractionRanks.lean:86:9: Application type mismatch: The argument
+  TraceRoute.fiber b (TraceRoute.full d.inner.route)
+has type
+  List (At d.F ?m.122)
+but is expected to have type
+  List (Place SequentSide.right d.F Γ ?m.131)
+in the application
+  List.map (fun a => f.rho SequentSide.right a) (TraceRoute.fiber b (TraceRoute.full d.inner.route))
+error: DosenPetric/GentzenSharedContractionRanks.lean:88:13: Unknown identifier `congrArg₂`
+error: DosenPetric/GentzenSharedContractionRanks.lean:84:37: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  @ContractionBlock.rankR_fiber P d.F d.I d.inner hn Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:77:83: unsolved goals
+P : Type u
+d : SharedContraction.Data P
+hn : 2 ≤ d.gs.length
+Γ : List (NormalForm P)
+f : G P d.F Γ
+⊢ (List.map (fun b => (innerR d hn Γ sorry).rho SequentSide.right b) d.outer.selected).sum =
+    (List.map (fun a => f.rho SequentSide.right a) sorry).sum + d.hs.length
+error: DosenPetric/GentzenSharedContractionRanks.lean:90:56: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  innerR d hn Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:91:52: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  (d.flat hn hm h).rankR ⋯ Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:92:51: Unknown identifier `f`
+error: DosenPetric/GentzenSharedContractionRanks.lean:93:65: Unknown identifier `f`
+error: DosenPetric/GentzenSharedContractionRanks.lean:94:13: Unknown identifier `selected_sumsR`
+error: DosenPetric/GentzenSharedContractionRanks.lean:91:69: unsolved goals
+P : Type u
+d : SharedContraction.Data P
+hn : 2 ≤ d.gs.length
+hm : 2 ≤ d.hs.length
+h : d.Shared
+Γ : List (NormalForm P)
+h₀ :
+  d.outer.rankR hm Γ (innerR d hn Γ sorry) =
+    1 + (List.map (fun a => (innerR d hn Γ sorry).rho SequentSide.right a) d.outer.selected).sum
+h₁ :
+  (d.flat hn hm h).rankR ⋯ Γ sorry =
+    1 + (List.map (fun a => sorry.rho SequentSide.right a) (d.flat hn hm h).selected).sum
+⊢ d.outer.rankR hm Γ (innerR d hn Γ sorry) = (d.flat hn hm h).rankR ⋯ Γ sorry + d.hs.length
+error: DosenPetric/GentzenSharedContractionRanks.lean:97:44: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  flatR d hn hm h Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:98:52: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  (d.flat hn hm h).rankR ⋯ Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:99:54: Unknown identifier `f`
+error: DosenPetric/GentzenSharedContractionRanks.lean:100:87: Unknown identifier `f`
+error: DosenPetric/GentzenSharedContractionRanks.lean:102:41: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  oldR d hn hm Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:103:23: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  flatR d hn hm h Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:104:42: Unknown identifier `f`
+error: DosenPetric/GentzenSharedContractionRanks.lean:108:49: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  flatR d hn hm h Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:109:20: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  oldR d hn hm Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:109:50: unsolved goals
+P : Type u
+d : SharedContraction.Data P
+hn : 2 ≤ d.gs.length
+hm : 2 ≤ d.hs.length
+h : d.Shared
+Γ : List (NormalForm P)
+⊢ (flatR d hn hm h Γ sorry).rho SequentSide.right d.outer.keep <
+    (oldR d hn hm Γ sorry).rho SequentSide.right d.outer.keep
+error: DosenPetric/GentzenSharedContractionRanks.lean:114:20: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  oldR d hn hm Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:114:53: Application type mismatch: The argument
+  d.original h z hz
+has type
+  At d.F A
+but is expected to have type
+  Place SequentSide.right d.F Γ ?m.38
+in the application
+  f.rho SequentSide.right (d.original h z hz)
+error: DosenPetric/GentzenSharedContractionRanks.lean:115:53: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  innerR d hn Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:116:38: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  @ContractionBlock.rankR_fixed P d.F d.I d.inner hn Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:116:68: Unknown identifier `h`
+error: DosenPetric/GentzenSharedContractionRanks.lean:117:20: Unknown identifier `h`
+error: DosenPetric/GentzenSharedContractionRanks.lean:121:23: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  flatR d hn hm h Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:121:56: Application type mismatch: The argument
+  d.original h z hz
+has type
+  At d.F A
+but is expected to have type
+  Place SequentSide.right d.F Γ ?m.38
+in the application
+  f.rho SequentSide.right (d.original h z hz)
+error: DosenPetric/GentzenSharedContractionRanks.lean:122:56: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  @ContractionBlock.rankR_fixed P d.F d.K (d.flat hn hm h) (SharedContraction.Data.flat_bound d hn hm h) Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:126:20: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  oldR d hn hm Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:126:57: Application type mismatch: The argument
+  f
+has type
+  G P d.F Γ
+but is expected to have type
+  G P Γ d.F
+in the application
+  flatR d hn hm h Γ f
+error: DosenPetric/GentzenSharedContractionRanks.lean:127:13: Unknown identifier `old_otherR`
+error: DosenPetric/GentzenSharedContractionRanks.lean:126:78: unsolved goals
+P : Type u
+d : SharedContraction.Data P
+hn : 2 ≤ d.gs.length
+hm : 2 ≤ d.hs.length
+h : d.Shared
+Γ : List (NormalForm P)
+A : NormalForm P
+z : At d.K A
+hz : z.index ≠ d.outer.keep.index
+⊢ (oldR d hn hm Γ sorry).rho SequentSide.right z = (flatR d hn hm h Γ sorry).rho SequentSide.right z + 1
+Some required targets logged failures:
+- DosenPetric.GentzenSharedContractionRanks
+error: build failed

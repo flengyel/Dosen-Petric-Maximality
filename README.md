@@ -53,8 +53,12 @@ sum balance and a checked unequal-arity increase rule out a general decreasing
 sum claim. Both terminal-tail disjoint contraction cases also compile, using
 a shared proved interface that is instantiated in the preserved interior case.
 Their complete selected transports/fibers and independent rank table are proved;
-the terminal retained order is C before E. Shared-selected W3 fusion is next;
-disjoint interleaving remains separate.
+the terminal retained order is C before E. Shared-selected W3 fusion and its
+right dual now compile: one constructed contraction has n+m−1 selected copies,
+exact Reduced equality and retained rank drop m. Complete positional fibers
+and weighted sums preserve equal-labelled fixed tags; counts, predicates and
+tagged relations are preserved. Selected-thinning W2 is next; disjoint
+interleaving remains separate.
 The current stage is the remaining local contraction transformations toward
 cut elimination. General W1, W2–W6, blocked-contraction transformations,
 Reducibility, cut elimination, the positive coherence inputs, PositiveCoherence,
@@ -109,11 +113,12 @@ The [v5 literature review](docs/LITERATURE_REVIEW_V5_2026-10-23.md),
 [writing review](docs/reviews/V5_WRITING_REVIEW.md), and
 [manuscript validation](docs/V5_VALIDATION.md) accompany v5.
 The [earlier literature comparison](docs/LITERATURE_REVIEW.md) remains available.
-The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_HOSTILE.md)
-and [mathematical-writing review](docs/reviews/GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_WRITING.md)
-cover the two terminal-tail disjoint contraction cases and their scope; they are not independent
-certification. The [terminal-tail report](docs/GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT.md),
-[ready-to-paste W3 continuation](docs/CODEX_W3_SHARED_SELECTED_CONTRACTION.txt),
+The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_W3_SHARED_SELECTED_CONTRACTION_HOSTILE.md)
+and [mathematical-writing review](docs/reviews/GENTZEN_W3_SHARED_SELECTED_CONTRACTION_WRITING.md)
+cover shared-selected W3 fusion and its right dual; they are not independent
+certification. The [W3 report](docs/GENTZEN_W3_SHARED_SELECTED_CONTRACTION_REPORT.md),
+[ready-to-paste W2 continuation](docs/CODEX_W2_SELECTED_THINNING.txt),
+[preceding terminal-tail report](docs/GENTZEN_W1_TERMINAL_TAIL_CONTRACTION_REPORT.md),
 [preceding disjoint-contraction report](docs/GENTZEN_W1_DISJOINT_CONTRACTION_REPORT.md),
 [preceding same-side logical report](docs/GENTZEN_W1_SAME_SIDE_LOGICAL_REPORT.md),
 [preceding same-side exchange report](docs/GENTZEN_W1_SAME_SIDE_EXCHANGE_REPORT.md),

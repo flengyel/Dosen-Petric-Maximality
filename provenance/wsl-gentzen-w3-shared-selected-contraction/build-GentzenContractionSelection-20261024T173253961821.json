@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-24T17:33:01.834378+00:00",
+  "checks": [
+    {
+      "name": "build-GentzenContractionSelection",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenContractionSelection"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 0,
+      "seconds": 7.872,
+      "log": ".codex-work/gentzen-w3-shared-selected-contraction/build-GentzenContractionSelection-20261024T173253961821.log",
+      "log_sha256": "f33e28b00565d20a8e473b51bb7610dd50d4c538eac326ff9e34a2e30bccc98c"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+Continue the Došen–Petrić maximality formalization in WSL2 at
+/home/flengyel/src/Dosen-Petric-Maximality. Prove source W2 selected thinning
+at the terminal position and its separately typed right dual. Implement,
+verify and review the actual proofs, update current records, deliver verified
+reports, commit the completed scoped work to main and push over SSH without
+force. This task authorizes that scoped commit/push, not publication, licensing
+or a repository-visibility change.
+
+Inspect status, remotes and retained stashes; fetch SSH origin and preserve
+all newer/unrelated work and other checkouts. Read AGENTS.md, the current
+maps/correspondence/validation/continuation, PALOMAR_REQUIREMENTS, the W3
+shared-selected report and reviews, preceding W1 reports where used, and
+the actual ContractionBlock, route/fiber, rank and G constructor definitions.
+Reuse the completed W3 fusion and disjoint W1 results. Preserve pinned Lean
+4.35.0, Init-only production dependencies, frozen source syntax/equations,
+denotations, tags, predecessor/rank definitions and analysis predicates.
+Preserve manuscript v4/v5 and all diagrams, references/checksums and historical
+reports. Run and retain a fresh baseline verification.
+
+Consult the pinned September 2007 Proof-Theoretical Coherence, §11.2,
+printed p.251 W2 and p.252's right analogue, with pp.248–253 for ancestry/ranks.
+The full PDF SHA256 is
+e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e;
+printed pp.248–253 are PDF pp.260–265, one-based. Retain access/page evidence.
+The new thinning occurrence is selected by the contraction. This is not the
+completed fixed-parametric W1 thinning square.
+
+For arbitrary P,C, gs,Θ and existing f, set n=gs.length≥2 and
+  F = repeated C gs ++ Θ
+  I = gaps gs ++ C :: Θ
+  U = F ++ [C]
+  K = (gaps gs ++ Θ) ++ [C].
+
+Left old: append C to f by actual G.thinL at the terminal gap, then contract
+all original n selected copies and the new C with gaps gs++[Θ], tail [].
+Right old: the actual G.thinR and G.contractR dual. Prove all required list
+identifications and the outer n+1 bound; use genuine G/At/Route casts.
+
+Left new: contract C at gs/Θ directly on f, then use actual G.exchangeL
+to swap the retained singleton [C] past Θ with prefix gaps gs and empty tail.
+Use actual G.exchangeR in the right dual. Both results must have exact
+G P K Δ or G P Γ K. Prove ofTerm new.denote=ofTerm old.denote in Reduced.Hom
+using the concrete copies/thinning/exchange routes and universal components,
+not coherence or equality reflection. Do not simplify away an empty-block
+exchange when computing proof ranks.
+
+Prove complete ordered selected transport with the additional selected
+thinning leaf, its positional distinctness from all fixed equal-labelled
+tags, full retained/fixed fibers and the exact endpoint coordinate maps.
+If LC is the direct n-ary contraction rank on f, prove the target table:
+old outer contraction/retained rank LC+n+1; new retained endpoint rank LC+1;
+the new contraction-subterm rank is LC. Thus the endpoint loss is n and the
+contraction-subterm loss is n+1. Derive the other fixed-position laws at the
+computed common originals. Keep all-site replacement/reducibility and global
+termination separate.
+
+Preserve cut counts and CutFree, and derive full tagged relation equality
+from Reduced equality. Record the exact asymmetric atomicity boundary:
+  old.Atomized ↔ AtomicFormula C ∧ f.Atomized
+  new.Atomized ↔ f.Atomized.
+No atomicity assumption belongs on denotation or rank theorems. Do not claim
+unconditional equivalence of old/new Atomized after removing the thinning.
+Do not change AtomicFormula, Atomized or any analysis interface.
+
+Include inhabited left/right examples: Empty P constants with empty literal
+occurrence types; compound C showing the exact atomicity boundary; both literal
+signs and actual cut-containing premises; n=2 and n=3; empty/nonempty Θ and
+internal gaps; fixed occurrences labelled C. Check exact selected and route
+lists. Retain failures and stay within existing heartbeat limits.
+
+After the final proof edit run bash scripts/verify.sh, both boundary scripts,
+manuscript SHA256SUMS and staged/unstaged whitespace checks, one heavy process
+at a time. Retain commands/versions/exits/timings, source/import/declaration
+closure, transitive axiom audit and five expected negative-control rejections.
+Apply hostile-referee and source-grounded mathematical-writing reviews to
+actual proofs, exact types, examples, report and correspondence. Keep process
+commentary outside the manuscript. No custom axioms, proof holes, native_decide,
+conclusion-equivalent assumptions or zeros without existing-arrow witnesses.
+
+Retain reports under docs/ and docs/reviews/ and evidence under provenance/.
+Copy every finalized report to /mnt/c/Users/fleng/Downloads, preserving different
+existing material and verifying bytes/SHA256 against its committed version.
+Verify checked source against the commit and main/origin/main/live SSH ref
+agreement after a non-force push. Preserve the retained integration stash.
+Finish with exact scope/results/limits, checks, commit/ref/tree status,
+repository/Downloads paths and one concrete next proof obligation.
+Keep other W1/W2–W6, all-site replacement, Reducibility, Blocked-w, cut
+elimination, restricted coherence inputs, PositiveCoherence, Reduced.Faithful,
+Boolean Coherence and unconditional maximality separate/open. Do not infer a
+manuscript defect from an unfinished reconstruction of published results.

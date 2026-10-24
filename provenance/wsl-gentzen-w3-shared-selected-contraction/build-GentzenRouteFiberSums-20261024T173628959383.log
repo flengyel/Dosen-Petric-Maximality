@@ -1,0 +1,31 @@
+✖ [124/124] Building DosenPetric.GentzenRouteFiberSums (1.6s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/DosenPetric/GentzenRouteFiberSums.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenRouteFiberSums.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/lib/lean/DosenPetric/GentzenRouteFiberSums.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenRouteFiberSums.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.lake/build/ir/DosenPetric/GentzenRouteFiberSums.setup.json --json
+error: DosenPetric/GentzenRouteFiberSums.lean:24:58: unexpected token '~'; expected ':=', 'where' or '|'
+error: DosenPetric/GentzenRouteFiberSums.lean:61:4: Unknown identifier `fiber_comp_perm`
+error: DosenPetric/GentzenRouteFiberSums.lean:80:4: `simp` made no progress
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    a
+  has type
+    At K A
+  but is expected to have type
+    Place SequentSide.left K Δ A
+  in the application
+    (d.applyL hn Δ f).rho SequentSide.left a
+error: DosenPetric/GentzenRouteFiberSums.lean:91:4: `simp` made no progress
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    a
+  has type
+    At K A
+  but is expected to have type
+    Place SequentSide.right Γ K A
+  in the application
+    (d.applyR hn Γ f).rho SequentSide.right a
+Some required targets logged failures:
+- DosenPetric.GentzenRouteFiberSums
+error: build failed
