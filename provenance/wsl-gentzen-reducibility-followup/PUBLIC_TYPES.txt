@@ -1,0 +1,384 @@
+DosenPetric.Reduced.Gentzen.ProofAddress.separation_of_collision.{u} {P : Type u}
+  {Γ Δ U V : List (DosenPetric.NormalForm P)} {root : DosenPetric.Reduced.Gentzen.G P Γ Δ}
+  {w : DosenPetric.Reduced.Gentzen.G P U V} (a : DosenPetric.Reduced.Gentzen.ProofAddress root w)
+  (s : DosenPetric.Reduced.Gentzen.SequentSide) {C : DosenPetric.NormalForm P}
+  (r : DosenPetric.Reduced.Gentzen.Place s Γ Δ C) (y z : DosenPetric.Reduced.Gentzen.Place s U V C)
+  (hy : a.ascend s y = some r) (hz : a.ascend s z = some r) (hne : y ≠ z) : Nonempty (a.EntrySeparation s r y z)
+DosenPetric.Reduced.Gentzen.EntryFrame.source_disj_left.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {Γ Θ Δ Λ : List (DosenPetric.NormalForm P)} {A B : DosenPetric.NormalForm P}
+  (f : DosenPetric.Reduced.Gentzen.G P (Γ ++ [A]) Δ) (g : DosenPetric.Reduced.Gentzen.G P (Θ ++ [B]) Λ) (F : Nat → Prop)
+  (hl : DosenPetric.Reduced.Gentzen.EntryFrame.UniqueOn F 0 Γ.length)
+  (hr : DosenPetric.Reduced.Gentzen.EntryFrame.UniqueOn F Γ.length (Γ.length + Θ.length)) :
+  DosenPetric.Reduced.Gentzen.EntryFrame DosenPetric.Reduced.Gentzen.SequentSide.left C
+    (DosenPetric.Reduced.Gentzen.BlockedSource.disjLLast f g) fun x => F (DosenPetric.Reduced.Gentzen.At.index x)
+DosenPetric.Reduced.Gentzen.EntryFrame.source_disj_right.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {Γ Θ Δ Λ : List (DosenPetric.NormalForm P)} {A B : DosenPetric.NormalForm P}
+  (f : DosenPetric.Reduced.Gentzen.G P (Γ ++ [A]) Δ) (g : DosenPetric.Reduced.Gentzen.G P (Θ ++ [B]) Λ) (F : Nat → Prop)
+  (hl : DosenPetric.Reduced.Gentzen.EntryFrame.UniqueOn F 0 Δ.length)
+  (hr : DosenPetric.Reduced.Gentzen.EntryFrame.UniqueOn F Δ.length (Δ.length + Λ.length)) :
+  DosenPetric.Reduced.Gentzen.EntryFrame DosenPetric.Reduced.Gentzen.SequentSide.right C
+    (DosenPetric.Reduced.Gentzen.BlockedSource.disjLLast f g) fun x => F (DosenPetric.Reduced.Gentzen.At.index x)
+DosenPetric.Reduced.Gentzen.BlockedL.premise_frame.{u} {P : Type u} {Γ Δ : List (DosenPetric.NormalForm P)}
+  {g : DosenPetric.Reduced.Gentzen.G P Γ Δ} (h : DosenPetric.Reduced.Gentzen.BlockedL g) {C : DosenPetric.NormalForm P}
+  (x : DosenPetric.Reduced.Gentzen.At Γ C) (hx : g.LowerContraction DosenPetric.Reduced.Gentzen.SequentSide.left x)
+  {I J : List (DosenPetric.NormalForm P)} {t : DosenPetric.Reduced.Gentzen.G P I J}
+  (p : DosenPetric.Reduced.Gentzen.Premise g t) :
+  DosenPetric.Reduced.Gentzen.EntryFrame DosenPetric.Reduced.Gentzen.SequentSide.left C t fun y =>
+    p.parent DosenPetric.Reduced.Gentzen.SequentSide.left y = some x
+DosenPetric.Reduced.Gentzen.BlockedR.premise_frame.{u} {P : Type u} {Γ Δ : List (DosenPetric.NormalForm P)}
+  {g : DosenPetric.Reduced.Gentzen.G P Γ Δ} (h : DosenPetric.Reduced.Gentzen.BlockedR g) {C : DosenPetric.NormalForm P}
+  (x : DosenPetric.Reduced.Gentzen.At Δ C) (hx : g.LowerContraction DosenPetric.Reduced.Gentzen.SequentSide.right x)
+  {I J : List (DosenPetric.NormalForm P)} {t : DosenPetric.Reduced.Gentzen.G P I J}
+  (p : DosenPetric.Reduced.Gentzen.Premise g t) :
+  DosenPetric.Reduced.Gentzen.EntryFrame DosenPetric.Reduced.Gentzen.SequentSide.right C t fun y =>
+    p.parent DosenPetric.Reduced.Gentzen.SequentSide.right y = some x
+DosenPetric.Reduced.Gentzen.ReducibleL.entry_unique.{u} {P : Type u} {Γ Δ Θ Λ U V : List (DosenPetric.NormalForm P)}
+  {C : DosenPetric.NormalForm P} {f : DosenPetric.Reduced.Gentzen.G P Γ (C :: Δ)}
+  {g : DosenPetric.Reduced.Gentzen.G P (C :: Θ) Λ} {w : DosenPetric.Reduced.Gentzen.G P U V}
+  {a : DosenPetric.Reduced.Gentzen.ProofAddress g w} {x : DosenPetric.Reduced.Gentzen.At U C}
+  (hr : DosenPetric.Reduced.Gentzen.ReducibleL f g a x) (z : DosenPetric.Reduced.Gentzen.At U C)
+  (hz : a.ascend DosenPetric.Reduced.Gentzen.SequentSide.left z = some (DosenPetric.Reduced.Gentzen.At.here C Θ)) :
+  z = x
+DosenPetric.Reduced.Gentzen.ReducibleR.entry_unique.{u} {P : Type u} {Γ Δ Θ Λ U V : List (DosenPetric.NormalForm P)}
+  {C : DosenPetric.NormalForm P} {f : DosenPetric.Reduced.Gentzen.G P Γ (C :: Δ)}
+  {g : DosenPetric.Reduced.Gentzen.G P (C :: Θ) Λ} {w : DosenPetric.Reduced.Gentzen.G P U V}
+  {a : DosenPetric.Reduced.Gentzen.ProofAddress f w} {x : DosenPetric.Reduced.Gentzen.At V C}
+  (hr : DosenPetric.Reduced.Gentzen.ReducibleR f g a x) (z : DosenPetric.Reduced.Gentzen.At V C)
+  (hz : a.ascend DosenPetric.Reduced.Gentzen.SequentSide.right z = some (DosenPetric.Reduced.Gentzen.At.here C Δ)) :
+  z = x
+DosenPetric.Reduced.Gentzen.W4.SelectedLogical.addressed_left.{u} {P : Type u}
+  (d : DosenPetric.Reduced.Gentzen.SelectedLogical.Data P DosenPetric.Reduced.Op.conj) (hn : 2 ≤ d.gs.length)
+  (Δ : List (DosenPetric.NormalForm P)) (f : DosenPetric.Reduced.Gentzen.G P d.F Δ)
+  {Γ Ξ Θ Λ : List (DosenPetric.NormalForm P)} {cutLeft : DosenPetric.Reduced.Gentzen.G P Γ (d.C :: Ξ)}
+  {root : DosenPetric.Reduced.Gentzen.G P (d.C :: Θ) Λ}
+  (a : DosenPetric.Reduced.Gentzen.ProofAddress root (DosenPetric.Reduced.Gentzen.W4.SelectedLogical.oldL d hn Δ f))
+  (hr : DosenPetric.Reduced.Gentzen.ReducibleL cutLeft root a d.x) :
+  (DosenPetric.Reduced.Gentzen.W4.SelectedLogical.newL d hn Δ f).CutFree ∧
+    DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.W4.SelectedLogical.newL d hn Δ f).denote =
+        DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.W4.SelectedLogical.oldL d hn Δ f).denote ∧
+      DosenPetric.Reduced.ofTerm (a.replace (DosenPetric.Reduced.Gentzen.W4.SelectedLogical.newL d hn Δ f)).denote =
+          DosenPetric.Reduced.ofTerm root.denote ∧
+        ∀ {I J : List (DosenPetric.NormalForm P)} {v : DosenPetric.Reduced.Gentzen.G P I J}
+          (b :
+            DosenPetric.Reduced.Gentzen.ProofAddress (DosenPetric.Reduced.Gentzen.W4.SelectedLogical.newL d hn Δ f) v)
+          (y : DosenPetric.Reduced.Gentzen.At I d.C),
+          DosenPetric.Reduced.Gentzen.ReducibleL cutLeft
+              (a.replace (DosenPetric.Reduced.Gentzen.W4.SelectedLogical.newL d hn Δ f))
+              ((a.inserted (DosenPetric.Reduced.Gentzen.W4.SelectedLogical.newL d hn Δ f)).append b) y →
+            v.rho DosenPetric.Reduced.Gentzen.SequentSide.left y <
+              (DosenPetric.Reduced.Gentzen.W4.SelectedLogical.oldL d hn Δ f).rho
+                DosenPetric.Reduced.Gentzen.SequentSide.left d.x
+DosenPetric.Reduced.Gentzen.W4.HeadRight.denote.{u} {P : Type u}
+  (d : DosenPetric.Reduced.Gentzen.SelectedLogical.Data P DosenPetric.Reduced.Op.disj) (hn : 2 ≤ d.gs.length)
+  (Γ : List (DosenPetric.NormalForm P)) (f : DosenPetric.Reduced.Gentzen.G P Γ d.F) :
+  DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.W4.HeadRight.repairR d hn Γ f).denote =
+    DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.W4.SelectedLogical.oldR d hn Γ f).denote
+DosenPetric.Reduced.Gentzen.W4.HeadRight.moved_rank.{u} {P : Type u}
+  (d : DosenPetric.Reduced.Gentzen.SelectedLogical.Data P DosenPetric.Reduced.Op.disj) (hn : 2 ≤ d.gs.length)
+  (Γ : List (DosenPetric.NormalForm P)) (f : DosenPetric.Reduced.Gentzen.G P Γ d.F) :
+  (DosenPetric.Reduced.Gentzen.W4.HeadRight.movedR d hn Γ f).rho DosenPetric.Reduced.Gentzen.SequentSide.right
+      (DosenPetric.Reduced.Gentzen.At.shift [d.A, d.B] d.s.inner.keep) =
+    DosenPetric.Reduced.Gentzen.W4.SelectedLogical.rankInnerR d hn Γ f + 1
+DosenPetric.Reduced.Gentzen.W4.HeadRight.head_retained_rank.{u} {P : Type u}
+  (d : DosenPetric.Reduced.Gentzen.SelectedLogical.Data P DosenPetric.Reduced.Op.disj) (hn : 2 ≤ d.gs.length)
+  (Γ : List (DosenPetric.NormalForm P)) (f : DosenPetric.Reduced.Gentzen.G P Γ d.F) :
+  (DosenPetric.Reduced.Gentzen.W4.HeadRight.headR d hn Γ f).rho DosenPetric.Reduced.Gentzen.SequentSide.right
+      d.s.inner.keep.there =
+    DosenPetric.Reduced.Gentzen.W4.SelectedLogical.rankInnerR d hn Γ f + 2
+DosenPetric.Reduced.Gentzen.W4.HeadRight.blocked_rank.{u} {P : Type u}
+  (d : DosenPetric.Reduced.Gentzen.SelectedLogical.Data P DosenPetric.Reduced.Op.disj) (hn : 2 ≤ d.gs.length)
+  (Γ : List (DosenPetric.NormalForm P)) (f : DosenPetric.Reduced.Gentzen.G P Γ d.F) :
+  (DosenPetric.Reduced.Gentzen.W4.HeadRight.blockedR d hn Γ f).rho DosenPetric.Reduced.Gentzen.SequentSide.right
+      d.s.inner.keep =
+    DosenPetric.Reduced.Gentzen.W4.SelectedLogical.rankInnerR d hn Γ f + 4
+DosenPetric.Reduced.Gentzen.W4.HeadRight.repair_rank.{u} {P : Type u}
+  (d : DosenPetric.Reduced.Gentzen.SelectedLogical.Data P DosenPetric.Reduced.Op.disj) (hn : 2 ≤ d.gs.length)
+  (Γ : List (DosenPetric.NormalForm P)) (f : DosenPetric.Reduced.Gentzen.G P Γ d.F) :
+  (DosenPetric.Reduced.Gentzen.W4.HeadRight.repairR d hn Γ f).rho DosenPetric.Reduced.Gentzen.SequentSide.right d.x =
+    DosenPetric.Reduced.Gentzen.W4.SelectedLogical.rankInnerR d hn Γ f + 5
+DosenPetric.Reduced.Gentzen.W4.HeadRight.repair_bound.{u} {P : Type u}
+  (d : DosenPetric.Reduced.Gentzen.SelectedLogical.Data P DosenPetric.Reduced.Op.disj) (hn : 2 ≤ d.gs.length)
+  (Γ : List (DosenPetric.NormalForm P)) (f : DosenPetric.Reduced.Gentzen.G P Γ d.F) :
+  DosenPetric.Reduced.Gentzen.ContractionBound DosenPetric.Reduced.Gentzen.SequentSide.right d.C
+    (DosenPetric.Reduced.Gentzen.W4.SelectedLogical.rankInnerR d hn Γ f + 1)
+    (DosenPetric.Reduced.Gentzen.W4.HeadRight.repairR d hn Γ f) fun a =>
+    DosenPetric.Reduced.Gentzen.At.index a = d.x.index
+DosenPetric.Reduced.Gentzen.W4.HeadRight.addressed_right.{u} {P : Type u}
+  (d : DosenPetric.Reduced.Gentzen.SelectedLogical.Data P DosenPetric.Reduced.Op.disj) (hn : 2 ≤ d.gs.length)
+  (Γ : List (DosenPetric.NormalForm P)) (f : DosenPetric.Reduced.Gentzen.G P Γ d.F)
+  {Ξ Δ Θ Λ : List (DosenPetric.NormalForm P)} {root : DosenPetric.Reduced.Gentzen.G P Ξ (d.C :: Δ)}
+  {cutRight : DosenPetric.Reduced.Gentzen.G P (d.C :: Θ) Λ}
+  (a : DosenPetric.Reduced.Gentzen.ProofAddress root (DosenPetric.Reduced.Gentzen.W4.SelectedLogical.oldR d hn Γ f))
+  (hr : DosenPetric.Reduced.Gentzen.ReducibleR root cutRight a d.x) :
+  (DosenPetric.Reduced.Gentzen.W4.HeadRight.repairR d hn Γ f).CutFree ∧
+    DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.W4.HeadRight.repairR d hn Γ f).denote =
+        DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.W4.SelectedLogical.oldR d hn Γ f).denote ∧
+      DosenPetric.Reduced.ofTerm (a.replace (DosenPetric.Reduced.Gentzen.W4.HeadRight.repairR d hn Γ f)).denote =
+          DosenPetric.Reduced.ofTerm root.denote ∧
+        ∀ {I J : List (DosenPetric.NormalForm P)} {v : DosenPetric.Reduced.Gentzen.G P I J}
+          (b : DosenPetric.Reduced.Gentzen.ProofAddress (DosenPetric.Reduced.Gentzen.W4.HeadRight.repairR d hn Γ f) v)
+          (y : DosenPetric.Reduced.Gentzen.At J d.C),
+          DosenPetric.Reduced.Gentzen.ReducibleR (a.replace (DosenPetric.Reduced.Gentzen.W4.HeadRight.repairR d hn Γ f))
+              cutRight ((a.inserted (DosenPetric.Reduced.Gentzen.W4.HeadRight.repairR d hn Γ f)).append b) y →
+            v.rho DosenPetric.Reduced.Gentzen.SequentSide.right y <
+              (DosenPetric.Reduced.Gentzen.W4.SelectedLogical.oldR d hn Γ f).rho
+                DosenPetric.Reduced.Gentzen.SequentSide.right d.x
+DosenPetric.Reduced.Gentzen.RightLogicalRegression.old_reducible :
+  DosenPetric.Reduced.Gentzen.ReducibleR DosenPetric.Reduced.Gentzen.RightLogicalRegression.old
+    DosenPetric.Reduced.Gentzen.RightLogicalRegression.other DosenPetric.Reduced.Gentzen.ProofAddress.root
+    (DosenPetric.Reduced.Gentzen.At.here DosenPetric.Reduced.Gentzen.RightLogicalRegression.C [])
+DosenPetric.Reduced.Gentzen.RightLogicalRegression.terminal_reducible :
+  DosenPetric.Reduced.Gentzen.ReducibleR DosenPetric.Reduced.Gentzen.RightLogicalRegression.terminal
+    DosenPetric.Reduced.Gentzen.RightLogicalRegression.other DosenPetric.Reduced.Gentzen.ProofAddress.root
+    (DosenPetric.Reduced.Gentzen.At.here DosenPetric.Reduced.Gentzen.RightLogicalRegression.C [])
+DosenPetric.Reduced.Gentzen.RightLogicalRegression.equal_retained_rank :
+  DosenPetric.Reduced.Gentzen.RightLogicalRegression.terminal.rho DosenPetric.Reduced.Gentzen.SequentSide.right
+      (DosenPetric.Reduced.Gentzen.At.here DosenPetric.Reduced.Gentzen.RightLogicalRegression.C []) =
+    DosenPetric.Reduced.Gentzen.RightLogicalRegression.old.rho DosenPetric.Reduced.Gentzen.SequentSide.right
+      (DosenPetric.Reduced.Gentzen.At.here DosenPetric.Reduced.Gentzen.RightLogicalRegression.C [])
+DosenPetric.Reduced.Gentzen.RightLogicalRegression.terminal_fails_strict_target :
+  ¬∀ {I J : List (DosenPetric.NormalForm Empty)} {v : DosenPetric.Reduced.Gentzen.G Empty I J}
+      (b : DosenPetric.Reduced.Gentzen.ProofAddress DosenPetric.Reduced.Gentzen.RightLogicalRegression.terminal v)
+      (y : DosenPetric.Reduced.Gentzen.At J DosenPetric.Reduced.Gentzen.RightLogicalRegression.C),
+      DosenPetric.Reduced.Gentzen.ReducibleR DosenPetric.Reduced.Gentzen.RightLogicalRegression.terminal
+          DosenPetric.Reduced.Gentzen.RightLogicalRegression.other b y →
+        v.rho DosenPetric.Reduced.Gentzen.SequentSide.right y <
+          DosenPetric.Reduced.Gentzen.RightLogicalRegression.old.rho DosenPetric.Reduced.Gentzen.SequentSide.right
+            (DosenPetric.Reduced.Gentzen.At.here DosenPetric.Reduced.Gentzen.RightLogicalRegression.C [])
+DosenPetric.Reduced.Gentzen.ContractionBound.bound.{u} {P : Type u} {s : DosenPetric.Reduced.Gentzen.SequentSide}
+  {C : DosenPetric.NormalForm P} {k : Nat} {Γ Δ : List (DosenPetric.NormalForm P)}
+  {g : DosenPetric.Reduced.Gentzen.G P Γ Δ} {E : DosenPetric.Reduced.Gentzen.Place s Γ Δ C → Prop}
+  (h : DosenPetric.Reduced.Gentzen.ContractionBound s C k g E) {U V : List (DosenPetric.NormalForm P)}
+  {w : DosenPetric.Reduced.Gentzen.G P U V} (a : DosenPetric.Reduced.Gentzen.ProofAddress g w)
+  (x : DosenPetric.Reduced.Gentzen.Place s Γ Δ C) (hx : E x) (y : DosenPetric.Reduced.Gentzen.Place s U V C)
+  (ha : a.ascend s y = some x) (hl : w.LowerContraction s y) (hu : ¬DosenPetric.Reduced.Gentzen.BlockedOn s w) :
+  w.rho s y < k
+DosenPetric.Reduced.Gentzen.ContractionSelection.extract.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  (Γ : List (DosenPetric.NormalForm P)) (xs : List (DosenPetric.Reduced.Gentzen.At Γ C)) (hn : xs ≠ [])
+  (ho : DosenPetric.Reduced.Gentzen.At.Ordered xs) : ∃ K p, p.selected = xs
+DosenPetric.Reduced.Gentzen.ContractionSelection.chain_selected.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K U L : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (q : DosenPetric.Reduced.Gentzen.ContractionSelection C U L) :
+  (p.chain q).selected =
+    List.map (fun a => a.before U) p.selected ++ List.map (DosenPetric.Reduced.Gentzen.At.shift F) q.selected
+DosenPetric.Reduced.Gentzen.ContractionSelection.ext_selected.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K : List (DosenPetric.NormalForm P)} (p q : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (h : p.selected = q.selected) : p = q
+DosenPetric.Reduced.Gentzen.ContractionSelection.performL_denote.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (Δ : List (DosenPetric.NormalForm P)) (f : DosenPetric.Reduced.Gentzen.G P F Δ) :
+  DosenPetric.Reduced.ofTerm (p.performL Δ f).denote =
+    DosenPetric.Reduced.comp (DosenPetric.Reduced.ofTerm p.route.product) (DosenPetric.Reduced.ofTerm f.denote)
+DosenPetric.Reduced.Gentzen.ContractionSelection.performR_denote.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (Γ : List (DosenPetric.NormalForm P)) (f : DosenPetric.Reduced.Gentzen.G P Γ F) :
+  DosenPetric.Reduced.ofTerm (p.performR Γ f).denote =
+    DosenPetric.Reduced.comp (DosenPetric.Reduced.ofTerm f.denote) (DosenPetric.Reduced.ofTerm p.route.coproduct)
+DosenPetric.Reduced.Gentzen.ContractionSelection.performL_rank.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (Δ : List (DosenPetric.NormalForm P)) (f : DosenPetric.Reduced.Gentzen.G P F Δ) :
+  (p.performL Δ f).rho DosenPetric.Reduced.Gentzen.SequentSide.left p.keep =
+    (List.map (fun a => f.rho DosenPetric.Reduced.Gentzen.SequentSide.left a) p.selected).sum +
+      if 2 ≤ p.arity then 1 else 0
+DosenPetric.Reduced.Gentzen.ContractionSelection.performR_rank.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (Γ : List (DosenPetric.NormalForm P)) (f : DosenPetric.Reduced.Gentzen.G P Γ F) :
+  (p.performR Γ f).rho DosenPetric.Reduced.Gentzen.SequentSide.right p.keep =
+    (List.map (fun a => f.rho DosenPetric.Reduced.Gentzen.SequentSide.right a) p.selected).sum +
+      if 2 ≤ p.arity then 1 else 0
+DosenPetric.Reduced.Gentzen.ContractionSelection.merge_selected.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K U L : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (q : DosenPetric.Reduced.Gentzen.ContractionSelection C U L) :
+  (p.mergeBlock q).selected = [p.keep.before L, DosenPetric.Reduced.Gentzen.At.shift K q.keep]
+DosenPetric.Reduced.Gentzen.ContractionSelection.chain_square.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K U L : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (q : DosenPetric.Reduced.Gentzen.ContractionSelection C U L) (o : DosenPetric.Reduced.Op) :
+  DosenPetric.Reduced.Gentzen.Route.sideArrow o (p.chain q).route =
+    (DosenPetric.Reduced.Gentzen.side P o).comp (DosenPetric.Reduced.Gentzen.Route.sideArrow o (p.mergeBlock q).route)
+      (DosenPetric.Reduced.Gentzen.Route.sideArrow o (p.route.parallel q.route))
+DosenPetric.Reduced.Gentzen.Route.parallel_conjRight.{u} {P : Type u} {F K U L : List (DosenPetric.NormalForm P)}
+  (p : DosenPetric.Reduced.Gentzen.Route K F) (q : DosenPetric.Reduced.Gentzen.Route L U)
+  {Δ Λ : List (DosenPetric.NormalForm P)} {A B : DosenPetric.NormalForm P}
+  (f : DosenPetric.Reduced.Term P (DosenPetric.Reduced.Gentzen.ante F) (DosenPetric.Reduced.Gentzen.succ (A :: Δ)))
+  (g : DosenPetric.Reduced.Term P (DosenPetric.Reduced.Gentzen.ante U) (DosenPetric.Reduced.Gentzen.succ (B :: Λ))) :
+  DosenPetric.Reduced.comp (DosenPetric.Reduced.ofTerm (p.parallel q).product)
+      (DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.Rules.conjRight f g)) =
+    DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.Rules.conjRight (p.product.comp f) (q.product.comp g))
+DosenPetric.Reduced.Gentzen.Route.parallel_disjLeft.{u} {P : Type u} {F K U L : List (DosenPetric.NormalForm P)}
+  (p : DosenPetric.Reduced.Gentzen.Route K F) (q : DosenPetric.Reduced.Gentzen.Route L U)
+  {Γ Θ : List (DosenPetric.NormalForm P)} {A B : DosenPetric.NormalForm P}
+  (f : DosenPetric.Reduced.Term P (DosenPetric.Reduced.Gentzen.ante (A :: Γ)) (DosenPetric.Reduced.Gentzen.succ F))
+  (g : DosenPetric.Reduced.Term P (DosenPetric.Reduced.Gentzen.ante (B :: Θ)) (DosenPetric.Reduced.Gentzen.succ U)) :
+  DosenPetric.Reduced.comp (DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.Rules.disjLeft f g))
+      (DosenPetric.Reduced.ofTerm (p.parallel q).coproduct) =
+    DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.Rules.disjLeft (f.comp p.coproduct) (g.comp q.coproduct))
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.denoteL.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K U L : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (q : DosenPetric.Reduced.Gentzen.ContractionSelection C U L) {Δ Λ : List (DosenPetric.NormalForm P)}
+  (f : DosenPetric.Reduced.Gentzen.G P U Δ) (g : DosenPetric.Reduced.Gentzen.G P F Λ) :
+  DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newL p q f g).denote =
+    DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.oldL p q f g).denote
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.denoteR.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K U L : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (q : DosenPetric.Reduced.Gentzen.ContractionSelection C U L) {Δ Λ : List (DosenPetric.NormalForm P)}
+  (f : DosenPetric.Reduced.Gentzen.G P Δ U) (g : DosenPetric.Reduced.Gentzen.G P Λ F) :
+  DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newR p q f g).denote =
+    DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.oldR p q f g).denote
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.blockedL.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K U L : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (q : DosenPetric.Reduced.Gentzen.ContractionSelection C U L) {Δ Λ : List (DosenPetric.NormalForm P)}
+  (f : DosenPetric.Reduced.Gentzen.G P U Δ) (g : DosenPetric.Reduced.Gentzen.G P F Λ) :
+  DosenPetric.Reduced.Gentzen.BlockedL (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newL p q f g)
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.blockedR.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K U L : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (q : DosenPetric.Reduced.Gentzen.ContractionSelection C U L) {Δ Λ : List (DosenPetric.NormalForm P)}
+  (f : DosenPetric.Reduced.Gentzen.G P Δ U) (g : DosenPetric.Reduced.Gentzen.G P Λ F) :
+  DosenPetric.Reduced.Gentzen.BlockedR (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newR p q f g)
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.old_rankL.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K U L : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (q : DosenPetric.Reduced.Gentzen.ContractionSelection C U L) {Δ Λ : List (DosenPetric.NormalForm P)}
+  (f : DosenPetric.Reduced.Gentzen.G P U Δ) (g : DosenPetric.Reduced.Gentzen.G P F Λ) :
+  (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.oldL p q f g).rho DosenPetric.Reduced.Gentzen.SequentSide.left
+      (p.chain q).keep =
+    1 + (List.map (fun a => g.rho DosenPetric.Reduced.Gentzen.SequentSide.left a) p.selected).sum +
+          (List.map (fun a => f.rho DosenPetric.Reduced.Gentzen.SequentSide.left a) q.selected).sum +
+        p.arity +
+      q.arity
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.new_rankL.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K U L : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (q : DosenPetric.Reduced.Gentzen.ContractionSelection C U L) {Δ Λ : List (DosenPetric.NormalForm P)}
+  (f : DosenPetric.Reduced.Gentzen.G P U Δ) (g : DosenPetric.Reduced.Gentzen.G P F Λ) :
+  (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newL p q f g).rho DosenPetric.Reduced.Gentzen.SequentSide.left
+      (p.chain q).keep =
+    3 + (p.performL Λ g).rho DosenPetric.Reduced.Gentzen.SequentSide.left p.keep +
+      (q.performL Δ f).rho DosenPetric.Reduced.Gentzen.SequentSide.left q.keep
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.endpoint_leL.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K U L : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (q : DosenPetric.Reduced.Gentzen.ContractionSelection C U L) {Δ Λ : List (DosenPetric.NormalForm P)}
+  (f : DosenPetric.Reduced.Gentzen.G P U Δ) (g : DosenPetric.Reduced.Gentzen.G P F Λ) :
+  (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newL p q f g).rho DosenPetric.Reduced.Gentzen.SequentSide.left
+      (p.chain q).keep ≤
+    (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.oldL p q f g).rho DosenPetric.Reduced.Gentzen.SequentSide.left
+      (p.chain q).keep
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.old_rankR.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K U L : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (q : DosenPetric.Reduced.Gentzen.ContractionSelection C U L) {Δ Λ : List (DosenPetric.NormalForm P)}
+  (f : DosenPetric.Reduced.Gentzen.G P Δ U) (g : DosenPetric.Reduced.Gentzen.G P Λ F) :
+  (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.oldR p q f g).rho DosenPetric.Reduced.Gentzen.SequentSide.right
+      (p.chain q).keep =
+    1 + (List.map (fun a => g.rho DosenPetric.Reduced.Gentzen.SequentSide.right a) p.selected).sum +
+          (List.map (fun a => f.rho DosenPetric.Reduced.Gentzen.SequentSide.right a) q.selected).sum +
+        p.arity +
+      q.arity
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.new_rankR.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K U L : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (q : DosenPetric.Reduced.Gentzen.ContractionSelection C U L) {Δ Λ : List (DosenPetric.NormalForm P)}
+  (f : DosenPetric.Reduced.Gentzen.G P Δ U) (g : DosenPetric.Reduced.Gentzen.G P Λ F) :
+  (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newR p q f g).rho DosenPetric.Reduced.Gentzen.SequentSide.right
+      (p.chain q).keep =
+    3 + (p.performR Λ g).rho DosenPetric.Reduced.Gentzen.SequentSide.right p.keep +
+      (q.performR Δ f).rho DosenPetric.Reduced.Gentzen.SequentSide.right q.keep
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.endpoint_leR.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K U L : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (q : DosenPetric.Reduced.Gentzen.ContractionSelection C U L) {Δ Λ : List (DosenPetric.NormalForm P)}
+  (f : DosenPetric.Reduced.Gentzen.G P Δ U) (g : DosenPetric.Reduced.Gentzen.G P Λ F) :
+  (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newR p q f g).rho DosenPetric.Reduced.Gentzen.SequentSide.right
+      (p.chain q).keep ≤
+    (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.oldR p q f g).rho DosenPetric.Reduced.Gentzen.SequentSide.right
+      (p.chain q).keep
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.addressed_left.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K U L : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (q : DosenPetric.Reduced.Gentzen.ContractionSelection C U L) {Δ Λ Γ Ξ Θ Ω : List (DosenPetric.NormalForm P)}
+  (f : DosenPetric.Reduced.Gentzen.G P U Δ) (g : DosenPetric.Reduced.Gentzen.G P F Λ)
+  {cutLeft : DosenPetric.Reduced.Gentzen.G P Γ (C :: Ξ)} {root : DosenPetric.Reduced.Gentzen.G P (C :: Θ) Ω}
+  (a : DosenPetric.Reduced.Gentzen.ProofAddress root (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.oldL p q f g))
+  (hr : DosenPetric.Reduced.Gentzen.ReducibleL cutLeft root a (p.chain q).keep) :
+  (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newL p q f g).CutFree ∧
+    DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newL p q f g).denote =
+        DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.oldL p q f g).denote ∧
+      DosenPetric.Reduced.ofTerm (a.replace (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newL p q f g)).denote =
+          DosenPetric.Reduced.ofTerm root.denote ∧
+        ∀ {I J : List (DosenPetric.NormalForm P)} {v : DosenPetric.Reduced.Gentzen.G P I J}
+          (b : DosenPetric.Reduced.Gentzen.ProofAddress (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newL p q f g) v)
+          (y : DosenPetric.Reduced.Gentzen.At I C),
+          DosenPetric.Reduced.Gentzen.ReducibleL cutLeft
+              (a.replace (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newL p q f g))
+              ((a.inserted (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newL p q f g)).append b) y →
+            v.rho DosenPetric.Reduced.Gentzen.SequentSide.left y <
+              (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.oldL p q f g).rho
+                DosenPetric.Reduced.Gentzen.SequentSide.left (p.chain q).keep
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.addressed_right.{u} {P : Type u} {C : DosenPetric.NormalForm P}
+  {F K U L : List (DosenPetric.NormalForm P)} (p : DosenPetric.Reduced.Gentzen.ContractionSelection C F K)
+  (q : DosenPetric.Reduced.Gentzen.ContractionSelection C U L) {Δ Λ Γ Ξ Θ Ω : List (DosenPetric.NormalForm P)}
+  (f : DosenPetric.Reduced.Gentzen.G P Δ U) (g : DosenPetric.Reduced.Gentzen.G P Λ F)
+  {root : DosenPetric.Reduced.Gentzen.G P Γ (C :: Ξ)} {cutRight : DosenPetric.Reduced.Gentzen.G P (C :: Θ) Ω}
+  (a : DosenPetric.Reduced.Gentzen.ProofAddress root (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.oldR p q f g))
+  (hr : DosenPetric.Reduced.Gentzen.ReducibleR root cutRight a (p.chain q).keep) :
+  (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newR p q f g).CutFree ∧
+    DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newR p q f g).denote =
+        DosenPetric.Reduced.ofTerm (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.oldR p q f g).denote ∧
+      DosenPetric.Reduced.ofTerm (a.replace (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newR p q f g)).denote =
+          DosenPetric.Reduced.ofTerm root.denote ∧
+        ∀ {I J : List (DosenPetric.NormalForm P)} {v : DosenPetric.Reduced.Gentzen.G P I J}
+          (b : DosenPetric.Reduced.Gentzen.ProofAddress (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newR p q f g) v)
+          (y : DosenPetric.Reduced.Gentzen.At J C),
+          DosenPetric.Reduced.Gentzen.ReducibleR
+              (a.replace (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newR p q f g)) cutRight
+              ((a.inserted (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newR p q f g)).append b) y →
+            v.rho DosenPetric.Reduced.Gentzen.SequentSide.right y <
+              (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.oldR p q f g).rho
+                DosenPetric.Reduced.Gentzen.SequentSide.right (p.chain q).keep
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.inhabited_left :
+  DosenPetric.Reduced.ofTerm
+      (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newL
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.two DosenPetric.NormalForm.top)
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.three DosenPetric.NormalForm.top)
+          DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.fl
+          DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.gl).denote =
+    DosenPetric.Reduced.ofTerm
+      (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.oldL
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.two DosenPetric.NormalForm.top)
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.three DosenPetric.NormalForm.top)
+          DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.fl
+          DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.gl).denote
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.inhabited_right :
+  DosenPetric.Reduced.ofTerm
+      (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newR
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.two DosenPetric.NormalForm.top)
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.three DosenPetric.NormalForm.top)
+          DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.fr
+          DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.gr).denote =
+    DosenPetric.Reduced.ofTerm
+      (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.oldR
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.two DosenPetric.NormalForm.top)
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.three DosenPetric.NormalForm.top)
+          DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.fr
+          DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.gr).denote
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.inhabited_cutFree :
+  (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newL
+        (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.two DosenPetric.NormalForm.top)
+        (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.three DosenPetric.NormalForm.top)
+        DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.fl
+        DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.gl).CutFree ∧
+    (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newR
+        (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.two DosenPetric.NormalForm.top)
+        (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.three DosenPetric.NormalForm.top)
+        DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.fr
+        DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.gr).CutFree
+DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.both_signs.{u} {P : Type u} (p : P) :
+  (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newL
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.two
+            (DosenPetric.NormalForm.lit (DosenPetric.Literal.pos p)))
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.three
+            (DosenPetric.NormalForm.lit (DosenPetric.Literal.pos p)))
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.cutThree (DosenPetric.Literal.pos p))
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.cutTwo (DosenPetric.Literal.pos p))).cutCount =
+      2 ∧
+    (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.newL
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.two
+            (DosenPetric.NormalForm.lit (DosenPetric.Literal.neg p)))
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.three
+            (DosenPetric.NormalForm.lit (DosenPetric.Literal.neg p)))
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.cutThree (DosenPetric.Literal.neg p))
+          (DosenPetric.Reduced.Gentzen.W5.MixedPremiseMix.Examples.cutTwo (DosenPetric.Literal.neg p))).cutCount =
+      2

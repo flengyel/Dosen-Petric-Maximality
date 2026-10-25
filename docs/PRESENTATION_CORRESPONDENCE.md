@@ -1,5 +1,29 @@
 # Published presentation correspondence
 
+## Current Reducibility follow-up (25 October 2026)
+
+**Both full Reducibility Lemmata remain open.** From the unchanged ReducibleL/R
+hypotheses, cut-entry uniqueness now compiles via all fourteen actual blocked
+premise frames and a typed first-separation argument. Arbitrary-address left W4
+no longer requires InjectiveAscend. The repaired right W4, including two copies,
+now proves equality, cut-freeness and the complete eligible-descendant bound.
+The old terminal right candidate has a compiled reducible-root rank-tie regression.
+Mixed-premise mix W5 now has both addressed descendant theorems for constructed
+chained selections, including singleton branches and independent multiplicities.
+Native binary logical context-route comparisons are proved; logical W5/W6
+producers, arbitrary selection/profile dispatch and remaining macro/primitive
+comparisons are not. Blocked-w, cut elimination and coherence remain open.
+
+See [the exact follow-up report](GENTZEN_REDUCIBILITY_FOLLOWUP_REPORT.md),
+[author-side hostile review](reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_HOSTILE.md),
+and [writing review](reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_WRITING.md).
+The governing task is [the supplied continuation](CODEX_AFTER_05C6BC8_REDUCIBILITY.txt),
+with the unchanged full targets in CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt.
+This is verified progress, not completion of that task. Final sources:
+**249 Lean files / 8,919 audited declarations**. Earlier checkpoint
+sections below retain their historical scope and are superseded where necessary.
+
+
 This map concerns Došen and Petrić, *Proof-Theoretical Coherence*, September
 2007 revision, [author-hosted PDF](https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf).
 The downloaded PDF has SHA-256
@@ -9,26 +33,26 @@ page index is the printed number plus 11 (the one-based PDF page number is the p
 The source PDF and extracted text are local consultation evidence, not
 redistributed as repository source.
 
-## Current Reducibility correspondence: verified partial checkpoint
+## Current Reducibility correspondence: verified partial follow-up
 
-The governing endpoint is now [both full Reducibility Lemmata](CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt),
-not completion of a selected-position profile or another isolated local family.
-See [the reconciled report](GENTZEN_REDUCIBILITY_REPORT.md) and its author-side
-[hostile](reviews/GENTZEN_REDUCIBILITY_HOSTILE.md) and [writing](reviews/GENTZEN_REDUCIBILITY_WRITING.md) reviews.
+The governing endpoint remains both full Reducibility Lemmata in
+[the active instruction](CODEX_AFTER_05C6BC8_REDUCIBILITY.txt).
+See [the follow-up report](GENTZEN_REDUCIBILITY_FOLLOWUP_REPORT.md) and
+[hostile](reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_HOSTILE.md)/[writing](reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_WRITING.md) author-side reviews.
 
-| Source §11.2 (printed pages) | New proved bridge | Exact limitation |
+| Source §11.2 (printed pages) | Proved bridge | Exact limitation |
 | --- | --- | --- |
-| pp.248–249 clusters and rank | Address ascent iff finite-cluster membership; replacement factors through a typed intermediate position; nonempty successful paths strictly lower rho | No rank invariance under categorical equality. |
-| p.250 seven blocked patterns; p.251 W4 | Existing terminal-left W4 reduct is the actual `(w∧1)` blocked pattern; all eligible descendant bounds at root/two copies and, conditionally, under injective containing ascent | General ReducibleL-to-entry-uniqueness is open. |
-| p.252 right analogue | Separately typed sufficient boundary theorem; current terminal-right W4 reduct is proved unblocked because its disjR prefix is nonempty | Head/terminal/retention comparison and full eligible-descendant bounds remain open. |
-| p.250 `(w∨3)` / p.252 W6 | Native freshBoth contraction proved unblocked despite selectedBoth | Macro profile correspondence is not certified dispatch. |
-| p.250 `(wγ1)` / p.252 W5 | Singleton/singleton mix contraction is proved blocked | It cannot serve as an example of an unblocked reducible mixed input. |
-| p.250 Reducibility Lemma; p.252 right analogue; p.253 Blocked-w | Sufficient transport/rank criteria and scoped left W4 instance only | Both full lemmata, remaining case construction and multiset induction stay open. |
+| 248–249 clusters and rank; 250 blocked ancestors | Typed first separation, fourteen actual premise frames, ReducibleL/R.entry_unique | Uniqueness is over the distinguished cut entry, not global address injectivity. |
+| 251 W4 | Arbitrary-address left W4 has its full eligible-descendant bound from ReducibleL alone | Terminal selected-conjunction family; no exhaustive producer dispatch. |
+| 252 right analogue | Explicit two-copy candidate-failure test; repaired head W4 has equality, stage ranks and full addressed descendant bound | Repaired root is L+5 and need not decrease. The proved path argument bounds eligible contractions by L. |
+| 252 mixed mix W5 | Arbitrary nonempty p/q chained selections give both Reduced equalities, actual gammaMix blockedness, independent rank sums and addressed descendant bounds | Singleton branches included. Extracting every original profile into these actual input shapes remains separate. |
+| 252 logical W5/W6 | Native conjunction-right antecedent-route and disjunction-left succedent-route comparisons | Full logical producers, selected principals and source-macro ancestry/rank transports remain open. |
+| 250 (w∨3), 252 W6 | Native freshBoth remains a compiled unblocked example despite its selectedBoth profile | A profile is not blockedness or certified dispatch. |
+| 253 Blocked-w | Existing address/cluster/replacement transport and local descendant bounds | Both complete producers, outside-site transport and finite multiset induction remain open. |
 
-These source anchors do not supply a Lean coherence proof. The conditional W4
-theorem's InjectiveAscend hypothesis is explicit and is not part of the desired
-full target. Reconciliation preserved all source variants; no blocked predicate,
-rank or presentation equation was changed. Earlier records below are historical.
+No source anchor supplies an assumed coherence proof. Generating equations,
+blockedness, reducibility and ranks are unchanged. The previous correspondence
+and access history remain available in the historical reports and Git history.
 
 ## Objects and arrow grammar
 

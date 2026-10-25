@@ -1,3 +1,33 @@
+# Reducibility follow-up — current validation
+
+Mathematical status: partial; the complete left/right Reducibility producers
+are not supplied. Verified sources: **249 Lean files / 8,919 audited
+project declarations**. The strict build audits every transitive project
+dependency; 47 new selected axiom prints and 47 public type queries supplement it.
+Permitted axioms: propext, Quot.sound, Classical.choice. All five expected
+negative controls reject with exit 1. Source grammar/equations/predicates/ranks,
+Init-only dependencies, toolchain and manuscript v4/v5 remain unchanged.
+
+| Check | Exit | Seconds |
+| --- | --- | --- |
+| strict | 0 | 12.514 |
+| audit-boundaries | 0 | 9.315 |
+| presentation-boundaries | 0 | 1.24 |
+| manuscript | 0 | 0.027 |
+| diff-check | 0 | 0.022 |
+| cached-diff-check | 0 | 0.008 |
+
+Exact commands, log digests and source inventory are retained under
+provenance/wsl-gentzen-reducibility-followup/. The public type query run also
+passed (exit 0, 1.489s). 65 failed exploratory
+builds are retained with diagnostics; they are not final successes.
+No independent kernels, Comparator, Palomar preflight/service verification,
+publication, or full manuscript review was performed. Local verification does
+not establish the missing full producers or coherence.
+
+Historical records below report earlier source states, not additional runs
+of this candidate. The former current labels are superseded by this section.
+
 # Reconciled Reducibility checkpoint — current local validation
 
 **Mathematical status: partial. Both full Reducibility Lemmata remain open.**

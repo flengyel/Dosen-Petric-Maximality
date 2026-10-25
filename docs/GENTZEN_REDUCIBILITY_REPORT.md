@@ -25,7 +25,8 @@ For arbitrary P, C, contexts and proofs
 `w : G P U V`, `a : ProofAddress g w`, `x : At U C`, the missing left theorem
 must obtain from `ReducibleL f g a x` a proof `h : G P U V` such that
 `h.CutFree`, `ofTerm h.denote = ofTerm w.denote`, and, for **every**
-`b : ProofAddress h v` and `y : At I C`,
+contexts `I J : List (NormalForm P)`, a proof `v : G P I J`,
+`b : ProofAddress h v`, and `y : At I C`,
 
 ```text
 ReducibleL f (a.replace h) ((a.inserted h).append b) y →

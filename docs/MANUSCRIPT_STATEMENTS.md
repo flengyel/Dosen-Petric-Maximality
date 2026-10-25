@@ -1,23 +1,27 @@
 # Manuscript v5: statements and formal scope
 
-## Current Reducibility boundary after source reconciliation
+## Current Reducibility follow-up (25 October 2026)
 
-The combined checkout is verified, but both full source-shaped Reducibility
-Lemmata remain unproved. Address/cluster membership and replacement transport,
-strict successful nonempty-path rank bounds, finite entry-frame calculus and
-two-sided sufficient descendant criteria compile. Terminal-left W4 is proved
-blocked. Its full post-replacement descendant quantifier is proved at a two-copy
-root and at arbitrary addressed occurrences **under InjectiveAscend**; the
-extra hypothesis has not been derived from ReducibleL. Terminal-right W4 is
-proved unblocked for the current pattern representation, so a typed head/order
-comparison is still required. Native selectedBoth and blocked singleton mix
-boundaries are compiled. See [the exact report](GENTZEN_REDUCIBILITY_REPORT.md).
+**Both full Reducibility Lemmata remain open.** From the unchanged ReducibleL/R
+hypotheses, cut-entry uniqueness now compiles via all fourteen actual blocked
+premise frames and a typed first-separation argument. Arbitrary-address left W4
+no longer requires InjectiveAscend. The repaired right W4, including two copies,
+now proves equality, cut-freeness and the complete eligible-descendant bound.
+The old terminal right candidate has a compiled reducible-root rank-tie regression.
+Mixed-premise mix W5 now has both addressed descendant theorems for constructed
+chained selections, including singleton branches and independent multiplicities.
+Native binary logical context-route comparisons are proved; logical W5/W6
+producers, arbitrary selection/profile dispatch and remaining macro/primitive
+comparisons are not. Blocked-w, cut elimination and coherence remain open.
 
-The governing target is [the full Reducibility instruction](CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt).
-General blocked-ancestor entry uniqueness, macro comparisons and remaining
-certified reducer cases are open. Mixed W5 remains subordinate. No change to
-the three milestones, coherence assumptions, mathematical manuscript or later
-Palomar status follows. Earlier local results below retain their proved scope.
+See [the exact follow-up report](GENTZEN_REDUCIBILITY_FOLLOWUP_REPORT.md),
+[author-side hostile review](reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_HOSTILE.md),
+and [writing review](reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_WRITING.md).
+The governing task is [the supplied continuation](CODEX_AFTER_05C6BC8_REDUCIBILITY.txt),
+with the unchanged full targets in CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt.
+This is verified progress, not completion of that task. Final sources:
+**249 Lean files / 8,919 audited declarations**. Earlier checkpoint
+sections below retain their historical scope and are superseded where necessary.
 
 Source: Florian Lengyel, *Maximality of the Došen–Petrić Boolean Category*,
 v5, 23 October 2026, in `manuscript/`. Its mathematical results and proofs are unchanged from v4. The current v5
@@ -81,7 +85,7 @@ interpretation of variables, not one fixed valuation.
 | W5 single-premise mix, selected g in G.mix f g | `W5.SinglePremiseMix.single_premise_left/right`; actual contraction/mix constructors, component extension/naturality, complete branch fibers and exact ranks | Arbitrary P,C,gs,Θ,n≥2 and existing f/g, including cuts. Exact outputs G P (K++Φ) (Δ++Ψ) / G P (Δ++Φ) (K++Ψ). Complete ordered selection from g, same-label f exclusion, retained/fixed/suffix fibers and unique originals. Old outer LC+n, new retained LC+1; exact n/n−1 losses. Fixed/opposite g ranks both 2+rho; f old 2+rho/new 1+rho on both sides, correcting the historical missing-node target. Counts/CutFree/Atomized/full relations preserved. The other placement is now proved below; mixed-premise W5 and general Reducibility/coherence open. |
 | W5 other single-premise mix, selected g in G.mix g f | `W5.OtherPremiseMix.other_premise_left/right`; derived prefix data/components, complete branch fibers and ranks | Arbitrary original P,C,gs,Θ,n≥2 and existing f/g including cuts. Exact outputs G P (Φ++K) (Ψ++Δ) / G P (Φ++Δ) (Ψ++K); raw gaps (Ξ++H)::hs derived from gs=H::hs. Complete shifted g selection; equal-label f exclusion, retained/fixed/prefix fibers and unique originals. Old outer LC+n, new retained LC+1; n/n−1 losses. Fixed/opposite g both 2+rho; f old 2+rho/new 1+rho on both sides. Counts/predicates/full relations preserved. Proof-occurrence replacement is now proved below; mixed-premise/binary W5–W6 and global elimination/coherence remain open. |
 | Proof-occurrence replacement and W5 integration toward G2 | `Premise.rebuild/inserted`, `ProofAddress.replace/inserted/append`, recovery/composition/congruence/preservation; `OtherPremiseMix.replace_denote/count/cutFree/atomizedL/R` | Arbitrary existing root, proof occurrence/address and replacement at the exact same sequent. Outer endpoints/siblings preserved; inserted address keeps its path; complete Reduced congruence and tagged relation consequence. Exact additive cutCount/proofSize balances; root/replacement CutFree or Atomized imply rebuilt predicate. Existing W5 duals lift at any address, with nested signed-cut/Empty examples. Blocked/Reducible encodings and finite profiles are now proved below; certified rewrite dispatch, tied-site ranks and global G2/G3 remain open. |
-| Blocked/reducible occurrences and finite selection classification | `BlockedL/R`, `ReducibleL/R`, `ProofAddress.ProperContains`, `PortOrigin`, `ContractionBlock.classificationL/R` and source-order macros | Seven actual source left patterns and separately typed canonical right encodings with explicit first-retention comparisons. Reducibility retains topmost-cut, cluster/address/position, unblocked and proper blocked-ancestor conditions. Every arity≥2 cut-free input has a unique seven-regime selected profile with complete per-position origin evidence; basis/cut excluded by proof. This is classification, not a reducer. Mixed-premise W5, other missing local cases, macro/tied-site ranks and global G2 remain open; see the finite ledger. |
+| Blocked/reducible occurrences and finite selection classification | `BlockedL/R`, `ReducibleL/R`, `ProofAddress.ProperContains`, `PortOrigin`, `ContractionBlock.classificationL/R` and source-order macros | Seven actual source left patterns and separately typed canonical right encodings with explicit first-retention comparisons. Reducibility retains topmost-cut, cluster/address/position, unblocked and proper blocked-ancestor conditions. Every arity≥2 cut-free input has a unique seven-regime selected profile with complete per-position origin evidence; basis/cut excluded by proof. This is classification, not a reducer. Constructed mixed-premise mix W5 now has both addressed descendant theorems. Full profile dispatch, logical W5/W6, remaining local cases, outside-site ranks and global G2 remain open; see the follow-up report. |
 | Normalization, §3 | `Presentation.normalization`; `NegationNormalization.forward_backward/backward_forward`, `forward_graph/backward_graph`, `transport_apply` | Actual source-quotient instance for every P, with signed-leaf normal forms, both inverse arrows, inverse tagged coordinates, literal/label/polarity correspondence, Empty cases, and relation transport. Recovery/injectivity reuse the existing theorems. No coherence or naturality premise. |
 | Global signed-label preservation, §3 | `Presentation.Term.relation_signedLabel`, `occurrence_signedLabel`, `occurrence_literal` | Proved directly for every raw term and quotient arrow, with no nonemptiness, decidable-equality or coherence hypothesis. Complete literal equality, letter/polarity consequences, opposite-sign exclusion and normalized transport compile. The unchanged `SignedLabelPreservation` definition still takes the separately unconstructed faithful interpretation; no instance is fabricated. |
 | `lem:isolation` | `Isolation.selector_edge`, `coselector_edge`, `isolate_edge`, `normalized_literal_context` | Normal-form witness equations and the normalized contextual consequence under faithful interpretation, normalization, and signed-label inputs. The full original-category witness formulation is not a separate declaration; no actual presentation is inferred. |

@@ -2,6 +2,7 @@ module
 
 public import DosenPetric.GentzenReducibilityBoundary
 public import DosenPetric.GentzenSelectedLogicalRanks
+public import DosenPetric.GentzenBlockedEntryFrames
 
 @[expose] public section
 set_option autoImplicit false
@@ -31,6 +32,27 @@ theorem new_blockedL : BlockedL (newL d hn Δ f) := by
   have h := BlockedL.conjunction d.A d.B (gaps d.gs) d.Θ Δ (innerL d hn Δ f)
   simpa only [newL,middleL,ContractionBlock.applyL,BlockedSource.left2,
     BlockedSource.conjLLast,G.reindex_trans] using h.reindex d.lastTarget rfl
+
+/-- Terminal-left W4 at an arbitrary actual proof occurrence. -/
+theorem addressed_left
+    {Γ Ξ Θ Λ : List (NormalForm P)} {cutLeft : G P Γ (d.C::Ξ)}
+    {root : G P (d.C::Θ) Λ}
+    (a : ProofAddress root (oldL d hn Δ f))
+    (hr : ReducibleL cutLeft root a d.x) :
+    (newL d hn Δ f).CutFree ∧
+    ofTerm (newL d hn Δ f).denote = ofTerm (oldL d hn Δ f).denote ∧
+    ofTerm (a.replace (newL d hn Δ f)).denote = ofTerm root.denote ∧
+    ∀ {I J : List (NormalForm P)} {v : G P I J}
+      (b : ProofAddress (newL d hn Δ f) v) (y : At I d.C),
+      ReducibleL cutLeft (a.replace (newL d hn Δ f))
+        ((a.inserted (newL d hn Δ f)).append b) y →
+      v.rho .left y < (oldL d hn Δ f).rho .left d.x := by
+  have hf : f.CutFree := (old_cutFreeL d hn Δ f).mp hr.cutFree
+  refine ⟨(new_cutFreeL d hn Δ f).mpr hf,denoteL d hn Δ f,
+    a.replace_denote _ (denoteL d hn Δ f),?_⟩
+  intro I J v b y hv
+  exact ReducibilityBoundary.descendants_left a d.x _ (new_blockedL d hn Δ f)
+    hr.entry_unique (endpoint_leL d hn Δ f) b y hv
 
 /-- The full descendant quantifier for this W4 replacement, under a separately
     proved injectivity condition on the containing address. This condition is

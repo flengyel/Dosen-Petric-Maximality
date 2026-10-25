@@ -1,23 +1,27 @@
 # Coverage and next proof obligations
 
-## Current Reducibility boundary after source reconciliation
+## Current Reducibility follow-up (25 October 2026)
 
-The combined checkout is verified, but both full source-shaped Reducibility
-Lemmata remain unproved. Address/cluster membership and replacement transport,
-strict successful nonempty-path rank bounds, finite entry-frame calculus and
-two-sided sufficient descendant criteria compile. Terminal-left W4 is proved
-blocked. Its full post-replacement descendant quantifier is proved at a two-copy
-root and at arbitrary addressed occurrences **under InjectiveAscend**; the
-extra hypothesis has not been derived from ReducibleL. Terminal-right W4 is
-proved unblocked for the current pattern representation, so a typed head/order
-comparison is still required. Native selectedBoth and blocked singleton mix
-boundaries are compiled. See [the exact report](GENTZEN_REDUCIBILITY_REPORT.md).
+**Both full Reducibility Lemmata remain open.** From the unchanged ReducibleL/R
+hypotheses, cut-entry uniqueness now compiles via all fourteen actual blocked
+premise frames and a typed first-separation argument. Arbitrary-address left W4
+no longer requires InjectiveAscend. The repaired right W4, including two copies,
+now proves equality, cut-freeness and the complete eligible-descendant bound.
+The old terminal right candidate has a compiled reducible-root rank-tie regression.
+Mixed-premise mix W5 now has both addressed descendant theorems for constructed
+chained selections, including singleton branches and independent multiplicities.
+Native binary logical context-route comparisons are proved; logical W5/W6
+producers, arbitrary selection/profile dispatch and remaining macro/primitive
+comparisons are not. Blocked-w, cut elimination and coherence remain open.
 
-The governing target is [the full Reducibility instruction](CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt).
-General blocked-ancestor entry uniqueness, macro comparisons and remaining
-certified reducer cases are open. Mixed W5 remains subordinate. No change to
-the three milestones, coherence assumptions, mathematical manuscript or later
-Palomar status follows. Earlier local results below retain their proved scope.
+See [the exact follow-up report](GENTZEN_REDUCIBILITY_FOLLOWUP_REPORT.md),
+[author-side hostile review](reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_HOSTILE.md),
+and [writing review](reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_WRITING.md).
+The governing task is [the supplied continuation](CODEX_AFTER_05C6BC8_REDUCIBILITY.txt),
+with the unchanged full targets in CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt.
+This is verified progress, not completion of that task. Final sources:
+**249 Lean files / 8,919 audited declarations**. Earlier checkpoint
+sections below retain their historical scope and are superseded where necessary.
 
 The conditional collapse, isolation, transport, and `relative_maximality` proofs
 are unchanged. The actual September 2007 arrow presentation now has typed

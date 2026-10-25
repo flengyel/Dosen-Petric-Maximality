@@ -1,0 +1,27 @@
+{
+  "checks": [
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_status": 0,
+      "seconds": 0.051,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_status": 0,
+      "seconds": 0.01,
+      "output": ""
+    }
+  ],
+  "unchanged_checked_sources": 249,
+  "utc": "2026-10-25T18:32:27.660232+00:00"
+}

@@ -1,5 +1,29 @@
 # Došen–Petrić maximality in Lean
 
+## Current Reducibility follow-up (25 October 2026)
+
+**Both full Reducibility Lemmata remain open.** From the unchanged ReducibleL/R
+hypotheses, cut-entry uniqueness now compiles via all fourteen actual blocked
+premise frames and a typed first-separation argument. Arbitrary-address left W4
+no longer requires InjectiveAscend. The repaired right W4, including two copies,
+now proves equality, cut-freeness and the complete eligible-descendant bound.
+The old terminal right candidate has a compiled reducible-root rank-tie regression.
+Mixed-premise mix W5 now has both addressed descendant theorems for constructed
+chained selections, including singleton branches and independent multiplicities.
+Native binary logical context-route comparisons are proved; logical W5/W6
+producers, arbitrary selection/profile dispatch and remaining macro/primitive
+comparisons are not. Blocked-w, cut elimination and coherence remain open.
+
+See [the exact follow-up report](docs/GENTZEN_REDUCIBILITY_FOLLOWUP_REPORT.md),
+[author-side hostile review](docs/reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_HOSTILE.md),
+and [writing review](docs/reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_WRITING.md).
+The governing task is [the supplied continuation](docs/CODEX_AFTER_05C6BC8_REDUCIBILITY.txt),
+with the unchanged full targets in CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt.
+This is verified progress, not completion of that task. Final sources:
+**249 Lean files / 8,919 audited declarations**. Earlier checkpoint
+sections below retain their historical scope and are superseded where necessary.
+
+
 Development for Florian Lengyel's *Maximality of the Došen–Petrić Boolean
 Category*, manuscript v5. The target is maximality of the free zero-identity
 Boolean category under substitution congruences.
@@ -82,14 +106,15 @@ Source blocked-pattern encodings and typed reducible occurrences now compile,
 with proper-ancestor laws and exhaustive selection profiles retaining actual
 predecessor/premise tags. All fourteen blocked patterns and all seven profile
 regimes have inhabited tests. The finite case ledger classifies profiles; it does not certify reduction.
-The current objective is both source-shaped Reducibility Lemmata. Reconciled
-address/cluster transport and sufficient descendant criteria now compile,
-with a two-copy root W4 instance and an addressed-left W4 result conditional
-on InjectiveAscend. The terminal-right W4 reduct is provably unblocked in the
-current head-pattern representation; its required order comparison remains open.
-Mixed W5 is a subordinate missing case, not the completion criterion.
-Complete rewrite dispatch, all affected tied-site ranks, Reducibility,
-Blocked-w, cut elimination, coherence and actual maximality remain open.
+The current objective remains both source-shaped Reducibility Lemmata.
+Distinguished cut-entry uniqueness is now proved from ReducibleL/R via all
+fourteen blocked premise frames. Both addressed W4 cases and both constructed
+mixed-premise mix W5 cases prove their complete eligible-descendant bounds,
+without caller-supplied injectivity. The old two-copy terminal right-W4
+candidate fails by a compiled rank-tie regression; use the constructed head
+repair. Complete native/source logical producers, selection dispatch,
+outside-site transport, Blocked-w, cut elimination, coherence and actual
+maximality remain open. The full task is not completed by these local results.
 See [validation](docs/VALIDATION.md) for the maintained audited declaration
 count, commands, evidence and limits of the local checks.
 
@@ -140,10 +165,10 @@ The [v5 literature review](docs/LITERATURE_REVIEW_V5_2026-10-23.md),
 [writing review](docs/reviews/V5_WRITING_REVIEW.md), and
 [manuscript validation](docs/V5_VALIDATION.md) accompany v5.
 The [earlier literature comparison](docs/LITERATURE_REVIEW.md) remains available.
-The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_REDUCIBILITY_HOSTILE.md)
-and [mathematical-writing review](docs/reviews/GENTZEN_REDUCIBILITY_WRITING.md)
-cover the actual transport/W4 subresults and the unproved full target; they are
-not independent certification. The [current partial Reducibility report](docs/GENTZEN_REDUCIBILITY_REPORT.md),
+The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_HOSTILE.md)
+and [mathematical-writing review](docs/reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_WRITING.md)
+cover entry uniqueness, addressed W4 and constructed mixed-W5 results and the unproved full target; they are
+not independent certification. The [current partial Reducibility report](docs/GENTZEN_REDUCIBILITY_FOLLOWUP_REPORT.md),
 [governing full-target instructions](docs/CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt),
 [current continuation](docs/CODEX_NEXT_SESSION.txt),
 [historical classification report and case ledger](docs/GENTZEN_BLOCKED_CLASSIFICATION_REPORT.md),

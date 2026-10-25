@@ -8,7 +8,8 @@ namespace DosenPetric.Reduced.Gentzen
 universe u
 variable {P : Type u}
 
-/-- A finite rule frame separates its entry positions before any contraction.
+/-- A finite rule frame separates its entry positions before any contraction
+    of C on side s.
     The terminal premises may themselves contain arbitrary contractions. -/
 inductive EntryFrame (s : SequentSide) (C : NormalForm P) :
     {Γ Δ : List (NormalForm P)} → (g : G P Γ Δ) → (Place s Γ Δ C → Prop) → Prop where

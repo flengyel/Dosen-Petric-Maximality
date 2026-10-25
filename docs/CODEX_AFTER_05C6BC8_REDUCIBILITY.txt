@@ -1,0 +1,99 @@
+Continue the Došen–Petrić formalization toward both full Reducibility Lemmata.
+
+Repository: /home/flengyel/src/Dosen-Petric-Maximality
+Reviewed checkpoint: 05c6bc8a86126fde494a9c9f2b42e693687b76d6
+Work on main, preserving newer work. This prompt replaces the active instructions in CODEX_NEXT_SESSION.txt; its superseded historical tasks are references, not competing objectives.
+
+Read AGENTS.md, docs/CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt, docs/GENTZEN_REDUCIBILITY_REPORT.md, its two reviews, the current statement/coverage maps, and the accompanying GENTZEN_05C6BC8_REVIEW_2026-10-24.md. Use the actual Lean definitions and the pinned September 2007 source, §11.2 pp.248–253. Do not repeat the prior full reconciliation unless new competing writes or unexplained changes are present. Preserve the stash, reconciliation archive, alternate drafts, manuscript v5/v4, other projects, and repository privacy.
+
+GOVERNING ENDPOINT
+
+Both full Reducibility Lemmata remain unproved. The task is to prove them, not merely an EntryFrame lemma, an injectivity specialization, a right-W4 comparison, or another classification result.
+
+For an arbitrary universe u, P : Type u, C : NormalForm P, and contexts Γ Δ Θ Λ U V : List (NormalForm P), take
+  f : G P Γ (C :: Δ)
+  g : G P (C :: Θ) Λ
+  w : G P U V.
+
+LEFT: given a : ProofAddress g w, x : At U C and hr : ReducibleL f g a x, construct h : G P U V and prove
+  h.CutFree,
+  ofTerm h.denote = ofTerm w.denote,
+  ∀ {I J : List (NormalForm P)} {v : G P I J},
+    ∀ (b : ProofAddress h v) (y : At I C),
+      ReducibleL f (a.replace h) ((a.inserted h).append b) y →
+        v.rho .left y < w.rho .left x.
+
+RIGHT: given a : ProofAddress f w, x : At V C and hr : ReducibleR f g a x, construct h : G P U V and prove
+  h.CutFree,
+  ofTerm h.denote = ofTerm w.denote,
+  ∀ {I J : List (NormalForm P)} {v : G P I J},
+    ∀ (b : ProofAddress h v) (y : At J C),
+      ReducibleR (a.replace h) g ((a.inserted h).append b) y →
+        v.rho .right y < w.rho .right x.
+
+Retain the existing replacement congruence to obtain equality after rebuilding the containing proof. No caller-supplied reduct, InjectiveAscend, NoncontractingPath, rank conclusion, coherence, or equality reflection may be an additional hypothesis of these final theorems. Do not change rho, blockedness, reducibility, or the quantifier to make a candidate pass.
+
+1. REMOVE THE EXTRA ENTRY HYPOTHESIS
+
+The needed statement is uniqueness only over the distinguished cut position:
+  ReducibleL f g a x →
+    ∀ z : At U C, a.ascend .left z = some (At.here C Θ) → z = x,
+and the separately typed right version.
+
+Treat this and the blocked-pattern frame statements as candidate sufficient lemmas. Prove them from the definitions; if a candidate fails, exhibit its exact failed statement and data, then pursue another proved criterion for the unchanged full target. A failed sufficient criterion is not a counterexample to Reducibility.
+
+The proposed structural proof is:
+- Prove the actual blocked-contraction premise frames for every left and right pattern, using selectedCopies and the explicit disjLLast exchanges.
+- Suppose two distinct local positions ascend to the cut position. Follow their ancestry from the cut premise toward w and isolate the first rule where their positions separate.
+- Apply Premise.equal_parent_or_lower to identify a contraction of C at that rule.
+- Prove it is tied to the cut and properly contains w, so ReducibleL/R makes it blocked.
+- Apply its premise frame and EntryFrame.unique_origins to the descendant contraction w, forcing the distinct selected origins equal.
+Supply the typed address factorization and selected-origin memberships; do not replace this argument by global injectivity.
+
+Immediately use the established criterion to remove the extra containing-address hypothesis from the terminal-left W4 result, preserving the full descendant quantifier. If entry uniqueness is proved, apply it to the existing boundary theorem. Do not stop after another generic frame calculus.
+
+2. RESOLVE RIGHT W4, INCLUDING THE TWO-COPY CASE
+
+The committed terminal_right_w4_unblocked is correct. The current terminal newR cannot simply be declared blocked.
+
+First compile a focused regression from the existing definitions:
+  P = Empty, A = B = bot, C = disj bot bot,
+  gs = [[],[]], Θ = [],
+  premise = W4.SelectedLogical.Examples.constRight
+              (W4.SelectedLogical.Examples.two .disj bot bot),
+  other cut premise = BlockedExamples.l [C].
+Check all endpoints and cut-freeness. Prove that oldR and newR at the cut-premise root are reducible, while their retained ranks are equal by endpoint_tieR. Thus this particular newR fails the strict target because its own root remains eligible. This is a source-derived test to formalize, not a claim that the full theorem is false.
+
+For the proposed repair, write n=gs.length, X=gaps gs, Y=Θ, I=X++C::Y. Starting from innerR with output I++[A,B]:
+- exchange to [A,B]++I;
+- introduce C at the head;
+- use the existing BlockedR.disjunction contraction with gaps [[],X] and tail Y;
+- exchange the retained C across Y to the original endpoint (X++Y)++[C].
+
+Prove its Reduced denotation equals oldR using existing categorical equations. Retain all actual exchange constructors and positions, including additional occurrences of C in X and Y.
+
+Do not impose root-rank nonincrease on this repaired construction. With L=rankInnerR, the two-explicit-exchange construction is expected to have retained ranks L+1, L+2, L+4, L+5 along the four added stages, whereas oldR has L+n+1. Verify these calculations in the implementation.
+
+Instead prove the needed path classification: the new middle contraction is blocked; the exchange and logical nodes are not contractions; the fresh C stops at its introduction; every remaining contraction tied to the cut lies at or below innerR along its retained-C ancestry. Bound its rank by L, and hence strictly below L+n+1. Integrate unique entry and arbitrary-address replacement into this proof.
+
+For n≥3, endpoint_decreasesR and ascend_rank_le may give a shorter proof using the existing terminal newR without blocked-root assumptions. Use this only if it simplifies the general implementation; do not create an unnecessary separate catalogue.
+
+3. COMPLETE THE GENERAL PRODUCERS
+
+Use the entry/path results and existing local commutations inside the full ReducibleL/R case analysis. Complete the remaining primitive/source-macro comparisons, selected extraction, mixed W5, and logical W5/W6 cases as branches of the general theorem.
+
+Keep freshBoth selectedBoth versus blockedness distinct. The singleton/singleton splitMix contraction is already blocked, so it is not an unresolved reducible witness. Bound every contraction reducible after replacement, including surviving descendants, not only newly introduced contractions.
+
+Continue through both full theorems. Once they are proved, establish the outside-occurrence and containing-blocked-contraction transport needed for the finite multiset induction and Blocked-w, then continue toward cut elimination within the governing task. Do not represent local rank bounds as global termination.
+
+4. VERIFY, REVIEW, COMMIT, AND DELIVER
+
+Keep the pinned Lean toolchain and existing dependency/presentation boundaries. No proof holes, custom mathematical axioms, native_decide, assumed coherence, relation reflection, or unwitnessed zeros. Run the required verification and negative controls on changed sources, one heavy job at a time; repeat checks only after relevant changes or failures.
+
+Apply the hostile-reviewer and mathematical-writing reviews to the actual theorems and correspondence. Keep process reports outside manuscripts. Correct the report's undeclared I,J,v binders and the EntryFrame comment to specify contractions of C on side s.
+
+Commit and push to main over SSH without force, preserving intervening changes. Do not create unnecessary branches or permission checkpoints. Record the exact theorem statements, remaining hypotheses, verification results, and checked/committed identity.
+
+Retain reports in docs/ and docs/reviews/ and deliver byte-verified copies to /mnt/c/Users/fleng/Downloads, preserving differing existing files with dated or commit-suffixed names. Include a concrete next instruction if the full target is still unproved.
+
+Do not call an auxiliary lemma a completed Reducibility milestone or stop merely because one local family compiles. If a precise mathematical obstruction prevents completion, record its statement, data, attempted proof, and effect on the unchanged full target; preserve all verified work. Never conceal noncompletion behind counts or verification statistics.
