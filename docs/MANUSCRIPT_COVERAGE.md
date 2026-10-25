@@ -1,5 +1,21 @@
 # Coverage and next proof obligations
 
+## Full-paper completion requirement
+
+[The full-paper instructions](CODEX_FULL_MANUSCRIPT_FORMALIZATION.md) now govern
+the overall target. Preserve milestones I–III below; completion of III proves
+actual-presentation maximality but does not by itself complete the whole paper.
+The additional required coverage includes the short q_A/e_A proof, the model
+corollary, derived negation and unnumbered claims, and all mathematical
+constructions, identities and examples in Appendices A and B. Each needs an
+exact checked counterpart in the statement map. A published dependency needed
+by a final theorem must be proved or instantiated from verified Lean results.
+
+No new Lean result is asserted by this instruction update. The current
+immediate branch remains logical W6 and general Reducibility dispatch in
+[the continuation](CODEX_NEXT_SESSION.txt). Earlier task lists below are
+historical wherever superseded by that continuation and the current checkpoint.
+
 ## Manuscript v6 (25 October 2026)
 
 The manuscript now proves contextual collapse using the published structural
@@ -26,7 +42,7 @@ comparisons are not. Blocked-w, cut elimination and coherence remain open.
 See [the exact follow-up report](GENTZEN_REDUCIBILITY_FOLLOWUP_REPORT.md),
 [author-side hostile review](reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_HOSTILE.md),
 and [writing review](reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_WRITING.md).
-The governing task is [the supplied continuation](CODEX_AFTER_05C6BC8_REDUCIBILITY.txt),
+The immediate proof task is [the supplied continuation](CODEX_AFTER_05C6BC8_REDUCIBILITY.txt),
 with the unchanged full targets in CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt.
 This is verified progress, not completion of that task. Final sources:
 **249 Lean files / 8,919 audited declarations**. Earlier checkpoint
@@ -132,7 +148,12 @@ definition is unchanged and can be adapted once that interpretation exists.
 | Substitution-schema / Appendix A laws | Open: identity/composition with endpoint identifications, profiles, finite ordinals, renaming, and block-coordinate correspondence. |
 | Actual maximality and every-interpretation corollary | Open; do not promote the conditional theorem. |
 
-## Next concrete proof task
+## Historical next-task entry (superseded)
+
+The following mixed-W5 instruction predates the current Reducibility follow-up.
+It is retained as history. Use `CODEX_NEXT_SESSION.txt` for the logical-W6 and
+general-dispatch continuation, and `CODEX_FULL_MANUSCRIPT_FORMALIZATION.md` for
+the overall completion requirement.
 
 Blocked-pattern encodings, typed reducible occurrences and finite selection
 classification are proved. The next demonstrated gap is mixed-premise W5:

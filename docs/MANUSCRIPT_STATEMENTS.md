@@ -1,5 +1,15 @@
 # Manuscript v6: statements and formal scope
 
+## Full-paper claim coverage
+
+[The full-paper instructions](CODEX_FULL_MANUSCRIPT_FORMALIZATION.md) require
+exact checked counterparts for the entire mathematical content of v6, including
+the short proof, the model corollary, unnumbered assertions and both appendices.
+Expand this map into a complete claim ledger as implementation proceeds, using
+the contract's section-by-section inventory. Record hypotheses and actual
+source-presentation instances; do not count a conditional or weaker theorem as
+the printed claim. The update changes the target, not the proof status below.
+
 ## Current Reducibility follow-up (25 October 2026)
 
 **Both full Reducibility Lemmata remain open.** From the unchanged ReducibleL/R
@@ -17,7 +27,7 @@ comparisons are not. Blocked-w, cut elimination and coherence remain open.
 See [the exact follow-up report](GENTZEN_REDUCIBILITY_FOLLOWUP_REPORT.md),
 [author-side hostile review](reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_HOSTILE.md),
 and [writing review](reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_WRITING.md).
-The governing task is [the supplied continuation](CODEX_AFTER_05C6BC8_REDUCIBILITY.txt),
+The immediate proof task is [the supplied continuation](CODEX_AFTER_05C6BC8_REDUCIBILITY.txt),
 with the unchanged full targets in CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt.
 This is verified progress, not completion of that task. Final sources:
 **249 Lean files / 8,919 audited declarations**. Earlier checkpoint
@@ -97,7 +107,8 @@ interpretation of variables, not one fixed valuation.
 | `lem:collapse` | `ContextualCollapse.total` | Same conclusion by different proofs: v6 §5 uses q_A and e_A; Lean retains the symmetric-fold argument described in §6. Both concern existing arrows and use no quotient faithfulness or cancellation of j_A. |
 | `thm:main` | `relative_maximality` is the conditional counterpart | The actual-presentation theorem remains open. The conditional theorem quantifies over every compatible congruence with explicit substitution closure. |
 | `cor:models` | Not implemented | All interpretations; use nonempty P to choose a variable and interpret it as an arbitrary object. |
-| Appendix A | Partial | Tagged block bijection is implemented. Profiles, ordinal encodings, renaming squares, and the bridge to the book's operation remain. |
+| Appendix A | Partial; full coverage required | Tagged block bijection is implemented. Complete profiles, gamma/chi maps and all squares, ordinal bijections and block locator, delta and the book-operation bridge, skeleton/profile reconstruction, the worked example, and renaming with shared variables; connect the specializations to Proposition 4.2. |
+| Appendix B | Exact diagram correspondence required | Reuse the proved first-injection, constructed-zero and zero-law equations to certify the three displayed typed path equalities in the actual presentation. Record exact declaration links; the existence of the diagrams alone is not a Lean proof. |
 
 The structural record fields are hypotheses of the conditional theorems.
 They are not substitute definitions of the free Boolean category. Adding fields

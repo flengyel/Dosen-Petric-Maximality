@@ -1,5 +1,19 @@
 # Došen–Petrić maximality in Lean
 
+## Full-paper formalization target
+
+The authorized target is the complete mathematical content of manuscript v6,
+including its short structural-isomorphism proof, maximality for the actual
+presentation with all dependencies proved, the model corollary, unnumbered
+mathematical claims, and both appendices. The existing symmetric-fold proof
+remains an alternative route. See the
+[full-paper instructions](docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md) and
+[immediate continuation](docs/CODEX_NEXT_SESSION.txt).
+
+This expands the completion requirement; it reports no additional Lean theorem.
+The conditional result and the open coherence and Reducibility obligations
+retain the status recorded below.
+
 ## Current Reducibility follow-up (25 October 2026)
 
 **Both full Reducibility Lemmata remain open.** From the unchanged ReducibleL/R
@@ -17,7 +31,7 @@ comparisons are not. Blocked-w, cut elimination and coherence remain open.
 See [the exact follow-up report](docs/GENTZEN_REDUCIBILITY_FOLLOWUP_REPORT.md),
 [author-side hostile review](docs/reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_HOSTILE.md),
 and [writing review](docs/reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_WRITING.md).
-The governing task is [the supplied continuation](docs/CODEX_AFTER_05C6BC8_REDUCIBILITY.txt),
+The immediate proof task is [the supplied continuation](docs/CODEX_AFTER_05C6BC8_REDUCIBILITY.txt),
 with the unchanged full targets in CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt.
 This is verified progress, not completion of that task. Final sources:
 **249 Lean files / 8,919 audited declarations**. Earlier checkpoint
@@ -25,8 +39,9 @@ sections below retain their historical scope and are superseded where necessary.
 
 
 Development for Florian Lengyel's *Maximality of the Došen–Petrić Boolean
-Category*, manuscript v6. The target is maximality of the free zero-identity
-Boolean category under substitution congruences.
+Category*, manuscript v6. Its central target is maximality of the free
+zero-identity Boolean category under substitution congruences; full-paper
+completion also requires the remaining mathematical claims and appendices.
 
 The WSL2 development uses pinned Lean 4.35.0 with an Init-only dependency
 closure. Conditional contextual collapse, signed-literal isolation,
@@ -106,7 +121,7 @@ Source blocked-pattern encodings and typed reducible occurrences now compile,
 with proper-ancestor laws and exhaustive selection profiles retaining actual
 predecessor/premise tags. All fourteen blocked patterns and all seven profile
 regimes have inhabited tests. The finite case ledger classifies profiles; it does not certify reduction.
-The current objective remains both source-shaped Reducibility Lemmata.
+The immediate objective remains both source-shaped Reducibility Lemmata.
 Distinguished cut-entry uniqueness is now proved from ReducibleL/R via all
 fourteen blocked premise frames. Both addressed W4 cases and both constructed
 mixed-premise mix W5 cases prove their complete eligible-descendant bounds,

@@ -4,10 +4,28 @@ Work in `/home/flengyel/src/Dosen-Petric-Maximality` under WSL2. Inspect Git
 status and the current task before editing. Preserve unrelated work and all
 other checkouts, including FailureOfComposition and Categorical_Rice_Shapiro.
 
-Read `docs/MANUSCRIPT_STATEMENTS.md`, `docs/MANUSCRIPT_COVERAGE.md`, and
+Read `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md`,
+`docs/CODEX_NEXT_SESSION.txt`, `docs/MANUSCRIPT_STATEMENTS.md`,
+`docs/MANUSCRIPT_COVERAGE.md`, and
 `docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v6;
 v4 and v5 remain preserved. Preserve the text, diagrams, and Appendix A references
 unless revision is requested.
+
+## Full-paper objective
+
+Formalize the complete mathematical content of manuscript v6: the short q_A/e_A
+proof, maximality for the actual equation-generated presentation with every
+required input proved, the model corollary, all unnumbered mathematical claims,
+and both appendices' constructions, equations, examples and diagram identities.
+Maintain exact claim-to-declaration correspondence. Preserve the existing
+symmetric-fold proof as an alternative route.
+
+`docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md` governs this overall endpoint;
+`docs/CODEX_NEXT_SESSION.txt` governs the immediate continuation toward full
+Reducibility and coherence. The existing three milestones remain distinct;
+even actual-presentation maximality alone does not certify the entire paper.
+Published dependencies used in the proof must be proved or supplied by verified,
+compatible Lean results, not left as uninstantiated fields or mathematical axioms.
 
 ## Mathematics
 
