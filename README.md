@@ -10,6 +10,12 @@ remains an alternative route. See the
 [full-paper instructions](docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md) and
 [immediate continuation](docs/CODEX_NEXT_SESSION.txt).
 
+The occurrence-substitution presentation separates outer positions, positions
+within substituted formulas, and placeholder labels through tagged blocks and
+commutative diagrams. Its exact correspondence with the published ordinal
+formula is part of the formalization target. Necessary corrections are tracked
+in the [correction record](docs/MANUSCRIPT_CORRECTIONS.md).
+
 This expands the completion requirement; it reports no additional Lean theorem.
 The conditional result and the open coherence and Reducibility obligations
 retain the status recorded below.

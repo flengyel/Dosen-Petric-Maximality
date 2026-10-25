@@ -27,6 +27,13 @@ even actual-presentation maximality alone does not certify the entire paper.
 Published dependencies used in the proof must be proved or supplied by verified,
 compatible Lean results, not left as uninstantiated fields or mathematical axioms.
 
+Any necessary mathematical, correspondence, citation or prose correction
+established during the work is part of the task. Maintain
+`docs/MANUSCRIPT_CORRECTIONS.md` and verify repairs before
+closing affected claims. Preserve the tagged-block and typed-diagram account
+of occurrence substitution and prove its exact ordinal-coordinate correspondence;
+it is required content, not optional formatting.
+
 ## Mathematics
 
 - Keep the three milestones in the coverage map separate. Do not represent a
