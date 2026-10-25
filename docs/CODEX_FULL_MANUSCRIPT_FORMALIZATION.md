@@ -71,6 +71,53 @@ an instantiated source-presentation theorem, and an open obligation. A source
 label cannot be marked complete merely because a weaker contextual consequence
 or an analogous result in another model has been proved.
 
+### Procedure for any necessary corrections
+
+If a necessary correction is established during this work, its repair is
+included in the task. This applies to manuscript claims, Lean statements and
+proofs, source correspondences, citations and exposition. Maintain
+`MANUSCRIPT_CORRECTIONS.md` outside the paper. For each confirmed defect record
+the exact source anchor, evidence, repair, affected declarations or diagrams,
+verification and resolution. Distinguish a confirmed error from an open proof
+obligation, a suspected issue and an optional editorial preference. The current
+record contains no outstanding confirmed manuscript error; this procedure does
+not assert that one has been found.
+
+Apply each justified correction consistently to the mathematical source and
+formalization. Rebuild and inspect the PDF whenever its source changes, and run
+the relevant Lean checks whenever proof sources change. Update the source
+anchor, correction record, claim ledger and continuation together. Do not
+silently weaken a statement, omit an appendix, change a definition, or remove
+a mathematical qualification to make completion easier. If a substantive repair
+cannot be proved, keep the affected claim open and state the exact obstruction.
+
+Carry each accepted correction through the entire affected scope in the same
+work pass: definitions, statements, proofs, repeated prose, diagrams, captions,
+source comments, formalization, claim maps and reports as applicable. Search for
+parallel instances and re-read the connected passages after editing. Preserve
+the decision and verified resolution in the external record and continuation;
+do not rely on the author's repeating it in later prompts. Record an accepted
+editorial preference as such, rather than misclassifying it as a mathematical
+error. A later steering message supplements the active task unless it explicitly
+replaces it.
+
+### Occurrence-substitution presentation
+
+The tagged-block presentation is a required expository contribution of the
+paper. Preserve its separation of outer occurrences, positions within inserted
+formulas, and placeholder labels, together with the typed maps, commutative
+diagrams and worked example. Its expository contribution is the explicit
+organization of these data and their relation to substitution.
+
+Prove exact correspondence with the finite-ordinal formula in
+Došen–Petrić, *Proof-Theoretical Coherence*, September 2007, §2.5, pp.45–46.
+In particular, verify gamma, both coordinate bijections, the transported delta,
+the block locator, empty blocks, repeated labels and noninjective renaming.
+An implementation of the ordinal formula alone does not complete this
+correspondence obligation. Keep the mathematical account self-contained and
+describe the maps and their properties directly; attribute the source formula
+and the occurrence-coordinate presentation precisely.
+
 The following list is mandatory coverage, not permission to omit a mathematical
 claim found during the complete manuscript read.
 
@@ -153,6 +200,12 @@ model universe general enough to express the printed corollary.
 
 ## Immediate continuation and dependency order
 
+For local Codex's concrete W6 implementation, also read
+`CODEX_W6_CONSTRUCTION.md` and its two linked reviews. The author assigns
+implementation/builds to local Codex and research, instructions and review to
+ChatGPT. The construction analysis adds no checked Lean result and does not
+change this full-paper endpoint.
+
 The current Lean baseline is `1e967bcb913a74ae590dde940f246acaddce1fba`; later
 manuscript commits have not completed any additional Lean obligation. Inspect
 the live repository before work and preserve newer changes; this is not an
@@ -186,6 +239,10 @@ unproved equality reflection may discharge a general Reducibility theorem.
 
 Full-paper completion requires all of the following:
 
+- Every confirmed correction affecting a claimed result or correspondence is
+  implemented and verified before that claim is marked complete. The correction
+  record identifies any unresolved issue; an unproved Lean obligation is not
+  labelled a manuscript error without separate mathematical evidence.
 - Every mathematical claim in the ledger has an exact checked counterpart or
   a proved derivation from named checked counterparts. Every conditional input
   needed by a final paper theorem has an actual source-presentation instance.

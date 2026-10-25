@@ -1,5 +1,15 @@
 # Došen–Petrić maximality in Lean
 
+Latest upstream integration (edb86cb): retain the author's division of work,
+correction procedure and tagged-substitution requirements. The new W6 analysis
+is an instruction at its historical source anchor. The two-premise terminal-
+source left family and all native binary producers compile here; the general
+one-premise terminal-source left displayed families/ranks in its §3 remain
+open as separately specified source constructions. Native one-premise repairs
+and source singleton blockedness exclusions do not discharge those exact
+source-rank statements. See the current continuation. No manuscript defect or
+completed full-paper proof is inferred.
+
 ## Current binary-input integration (25 October 2026)
 
 **Both full Reducibility Lemmata remain open.** Every actual contraction over
@@ -33,11 +43,25 @@ remains an alternative route. See the
 [full-paper instructions](docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md) and
 [immediate continuation](docs/CODEX_NEXT_SESSION.txt).
 
+The occurrence-substitution presentation separates outer positions, positions
+within substituted formulas, and placeholder labels through tagged blocks and
+commutative diagrams. Its exact correspondence with the published ordinal
+formula is part of the formalization target. Necessary corrections are tracked
+in the [correction record](docs/MANUSCRIPT_CORRECTIONS.md).
+
 This expands the completion requirement; it reports no additional Lean theorem.
 The conditional result and the open coherence and Reducibility obligations
 retain the status recorded below.
 
 ## Historical follow-up at 1e967bc (superseded above)
+
+The [concrete W6 instruction for local Codex](docs/CODEX_W6_CONSTRUCTION.md)
+specifies six selected-principal constructions, separate left-macro and
+right-native rank calculations, and the complete addressed proof targets.
+Its [hostile audit](docs/reviews/W6_CONSTRUCTION_HOSTILE.md) and
+[writing review](docs/reviews/W6_CONSTRUCTION_WRITING.md) concern the
+construction analysis. Implementation and checking remain with local Codex;
+this update adds no Lean theorem.
 
 **Both full Reducibility Lemmata remain open.** From the unchanged ReducibleL/R
 hypotheses, cut-entry uniqueness now compiles via all fourteen actual blocked

@@ -1,5 +1,15 @@
 # Author-side hostile review — binary-input Reducibility integration
 
+Latest upstream integration (edb86cb): retain the author's division of work,
+correction procedure and tagged-substitution requirements. The new W6 analysis
+is an instruction at its historical source anchor. The two-premise terminal-
+source left family and all native binary producers compile here; the general
+one-premise terminal-source left displayed families/ranks in its §3 remain
+open as separately specified source constructions. Native one-premise repairs
+and source singleton blockedness exclusions do not discharge those exact
+source-rank statements. See the current continuation. No manuscript defect or
+completed full-paper proof is inferred.
+
 Upstream integration: accepted commits 0af6a0e, 810dcdb and e4f2f0b after
 the checked proof commit f4bc6ff. They add manuscript v6 and the full-paper
 contract, with no Lean-source changes. The current manuscript is v6; upstream
@@ -16,7 +26,7 @@ reproducibility. The manuscript is unchanged and is not being refereed here.
 ## (A) Kill-shots / hard blockers
 
 **The requested complete Reducibility result is still unproved.** Anchor:
-`docs/GENTZEN_REDUCIBILITY_INTEGRATION_REPORT.md:241` and `DosenPetric/GentzenReductionStatements.lean:13`. The first states that both full targets remain open;
+`docs/GENTZEN_REDUCIBILITY_INTEGRATION_REPORT.md:251` and `DosenPetric/GentzenReductionStatements.lean:13`. The first states that both full targets remain open;
 the latter defines the target quantifier but supplies no witness. The actual
 assembled producer at `DosenPetric/GentzenBinaryInputReducers.lean:54` (and `DosenPetric/GentzenBinaryInputReducers.lean:72`) retains `t.ruleKind.Binary`.
 Failure mode: **unproved** for completion of the governing task; severity:

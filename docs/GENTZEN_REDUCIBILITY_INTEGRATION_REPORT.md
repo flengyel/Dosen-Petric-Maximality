@@ -1,5 +1,15 @@
 # Binary-input Reducibility integration — 25 October 2026
 
+Latest upstream integration (edb86cb): retain the author's division of work,
+correction procedure and tagged-substitution requirements. The new W6 analysis
+is an instruction at its historical source anchor. The two-premise terminal-
+source left family and all native binary producers compile here; the general
+one-premise terminal-source left displayed families/ranks in its §3 remain
+open as separately specified source constructions. Native one-premise repairs
+and source singleton blockedness exclusions do not discharge those exact
+source-rank statements. See the current continuation. No manuscript defect or
+completed full-paper proof is inferred.
+
 Upstream integration: accepted commits 0af6a0e, 810dcdb and e4f2f0b after
 the checked proof commit f4bc6ff. They add manuscript v6 and the full-paper
 contract, with no Lean-source changes. The current manuscript is v6; upstream
@@ -243,7 +253,11 @@ after commit; the final response supplies the resulting commit and live refs.
 The unchanged full targets are `∀ w x, ReducesL f g w x` and its separately
 typed right counterpart. They remain unproved. The binary theorem's **Binary**
 premise is a scope restriction; it has not been silently removed to claim the
-full lemma. The next exact missing branch is arbitrary same-side exchange:
+full lemma. The current continuation first requests the two separately specified general
+one-premise terminal-source left W6 families in CODEX_W6_CONSTRUCTION.md §3.
+Their exact old/new ranks are S+3k+3 and S+δ(k)+6 for k≥1; the generic native
+one-premise repairs do not certify those terminal-source rank equations.
+A further exact missing dispatch branch is arbitrary same-side exchange:
 
 ```lean
 -- Proposed statements only; no such axiom or theorem is installed.

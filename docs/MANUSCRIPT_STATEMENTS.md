@@ -1,5 +1,15 @@
 # Manuscript v6: statements and formal scope
 
+Latest upstream integration (edb86cb): retain the author's division of work,
+correction procedure and tagged-substitution requirements. The new W6 analysis
+is an instruction at its historical source anchor. The two-premise terminal-
+source left family and all native binary producers compile here; the general
+one-premise terminal-source left displayed families/ranks in its §3 remain
+open as separately specified source constructions. Native one-premise repairs
+and source singleton blockedness exclusions do not discharge those exact
+source-rank statements. See the current continuation. No manuscript defect or
+completed full-paper proof is inferred.
+
 ## Full-paper claim coverage
 
 [The full-paper instructions](CODEX_FULL_MANUSCRIPT_FORMALIZATION.md) require
@@ -33,6 +43,14 @@ The governing instruction is [CODEX_AFTER_1E967BC_REDUCIBILITY.txt](CODEX_AFTER_
 This checked integration does **not** complete that instruction's final target.
 
 ## Historical follow-up at 1e967bc (superseded above)
+
+The [concrete W6 instruction](CODEX_W6_CONSTRUCTION.md) now specifies six
+left/right selected-principal constructions, their rank targets and complete
+addressed conclusions. This is a construction analysis for local Codex;
+implementation and verification remain open. See its
+[hostile audit](reviews/W6_CONSTRUCTION_HOSTILE.md) and
+[writing review](reviews/W6_CONSTRUCTION_WRITING.md). No proof status below
+is advanced by this instruction update.
 
 **Both full Reducibility Lemmata remain open.** From the unchanged ReducibleL/R
 hypotheses, cut-entry uniqueness now compiles via all fourteen actual blocked

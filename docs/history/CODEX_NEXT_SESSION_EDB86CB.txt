@@ -1,0 +1,290 @@
+CONTINUE THE DOSEN–PETRIC FULL-PAPER FORMALIZATION
+
+ROLE AND CONCRETE W6 FOLLOW-UP — 25 OCTOBER 2026
+
+Local WSL Codex implements and builds the Lean source. ChatGPT supplies
+instructions, mathematical/literature assistance, review of Codex's work,
+manuscript checking and arXiv/Palomar preparation. The author explicitly said
+that a cloud source build is unnecessary; retain the local verification duties.
+
+Read docs/CODEX_W6_CONSTRUCTION.md and its reviews
+docs/reviews/W6_CONSTRUCTION_HOSTILE.md and W6_CONSTRUCTION_WRITING.md.
+They give six concrete W6 families, their actual endpoint/blocked patterns,
+the missing categorical naturality directions, separate macro/native rank
+calculations and the use of the existing complete descendant-bound theorems.
+These are source-checked construction instructions, not new Lean results.
+The source anchor is a17ec1b0b44c9fe7f5061bb35c2edfd1ded9ef90; preserve later work.
+The full-paper endpoint and every settled requirement below remain in force.
+
+This prompt is self-contained task context for a new session. Continue the work,
+not merely a plan or another status summary. It supersedes earlier summaries of
+the overall endpoint while preserving the exact mathematical targets in the
+specialized Reducibility instructions. Current-source evidence controls if the
+repository has advanced since the checkpoints below.
+
+REPOSITORY, AUTHORIZATION AND FIRST ACTION
+
+Repository: flengyel/Dosen-Petric-Maximality, private, branch main.
+WSL checkout: /home/flengyel/src/Dosen-Petric-Maximality.
+At handoff preparation, remote main was
+76921f2860fef2e7854da229704cffb2df4a253d; the commit containing this updated
+prompt is its successor. Inspect the live branch and working tree, fetch origin,
+and preserve any newer work. These hashes are checkpoints, not reset targets.
+
+Commit and push verified changes to main without force under the existing
+authorization. Preserve the stash, reconciliation archive, historical records,
+other checkouts, manuscript v4/v5/v6 and repository privacy. Do not ask again for
+routine authorization already given. Do not publish, contact authors, select a
+license, change visibility or submit to Palomar/arXiv without authorization.
+
+Read these repository files before editing:
+  AGENTS.md
+  docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md
+  docs/MANUSCRIPT_STATEMENTS.md
+  docs/MANUSCRIPT_COVERAGE.md
+  docs/MANUSCRIPT_CORRECTIONS.md
+  docs/PRESENTATION_CORRESPONDENCE.md
+  docs/CODEX_AFTER_05C6BC8_REDUCIBILITY.txt
+  docs/CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt
+  docs/GENTZEN_REDUCIBILITY_FOLLOWUP_REPORT.md
+  docs/reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_HOSTILE.md
+  docs/reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_WRITING.md
+
+The full-paper contract governs the endpoint; the two specialized prompts
+govern the exact Reducibility targets. Older references to a governing task do
+not shrink the scope. The mixed-W5 task at the bottom of the coverage map is
+explicitly historical. Do not restart it in place of logical W6 and dispatch.
+
+ESTABLISHED STATE
+
+Last verified Lean progress:
+1e967bcb913a74ae590dde940f246acaddce1fba.
+Historical verification: 249 Lean files, 8,919 audited declarations, strict
+build, both boundary scripts, five expected negative-control rejections, and
+source/commit identity checks. These are results for that immutable source,
+not verification of future changes. Later manuscript/instruction commits up
+through 76921f2860fe did not change Lean files.
+
+Lean proves conditional relative_maximality with explicit structural,
+faithful-occurrence, normalization, signed-label, substitution and double-
+negation inputs. The actual equation-generated presentation has substantial
+constructed syntax and instances, but occurrence faithfulness and its complete
+instantiation of the theorem remain open. General Reducibility, Blocked-w,
+cut elimination, Boolean Coherence and unconditional actual-presentation
+maximality remain unproved. Do not describe this as a completed Lean proof of
+the paper or of its actual-presentation theorem.
+
+Current manuscript: Maximality of the Došen–Petrić Boolean Category, v6,
+dated 25 October 2026. Source and PDF are in manuscript/ with basename
+Maximality_of_the_Dosen_Petric_Boolean_Category_v6.
+Manuscript commit: 810dcdbccc76a4307028773c561f36b910b5170c.
+TeX SHA-256:
+2c30fd10cb81f5d8246dabdc7f343d6d9adeac91358d84273d2799ab514972b0
+Repository PDF SHA-256:
+3385c2c2a34482d62de2182e84f2a9c393649e7c9256eadbbd8f8346ada7f0a5
+The final 12-page PDF compiled without warnings and received rendered-page
+checks. Appendices A/B and the author-approved disclosure were preserved from
+v5. The later full-paper and correction-instruction updates did not change it.
+
+Read the complete manuscript before making whole-paper judgments. Relevant
+completed reviews are docs/reviews/V6_HOSTILE_REVIEW.md, V6_WRITING_REVIEW.md,
+V6_LEAN_SCOPE.md, OCCURRENCE_SUBSTITUTION_FOLLOWUP.md, docs/V6_VALIDATION.md,
+and docs/DOSEN_PETRIC_MAXIMALITY_NOVELTY_REVIEW_2026-10-25.md.
+The notation paper cited as Notation, version 8, §9, is a supporting source;
+it is not a second whole-paper formalization target.
+
+SETTLED MATHEMATICAL AND EDITORIAL DECISIONS
+
+1. The short proof IS in v6 §5, pp.6–7. Write j_A for the first injection
+   A → A ∨ top. Lemma 5.1 identifies the specific
+   q_A = [j_A ∘ π₁^(A,bot), ι₂^(A,top)]
+       : (A ∧ bot) ∨ top → A ∨ top
+   and e_A = 1_A ∧ j_A : A ∧ A → A ∧ (A ∨ top)
+   as isomorphisms, using published structure and coherence in the original
+   category, followed by substitution. Lemma 5.2 proves terminality of
+   A ∨ top in the quotient, invertibility of π₁ : A ∧ A → A, equality of the
+   projections and totality. It replaces the longer collapse calculation.
+   Sections 3–4 still supply occurrence isolation and substitution.
+
+2. Formalize this short proof. Retain the earlier symmetric-fold proof, which
+   the current Lean development uses and v6 §6 describes, as an alternative.
+   A faithful occurrence functor does not reflect isomorphisms merely because
+   their graphs are bijections: identify the specified maps with proved
+   isomorphisms or prove their inverse equations directly.
+
+3. The claim that prior literature "subsumes the work" was withdrawn. Earlier
+   isomorphisms yield a short collapse proof; no earlier explicit statement of
+   the exact maximality theorem was located in the documented search. Keep the
+   precise resolution of the September 2007 nonmaximality conjecture and credit
+   the structural ingredients. A shorter proof does not establish prior
+   publication, a worldwide priority claim, or a ranking of the Lean and
+   mathematical contributions. Joyal's closed-category theorem is distinct;
+   v6 gives a concrete obstruction to cartesian closure. Do not restart a broad
+   novelty review without a new source or a concrete unresolved question.
+
+4. The occurrence-substitution notation is a required expository contribution.
+   Preserve tagged outer occurrences, positions inside inserted formulas,
+   placeholder labels, typed maps, commutative diagrams and the worked example.
+   Prove exact correspondence with Došen–Petrić's finite-ordinal formula,
+   including empty blocks, repeated names, the block locator and renaming.
+   An ordinal implementation alone does not formalize this presentation.
+   Appendix A already gives the alternative exposition; no disparaging or
+   evaluative language is needed. Keep private feedback out of public prose.
+
+5. No outstanding CONFIRMED manuscript error is recorded in the v6 reviews or
+   the focused occurrence-substitution check. The §6 redundant sentence was
+   removed and confirmed. The correction procedure is for a finding if one is
+   established later. Open Lean obligations are not evidence of a manuscript
+   error. Do not manufacture a defect or imply that an unidentified error exists.
+
+6. Instructions, review/checking narratives, correction records and agent-facing
+   material belong outside the manuscript, including its source comments.
+   Preserve substantive hypotheses, limitations and open proof status. Do not
+   replace removed process remarks with defensive/proleptic disclaimers.
+   Keep the existing author-approved disclosure in conventional form. Do not
+   add novelty self-praise, self-deprecation or unsupported author intentions.
+
+CORRECTIONS MUST PERSIST ACROSS PROMPTS
+
+The author has had to repeat corrections. Prevent recurrence:
+- Treat later messages as steering the active task unless explicitly replaced.
+- Classify each finding as a confirmed defect, suspected issue, open proof
+  obligation or editorial preference; retain its exact scope and evidence.
+- Apply every accepted correction across ALL affected passages, declarations,
+  diagrams, captions, source comments and linked records in the same work pass.
+  Search for parallel instances; do not fix only the last quoted sentence.
+- Re-read the connected source and verify the full affected scope. Rebuild and
+  inspect the PDF for TeX changes; run appropriate Lean checks for proof changes.
+- Record the decision, affected locations, resolution and evidence in the
+  external correction/claim records. Update the continuation before handoff.
+- Do not silently weaken a theorem, alter its definitions or delete an appendix
+  to obtain completion. If a substantive repair cannot be proved, keep the
+  affected claim open with a precise obstruction. No repeated approval is
+  needed for repairs already within the authorized task.
+
+FULL-PAPER ENDPOINT
+
+Complete the mathematics of v6, not only the headline theorem. The detailed
+inventory in CODEX_FULL_MANUSCRIPT_FORMALIZATION.md is mandatory. It includes:
+- the actual September 2007 equation-generated category and all required
+  structural, zero, negation, naturality and congruence correspondences;
+- Boolean Coherence for that quotient, normal forms, signed occurrences,
+  nonthinness and the concrete non-cartesian-closure assertion;
+- Lemma 4.1's actual selector/coselector witnesses at the original endpoints,
+  not merely a weaker normalized contextual consequence; Proposition 4.2 with
+  both literal signs and exact substitution/endpoint transports;
+- the specific q_A/e_A isomorphisms, the short quotient proof and actual
+  maximality with every required coherence/presentation input supplied;
+- Corollary 5.3 for every interpretation in an arbitrary model, with a proved
+  interpretation functor and substitution-stable common kernel. Do not assume
+  the kernel of one valuation is substitution closed or that interpretation is
+  surjective on arbitrary model arrows;
+- Appendix A: profiles; gamma and chi; all squares and uniqueness claims;
+  ordinal bijections; delta and the source-formula bridge; skeleton/profile
+  reconstruction; the eight-position example; noninjective renaming and the
+  positive/negative single-block specializations;
+- Appendix B's exact typed path equalities, reusing checked equations.
+
+Keep the three existing milestones separate. Actual-presentation maximality
+alone does not complete the full paper. Maintain exact claim-to-declaration
+correspondence, including unnumbered claims and diagrams. A published input
+needed by a final proof must have a compatible checked Lean proof and proved
+bridge; a citation or unsupplied record field does not discharge it.
+
+IMMEDIATE LEAN TASK: LOGICAL W6, THEN GENERAL REDUCIBILITY
+
+Reuse the proved fourteen blocked premise frames, typed first separation,
+ReducibleL/R.entry_unique, both addressed W4 theorems and constructed mixed-
+premise W5 addressed_left/right. The old terminal right-W4 candidate fails at
+two copies; use W4.HeadRight's repair. Its root rank L+5 need not be at most
+the old root rank. The required strict bound concerns eligible descendants.
+
+Read the follow-up report's "Precise remaining inference and next construction"
+and the original September 2007 book, §11.2, printed pp.248–253, especially p.252.
+Source SHA-256:
+e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e
+Printed p.n is one-based PDF p.n+12.
+
+Next construction: C = disj A B, nonempty selections
+  p : ContractionSelection C Γ K,
+  q : ContractionSelection C Θ L,
+  f : G P (Γ++[A]) Δ,
+  g : G P (Θ++[B]) Λ.
+Put s := (p.chain q).chain (ContractionSelection.last []).
+The old proof is s.block.applyL at its proved arity >= 3 over
+BlockedSource.disjLLast f g, with antecedent s.erased++[C].
+For p.arity,q.arity >= 2, use the premise contractions
+  (p.block.extend [A]).applyL ... Δ f
+  (q.block.extend [B]).applyL ... Λ g,
+then construct the outer left3/disjunctionBoth proof over their disjLLast.
+Prove endpoint equality
+  s.erased++[C] = (p.erased++q.erased)++[C],
+Reduced denotation equality and the full addressed eligible-descendant bound.
+The selected slots are the two retained parametric copies and the fresh C;
+all other equal formulas remain separate fixed positions. Include singleton
+branches, one-selected-premise cases and the separately typed right analogue.
+Keep the actual disjLLast exchanges: equal endpoints do not identify native
+disjL with its terminal macro, and exchanges contribute to rho.
+
+Complete logical W5/W6, remaining W1 crossing/multi-gap/absorption regimes,
+native/macro ancestry transport and actual profile-to-reducer dispatch.
+The classifier is not a producer. Finish BOTH unchanged general theorems:
+from arbitrary ReducibleL/R at an actual address construct a cut-free h with
+the same local sequent and Reduced denotation, and bound EVERY contraction
+inside h that is reducible relative to the rebuilt cut strictly below the old
+selected rank. This includes surviving descendants, not just new contractions.
+Use the exact quantifiers and types in CODEX_AFTER_05C6BC8_REDUCIBILITY.txt.
+
+No extra caller-supplied reduct, InjectiveAscend, rank bound, coherence or
+equality-reflection premise. Do not strengthen blockedness or alter rho to make
+a candidate pass. Then prove outside-site/containing-blockedness transport,
+finite multiset descent, Blocked-w and cut elimination; finish positive/reduced
+and Boolean Coherence, source instances, short proof and actual maximality.
+Complete the model corollary and appendices. Independent algebra and appendix
+work may proceed in parallel without interfering with the core proof chain.
+
+VERIFICATION, WRITING AND DELIVERY
+
+Use pinned Lean 4.35.0 and the recorded Init-only dependency closure. Do not
+assume a Mathlib multiset-extension theorem is already being used. Preserve the
+source grammar/equations, empty hom-sets and distinct occurrence tags. Zero
+arrows require a typed existing-arrow witness. Apply coherence only in the
+original category. No custom mathematical axioms, proof holes, native_decide,
+or circular use of the coherence being proved in production dependencies.
+The permitted foundational axioms are propext, Quot.sound and Classical.choice.
+
+Run bash scripts/verify.sh, applicable boundary checks and negative controls,
+with one heavy build/kernel replay at a time. Preserve logs, failures, exact
+source identities and exit codes. Recheck only when changes or failures justify
+it. Separate compilation, axiom audit, independent kernels, Palomar checks and
+publication; never borrow the predecessor project's certification status.
+
+At mathematical milestones apply the hostile-review and mathematical-writing
+plugins to the actual claims and correspondence. Consult KLR Mathematical
+Writing as required, read the entire source for whole-paper judgments, and
+check the rendered PDF when changed. State exact scope; do not report an
+unavailable review or unread source as checked. Complete authorized repairs,
+update all affected records and continue toward the full target.
+
+Reports belong under docs/ and docs/reviews/, with byte-verified copies in
+/mnt/c/Users/fleng/Downloads when accessible. Preserve differing existing files
+with dated or commit-suffixed names. If a destination is inaccessible, report
+that limitation and keep the repository copy; do not fabricate local delivery.
+
+The preceding cloud session could update GitHub but could not access the WSL
+checkout or Downloads. It did NOT verify current local-main/SSH agreement or
+working-tree/stash state. Establish those from the next session's environment.
+Its undelivered Downloads reports are:
+  docs/DOSEN_PETRIC_MAXIMALITY_NOVELTY_REVIEW_2026-10-25.md
+  docs/V6_VALIDATION.md
+  docs/reviews/V6_HOSTILE_REVIEW.md
+  docs/reviews/V6_WRITING_REVIEW.md
+  docs/reviews/V6_LEAN_SCOPE.md
+  docs/reviews/OCCURRENCE_SUBSTITUTION_FOLLOWUP.md
+Deliver these from verified committed bytes if WSL access is available; do not
+assume the older Lean follow-up reports' successful delivery covers these files.
+
+Begin by checking live state and reading the governing files, then resume the
+concrete W6 construction. Do not spend the turn reproducing this handoff or
+reopening settled editorial decisions. Report genuine new obstacles precisely;
+do not call an auxiliary lemma or a clean audit a completed full-paper proof.

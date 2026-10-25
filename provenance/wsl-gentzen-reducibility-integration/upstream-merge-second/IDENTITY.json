@@ -1,0 +1,16 @@
+{
+  "local_commit": "b40e137f1f28d60efc8ede577e8cf1a63ef29157",
+  "upstream": "edb86cb1668ff74c052b1f0075325039bca30cff",
+  "checked_source_inventory_unchanged": true,
+  "manuscript_bytes_equal_upstream": true,
+  "git_push_attempt": {
+    "command": [
+      "git",
+      "push",
+      "origin",
+      "main"
+    ],
+    "exit_status": 1,
+    "reason": "Remote advanced; no force used."
+  }
+}
