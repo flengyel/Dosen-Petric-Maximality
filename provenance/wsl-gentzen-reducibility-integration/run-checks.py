@@ -1,0 +1,18 @@
+from pathlib import Path
+import datetime,hashlib,json,os,subprocess,sys,time
+r=Path('/home/flengyel/src/Dosen-Petric-Maximality');out=r/'.codex-work/gentzen-reducibility-after-one';out.mkdir(parents=True,exist_ok=True)
+kind=sys.argv[1]
+cmds=[]
+if kind=='build':cmds=[('build-'+sys.argv[2].split('.')[-1],['lake','build',sys.argv[2]],r)]
+elif kind=='types':cmds=[('types',['lake','env','lean','-DwarningAsError=true',str(out/'PublicTypes.lean')],r)]
+elif kind=='final':cmds=[('strict',['bash','scripts/verify.sh'],r),('audit-boundaries',['python3','scripts/check-audit-boundaries.py'],r),('presentation-boundaries',['python3','scripts/check-presentation-boundaries.py'],r),('manuscript',['sha256sum','-c','SHA256SUMS'],r/'manuscript'),('diff-check',['git','diff','--check'],r),('cached-diff-check',['git','diff','--cached','--check'],r)]
+else:raise SystemExit(kind)
+stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%f');rows=[]
+for name,cmd,cwd in cmds:
+ actual=cmd if name in ['strict','manuscript','diff-check','cached-diff-check'] else ['flock','-n',str(r/'.codex-work/build.lock'),*cmd]
+ log=out/(name+'-'+stamp+'.log');start=time.monotonic()
+ with log.open('w') as f:q=subprocess.run(actual,cwd=cwd,env=dict(os.environ,LEAN_NUM_THREADS='1'),stdout=f,stderr=subprocess.STDOUT)
+ row=dict(name=name,command=cmd,actual_command=actual,cwd=str(cwd),exit_status=q.returncode,seconds=round(time.monotonic()-start,3),log=str(log.relative_to(r)),sha256=hashlib.sha256(log.read_bytes()).hexdigest());rows.append(row)
+ (out/(kind+'-'+stamp+'.json')).write_text(json.dumps(dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),checks=rows),indent=2)+'\n')
+ print(json.dumps(row),flush=True)
+ if q.returncode:print(log.read_text()[-16000:]);raise SystemExit(q.returncode)

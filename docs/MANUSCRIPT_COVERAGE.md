@@ -1,6 +1,28 @@
 # Coverage and next proof obligations
 
-## Current Reducibility follow-up (25 October 2026)
+## Current binary-input integration (25 October 2026)
+
+**Both full Reducibility Lemmata remain open.** Every actual contraction over
+native `mix`, `conjR` or `disjL` now has a left and a right producer, with internal
+positional selection matching and the complete eligible-descendant bound.
+`BinaryReducer.left/right` assemble these cases; a binary cut premise is ruled
+out by the cut-freeness already contained in reducibility. The right-W4 repair
+now includes one parametric copy plus the fresh compound, using a node-free
+singleton inner operation. Source W6, native/source repairs and all three
+source singleton blockedness exclusions compile. General unary dispatch,
+including exchanges crossing selected copies, is still missing. Outside-site
+transport, multiset descent, Blocked-w, cut elimination and coherence remain open.
+
+Measured checked sources: **330 Lean source files / 9,737 audited project
+declarations** (818 additional audited declarations, including generated
+helpers; this is not a count of new mathematical theorems). Exact results:
+[GENTZEN_REDUCIBILITY_INTEGRATION_REPORT.md](GENTZEN_REDUCIBILITY_INTEGRATION_REPORT.md),
+[author-side hostile review](reviews/GENTZEN_REDUCIBILITY_INTEGRATION_HOSTILE.md),
+[author-side writing review](reviews/GENTZEN_REDUCIBILITY_INTEGRATION_WRITING.md).
+The governing instruction is [CODEX_AFTER_1E967BC_REDUCIBILITY.txt](CODEX_AFTER_1E967BC_REDUCIBILITY.txt).
+This checked integration does **not** complete that instruction's final target.
+
+## Historical follow-up at 1e967bc (superseded above)
 
 **Both full Reducibility Lemmata remain open.** From the unchanged ReducibleL/R
 hypotheses, cut-entry uniqueness now compiles via all fourteen actual blocked

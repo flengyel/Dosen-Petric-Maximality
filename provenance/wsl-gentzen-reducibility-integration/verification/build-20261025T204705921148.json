@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-25T20:47:08.645542+00:00",
+  "checks": [
+    {
+      "name": "build-GentzenLeftContractionBounds",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenLeftContractionBounds"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenLeftContractionBounds"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 2.724,
+      "log": ".codex-work/gentzen-reducibility-after-one/build-GentzenLeftContractionBounds-20261025T204705921148.log",
+      "sha256": "3265b700cfa6b75259874f3c2becae15a2b3ef7ea3bd8c0d663f54cd88c45227"
+    }
+  ]
+}

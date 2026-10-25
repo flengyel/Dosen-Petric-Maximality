@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-25T20:52:41.836993+00:00",
+  "checks": [
+    {
+      "name": "build-GentzenReducibilityNativeLogical",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenReducibilityNativeLogical"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenReducibilityNativeLogical"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 2.448,
+      "log": ".codex-work/gentzen-reducibility-after-one/build-GentzenReducibilityNativeLogical-20261025T205239388574.log",
+      "sha256": "1a3c2b41d3a6d90964b3130adbe15ef00ce00896b2f1b548823629caf568e1db"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-25T20:17:50.817266+00:00",
+  "checks": [
+    {
+      "name": "build-GentzenTerminalLogicalRanks",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenTerminalLogicalRanks"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenTerminalLogicalRanks"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 3.158,
+      "log": ".codex-work/gentzen-reducibility-after-one/build-GentzenTerminalLogicalRanks-20261025T201747658543.log",
+      "sha256": "af6ff33d1fea2dc28c405825d86fba22893462df837f858d0baac5cf0ed6f08d"
+    }
+  ]
+}

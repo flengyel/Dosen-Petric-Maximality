@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-25T20:50:25.085435+00:00",
+  "checks": [
+    {
+      "name": "build-GentzenNativeLogicalBounds",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenNativeLogicalBounds"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenNativeLogicalBounds"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 2.573,
+      "log": ".codex-work/gentzen-reducibility-after-one/build-GentzenNativeLogicalBounds-20261025T205022511236.log",
+      "sha256": "edd1e34883ffd4e37779c04e6f92a72adf87fedd2a9dfd88636d21adfb563ce1"
+    }
+  ]
+}

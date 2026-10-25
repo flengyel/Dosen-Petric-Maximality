@@ -1,0 +1,13 @@
+[
+  {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "exit_status": 2,
+    "reason": "Supplied original review has two trailing spaces at line 11 in both copied paths; original retained compressed and readable copy whitespace-normalized.",
+    "elapsed_seconds": null
+  }
+]

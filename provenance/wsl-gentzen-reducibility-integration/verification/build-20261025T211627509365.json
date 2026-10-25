@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-25T21:16:33.808220+00:00",
+  "checks": [
+    {
+      "name": "build-GentzenDisjunctionSuccedentOne",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenDisjunctionSuccedentOne"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenDisjunctionSuccedentOne"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 0,
+      "seconds": 6.298,
+      "log": ".codex-work/gentzen-reducibility-after-one/build-GentzenDisjunctionSuccedentOne-20261025T211627509365.log",
+      "sha256": "364a942cfff72273b1871b7ec1633665d3c1789e368fec63f917ef34edbc405b"
+    }
+  ]
+}

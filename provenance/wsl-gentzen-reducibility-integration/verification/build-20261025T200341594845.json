@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-25T20:03:46.359735+00:00",
+  "checks": [
+    {
+      "name": "build-GentzenRetainedSelection",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenRetainedSelection"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenRetainedSelection"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 4.764,
+      "log": ".codex-work/gentzen-reducibility-after-one/build-GentzenRetainedSelection-20261025T200341594845.log",
+      "sha256": "cc74337d045e5b6feff108acc95ba1544a17ec190c8c0e426d9a89b3d112769c"
+    }
+  ]
+}

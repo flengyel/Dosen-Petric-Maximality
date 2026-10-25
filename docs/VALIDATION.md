@@ -1,4 +1,30 @@
-# Reducibility follow-up — current validation
+# Current binary-input integration validation
+
+**Full Reducibility remains open.** Checked 330 Lean source files and
+9,737 project declarations; all transitive dependencies use only the
+permitted propext/Quot.sound/Classical.choice axioms. Complete public import
+closure and all five expected compiler/audit rejections passed. There are
+81 new production modules; the audited count includes generated helpers.
+
+| Command | Exit | Seconds |
+| --- | --- | --- |
+| `bash scripts/verify.sh` | 0 | 11.889 |
+| `python3 scripts/check-audit-boundaries.py` | 0 | 11.954 |
+| `python3 scripts/check-presentation-boundaries.py` | 0 | 1.738 |
+| `sha256sum -c SHA256SUMS` | 0 | 0.031 |
+| `git diff --check` | 0 | 0.019 |
+| `git diff --cached --check` | 0 | 0.013 |
+
+Public signature queries passed in 5.845s. All proof
+changes precede these checks. Record-only/staged whitespace and checked-versus-
+committed byte checks are recorded separately. Evidence and failed attempts:
+`provenance/wsl-gentzen-reducibility-integration/`. Exact hypotheses and missing
+unary branches: [integration report](GENTZEN_REDUCIBILITY_INTEGRATION_REPORT.md).
+The final task's full producers, Blocked-w and coherence are not consequences
+of this verification. No independent clean kernel/Comparator/Palomar run.
+Historical receipts below concern their own prior source states.
+
+# Historical follow-up validation at 1e967bc
 
 Mathematical status: partial; the complete left/right Reducibility producers
 are not supplied. Verified sources: **249 Lean files / 8,919 audited

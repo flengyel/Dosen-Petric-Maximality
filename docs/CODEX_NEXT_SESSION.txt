@@ -1,36 +1,48 @@
-Continue toward BOTH full source-shaped Reducibility Lemmata in
-CODEX_AFTER_05C6BC8_REDUCIBILITY.txt. This is still the governing task;
-do not replace it by another auxiliary milestone.
+Continue toward BOTH full Reducibility Lemmata in
+CODEX_AFTER_1E967BC_REDUCIBILITY.txt. That instruction remains active;
+the binary-input integration is not completion of the full target.
 
-Read AGENTS.md, GENTZEN_REDUCIBILITY_FOLLOWUP_REPORT.md and both follow-up
-reviews, the supplied 05c6bc8 review, current maps and validation. Preserve the
-stash, reconciliation archive, supplied originals, historical records and
-manuscript v5/v4. Prior continuation: history/CODEX_NEXT_SESSION_05C6BC8.txt.
-Inspect actual Git status and fetch SSH origin; do not reset newer work.
-No fresh concurrency reconciliation is needed absent new unexplained writes.
+Read AGENTS.md, GENTZEN_REDUCIBILITY_INTEGRATION_REPORT.md and both author-side
+reviews, the supplied 1e967bc review, current maps, validation and requirements.
+Preserve stash dedfd8fc8cd49930e9a162d5be585215b062a43c, all reconciliation
+archives/alternate drafts and manuscript v5/v4. Inspect Git and SSH fetch before
+editing; do not reset newer work. Historical continuation is in
+history/CODEX_NEXT_SESSION_1E967BC.txt. The active supplied prompt is retained
+byte-for-byte as CODEX_AFTER_1E967BC_REDUCIBILITY.txt.
 
-Reuse the proved fourteen blocked premise frames, typed first separation,
-ReducibleL/R.entry_unique and both addressed W4 theorems. The old terminal
-right-W4 candidate demonstrably fails at two copies. Use W4.HeadRight's
-constructed repair and bound; its root rank is L+5, not necessarily <= old.
-Reuse W5.MixedPremiseMix.addressed_left/right for constructed p/q chained
-selections, including singleton and unequal arities. General extraction and
-native binary logical context comparisons compile; they do not complete
-all producer cases.
+REUSE: entry uniqueness, ContractionBound, singleton-aware performL/R, joint
+Split/HeadSplit, BinaryReducer.left/right and the six actual native mix/conjR/
+disjL producers. Each returns the unchanged full post-replacement descendant
+quantifier, with all input matching internal. Source W6 and its three singleton
+blockedness exclusions compile. Native/source syntax, blockedness and rho remain
+distinct. Reuse the nonempty right-W4 repair for n>=1 parametric copies; n=1 has
+old=S+3 and node-free inner=S. The older n>=2 theorem counts parametric copies,
+plus one fresh compound. Opposite-side unary families also have full adapters.
 
-NEXT CONCRETE BRANCH: the p.252 W6 construction and exact endpoints in the
-follow-up report, including actual disjLLast exchanges, selected fresh C,
-p/q independent arities and full eligible-descendant bounds. Finish logical
-W5/W6, native/macro transport, remaining W1 selection configurations and
-actual profile-to-reducer dispatch, then both unconditional general theorems.
-No extra caller-supplied candidate, injectivity, rank or coherence premise.
-Do not strengthen blockedness or alter rho. Only afterward prove outside-site
-transport and finite multiset induction for Blocked-w and cut elimination.
+NEXT: finish arbitrary same-side exchange through contraction, for actual
+ d : ContractionBlock P (Γ++Y++X++Θ) K, hn : 2<=d.gs.length,
+ t : G P (Γ++X++Y++Θ) Δ,
+prove ReducesL cutLeft cutRight
+ (d.applyL hn Δ (G.exchangeL Γ X Y Θ Δ t)) d.keep,
+and the separately typed right analogue in the integration report. No exclusion
+of selected positions from the exchanged blocks is allowed. Split selected
+sublists positionally, construct the ordered pre-exchange selection and actual
+lower-context permutation, prove the component square and the full eligible-
+descendant bound. Block swaps are not globally monotone. Fixed-gap theorems
+alone do not supply this branch. Do not add a selection/rank/coherence premise.
 
-Current checked source inventory/receipts:
-provenance/wsl-gentzen-reducibility-followup/. Use the pinned Lean 4.35.0,
-Init-only policy and original equations/grammar. Run one heavy verification
-at a time; preserve failed diagnostics. Keep full Reducibility, Blocked-w,
-coherence, unconditional maximality and Palomar preparation separate.
-Commit/push and byte-verified Downloads delivery remain authorized by the
-active task. Reports must state noncompletion when a required proof is absent.
+Then close remaining unary matching/placements, interleaved disjoint contractions,
+selected thinning and selected unary logical regimes, and assemble BOTH full
+Reduces producers. The Binary premise of BinaryReducer is a real scope
+restriction; do not erase it in prose. No new axiom or conditional wrapper
+replaces the missing unary proof. Only afterward prove outside-occurrence and
+containing-blocked transport, finite multiset descent and Blocked-w. Keep cut
+elimination, positive coherence, Reduced.Faithful, Boolean Coherence,
+unconditional maximality and Palomar preparation separate.
+
+Use Lean 4.35.0, Init only, unchanged grammar/equations/predicates/rho. Run one
+heavy build/audit at a time. The measured integration is 330 Lean files /
+9,737 audited declarations; evidence under provenance/wsl-gentzen-reducibility-
+integration/. Verify actual new counts. Commit/non-force SSH push and report
+Downloads delivery remain authorized. Preserve failures; compare committed bytes
+with checked inventories and deliver conflict-preserving report copies.

@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-25T21:37:34.433729+00:00",
+  "checks": [
+    {
+      "name": "build-GentzenBinaryInputReducers",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenBinaryInputReducers"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenBinaryInputReducers"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 4.414,
+      "log": ".codex-work/gentzen-reducibility-after-one/build-GentzenBinaryInputReducers-20261025T213730009300.log",
+      "sha256": "d5fe4a0451a6fc213be77b7bb8664c561d88d93611b51a516205f199ca768334"
+    }
+  ]
+}

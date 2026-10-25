@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-25T19:51:19.349231+00:00",
+  "checks": [
+    {
+      "name": "build-GentzenSingletonRightRegression",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenSingletonRightRegression"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenSingletonRightRegression"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 0,
+      "seconds": 5.363,
+      "log": ".codex-work/gentzen-reducibility-after-one/build-GentzenSingletonRightRegression-20261025T195113985474.log",
+      "sha256": "29745eb841430b9650d1107e00f09b2ba189ad57565c72057f178f6a1f8e35c0"
+    }
+  ]
+}

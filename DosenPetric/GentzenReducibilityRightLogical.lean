@@ -9,7 +9,8 @@ universe u
 variable {P : Type u} (d : Gentzen.SelectedLogical.Data P .disj)
 variable (hn : 2 ≤ d.gs.length) (Γ : List (NormalForm P)) (f : G P Γ d.F)
 
-/-- Right W4 at any actual address, including the two-copy case. The bound
+/-- Right W4 at any actual address, including two parametric copies and the
+    additional fresh compound. The bound
     skips the blocked middle contraction rather than comparing root ranks. -/
 theorem addressed_right
     {Ξ Δ Θ Λ : List (NormalForm P)} {root : G P Ξ (d.C::Δ)}

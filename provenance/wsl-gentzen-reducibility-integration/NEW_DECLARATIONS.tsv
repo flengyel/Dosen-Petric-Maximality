@@ -1,0 +1,584 @@
+DosenPetric/GentzenBinaryInputReducers.lean:14	theorem selection_left (s : ContractionSelection C F K) (hn : 2≤s.arity)
+DosenPetric/GentzenBinaryInputReducers.lean:33	theorem selection_right (s : ContractionSelection C V K) (hn : 2≤s.arity)
+DosenPetric/GentzenBinaryInputReducers.lean:54	theorem left (d : ContractionBlock P F K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenBinaryInputReducers.lean:72	theorem right (d : ContractionBlock P V K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenBinaryLogicalRanks.lean:12	theorem predecessors_disjL_f {C : NormalForm P} (a : At Γ C) :
+DosenPetric/GentzenBinaryLogicalRanks.lean:23	theorem predecessors_disjL_g {C : NormalForm P} (a : At Θ C) :
+DosenPetric/GentzenBinaryLogicalRanks.lean:34	theorem rho_disjL_f {C : NormalForm P} (a : At Γ C) :
+DosenPetric/GentzenBinaryLogicalRanks.lean:41	theorem rho_disjL_g {C : NormalForm P} (a : At Θ C) :
+DosenPetric/GentzenConjunctionAntecedentBoth.lean:13	theorem old_rank : (old p q f g).rho .left (p.chain q).keep=
+DosenPetric/GentzenConjunctionAntecedentBoth.lean:37	theorem repair_rank : (repair p q f g).rho .left (p.chain q).keep=
+DosenPetric/GentzenConjunctionAntecedentBoth.lean:51	theorem endpoint_le : (repair p q f g).rho .left (p.chain q).keep≤(old p q f g).rho .left (p.chain q).keep := by
+DosenPetric/GentzenConjunctionAntecedentBoth.lean:56	theorem reduces {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenConjunctionAntecedentOne.lean:12	def oldFirst : G P (K++U) (.conj A B::(Δ++Λ)) := (p.extend U).performL _ (G.conjR f g)
+DosenPetric/GentzenConjunctionAntecedentOne.lean:13	def repairFirst : G P (K++U) (.conj A B::(Δ++Λ)) := G.conjR (p.performL _ f) g
+DosenPetric/GentzenConjunctionAntecedentOne.lean:15	theorem denoteFirst : ofTerm (repairFirst p f g).denote=ofTerm (oldFirst p f g).denote := by
+DosenPetric/GentzenConjunctionAntecedentOne.lean:25	theorem old_countFirst : (oldFirst p f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenConjunctionAntecedentOne.lean:27	theorem repair_countFirst : (repairFirst p f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenConjunctionAntecedentOne.lean:30	theorem old_rankFirst : (oldFirst p f g).rho .left (p.keep.before U)=
+DosenPetric/GentzenConjunctionAntecedentOne.lean:47	theorem repair_rankFirst : (repairFirst p f g).rho .left (p.keep.before U)=
+DosenPetric/GentzenConjunctionAntecedentOne.lean:54	theorem endpoint_ltFirst (hn : 2≤p.arity) :
+DosenPetric/GentzenConjunctionAntecedentOne.lean:58	theorem reducesFirst {Φ Ξ Ω Ψ : List (NormalForm P)} (hn : 2≤p.arity)
+DosenPetric/GentzenConjunctionAntecedentOne.lean:73	def oldSecond : G P (F++L) (.conj A B::(Δ++Λ)) := (q.prependFixed F).performL _ (G.conjR f g)
+DosenPetric/GentzenConjunctionAntecedentOne.lean:74	def repairSecond : G P (F++L) (.conj A B::(Δ++Λ)) := G.conjR f (q.performL _ g)
+DosenPetric/GentzenConjunctionAntecedentOne.lean:76	theorem denoteSecond : ofTerm (repairSecond q f g).denote=ofTerm (oldSecond q f g).denote := by
+DosenPetric/GentzenConjunctionAntecedentOne.lean:86	theorem old_countSecond : (oldSecond q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenConjunctionAntecedentOne.lean:88	theorem repair_countSecond : (repairSecond q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenConjunctionAntecedentOne.lean:91	theorem old_rankSecond : (oldSecond q f g).rho .left (At.shift F q.keep)=
+DosenPetric/GentzenConjunctionAntecedentOne.lean:109	theorem repair_rankSecond : (repairSecond q f g).rho .left (At.shift F q.keep)=
+DosenPetric/GentzenConjunctionAntecedentOne.lean:116	theorem endpoint_ltSecond (hn : 2≤q.arity) :
+DosenPetric/GentzenConjunctionAntecedentOne.lean:120	theorem reducesSecond {Φ Ξ Ω Ψ : List (NormalForm P)} (hn : 2≤q.arity)
+DosenPetric/GentzenConjunctionAntecedentRanks.lean:12	theorem predecessors_conjR_f_left {C : NormalForm P} (a : At F C) :
+DosenPetric/GentzenConjunctionAntecedentRanks.lean:21	theorem predecessors_conjR_g_left {C : NormalForm P} (a : At U C) :
+DosenPetric/GentzenConjunctionAntecedentRanks.lean:30	theorem rho_conjR_f_left {C : NormalForm P} (a : At F C) :
+DosenPetric/GentzenConjunctionAntecedentRanks.lean:37	theorem rho_conjR_g_left {C : NormalForm P} (a : At U C) :
+DosenPetric/GentzenConjunctionAntecedentReducer.lean:11	theorem selection_left (s : ContractionSelection C (F++U) K) (hn : 2≤s.arity)
+DosenPetric/GentzenConjunctionAntecedentReducer.lean:31	theorem left (d : ContractionBlock P (F++U) K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenConjunctionAntecedentRules.lean:12	theorem G.conjR_reindex_sources {F U F' U' Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenConjunctionAntecedentRules.lean:22	def old : G P (p.erased++L) (.conj A B::(Δ++Λ)) := (p.chain q).performL _ (G.conjR f g)
+DosenPetric/GentzenConjunctionAntecedentRules.lean:23	def middle : G P (K++L) (.conj A B::(Δ++Λ)) := G.conjR (p.performL _ f) (q.performL _ g)
+DosenPetric/GentzenConjunctionAntecedentRules.lean:24	def repair : G P (p.erased++L) (.conj A B::(Δ++Λ)) :=
+DosenPetric/GentzenConjunctionAntecedentRules.lean:27	theorem denote : ofTerm (repair p q f g).denote=ofTerm (old p q f g).denote := by
+DosenPetric/GentzenConjunctionAntecedentRules.lean:38	theorem blocked : BlockedL (repair p q f g) := by
+DosenPetric/GentzenConjunctionAntecedentRules.lean:47	theorem old_count : (old p q f g).cutCount=f.cutCount+g.cutCount := by rw [old,ContractionSelection.performL_count]; rfl
+DosenPetric/GentzenConjunctionAntecedentRules.lean:48	theorem repair_count : (repair p q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenConjunctionBranchRanks.lean:12	theorem predecessors_conjR_f {C : NormalForm P} (a : At F C) :
+DosenPetric/GentzenConjunctionBranchRanks.lean:23	theorem predecessors_conjR_g {C : NormalForm P} (a : At U C) :
+DosenPetric/GentzenConjunctionBranchRanks.lean:34	theorem rho_conjR_f {C : NormalForm P} (a : At F C) :
+DosenPetric/GentzenConjunctionBranchRanks.lean:41	theorem rho_conjR_g {C : NormalForm P} (a : At U C) :
+DosenPetric/GentzenConjunctionBranchRanks.lean:48	theorem rho_conjR_principal :
+DosenPetric/GentzenConjunctionInputReducer.lean:12	theorem performR_eq_apply {C : NormalForm P} {F K Γ : List (NormalForm P)}
+DosenPetric/GentzenConjunctionInputReducer.lean:21	theorem selection_right (s : ContractionSelection C (.conj A B::(F++U)) K) (hn : 2≤s.arity)
+DosenPetric/GentzenConjunctionInputReducer.lean:51	theorem right (d : ContractionBlock P (.conj A B::(F++U)) K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenConjunctionParametricReducer.lean:13	theorem reduces (p : ContractionSelection C F K) (q : ContractionSelection C U L)
+DosenPetric/GentzenConjunctionParametricReducer.lean:31	theorem reducesFirst (p : ContractionSelection C F K) (hn : 2≤p.arity)
+DosenPetric/GentzenConjunctionParametricReducer.lean:46	theorem reducesSecond (q : ContractionSelection C U L) (hn : 2≤q.arity)
+DosenPetric/GentzenDisjunctionAntecedentReducer.lean:12	theorem reduces {A B : NormalForm P} {F K U L Δ Λ Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenDisjunctionAntecedentReducer.lean:24	theorem selection_left (s : ContractionSelection C (.disj A B::(F++U)) K) (hn : 2≤s.arity)
+DosenPetric/GentzenDisjunctionAntecedentReducer.lean:54	theorem left (d : ContractionBlock P (.disj A B::(F++U)) K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenDisjunctionSuccedentBoth.lean:14	theorem disjLLast_reindex_outputs {Γ Θ F U K L : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenDisjunctionSuccedentBoth.lean:25	def old : G P (.disj A B::(Γ++Θ)) (p.erased++L) := (p.chain q).performR _ (G.disjL f g)
+DosenPetric/GentzenDisjunctionSuccedentBoth.lean:26	def innerF : G P (A::Γ) K := p.performR _ f
+DosenPetric/GentzenDisjunctionSuccedentBoth.lean:27	def innerG : G P (B::Θ) L := q.performR _ g
+DosenPetric/GentzenDisjunctionSuccedentBoth.lean:28	def body : G P ((Γ++Θ)++[.disj A B]) (p.erased++L) :=
+DosenPetric/GentzenDisjunctionSuccedentBoth.lean:31	def repair : G P (.disj A B::(Γ++Θ)) (p.erased++L) := BlockedSource.headL (.disj A B) (body p q f g)
+DosenPetric/GentzenDisjunctionSuccedentBoth.lean:33	theorem body_blocked : BlockedR (body p q f g) := by
+DosenPetric/GentzenDisjunctionSuccedentBoth.lean:44	theorem denote : ofTerm (repair p q f g).denote=ofTerm (old p q f g).denote := by
+DosenPetric/GentzenDisjunctionSuccedentBoth.lean:63	theorem old_count : (old p q f g).cutCount=f.cutCount+g.cutCount := by rw [old,ContractionSelection.performR_count]; rfl
+DosenPetric/GentzenDisjunctionSuccedentBoth.lean:64	theorem repair_count : (repair p q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenDisjunctionSuccedentBounds.lean:13	theorem old_rank : (old p q f g).rho .right (p.chain q).keep=
+DosenPetric/GentzenDisjunctionSuccedentBounds.lean:37	def limit : Nat := (old p q f g).rho .right (p.chain q).keep
+DosenPetric/GentzenDisjunctionSuccedentBounds.lean:39	theorem innerF_lt : (innerF p f).rho .right p.keep<limit p q f g := by
+DosenPetric/GentzenDisjunctionSuccedentBounds.lean:45	theorem innerG_lt : (innerG q g).rho .right q.keep<limit p q f g := by
+DosenPetric/GentzenDisjunctionSuccedentBounds.lean:51	theorem merge_selected_index (i : Nat) :
+DosenPetric/GentzenDisjunctionSuccedentBounds.lean:62	theorem before_index (i k x z : Nat) (hi : i<k) (hm : i=x ∨ i=k+z) : i=x := by omega
+DosenPetric/GentzenDisjunctionSuccedentBounds.lean:63	theorem shift_index (i k x z : Nat) (hx : x<k) (hm : k+i=x ∨ k+i=k+z) : i=z := by omega
+DosenPetric/GentzenDisjunctionSuccedentBounds.lean:65	theorem innerF_bound : ContractionBound .right C (limit p q f g) (innerF p f) (fun x => x.index=p.keep.index) := by
+DosenPetric/GentzenDisjunctionSuccedentBounds.lean:73	theorem innerG_bound : ContractionBound .right C (limit p q f g) (innerG q g) (fun x => x.index=q.keep.index) := by
+DosenPetric/GentzenDisjunctionSuccedentBounds.lean:81	theorem body_bound : ContractionBound .right C (limit p q f g) (body p q f g)
+DosenPetric/GentzenDisjunctionSuccedentBounds.lean:104	theorem repair_bound : ContractionBound .right C (limit p q f g) (repair p q f g)
+DosenPetric/GentzenDisjunctionSuccedentBounds.lean:110	theorem reduces {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:12	def oldFirst : G P (.disj A B::(Γ++Θ)) (K++U) := (p.extend U).performR _ (G.disjL f g)
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:13	def repairFirst : G P (.disj A B::(Γ++Θ)) (K++U) := G.disjL (p.performR _ f) g
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:15	theorem denoteFirst : ofTerm (repairFirst p f g).denote=ofTerm (oldFirst p f g).denote := by
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:25	theorem old_countFirst : (oldFirst p f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:27	theorem repair_countFirst : (repairFirst p f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:30	theorem old_rankFirst : (oldFirst p f g).rho .right (p.keep.before U)=
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:47	theorem repair_rankFirst : (repairFirst p f g).rho .right (p.keep.before U)=
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:54	theorem endpoint_ltFirst (hn : 2≤p.arity) :
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:58	theorem reducesFirst {Φ Ξ Ω Ψ : List (NormalForm P)} (hn : 2≤p.arity)
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:73	def oldSecond : G P (.disj A B::(Γ++Θ)) (F++L) := (q.prependFixed F).performR _ (G.disjL f g)
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:74	def repairSecond : G P (.disj A B::(Γ++Θ)) (F++L) := G.disjL f (q.performR _ g)
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:76	theorem denoteSecond : ofTerm (repairSecond q f g).denote=ofTerm (oldSecond q f g).denote := by
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:86	theorem old_countSecond : (oldSecond q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:88	theorem repair_countSecond : (repairSecond q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:91	theorem old_rankSecond : (oldSecond q f g).rho .right (At.shift F q.keep)=
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:109	theorem repair_rankSecond : (repairSecond q f g).rho .right (At.shift F q.keep)=
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:116	theorem endpoint_ltSecond (hn : 2≤q.arity) :
+DosenPetric/GentzenDisjunctionSuccedentOne.lean:120	theorem reducesSecond {Φ Ξ Ω Ψ : List (NormalForm P)} (hn : 2≤q.arity)
+DosenPetric/GentzenDisjunctionSuccedentRanks.lean:12	theorem predecessors_disjL_f_right {C : NormalForm P} (a : At F C) :
+DosenPetric/GentzenDisjunctionSuccedentRanks.lean:21	theorem predecessors_disjL_g_right {C : NormalForm P} (a : At U C) :
+DosenPetric/GentzenDisjunctionSuccedentRanks.lean:30	theorem rho_disjL_f_right {C : NormalForm P} (a : At F C) :
+DosenPetric/GentzenDisjunctionSuccedentRanks.lean:37	theorem rho_disjL_g_right {C : NormalForm P} (a : At U C) :
+DosenPetric/GentzenDisjunctionSuccedentReducer.lean:11	theorem selection_right (s : ContractionSelection C (F++U) K) (hn : 2≤s.arity)
+DosenPetric/GentzenDisjunctionSuccedentReducer.lean:31	theorem right (d : ContractionBlock P (F++U) K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenHeadLogicalBlocked.lean:12	theorem G.conjR_reindex_inputs {Γ Θ Δ Λ Δ' Λ' : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenHeadLogicalBlocked.lean:23	theorem repair_blocked : BlockedR (repair p q f g) := by
+DosenPetric/GentzenHeadLogicalBlocked.lean:35	theorem old_count : (old p q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenHeadLogicalBlocked.lean:37	theorem repair_count : (repair p q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenHeadLogicalBlocked.lean:40	theorem old_cutFree : (old p q f g).CutFree ↔ f.CutFree ∧ g.CutFree := by
+DosenPetric/GentzenHeadLogicalBlocked.lean:42	theorem repair_cutFree : (repair p q f g).CutFree ↔ f.CutFree ∧ g.CutFree := by
+DosenPetric/GentzenHeadLogicalBlocked.lean:44	theorem old_atomized : (old p q f g).Atomized ↔ f.Atomized ∧ g.Atomized := by
+DosenPetric/GentzenHeadLogicalBlocked.lean:46	theorem repair_atomized : (repair p q f g).Atomized ↔ f.Atomized ∧ g.Atomized := by
+DosenPetric/GentzenHeadLogicalBlocked.lean:48	theorem relation : (repair p q f g).relation=(old p q f g).relation := congrArg occurrenceMap (denote p q f g)
+DosenPetric/GentzenHeadLogicalContraction.lean:16	theorem chain_get {A : NormalForm P} (a : At (F++U) A) :
+DosenPetric/GentzenHeadLogicalContraction.lean:23	theorem head_chain_square (o : Op) :
+DosenPetric/GentzenHeadLogicalContraction.lean:42	def old : G P (Γ++Θ) (p.erased++L) :=
+DosenPetric/GentzenHeadLogicalContraction.lean:44	def middle : G P (Γ++Θ) (.conj A B::(K++L)) :=
+DosenPetric/GentzenHeadLogicalContraction.lean:47	theorem middle_bound : 2≤(p.mergeBlock q).selectedHead.gs.length := by change 2≤3; decide
+DosenPetric/GentzenHeadLogicalContraction.lean:49	def repair : G P (Γ++Θ) (p.erased++L) :=
+DosenPetric/GentzenHeadLogicalContraction.lean:52	theorem denote : ofTerm (repair p q f g).denote=ofTerm (old p q f g).denote := by
+DosenPetric/GentzenHeadLogicalNaturality.lean:12	theorem head_conjRight (p : Route K F) (q : Route L U)
+DosenPetric/GentzenHeadLogicalRankBounds.lean:14	def premiseSum : Nat := (p.selected.map (fun a => f.rho .right (.there a))).sum+
+DosenPetric/GentzenHeadLogicalRankBounds.lean:17	theorem old_rank : (old p q f g).rho .right (p.chain q).keep=
+DosenPetric/GentzenHeadLogicalRankBounds.lean:41	theorem repair_rank : (repair p q f g).rho .right (p.chain q).keep=
+DosenPetric/GentzenHeadLogicalRankBounds.lean:59	theorem premise_rank {C : NormalForm P} {F K Γ : List (NormalForm P)}
+DosenPetric/GentzenHeadLogicalRankBounds.lean:71	theorem endpoint_le : (repair p q f g).rho .right (p.chain q).keep≤
+DosenPetric/GentzenHeadRoutes.lean:12	def head (A : NormalForm P) (p : Route K F) : Route (A::K) (A::F) :=
+DosenPetric/GentzenHeadRoutes.lean:15	theorem head_here (A : NormalForm P) (p : Route K F) :
+DosenPetric/GentzenHeadRoutes.lean:18	theorem head_there (A : NormalForm P) (p : Route K F) {B : NormalForm P} (a : At F B) :
+DosenPetric/GentzenHeadRoutes.lean:21	theorem head_side (o : Op) (A : NormalForm P) (p : Route K F) :
+DosenPetric/GentzenHeadRoutes.lean:35	theorem head_disjLeft {Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenHeadSelectionSplit.lean:13	inductive HeadSplit (C : NormalForm P) (F U : List (NormalForm P)) :
+DosenPetric/GentzenHeadSelectionSplit.lean:27	theorem head_split_exists {C D : NormalForm P} (F U : List (NormalForm P)) {K : List (NormalForm P)}
+DosenPetric/GentzenLeftContractionBounds.lean:14	theorem exchangeL (Γ X Y Θ Δ : List (NormalForm P)) (f : G P (Γ++X++Y++Θ) Δ)
+DosenPetric/GentzenLeftContractionBounds.lean:29	theorem contractL (D : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenLeftContractionBounds.lean:43	theorem disjL {F U Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenLeftContractionBounds.lean:81	theorem exchangeL_bound {C : NormalForm P} {k : Nat} {F U : List (NormalForm P)}
+DosenPetric/GentzenLeftContractionBounds.lean:125	theorem head_tail_bound {F Δ : List (NormalForm P)} (A : NormalForm P)
+DosenPetric/GentzenLeftContractionBounds.lean:138	theorem native_source_bound {F U Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenLengthCopyIndices.lean:11	def lengthCopy : List Nat→Nat→Nat
+DosenPetric/GentzenLengthCopyIndices.lean:15	theorem gap_length_sum {P : Type u} (gs : List (List (NormalForm P))) :
+DosenPetric/GentzenLengthCopyIndices.lean:21	theorem copyIndex_lengths {P : Type u} (gs : List (List (NormalForm P))) (i : Nat) :
+DosenPetric/GentzenLengthCopyIndices.lean:29	theorem lengthCopy_three_last (a b c : Nat) :
+DosenPetric/GentzenLengthCopyIndices.lean:38	theorem lengthCopy_rotate_head (x y z t : Nat) :
+DosenPetric/GentzenLengthCopyIndices.lean:48	theorem lengthCopy_before (a : Nat) (ns : List Nat) (i : Nat) (hi : i<a) :
+DosenPetric/GentzenLengthCopyIndices.lean:51	theorem lengthCopy_here (a : Nat) (ns : List Nat) :
+DosenPetric/GentzenLengthCopyIndices.lean:54	theorem lengthCopy_after (a : Nat) (ns : List Nat) (i : Nat) (hi : a<i) :
+DosenPetric/GentzenLengthCopyIndices.lean:58	theorem exchange_before_tail (s t i : Nat) (hi : i<s) : exchangeIndex s t 1 i=i := by
+DosenPetric/GentzenLengthCopyIndices.lean:61	theorem exchange_last_tail (s t : Nat) : exchangeIndex s t 1 (s+t)=s := by
+DosenPetric/GentzenLengthCopyIndices.lean:65	theorem exchange_inside_tail (s t k : Nat) (hk : k<t) :
+DosenPetric/GentzenLengthCopyIndices.lean:69	theorem lengthCopy_drop_last (x b t i : Nat) (hi : i<x+b+t+2) :
+DosenPetric/GentzenLengthCopyIndices.lean:94	theorem lengthCopy_rotate_tail (x y z t i : Nat) (hi : i<x+y+z+t+2) :
+DosenPetric/GentzenLogicalRetainedFactor.lean:14	theorem cast_inverse {F K F' K' : List (NormalForm P)} (p : Route K F)
+DosenPetric/GentzenLogicalRetainedFactor.lean:18	theorem parallel_assoc_reverse {F K U L V J : List (NormalForm P)}
+DosenPetric/GentzenLogicalRetainedFactor.lean:29	theorem cast_trans {F K F' K' F'' K'' : List (NormalForm P)}
+DosenPetric/GentzenLogicalRetainedFactor.lean:35	theorem cast_refl {F K : List (NormalForm P)} (p : ContractionSelection C F K) :
+DosenPetric/GentzenLogicalRetainedFactor.lean:38	theorem retained_middle {V : List (NormalForm P)} (p : ContractionSelection C F K)
+DosenPetric/GentzenLogicalRetainedFactor.lean:54	def sourceOld (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenLogicalRetainedFactor.lean:58	def sourceRetained (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenLogicalRetainedFactor.lean:62	theorem sourceOld_assoc (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenLogicalRetainedFactor.lean:69	theorem source_factor (p : ContractionSelection C F K) (q : ContractionSelection C U L) (o : Op) :
+DosenPetric/GentzenLogicalRetainedFactor.lean:77	theorem retain_arity (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenLogicalRetainedFactor.lean:84	theorem sourceRetained_arity (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenLogicalRetainedFactor.lean:87	theorem sourceOld_arity (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenMixInputReducer.lean:15	theorem left (f : G P U Δ) (g : G P F Λ)
+DosenPetric/GentzenMixInputReducer.lean:35	theorem right (f : G P Δ U) (g : G P Λ F)
+DosenPetric/GentzenMixSelectionReducer.lean:14	theorem ContractionBlock.applyL_congr {U K : List (NormalForm P)}
+DosenPetric/GentzenMixSelectionReducer.lean:20	theorem ContractionBlock.applyR_congr {U K : List (NormalForm P)}
+DosenPetric/GentzenMixSelectionReducer.lean:36	theorem selection_left : ∃ h : G P K (Λ++Δ),
+DosenPetric/GentzenMixSelectionReducer.lean:97	theorem selection_right : ∃ h : G P (Λ++Δ) K,
+DosenPetric/GentzenNativeLogicalBoundCoordinates.lean:13	theorem lower_length (p : ContractionSelection C F K) :
+DosenPetric/GentzenNativeLogicalBoundCoordinates.lean:20	theorem first_branch_index (i k l x y z : Nat) (h₀ : 0<i) (hi : i<k+1)
+DosenPetric/GentzenNativeLogicalBoundCoordinates.lean:23	theorem second_branch_index (i k l x y z t : Nat) (h₀ : 0<i) (hi : i<l+1)
+DosenPetric/GentzenNativeLogicalBoundCoordinates.lean:29	theorem source_keep_index : (p.sourceKeep q).index=(gaps (W6.SourceLeft.tripleBlock p q).gs).length := by
+DosenPetric/GentzenNativeLogicalBoundCoordinates.lean:34	theorem triple_selected_index (i : Nat) :
+DosenPetric/GentzenNativeLogicalBoundCoordinates.lean:46	theorem triple_fresh : (W6.SourceLeft.tripleBlock p q).route.get
+DosenPetric/GentzenNativeLogicalBoundCoordinates.lean:55	theorem exit_retained : (exitRoute p q).get (p.sourceKeep q)=(p.chain q).keep := by
+DosenPetric/GentzenNativeLogicalBoundCoordinates.lean:60	theorem exit_index {D : NormalForm P} (a : At (source p q) D) :
+DosenPetric/GentzenNativeLogicalBoundCoordinates.lean:64	theorem exit_index_injective (i j : Nat)
+DosenPetric/GentzenNativeLogicalBounds.lean:14	def limit : Nat := (old p q f g).rho .left (p.chain q).keep
+DosenPetric/GentzenNativeLogicalBounds.lean:16	theorem innerF_bound : ContractionBound .left (.disj A B) (limit p q f g) (innerF p f)
+DosenPetric/GentzenNativeLogicalBounds.lean:25	theorem innerG_bound : ContractionBound .left (.disj A B) (limit p q f g) (innerG q g)
+DosenPetric/GentzenNativeLogicalBounds.lean:34	theorem body_bound : ContractionBound .left (.disj A B) (limit p q f g) (body p q f g)
+DosenPetric/GentzenNativeLogicalBounds.lean:69	theorem repair_bound : ContractionBound .left (.disj A B) (limit p q f g) (repair p q f g)
+DosenPetric/GentzenNativeLogicalCoordinates.lean:14	abbrev base := p.erased++gaps q.gs
+DosenPetric/GentzenNativeLogicalCoordinates.lean:15	abbrev source := p.erased++(q.erased++[.disj A B])
+DosenPetric/GentzenNativeLogicalCoordinates.lean:16	abbrev target (_q : ContractionSelection (.disj A B) U L) := p.erased++L
+DosenPetric/GentzenNativeLogicalCoordinates.lean:18	theorem exit_source : base p q++q.tail++[.disj A B]++[]=source p q := by
+DosenPetric/GentzenNativeLogicalCoordinates.lean:22	theorem exit_target : base p q++[.disj A B]++q.tail++[]=target p q := by
+DosenPetric/GentzenNativeLogicalCoordinates.lean:29	def exitRoute : Route (target p q) (source p q) :=
+DosenPetric/GentzenNativeLogicalCoordinates.lean:33	theorem exit_square {D : NormalForm P} (a : At (.disj A B::(K++L)) D) :
+DosenPetric/GentzenNativeLogicalCoordinates.lean:74	theorem product_square : ofTerm (p.mergeBlock q).selectedHead.route.product=
+DosenPetric/GentzenNativeLogicalRanks.lean:11	theorem rho_disjL_principal {F U Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenNativeLogicalRanks.lean:21	def premiseSum : Nat := (p.selected.map (fun a => f.rho .left (.there a))).sum+
+DosenPetric/GentzenNativeLogicalRanks.lean:23	theorem old_rank : (old p q f g).rho .left (p.chain q).keep=
+DosenPetric/GentzenNativeLogicalRanks.lean:47	theorem premise_rank {C : NormalForm P} {F K Δ : List (NormalForm P)}
+DosenPetric/GentzenNativeLogicalRanks.lean:59	theorem innerF_lt : (innerF p f).rho .left (.there p.keep)<(old p q f g).rho .left (p.chain q).keep := by
+DosenPetric/GentzenNativeLogicalRanks.lean:68	theorem innerG_lt : (innerG q g).rho .left (.there q.keep)<(old p q f g).rho .left (p.chain q).keep := by
+DosenPetric/GentzenNativeLogicalRepair.lean:13	theorem triple_blocked_for {A B : NormalForm P} {F K U L Δ Λ : List (NormalForm P)}
+DosenPetric/GentzenNativeLogicalRepair.lean:32	def innerF : G P (A::K) Δ := (p.prependFixed [A]).performL Δ f
+DosenPetric/GentzenNativeLogicalRepair.lean:33	def innerG : G P (B::L) Λ := (q.prependFixed [B]).performL Λ g
+DosenPetric/GentzenNativeLogicalRepair.lean:34	def old : G P (p.erased++L) (Δ++Λ) :=
+DosenPetric/GentzenNativeLogicalRepair.lean:36	def body : G P (source p q) (Δ++Λ) :=
+DosenPetric/GentzenNativeLogicalRepair.lean:39	def repair : G P (target p q) (Δ++Λ) :=
+DosenPetric/GentzenNativeLogicalRepair.lean:42	theorem body_blocked : BlockedL (body p q f g) := W6.SourceLeft.triple_blocked_for p q _ _
+DosenPetric/GentzenNativeLogicalRepair.lean:44	theorem denote : ofTerm (repair p q f g).denote=ofTerm (old p q f g).denote := by
+DosenPetric/GentzenNativeLogicalRepair.lean:63	theorem old_count : (old p q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenNativeLogicalRepair.lean:65	theorem repair_count : (repair p q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenNativeLogicalRepair.lean:68	theorem repair_cutFree : (repair p q f g).CutFree ↔ f.CutFree ∧ g.CutFree := by
+DosenPetric/GentzenNativeLogicalRepair.lean:70	theorem repair_atomized : (repair p q f g).Atomized ↔ f.Atomized ∧ g.Atomized := by
+DosenPetric/GentzenNativeLogicalRepair.lean:73	theorem relation : (repair p q f g).relation=(old p q f g).relation := congrArg occurrenceMap (denote p q f g)
+DosenPetric/GentzenNonemptyRightBounds.lean:14	def innerRank : Nat := (inner d hn Γ f).rho .right d.inner.keep
+DosenPetric/GentzenNonemptyRightBounds.lean:16	theorem inner_bound : ContractionBound .right d.C
+DosenPetric/GentzenNonemptyRightBounds.lean:27	theorem moved_bound : ContractionBound .right d.C
+DosenPetric/GentzenNonemptyRightBounds.lean:39	theorem head_bound : ContractionBound .right d.C
+DosenPetric/GentzenNonemptyRightBounds.lean:60	theorem middle_bound : ContractionBound .right d.C
+DosenPetric/GentzenNonemptyRightBounds.lean:74	theorem repair_bound : ContractionBound .right d.C
+DosenPetric/GentzenNonemptyRightLogical.lean:15	theorem nonempty : d.gs ≠ [] := by intro he; rw [he] at hn; cases hn
+DosenPetric/GentzenNonemptyRightLogical.lean:16	def selection : ContractionSelection d.C d.F d.I := d.inner.selection (nonempty d hn)
+DosenPetric/GentzenNonemptyRightLogical.lean:17	theorem selection_block : (selection d hn).block = d.inner := d.inner.selection_block (nonempty d hn)
+DosenPetric/GentzenNonemptyRightLogical.lean:18	theorem selection_route : (selection d hn).route = d.inner.route :=
+DosenPetric/GentzenNonemptyRightLogical.lean:20	theorem selection_keep : (selection d hn).keep = d.inner.keep := by
+DosenPetric/GentzenNonemptyRightLogical.lean:24	theorem selection_selected : (selection d hn).selected = d.inner.selected := by
+DosenPetric/GentzenNonemptyRightLogical.lean:29	theorem selection_arity : (selection d hn).arity = d.gs.length :=
+DosenPetric/GentzenNonemptyRightLogical.lean:31	theorem outerArity : 2 ≤ d.outer.gs.length := by
+DosenPetric/GentzenNonemptyRightLogical.lean:38	def inner : G P Γ d.I := (selection d hn).performR Γ f
+DosenPetric/GentzenNonemptyRightLogical.lean:39	def old : G P Γ d.K := d.outer.applyR (outerArity d hn) Γ (W4.SelectedLogical.logicalR d Γ f)
+DosenPetric/GentzenNonemptyRightLogical.lean:40	def moved : G P Γ (d.A::d.B::d.s.I) :=
+DosenPetric/GentzenNonemptyRightLogical.lean:42	def head : G P Γ (d.C::d.s.I) := G.disjR Γ [] d.s.I d.A d.B (moved d hn Γ f)
+DosenPetric/GentzenNonemptyRightLogical.lean:43	def middle : G P Γ d.s.I := (block d).applyR (Nat.le_refl 2) Γ (head d hn Γ f)
+DosenPetric/GentzenNonemptyRightLogical.lean:44	def repair : G P Γ d.K := UnaryCast.exchangeR (gaps d.gs) [d.C] d.Θ []
+DosenPetric/GentzenNonemptyRightLogical.lean:47	theorem inner_denote : ofTerm (inner d hn Γ f).denote =
+DosenPetric/GentzenNonemptyRightLogical.lean:53	theorem middle_blocked : BlockedR (middle d hn Γ f) := by
+DosenPetric/GentzenNonemptyRightLogical.lean:58	theorem denote : ofTerm (repair d hn Γ f).denote = ofTerm (old d hn Γ f).denote := by
+DosenPetric/GentzenNonemptyRightLogical.lean:92	theorem count : (repair d hn Γ f).cutCount = f.cutCount := by
+DosenPetric/GentzenNonemptyRightLogical.lean:95	theorem old_count : (old d hn Γ f).cutCount = f.cutCount := by
+DosenPetric/GentzenNonemptyRightLogical.lean:97	theorem cutFree : (repair d hn Γ f).CutFree ↔ f.CutFree := by rw [G.CutFree,count]; rfl
+DosenPetric/GentzenNonemptyRightLogical.lean:98	theorem atomized : (repair d hn Γ f).Atomized ↔ f.Atomized := by
+DosenPetric/GentzenNonemptyRightLogical.lean:101	theorem relation : (repair d hn Γ f).relation = (old d hn Γ f).relation :=
+DosenPetric/GentzenNonemptyRightRanks.lean:13	def overhead : Nat := if 2 ≤ d.gs.length then 1 else 0
+DosenPetric/GentzenNonemptyRightRanks.lean:14	theorem overhead_le : overhead d ≤ 1 := by unfold overhead; split <;> omega
+DosenPetric/GentzenNonemptyRightRanks.lean:16	theorem inner_rank : innerRank d hn Γ f =
+DosenPetric/GentzenNonemptyRightRanks.lean:22	theorem old_rank : (old d hn Γ f).rho .right d.x =
+DosenPetric/GentzenNonemptyRightRanks.lean:31	theorem old_balance : (old d hn Γ f).rho .right d.x+overhead d =
+DosenPetric/GentzenNonemptyRightRanks.lean:36	theorem singleton_old_rank (he : d.gs.length=1) :
+DosenPetric/GentzenNonemptyRightRanks.lean:43	theorem inner_lt_old : innerRank d hn Γ f < (old d hn Γ f).rho .right d.x := by
+DosenPetric/GentzenOneConjunction.lean:12	theorem prepend_route {C : NormalForm P} {F K : List (NormalForm P)}
+DosenPetric/GentzenOneConjunction.lean:26	def oldFirst : G P (Γ++Θ) (.conj A B::(K++U)) :=
+DosenPetric/GentzenOneConjunction.lean:28	def repairFirst : G P (Γ++Θ) (.conj A B::(K++U)) :=
+DosenPetric/GentzenOneConjunction.lean:31	theorem denoteFirst : ofTerm (repairFirst p f g).denote=ofTerm (oldFirst p f g).denote := by
+DosenPetric/GentzenOneConjunction.lean:45	theorem old_countFirst : (oldFirst p f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneConjunction.lean:47	theorem repair_countFirst : (repairFirst p f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneConjunction.lean:49	theorem repair_cutFreeFirst : (repairFirst p f g).CutFree ↔ f.CutFree ∧ g.CutFree := by
+DosenPetric/GentzenOneConjunction.lean:51	theorem repair_atomizedFirst : (repairFirst p f g).Atomized ↔ f.Atomized ∧ g.Atomized := by
+DosenPetric/GentzenOneConjunction.lean:56	def oldSecond : G P (Γ++Θ) (.conj A B::(F++L)) :=
+DosenPetric/GentzenOneConjunction.lean:58	def repairSecond : G P (Γ++Θ) (.conj A B::(F++L)) :=
+DosenPetric/GentzenOneConjunction.lean:61	theorem denoteSecond : ofTerm (repairSecond q f g).denote=ofTerm (oldSecond q f g).denote := by
+DosenPetric/GentzenOneConjunction.lean:75	theorem old_countSecond : (oldSecond q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneConjunction.lean:77	theorem repair_countSecond : (repairSecond q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneConjunction.lean:79	theorem repair_cutFreeSecond : (repairSecond q f g).CutFree ↔ f.CutFree ∧ g.CutFree := by
+DosenPetric/GentzenOneConjunction.lean:81	theorem repair_atomizedSecond : (repairSecond q f g).Atomized ↔ f.Atomized ∧ g.Atomized := by
+DosenPetric/GentzenOneConjunctionRanks.lean:13	theorem old_rankFirst : (oldFirst p f g).rho .right (.there (p.keep.before U))=
+DosenPetric/GentzenOneConjunctionRanks.lean:29	theorem repair_rankFirst : (repairFirst p f g).rho .right (.there (p.keep.before U))=
+DosenPetric/GentzenOneConjunctionRanks.lean:37	theorem endpoint_ltFirst (hn : 2≤p.arity) :
+DosenPetric/GentzenOneConjunctionRanks.lean:46	theorem old_rankSecond : (oldSecond q f g).rho .right (.there (At.shift F q.keep))=
+DosenPetric/GentzenOneConjunctionRanks.lean:62	theorem repair_rankSecond : (repairSecond q f g).rho .right (.there (At.shift F q.keep))=
+DosenPetric/GentzenOneConjunctionRanks.lean:70	theorem endpoint_ltSecond (hn : 2≤q.arity) :
+DosenPetric/GentzenOneDisjunctionAntecedent.lean:15	def oldFirst : G P (.disj A B::(K++U)) (Γ++Θ) :=
+DosenPetric/GentzenOneDisjunctionAntecedent.lean:17	def repairFirst : G P (.disj A B::(K++U)) (Γ++Θ) :=
+DosenPetric/GentzenOneDisjunctionAntecedent.lean:20	theorem denoteFirst : ofTerm (repairFirst p f g).denote=ofTerm (oldFirst p f g).denote := by
+DosenPetric/GentzenOneDisjunctionAntecedent.lean:34	theorem old_countFirst : (oldFirst p f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneDisjunctionAntecedent.lean:36	theorem repair_countFirst : (repairFirst p f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneDisjunctionAntecedent.lean:38	theorem repair_cutFreeFirst : (repairFirst p f g).CutFree ↔ f.CutFree ∧ g.CutFree := by
+DosenPetric/GentzenOneDisjunctionAntecedent.lean:40	theorem repair_atomizedFirst : (repairFirst p f g).Atomized ↔ f.Atomized ∧ g.Atomized := by
+DosenPetric/GentzenOneDisjunctionAntecedent.lean:45	def oldSecond : G P (.disj A B::(F++L)) (Γ++Θ) :=
+DosenPetric/GentzenOneDisjunctionAntecedent.lean:47	def repairSecond : G P (.disj A B::(F++L)) (Γ++Θ) :=
+DosenPetric/GentzenOneDisjunctionAntecedent.lean:50	theorem denoteSecond : ofTerm (repairSecond q f g).denote=ofTerm (oldSecond q f g).denote := by
+DosenPetric/GentzenOneDisjunctionAntecedent.lean:64	theorem old_countSecond : (oldSecond q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneDisjunctionAntecedent.lean:66	theorem repair_countSecond : (repairSecond q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneDisjunctionAntecedent.lean:68	theorem repair_cutFreeSecond : (repairSecond q f g).CutFree ↔ f.CutFree ∧ g.CutFree := by
+DosenPetric/GentzenOneDisjunctionAntecedent.lean:70	theorem repair_atomizedSecond : (repairSecond q f g).Atomized ↔ f.Atomized ∧ g.Atomized := by
+DosenPetric/GentzenOneDisjunctionAntecedentRanks.lean:14	theorem old_rankFirst : (oldFirst p f g).rho .left (.there (p.keep.before U))=
+DosenPetric/GentzenOneDisjunctionAntecedentRanks.lean:30	theorem repair_rankFirst : (repairFirst p f g).rho .left (.there (p.keep.before U))=
+DosenPetric/GentzenOneDisjunctionAntecedentRanks.lean:38	theorem endpoint_ltFirst (hn : 2≤p.arity) :
+DosenPetric/GentzenOneDisjunctionAntecedentRanks.lean:47	theorem old_rankSecond : (oldSecond q f g).rho .left (.there (At.shift F q.keep))=
+DosenPetric/GentzenOneDisjunctionAntecedentRanks.lean:63	theorem repair_rankSecond : (repairSecond q f g).rho .left (.there (At.shift F q.keep))=
+DosenPetric/GentzenOneDisjunctionAntecedentRanks.lean:71	theorem endpoint_ltSecond (hn : 2≤q.arity) :
+DosenPetric/GentzenOneDisjunctionAntecedentReducer.lean:12	theorem reducesFirst (p : ContractionSelection C F K) (hn : 2≤p.arity)
+DosenPetric/GentzenOneDisjunctionAntecedentReducer.lean:27	theorem reducesSecond (q : ContractionSelection C U L) (hn : 2≤q.arity)
+DosenPetric/GentzenOneHeadConjunction.lean:11	theorem G.reindex_refl {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) : g.reindex rfl rfl=g := rfl
+DosenPetric/GentzenOneHeadConjunction.lean:13	theorem gaps_prepend {C : NormalForm P} {F K : List (NormalForm P)}
+DosenPetric/GentzenOneHeadConjunction.lean:24	abbrev blockFirst : ContractionBlock P (.conj A B::(K++U)) (K++U) where
+DosenPetric/GentzenOneHeadConjunction.lean:35	theorem blockFirst_eq : blockFirst (U:=U) p=(p.extend U).retainedHeadBlock := by
+DosenPetric/GentzenOneHeadConjunction.lean:43	def oldFirst : G P (Γ++Θ) (K++U) :=
+DosenPetric/GentzenOneHeadConjunction.lean:45	def middleFirst : G P (Γ++Θ) (.conj A B::(K++U)) := G.conjR ((p.prependFixed [A]).performR Γ f) g
+DosenPetric/GentzenOneHeadConjunction.lean:46	def repairFirst : G P (Γ++Θ) (K++U) := (blockFirst p).applyR (Nat.le_refl 2) _ (middleFirst p f g)
+DosenPetric/GentzenOneHeadConjunction.lean:48	theorem denoteFirst : ofTerm (repairFirst p f g).denote=ofTerm (oldFirst p f g).denote := by
+DosenPetric/GentzenOneHeadConjunction.lean:64	theorem blockedFirst : BlockedR (repairFirst p f g) := by
+DosenPetric/GentzenOneHeadConjunction.lean:74	theorem old_countFirst : (oldFirst p f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneHeadConjunction.lean:76	theorem repair_countFirst : (repairFirst p f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneHeadConjunction.lean:82	abbrev blockSecond : ContractionBlock P (.conj A B::(F++L)) (F++L) where
+DosenPetric/GentzenOneHeadConjunction.lean:93	theorem blockSecond_eq : blockSecond (F:=F) q=(q.prependFixed F).retainedHeadBlock := by
+DosenPetric/GentzenOneHeadConjunction.lean:101	def oldSecond : G P (Γ++Θ) (F++L) :=
+DosenPetric/GentzenOneHeadConjunction.lean:103	def middleSecond : G P (Γ++Θ) (.conj A B::(F++L)) := G.conjR f ((q.prependFixed [B]).performR Θ g)
+DosenPetric/GentzenOneHeadConjunction.lean:104	def repairSecond : G P (Γ++Θ) (F++L) := (blockSecond q).applyR (Nat.le_refl 2) _ (middleSecond q f g)
+DosenPetric/GentzenOneHeadConjunction.lean:106	theorem denoteSecond : ofTerm (repairSecond q f g).denote=ofTerm (oldSecond q f g).denote := by
+DosenPetric/GentzenOneHeadConjunction.lean:122	theorem blockedSecond : BlockedR (repairSecond q f g) := by
+DosenPetric/GentzenOneHeadConjunction.lean:132	theorem old_countSecond : (oldSecond q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneHeadConjunction.lean:134	theorem repair_countSecond : (repairSecond q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneHeadConjunctionRanks.lean:14	theorem old_rankFirst : (oldFirst p f g).rho .right (p.keep.before U)=
+DosenPetric/GentzenOneHeadConjunctionRanks.lean:35	theorem repair_rankFirst : (repairFirst p f g).rho .right (p.keep.before U)=
+DosenPetric/GentzenOneHeadConjunctionRanks.lean:59	theorem endpoint_leFirst : (repairFirst p f g).rho .right (p.keep.before U)≤
+DosenPetric/GentzenOneHeadConjunctionRanks.lean:68	theorem old_rankSecond : (oldSecond q f g).rho .right (At.shift F q.keep)=
+DosenPetric/GentzenOneHeadConjunctionRanks.lean:89	theorem repair_rankSecond : (repairSecond q f g).rho .right (At.shift F q.keep)=
+DosenPetric/GentzenOneHeadConjunctionRanks.lean:113	theorem endpoint_leSecond : (repairSecond q f g).rho .right (At.shift F q.keep)≤
+DosenPetric/GentzenOneHeadConjunctionReducer.lean:14	theorem reducesFirst (p : ContractionSelection (.conj A B) F K)
+DosenPetric/GentzenOneHeadConjunctionReducer.lean:31	theorem reducesSecond (q : ContractionSelection (.conj A B) U L)
+DosenPetric/GentzenOneHeadConjunctionReducer.lean:50	theorem reduces (p : ContractionSelection (.conj A B) F K) (q : ContractionSelection (.conj A B) U L)
+DosenPetric/GentzenOneHeadDisjunction.lean:15	theorem retainedLast_source : gaps p.gs++p.tail++[C]++[]=p.erased++[C] := by
+DosenPetric/GentzenOneHeadDisjunction.lean:18	theorem retainedLast_target : gaps p.gs++[C]++p.tail++[]=K := by
+DosenPetric/GentzenOneHeadDisjunction.lean:21	def retainedReturn {Δ : List (NormalForm P)} (f : G P (p.erased++[C]) Δ) : G P K Δ :=
+DosenPetric/GentzenOneHeadDisjunction.lean:24	theorem retainedReturn_denote {Δ : List (NormalForm P)} (f : G P (p.erased++[C]) Δ) :
+DosenPetric/GentzenOneHeadDisjunction.lean:32	abbrev blockFirst : ContractionBlock P ((K++U)++[.disj A B]) ((p.extend U).erased++[.disj A B]) where
+DosenPetric/GentzenOneHeadDisjunction.lean:47	theorem block_eqFirst : blockFirst (U:=U) p=(p.extend U).retainedLastBlock := by
+DosenPetric/GentzenOneHeadDisjunction.lean:54	def oldFirst : G P (K++U) (Δ++Λ) := (ContractionSelection.more (p.extend U)).performL _ (G.disjL f g)
+DosenPetric/GentzenOneHeadDisjunction.lean:55	def innerFirst : G P (A::K) Δ := (p.prependFixed [A]).performL _ f
+DosenPetric/GentzenOneHeadDisjunction.lean:56	def bodyFirst : G P ((p.extend U).erased++[.disj A B]) (Δ++Λ) :=
+DosenPetric/GentzenOneHeadDisjunction.lean:59	def repairFirst : G P (K++U) (Δ++Λ) := (p.extend U).retainedReturn (bodyFirst p f g)
+DosenPetric/GentzenOneHeadDisjunction.lean:61	theorem blockedFirst : BlockedL (bodyFirst p f g) := by
+DosenPetric/GentzenOneHeadDisjunction.lean:80	theorem denoteFirst : ofTerm (repairFirst p f g).denote=ofTerm (oldFirst p f g).denote := by
+DosenPetric/GentzenOneHeadDisjunction.lean:97	theorem old_countFirst : (oldFirst p f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneHeadDisjunction.lean:99	theorem repair_countFirst : (repairFirst p f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneHeadDisjunction.lean:105	abbrev blockSecond : ContractionBlock P ((F++L)++[.disj A B]) ((q.prependFixed F).erased++[.disj A B]) where
+DosenPetric/GentzenOneHeadDisjunction.lean:120	theorem block_eqSecond : blockSecond (F:=F) q=(q.prependFixed F).retainedLastBlock := by
+DosenPetric/GentzenOneHeadDisjunction.lean:127	def oldSecond : G P (F++L) (Δ++Λ) := (ContractionSelection.more (q.prependFixed F)).performL _ (G.disjL f g)
+DosenPetric/GentzenOneHeadDisjunction.lean:128	def innerSecond : G P (B::L) Λ := (q.prependFixed [B]).performL _ g
+DosenPetric/GentzenOneHeadDisjunction.lean:129	def bodySecond : G P ((q.prependFixed F).erased++[.disj A B]) (Δ++Λ) :=
+DosenPetric/GentzenOneHeadDisjunction.lean:132	def repairSecond : G P (F++L) (Δ++Λ) := (q.prependFixed F).retainedReturn (bodySecond q f g)
+DosenPetric/GentzenOneHeadDisjunction.lean:134	theorem blockedSecond : BlockedL (bodySecond q f g) := by
+DosenPetric/GentzenOneHeadDisjunction.lean:153	theorem denoteSecond : ofTerm (repairSecond q f g).denote=ofTerm (oldSecond q f g).denote := by
+DosenPetric/GentzenOneHeadDisjunction.lean:170	theorem old_countSecond : (oldSecond q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneHeadDisjunction.lean:172	theorem repair_countSecond : (repairSecond q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenOneHeadDisjunctionBounds.lean:13	theorem body_boundFirst : ContractionBound .left (.disj A B) (limitFirst p f g) (bodyFirst p f g)
+DosenPetric/GentzenOneHeadDisjunctionBounds.lean:51	theorem repair_boundFirst : ContractionBound .left (.disj A B) (limitFirst p f g) (repairFirst p f g)
+DosenPetric/GentzenOneHeadDisjunctionBounds.lean:57	theorem reducesFirst {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenOneHeadDisjunctionBounds.lean:76	theorem body_boundSecond : ContractionBound .left (.disj A B) (limitSecond q f g) (bodySecond q f g)
+DosenPetric/GentzenOneHeadDisjunctionBounds.lean:112	theorem repair_boundSecond : ContractionBound .left (.disj A B) (limitSecond q f g) (repairSecond q f g)
+DosenPetric/GentzenOneHeadDisjunctionBounds.lean:118	theorem reducesSecond {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenOneHeadDisjunctionRanks.lean:12	theorem old_rankFirst : (oldFirst p f g).rho .left (p.keep.before U)=
+DosenPetric/GentzenOneHeadDisjunctionRanks.lean:34	def limitFirst : Nat := (oldFirst p f g).rho .left (p.keep.before U)
+DosenPetric/GentzenOneHeadDisjunctionRanks.lean:35	theorem inner_ltFirst : (innerFirst p f).rho .left (.there p.keep)<limitFirst p f g := by
+DosenPetric/GentzenOneHeadDisjunctionRanks.lean:42	theorem old_rankSecond : (oldSecond q f g).rho .left (At.shift F q.keep)=
+DosenPetric/GentzenOneHeadDisjunctionRanks.lean:64	def limitSecond : Nat := (oldSecond q f g).rho .left (At.shift F q.keep)
+DosenPetric/GentzenOneHeadDisjunctionRanks.lean:65	theorem inner_ltSecond : (innerSecond q g).rho .left (.there q.keep)<limitSecond q f g := by
+DosenPetric/GentzenOppositeLogicalBounds.lean:13	theorem exchangeL_right (Γ X Y Θ Δ : List (NormalForm P)) (f : G P (Γ++X++Y++Θ) Δ)
+DosenPetric/GentzenOppositeLogicalBounds.lean:28	theorem disjL_right {Γ Θ F U : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenOppositeLogicalBounds.lean:64	theorem exchangeL_right_bound {C : NormalForm P} {k : Nat} {F U : List (NormalForm P)}
+DosenPetric/GentzenOppositeLogicalBounds.lean:77	theorem headL_right_bound {F Δ : List (NormalForm P)} (A : NormalForm P)
+DosenPetric/GentzenOppositeLogicalBounds.lean:84	theorem tailL_right_bound {F Δ : List (NormalForm P)} (A : NormalForm P)
+DosenPetric/GentzenOppositeLogicalBounds.lean:91	theorem native_source_right_bound {Γ Θ F U : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenOppositeUnaryReducers.lean:17	theorem reducesL (C D : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenOppositeUnaryReducers.lean:23	theorem reducesR (C D : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenOppositeUnaryReducers.lean:33	theorem reducesL (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenOppositeUnaryReducers.lean:39	theorem reducesR (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenOppositeUnaryReducers.lean:49	theorem reducesL (A B C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenOppositeUnaryReducers.lean:55	theorem reducesR (A B C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenOppositeUnaryReducers.lean:68	theorem reducesL {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenOppositeUnaryReducers.lean:74	theorem reducesR {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenParametricConjunction.lean:13	theorem ContractionBlock.ext_data {F K : List (NormalForm P)}
+DosenPetric/GentzenParametricConjunction.lean:22	def middle : G P (Γ++Θ) (.conj A B::(K++L)) :=
+DosenPetric/GentzenParametricConjunction.lean:24	def old : G P (Γ++Θ) (.conj A B::(p.erased++L)) :=
+DosenPetric/GentzenParametricConjunction.lean:27	abbrev block : ContractionBlock P (.conj A B::(K++L)) (.conj A B::(p.erased++L)) where
+DosenPetric/GentzenParametricConjunction.lean:42	theorem block_prepend : block (A:=A) (B:=B) p q=(p.mergeBlock q).prepend (Nat.le_refl 2) [.conj A B] := by
+DosenPetric/GentzenParametricConjunction.lean:49	def repair : G P (Γ++Θ) (.conj A B::(p.erased++L)) :=
+DosenPetric/GentzenParametricConjunction.lean:52	theorem square (o : Op) :
+DosenPetric/GentzenParametricConjunction.lean:66	theorem denote : ofTerm (repair p q f g).denote=ofTerm (old p q f g).denote := by
+DosenPetric/GentzenParametricConjunction.lean:79	theorem blocked : BlockedR (repair p q f g) := by
+DosenPetric/GentzenParametricConjunction.lean:90	theorem old_count : (old p q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenParametricConjunction.lean:92	theorem repair_count : (repair p q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenParametricConjunction.lean:95	theorem repair_cutFree : (repair p q f g).CutFree ↔ f.CutFree ∧ g.CutFree := by
+DosenPetric/GentzenParametricConjunction.lean:97	theorem repair_atomized : (repair p q f g).Atomized ↔ f.Atomized ∧ g.Atomized := by
+DosenPetric/GentzenParametricConjunction.lean:99	theorem relation : (repair p q f g).relation=(old p q f g).relation := congrArg occurrenceMap (denote p q f g)
+DosenPetric/GentzenParametricConjunctionRanks.lean:16	theorem block_keep : (block (A:=A) (B:=B) p q).keep=.there (p.chain q).keep := by
+DosenPetric/GentzenParametricConjunctionRanks.lean:22	theorem block_selected : (block (A:=A) (B:=B) p q).selected=
+DosenPetric/GentzenParametricConjunctionRanks.lean:33	theorem old_rank : (old p q f g).rho .right (.there (p.chain q).keep)=
+DosenPetric/GentzenParametricConjunctionRanks.lean:54	theorem repair_rank : (repair p q f g).rho .right (.there (p.chain q).keep)=
+DosenPetric/GentzenParametricConjunctionRanks.lean:70	theorem endpoint_le : (repair p q f g).rho .right (.there (p.chain q).keep)≤
+DosenPetric/GentzenParametricDisjunction.lean:13	theorem head_product_factor {F K : List (NormalForm P)} (D : NormalForm P) (r : Route K F) :
+DosenPetric/GentzenParametricDisjunction.lean:28	abbrev block := (p.mergeBlock q).extend [.disj A B]
+DosenPetric/GentzenParametricDisjunction.lean:29	theorem block_bound : 2≤(block (A:=A) (B:=B) p q).gs.length := Nat.le_refl 2
+DosenPetric/GentzenParametricDisjunction.lean:31	def old : G P (.disj A B::(p.erased++L)) (Δ++Λ) :=
+DosenPetric/GentzenParametricDisjunction.lean:33	def innerF : G P (A::K) Δ := (p.prependFixed [A]).performL _ f
+DosenPetric/GentzenParametricDisjunction.lean:34	def innerG : G P (B::L) Λ := (q.prependFixed [B]).performL _ g
+DosenPetric/GentzenParametricDisjunction.lean:35	def body : G P ((p.erased++L)++[.disj A B]) (Δ++Λ) :=
+DosenPetric/GentzenParametricDisjunction.lean:38	def repair : G P (.disj A B::(p.erased++L)) (Δ++Λ) :=
+DosenPetric/GentzenParametricDisjunction.lean:41	theorem body_blocked : BlockedL (body p q f g) := by
+DosenPetric/GentzenParametricDisjunction.lean:53	theorem denote : ofTerm (repair p q f g).denote=ofTerm (old p q f g).denote := by
+DosenPetric/GentzenParametricDisjunction.lean:80	theorem old_count : (old p q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenParametricDisjunction.lean:82	theorem repair_count : (repair p q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenParametricDisjunctionBounds.lean:14	theorem old_rank : (old p q f g).rho .left (.there (p.chain q).keep)=
+DosenPetric/GentzenParametricDisjunctionBounds.lean:36	def limit : Nat := (old p q f g).rho .left (.there (p.chain q).keep)
+DosenPetric/GentzenParametricDisjunctionBounds.lean:38	theorem innerF_lt : (innerF p f).rho .left (.there p.keep)<limit p q f g := by
+DosenPetric/GentzenParametricDisjunctionBounds.lean:43	theorem innerG_lt : (innerG q g).rho .left (.there q.keep)<limit p q f g := by
+DosenPetric/GentzenParametricDisjunctionBounds.lean:48	theorem innerF_bound : ContractionBound .left C (limit p q f g) (innerF p f)
+DosenPetric/GentzenParametricDisjunctionBounds.lean:56	theorem innerG_bound : ContractionBound .left C (limit p q f g) (innerG q g)
+DosenPetric/GentzenParametricDisjunctionBounds.lean:64	theorem body_bound : ContractionBound .left C (limit p q f g) (body p q f g)
+DosenPetric/GentzenParametricDisjunctionBounds.lean:95	theorem rotate_index (k i n : Nat) (hk : k<n) (h : exchangeIndex 0 n 1 i=k+1) : i=k := by
+DosenPetric/GentzenParametricDisjunctionBounds.lean:103	theorem repair_bound : ContractionBound .left C (limit p q f g) (repair p q f g)
+DosenPetric/GentzenParametricDisjunctionBounds.lean:113	theorem reduces {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenReducibilityHeadLogical.lean:12	theorem addressed_right {Γ Θ Φ Δ Ξ Λ : List (NormalForm P)}
+DosenPetric/GentzenReducibilityNativeLogical.lean:12	theorem addressed_left {Δ Λ Γ Ξ Θ Ω : List (NormalForm P)}
+DosenPetric/GentzenReducibilityNonemptyRight.lean:15	theorem addressed_right {Ξ Δ Θ Λ : List (NormalForm P)} {root : G P Ξ (d.C::Δ)}
+DosenPetric/GentzenReducibilityNonemptyRight.lean:42	abbrev data : Gentzen.SelectedLogical.Data Empty .disj := ⟨.bot,.bot,[[]],[]⟩
+DosenPetric/GentzenReducibilityNonemptyRight.lean:43	theorem native_old : old data (Nat.le_refl 1) [.bot] SingletonRightRegression.premise =
+DosenPetric/GentzenReducibilityNonemptyRight.lean:45	theorem singleton_inner : inner data (Nat.le_refl 1) [.bot] SingletonRightRegression.premise =
+DosenPetric/GentzenReducibilityNonemptyRight.lean:48	theorem native_replacement :
+DosenPetric/GentzenReducibilitySourceLogical.lean:12	theorem addressed_left {Δ Λ Γ Ξ Θ Ω : List (NormalForm P)}
+DosenPetric/GentzenReductionStatements.lean:13	def ReducesL (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ) (w : G P U V) (x : At U C) : Prop :=
+DosenPetric/GentzenReductionStatements.lean:20	def ReducesR (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ) (w : G P U V) (x : At V C) : Prop :=
+DosenPetric/GentzenRetainedHeadBlock.lean:11	abbrev retainedHeadBlock (p : ContractionSelection C F K) : ContractionBlock P (C::K) K where
+DosenPetric/GentzenRetainedHeadBlock.lean:20	theorem retainedHead_eq : p.retainedHeadBlock=p.retained.block.selectedHead := by
+DosenPetric/GentzenRetainedHeadBlock.lean:27	theorem retainedHead_keep : p.retainedHeadBlock.keep=p.keep := by
+DosenPetric/GentzenRetainedHeadBlock.lean:32	theorem retainedHead_route : p.retainedHeadBlock.route=Route.cons p.keep (Route.identity K) := by
+DosenPetric/GentzenRetainedHeadBlock.lean:36	theorem retainedHead_selected : p.retainedHeadBlock.selected=[.here C K,.there p.keep] := by
+DosenPetric/GentzenRetainedHeadBlock.lean:41	theorem retainedHead_square (o : Op) :
+DosenPetric/GentzenRetainedLastBlock.lean:13	theorem lengthCopy_two_last (x t : Nat) : lengthCopy [x,t] (x+t+1)=x+t := by
+DosenPetric/GentzenRetainedLastBlock.lean:19	theorem lengthCopy_two_rotate (x t i : Nat) (hi : i<x+t+1) :
+DosenPetric/GentzenRetainedLastBlock.lean:43	abbrev retainedLastBlock : ContractionBlock P (K++[C]) (p.erased++[C]) where
+DosenPetric/GentzenRetainedLastBlock.lean:54	theorem retainedLast_bound : 2≤p.retainedLastBlock.gs.length := Nat.le_refl 2
+DosenPetric/GentzenRetainedLastBlock.lean:56	def retainedExit : Route K (p.erased++[C]) :=
+DosenPetric/GentzenRetainedLastBlock.lean:61	theorem retainedExit_square {D : NormalForm P} (a : At (C::K) D) :
+DosenPetric/GentzenRetainedLastBlock.lean:83	theorem retainedExit_product : ofTerm p.retainedHeadBlock.route.product=
+DosenPetric/GentzenRetainedLastBounds.lean:12	def lastKeep : At (p.erased++[C]) C := At.shift p.erased (.here C [])
+DosenPetric/GentzenRetainedLastBounds.lean:14	theorem lastKeep_index : p.lastKeep.index=(gaps p.retainedLastBlock.gs).length := by
+DosenPetric/GentzenRetainedLastBounds.lean:18	theorem last_selected_index (i : Nat) : copyIndex p.retainedLastBlock.gs i=p.lastKeep.index ↔
+DosenPetric/GentzenRetainedLastBounds.lean:26	theorem last_exit_keep : p.retainedExit.get p.lastKeep=p.keep := by
+DosenPetric/GentzenRetainedLastBounds.lean:36	theorem return_bound {k : Nat} (f : G P (p.erased++[C]) Δ)
+DosenPetric/GentzenRetainedOnly.lean:14	def retained : {F K : List (NormalForm P)}→ContractionSelection C F K→ContractionSelection C K K
+DosenPetric/GentzenRetainedOnly.lean:20	theorem retained_arity : p.retained.arity=1 := by induction p <;> simp_all only [retained,arity]
+DosenPetric/GentzenRetainedOnly.lean:21	theorem retained_keep : p.retained.keep=p.keep := by
+DosenPetric/GentzenRetainedOnly.lean:26	theorem retained_tail : p.retained.tail=p.tail := by induction p <;> simp_all only [retained,tail]
+DosenPetric/GentzenRetainedOnly.lean:27	theorem retained_first : p.retained.first=gaps p.gs := by
+DosenPetric/GentzenRetainedOnly.lean:32	theorem retained_rest : p.retained.rest=[] := by induction p <;> simp_all only [retained,rest]
+DosenPetric/GentzenRetainedOnly.lean:33	theorem retained_gs : p.retained.gs=[gaps p.gs] := by change p.retained.first::p.retained.rest=_; rw [retained_first,retained_rest]
+DosenPetric/GentzenRetainedOnly.lean:34	theorem retained_route : p.retained.route=Route.identity K := by
+DosenPetric/GentzenRetainedOnly.lean:44	theorem prepend_head_route (D : NormalForm P) :
+DosenPetric/GentzenRetainedSelection.lean:12	def retainChain {F K U L : List (NormalForm P)} (p : ContractionSelection C F K)
+DosenPetric/GentzenRetainedSelection.lean:21	theorem retain_selected (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenRetainedSelection.lean:34	theorem retain_member (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenRetainedSelection.lean:39	theorem fuse_extend (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenRetainedSelection.lean:46	theorem prepend_member {I : List (NormalForm P)} (p : ContractionSelection C F I)
+DosenPetric/GentzenRetainedSelection.lean:52	theorem fuse_prepend {I : List (NormalForm P)} (p : ContractionSelection C F I)
+DosenPetric/GentzenRetainedSelection.lean:60	theorem retain_fuse_member (p : ContractionSelection C F K) (q : ContractionSelection C U L)
+DosenPetric/GentzenRetainedSelection.lean:67	theorem retain_fuse (p : ContractionSelection C F K) (q : ContractionSelection C U L)
+DosenPetric/GentzenRetainedSelection.lean:81	theorem fuse_side {I : List (NormalForm P)} (p : ContractionSelection C F I)
+DosenPetric/GentzenRotationInverses.lean:11	theorem rotations_head (o : Op) (F : List (NormalForm P)) (A : NormalForm P) :
+DosenPetric/GentzenRotationInverses.lean:22	theorem rotations_tail (o : Op) (F : List (NormalForm P)) (A : NormalForm P) :
+DosenPetric/GentzenRotationInverses.lean:42	theorem headL_denote {F Δ : List (NormalForm P)} (A : NormalForm P) (f : G P (F++[A]) Δ) :
+DosenPetric/GentzenRotationInverses.lean:48	theorem tailL_denote {F Δ : List (NormalForm P)} (A : NormalForm P) (f : G P (A::F) Δ) :
+DosenPetric/GentzenRotationInverses.lean:54	theorem head_tail_denote {F Δ : List (NormalForm P)} (A : NormalForm P) (f : G P (A::F) Δ) :
+DosenPetric/GentzenRotationInverses.lean:61	theorem disjLLast_native {F U Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenRotationRoutes.lean:11	def toHead (F : List (NormalForm P)) (A : NormalForm P) : Route (A::F) (F++[A]) :=
+DosenPetric/GentzenRotationRoutes.lean:15	def toTail (F : List (NormalForm P)) (A : NormalForm P) : Route (F++[A]) (A::F) :=
+DosenPetric/GentzenRotationRoutes.lean:20	theorem toHead_before (A : NormalForm P) {B : NormalForm P} (a : At F B) :
+DosenPetric/GentzenRotationRoutes.lean:28	theorem toHead_last (F : List (NormalForm P)) (A : NormalForm P) :
+DosenPetric/GentzenRotationRoutes.lean:35	theorem toTail_here (F : List (NormalForm P)) (A : NormalForm P) :
+DosenPetric/GentzenRotationRoutes.lean:42	theorem toTail_there (A : NormalForm P) {B : NormalForm P} (a : At F B) :
+DosenPetric/GentzenRotationRoutes.lean:50	theorem head_rotation (o : Op) (A : NormalForm P) (p : Route K F) :
+DosenPetric/GentzenRotationRoutes.lean:68	theorem tail_rotation (o : Op) (A : NormalForm P) (p : Route K F) :
+DosenPetric/GentzenSelectedHeadBlock.lean:11	abbrev selectedHead (d : ContractionBlock P F K) : ContractionBlock P (d.C::F) K where
+DosenPetric/GentzenSelectedHeadBlock.lean:19	theorem selectedHead_keep : d.selectedHead.keep=d.keep := by
+DosenPetric/GentzenSelectedHeadBlock.lean:24	theorem selectedHead_route : d.selectedHead.route=Route.cons d.keep d.route := by
+DosenPetric/GentzenSelectedHeadBlock.lean:40	theorem selectedHead_selected : d.selectedHead.selected=
+DosenPetric/GentzenSelectionAssociativity.lean:12	theorem selected_indices (p : ContractionSelection C F K) :
+DosenPetric/GentzenSelectionAssociativity.lean:16	theorem eq_of_gs (p q : ContractionSelection C F K) (hg : p.gs=q.gs) : p=q := by
+DosenPetric/GentzenSelectionAssociativity.lean:21	theorem arity_cast {F' K' : List (NormalForm P)} (p : ContractionSelection C F K)
+DosenPetric/GentzenSelectionAssociativity.lean:24	theorem selected_cast {F' K' : List (NormalForm P)} (p : ContractionSelection C F K)
+DosenPetric/GentzenSelectionAssociativity.lean:27	theorem keep_cast {F' K' : List (NormalForm P)} (p : ContractionSelection C F K)
+DosenPetric/GentzenSelectionAssociativity.lean:31	theorem prepend_erased (p : ContractionSelection C F K) (Ξ : List (NormalForm P)) :
+DosenPetric/GentzenSelectionAssociativity.lean:37	theorem erased_chain (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenSelectionAssociativity.lean:43	theorem chain_first (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenSelectionAssociativity.lean:49	theorem chain_rest (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenSelectionAssociativity.lean:61	theorem chain_tail (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenSelectionAssociativity.lean:67	theorem chain_gs (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenSelectionAssociativity.lean:73	theorem chain_lower_assoc (p : ContractionSelection C F K) (q : ContractionSelection C U L)
+DosenPetric/GentzenSelectionAssociativity.lean:77	theorem chain_assoc (p : ContractionSelection C F K) (q : ContractionSelection C U L)
+DosenPetric/GentzenSelectionAssociativity.lean:85	theorem retain_first (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenSelectionAssociativity.lean:91	theorem retain_rest (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenSelectionAssociativity.lean:100	theorem retain_tail (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenSelectionAssociativity.lean:107	theorem retained_factor (p : ContractionSelection C F K) (q : ContractionSelection C U L)
+DosenPetric/GentzenSelectionExtension.lean:11	def extend {F K : List (NormalForm P)} (p : ContractionSelection C F K)
+DosenPetric/GentzenSelectionExtension.lean:19	theorem extend_first (Ξ : List (NormalForm P)) : (p.extend Ξ).first=p.first := by
+DosenPetric/GentzenSelectionExtension.lean:21	theorem extend_rest (Ξ : List (NormalForm P)) : (p.extend Ξ).rest=p.rest := by
+DosenPetric/GentzenSelectionExtension.lean:23	theorem extend_tail (Ξ : List (NormalForm P)) : (p.extend Ξ).tail=p.tail++Ξ := by
+DosenPetric/GentzenSelectionExtension.lean:25	theorem extend_arity (Ξ : List (NormalForm P)) : (p.extend Ξ).arity=p.arity := by
+DosenPetric/GentzenSelectionExtension.lean:27	theorem extend_gs (Ξ : List (NormalForm P)) : (p.extend Ξ).gs=p.gs := by
+DosenPetric/GentzenSelectionExtension.lean:30	theorem extend_block (Ξ : List (NormalForm P)) : (p.extend Ξ).block=p.block.extend Ξ := by
+DosenPetric/GentzenSelectionExtension.lean:32	theorem extend_keep (Ξ : List (NormalForm P)) : (p.extend Ξ).keep=p.keep.before Ξ := by
+DosenPetric/GentzenSelectionExtension.lean:37	theorem extend_selected (Ξ : List (NormalForm P)) :
+DosenPetric/GentzenSelectionExtension.lean:49	theorem extend_erased (Ξ : List (NormalForm P)) : (p.extend Ξ).erased=p.erased++Ξ := by
+DosenPetric/GentzenSelectionRouteExtension.lean:14	theorem extend_before (p : ContractionSelection C F K) (Ξ : List (NormalForm P))
+DosenPetric/GentzenSelectionRouteExtension.lean:30	theorem extend_shift (p : ContractionSelection C F K) (Ξ : List (NormalForm P))
+DosenPetric/GentzenSelectionRouteExtension.lean:38	theorem extend_route (p : ContractionSelection C F K) (Ξ : List (NormalForm P)) :
+DosenPetric/GentzenSelectionRouteExtension.lean:46	theorem route_cast {F' K' : List (NormalForm P)} (p : ContractionSelection C F K)
+DosenPetric/GentzenSelectionRouteExtension.lean:54	def compose (p : Route K U) (q : Route U F) : Route K F := q.map (fun a => p.get a)
+DosenPetric/GentzenSelectionRouteExtension.lean:56	theorem compose_get (p : Route K U) (q : Route U F) {A : NormalForm P} (a : At F A) :
+DosenPetric/GentzenSelectionRouteExtension.lean:59	theorem compose_side (o : Op) (p : Route K U) (q : Route U F) :
+DosenPetric/GentzenSelectionRouteExtension.lean:65	theorem parallel_assoc (p : Route K F) (q : Route L U) (r : Route J V) :
+DosenPetric/GentzenSelectionRouteExtension.lean:97	theorem cast_factor {F' U' : List (NormalForm P)}
+DosenPetric/GentzenSelectionSplit.lean:11	theorem blockArity {F K : List (NormalForm P)} (p : ContractionSelection C F K)
+DosenPetric/GentzenSelectionSplit.lean:19	inductive Split (C : NormalForm P) (F U : List (NormalForm P)) :
+DosenPetric/GentzenSelectionSplit.lean:26	theorem split_exists (F U : List (NormalForm P)) {K : List (NormalForm P)}
+DosenPetric/GentzenSelectionSplit.lean:46	theorem prepend_arity {F K : List (NormalForm P)} (p : ContractionSelection C F K)
+DosenPetric/GentzenSelectionSplit.lean:50	theorem prepend_block {F K : List (NormalForm P)} (p : ContractionSelection C F K)
+DosenPetric/GentzenSingletonRightRegression.lean:9	abbrev C : NormalForm Empty := .disj .bot .bot
+DosenPetric/GentzenSingletonRightRegression.lean:10	abbrev premise : G Empty [.bot] [C,.bot,.bot] := BlockedExamples.r _
+DosenPetric/GentzenSingletonRightRegression.lean:11	abbrev other : G Empty [C] [.top] := BlockedExamples.l _
+DosenPetric/GentzenSingletonRightRegression.lean:12	abbrev logical : G Empty [.bot] [C,C] := G.disjR [.bot] [C] [] .bot .bot premise
+DosenPetric/GentzenSingletonRightRegression.lean:13	abbrev old : G Empty [.bot] [C] :=
+DosenPetric/GentzenSingletonRightRegression.lean:16	theorem premise_cutFree : premise.CutFree := G.atomize_cutFree _ rfl
+DosenPetric/GentzenSingletonRightRegression.lean:17	theorem other_cutFree : other.CutFree := G.atomize_cutFree _ rfl
+DosenPetric/GentzenSingletonRightRegression.lean:18	theorem old_cutFree : old.CutFree := by
+DosenPetric/GentzenSingletonRightRegression.lean:21	theorem contracted_prefix : old.contractedDisjRightPrefix = some 1 := rfl
+DosenPetric/GentzenSingletonRightRegression.lean:22	theorem old_unblocked : ¬ BlockedR old := by
+DosenPetric/GentzenSingletonRightRegression.lean:29	theorem old_reducible : ReducibleR old other ProofAddress.root (.here C []) := by
+DosenPetric/GentzenSingletonRightRegression.lean:38	theorem old_rank : old.rho .right (.here C []) =
+DosenPetric/GentzenSourceLogicalBlocked.lean:15	theorem performL_eq_apply (p : ContractionSelection C F K) (hn : 2≤p.arity)
+DosenPetric/GentzenSourceLogicalBlocked.lean:21	theorem sourceRetained_gs (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenSourceLogicalBlocked.lean:29	theorem sourceRetained_tail (p : ContractionSelection C F K) (q : ContractionSelection C U L) :
+DosenPetric/GentzenSourceLogicalBlocked.lean:35	theorem disjLLast_reindex_inputs {F U F' U' Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenSourceLogicalBlocked.lean:48	def tripleBlock : ContractionBlock P ((K++L)++[.disj A B]) (p.erased++(q.erased++[.disj A B])) where
+DosenPetric/GentzenSourceLogicalBlocked.lean:61	theorem triple_block : (p.sourceRetained q).block=tripleBlock p q :=
+DosenPetric/GentzenSourceLogicalBlocked.lean:64	theorem triple_bound : 2≤(tripleBlock p q).gs.length := by change 2≤3; decide
+DosenPetric/GentzenSourceLogicalBlocked.lean:66	theorem repair_eq_triple : repair p q f g=(tripleBlock p q).applyL (triple_bound p q) (Δ++Λ) (middle p q f g) := by
+DosenPetric/GentzenSourceLogicalBlocked.lean:71	theorem repair_blocked : BlockedL (repair p q f g) := by
+DosenPetric/GentzenSourceLogicalContraction.lean:13	theorem terminalDisjLeft_congr {F U Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenSourceLogicalContraction.lean:26	def old : G P (p.erased++(q.erased++[.disj A B])) (Δ++Λ) :=
+DosenPetric/GentzenSourceLogicalContraction.lean:28	def middle : G P ((K++L)++[.disj A B]) (Δ++Λ) :=
+DosenPetric/GentzenSourceLogicalContraction.lean:30	def repair : G P (p.erased++(q.erased++[.disj A B])) (Δ++Λ) :=
+DosenPetric/GentzenSourceLogicalContraction.lean:33	theorem denote : ofTerm (repair p q f g).denote=ofTerm (old p q f g).denote := by
+DosenPetric/GentzenSourceLogicalContraction.lean:49	theorem old_count : (old p q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenSourceLogicalContraction.lean:51	theorem repair_count : (repair p q f g).cutCount=f.cutCount+g.cutCount := by
+DosenPetric/GentzenSourceLogicalContraction.lean:54	theorem old_cutFree : (old p q f g).CutFree ↔ f.CutFree ∧ g.CutFree := by
+DosenPetric/GentzenSourceLogicalContraction.lean:56	theorem repair_cutFree : (repair p q f g).CutFree ↔ f.CutFree ∧ g.CutFree := by
+DosenPetric/GentzenSourceLogicalContraction.lean:58	theorem old_atomized : (old p q f g).Atomized ↔ f.Atomized ∧ g.Atomized := by
+DosenPetric/GentzenSourceLogicalContraction.lean:60	theorem repair_atomized : (repair p q f g).Atomized ↔ f.Atomized ∧ g.Atomized := by
+DosenPetric/GentzenSourceLogicalContraction.lean:62	theorem relation : (repair p q f g).relation=(old p q f g).relation := congrArg occurrenceMap (denote p q f g)
+DosenPetric/GentzenSourceLogicalPositions.lean:12	theorem retain_keep : (p.retainChain q).keep=At.shift p.erased q.keep := by
+DosenPetric/GentzenSourceLogicalPositions.lean:18	def sourceKeep : At (p.erased++(q.erased++[C])) C :=
+DosenPetric/GentzenSourceLogicalPositions.lean:21	theorem sourceOld_keep : (p.sourceOld q).keep=p.sourceKeep q := by
+DosenPetric/GentzenSourceLogicalPositions.lean:25	theorem sourceRetained_keep : (p.sourceRetained q).keep=p.sourceKeep q := by
+DosenPetric/GentzenSourceLogicalPositions.lean:29	theorem sourceOld_selected : (p.sourceOld q).selected=
+DosenPetric/GentzenSourceLogicalPositions.lean:38	theorem sourceRetained_selected : (p.sourceRetained q).selected=
+DosenPetric/GentzenSourceLogicalRankBounds.lean:13	theorem sum_map_const_add {T : Type u} (xs : List T) (r : T→Nat) (k : Nat) :
+DosenPetric/GentzenSourceLogicalRankBounds.lean:26	def premiseSum : Nat := (p.selected.map (fun a => f.rho .left (a.before [A]))).sum+
+DosenPetric/GentzenSourceLogicalRankBounds.lean:29	theorem old_rank : (old p q f g).rho .left (p.sourceKeep q)=
+DosenPetric/GentzenSourceLogicalRankBounds.lean:55	theorem repair_rank : (repair p q f g).rho .left (p.sourceKeep q)=
+DosenPetric/GentzenSourceLogicalRankBounds.lean:69	theorem premise_rank {C : NormalForm P} {F K Δ : List (NormalForm P)}
+DosenPetric/GentzenSourceLogicalRankBounds.lean:80	theorem endpoint_le : (repair p q f g).rho .left (p.sourceKeep q)≤
+DosenPetric/GentzenSourceOneSingletons.lean:14	theorem singleton_terminal_block (p : ContractionSelection C F F) (h : p.arity=1) :
+DosenPetric/GentzenSourceOneSingletons.lean:28	theorem blockedFirst (f : G P (K++[A]) Δ) (g : G P (U++[B]) Λ) :
+DosenPetric/GentzenSourceOneSingletons.lean:43	theorem oldFirst_singleton_blocked (hp : p.arity=1) (f : G P (F++[A]) Δ) (g : G P (U++[B]) Λ) :
+DosenPetric/GentzenSourceOneSingletons.lean:55	theorem blockedSecond (f : G P (F++[A]) Δ) (g : G P (L++[B]) Λ) :
+DosenPetric/GentzenSourceOneSingletons.lean:70	theorem oldSecond_singleton_blocked (hq : q.arity=1) (f : G P (F++[A]) Δ) (g : G P (U++[B]) Λ) :
+DosenPetric/GentzenSourceSingletonExclusions.lean:11	theorem singleton_rest (p : ContractionSelection C F K) (h : p.arity=1) : p.rest=[] := by
+DosenPetric/GentzenSourceSingletonExclusions.lean:17	theorem singleton_performL (p : ContractionSelection C F K) (h : p.arity=1)
+DosenPetric/GentzenSourceSingletonExclusions.lean:23	theorem source_eq_retained_singletons {U : List (NormalForm P)}
+DosenPetric/GentzenSourceSingletonExclusions.lean:37	theorem old_singletons_blocked
+DosenPetric/GentzenStrictDescendants.lean:12	theorem strict_left (a : ProofAddress g w) (x : At U C) (hr : ReducibleL f g a x)
+DosenPetric/GentzenStrictDescendants.lean:22	theorem strict_right (a : ProofAddress f w) (x : At V C) (hr : ReducibleR f g a x)
+DosenPetric/GentzenStrictReplacement.lean:14	theorem ReducesL.of_strict (x : At U C) (hc : w.CutFree→h.CutFree)
+DosenPetric/GentzenStrictReplacement.lean:22	theorem ReducesR.of_strict (x : At V C) (hc : w.CutFree→h.CutFree)
+DosenPetric/GentzenTailExtendedBlock.lean:11	theorem extend_route (d : ContractionBlock P F K) (Ξ : List (NormalForm P)) :
+DosenPetric/GentzenTerminalLogicalNaturality.lean:12	def terminalDisjLeft {F U Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenTerminalLogicalNaturality.lean:19	theorem terminalDisjLeft_denote {F U Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenTerminalLogicalNaturality.lean:45	theorem terminalDisjLeft_nat {F K U L Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenTerminalLogicalRanks.lean:12	def headL {F Δ : List (NormalForm P)} (A : NormalForm P) (f : G P (F++[A]) Δ) : G P (A::F) Δ :=
+DosenPetric/GentzenTerminalLogicalRanks.lean:17	def tailL {F Δ : List (NormalForm P)} (A : NormalForm P) (f : G P (A::F) Δ) : G P (F++[A]) Δ :=
+DosenPetric/GentzenTerminalLogicalRanks.lean:22	theorem headL_rank {F Δ : List (NormalForm P)} (A : NormalForm P) (f : G P (F++[A]) Δ)
+DosenPetric/GentzenTerminalLogicalRanks.lean:32	theorem tailL_rank {F Δ : List (NormalForm P)} (A : NormalForm P) (f : G P (A::F) Δ)
+DosenPetric/GentzenTerminalLogicalRanks.lean:39	theorem disjLLast_eq {F U Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenTerminalLogicalRanks.lean:46	theorem disjLLast_rank_f {C : NormalForm P} (a : At F C) :
+DosenPetric/GentzenTerminalLogicalRanks.lean:54	theorem disjLLast_rank_g {C : NormalForm P} (a : At U C) :
+DosenPetric/GentzenTerminalLogicalRanks.lean:62	theorem disjLLast_rank_principal :

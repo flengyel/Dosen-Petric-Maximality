@@ -1,6 +1,40 @@
 # Published presentation correspondence
 
-## Current Reducibility follow-up (25 October 2026)
+## Current binary-input integration (25 October 2026)
+
+**Both full Reducibility Lemmata remain open.** Every actual contraction over
+native `mix`, `conjR` or `disjL` now has a left and a right producer, with internal
+positional selection matching and the complete eligible-descendant bound.
+`BinaryReducer.left/right` assemble these cases; a binary cut premise is ruled
+out by the cut-freeness already contained in reducibility. The right-W4 repair
+now includes one parametric copy plus the fresh compound, using a node-free
+singleton inner operation. Source W6, native/source repairs and all three
+source singleton blockedness exclusions compile. General unary dispatch,
+including exchanges crossing selected copies, is still missing. Outside-site
+transport, multiset descent, Blocked-w, cut elimination and coherence remain open.
+
+Measured checked sources: **330 Lean source files / 9,737 audited project
+declarations** (818 additional audited declarations, including generated
+helpers; this is not a count of new mathematical theorems). Exact results:
+[GENTZEN_REDUCIBILITY_INTEGRATION_REPORT.md](GENTZEN_REDUCIBILITY_INTEGRATION_REPORT.md),
+[author-side hostile review](reviews/GENTZEN_REDUCIBILITY_INTEGRATION_HOSTILE.md),
+[author-side writing review](reviews/GENTZEN_REDUCIBILITY_INTEGRATION_WRITING.md).
+The governing instruction is [CODEX_AFTER_1E967BC_REDUCIBILITY.txt](CODEX_AFTER_1E967BC_REDUCIBILITY.txt).
+This checked integration does **not** complete that instruction's final target.
+
+| Source | Published construction | Lean correspondence and qualification |
+| --- | --- | --- |
+| §11.2 pp.248–250 | Whole-formula clusters, all-node rank, tied/blocked/reducible contractions, Reducibility statement | Existing `rho`, `ReducibleL/R`, fourteen blocked frames and entry uniqueness are reused unchanged. |
+| p.251 W1 | Parametric unary commutations, including exchange absorption | Opposite-side families have full adapters; arbitrary crossing/multigap/absorption exchange dispatch is still open. No Semilattice Coherence assumption is imported. |
+| p.251 W4; p.252 right analogue | Contract parametric compounds before logical introduction and use a blocked middle | `W4.NonemptyRight`; n counts parametric copies, and the fresh compound is an additional selected copy. |
+| pp.251–252 W5, `(m nat)` | One-branch or two-branch contraction through mix | Internal `Split`, lower-context/old-proof comparison, `MixReducer.left/right`. |
+| p.252 paragraphs following W5, `(w γ 2)`, `(w γ 3)`, `(dL nat)` | Binary conjunction and disjunction W5 | `ConjunctionReducer` / `DisjunctionReducer`; actual `Rules.conjRight`, `Rules.disjLeft`, sourceConj/mixedDisj naturality and product/coproduct component laws. |
+| p.252 W6, `(w ∨ 1–3)` | Parametric copies in one/both premises plus a fresh disjunction; blocked source middle | Source uses terminal `disjLLast`, with explicit head/input/output exchanges. `SourceLeft`, `NativeLeft`, `OneHeadDisjunction`, separately typed `HeadRight`, and internally matched native dispatch. |
+| p.252, final right-analogue paragraph | Right Reducibility construction | Implemented independently with coproduct variance; no contravariant arrow-negation operation is assumed. |
+| §11.5 pp.272–273; §12.5 pp.291–292 | Constants and atomic-zero extension | Existing leaves, empty contexts, syntax/equations and witnessed-zero policy are preserved. No new generator or special empty-sequent leaf. |
+
+
+## Historical follow-up at 1e967bc (superseded above)
 
 **Both full Reducibility Lemmata remain open.** From the unchanged ReducibleL/R
 hypotheses, cut-entry uniqueness now compiles via all fourteen actual blocked

@@ -1,0 +1,115 @@
+Continue from 1e967bcb913a74ae590dde940f246acaddce1fba toward BOTH full Reducibility Lemmata.
+
+Repository: /home/flengyel/src/Dosen-Petric-Maximality, main.
+Preserve newer work, stash dedfd8fc8cd49930e9a162d5be585215b062a43c, reconciliation archives, alternate drafts, manuscript v5/v4 and privacy. Existing non-force SSH commit/push and verified Downloads delivery authorization continues. Do not create an unnecessary branch or approval checkpoint.
+
+Read AGENTS.md, docs/GENTZEN_REDUCIBILITY_FOLLOWUP_REPORT.md and both follow-up reviews, current statement/coverage maps, and GENTZEN_1E967BC_REVIEW_2026-10-25.md. This prompt replaces the active next-session instructions. Older prompts remain historical references.
+
+THE UNCHANGED FINAL TARGET
+
+For arbitrary universe u, P : Type u, C : NormalForm P and contexts Γ Δ Θ Λ U V : List (NormalForm P), take
+  f : G P Γ (C::Δ), g : G P (C::Θ) Λ, w : G P U V.
+
+Left: from a : ProofAddress g w, x : At U C and hr : ReducibleL f g a x, construct h : G P U V with
+  h.CutFree,
+  ofTerm h.denote = ofTerm w.denote,
+  ∀ {I J : List (NormalForm P)} {v : G P I J},
+    ∀ (b : ProofAddress h v) (y : At I C),
+      ReducibleL f (a.replace h) ((a.inserted h).append b) y →
+        v.rho .left y < w.rho .left x.
+
+Right: from a : ProofAddress f w, x : At V C and hr : ReducibleR f g a x, construct h : G P U V with
+  h.CutFree,
+  ofTerm h.denote = ofTerm w.denote,
+  ∀ {I J : List (NormalForm P)} {v : G P I J},
+    ∀ (b : ProofAddress h v) (y : At J C),
+      ReducibleR (a.replace h) g ((a.inserted h).append b) y →
+        v.rho .right y < w.rho .right x.
+
+Use the existing congruence theorem for equality after rebuilding. No caller-supplied reduct, selection decomposition, injectivity, coherence, rank bound or equality reflection may replace the missing general proof. Keep the existing predicates, rho and descendant quantifier.
+
+REUSE COMPLETED WORK
+
+Reuse all fourteen blocked premise frames, first separation, ReducibleL/R.entry_unique, the addressed terminal-left and repaired right-W4 results for their stated families, the compiled failed-terminal-candidate regression, ContractionBound, singleton-aware performL/R, extraction, and both constructed mixed-W5 addressed theorems.
+
+Do not redo concurrency reconciliation absent new unexplained writes. Do not reprove these results or repeat checks of unchanged work. The acceptance criterion is the general theorem, not another isolated family.
+
+1. COVER THE NATIVE ONE-PARAMETRIC RIGHT-W4 CASE
+
+The existing W4 theorem requires d.gs.length≥2 PARAMETRIC copies, plus the fresh C. Its smallest original outer contraction selects THREE copies in total. Do not confuse this with one parametric copy plus one fresh compound.
+
+Formalize the following source-derived coverage test:
+  C : NormalForm Empty := .disj .bot .bot
+  f := BlockedExamples.r [C, .bot, .bot]
+  other := BlockedExamples.l [C]
+  w := G.contractR [.bot] C [[],[]] [] (Nat.le_refl 2)
+         (G.disjR [.bot] [C] [] .bot .bot f)
+
+Check f : G Empty [.bot] [C,.bot,.bot], other : G Empty [C] [.top], and w : G Empty [.bot] [C]. Prove cut-freeness, contractedDisjRightPrefix w = some 1, unblockedness, and ReducibleR w other ProofAddress.root (.here C []). The existing regression gives the proof pattern, with prefix length two instead of one.
+
+Then cover the general one-parametric terminal configuration, arbitrary fixed contexts, repeated labels, and arbitrary containing addresses. Reuse the head-disjunction/blocked-middle repair with a singleton-aware inner operation, or prove inclusion in another complete reducer. Do not introduce a singleton contraction node.
+
+If S is the original parametric C-rank in the premise, the direct two-selected old proof has rank S+3. The singleton inner operation has rank S. Verify the appropriate formulas; the old=L+n+1 formula from n≥2 assumes an actual inner contraction and does not extend unchanged. Prove the bound on eligible descendants through the surviving parametric ancestry, without requiring the repaired root rank to decrease.
+
+Clarify the “two-copy case” comment to specify two parametric copies in the existing theorem.
+
+2. INTEGRATE MIX CONTRACTIONS FROM ARBITRARY INPUT DATA
+
+While developing W6, close the input-matching gap for the available mix reductions. The new W5.MixedPremiseMix.addressed_left/right still require caller-given p,q and an address to their constructed old proof.
+
+For an arbitrary actual contraction over G.mix f g, with the cut formula as contracted formula, derive the replacement conclusion internally from its reducibility hypothesis:
+- split the complete ordered selected-position list by the actual premise branches;
+- prove the order and nonemptiness properties used in each case;
+- extract the positional selections internally;
+- use a one-premise reducer when a selected branch is empty and the mixed reducer when both are nonempty;
+- prove lower-context equality, the retained-position equality and actual old-proof comparison before applying the addressed result;
+- provide separately typed left and right theorems.
+
+Respect the native order: f : G P U Δ and g : G P F Λ give G.mix f g : G P (F++U) (Λ++Δ).
+
+ContractionSelection.extract returns an existential lower context. ext_selected assumes matching lower contexts; it cannot establish that match by itself. Prove it. Preserve all selected positions and multiplicities, without comparing labels or deduplicating.
+
+This integration belongs inside the general reducer, not a new standalone milestone.
+
+3. CONSTRUCT AND INTEGRATE LOGICAL W6 AND W5
+
+Use source §11.2 p.252 with actual disjLLast syntax. For C=disj A B,
+  p : ContractionSelection C Γ K,
+  q : ContractionSelection C Θ L,
+  f : G P (Γ++[A]) Δ,
+  g : G P (Θ++[B]) Λ,
+let
+  s := (p.chain q).chain (ContractionSelection.last []).
+
+Construct the source-macro old contraction over disjLLast f g and prove its final antecedent is (p.erased++q.erased)++[C]. Contract each premise's parametric selected copies, preserve its A or B tail, apply disjLLast, then the existing disjunctionBoth blocked contraction.
+
+Handle independent arities. Use tail-extended selections with singleton-aware performL where appropriate; supply any needed extension comparison. Do not fabricate one-copy contraction nodes. Include one-selected-premise configurations and the separately typed right analogue.
+
+Prove categorical denotation equality from the existing Reduced laws, cut-freeness, exact selected positions, actual address/ancestry routing through all exchanges, and the complete eligible-descendant bound. Reuse ContractionBound if useful, constructing its hypotheses internally.
+
+Prove and use the following source-macro exclusions:
+- If both p and q are singletons and fresh C is selected, the old macro contraction is already BlockedL.disjunctionBoth.
+- Fresh C plus exactly one parametric singleton in only one premise gives disjunctionFirst or disjunctionSecond.
+These are source-derived identifications to formalize, using actual transports and selected-position equality. They are not reducible examples. Do not transfer their blockedness to primitive disjL by endpoint or denotation equality.
+
+For primitive logical inputs, prove the required native/source-order comparisons, selected cut-position transport and rank conclusions with every exchange counted. Equality of denotations does not imply equality of blockedness or rho.
+
+Connect the new construction to arbitrary input contractions by the same extraction-and-comparison discipline as mix. Complete binary logical W5 cases without selected fresh C as well. A constructed W6 family alone does not discharge general dispatch.
+
+4. FINISH BOTH GENERAL PRODUCERS AND CONTINUE
+
+Assemble the remaining W1 crossing-selected, multiple-gap and exchange-absorption configurations and all logical branches into the two general theorems above. For each actual constructor/selection regime, either derive a proved blockedness contradiction or return the replacement with its full post-replacement descendant conclusion.
+
+Use a finite case ledger tied to theorem branches only if it helps complete this assembly. A classifier, equation list, branch count or lemma count is not the producer.
+
+After both Reducibility Lemmata, establish outside-occurrence and containing-blocked-contraction transport, the finite multiset descent, and Blocked-w; continue toward cut elimination under the governing task. Keep coherence and unconditional maximality as further endpoints until actually proved.
+
+5. VERIFY AND DELIVER
+
+Keep pinned Lean 4.35.0, existing dependencies and presentation boundaries. No holes, custom mathematical axioms, native_decide, assumed coherence, reverse occurrence-relation reasoning or unwitnessed zeros.
+
+Run the repository's required verification and negative controls after substantive changes, one heavy job at a time. Recheck only when new changes, failures or unresolved concerns justify it. Apply both author-side reviews to the actual results and correspondence. Keep process reporting outside manuscripts.
+
+Commit and push to main over SSH without force, preserving intervening work. Verify checked/committed source identity. Retain reports under docs/ and docs/reviews/, deliver conflict-preserving copies to /mnt/c/Users/fleng/Downloads, and verify them against committed bytes.
+
+Continue beyond auxiliary branches toward the full target. If a precise mathematical obstruction prevents completion, record its exact statement, assumptions and evidence; do not silently weaken the endpoint. Report newly proved general statements, explicit remaining cases, and a concrete continuation. Do not treat another local successful build as completion.

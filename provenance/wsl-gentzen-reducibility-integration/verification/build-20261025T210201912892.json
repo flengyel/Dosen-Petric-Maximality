@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-25T21:02:08.542876+00:00",
+  "checks": [
+    {
+      "name": "build-GentzenOneHeadConjunction",
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenOneHeadConjunction"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenOneHeadConjunction"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 6.629,
+      "log": ".codex-work/gentzen-reducibility-after-one/build-GentzenOneHeadConjunction-20261025T210201912892.log",
+      "sha256": "d07dec9d5056a5c8db0c90a25a75485013b0e405ebfbf3ff36379795d14bc25b"
+    }
+  ]
+}
