@@ -1,5 +1,24 @@
 # Manuscript v5: statements and formal scope
 
+## Current Reducibility boundary after source reconciliation
+
+The combined checkout is verified, but both full source-shaped Reducibility
+Lemmata remain unproved. Address/cluster membership and replacement transport,
+strict successful nonempty-path rank bounds, finite entry-frame calculus and
+two-sided sufficient descendant criteria compile. Terminal-left W4 is proved
+blocked. Its full post-replacement descendant quantifier is proved at a two-copy
+root and at arbitrary addressed occurrences **under InjectiveAscend**; the
+extra hypothesis has not been derived from ReducibleL. Terminal-right W4 is
+proved unblocked for the current pattern representation, so a typed head/order
+comparison is still required. Native selectedBoth and blocked singleton mix
+boundaries are compiled. See [the exact report](GENTZEN_REDUCIBILITY_REPORT.md).
+
+The governing target is [the full Reducibility instruction](CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt).
+General blocked-ancestor entry uniqueness, macro comparisons and remaining
+certified reducer cases are open. Mixed W5 remains subordinate. No change to
+the three milestones, coherence assumptions, mathematical manuscript or later
+Palomar status follows. Earlier local results below retain their proved scope.
+
 Source: Florian Lengyel, *Maximality of the Došen–Petrić Boolean Category*,
 v5, 23 October 2026, in `manuscript/`. Its mathematical results and proofs are unchanged from v4. The current v5
 clarifies endosubstitution and local placeholder indexing, repeats the existing

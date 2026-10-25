@@ -1,0 +1,29 @@
+[
+  {
+    "name": "post-record-diff",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 0.016,
+    "log": ".codex-work/gentzen-reducibility/post-record-diff.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "post-record-cached-diff",
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 0.025,
+    "log": ".codex-work/gentzen-reducibility/post-record-cached-diff.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

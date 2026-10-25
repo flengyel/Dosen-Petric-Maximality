@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-25T02:24:37.336447+00:00",
+  "observed_pid_presence": {
+    "700028": "absent",
+    "3970616": "present"
+  },
+  "qualification": "The identified WSL2 writer PID is absent. Stability observations are separate evidence; neither proves absence of every possible future writer."
+}

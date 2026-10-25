@@ -1,3 +1,60 @@
+Current reconciliation / Reducibility checkpoint (2026-10-25 UTC)
+Read docs/CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt first: it governs the full
+left and right replacement-and-all-descendant-rank targets and supersedes the
+mixed-W5-only instruction. Both full lemmata remain OPEN. Read the new
+GENTZEN_REDUCIBILITY_REPORT and its two author-side reviews, the supplied
+GENTZEN_REDUCIBILITY_REVIEW_2026-10-24 review, current status maps and AGENTS.
+
+The identified WSL2 writer exited. Both sessions' combined work was snapshotted;
+four original transport modules are retained byte-for-byte and publicly audited.
+Four new modules prove sufficient boundary criteria, a conditional addressed-left
+W4 theorem, the two-copy root case with all eligible descendants, and concrete
+primitive/macro separations. Final local checks: 224 files / 8,602 audited
+declarations; all five expected controls rejected; 75 exact public type queries.
+Stash dedfd8fc8cd49930e9a162d5be585215b062a43c remains. No reset/clean/drop.
+Evidence: provenance/wsl-gentzen-reducibility/. Preserve the reconciliation
+archive and alternate drafts; do not classify correctness by Git tracking status.
+
+NEXT INFERENCE, NOT A NEW LOCAL-CATALOGUE OBJECTIVE:
+Prove blocked contraction premise frames, using the actual selectedCopies:
+  BlockedL (G.contractL C gs Θ Δ hn t) ->
+    EntryFrame .left C t (fun z => z ∈ selectedCopies C gs Θ)
+and the independently typed right version. Cover every actual blocked macro,
+including disjLLast's exchanges. Use the frames, proper-containing blockedness
+and unique_origins to prove from ReducibleL f g a x that every local z ascending
+through a to the cut head equals x (and separately for ReducibleR). The existing
+InjectiveAscend/NoncontractingPath lemmas are sufficient specializations, not
+substitutes for that derivation. Remove the extra assumption from addressed W4.
+
+RIGHT W4 REPAIR:
+terminal_right_w4_unblocked proves the current terminal-right reduct is NOT
+BlockedR. Do not assert its blockedness by duality. With C=A∨B, X=gaps gs,
+Y=Θ and I=X++C::Y, investigate exchange of inner output I++[A,B] to [A,B]++I,
+head disjR, the actual BlockedR.disjunction contraction (gaps [[],X], tail Y),
+and final exchange to (X++Y)++[C]. Prove Reduced equality and the complete
+eligible-descendant rank bounds through every explicit exchange. A surrounding
+exchange is not a blocked contraction or a rank-transparent cast. This proposed
+repair has not been constructed/verified. Do not add a new blocked pattern.
+
+Continue to both full source-shaped Reducibility Lemmata. Mixed W5 is a
+subordinate branch; singleton/singleton mix is already blocked (checked).
+Native freshBoth selectedBoth remains unblocked (checked). Complete missing
+case extraction, logical W5/W6, source-order comparisons and general dispatch.
+Only after both lemmata prove outside-eligibility/blocked-ancestor transport,
+an actual finite multiset collection and well-founded Blocked-w induction.
+Do not weaken rho, predicates, hypotheses or the all-descendant quantifier.
+
+Pinned Lean 4.35.0, Init-only, one heavy job at a time. Run only checks justified
+by subsequent changes; compare checked and committed bytes. No proof holes,
+custom mathematical axioms, native_decide, coherence assumption, relation
+reflection or unwitnessed zero. Preserve manuscript v5/v4 and privacy. Task-
+specific non-force SSH commit/push and verified conflict-preserving Downloads
+delivery remain required. General Reducibility, Blocked-w, cut elimination,
+positive/reduced/Boolean coherence and unconditional maximality remain open.
+
+Historical pre-reconciliation continuation follows; its mixed-only NEXT TASK
+and old "current" counts are superseded above, not new verification evidence.
+
 Continue the Došen–Petrić maximality formalization in WSL2.
 
 Repository: /home/flengyel/src/Dosen-Petric-Maximality, private, main.

@@ -9,6 +9,27 @@ page index is the printed number plus 11 (the one-based PDF page number is the p
 The source PDF and extracted text are local consultation evidence, not
 redistributed as repository source.
 
+## Current Reducibility correspondence: verified partial checkpoint
+
+The governing endpoint is now [both full Reducibility Lemmata](CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt),
+not completion of a selected-position profile or another isolated local family.
+See [the reconciled report](GENTZEN_REDUCIBILITY_REPORT.md) and its author-side
+[hostile](reviews/GENTZEN_REDUCIBILITY_HOSTILE.md) and [writing](reviews/GENTZEN_REDUCIBILITY_WRITING.md) reviews.
+
+| Source §11.2 (printed pages) | New proved bridge | Exact limitation |
+| --- | --- | --- |
+| pp.248–249 clusters and rank | Address ascent iff finite-cluster membership; replacement factors through a typed intermediate position; nonempty successful paths strictly lower rho | No rank invariance under categorical equality. |
+| p.250 seven blocked patterns; p.251 W4 | Existing terminal-left W4 reduct is the actual `(w∧1)` blocked pattern; all eligible descendant bounds at root/two copies and, conditionally, under injective containing ascent | General ReducibleL-to-entry-uniqueness is open. |
+| p.252 right analogue | Separately typed sufficient boundary theorem; current terminal-right W4 reduct is proved unblocked because its disjR prefix is nonempty | Head/terminal/retention comparison and full eligible-descendant bounds remain open. |
+| p.250 `(w∨3)` / p.252 W6 | Native freshBoth contraction proved unblocked despite selectedBoth | Macro profile correspondence is not certified dispatch. |
+| p.250 `(wγ1)` / p.252 W5 | Singleton/singleton mix contraction is proved blocked | It cannot serve as an example of an unblocked reducible mixed input. |
+| p.250 Reducibility Lemma; p.252 right analogue; p.253 Blocked-w | Sufficient transport/rank criteria and scoped left W4 instance only | Both full lemmata, remaining case construction and multiset induction stay open. |
+
+These source anchors do not supply a Lean coherence proof. The conditional W4
+theorem's InjectiveAscend hypothesis is explicit and is not part of the desired
+full target. Reconciliation preserved all source variants; no blocked predicate,
+rank or presentation equation was changed. Earlier records below are historical.
+
 ## Objects and arrow grammar
 
 `Formula P` is the source language with variables, top, bottom, conjunction,

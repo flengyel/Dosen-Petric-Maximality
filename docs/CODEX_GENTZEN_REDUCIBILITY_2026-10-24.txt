@@ -1,0 +1,168 @@
+Continue the Došen–Petrić maximality formalization in WSL2 at
+/home/flengyel/src/Dosen-Petric-Maximality.
+
+These instructions supersede CODEX_GENTZEN_MIXED_W5_DISPATCH.txt as the
+governing task. The immediate objective is to prove both source Reducibility
+Lemmata, including the representation comparisons and the complete
+post-replacement rank conclusions. Mixed-premise W5 is a subordinate case,
+not the completion criterion.
+
+Work on main. Commit and push verified changes through SSH without force.
+Preserve unrelated/concurrent changes, the integration stash, other checkouts,
+repository privacy, manuscript v4/v5 and their checksums. Start by inspecting
+status and fetching origin; 9075ecc is the reviewed baseline, not a command
+to reset or discard later work. Follow AGENTS.md and the existing toolchain,
+dependency, proof-integrity and validation requirements.
+
+Read the current statement/coverage/correspondence maps, CODEX_NEXT_SESSION,
+the replacement and blocked-classification reports, their reviews, and
+GENTZEN_REDUCIBILITY_REVIEW_2026-10-24.md if available. The essential corrections
+are included below, so absence of that review file must not block the work.
+
+SOURCE AND CONFIRMED GAPS
+
+Consult Došen–Petrić, Proof-Theoretical Coherence, September 2007, §11.2,
+printed pp.248–253 (PDF pp.260–265, one-based):
+https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf
+SHA-256:
+e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e
+
+Inspect the displayed blocked patterns and the precise Reducibility Lemma.
+Do not infer the source argument from prior progress reports.
+
+1. GentzenSelectionDispatch.classificationL/R proves positional profile
+   coverage with basis/cut exclusions. It does not produce a replacement,
+   categorical equality, blockedness correspondence or strict rank bound.
+
+2. BlockedL.premise_kind admits mix, conjR, exchangeL and conjL, but not
+   primitive disjL. The blocked disjunction patterns use disjLLast, with
+   explicit exchanges. The committed freshBoth example has selectedBoth,
+   while its direct outer contraction is unblocked. This is a representation
+   distinction, not a refutation of the classifier.
+
+3. splitMix with one selected copy per premise already yields a gammaMix
+   blocked contraction. It cannot witness a reducible mixed case. Separate
+   that base case from larger mixed selections.
+
+4. ProofAddress.replace and its congruence/count/predicate laws are useful
+   completed infrastructure. Retain and use them. They do not establish
+   transport of tiedness, blockedness, reducibility or rank.
+
+5. Exchanges contribute nodes to rho. Denotation equality does not imply
+   rank equality. A positional rank increase is not itself a contradiction:
+   the source conclusion concerns contractions reducible after replacement.
+
+EXACT LEFT TARGET
+
+For arbitrary P, formula C, contexts Γ, Δ, Θ, Λ, U, V, and existing proofs
+
+  f : G P Γ (C :: Δ)
+  g : G P (C :: Θ) Λ
+  w : G P U V,
+
+let a : ProofAddress g w and x : At U C.
+Assume ReducibleL f g a x.
+
+Produce h : G P U V such that:
+
+  h.CutFree
+  ofTerm h.denote = ofTerm w.denote
+
+and, writing
+
+  g' = a.replace h
+  a' = a.inserted h,
+
+prove for every context pair I,J, proof v : G P I J,
+address b : ProofAddress h v, and position y : At I C that
+
+  ReducibleL f g' (a'.append b) y
+    implies
+  v.rho .left y < w.rho .left x.
+
+Prove the separately typed right analogue: replace an addressed right
+contraction in f, use ReducibleR relative to the rebuilt cut, and compare
+right-side ranks.
+
+This is the proposed source-shaped target. Verify its correspondence to the
+source and the existing definitions before asserting that it formalizes the
+source lemma. The conclusion quantifies over EVERY reducible contraction
+inside h after replacement, including surviving old descendants, not only
+newly introduced contraction nodes.
+
+PROOF WORK
+
+Resolve the primitive/macro distinction needed by these targets. Prove the
+actual typed comparisons for disjLLast and right-retention conventions,
+including selected positions, relevant proof occurrences, tiedness,
+blockedness where needed, and the rank inequalities used in the proof.
+Alternatively, prove the targets directly for the existing primitive grammar
+and justify their connection to the intended source result.
+
+Do not assume that administrative exchanges are invisible or rank-preserving.
+Do not enlarge blockedness, change rho, strengthen the input hypotheses or
+weaken the conclusion merely to make the proof pass. If a definition is
+mathematically inadequate, exhibit the exact failure, make the smallest
+justified correction, and update dependent proofs and correspondence records.
+Preserve old valid results where possible.
+
+Make the full quantified target control the case analysis. Reuse the existing
+W1–W5 results, predecessor/fiber proofs, positional selections, proper ancestry,
+and replacement API. Derive the context decompositions, branch multiplicities
+and endpoint casts required to invoke each local theorem from the actual input.
+
+Connect an existing family, such as terminal-left W4, to its branch of the
+full target at arbitrary addressed occurrences. Prove the outer result blocked
+and bound every eligible descendant. Use this to identify and prove the
+general transport facts required by the other cases; continue beyond that
+instance rather than declaring another isolated checkpoint complete.
+
+Complete the genuinely missing cases, including mixed W5 and logical W5/W6,
+as required by the target. In mixed W5, extract nonempty branch selections
+from the original ordered selection. A singleton branch introduces no
+contraction node. The singleton/singleton case is already blocked.
+Preserve repeated equal labels as distinct positions and handle constants,
+empty literal-occurrence sets, both sides and both literal signs without
+adding freshness, atomicity or inhabitance assumptions.
+
+Obtain categorical equality in the existing Reduced presentation from proved
+equations. Relation equality may follow; it must not be used as unproved
+reflection or coherence. Do not assume the coherence being reconstructed.
+
+After both Reducibility Lemmata, establish the occurrence and surrounding-
+context facts required for the Blocked-w multiset induction. Specify the
+actual finite collection and well-founded order. Account for occurrences
+outside the replacement and for blocked ancestors; do not infer global
+termination from a local rank decrease or a sum of arbitrary positional ranks.
+Then continue toward the existing cut-elimination/coherence objective as the
+proved dependencies permit.
+
+VERIFICATION AND DELIVERY
+
+Run the repository-required checks appropriate to the final proof changes:
+strict build, transitive axiom/import audit, both boundary scripts, expected
+negative controls, manuscript checksums and whitespace checks. Avoid redundant
+full reruns without intervening changes or failures. Use one heavy verification
+process at a time and keep concurrent work out of the checked candidate.
+
+Apply the hostile-referee and mathematical-writing reviews to the actual
+theorem statements, proofs and source correspondence. Review acceptance must
+be judged against the target above, not a silently narrowed local endpoint.
+Keep review/process commentary outside the manuscript.
+
+Update current status maps accurately. Retain a concise report and review
+records, with exact proved theorem names/types, assumptions, source anchors,
+remaining mathematical obligations and actual verification results.
+Build success and declaration counts are not evidence of source correspondence
+or a measure of theorem completion.
+
+Commit completed verified work to main and push SSH origin without force.
+Compare checked and committed bytes and verify the resulting refs.
+Deliver the report, reviews and any necessary continuation to Windows Downloads
+with conflict-preserving filenames and byte verification.
+
+Do not stop merely because another local family compiles. If an unresolved
+mathematical obstruction prevents the target, identify the exact proposition,
+the concrete failing case or missing inference, and the attempted repair.
+Do not label partial construction as Reducibility or substitute a new research
+objective. No publication, author contact, license or visibility change.

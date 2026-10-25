@@ -1,3 +1,48 @@
+# Reconciled Reducibility checkpoint — current local validation
+
+**Mathematical status: partial. Both full Reducibility Lemmata remain open.**
+The identified WSL2 writer exited; current/untracked/index bytes and alternate
+drafts were preserved before integration. Four original transport modules retain
+their original bytes. The compared source state passes; tracking status was not
+used to attribute authorship or correctness. Stash dedfd8fc remains unchanged.
+
+Measured combined baseline: 220 Lean files / 8,538 declarations, strict exit 0
+in 8.509s, then passing boundary/manuscript/whitespace checks. Final checked
+sources: **224 files / 8,602 audited declarations**, strict exit 0 in 19.924s.
+Both boundary scripts passed (28.958s / 3.039s) and all five expected controls
+rejected with exit 1; manuscript SHA256SUMS passed (0.021s); diff/cached diff
+checks passed (0.029s / 0.016s). All 75 public queries passed in 2.817s.
+59 selected prints supplement the complete transitive audit. Allowed axioms:
+propext, Quot.sound, Classical.choice. Six failed explorations are retained.
+No proof changes follow this final run; later record-only diffs are checked
+separately. The first staged check rejected imported EOF blank lines (exit 2);
+original bytes were archived and import copies normalized before retry. Raw
+logs are retained exactly in RAW_LOGS.tar.gz. Checked/committed bytes and
+SSH/Downloads receipts are separate.
+
+The source state proves address/cluster replacement transport, conditional
+two-sided descendant criteria and scoped W4 integration. The terminal-right
+W4 blockedness shortcut is disproved, not repaired by changing a predicate.
+The exact open entry and representation statements are in
+[the report](GENTZEN_REDUCIBILITY_REPORT.md). Author-side
+[hostile](reviews/GENTZEN_REDUCIBILITY_HOSTILE.md) and
+[writing](reviews/GENTZEN_REDUCIBILITY_WRITING.md) reviews reject a full
+completion claim. Full instruction: CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt.
+Evidence: provenance/wsl-gentzen-reducibility/; preserve the reconciliation
+archive, alternate drafts, source inventory and all diagnostics.
+
+Pinned toolchain/Init-only policy, manuscript v4/v5, privacy, existing syntax,
+equations, predicates, ranks and all prior scoped constructions are unchanged.
+No independent kernels, Comparator, official preflight/service, whole-manuscript
+rendering/review, publication or unconditional mathematical bridge was performed.
+General Reducibility, Blocked-w, cut elimination and coherence remain open.
+
+## Historical validation records
+
+The records below report earlier checkpoints; they are not additional runs of
+the present candidate. Their former "current" labels and next-task proposals
+are superseded by the current section and governing full-target instruction.
+
 # Blocked/reducible selection-classification validation (current checkpoint)
 
 Clean baseline main 6b860df5fdb6e4c1c50dc583e0de0d04c102eb25 matched fetched

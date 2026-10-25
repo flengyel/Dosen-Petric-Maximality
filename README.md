@@ -81,8 +81,13 @@ actual nested signed-cut and Empty constant examples exercise the integration.
 Source blocked-pattern encodings and typed reducible occurrences now compile,
 with proper-ancestor laws and exhaustive selection profiles retaining actual
 predecessor/premise tags. All fourteen blocked patterns and all seven profile
-regimes have inhabited tests. The finite case ledger identifies mixed-premise
-W5 as the next demonstrated gap; one-premise W5 alone does not cover it.
+regimes have inhabited tests. The finite case ledger classifies profiles; it does not certify reduction.
+The current objective is both source-shaped Reducibility Lemmata. Reconciled
+address/cluster transport and sufficient descendant criteria now compile,
+with a two-copy root W4 instance and an addressed-left W4 result conditional
+on InjectiveAscend. The terminal-right W4 reduct is provably unblocked in the
+current head-pattern representation; its required order comparison remains open.
+Mixed W5 is a subordinate missing case, not the completion criterion.
 Complete rewrite dispatch, all affected tied-site ranks, Reducibility,
 Blocked-w, cut elimination, coherence and actual maximality remain open.
 See [validation](docs/VALIDATION.md) for the maintained audited declaration
@@ -135,11 +140,14 @@ The [v5 literature review](docs/LITERATURE_REVIEW_V5_2026-10-23.md),
 [writing review](docs/reviews/V5_WRITING_REVIEW.md), and
 [manuscript validation](docs/V5_VALIDATION.md) accompany v5.
 The [earlier literature comparison](docs/LITERATURE_REVIEW.md) remains available.
-The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_BLOCKED_CLASSIFICATION_HOSTILE.md)
-and [mathematical-writing review](docs/reviews/GENTZEN_BLOCKED_CLASSIFICATION_WRITING.md)
-cover blocked/reducible encodings and the finite selection classification; they are
-not independent certification. The [current classification report and case ledger](docs/GENTZEN_BLOCKED_CLASSIFICATION_REPORT.md),
-[ready-to-paste mixed-W5 continuation](docs/CODEX_GENTZEN_MIXED_W5_DISPATCH.txt),
+The literature searches are bounded and make no exhaustive priority claim. The current [author-side hostile review](docs/reviews/GENTZEN_REDUCIBILITY_HOSTILE.md)
+and [mathematical-writing review](docs/reviews/GENTZEN_REDUCIBILITY_WRITING.md)
+cover the actual transport/W4 subresults and the unproved full target; they are
+not independent certification. The [current partial Reducibility report](docs/GENTZEN_REDUCIBILITY_REPORT.md),
+[governing full-target instructions](docs/CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt),
+[current continuation](docs/CODEX_NEXT_SESSION.txt),
+[historical classification report and case ledger](docs/GENTZEN_BLOCKED_CLASSIFICATION_REPORT.md),
+[superseded mixed-W5-only continuation](docs/CODEX_GENTZEN_MIXED_W5_DISPATCH.txt),
 [preceding integration report](docs/GENTZEN_PROOF_REPLACEMENT_REPORT.md),
 [preceding W5 report and track/drift audit](docs/GENTZEN_W5_OTHER_PREMISE_MIX_REPORT.md),
 [preceding W5 report](docs/GENTZEN_W5_SINGLE_PREMISE_MIX_REPORT.md),

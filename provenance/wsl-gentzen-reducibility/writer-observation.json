@@ -1,0 +1,57 @@
+{
+  "observation_seconds": 20,
+  "all_observations_unchanged": true,
+  "samples": [
+    {
+      "utc": "2026-10-25T01:40:01.698108+00:00",
+      "unchanged": true,
+      "changed_paths": []
+    },
+    {
+      "utc": "2026-10-25T01:40:03.753014+00:00",
+      "unchanged": true,
+      "changed_paths": []
+    },
+    {
+      "utc": "2026-10-25T01:40:05.810746+00:00",
+      "unchanged": true,
+      "changed_paths": []
+    },
+    {
+      "utc": "2026-10-25T01:40:07.884330+00:00",
+      "unchanged": true,
+      "changed_paths": []
+    },
+    {
+      "utc": "2026-10-25T01:40:09.930450+00:00",
+      "unchanged": true,
+      "changed_paths": []
+    },
+    {
+      "utc": "2026-10-25T01:40:11.979341+00:00",
+      "unchanged": true,
+      "changed_paths": []
+    },
+    {
+      "utc": "2026-10-25T01:40:14.038817+00:00",
+      "unchanged": true,
+      "changed_paths": []
+    },
+    {
+      "utc": "2026-10-25T01:40:16.106395+00:00",
+      "unchanged": true,
+      "changed_paths": []
+    },
+    {
+      "utc": "2026-10-25T01:40:18.153831+00:00",
+      "unchanged": true,
+      "changed_paths": []
+    },
+    {
+      "utc": "2026-10-25T01:40:20.232230+00:00",
+      "unchanged": true,
+      "changed_paths": []
+    }
+  ],
+  "qualification": "Observed stability is evidence of no writes during this interval; it does not prove either Codex session is paused."
+}

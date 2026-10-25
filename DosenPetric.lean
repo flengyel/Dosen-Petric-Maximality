@@ -214,3 +214,11 @@ public import DosenPetric.GentzenBlockedPatterns
 public import DosenPetric.GentzenReducibleOccurrences
 public import DosenPetric.GentzenBlockedExamples
 public import DosenPetric.GentzenReducibleExamples
+public import DosenPetric.GentzenAddressTracing
+public import DosenPetric.GentzenAddressPaths
+public import DosenPetric.GentzenClusterTransport
+public import DosenPetric.GentzenEntryFrames
+public import DosenPetric.GentzenReducibilityBoundary
+public import DosenPetric.GentzenReducibilityLogical
+public import DosenPetric.GentzenReducibilityObstructions
+public import DosenPetric.GentzenReducibilityExamples
