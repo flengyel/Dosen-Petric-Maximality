@@ -91,6 +91,16 @@ silently weaken a statement, omit an appendix, change a definition, or remove
 a mathematical qualification to make completion easier. If a substantive repair
 cannot be proved, keep the affected claim open and state the exact obstruction.
 
+Carry each accepted correction through the entire affected scope in the same
+work pass: definitions, statements, proofs, repeated prose, diagrams, captions,
+source comments, formalization, claim maps and reports as applicable. Search for
+parallel instances and re-read the connected passages after editing. Preserve
+the decision and verified resolution in the external record and continuation;
+do not rely on the author's repeating it in later prompts. Record an accepted
+editorial preference as such, rather than misclassifying it as a mathematical
+error. A later steering message supplements the active task unless it explicitly
+replaces it.
+
 ### Occurrence-substitution presentation
 
 The tagged-block presentation is a required expository contribution of the

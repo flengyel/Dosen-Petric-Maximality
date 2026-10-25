@@ -34,6 +34,13 @@ closing affected claims. Preserve the tagged-block and typed-diagram account
 of occurrence substitution and prove its exact ordinal-coordinate correspondence;
 it is required content, not optional formatting.
 
+Carry accepted corrections across sessions. Apply each correction to every
+affected passage, declaration, diagram and linked record in one pass, search
+for parallel occurrences, and verify the full affected scope before reporting
+completion. Record the decision and its resolution outside the manuscript so
+the author need not repeat it. Treat later user messages as steering the active
+task unless they explicitly replace it.
+
 ## Mathematics
 
 - Keep the three milestones in the coverage map separate. Do not represent a
