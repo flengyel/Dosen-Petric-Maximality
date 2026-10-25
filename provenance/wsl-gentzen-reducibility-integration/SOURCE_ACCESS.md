@@ -17,3 +17,7 @@ Consulted §1, especially points 5,10–15,17,24,26, and §4 printed p.9.
 Access succeeded. The new author-side writing review is source-grounded;
 no historical access failure has been rewritten. Cached books/page images
 remain outside tracked source; no complete copyrighted book is redistributed.
+
+Merged manuscript v6 was read completely (948 TeX lines), including both
+appendices, for the e4f2f0b task contract. Its mathematical claims were not
+independently certified. All accepted manuscript bytes remain upstream bytes.

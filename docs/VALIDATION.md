@@ -1,5 +1,12 @@
 # Current binary-input integration validation
 
+Upstream integration: accepted commits 0af6a0e, 810dcdb and e4f2f0b after
+the checked proof commit f4bc6ff. They add manuscript v6 and the full-paper
+contract, with no Lean-source changes. The current manuscript is v6; upstream
+v5/v6 files are retained byte-for-byte, and v4 remains preserved. Both full
+Reducibility and the broader v6 contract remain incomplete. The supplied
+1e967bc instruction remains the exact immediate proof target.
+
 **Full Reducibility remains open.** Checked 330 Lean source files and
 9,737 project declarations; all transitive dependencies use only the
 permitted propext/Quot.sound/Classical.choice axioms. Complete public import
@@ -8,11 +15,11 @@ closure and all five expected compiler/audit rejections passed. There are
 
 | Command | Exit | Seconds |
 | --- | --- | --- |
-| `bash scripts/verify.sh` | 0 | 11.889 |
-| `python3 scripts/check-audit-boundaries.py` | 0 | 11.954 |
-| `python3 scripts/check-presentation-boundaries.py` | 0 | 1.738 |
+| `bash scripts/verify.sh` | 0 | 30.971 |
+| `python3 scripts/check-audit-boundaries.py` | 0 | 29.595 |
+| `python3 scripts/check-presentation-boundaries.py` | 0 | 2.611 |
 | `sha256sum -c SHA256SUMS` | 0 | 0.031 |
-| `git diff --check` | 0 | 0.019 |
+| `git diff --check` | 0 | 0.029 |
 | `git diff --cached --check` | 0 | 0.013 |
 
 Public signature queries passed in 5.845s. All proof

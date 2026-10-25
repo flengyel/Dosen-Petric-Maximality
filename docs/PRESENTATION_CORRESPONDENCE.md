@@ -1,5 +1,12 @@
 # Published presentation correspondence
 
+Upstream integration: accepted commits 0af6a0e, 810dcdb and e4f2f0b after
+the checked proof commit f4bc6ff. They add manuscript v6 and the full-paper
+contract, with no Lean-source changes. The current manuscript is v6; upstream
+v5/v6 files are retained byte-for-byte, and v4 remains preserved. Both full
+Reducibility and the broader v6 contract remain incomplete. The supplied
+1e967bc instruction remains the exact immediate proof target.
+
 ## Current binary-input integration (25 October 2026)
 
 **Both full Reducibility Lemmata remain open.** Every actual contraction over

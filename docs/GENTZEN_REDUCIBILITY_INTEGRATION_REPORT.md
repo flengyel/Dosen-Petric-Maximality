@@ -1,5 +1,12 @@
 # Binary-input Reducibility integration — 25 October 2026
 
+Upstream integration: accepted commits 0af6a0e, 810dcdb and e4f2f0b after
+the checked proof commit f4bc6ff. They add manuscript v6 and the full-paper
+contract, with no Lean-source changes. The current manuscript is v6; upstream
+v5/v6 files are retained byte-for-byte, and v4 remains preserved. Both full
+Reducibility and the broader v6 contract remain incomplete. The supplied
+1e967bc instruction remains the exact immediate proof target.
+
 ## 1. Status and scope
 
 **Both full Reducibility Lemmata remain open.** Every actual contraction over
@@ -169,11 +176,11 @@ was run at a time. Strict checking screens 330 source files and audits
 
 | Actual command | Exit | Seconds |
 | --- | --- | --- |
-| `bash scripts/verify.sh` | 0 | 11.889 |
-| `python3 scripts/check-audit-boundaries.py` | 0 | 11.954 |
-| `python3 scripts/check-presentation-boundaries.py` | 0 | 1.738 |
+| `bash scripts/verify.sh` | 0 | 30.971 |
+| `python3 scripts/check-audit-boundaries.py` | 0 | 29.595 |
+| `python3 scripts/check-presentation-boundaries.py` | 0 | 2.611 |
 | `sha256sum -c SHA256SUMS` | 0 | 0.031 |
-| `git diff --check` | 0 | 0.019 |
+| `git diff --check` | 0 | 0.029 |
 | `git diff --cached --check` | 0 | 0.013 |
 | `lake env lean -DwarningAsError=true .../PublicTypes.lean` | 0 | 5.845 |
 
@@ -184,7 +191,7 @@ reflexive equality of distinct tagged projections, and zero without a typed
 existing-arrow witness. Their enclosing scripts exited 0. Production import
 closure passed. Public queries and selected axiom prints passed separately.
 
-110 unsuccessful commands with JSON receipts and their complete diagnostic
+111 unsuccessful commands with JSON receipts and their complete diagnostic
 logs are retained. An interrupted length-copy exploration exited 130 before
 its runner wrote a receipt; elapsed time was not captured. The retained log
 and `UNRECORDED_INTERRUPTION.md` record this limitation. One exploratory
@@ -196,7 +203,18 @@ exit codes, elapsed times and log hashes, including failures.
 No independent clean build/kernel replay, Comparator, official Palomar
 preflight/service verification, external peer certification or publication
 was performed. The prior baseline's actual receipts are retained; an unchanged
-clean baseline was not rebuilt. Manuscript v5/v4 bytes remain unchanged.
+clean baseline was not rebuilt. The proof integration makes no manuscript edit; accepted upstream v5/v6 changes are preserved unchanged from e4f2f0b.
+
+The merged strict build and both boundary controls passed again; all five
+negative controls again rejected. The first merged staged check exited 2 for
+extra EOF blank lines inherited in AGENTS.md and the novelty review. Originals
+were archived before removing those blank lines. A prior staged check likewise
+found trailing spaces in the supplied 1e967bc review; its byte-exact original is
+retained compressed, and only the readable copy was whitespace-normalized.
+Final record-only whitespace receipts are in `RECORDS_CHECKS.json`. No check
+was weakened. The table's cached-diff row above is the successful pre-merge
+check; the merged failed attempt and subsequent successful final check are
+retained separately.
 
 ## 6. Evidence and immutable-source correspondence
 
@@ -205,8 +223,8 @@ All paths below are under `provenance/wsl-gentzen-reducibility-integration/`:
 - `CHECKED_SOURCES.sha256`: all checked Lean bytes, toolchain/manifest,
   verification scripts and manuscript checksum record; checked against the
   strict run's actual source hashes before record generation.
-- `FINAL_VERIFICATION.json`, `PUBLIC_TYPES.json`, `COMMANDS.json` and
-  `verification/`: actual receipts, logs, exported types and failed attempts.
+- `FINAL_VERIFICATION.json` (pre-merge), `MERGED_VERIFICATION.json`, `PUBLIC_TYPES.json`, `COMMANDS.json` and
+  `verification/`: actual receipts, compressed byte-exact logs, exported types and failed attempts. `LOG_ARCHIVES.json` maps raw receipt names to tracked gzip archives.
 - `NEW_MODULES.txt`, `NEW_DECLARATIONS.tsv`: production-module and declaration
   anchors. `BASELINE.md` distinguishes baseline, checked candidate and commit.
 - `SOURCE_ACCESS.md`: source/cache locations and both verified PDF hashes;
@@ -215,7 +233,7 @@ All paths below are under `provenance/wsl-gentzen-reducibility-integration/`:
   copied into the repository. Post-commit checks compare committed bytes with
   `CHECKED_SOURCES.sha256`; delivery compares each report against `git show`.
 
-Strict log SHA-256: `fc41670bf97d9748979512b10ee15633ebd1087e0d199766492ce8ad90decad0`.
+Merged strict log SHA-256: `a93c79ca9d61ba80fc9ea611bb63f4462ed877d6f22058eb3663c9f83acda7b9`.
 Public type log SHA-256: `9cb55b32522802199256050273738a750afe5b13b64c799f9bbca4a21d995d7a`.
 The committed-source/delivery receipts are retained in the local work directory
 after commit; the final response supplies the resulting commit and live refs.
@@ -264,11 +282,12 @@ published argument.
 | Finite multiset descent and Blocked-w | Depend on both full producers and outside-site transport; open. |
 | Remaining G2 / cut elimination; restricted positive coherence | Open and distinct. |
 | PositiveCoherence, Reduced.Faithful, Boolean Coherence, unconditional maximality | Open; only previously proved conditional transfers are reused. |
+| Complete v6 short q/e proof, model corollary and appendix ledger | Still open under CODEX_FULL_MANUSCRIPT_FORMALIZATION.md; upstream manuscript changes do not supply Lean proofs. The symmetric-fold route is preserved. |
 | Palomar preparation/submission | Not performed or authorized as part of this proof integration. |
 
 ## 8. Preservation, reviews and delivery
 
-The stash and older reconciliation archives remain intact. No manuscript,
+The stash and older reconciliation archives remain intact. No manuscript edit is made by the proof integration. No
 grammar/equation, dependency, `Positive`, `G`, `Rewire`, `Atomized`, `CutFree`,
 `Topmost`, tracing or rank definition was changed. No arbitrary-endpoint zero
 was introduced. This is an author-side implementation and review, not independent

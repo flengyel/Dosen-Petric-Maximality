@@ -1,3 +1,11 @@
+OVERALL TARGET: formalize the complete mathematical content of manuscript v6,
+as specified in CODEX_FULL_MANUSCRIPT_FORMALIZATION.md. Include the shorter
+q_A/e_A proof, actual-presentation maximality with all dependencies proved,
+the model corollary, unnumbered mathematical claims and both appendices.
+Retain the existing symmetric-fold proof. Conditional maximality alone is
+not the endpoint, and actual maximality alone does not complete the appendices.
+
+IMMEDIATE CONTINUATION (checked binary-input integration):
 Continue toward BOTH full Reducibility Lemmata in
 CODEX_AFTER_1E967BC_REDUCIBILITY.txt. That instruction remains active;
 the binary-input integration is not completion of the full target.
@@ -5,7 +13,7 @@ the binary-input integration is not completion of the full target.
 Read AGENTS.md, GENTZEN_REDUCIBILITY_INTEGRATION_REPORT.md and both author-side
 reviews, the supplied 1e967bc review, current maps, validation and requirements.
 Preserve stash dedfd8fc8cd49930e9a162d5be585215b062a43c, all reconciliation
-archives/alternate drafts and manuscript v5/v4. Inspect Git and SSH fetch before
+archives/alternate drafts and manuscript v6/v5/v4. Inspect Git and SSH fetch before
 editing; do not reset newer work. Historical continuation is in
 history/CODEX_NEXT_SESSION_1E967BC.txt. The active supplied prompt is retained
 byte-for-byte as CODEX_AFTER_1E967BC_REDUCIBILITY.txt.
@@ -46,3 +54,11 @@ heavy build/audit at a time. The measured integration is 330 Lean files /
 integration/. Verify actual new counts. Commit/non-force SSH push and report
 Downloads delivery remain authorized. Preserve failures; compare committed bytes
 with checked inventories and deliver conflict-preserving report copies.
+
+The complete v6 mathematical content remains the overall endpoint under
+CODEX_FULL_MANUSCRIPT_FORMALIZATION.md, including the short q/e proof, model
+corollary, unnumbered claims and both appendices. Do not count conditional or
+binary-only results as the complete manuscript formalization. Preserve the
+symmetric-fold route. Upstream continuation is archived in
+history/CODEX_NEXT_SESSION_E4F2F0B.txt; the newer exact immediate user prompt
+CODEX_AFTER_1E967BC_REDUCIBILITY.txt preserves both full Reducibility targets.

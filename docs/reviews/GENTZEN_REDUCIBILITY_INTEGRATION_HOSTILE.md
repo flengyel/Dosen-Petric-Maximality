@@ -1,5 +1,12 @@
 # Author-side hostile review — binary-input Reducibility integration
 
+Upstream integration: accepted commits 0af6a0e, 810dcdb and e4f2f0b after
+the checked proof commit f4bc6ff. They add manuscript v6 and the full-paper
+contract, with no Lean-source changes. The current manuscript is v6; upstream
+v5/v6 files are retained byte-for-byte, and v4 remains preserved. Both full
+Reducibility and the broader v6 contract remain incomplete. The supplied
+1e967bc instruction remains the exact immediate proof target.
+
 This is an author-side simulation of a hostile referee, not independent peer
 review or external certification. Scope: the new production proofs, exported
 signatures, integration report and current correspondence/coverage records.
@@ -9,7 +16,7 @@ reproducibility. The manuscript is unchanged and is not being refereed here.
 ## (A) Kill-shots / hard blockers
 
 **The requested complete Reducibility result is still unproved.** Anchor:
-`docs/GENTZEN_REDUCIBILITY_INTEGRATION_REPORT.md:223` and `DosenPetric/GentzenReductionStatements.lean:13`. The first states that both full targets remain open;
+`docs/GENTZEN_REDUCIBILITY_INTEGRATION_REPORT.md:241` and `DosenPetric/GentzenReductionStatements.lean:13`. The first states that both full targets remain open;
 the latter defines the target quantifier but supplies no witness. The actual
 assembled producer at `DosenPetric/GentzenBinaryInputReducers.lean:54` (and `DosenPetric/GentzenBinaryInputReducers.lean:72`) retains `t.ruleKind.Binary`.
 Failure mode: **unproved** for completion of the governing task; severity:
@@ -123,6 +130,12 @@ algorithm, Blocked-w proof or coherence proof is certified. Manuscript bytes
 are preserved and checksum-checked; their full mathematical correctness is not
 inferred from this Lean integration. Historical inaccessible-source records
 were not rewritten. Current pinned PDF and writing-cache access succeeded.
+
+
+The merged v6 contract is retained as the broader objective. This review also
+rejects any claim that the short q/e proof, model corollary or complete appendix
+ledger has been formalized by this integration. Upstream source-only changes
+are preserved without promoting them to Lean theorems.
 
 Strongest confirmed blocker: the missing unrestricted unary producer and hence
 both full Reducibility Lemmata. Strongest suspected unconfirmed blocker:

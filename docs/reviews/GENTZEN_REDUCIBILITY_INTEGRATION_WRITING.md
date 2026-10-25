@@ -1,5 +1,12 @@
 # Author-side writing review — binary-input Reducibility integration
 
+Upstream integration: accepted commits 0af6a0e, 810dcdb and e4f2f0b after
+the checked proof commit f4bc6ff. They add manuscript v6 and the full-paper
+contract, with no Lean-source changes. The current manuscript is v6; upstream
+v5/v6 files are retained byte-for-byte, and v4 remains preserved. Both full
+Reducibility and the broader v6 contract remain incomplete. The supplied
+1e967bc instruction remains the exact immediate proof target.
+
 The current report explains the binary-input results while retaining the
 unproved full target. Its opening states that limitation. This is an author-side
 editorial review of the integration report, current maps, continuation and
@@ -117,8 +124,9 @@ current correspondence/maps/validation/continuation and relevant README links.
 The pinned Došen–Petrić source and rendered p.252 support the local source
 correspondence; no new literature/novelty claim is made. Lean strict verification,
 public exported-type queries and the five negative controls passed for the
-recorded inventory. No full manuscript rereading/rendering, independent referee
-certification or external Palomar verification was performed. Manuscript v5/v4
+recorded inventory. The complete v6 TeX source, including both appendices, was read to understand
+the upstream contract; no whole-paper mathematical review or new rendering, independent referee
+certification or external Palomar verification was performed. The accepted v6/v5/v4 manuscript state
 is preserved. Reviews and process commentary remain in separate reports.
 
 Repository copies and verified conflict-preserving Downloads copies are part

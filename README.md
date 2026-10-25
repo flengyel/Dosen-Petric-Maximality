@@ -22,6 +22,21 @@ helpers; this is not a count of new mathematical theorems). Exact results:
 The governing instruction is [CODEX_AFTER_1E967BC_REDUCIBILITY.txt](docs/CODEX_AFTER_1E967BC_REDUCIBILITY.txt).
 This checked integration does **not** complete that instruction's final target.
 
+
+## Full-paper formalization target
+
+The authorized target is the complete mathematical content of manuscript v6,
+including its short structural-isomorphism proof, maximality for the actual
+presentation with all dependencies proved, the model corollary, unnumbered
+mathematical claims, and both appendices. The existing symmetric-fold proof
+remains an alternative route. See the
+[full-paper instructions](docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md) and
+[immediate continuation](docs/CODEX_NEXT_SESSION.txt).
+
+This expands the completion requirement; it reports no additional Lean theorem.
+The conditional result and the open coherence and Reducibility obligations
+retain the status recorded below.
+
 ## Historical follow-up at 1e967bc (superseded above)
 
 **Both full Reducibility Lemmata remain open.** From the unchanged ReducibleL/R
@@ -39,7 +54,7 @@ comparisons are not. Blocked-w, cut elimination and coherence remain open.
 See [the exact follow-up report](docs/GENTZEN_REDUCIBILITY_FOLLOWUP_REPORT.md),
 [author-side hostile review](docs/reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_HOSTILE.md),
 and [writing review](docs/reviews/GENTZEN_REDUCIBILITY_FOLLOWUP_WRITING.md).
-The governing task is [the supplied continuation](docs/CODEX_AFTER_05C6BC8_REDUCIBILITY.txt),
+The immediate proof task is [the supplied continuation](docs/CODEX_AFTER_05C6BC8_REDUCIBILITY.txt),
 with the unchanged full targets in CODEX_GENTZEN_REDUCIBILITY_2026-10-24.txt.
 This is verified progress, not completion of that task. Final sources:
 **249 Lean files / 8,919 audited declarations**. Earlier checkpoint
@@ -47,13 +62,14 @@ sections below retain their historical scope and are superseded where necessary.
 
 
 Development for Florian Lengyel's *Maximality of the Došen–Petrić Boolean
-Category*, manuscript v5. The target is maximality of the free zero-identity
-Boolean category under substitution congruences.
+Category*, manuscript v6. Its central target is maximality of the free
+zero-identity Boolean category under substitution congruences; full-paper
+completion also requires the remaining mathematical claims and appendices.
 
 The WSL2 development uses pinned Lean 4.35.0 with an Init-only dependency
 closure. Conditional contextual collapse, signed-literal isolation,
 substitution transport and relative maximality are proved under explicit
-inputs. A generated nonthin structural model instantiates every §5 interface
+inputs. A generated nonthin structural model instantiates every v5 §5 interface
 field; it is separate from the actual source presentation.
 
 The September 2007 presentation now has typed arrow syntax, a generated
@@ -128,7 +144,7 @@ Source blocked-pattern encodings and typed reducible occurrences now compile,
 with proper-ancestor laws and exhaustive selection profiles retaining actual
 predecessor/premise tags. All fourteen blocked patterns and all seven profile
 regimes have inhabited tests. The finite case ledger classifies profiles; it does not certify reduction.
-The current objective remains both source-shaped Reducibility Lemmata.
+The immediate objective remains both source-shaped Reducibility Lemmata.
 Distinguished cut-entry uniqueness is now proved from ReducibleL/R via all
 fourteen blocked premise frames. Both addressed W4 cases and both constructed
 mixed-premise mix W5 cases prove their complete eligible-descendant bounds,
@@ -176,12 +192,25 @@ The [statement map](docs/MANUSCRIPT_STATEMENTS.md) and
 [coverage map](docs/MANUSCRIPT_COVERAGE.md) record the precise boundary.
 Use [the next-session prompt](docs/CODEX_NEXT_SESSION.txt) to continue in WSL2.
 
-The current manuscript is v5: [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex)
-and [PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.pdf).
+The current manuscript is v6: [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v6.tex)
+and [PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v6.pdf).
+It gives a shorter contextual-collapse proof from the published structural
+isomorphisms, distinguishes the result from Joyal's theorem, and describes the
+conditional Lean formalization. No earlier explicit statement of the same
+maximality theorem was found; derivability from older results does not establish
+prior publication. The Lean sources and their open coherence obligations are unchanged.
+See the [corrected novelty review](docs/DOSEN_PETRIC_MAXIMALITY_NOVELTY_REVIEW_2026-10-25.md),
+[v6 hostile review](docs/reviews/V6_HOSTILE_REVIEW.md),
+[writing review](docs/reviews/V6_WRITING_REVIEW.md),
+[Lean scope check](docs/reviews/V6_LEAN_SCOPE.md), and
+[validation](docs/V6_VALIDATION.md).
 MSC2020: primary 03G30; secondary 03F07 and 18A32.
 The v4 [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.tex)
 and [PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.pdf)
-remain preserved; [SHA-256 checksums](manuscript/SHA256SUMS) cover both versions.
+remain preserved, as do the v5
+[TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex) and
+[PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.pdf).
+[SHA-256 checksums](manuscript/SHA256SUMS) cover all three versions.
 The [v5 literature review](docs/LITERATURE_REVIEW_V5_2026-10-23.md),
 [manuscript hostile review](docs/reviews/V5_HOSTILE_REVIEW.md),
 [writing review](docs/reviews/V5_WRITING_REVIEW.md), and

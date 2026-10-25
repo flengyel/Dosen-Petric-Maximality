@@ -9,5 +9,37 @@
     "exit_status": 2,
     "reason": "Supplied original review has two trailing spaces at line 11 in both copied paths; original retained compressed and readable copy whitespace-normalized.",
     "elapsed_seconds": null
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "exit_status": 2,
+    "reason": "Extra EOF blank lines in upstream AGENTS.md and novelty review; original bytes archived before EOF normalization.",
+    "elapsed_seconds": null
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_status": 0,
+    "elapsed_seconds": 0.02,
+    "diagnostics": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "exit_status": 0,
+    "elapsed_seconds": 0.04,
+    "diagnostics": ""
   }
 ]
