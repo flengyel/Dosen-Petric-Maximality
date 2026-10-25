@@ -200,6 +200,12 @@ model universe general enough to express the printed corollary.
 
 ## Immediate continuation and dependency order
 
+For local Codex's concrete W6 implementation, also read
+`CODEX_W6_CONSTRUCTION.md` and its two linked reviews. The author assigns
+implementation/builds to local Codex and research, instructions and review to
+ChatGPT. The construction analysis adds no checked Lean result and does not
+change this full-paper endpoint.
+
 The current Lean baseline is `1e967bcb913a74ae590dde940f246acaddce1fba`; later
 manuscript commits have not completed any additional Lean obligation. Inspect
 the live repository before work and preserve newer changes; this is not an

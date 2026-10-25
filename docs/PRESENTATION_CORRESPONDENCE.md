@@ -2,6 +2,14 @@
 
 ## Current Reducibility follow-up (25 October 2026)
 
+The [concrete W6 instruction](CODEX_W6_CONSTRUCTION.md) now specifies six
+left/right selected-principal constructions, their rank targets and complete
+addressed conclusions. It derives separate targets for the actual left
+`disjLLast` macro and native right `conjR`; it supplies no new checked Lean
+correspondence. Implementation, general dispatch and native/source-macro
+transport remain open. See its [hostile audit](reviews/W6_CONSTRUCTION_HOSTILE.md)
+and [writing review](reviews/W6_CONSTRUCTION_WRITING.md).
+
 **Both full Reducibility Lemmata remain open.** From the unchanged ReducibleL/R
 hypotheses, cut-entry uniqueness now compiles via all fourteen actual blocked
 premise frames and a typed first-separation argument. Arbitrary-address left W4

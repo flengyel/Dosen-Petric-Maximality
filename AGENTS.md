@@ -1,5 +1,17 @@
 # Project instructions
 
+## Division of work
+
+ChatGPT research/review sessions prepare Codex instructions, check and referee
+Codex's work, investigate the mathematics and literature, check the manuscript,
+and assist with arXiv and Palomar preparation. Local WSL Codex implements and
+builds the Lean source. This division, clarified by the author on 25 October
+2026, does not alter the full-paper endpoint or the local verification duties
+below. The concrete W6 construction is in `docs/CODEX_W6_CONSTRUCTION.md`;
+its proposed equalities and ranks remain implementation targets until checked.
+
+## Local implementation
+
 Work in `/home/flengyel/src/Dosen-Petric-Maximality` under WSL2. Inspect Git
 status and the current task before editing. Preserve unrelated work and all
 other checkouts, including FailureOfComposition and Categorical_Rice_Shapiro.

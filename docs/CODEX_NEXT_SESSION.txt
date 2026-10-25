@@ -1,5 +1,21 @@
 CONTINUE THE DOSEN–PETRIC FULL-PAPER FORMALIZATION
 
+ROLE AND CONCRETE W6 FOLLOW-UP — 25 OCTOBER 2026
+
+Local WSL Codex implements and builds the Lean source. ChatGPT supplies
+instructions, mathematical/literature assistance, review of Codex's work,
+manuscript checking and arXiv/Palomar preparation. The author explicitly said
+that a cloud source build is unnecessary; retain the local verification duties.
+
+Read docs/CODEX_W6_CONSTRUCTION.md and its reviews
+docs/reviews/W6_CONSTRUCTION_HOSTILE.md and W6_CONSTRUCTION_WRITING.md.
+They give six concrete W6 families, their actual endpoint/blocked patterns,
+the missing categorical naturality directions, separate macro/native rank
+calculations and the use of the existing complete descendant-bound theorems.
+These are source-checked construction instructions, not new Lean results.
+The source anchor is a17ec1b0b44c9fe7f5061bb35c2edfd1ded9ef90; preserve later work.
+The full-paper endpoint and every settled requirement below remain in force.
+
 This prompt is self-contained task context for a new session. Continue the work,
 not merely a plan or another status summary. It supersedes earlier summaries of
 the overall endpoint while preserving the exact mathematical targets in the

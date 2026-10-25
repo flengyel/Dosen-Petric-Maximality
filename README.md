@@ -22,6 +22,14 @@ retain the status recorded below.
 
 ## Current Reducibility follow-up (25 October 2026)
 
+The [concrete W6 instruction for local Codex](docs/CODEX_W6_CONSTRUCTION.md)
+specifies six selected-principal constructions, separate left-macro and
+right-native rank calculations, and the complete addressed proof targets.
+Its [hostile audit](docs/reviews/W6_CONSTRUCTION_HOSTILE.md) and
+[writing review](docs/reviews/W6_CONSTRUCTION_WRITING.md) concern the
+construction analysis. Implementation and checking remain with local Codex;
+this update adds no Lean theorem.
+
 **Both full Reducibility Lemmata remain open.** From the unchanged ReducibleL/R
 hypotheses, cut-entry uniqueness now compiles via all fourteen actual blocked
 premise frames and a typed first-separation argument. Arbitrary-address left W4

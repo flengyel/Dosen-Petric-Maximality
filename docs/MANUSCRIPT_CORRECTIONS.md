@@ -32,6 +32,21 @@ mathematics. Track exact hypotheses and implementation status in
 [the statement map](MANUSCRIPT_STATEMENTS.md) and
 [coverage map](MANUSCRIPT_COVERAGE.md).
 
+## Accepted workflow clarification: 25 October 2026
+
+Category: author instruction about division of work, not a mathematical defect.
+The author specified that local Codex performs implementation/builds and
+ChatGPT provides instructions, review, mathematical/literature assistance,
+manuscript checks and arXiv/Palomar preparation. Cloud source compilation is
+unnecessary. The current W6 construction instructions, AGENTS, full-paper
+contract and continuation now record that division. Local verification and
+the existing publication/submission authorization boundaries are unchanged.
+
+The W6 construction analysis records proposed equations as local-Codex proof
+targets; the README and all three status/correspondence maps retain their open
+status. No production Lean file or manuscript was revised. No confirmed
+manuscript error was found or inferred from these open obligations.
+
 ## Recording and resolving a correction
 
 For each new finding, record its category (confirmed defect, suspected issue,
