@@ -5,8 +5,8 @@ status and the current task before editing. Preserve unrelated work and all
 other checkouts, including FailureOfComposition and Categorical_Rice_Shapiro.
 
 Read `docs/MANUSCRIPT_STATEMENTS.md`, `docs/MANUSCRIPT_COVERAGE.md`, and
-`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v5;
-v4 remains preserved. Preserve the text, diagrams, and Appendix A references
+`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v6;
+v4 and v5 remain preserved. Preserve the text, diagrams, and Appendix A references
 unless revision is requested.
 
 ## Mathematics
@@ -75,3 +75,4 @@ statement and shared-definition correspondence, complete proof-dependency and
 source-closure audits, focused negative controls, and immutable-source evidence.
 Keep local build, Comparator, official preflight, service verification, automated
 review, and publication as separate statuses.
+

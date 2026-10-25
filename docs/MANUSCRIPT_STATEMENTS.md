@@ -1,4 +1,4 @@
-# Manuscript v5: statements and formal scope
+# Manuscript v6: statements and formal scope
 
 ## Current Reducibility follow-up (25 October 2026)
 
@@ -24,12 +24,15 @@ This is verified progress, not completion of that task. Final sources:
 sections below retain their historical scope and are superseded where necessary.
 
 Source: Florian Lengyel, *Maximality of the Došen–Petrić Boolean Category*,
-v5, 23 October 2026, in `manuscript/`. Its mathematical results and proofs are unchanged from v4. The current v5
-clarifies endosubstitution and local placeholder indexing, repeats the existing
-nonempty-variable assumption in the model corollary, distinguishes a substituted
-pattern from its skeleton, and gives typed diagrams for equations (1)–(3) in
-Appendix B. The review and verification records are kept outside the manuscript. Labels below refer to the
-manuscript rather than an independently assigned theorem numbering.
+v6, 25 October 2026, in `manuscript/`. The maximality theorem and model corollary are unchanged.
+The contextual-collapse proof now uses two structural isomorphisms from
+Došen–Petrić, §12.5, p.294; the proof of Lemma 7 in their 2012 isomorphism
+paper supplies another source. Section 3 distinguishes the category from the
+cartesian closed hypotheses of Joyal's theorem. Section 6 describes the
+conditional Lean formalization, which retains the earlier symmetric-fold proof.
+The new isomorphism-based proof has not been implemented in Lean. Appendices A
+and B are unchanged. Review and verification records remain outside the paper.
+Labels below refer to the manuscript rather than independently assigned numbering.
 
 Let P be a nonempty set of variables. The target category B(P) is the free
 zero-identity Boolean category of Došen–Petrić, *Proof-Theoretical Coherence*,
@@ -59,9 +62,10 @@ interpretation of variables, not one fixed valuation.
 | §3 repeated variables | `Formula.repeated_positions_distinct` | The two positions in p ∧ p are distinct even though their labels coincide. |
 | §3 relation operations | `Relations.comp`, `graph`, `sumMap`, `fstRel`, `sndRel`, `copair`, `reassoc` | Binary relations on types. These operations apply in particular to finite occurrence types. `Presentation.occurrenceMap` now descends from the source equation quotient and preserves identity, composition, and the specified operations; faithfulness remains open. |
 | `eq:first-injection` | `Relations.first_injection`, `OccurrenceInterpretation.first_injection` | The relation equation is unconditional; its original-category counterpart is derived under the typed faithful-interpretation input. |
-| `lem:symmetric` | `Relations.hRel_eq_fold`, `hRel_independent`, `hRel_swap`; `OccurrenceInterpretation.fold_independent`, `fold_swap` | The relation fold is calculated from operations; categorical independence and swap invariance follow by original-category faithfulness. |
-| `eq:second-block` final equality | `Relations.second_block`, `OccurrenceInterpretation.second_block` | The relation equation discards the first source block; the categorical equation follows by original-category faithfulness. |
-| §3 distinct projections | `Relations.projections_distinct`, `GeneratedModel.nonthin`, `Presentation.nonthin` | Every §5 interface field is instantiated in a generated structural-fragment model, with distinct categorical projections and `GeneratedModel.empty_hom`. This does not identify the fragment model with B(P). Separately, `Presentation.nonthin p` proves distinct projections in the equation-generated source quotient; `Presentation.empty_hom` proves its Hom(top,bot) empty. |
+| §6 symmetric fold (v5 `lem:symmetric`) | `Relations.hRel_eq_fold`, `hRel_independent`, `hRel_swap`; `OccurrenceInterpretation.fold_independent`, `fold_swap` | The relation fold is calculated from operations; categorical independence and swap invariance follow by original-category faithfulness. The manuscript identifies this map as mix followed by the codiagonal. |
+| §6 formal collapse argument (v5 `eq:second-block`) | `Relations.second_block`, `OccurrenceInterpretation.second_block` | The relation equation discards the first source block; the categorical equation follows by original-category faithfulness. This calculation belongs to the retained formal proof, not the replacement §5 proof. |
+| `lem:structural-isos` | Not implemented as this lemma | The manuscript derives the specified q_A and e_A isomorphisms from the published structural isomorphisms using original-category coherence and uniform substitution. |
+| §3 distinct projections | `Relations.projections_distinct`, `GeneratedModel.nonthin`, `Presentation.nonthin` | Every v5 §5 interface field is instantiated in a generated structural-fragment model, with distinct categorical projections and `GeneratedModel.empty_hom`. This does not identify the fragment model with B(P). Separately, `Presentation.nonthin p` proves distinct projections in the equation-generated source quotient; `Presentation.empty_hom` proves its Hom(top,bot) empty. |
 | `thm:coherence` | `OccurrenceInterpretation.faithful` is explicit input; `Reduced.normal_faithful_of_reduced/global_faithful_of_reduced` are conditional transfers | Boolean Coherence remains unproved. Reduced syntactic inclusion is now surjective on normal-form hom-sets, with occurrence compatibility. Faithfulness of Reduced.occurrenceMap is an explicit unproved premise, not an axiom or instance. GeneratedModel faithfulness remains fragment-only. |
 | §14.2 source signed-literal reduction used toward §3 coherence | `Reduced.Term/Equation/Derives/Hom/category`, `inclusion`, `red_sound`, `representation` | Genuine restricted syntactic quotient on NormalForm P; 21 term/61 inherited equation schemas, atomic eta/epsilon only. Every full raw term has a reduced representative equal after inclusion to normalization transport; every full normal-form arrow is in the inclusion image. Equality reflection and quotient descent of red are not proved. |
 | §14.2 contextual factorizations toward §3 coherence | `Reduced.Context`, `gConj/gDisj`, `gEta/gEpsilon`, `gEta_comp/gEpsilon_comp`; tagged context and composed occurrence laws | Unconditional equalities in Reduced.Hom for arbitrary P, all one-hole contexts and existing top-domain/bottom-codomain arrows (atomic η/ε specializations give (gη)/(gε)/(gηf)/(gεf)). Needed positive identities are directly derived from the unchanged equations. Common atomic factorization is now proved; §12.5 positive-fragment coherence remains open. |
@@ -90,7 +94,7 @@ interpretation of variables, not one fixed valuation.
 | Global signed-label preservation, §3 | `Presentation.Term.relation_signedLabel`, `occurrence_signedLabel`, `occurrence_literal` | Proved directly for every raw term and quotient arrow, with no nonemptiness, decidable-equality or coherence hypothesis. Complete literal equality, letter/polarity consequences, opposite-sign exclusion and normalized transport compile. The unchanged `SignedLabelPreservation` definition still takes the separately unconstructed faithful interpretation; no instance is fabricated. |
 | `lem:isolation` | `Isolation.selector_edge`, `coselector_edge`, `isolate_edge`, `normalized_literal_context` | Normal-form witness equations and the normalized contextual consequence under faithful interpretation, normalization, and signed-label inputs. The full original-category witness formulation is not a separate declaration; no actual presentation is inferred. |
 | `prop:all-contexts` | `ContextualCollapse.context_retract`, `all_contexts` | Typed substitution on arrows and endpoints, separate congruence closure, positive substitution, and negative substitution followed by double-negation transport. |
-| `lem:collapse` | `ContextualCollapse.total` | From all K_A, the structural and faithful-interpretation data imply totality on existing arrows by §5. No faithfulness on the quotient or cancellation of j_A. |
+| `lem:collapse` | `ContextualCollapse.total` | Same conclusion by different proofs: v6 §5 uses q_A and e_A; Lean retains the symmetric-fold argument described in §6. Both concern existing arrows and use no quotient faithfulness or cancellation of j_A. |
 | `thm:main` | `relative_maximality` is the conditional counterpart | The actual-presentation theorem remains open. The conditional theorem quantifies over every compatible congruence with explicit substitution closure. |
 | `cor:models` | Not implemented | All interpretations; use nonempty P to choose a variable and interpret it as an arbitrary object. |
 | Appendix A | Partial | Tagged block bijection is implemented. Profiles, ordinal encodings, renaming squares, and the bridge to the book's operation remain. |
@@ -105,7 +109,7 @@ and distributor with all endpoints. `OccurrenceInterpretation` gives the
 operation-level relation laws. `fold_independent`, `fold_swap`,
 `first_injection`, and `second_block` derive the corresponding categorical
 equations by faithfulness in the original category. The `GeneratedModel`
-checks the entire §5 interface, but includes no full Boolean presentation.
+checks the entire v5 §5 interface, but includes no full Boolean presentation.
 `Congruence` records the compatibility needed by this argument; a bridge must
 restrict each actual proof congruence to it.
 
@@ -201,3 +205,4 @@ encodes those patterns and proves finite selected-ancestry coverage. Its ledger
 identifies mixed-premise W5 as the next unproved regime.
 Disjoint interleaving, mixed-premise/binary W5–W6, remaining exchange/W1/W2,
 complete rewrite dispatch, macro/tied-site ranks and broader elimination/coherence stay open.
+

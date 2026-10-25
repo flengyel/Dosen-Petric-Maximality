@@ -1,5 +1,14 @@
 # Coverage and next proof obligations
 
+## Manuscript v6 (25 October 2026)
+
+The manuscript now proves contextual collapse using the published structural
+isomorphisms and describes the formalization in §6. The Lean sources are
+unchanged: `ContextualCollapse.total` retains the symmetric-fold proof and
+`relative_maximality` retains its explicit coherence and structural inputs.
+The new paper proof is not a newly implemented Lean result. The statement map
+records the correspondence; the milestones and open obligations below persist.
+
 ## Current Reducibility follow-up (25 October 2026)
 
 **Both full Reducibility Lemmata remain open.** From the unchanged ReducibleL/R
@@ -46,7 +55,7 @@ See [the common atomic report](COMMON_ATOMIC_FACTORIZATION_REPORT.md),
 
 | Milestone | Required endpoint | Current status |
 | --- | --- | --- |
-| I | Contextual collapse, relation calculations, and the complete structural/faithful-interpretation interface for the intended nonthin category | Conditional collapse proved. The generated fragment still instantiates all §5 fields. The actual source quotient now has `Structure`, constructed `ZeroIdentity`, a well-defined operation-preserving occurrence map, distinct projections for p : P, and an empty Hom(top,bot). Its faithful-interpretation field remains open, so milestone I is not declared complete. |
+| I | Contextual collapse, relation calculations, and the complete structural/faithful-interpretation interface for the intended nonthin category | Conditional collapse proved. The generated fragment still instantiates all v5 §5 fields. The actual source quotient now has `Structure`, constructed `ZeroIdentity`, a well-defined operation-preserving occurrence map, distinct projections for p : P, and an empty Hom(top,bot). Its faithful-interpretation field remains open, so milestone I is not declared complete. |
 | II | Maximality conditional on explicit coherence, normalization, presentation, and substitution inputs | `relative_maximality` proved. The source quotient supplies `Substitution`, `DoubleNegation`, and now `Normalization`, including signed occurrence coordinates and transport. Global signed-label preservation is now proved directly for occurrenceMap. The signed-literal reduction, surjective inclusion on normal-form hom-sets and conditional coherence transfer are now proved. Reduced faithfulness, Boolean Coherence and the full congruence correspondence remain open; no intended instance of the conditional theorem is claimed. |
 | III | Maximality for the actual Došen–Petrić presentation with all bridges proved | Open. The syntax/category/structural bridge is constructed; Boolean Coherence and the remaining intended instances are not proved. |
 
@@ -54,15 +63,15 @@ See [the common atomic report](COMMON_ATOMIC_FACTORIZATION_REPORT.md),
 
 `Structure` gives products, coproducts, terminal and initial arrows, and the
 typed distributor. `Congruence` gives equivalence and compatibility with
-composition, pairing, and copairing, as used by §5. `OccurrenceInterpretation`
+composition, pairing, and copairing, as used by v5 §5. `OccurrenceInterpretation`
 includes faithfulness in the original category. Its derived fold, swap,
 first-injection, and second-block equations feed `ContextualCollapse.total`.
 No quotient faithfulness or cancellation of j_A is used.
 
-`GeneratedModel` instantiates every §5 interface field with relations denoted
+`GeneratedModel` instantiates every v5 §5 interface field with relations denoted
 by typed terms of the structural fragment. It proves distinct projections and
 an empty Hom(top,bot). It establishes consistency and nonthinness of that full
-§5 interface, including empty occurrence sets. It omits the full Boolean arrow
+v5 §5 interface, including empty occurrence sets. It omits the full Boolean arrow
 signature and is not an identification with B(P). Its fragment truth invariant
 treats negation atomically; the new full-presentation invariant instead uses
 propositional negation. No substitution instance for the fragment is claimed.
@@ -155,3 +164,4 @@ successfully for the source recorded in the report. Independent
 Challenge/Solution statement/shared-definition comparison, independent kernel
 replay, official preflight, service verification, publication, and an
 independent source-transcription review have not run.
+

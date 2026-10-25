@@ -25,13 +25,13 @@ sections below retain their historical scope and are superseded where necessary.
 
 
 Development for Florian Lengyel's *Maximality of the Došen–Petrić Boolean
-Category*, manuscript v5. The target is maximality of the free zero-identity
+Category*, manuscript v6. The target is maximality of the free zero-identity
 Boolean category under substitution congruences.
 
 The WSL2 development uses pinned Lean 4.35.0 with an Init-only dependency
 closure. Conditional contextual collapse, signed-literal isolation,
 substitution transport and relative maximality are proved under explicit
-inputs. A generated nonthin structural model instantiates every §5 interface
+inputs. A generated nonthin structural model instantiates every v5 §5 interface
 field; it is separate from the actual source presentation.
 
 The September 2007 presentation now has typed arrow syntax, a generated
@@ -154,12 +154,25 @@ The [statement map](docs/MANUSCRIPT_STATEMENTS.md) and
 [coverage map](docs/MANUSCRIPT_COVERAGE.md) record the precise boundary.
 Use [the next-session prompt](docs/CODEX_NEXT_SESSION.txt) to continue in WSL2.
 
-The current manuscript is v5: [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex)
-and [PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.pdf).
+The current manuscript is v6: [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v6.tex)
+and [PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v6.pdf).
+It gives a shorter contextual-collapse proof from the published structural
+isomorphisms, distinguishes the result from Joyal's theorem, and describes the
+conditional Lean formalization. No earlier explicit statement of the same
+maximality theorem was found; derivability from older results does not establish
+prior publication. The Lean sources and their open coherence obligations are unchanged.
+See the [corrected novelty review](docs/DOSEN_PETRIC_MAXIMALITY_NOVELTY_REVIEW_2026-10-25.md),
+[v6 hostile review](docs/reviews/V6_HOSTILE_REVIEW.md),
+[writing review](docs/reviews/V6_WRITING_REVIEW.md),
+[Lean scope check](docs/reviews/V6_LEAN_SCOPE.md), and
+[validation](docs/V6_VALIDATION.md).
 MSC2020: primary 03G30; secondary 03F07 and 18A32.
 The v4 [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.tex)
 and [PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.pdf)
-remain preserved; [SHA-256 checksums](manuscript/SHA256SUMS) cover both versions.
+remain preserved, as do the v5
+[TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex) and
+[PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.pdf).
+[SHA-256 checksums](manuscript/SHA256SUMS) cover all three versions.
 The [v5 literature review](docs/LITERATURE_REVIEW_V5_2026-10-23.md),
 [manuscript hostile review](docs/reviews/V5_HOSTILE_REVIEW.md),
 [writing review](docs/reviews/V5_WRITING_REVIEW.md), and
@@ -208,3 +221,4 @@ remain to be implemented for a substantive theorem.
 
 The repository is private. Public release, license selection, and registry
 submission are later decisions. No submission has been made.
+
