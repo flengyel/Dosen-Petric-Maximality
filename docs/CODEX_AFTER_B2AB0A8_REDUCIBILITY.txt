@@ -1,0 +1,313 @@
+CONTINUE FROM THE COMPLETED BINARY-INTEGRATION RUN
+
+Review anchor: b2ab0a89bddc396dc7b6c0a4ccc30be08d4a088e, main.
+This is a checkpoint, not a reset target. The author supplied this run's
+completion report and requested review and subsequent instructions. Preserve
+newer work, the stash, reconciliation archives, manuscript v4/v5/v6 and privacy.
+Work in /home/flengyel/src/Dosen-Petric-Maximality. Commit and push verified
+changes to main without force under the standing authorization.
+
+Local Codex implements and builds. ChatGPT supplies research, instructions and
+review. The reviewer must wait for an active local run to finish and inspect
+its results before issuing another implementation handoff. This instruction
+does not interrupt an active run or add an approval checkpoint for Codex.
+
+Read current AGENTS.md, CODEX_FULL_MANUSCRIPT_FORMALIZATION.md,
+CODEX_NEXT_SESSION.txt, CODEX_AFTER_1E967BC_REDUCIBILITY.txt, the three current
+claim/correspondence maps and MANUSCRIPT_CORRECTIONS.md. Read the integration
+report and the new reviews GENTZEN_B2AB0A8_REVIEW.md and
+GENTZEN_B2AB0A8_WRITING.md under docs/reviews/. The full-paper endpoint and
+every recorded mathematical/editorial correction remain in force. Older
+instructions identify exact targets, but their historical progress snapshots
+must not cause completed branches to be restarted.
+
+1. REUSE THE VERIFIED INTEGRATION
+
+The retained strict run reports 330 screened Lean files and 9,737 audited
+project declarations. The three audit controls and two presentation controls
+were rejected as expected. These are local verification results for the
+recorded bytes, not an independent kernel or Palomar result.
+
+Reuse BinaryReducer.left/right, including internal Split/HeadSplit matching,
+all six native logical/mix directions, and the exclusion of a cut premise
+using reducibility's cut-freeness. Their Binary hypothesis is still a genuine
+scope restriction. Reuse the nonempty-parametric right-W4 theorem, including
+SingletonRightRegression.old_reducible and its node-free inner operation.
+
+The two-premise terminal-source left W6 construction, native one-premise
+left repairs, all native right W6 families, and the three terminal-source
+singleton blockedness exclusions are already implemented. The previously
+requested missing naturality directions are now available: in particular,
+Rules.terminalDisjLeft_nat and the head logical naturality infrastructure.
+Do not implement these again under new names.
+
+No confirmed manuscript defect was established by this review. Preserve v6's
+short q_A/e_A proof, the symmetric-fold alternative, tagged substitution
+presentation and appendices, disclosure, and conditional Lean scope. Update
+publication prose only for an established correction or a verified change in
+the mathematics it describes. Keep implementation instructions and review
+narrative outside the manuscript and its source comments.
+
+2. CLOSE THE TWO SPECIFIED TERMINAL-SOURCE LEFT W6 FAMILIES
+
+This closes the source-correspondence obligation in CODEX_W6_CONSTRUCTION.md
+section 3. Native binary coverage is already proved; do not rebuild it.
+
+Fix arbitrary P : Type u and normal forms A,B over P. Put C=disj A B.
+All contexts below are lists of normal forms. Take
+  f : G P (F++[A]) Δ, g : G P (U++[B]) Λ.
+
+First-premise family: p : ContractionSelection C F K.
+Set r=p.extend U. Define the actual old proof using
+  (r.chain (.last [])).performL (Δ++Λ) (BlockedSource.disjLLast f g).
+Its antecedent is (p.erased++U)++[C], after explicit endpoint transports.
+Set fhat=(p.extend [A]).performL Δ f and define the repair with
+  r.retainedLastBlock.applyL r.retainedLast_bound (Δ++Λ)
+    (BlockedSource.disjLLast fhat g).
+
+Second-premise family: q : ContractionSelection C U L.
+Set r=q.prependFixed F. Use the same old construction with this r.
+Its antecedent is (F++q.erased)++[C]. Set
+  ghat=(q.extend [B]).performL Λ g
+and apply r.retainedLastBlock to BlockedSource.disjLLast f ghat.
+
+The blockedness proofs already exist, at arbitrary arity:
+  W6.SourceOne.blockedFirst and W6.SourceOne.blockedSecond,
+in GentzenSourceOneSingletons.lean. Reuse them with the contracted premises.
+The same file proves oldFirst_singleton_blocked and
+oldSecond_singleton_blocked. Do not replace them with assumed exclusions.
+
+Required local results for each family:
+
+- Exact old/repair endpoints, complete selected lists, and their common
+  retained terminal C position. Use extend_erased, extend_selected,
+  extend_keep and the corresponding fixed-prefix laws.
+- Equality in Reduced.Hom. Factor the old route through the two-copy
+  retained-last block and the extended premise route. The existing
+  retainChain/fuse_extend/fuse_side equations provide this factorization;
+  prove the block identification with retainedLastBlock. Apply
+  Rules.terminalDisjLeft_nat with the identity route in the untouched premise,
+  and use performL_denote and extend_route. Do not infer the equality from
+  occurrence relations or import the coherence theorem being proved.
+- Equal cut counts, the exact CutFree and Atomized preservation statements,
+  actual blockedness, and the following rank equations.
+
+For selected arity k>=1, put δ(k)=0 when k=1 and δ(k)=1 when k>=2.
+For the first family let
+  S=(p.selected.map (fun a => f.rho .left (a.before [A]))).sum;
+for the second use q, g and [B]. At the common retained terminal position x,
+  old.rho .left x = S+3*k+3,
+  repair.rho .left x = S+δ(k)+6.
+Reuse disjLLast_rank_f/g/principal, performL_rank and SourceLeft.premise_rank.
+Every parametric path traverses three actual macro nodes; fresh C has rank 2.
+Reindexing is node-free. The inequality δ(k)+1<=k yields nonincrease.
+At k=1 the old proof is already blocked; retain the uniform construction and
+use the existing blockedness contradiction when dispatch requires reducibility.
+
+Finally prove ReducesL for each actual old proof, uniformly over containing
+addresses. Use ReducibilityBoundary.descendants_left, repair blockedness,
+root nonincrease and hr.entry_unique, as SourceLeft.addressed_left does.
+Include rebuilt denotation equality through ProofAddress.replace_denote.
+Do not stop after local context or rank lemmas. Proceed directly to section 3.
+
+3. CONSTRUCT UNRESTRICTED SAME-SIDE EXCHANGE REDUCERS
+
+For arbitrary contexts Γ,X,Y,Θ,Δ,K and d, the required left statement is
+
+  d : ContractionBlock P (Γ++Y++X++Θ) K
+  hn : 2<=d.gs.length
+  t : G P (Γ++X++Y++Θ) Δ
+  cutLeft : G P Φ (d.C::Ξ)
+  cutRight : G P (d.C::Ω) Ψ
+  Required conclusion:
+  ReducesL cutLeft cutRight
+    (d.applyL hn Δ (G.exchangeL Γ X Y Θ Δ t)) d.keep.
+
+For arbitrary contexts Δ,X,Y,Λ,Γ,K the right statement is
+
+  d : ContractionBlock P (Δ++Y++X++Λ) K
+  hn : 2<=d.gs.length
+  t : G P Γ (Δ++X++Y++Λ)
+  cutLeft : G P Φ (d.C::Ξ)
+  cutRight : G P (d.C::Ω) Ψ
+  Required conclusion:
+  ReducesR cutLeft cutRight
+    (d.applyR hn Γ (G.exchangeR Γ Δ X Y Λ t)) d.keep.
+
+All displayed contexts and cut roots are universally quantified. No caller
+supplies a selection decomposition, disjointness, injectivity, rank estimate,
+candidate reduct, permutation or coherence hypothesis. Equal fixed labels and
+empty blocks are allowed. GapExchange.Data has an outside0 restriction and
+does not cover these statements.
+
+The following construction is a mathematical implementation proposal, not an
+existing Lean theorem. It avoids requiring a general permutation library.
+
+3a. Extract the selection before the swap
+
+Write U0=Γ++X++Y++Θ and U1=Γ++Y++X++Θ for the left calculation. Let σ be
+the typed bijection of whole-formula positions from U0 to U1 induced by this
+single exchange. Pull back d's complete selected set along σ and list it in
+U0 order. Construct p : ContractionSelection d.C U0 K0 internally, together
+with the lower context K0 and the exact selection/arity equations.
+
+Use positional Split repeatedly at Γ,Y,X,Θ in U1, and reassemble the same
+segment selections in Γ,X,Y,Θ order. Empty selected segments are fixed
+contexts, not arity-zero ContractionSelection values. Alternatively use
+ContractionSelection.extract on a proved nonempty ordered positional list.
+An unsorted inverse image of the old selected list is insufficient: the swap
+reverses the order of the X and Y sublists. Membership is positional; do not
+compare formulas or identify equal-label fixed positions.
+
+The lower context cannot be silently identified with K. The canonical retained
+copy may change: the last selected copy before the exchange need not be the
+last selected copy after it. The next step constructs the required permutation.
+
+3b. Restore the lower context with at most two actual exchanges
+
+For each segment Z of U0, write Z^- for the sequence obtained by deleting all
+selected positions of Z; it equals Z if that segment has no selected position.
+If Z has selected positions, let Z^r retain just its last selected copy and
+delete the others. These are position-based sequences, with all other tags
+unchanged. They describe the actual lower contexts, not quotient objects.
+
+Use these exhaustive regimes:
+
+1. Θ has a selected position. Then
+   K0=Γ^-++X^-++Y^-++Θ^r and K=Γ^-++Y^-++X^-++Θ^r.
+   Swap X^- and Y^- once.
+2. Θ has none, and exactly one of X,Y has selected positions. Retain the
+   last copy in that selected block; the other block stays fixed. Swap those
+   two surviving blocks once, with Γ^- as prefix and Θ as suffix.
+3. Θ,X,Y have none. All selected positions lie in Γ. Swap the fixed X,Y
+   after Γ^r once.
+4. Θ has none, and both X,Y have selected positions. Write
+   X^r=L_X++[C]++R_X, Y^r=L_Y++[C]++R_Y, C=d.C,
+   where L_X,L_Y are the respective fixed gaps before the retained copy and
+   R_X,R_Y are the fixed tails after it. Put G=Γ^-.
+   Then the actual lower contexts are
+     K0=G++(L_X++R_X)++L_Y++[C]++R_Y++Θ,
+     K =G++(L_Y++R_Y)++L_X++[C]++R_X++Θ.
+   First swap X^- with Y^r to obtain
+     G++L_Y++[C]++R_Y++L_X++R_X++Θ.
+   Next swap [C] with R_Y++L_X, with prefix G++L_Y and suffix R_X++Θ.
+   This gives K exactly. Fixed occurrences labelled C remain fixed and
+   distinct throughout. Empty segments are permitted in either exchange.
+
+Construct h by applying p's contraction to t and then this exit sequence of
+exchange constructors. Prove every endpoint transport. On the right, use the
+same positional construction on the succedent, with G.exchangeR.
+
+3c. Prove the categorical square, including the retained copy
+
+Let c0:Route K0 U0 be p.route, c1:Route K U1 be d.route,
+e:Route U1 U0 be the old exchange route, and r:Route K K0 be the composite
+exit route. Route A B maps typed positions of B to positions of A.
+Prove, for every formula D and every a:At U0 D,
+  c1.get (e.get a) = r.get (c0.get a).
+For selected a, both sides are d.keep; for every fixed a, they are its
+transported distinct position. Prove also r.get p.keep=d.keep and that the
+exit position map is bijective. This must identify the preimage of d.keep
+uniquely, including when fixed formulas equal d.C.
+
+Writing c× for ofTerm c.product and c+ for ofTerm c.coproduct, derive
+  comp c1× e× = comp r× c0× : ante K -> ante U0,
+  comp e+ c1+ = comp c0+ r+ : succ U0 -> succ K.
+Composition is left-first. Use product_positions / coproduct components and
+the existing exchange route laws, as in GentzenGapExchangeRouting. Compose
+with t.denote on the appropriate side to obtain old/repair Reduced equality.
+No reflection from an occurrence interpretation is allowed.
+
+3d. Bound all eligible contractions without a false endpoint requirement
+
+Let n be the unchanged selected arity and let S be the sum of t.rho over
+the pulled-back positions, on the contracted side. Prove
+  old retained rank = S+n+1,
+  inner contraction retained rank = S+1.
+The first formula counts the original exchange once on each of n selected
+ancestry paths; the second counts one contraction node. Since n>=2, the
+inner retained rank is strictly below the old rank.
+
+Use ContractionBound.bounded at the inner retained position. Lift it through
+each exit exchange using ContractionBound.exchangeL/exchangeR or their
+UnaryCast wrappers, with the inverse-image predicate for the current retained
+position. The exit nodes are exchanges and cannot be eligible lower
+contractions. Consequently no bound on their own ranks is needed.
+
+In the two-exchange regime, n=2 may give equal old and repaired root ranks:
+both are S+3. This does not defeat the required contraction-descendant bound.
+Do not insist on ReducesL/R.of_strict when its endpoint premise is unavailable.
+Use replacement_cluster_iff, hr.entry_unique and ContractionBound.bound, as
+in W6.NativeLeft.addressed_left. This bounds surviving contractions inside t
+as well as the new inner contraction, at every actual containing address.
+
+Prove equal cut counts and Atomized preservation; derive CutFree from hr.
+Expose both unrestricted exchange theorems and integrate them into dispatch.
+The construction's positional model was checked finitely for total lengths
+2 through 7; that check is diagnostic evidence, not its Lean proof.
+
+4. COMPLETE BOTH GENERAL PRODUCERS
+
+Retain the exact ReducesL/R definitions in GentzenReductionStatements.lean.
+For arbitrary P : Type u, C : NormalForm P, contexts Φ,Ξ,Ω,Ψ,U,V, and
+  f : G P Φ (C::Ξ), g : G P (C::Ω) Ψ, w : G P U V,
+prove ReducesL f g w x for every x:At U C, and separately ReducesR f g w x
+for every x:At V C. Each result quantifies over every actual containing
+address, the existing Reducible hypothesis, and every eligible descendant in
+the rebuilt cut. There is no Binary or Unary restriction on the final theorem.
+
+Recover the outer contraction and its cut-formula position from the existing
+LowerContraction witness. For its actual input constructor, use BinaryReducer
+where applicable and close the unary branches: opposite-side commutations,
+same-side exchanges, parametric thinning/logical rules, disjoint or shared
+nested contractions, selected thinning and selected logical W4. Match arbitrary
+placements internally. Reuse existing fusion and local families; show the
+required actual syntax, selected positions and retained position match.
+
+Treat basis cases using their actual constructors and either a proved
+impossibility/blockedness argument or a genuine reducer. A selection classifier
+does not itself return the required proof. Do not strengthen blockedness,
+change rho, add a special proof constructor, weaken the descendant quantifier,
+or leave a case as a caller obligation. A branch ledger is useful only as a
+working aid to finish these exported producers.
+
+After both full producers, continue to outside-site and containing-blocked-
+contraction transport, finite multiset descent, Blocked-w and cut elimination.
+Then discharge positive/reduced and Boolean Coherence, the actual-presentation
+instances, the short proof and unconditional maximality, model corollary and
+the complete appendix ledger under the full-paper contract. Do not stop merely
+because a source family, classifier, exchange helper or build is complete.
+
+5. VERIFY, REVIEW AND DELIVER
+
+Use the pinned Lean 4.35.0 and existing Init-only dependencies. Preserve empty
+hom-sets and require a typed existing-arrow witness for zeros. No custom
+mathematical axioms, proof holes, native_decide, assumed coherence or
+unproved equality reflection. The allowed foundational axioms remain
+propext, Quot.sound and Classical.choice.
+
+Check the new families at singleton/mixed arities, empty gaps, repeated fixed
+labels, and inhabited Empty-variable examples. For exchanges, exercise both
+selected blocks with no selected suffix, retained-copy movement across equal
+fixed labels, selections in each other segment, empty exchange blocks and
+n=2 root-rank ties. These are mathematical coverage tests, not substitutes
+for the general statements.
+
+Run the required strict verification, boundary controls, public-type checks
+and source-identity checks for changed code, with one heavy build/kernel job
+at a time. Retain failures and actual exit codes. Do not repeat an unchanged
+baseline build or invent independent-kernel/Palomar statuses. Apply both
+reviews to the actual resulting proofs and correspondence.
+
+Update the statement, coverage, correspondence and correction records,
+README and continuation together. Keep accepted corrections and scope intact.
+Commit and push to main without force; verify checked/committed bytes and
+local/origin/live-ref agreement. Preserve differing Downloads files and compare
+delivered reports with committed bytes. Also deliver this instruction and its
+two reviews from docs/ and docs/reviews/ to /mnt/c/Users/fleng/Downloads.
+The cloud reviewer cannot access that destination and has not claimed delivery.
+
+If a target remains open, state its exact signature, the failed inference or
+construction, and a concrete continuation. An implementation gap is not a
+counterexample or a manuscript defect. Do not narrow the full-paper endpoint
+or request again the standing authorization to perform this work.

@@ -10,6 +10,13 @@ builds the Lean source. This division, clarified by the author on 25 October
 below. The concrete W6 construction is in `docs/CODEX_W6_CONSTRUCTION.md`;
 its proposed equalities and ranks remain implementation targets until checked.
 
+Before issuing a successor implementation handoff, ChatGPT must wait for the
+active local Codex run to finish and review its resulting source and evidence.
+Then reconcile the instructions with what that run actually proved. This is
+a sequencing requirement for the reviewer, not a stop or approval condition
+for local Codex. Current compiled scope is recorded in the latest continuation
+and claim maps; historical construction instructions do not reset that scope.
+
 ## Local implementation
 
 Work in `/home/flengyel/src/Dosen-Petric-Maximality` under WSL2. Inspect Git

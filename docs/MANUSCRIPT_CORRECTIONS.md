@@ -47,6 +47,23 @@ targets; the README and all three status/correspondence maps retain their open
 status. No production Lean file or manuscript was revised. No confirmed
 manuscript error was found or inferred from these open obligations.
 
+## Accepted sequencing correction and completed-run review
+
+The author required the reviewer to wait for an ongoing local Codex run to
+finish before issuing its successor instructions. The earlier W6 handoff was
+premature. AGENTS and the current continuation now record this workflow
+requirement. The successor handoff follows the author's supplied completion
+report at `b2ab0a89bddc396dc7b6c0a4ccc30be08d4a088e` and inspection of its
+source and retained evidence. It preserves that run's completed binary work.
+
+The full-paper contract's stale immediate-baseline paragraph was updated to
+this checkpoint and the actual remaining tasks. This is an instruction-record
+correction, not a mathematical defect. The source/evidence and writing reviews
+are `reviews/GENTZEN_B2AB0A8_REVIEW.md` and
+`reviews/GENTZEN_B2AB0A8_WRITING.md`. No new manuscript correction or new Lean
+theorem is asserted. General unary dispatch and both full Reducibility Lemmata
+remain open; the proposed exchange construction must still be proved in Lean.
+
 ## Recording and resolving a correction
 
 For each new finding, record its category (confirmed defect, suspected issue,

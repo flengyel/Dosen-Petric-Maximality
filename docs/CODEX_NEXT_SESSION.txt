@@ -1,4 +1,22 @@
-CURRENT LOCAL VERIFIED UPDATE — binary-input integration
+CURRENT HANDOFF AFTER REVIEW OF THE COMPLETED b2ab0a8 RUN
+
+Read docs/CODEX_AFTER_B2AB0A8_REDUCIBILITY.txt and its source/evidence and
+writing reviews under docs/reviews/GENTZEN_B2AB0A8_REVIEW.md and
+docs/reviews/GENTZEN_B2AB0A8_WRITING.md. The author supplied the completed
+run and requested these successor instructions. Do not issue another handoff
+while its local implementation run is active; review the finished result first.
+
+Reuse BinaryReducer.left/right and all completed native W5/W6 and singleton
+right-W4 work. Finish the two terminal-source one-premise left W6 packages,
+then unrestricted same-side exchange and every remaining unary placement.
+The new instruction gives a one/two-exchange lower-context construction and
+uses ContractionBound at the inner contraction, avoiding a false demand for
+strict decrease of the repaired root. These are proposed proof obligations,
+not new Lean declarations. Complete BOTH full Reduces producers and continue
+toward the unchanged full-paper endpoint. No Lean or manuscript source is
+changed by this review/handoff. Preserve all requirements and evidence below.
+
+RETAINED b2ab0a8 LOCAL VERIFIED CHECKPOINT — binary-input integration
 
 The full-paper contract and all settled requirements below remain in force.
 The exact later user prompt CODEX_AFTER_1E967BC_REDUCIBILITY.txt also remains

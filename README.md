@@ -1,5 +1,13 @@
 # Došen–Petrić maximality in Lean
 
+The completed `b2ab0a8` integration has a
+[source/evidence review](docs/reviews/GENTZEN_B2AB0A8_REVIEW.md),
+[writing review](docs/reviews/GENTZEN_B2AB0A8_WRITING.md) and
+[successor Codex instruction](docs/CODEX_AFTER_B2AB0A8_REDUCIBILITY.txt).
+The instruction reuses the proved binary work and specifies the remaining
+terminal-source W6 and unrestricted unary constructions. This review update
+adds no Lean theorem and makes no manuscript change.
+
 Latest upstream integration (edb86cb): retain the author's division of work,
 correction procedure and tagged-substitution requirements. The new W6 analysis
 is an instruction at its historical source anchor. The two-premise terminal-

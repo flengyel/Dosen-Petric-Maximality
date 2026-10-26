@@ -206,18 +206,18 @@ implementation/builds to local Codex and research, instructions and review to
 ChatGPT. The construction analysis adds no checked Lean result and does not
 change this full-paper endpoint.
 
-The current Lean baseline is `1e967bcb913a74ae590dde940f246acaddce1fba`; later
-manuscript commits have not completed any additional Lean obligation. Inspect
-the live repository before work and preserve newer changes; this is not an
-instruction to reset to the baseline.
+The reviewed integration checkpoint is
+`b2ab0a89bddc396dc7b6c0a4ccc30be08d4a088e`. Inspect the live repository and
+preserve newer changes; this is not an instruction to reset to that checkpoint.
+The earlier `1e967bc` baseline remains historical verification evidence.
 
-Continue first from `CODEX_NEXT_SESSION.txt`: construct logical W6 with both
-premises' parametric copies and the selected fresh compound, retaining the
-actual `disjLLast` exchanges. Complete logical W5/W6, transport and general
-profile-to-reducer dispatch, then both full Reducibility Lemmata with their
-unchanged complete post-replacement descendant bounds. Reuse proved cut-entry
-uniqueness, addressed W4 and constructed mixed-premise mix W5; do not restart
-those completed branches or replace the full targets with auxiliary results.
+Continue from `CODEX_NEXT_SESSION.txt` and `CODEX_AFTER_B2AB0A8_REDUCIBILITY.txt`.
+Reuse the complete binary-input producers, terminal-source two-premise W6,
+native logical families and nonempty-parametric right W4. Finish the two
+specified terminal-source one-premise W6 packages, unrestricted same-side
+exchange and remaining unary placements, then both full Reducibility Lemmata
+with their unchanged complete post-replacement descendant bounds. Do not
+restart completed branches or replace the full targets with auxiliary results.
 
 Then prove the necessary outside-site transport, finite multiset descent,
 Blocked-w and cut elimination; obtain positive/reduced coherence and Boolean
