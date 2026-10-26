@@ -1,5 +1,49 @@
 # Published presentation correspondence
 
+## Current full Reducibility checkpoint (26 October 2026)
+
+Both `DosenPetric.Reduced.Gentzen.reducibility_left` and
+`reducibility_right` compile for arbitrary P, contexts, proofs and selected
+positions, with the unchanged complete `ReducesL/R` conclusions. No Binary or
+Unary premise, caller reduct/decomposition, coherence or reflection assumption.
+The source-terminal one-premise W6 packages, unrestricted exchange and every
+remaining unary/basis input are internally covered. Outside transport for all
+incomparable addresses preserves actual proof values, paths, ancestry and
+whole-formula cluster membership.
+
+Checked: **398 Lean files / 10,606 audited project declarations**. Only propext,
+Quot.sound and Classical.choice are permitted. Strict build, exact public types,
+all five negative controls, import closure and manuscript checksums passed.
+Exact hypotheses, commands, hashes, construction and limitations:
+[GENTZEN_FULL_REDUCIBILITY_REPORT.md](GENTZEN_FULL_REDUCIBILITY_REPORT.md),
+[author-side hostile review](reviews/GENTZEN_FULL_REDUCIBILITY_HOSTILE.md),
+[author-side writing review](reviews/GENTZEN_FULL_REDUCIBILITY_WRITING.md).
+Evidence: `provenance/wsl-gentzen-full-reducibility/`.
+
+The next missing result is preservation of a blocked contraction containing a
+proper lower-contraction replacement, on each side. Outside cluster transport
+alone does not preserve the entire Reducible predicate. Finite multiset descent,
+Blocked-w, clean-cut/cut elimination, positive/reduced/Boolean coherence, actual
+instances/maximality, model corollary and the entire v6 appendix ledger remain
+open. Generic routing repairs preserve CutFree; no general Atomized witness is
+claimed. All accepted corrections and the full-paper contract remain active.
+
+| Source anchor | Current correspondence |
+| --- | --- |
+| §11.2 p.250 Lemma, p.252 dual | Full ReducesL/R exports, with every addressed rebuilt eligible descendant. |
+| p.251 W1–W3 | Typed selected-fiber factor replaces the cited Semilattice Coherence calculation; all categorical squares proved by existing component universal properties. |
+| p.251 W4 / p.252 dual | Fixed-principal component naturality; selected-principal source repair, explicit exchanges, singleton-aware inner operations. |
+| p.252 W6 and `(dL nat)` | TerminalOne first/second source packages; old S+3k+3, repair S+δ(k)+6, actual blocked source middle. |
+| p.253 corollary | Blocked-w still requires containing transport and a proved finite descent; it is not inferred from the local theorem alone. |
+
+Source hash remains e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e.
+No new equation, syntax constructor, rank definition or coherence instance.
+
+## Retained historical records
+
+The following snapshots describe their own earlier commits; open-status text
+below is historical and is superseded by the current checkpoint above.
+
 Latest upstream integration (edb86cb): retain the author's division of work,
 correction procedure and tagged-substitution requirements. The new W6 analysis
 is an instruction at its historical source anchor. The two-premise terminal-
@@ -17,7 +61,7 @@ v5/v6 files are retained byte-for-byte, and v4 remains preserved. Both full
 Reducibility and the broader v6 contract remain incomplete. The supplied
 1e967bc instruction remains the exact immediate proof target.
 
-## Current binary-input integration (25 October 2026)
+## Historical binary-input integration (25 October 2026)
 
 **Both full Reducibility Lemmata remain open.** Every actual contraction over
 native `mix`, `conjR` or `disjL` now has a left and a right producer, with internal

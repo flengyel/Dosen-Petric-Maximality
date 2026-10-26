@@ -1,3 +1,52 @@
+# Current full Reducibility validation
+
+Both `DosenPetric.Reduced.Gentzen.reducibility_left` and
+`reducibility_right` compile for arbitrary P, contexts, proofs and selected
+positions, with the unchanged complete `ReducesL/R` conclusions. No Binary or
+Unary premise, caller reduct/decomposition, coherence or reflection assumption.
+The source-terminal one-premise W6 packages, unrestricted exchange and every
+remaining unary/basis input are internally covered. Outside transport for all
+incomparable addresses preserves actual proof values, paths, ancestry and
+whole-formula cluster membership.
+
+Checked: **398 Lean files / 10,606 audited project declarations**. Only propext,
+Quot.sound and Classical.choice are permitted. Strict build, exact public types,
+all five negative controls, import closure and manuscript checksums passed.
+Exact hypotheses, commands, hashes, construction and limitations:
+[GENTZEN_FULL_REDUCIBILITY_REPORT.md](GENTZEN_FULL_REDUCIBILITY_REPORT.md),
+[author-side hostile review](reviews/GENTZEN_FULL_REDUCIBILITY_HOSTILE.md),
+[author-side writing review](reviews/GENTZEN_FULL_REDUCIBILITY_WRITING.md).
+Evidence: `provenance/wsl-gentzen-full-reducibility/`.
+
+The next missing result is preservation of a blocked contraction containing a
+proper lower-contraction replacement, on each side. Outside cluster transport
+alone does not preserve the entire Reducible predicate. Finite multiset descent,
+Blocked-w, clean-cut/cut elimination, positive/reduced/Boolean coherence, actual
+instances/maximality, model corollary and the entire v6 appendix ledger remain
+open. Generic routing repairs preserve CutFree; no general Atomized witness is
+claimed. All accepted corrections and the full-paper contract remain active.
+
+| Command | Exit | Seconds |
+| --- | --- | --- |
+| `bash scripts/verify.sh` | 0 | 6.073 |
+| `python3 scripts/check-audit-boundaries.py` | 0 | 12.25 |
+| `python3 scripts/check-presentation-boundaries.py` | 0 | 1.156 |
+| `sha256sum -c SHA256SUMS` | 0 | 0.018 |
+| `git diff --check` | 0 | 0.013 |
+| `git diff --cached --check` | 0 | 0.006 |
+| `lake env lean -DwarningAsError=true Checks/Reducibility.lean` | 0 | 0.771 |
+
+All final production/public-check bytes are inventoried in
+`provenance/wsl-gentzen-full-reducibility/CHECKED_SOURCES.sha256` (SHA-256
+4b8eb0f9febbd470d8c7ddd7c74e51c2a22b8492a9f0830d9cf9be8fa53c37db). Logs include 84 nonzero receipt rows, including exploratory
+elaboration failures and the corrected public-check universe binder. The
+strict run was repeated after that check-source edit. Baseline reused the
+unchanged b2ab0a8 receipts (330 files / 9,737 declarations), not a new replay.
+Final staged/committed-byte and delivery checks are supplemental record checks.
+No independent-kernel, Comparator or Palomar result is claimed.
+
+## Retained historical validation
+
 # Current binary-input integration validation
 
 Upstream integration: accepted commits 0af6a0e, 810dcdb and e4f2f0b after

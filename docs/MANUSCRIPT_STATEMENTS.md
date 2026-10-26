@@ -1,5 +1,45 @@
 # Manuscript v6: statements and formal scope
 
+## Current full Reducibility checkpoint (26 October 2026)
+
+Both `DosenPetric.Reduced.Gentzen.reducibility_left` and
+`reducibility_right` compile for arbitrary P, contexts, proofs and selected
+positions, with the unchanged complete `ReducesL/R` conclusions. No Binary or
+Unary premise, caller reduct/decomposition, coherence or reflection assumption.
+The source-terminal one-premise W6 packages, unrestricted exchange and every
+remaining unary/basis input are internally covered. Outside transport for all
+incomparable addresses preserves actual proof values, paths, ancestry and
+whole-formula cluster membership.
+
+Checked: **398 Lean files / 10,606 audited project declarations**. Only propext,
+Quot.sound and Classical.choice are permitted. Strict build, exact public types,
+all five negative controls, import closure and manuscript checksums passed.
+Exact hypotheses, commands, hashes, construction and limitations:
+[GENTZEN_FULL_REDUCIBILITY_REPORT.md](GENTZEN_FULL_REDUCIBILITY_REPORT.md),
+[author-side hostile review](reviews/GENTZEN_FULL_REDUCIBILITY_HOSTILE.md),
+[author-side writing review](reviews/GENTZEN_FULL_REDUCIBILITY_WRITING.md).
+Evidence: `provenance/wsl-gentzen-full-reducibility/`.
+
+The next missing result is preservation of a blocked contraction containing a
+proper lower-contraction replacement, on each side. Outside cluster transport
+alone does not preserve the entire Reducible predicate. Finite multiset descent,
+Blocked-w, clean-cut/cut elimination, positive/reduced/Boolean coherence, actual
+instances/maximality, model corollary and the entire v6 appendix ledger remain
+open. Generic routing repairs preserve CutFree; no general Atomized witness is
+claimed. All accepted corrections and the full-paper contract remain active.
+
+| Claim / source | Exact compiled declaration | Hypotheses / status |
+| --- | --- | --- |
+| §11.2 p.250 Reducibility and p.252 right analogue | `DosenPetric.Reduced.Gentzen.reducibility_left/right` in GentzenReducibility.lean | Arbitrary P and all contexts; exact ReducesL/R. Completed prerequisite to G2, not G2/cut elimination. |
+| p.252 source one-premise W6 | `W6.TerminalOne.reducesFirst/Second` | Nonempty selection, arbitrary actual contexts and containing address; source macro ranks proved. |
+| p.251 arbitrary cL/cR placement | `UnrestrictedExchange.left/right` | Actual arbitrary ContractionBlock with at least two selected copies, no outside-interval restriction. |
+| Outside replacement | `ProofAddress.outside_of_incomparable`, `outside_cluster` | Paths mutually non-prefix; constructs actual surviving address internally. |
+
+## Retained historical records
+
+The following snapshots describe their own earlier commits; open-status text
+below is historical and is superseded by the current checkpoint above.
+
 Latest upstream integration (edb86cb): retain the author's division of work,
 correction procedure and tagged-substitution requirements. The new W6 analysis
 is an instruction at its historical source anchor. The two-premise terminal-
@@ -20,7 +60,7 @@ the contract's section-by-section inventory. Record hypotheses and actual
 source-presentation instances; do not count a conditional or weaker theorem as
 the printed claim. The update changes the target, not the proof status below.
 
-## Current binary-input integration (25 October 2026)
+## Historical binary-input integration (25 October 2026)
 
 **Both full Reducibility Lemmata remain open.** Every actual contraction over
 native `mix`, `conjR` or `disjL` now has a left and a right producer, with internal

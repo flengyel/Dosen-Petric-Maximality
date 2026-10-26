@@ -1,0 +1,890 @@
+[
+  {
+    "original": ".codex-work/contextual-collapse/checks/direct-axiom.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/000-direct-axiom.log.gz",
+    "raw_sha256": "8cd4b233e08acc04e35ded87823f56ad7a6bfbd3dba591c18a90f7f2e1fe8cdc",
+    "archive_sha256": "12b0d6fdbc29aa9e9addbe758d3f2190a651885e342605b8805eeabe98b731f3"
+  },
+  {
+    "original": ".codex-work/contextual-collapse/checks/hidden-dependency.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/001-hidden-dependency.log.gz",
+    "raw_sha256": "dd235c6d8890a7d766b72201f9d40a26fbe4b46bcfe8eaa0271d4f750a2a9ff2",
+    "archive_sha256": "9a716f5c925aedb64ceb2aad1ae250ba9e0cb2e48211f008f02611251aac57ff"
+  },
+  {
+    "original": ".codex-work/contextual-collapse/checks/private-axiom.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/002-private-axiom.log.gz",
+    "raw_sha256": "7f1aaaeb4dfb10d7da83e9414e8094cfada120e68f54158ecb34f088a3f1cd49",
+    "archive_sha256": "99f85dfca97c55031d8c54b0c096ba9167422b62344f8769cd8d8db075db12a7"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/audit-boundaries-20261026T131315820177.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/003-audit-boundaries-20261026T131315820177.log.gz",
+    "raw_sha256": "377643b2b8fc2ff8c9b228992b82e2fd82c36bf57a7c3914aa71572ffbf89ac0",
+    "archive_sha256": "a82fac14cef21463e52a48a71b1c44f1a44db926d22ae66fad9d79b84a37810b"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/audit-boundaries-20261026T134217790149.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/004-audit-boundaries-20261026T134217790149.log.gz",
+    "raw_sha256": "377643b2b8fc2ff8c9b228992b82e2fd82c36bf57a7c3914aa71572ffbf89ac0",
+    "archive_sha256": "a82fac14cef21463e52a48a71b1c44f1a44db926d22ae66fad9d79b84a37810b"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenAllInputReducers-20261026T013923355772.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/005-build-GentzenAllInputReducers-20261026T013923355772.log.gz",
+    "raw_sha256": "7ce8c7397b0870e60ad8c627a5d2cc7256627210878d9327a09aabeb2605534c",
+    "archive_sha256": "19075eced723333211ed329a8ade6166e8fc9ee811d687a37308fa67fffaa2f7"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenAnchoredRouteFactor-20261026T004655158360.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/006-build-GentzenAnchoredRouteFactor-20261026T004655158360.log.gz",
+    "raw_sha256": "ac85f3817a7b967be5522ad9e78f82bebae5bb6fd987d43b2b33c5badcafa47e",
+    "archive_sha256": "eb7270f9367b149a5fe591eca7c61ceb22b29b00379462324ffaa6b0c07f446e"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenAnchoredRouteFactor-20261026T004745460501.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/007-build-GentzenAnchoredRouteFactor-20261026T004745460501.log.gz",
+    "raw_sha256": "b435e0e5185afb4198576522f9c179bd78113e45763dcdaf3e1e75b2f2b5b23f",
+    "archive_sha256": "98c8bd409482ea7a83ca675df8a0f8daacd907371a38effd1c57adcd84164177"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenAnchoredRouteFactor-20261026T004821197642.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/008-build-GentzenAnchoredRouteFactor-20261026T004821197642.log.gz",
+    "raw_sha256": "05adf8cbdb7801287ad92ac1236df9e6a74c1944c2b4fa56db359a12b7a9faa3",
+    "archive_sha256": "01303dd96df1ff3a95681f385b266528634e18d3dd9b59a7ad9702e541135283"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenAnchoredRouteFactor-20261026T004832687021.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/009-build-GentzenAnchoredRouteFactor-20261026T004832687021.log.gz",
+    "raw_sha256": "d44cfe74ec55caf88b311855753f1cdeaf33967357e9f53c51dea4c04c5f9bcc",
+    "archive_sha256": "ddb64bfc96646bc7d63d498a2bf079e6d0e83858e27751c4689fe5fe97c2d205"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenAnchoredRoutes-20261026T004517960768.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/010-build-GentzenAnchoredRoutes-20261026T004517960768.log.gz",
+    "raw_sha256": "b9716727940c892a618236fb41e270615e6eff3794c61b7772986f81cabd0f2c",
+    "archive_sha256": "0560577317c9c58c1837a0dfb3070073c9e3533af9cb65a02329e4661e8c33d3"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenCenteredBounds-20261026T010744949583.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/011-build-GentzenCenteredBounds-20261026T010744949583.log.gz",
+    "raw_sha256": "61bfa2663982c3a038603580b5ede81362bcfb5d350204c586cd8042b7ced904",
+    "archive_sha256": "ac639521a431b2f6ed98b88f6f1832c704b22e31bbcf4a381edfc4f4d8e7bc50"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenCenteredCoordinates-20261026T003137764514.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/012-build-GentzenCenteredCoordinates-20261026T003137764514.log.gz",
+    "raw_sha256": "35ee64e777880092385975d24c11209235ee780ab0e9acc31383ccbd9f9b672e",
+    "archive_sha256": "ecccdb8eac1962a2a32bc8f2ff57b84bc2ef0b5dc3364f910a94837c8dfb5eca"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenCenteredCoordinates-20261026T003146072941.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/013-build-GentzenCenteredCoordinates-20261026T003146072941.log.gz",
+    "raw_sha256": "6ae9aac52fe38d9eb05d0d5d548951a81f1abbd779f825332605e6d27caba15a",
+    "archive_sha256": "e82c48c72b4a789e2bb97ea2a93e497606a03cf70b9342a5d62a3e89f445b69d"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenCenteredCoordinates-20261026T003152266162.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/014-build-GentzenCenteredCoordinates-20261026T003152266162.log.gz",
+    "raw_sha256": "8fb495e6014d0454f746ce885e762e72c4257e9ac06348f28660d691d1ec6310",
+    "archive_sha256": "222e4d82ef5fb1496aa7fea5af669bf9654819a2dd8d79ea8ab17b282b56c60b"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenCenteredSelection-20261026T002805039379.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/015-build-GentzenCenteredSelection-20261026T002805039379.log.gz",
+    "raw_sha256": "774c546c51d2c2439b207d73f07ff21764a870502ce0ee1b2dbf1f56dd207f5c",
+    "archive_sha256": "05a397483ffc3fd04ce48c4a29f57d2422c99618d46913419c8af5dfbbe96008"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenCenteredSelection-20261026T002851149559.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/016-build-GentzenCenteredSelection-20261026T002851149559.log.gz",
+    "raw_sha256": "9feaffad6c68eb2d6ab5d7bc1364b7d55e74589bce6d376b938735c559fd9709",
+    "archive_sha256": "77a5952202f9afa11037fc39cc666b47f874a09291a42b17e5f8c30f98668259"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenContextNormalizationLaws-20261026T010621201902.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/017-build-GentzenContextNormalizationLaws-20261026T010621201902.log.gz",
+    "raw_sha256": "0251d3bc604ec4693b7ebd9837901e5d4429228618ba3f8ea216dab99ad5fb2e",
+    "archive_sha256": "b48c402b96114dfde174832ec18107bce3c3fe9218c0c632a9efb343374c89c8"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenContextSelectionNormalization-20261026T010422000536.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/018-build-GentzenContextSelectionNormalization-20261026T010422000536.log.gz",
+    "raw_sha256": "a03957c00e58204fa1136a702862f41783388d7289cb8ad0b72790b4d3434ace",
+    "archive_sha256": "c78f5950176ae3cc615b6fe6b4c667ae54ca4503c616ed92c43e455921341278"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenContextSelectionNormalization-20261026T010436071620.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/019-build-GentzenContextSelectionNormalization-20261026T010436071620.log.gz",
+    "raw_sha256": "7090d942db41af802e8ff69987719790ead34b1905fb7cbe122fa8a7c16a14fc",
+    "archive_sha256": "95711459d988ad29a6f240f6ce0300c66938ce74e45f575aa2cc15cac1aeea41"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenContextSelectionSums-20261026T010518356884.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/020-build-GentzenContextSelectionSums-20261026T010518356884.log.gz",
+    "raw_sha256": "2b81b2d7585f99a8a0be143543c20d9f6c9b98bce7efd9c6c668b197884dc3de",
+    "archive_sha256": "68ebe12051f3ad2f28db47e12e42a3584042875c25440f339927e6e5850cdec4"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenContextSelectionSums-20261026T010554122745.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/021-build-GentzenContextSelectionSums-20261026T010554122745.log.gz",
+    "raw_sha256": "2dd96c2412f43fb72ff7159f99b66d9738074cdaef3c2cb08fed008adad6bb06",
+    "archive_sha256": "5811ea29f607d82d4c9cf005f130e8df624b6e6926749a7297e63d30118012ca"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenContextSelectionSums-20261026T010632844410.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/022-build-GentzenContextSelectionSums-20261026T010632844410.log.gz",
+    "raw_sha256": "0acea7e274777650e212d827f8d4ecb9d6348a90543eb5a50c1bb42f76a1df9b",
+    "archive_sha256": "a9fd4535f8ae257bf0822c3634e7b3175aea92fe849518e6272bbb46b7e4c02c"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenExchangeFactor-20261026T003225745261.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/023-build-GentzenExchangeFactor-20261026T003225745261.log.gz",
+    "raw_sha256": "1c6902d84ef9f05206fe53cadcde777c58ce9bbe64febb03e4c9eade7020d552",
+    "archive_sha256": "44c90c7ccda0c3e3a81b4be779ac3212825969543d5a92d7abcfb4d210bedf69"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenExchangeFactor-20261026T003245795883.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/024-build-GentzenExchangeFactor-20261026T003245795883.log.gz",
+    "raw_sha256": "7c3dd450b02335fbf1874213bcb6f5c0c2b804ad748ed8b5c34e445fed80079f",
+    "archive_sha256": "aba76a8dc605bcd8e147cc4beb1fd467315a16bcffd0b5bf038a759e4e10ec1a"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenExchangeFactorLaws-20261026T003325903066.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/025-build-GentzenExchangeFactorLaws-20261026T003325903066.log.gz",
+    "raw_sha256": "66efc8c0a497b7c5b6304ee6b36e789bbe152cd5ec592780a42ef81438ea95a5",
+    "archive_sha256": "bcc53b2d18641153006f4af934a8840508a620b803ac7b737ef5d171899cc241"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenExchangeFactorLaws-20261026T003335080046.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/026-build-GentzenExchangeFactorLaws-20261026T003335080046.log.gz",
+    "raw_sha256": "19c4a68f252ec7b5924f7727d4bd0478c0d565ec4bad15a2015f061e5d6cc432",
+    "archive_sha256": "bf11da020f66943abd8d1c22f67122eb8c2ccfafc1139e2c115be8be39b349f3"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenExchangeFactorLaws-20261026T003404203611.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/027-build-GentzenExchangeFactorLaws-20261026T003404203611.log.gz",
+    "raw_sha256": "5e5bddaed98f279fc208979daa1d1285efc8c6ce9244eae7fd86da73d9d260c0",
+    "archive_sha256": "72f09b003765a2e1bc670a6edf285fb8bfd5f8836bdae5efb515cd6a1e46e21b"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenExchangeFactorLaws-20261026T003413966082.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/028-build-GentzenExchangeFactorLaws-20261026T003413966082.log.gz",
+    "raw_sha256": "9e7e5cb5fad471c826fc43abec4284b8df85381ef5e3e91f700ea26dbd842139",
+    "archive_sha256": "47102103cef33992e64f378f02d22c55dc29e1ea760a118063eafb1227b1c6c1"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenExchangeFactorLaws-20261026T003421144499.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/029-build-GentzenExchangeFactorLaws-20261026T003421144499.log.gz",
+    "raw_sha256": "4daf6a9a923d384eaa6eb84c480feb003242e7808c980f990e74c0be11de1af6",
+    "archive_sha256": "3ec225dbbc9506632515e73b10d934ac02c32a75f5dd5c91f3dff6cd57ecfafb"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenExchangeReductionBounds-20261026T003453959662.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/030-build-GentzenExchangeReductionBounds-20261026T003453959662.log.gz",
+    "raw_sha256": "abb9104ecb01337a7dba9adf9b32b5cfb0e8647257997d56f9f2e682e0fcb175",
+    "archive_sha256": "ae31d4531f0180b25845de0706c6715fbe302010116473657abed9a3cb37af60"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenExchangeReductionBounds-20261026T003514398895.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/031-build-GentzenExchangeReductionBounds-20261026T003514398895.log.gz",
+    "raw_sha256": "7b236eae47a881539c02762003e0c1c6ef2f34995ea0998f91b7ebd2509c593d",
+    "archive_sha256": "ad6b3f1966dac7cb2753cc974360ac4b807faa4b8fd6f47a7c4967cbd67d36ab"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenExchangeScripts-20261026T002043025042.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/032-build-GentzenExchangeScripts-20261026T002043025042.log.gz",
+    "raw_sha256": "84aeddcf06abde468b79d693239a70e804b92131efa86da22234450383a75a44",
+    "archive_sha256": "e5e04f91ac1dd1febf97895ed349bdf325958b8969a052a7c701502248a70232"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenFixedLogicalProducers-20261026T011557483408.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/033-build-GentzenFixedLogicalProducers-20261026T011557483408.log.gz",
+    "raw_sha256": "1a67448a3f7015d6736c5353beb6576f1cbf480e3a8028fca5cbd8aa8b5ba4d8",
+    "archive_sha256": "596a2aac6a0170025d82a9734adc66b25e330768f345b6240ad262807882e8e1"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenFixedLogicalRepair-20261026T010819498734.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/034-build-GentzenFixedLogicalRepair-20261026T010819498734.log.gz",
+    "raw_sha256": "a0c6e9c5c9159ea55c6960dd91c37418700fed8cec8d3932c01ff9b973dadb8f",
+    "archive_sha256": "98c633931b9ef895247789b6fe41877834cce561ab8798230f5d9300d3c4dc5d"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenFixedLogicalRepairBounds-20261026T011328964361.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/035-build-GentzenFixedLogicalRepairBounds-20261026T011328964361.log.gz",
+    "raw_sha256": "62ac642f4192ba74fe51ca4f150ab2f20782db089d11a894e6399ceaff6aaea8",
+    "archive_sha256": "9a24b931c823a7814893a320813131bfa717621a62241c79f9c2501139436e42"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenFixedLogicalSquare-20261026T010705604380.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/036-build-GentzenFixedLogicalSquare-20261026T010705604380.log.gz",
+    "raw_sha256": "2d7956af7cddefb945ca5d181f184b6f11b5f30861925ea96ca4a55b7b3688fb",
+    "archive_sha256": "8364bcc513ce62eeabbf652b802d5b4911ec0c25ce7f155c226cb9b5108fc3a3"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenLogicalInputReducers-20261026T013852444102.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/037-build-GentzenLogicalInputReducers-20261026T013852444102.log.gz",
+    "raw_sha256": "b2695976d8605156fc92030fcaa9bfbf56d70830aecb87bc4e9636ccddcc7530",
+    "archive_sha256": "094146f4ade154eea54f3aecb9a8c7e775f004a5f003e30159312dbcfcf5f254"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenLogicalTerminalNaturality-20261026T011628134256.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/038-build-GentzenLogicalTerminalNaturality-20261026T011628134256.log.gz",
+    "raw_sha256": "bd3314bf4b07406343bfc7a8f892f97a93bd8a5307379f8ab1c19ee14241ce15",
+    "archive_sha256": "2e00c41ad4e1ead355ab6843be7d10bd904076371db4e222f7bc5173d4f027b3"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenLogicalTerminalNaturality-20261026T011745328426.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/039-build-GentzenLogicalTerminalNaturality-20261026T011745328426.log.gz",
+    "raw_sha256": "749da5f9d0519d0b87ab60cb3620665ae58a47d1e03d54c6a6bcd816335a61ba",
+    "archive_sha256": "f00581cf7f6ee95987d71b8a785e3d9e31cc2b769ce529fbf5d0291b44a3633c"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenLogicalTerminalNaturality-20261026T011845224326.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/040-build-GentzenLogicalTerminalNaturality-20261026T011845224326.log.gz",
+    "raw_sha256": "009af536dea90ed64f6243ef8d0912a43595e7ba8c47640751527b1383575ca5",
+    "archive_sha256": "d439b0dd13e734ffbc970003cd19fc2cca25c01e4622eeac893a640232028bf1"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenLogicalTerminalRoutes-20261026T011535033187.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/041-build-GentzenLogicalTerminalRoutes-20261026T011535033187.log.gz",
+    "raw_sha256": "677a986579c3fd549923f000addfe9e3123694e674325c1888d4d0c250badc3d",
+    "archive_sha256": "92842b166ee7897a054cde5e5f82298635e138127a601b227bff7db6c57cc979"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskContextCoordinates-20261026T005908128218.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/042-build-GentzenMaskContextCoordinates-20261026T005908128218.log.gz",
+    "raw_sha256": "e07d0ca48c4067a3602d5fa0a08d40a9210b20b93567b96fefbc0b6e1a18c52e",
+    "archive_sha256": "fcb44081588ea1390881dd5f0ad5e5e59d4eb59c36158f3018053b7624dfd818"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskContextCoordinates-20261026T005915737788.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/043-build-GentzenMaskContextCoordinates-20261026T005915737788.log.gz",
+    "raw_sha256": "21bbf48efbbbb8165b38645a4b57e3035421395b862fc21fadace5476ee9294d",
+    "archive_sha256": "3e4fc1c25b76bc60f2dae27b54466d0fa816ee518353e6d28e7e9926ee2a1283"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskContextCoordinates-20261026T005937928892.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/044-build-GentzenMaskContextCoordinates-20261026T005937928892.log.gz",
+    "raw_sha256": "ef1d96e220ca8f41c6ac66bac6f3b777700d0261be1894abba00ebb2fe27efd9",
+    "archive_sha256": "701d414e23f7a2e020c3e5993d282b41fab507674a6f4aa93f32a22bd31f44b5"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskContextCoordinates-20261026T005956536609.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/045-build-GentzenMaskContextCoordinates-20261026T005956536609.log.gz",
+    "raw_sha256": "08fd549d95a2c33d0e8fa304569626837023e48451f33adedc3a855166defd43",
+    "archive_sha256": "b95a465ec017337719dff9f39f2279d79280385f55feaf7e26606317f4982c8a"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskContextSelections-20261026T010307136974.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/046-build-GentzenMaskContextSelections-20261026T010307136974.log.gz",
+    "raw_sha256": "9c24616cf969d2e30084e5f8c494abb79757284e469459d2599c72b1b1aed9e2",
+    "archive_sha256": "174caed3eb2e4cd6a2b282dc9964ea1bf8980ac09ac7159e82ef80e734962ec2"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskContextSelections-20261026T010336624218.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/047-build-GentzenMaskContextSelections-20261026T010336624218.log.gz",
+    "raw_sha256": "5b23a4213108d013803336e96696fdf149950cfac870db2c1dbc7908cb4a49b0",
+    "archive_sha256": "cb393a5ff7f59dcec1ca9095b956d98eb32e3ecd26377c52b84339d8f62c4dfc"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskCoordinates-20261026T002930240139.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/048-build-GentzenMaskCoordinates-20261026T002930240139.log.gz",
+    "raw_sha256": "7c12add7efd063feb3625a3ba3db69589862ee06e8c2fb18888d5e5ee4179da2",
+    "archive_sha256": "9be7f3939204919d787f2851b175b79b6a8bc062ff44688c48ca24c8072ae54e"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskCoordinates-20261026T002957596807.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/049-build-GentzenMaskCoordinates-20261026T002957596807.log.gz",
+    "raw_sha256": "6ee21506483155514158f64a9fb711dce939c89d6cbd2a4d30fcfae8ed20f334",
+    "archive_sha256": "2be53dd48b250a342874dcdd83412d165ebef0b30ab138092c5fadd6b621dbe4"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskCoordinates-20261026T003020915403.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/050-build-GentzenMaskCoordinates-20261026T003020915403.log.gz",
+    "raw_sha256": "38d2e9fcd9f750864601993f0c47e5c7a86b2e5b6288444b472a8293c0345517",
+    "archive_sha256": "bd6e4ec862b704e77ac98d0b98b367a4edff6c1bbf3e82642b56562cb9dc9f80"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskCoordinates-20261026T003049773223.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/051-build-GentzenMaskCoordinates-20261026T003049773223.log.gz",
+    "raw_sha256": "ead6d228b970b902bf333d3af90f146c6ac96d9d7635fd6adb84ebd1670d5f8c",
+    "archive_sha256": "03a254323340567057dee7cb78dab1e02ee13c48b57b922dfbb6db6797fbe214"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskExchange-20261026T003111276658.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/052-build-GentzenMaskExchange-20261026T003111276658.log.gz",
+    "raw_sha256": "362f9f070a65d65eb5cfd58d42be14f86a1676e583c6963aa52173de5eb5e117",
+    "archive_sha256": "f17cc3a258687da4bcbcedb3952037bc4686f67c59bbf57d858938c4bae65973"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskExchange-20261026T003125924875.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/053-build-GentzenMaskExchange-20261026T003125924875.log.gz",
+    "raw_sha256": "b9312716fe8855752f52095bc173f8a7ee2a8353d8d560ea0c2c16cbb31c8c51",
+    "archive_sha256": "a67ac9694417f879d4476f38d732fdaae129ab37fa80de61701a40742d9b703f"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskLogicalNaturality-20261026T010131163836.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/054-build-GentzenMaskLogicalNaturality-20261026T010131163836.log.gz",
+    "raw_sha256": "681170579122d3316e8a6d5c29c617b80c0121104a68c00dc9027929a39e73d4",
+    "archive_sha256": "06fb9b0b816fe286b3f233669a22236632e046e8f1cffb3cf4765edab95e7898"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskLogicalNaturality-20261026T010143643089.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/055-build-GentzenMaskLogicalNaturality-20261026T010143643089.log.gz",
+    "raw_sha256": "4a839e7999a1e13c040f8c4fff723f52b2f47ba0c7661c514272cbfc87b5edd1",
+    "archive_sha256": "460e0faacdfe0e1a975db0ce78a3bab5cf0d03eb35f44b85191a8ff7736ff5ea"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskLogicalNaturality-20261026T010156551273.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/056-build-GentzenMaskLogicalNaturality-20261026T010156551273.log.gz",
+    "raw_sha256": "c6977fc213e7661f03023a6d0733315e429de2e20843f26124db417d72672b50",
+    "archive_sha256": "c252e420241e744ff607e1e86563e5a8d6c0774b360866a7e24b1e616b82dc84"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskLogicalNaturality-20261026T010230841939.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/057-build-GentzenMaskLogicalNaturality-20261026T010230841939.log.gz",
+    "raw_sha256": "ebe0f1e8567bda7d1944a87171bc3e4212ab167c1f8116af74634884c5e135c2",
+    "archive_sha256": "547bb07a08667ff9455c80ebbda5e6c37b37d54b6f57dc67e4fa155664543cb4"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskLogicalPositions-20261026T010022356207.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/058-build-GentzenMaskLogicalPositions-20261026T010022356207.log.gz",
+    "raw_sha256": "b9aefac76b322ec7b816e477a68ecc786b5c45d0f572e3a8b48722f250f66da7",
+    "archive_sha256": "d9c129b4e78e3c0aa6abb66320a180f52f4380ce23a70fd40272404c3a9d778b"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskLogicalPositions-20261026T010053669256.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/059-build-GentzenMaskLogicalPositions-20261026T010053669256.log.gz",
+    "raw_sha256": "f87c52ff41e89e4b18016b7d7623a6e03a0c7e84f2e32f849493cfcbc4e27307",
+    "archive_sha256": "5098120a14f20ff518ff54f4aa44c81c7158f6fc70fb8ff6bd57d7c4bb8c62e6"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskSelections-20261026T002143036193.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/060-build-GentzenMaskSelections-20261026T002143036193.log.gz",
+    "raw_sha256": "16d80a613abb023efb052208849b92c945c9a00a169336eac96ff34fd123e0e5",
+    "archive_sha256": "79b064dddec0ece451ef0d3ab50923f2f8adfb9c454208f6165ca67713d1142b"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskSelections-20261026T002310395804.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/061-build-GentzenMaskSelections-20261026T002310395804.log.gz",
+    "raw_sha256": "f9dc918d33cf5fc30960f782a25e9f3a1d137ae05e1881098b852aa9687545cf",
+    "archive_sha256": "842885462a11c621eaebe0d0955060ea4c7da397efce9af96383c94699383504"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskSelections-20261026T002557789953.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/062-build-GentzenMaskSelections-20261026T002557789953.log.gz",
+    "raw_sha256": "f883957d5484786078d582ca468efbb9b66d9a80cca91658891d47df4012a338",
+    "archive_sha256": "2107fb569b600afdd784b3f9b2b5f1b2e36a7640831f4ca59866f0c47f61e09f"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenMaskSelections-20261026T002631162811.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/063-build-GentzenMaskSelections-20261026T002631162811.log.gz",
+    "raw_sha256": "12a5ae02966aaee716fea1e393f2f63ce7e0470166e460d81f1a1c876d6b6e98",
+    "archive_sha256": "4cda71a7c942c533e5699d9e5f6a10f7e2bcadcfba6da3eac811230a5b1a1052"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenNonemptyLeftBounds-20261026T011831356068.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/064-build-GentzenNonemptyLeftBounds-20261026T011831356068.log.gz",
+    "raw_sha256": "8573c54fdb49e5ed7efdf691e08157ca555afddf10147a567d1f5075d832eab9",
+    "archive_sha256": "1d792fb3da288927342bb1031e900605a2afdf03f28bbe211ff4410a72bb4141"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenNonemptyLeftBounds-20261026T011919158824.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/065-build-GentzenNonemptyLeftBounds-20261026T011919158824.log.gz",
+    "raw_sha256": "5118eb939383e87b83a1d4f3637c6fcd77f2784ca827b62fb2c888d438f3032d",
+    "archive_sha256": "62061d6c47d6844861c55caaec72581c8d55ae05558ffb909dea4c509d66230b"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenNonemptyLeftBounds-20261026T012019022133.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/066-build-GentzenNonemptyLeftBounds-20261026T012019022133.log.gz",
+    "raw_sha256": "0d412b5a6120b2b2852036e38a365ab61d37e1f0ed983fc21600c05bcb433cd2",
+    "archive_sha256": "b41467a02ae18c3f0ffbd83d1ef3fd699a0fc44f4b98f5c9d819180e6b156627"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenNonemptyLeftLogical-20261026T011715763706.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/067-build-GentzenNonemptyLeftLogical-20261026T011715763706.log.gz",
+    "raw_sha256": "e37fe05b782337afbba08588dd59bf6d6ee93556bb437d21da63b96543c45d27",
+    "archive_sha256": "4c2c1749bde45682eff4c1b48054d76346beba04d9ab8402a1563b26d14259e5"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenOppositeInputReducers-20261026T003832198740.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/068-build-GentzenOppositeInputReducers-20261026T003832198740.log.gz",
+    "raw_sha256": "c5ab1630d1f29ae4acf7bd6ed17c4c6b2d44f8a4a826cd88340b68b34fb722e0",
+    "archive_sha256": "36e3521f18509494ced6fd4aee9a925e3247f2403c76b86e9e1cbef1ecca2843"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenOppositeInputReducers-20261026T003845944107.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/069-build-GentzenOppositeInputReducers-20261026T003845944107.log.gz",
+    "raw_sha256": "f48f8b5227c243bd9f1c0b989d0a2c0c95157b588722266b9789a534385c814b",
+    "archive_sha256": "354e9dacc43f6787b6740666a5331e99d69554669c1a74a7d13ae394cd131468"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenOppositeInputReducers-20261026T003905947051.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/070-build-GentzenOppositeInputReducers-20261026T003905947051.log.gz",
+    "raw_sha256": "d7c459e432d72e0f3c42854fdb0a5a993c8e4aebcad56394ebe4be9c254380f6",
+    "archive_sha256": "2b9f8855e39ad14e57f55cebe94a74fe19184f40d30188c8186a2c5d74d255d3"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenOutsidePaths-20261026T014619414939.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/071-build-GentzenOutsidePaths-20261026T014619414939.log.gz",
+    "raw_sha256": "3595be59f7b81a9fc9706c4367d82af7a48714fd77a7953da84bd1719bebf1af",
+    "archive_sha256": "da752fde701932bfaedd5a8c7bce5e381fa57bc98269c118f08cd4ed86568829"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenOutsidePaths-20261026T014647507989.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/072-build-GentzenOutsidePaths-20261026T014647507989.log.gz",
+    "raw_sha256": "7cc7d752f5bcc16c3c48ce1a3e27a10a5a5523895c1dcbbbc53d3fe9ef98b74c",
+    "archive_sha256": "ed8ec3774949de7a6ccd705323b0a44777fd637fdbd9bb3054ea16ec421b9cbf"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenOutsideTransport-20261026T014126022484.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/073-build-GentzenOutsideTransport-20261026T014126022484.log.gz",
+    "raw_sha256": "4a12899c0c0a179abbfd3e34930a5037aaa6c2f5c6e0cb4cf2e70de494064195",
+    "archive_sha256": "8efb8199984151174f02d82c0e787c720a9208e519ce718bce7c9f89546345b6"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenOutsideTransport-20261026T014138760950.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/074-build-GentzenOutsideTransport-20261026T014138760950.log.gz",
+    "raw_sha256": "5bf0c41c99d1e94392fe727868f25414335dc3c263a40b6b10a62d67014ede16",
+    "archive_sha256": "f36f4188a38f52bd99318b2f3c44ba4cdfac06134c1646cc364125c371918902"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenOutsideTransport-20261026T014228591196.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/075-build-GentzenOutsideTransport-20261026T014228591196.log.gz",
+    "raw_sha256": "f67c27d6497016ae4798c82a06488fede56017791c864292db3624a0113ef367",
+    "archive_sha256": "1b775e9180361d576d95995b9afbadf8e036f3d6f268552974e2c9fa0c0f5a6d"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenOutsideTransport-20261026T014301360087.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/076-build-GentzenOutsideTransport-20261026T014301360087.log.gz",
+    "raw_sha256": "45f5334106cbfe51e4fa4d63c896ed1d35c48da1244f05416c8a4a7339448c92",
+    "archive_sha256": "3448a2ace5ea25c02fb124a01f97837d6750a51b76d18d7281b561de6c4bd008"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenOutsideTransport-20261026T014337687888.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/077-build-GentzenOutsideTransport-20261026T014337687888.log.gz",
+    "raw_sha256": "872cbdd5d6c8d2afa94330aab652978bcde10d8745cb36d05b83f1aa71546529",
+    "archive_sha256": "8893dde0de4630eb92f5823ab46951b51de29a515e259fd9c999db021ab69f87"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenOutsideTransport-20261026T014432138568.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/078-build-GentzenOutsideTransport-20261026T014432138568.log.gz",
+    "raw_sha256": "28f56cea674b24ac8aaf4cbb72d76d66e412b8a054b0056b78828d626d5266fc",
+    "archive_sha256": "545acbb3e4030115409650cd34ce40574346999b5305d4e081187750a07e5a0b"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenReducibility-20261026T013940005438.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/079-build-GentzenReducibility-20261026T013940005438.log.gz",
+    "raw_sha256": "de9708bcb4bd35111ba3e0cedf68dc0bb908af42f78031ca7fa80521d835ad91",
+    "archive_sha256": "a9ce01842cd9db4e4d3476e8b0f038362658b4af688d9f5a91123406e02e44fb"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenReducibility-20261026T013959587773.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/080-build-GentzenReducibility-20261026T013959587773.log.gz",
+    "raw_sha256": "21ebbb9ba6cba9b2d1f39eecfa3b0f3ece7b4186d0881ca3f3a668e9848f7b48",
+    "archive_sha256": "0fad459db173d99be399ef52477c3c84ba5587528d61701403a9cd96531a01e4"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenReducibilityChecks-20261026T014502268394.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/081-build-GentzenReducibilityChecks-20261026T014502268394.log.gz",
+    "raw_sha256": "7a07fd56f39279f6fb9fcd5a42a5eb79d95120ff14c7a7e0bbead6becf3526f0",
+    "archive_sha256": "578cfd3e50a19319d0eaf556fac7734bf3a444ec6d2580997bf12fcfb08142cc"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenReducibilityChecks-20261026T014701261335.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/082-build-GentzenReducibilityChecks-20261026T014701261335.log.gz",
+    "raw_sha256": "449a27b4e55e1ac95e45e63dc895f1c80aea04c7789682efbc99590f2de1f670",
+    "archive_sha256": "9d8f0f5be98f95d290be1b6c2526c271a1ad4b664b4072d7a26a16141c216974"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenReducibilityTerminalOne-20261026T001628230882.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/083-build-GentzenReducibilityTerminalOne-20261026T001628230882.log.gz",
+    "raw_sha256": "f84c80774519b7ed82e32ad1d22b719bcb75b9d955c140247b87dcdbf2966530",
+    "archive_sha256": "ce452eaba2bf8077c3a47fff495adbce7a7c6e05258735e21738575b4b3dd8af"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenRoutePrograms-20261026T004333365708.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/084-build-GentzenRoutePrograms-20261026T004333365708.log.gz",
+    "raw_sha256": "c32122c1a029afe562014086e9f74ca31f86ed45f2fbbf441cad6226de8a9fb3",
+    "archive_sha256": "a6b70e2f7a140b23293623c4a228abc942f23576498dec0d501d878fcfa049aa"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenRoutePrograms-20261026T004350143539.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/085-build-GentzenRoutePrograms-20261026T004350143539.log.gz",
+    "raw_sha256": "0196c0d69b7f36c7504e96d79bb42d843dfe1f26aea65e5e32581d14918ee9fc",
+    "archive_sha256": "7bc90afed309c2ac252f9971aefbe342a1c43541e7b9fbe5b4382aa1c06fe5a1"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenRoutePrograms-20261026T004433535742.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/086-build-GentzenRoutePrograms-20261026T004433535742.log.gz",
+    "raw_sha256": "c5619e26df106240eadd1100fbcbadfe04940106d66057807e8533549f1bc6d1",
+    "archive_sha256": "1bcb34b51b125d215aef0f313b4c11d739784fa5b6a31abe67ea7f83863b03d3"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenRoutingInputReducers-20261026T005425231154.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/087-build-GentzenRoutingInputReducers-20261026T005425231154.log.gz",
+    "raw_sha256": "bf85a59e9f0ae8ae238175adf1148b56581beffffff101c2dd00833e0cdd8545",
+    "archive_sha256": "fc21d89fb523e9f999992bd99da105b5f5cc4563b50428ac821f0bf653a6412b"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedActualRepair-20261026T013520413486.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/088-build-GentzenSelectedActualRepair-20261026T013520413486.log.gz",
+    "raw_sha256": "74ff314dbe28974dc6c8566331ca4ef3bfd0f80fa43a30c5acf05bcd08c2fc36",
+    "archive_sha256": "778d10d91869c045c8e070123cf4657ff1dbf5cdf248208dcb22eb2524a2a1c8"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedActualRepair-20261026T013813482884.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/089-build-GentzenSelectedActualRepair-20261026T013813482884.log.gz",
+    "raw_sha256": "818b604ae5248686b51a76cd6da779bb8e9aab15c5e360f865cfd61a3b6fa8fa",
+    "archive_sha256": "31530c992072459e170f8521d6fb60c01b212ef4363f71e7e2827ce077cfb9a8"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedContextMasks-20261026T012343663813.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/090-build-GentzenSelectedContextMasks-20261026T012343663813.log.gz",
+    "raw_sha256": "35765278688f8e1bd386753fc6d6f8c346fde88f20c235c4f9f67464758c91bd",
+    "archive_sha256": "1ee816ec981923bf192b62d537c04bc9863d5a4c2254d9c5fff096639320ba68"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedContextMasks-20261026T012422984618.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/091-build-GentzenSelectedContextMasks-20261026T012422984618.log.gz",
+    "raw_sha256": "df3280a81471c5e14d0af97bec60e0862f235c65e417d70f58d347285e0d891b",
+    "archive_sha256": "f8a5a86a41c6ce760049381b67cc210647a27aa950bda8ac0068117e6d0e5159"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedLogicalProducers-20261026T013839060575.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/092-build-GentzenSelectedLogicalProducers-20261026T013839060575.log.gz",
+    "raw_sha256": "2604cb6366cf1fbd30067832a6352a51b443847db7cb86fa09caabee4113f6c6",
+    "archive_sha256": "1445d6a057b328b3bc89c9bba8a2bae175b6aa3a31baf9bc6edd87b78ac48b5f"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedLogicalSums-20261026T013025161019.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/093-build-GentzenSelectedLogicalSums-20261026T013025161019.log.gz",
+    "raw_sha256": "e9ed988c7460649b6078612fe76effa8192190b6fd65f06f6dc4c2544b73ab4c",
+    "archive_sha256": "2e8ed37825e1516efbf49a78097792e5eb3bac5b098621fe0d91592b3002961b"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedLogicalSums-20261026T013046696297.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/094-build-GentzenSelectedLogicalSums-20261026T013046696297.log.gz",
+    "raw_sha256": "c6937dd2c9ff5293cac9aedc0c4123e1c1dea179e7b1f7a7f6b2a38801ba5e5d",
+    "archive_sha256": "d40365cfd9c328e7f1cfbd0fdc36db6a5d62183c4603c2593221db064ceb9cb5"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedLogicalSums-20261026T013133223613.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/095-build-GentzenSelectedLogicalSums-20261026T013133223613.log.gz",
+    "raw_sha256": "5c23a594d9f20bbfebc842aa0eb6500e8d809b8e9c4bd98c15f0ad94999cfa51",
+    "archive_sha256": "b81974282cafe5e840a17ef3384fccdfc34d1ab29168f460bc16b8b9f9cc9fd4"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedLogicalSums-20261026T013154900799.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/096-build-GentzenSelectedLogicalSums-20261026T013154900799.log.gz",
+    "raw_sha256": "134bea7d871ce5199a90e88e55b3b57de89e55ad9a652be0062c32933155075c",
+    "archive_sha256": "f56fe6eb6779206f09b31ad56d65a2df22429f5dea4ca4b6dc2054c6ee9a6f5f"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedOldRanks-20261026T013314145571.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/097-build-GentzenSelectedOldRanks-20261026T013314145571.log.gz",
+    "raw_sha256": "2ec2fd4c10f023e7cd655f5428da2c119964b550731986722baa5a719dcd9663",
+    "archive_sha256": "7a5f3998fc7ff37c4ecc873fda85096b5bf05ccd89a5a1b42471c1be3cc92156"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedSourceRanks-20261026T013246669023.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/098-build-GentzenSelectedSourceRanks-20261026T013246669023.log.gz",
+    "raw_sha256": "e04c71fc94c4dc9b64f59c358257e90c61927bf61345dbdaae45fe85b255ea00",
+    "archive_sha256": "819221bc9bb74a678ce088c85da203b36588fe09ebceaa20ef511e50c7980e8f"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedSourceRepair-20261026T012950283276.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/099-build-GentzenSelectedSourceRepair-20261026T012950283276.log.gz",
+    "raw_sha256": "8dfe83d227a3faeaaa895376ae73fe276140bd8e61e207b451f34ea4b6ed26c6",
+    "archive_sha256": "b7f27fca46767fb01ec5a8ba3ca3fefc34c809d427822a1d3664b1b742fd91d1"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedTerminalFactor-20261026T012548287625.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/100-build-GentzenSelectedTerminalFactor-20261026T012548287625.log.gz",
+    "raw_sha256": "046e6f65335d4d629bcfc0a7685b845aeafae9d0fde4460d048fdbb16adbb1df",
+    "archive_sha256": "c8180048c9f52b46b075d3bfb713629b7866a9e970a925dfa5630f66e9cfd787"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedTerminalFactor-20261026T012609938474.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/101-build-GentzenSelectedTerminalFactor-20261026T012609938474.log.gz",
+    "raw_sha256": "25dae12345f72c1f8f7e9bba2352b004ded0b80bdced113d9af1c7a7ed6ac048",
+    "archive_sha256": "3860b5914cf443a095e9d8166dca21badab8fa9ce8415e8d5fc6b0f32bd685cc"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedTerminalFactor-20261026T012619981600.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/102-build-GentzenSelectedTerminalFactor-20261026T012619981600.log.gz",
+    "raw_sha256": "c07f0044150a657ce0098461510c5c83181377ceaee5f0aa87a6c6a482272ada",
+    "archive_sha256": "ec34f4e4e3ad5763646d7a5de7c3fea9efe2ae79d4eed3137d63e89c7f593377"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectedTerminalSquare-20261026T013431911425.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/103-build-GentzenSelectedTerminalSquare-20261026T013431911425.log.gz",
+    "raw_sha256": "831cb606f19d0d6a2f3920ab0e5217946377e7c4e1d08f73fceeb5800161ba19",
+    "archive_sha256": "5a0979068a1dc939612a7e5d76b03c75274163e84801795f81b446e8a8823bc4"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectionMasks-20261026T001751890533.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/104-build-GentzenSelectionMasks-20261026T001751890533.log.gz",
+    "raw_sha256": "c5ab3074c8930cbdcee658f7d63821fd992bc243dc0e9e9e0df194dfebd791cb",
+    "archive_sha256": "077ba0ec3e3537c6d991e20e5445f7207ec4aaf1d09bf16049c0023a57ba5b19"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectionMasks-20261026T001927145861.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/105-build-GentzenSelectionMasks-20261026T001927145861.log.gz",
+    "raw_sha256": "d92ed4de0b6e00d887cf60ddbc8c4735e178ad2165e6269b422209fe065a45ff",
+    "archive_sha256": "43898ec23d391cb9cea810d84f98592bdaab04b5f3c6fb76c5ff100dd1631504"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSelectionMasks-20261026T002116059670.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/106-build-GentzenSelectionMasks-20261026T002116059670.log.gz",
+    "raw_sha256": "ddb3a9eb9197998e4e4c52590566f21f9455cf0438db26dae2512a67459fa2bf",
+    "archive_sha256": "8135d4e0c5d2ffcba69cf7620d252b0944691688cab3e2478d71752564be303b"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSiblingTransport-20261026T014053222536.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/107-build-GentzenSiblingTransport-20261026T014053222536.log.gz",
+    "raw_sha256": "e2df76d5ceb72d4525872def9a34c3edc2335963f6a288315a5a031ace9fcda0",
+    "archive_sha256": "1629a7f0e5b2d04be9a4434de8bbb2c872b9edc4d46f60ed6a895b516387a029"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSourceInnerSelections-20261026T012824001332.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/108-build-GentzenSourceInnerSelections-20261026T012824001332.log.gz",
+    "raw_sha256": "ab3053cf683e1988a7e35b3720be5583786bd5d80610daf66eba14137fb0562b",
+    "archive_sha256": "2355b7ec918e9f77b88edfe40e87bfb34a758d9ed9925aa621a5a47952dc5e5a"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSourceInnerSelections-20261026T012850361293.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/109-build-GentzenSourceInnerSelections-20261026T012850361293.log.gz",
+    "raw_sha256": "a762b7f5f9b2dee9984dedbab43212832944a61a7ea6ceaa93f22c72094e2ba9",
+    "archive_sha256": "effea2a7ed68beee2a53bbdff31e0ac21dcfb46cb92af6acbe0d40cdbea51240"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSourceLogicalCasts-20261026T012653816087.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/110-build-GentzenSourceLogicalCasts-20261026T012653816087.log.gz",
+    "raw_sha256": "2c154bb486b15b130b74083a9c60b564f6fbf13a9edcb0a368f2bcb46fbb1c28",
+    "archive_sha256": "c17955539c2ae05280c68d330630753a88905e91e3cc1e7f0d15f15d9f0a28dc"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSourceLogicalCasts-20261026T012718053079.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/111-build-GentzenSourceLogicalCasts-20261026T012718053079.log.gz",
+    "raw_sha256": "01f7f6e02d58dba25233193e27dcf8b331d878c4342f8fc80a7341c28419e367",
+    "archive_sha256": "5cfd5023e68f0b571360bda0c34ade5454f3936304bc77e866fc7cb2db42290b"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSourceSelectionBridge-20261026T012239674875.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/112-build-GentzenSourceSelectionBridge-20261026T012239674875.log.gz",
+    "raw_sha256": "542e3aa8c1d0f3a8874c7bf68bd9427a4e70610e5c35f0716c0d78f2ddfb784e",
+    "archive_sha256": "7a9ce514aa623ea0bd1f3f8c875cf825843c382a798257eb2dff4416d664b753"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenSourceSelectionBridge-20261026T012323493724.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/113-build-GentzenSourceSelectionBridge-20261026T012323493724.log.gz",
+    "raw_sha256": "a5bbe24a752740bea5ba206130a9fac6d55ec8bc1c25e9f2c4f9ae556edd5bd8",
+    "archive_sha256": "6c5de9f7165d43e1d4af0b64d7995ca1708404c7f105106d9a9ef1d3d848bd2d"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenStructuralProgramBounds-20261026T004627308205.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/114-build-GentzenStructuralProgramBounds-20261026T004627308205.log.gz",
+    "raw_sha256": "ebc9be1ab0e28b3dad849fcebde0a924b71fc0e669a1ed34d251410cf7b90b19",
+    "archive_sha256": "7a018b1d01b97e2c6d086e8131cba1a3a3714f4911291981ad4096c1171cfcf4"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenStructuralProgramPositions-20261026T004256323354.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/115-build-GentzenStructuralProgramPositions-20261026T004256323354.log.gz",
+    "raw_sha256": "166ad78255693b2822dd48cba1a44c432c320f6106ecacfe586a3e43c81cd3c1",
+    "archive_sha256": "adbd99506949d3ee73f810da3a3f55bce26a4bcfa1d397a2df3f42ece1705bca"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenStructuralPrograms-20261026T004220058557.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/116-build-GentzenStructuralPrograms-20261026T004220058557.log.gz",
+    "raw_sha256": "88674fcd90a9916deb8cf2759110d7c94d649fa3d10aae5bc20b6c44b2840f36",
+    "archive_sha256": "729a145018729a67f431d7f38af8a17f42d1c8d068151e56d16ee200d6d47d6f"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenTerminalProofTransports-20261026T012316057558.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/117-build-GentzenTerminalProofTransports-20261026T012316057558.log.gz",
+    "raw_sha256": "f37b6ea540760a6c1de274bb104c67cfde97420fd146e0e5f06fccde16e833ed",
+    "archive_sha256": "f7e0f7e18f7acdce3dcd5d09ab7a6a0f4928392813bd7a71ccd46a6c65cece1a"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenTerminalSourceOne-20261026T001059987355.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/118-build-GentzenTerminalSourceOne-20261026T001059987355.log.gz",
+    "raw_sha256": "ca28d3a372b806370dd97e6ddb3c7c0a9ba2ae39177aa08757a8350eaeb3a4f0",
+    "archive_sha256": "e1258509bc4a9a3b42141bc456cdda3151367bbe3e148a59028ac5ecc826e0bf"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenTerminalSourceOne-20261026T001130520538.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/119-build-GentzenTerminalSourceOne-20261026T001130520538.log.gz",
+    "raw_sha256": "64d76a7e534cffa2ee173ad9e2ad66d551e99c00906b614885200e04a10ab6bf",
+    "archive_sha256": "4eba5ecd5e2cf9542b7fcc3b6c114ea7dfe8405432fe932cf97507055e88dbfc"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenTerminalSourceOneRanks-20261026T001419639408.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/120-build-GentzenTerminalSourceOneRanks-20261026T001419639408.log.gz",
+    "raw_sha256": "b0e678a136e87ab3e7f4849851094c7ed63f406d3664a1851e9a7a0129d64bc1",
+    "archive_sha256": "969baddd9c96300ce0350036d4512421330bf47ae2d2563a94b334f08211380c"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenUnaryRouteFactor-20261026T005051974094.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/121-build-GentzenUnaryRouteFactor-20261026T005051974094.log.gz",
+    "raw_sha256": "f5382e6587af1c5a1f840531fb90c0c3b286377c81d14f5eed89a418b4f693b3",
+    "archive_sha256": "44ab2c7f009debac31de3ac3f720f985e0e71c450d07ff077d3b7e4aad5645f5"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenUnaryRouteFactor-20261026T005102247717.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/122-build-GentzenUnaryRouteFactor-20261026T005102247717.log.gz",
+    "raw_sha256": "20374d233386749f3897d1b3d5cbc3546891b4a958d95384ed6aafd9de9e5d02",
+    "archive_sha256": "816ae36ec3b34da2fd79dd7e9f76dd613829fbfcaa673503f41a872134f25901"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenUnaryRouteFactorLaws-20261026T005158095880.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/123-build-GentzenUnaryRouteFactorLaws-20261026T005158095880.log.gz",
+    "raw_sha256": "a87648863ad3bb73d8820279dbf3972f9ca6e6f913739f470bf94e0f13e8bf84",
+    "archive_sha256": "34c1098458215dbb2617f6ae7a20402073c4807698647acb8b9dcd70bb938b81"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenUnaryRouteFibers-20261026T004940544089.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/124-build-GentzenUnaryRouteFibers-20261026T004940544089.log.gz",
+    "raw_sha256": "dec8420f298100e0e32b00a466ea24b6b712df53d1a685b0858cc63967b81506",
+    "archive_sha256": "7e4457a52111d51af39342e34f54c540515715ab6fe45c08b3fa6167c60a45e6"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenUnaryRouteFibers-20261026T005008070763.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/125-build-GentzenUnaryRouteFibers-20261026T005008070763.log.gz",
+    "raw_sha256": "7fa991826c8fba139084788bd06e307f244bdf5a5f7006ff53b3de1576b9a2f6",
+    "archive_sha256": "02024d8c0a53d20f5371708a5a22d317033af938b011f5d8c58c76723e61c923"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenUnaryRouteFibers-20261026T005018542407.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/126-build-GentzenUnaryRouteFibers-20261026T005018542407.log.gz",
+    "raw_sha256": "74512d5e9a1b2c39f26aa7589a21b40eb3ebe8ff204b609ec4bdc12a0a9f7d3a",
+    "archive_sha256": "b5b53b38b5bc74eb9fa998f2b37c91104c96e6a438f0be2c2ec2eefe686f035d"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenUnaryRouteProducers-20261026T005356147840.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/127-build-GentzenUnaryRouteProducers-20261026T005356147840.log.gz",
+    "raw_sha256": "a4046b6a9315b0ffd2a18c260fe48590eb75d30575b9d9e6275d02ed0a7ee368",
+    "archive_sha256": "70107c4cd1ff7b0a7ca1ae50b11b22b83c32b2600a1b545dfc302e31811472eb"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenUnaryRouteRanks-20261026T004859476298.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/128-build-GentzenUnaryRouteRanks-20261026T004859476298.log.gz",
+    "raw_sha256": "d61b9d9d17dd2a1bfa25da427871222d4938021a9a3187012acaca065404d801",
+    "archive_sha256": "1578a7ab0cec5f437cf9a6a52696e17bf4f1f0efeb2ca8bfdfcfbe720759e657"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenUnaryRouteRanks-20261026T004905639536.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/129-build-GentzenUnaryRouteRanks-20261026T004905639536.log.gz",
+    "raw_sha256": "a4df7e20eddbd9e82b014bd1a9683b16ae1c5a5e527ae665b39573ccb72c8be9",
+    "archive_sha256": "5e7c50da45e7c921d888421ac0fdef04680c9f3575b138f340e7e7a5a9d0504b"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenUnaryRouteRepair-20261026T005239914290.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/130-build-GentzenUnaryRouteRepair-20261026T005239914290.log.gz",
+    "raw_sha256": "126efdd4fc3638b94303ce28b50d285999c9c753491535dc105031fe656b9906",
+    "archive_sha256": "d88aa768c9fc74e999fcbc43f5a0f29d46f24385598b4c85d4b0f13ccb26ed6e"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenUnaryRouteRepairBounds-20261026T005316347140.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/131-build-GentzenUnaryRouteRepairBounds-20261026T005316347140.log.gz",
+    "raw_sha256": "21557d440bdcbd254bf6610fcaa782e8b32c98f29b0db6c2c2bc8adef5b7d1b9",
+    "archive_sha256": "5870839d58e29cf72faca43036acfe427dbb3dcf681556a9cfda1c234f28c694"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenUnrestrictedExchangeReducers-20261026T003544424046.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/132-build-GentzenUnrestrictedExchangeReducers-20261026T003544424046.log.gz",
+    "raw_sha256": "04ec3929ff38ef070af28c13848ba582ad8ec5cde092754fe89b5a4cf31342df",
+    "archive_sha256": "a7624820692918b25e34eaf38687830d07fe2e97afe7ce5d83634f242508c133"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/build-GentzenUnrestrictedExchangeReducers-20261026T003620848725.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/133-build-GentzenUnrestrictedExchangeReducers-20261026T003620848725.log.gz",
+    "raw_sha256": "90d51b8e1de08ba7635d880b266b1af929a95324b2b9a5eb8e51126fa962996e",
+    "archive_sha256": "0790be947aa6934bffc813584463ec13a7ab967c7bf36246ba38fb16e0097bb9"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/cached-diff-check-20261026T131315820177.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/134-cached-diff-check-20261026T131315820177.log.gz",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "archive_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/cached-diff-check-20261026T134217790149.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/135-cached-diff-check-20261026T134217790149.log.gz",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "archive_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/diff-check-20261026T131315820177.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/136-diff-check-20261026T131315820177.log.gz",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "archive_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/diff-check-20261026T134217790149.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/137-diff-check-20261026T134217790149.log.gz",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "archive_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/manuscript-20261026T131315820177.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/138-manuscript-20261026T131315820177.log.gz",
+    "raw_sha256": "981ddaf841a9e180549394690d9e77a25e7992874a5238705e5331b1aff01ae6",
+    "archive_sha256": "1b2e47c1c9d65f77d9ec4630af0b91c791c9c8f1e24636f8e213aaedb24dc913"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/manuscript-20261026T134217790149.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/139-manuscript-20261026T134217790149.log.gz",
+    "raw_sha256": "981ddaf841a9e180549394690d9e77a25e7992874a5238705e5331b1aff01ae6",
+    "archive_sha256": "1b2e47c1c9d65f77d9ec4630af0b91c791c9c8f1e24636f8e213aaedb24dc913"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/presentation-boundaries-20261026T131315820177.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/140-presentation-boundaries-20261026T131315820177.log.gz",
+    "raw_sha256": "306041f8b1c343270cc1f8c841a6a6f6aa03451e17bb5f034cd495d3b5f49f66",
+    "archive_sha256": "c15921aa45d8e11ad49cc56d2fd468c9b56d2885c4b982b00dabd299339a6b8e"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/presentation-boundaries-20261026T134217790149.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/141-presentation-boundaries-20261026T134217790149.log.gz",
+    "raw_sha256": "306041f8b1c343270cc1f8c841a6a6f6aa03451e17bb5f034cd495d3b5f49f66",
+    "archive_sha256": "c15921aa45d8e11ad49cc56d2fd468c9b56d2885c4b982b00dabd299339a6b8e"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/public-types-20261026T134014895642.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/142-public-types-20261026T134014895642.log.gz",
+    "raw_sha256": "4cea015085e3357435976feb9f15ab98dbc8a1878029f870a920bf48fe442693",
+    "archive_sha256": "b4f1b416dfaae4c231f420bee04709509ba32e2b3446240cad7e60b00b10864f"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/public-types-20261026T134052302695.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/143-public-types-20261026T134052302695.log.gz",
+    "raw_sha256": "6014be42220982f3f098607c65ad00d661da8503c138630052d7d794c360ac1f",
+    "archive_sha256": "17ca3efeff58ffd2eb2d156f8a0fc4f5b5641860c7efce8e32872bbd6d90273e"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/strict-20261026T131315820177.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/144-strict-20261026T131315820177.log.gz",
+    "raw_sha256": "75ee7cb1ae83372280d978d23c8163daffa69d6738c2ec3a9458f0a24ee18f81",
+    "archive_sha256": "fb3cdb58e410a113750dd97a61f6f1e4d6b9ee548a1691bf3913c24eee67f398"
+  },
+  {
+    "original": ".codex-work/gentzen-reducibility-after-b2/strict-20261026T134217790149.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/145-strict-20261026T134217790149.log.gz",
+    "raw_sha256": "1ca617331eaab15fde6255e37cf1030e6ba85f10458328d909745004732a6bb5",
+    "archive_sha256": "8cdaeee5ba380215a703b55256ea5dfc0d6f63549680ac1ff869894dd02d252d"
+  },
+  {
+    "original": ".codex-work/presentation-bridge/presentation-controls/identified-projections.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/146-identified-projections.log.gz",
+    "raw_sha256": "4415eaeeb998cc4fb2a3cd9fc5fe65b62b3351cbf29a69292987a40ec4ae6976",
+    "archive_sha256": "088ec4146357303cc7c6c666cdcbca31f91bfde7ec7fc0e73db80e020692a2a0"
+  },
+  {
+    "original": ".codex-work/presentation-bridge/presentation-controls/zero-without-arrow-witness.log",
+    "archive": "provenance/wsl-gentzen-full-reducibility/logs/147-zero-without-arrow-witness.log.gz",
+    "raw_sha256": "1806feba6614087893d2ecc4e4a906eec8e7f9fb9b0cc1dbf7499cd8f9a93e50",
+    "archive_sha256": "7fe05ead58c8c425b969833c8a129daf691fb536c9954402e42b477366ea03a5"
+  }
+]

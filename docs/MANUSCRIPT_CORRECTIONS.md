@@ -24,7 +24,7 @@ the review scope to an independent reproof of the whole paper or its sources.
 
 ## Proof obligations are tracked separately
 
-General Reducibility, Boolean Coherence for the actual source quotient, the
+Containing-blocked transport, Blocked-w, Boolean Coherence for the actual source quotient, the
 short proof's Lean implementation, actual-presentation maximality, the model
 corollary and remaining appendix correspondences are unfinished formalization
 obligations. Their open status alone is not evidence of an error in the written
@@ -91,3 +91,13 @@ W6 ranks. The earlier two-copy W4 comment now explicitly counts parametric
 copies, with a fresh compound in addition. These are checked proof/status
 clarifications; no manuscript mathematical error is asserted or repaired.
 All source/native/rank distinctions and the full v6 objective are preserved.
+
+## Full Reducibility checkpoint (26 October 2026; no manuscript correction)
+
+Both full unchanged ReducesL/R exports, source one-premise W6, unrestricted
+exchange and remaining unary inputs now compile. Outside path/cluster transport
+also compiles. Earlier open-status statements above describe their historical
+snapshots. Generic route repair does not assert Atomized preservation; containing
+blocked transport and descent remain open. These qualifications are recorded
+consistently in the current maps, report and continuation. No new confirmed
+manuscript error was found; v4/v5/v6 bytes and all accepted corrections remain.

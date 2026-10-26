@@ -212,21 +212,22 @@ preserve newer changes; this is not an instruction to reset to that checkpoint.
 The earlier `1e967bc` baseline remains historical verification evidence.
 
 Continue from `CODEX_NEXT_SESSION.txt` and `CODEX_AFTER_B2AB0A8_REDUCIBILITY.txt`.
-Reuse the complete binary-input producers, terminal-source two-premise W6,
-native logical families and nonempty-parametric right W4. Finish the two
-specified terminal-source one-premise W6 packages, unrestricted same-side
-exchange and remaining unary placements, then both full Reducibility Lemmata
-with their unchanged complete post-replacement descendant bounds. Do not
-restart completed branches or replace the full targets with auxiliary results.
+Both full ReducesL/R producers now compile, together with both terminal-source
+one-premise W6 packages, unrestricted exchange, every remaining unary placement,
+and outside-address/cluster transport. Reuse these constructions and all prior
+binary work. The checked report and current continuation identify their exact
+scope; neither the source one/two-exchange proposal nor a root-rank-decrease
+condition is an extra hypothesis of the final theorems.
 
-Then prove the necessary outside-site transport, finite multiset descent,
-Blocked-w and cut elimination; obtain positive/reduced coherence and Boolean
-Coherence for the actual presentation. Build the remaining source instances
-and congruence bridges, complete the short proof and actual maximality, and
-complete the model corollary and appendices. Independent algebra, correspondence,
-and appendix tasks may proceed in parallel when they do not interfere with
-this dependency chain or verification. Follow mathematical dependencies rather
-than treating this paragraph as a requirement to postpone all independent work.
+Continue with containing-blocked-contraction transport, full eligible-site
+correspondence, finite multiset descent, Blocked-w and cut elimination. Generic
+routing repairs preserve CutFree but do not assert Atomized witnesses; resolve
+that interaction before clean-cut normalization. Then obtain positive/reduced
+and Boolean Coherence for the actual presentation, all source instances and
+congruence bridges, the short proof and actual maximality, the model corollary
+and appendices. Full local Reducibility does not narrow or complete this
+full-paper endpoint. Independent algebra/correspondence tasks may proceed when
+they do not interfere with this chain or sequential verification.
 
 Do not change rho, blockedness, reducibility, the source equations, or a theorem's
 quantifiers to make a candidate pass. If a genuine mismatch is discovered,

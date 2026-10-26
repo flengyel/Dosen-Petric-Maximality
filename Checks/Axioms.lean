@@ -1922,3 +1922,13 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.BinaryReducer.right
 #print axioms DosenPetric.Reduced.Gentzen.BinaryReducer.selection_left
 #print axioms DosenPetric.Reduced.Gentzen.BinaryReducer.selection_right
+#print axioms DosenPetric.Reduced.Gentzen.reducibility_left
+#print axioms DosenPetric.Reduced.Gentzen.reducibility_right
+#print axioms DosenPetric.Reduced.Gentzen.AllInputReducer.left
+#print axioms DosenPetric.Reduced.Gentzen.AllInputReducer.right
+#print axioms DosenPetric.Reduced.Gentzen.UnrestrictedExchange.left
+#print axioms DosenPetric.Reduced.Gentzen.UnrestrictedExchange.right
+#print axioms DosenPetric.Reduced.Gentzen.W6.TerminalOne.reducesFirst
+#print axioms DosenPetric.Reduced.Gentzen.W6.TerminalOne.reducesSecond
+#print axioms DosenPetric.Reduced.Gentzen.ProofAddress.outside_of_incomparable
+#print axioms DosenPetric.Reduced.Gentzen.ProofAddress.outside_cluster

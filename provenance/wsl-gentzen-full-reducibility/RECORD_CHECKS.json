@@ -1,0 +1,153 @@
+{
+  "utc": "2026-10-26T13:55:54.512537+00:00",
+  "checks": [
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_status": 0,
+      "seconds": 0.023,
+      "output": ""
+    },
+    {
+      "name": "checked-current-bytes",
+      "passed": true,
+      "inventory_sha256": "4b8eb0f9febbd470d8c7ddd7c74e51c2a22b8492a9f0830d9cf9be8fa53c37db"
+    },
+    {
+      "name": "archive-identity",
+      "passed": true,
+      "archives": 148
+    },
+    {
+      "name": "historical-record-byte-identity",
+      "passed": true
+    },
+    {
+      "name": "stage-scoped",
+      "command": [
+        "git",
+        "add",
+        "--",
+        "DosenPetric/GentzenAllInputReducers.lean",
+        "DosenPetric/GentzenAnchoredRouteFactor.lean",
+        "DosenPetric/GentzenAnchoredRoutes.lean",
+        "DosenPetric/GentzenCenteredBounds.lean",
+        "DosenPetric/GentzenCenteredCoordinates.lean",
+        "DosenPetric/GentzenCenteredSelection.lean",
+        "DosenPetric/GentzenContextNormalizationLaws.lean",
+        "DosenPetric/GentzenContextSelectionNormalization.lean",
+        "DosenPetric/GentzenContextSelectionSums.lean",
+        "DosenPetric/GentzenExchangeFactor.lean",
+        "DosenPetric/GentzenExchangeFactorLaws.lean",
+        "DosenPetric/GentzenExchangeReductionBounds.lean",
+        "DosenPetric/GentzenExchangeScripts.lean",
+        "DosenPetric/GentzenFixedHeadLogicalBounds.lean",
+        "DosenPetric/GentzenFixedLogicalProducers.lean",
+        "DosenPetric/GentzenFixedLogicalRepair.lean",
+        "DosenPetric/GentzenFixedLogicalRepairBounds.lean",
+        "DosenPetric/GentzenFixedLogicalSquare.lean",
+        "DosenPetric/GentzenLogicalInputReducers.lean",
+        "DosenPetric/GentzenLogicalTerminalNaturality.lean",
+        "DosenPetric/GentzenLogicalTerminalRoutes.lean",
+        "DosenPetric/GentzenMaskContextCoordinates.lean",
+        "DosenPetric/GentzenMaskContextSelections.lean",
+        "DosenPetric/GentzenMaskCoordinates.lean",
+        "DosenPetric/GentzenMaskExchange.lean",
+        "DosenPetric/GentzenMaskLogicalNaturality.lean",
+        "DosenPetric/GentzenMaskLogicalPositions.lean",
+        "DosenPetric/GentzenMaskSelections.lean",
+        "DosenPetric/GentzenNonemptyLeftBounds.lean",
+        "DosenPetric/GentzenNonemptyLeftLogical.lean",
+        "DosenPetric/GentzenOppositeInputReducers.lean",
+        "DosenPetric/GentzenOutsidePaths.lean",
+        "DosenPetric/GentzenOutsideTransport.lean",
+        "DosenPetric/GentzenReducibility.lean",
+        "DosenPetric/GentzenReducibilityChecks.lean",
+        "DosenPetric/GentzenReducibilityTerminalOne.lean",
+        "DosenPetric/GentzenRoutePrograms.lean",
+        "DosenPetric/GentzenRoutingInputReducers.lean",
+        "DosenPetric/GentzenSelectedActualRepair.lean",
+        "DosenPetric/GentzenSelectedContextMasks.lean",
+        "DosenPetric/GentzenSelectedLogicalProducers.lean",
+        "DosenPetric/GentzenSelectedLogicalSums.lean",
+        "DosenPetric/GentzenSelectedOldRanks.lean",
+        "DosenPetric/GentzenSelectedSourceRanks.lean",
+        "DosenPetric/GentzenSelectedSourceRepair.lean",
+        "DosenPetric/GentzenSelectedTerminalFactor.lean",
+        "DosenPetric/GentzenSelectedTerminalSquare.lean",
+        "DosenPetric/GentzenSelectionMasks.lean",
+        "DosenPetric/GentzenSiblingTransport.lean",
+        "DosenPetric/GentzenSourceInnerSelections.lean",
+        "DosenPetric/GentzenSourceLogicalCasts.lean",
+        "DosenPetric/GentzenSourceSelectionBridge.lean",
+        "DosenPetric/GentzenStructuralProgramBounds.lean",
+        "DosenPetric/GentzenStructuralProgramPositions.lean",
+        "DosenPetric/GentzenStructuralPrograms.lean",
+        "DosenPetric/GentzenTerminalProofTransports.lean",
+        "DosenPetric/GentzenTerminalSelectionFactor.lean",
+        "DosenPetric/GentzenTerminalSourceOne.lean",
+        "DosenPetric/GentzenTerminalSourceOneRanks.lean",
+        "DosenPetric/GentzenUnaryRouteFactor.lean",
+        "DosenPetric/GentzenUnaryRouteFactorLaws.lean",
+        "DosenPetric/GentzenUnaryRouteFibers.lean",
+        "DosenPetric/GentzenUnaryRouteProducers.lean",
+        "DosenPetric/GentzenUnaryRouteRanks.lean",
+        "DosenPetric/GentzenUnaryRouteRepair.lean",
+        "DosenPetric/GentzenUnaryRouteRepairBounds.lean",
+        "DosenPetric/GentzenUnrestrictedExchangeReducers.lean",
+        "DosenPetric.lean",
+        "Checks/Axioms.lean",
+        "Checks/Reducibility.lean",
+        "README.md",
+        "docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md",
+        "docs/CODEX_NEXT_SESSION.txt",
+        "docs/MANUSCRIPT_CORRECTIONS.md",
+        "docs/MANUSCRIPT_COVERAGE.md",
+        "docs/MANUSCRIPT_STATEMENTS.md",
+        "docs/PRESENTATION_CORRESPONDENCE.md",
+        "docs/VALIDATION.md",
+        "docs/GENTZEN_FULL_REDUCIBILITY_REPORT.md",
+        "docs/reviews/GENTZEN_FULL_REDUCIBILITY_HOSTILE.md",
+        "docs/reviews/GENTZEN_FULL_REDUCIBILITY_WRITING.md",
+        "docs/history/CODEX_NEXT_SESSION_434AA77.txt",
+        "docs/history/README_434AA77.md",
+        "provenance/wsl-gentzen-full-reducibility"
+      ],
+      "exit_status": 0,
+      "seconds": 0.193,
+      "output": ""
+    },
+    {
+      "name": "cached-diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_status": 0,
+      "seconds": 0.031,
+      "output": ""
+    },
+    {
+      "name": "unstaged-diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_status": 0,
+      "seconds": 0.009,
+      "output": ""
+    },
+    {
+      "name": "preserved-stash",
+      "passed": true,
+      "sha": "dedfd8fc8cd49930e9a162d5be585215b062a43c"
+    }
+  ]
+}
