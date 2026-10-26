@@ -40,8 +40,9 @@ Maintain exact claim-to-declaration correspondence. Preserve the existing
 symmetric-fold proof as an alternative route.
 
 `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md` governs this overall endpoint;
-`docs/CODEX_NEXT_SESSION.txt` governs the immediate continuation toward full
-Reducibility and coherence. The existing three milestones remain distinct;
+`docs/CODEX_NEXT_SESSION.txt` governs the immediate continuation from full
+Reducibility toward Blocked-w, cut elimination and coherence. The existing
+three milestones remain distinct;
 even actual-presentation maximality alone does not certify the entire paper.
 Published dependencies used in the proof must be proved or supplied by verified,
 compatible Lean results, not left as uninstantiated fields or mathematical axioms.

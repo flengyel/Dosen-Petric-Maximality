@@ -28,10 +28,16 @@ instances/maximality, model corollary and the entire v6 appendix ledger remain
 open. Generic routing repairs preserve CutFree; no general Atomized witness is
 claimed. All accepted corrections and the full-paper contract remain active.
 
-This completes both full local Reducibility prerequisites in G2 and continues
-to outside-site transport. G2 as a whole is not complete. The report's dependency
+This completes both full local Reducibility prerequisites in G2 and basic
+outside path/cluster transport. Full eligibility transport remains open.
+G2 as a whole is not complete. The report's dependency
 table gives the remaining exact transport, descent, Blocked-w and coherence
 obligations. Existing faithful_of_positive_coherence stays conditional.
+
+The [reviewed successor instruction](CODEX_AFTER_5B8A199_BLOCKED_W.txt)
+expands these remaining targets. Its source/evidence and writing reviews are
+`reviews/GENTZEN_5B8A199_REVIEW.md` and `reviews/GENTZEN_5B8A199_WRITING.md`;
+they add no checked Lean declaration or manuscript correction.
 
 ## Retained historical records
 

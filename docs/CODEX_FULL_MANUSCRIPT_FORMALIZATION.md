@@ -200,18 +200,19 @@ model universe general enough to express the printed corollary.
 
 ## Immediate continuation and dependency order
 
-For local Codex's concrete W6 implementation, also read
-`CODEX_W6_CONSTRUCTION.md` and its two linked reviews. The author assigns
-implementation/builds to local Codex and research, instructions and review to
-ChatGPT. The construction analysis adds no checked Lean result and does not
-change this full-paper endpoint.
+The author assigns implementation/builds to local Codex and research,
+instructions and review to ChatGPT. The W6 construction instruction and its
+two linked reviews remain historical construction records; the implemented
+results and current continuation determine the remaining work.
 
-The reviewed integration checkpoint is
-`b2ab0a89bddc396dc7b6c0a4ccc30be08d4a088e`. Inspect the live repository and
+The reviewed full-Reducibility checkpoint is
+`5b8a1996cab3f53e8c771dbd6126274236b1db4a`. Inspect the live repository and
 preserve newer changes; this is not an instruction to reset to that checkpoint.
-The earlier `1e967bc` baseline remains historical verification evidence.
+The earlier `1e967bc` and `b2ab0a8` checkpoints remain historical evidence.
 
-Continue from `CODEX_NEXT_SESSION.txt` and `CODEX_AFTER_B2AB0A8_REDUCIBILITY.txt`.
+Continue from `CODEX_NEXT_SESSION.txt` and `CODEX_AFTER_5B8A199_BLOCKED_W.txt`.
+The latter supplies the concrete containing-shape, site-correspondence,
+termination and Blocked-w targets, followed by atomization compatibility.
 Both full ReducesL/R producers now compile, together with both terminal-source
 one-premise W6 packages, unrestricted exchange, every remaining unary placement,
 and outside-address/cluster transport. Reuse these constructions and all prior

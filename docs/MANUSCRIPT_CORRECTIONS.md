@@ -101,3 +101,21 @@ snapshots. Generic route repair does not assert Atomized preservation; containin
 blocked transport and descent remain open. These qualifications are recorded
 consistently in the current maps, report and continuation. No new confirmed
 manuscript error was found; v4/v5/v6 bytes and all accepted corrections remain.
+
+## Completed-run successor review (26 October 2026)
+
+After the author supplied the completed run at
+`5b8a1996cab3f53e8c771dbd6126274236b1db4a`, the cloud reviewer inspected the
+public statements, relevant blocked/address/atomization source and retained
+verification evidence. The new instruction is `CODEX_AFTER_5B8A199_BLOCKED_W.txt`;
+its review records are `reviews/GENTZEN_5B8A199_REVIEW.md` and
+`reviews/GENTZEN_5B8A199_WRITING.md`. Full Reducibility remains completed.
+
+The full-paper contract's immediate checkpoint and pointer, AGENTS' immediate
+scope phrase and the coverage map's outside-transport wording were brought
+up to date. The earlier continuation is retained in
+`history/CODEX_NEXT_SESSION_5B8A199.txt`. These are instruction/status repairs,
+not manuscript corrections. Containing-blockedness, complete eligibility
+transport, descent, Blocked-w and simultaneous atomization remain proof tasks.
+No production Lean source or manuscript is revised by this handoff. The three
+new instruction/review copies await local Downloads delivery.

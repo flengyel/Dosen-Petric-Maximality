@@ -1,5 +1,15 @@
 CONTINUE THE UNCHANGED V6 FULL-PAPER FORMALIZATION
 
+The reviewed proof checkpoint is 5b8a1996cab3f53e8c771dbd6126274236b1db4a.
+Read docs/CODEX_AFTER_5B8A199_BLOCKED_W.txt for the concrete successor task,
+with docs/reviews/GENTZEN_5B8A199_REVIEW.md and GENTZEN_5B8A199_WRITING.md.
+It expands the containing-shape, complete eligible-site correspondence,
+multiset descent, Blocked-w and atomization-compatibility obligations below.
+No new Lean theorem is asserted by that instruction/review pass. Its three
+Downloads deliveries are pending local Codex; preserve and deliver their
+committed bytes as specified. The preceding continuation is retained in
+docs/history/CODEX_NEXT_SESSION_5B8A199.txt.
+
 Current checked checkpoint: both full Reducibility Lemmata plus general
 outside-site transport. Read AGENTS.md, CODEX_FULL_MANUSCRIPT_FORMALIZATION.md,
 GENTZEN_FULL_REDUCIBILITY_REPORT.md and both associated reviews, current maps,
@@ -10,7 +20,7 @@ implements/builds; author-side cloud review follows completed local work and
 does not impose a local stop/approval checkpoint. Current source evidence
 supersedes historical open-branch snapshots.
 
-COMPLETED — DO NOT REBUILD THESE CONSTRUCTIONS
+COMPLETED — REUSE THESE CONSTRUCTIONS
 
 Gentzen.reducibility_left/right prove the exact unchanged ReducesL/R endpoints
 for arbitrary P, all contexts, proofs and positions. Every actual containing

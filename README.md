@@ -8,6 +8,13 @@ The next result is containing-blocked preservation, followed by full finite-site
 multiset descent and Blocked-w. Cut elimination, coherence and the full-paper
 endpoint remain open.
 
+The [reviewed successor instruction](docs/CODEX_AFTER_5B8A199_BLOCKED_W.txt)
+specifies the containing-blockedness theorems, complete eligible-site
+correspondence, multiset descent and Blocked-w. Its
+[source/evidence review](docs/reviews/GENTZEN_5B8A199_REVIEW.md) and
+[writing review](docs/reviews/GENTZEN_5B8A199_WRITING.md) introduce no new
+Lean result or manuscript revision.
+
 The maintained [validation record](docs/VALIDATION.md) reports **398 screened
 Lean files and 10,606 audited project declarations**, including generated
 helpers. The [checkpoint report](docs/GENTZEN_FULL_REDUCIBILITY_REPORT.md),

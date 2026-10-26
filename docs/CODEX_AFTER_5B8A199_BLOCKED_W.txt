@@ -1,0 +1,299 @@
+CONTINUE FROM FULL REDUCIBILITY TO BLOCKED-W
+
+Reviewed proof checkpoint: 5b8a1996cab3f53e8c771dbd6126274236b1db4a.
+The author supplied the completed run and requested these successor instructions.
+This is an evidence anchor, not a reset target. Inspect the live repository,
+current task and Git status first. Preserve newer work, stash
+dedfd8fc8cd49930e9a162d5be585215b062a43c, prior reports and reconciliation
+archives, manuscript v4/v5/v6 and private visibility. Work in
+/home/flengyel/src/Dosen-Petric-Maximality. Commit and push verified changes
+to main over SSH without force under the standing authorization.
+
+Local Codex implements and builds. ChatGPT supplies instructions, mathematical
+and literature assistance, manuscript checks and author-side review. ChatGPT
+waits for an active local run to finish before issuing its successor handoff.
+That sequencing rule creates no local approval or stopping checkpoint.
+
+Read current AGENTS.md, CODEX_FULL_MANUSCRIPT_FORMALIZATION.md,
+CODEX_NEXT_SESSION.txt, MANUSCRIPT_STATEMENTS.md, MANUSCRIPT_COVERAGE.md,
+PRESENTATION_CORRESPONDENCE.md, MANUSCRIPT_CORRECTIONS.md and
+PALOMAR_REQUIREMENTS.md. Read GENTZEN_FULL_REDUCIBILITY_REPORT.md and its
+two reviews, then reviews/GENTZEN_5B8A199_REVIEW.md and
+reviews/GENTZEN_5B8A199_WRITING.md. Current compiled scope supersedes old
+open-status snapshots. Carry every accepted mathematical and writing
+correction forward without asking the author to repeat it.
+
+1. REUSE THE COMPLETED RESULTS
+
+Gentzen.reducibility_left/right have the unchanged ReducesL/R conclusions
+for arbitrary P, contexts, proofs and typed positions. All containing
+addresses and all eligible descendants in the rebuilt cut are quantified.
+Both terminal-source one-premise W6 families, unrestricted exchange,
+remaining unary inputs and actual input dispatch are proved. Reuse them;
+do not restart W6 or impose the older proposed bound on exit exchanges.
+
+ProofAddress.outside_of_incomparable and outside_cluster preserve the actual
+proof value, path, whole-formula ancestry and cluster membership at every
+incomparable address. Full outside Reducible transport remains open because
+proper containing contractions can be rebuilt. Do not label the existing
+cluster theorem as that stronger result.
+
+Retained verification reports 398 Lean files and 10,606 audited project
+declarations, including generated helpers. Strict verification, exact public
+types and all five controls passed. The 414-file source inventory and receipts
+are in provenance/wsl-gentzen-full-reducibility/. Reuse unchanged evidence;
+verify new source and the final import/dependency closure. No cloud build or
+independent-kernel/Palomar acceptance is asserted by the successor review.
+
+2. PROVE CONTAINING BLOCKEDNESS UNDER PROPER REPLACEMENT
+
+Start with these exact shape theorems. For arbitrary P : Type u, contexts
+Gamma, Delta, U, V, k : G P Gamma Delta, w : G P U V and D : NormalForm P:
+
+  (hb : BlockedL k) (a : ProofAddress k w) (hp : a.path ≠ [])
+  (x : At U D) (hw : w.LowerContraction .left x)
+  (h : G P U V) : BlockedL (a.replace h)
+
+and, independently typed,
+
+  (hb : BlockedR k) (a : ProofAddress k w) (hp : a.path ≠ [])
+  (x : At V D) (hw : w.LowerContraction .right x)
+  (h : G P U V) : BlockedR (a.replace h).
+
+D need not equal the formula contracted by the containing envelope.
+The replacement h is arbitrary at the same sequent. These shape statements
+need no CutFree, Atomized, tiedness, rank or denotation hypothesis. Keep
+properness and the actual LowerContraction premise: arbitrary replacement
+of an envelope's logical node would not preserve its blocked shape.
+
+Inspect GentzenBlockedPatterns.lean and GentzenBlockedSource.lean directly.
+The left constructors are gammaMix, gammaConj, gammaDisj, conjunction,
+disjunctionFirst, disjunctionSecond and disjunctionBoth. The right constructors
+are gammaMix, gammaDisj, gammaConj, disjunction, conjunctionFirst,
+conjunctionSecond and conjunctionBoth. Cover all fourteen actual envelopes.
+
+Factor the actual address through a proof parameter of its envelope. Properness
+excludes its outer contraction. The remaining fixed nodes are mix, logical
+rules and the explicit exchanges in disjLLast; none is a lower contraction.
+Thus the chosen contraction lies within a free premise, possibly at that
+premise's root. Rebuild the same Blocked constructor with just that premise
+replaced. Reuse ProofSpine, typed Premise reconstruction, reindex transports,
+replace_append and the existing address identities. If a helper describes
+the envelope's premise positions, prove the factorization for every input
+address internally; do not require the caller to supply a branch decomposition.
+
+Treat empty exchanges as real nodes and reindexing as node-free. Keep both
+occurrences when a binary envelope contains equal proof values. No transfer
+of syntactic blockedness through Reduced equality is valid here.
+
+3. COMPLETE THE ADDRESS AND ELIGIBILITY CORRESPONDENCE
+
+Fix an actual old eligible site a with its ReducibleL/R witness, and a
+replacement h returned by the corresponding completed Reducibility theorem.
+Use h.CutFree to preserve Topmost and replace_denote for equality. Prove a
+typed partition of every relevant new address relative to a.inserted h:
+inside (including its root), incomparable, or a strict containing ancestor.
+Prefix comparisons alone must be connected to actual dependent addresses,
+address composition and the rebuilt proof values.
+
+Inside: apply the existing ReducesL/R bound to every address b of h,
+including b=root, and every eligible position y in the rebuilt cut. Do not
+weaken this to newly introduced contraction nodes or selected branches.
+
+Incomparable: extend outside_of_incomparable/outside_cluster to equivalence
+of the complete Reducible predicate, with the same typed position and rank.
+For a proper ancestor of such an outside site, distinguish unaffected nodes
+from a common ancestor of that site and a. A tied common ancestor was blocked
+by the old Reducible hypothesis; use section 2 to keep it blocked. Prove the
+corresponding ancestry and lower-position facts in both directions. The
+outside proof value is unchanged, but its containing proof values need not be.
+
+Strict ancestors of a: their upper contexts, outer rules and cut-entry ancestry
+are preserved. If one is a tied contraction, the old Reducible witness made
+it blocked, and section 2 keeps it blocked. Hence none becomes a new eligible
+site. Prove this for actual containing addresses, not only a path list.
+
+On the old side, no proper descendant of a is eligible: a itself is an
+unblocked tied proper ancestor. Reuse ReducibleL/R.incomparable and prove
+whatever path-to-ProperContains equivalence is still needed. At a's path,
+prove uniqueness of the lower-contraction output position, so the selected
+old site contributes exactly one entry to the measure.
+
+Expose the resulting exhaustive site correspondence in a form usable by
+finite enumeration. An injection from old outside sites alone is insufficient:
+exclude additional new outside/containing eligible sites and account for every
+inside site. Equal formula labels or equal subproof values never identify
+different occurrences.
+
+4. PROVE FINITE MULTISET DESCENT
+
+Enumerate actual addressed eligible sites on the relevant side of a fixed
+topmost cut. Retain the address and typed lower position until taking its rho
+rank. Prove finiteness, completeness and absence of duplicate representations
+of one occurrence. Preserve multiplicities for distinct sites of equal rank.
+Do not add DecidableEq P or Nonempty P to these general theorems. If proposition
+filtering uses classical choice, keep it within the existing foundation policy.
+
+Let R_old and R_new be the rank multisets before and after one repair, r the
+rank of the selected old site, O the ranks of the unchanged outside sites,
+and I the ranks of the new eligible sites inside h. Prove, up to the chosen
+multiset representation or list permutation,
+
+  R_old = O + {r},     R_new = O + I,     every element of I is less than r.
+
+These identities require section 3; they do not follow from Reduces alone.
+The multiset I may be empty or contain arbitrarily many entries. A decrease
+of maximum rank, total rank, number of contractions or proof size is not
+supplied by the local theorem. Do not assume one of those measures decreases.
+
+Prove well-foundedness of replacing one natural number by finitely many
+strictly smaller numbers, or use a compatible verified result already available.
+Keep Init-only unless a genuine API need justifies the recorded dependency
+procedure. One possible direct proof uses a fixed support bound N, chosen
+above all ranks in the initial finite multiset. Compare the fixed-length
+vectors of multiplicities at N-1, N-2, ..., 0 lexicographically, highest rank
+first. One replacement leaves all higher coordinates unchanged, decreases
+the r coordinate by one, and can change lower coordinates arbitrarily.
+Prove support-bound preservation and well-foundedness for that fixed length
+by induction on N, then obtain accessibility for every starting multiset.
+Do not recompute N at each step or assert well-foundedness of unrestricted
+lexicographic order on variable-length lists. This is a proof proposal to
+formalize, not a theorem already present in the repository.
+
+5. DERIVE THE ACTUAL BLOCKED-W LEMMA
+
+The source target is Došen-Petric, Proof-Theoretical Coherence, September
+2007, section 11.2, printed p.253, immediately after both Reducibility Lemmata.
+The retained SOURCE_P248_P253.txt records that passage. For arbitrary
+f : G P Phi (C::Xi), g : G P (C::Omega) Psi and G.Topmost f g, construct
+f' and g' at those same sequents such that:
+
+- G.Topmost f' g' holds;
+- the old and new cuts have equal Reduced denotation;
+- every actual addressed left contraction in g' tied to the rebuilt cut is
+  BlockedL, and every actual addressed right contraction in f' tied to it is
+  BlockedR.
+
+State the last two universal clauses using the existing TiedRight/TiedLeft,
+ProofAddress and typed At positions. Preserve the cut formula and all contexts.
+Per-premise denotation equalities are useful stronger witnesses and yield the
+cut equality by the existing cut congruence. No caller supplies termination,
+a normal form, rank bounds, a coherence premise or an atomized replacement.
+
+Use the proved well-founded measure to remove eligible sites. Then prove that
+absence of eligible sites implies all tied contractions are blocked: from any
+unblocked tied contraction, choose an unblocked tied occurrence of minimal
+path length. Every proper containing tied contraction is blocked, so this
+occurrence would satisfy Reducible, a contradiction. Finiteness and the proper
+length theorem justify this selection. The implication is not definitional.
+
+It is reasonable to normalize the two premises in succession. Prove that
+changing the other cut-free premise leaves the first side's tied/blocked
+property intact: the opposite premise enters Reducible through Topmost, while
+its own ancestry is determined by the unchanged premise and cut-entry position.
+A simultaneous measure is also acceptable if every cross-side obligation is
+proved. Complete the exported Blocked-w result, not just helper records.
+
+6. RESOLVE ATOMIZATION BEFORE CLAIMING CLEAN CUTS
+
+Full ReducesL/R requires CutFree, not Atomized. The general routing construction
+can introduce compound thinning. Preserve that completed theorem and its scope.
+Do not add an Atomized field as an assumption or silently claim its witnesses.
+
+The source's next paragraph requires one representative whose premises are
+both atomized and blocked at every tied contraction. Existing G.atomize proves
+Atomized, CutFree preservation and Reduced equality; it has no theorem here
+preserving the needed tied/blocked property or rank measure. In particular,
+headThinL on disjunction and headThinR on conjunction duplicate the premise
+and use context duplication contractions. Atomization is not just a relabeling
+of thinning nodes. Neither applying it after Blocked-w nor alternating the
+two procedures establishes clean-cut normalization without further proof.
+
+After section 5, inspect this interaction and prove a concrete compatibility
+route. Options include an Atomized-preserving reduction theorem on atomized
+inputs with all descendant bounds, or an atomization construction proved to
+preserve the required blocked condition. A combined terminating normalization
+is also acceptable if its invariant and measure are proved. Do not prescribe
+rank nonincrease for the existing atomize implementation without evidence.
+State the chosen exact theorem, prove all new tied-site obligations, and only
+then export simultaneous clean-cut normalization.
+
+Proceed through cut elimination including constants and atomic zero, restricted
+mix/positive coherence, Reduced.Faithful and actual Boolean Coherence. Continue
+the source instances and congruence/substitution bridges, short q_A/e_A proof,
+actual-presentation maximality, model corollary and every v6 appendix claim
+under the full-paper contract. These are successive proof obligations, not
+consequences already established by full Reducibility or Blocked-w.
+
+7. PRESERVE THE MATHEMATICS AND WRITING DECISIONS
+
+Keep the existing G syntax, equations, rho, BlockedL/R, ReducibleL/R and
+ReducesL/R quantifiers. Keep left-first composition, opposite coproduct
+variance, empty hom-sets and typed existing-arrow witnesses for zeros.
+Distinguish whole-formula ancestry from literal-occurrence relations. No
+custom mathematical axioms, holes, native_decide, assumed coherence,
+unproved equality reflection or conclusion-shaped production interfaces.
+
+Preserve node-free singleton contraction, actual empty exchange nodes, source
+versus native logical ranks, and the right head-disjunction repair with its
+old unblocked-candidate regression. Do not demand repaired-root strictness
+where the proved eligible-contraction bound is the required result.
+
+No confirmed manuscript defect was found in the completed-run review. Preserve
+v6, the short proof and symmetric-fold alternative, tagged occurrence blocks,
+typed diagrams and ordinal correspondence, both appendices, disclosure and
+all accepted wording corrections. An open formalization obligation alone is
+not grounds for a manuscript edit. Apply an established necessary correction
+through every affected passage, diagram, declaration and record in one pass;
+document its evidence and resolution externally.
+
+Apply the mathematical-writing skill with actual KLR source consultation:
+self-contained statements, definitions and types before use, explicit proof
+transitions and accurate theorem scope. Keep workflow, verification and review
+commentary outside manuscript prose and TeX comments. Retain meaningful
+mathematical qualifications. Use typed TikZ diagrams when manuscript diagrams
+are needed. Do not reopen settled novelty or expository decisions.
+
+8. VERIFY, REVIEW, COMMIT AND DELIVER
+
+Use pinned Lean 4.35.0, regular module headers, existing Init-only closure,
+and source files below 10,000 physical lines. Run one heavy build or kernel
+audit at a time. Do not rebuild the unchanged baseline simply because this
+handoff is new; do run the required final checks after proof changes.
+
+Use meaningful boundary examples: all fourteen containing envelopes; each
+free-premise branch and its root; proper nested replacement; actual empty
+exchanges; repeated labels and identical sibling proof values; a common blocked
+ancestor with the chosen and an outside eligible site in different branches;
+zero, one and several new eligible sites; several equal maximal ranks; and
+inhabited examples over Empty. Include the inserted root in coverage. Keep
+the two public Reducibility signatures and all prior regressions unchanged.
+
+Run scripts/verify.sh, both existing boundary scripts and their five negative
+controls, exact public-type checks for new endpoints, manuscript checksums
+and whitespace checks. Retain command exits and failed exploratory attempts.
+Audit transitive dependencies and public import closure. Verify the final
+checked source inventory against committed bytes; distinguish this from a
+pre-commit HEAD printed by a log. Update claim/correspondence/coverage maps,
+README, validation, corrections and continuation to the actual checked scope.
+Apply both author-side reviews to the resulting argument and source map.
+
+Commit scoped verified work and push main over SSH without force. Reconcile
+intervening work; do not reset, clean or delete the preserved stash. Verify
+local main, origin/main and live SSH main. Keep local Lean, independent kernel,
+Comparator, official preflight, service verification and publication statuses
+separate. No publication, license choice, author contact or submission is
+authorized by this proof task.
+
+Retain new reports under docs/ and docs/reviews/. Deliver byte-verified copies
+to /mnt/c/Users/fleng/Downloads, preserving a different existing file under a
+dated or commit-suffixed name. Also deliver this instruction and the two
+GENTZEN_5B8A199 reviews from their committed repository copies. This cloud
+session cannot access the WSL repository or Downloads, so those three local
+deliveries are pending, not completed. Identify all repository/Downloads paths
+and any delivery failure in the final receipt. Avoid a commit self-hash cycle.
+
+Continue the authorized proof work without a fresh approval question. If a
+genuine obstruction remains, record its exact typed statement, the failed
+inference or construction, evidence and next proof step. Do not substitute a
+plan, interface or successful build for the requested mathematical result.

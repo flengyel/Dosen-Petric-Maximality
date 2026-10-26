@@ -28,6 +28,11 @@ instances/maximality, model corollary and the entire v6 appendix ledger remain
 open. Generic routing repairs preserve CutFree; no general Atomized witness is
 claimed. All accepted corrections and the full-paper contract remain active.
 
+The [reviewed successor instruction](CODEX_AFTER_5B8A199_BLOCKED_W.txt)
+expands these remaining targets. Its source/evidence and writing reviews are
+`reviews/GENTZEN_5B8A199_REVIEW.md` and `reviews/GENTZEN_5B8A199_WRITING.md`;
+they add no checked Lean declaration or manuscript correction.
+
 | Claim / source | Exact compiled declaration | Hypotheses / status |
 | --- | --- | --- |
 | §11.2 p.250 Reducibility and p.252 right analogue | `DosenPetric.Reduced.Gentzen.reducibility_left/right` in GentzenReducibility.lean | Arbitrary P and all contexts; exact ReducesL/R. Completed prerequisite to G2, not G2/cut elimination. |
