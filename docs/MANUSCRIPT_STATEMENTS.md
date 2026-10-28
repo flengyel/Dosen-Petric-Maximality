@@ -1,55 +1,56 @@
 # Manuscript v7: statements and formal scope
 
-## Current logical binary construction (28 October 2026)
+## Current continuation after 77199ac (28 October 2026)
 
-Successor b767c19 and the completed four mix branches are preserved, together
-with stash dedfd8fc8cd49930e9a162d5be585215b062a43c. Mix proof/receipt commits:
-a654ed0 / 408257b. Their 19 committed-byte Downloads deliveries are complete.
+The completed run incorporates b767c19. Four mix branches and
+conjR_right_second have exact Reduced equations, reconstructions at the original
+selected-cut output and instantiated rank steps. All twelve binary descents,
+the completed unary cases, full Reducibility, Blocked-w and simultaneous
+atomized/blocked cleaning remain available. mixedDisj_swap is a proved equation
+in Reduced; its earlier failed simplification is resolved.
 
-The right cut through the second child of G.conjR is now complete through
-BinaryLogical.conjRRightSecond_equation and
-CutCommutation.conjR_right_second_rank_step. The generic builder takes the
-actual original child-cut output and rebuilds G.conjR with the retained B tag,
-then applies only list-association comparisons. Count, Atomized, congruence and
-eliminated-witness laws are proved. rankIH uses the original inherited clean
-child before routing. Product/distribution, residual association, actual native
-fold/unit and selected-tag diagrams are all instantiated. mixedDisj_swap is a
-separate proved Reduced interchange, derived from dist_b_disj and symmetry laws;
-it is available for subsequent cases, not a general proof duality.
+The next task is conjR_right_first, beginning with the retained native equation
+in provenance/wsl-gentzen-logical-binary-cuts/open/next-native-first.lean.
+The candidate's list transports elaborate; its arrow equality is unproved.
+The successor gives typed first-factor splice and residual-output comparisons
+to derive from the existing second-factor equations and mixedDisj_swap.
+They are proof targets, not additional assumptions or compiled results.
 
-See [the run report](GENTZEN_LOGICAL_BINARY_CUTS_REPORT.md),
-[hostile audit](reviews/GENTZEN_LOGICAL_BINARY_CUTS_HOSTILE.md),
-[writing review](reviews/GENTZEN_LOGICAL_BINARY_CUTS_WRITING.md) and
-[live constructor/tag table](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
-The preceding four mix constructions and their exact implementation choices
-remain recorded in GENTZEN_BINARY_MIX_CUTS_REPORT.md and its two reviews.
+See [the successor](CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt),
+[the completed-run source review](reviews/GENTZEN_77199AC_REVIEW.md),
+[the writing review](reviews/GENTZEN_77199AC_WRITING.md),
+[the mix report](GENTZEN_BINARY_MIX_CUTS_REPORT.md),
+[the logical report](GENTZEN_LOGICAL_BINARY_CUTS_REPORT.md) and
+[the live constructor table](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
+CODEX_NEXT_SESSION.txt is the active task list; its predecessor is preserved
+verbatim at history/CODEX_NEXT_SESSION_77199AC.txt.
 
-| Local proof phase | Lean files | Audited declarations | Exact check files | Rejected controls | Evidence directory |
+| Local proof phase | Lean files | Audited declarations | Public check files | Rejected controls | Evidence directory |
 | --- | ---: | ---: | ---: | ---: | --- |
-| 21627c4; same-side construction | 522 | 11,765 | 9 | 7 | provenance/wsl-gentzen-after-67de18a/ |
-| ea74a32; mix algebra | 524 | 11,780 | 10 | 7 | provenance/wsl-gentzen-mix-union/ |
-| a654ed0; four mix branches | 538 | 11,886 | 11 | 8 | provenance/wsl-gentzen-binary-cuts/ |
-| One logical binary branch and mixed-rule symmetry | 546 | 11,911 | 12 | 9 | provenance/wsl-gentzen-logical-binary-cuts/ |
+| a654ed0; four mix branches; receipt 408257b | 538 | 11,886 | 11 | 8 | provenance/wsl-gentzen-binary-cuts/ |
+| 9af0a8a; one logical branch and symmetry; receipt 77199ac | 546 | 11,911 | 12 | 9 | provenance/wsl-gentzen-logical-binary-cuts/ |
 
-Strict, expanded-type, actual literal/constant-witness, source-closure and
-negative-control checks pass locally. Reviews are local author-side reviews;
-no independent kernel replay, Comparator, official/service verification or
-publication is claimed. All manuscript bytes remain unchanged from 408257b.
+The source review read all twenty new production modules and both new public
+check files, matched all 554 archived source files to their manifest and Git,
+and inspected the retained final check logs and exact open-equation failure.
+It ran no Lean or TeX build, independent kernel replay, Comparator or service
+verification. No confirmed defect was found in the five completed branches.
+All nine manuscript blobs are unchanged; no new manuscript correction is established.
 
-Seven logical binary equations/reconstructions/rank steps remain open, as do
-all fourteen blocked reductions, the complete dispatcher, discharged rank/degree/
-structural inductions, both unrestricted elimination endpoints, coherence and
-later full-paper claims. All three milestones and the additional whole-paper
-endpoint remain distinct. V7 and all three appendices remain in scope; Appendix C
-is written and its two concrete blocked-rank Lean correspondences remain open.
-The exact next native first-child candidate/equation is retained outside production
-at provenance/wsl-gentzen-logical-binary-cuts/open/next-native-first.lean.
+Seven logical binary branches, fourteen blocked reductions, the complete
+dispatcher and rank/degree/structural inductions remain open. Both unrestricted
+elimination inhabitants, coherence and the later full-paper obligations remain
+unproved. Current scope is v7 and all three appendices. Appendix C is written;
+its two concrete blocked-rank correspondences remain open. Keep the three
+milestones and the additional whole-paper endpoint distinct.
 
-Prior 23, 18-entry, 14-entry and current 19-entry completed delivery registers
-retain their completed status. The three b767c19 successor files are included
-in the 19-entry register. This phase's finalized reports/reviews and changed
-records use its own committed-byte DELIVERY_REGISTER.json. CODEX_NEXT_SESSION.txt
-and the live table carry the exact continuation; old checkpoints are historical.
+The 19-entry mix and 16-entry logical delivery registers retain completed local
+receipt status, as do all earlier deliveries. The three b767c19 successor files
+are included in the mix register. The reviewer checked all sixteen current
+registered artifacts against supplied/retrieved committed bytes; WSL Downloads
+storage itself is inaccessible here. Only the three NEW 77199AC instruction/
+review files await local committed-byte delivery. Historical sections below
+do not reset current proof status, task order or completed deliveries.
 
 ## Current manuscript: v7 with the authorized errata appendix
 

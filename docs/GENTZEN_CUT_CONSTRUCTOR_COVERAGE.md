@@ -1,16 +1,16 @@
 # Selected cut constructor and tag coverage
 
-This live table records all four actual mix branches and conjR_right_second
-after b767c19, a654ed0 and receipt 408257b.
-A checked branch is a local input to the intended clean selected-rank dispatcher. The global
-dispatcher, unrestricted cut elimination, coherence and full-paper endpoint
-remain open. Original selected predecessor rank is measured before adapters.
-The active construction is CODEX_AFTER_B8FCD28_BINARY_CUTS.txt. The first mix
-branch now has an actual swapped-native reconstruction, a checked unique-fiber
-residual structural program, exact original-sequent equality and rank step.
-Atomization follows the eliminated recursive cut. The direct block-exchange
-macro leftFirst is separately typed; the first_equation uses firstRaw instead.
-The remaining binary and blocked work retains its full contract.
+Current checkpoint: 77199ac, the delivery receipt following proof 9af0a8a.
+Four mix branches and conjR_right_second have equations, reconstructions and
+instantiated rank steps. Seven logical binary branches and fourteen blocked
+reductions remain open. A checked branch is a local input to the intended clean
+selected-rank dispatcher; global elimination and the full-paper endpoint are open.
+
+The active successor is CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt. Start with
+conjR_right_first and the retained native equation, then the remaining six logical
+branches. Original selected rank is measured before adapters. The swapped mix
+branches use firstRaw/secondRaw and post-elimination atomization; the separately
+typed direct leftFirst macro is not the builder used by first_equation.
 
 | Root and selected region | Left cut premise | Right cut premise |
 | --- | --- | --- |
@@ -40,8 +40,10 @@ instances of the structural SingleFiber residual theorem.
 MixCalculation supplies eight concrete tensor/union, mix/union, splice/union and
 native-mix equations. Native mix keeps its reversed child blocks. These inputs
 are checked; four mix branches now have actual equations/reconstructions/rank steps;
-conjR_right_second is now complete; seven logical binary branches remain open. Report/evidence: GENTZEN_MIX_UNION_REPORT.md and
-provenance/wsl-gentzen-mix-union/.
+conjR_right_second is now complete; seven logical binary branches remain open.
+The eight algebraic inputs are recorded in GENTZEN_MIX_UNION_REPORT.md and
+provenance/wsl-gentzen-mix-union/. The four completed mix reductions are recorded
+in GENTZEN_BINARY_MIX_CUTS_REPORT.md and provenance/wsl-gentzen-binary-cuts/.
 
 The right-second conjunction reconstruction preserves the retained B tag,
 cut count and Atomized condition, with actual native fold/unit and head-routing

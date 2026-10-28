@@ -1,0 +1,270 @@
+CONTINUE AFTER 77199AC: FINISH THE LOGICAL BINARY CUTS
+
+1. Incorporate the completed-run review
+
+Work in /home/flengyel/src/Dosen-Petric-Maximality under WSL. Read AGENTS.md,
+CODEX_FULL_MANUSCRIPT_FORMALIZATION.md, CODEX_NEXT_SESSION.txt, the live constructor
+table and current statement/coverage/correction/validation records. Read both
+GENTZEN_77199AC reviews and the preceding binary-mix/logical-binary run reports.
+Inspect live status and newer work before integrating this successor. Preserve
+stash dedfd8fc8cd49930e9a162d5be585215b062a43c and all unrelated checkouts.
+
+Reviewed head: 77199ac58fcacfeefb80457a5d91f85c0a59fbab.
+The run incorporated b767c19509006130ef18692432b578f3d561f085 and then added:
+  a654ed0bfdfebb568d476a1f20db3870b01be80c: four mix branches;
+  408257b00407f887fb080ced61ac9f0f26ecc6a9: their delivery receipt;
+  9af0a8a148225421927e70a24c9fdb376bee1b2e: logical branch and symmetry;
+  77199ac: the final delivery receipt.
+The author reported this run complete before the present review.
+
+ChatGPT reviews/prepares instructions; local Codex implements and builds.
+The full-paper authorization and all earlier accepted corrections persist.
+This successor advances the immediate construction; it does not reset the task
+to a historical checkpoint or introduce a routine approval stop.
+
+2. Preserve the exact completed constructions
+
+All four mix branches have actual original-sequent equations and rank steps.
+The builders actually used are:
+  mix_left_first: firstRaw / first_equation, with firstFinal atomization;
+  mix_left_second: leadingAt / leadingAt_equation;
+  mix_right_first: rightFirstAt / rightFirstAt_equation;
+  mix_right_second: secondRaw / second_equation, then atomization.
+Do not substitute the separately typed direct leftFirst macro for firstRaw.
+The swapped cases realize actual unique-fiber residual structural programs.
+Their completed raw reconstruction is cut-free before atomization; no output
+blockedness or returned-rank bound is asserted or needed.
+
+conjR_right_second is complete through conjRRightSecond_equation and
+CutCommutation.conjR_right_second_rank_step. Its builder is conjRRightSecond,
+using conjSecondNative and explicit association comparisons. Its retained B
+occurrence, exact endpoints, count, Atomized and congruence laws are proved.
+
+BinaryLogical.mixedDisj_swap is a proved Reduced equation. Its earlier failed
+distributor-symmetry attempt is resolved. It supplies neither a G-proof duality
+nor a completed first-child native cut equation.
+
+Reuse product_right_splice, mixed_residual, conjR_right_second_core and the
+actual product/coproduct structural laws. All twelve original-child binary
+descents, the eight mix/union algebra laws and all completed earlier reductions
+remain available. Do not reconstruct their infrastructure from scratch.
+
+The final local evidence records 546 screened Lean files, 11,911 audited
+declarations, twelve public check files and nine rejected controls. The reviewer
+read all twenty new production modules and both new check files, matched all
+554 archived sources to their SHA-256 manifest and Git, and inspected final
+logs without running a build. All manuscript and earlier production bytes are
+preserved, apart from the public import and audit-entry additions.
+
+3. First endpoint: conjR_right_first
+
+Start from the retained exact candidate:
+  provenance/wsl-gentzen-logical-binary-cuts/open/next-native-first.lean
+and OPEN_OBLIGATIONS.json with its final next-native failure log.
+The candidate's list transports elaborate. Its Reduced equality remains
+unproved; the failed rewrite is not a counterexample or a negative control.
+
+At native heads, fix
+  f : G P (C :: Γ) (A :: Δ),
+  g : G P Θ (B :: Λ),
+  h : G P I (C :: D).
+The child is G.cut h f. For a generic
+  k : G P (Γ ++ I) (A :: (Δ ++ D)),
+the retained firstNative builds G.conjR k g and performs these two exchanges:
+  input: exchange I and Θ under Γ;
+  output: exchange D and Λ under the fresh conjunction A∧B and Δ.
+It returns
+  G P ((Γ ++ Θ) ++ I) ((.conj A B :: (Δ ++ Λ)) ++ D).
+The required native equality is exactly
+  ofTerm (G.cut h (G.conjR f g)).denote =
+    ofTerm (firstNative (G.cut h f) g).denote.
+
+Prove the following two comparisons as a route to that equation. Their types
+have been checked against the existing definitions by source reasoning; these
+are proof targets, not compiled declarations or assumptions to add to a theorem.
+Use existing names where suitable. An equivalent directly proved comparison
+is acceptable if it closes the same native equation and selected branch.
+
+Notation in this section only:
+All capital letters are objects NormalForm P and all arrows are Reduced.Hom.
+Write p ; q for comp p q, applying p first. Write X∧Y and X∨Y for the formula
+constructors, and p∧q / p∨q for tensor .conj / tensor .disj on arrows.
+Write aL_o, aR_o and s_o for assocL o, assocR o and swap o, respectively;
+aL_o X Y Z maps (X o Y) o Z to X o (Y o Z).
+Define the structural exchange
+  S_o(X,Y,Z) = aL_o X Y Z ; (id X o s_o Y Z) ; aR_o X Z Y
+  : ((X o Y) o Z) -> ((X o Z) o Y).
+These abbreviations denote existing composites, not new assumed structure.
+
+(P) First-factor splice. For
+  h : W -> C∨R, f : C∧Y -> Z, g : X -> E,
+prove
+  splice h (aR_conj C Y X ; (f∧g))
+    = S_conj(Y,X,W) ; ((splice h f)∧g) ; innerDisj Z R E.
+Both sides have type ((Y∧X)∧W) -> ((Z∧E)∨R).
+Derive this from product_right_splice with the two product factors interchanged,
+Splice.context/output, symmetry naturality and the actual product-coordinate
+identities. innerDisj Z R E is the defined arrow (Z∨R)∧E -> (Z∧E)∨R.
+No general quotient-arrow duality or equality reflection is required.
+
+(R) Residual-output comparison. Put
+  M(A,D,B,E) = ofTerm (Term.mixedDisj A D B E)
+    : (A∨D)∧(B∨E) -> (A∧B)∨(D∨E),
+  V(Q,D,R,E) = (id Q ∨ S_disj(D,R,E)) ; aR_disj Q (D∨E) R
+    : Q∨((D∨R)∨E) -> (Q∨(D∨E))∨R.
+Prove
+  innerDisj (A∨D) R (B∨E) ; (M(A,D,B,E)∨id R)
+    = (aL_disj A D R ∧ id (B∨E)) ;
+        M(A,D∨R,B,E) ; V(A∧B,D,R,E).
+Both sides have type
+  ((A∨D)∨R)∧(B∨E) -> ((A∧B)∨(D∨E))∨R.
+Use mixed_residual with its logical factors interchanged, mixedDisj_swap,
+symmetry naturality and the proved coproduct pentagon/hexagon comparisons.
+Keep the principal swap B∧A -> A∧B explicit until cancellation; it is an
+arrow inside a formula, not an ExchangeScript that merely permutes contexts.
+
+Combine (P), Splice.output and (R) to obtain the first-factor logical core.
+Then specialize to ante/succ of the actual lists. Instantiate every append,
+unit and exchange comparison, using the existing split/association/coordinate
+lemmas. Identify S_conj with the input exchange and V with the output exchange
+and fold comparisons of firstNative. Do not infer the equation from matching
+types, the intended wiring diagram or occurrence-graph equality.
+
+Lift the native equation to arbitrary original selected tags. For
+  f : G P Γ (A :: Δ), g : G P Θ (B :: Λ), h : G P I J,
+  z : At J C, a : At Γ C,
+the parent selected tag is a.before Θ and the recursive cut is
+  PositionalCut.cut h z f a.
+Its output is (a.erase ++ I, (A :: Δ) ++ z.erase); the required parent output is
+  ((a.before Θ).erase ++ I, (.conj A B :: (Δ ++ Λ)) ++ z.erase).
+Prove the actual headBefore/suffix structural comparison for conjR and the
+erasure transport, then an exact-sequent generic builder and its equation.
+Prove count, Atomized and Reduced-congruence laws, an eliminated wrapper and
+the instantiated rank_step. Apply conjR_right_first_descent to the original
+clean parent; call rankIH on h/z and f/a before any adapter is added.
+
+Complete this branch through rank_step before expanding unrelated helper work.
+If either proposed comparison needs correction, retain the exact failing typed
+equation and repair it against the native target, without weakening that target.
+
+4. Finish the other six logical branches
+
+The selected tags below refer to the actual constructor child, not just its
+formula label. Reuse the corresponding already proved descent.
+
+  Branch                 Child tag        Parent tag
+  conjR_left_first        a.there in f     (a.before Λ).there
+  conjR_left_second       a.there in g     (At.shift Δ a).there
+  disjL_left_first        a in f           a.before Λ
+  disjL_left_second       a in g           At.shift Δ a
+  disjL_right_first       a.there in f     (a.before Θ).there
+  disjL_right_second      a.there in g     (At.shift Γ a).there
+
+For conjR-left, a is selected in Δ or Λ, respectively, and the retained A/B
+occurrence must be moved to the constructor head before rebuilding. For
+disjL-left, move the retained A/B from the returned input to the constructor
+head and restore the fixed input/output blocks afterward. For disjL-right,
+the returned child input already begins with A/B. Use the exact recipes in
+section 4 of CODEX_AFTER_B8FCD28_BINARY_CUTS.txt, omitting the now completed
+conjR_right_second row and incorporating the actual choices proved here.
+
+Derive each diagram for Rules.conjRight or Rules.disjLeft/Rules.sourceConj.
+If using reflected calculations, define the particular interpreted arrows and
+prove their laws and native comparison as in MirrorCalculus; do not assert a
+general proof duality. Pure context exchanges cannot change the inside of a
+principal formula. Retain the exact principal formula and retained occurrence.
+
+Each branch needs a generic exact-output reconstruction, its actual Reduced
+equation, count/Atomized/congruence laws, an eliminated witness and an
+instantiated original-child rank step. Keep these statuses separate in the
+live table. A passed descent or an auxiliary equation alone does not close a row.
+Every recursive call at unchanged degree must use the inherited original clean
+child and its strict selected-rank bound before routing or reconstruction.
+
+5. Continue the blocked reductions and the full-paper contract
+
+All fourteen source-shaped blocked reductions remain:
+  BlockedL: gammaMix, gammaConj, gammaDisj, conjunction,
+            disjunctionFirst, disjunctionSecond, disjunctionBoth;
+  BlockedR: gammaMix, gammaDisj, gammaConj, disjunction,
+            conjunctionFirst, conjunctionSecond, conjunctionBoth.
+
+Invert Clean's actual BlockedL witness in the right premise or BlockedR witness
+in the left premise. Derive actual arities and positions, including two/three-copy
+cases; do not replace them by a binary-contraction premise. Gamma families use
+parallel original smaller-rank cuts, concrete binary reconstruction and context
+contraction. Logical families eliminate parametric copies first, reconstruct a
+fresh native principal and then eliminate its sequential cut. Establish that
+principal's one-sided rank 1 and the full Clean predicate, with routing below
+the fresh rule. source disjLLast has exchanges above its logical constructor
+and is not a native rank-one leaf. Preserve first/last-retaining adapters,
+singleton conventions, explicit empty exchanges and all descendant quantifiers.
+
+Keep sections 4–7 of CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt and the later
+B8FCD28 contract where not superseded by completed results. Finish the complete
+constructor/tag dispatcher and fixed-degree all-ranks Clean theorem under
+strict DegreeBelow. Only then apply simultaneous cleaning at that degree;
+discharge strong degree induction and arbitrary-G structural normalization.
+Export actual unrestricted CutElimination P and AtomizedCutElimination P
+inhabitants. Continue restricted mix/positive/reduced/Boolean coherence, the
+intended-presentation and substitution/congruence bridges, both maximality
+proofs, the model corollary and every mathematical claim in all three appendices.
+
+Preserve G syntax, equations, rho and blocked/reducible predicates. Do not assume
+coherence, equality reflection or a supplied normalizer. At unchanged degree,
+re-cleaning and head routing give no substitute for original-rank descent.
+At smaller degree allow arbitrary ranks. Preserve conjunction A-then-B,
+disjunction B-then-A, repeated tags, negative literals, empty contexts and
+hom-sets, witnessed zeros, left-first composition and uniform substitution.
+Post-elimination structural atomization is accepted; output blockedness and a
+returned-rank bound are not part of Eliminated.
+
+6. Manuscript, verification and delivery
+
+V7 and the authorized Appendix C remain unchanged. No new manuscript defect
+was established. Preserve all older versions, the ten diagrams, tagged-block
+and ordinal-coordinate correspondence and the accepted disclosure. Do not
+rebuild unchanged TeX merely because Lean progresses. Close Appendix C's p.260
+r' < r and p.262 RIGHT-rank-one Lean rows only after the corresponding actual
+blocked reductions compile. Keep process narration outside mathematical prose
+and comments. Apply the hostile-referee and mathematical-writing workflows to
+actual new results and propagate every established correction through its scope.
+
+Use the pinned toolchain and one heavy build/audit at a time. Run scripts/verify.sh,
+the applicable public signature/witness checks, complete dependency/source closure
+and all nine existing controls. Add meaningful actual witness checks for the
+new branches, covering nonempty exchanges as well as empty, repeated-label,
+negative and constant-only cases. Do not add another generic interface as a
+substitute for a native equation. Retain real failed attempts and exits; no
+custom axioms, proof holes, native_decide or conclusion-shaped assumptions.
+Once required checks pass, continue the construction without repeating unchanged
+checks merely to create another checkpoint.
+
+Archive superseded continuation text verbatim. Commit/push scoped verified work
+to main without force, preserving newer work and stash. Check committed bytes
+against the checked sources and verify local/origin/live SSH refs locally.
+
+The 19-entry mix and 16-entry logical registers retain their completed local
+receipt status, including all three b767c19 successor files. All earlier completed
+deliveries remain complete. The reviewer checked the seven new attachments,
+all sixteen current registered artifacts, six run reports/reviews and the three
+prior successor files against their recorded bytes; this does not constitute
+direct access to WSL Downloads storage.
+
+Deliver these THREE NEW files from their committed bytes:
+  docs/CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt
+  docs/reviews/GENTZEN_77199AC_REVIEW.md
+  docs/reviews/GENTZEN_77199AC_WRITING.md
+to /mnt/c/Users/fleng/Downloads/ with the same basenames. Preserve different
+existing files under commit-suffixed names. Record exact repository/Downloads
+paths, source commit, lengths and byte/SHA-256 comparisons. Deliver new local
+run reports and both reviews under the same requirements. Only these new
+successor copies remain pending until locally delivered and verified.
+
+Keep the repository private. No license/visibility change, author contact,
+arXiv/Palomar submission or publication is authorized. Keep local builds,
+independent replay, Comparator and official/service verification distinct.
+Proceed through the authorized full-paper construction. If an actual obstruction
+remains, retain its precise typed statement, hypotheses, failed case and next
+mathematical obligation; do not replace completion with a broader conditional
+interface or repeat an already resolved failed attempt as the remaining blocker.
