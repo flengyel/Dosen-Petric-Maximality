@@ -1,47 +1,50 @@
 # Complete Lean formalization of manuscript v7
 
-## Current same-side unary logical construction (28 October 2026)
+## Current binary-cut continuation after b8fcd28 (28 October 2026)
 
-Successor ad95fb7 is incorporated without resetting intervening proof work or the
-stash. All four same-side unary logical prefix/suffix branches now have proved
-logical deletion squares, exact original positional equations, native cut-free
-atomized reconstructions, inherited Clean and strict original-rank steps.
-The opposite structural elimination/rank-step wrappers are also proved. All
-twelve binary parametric branches have checked Clean/rank descent at their
-actual child positions; their equations/reconstructions remain open.
+The completed run incorporates ad95fb7. All four same-side unary logical
+prefix/suffix branches have actual deletion squares, native cut-free atomized
+reconstruction, exact positional equations and complete original-child Clean /
+strict-rank steps. Both opposite structural recursive wrappers are proved.
+All twelve binary parametric original-child descents are proved; their actual
+commuting equations, native reconstructions and rank steps remain open.
 
-See [the construction report](GENTZEN_SAME_SIDE_LOGICAL_CUTS_REPORT.md),
-[hostile audit](reviews/GENTZEN_SAME_SIDE_LOGICAL_CUTS_HOSTILE.md),
-[writing review](reviews/GENTZEN_SAME_SIDE_LOGICAL_CUTS_WRITING.md) and
-[live constructor/tag table](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
-Verification: 524 screened Lean files, 11,780 transitive project declarations,
-ten exact public check files, five established and two focused rejected negative
-controls, complete production import closure. Evidence is retained under
-provenance/wsl-gentzen-after-67de18a/. Both reviews are author-side local reviews;
-no independent replay or official/service verification is claimed.
+GentzenMixUnion supplies eight concrete tensor/union, mix/union and splice/union
+equalities. Native mix keeps input Theta ++ Gamma and output Lambda ++ Delta.
+These are algebraic inputs to the remaining binary branches.
+See [the same-side report](GENTZEN_SAME_SIDE_LOGICAL_CUTS_REPORT.md),
+[the mix report](GENTZEN_MIX_UNION_REPORT.md) and
+[the live constructor/tag table](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
 
-The three successor artifacts have completed committed-byte Downloads delivery;
-SUCCESSOR_DELIVERY.json records actual paths/hashes. Earlier 23 deliveries stay
-complete. New run reports/status records use the committed-byte delivery receipt
-in the same evidence directory. Current tasks are binary commuting equations and
-reconstructions, fourteen blocked reductions, the complete dispatcher and rank /
-degree / structural induction assembly. Both unrestricted elimination endpoints,
-coherence and the full-paper endpoint remain open. Appendix C is complete in v7;
-its two concrete blocked-rank Lean correspondences remain open.
+| Local proof phase | Lean files | Audited declarations | Exact check files | Rejected controls | Evidence directory |
+| --- | ---: | ---: | ---: | ---: | --- |
+| 21627c4; same-side construction | 522 | 11,765 | 9 | 7 | provenance/wsl-gentzen-after-67de18a/ |
+| ea74a32; mix construction, receipts through b8fcd28 | 524 | 11,780 | 10 | 7 | provenance/wsl-gentzen-mix-union/ |
 
-The binary construction also has eight checked algebraic inputs in
-MixCalculation: conj_union_left/right, disj_union_left/right, mix_union,
-splice_union_left/right and native_mix_union. Native mix retains its actual
-reversed child-block order. These equations do not close the twelve binary
-cut reconstruction obligations. See [the mix report](GENTZEN_MIX_UNION_REPORT.md),
-[hostile audit](reviews/GENTZEN_MIX_UNION_HOSTILE.md) and
-[writing review](reviews/GENTZEN_MIX_UNION_WRITING.md); current evidence is
-provenance/wsl-gentzen-mix-union/. The preceding immutable checkpoint and its
-byte-verified deliveries remain in provenance/wsl-gentzen-after-67de18a/.
+The [completed-run source/evidence review](reviews/GENTZEN_B8FCD28_REVIEW.md)
+read all twelve new production modules and both new Checks, matched all 532
+archived files to their manifest and Git blobs, and checked the final mix
+logs/receipts. This is not a cloud build, independent kernel replay, Comparator
+or official/service verification. The
+[writing review](reviews/GENTZEN_B8FCD28_WRITING.md) identifies active-record
+repairs; all manuscript blobs remain unchanged.
 
-CODEX_NEXT_SESSION.txt is the active continuation; all older checkpoint sections
-below describe historical scope where superseded. No older next-task list resets
-the checked local construction or the unchanged full-paper endpoint.
+[CODEX_NEXT_SESSION.txt](CODEX_NEXT_SESSION.txt) is the active continuation.
+[The concrete successor](CODEX_AFTER_B8FCD28_BINARY_CUTS.txt) starts with a
+complete mix_left_first equation/reconstruction/rank step, then the other
+eleven binary branches, fourteen blocked reductions and full induction.
+Its sequent recipes are proof targets, not already checked equalities.
+Both unrestricted elimination endpoints, coherence and the whole-paper
+endpoint remain open. V7's Appendix C is complete; its two concrete blocked
+Lean correspondences remain open. Current scope includes all three appendices.
+
+Earlier 23 deliveries and the 18-entry same-side and 14-entry mix registers
+retain their completed local receipt status, including the three ad95fb7
+successor files. Only the three NEW B8FCD28 instruction/review artifacts await
+local committed-byte Downloads delivery. Their exact duties are in the successor.
+The preceding continuation is archived verbatim at
+history/CODEX_NEXT_SESSION_B8FCD28.txt. Older sections below describe historical
+scope where superseded and do not reset the current construction or deliveries.
 
 ## Retained opposite logical checkpoint (28 October 2026)
 
@@ -276,8 +279,10 @@ The preserved reviewed v6 baseline is
 `manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v6.tex` at commit
 `810dcdbccc76a4307028773c561f36b910b5170c`, SHA-256
 `2c30fd10cb81f5d8246dabdc7f343d6d9adeac91358d84273d2799ab514972b0`.
-The PDF has the same basename. Read the complete source, both appendices,
-`AGENTS.md`, the statement and coverage maps, and the presentation correspondence.
+The preserved v6 PDF has the same basename. Read the complete CURRENT v7
+source and all three appendices, `AGENTS.md`, the statement and coverage maps,
+and the presentation correspondence. V6's two appendices remain its historical
+baseline; they do not restrict the v7 target.
 Follow later explicitly authorized manuscript changes and update the source
 anchor and claim ledger together; do not silently change the formal target.
 
@@ -465,7 +470,8 @@ model universe general enough to express the printed corollary.
 
 ## Immediate continuation and dependency order
 
-Successor ad95fb7 and its three committed-byte deliveries are incorporated.
+The completed b8fcd28 run incorporates ad95fb7 and its three committed-byte
+deliveries. Follow CODEX_AFTER_B8FCD28_BINARY_CUTS.txt and both B8FCD28 reviews.
 The four same-side unary logical prefix/suffix equations, reconstruction and
 original-rank branches are now proved, along with opposite structural recursive
 wrappers. All twelve binary original-predecessor descents are proved; their
@@ -473,9 +479,11 @@ commuting equations and reconstructions remain open. See the current constructio
 report and live constructor/tag table. Preserve all completed Reducibility,
 Blocked-w, simultaneous cleaning, principal and structural/opposite logical work.
 
-Continue actual binary equations/reconstructions, all seven BlockedL and seven
-BlockedR cut reductions, and the complete constructor dispatcher. Then prove the
-all-ranks clean theorem under DegreeBelow, outer degree induction and arbitrary-G
+Complete mix_left_first through equation, native reconstruction and rank step,
+then the other three mix and eight logical binary branches. Reuse the eight
+proved mix/splice algebra laws; prove every remaining typed diagram. Continue
+all seven BlockedL and seven BlockedR reductions and the complete dispatcher.
+Then prove the all-ranks clean theorem under DegreeBelow, outer degree induction and arbitrary-G
 structural normalization. CutElimination and AtomizedCutElimination remain
 endpoint definitions until their unrestricted inhabitants are proved. The current
 continuation and live table record the exact scope; historical records do not

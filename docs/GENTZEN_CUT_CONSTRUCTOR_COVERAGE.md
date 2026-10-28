@@ -1,9 +1,12 @@
 # Selected cut constructor and tag coverage
 
-This live table records source construction after ad95fb7. A checked branch
-is a local input to the intended clean selected-rank dispatcher. The global
+This live table records the completed source construction through b8fcd28.
+A checked branch is a local input to the intended clean selected-rank dispatcher. The global
 dispatcher, unrestricted cut elimination, coherence and full-paper endpoint
-remain open. Native predecessor rank is measured before adapters.
+remain open. Original selected predecessor rank is measured before adapters.
+The active construction is CODEX_AFTER_B8FCD28_BINARY_CUTS.txt: first complete
+mix_left_first, then the other eleven binary branches. Its reconstruction
+recipes remain proof targets. No row is closed by this documentation update.
 
 | Root and selected region | Left cut premise | Right cut premise |
 | --- | --- | --- |
@@ -16,12 +19,12 @@ remain open. Native predecessor rank is measured before adapters.
 | Unary logical, opposite side | conjL equation, reconstruction and rank step checked | disjR equation, reconstruction and rank step checked |
 | Unary logical, same-side prefix | disjR before equation, reconstruction and original-rank step checked | conjL before equation, reconstruction and original-rank step checked |
 | Unary logical, same-side suffix | disjR tail equation, reconstruction and original-rank step checked | conjL tail equation, reconstruction and original-rank step checked |
-| mix, first child tag | Clean/rank descent checked; equation/reconstruction pending | Clean/rank descent checked; equation/reconstruction pending |
-| mix, second child tag | Clean/rank descent checked; equation/reconstruction pending | Clean/rank descent checked; equation/reconstruction pending |
-| conjR, first child parametric tag | Clean/rank descent checked; equation/reconstruction pending | Clean/rank descent checked; equation/reconstruction pending |
-| conjR, second child parametric tag | Clean/rank descent checked; equation/reconstruction pending | Clean/rank descent checked; equation/reconstruction pending |
-| disjL, first child parametric tag | Clean/rank descent checked; equation/reconstruction pending | Clean/rank descent checked; equation/reconstruction pending |
-| disjL, second child parametric tag | Clean/rank descent checked; equation/reconstruction pending | Clean/rank descent checked; equation/reconstruction pending |
+| mix, first child tag | Clean/rank descent checked; equation, reconstruction and rank step pending | Clean/rank descent checked; equation, reconstruction and rank step pending |
+| mix, second child tag | Clean/rank descent checked; equation, reconstruction and rank step pending | Clean/rank descent checked; equation, reconstruction and rank step pending |
+| conjR, first child parametric tag | Clean/rank descent checked; equation, reconstruction and rank step pending | Clean/rank descent checked; equation, reconstruction and rank step pending |
+| conjR, second child parametric tag | Clean/rank descent checked; equation, reconstruction and rank step pending | Clean/rank descent checked; equation, reconstruction and rank step pending |
+| disjL, first child parametric tag | Clean/rank descent checked; equation, reconstruction and rank step pending | Clean/rank descent checked; equation, reconstruction and rank step pending |
+| disjL, second child parametric tag | Clean/rank descent checked; equation, reconstruction and rank step pending | Clean/rank descent checked; equation, reconstruction and rank step pending |
 | Fresh principal conjR / conjL pair | Existing conjunction A-then-B degree step | Same pair |
 | Fresh principal disjR / disjL pair | Existing disjunction B-then-A degree step | Same pair |
 

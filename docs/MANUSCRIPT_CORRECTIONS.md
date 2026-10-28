@@ -15,6 +15,19 @@ marked formalized merely because its TeX has been added.
 
 ## Current correction status
 
+The b8fcd28 source/evidence review found no new mathematical or manuscript
+defect. It confirmed active-record inconsistencies: README still prescribed
+completed unary work and pending ad95fb7 delivery; current scope paragraphs
+said v6/both appendices; the final verification counts first pointed to the
+earlier phase. The B8FCD28 successor resolves these together in AGENTS, README,
+the continuation, full contract, statement/coverage/validation records and
+constructor table. Current scope is v7/all three appendices; earlier deliveries
+remain complete, and only the three new successor artifacts await delivery.
+The previous continuation is archived verbatim. Historical v6 records remain
+historical. No Lean or manuscript bytes are changed by these repairs.
+See [source/evidence review](reviews/GENTZEN_B8FCD28_REVIEW.md) and
+[writing review](reviews/GENTZEN_B8FCD28_WRITING.md).
+
 The concrete mix/union and splice/union equations establish no new manuscript
 erratum. Their actual native context order is proved in native_mix_union; the
 binary cut equations/reconstructions and concrete Appendix C correspondences

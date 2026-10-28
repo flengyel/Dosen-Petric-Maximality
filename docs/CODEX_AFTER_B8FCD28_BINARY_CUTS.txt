@@ -1,0 +1,281 @@
+CONTINUE AFTER B8FCD28: ACTUAL BINARY CUT RECONSTRUCTIONS
+
+1. Preserve the completed run and read the live repository
+
+Work locally in /home/flengyel/src/Dosen-Petric-Maximality under WSL. Read
+AGENTS.md, CODEX_FULL_MANUSCRIPT_FORMALIZATION.md, CODEX_NEXT_SESSION.txt,
+GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md, the claim/coverage/correction/validation
+records and the two B8FCD28 reviews. Inspect the live task, Git status, newer
+commits and stash before editing. Integrate this successor without resetting
+newer work, replacing the stash or changing any unrelated checkout.
+
+The reviewed main is b8fcd287ec97fd100484ca8110f73d2a0cfcdd44.
+Its proof parent is ea74a328be6859984eb7e0a6a695b24297182c38; b8fcd28 adds
+delivery receipts only. The earlier proof/receipt pair is
+21627c444164c9384665d5792ca33223ffaa31f0 /
+0e8eb5853fc9ac753e7d4ec2dcb77843c648a547. All incorporate ad95fb7.
+The author reported this run finished before the present review/handoff.
+
+ChatGPT reviews and prepares instructions; local Codex implements/builds. The
+full-paper authorization continues through all three appendices. Do not reopen
+completed cases, accepted writing decisions or the division of work.
+
+2. Reuse the exact new results
+
+All four same-side unary logical branches are complete:
+  same_conjL_before/tail and same_disjR_before/tail,
+  their native reconstructions, eliminated, descent and rank_step theorems.
+The generic head comparison hypotheses are discharged by the proved
+LogicalDeletion.before_square/tail_square. Reuse these concrete instantiations.
+
+Both selected opposite structural eliminated/rank_step wrappers are complete.
+They atomize only after obtaining a cut-free recursive result; preserve that
+accepted argument and the old negative atomizer example.
+
+All twelve binary descents in GentzenBinaryParametricDescent are complete:
+  PositionalCut.{mix,conjR,disjL}_{left,right}_{first,second}_descent.
+They give the actual original child's full Clean predicate and strict selected
+rank. Their missing part is the commuting equation and native reconstruction.
+
+GentzenMixUnion proves eight algebraic inputs:
+  MixCalculation.conj_union_left/right, disj_union_left/right,
+  mix_union, splice_union_left/right, native_mix_union.
+They are equalities in Reduced, with actual existing arrow witnesses. Reuse
+them; no relation faithfulness, new zero arrows, general proof duality or
+unproved coherence may replace a needed equation.
+
+The final local evidence records 524 screened Lean files, 11,780 audited
+declarations, ten exact check files and seven rejected controls. The reviewer
+matched ALL 532 archived source files to both their SHA-256 manifest and the
+b8fcd28 Git blobs, without building them. Earlier proof modules, toolchain,
+verification scripts and all manuscript bytes are preserved.
+
+3. First concrete milestone: finish the four mix branches
+
+Complete mix_left_first through its actual equation, reconstruction and
+rank_step before expanding unrelated helper infrastructure. Then finish the
+other three mix branches. The following are typed reconstruction targets;
+their Reduced equations still have to be proved in Lean.
+
+Let f : G P Gamma Delta, g : G P Theta Lambda and h : G P I J.
+The native mix has input Theta ++ Gamma and output Lambda ++ Delta.
+The first child is f, even though it occupies the second block.
+For left-cut cases z : At I C and T = z.erase.
+For right-cut cases z : At J C and D = z.erase.
+In each case a selects C in the indicated f/g context and E = a.erase.
+
+mix_left_first:
+  a : At Delta C; original root tag is At.shift Lambda a.
+  Recurse on cut f a h z, obtaining k : G P (T ++ Gamma) (J ++ E).
+  Raw reconstruction: G.mix k g.
+  Raw input/output: Theta ++ (T ++ Gamma), Lambda ++ (J ++ E).
+  Required input/output: T ++ (Theta ++ Gamma), J ++ (Lambda ++ E).
+  Use explicit block exchanges for Theta/T and Lambda/J, plus association
+  transports. Both adapters occur after the recursive cut is eliminated.
+
+mix_left_second:
+  a : At Lambda C; original root tag is a.before Delta.
+  Recurse on cut g a h z, obtaining k : G P (T ++ Theta) (J ++ E).
+  Raw reconstruction: G.mix f k.
+  Required input/output: T ++ (Theta ++ Gamma), J ++ (E ++ Delta).
+  Its raw lists differ only by association. Use equality transports.
+
+mix_right_first:
+  a : At Gamma C; original root tag is At.shift Theta a.
+  Recurse on cut h z f a, obtaining k : G P (E ++ I) (Delta ++ D).
+  Raw reconstruction: G.mix k g.
+  Required input/output: (Theta ++ E) ++ I, (Lambda ++ Delta) ++ D.
+  Its raw lists differ only by association. Use equality transports.
+
+mix_right_second:
+  a : At Theta C; original root tag is a.before Gamma.
+  Recurse on cut h z g a, obtaining k : G P (E ++ I) (Lambda ++ D).
+  Raw reconstruction: G.mix f k.
+  Raw input/output: (E ++ I) ++ Gamma, (Lambda ++ D) ++ Delta.
+  Required input/output: (E ++ Gamma) ++ I, (Lambda ++ Delta) ++ D.
+  Exchange I/Gamma under E and D/Delta under Lambda, retaining all tags.
+
+First define each reconstruction on a generic k at the child cut's exact output.
+Prove its cut-count, Atomized and Reduced-congruence behavior. State the commuting
+equation with k specialized to the actual positional child cut. Then replace
+that child by the Eliminated witness and use the existing descent to obtain
+rank_step. A row is complete only when its instantiated rank_step is proved.
+
+For the categorical equation, expand native_mix_union and cut_splice, and use
+the two splice-union laws with the already proved fold/exchange comparisons.
+Retain every typed summand and establish the remaining injection/projection/
+distribution identities from existing Reduced laws. Union commutativity,
+associativity and idempotence may simplify matching summands. A summand that
+does not use the selected tag cannot simply be discarded: prove its actual
+effect and any absorption equation. Keep all arrow endpoints explicit.
+Do not introduce a zero in a possibly empty hom-set or use occurrence-graph
+equality as an equality-reflection theorem.
+
+The empty-block cases use the existing actual unit comparisons. Equal labels
+must remain separate positions. The proposed sequent recipes are not already
+verified commutation theorems; record any failed diagram precisely and repair
+the construction without weakening the intended statement.
+
+4. Complete the eight logical binary reconstructions
+
+Reuse the matching original-child descent verbatim. Let h : G P I J be the
+other cut premise, T = z.erase on the left cut side and D = z.erase on the
+right cut side, as above. The following placement rules describe actual
+constructor candidates, not an assumed proof duality.
+
+conjR on the left cut side:
+- First child: the returned child has output J ++ (A :: a.erase). Move that
+  retained A tag to the head, rebuild G.conjR kA g, then move the newly formed
+  conjunction past J in the output. Input lists need association.
+- Second child: move the retained B tag in J ++ (B :: a.erase) to the head,
+  rebuild G.conjR f kB, exchange the T block to the front of the input and
+  move J past the new conjunction and the fixed Delta block in the output.
+
+conjR on the right cut side:
+- First child: its returned output already begins with A. Rebuild G.conjR k g;
+  exchange I/Theta after the erased first-child input, and D/Lambda after the
+  new conjunction and Delta, to recover the original cut's list order.
+- Second child: its returned output already begins with B. Rebuild G.conjR f k;
+  only list-association transports are needed.
+
+disjL on the left cut side:
+- First child: move the retained A in the returned input T ++ (A :: Gamma)
+  to the head, rebuild G.disjL kA g, and move T before the new disjunction.
+  Output lists need association.
+- Second child: move the retained B in T ++ (B :: Theta) to the head, rebuild
+  G.disjL f kB, move T before the new disjunction and fixed Gamma block, and
+  exchange J/Delta in the output.
+
+disjL on the right cut side:
+- First child: its returned input already begins with A. Rebuild G.disjL k g;
+  exchange I/Theta in the input tail and D/Lambda in the output.
+- Second child: its returned input already begins with B. Rebuild G.disjL f k;
+  only list-association transports are needed.
+
+Derive every required output directly from PositionalCut.cut and the actual
+constructor types. Protect the retained A/B tag even when its label equals C
+or another context formula. Use HeadRouting/front and existing erasure/fold
+lemmas where their exact types fit. Routing belongs after rankIH on the original
+child, not before that recursive call. No returned-proof rank bound is needed.
+
+Prove the diagrams for the actual Rules.conjRight/Term.mixedDisj and
+Rules.disjLeft/Rules.sourceConj interpretations. Supply any needed typed
+distribution identity as a proved lemma and instantiate it in each family.
+The eight mix algebra equations alone do not close these logical diagrams.
+Neither a citation to symmetric-net coherence nor an assumed reflection on
+G proofs closes them. Reuse the established reflected diagrams only where
+their actual statements apply.
+
+For each of the eight cases finish:
+  native reconstruction; exact Reduced equation; CutFree/Atomized and
+  congruence laws; eliminated wrapper; rank_step from the existing descent.
+Keep the live table's descent/equation/reconstruction/rank-step statuses separate.
+
+5. Finish the remaining reduction and induction contract
+
+All fourteen blocked cut reductions remain:
+  BlockedL: gammaMix, gammaConj, gammaDisj, conjunction,
+            disjunctionFirst, disjunctionSecond, disjunctionBoth.
+  BlockedR: gammaMix, gammaDisj, gammaConj, disjunction,
+            conjunctionFirst, conjunctionSecond, conjunctionBoth.
+
+Use Clean's actual BlockedL witness in the right premise or BlockedR witness
+in the left premise. Derive the contraction arity and selected positions by
+inversion; do not impose a new binary-contraction assumption. Preserve the
+seven source-shaped constructors on each side.
+
+Gamma families require parallel original smaller-rank subcuts, then actual
+binary reconstruction and context-copy contraction. Logical families eliminate
+the parametric copy/copies first, rebuild a genuinely fresh native principal,
+and recurse with unchanged opposite rank plus 1, strictly below the original
+selected contraction rank. Route below the fresh rule. The source disjLLast
+has exchanges above its principal and is not a native rank-one leaf.
+Preserve actual two/three-copy multiplicities, source first-retaining versus
+native last-retaining transport, singleton conventions and explicit empty exchanges.
+
+The detailed blocked, induction and later-paper requirements in sections 4–7
+of CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt remain binding where not superseded
+by the proved cases above. In particular:
+- Prove a complete constructor/tag dispatcher and the fixed-degree all-ranks
+  Clean theorem under strict DegreeBelow.
+- Only then use simultaneous cleaning at that degree without needing a new
+  rank bound. Discharge strong formula-degree induction.
+- Normalize arbitrary G proofs structurally and export actual unrestricted
+  CutElimination P and AtomizedCutElimination P inhabitants at their exact types.
+- Continue restricted mix/positive/reduced/Boolean coherence, actual presentation
+  and substitution/congruence bridges, both maximality proofs, the model corollary
+  and every required claim in all three appendices. Keep the three milestones
+  and additional whole-paper endpoint distinct.
+
+Do not re-clean at unchanged degree and infer descent. Reuse original selected
+rank, complete inherited AllBlockedAt and every descendant quantifier. Preserve
+conjunction A-then-B, disjunction B-then-A, witnessed zeros, empty hom-sets,
+negative literals, repeated tags and left-first composition.
+
+6. Preserve v7 and reconcile current records
+
+V7 and its exact authorized Appendix C are complete and unchanged. The reviewer
+found no new manuscript defect. Do not rebuild unchanged TeX merely because
+Lean advances. Preserve older versions, diagrams, Appendix A's tagged-block
+and ordinal correspondence, and the accepted disclosure.
+
+The concrete Appendix C Lean correspondences remain open: source p.260 has
+r' < r in (w gamma 3); source p.262 uses RIGHT rank 1 in (w disjunction 1), with
+positive opposite rank giving total rank at least 2. Close those rows only
+after the actual blocked reductions and comparisons are proved.
+
+Apply the mathematical-writing and hostile-referee workflows to actual new
+results. Keep process/review/tool narration outside mathematical prose and its
+comments. Carry any established correction through all affected declarations,
+passages, diagrams and maps. Distinguish an open formalization obligation from
+a manuscript error.
+
+The previous README retained superseded same-side tasks and marked the ad95fb7
+deliveries pending; the current successor corrects those active records.
+Current v7 scope is all THREE appendices. Historical statements about v6's two
+appendices retain that historical meaning. Do not reset current proof or delivery
+status from an older checkpoint.
+
+7. Local verification and delivery
+
+Use the pinned toolchain, one heavy build/audit at a time, scripts/verify.sh,
+full transitive dependency/source-closure checks, all applicable exact signatures
+and all seven established/focused controls. Add focused checks of genuinely new
+binary witnesses at empty blocks, repeated labels and negative/constant-only
+instances. Test actual reconstruction types and denotations, not only descent.
+Retain real failed attempts and exit codes; no custom axioms, proof holes,
+native_decide or conclusion-shaped production assumptions.
+
+Update the live table and active records consistently, and archive a superseded
+NEXT_SESSION verbatim rather than stacking incompatible next-task lists.
+The b8fcd28 continuation is preserved at
+docs/history/CODEX_NEXT_SESSION_B8FCD28.txt. Retain required run reports and both
+reviews. Commit/push verified scoped work to main without force, preserving
+newer work and stash. Compare checked versus committed bytes and verify local/
+origin/live SSH refs locally.
+
+The previous 23 deliveries, the 18-entry same-side register (including the three
+ad95fb7 successor files), and the 14-entry mix register retain their completed
+local receipt status. The reviewer matched the uploaded mix register and all
+14 listed artifacts to committed bytes, and independently matched the three
+ad95fb7 successor files to their receipt/current repository. WSL storage itself
+is not accessible to the cloud reviewer.
+
+Deliver these THREE NEW artifacts from their committed bytes:
+  docs/CODEX_AFTER_B8FCD28_BINARY_CUTS.txt
+  docs/reviews/GENTZEN_B8FCD28_REVIEW.md
+  docs/reviews/GENTZEN_B8FCD28_WRITING.md
+to /mnt/c/Users/fleng/Downloads/ with the same basenames, preserving differing
+destinations under commit-suffixed names. Record exact repository/Downloads
+paths, source commit and byte/SHA-256 comparisons. Deliver each new local run
+report and both reviews too. These three new successor deliveries remain pending
+until local verification; do not mark prior completed deliveries pending again.
+
+Keep the repository private. No license/visibility change, author contact,
+arXiv/Palomar submission or publication is authorized. Keep local build,
+independent replay, Comparator and official/service verification distinct.
+
+Proceed through the concrete construction under the full contract. If an actual
+obstruction remains, retain its exact typed equation/statement, hypotheses,
+failed case and next mathematical obligation; do not substitute another layer
+of conditional infrastructure for the required native reconstruction.

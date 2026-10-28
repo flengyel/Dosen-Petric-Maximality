@@ -2,19 +2,30 @@
 
 ## Completed-run review and active continuation (28 October 2026)
 
-The completed `67de18a` run has been reviewed against its new source and retained
-evidence. Reuse both principal equations, conditional rank-two elimination,
-structural and opposite logical commutations. Continue same-side logical/binary
-cases, fourteen blocked families and the full induction. Global elimination
-and the full-paper endpoint remain open; v7's authorized appendix is complete.
-See [the concrete successor](docs/CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt),
-[the source/evidence review](docs/reviews/GENTZEN_67DE18A_REVIEW.md) and
-[the writing review](docs/reviews/GENTZEN_67DE18A_WRITING.md).
+The completed `b8fcd28` run has been reviewed against all new source and retained
+evidence. Four same-side unary logical branches, opposite structural wrappers,
+twelve binary predecessor descents and eight mix/splice equations are proved.
+Actual binary reconstructions, fourteen blocked reductions, global elimination
+and later full-paper obligations remain open. V7 is unchanged.
+
+See [the concrete successor](docs/CODEX_AFTER_B8FCD28_BINARY_CUTS.txt),
+[the source/evidence review](docs/reviews/GENTZEN_B8FCD28_REVIEW.md) and
+[the writing review](docs/reviews/GENTZEN_B8FCD28_WRITING.md).
+Start with a complete mix_left_first equation, reconstruction and rank step;
+then the other eleven binary branches. The recipes are targets to prove.
 [CODEX_NEXT_SESSION.txt](docs/CODEX_NEXT_SESSION.txt) is the active next-task list;
-its previous text is [archived verbatim](docs/history/CODEX_NEXT_SESSION_67DE18A.txt).
-Retained checkpoint sections below record historical scope, not a reset of the
-current construction. The 23 existing deliveries remain complete in the local
-receipt; the three new successor artifacts await local committed-byte delivery.
+its predecessor is [archived verbatim](docs/history/CODEX_NEXT_SESSION_B8FCD28.txt).
+
+Final local verification records 524 Lean files, 11,780 audited declarations,
+ten exact check files and seven rejected controls. The cloud reviewer matched
+all 532 archived files to their manifest and Git blobs without building.
+Final evidence is in `provenance/wsl-gentzen-mix-union/`; the earlier same-side
+phase is retained in `provenance/wsl-gentzen-after-67de18a/`.
+
+The earlier 23 deliveries and both current registers retain completed local
+receipt status, including all three ad95fb7 successor artifacts. The three NEW
+B8FCD28 instruction/review artifacts await local committed-byte Downloads delivery.
+Historical sections below do not reset current proof, task or delivery status.
 
 ## Current manuscript: v7 with the authorized errata appendix
 
@@ -40,7 +51,10 @@ the concrete blocked reductions remain open. Global cut elimination, coherence a
 retain their current status. The underlying v6 target is supplemented, not reduced.
 
 
-## Current opposite logical checkpoint (28 October 2026)
+## Retained opposite logical checkpoint (28 October 2026)
+
+Historical scope through 67de18a; the current continuation above supersedes its
+open same-side unary and opposite structural-wrapper tasks.
 
 `CutCommutation.opposite_conjL` and `opposite_disjR` prove the two actual opposite
 unary logical commuting families at arbitrary selected gaps and original output

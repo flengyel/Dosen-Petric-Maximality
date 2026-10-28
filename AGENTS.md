@@ -44,11 +44,12 @@ Maintain exact claim-to-declaration correspondence. Preserve the existing
 symmetric-fold proof as an alternative route.
 
 `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md` governs this overall endpoint;
-`docs/CODEX_NEXT_SESSION.txt` governs the immediate continuation after the completed principal, structural
-and opposite logical cut reductions toward global cut elimination and coherence.
-The concrete successor is `docs/CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt`;
-retain its source/rank/atomization decisions and completed-run review scope. The existing
-three milestones remain distinct;
+`docs/CODEX_NEXT_SESSION.txt` governs the immediate continuation after b8fcd28.
+The concrete successor is `docs/CODEX_AFTER_B8FCD28_BINARY_CUTS.txt`; read its
+two B8FCD28 reviews. Complete actual binary cut reconstructions, then blocked
+reductions and global induction. Reuse the completed unary branches, binary
+descents and mix algebra. Retain earlier source/rank/atomization decisions.
+The existing three milestones remain distinct;
 even actual-presentation maximality alone does not certify the entire paper.
 Published dependencies used in the proof must be proved or supplied by verified,
 compatible Lean results, not left as uninstantiated fields or mathematical axioms.
