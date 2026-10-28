@@ -18,23 +18,65 @@ report: `MANUSCRIPT_V7_ERRATA_REPORT.md`; reviews:
 `reviews/MANUSCRIPT_V7_ERRATA_HOSTILE.md`, `reviews/MANUSCRIPT_V7_ERRATA_WRITING.md`.
 
 The manuscript addition is complete; its concrete blocked-reduction Lean
-correspondence remains open. The existing head-cut positivity theorem is
-available. Global cut elimination, coherence and all other full-paper obligations
+correspondence remains open. Selected-cut positivity and native fresh-principal rank-one laws now compile;
+the concrete blocked reductions remain open. Global cut elimination, coherence and all other full-paper obligations
 retain their current status. The underlying v6 target is supplemented, not reduced.
 
-The completed implementation checkpoint is
-5c72a84c665bdc5102e546cef88f9fd29838e9b4, incorporating a006ecd.
-Simultaneous clean-cut normalization and the initial identity/zero/thinning/
-constant cut equations are proved. Global cut elimination remains open.
+## Current selected-cut checkpoint (28 October 2026)
 
-This docs-only successor follows the completed run and source/evidence review.
-Read CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt for the concrete construction,
-reviews/GENTZEN_5C72A84_REVIEW.md and GENTZEN_5C72A84_WRITING.md, current AGENTS,
-CODEX_FULL_MANUSCRIPT_FORMALIZATION, all maps/corrections and PALOMAR_REQUIREMENTS.
-The prior continuation is retained verbatim at history/CODEX_NEXT_SESSION_5C72A84.txt.
-Preserve newer work, stash dedfd8fc8cd49930e9a162d5be585215b062a43c, other checkouts,
-v4/v5/v6 and private visibility. The author subsequently requested the two source
-errata in the arXiv paper; the exact Appendix C addition is in the successor. Incorporate intervening work without reset or force.
+The positional interface and complete least-rank classification now compile.
+`PositionalCut.atomic_rank_two` returns a cut-free atomized witness with Reduced
+equality at the exact positional output for every literal and both constants.
+`rank_two_classification` exhausts all selected rank-two cuts: this atomic branch
+or the conjunction/disjunction principal pair. Compound principal elimination
+remains open. `CutElimination` and `AtomizedCutElimination` are endpoint definitions,
+not proved theorems.
+
+`At.erase`, `retain`, `toHead_get` and `toHead_get_retain` retain every tag;
+head routing is identity. `PositionalCut.rank` measures the original premises.
+`routed_rank_eq` separately accounts for zero/one exchange per routed selection.
+`AllBlockedAt` has exact cluster and head correspondences, branch characterization
+and complete address/predecessor inheritance. `clean_premises` reuses the completed
+simultaneous clean-cut theorem at arbitrary original selected sequents, without a
+rank bound. The actual predecessor clean/rank lemmas justify smaller subcuts.
+
+Fresh native principal occurrences have rank one and no tied lower contraction,
+independently of the returned inner proof sizes. Source disjLLast exchange
+wrappers remain separate. `CutCommutation.opposite_left` and `opposite_right`
+prove actual Reduced equations for all opposite-side structural programs,
+including contractions, using fixed-context transports. The remaining same-side,
+logical, binary and fourteen blocked reductions remain open.
+
+Checked: **464 screened Lean files / 11,310 audited project declarations**.
+Strict build/dependency audit, four exact signature files, five expected control
+rejections, public source closure, v4/v5/v6/v7 hashes and whitespace pass.
+Evidence: `provenance/wsl-gentzen-positional-cuts/`; report:
+`GENTZEN_POSITIONAL_CUTS_REPORT.md`; reviews:
+`reviews/GENTZEN_POSITIONAL_CUTS_HOSTILE.md`,
+`reviews/GENTZEN_POSITIONAL_CUTS_WRITING.md`.
+
+| Source / target | Exact declaration | Status |
+| --- | --- | --- |
+| Selected cut and residual tags | `PositionalCut.cut`, `head`, `count`, `atomized`, `congr`; `At.toHead_get_retain` | Compiled, actual existing G rules and transports. |
+| Original selected measure | `rank_ge_two`, `rank_two_iff_leaves`, `routed_rank_eq` | Compiled; native exchange cost is explicit. |
+| Clean recursive premises | `AllBlockedAt.inherit`, `clean_left/right_predecessor`, `rank_left/right_predecessor` | Compiled for actual selected ancestry; no re-cleaning rank inference. |
+| Simultaneous selected normalization | `PositionalCut.clean_premises` | Compiled at original sequents, without rank bound. |
+| §11.2 pp.253–254, §11.5, §12.5 | `atomic_rank_two`, `rank_two_classification` | Exhaustive atomic base elimination and complete least-rank classification; compound branch remains to eliminate. |
+| Fresh principal rank argument | `rank_fresh_disjL`, `rank_fresh_conjR`, both strict comparison lemmas | Native rank one compiled; concrete sequential blocked reductions remain open. |
+| Opposite structural commutations | `CutCommutation.opposite_left`, `opposite_right` | Compiled equations; remaining commutations and global induction open. |
+
+Continue the full-paper contract. Actual compound equations, all remaining
+commutations and blocked reductions, global cut elimination, coherence, actual
+presentation/congruence/substitution bridges, short q_A/e_A, maximality, model
+corollary and every appendix claim remain the authorized work. The three
+milestones and the whole-paper endpoint remain distinct. V7 is unchanged.
+
+The incorporated successor is 1376bcbe1d1a8aa8eb69142f85401f078cfc14c9;
+its exact instructions/reviews are retained. V7 and its eight committed-byte
+Downloads deliveries were completed early at e113c00/d3a2336. The preceding
+proof baseline is 5c72a84; all its Reducibility, Blocked-w, simultaneous clean-cut
+and regression work remains intact. Preserve the stash and all intervening work.
+This checkpoint does not terminate the full-paper authorization.
 
 REUSE
 
@@ -45,34 +87,27 @@ joint atomized Reducibility, chosen-witness rank decomposition and the completed
 finite descent. Preserve the unrestricted exports and old negative atomizer
 example; boundary_clean supplies its positive simultaneous representative.
 
-CutBase, CutConstants and CutThinning supply the initial base equations and
-actual repairs. Their existence does not yet classify every rank-two cut or
-prove global elimination. The complete source review supports the claimed
-checkpoint; no new manuscript defect was established.
+Reuse CutBase, CutConstants and CutThinning together with the completed
+PositionalCut.rank_two_classification and atomic_rank_two. Compound principal
+elimination and global elimination remain open. The prior source review and
+current local verification retain their distinct evidence scope.
 
 NEXT CONSTRUCTION
 
-1. State the arbitrary-P, same-sequent global CutFree/equal-denotation endpoint.
-   Use outer formula-degree induction and inner selected-rank induction for
-   clean cuts. Complete the latter for all ranks before applying unrestricted
-   clean normalization at that degree. Count top/bot in degree; literals have
-   degree zero. Smaller-degree calls allow arbitrary rank.
-2. Handle exact selected positions before commuting cuts. G.cut selects heads;
-   routing internal slots adds exchange nodes counted by rho. Prefer a derived
-   positional cut macro with actual exchange denotation and an explicitly
-   separate measure on the original selected premises. Prove head specialization
-   and cleanliness inheritance. Preserve existing G, rho and cutRank.
-3. Exhaust minimal-rank literal/zero/thinning/constant/principal cases, using
-   actual sourceArity and Atomized. Prove the compound principal equations
-   with strictly smaller formula degrees, then all parametric commutations.
-4. Prove all seven BlockedL and seven BlockedR reductions. For sequential
-   principal blocked reductions, eliminate the inner cut(s), rebuild a fresh
-   principal occurrence and prove its selected rank is one. This controls the
-   next outer cut without a rank bound on the returned inner normal form.
-   Account for source/native exchange wrappers explicitly.
-5. Assemble topmost elimination, then global elimination by structural induction
-   on G. Keep all equalities in Reduced and discharge every recursive hypothesis.
-   No caller eliminator, faithfulness premise or unproved coherence theorem.
+1. Continue the outer strong formula-degree / inner all-selected-ranks plan.
+   The exact endpoints and correct degrees are now defined; they remain unproved.
+2. The selected interface, clean inheritance, routing costs, complete rank-two
+   classification and its atomic elimination branch compile. Reuse them.
+3. Prove the actual conjunction/disjunction principal reduction equations with
+   nested strictly smaller-degree cuts, preserving all contexts and equalities.
+   Opposite-side structural commutations compile; prove the remaining same-side
+   structural, opposite/same-side logical and both binary-branch commutations.
+4. Prove all seven BlockedL and seven BlockedR reductions. General native fresh
+   rank-one and selected predecessor facts compile; instantiate them in the
+   actual sequential/parallel constructions with explicit source adapters.
+5. Complete the clean fixed-degree theorem for all ranks before unrestricted
+   clean normalization at that degree. Then assemble topmost elimination and
+   global structural induction. Continue all later full-paper obligations.
 
 At unchanged degree, do not re-clean a recursive cut and infer a rank decrease:
 clean_cut_premises has no rank bound. Prove the actual subcut is clean and smaller.
@@ -104,9 +139,10 @@ ordinal-correspondence or witnessed-zero decisions.
 
 VERIFY AND DELIVER LOCALLY
 
-The completed run records 442 Lean files / 11,105 audited declarations, three
-exact-signature checks, five control rejections, manuscript hashes and whitespace.
-The 458-source inventory and 62 logs remain retained, including failed attempts.
+The current proof verification records 464 Lean files / 11,310 audited declarations,
+four exact-signature checks, five control rejections, v4/v5/v6/v7 manuscript hashes
+and whitespace. The prior evidence remains retained; current source inventory,
+all command exits and failed attempts are in provenance/wsl-gentzen-positional-cuts.
 Use the pinned toolchain, one heavy build/audit at a time, exact public types,
 full dependency audit and existing controls for new source. Update all active
 records consistently. Commit/push verified scoped work to main without force;

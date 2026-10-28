@@ -1,0 +1,105 @@
+DosenPetric/GentzenAtomicCutElimination.lean	14	theorem atomic_rank_two {Γ Δ Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenCutEliminationSpec.lean	12	def cutDegree : NormalForm P → Nat
+DosenPetric/GentzenCutEliminationSpec.lean	17	theorem cutDegree_conj_left (A B : NormalForm P) : cutDegree A < cutDegree (.conj A B) := by
+DosenPetric/GentzenCutEliminationSpec.lean	20	theorem cutDegree_conj_right (A B : NormalForm P) : cutDegree B < cutDegree (.conj A B) := by
+DosenPetric/GentzenCutEliminationSpec.lean	23	theorem cutDegree_disj_left (A B : NormalForm P) : cutDegree A < cutDegree (.disj A B) := by
+DosenPetric/GentzenCutEliminationSpec.lean	26	theorem cutDegree_disj_right (A B : NormalForm P) : cutDegree B < cutDegree (.disj A B) := by
+DosenPetric/GentzenCutEliminationSpec.lean	30	def CutElimination (P : Type u) : Prop :=
+DosenPetric/GentzenCutEliminationSpec.lean	35	def AtomizedCutElimination (P : Type u) : Prop :=
+DosenPetric/GentzenCutSplice.lean	12	def splice {X Y C D Z : NormalForm P} (f : Hom X (.disj C D))
+DosenPetric/GentzenCutSplice.lean	20	theorem input (k : Hom X' X) (f : Hom X (.disj C D)) (g : Hom (.conj C Y) Z) :
+DosenPetric/GentzenCutSplice.lean	24	theorem output (f : Hom X (.disj C D)) (g : Hom (.conj C Y) Z) (k : Hom Z Z') :
+DosenPetric/GentzenCutSplice.lean	28	theorem context (k : Hom Y' Y) (f : Hom X (.disj C D)) (g : Hom (.conj C Y) Z) :
+DosenPetric/GentzenCutSplice.lean	48	theorem residual (k : Hom D D') (f : Hom X (.disj C D)) (g : Hom (.conj C Y) Z) :
+DosenPetric/GentzenCutSplice.lean	63	theorem cut_splice {Γ Θ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenCutStructuralCommutation.lean	14	theorem opposite_left {F U Θ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenCutStructuralCommutation.lean	27	theorem opposite_right {Γ Θ Δ F U : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenExchangeScriptRanks.lean	13	def steps : {F U : List (NormalForm P)} → ExchangeScript P F U → Nat
+DosenPetric/GentzenExchangeScriptRanks.lean	19	theorem rho_left {F U Δ : List (NormalForm P)} (p : ExchangeScript P F U)
+DosenPetric/GentzenExchangeScriptRanks.lean	31	theorem rho_right {F U Γ : List (NormalForm P)} (p : ExchangeScript P F U)
+DosenPetric/GentzenExchangeScriptRanks.lean	46	theorem toHead_steps {Γ : List (NormalForm P)} {C : NormalForm P} (a : At Γ C) :
+DosenPetric/GentzenFreshPrincipals.lean	14	theorem conjR_principal_blocked {Γ Θ Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenFreshPrincipals.lean	19	theorem disjL_principal_blocked {Γ Θ Δ Λ : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenFreshPrincipals.lean	24	theorem conjL_principal_blocked (Γ Θ Δ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenFreshPrincipals.lean	29	theorem disjR_principal_blocked (Γ Δ Λ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenFreshPrincipals.lean	38	theorem rank_fresh_disjL {Γ Δ F U V W : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenFreshPrincipals.lean	44	theorem rank_fresh_conjR {Γ Δ F U V W : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenFreshPrincipals.lean	51	theorem rank_fresh_disjL_lt {Γ Δ Θ Λ F U V W : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenFreshPrincipals.lean	59	theorem rank_fresh_conjR_lt {Γ Δ Θ Λ F U V W : List (NormalForm P)} {A B : NormalForm P}
+DosenPetric/GentzenLeafShapes.lean	13	inductive RightLeaf : {Γ Δ : List (NormalForm P)} → (g : G P Γ Δ) →
+DosenPetric/GentzenLeafShapes.lean	26	inductive LeftLeaf : {Γ Δ : List (NormalForm P)} → (g : G P Γ Δ) →
+DosenPetric/GentzenLeafShapes.lean	38	theorem rightLeaf_complete {Γ Δ : List (NormalForm P)} (f : G P Γ Δ)
+DosenPetric/GentzenLeafShapes.lean	70	theorem leftLeaf_complete {Γ Δ : List (NormalForm P)} (g : G P Γ Δ)
+DosenPetric/GentzenPositionalCutBase.lean	15	def Eliminated {Γ Δ Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenPositionalCutBase.lean	20	theorem thin_thin (Γ Δ Λ F U V : List (NormalForm P)) (C : NormalForm P)
+DosenPetric/GentzenPositionalCutBase.lean	35	theorem endomorphism_thin {Γ Θ Λ : List (NormalForm P)} (C : NormalForm P)
+DosenPetric/GentzenPositionalCutBase.lean	48	theorem thin_endomorphism {Γ Δ Λ : List (NormalForm P)} (C : NormalForm P)
+DosenPetric/GentzenPositionalCutBase.lean	61	theorem top_thin (Γ Θ Λ : List (NormalForm P)) (g : G P (Γ ++ Θ) Λ)
+DosenPetric/GentzenPositionalCutBase.lean	73	theorem thin_bot (Γ Δ Λ : List (NormalForm P)) (f : G P Γ (Δ ++ Λ))
+DosenPetric/GentzenPositionalCuts.lean	16	def cut (f : G P Γ Δ) (x : At Δ C) (g : G P Θ Λ) (y : At Θ C) :
+DosenPetric/GentzenPositionalCuts.lean	20	theorem head (f : G P Γ (C :: Δ)) (g : G P (C :: Θ) Λ) :
+DosenPetric/GentzenPositionalCuts.lean	23	theorem count (f : G P Γ Δ) (x : At Δ C) (g : G P Θ Λ) (y : At Θ C) :
+DosenPetric/GentzenPositionalCuts.lean	27	theorem atomized (f : G P Γ Δ) (x : At Δ C) (g : G P Θ Λ) (y : At Θ C) :
+DosenPetric/GentzenPositionalCuts.lean	31	theorem denote (f : G P Γ Δ) (x : At Δ C) (g : G P Θ Λ) (y : At Θ C) :
+DosenPetric/GentzenPositionalCuts.lean	34	theorem congr {f f' : G P Γ Δ} (x : At Δ C) {g g' : G P Θ Λ} (y : At Θ C)
+DosenPetric/GentzenPositionalCuts.lean	44	def rank (f : G P Γ Δ) (x : At Δ C) (g : G P Θ Λ) (y : At Θ C) : Nat :=
+DosenPetric/GentzenPositionalCuts.lean	47	theorem rank_head (f : G P Γ (C :: Δ)) (g : G P (C :: Θ) Λ) :
+DosenPetric/GentzenPositionalCuts.lean	50	theorem rank_ge_two (f : G P Γ Δ) (x : At Δ C) (g : G P Θ Λ) (y : At Θ C) :
+DosenPetric/GentzenPositionalCuts.lean	57	theorem rank_two_iff_leaves (f : G P Γ Δ) (x : At Δ C) (g : G P Θ Λ) (y : At Θ C) :
+DosenPetric/GentzenPositionalRoutingRanks.lean	14	theorem routed_rank {Γ Δ Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenPositionalRoutingRanks.lean	22	theorem routed_rank_eq {Γ Δ Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenRankTwoClassification.lean	14	inductive PrincipalPair : {Γ Δ Θ Λ : List (NormalForm P)} → {C : NormalForm P} →
+DosenPetric/GentzenRankTwoClassification.lean	26	theorem rank_two_classification {Γ Δ Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenSelectedBlocked.lean	14	def AllBlockedAt {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (s : SequentSide)
+DosenPetric/GentzenSelectedBlocked.lean	20	theorem allBlockedAt_iff_cluster {Γ Δ : List (NormalForm P)} (g : G P Γ Δ)
+DosenPetric/GentzenSelectedBlocked.lean	32	theorem allBlockedAt_head_left {Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenSelectedBlocked.lean	42	theorem allBlockedAt_head_right {Γ Δ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenSelectedBlocked.lean	53	theorem AllBlockedAt.inherit {Γ Δ U V : List (NormalForm P)} {g : G P Γ Δ}
+DosenPetric/GentzenSelectedBlocked.lean	63	theorem allBlockedAt_of_leaf {Γ Δ : List (NormalForm P)} (g : G P Γ Δ)
+DosenPetric/GentzenSelectedBlocked.lean	88	def Clean {Γ Δ Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenSelectedBlockedBranches.lean	13	theorem allBlockedAt_iff_branches {Γ Δ : List (NormalForm P)} (g : G P Γ Δ)
+DosenPetric/GentzenSelectedCleanCuts.lean	16	theorem clean_premises {Γ Δ Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenSelectedExchangeBlocked.lean	14	theorem blocked_left {F U Δ : List (NormalForm P)} (p : ExchangeScript P F U)
+DosenPetric/GentzenSelectedExchangeBlocked.lean	41	theorem blocked_right {F U Γ : List (NormalForm P)} (p : ExchangeScript P F U)
+DosenPetric/GentzenSelectedPositions.lean	16	def erase {Γ : List (NormalForm P)} {C : NormalForm P} : At Γ C → List (NormalForm P)
+DosenPetric/GentzenSelectedPositions.lean	20	def preceding {Γ : List (NormalForm P)} {C : NormalForm P} : At Γ C → List (NormalForm P)
+DosenPetric/GentzenSelectedPositions.lean	24	def suffix {Γ : List (NormalForm P)} {C : NormalForm P} : At Γ C → List (NormalForm P)
+DosenPetric/GentzenSelectedPositions.lean	28	theorem context_eq {Γ : List (NormalForm P)} {C : NormalForm P} (a : At Γ C) :
+DosenPetric/GentzenSelectedPositions.lean	34	theorem erase_eq {Γ : List (NormalForm P)} {C : NormalForm P} (a : At Γ C) :
+DosenPetric/GentzenSelectedPositions.lean	40	theorem preceding_length {Γ : List (NormalForm P)} {C : NormalForm P} (a : At Γ C) :
+DosenPetric/GentzenSelectedPositions.lean	47	def retain {Γ : List (NormalForm P)} {C : NormalForm P} (a : At Γ C)
+DosenPetric/GentzenSelectedPositions.lean	55	theorem retain_index {Γ : List (NormalForm P)} {C B : NormalForm P}
+DosenPetric/GentzenSelectedPositions.lean	69	def toHead {Γ : List (NormalForm P)} {C : NormalForm P} (a : At Γ C) :
+DosenPetric/GentzenSelectedPositions.lean	80	theorem toHead_get {Γ : List (NormalForm P)} {C : NormalForm P} (a : At Γ C) :
+DosenPetric/GentzenSelectedPositions.lean	92	theorem toHead_get_index {Γ : List (NormalForm P)} {C B : NormalForm P}
+DosenPetric/GentzenSelectedPositions.lean	104	theorem toHead_get_retain {Γ : List (NormalForm P)} {C B : NormalForm P}
+DosenPetric/GentzenSelectedPositions.lean	116	theorem erase_shift (Γ Θ : List (NormalForm P)) (C : NormalForm P) :
+DosenPetric/GentzenSelectedRecursion.lean	14	theorem rank_left_predecessor (f : G P Γ Δ) (x : At Δ C)
+DosenPetric/GentzenSelectedRecursion.lean	22	theorem rank_right_predecessor (f : G P Γ Δ) (x : At Δ C)
+DosenPetric/GentzenSelectedRecursion.lean	30	theorem clean_left_predecessor {f : G P Γ Δ} {x : At Δ C}
+DosenPetric/GentzenSelectedRecursion.lean	42	theorem clean_right_predecessor {f : G P Γ Δ} {x : At Δ C}
+DosenPetric/GentzenSelectedThinning.lean	15	theorem toHead_thin_get (Γ Θ : List (NormalForm P)) (C : NormalForm P)
+DosenPetric/GentzenSelectedThinning.lean	30	theorem toHead_thin_arrow (o : Op) (Γ Θ : List (NormalForm P)) (C : NormalForm P) :
+DosenPetric/GentzenSelectedThinning.lean	50	theorem identity_sideArrow (o : Op) (Γ : List (NormalForm P)) :
+DosenPetric/GentzenSelectedThinning.lean	59	theorem reindex_left_denote {Γ Γ' Δ : List (NormalForm P)} (h : Γ' = Γ)
+DosenPetric/GentzenSelectedThinning.lean	68	theorem reindex_right_denote {Γ Δ Δ' : List (NormalForm P)} (h : Δ' = Δ)
+DosenPetric/GentzenSelectedThinning.lean	77	theorem toHead_thinL_denote (Γ Θ Δ : List (NormalForm P)) (C : NormalForm P)
+DosenPetric/GentzenSelectedThinning.lean	93	theorem toHead_thinR_denote (Γ Δ Λ : List (NormalForm P)) (C : NormalForm P)
+DosenPetric/GentzenStructuralPrefix.lean	14	def prefixFixed (p : StructuralProgram P F U) (Γ : List (NormalForm P)) :
+DosenPetric/GentzenStructuralPrefix.lean	20	theorem prefixFixed_before (p : StructuralProgram P F U) {Γ : List (NormalForm P)}
+DosenPetric/GentzenStructuralPrefix.lean	26	theorem prefixFixed_shift (p : StructuralProgram P F U) (Γ : List (NormalForm P))
+DosenPetric/GentzenStructuralPrefix.lean	33	theorem prefixFixed_atomic (p : StructuralProgram P F U) (Γ : List (NormalForm P))
+DosenPetric/GentzenStructuralPrefix.lean	39	theorem prefixFixed_join (p : StructuralProgram P F U) (o : Op) (Γ : List (NormalForm P)) :
+DosenPetric/GentzenStructuralPrefix.lean	57	theorem prefixFixed_split (p : StructuralProgram P F U) (o : Op) (Γ : List (NormalForm P)) :
+DosenPetric/GentzenStructuralProgramRanks.lean	12	def steps : {F U : List (NormalForm P)} → StructuralProgram P F U → Nat
+DosenPetric/GentzenStructuralProgramRanks.lean	18	theorem rho_left_opposite {F U Δ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenStructuralProgramRanks.lean	31	theorem rho_right_opposite {F U Γ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenStructuralSuffix.lean	15	def swapBlocks (F U : List (NormalForm P)) : StructuralProgram P (U ++ F) (F ++ U) :=
+DosenPetric/GentzenStructuralSuffix.lean	20	theorem swapBlocks_before (F U : List (NormalForm P)) {A : NormalForm P} (a : At F A) :
+DosenPetric/GentzenStructuralSuffix.lean	28	theorem swapBlocks_shift (F U : List (NormalForm P)) {A : NormalForm P} (a : At U A) :
+DosenPetric/GentzenStructuralSuffix.lean	38	def suffixFixed (p : StructuralProgram P F U) (Δ : List (NormalForm P)) :
+DosenPetric/GentzenStructuralSuffix.lean	42	theorem suffixFixed_before (p : StructuralProgram P F U) (Δ : List (NormalForm P))
+DosenPetric/GentzenStructuralSuffix.lean	48	theorem suffixFixed_shift (p : StructuralProgram P F U) (Δ : List (NormalForm P))
+DosenPetric/GentzenStructuralSuffix.lean	54	theorem suffixFixed_atomic (p : StructuralProgram P F U) (Δ : List (NormalForm P))
+DosenPetric/GentzenStructuralSuffix.lean	58	theorem suffixFixed_join (p : StructuralProgram P F U) (o : Op) (Δ : List (NormalForm P)) :
+DosenPetric/GentzenStructuralSuffix.lean	76	theorem suffixFixed_split (p : StructuralProgram P F U) (o : Op) (Δ : List (NormalForm P)) :

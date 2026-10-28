@@ -14,6 +14,55 @@ and inspected locally; the governing source/PDF anchors and claim ledger are upd
 This explicit addition supplements all v6 obligations; it does not narrow them.
 Its mathematical rank explanations also require exact Lean correspondence.
 
+## Current selected-cut checkpoint (28 October 2026)
+
+The positional interface and complete least-rank classification now compile.
+`PositionalCut.atomic_rank_two` returns a cut-free atomized witness with Reduced
+equality at the exact positional output for every literal and both constants.
+`rank_two_classification` exhausts all selected rank-two cuts: this atomic branch
+or the conjunction/disjunction principal pair. Compound principal elimination
+remains open. `CutElimination` and `AtomizedCutElimination` are endpoint definitions,
+not proved theorems.
+
+`At.erase`, `retain`, `toHead_get` and `toHead_get_retain` retain every tag;
+head routing is identity. `PositionalCut.rank` measures the original premises.
+`routed_rank_eq` separately accounts for zero/one exchange per routed selection.
+`AllBlockedAt` has exact cluster and head correspondences, branch characterization
+and complete address/predecessor inheritance. `clean_premises` reuses the completed
+simultaneous clean-cut theorem at arbitrary original selected sequents, without a
+rank bound. The actual predecessor clean/rank lemmas justify smaller subcuts.
+
+Fresh native principal occurrences have rank one and no tied lower contraction,
+independently of the returned inner proof sizes. Source disjLLast exchange
+wrappers remain separate. `CutCommutation.opposite_left` and `opposite_right`
+prove actual Reduced equations for all opposite-side structural programs,
+including contractions, using fixed-context transports. The remaining same-side,
+logical, binary and fourteen blocked reductions remain open.
+
+Checked: **464 screened Lean files / 11,310 audited project declarations**.
+Strict build/dependency audit, four exact signature files, five expected control
+rejections, public source closure, v4/v5/v6/v7 hashes and whitespace pass.
+Evidence: `provenance/wsl-gentzen-positional-cuts/`; report:
+`GENTZEN_POSITIONAL_CUTS_REPORT.md`; reviews:
+`reviews/GENTZEN_POSITIONAL_CUTS_HOSTILE.md`,
+`reviews/GENTZEN_POSITIONAL_CUTS_WRITING.md`.
+
+| Source / target | Exact declaration | Status |
+| --- | --- | --- |
+| Selected cut and residual tags | `PositionalCut.cut`, `head`, `count`, `atomized`, `congr`; `At.toHead_get_retain` | Compiled, actual existing G rules and transports. |
+| Original selected measure | `rank_ge_two`, `rank_two_iff_leaves`, `routed_rank_eq` | Compiled; native exchange cost is explicit. |
+| Clean recursive premises | `AllBlockedAt.inherit`, `clean_left/right_predecessor`, `rank_left/right_predecessor` | Compiled for actual selected ancestry; no re-cleaning rank inference. |
+| Simultaneous selected normalization | `PositionalCut.clean_premises` | Compiled at original sequents, without rank bound. |
+| §11.2 pp.253–254, §11.5, §12.5 | `atomic_rank_two`, `rank_two_classification` | Exhaustive atomic base elimination and complete least-rank classification; compound branch remains to eliminate. |
+| Fresh principal rank argument | `rank_fresh_disjL`, `rank_fresh_conjR`, both strict comparison lemmas | Native rank one compiled; concrete sequential blocked reductions remain open. |
+| Opposite structural commutations | `CutCommutation.opposite_left`, `opposite_right` | Compiled equations; remaining commutations and global induction open. |
+
+Continue the full-paper contract. Actual compound equations, all remaining
+commutations and blocked reductions, global cut elimination, coherence, actual
+presentation/congruence/substitution bridges, short q_A/e_A, maximality, model
+corollary and every appendix claim remain the authorized work. The three
+milestones and the whole-paper endpoint remain distinct. V7 is unchanged.
+
 ## Governing source and instruction order
 
 The active manuscript is v7, dated 28 October 2026. Its source is

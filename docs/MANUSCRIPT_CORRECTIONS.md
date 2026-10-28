@@ -242,3 +242,14 @@ latexmk build has resolved references/citations and no layout warnings.
 Old manuscript blobs retain their hashes. The active anchors and claim/status
 records are updated together. This resolves the manuscript-addition obligation;
 it does not close the new concrete Lean rank-correspondence obligations.
+
+## Selected-cut rank and base-case progress (28 October 2026)
+
+The v7 Appendix C source/PDF bytes remain unchanged. PositionalCut.rank_ge_two
+and rank_head now close the opening rank/positivity correspondence at arbitrary
+exact positions. Native fresh disjL rank one and its strict comparison compile,
+as do selected ancestor/predecessor cleanliness and rank laws. The source
+p.260 gammaDisj and p.262 sequential blocked disjunction reduction correspondences
+remain open until their actual equations/adapters are implemented. No source
+wrapper is assigned the native rank. All current statement/coverage/correspondence,
+validation, contract and continuation records carry this distinction together.

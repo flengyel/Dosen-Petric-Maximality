@@ -19,38 +19,59 @@ report: [MANUSCRIPT_V7_ERRATA_REPORT.md](docs/MANUSCRIPT_V7_ERRATA_REPORT.md); r
 [writing review](docs/reviews/MANUSCRIPT_V7_ERRATA_WRITING.md).
 
 The manuscript addition is complete; its concrete blocked-reduction Lean
-correspondence remains open. The existing head-cut positivity theorem is
-available. Global cut elimination, coherence and all other full-paper obligations
+correspondence remains open. Selected-cut positivity and native fresh-principal rank-one laws now compile;
+the concrete blocked reductions remain open. Global cut elimination, coherence and all other full-paper obligations
 retain their current status. The underlying v6 target is supplemented, not reduced.
 
 
-Simultaneous **clean-cut normalization** now compiles in the existing Reduced
-presentation: original sequents, cut-free and atomized premises, individual
-Reduced equalities and every tied contraction blocked on both sides.
-The proof realizes routes with atomic omissions, supplies joint atomized
-reduction witnesses and reuses the completed finite multiset descent.
+## Current selected-cut checkpoint (28 October 2026)
 
-The initial cut-elimination equations for identities, atomic zeros, thinning
-and both constants also compile. Exhaustive rank classification, the commuting
-and blocked-contraction reductions, global elimination and coherence remain open.
-The full-paper endpoint remains open; unrestricted Reducibility, Blocked-w,
-the failed post-atomization preservation example and manuscript v4/v5/v6 are retained.
+The positional interface and complete least-rank classification now compile.
+`PositionalCut.atomic_rank_two` returns a cut-free atomized witness with Reduced
+equality at the exact positional output for every literal and both constants.
+`rank_two_classification` exhausts all selected rank-two cuts: this atomic branch
+or the conjunction/disjunction principal pair. Compound principal elimination
+remains open. `CutElimination` and `AtomizedCutElimination` are endpoint definitions,
+not proved theorems.
 
-Final local verification: **442 screened Lean files / 11,105 audited
-project declarations**. The three exact-signature files, five negative controls,
-public source closure and manuscript hashes pass. See the
-[report](docs/GENTZEN_CLEAN_CUTS_REPORT.md),
-[hostile review](docs/reviews/GENTZEN_CLEAN_CUTS_HOSTILE.md),
-[writing review](docs/reviews/GENTZEN_CLEAN_CUTS_WRITING.md),
-[maps](docs/MANUSCRIPT_COVERAGE.md) and
-[continuation](docs/CODEX_NEXT_SESSION.txt). The preceding README is preserved in
-docs/history/README_A006ECD.md.
+`At.erase`, `retain`, `toHead_get` and `toHead_get_retain` retain every tag;
+head routing is identity. `PositionalCut.rank` measures the original premises.
+`routed_rank_eq` separately accounts for zero/one exchange per routed selection.
+`AllBlockedAt` has exact cluster and head correspondences, branch characterization
+and complete address/predecessor inheritance. `clean_premises` reuses the completed
+simultaneous clean-cut theorem at arbitrary original selected sequents, without a
+rank bound. The actual predecessor clean/rank lemmas justify smaller subcuts.
 
-The [completed-run review](docs/reviews/GENTZEN_5C72A84_REVIEW.md) and
-[detailed successor](docs/CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt) now address
-global cut elimination. The author has also requested the two verified source
-errata in the arXiv paper. V7 now includes the exact supplied Appendix C;
-local insertion, PDF verification and active manuscript records are complete.
+Fresh native principal occurrences have rank one and no tied lower contraction,
+independently of the returned inner proof sizes. Source disjLLast exchange
+wrappers remain separate. `CutCommutation.opposite_left` and `opposite_right`
+prove actual Reduced equations for all opposite-side structural programs,
+including contractions, using fixed-context transports. The remaining same-side,
+logical, binary and fourteen blocked reductions remain open.
+
+Checked: **464 screened Lean files / 11,310 audited project declarations**.
+Strict build/dependency audit, four exact signature files, five expected control
+rejections, public source closure, v4/v5/v6/v7 hashes and whitespace pass.
+Evidence: `provenance/wsl-gentzen-positional-cuts/`; report:
+[report](docs/GENTZEN_POSITIONAL_CUTS_REPORT.md); reviews:
+[hostile review](docs/reviews/GENTZEN_POSITIONAL_CUTS_HOSTILE.md),
+[writing review](docs/reviews/GENTZEN_POSITIONAL_CUTS_WRITING.md).
+
+| Source / target | Exact declaration | Status |
+| --- | --- | --- |
+| Selected cut and residual tags | `PositionalCut.cut`, `head`, `count`, `atomized`, `congr`; `At.toHead_get_retain` | Compiled, actual existing G rules and transports. |
+| Original selected measure | `rank_ge_two`, `rank_two_iff_leaves`, `routed_rank_eq` | Compiled; native exchange cost is explicit. |
+| Clean recursive premises | `AllBlockedAt.inherit`, `clean_left/right_predecessor`, `rank_left/right_predecessor` | Compiled for actual selected ancestry; no re-cleaning rank inference. |
+| Simultaneous selected normalization | `PositionalCut.clean_premises` | Compiled at original sequents, without rank bound. |
+| §11.2 pp.253–254, §11.5, §12.5 | `atomic_rank_two`, `rank_two_classification` | Exhaustive atomic base elimination and complete least-rank classification; compound branch remains to eliminate. |
+| Fresh principal rank argument | `rank_fresh_disjL`, `rank_fresh_conjR`, both strict comparison lemmas | Native rank one compiled; concrete sequential blocked reductions remain open. |
+| Opposite structural commutations | `CutCommutation.opposite_left`, `opposite_right` | Compiled equations; remaining commutations and global induction open. |
+
+Continue the full-paper contract. Actual compound equations, all remaining
+commutations and blocked reductions, global cut elimination, coherence, actual
+presentation/congruence/substitution bridges, short q_A/e_A, maximality, model
+corollary and every appendix claim remain the authorized work. The three
+milestones and the whole-paper endpoint remain distinct. V7 is unchanged.
 
 ## Full-paper formalization target
 

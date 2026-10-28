@@ -1,0 +1,1106 @@
+[
+  {
+    "command": [
+      "python3",
+      "scripts/check-audit-boundaries.py"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "python3",
+      "scripts/check-audit-boundaries.py"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 11.082,
+    "log": ".codex-work/gentzen-cut-elimination/audit-boundaries-20261028T163001184558.log",
+    "sha256": "377643b2b8fc2ff8c9b228992b82e2fd82c36bf57a7c3914aa71572ffbf89ac0"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenAtomicCutElimination"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenAtomicCutElimination"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 1.633,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenAtomicCutElimination-20261028T161659716600.log",
+    "sha256": "2bad0514907c37344103d119ff56d1e573c7b96e33d490ce93316795f331ab9e"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenAtomicCutElimination"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenAtomicCutElimination"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 2.909,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenAtomicCutElimination-20261028T161706283368.log",
+    "sha256": "c5881e348aa0d2f3b0c392fe084e105c4c00ab4a67933a4e0ff625edf56cefd0"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenAtomicCutElimination"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenAtomicCutElimination"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 2.525,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenAtomicCutElimination-20261028T161730938358.log",
+    "sha256": "7c6f2b4cb334c3f909efd977de54f7b8ba73ab62b496444ac9ca5b02e0e280dd"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenCutSplice"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenCutSplice"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 1.525,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenCutSplice-20261028T162022641012.log",
+    "sha256": "9ed1c69b4e8dfc4fb043c12f4a53ede7a950c06a3f873c766ea9f624274e3b3a"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenCutSplice"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenCutSplice"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 1.398,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenCutSplice-20261028T162132767323.log",
+    "sha256": "be696829c35f29d8ad1448d5a43a6adbfbaef80d073e35ddaa5572fb4147d53a"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenCutSplice"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenCutSplice"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 1.301,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenCutSplice-20261028T162215600660.log",
+    "sha256": "caba0945dc26b55dedd139f3aff4bc9718867e156d0edd2cddcd0a03af0147b8"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenCutStructuralCommutation"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenCutStructuralCommutation"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 2.054,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenCutStructuralCommutation-20261028T162634276591.log",
+    "sha256": "93bdfb944838dbc86bf3bd4eacc24cadc092f7b87e0f5acc8929645557e12d36"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenExchangeScriptRanks"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenExchangeScriptRanks"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 3.4,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenExchangeScriptRanks-20261028T161229308526.log",
+    "sha256": "8323656c9374c7df9e6b66258757e56c78060f263146c0c02b92aa74dcbaed4e"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenFreshPrincipals"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenFreshPrincipals"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 1.852,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenFreshPrincipals-20261028T161136105709.log",
+    "sha256": "ea7f46b88bc69e831ff5af21351ba85edd1f843fd0b289be71884934c57b50f5"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenLeafShapes"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenLeafShapes"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 2.859,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenLeafShapes-20261028T160940461266.log",
+    "sha256": "b42045f3077cc592b72aa9e81f8be71995ff09e26cc68a6cb45f2743b450b652"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenLeafShapes",
+      "DosenPetric.GentzenSelectedRecursion"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenLeafShapes",
+      "DosenPetric.GentzenSelectedRecursion"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 3.506,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenLeafShapes-20261028T161017659713.log",
+    "sha256": "f193aea65e494cedae2bb86e8afa4ca8eb26a162aa5ec7c4621ba3e41b006bd8"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenLeafShapes",
+      "DosenPetric.GentzenSelectedRecursion"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenLeafShapes",
+      "DosenPetric.GentzenSelectedRecursion"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 2.936,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenLeafShapes-20261028T161033628263.log",
+    "sha256": "aed9d95c2a8f4df392479fa92332b9d6b675a6543ae51beb1e37ba09c8f78fc6"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenPositionalCutBase"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenPositionalCutBase"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 4.32,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenPositionalCutBase-20261028T161617530268.log",
+    "sha256": "5c3aef200d5d52b6da3145c6020910663f35ae3a0bbb2934de4d71843490b382"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenPositionalCutBase"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenPositionalCutBase"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 1.389,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenPositionalCutBase-20261028T161630393245.log",
+    "sha256": "bb1a1a97bf3ba4455366766457915155dc8becaa55ed62c6c6015edfbf5a3ce3"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenPositionalCuts"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenPositionalCuts"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 2.601,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenPositionalCuts-20261028T160730578537.log",
+    "sha256": "ff9a84e56f86b89da3f9ec9f36b05769f4f7a042daf788eb3ab658f1e15e0ecb"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenPositionalCuts"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenPositionalCuts"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 3.671,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenPositionalCuts-20261028T160737296771.log",
+    "sha256": "b2a054a3633d041e74221a3cf8ae8d31bed7b73e558dd48b77f4520c9146a0db"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenRankTwoClassification"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenRankTwoClassification"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 1.432,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenRankTwoClassification-20261028T162900659369.log",
+    "sha256": "76a2ea36ab720a74f7e1692989c28cfa19bfef9b696ed431438cffaa51de1612"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedBlocked"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedBlocked"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 1.919,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedBlocked-20261028T160822112218.log",
+    "sha256": "67de561b43ccf7298d8e524d24b28123033bf69511e34442a26c1bd8616c130d"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedBlocked"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedBlocked"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 1.899,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedBlocked-20261028T160845973707.log",
+    "sha256": "9c75df29ba9dc2c9be717f7eb28dc631cb1c82d1dde62be8f34f2bb9b86f9456"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedBlockedBranches"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedBlockedBranches"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 2.514,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedBlockedBranches-20261028T161747965697.log",
+    "sha256": "eadf02d8c20a26567948678da72b6aecc0d76244e673429b68d79ba6469fb050"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedBlockedBranches"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedBlockedBranches"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 1.326,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedBlockedBranches-20261028T161816968420.log",
+    "sha256": "244e3ad5d2e6f7b8c5cf98d5b557667d59342da5e1a74a462c5c4d43d020e289"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedBlockedBranches"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedBlockedBranches"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 1.35,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedBlockedBranches-20261028T161909059246.log",
+    "sha256": "51ff9fa4d978ac58769ed7197ced76fdecbd1e3d5f05c33bb5f19ffc9e8daeac"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedCleanCuts"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedCleanCuts"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 1.706,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedCleanCuts-20261028T162331825499.log",
+    "sha256": "1f34dcadde806181378fac0469c5d7b9a80559d45859ae8b4bbebd8fcbeca749"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedCleanCuts",
+      "DosenPetric.GentzenStructuralPrefix"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedCleanCuts",
+      "DosenPetric.GentzenStructuralPrefix"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 3.183,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedCleanCuts-20261028T162425283016.log",
+    "sha256": "c39744c9ca8a0edc4006ae2bcb7f478f73b637fa20a1fa0d0571ae26f6c87345"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedCleanCuts",
+      "DosenPetric.GentzenStructuralPrefix"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedCleanCuts",
+      "DosenPetric.GentzenStructuralPrefix"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 4.117,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedCleanCuts-20261028T162502625500.log",
+    "sha256": "64af634c0c3310c1e230ac33906596a872e5be741d8d4e2d7cfc43157cee4724"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedExchangeBlocked"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedExchangeBlocked"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 3.365,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedExchangeBlocked-20261028T162115964757.log",
+    "sha256": "0fd4d8ae11b5d0596e8113c55fa16f4630969c0babd13703ed0b7638238ef7a4"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedExchangeBlocked"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedExchangeBlocked"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 8.138,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedExchangeBlocked-20261028T162204126701.log",
+    "sha256": "e38e7fdbe194e77b460063227008c078c3e2fa21f1f18dca0064e92a01890bc2"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedExchangeBlocked"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedExchangeBlocked"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 1.388,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedExchangeBlocked-20261028T162225942970.log",
+    "sha256": "470d9f6100211cf74f584a4bd5d7274b9c255d70f62f3f50f77e3c002ac1c396"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedPositions"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedPositions"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 8.271,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedPositions-20261028T160606779692.log",
+    "sha256": "a7f28310d75518dfbdadc38a7f966a4b2415f1d93eb895b2c907425de5080f8a"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedPositions"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedPositions"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 2.516,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedPositions-20261028T160627448424.log",
+    "sha256": "0837c28f714dcb3d5458e1b934fb83fddc6174e80c906188d3ba74f6078d2b6d"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedPositions"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedPositions"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 3.167,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedPositions-20261028T160646531269.log",
+    "sha256": "262318b62a9b0d330773ec5b813643cecdbd41baf6ae8ed0762cb0eb4c26952e"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedPositions"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedPositions"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 1.839,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedPositions-20261028T160703487502.log",
+    "sha256": "acb712c707ab98721fa5d315f93e0d6da48ba32fe3f40d6a43c0aa4f1407297a"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedPositions"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedPositions"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 3.755,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedPositions-20261028T161332330170.log",
+    "sha256": "b9d86d4828e936af148feba4919fa82372749ef34773d9e4d13e14077204def9"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedThinning"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedThinning"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 6.832,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedThinning-20261028T161355942224.log",
+    "sha256": "6921ab6bf71687ae0afeeb225d16f4fe6d17785052d87b0aff2ab369adf2bc0e"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedThinning"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedThinning"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 5.34,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedThinning-20261028T161407947519.log",
+    "sha256": "6a8277bbf0392f92d81374d723f09bbfd0df36068e312530bf128a52d2e7a09f"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedThinning"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedThinning"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 1.659,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedThinning-20261028T161447283388.log",
+    "sha256": "6f3dd5e66fe87a0de0684df97e23d24332bfad2bbbaf0049c80ee8dc470bacc7"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedThinning"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenSelectedThinning"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 1.846,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenSelectedThinning-20261028T161523647247.log",
+    "sha256": "cd8f57ad823a29d8b7ad2136f80190931d2a2a2b923272c4efbaa40f9d2b0573"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenStructuralProgramRanks"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenStructuralProgramRanks"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 3.239,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenStructuralProgramRanks-20261028T162656915523.log",
+    "sha256": "ea6b38c712393909b2c4c81b80c999f5defaf53ea9fd6f76405e0b86c171cc4a"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenStructuralProgramRanks",
+      "DosenPetric.GentzenPositionalRoutingRanks"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenStructuralProgramRanks",
+      "DosenPetric.GentzenPositionalRoutingRanks"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 2.169,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenStructuralProgramRanks-20261028T162716842672.log",
+    "sha256": "b22e0ceab99330e434860f854419e8c328d3f8615b3ed73344138f321ea87f67"
+  },
+  {
+    "command": [
+      "lake",
+      "build",
+      "DosenPetric.GentzenStructuralSuffix"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "build",
+      "DosenPetric.GentzenStructuralSuffix"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 1.89,
+    "log": ".codex-work/gentzen-cut-elimination/build-GentzenStructuralSuffix-20261028T162553381068.log",
+    "sha256": "5da36078ad63fa2afbfe80cc2abe13956791f7b5f8371757a4587c464b9a5474"
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "actual_command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 0.011,
+    "log": ".codex-work/gentzen-cut-elimination/diff-check-20261028T163013394874.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/PositionalCuts.lean"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/PositionalCuts.lean"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 2.186,
+    "log": ".codex-work/gentzen-cut-elimination/lean-20261028T163018635557.log",
+    "sha256": "540be987f4526fb41502bd6f9181ce179d427f2671db9cb4363b22278dea1818"
+  },
+  {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/CleanCuts.lean"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/CleanCuts.lean"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 0.015,
+    "log": ".codex-work/gentzen-cut-elimination/lean-20261028T163019811227.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/BlockedW.lean"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/BlockedW.lean"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 0.015,
+    "log": ".codex-work/gentzen-cut-elimination/lean-20261028T163020304524.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/Reducibility.lean"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/Reducibility.lean"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 0.017,
+    "log": ".codex-work/gentzen-cut-elimination/lean-20261028T163020570977.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "sha256sum",
+      "-c",
+      "SHA256SUMS"
+    ],
+    "actual_command": [
+      "sha256sum",
+      "-c",
+      "SHA256SUMS"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/manuscript",
+    "exit_status": 0,
+    "seconds": 0.014,
+    "log": ".codex-work/gentzen-cut-elimination/manuscript-20261028T163013380640.log",
+    "sha256": "89bc10692b71aa052b1d5f154c422f5bd02522afafa4471a110e043e532d8e5b"
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/check-presentation-boundaries.py"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "python3",
+      "scripts/check-presentation-boundaries.py"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 1.112,
+    "log": ".codex-work/gentzen-cut-elimination/presentation-boundaries-20261028T163012267962.log",
+    "sha256": "306041f8b1c343270cc1f8c841a6a6f6aa03451e17bb5f034cd495d3b5f49f66"
+  },
+  {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/BlockedW.lean"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/BlockedW.lean"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 0.858,
+    "log": ".codex-work/gentzen-cut-elimination/signature-BlockedW-20261028T163031647424.log",
+    "sha256": "cf54f67163ea0663b376a26e0752b4502c4da32387ca41be876d6019d258454e"
+  },
+  {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/CleanCuts.lean"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/CleanCuts.lean"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 1.44,
+    "log": ".codex-work/gentzen-cut-elimination/signature-CleanCuts-20261028T163030204444.log",
+    "sha256": "7cda3b6ba4efab5385990b2b40bf80d3f5c4354314c3feab0e790b400e2ae6d0"
+  },
+  {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/PositionalCuts.lean"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/PositionalCuts.lean"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 0.894,
+    "log": ".codex-work/gentzen-cut-elimination/signature-PositionalCuts-20261028T163029309919.log",
+    "sha256": "540be987f4526fb41502bd6f9181ce179d427f2671db9cb4363b22278dea1818"
+  },
+  {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/Reducibility.lean"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Checks/Reducibility.lean"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 0.695,
+    "log": ".codex-work/gentzen-cut-elimination/signature-Reducibility-20261028T163032506992.log",
+    "sha256": "6014be42220982f3f098607c65ad00d661da8503c138630052d7d794c360ac1f"
+  },
+  {
+    "command": [
+      "bash",
+      "scripts/verify.sh"
+    ],
+    "actual_command": [
+      "bash",
+      "scripts/verify.sh"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 0,
+    "seconds": 13.952,
+    "log": ".codex-work/gentzen-cut-elimination/strict-20261028T162947227645.log",
+    "sha256": "bf55c6c214063dfb32dc79aa34d941facbec0a1fcb1f313ffce80ded301ce3e0"
+  },
+  {
+    "command": [
+      "sha256sum",
+      "-c",
+      "SHA256SUMS"
+    ],
+    "actual_command": [
+      "sha256sum",
+      "-c",
+      "SHA256SUMS"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/manuscript",
+    "exit_status": 0,
+    "seconds": 0.056,
+    "log": ".codex-work/gentzen-cut-elimination/v7-manuscript-20261028T160356065700.log",
+    "sha256": "89bc10692b71aa052b1d5f154c422f5bd02522afafa4471a110e043e532d8e5b"
+  }
+]
