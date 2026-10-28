@@ -14,8 +14,8 @@ See [the construction report](GENTZEN_SAME_SIDE_LOGICAL_CUTS_REPORT.md),
 [hostile audit](reviews/GENTZEN_SAME_SIDE_LOGICAL_CUTS_HOSTILE.md),
 [writing review](reviews/GENTZEN_SAME_SIDE_LOGICAL_CUTS_WRITING.md) and
 [live constructor/tag table](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
-Verification: 522 screened Lean files, 11,765 transitive project declarations,
-nine exact public check files, five established and two focused rejected negative
+Verification: 524 screened Lean files, 11,780 transitive project declarations,
+ten exact public check files, five established and two focused rejected negative
 controls, complete production import closure. Evidence is retained under
 provenance/wsl-gentzen-after-67de18a/. Both reviews are author-side local reviews;
 no independent replay or official/service verification is claimed.
@@ -28,6 +28,16 @@ reconstructions, fourteen blocked reductions, the complete dispatcher and rank /
 degree / structural induction assembly. Both unrestricted elimination endpoints,
 coherence and the full-paper endpoint remain open. Appendix C is complete in v7;
 its two concrete blocked-rank Lean correspondences remain open.
+
+The binary construction also has eight checked algebraic inputs in
+MixCalculation: conj_union_left/right, disj_union_left/right, mix_union,
+splice_union_left/right and native_mix_union. Native mix retains its actual
+reversed child-block order. These equations do not close the twelve binary
+cut reconstruction obligations. See [the mix report](GENTZEN_MIX_UNION_REPORT.md),
+[hostile audit](reviews/GENTZEN_MIX_UNION_HOSTILE.md) and
+[writing review](reviews/GENTZEN_MIX_UNION_WRITING.md); current evidence is
+provenance/wsl-gentzen-mix-union/. The preceding immutable checkpoint and its
+byte-verified deliveries remain in provenance/wsl-gentzen-after-67de18a/.
 
 CODEX_NEXT_SESSION.txt is the active continuation; all older checkpoint sections
 below describe historical scope where superseded. No older next-task list resets

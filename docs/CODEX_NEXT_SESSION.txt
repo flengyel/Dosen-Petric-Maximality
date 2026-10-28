@@ -29,12 +29,19 @@ binary parametric branches have actual original-child Clean/rank descent:
 PositionalCut.{mix,conjR,disjL}_{left,right}_{first,second}_descent.
 Their equations and native reconstruction wrappers remain open.
 
-Local verification: 522 screened Lean files, 11,765 audited declarations,
-nine explicit public-type check files; production closure and five established
-plus two focused negative controls pass. The source/log/evidence snapshot is
-provenance/wsl-gentzen-after-67de18a/. Reviews are local author-side reviews;
+Local verification: 524 screened Lean files, 11,780 audited declarations,
+ten explicit public-type check files; production closure and five established
+plus two focused negative controls pass. The source/log/evidence snapshots are
+provenance/wsl-gentzen-after-67de18a/ and provenance/wsl-gentzen-mix-union/. Reviews are local author-side reviews;
 no independent kernel replay, Comparator, official/service verification or
 publication is implied. Both unrestricted elimination endpoints remain open.
+
+The subsequent concrete mix algebra is in GentzenMixUnion, with eight expanded
+exact checks: both tensor-side union laws, mix_union, both splice union laws and
+native_mix_union at actual reversed block order. See GENTZEN_MIX_UNION_REPORT.md
+and both reviews; current immutable evidence/delivery records are under
+provenance/wsl-gentzen-mix-union/. These equalities do not yet construct a native
+binary cut reconstruction. Preserve both checked source checkpoints.
 
 CONCRETE CONTINUATION
 

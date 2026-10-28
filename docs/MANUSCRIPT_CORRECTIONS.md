@@ -15,6 +15,11 @@ marked formalized merely because its TeX has been added.
 
 ## Current correction status
 
+The concrete mix/union and splice/union equations establish no new manuscript
+erratum. Their actual native context order is proved in native_mix_union; the
+binary cut equations/reconstructions and concrete Appendix C correspondences
+remain open. Existing accepted corrections and delivery receipts persist.
+
 The ad95fb7 continuation established no new manuscript defect. Its four
 same-side unary logical cut branches and twelve binary predecessor descents
 preserve actual occurrence tags, left-first composition and native mix order.

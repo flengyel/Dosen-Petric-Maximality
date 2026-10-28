@@ -1955,3 +1955,11 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.CutCommutation.same_disjR_tail_rank_step
 #print axioms DosenPetric.Reduced.Gentzen.CutCommutation.selected_opposite_left_rank_step
 #print axioms DosenPetric.Reduced.Gentzen.CutCommutation.selected_opposite_right_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.MixCalculation.conj_union_right
+#print axioms DosenPetric.Reduced.Gentzen.MixCalculation.conj_union_left
+#print axioms DosenPetric.Reduced.Gentzen.MixCalculation.disj_union_right
+#print axioms DosenPetric.Reduced.Gentzen.MixCalculation.disj_union_left
+#print axioms DosenPetric.Reduced.Gentzen.MixCalculation.mix_union
+#print axioms DosenPetric.Reduced.Gentzen.MixCalculation.splice_union_left
+#print axioms DosenPetric.Reduced.Gentzen.MixCalculation.splice_union_right
+#print axioms DosenPetric.Reduced.Gentzen.MixCalculation.native_mix_union

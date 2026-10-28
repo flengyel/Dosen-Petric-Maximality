@@ -484,3 +484,4 @@ public import DosenPetric.GentzenSameSideLogicalHeads
 public import DosenPetric.GentzenSameSideLogicalPrefix
 public import DosenPetric.GentzenSameSideLogicalReplacement
 public import DosenPetric.GentzenSameSideLogicalTail
+public import DosenPetric.GentzenMixUnion

@@ -30,6 +30,12 @@ GentzenSameSideLogicalPrefix/Tail/Replacement/Descent. Their actual deletion
 squares are LogicalDeletion.before_square and tail_square. They are not
 instances of the structural SingleFiber residual theorem.
 
+MixCalculation supplies eight concrete tensor/union, mix/union, splice/union and
+native-mix equations. Native mix keeps its reversed child blocks. These inputs
+are checked; the twelve binary commuting equations/reconstructions above remain
+open. Report/evidence: GENTZEN_MIX_UNION_REPORT.md and
+provenance/wsl-gentzen-mix-union/.
+
 | Blocked constructor family | BlockedL | BlockedR |
 | --- | --- | --- |
 | gammaMix | Pending actual cut reduction | Pending actual cut reduction |
