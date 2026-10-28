@@ -1,12 +1,15 @@
 # Selected cut constructor and tag coverage
 
-This live table records the completed source construction through b8fcd28.
+This live table records all four actual mix branches after b767c19.
 A checked branch is a local input to the intended clean selected-rank dispatcher. The global
 dispatcher, unrestricted cut elimination, coherence and full-paper endpoint
 remain open. Original selected predecessor rank is measured before adapters.
-The active construction is CODEX_AFTER_B8FCD28_BINARY_CUTS.txt: first complete
-mix_left_first, then the other eleven binary branches. Its reconstruction
-recipes remain proof targets. No row is closed by this documentation update.
+The active construction is CODEX_AFTER_B8FCD28_BINARY_CUTS.txt. The first mix
+branch now has an actual swapped-native reconstruction, a checked unique-fiber
+residual structural program, exact original-sequent equality and rank step.
+Atomization follows the eliminated recursive cut. The direct block-exchange
+macro leftFirst is separately typed; the first_equation uses firstRaw instead.
+The remaining binary and blocked work retains its full contract.
 
 | Root and selected region | Left cut premise | Right cut premise |
 | --- | --- | --- |
@@ -19,8 +22,8 @@ recipes remain proof targets. No row is closed by this documentation update.
 | Unary logical, opposite side | conjL equation, reconstruction and rank step checked | disjR equation, reconstruction and rank step checked |
 | Unary logical, same-side prefix | disjR before equation, reconstruction and original-rank step checked | conjL before equation, reconstruction and original-rank step checked |
 | Unary logical, same-side suffix | disjR tail equation, reconstruction and original-rank step checked | conjL tail equation, reconstruction and original-rank step checked |
-| mix, first child tag | Clean/rank descent checked; equation, reconstruction and rank step pending | Clean/rank descent checked; equation, reconstruction and rank step pending |
-| mix, second child tag | Clean/rank descent checked; equation, reconstruction and rank step pending | Clean/rank descent checked; equation, reconstruction and rank step pending |
+| mix, first child tag | Equation/reconstruction and instantiated rank step checked (BinaryMix.firstRaw/first_equation; mix_left_first_rank_step) | Equation/reconstruction and instantiated rank step checked (BinaryMix.rightFirstAt/rightFirstAt_equation; mix_right_first_rank_step) |
+| mix, second child tag | Native equation/reconstruction and instantiated rank step checked (BinaryMix.leadingAt; mix_left_second_rank_step) | Equation/reconstruction and instantiated rank step checked (BinaryMix.secondRaw/second_equation; mix_right_second_rank_step) |
 | conjR, first child parametric tag | Clean/rank descent checked; equation, reconstruction and rank step pending | Clean/rank descent checked; equation, reconstruction and rank step pending |
 | conjR, second child parametric tag | Clean/rank descent checked; equation, reconstruction and rank step pending | Clean/rank descent checked; equation, reconstruction and rank step pending |
 | disjL, first child parametric tag | Clean/rank descent checked; equation, reconstruction and rank step pending | Clean/rank descent checked; equation, reconstruction and rank step pending |
@@ -35,8 +38,8 @@ instances of the structural SingleFiber residual theorem.
 
 MixCalculation supplies eight concrete tensor/union, mix/union, splice/union and
 native-mix equations. Native mix keeps its reversed child blocks. These inputs
-are checked; the twelve binary commuting equations/reconstructions above remain
-open. Report/evidence: GENTZEN_MIX_UNION_REPORT.md and
+are checked; four mix branches now have actual equations/reconstructions/rank steps;
+the eight logical binary branches remain open. Report/evidence: GENTZEN_MIX_UNION_REPORT.md and
 provenance/wsl-gentzen-mix-union/.
 
 | Blocked constructor family | BlockedL | BlockedR |

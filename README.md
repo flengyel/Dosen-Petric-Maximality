@@ -1,31 +1,51 @@
 # Došen–Petrić maximality in Lean
 
-## Completed-run review and active continuation (28 October 2026)
+## Current actual mix-cut construction (28 October 2026)
 
-The completed `b8fcd28` run has been reviewed against all new source and retained
-evidence. Four same-side unary logical branches, opposite structural wrappers,
-twelve binary predecessor descents and eight mix/splice equations are proved.
-Actual binary reconstructions, fourteen blocked reductions, global elimination
-and later full-paper obligations remain open. V7 is unchanged.
+Successor b767c19 is incorporated, preserving prior proof work and the stash.
+All four mix branches now have actual Reduced equations, generic original-sequent
+reconstructions, eliminated witnesses and strict original-rank steps:
+CutCommutation.mix_{left,right}_{first,second}_rank_step. Each applies rankIH to
+the actual inherited clean child before routing or structural reconstruction.
 
-See [the concrete successor](docs/CODEX_AFTER_B8FCD28_BINARY_CUTS.txt),
-[the source/evidence review](docs/reviews/GENTZEN_B8FCD28_REVIEW.md) and
-[the writing review](docs/reviews/GENTZEN_B8FCD28_WRITING.md).
-Start with a complete mix_left_first equation, reconstruction and rank step;
-then the other eleven binary branches. The recipes are targets to prove.
-[CODEX_NEXT_SESSION.txt](docs/CODEX_NEXT_SESSION.txt) is the active next-task list;
-its predecessor is [archived verbatim](docs/history/CODEX_NEXT_SESSION_B8FCD28.txt).
+The leading association cases use BinaryMix.leadingAt/rightFirstAt and preserve
+Atomized directly. The swapped cases use BinaryMix.firstRaw/secondRaw, actual
+native_swap and instantiated unique-fiber residual structural programs, followed
+by atomization of the finished cut-free reconstruction. first_equation uses
+firstRaw; the separate direct leftFirst block-exchange macro is not its equation.
+The actual right diagram is a proved particular MirrorCalculus interpretation,
+not a general quotient-arrow or G-proof duality. All exact output contexts,
+native reversed mix order, empty contexts and distinct equal-label tags remain.
 
-Final local verification records 524 Lean files, 11,780 audited declarations,
-ten exact check files and seven rejected controls. The cloud reviewer matched
-all 532 archived files to their manifest and Git blobs without building.
-Final evidence is in `provenance/wsl-gentzen-mix-union/`; the earlier same-side
-phase is retained in `provenance/wsl-gentzen-after-67de18a/`.
+See [the run report](docs/GENTZEN_BINARY_MIX_CUTS_REPORT.md),
+[hostile audit](docs/reviews/GENTZEN_BINARY_MIX_CUTS_HOSTILE.md),
+[writing review](docs/reviews/GENTZEN_BINARY_MIX_CUTS_WRITING.md) and
+[live constructor/tag table](docs/GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
 
-The earlier 23 deliveries and both current registers retain completed local
-receipt status, including all three ad95fb7 successor artifacts. The three NEW
-B8FCD28 instruction/review artifacts await local committed-byte Downloads delivery.
-Historical sections below do not reset current proof, task or delivery status.
+| Local proof phase | Lean files | Audited declarations | Exact check files | Rejected controls | Evidence directory |
+| --- | ---: | ---: | ---: | ---: | --- |
+| 21627c4; same-side construction | 522 | 11,765 | 9 | 7 | provenance/wsl-gentzen-after-67de18a/ |
+| ea74a32; mix algebra | 524 | 11,780 | 10 | 7 | provenance/wsl-gentzen-mix-union/ |
+| Actual four-branch mix reconstruction | 538 | 11,886 | 11 | 8 | provenance/wsl-gentzen-binary-cuts/ |
+
+All strict, exact-type, actual literal/constant-witness, source-closure and
+negative-control checks pass locally. Reviews are local author-side reviews;
+no independent kernel replay, Comparator, official/service verification or
+publication is claimed. All manuscript bytes remain unchanged from b767c19.
+
+Eight logical binary reconstructions/equations/rank steps remain open, as do
+all fourteen blocked reductions, the complete dispatcher, discharged rank/degree/
+structural inductions, both unrestricted elimination endpoints, coherence and
+later full-paper claims. All three milestones and the additional whole-paper
+endpoint remain distinct. V7 and all three appendices remain in scope; Appendix C
+is written and its two concrete blocked-rank Lean correspondences remain open.
+
+The three B8FCD28 successor artifacts have completed committed-byte Downloads
+delivery; SUCCESSOR_DELIVERY.json records exact paths/hashes. Earlier 23, 18-entry
+and 14-entry completed deliveries remain complete. Current finalized reports and
+reviews use the committed-byte delivery register in the current evidence folder.
+CODEX_NEXT_SESSION.txt and the live table carry the exact continuation. Older
+checkpoints remain historical where superseded.
 
 ## Current manuscript: v7 with the authorized errata appendix
 

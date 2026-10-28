@@ -1963,3 +1963,7 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.MixCalculation.splice_union_left
 #print axioms DosenPetric.Reduced.Gentzen.MixCalculation.splice_union_right
 #print axioms DosenPetric.Reduced.Gentzen.MixCalculation.native_mix_union
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.mix_left_first_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.mix_left_second_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.mix_right_first_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.mix_right_second_rank_step

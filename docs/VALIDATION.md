@@ -1,50 +1,51 @@
 # Current Gentzen validation
 
-## Current binary-cut continuation after b8fcd28 (28 October 2026)
+## Current actual mix-cut construction (28 October 2026)
 
-The completed run incorporates ad95fb7. All four same-side unary logical
-prefix/suffix branches have actual deletion squares, native cut-free atomized
-reconstruction, exact positional equations and complete original-child Clean /
-strict-rank steps. Both opposite structural recursive wrappers are proved.
-All twelve binary parametric original-child descents are proved; their actual
-commuting equations, native reconstructions and rank steps remain open.
+Successor b767c19 is incorporated, preserving prior proof work and the stash.
+All four mix branches now have actual Reduced equations, generic original-sequent
+reconstructions, eliminated witnesses and strict original-rank steps:
+CutCommutation.mix_{left,right}_{first,second}_rank_step. Each applies rankIH to
+the actual inherited clean child before routing or structural reconstruction.
 
-GentzenMixUnion supplies eight concrete tensor/union, mix/union and splice/union
-equalities. Native mix keeps input Theta ++ Gamma and output Lambda ++ Delta.
-These are algebraic inputs to the remaining binary branches.
-See [the same-side report](GENTZEN_SAME_SIDE_LOGICAL_CUTS_REPORT.md),
-[the mix report](GENTZEN_MIX_UNION_REPORT.md) and
-[the live constructor/tag table](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
+The leading association cases use BinaryMix.leadingAt/rightFirstAt and preserve
+Atomized directly. The swapped cases use BinaryMix.firstRaw/secondRaw, actual
+native_swap and instantiated unique-fiber residual structural programs, followed
+by atomization of the finished cut-free reconstruction. first_equation uses
+firstRaw; the separate direct leftFirst block-exchange macro is not its equation.
+The actual right diagram is a proved particular MirrorCalculus interpretation,
+not a general quotient-arrow or G-proof duality. All exact output contexts,
+native reversed mix order, empty contexts and distinct equal-label tags remain.
+
+See [the run report](GENTZEN_BINARY_MIX_CUTS_REPORT.md),
+[hostile audit](reviews/GENTZEN_BINARY_MIX_CUTS_HOSTILE.md),
+[writing review](reviews/GENTZEN_BINARY_MIX_CUTS_WRITING.md) and
+[live constructor/tag table](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
 
 | Local proof phase | Lean files | Audited declarations | Exact check files | Rejected controls | Evidence directory |
 | --- | ---: | ---: | ---: | ---: | --- |
 | 21627c4; same-side construction | 522 | 11,765 | 9 | 7 | provenance/wsl-gentzen-after-67de18a/ |
-| ea74a32; mix construction, receipts through b8fcd28 | 524 | 11,780 | 10 | 7 | provenance/wsl-gentzen-mix-union/ |
+| ea74a32; mix algebra | 524 | 11,780 | 10 | 7 | provenance/wsl-gentzen-mix-union/ |
+| Actual four-branch mix reconstruction | 538 | 11,886 | 11 | 8 | provenance/wsl-gentzen-binary-cuts/ |
 
-The [completed-run source/evidence review](reviews/GENTZEN_B8FCD28_REVIEW.md)
-read all twelve new production modules and both new Checks, matched all 532
-archived files to their manifest and Git blobs, and checked the final mix
-logs/receipts. This is not a cloud build, independent kernel replay, Comparator
-or official/service verification. The
-[writing review](reviews/GENTZEN_B8FCD28_WRITING.md) identifies active-record
-repairs; all manuscript blobs remain unchanged.
+All strict, exact-type, actual literal/constant-witness, source-closure and
+negative-control checks pass locally. Reviews are local author-side reviews;
+no independent kernel replay, Comparator, official/service verification or
+publication is claimed. All manuscript bytes remain unchanged from b767c19.
 
-[CODEX_NEXT_SESSION.txt](CODEX_NEXT_SESSION.txt) is the active continuation.
-[The concrete successor](CODEX_AFTER_B8FCD28_BINARY_CUTS.txt) starts with a
-complete mix_left_first equation/reconstruction/rank step, then the other
-eleven binary branches, fourteen blocked reductions and full induction.
-Its sequent recipes are proof targets, not already checked equalities.
-Both unrestricted elimination endpoints, coherence and the whole-paper
-endpoint remain open. V7's Appendix C is complete; its two concrete blocked
-Lean correspondences remain open. Current scope includes all three appendices.
+Eight logical binary reconstructions/equations/rank steps remain open, as do
+all fourteen blocked reductions, the complete dispatcher, discharged rank/degree/
+structural inductions, both unrestricted elimination endpoints, coherence and
+later full-paper claims. All three milestones and the additional whole-paper
+endpoint remain distinct. V7 and all three appendices remain in scope; Appendix C
+is written and its two concrete blocked-rank Lean correspondences remain open.
 
-Earlier 23 deliveries and the 18-entry same-side and 14-entry mix registers
-retain their completed local receipt status, including the three ad95fb7
-successor files. Only the three NEW B8FCD28 instruction/review artifacts await
-local committed-byte Downloads delivery. Their exact duties are in the successor.
-The preceding continuation is archived verbatim at
-history/CODEX_NEXT_SESSION_B8FCD28.txt. Older sections below describe historical
-scope where superseded and do not reset the current construction or deliveries.
+The three B8FCD28 successor artifacts have completed committed-byte Downloads
+delivery; SUCCESSOR_DELIVERY.json records exact paths/hashes. Earlier 23, 18-entry
+and 14-entry completed deliveries remain complete. Current finalized reports and
+reviews use the committed-byte delivery register in the current evidence folder.
+CODEX_NEXT_SESSION.txt and the live table carry the exact continuation. Older
+checkpoints remain historical where superseded.
 
 ## Current manuscript: v7 with the authorized errata appendix
 

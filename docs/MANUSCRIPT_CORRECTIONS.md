@@ -15,6 +15,15 @@ marked formalized merely because its TeX has been added.
 
 ## Current correction status
 
+The actual four mix-cut branches are proved. Their swapped cases use concrete
+native mix symmetry and a checked unique-fiber residual structural program,
+then post-elimination atomization. This is an implementation choice preserving
+the intended exact equations and quantifiers, not a manuscript correction.
+The direct leftFirst macro is separately typed; its own equality is not used
+as an assumed bridge. All earlier source, principal-order, rank, atomization,
+writing and all-three-appendix requirements persist. Eight logical binary and
+fourteen blocked reductions remain open.
+
 The b8fcd28 source/evidence review found no new mathematical or manuscript
 defect. It confirmed active-record inconsistencies: README still prescribed
 completed unary work and pending ad95fb7 delivery; current scope paragraphs
@@ -22,7 +31,8 @@ said v6/both appendices; the final verification counts first pointed to the
 earlier phase. The B8FCD28 successor resolves these together in AGENTS, README,
 the continuation, full contract, statement/coverage/validation records and
 constructor table. Current scope is v7/all three appendices; earlier deliveries
-remain complete, and only the three new successor artifacts await delivery.
+remain complete; the three successor artifacts have now been delivered from
+committed b767c19 bytes (SUCCESSOR_DELIVERY.json).
 The previous continuation is archived verbatim. Historical v6 records remain
 historical. No Lean or manuscript bytes are changed by these repairs.
 See [source/evidence review](reviews/GENTZEN_B8FCD28_REVIEW.md) and

@@ -485,3 +485,16 @@ public import DosenPetric.GentzenSameSideLogicalPrefix
 public import DosenPetric.GentzenSameSideLogicalReplacement
 public import DosenPetric.GentzenSameSideLogicalTail
 public import DosenPetric.GentzenMixUnion
+public import DosenPetric.GentzenBinaryMixDiagram
+public import DosenPetric.GentzenBinaryMixFirst
+public import DosenPetric.GentzenBinaryMixInputRoutes
+public import DosenPetric.GentzenBinaryMixLeftStep
+public import DosenPetric.GentzenBinaryMixMirror
+public import DosenPetric.GentzenBinaryMixNative
+public import DosenPetric.GentzenBinaryMixRightDiagram
+public import DosenPetric.GentzenBinaryMixRightNative
+public import DosenPetric.GentzenBinaryMixRightSelected
+public import DosenPetric.GentzenBinaryMixRightStep
+public import DosenPetric.GentzenBinaryMixRoutes
+public import DosenPetric.GentzenBinaryMixSelected
+public import DosenPetric.GentzenBinaryMixSymmetry
