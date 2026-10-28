@@ -408,3 +408,6 @@ public import DosenPetric.GentzenRankReplacement
 public import DosenPetric.GentzenBlockedNormalization
 public import DosenPetric.GentzenBlockedChecks
 public import DosenPetric.GentzenAtomizationBlockedBoundary
+public import DosenPetric.GentzenCleanCuts
+public import DosenPetric.GentzenCleanCutChecks
+public import DosenPetric.GentzenCutThinning

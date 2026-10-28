@@ -1,0 +1,86 @@
+CONTINUE THE UNCHANGED V6 FULL-PAPER FORMALIZATION
+
+Reviewed proof checkpoint: ba5af8bc2c1f3ec7c218d54b840fb1df5d24d61c.
+Read CODEX_AFTER_BA5AF8B_CLEAN_CUTS.txt and the two GENTZEN_BA5AF8B reviews
+for the concrete support condition, structural recursion, joint atomized
+replacement witnesses and reuse of finite descent. These remain proof targets;
+the successor review adds no Lean theorem. Its three new Downloads copies
+await local byte-verified delivery. The six ba5af8b deliveries were reported
+complete. The preceding continuation is preserved at
+history/CODEX_NEXT_SESSION_BA5AF8B.txt.
+
+Current checked result: actual Blocked-w, containing BlockedL/R preservation,
+complete eligible-site correspondence and finite multiset descent. Read AGENTS,
+CODEX_FULL_MANUSCRIPT_FORMALIZATION, the current maps/corrections, and
+GENTZEN_BLOCKED_W_REPORT with both GENTZEN_BLOCKED_W reviews. Preserve newer work,
+stash dedfd8fc8cd49930e9a162d5be585215b062a43c, v4/v5/v6 and private visibility.
+Successor instruction 85a16cdc was incorporated by fast-forward; no reset.
+
+COMPLETED — REUSE THESE RESULTS
+
+blocked_w and blocked_w_premises: arbitrary P, same cut formula and contexts,
+Topmost premises, Reduced cut equality, both universal AllBlocked clauses, and
+stronger per-premise equality. They use full unchanged reducibility_left/right.
+BlockedL/R.replace_lower cover arbitrary D and all fourteen containing shapes.
+Outside full Reducible equivalence and strict-containing blocked preservation,
+complete typed address partition, lower-output uniqueness, finite enumeration
+and exact old/new rank-list decompositions compile. FiniteRank.descent_wf uses
+one fixed support bound; equal ranks retain multiplicity. No Atomized witness
+is asserted for this normalization. All prior native/source/rank decisions remain.
+
+NEXT REQUIRED CONSTRUCTION — SIMULTANEOUS ATOMIZATION AND BLOCKEDNESS
+
+For arbitrary f : G P Γ (C::Δ), g : G P (C::Θ) Λ, ht : G.Topmost f g,
+construct f',g' at those same sequents with Topmost, both Atomized, per-premise
+Reduced equality (or the sufficient cut equality), AllBlockedR f' and AllBlockedL g'.
+Do not install this as a production interface or supply the result as an assumption.
+
+The existing G.atomize cannot simply follow blocked_w. A compiled counterexample
+is AtomizationBlockedBoundary.before : G Empty [top, disj top bot] [top].
+It is cut-free and AllBlockedL. Its atomization is cut-free, atomized and equal
+in Reduced, but has an unblocked tied left contraction at [0,0,0,0]; that node's
+immediate premise is native disjL. See before_blocked/new_tied/new_unblocked/
+cutFree_equal_atomized. Preserve this regression. It refutes preservation by
+this atomizer, not existence of another simultaneous representative.
+
+One construction to investigate is an economical structural realization of routes
+using only atomic thinnings when every omitted output slot is atomic. Existing
+Route.program duplicates all requested slots and later weakens its entire original
+context; it may therefore introduce avoidable compound thinnings. For the unary
+factor_route, prove the appropriate support property from actual exchange,
+contraction or atomic-thinning input; transport it through the selected fiber and
+construct the economical program. Then prove Atomized-preserving repairs with the
+full rebuilt eligible-descendant bound and instantiate every relevant input family.
+This is an implementation proposal, not a checked theorem. Another concrete
+compatibility route is acceptable with its invariant and all tied-site laws proved.
+Do not demand rank nonincrease of the current atomize or alternate two existence
+procedures without a termination argument.
+
+After simultaneous clean cuts, continue cut elimination with constants/atomic zero,
+restricted mix/positive coherence, Reduced.Faithful and Boolean Coherence, all
+actual source instances and substitution/congruence bridges, short q_A/e_A proof,
+unconditional maximality, model corollary and the full appendix ledger. The three
+milestones and additional whole-paper endpoint remain separate.
+
+VERIFICATION, REVIEWS AND DELIVERY
+
+Use the pinned Lean 4.35.0 and Init-only closure, module headers, source length
+limit and one heavy build/audit at a time. Reuse unchanged verification. Preserve
+all logged failed attempts; final successful strict/types/controls/manuscript
+evidence is in provenance/wsl-gentzen-blocked-w. Verify changed sources and final
+public/dependency closure. Carry all accepted corrections and tagged substitution
+decisions through affected source and records; no manuscript defect was inferred.
+Apply hostile and KLR mathematical-writing reviews to actual new mathematics,
+keeping process text outside mathematical prose. Update all active maps together.
+Commit verified scoped work to main and push SSH without force; verify checked
+against committed bytes and local/origin/live refs. Deliver finalized reports and
+reviews conflict-preservingly to Downloads and compare with committed bytes.
+The current post-commit delivery receipt supplies commit/path identities.
+No independent kernel, Comparator, official preflight/service or publication
+status follows from local strict verification. Do not publish, choose a license,
+contact authors or submit as part of this proof task.
+
+Historical instruction CODEX_AFTER_5B8A199_BLOCKED_W and its two GENTZEN_5B8A199
+reviews are preserved and included in the required Downloads delivery. The prior
+continuation is preserved at history/CODEX_NEXT_SESSION_85A16CD.txt. Continue
+authorized implementation without an extra approval checkpoint.

@@ -1,6 +1,58 @@
 # Current Gentzen validation
 
-## Current Blocked-w checkpoint (28 October 2026)
+## Current simultaneous clean-cut checkpoint (28 October 2026)
+
+`DosenPetric.Reduced.Gentzen.clean_cut_premises` proves simultaneous atomization
+and blockedness for arbitrary P and every topmost cut, at the original sequents.
+The same f',g' are cut-free and Atomized, have individual Reduced equalities,
+and satisfy AllBlockedR f' and AllBlockedL g'. `clean_cut_normalization` gives
+cut equality and the expanded universal tied-contraction clauses. There is no
+coherence, Nonempty P, DecidableEq P or supplied compatibility hypothesis.
+
+The construction atomizes first. `Route.atomic_program` realizes routes with
+atomic omitted positions using only atomic thinnings. Positional residual
+preimages and actual exchange/contraction/thinning support are proved.
+`reducibility_left_atomized` and `reducibility_right_atomized` cover all actual
+input schemas with one joint CutFree/Atomized/equality/descendant-bound witness.
+`rank_replacement_for` uses that chosen witness; the existing finite enumeration,
+outside correspondence, multiset descent and no-eligible-site argument are reused.
+Unrestricted Reducibility, Blocked-w and the negative atomizer example remain.
+
+The formalization continues with `CutBase.identity_identity`, `zero_identity`,
+`identity_zero`, `zero_zero`, `thinned_thinned`, `endomorphism_thinning`,
+`thinning_endomorphism`, `top_thinning` and `thinning_bot`. These are actual
+Reduced equations for the atomic/zero/thinning and constant base patterns,
+with explicit empty-context transports and cut-count laws for their repairs.
+They do not yet give the exhaustive rank-two classification or global cut elimination.
+
+Checked: **442 Lean files / 11,105 audited project declarations**. Strict
+verification, all three exact-signature files, five expected control rejections,
+public source closure, manuscript hashes and whitespace pass. Evidence:
+`provenance/wsl-gentzen-clean-cuts/`; report: `GENTZEN_CLEAN_CUTS_REPORT.md`;
+reviews: `reviews/GENTZEN_CLEAN_CUTS_HOSTILE.md` and
+`reviews/GENTZEN_CLEAN_CUTS_WRITING.md`.
+
+| Source / claim | Exact declaration | Scope |
+| --- | --- | --- |
+| §11.2 p.253 clean cuts | `clean_cut_premises`, `clean_cut_normalization` | Same formula and contexts; both invariants for the same witnesses. |
+| Atomic-omission realization | `Route.atomic_program`, `atomic_program_arrow` | All typed positions; both product and opposite coproduct arrows. |
+| Residual support | `ContractionSelection.factor_route_preimage`, `factor_route_support` | Preimage of each remaining tag, including repeated labels. |
+| Joint local repairs | `reducibility_left_atomized`, `reducibility_right_atomized` | Every containing address and every rebuilt eligible descendant. |
+| Descent with that witness | `ReducibleL/R.rank_replacement_for`, `blocked_normalization_left/right_atomized` | Existing rank multiset and well-founded relation, with Atomized invariant. |
+| §11.2 pp.253–254 / §12.5 p.291 | `CutBase.identity_identity`, `zero_identity`, `identity_zero`, `zero_zero`, `endomorphism_thinning`, `thinning_endomorphism`, `thinned_thinned` | Base equations, including both signs; exhaustive rank classification remains open. |
+| §11.5 p.273 | `CutBase.top_thinning`, `thinning_bot`; `thinned_thinned` at top/bot | Both constants, actual repairs and explicit list transports. |
+
+Global cut elimination, restricted mix/positive coherence, Reduced.Faithful,
+Boolean Coherence, actual source/congruence/substitution bridges, the short
+q_A/e_A proof, unconditional maximality, the model corollary and remaining v6
+appendix claims remain open under the unchanged full-paper contract. Milestones
+I–III and whole-paper completion remain distinct. No manuscript defect is inferred.
+
+## Retained earlier checkpoints
+
+The following sections retain their historical source and verification scope.
+
+## Historical Blocked-w checkpoint (28 October 2026)
 
 `DosenPetric.Reduced.Gentzen.blocked_w` proves the actual Blocked-w endpoint:
 for arbitrary P and a topmost cut, the same cut formula and contexts have cut-free

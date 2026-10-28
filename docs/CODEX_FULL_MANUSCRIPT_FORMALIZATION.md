@@ -200,26 +200,26 @@ model universe general enough to express the printed corollary.
 
 ## Immediate continuation and dependency order
 
-Successor instruction 85a16cdc is incorporated. The current checked endpoint is
-actual Blocked-w, both containing-shape theorems, complete eligibility correspondence
-and finite multiset descent. Reuse these and full unchanged Reducibility; exact
-scope and evidence are in GENTZEN_BLOCKED_W_REPORT.md and its reviews.
-Reviewed proof checkpoint: ba5af8bc2c1f3ec7c218d54b840fb1df5d24d61c.
-Current continuation: CODEX_NEXT_SESSION.txt and the concrete successor
-CODEX_AFTER_BA5AF8B_CLEAN_CUTS.txt. The successor specifies atomization first,
-then blocked normalization using atomized replacement witnesses and the existing
-finite descent. Its route-support and producer proofs remain implementation
-targets. Historical instructions do not reset or narrow the verified scope
-or the full-paper endpoint.
+Successor documentation a006ecd was incorporated by fast-forward while retaining
+ba5af8b and the existing stash. Simultaneous clean-cut normalization is now proved:
+clean_cut_premises and clean_cut_normalization preserve the original sequents,
+CutFree, Atomized, per-premise/cut equality and both complete AllBlocked clauses.
+Reuse atomic route realization, proved positional support, joint atomized
+Reducibility, chosen-witness rank decomposition and the completed finite descent.
+See GENTZEN_CLEAN_CUTS_REPORT.md, its reviews and CODEX_NEXT_SESSION.txt.
 
-The next proof is simultaneous atomization and blockedness. The compiled
-AtomizationBlockedBoundary.cutFree_equal_atomized refutes preservation of the
-required AllBlockedL predicate by the existing atomize. This is a construction
-boundary, not a manuscript defect. Prove a new concrete compatibility route
-before exporting clean cuts. Then prove cut elimination with constants/atomic
-zero, positive/reduced/Boolean coherence, the actual source instances and
-substitution/congruence bridges, both maximality proofs, the model corollary
-and every appendix claim under the unchanged contract.
+The next proof is global cut elimination. Initial identity/atomic-zero/thinning
+and constant equations are implemented in GentzenCutBase, GentzenCutConstants
+and GentzenCutThinning. Prove the exhaustive minimal-rank classification and the
+principal, parametric and blocked-contraction reductions with their actual rank
+bounds. Assemble the lexicographic elimination induction; no such theorem is
+currently claimed. The original atomizer counterexample remains a valid negative
+preservation result, while simultaneous representatives now exist by the new construction.
+
+Then prove restricted mix/positive/reduced/Boolean coherence, actual source
+instances and substitution/congruence bridges, both maximality proofs, the model
+corollary and every appendix claim under this unchanged contract. Historical
+instructions and checkpoints do not reset scope or require another approval.
 
 Keep the source G syntax/equations, rho and blocked/reducible predicates and
 quantifiers unchanged. Record established corrections and verify their full

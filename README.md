@@ -1,29 +1,26 @@
 # Došen–Petrić maximality in Lean
 
-The actual **Blocked-w Lemma** now compiles for the existing Reduced presentation.
-It preserves the cut formula and contexts, supplies cut-free representatives,
-proves Reduced cut equality and blocks every tied contraction on both sides.
-Containing preservation, full eligible-site correspondence, exact finite multiset
-replacement and well-founded descent are proved. Full Reducibility is reused.
+Simultaneous **clean-cut normalization** now compiles in the existing Reduced
+presentation: original sequents, cut-free and atomized premises, individual
+Reduced equalities and every tied contraction blocked on both sides.
+The proof realizes routes with atomic omissions, supplies joint atomized
+reduction witnesses and reuses the completed finite multiset descent.
 
-Final local verification: **412 screened Lean files / 10,906 audited project
-declarations**, including generated helpers. Exact signature checks, five negative
-controls and manuscript hashes pass. See the [report](docs/GENTZEN_BLOCKED_W_REPORT.md),
-[hostile review](docs/reviews/GENTZEN_BLOCKED_W_HOSTILE.md),
-[writing review](docs/reviews/GENTZEN_BLOCKED_W_WRITING.md),
-[maps](docs/MANUSCRIPT_COVERAGE.md) and [continuation](docs/CODEX_NEXT_SESSION.txt).
+The initial cut-elimination equations for identities, atomic zeros, thinning
+and both constants also compile. Exhaustive rank classification, the commuting
+and blocked-contraction reductions, global elimination and coherence remain open.
+The full-paper endpoint remains open; unrestricted Reducibility, Blocked-w,
+the failed post-atomization preservation example and manuscript v4/v5/v6 are retained.
 
-Simultaneous atomization remains open. A compiled Empty-variable example shows
-that applying the existing atomize after Blocked-w can introduce an unblocked
-tied contraction. Clean-cut normalization, cut elimination, coherence and the
-full-paper endpoint remain unproved. Historical instructions and reports retain
-their original scope; the preceding README is preserved in docs/history/README_85A16CD.md.
-
-The completed run at `ba5af8b` has a [source/evidence review](docs/reviews/GENTZEN_BA5AF8B_REVIEW.md)
-and [writing review](docs/reviews/GENTZEN_BA5AF8B_WRITING.md). The
-[successor instruction](docs/CODEX_AFTER_BA5AF8B_CLEAN_CUTS.txt) specifies
-atomization first, followed by blocked normalization with atomized repairs.
-That construction remains to be proved; the review adds no Lean result.
+Final local verification: **442 screened Lean files / 11,105 audited
+project declarations**. The three exact-signature files, five negative controls,
+public source closure and manuscript hashes pass. See the
+[report](docs/GENTZEN_CLEAN_CUTS_REPORT.md),
+[hostile review](docs/reviews/GENTZEN_CLEAN_CUTS_HOSTILE.md),
+[writing review](docs/reviews/GENTZEN_CLEAN_CUTS_WRITING.md),
+[maps](docs/MANUSCRIPT_COVERAGE.md) and
+[continuation](docs/CODEX_NEXT_SESSION.txt). The preceding README is preserved in
+docs/history/README_A006ECD.md.
 
 ## Full-paper formalization target
 

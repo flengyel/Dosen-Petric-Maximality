@@ -1934,3 +1934,16 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.ProofAddress.outside_cluster
 #print axioms DosenPetric.Reduced.Gentzen.blocked_w
 #print axioms DosenPetric.FiniteRank.descent_wf
+#print axioms DosenPetric.Reduced.Gentzen.Route.atomic_program
+#print axioms DosenPetric.Reduced.Gentzen.ContractionSelection.factor_route_preimage
+#print axioms DosenPetric.Reduced.Gentzen.reducibility_left_atomized
+#print axioms DosenPetric.Reduced.Gentzen.reducibility_right_atomized
+#print axioms DosenPetric.Reduced.Gentzen.clean_cut_premises
+#print axioms DosenPetric.Reduced.Gentzen.clean_cut_normalization
+#print axioms DosenPetric.Reduced.Gentzen.CleanCutChecks.boundary_clean
+#print axioms DosenPetric.Reduced.Gentzen.W6.SourceLeft.reduces_atomized
+#print axioms DosenPetric.Reduced.Gentzen.CutBase.thinned_thinned
+#print axioms DosenPetric.Reduced.Gentzen.CutBase.top_thinning
+#print axioms DosenPetric.Reduced.Gentzen.CutBase.thinning_bot
+#print axioms DosenPetric.Reduced.Gentzen.CutBase.endomorphism_thinning
+#print axioms DosenPetric.Reduced.Gentzen.CutBase.thinning_endomorphism

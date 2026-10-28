@@ -97,7 +97,8 @@ theorem occurrences_eq {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) :
       (fun b => b.proof.occurrences.map (ProofOccurrence.lift b.occurrence)) := by
   cases g <;> simp only [occurrences,branches,List.flatMap_cons,List.flatMap_nil,List.append_nil]
 
-/-- The complete finite occurrence enumeration without duplicate records.+Only equality of whole dependent occurrences is removed. -/
+/-- The complete finite occurrence enumeration without duplicate records.
+Only equality of whole dependent occurrences is removed. -/
 noncomputable def finiteOccurrences {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) :
     List (ProofOccurrence g) := by
   classical

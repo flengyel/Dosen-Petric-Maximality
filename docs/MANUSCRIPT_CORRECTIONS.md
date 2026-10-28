@@ -24,7 +24,7 @@ the review scope to an independent reproof of the whole paper or its sources.
 
 ## Proof obligations are tracked separately
 
-Simultaneous atomization and blockedness, cut elimination, Boolean Coherence
+Cut elimination, Boolean Coherence
 for the actual source quotient, the short proof's Lean implementation,
 actual-presentation maximality, the model
 corollary and remaining appendix correspondences are unfinished formalization
@@ -164,3 +164,21 @@ No Lean or manuscript source is changed by this review. The author's six
 ba5af8b deliveries remain reported complete. The new instruction and two
 successor reviews await local conflict-preserving Downloads delivery and byte
 comparison with their committed repository copies.
+
+## Simultaneous clean cuts and initial elimination equations (28 October 2026)
+
+The a006ecd successor construction is now implemented and checked. Atomic route
+realization, positional residual support, joint atomized reductions on both sides
+and invariant-preserving finite descent prove clean_cut_premises and
+clean_cut_normalization. The former atomizer counterexample is unchanged; it
+refutes only preservation by that procedure and is consistent with the new
+existence theorem. All active maps, instructions, README and validation have
+been reconciled. No manuscript correction or endpoint change is inferred.
+
+The optional comment repair from the BA5AF8B writing review is resolved in
+GentzenFiniteOccurrences.lean: the stray plus between its two sentences is
+removed. Its enumeration definition and proofs are unchanged. Source searches
+and final strict/public checks cover the affected scope. Initial cut-elimination
+base equations for identities, zeros, thinning and constants are also proved;
+global elimination remains a separate unproved obligation. All accepted tagged
+substitution, source/native rank, singleton and empty-exchange decisions remain.

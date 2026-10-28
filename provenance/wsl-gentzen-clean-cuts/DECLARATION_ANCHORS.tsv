@@ -1,0 +1,154 @@
+DosenPetric/GentzenAtomicPrograms.lean	15	def Atomic : {F U : List (NormalForm P)} → StructuralProgram P F U → Prop
+DosenPetric/GentzenAtomicPrograms.lean	21	theorem atomic_seq {K : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenAtomicPrograms.lean	25	theorem atomic_reindex {K L : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenAtomicPrograms.lean	28	theorem left_cutFree {Δ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenAtomicPrograms.lean	34	theorem right_cutFree {Δ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenAtomicPrograms.lean	40	theorem atomic_consFixed (p : StructuralProgram P F U) (A : NormalForm P)
+DosenPetric/GentzenAtomicPrograms.lean	52	theorem left_atomized {Δ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenAtomicPrograms.lean	61	theorem right_atomized {Δ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenAtomicPrograms.lean	74	def program : {F U : List (NormalForm P)} → ExchangeScript P F U → StructuralProgram P F U
+DosenPetric/GentzenAtomicPrograms.lean	80	theorem program_get (p : ExchangeScript P F U) {A : NormalForm P} (a : At U A) :
+DosenPetric/GentzenAtomicPrograms.lean	87	theorem program_atomic (p : ExchangeScript P F U) : p.program.Atomic := by
+DosenPetric/GentzenAtomicPrograms.lean	98	noncomputable def programAll (p : ContractionSelection C F K) : StructuralProgram P K F :=
+DosenPetric/GentzenAtomicPrograms.lean	103	theorem programAll_get (p : ContractionSelection C F K) {A : NormalForm P} (a : At F A) :
+DosenPetric/GentzenAtomicPrograms.lean	110	theorem programAll_atomic (p : ContractionSelection C F K) : p.programAll.Atomic := by
+DosenPetric/GentzenAtomicPrograms.lean	120	def AtomicOmissions (r : Route K F) : Prop :=
+DosenPetric/GentzenAtomizedAllInputReducers.lean	14	theorem left_atomized (d : ContractionBlock P F K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenAtomizedAllInputReducers.lean	26	theorem right_atomized (d : ContractionBlock P F K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenAtomizedBinaryInputReducers.lean	13	theorem selection_left_atomized (s : ContractionSelection C F K) (hn : 2≤s.arity)
+DosenPetric/GentzenAtomizedBinaryInputReducers.lean	32	theorem selection_right_atomized (s : ContractionSelection C V K) (hn : 2≤s.arity)
+DosenPetric/GentzenAtomizedBinaryInputReducers.lean	53	theorem left_atomized (d : ContractionBlock P F K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenAtomizedBinaryInputReducers.lean	71	theorem right_atomized (d : ContractionBlock P V K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	13	theorem reducesFirst_atomized {Φ Ξ Ω Ψ : List (NormalForm P)} (hn : 2≤p.arity)
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	34	theorem reducesSecond_atomized {Φ Ξ Ω Ψ : List (NormalForm P)} (hn : 2≤q.arity)
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	61	theorem reduces_atomized {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	89	theorem reducesFirst_atomized {Φ Ξ Ω Ψ : List (NormalForm P)} (hn : 2≤p.arity)
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	110	theorem reducesSecond_atomized {Φ Ξ Ω Ψ : List (NormalForm P)} (hn : 2≤q.arity)
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	137	theorem reduces_atomized {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	166	theorem reducesFirst_atomized (p : ContractionSelection C F K) (hn : 2≤p.arity)
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	187	theorem reducesSecond_atomized (q : ContractionSelection C U L) (hn : 2≤q.arity)
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	215	theorem reduces_atomized (p : ContractionSelection C F K) (q : ContractionSelection C U L)
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	239	theorem reducesFirst_atomized (p : ContractionSelection C F K) (hn : 2≤p.arity)
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	260	theorem reducesSecond_atomized (q : ContractionSelection C U L) (hn : 2≤q.arity)
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	288	theorem reducesFirst_atomized (p : ContractionSelection (.conj A B) F K)
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	311	theorem reducesSecond_atomized (q : ContractionSelection (.conj A B) U L)
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	336	theorem reduces_atomized (p : ContractionSelection (.conj A B) F K) (q : ContractionSelection (.conj A B) U L)
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	352	theorem reducesFirst_atomized {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	377	theorem reducesSecond_atomized {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	407	theorem reduces_atomized {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	436	theorem reducesFirst_atomized {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	446	theorem reducesSecond_atomized {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenAtomizedBinaryLeaves.lean	459	theorem reduces_atomized (p : ContractionSelection (.disj A B) F K)
+DosenPetric/GentzenAtomizedBlockedNormalization.lean	15	theorem blocked_normalization_left_atomized (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ)
+DosenPetric/GentzenAtomizedBlockedNormalization.lean	44	theorem blocked_normalization_right_atomized (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ)
+DosenPetric/GentzenAtomizedConjunctionAntecedentReducer.lean	13	theorem selection_left_atomized (s : ContractionSelection C (F++U) K) (hn : 2≤s.arity)
+DosenPetric/GentzenAtomizedConjunctionAntecedentReducer.lean	33	theorem left_atomized (d : ContractionBlock P (F++U) K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenAtomizedConjunctionInputReducer.lean	15	theorem selection_right_atomized (s : ContractionSelection C (.conj A B::(F++U)) K) (hn : 2≤s.arity)
+DosenPetric/GentzenAtomizedConjunctionInputReducer.lean	45	theorem right_atomized (d : ContractionBlock P (.conj A B::(F++U)) K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenAtomizedDisjunctionAntecedentReducer.lean	13	theorem reduces_atomized {A B : NormalForm P} {F K U L Δ Λ Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenAtomizedDisjunctionAntecedentReducer.lean	26	theorem selection_left_atomized (s : ContractionSelection C (.disj A B::(F++U)) K) (hn : 2≤s.arity)
+DosenPetric/GentzenAtomizedDisjunctionAntecedentReducer.lean	56	theorem left_atomized (d : ContractionBlock P (.disj A B::(F++U)) K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenAtomizedDisjunctionSuccedentReducer.lean	13	theorem selection_right_atomized (s : ContractionSelection C (F++U) K) (hn : 2≤s.arity)
+DosenPetric/GentzenAtomizedDisjunctionSuccedentReducer.lean	33	theorem right_atomized (d : ContractionBlock P (F++U) K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenAtomizedLogicalInputReducers.lean	13	theorem selection_left_atomized (q : ContractionSelection C (Γ++.conj A B::Θ) K) (hn : 2≤q.arity)
+DosenPetric/GentzenAtomizedLogicalInputReducers.lean	23	theorem selection_right_atomized (q : ContractionSelection C (Γ++.disj A B::Θ) K) (hn : 2≤q.arity)
+DosenPetric/GentzenAtomizedLogicalInputReducers.lean	38	theorem input_left_atomized (q : ContractionSelection C F K) (hn : 2≤q.arity)
+DosenPetric/GentzenAtomizedLogicalInputReducers.lean	45	theorem input_right_atomized (q : ContractionSelection C F K) (hn : 2≤q.arity)
+DosenPetric/GentzenAtomizedLogicalInputReducers.lean	52	theorem left_atomized (d : ContractionBlock P F K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenAtomizedLogicalInputReducers.lean	70	theorem right_atomized (d : ContractionBlock P F K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenAtomizedLogicalLeaves.lean	14	theorem left_atomized (q : ContractionSelection C (Γ++.conj A B::Θ) K) (hn : 2≤q.arity)
+DosenPetric/GentzenAtomizedLogicalLeaves.lean	38	theorem right_atomized (q : ContractionSelection C (Γ++.disj A B::Θ) K) (hn : 2≤q.arity)
+DosenPetric/GentzenAtomizedLogicalLeaves.lean	67	theorem left_atomized (g : SelectionMask (.conj A B) Γ) (t : SelectionMask (.conj A B) Θ)
+DosenPetric/GentzenAtomizedLogicalLeaves.lean	93	theorem right_atomized (g : SelectionMask (.disj A B) Γ) (t : SelectionMask (.disj A B) Θ)
+DosenPetric/GentzenAtomizedMix.lean	24	theorem selection_left_atomized
+DosenPetric/GentzenAtomizedMix.lean	90	theorem selection_right_atomized
+DosenPetric/GentzenAtomizedMixInputReducer.lean	16	theorem left_atomized (f : G P U Δ) (g : G P F Λ)
+DosenPetric/GentzenAtomizedMixInputReducer.lean	36	theorem right_atomized (f : G P Δ U) (g : G P Λ F)
+DosenPetric/GentzenAtomizedOppositeInputReducers.lean	16	theorem left_atomized (d : ContractionBlock P F K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenAtomizedOppositeInputReducers.lean	38	theorem right_atomized (d : ContractionBlock P F K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenAtomizedOppositeLeaves.lean	18	theorem reducesL_atomized (C D : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenAtomizedOppositeLeaves.lean	24	theorem reducesR_atomized (C D : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenAtomizedOppositeLeaves.lean	34	theorem reducesL_atomized (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenAtomizedOppositeLeaves.lean	40	theorem reducesR_atomized (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenAtomizedOppositeLeaves.lean	50	theorem reducesL_atomized (A B C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenAtomizedOppositeLeaves.lean	56	theorem reducesR_atomized (A B C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenAtomizedOppositeLeaves.lean	69	theorem reducesL_atomized {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenAtomizedOppositeLeaves.lean	75	theorem reducesR_atomized {Φ Ξ Ω Ψ : List (NormalForm P)}
+DosenPetric/GentzenAtomizedReducibility.lean	15	theorem reducibility_left_atomized (f : G P Φ (C::Ξ)) (g : G P (C::Ω) Ψ)
+DosenPetric/GentzenAtomizedReducibility.lean	27	theorem reducibility_right_atomized (f : G P Φ (C::Ξ)) (g : G P (C::Ω) Ψ)
+DosenPetric/GentzenAtomizedReduction.lean	14	def AtomizedReducesL (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ)
+DosenPetric/GentzenAtomizedReduction.lean	22	def AtomizedReducesR (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ)
+DosenPetric/GentzenAtomizedReduction.lean	29	theorem AtomizedReducesL.of_strict (x : At U C) (hc : w.CutFree → h.CutFree)
+DosenPetric/GentzenAtomizedReduction.lean	35	theorem AtomizedReducesR.of_strict (x : At V C) (hc : w.CutFree → h.CutFree)
+DosenPetric/GentzenAtomizedReduction.lean	44	theorem factor_route_support (q : ContractionSelection C U K) (r : Route U F)
+DosenPetric/GentzenAtomizedReduction.lean	58	theorem factor_route_preimage (q : ContractionSelection C U K) (r : Route U F)
+DosenPetric/GentzenAtomizedRouting.lean	14	theorem selection_left_atomized (q : ContractionSelection C F K) (hn : 2≤q.arity)
+DosenPetric/GentzenAtomizedRouting.lean	35	theorem selection_right_atomized (q : ContractionSelection C F K) (hn : 2≤q.arity)
+DosenPetric/GentzenAtomizedRouting.lean	56	theorem left_atomized (d : ContractionBlock P F K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenAtomizedRouting.lean	74	theorem right_atomized (d : ContractionBlock P F K) (hn : 2≤d.gs.length)
+DosenPetric/GentzenAtomizedUnaryProducers.lean	11	theorem left_of_route_atomized (q : ContractionSelection C U K) (hn : 2≤q.arity)
+DosenPetric/GentzenAtomizedUnaryProducers.lean	37	theorem right_of_route_atomized (q : ContractionSelection C U K) (hn : 2≤q.arity)
+DosenPetric/GentzenChosenRankReplacement.lean	16	theorem ReducibleL.rank_replacement_for {a : ProofAddress g w} {x : At U C}
+DosenPetric/GentzenChosenRankReplacement.lean	52	theorem ReducibleR.rank_replacement_for {a : ProofAddress f w} {x : At V C}
+DosenPetric/GentzenCleanCutChecks.lean	12	theorem compound_identity (A B : NormalForm P) :
+DosenPetric/GentzenCleanCutChecks.lean	19	theorem old_empty_compound_not_atomic (A B : NormalForm P) :
+DosenPetric/GentzenCleanCutChecks.lean	24	def doubled (D : NormalForm P) : Route [D] [D,D] :=
+DosenPetric/GentzenCleanCutChecks.lean	27	theorem doubled_atomic_program (D : NormalForm P) :
+DosenPetric/GentzenCleanCutChecks.lean	37	theorem equal_compound_unused (A B : NormalForm P) :
+DosenPetric/GentzenCleanCutChecks.lean	46	theorem empty_atomic_context :
+DosenPetric/GentzenCleanCutChecks.lean	57	theorem empty_route :
+DosenPetric/GentzenCleanCutChecks.lean	61	theorem signed_omission (l : Literal P) :
+DosenPetric/GentzenCleanCutChecks.lean	68	def equalExchange : Route [NormalForm.disj (.top : NormalForm Empty) .bot,
+DosenPetric/GentzenCleanCutChecks.lean	72	theorem equal_exchange_tags :
+DosenPetric/GentzenCleanCutChecks.lean	76	theorem equal_exchange_atomic : equalExchange.AtomicOmissions :=
+DosenPetric/GentzenCleanCutChecks.lean	80	theorem boundary_clean :
+DosenPetric/GentzenCleanCuts.lean	14	theorem clean_cut_premises (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ)
+DosenPetric/GentzenCleanCuts.lean	31	theorem clean_cut_normalization (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ)
+DosenPetric/GentzenCutBase.lean	11	theorem decode_injective {A B : NormalForm P}
+DosenPetric/GentzenCutBase.lean	20	theorem identity_identity (l : Literal P) :
+DosenPetric/GentzenCutBase.lean	26	theorem zero_identity (l : Literal P) :
+DosenPetric/GentzenCutBase.lean	32	theorem identity_zero (l : Literal P) :
+DosenPetric/GentzenCutBase.lean	38	theorem zero_zero (l : Literal P) :
+DosenPetric/GentzenCutBase.lean	47	theorem thinned_thinned {Γ Θ Δ Λ : List (NormalForm P)} (C : NormalForm P)
+DosenPetric/GentzenCutConstants.lean	13	def nilProgram (Γ : List (NormalForm P)) : StructuralProgram P (Γ++[]) Γ :=
+DosenPetric/GentzenCutConstants.lean	16	theorem nilProgram_arrow (o : Op) (Γ : List (NormalForm P)) :
+DosenPetric/GentzenCutConstants.lean	35	def topRepair (g : G P Θ Λ) : G P (Θ++[]) (Λ++[]) :=
+DosenPetric/GentzenCutConstants.lean	38	theorem topRepair_count (g : G P Θ Λ) : (topRepair g).cutCount = g.cutCount := by
+DosenPetric/GentzenCutConstants.lean	41	theorem topRepair_atomized (g : G P Θ Λ) (h : g.Atomized) : (topRepair g).Atomized := by
+DosenPetric/GentzenCutConstants.lean	46	theorem top_thinning (g : G P Θ Λ) :
+DosenPetric/GentzenCutConstants.lean	66	theorem thinning_bot (f : G P Γ Δ) :
+DosenPetric/GentzenCutThinning.lean	12	def discardLast (C : NormalForm P) (Θ : List (NormalForm P)) :
+DosenPetric/GentzenCutThinning.lean	16	theorem discardLast_atomic (C : NormalForm P) (Θ : List (NormalForm P))
+DosenPetric/GentzenCutThinning.lean	19	theorem discardLast_get (C : NormalForm P) (Θ : List (NormalForm P))
+DosenPetric/GentzenCutThinning.lean	26	theorem discardLast_arrow (C : NormalForm P) (Θ : List (NormalForm P)) (o : Op) :
+DosenPetric/GentzenCutThinning.lean	39	theorem inr_append_single (C : NormalForm P) (Δ : List (NormalForm P)) :
+DosenPetric/GentzenCutThinning.lean	57	def leftThinningRepair (g : G P Θ Λ) : G P (Θ++[C]) (Λ++[]) :=
+DosenPetric/GentzenCutThinning.lean	60	theorem leftThinningRepair_count (g : G P Θ Λ) :
+DosenPetric/GentzenCutThinning.lean	64	theorem leftThinningRepair_atomized (g : G P Θ Λ) (hc : AtomicFormula C) (hg : g.Atomized) :
+DosenPetric/GentzenCutThinning.lean	72	theorem endomorphism_thinning (f : G P [C] [C]) (g : G P Θ Λ) :
+DosenPetric/GentzenCutThinning.lean	98	theorem thinning_endomorphism (f : G P Γ Δ) (g : G P [C] [C]) :
+DosenPetric/GentzenEconomicalRoutes.lean	13	theorem atomic_program {K F : List (NormalForm P)} (r : Route K F)
+DosenPetric/GentzenEconomicalRoutes.lean	61	theorem atomic_program_arrow {K F : List (NormalForm P)} (r : Route K F)
+DosenPetric/GentzenInputRouteSupport.lean	13	theorem route_surjective (p : ContractionSelection C F K) {A : NormalForm P} (a : At K A) :
+DosenPetric/GentzenInputRouteSupport.lean	31	theorem atomicOmissions_map (r : Route U F) (hr : r.AtomicOmissions)
+DosenPetric/GentzenInputRouteSupport.lean	41	theorem exchange_atomicOmissions (Γ X Y Θ : List (NormalForm P)) :
+DosenPetric/GentzenInputRouteSupport.lean	50	theorem copies_atomicOmissions (C : NormalForm P) (gs : List (List (NormalForm P)))
+DosenPetric/GentzenInputRouteSupport.lean	60	theorem thin_atomicOmissions (Γ Θ : List (NormalForm P)) (C : NormalForm P)
+DosenPetric/GentzenInputRouteSupport.lean	79	theorem selection_atomicOmissions {C : NormalForm P} (q : ContractionSelection C U K)
+DosenPetric/GentzenParameterizedRouteRepair.lean	16	def repairWithL (t : G P F Δ) : G P K Δ :=
+DosenPetric/GentzenParameterizedRouteRepair.lean	18	def repairWithR (t : G P Δ F) : G P Δ K :=
+DosenPetric/GentzenParameterizedRouteRepair.lean	21	theorem repairWith_countL (t : G P F Δ) :
+DosenPetric/GentzenParameterizedRouteRepair.lean	25	theorem repairWith_countR (t : G P Δ F) :
+DosenPetric/GentzenParameterizedRouteRepair.lean	30	theorem repairWith_atomizedL (t : G P F Δ) (hp : tprog.Atomic) (ht : t.Atomized) :
+DosenPetric/GentzenParameterizedRouteRepair.lean	35	theorem repairWith_atomizedR (t : G P Δ F) (hp : tprog.Atomic) (ht : t.Atomized) :
+DosenPetric/GentzenParameterizedRouteRepair.lean	41	theorem consFixed_arrow_eq (ht : ∀ {A : NormalForm P} (a : At p.mask.erased A),
+DosenPetric/GentzenParameterizedRouteRepair.lean	51	theorem repairWith_denoteL
+DosenPetric/GentzenParameterizedRouteRepair.lean	65	theorem repairWith_denoteR
+DosenPetric/GentzenParameterizedRouteRepair.lean	81	theorem repairWith_boundL (w : G P U Δ) (t : G P F Δ) (hn : 2≤q.arity)
+DosenPetric/GentzenParameterizedRouteRepair.lean	119	theorem repairWith_boundR (w : G P Δ U) (t : G P Δ F) (hn : 2≤q.arity)
+DosenPetric/GentzenResidualSupport.lean	14	def fixedAt : {F : List (NormalForm P)} → (m : SelectionMask C F) →
+DosenPetric/GentzenResidualSupport.lean	23	theorem fill_fixedAt {K : List (NormalForm P)} (m : SelectionMask C F)
+DosenPetric/GentzenResidualSupport.lean	35	theorem canonical_fixedAt (m : SelectionMask C F) {A : NormalForm P} (a : At m.erased A) :
+DosenPetric/GentzenResidualSupport.lean	44	theorem factor_preimage (r : Route (C::K) F) (p : ContractionSelection C F L)
+DosenPetric/GentzenResidualSupport.lean	67	theorem factor_atomicOmissions (r : Route (C::K) F) (hr : r.AtomicOmissions)
+DosenPetric/GentzenResidualSupport.lean	74	theorem dropHead_atomicOmissions (r : Route (C::K) F) (hr : r.AtomicOmissions)
