@@ -1,0 +1,12 @@
+[
+  {
+    "exit_status": 1,
+    "action": "initial staged-record comparison",
+    "reason": "The copied checker listed dff2994 paths but still read individual blobs from df2b9ee; Checks/PrincipalConjunction.lean did not yet exist there. No source was changed by that failed comparison."
+  },
+  {
+    "exit_status": 0,
+    "action": "corrected staged-record comparison",
+    "preserved_source_baseline": "dff2994"
+  }
+]

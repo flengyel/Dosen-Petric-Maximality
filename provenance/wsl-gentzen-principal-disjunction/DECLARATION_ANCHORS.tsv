@@ -1,0 +1,116 @@
+DosenPetric/GentzenCrossComponents.lean	12	theorem cross_first (o : Op) (A B T : NormalForm P) :
+DosenPetric/GentzenCrossComponents.lean	25	theorem cross_second (o : Op) (A B T : NormalForm P) :
+DosenPetric/GentzenCrossComponents.lean	39	theorem cross_tail (o : Op) (A B T : NormalForm P) :
+DosenPetric/GentzenHeadRouting.lean	12	theorem split_before (o : Op) {F : List (NormalForm P)} (U : List (NormalForm P))
+DosenPetric/GentzenHeadRouting.lean	19	theorem split_shift (o : Op) (F : List (NormalForm P)) {U : List (NormalForm P)}
+DosenPetric/GentzenHeadRouting.lean	29	def front (F U : List (NormalForm P)) (A : NormalForm P) :
+DosenPetric/GentzenHeadRouting.lean	34	theorem front_index (F U : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenHeadRouting.lean	41	theorem front_before {F : List (NormalForm P)} (U : List (NormalForm P))
+DosenPetric/GentzenHeadRouting.lean	51	theorem front_head (F U : List (NormalForm P)) (A : NormalForm P) :
+DosenPetric/GentzenHeadRouting.lean	58	theorem front_tail (F U : List (NormalForm P)) (A : NormalForm P)
+DosenPetric/GentzenHeadRouting.lean	68	theorem front_arrow (o : Op) (F U : List (NormalForm P)) (A : NormalForm P) :
+DosenPetric/GentzenHeadRouting.lean	97	theorem front_split (o : Op) (F U : List (NormalForm P)) (A : NormalForm P) :
+DosenPetric/GentzenHeadRouting.lean	105	theorem front_singleton (o : Op) (A B : NormalForm P) (U : List (NormalForm P)) :
+DosenPetric/GentzenInverseContextAssociativity.lean	13	theorem split_assoc_inverse (o : Op) (F U V : List (NormalForm P)) :
+DosenPetric/GentzenMirrorCalculus.lean	13	def mirror : NormalForm P → NormalForm P
+DosenPetric/GentzenMirrorCalculus.lean	20	theorem mirror_involutive (A : NormalForm P) : mirror (mirror A) = A := by
+DosenPetric/GentzenMirrorCalculus.lean	27	def Hom (A B : NormalForm P) := Reduced.Hom (mirror B) (mirror A)
+DosenPetric/GentzenMirrorCalculus.lean	28	def id (A : NormalForm P) : Hom A A := Reduced.id (mirror A)
+DosenPetric/GentzenMirrorCalculus.lean	29	def comp {A B C : NormalForm P} (f : Hom A B) (g : Hom B C) : Hom A C := Reduced.comp g f
+DosenPetric/GentzenMirrorCalculus.lean	31	def tensor (o : Op) {A B C D : NormalForm P} (f : Hom A C) (g : Hom B D) :
+DosenPetric/GentzenMirrorCalculus.lean	37	def assocR (o : Op) (A B C : NormalForm P) :
+DosenPetric/GentzenMirrorCalculus.lean	43	def assocL (o : Op) (A B C : NormalForm P) :
+DosenPetric/GentzenMirrorCalculus.lean	49	def swap (o : Op) (A B : NormalForm P) : Hom (o.formula A B) (o.formula B A) :=
+DosenPetric/GentzenMirrorCalculus.lean	54	def dist (A B C : NormalForm P) : Hom (.conj A (.disj B C)) (.disj (.conj A B) C) :=
+DosenPetric/GentzenMirrorCalculus.lean	57	def fst (A B : NormalForm P) : Hom (.conj A B) A := Reduced.inr (mirror B) (mirror A)
+DosenPetric/GentzenMirrorCalculus.lean	58	def snd (A B : NormalForm P) : Hom (.conj A B) B := Reduced.inl (mirror B) (mirror A)
+DosenPetric/GentzenMirrorCalculus.lean	59	def pair {X A B : NormalForm P} (f : Hom X A) (g : Hom X B) : Hom X (.conj A B) :=
+DosenPetric/GentzenMirrorCalculus.lean	64	theorem id_comp {A B : NormalForm P} (f : Hom A B) : comp (id A) f = f :=
+DosenPetric/GentzenMirrorCalculus.lean	67	theorem comp_id {A B : NormalForm P} (f : Hom A B) : comp f (id B) = f :=
+DosenPetric/GentzenMirrorCalculus.lean	70	theorem assoc {A B C D : NormalForm P} (f : Hom A B) (g : Hom B C) (h : Hom C D) :
+DosenPetric/GentzenMirrorCalculus.lean	73	theorem tensor_id (o : Op) (A B : NormalForm P) : tensor o (id A) (id B) = id (o.formula A B) := by
+DosenPetric/GentzenMirrorCalculus.lean	76	theorem tensor_comp (o : Op) {A B C D E F : NormalForm P}
+DosenPetric/GentzenMirrorCalculus.lean	81	theorem assocR_L (o : Op) (A B C : NormalForm P) :
+DosenPetric/GentzenMirrorCalculus.lean	85	theorem assocL_R (o : Op) (A B C : NormalForm P) :
+DosenPetric/GentzenMirrorCalculus.lean	89	theorem assocR_nat (o : Op) {A B C D E F : NormalForm P}
+DosenPetric/GentzenMirrorCalculus.lean	97	theorem assocL_nat (o : Op) {A B C D E F : NormalForm P}
+DosenPetric/GentzenMirrorCalculus.lean	105	theorem swap_nat (o : Op) {A B C D : NormalForm P} (f : Hom A C) (g : Hom B D) :
+DosenPetric/GentzenMirrorCalculus.lean	111	theorem dist_nat {A B C D E F : NormalForm P} (f : Hom A D) (g : Hom B E) (h : Hom C F) :
+DosenPetric/GentzenMirrorCalculus.lean	116	theorem dist_conj (A B C D : NormalForm P) :
+DosenPetric/GentzenMirrorCalculus.lean	124	theorem dist_disj (A B C D : NormalForm P) :
+DosenPetric/GentzenMirrorCalculus.lean	132	theorem fst_nat {A B C D : NormalForm P} (f : Hom A C) (g : Hom B D) :
+DosenPetric/GentzenMirrorCalculus.lean	136	theorem snd_nat {A B C D : NormalForm P} (f : Hom A C) (g : Hom B D) :
+DosenPetric/GentzenMirrorCalculus.lean	140	theorem snd_swap (A B : NormalForm P) : snd A B = comp (swap .conj A B) (fst B A) :=
+DosenPetric/GentzenMirrorCalculus.lean	144	theorem swap_snd (A B : NormalForm P) : comp (swap .conj A B) (snd B A) = fst A B :=
+DosenPetric/GentzenMirrorCalculus.lean	147	theorem tensor_factor (o : Op) {A B C D E : NormalForm P}
+DosenPetric/GentzenMirrorCalculus.lean	152	def mixedDisj (A D B E : NormalForm P) :
+DosenPetric/GentzenMirrorDistribution.lean	13	theorem conjunction (T X B E : NormalForm P) :
+DosenPetric/GentzenMirrorDistribution.lean	24	theorem disjunction (T H D E : NormalForm P) :
+DosenPetric/GentzenMirrorDistribution.lean	33	def step (A D B : NormalForm P) : Hom (.conj (.disj A D) B) (.disj (.conj A B) D) :=
+DosenPetric/GentzenMirrorDistribution.lean	37	def finish (T B A : NormalForm P) : Hom (.conj (.conj T B) A) (.conj T (.conj A B)) :=
+DosenPetric/GentzenMirrorDistribution.lean	40	def stepWithContext (T A D B : NormalForm P) :
+DosenPetric/GentzenMirrorDistribution.lean	46	theorem step_strength (T A D B : NormalForm P) :
+DosenPetric/GentzenMirrorDistribution.lean	60	def sequential (T A D B : NormalForm P) :
+DosenPetric/GentzenMirrorDistribution.lean	65	theorem mixed_strength (T A D B E : NormalForm P) :
+DosenPetric/GentzenMirrorInterpretation.lean	14	theorem mixed_source (A D B E : NormalForm P) :
+DosenPetric/GentzenMirrorInterpretation.lean	30	theorem splice_native {X Y C D Z : NormalForm P}
+DosenPetric/GentzenMirrorPrincipalEquation.lean	14	def body (h : Hom (.conj A (.conj B T)) V) : Hom (.conj T (.conj A B)) V :=
+DosenPetric/GentzenMirrorPrincipalEquation.lean	17	def component (h : Hom (.conj A (.conj B T)) V) :
+DosenPetric/GentzenMirrorPrincipalEquation.lean	22	theorem tensor_first_factor (o : Op) {A B C D E : NormalForm P}
+DosenPetric/GentzenMirrorPrincipalEquation.lean	28	theorem component_equation (h : Hom (.conj A (.conj B T)) V) :
+DosenPetric/GentzenMirrorPrincipalEquation.lean	48	def normal (f : Hom X (.disj A D)) (g : Hom Y (.disj B E))
+DosenPetric/GentzenMirrorPrincipalEquation.lean	55	theorem left_normal (f : Hom X (.disj A D)) (g : Hom Y (.disj B E))
+DosenPetric/GentzenMirrorPrincipalEquation.lean	76	def inner (h : Hom (.conj A (.conj B T)) V) :
+DosenPetric/GentzenMirrorPrincipalEquation.lean	81	theorem inner_naturality (f : Hom X (.disj A D)) (h : Hom (.conj A (.conj B T)) V) :
+DosenPetric/GentzenMirrorPrincipalEquation.lean	89	theorem right_normal (f : Hom X (.disj A D)) (g : Hom Y (.disj B E))
+DosenPetric/GentzenMirrorPrincipalEquation.lean	111	theorem equation (f : Hom X (.disj A D)) (g : Hom Y (.disj B E))
+DosenPetric/GentzenMirrorProductCalculations.lean	12	theorem ext {X A B : NormalForm P} (f g : Hom X (.conj A B))
+DosenPetric/GentzenMirrorProductCalculations.lean	17	theorem pair_fst {X A B : NormalForm P} (f : Hom X A) (g : Hom X B) :
+DosenPetric/GentzenMirrorProductCalculations.lean	20	theorem pair_snd {X A B : NormalForm P} (f : Hom X A) (g : Hom X B) :
+DosenPetric/GentzenMirrorProductCalculations.lean	23	theorem pair_pre {W X A B : NormalForm P} (h : Hom W X) (f : Hom X A) (g : Hom X B) :
+DosenPetric/GentzenMirrorProductCalculations.lean	26	theorem pair_fst_comp {X A B C : NormalForm P} (f : Hom X A) (g : Hom X B) (h : Hom A C) :
+DosenPetric/GentzenMirrorProductCalculations.lean	30	theorem pair_snd_comp {X A B C : NormalForm P} (f : Hom X A) (g : Hom X B) (h : Hom B C) :
+DosenPetric/GentzenMirrorProductCalculations.lean	34	theorem tensor_pair {A B C D : NormalForm P} (f : Hom A C) (g : Hom B D) :
+DosenPetric/GentzenMirrorProductCalculations.lean	40	theorem swap_pair (A B : NormalForm P) :
+DosenPetric/GentzenMirrorProductCalculations.lean	46	theorem assocR_pair (A B C : NormalForm P) :
+DosenPetric/GentzenMirrorProductCalculations.lean	52	theorem assocL_pair (A B C : NormalForm P) :
+DosenPetric/GentzenMirrorProductCalculations.lean	59	theorem principal_finish (T B A : NormalForm P) :
+DosenPetric/GentzenMirrorProductCalculations.lean	68	theorem principal_input (T X B : NormalForm P) :
+DosenPetric/GentzenMirrorProductCalculations.lean	76	def rotate (T X B : NormalForm P) : Hom (.conj (.conj T X) B) (.conj (.conj B T) X) :=
+DosenPetric/GentzenMirrorProductCalculations.lean	79	theorem rotate_naturality {T X X' B : NormalForm P} (f : Hom X X') :
+DosenPetric/GentzenMirrorSplice.lean	12	def splice {X Y C D Z : NormalForm P} (f : Hom X (.disj C D))
+DosenPetric/GentzenMirrorSplice.lean	20	theorem input (k : Hom X' X) (f : Hom X (.disj C D)) (g : Hom (.conj C Y) Z) :
+DosenPetric/GentzenMirrorSplice.lean	24	theorem output (f : Hom X (.disj C D)) (g : Hom (.conj C Y) Z) (k : Hom Z Z') :
+DosenPetric/GentzenMirrorSplice.lean	28	theorem context (k : Hom Y' Y) (f : Hom X (.disj C D)) (g : Hom (.conj C Y) Z) :
+DosenPetric/GentzenMirrorSplice.lean	48	theorem residual (k : Hom D D') (f : Hom X (.disj C D)) (g : Hom (.conj C Y) Z) :
+DosenPetric/GentzenPrincipalDegreeSteps.lean	14	def DegreeBelow (P : Type u) (n : Nat) : Prop :=
+DosenPetric/GentzenPrincipalDegreeSteps.lean	25	theorem degree_step (ih : DegreeBelow P (cutDegree (.conj A B)))
+DosenPetric/GentzenPrincipalDegreeSteps.lean	57	theorem degree_step (ih : DegreeBelow P (cutDegree (.disj A B)))
+DosenPetric/GentzenPrincipalDisjunction.lean	14	def reflectedSplice {D C X Z Y : NormalForm P}
+DosenPetric/GentzenPrincipalDisjunction.lean	18	theorem reflected_splice {X Y C D Z : NormalForm P}
+DosenPetric/GentzenPrincipalDisjunction.lean	23	theorem reflected_equation {T A B D E V X Y : NormalForm P}
+DosenPetric/GentzenPrincipalDisjunctionNative.lean	17	def binaryInput (g : Hom (.conj A D) X) (h : Hom (.conj B E) Y) :
+DosenPetric/GentzenPrincipalDisjunctionNative.lean	24	def frontTwo (A B T : NormalForm P) : Hom (.disj A (.disj B T)) (.disj B (.disj A T)) :=
+DosenPetric/GentzenPrincipalDisjunctionNative.lean	27	def reflectionInput (f : Hom V (.disj A (.disj B T))) : Hom V (.disj (.disj T A) B) :=
+DosenPetric/GentzenPrincipalDisjunctionNative.lean	31	theorem reflection_left (f : Hom V (.disj A (.disj B T))) :
+DosenPetric/GentzenPrincipalDisjunctionNative.lean	38	theorem reflection_inner (f : Hom V (.disj A (.disj B T))) :
+DosenPetric/GentzenPrincipalDisjunctionNative.lean	45	theorem reflection_outer (X A T : NormalForm P) :
+DosenPetric/GentzenPrincipalDisjunctionNative.lean	52	theorem reflected_inner (f : Hom V (.disj A (.disj B T))) (h : Hom (.conj B E) Y) :
+DosenPetric/GentzenPrincipalDisjunctionNative.lean	60	theorem equation (f : Hom V (.disj A (.disj B T)))
+DosenPetric/GentzenPrincipalDisjunctionRule.lean	15	def reduction (f : G P Γ (A :: B :: Δ))
+DosenPetric/GentzenPrincipalDisjunctionRule.lean	23	def normal (f : G P Γ (A :: B :: Δ))
+DosenPetric/GentzenPrincipalDisjunctionRule.lean	36	theorem reduction_denote (f : G P Γ (A :: B :: Δ))
+DosenPetric/GentzenPrincipalDisjunctionRule.lean	80	theorem principal_denote (f : G P Γ (A :: B :: Δ))
+DosenPetric/GentzenPrincipalDisjunctionRule.lean	95	theorem rule_equation (f : G P Γ (A :: B :: Δ))
+DosenPetric/GentzenPrincipalDisjunctionSelected.lean	16	def selectedReduction (f : G P Γ (F ++ A :: B :: U))
+DosenPetric/GentzenPrincipalDisjunctionSelected.lean	21	theorem selected_equation (f : G P Γ (F ++ A :: B :: U))
+DosenPetric/GentzenPrincipalDisjunctionSelected.lean	29	theorem selectedReduction_count (f : G P Γ (F ++ A :: B :: U))
+DosenPetric/GentzenPrincipalDisjunctionSelected.lean	36	theorem selectedReduction_atomized (f : G P Γ (F ++ A :: B :: U))
+DosenPetric/GentzenPrincipalDisjunctionSelected.lean	48	theorem component_degrees (A B : NormalForm P) :
+DosenPetric/GentzenRankTwoDegreeStep.lean	15	theorem rank_two_degree_step {Γ Δ Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenSideProductCalculations.lean	16	theorem tensor_pair {A B E F : O} (f : C.Hom A E) (g : C.Hom B F) :
+DosenPetric/GentzenSideProductCalculations.lean	23	theorem swap_pair (A B : O) : M.swap A B = D.pair (D.snd A B) (D.fst A B) := by
+DosenPetric/GentzenSideProductCalculations.lean	28	theorem pair_fst_comp {X A B E : O} (f : C.Hom X A) (g : C.Hom X B) (h : C.Hom A E) :
+DosenPetric/GentzenSideProductCalculations.lean	32	theorem pair_snd_comp {X A B E : O} (f : C.Hom X A) (g : C.Hom X B) (h : C.Hom B E) :
+DosenPetric/GentzenSideProductCalculations.lean	38	theorem dual_outer_route (X A T : O) :
+DosenPetric/GentzenSideProductCalculations.lean	51	theorem dual_inner_route (A B T : O) :

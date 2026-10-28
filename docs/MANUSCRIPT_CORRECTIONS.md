@@ -267,3 +267,21 @@ to the statement/coverage/correspondence, validation, contract and continuation
 records together. No manuscript/source theorem correction is implied. V7 and
 all earlier manuscript versions remain byte-identical. Appendix C's concrete
 blocked reduction correspondences remain open.
+
+## Disjunction principal and degree-step correspondence (28 October 2026)
+
+The native disjunction reduction cuts B then A and restores the original sequent
+by explicit inverse list-association scripts. The source §11.2 p.255 supplies this
+case by analogy; the actual equation is proved directly in Reduced. The reflected
+calculus interprets concrete reversed homs and operations with proved laws; no
+operation on arbitrary quotient arrows or unproved duality is assumed. This
+resolves the open dual principal equation recorded at dff2994.
+
+Both principal degree_step theorems now return cut-free atomized witnesses under
+DegreeBelow, eliminating the inner component cut before the outer. The exhaustive
+rank_two_degree_step has the same strict outer hypothesis. Its global discharge
+and all remaining parametric/blocked families remain open. These statuses are
+carried together into the continuation, contract, statement, coverage,
+correspondence and validation records. The earlier conjunction/source-order
+distinction is preserved. No manuscript/source theorem correction is implied;
+v7 and all earlier manuscript bytes, Appendix C and all diagrams are unchanged.
