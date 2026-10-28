@@ -15,14 +15,22 @@ marked formalized merely because its TeX has been added.
 
 ## Current correction status
 
+The actual conjR_right_second equation/reconstruction and original-rank step
+are now proved; seven logical binary and fourteen blocked reductions remain
+open. mixedDisj_swap is proved from actual Reduced distribution/symmetry laws.
+Its earlier simplification failure was resolved, not a counterexample or source
+erratum. The next native first-child equation is retained as an open proof
+obligation outside production. No new manuscript correction is established.
+All previous mathematical/writing decisions and completed deliveries persist.
+
 The actual four mix-cut branches are proved. Their swapped cases use concrete
 native mix symmetry and a checked unique-fiber residual structural program,
 then post-elimination atomization. This is an implementation choice preserving
 the intended exact equations and quantifiers, not a manuscript correction.
 The direct leftFirst macro is separately typed; its own equality is not used
 as an assumed bridge. All earlier source, principal-order, rank, atomization,
-writing and all-three-appendix requirements persist. Eight logical binary and
-fourteen blocked reductions remain open.
+writing and all-three-appendix requirements persist. The current logical-binary
+status is given above.
 
 The b8fcd28 source/evidence review found no new mathematical or manuscript
 defect. It confirmed active-record inconsistencies: README still prescribed

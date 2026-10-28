@@ -1,51 +1,55 @@
 # Current Gentzen validation
 
-## Current actual mix-cut construction (28 October 2026)
+## Current logical binary construction (28 October 2026)
 
-Successor b767c19 is incorporated, preserving prior proof work and the stash.
-All four mix branches now have actual Reduced equations, generic original-sequent
-reconstructions, eliminated witnesses and strict original-rank steps:
-CutCommutation.mix_{left,right}_{first,second}_rank_step. Each applies rankIH to
-the actual inherited clean child before routing or structural reconstruction.
+Successor b767c19 and the completed four mix branches are preserved, together
+with stash dedfd8fc8cd49930e9a162d5be585215b062a43c. Mix proof/receipt commits:
+a654ed0 / 408257b. Their 19 committed-byte Downloads deliveries are complete.
 
-The leading association cases use BinaryMix.leadingAt/rightFirstAt and preserve
-Atomized directly. The swapped cases use BinaryMix.firstRaw/secondRaw, actual
-native_swap and instantiated unique-fiber residual structural programs, followed
-by atomization of the finished cut-free reconstruction. first_equation uses
-firstRaw; the separate direct leftFirst block-exchange macro is not its equation.
-The actual right diagram is a proved particular MirrorCalculus interpretation,
-not a general quotient-arrow or G-proof duality. All exact output contexts,
-native reversed mix order, empty contexts and distinct equal-label tags remain.
+The right cut through the second child of G.conjR is now complete through
+BinaryLogical.conjRRightSecond_equation and
+CutCommutation.conjR_right_second_rank_step. The generic builder takes the
+actual original child-cut output and rebuilds G.conjR with the retained B tag,
+then applies only list-association comparisons. Count, Atomized, congruence and
+eliminated-witness laws are proved. rankIH uses the original inherited clean
+child before routing. Product/distribution, residual association, actual native
+fold/unit and selected-tag diagrams are all instantiated. mixedDisj_swap is a
+separate proved Reduced interchange, derived from dist_b_disj and symmetry laws;
+it is available for subsequent cases, not a general proof duality.
 
-See [the run report](GENTZEN_BINARY_MIX_CUTS_REPORT.md),
-[hostile audit](reviews/GENTZEN_BINARY_MIX_CUTS_HOSTILE.md),
-[writing review](reviews/GENTZEN_BINARY_MIX_CUTS_WRITING.md) and
+See [the run report](GENTZEN_LOGICAL_BINARY_CUTS_REPORT.md),
+[hostile audit](reviews/GENTZEN_LOGICAL_BINARY_CUTS_HOSTILE.md),
+[writing review](reviews/GENTZEN_LOGICAL_BINARY_CUTS_WRITING.md) and
 [live constructor/tag table](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
+The preceding four mix constructions and their exact implementation choices
+remain recorded in GENTZEN_BINARY_MIX_CUTS_REPORT.md and its two reviews.
 
 | Local proof phase | Lean files | Audited declarations | Exact check files | Rejected controls | Evidence directory |
 | --- | ---: | ---: | ---: | ---: | --- |
 | 21627c4; same-side construction | 522 | 11,765 | 9 | 7 | provenance/wsl-gentzen-after-67de18a/ |
 | ea74a32; mix algebra | 524 | 11,780 | 10 | 7 | provenance/wsl-gentzen-mix-union/ |
-| Actual four-branch mix reconstruction | 538 | 11,886 | 11 | 8 | provenance/wsl-gentzen-binary-cuts/ |
+| a654ed0; four mix branches | 538 | 11,886 | 11 | 8 | provenance/wsl-gentzen-binary-cuts/ |
+| One logical binary branch and mixed-rule symmetry | 546 | 11,911 | 12 | 9 | provenance/wsl-gentzen-logical-binary-cuts/ |
 
-All strict, exact-type, actual literal/constant-witness, source-closure and
+Strict, expanded-type, actual literal/constant-witness, source-closure and
 negative-control checks pass locally. Reviews are local author-side reviews;
 no independent kernel replay, Comparator, official/service verification or
-publication is claimed. All manuscript bytes remain unchanged from b767c19.
+publication is claimed. All manuscript bytes remain unchanged from 408257b.
 
-Eight logical binary reconstructions/equations/rank steps remain open, as do
+Seven logical binary equations/reconstructions/rank steps remain open, as do
 all fourteen blocked reductions, the complete dispatcher, discharged rank/degree/
 structural inductions, both unrestricted elimination endpoints, coherence and
 later full-paper claims. All three milestones and the additional whole-paper
 endpoint remain distinct. V7 and all three appendices remain in scope; Appendix C
 is written and its two concrete blocked-rank Lean correspondences remain open.
+The exact next native first-child candidate/equation is retained outside production
+at provenance/wsl-gentzen-logical-binary-cuts/open/next-native-first.lean.
 
-The three B8FCD28 successor artifacts have completed committed-byte Downloads
-delivery; SUCCESSOR_DELIVERY.json records exact paths/hashes. Earlier 23, 18-entry
-and 14-entry completed deliveries remain complete. Current finalized reports and
-reviews use the committed-byte delivery register in the current evidence folder.
-CODEX_NEXT_SESSION.txt and the live table carry the exact continuation. Older
-checkpoints remain historical where superseded.
+Prior 23, 18-entry, 14-entry and current 19-entry completed delivery registers
+retain their completed status. The three b767c19 successor files are included
+in the 19-entry register. This phase's finalized reports/reviews and changed
+records use its own committed-byte DELIVERY_REGISTER.json. CODEX_NEXT_SESSION.txt
+and the live table carry the exact continuation; old checkpoints are historical.
 
 ## Current manuscript: v7 with the authorized errata appendix
 

@@ -1967,3 +1967,6 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.CutCommutation.mix_left_second_rank_step
 #print axioms DosenPetric.Reduced.Gentzen.CutCommutation.mix_right_first_rank_step
 #print axioms DosenPetric.Reduced.Gentzen.CutCommutation.mix_right_second_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.conjR_right_second_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.BinaryLogical.conjRRightSecond_equation
+#print axioms DosenPetric.Reduced.Gentzen.BinaryLogical.mixedDisj_swap

@@ -498,3 +498,10 @@ public import DosenPetric.GentzenBinaryMixRightStep
 public import DosenPetric.GentzenBinaryMixRoutes
 public import DosenPetric.GentzenBinaryMixSelected
 public import DosenPetric.GentzenBinaryMixSymmetry
+public import DosenPetric.GentzenBinaryLogicalAssociativity
+public import DosenPetric.GentzenBinaryLogicalDiagram
+public import DosenPetric.GentzenConjRightSecondDiagram
+public import DosenPetric.GentzenConjRightSecondNative
+public import DosenPetric.GentzenConjRightSecondParent
+public import DosenPetric.GentzenConjRightSecondSelected
+public import DosenPetric.GentzenMixedDisjSymmetry

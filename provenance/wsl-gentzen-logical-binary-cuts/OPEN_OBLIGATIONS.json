@@ -1,0 +1,33 @@
+{
+  "resolved_distributor_equation": "BinaryLogical.mixedDisj_swap",
+  "next_native_equation": "open/next-native-first.lean",
+  "next_native_attempt": {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-logical-binary-cuts/next-native-first.lean"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-logical-binary-cuts/next-native-first.lean"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 1.276,
+    "log": ".codex-work/gentzen-logical-binary-cuts/next-native-20261028T224228480267.log",
+    "sha256": "7f9f6f8a3f01bb0d6b5b1f13e9da73e4058d90775d4cb96d5263a911cfec1ca4"
+  },
+  "next_native_failure": "unresolved arrow equation; list transports elaborate",
+  "remaining_logical_branches": 7,
+  "remaining_blocked_reductions": 14,
+  "failed_proof_is_counterexample": false,
+  "failed_proof_is_negative_control": false
+}
