@@ -1,56 +1,60 @@
 # Complete Lean formalization of manuscript v7
 
-## Current continuation after 77199ac (28 October 2026)
+## Current conjunction-right first-child construction (28 October 2026)
 
-The completed run incorporates b767c19. Four mix branches and
-conjR_right_second have exact Reduced equations, reconstructions at the original
-selected-cut output and instantiated rank steps. All twelve binary descents,
-the completed unary cases, full Reducibility, Blocked-w and simultaneous
-atomized/blocked cleaning remain available. mixedDisj_swap is a proved equation
-in Reduced; its earlier failed simplification is resolved.
+Successor 811eceebf9991640cf9dcd3923925f75235d4199 is incorporated, preserving
+all completed results and stash dedfd8fc8cd49930e9a162d5be585215b062a43c.
+conjR_right_first now joins the four mix branches and conjR_right_second as a
+completed binary branch through actual native/selected equations, exact-output
+reconstruction, eliminated witness and instantiated original-rank step.
 
-The next task is conjR_right_first, beginning with the retained native equation
-in provenance/wsl-gentzen-logical-binary-cuts/open/next-native-first.lean.
-The candidate's list transports elaborate; its arrow equality is unproved.
-The successor gives typed first-factor splice and residual-output comparisons
-to derive from the existing second-factor equations and mixedDisj_swap.
-They are proof targets, not additional assumptions or compiled results.
+BinaryLogical.product_left_splice and mixed_first_residual prove both successor
+comparison targets. Their combined core and all actual input/output exchange,
+fold/unit, headBefore/suffix and erasure comparisons are instantiated in
+conjFirstNative_equation and conjRRightFirst_equation. The generic builder is
+conjRRightFirst, with count/Atomized/congruence laws. The rank step calls
+ih h z f a on the original inherited clean child before reconstruction.
+The public check reproduces the exact retained native candidate. No diagram
+field, general proof duality or occurrence-graph reflection is assumed.
 
-See [the successor](CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt),
-[the completed-run source review](reviews/GENTZEN_77199AC_REVIEW.md),
-[the writing review](reviews/GENTZEN_77199AC_WRITING.md),
-[the mix report](GENTZEN_BINARY_MIX_CUTS_REPORT.md),
-[the logical report](GENTZEN_LOGICAL_BINARY_CUTS_REPORT.md) and
-[the live constructor table](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
-CODEX_NEXT_SESSION.txt is the active task list; its predecessor is preserved
-verbatim at history/CODEX_NEXT_SESSION_77199AC.txt.
+See [the run report](GENTZEN_CONJR_RIGHT_FIRST_REPORT.md),
+[hostile audit](reviews/GENTZEN_CONJR_RIGHT_FIRST_HOSTILE.md),
+[writing review](reviews/GENTZEN_CONJR_RIGHT_FIRST_WRITING.md),
+[the successor](CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt) and
+[live constructor/tag table](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
+The preceding mix/logical reports and all accepted mathematical/writing decisions
+retain their original scope. The former native first-child open equation is resolved.
 
 | Local proof phase | Lean files | Audited declarations | Public check files | Rejected controls | Evidence directory |
 | --- | ---: | ---: | ---: | ---: | --- |
 | a654ed0; four mix branches; receipt 408257b | 538 | 11,886 | 11 | 8 | provenance/wsl-gentzen-binary-cuts/ |
-| 9af0a8a; one logical branch and symmetry; receipt 77199ac | 546 | 11,911 | 12 | 9 | provenance/wsl-gentzen-logical-binary-cuts/ |
+| 9af0a8a; right-second conjunction and symmetry; receipt 77199ac | 546 | 11,911 | 12 | 9 | provenance/wsl-gentzen-logical-binary-cuts/ |
+| Right-first conjunction, both comparison targets and exact native/selected branch | 555 | 11,967 | 13 | 10 | provenance/wsl-gentzen-conjr-right-first/ |
 
-The source review read all twenty new production modules and both new public
-check files, matched all 554 archived source files to their manifest and Git,
-and inspected the retained final check logs and exact open-equation failure.
-It ran no Lean or TeX build, independent kernel replay, Comparator or service
-verification. No confirmed defect was found in the five completed branches.
-All nine manuscript blobs are unchanged; no new manuscript correction is established.
+Strict build/transitive audit, public signatures and actual nonempty/empty/tag/
+literal witnesses, source closure and ten negative rejections pass locally.
+Reviews are local author-side reviews. No independent replay, Comparator,
+official/service verification or publication is claimed. All manuscript bytes
+match 811eceeb; unchanged TeX is not rebuilt.
 
-Seven logical binary branches, fourteen blocked reductions, the complete
-dispatcher and rank/degree/structural inductions remain open. Both unrestricted
-elimination inhabitants, coherence and the later full-paper obligations remain
-unproved. Current scope is v7 and all three appendices. Appendix C is written;
-its two concrete blocked-rank correspondences remain open. Keep the three
-milestones and the additional whole-paper endpoint distinct.
+Work continued into conjR_left_first. Its precise typed parametric-output core
+and failed distribution expansion are retained in current evidence under
+open/next-conjr-left-first.lean. That equation remains unproved; it is neither a
+counterexample nor the now-resolved native right-first equation. Six logical
+binary branches, all fourteen blocked reductions, the dispatcher, discharged
+rank/degree/structural inductions and both unrestricted elimination inhabitants
+remain open. Coherence and later full-paper bridges, both maximality routes,
+model corollary and all three appendices remain in scope. Appendix C is written;
+its two concrete blocked-rank Lean correspondences remain open. The three
+milestones and additional whole-paper endpoint remain distinct.
 
-The 19-entry mix and 16-entry logical delivery registers retain completed local
-receipt status, as do all earlier deliveries. The three b767c19 successor files
-are included in the mix register. The reviewer checked all sixteen current
-registered artifacts against supplied/retrieved committed bytes; WSL Downloads
-storage itself is inaccessible here. Only the three NEW 77199AC instruction/
-review files await local committed-byte delivery. Historical sections below
-do not reset current proof status, task order or completed deliveries.
+All prior completed deliveries, including the 19-entry mix and 16-entry logical
+registers, remain complete. The three 77199AC successor files are now delivered
+from 811eceeb bytes and verified; current SUCCESSOR_DELIVERY.json records them.
+This phase's finalized reports/reviews and changed records use its own
+committed-byte DELIVERY_REGISTER.json. The prior continuation is archived verbatim
+at history/CODEX_NEXT_SESSION_811ECEE.txt; historical sections below do not reset
+current proof status or completed deliveries.
 
 ## Retained opposite logical checkpoint (28 October 2026)
 
@@ -478,18 +482,19 @@ model universe general enough to express the printed corollary.
 
 The completed 77199ac run incorporates b767c19 and its three committed-byte
 deliveries. Follow CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt and both 77199AC
-reviews. Start with the exact retained conjR_right_first equation, using the
-successor's two typed comparison targets and existing proved dependencies.
+reviews. Both comparison targets and the retained conjR_right_first equation,
+arbitrary-tag reconstruction and rank step are now proved. Continue from
+conjR_left_first and the exact open parametric-output core in current evidence.
 The four same-side unary logical prefix/suffix equations, reconstruction and
 original-rank branches are now proved, along with opposite structural recursive
 wrappers. All twelve binary original-predecessor descents are proved. The four
-mix branches and conjR_right_second have actual equations, reconstructions and
-rank steps; seven logical binary branches remain open. See the current construction
+mix branches and both right-side conjR branches have actual equations,
+reconstructions and rank steps; six logical binary branches remain open. See the current construction
 report and live constructor/tag table. Preserve all completed Reducibility,
 Blocked-w, simultaneous cleaning, principal and structural/opposite logical work.
 
 The four mix branches are complete through their actual original-sequent
-equations, native/structural reconstructions and rank steps. Complete the seven remaining
+equations, native/structural reconstructions and rank steps. Complete the six remaining
 logical binary branches, proving every actual native diagram. Continue
 all seven BlockedL and seven BlockedR reductions and the complete dispatcher.
 Then prove the all-ranks clean theorem under DegreeBelow, outer degree induction and arbitrary-G

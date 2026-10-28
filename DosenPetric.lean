@@ -505,3 +505,11 @@ public import DosenPetric.GentzenConjRightSecondNative
 public import DosenPetric.GentzenConjRightSecondParent
 public import DosenPetric.GentzenConjRightSecondSelected
 public import DosenPetric.GentzenMixedDisjSymmetry
+public import DosenPetric.GentzenConjFirstCore
+public import DosenPetric.GentzenConjFirstEquation
+public import DosenPetric.GentzenConjFirstNative
+public import DosenPetric.GentzenConjFirstResidual
+public import DosenPetric.GentzenConjFirstSelected
+public import DosenPetric.GentzenConjFirstSplice
+public import DosenPetric.GentzenLastBlockExchange
+public import DosenPetric.GentzenLastBlockSplit

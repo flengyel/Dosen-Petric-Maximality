@@ -1,0 +1,30 @@
+{
+  "lock_rejections": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Checks/BinaryMixCuts.lean"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Checks/BinaryMixCuts.lean"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 0.008,
+      "log": ".codex-work/gentzen-conjr-right-first/signature-BinaryMixCuts-20261028T234615247786.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "production_checks_final": "FINAL_VERIFICATION.json",
+  "next_diagram_attempts_are_open_obligations": true
+}

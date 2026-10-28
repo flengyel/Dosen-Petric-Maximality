@@ -1,11 +1,14 @@
-CONTINUE V7 AFTER 77199AC: SEVEN LOGICAL BINARY BRANCHES
+CONTINUE V7 AFTER CONJR RIGHT-FIRST: SIX LOGICAL BINARY BRANCHES
 
 Read AGENTS.md, CODEX_FULL_MANUSCRIPT_FORMALIZATION.md, the live constructor/tag
 table, current statement/coverage/correction/validation records and
 CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt with both 77199AC reviews.
-The prior continuation is archived verbatim at history/CODEX_NEXT_SESSION_77199AC.txt.
+The prior continuation is archived verbatim at history/CODEX_NEXT_SESSION_811ECEE.txt;
+the 77199AC and older archives remain preserved. Read the current right-first
+run report and both reviews, then reuse the preceding mix/logical reports.
 
-Reviewed main: 77199ac58fcacfeefb80457a5d91f85c0a59fbab, incorporating b767c19.
+Reviewed predecessor: 77199ac58fcacfeefb80457a5d91f85c0a59fbab.
+Successor 811eceebf9991640cf9dcd3923925f75235d4199 is integrated, preserving it.
 Proof/receipt pairs: a654ed0 / 408257b (four mix branches), then 9af0a8a / 77199ac
 (conjR_right_second and mixedDisj_swap). Inspect the live task and status; preserve
 newer work, stash dedfd8fc8cd49930e9a162d5be585215b062a43c and unrelated checkouts.
@@ -29,24 +32,35 @@ count/Atomized/congruence laws and its instantiated original-child rank step.
 mixedDisj_swap is proved in Reduced. Its earlier failed distributor attempt is
 resolved; it does not itself prove a native first-child cut equation or G duality.
 
-Current local evidence: 546 screened Lean files, 11,911 audited declarations,
-twelve public check files and nine expected negative rejections. The completed-run
-review read twenty new production modules and both new Checks, verified all 554
+Current local evidence: 555 screened Lean files, 11,967 audited declarations,
+thirteen public check files and ten expected negative rejections.
+Both right-side conjR branches are proved through actual native/selected
+equations, exact-output reconstruction, eliminated witnesses and rank steps.
+Current evidence: provenance/wsl-gentzen-conjr-right-first/. The preceding
+546/11,911/twelve/nine phase is retained below with its source-review scope.
+That completed-run review read twenty new production modules and both new Checks, verified all 554
 archived source files and inspected retained final logs without rebuilding.
-Evidence: provenance/wsl-gentzen-logical-binary-cuts/; preceding mix evidence:
+Preceding evidence: provenance/wsl-gentzen-logical-binary-cuts/; mix evidence:
 provenance/wsl-gentzen-binary-cuts/. No independent replay or service verification.
 
 CONCRETE CONTINUATION
 
-1. Complete conjR_right_first. Start from the typed candidate and unsolved equation
-in provenance/wsl-gentzen-logical-binary-cuts/open/next-native-first.lean.
-Derive the first-factor splice and first-input residual comparison specified in
-the successor, using product_right_splice, mixed_residual and mixedDisj_swap.
-Instantiate all native fold/unit and exchange comparisons, then lift to arbitrary
-original selected tags and prove count/Atomized/congruence, eliminated and rank_step.
-Do not stop at the two auxiliary equations or a conditional diagram interface.
+1. Reuse the completed conjR_right_first branch. See GENTZEN_CONJR_RIGHT_FIRST_REPORT.md,
+both reviews and current evidence. product_left_splice and mixed_first_residual
+prove the successor's two targets. conjFirstNative_equation proves the retained
+native candidate, and conjRRightFirst_equation lifts it to arbitrary original
+tags. Count/Atomized/congruence and eliminated/rank_step are instantiated.
+The exact call is ih h z f a hd.2 hd.1 before any exchanges. The old retained
+native equation is resolved; do not repeat it as the remaining blocker.
 2. Complete conjR_left_first, conjR_left_second and all four disjL branches.
-The prior seven retained-tag recipes and original-child descents remain binding.
+The remaining retained-tag recipes and original-child descents remain binding.
+The immediate open diagram is current evidence open/next-conjr-left-first.lean:
+f : X -> A∨(C∨D), g : Y -> B∨E, h : C∧T -> Z. Both paths have type
+T∧(X∧Y) -> Z∨((A∧B)∨(D∨E)); the first cuts the selected C in the mixed-rule
+output, the second cuts the original first child, retains A and reconstructs.
+Actual distribution expansion leaves an unproved equation outside production.
+Prove it, specialize all native folds/adapters and lift to selected tags,
+eliminated and rank_step before marking that branch complete.
 Derive the actual disjLeft/sourceConj diagrams; a reflected calculation requires
 proved definitions and interpretation laws, not an assumed proof duality.
 3. Prove all seven BlockedL and seven BlockedR cut reductions. Invert the actual
@@ -76,7 +90,7 @@ correction was established. Do not rebuild unchanged TeX. The p.260 r' < r and
 p.262 RIGHT-rank-one concrete blocked correspondences remain open.
 
 Use the pinned toolchain; one heavy build/audit at a time. Run scripts/verify.sh,
-the applicable exact public checks, full dependency/source closure and all nine
+the applicable exact public checks, full dependency/source closure and all ten
 existing controls. Check actual new reconstruction witnesses, retaining empty
 blocks, repeated labels and negative/constant-only instances. Retain actual exits
 and failed attempts. Apply the mathematical and writing reviews to new results.
@@ -90,13 +104,14 @@ successor files. The reviewer independently checked all sixteen current artifact
 the six run reports/reviews and the three prior successor files against their
 recorded bytes; WSL Downloads itself is inaccessible to the cloud reviewer.
 
-Deliver the THREE NEW committed files with the same basenames:
+The three 77199AC successor files are delivered and verified from 811eceeb bytes:
   docs/CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt
   docs/reviews/GENTZEN_77199AC_REVIEW.md
   docs/reviews/GENTZEN_77199AC_WRITING.md
-to /mnt/c/Users/fleng/Downloads/, preserving differing destinations under
-commit-suffixed names. Record exact paths, source commit and byte/hash comparisons.
-Deliver new local reports and reviews under the same established requirements.
+Current SUCCESSOR_DELIVERY.json records their exact repository/Downloads paths,
+lengths and hashes. New run reports/reviews and changed records use this phase's
+committed-byte DELIVERY_REGISTER.json. Preserve different existing destinations
+under commit-suffixed names, and verify every copy. Earlier receipts remain complete.
 
 The repository remains private. No publication, arXiv/Palomar submission, license
 or visibility change or author contact is authorized. Continue through the

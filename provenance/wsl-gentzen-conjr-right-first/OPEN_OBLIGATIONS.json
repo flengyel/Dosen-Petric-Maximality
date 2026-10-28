@@ -1,0 +1,35 @@
+{
+  "resolved_native_equation": "BinaryLogical.conjFirstNative_equation",
+  "exact_retained_candidate_check": "Checks/ConjRightFirst.lean:retainedFirstNative",
+  "completed_selected_rank_step": "CutCommutation.conjR_right_first_rank_step",
+  "next_diagram": "open/next-conjr-left-first.lean",
+  "next_attempt": {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-conjr-right-first/next-conjr-left-first.lean"
+    ],
+    "actual_command": [
+      "flock",
+      "-n",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-conjr-right-first/next-conjr-left-first.lean"
+    ],
+    "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+    "exit_status": 1,
+    "seconds": 1.612,
+    "log": ".codex-work/gentzen-conjr-right-first/left-core-20261028T235227468241.log",
+    "sha256": "68d7a616e38b63f647e994a80ecb5635c792f009682b05c0b51ac09ece9458fb"
+  },
+  "next_failure": "unresolved actual parametric-output arrow equation after nested distribution expansion",
+  "remaining_logical_branches": 6,
+  "remaining_blocked_reductions": 14,
+  "failed_proof_is_counterexample": false,
+  "failed_proof_is_negative_control": false
+}

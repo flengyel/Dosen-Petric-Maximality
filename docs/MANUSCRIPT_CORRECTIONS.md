@@ -15,19 +15,28 @@ marked formalized merely because its TeX has been added.
 
 ## Current correction status
 
+conjR_right_first is now proved through both supplied comparison targets,
+the exact retained native equation, arbitrary-tag reconstruction and original-rank
+step. Six logical binary and fourteen blocked reductions remain open. The next
+parametric-output equation is retained separately in current evidence. No new
+manuscript error was established. The earlier open right-first record below is
+historical and superseded by GENTZEN_CONJR_RIGHT_FIRST_REPORT.md. The three
+811eceeb successor deliveries are complete in current SUCCESSOR_DELIVERY.json.
+All earlier source/rank/atomization, writing and full-paper decisions persist.
+
 The completed-run review at 77199ac found no new defect in the five completed
 binary branches or a new manuscript erratum. It reconciles the active AGENTS,
 full-contract and continuation pointers with the latest checkpoint, and separates
 the mix-algebra evidence from the actual mix-reconstruction evidence in the live
 table. The old reviewed-main line and its continuation are preserved in history.
-The exact remaining native equation is unproved; the failed simplification is
-not a counterexample. See reviews/GENTZEN_77199AC_REVIEW.md and its writing
+At that reviewed predecessor the exact native equation was unproved; its
+failed simplification was not a counterexample. The current result above resolves it. See reviews/GENTZEN_77199AC_REVIEW.md and its writing
 companion. The new typed comparison targets are implementation obligations.
 No Lean source, manuscript or historical verification record changes in this update.
 
-The actual conjR_right_second equation/reconstruction and original-rank step
-are now proved; seven logical binary and fourteen blocked reductions remain
-open. mixedDisj_swap is proved from actual Reduced distribution/symmetry laws.
+At the retained 9af0a8a checkpoint, conjR_right_second was proved and seven
+logical binary branches remained open. The current right-first result supersedes
+that open count; its exact current status is recorded above. mixedDisj_swap is proved from actual Reduced distribution/symmetry laws.
 Its earlier simplification failure was resolved, not a counterexample or source
 erratum. The next native first-child equation is retained as an open proof
 obligation outside production. No new manuscript correction is established.
