@@ -182,3 +182,42 @@ and final strict/public checks cover the affected scope. Initial cut-elimination
 base equations for identities, zeros, thinning and constants are also proved;
 global elimination remains a separate unproved obligation. All accepted tagged
 substitution, source/native rank, singleton and empty-exchange decisions remain.
+
+## Completed clean-cut run and source errata (28 October 2026)
+
+The source/evidence review of completed commit
+5c72a84c665bdc5102e546cef88f9fd29838e9b4 found no confirmed defect in the new
+simultaneous clean-cut theorem or initial cut equations. See
+[the mathematical review](reviews/GENTZEN_5C72A84_REVIEW.md) and
+[writing review](reviews/GENTZEN_5C72A84_WRITING.md). Global elimination remains
+an implementation obligation. The successor gives the explicit degree/rank and
+selected-position construction, preserving all previous corrections.
+
+Category: confirmed typographical corrections to the cited source, not newly
+found errors in manuscript v6. Source: Došen–Petrić, September-2007 revised
+*Proof-Theoretical Coherence*, [primary PDF](https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf),
+SHA-256 e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e.
+Printed p.260 and p.262 are PDF pages 272 and 274 (one-based).
+
+| Exact anchor | Confirmed wording problem | Repair and evidence | Formal correspondence status |
+| --- | --- | --- | --- |
+| p.260, (w gamma 3), comparison below the displayed reduction | The new-rank inequality is reversed. | Read r' < r. The recursive selected occurrences lie strictly above the old selected contraction, with the other premise unchanged. Confirmed in the rendered page; require the actual typed inequality with adapters accounted for. | Concrete blocked cut-reduction inequality remains to be proved. Existing strict predecessor-rank lemmas are available. |
+| p.262, continuation of (w disjunction 1), outer cut | “rank is 1” omits the side. | Read right rank one, as in the analogous p.261 argument. A fresh principal occurrence has rank one; total rank sums two positive components and is at least two, also explicitly defined on p.249. Confirmed in rendered pp.261–262. | Existing cutRank_ge_two covers head cuts. The concrete fresh-principal calculation and positional correspondence remain to be proved. |
+
+The author then explicitly requested that these errata be included in the arXiv
+paper. This supersedes the earlier plan to record them only outside the paper.
+[The successor](CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt), section 7, supplies
+exact TeX for Appendix C and an introduction roadmap sentence. Local Codex must
+create and verify the next manuscript version while preserving the reviewed
+v6 source/PDF pair, retain the accepted disclosure, and update hashes, current
+pointers and the statement ledger. The author-requested addition is pending
+implementation and rendered review; it is not a new arXiv submission authority.
+Its mathematical explanations are included in the full-paper formalization scope.
+
+The author's completed-run report certifies the six preceding Downloads copies.
+The old continuation's scheduled-delivery wording is superseded. The three new
+successor artifacts still need local conflict-preserving Downloads delivery
+from their committed bytes. The old continuation is archived verbatim at
+history/CODEX_NEXT_SESSION_5C72A84.txt. No Lean or manuscript source is changed by
+this documentation pass; the exact authorized manuscript addition is handed to
+local Codex for insertion and build.

@@ -22,6 +22,12 @@ public source closure and manuscript hashes pass. See the
 [continuation](docs/CODEX_NEXT_SESSION.txt). The preceding README is preserved in
 docs/history/README_A006ECD.md.
 
+The [completed-run review](docs/reviews/GENTZEN_5C72A84_REVIEW.md) and
+[detailed successor](docs/CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt) now address
+global cut elimination. The author has also requested the two verified source
+errata in the arXiv paper. Exact Appendix C text is supplied for the next
+manuscript version; local insertion and PDF verification are pending.
+
 ## Full-paper formalization target
 
 The authorized target is the complete mathematical content of manuscript v6:

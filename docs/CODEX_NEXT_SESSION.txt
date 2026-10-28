@@ -1,99 +1,104 @@
 CONTINUE THE UNCHANGED V6 FULL-PAPER FORMALIZATION
 
-Current proved endpoint: simultaneous clean-cut normalization, plus initial
-cut-elimination base equations. Successor documentation a006ecd was fast-forwarded
-on top of ba5af8b. No reset or stash operation. Preserve stash
-dedfd8fc8cd49930e9a162d5be585215b062a43c, newer work, other repositories,
-v4/v5/v6 and private visibility. The preceding continuation is retained at
-history/CODEX_NEXT_SESSION_A006ECD.txt. The commit/ref and byte-verified delivery
-identities are in .codex-work/gentzen-clean-cuts/POST_COMMIT_DELIVERY.json.
+The completed implementation checkpoint is
+5c72a84c665bdc5102e546cef88f9fd29838e9b4, incorporating a006ecd.
+Simultaneous clean-cut normalization and the initial identity/zero/thinning/
+constant cut equations are proved. Global cut elimination remains open.
 
-READ current AGENTS, CODEX_FULL_MANUSCRIPT_FORMALIZATION, current maps/corrections,
-PALOMAR_REQUIREMENTS, GENTZEN_CLEAN_CUTS_REPORT and both GENTZEN_CLEAN_CUTS reviews.
-CODEX_AFTER_BA5AF8B_CLEAN_CUTS and its two successor reviews are retained and
-scheduled for committed-byte delivery alongside the three new reports.
+This docs-only successor follows the completed run and source/evidence review.
+Read CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt for the concrete construction,
+reviews/GENTZEN_5C72A84_REVIEW.md and GENTZEN_5C72A84_WRITING.md, current AGENTS,
+CODEX_FULL_MANUSCRIPT_FORMALIZATION, all maps/corrections and PALOMAR_REQUIREMENTS.
+The prior continuation is retained verbatim at history/CODEX_NEXT_SESSION_5C72A84.txt.
+Preserve newer work, stash dedfd8fc8cd49930e9a162d5be585215b062a43c, other checkouts,
+v4/v5/v6 and private visibility. The author subsequently requested the two source
+errata in the arXiv paper; the exact Appendix C addition is in the successor. Incorporate intervening work without reset or force.
 
-COMPLETED — REUSE
+REUSE
 
-clean_cut_premises and clean_cut_normalization: arbitrary P, original sequents,
-Topmost, both Atomized, individual Reduced equalities/cut equality and both
-universal tied-contraction Blocked clauses. Atomize FIRST, then preserve Atomized
-through the completed finite multiset normalization. No Nonempty P, DecidableEq P,
-coherence, normal form, compatibility or caller reduct assumptions.
+clean_cut_premises and clean_cut_normalization supply the same original-sequent
+premises with Topmost, both Atomized, individual/cut Reduced equality and both
+complete universal tied-contraction Blocked clauses. Reuse atomic route support,
+joint atomized Reducibility, chosen-witness rank decomposition and the completed
+finite descent. Preserve the unrestricted exports and old negative atomizer
+example; boundary_clean supplies its positive simultaneous representative.
 
-Route.AtomicOmissions is positional, and Route.atomic_program recurses on the
-lower context. SelectionMask.fixedAt and factor_route_preimage prove exact
-residual preimages. Exchange/contraction surjectivity and actual atomic-thinning
-support are internal. Parameterized repairs use the same economical program for
-CutFree, Atomized, equality and the full eligible-descendant bound. All actual
-input producers, selected logical singletons/right HEAD-disjunction, source W6
-and TerminalOne first/second packages have strengthened exports. Original
-ReducesL/R and reducibility_left/right are unchanged.
+CutBase, CutConstants and CutThinning supply the initial base equations and
+actual repairs. Their existence does not yet classify every rank-two cut or
+prove global elimination. The complete source review supports the claimed
+checkpoint; no new manuscript defect was established.
 
-rank_replacement_for takes the chosen h and its full bound; outside_keys,
-finite enumeration, fixed-support count-vector well-foundedness, containing
-preservation and no-eligible arguments are reused. The two strengthened blocked
-normalizers use ProofAddress.atomized and replace_atomized. The original negative
-atomizer example and its [0,0,0,0] unblocked tied contraction remain unchanged.
-CleanCutChecks.boundary_clean proves the full positive simultaneous conclusion
-on the topI/before example. Reuse all prior source/native and empty-context decisions.
+NEXT CONSTRUCTION
 
-NEXT — CUT ELIMINATION, THEN COHERENCE AND THE FULL PAPER
+1. State the arbitrary-P, same-sequent global CutFree/equal-denotation endpoint.
+   Use outer formula-degree induction and inner selected-rank induction for
+   clean cuts. Complete the latter for all ranks before applying unrestricted
+   clean normalization at that degree. Count top/bot in degree; literals have
+   degree zero. Smaller-degree calls allow arbitrary rank.
+2. Handle exact selected positions before commuting cuts. G.cut selects heads;
+   routing internal slots adds exchange nodes counted by rho. Prefer a derived
+   positional cut macro with actual exchange denotation and an explicitly
+   separate measure on the original selected premises. Prove head specialization
+   and cleanliness inheritance. Preserve existing G, rho and cutRank.
+3. Exhaust minimal-rank literal/zero/thinning/constant/principal cases, using
+   actual sourceArity and Atomized. Prove the compound principal equations
+   with strictly smaller formula degrees, then all parametric commutations.
+4. Prove all seven BlockedL and seven BlockedR reductions. For sequential
+   principal blocked reductions, eliminate the inner cut(s), rebuild a fresh
+   principal occurrence and prove its selected rank is one. This controls the
+   next outer cut without a rank bound on the returned inner normal form.
+   Account for source/native exchange wrappers explicitly.
+5. Assemble topmost elimination, then global elimination by structural induction
+   on G. Keep all equalities in Reduced and discharge every recursive hypothesis.
+   No caller eliminator, faithfulness premise or unproved coherence theorem.
 
-GentzenCutBase proves identity_identity, zero_identity, identity_zero, zero_zero
-and thinned_thinned. The last equation holds for arbitrary cut formula and
-contexts. GentzenCutConstants proves top_thinning and thinning_bot with actual
-same-sequent repairs and explicit right-empty transports. GentzenCutThinning
-proves endomorphism_thinning and thinning_endomorphism; instantiate the arbitrary
-singleton endomorphism with atomic identity or zero to obtain all remaining
-atomic base equations. leftThinningRepair_count and topRepair_count preserve
-cut count; their Atomized laws and discardLast_atomic retain the relevant atoms.
-These equations do NOT yet include exhaustive minimal-rank case classification.
+At unchanged degree, do not re-clean a recursive cut and infer a rank decrease:
+clean_cut_premises has no rank bound. Prove the actual subcut is clean and smaller.
+For a newly built principal occurrence use its genuine leaf property; a source
+wrapper with exchanges above the rule does not automatically have rank one.
 
-Prove classification of clean cuts of minimal rank using rho_one_iff_leaf and
-the actual sourceArity definitions. Then prove the conjunction/disjunction
-principal reductions (degree drops), parametric commuting reductions (selected
-rank drops), and all fourteen blocked-contraction reductions (possibly several
-smaller cuts). Use §11.2 pp.254–262, §11.5 pp.272–273 and §12.5 pp.291–292 in
-the retained September-2007 PDF, hash
+SOURCE CORRECTIONS TO CARRY FORWARD
+
+September-2007 source PDF hash:
 e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e.
-Count top and bot, as well as conjunction/disjunction, in cut degree; literals
-have degree zero. Constants are atomic for thinning but have positive degree.
-In a principal reduction the smaller formula degree permits fresh clean-cut
-normalization even if it increases ranks. For parametric and blocked-contraction
-reductions at unchanged degree, prove that the actual induced subcuts retain
-the needed atomization/blockedness and have smaller ranks. Do not re-clean them
-and assume that rank decreases: the clean-cut existence theorem supplies no
-rank upper bound. Keep categorical squares in Reduced; do not cite uninstantiated
-coherence inputs as proofs. Both constants and atomic zeros remain in the syntax. Assemble the
-actual lexicographic clean-cut elimination, then global elimination by replacing
-cut subproofs. No global elimination theorem is currently proved or supplied
-as a production hypothesis. This is an open implementation obligation, not a
-counterexample or established mathematical obstruction.
+At printed p.260 (w gamma 3), the new-rank inequality must read r' < r.
+At printed p.262 (w disjunction 1), the stated rank one is the RIGHT rank;
+the total rank is at least two. Both readings were checked in rendered pages.
+They correct the external source. The author has now requested their inclusion
+in the arXiv paper. Create the next manuscript version from the preserved v6
+baseline, add the supplied Appendix C and roadmap sentence, then build and
+inspect it locally. Update hashes, active version pointers and all affected
+claim/correction records. Keep the accepted disclosure and v4/v5/v6 intact.
+Prove the corresponding Lean inequalities; their status stays open until checked.
 
-Continue restricted mix/positive coherence, Reduced.Faithful and Boolean
-Coherence, actual source instances and congruence/substitution bridges, the short
-q_A/e_A proof and symmetric-fold alternative, unconditional maximality, model
-corollary and full appendix ledger. Preserve the three milestones and the
-additional whole-paper endpoint, tagged blocks/typed diagrams and exact ordinal
-correspondence. No settled mathematical, writing or verification decision reopens.
+CONTINUE THE FULL CONTRACT
 
-VERIFICATION AND DELIVERY
+After elimination, continue restricted mix/positive/reduced/Boolean coherence,
+actual source instances, congruence/substitution bridges, short q_A/e_A and
+retained symmetric-fold proofs, unconditional actual-presentation maximality,
+model corollary and every appendix claim, including the new errata explanations. Preserve all three milestones and
+the additional whole-paper endpoint. Do not stop at a preparatory module or
+reopen settled writing, source/native, singleton, empty-exchange, tagged-block,
+ordinal-correspondence or witnessed-zero decisions.
 
-Final local strict verification: 442 Lean files / 11,105 audited project
-declarations. Three exact signature files, all five expected negative controls,
-public dependency closure, manuscript checksums and whitespace pass. All failures
-and actual exit statuses remain in provenance/wsl-gentzen-clean-cuts. Preserve
-one heavy build/audit at a time, Init-only Lean4.35.0, source headers and length
-limit. Run appropriate changed-source/public/dependency checks, both author-side
-reviews, and update all active records. Commit scoped verified work to main and
-push SSH without force under the existing authorization. Compare checked sources
-to committed blobs and local/origin/live refs; preserve the stash.
+VERIFY AND DELIVER LOCALLY
 
-Deliver finalized reports/reviews from committed copies to Downloads with byte
-or SHA-256 equality, preserving differing destinations. The current delivery list
-has six artifacts: three new clean-cut reports, CODEX_AFTER_BA5AF8B_CLEAN_CUTS and
-the two GENTZEN_BA5AF8B reviews. The preceding six ba5af8b deliveries remain complete.
-No independent kernel, Comparator, official preflight, service verification or
-publication status follows from local checks. No submission, author contact,
-license or visibility changes. Continue implementation without another approval.
+The completed run records 442 Lean files / 11,105 audited declarations, three
+exact-signature checks, five control rejections, manuscript hashes and whitespace.
+The 458-source inventory and 62 logs remain retained, including failed attempts.
+Use the pinned toolchain, one heavy build/audit at a time, exact public types,
+full dependency audit and existing controls for new source. Update all active
+records consistently. Commit/push verified scoped work to main without force;
+compare checked and committed bytes, refs and the preserved stash.
+
+The author reports the SIX 5c72a84 deliveries complete, including the previous
+successor instruction and two reviews. This cloud successor's THREE artifacts
+still need local committed-byte delivery to /mnt/c/Users/fleng/Downloads:
+CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt,
+GENTZEN_5C72A84_REVIEW.md and GENTZEN_5C72A84_WRITING.md.
+Also deliver the next run's report and both reviews. Preserve conflicting
+destinations and record byte/SHA-256 comparisons with actual paths.
+
+No cloud build, independent-kernel, Comparator, official/service verification
+or publication status is implied. No license, visibility, contact or submission
+action is authorized. Continue implementation under the existing authorization.

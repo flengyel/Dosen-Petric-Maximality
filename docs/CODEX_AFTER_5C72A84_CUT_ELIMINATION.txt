@@ -1,0 +1,350 @@
+CONTINUE FROM 5C72A84: GLOBAL CUT ELIMINATION, THEN THE UNCHANGED FULL PAPER
+
+This handoff follows the completed local run at
+5c72a84c665bdc5102e546cef88f9fd29838e9b4 and source/evidence review.
+It supplements the full-paper contract; it does not reset the task to a fragment.
+ChatGPT reviews and prepares instructions. Local WSL Codex implements and builds.
+
+1. RECONCILE THE CHECKOUT AND READ THE CURRENT CONTRACT
+
+Work in /home/flengyel/src/Dosen-Petric-Maximality. Inspect status, branch,
+remote refs and any active task before editing. Incorporate this docs-only
+successor without reset, forced checkout, force push or a stash pop. Preserve
+all newer work and stash dedfd8fc8cd49930e9a162d5be585215b062a43c.
+If main has advanced, inspect and integrate the new work; do not overwrite it.
+
+Read AGENTS.md, docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md, the current
+continuation, statement/coverage/correspondence maps, MANUSCRIPT_CORRECTIONS.md,
+PALOMAR_REQUIREMENTS.md, GENTZEN_CLEAN_CUTS_REPORT.md and its two local reviews,
+then reviews/GENTZEN_5C72A84_REVIEW.md and GENTZEN_5C72A84_WRITING.md.
+Retain the complete v6 mathematical target, its appendices and both maximality
+proofs. The author's later instruction adds the two source errata to the arXiv
+paper; implement the precise Appendix C addition in section 7 below.
+The preceding continuation is archived at history/CODEX_NEXT_SESSION_5C72A84.txt.
+Prepare and verify the author-requested manuscript addition early as a separate
+bounded task; its inclusion need not wait for global Lean cut elimination.
+
+2. REUSE THE COMPLETED CHECKPOINT
+
+clean_cut_premises and clean_cut_normalization construct the SAME premises at
+the original sequents with Topmost, both Atomized, individual Reduced equalities
+or cut equality, and both complete addressed tied-contraction Blocked clauses.
+No Nonempty P, DecidableEq P, coherence, supplied normalizer or compatibility
+hypothesis occurs. Reuse these theorems rather than reopening their construction.
+
+AtomicOmissions is positional. atomic_program, residual preimage/support proofs,
+parameterized repairs, all strengthened input producers and both atomized
+Reducibility exports use one actual witness for CutFree, Atomized, equality and
+the complete rebuilt eligible-descendant bound. rank_replacement_for uses that
+same witness in the existing multiset descent. Preserve all unrestricted exports,
+containing preservation, outside correspondence, multiplicities and inserted-root
+coverage. Keep the original negative atomizer example and boundary_clean.
+
+CutBase already proves identity_identity, zero_identity, identity_zero, zero_zero,
+thinned_thinned, endomorphism_thinning, thinning_endomorphism, top_thinning and
+thinning_bot. The two endomorphism equations specialize to atomic identity/zero.
+Reuse topRepair, leftThinningRepair, their cut-count/Atomized laws, nilProgram
+and discardLast. These are base equations, not yet an exhaustive elimination proof.
+
+3. MAKE THE INDUCTION AND SELECTED POSITIONS PRECISE FIRST
+
+The immediate endpoint, for arbitrary P : Type u and all contexts, is:
+
+  for every t : G P Γ Δ,
+  there exists t' : G P Γ Δ with
+    t'.CutFree and ofTerm t'.denote = ofTerm t.denote.
+
+Also export a CutFree-and-Atomized representative, either directly or by the
+existing atomizer after global elimination. No caller-supplied cut eliminator,
+coherence premise, relation reflection or normal-form witness may enter the endpoint.
+
+Define cut degree with lit = 0, top = bot = 1, and conj/disj = 1 plus the
+degrees of the two arguments. Constants remain AtomicFormula for thinning.
+Use strong induction on degree; at a fixed degree, prove elimination of clean
+cuts by strong induction on the sum of the two selected cluster ranks.
+After the clean theorem is proved for ALL ranks at that degree, apply
+clean_cut_premises to arbitrary cut-free head premises and obtain unrestricted
+topmost elimination at that degree. This separates the unbounded initial
+normalization from the rank-decreasing part of the proof.
+
+At a smaller formula degree, the outer induction hypothesis permits arbitrary
+ranks and fresh clean-cut normalization. At unchanged degree, the inner
+hypothesis requires the actual smaller selected rank AND the needed cleanliness.
+The present clean-cut theorem gives no rank upper bound. Never re-clean an
+unchanged-degree subcut and infer that the old rank decrease survives.
+
+G.cut only accepts selected HEAD occurrences. Commuting a cut normally exposes
+an internal occurrence; moving it to the head adds actual exchange nodes.
+Those nodes count in rho. Do not use the source's r-1 formula on a routed
+native term without checking the adapters.
+
+Preferred implementation: derive a positional cut macro using existing G rules.
+For x : At Δ C and y : At Θ C, with f : G P Γ Δ and g : G P Θ Λ, define
+deletion of those exact positions and a macro of type
+
+  cutAt f x g y : G P (erase y ++ Γ) (Λ ++ erase x).
+
+Here erase removes only the selected tag, preserving all other order. Reuse
+existing positional/mask machinery where suitable. Implement routing by actual
+ExchangeScript operations and equality transports; add no primitive G rule.
+Choose identity routing at the head, and prove specialization to G.cut, exact
+denotation, cut-count and Atomized laws, including empty residual lists.
+
+For the inner induction use rho f .right x + rho g .left y on the original
+selected premises. This is a NEW explicitly defined measure for the derived
+positional interface, not a claim that the routed native premises have those
+ranks. Keep existing rho, cutRank, syntax and classification unchanged.
+
+Generalize the cleanliness predicates to those selected positions by the same
+whole-formula cluster and addressed LowerContraction condition. Prove their
+head specializations equal the existing AllBlockedR/L. Prove inheritance along
+a selected predecessor, using composed addresses/traces. A fresh principal
+logical occurrence has no predecessors, so no lower contraction is tied below
+it. Establish that fact as a reusable lemma.
+
+An alternative implementation is acceptable if its exact native adapter bounds
+and recursive inequalities are proved. A positional wrapper is not itself a
+proof of elimination or of any commuting equation. In particular, exchanges
+already inside a premise remain part of its measured rho.
+
+4. CLASSIFY AND ELIMINATE THE MINIMAL-RANK CUTS
+
+Use position_classification, rho_one_iff_leaf and cutRank_two_iff_leaves.
+For the positional interface prove the corresponding facts for the selected
+positions. Every selected cluster rank is positive; total rank is at least two.
+
+Inspect actual sourceArity and Atomized, not merely the formula label. The
+rank-two cases must exhaust these possibilities at the selected positions:
+
+- Literal: identity, zero or fresh thinning on each side. Cover all nine
+  combinations using the existing equations and typed positional transport.
+- top: topI or fresh right thinning on the left, and fresh left thinning on
+  the right. bot has the dual possibilities. Test constant-only P = Empty.
+- A conjunction: principal conjR against principal conjL.
+- A disjunction: principal disjR against principal disjL.
+
+Atomized excludes compound fresh thinning. Exchange and parametric occurrences
+have predecessors; a selected lower contraction has arity at least two. Prove
+the exclusions, including list equalities and impossible positions.
+
+For the principal compound equations construct the nested cuts on A and B,
+eliminate the inner cut before using its CutFree result for the outer cut,
+and use the strictly smaller formula degrees. Write the actual final sequent,
+routing and Reduced equality. Do not require a rank bound after a degree drop.
+
+5. PROVE ALL PARAMETRIC COMMUTATIONS
+
+At a selected parametric conclusion there is one predecessor. Prove its smaller
+rho and inheritance of CutFree, Atomized and the selected blockedness condition.
+Commute through each actual unary constructor and through either branch of
+mix, conjR and disjL. Preserve the untouched branch and restore the exact
+conclusion order by proved routing equations.
+
+Keep cut absent by CutFree, not an omitted pattern. Same-side unselected
+contractions and opposite-side contractions are parametric cases. Include empty
+fixed blocks and equal-labelled but distinct positions. Empty exchanges remain
+actual nodes unless the chosen macro explicitly uses identity instead.
+
+Prove every denotation square in Reduced using the existing equations and
+already-proved categorical laws. The book cites structural coherence in some
+calculations; an uninstantiated source theorem is not a Lean proof. Prove any
+missing distributivity/mix/structural identity from the current presentation.
+
+6. PROVE THE SEVEN BLOCKED FAMILIES ON EACH SIDE
+
+Use the existing BlockedL/R constructors and the selected lower contraction.
+For each actual repair give its exact sequent, Reduced equality, CutFree and
+Atomized reconstruction, the cleanliness of every recursive subcut, and every
+strict measure comparison. Do not install a generic blocked-elimination
+interface as a production assumption.
+
+For gammaMix, gammaConj and gammaDisj, duplicate the opposite premise into
+the two parallel subcuts at the selected upper copies. Each copy lies strictly
+above the old selected contraction. After eliminating them, rebuild the binary
+rule and contract the duplicated fixed contexts with actual structural programs.
+Keep both mix premises. Prove context order and contraction multiplicity.
+
+For conjunction/disjunction principal blocked families, take care with sequential
+cuts of the SAME compound formula. First eliminate the smaller-rank cut(s) at
+the parametric copy/copies. Then build a FRESH principal logical conclusion
+over the resulting atomized cut-free proof(s), and cut the original opposite
+premise against that new conclusion.
+
+At that fresh selected occurrence, sourceArity is zero and the selected rho is
+one, independently of the size or ranks inside the returned proof. Thus the
+outer same-formula subcut can have smaller total rank without any theorem that
+global cut elimination does not increase ranks. Prove the exact inequality
+against the original blocked cut and prove cleanliness of the fresh occurrence.
+The unchanged opposite premise retains its original invariant.
+
+If an inner result is only CutFree, atomize it BEFORE constructing the fresh
+principal conclusion; no blockedness preservation at an old selected slot is
+being asserted. Prefer returning Atomized from clean elimination throughout.
+Do not apply the failed general post-atomization preservation inference.
+
+For the two-premise principal blocked case, eliminate both inner cuts, rebuild
+the principal rule, then eliminate the remaining outer cut. Restore all repeated
+contexts by the actual two-/three-copy contractions and exchanges. Type the
+seven right-side families independently, or prove and use a genuine duality
+on this syntax and denotation; saying "by duality" is not an implementation.
+
+Source/native caution: BlockedSource.disjLLast has exchanges above the native
+principal rule; its selected rank is not automatically one. Use the native
+fresh principal conclusion with positional routing in the cut macro, or prove
+the actual adapter contribution. Preserve the source-facing correspondence.
+The same caution applies to first-retaining versus last-retaining contractions.
+
+7. SOURCE ANCHORS AND TWO CONFIRMED SOURCE TYPOGRAPHICAL CORRECTIONS
+
+Use Došen–Petrić, Proof-Theoretical Coherence, September 2007:
+§11.2 pp.253–262; constants §11.5 pp.272–273; zeros §12.5 pp.291–292.
+Primary PDF: https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf
+SHA-256: e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e.
+Printed page p is PDF page p+12 (one-based).
+
+Two source errors were checked in rendered pages, not inferred from OCR:
+- Printed p.260, (w gamma 3): the new rank must satisfy r' < r; the displayed
+  prose has the inequality reversed. Prove the strict predecessor inequality
+  for the actual typed native/positional construction.
+- Printed p.262, continuation of (w disjunction 1): "rank is 1" must be RIGHT
+  rank one, as in the analogous p.261 argument. Total cut rank is at least two.
+  Prove the fresh-leaf lemma and the resulting total-rank inequality.
+
+These corrections concern the cited book, not a newly found defect in v6.
+They are recorded externally in MANUSCRIPT_CORRECTIONS.md and the successor
+review. The author subsequently requested that BOTH errata appear in the arXiv
+paper. This is now a required manuscript addition, not an optional editorial
+suggestion. Do not turn these typos or the open Lean obligation into a
+counterexample to cut elimination.
+
+MANUSCRIPT ADDITION AUTHORIZED AFTER THE REVIEW
+
+Preserve the existing v6 source/PDF pair as the reviewed baseline. Create the
+next manuscript version v7 from that source, unless newer author-approved
+manuscript work already supplies the next version; in that case incorporate
+the addition without discarding that newer work. Add the following as Appendix C
+after Appendix B and before the existing Use of AI tools disclosure. Keep that
+disclosure unchanged. Use the existing DP bibliography entry and printed-page
+convention. The wording reports the corrections without attributing motives
+or making claims about the authors.
+
+BEGIN EXACT LATEX ADDITION
+\section{Two corrections to the cut-elimination proof}\label{app:cut-errata}
+
+The cut-elimination proof in \cite[\S11.2]{DP} contains two
+typographical errors in its rank comparisons. We use the notation of
+that proof: $r$ is the rank of the cut being reduced and $r'$ is the
+rank of a recursive subcut. The left and right ranks are positive;
+their sum is the cut rank \cite[p.~249]{DP}.
+
+\paragraph{Page 260, case $(w\,\gamma\,3)$.}
+In the sentence immediately following the displayed reduction,
+the inequality $r<r'$ should read $r'<r$.
+The recursive cuts have the same cut formula and smaller rank:
+the corresponding one-sided ranks decrease on passing to the
+indicated premises, while the other one-sided rank is unchanged.
+
+\paragraph{Page 262, case $(w\,\vee\,1)$.}
+In the continuation of this case, the phrase ``whose rank is~1''
+should read ``whose right rank is~1'', as in the analogous
+argument on p.~261. The selected formula in the right premise
+is newly introduced by the displayed $\vee L$ rule, so its right
+rank is~1. Its total rank is the unchanged left rank plus~1,
+and is therefore at least~2.
+END EXACT LATEX ADDITION
+
+At the end of the introduction's roadmap, before the existing sentence fixing
+the September-2007 pagination, add:
+  Appendix~\ref{app:cut-errata} records two typographical corrections to the
+  cut-elimination proof in \cite{DP}.
+
+Build the new version locally, inspect the rendered appendix and its placement,
+resolve references, and check the complete PDF for pagination/diagram regressions.
+Check the inequality direction, the quoted words and the distinction between
+one-sided and total rank against the rendered source pages once more.
+Update manuscript/SHA256SUMS, current manuscript pointers, the full-paper
+contract's source/PDF anchors, correction record and claim ledger together.
+Preserve v4/v5/v6 byte for byte. Do not overwrite the reviewed v6 PDF with an
+unbuilt or differently versioned source.
+
+The new mathematical explanations also enter the full-paper claim ledger:
+the p.260 strict decrease is discharged by the corresponding concrete blocked
+reduction; the p.262 side-rank-one and total-rank-at-least-two assertions use
+the fresh-leaf and positivity lemmas. A completed TeX addition does not mark
+an unproved Lean correspondence complete. The addition prepares the arXiv paper;
+submission and public release remain separate actions requiring authorization.
+
+8. ASSEMBLE GLOBAL ELIMINATION AND CONTINUE THE FULL CONTRACT
+
+Complete the degree/rank induction, discharge every constructor case and export
+unrestricted topmost elimination. Then use structural induction on G to normalize
+premises, rebuild non-cut constructors and eliminate the cut constructor using
+the topmost theorem. Prove all constructor congruences needed for equality.
+This suffices for arbitrary nested cuts; an additional cut-count descent is not
+required if structural induction gives the stated theorem.
+
+Check the exact public global signatures with arbitrary universes, contexts,
+constants and both literal signs. Compare the proved source statement with
+§11.2/§11.5/§12.5. A local equation family or conditional eliminator is not this
+endpoint. Do not stop merely because a foundation module or one reduction family
+compiles; continue assembling the theorem and the authorized downstream task.
+
+After cut elimination, continue restricted mix and positive/reduced/Boolean
+coherence, actual source instances, congruence and substitution bridges, both
+the short q_A/e_A and symmetric-fold arguments, unconditional actual-presentation
+maximality, the model corollary and the complete appendix ledger. Preserve the
+three milestones and additional full-paper endpoint. A bijective occurrence
+graph alone does not prove invertibility. Do not assume quotient faithfulness,
+cancel the first injection, or create zeros without existing-arrow witnesses.
+
+9. WRITING, VERIFICATION, PRESERVATION AND DELIVERY
+
+Carry forward all recorded corrections and writing requirements without asking
+the author to repeat them. Use the mathematical-writing and hostile-referee
+workflows on actual statements and proof correspondence. Definitions and types
+must be clear before use; preserve the tagged-block substitution presentation,
+typed diagrams and exact finite-ordinal correspondence. Keep process, model,
+review and delivery commentary outside manuscript prose, comments and footnotes;
+preserve the accepted disclosure. The Appendix C addition is explicitly author-requested; otherwise, no manuscript
+revision follows merely from an unfinished formalization. If a genuine correction
+is established, apply it
+through every affected location and record evidence and resolution externally.
+
+Preserve Lean 4.35.0, Init-only dependencies unless a justified pinned compatible
+library is needed, regular module headers and the source line limit. Use one
+heavy build/audit at a time. Run the appropriate new-module and public-signature
+checks, the strict script, transitive axiom audit, all five established negative
+controls, public import closure, manuscript hashes and whitespace checks.
+Retain actual exit statuses and failed attempts. Add focused checks for selected
+internal/equal-labelled positions, empty contexts, both constants, principal
+degree drops and the nested fresh-leaf rank argument; do not substitute examples
+for generic theorems or mirror each proof with redundant tests.
+
+The reviewed checkpoint's local evidence is 442 Lean files / 11,105 audited
+declarations, 458 inventoried sources and 62 compressed logs. Update these counts
+only from the next actual run. No cloud rebuild was done. Local build, independent
+kernels, Comparator, official preflight, service verification and publication
+remain distinct. Do not claim the latter stages without their own evidence.
+
+Update active maps, README, continuation, correction record and full-paper
+contract together while preserving historical reports. Retain an implementation
+report and both reviews. Commit verified scoped work to main and push SSH
+without force under existing authorization; compare checked bytes to committed
+blobs and local/origin/live refs, and preserve the stash and repository privacy.
+
+The author reports all SIX 5c72a84 deliveries complete, including the three
+a006ecd successor artifacts. Do not reopen that delivery as an unfinished task.
+This cloud successor adds THREE files needing local Downloads delivery:
+  docs/CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt
+  docs/reviews/GENTZEN_5C72A84_REVIEW.md
+  docs/reviews/GENTZEN_5C72A84_WRITING.md
+Copy their committed bytes to /mnt/c/Users/fleng/Downloads/ with the same
+basenames, preserving differing existing destinations and verifying byte/SHA-256
+identity. Deliver the next run's finalized report and reviews in the same way.
+Record concrete paths, hashes and source commit in the delivery receipt.
+
+No reset, license/visibility change, author contact, arXiv or Palomar submission
+is authorized. Continue the already-authorized mathematical implementation
+without another approval checkpoint. If a genuine obstacle remains, give its
+exact typed statement, evidence and next proof task; do not label an unimplemented
+obligation a mathematical impossibility.

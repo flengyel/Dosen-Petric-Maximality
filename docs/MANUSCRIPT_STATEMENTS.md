@@ -1,5 +1,20 @@
 # Manuscript v6: statements and formal scope
 
+## Completed-run review and successor (28 October 2026)
+
+The [review of 5c72a84](reviews/GENTZEN_5C72A84_REVIEW.md) supports the clean-cut
+checkpoint and distinguishes source/log inspection from a new build. The
+[successor instruction](CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt) specifies
+selected-position transport, degree/rank induction and the nested fresh-principal
+argument for global elimination. Its new construction targets remain unproved.
+Two source typos at printed pp.260 and 262 are recorded in
+[the correction ledger](MANUSCRIPT_CORRECTIONS.md). The author subsequently
+requested both in the arXiv paper; the instruction supplies exact Appendix C
+TeX for the next manuscript version, preserving v6. Local insertion, PDF build,
+rendered review and updated manuscript/claim anchors remain to be performed.
+The earlier six Downloads deliveries are author-reported complete; this
+successor's instruction and two reviews await local committed-byte delivery.
+
 ## Current simultaneous clean-cut checkpoint (28 October 2026)
 
 `DosenPetric.Reduced.Gentzen.clean_cut_premises` proves simultaneous atomization

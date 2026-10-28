@@ -28,7 +28,10 @@ Read `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md`,
 `docs/MANUSCRIPT_COVERAGE.md`, and
 `docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v6;
 v4 and v5 remain preserved. Preserve the text, diagrams, and Appendix A references
-unless revision is requested.
+unless revision is requested. On 28 October 2026 the author requested that the
+two verified source errata appear in the arXiv paper. Follow the exact Appendix C
+addition in the current successor, create the next manuscript version while
+preserving v6, and build/inspect it locally before updating the active anchors.
 
 ## Full-paper objective
 

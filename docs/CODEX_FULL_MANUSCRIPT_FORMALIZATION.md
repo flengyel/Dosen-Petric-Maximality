@@ -6,6 +6,14 @@ proof in v6, the actual-presentation maximality theorem, the model corollary,
 and both appendices. A conditional maximality theorem alone does not complete
 this task.
 
+On 28 October 2026 the author additionally requested inclusion of two verified
+source errata in the arXiv paper. The exact Appendix C addition is in
+[the current successor](CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt), section 7.
+Prepare the next manuscript version from the preserved v6 baseline, build and
+inspect it locally, and update the governing source/PDF anchors and claim ledger.
+This explicit addition supplements all v6 obligations; it does not narrow them.
+Its mathematical rank explanations also require exact Lean correspondence.
+
 ## Governing source and instruction order
 
 The fixed manuscript baseline is
@@ -206,7 +214,11 @@ clean_cut_premises and clean_cut_normalization preserve the original sequents,
 CutFree, Atomized, per-premise/cut equality and both complete AllBlocked clauses.
 Reuse atomic route realization, proved positional support, joint atomized
 Reducibility, chosen-witness rank decomposition and the completed finite descent.
-See GENTZEN_CLEAN_CUTS_REPORT.md, its reviews and CODEX_NEXT_SESSION.txt.
+See GENTZEN_CLEAN_CUTS_REPORT.md, its reviews, the completed-run review
+reviews/GENTZEN_5C72A84_REVIEW.md and CODEX_NEXT_SESSION.txt. The detailed successor
+CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt specifies positional cut transport,
+outer degree/inner rank induction, the fresh-principal argument for sequential
+blocked cuts, and the author-requested errata appendix.
 
 The next proof is global cut elimination. Initial identity/atomic-zero/thinning
 and constant equations are implemented in GentzenCutBase, GentzenCutConstants

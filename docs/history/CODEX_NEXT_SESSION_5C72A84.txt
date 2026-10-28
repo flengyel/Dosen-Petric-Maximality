@@ -1,0 +1,99 @@
+CONTINUE THE UNCHANGED V6 FULL-PAPER FORMALIZATION
+
+Current proved endpoint: simultaneous clean-cut normalization, plus initial
+cut-elimination base equations. Successor documentation a006ecd was fast-forwarded
+on top of ba5af8b. No reset or stash operation. Preserve stash
+dedfd8fc8cd49930e9a162d5be585215b062a43c, newer work, other repositories,
+v4/v5/v6 and private visibility. The preceding continuation is retained at
+history/CODEX_NEXT_SESSION_A006ECD.txt. The commit/ref and byte-verified delivery
+identities are in .codex-work/gentzen-clean-cuts/POST_COMMIT_DELIVERY.json.
+
+READ current AGENTS, CODEX_FULL_MANUSCRIPT_FORMALIZATION, current maps/corrections,
+PALOMAR_REQUIREMENTS, GENTZEN_CLEAN_CUTS_REPORT and both GENTZEN_CLEAN_CUTS reviews.
+CODEX_AFTER_BA5AF8B_CLEAN_CUTS and its two successor reviews are retained and
+scheduled for committed-byte delivery alongside the three new reports.
+
+COMPLETED — REUSE
+
+clean_cut_premises and clean_cut_normalization: arbitrary P, original sequents,
+Topmost, both Atomized, individual Reduced equalities/cut equality and both
+universal tied-contraction Blocked clauses. Atomize FIRST, then preserve Atomized
+through the completed finite multiset normalization. No Nonempty P, DecidableEq P,
+coherence, normal form, compatibility or caller reduct assumptions.
+
+Route.AtomicOmissions is positional, and Route.atomic_program recurses on the
+lower context. SelectionMask.fixedAt and factor_route_preimage prove exact
+residual preimages. Exchange/contraction surjectivity and actual atomic-thinning
+support are internal. Parameterized repairs use the same economical program for
+CutFree, Atomized, equality and the full eligible-descendant bound. All actual
+input producers, selected logical singletons/right HEAD-disjunction, source W6
+and TerminalOne first/second packages have strengthened exports. Original
+ReducesL/R and reducibility_left/right are unchanged.
+
+rank_replacement_for takes the chosen h and its full bound; outside_keys,
+finite enumeration, fixed-support count-vector well-foundedness, containing
+preservation and no-eligible arguments are reused. The two strengthened blocked
+normalizers use ProofAddress.atomized and replace_atomized. The original negative
+atomizer example and its [0,0,0,0] unblocked tied contraction remain unchanged.
+CleanCutChecks.boundary_clean proves the full positive simultaneous conclusion
+on the topI/before example. Reuse all prior source/native and empty-context decisions.
+
+NEXT — CUT ELIMINATION, THEN COHERENCE AND THE FULL PAPER
+
+GentzenCutBase proves identity_identity, zero_identity, identity_zero, zero_zero
+and thinned_thinned. The last equation holds for arbitrary cut formula and
+contexts. GentzenCutConstants proves top_thinning and thinning_bot with actual
+same-sequent repairs and explicit right-empty transports. GentzenCutThinning
+proves endomorphism_thinning and thinning_endomorphism; instantiate the arbitrary
+singleton endomorphism with atomic identity or zero to obtain all remaining
+atomic base equations. leftThinningRepair_count and topRepair_count preserve
+cut count; their Atomized laws and discardLast_atomic retain the relevant atoms.
+These equations do NOT yet include exhaustive minimal-rank case classification.
+
+Prove classification of clean cuts of minimal rank using rho_one_iff_leaf and
+the actual sourceArity definitions. Then prove the conjunction/disjunction
+principal reductions (degree drops), parametric commuting reductions (selected
+rank drops), and all fourteen blocked-contraction reductions (possibly several
+smaller cuts). Use §11.2 pp.254–262, §11.5 pp.272–273 and §12.5 pp.291–292 in
+the retained September-2007 PDF, hash
+e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e.
+Count top and bot, as well as conjunction/disjunction, in cut degree; literals
+have degree zero. Constants are atomic for thinning but have positive degree.
+In a principal reduction the smaller formula degree permits fresh clean-cut
+normalization even if it increases ranks. For parametric and blocked-contraction
+reductions at unchanged degree, prove that the actual induced subcuts retain
+the needed atomization/blockedness and have smaller ranks. Do not re-clean them
+and assume that rank decreases: the clean-cut existence theorem supplies no
+rank upper bound. Keep categorical squares in Reduced; do not cite uninstantiated
+coherence inputs as proofs. Both constants and atomic zeros remain in the syntax. Assemble the
+actual lexicographic clean-cut elimination, then global elimination by replacing
+cut subproofs. No global elimination theorem is currently proved or supplied
+as a production hypothesis. This is an open implementation obligation, not a
+counterexample or established mathematical obstruction.
+
+Continue restricted mix/positive coherence, Reduced.Faithful and Boolean
+Coherence, actual source instances and congruence/substitution bridges, the short
+q_A/e_A proof and symmetric-fold alternative, unconditional maximality, model
+corollary and full appendix ledger. Preserve the three milestones and the
+additional whole-paper endpoint, tagged blocks/typed diagrams and exact ordinal
+correspondence. No settled mathematical, writing or verification decision reopens.
+
+VERIFICATION AND DELIVERY
+
+Final local strict verification: 442 Lean files / 11,105 audited project
+declarations. Three exact signature files, all five expected negative controls,
+public dependency closure, manuscript checksums and whitespace pass. All failures
+and actual exit statuses remain in provenance/wsl-gentzen-clean-cuts. Preserve
+one heavy build/audit at a time, Init-only Lean4.35.0, source headers and length
+limit. Run appropriate changed-source/public/dependency checks, both author-side
+reviews, and update all active records. Commit scoped verified work to main and
+push SSH without force under the existing authorization. Compare checked sources
+to committed blobs and local/origin/live refs; preserve the stash.
+
+Deliver finalized reports/reviews from committed copies to Downloads with byte
+or SHA-256 equality, preserving differing destinations. The current delivery list
+has six artifacts: three new clean-cut reports, CODEX_AFTER_BA5AF8B_CLEAN_CUTS and
+the two GENTZEN_BA5AF8B reviews. The preceding six ba5af8b deliveries remain complete.
+No independent kernel, Comparator, official preflight, service verification or
+publication status follows from local checks. No submission, author contact,
+license or visibility changes. Continue implementation without another approval.
