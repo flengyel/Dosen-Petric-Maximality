@@ -24,7 +24,47 @@ the concrete blocked reductions remain open. Global cut elimination, coherence a
 retain their current status. The underlying v6 target is supplemented, not reduced.
 
 
-## Current structural selected-cut checkpoint (28 October 2026)
+## Current opposite logical checkpoint (28 October 2026)
+
+`CutCommutation.opposite_conjL` and `opposite_disjR` prove the two actual opposite
+unary logical commuting families at arbitrary selected gaps and original output
+sequents. Their `eliminated` lemmas rebuild actual cut-free atomized witnesses.
+`opposite_conjL_descent`/`opposite_disjR_descent` reuse the completed addressed
+selected-predecessor inheritance to prove complete cleanliness and strict original
+selected-rank descent. Both `rank_step` lemmas recurse on that exact child before
+reconstructing the logical rule; no unchanged-degree cleaning or routed-rank
+substitution occurs.
+
+`prefixSide` and its actual join/split comparison laws support prefixed native
+logical rules. `suffixLogicalSide_join`/`split` prove both side suffix diagrams,
+including units and association transports. The required `assocL_pentagon` is
+proved from established product coordinates and instantiated with actual side
+laws. `PrefixedLogical` and `SuffixedLogical` give native rules with checked
+Reduced denotations, cut counts and Atomized laws. No unproved coherence or
+duality input is assumed.
+
+Checked: **510 screened Lean files / 11,669 audited project declarations**.
+Strict build/transitive audit, eight exact public type files, five expected
+negative control rejections, public closure, all manuscript hashes and whitespace
+pass. Evidence: `provenance/wsl-gentzen-opposite-logical-cuts/`; report:
+`GENTZEN_OPPOSITE_LOGICAL_CUTS_REPORT.md`; reviews:
+`reviews/GENTZEN_OPPOSITE_LOGICAL_CUTS_HOSTILE.md`,
+`reviews/GENTZEN_OPPOSITE_LOGICAL_CUTS_WRITING.md`.
+
+Reuse all principal, structural, opposite logical, selected-predecessor,
+Reducibility and simultaneous clean-cut work. Continue the same-side logical and
+binary commutations, all fourteen blocked families and the complete constructor
+dispatcher; then prove the all-ranks clean theorem, strict degree induction and
+global elimination. DegreeBelow remains uninstantiated globally. The full-paper
+endpoint, all later coherence/intended-presentation/substitution/maximality/model
+and appendix obligations remain active. Appendix C's concrete blocked reductions
+remain open. All three milestone statuses and all accepted corrections persist.
+
+## Retained structural selected-cut checkpoint (28 October 2026)
+
+Historical scope at f4a8da3; the current checkpoint proves the opposite logical
+families recorded as open here. The structural scope and atomization decision remain.
+
 
 `CutCommutation.same_right` and `same_left` prove both actual same-side structural
 commuting equations at the original selected output sequent. `Route.SingleFiber`
@@ -54,8 +94,9 @@ Evidence: `provenance/wsl-gentzen-structural-cuts/`; report:
 
 Reuse both principal equations, both conditional degree steps, exhaustive
 rank-two classification/step, all structural results, Reducibility and simultaneous
-clean-cut construction. Continue the remaining logical and binary commutations,
-all fourteen blocked families and the complete constructor dispatcher. Then prove
+clean-cut construction. The current checkpoint proves the opposite logical
+families. Continue the remaining same-side logical and binary commutations, all
+fourteen blocked families and the complete constructor dispatcher. Then prove
 the all-ranks clean theorem, discharge DegreeBelow and prove global elimination.
 At unchanged degree recurse on the inherited original clean child with proved
 smaller selected rank; at smaller degree allow arbitrary returned ranks. Coherence

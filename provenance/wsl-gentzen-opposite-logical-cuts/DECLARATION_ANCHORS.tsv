@@ -1,0 +1,35 @@
+DosenPetric/GentzenCutOppositeConjunction.lean	14	theorem opposite_conjL {F U Δ Θ Λ : List (NormalForm P)} {A B C : NormalForm P}
+DosenPetric/GentzenCutOppositeConjunction.lean	33	theorem opposite_conjL_eliminated {F U Δ Θ Λ : List (NormalForm P)} {A B C : NormalForm P}
+DosenPetric/GentzenCutOppositeDisjunction.lean	14	theorem opposite_disjR {Γ Δ Θ F U : List (NormalForm P)} {A B C : NormalForm P}
+DosenPetric/GentzenCutOppositeDisjunction.lean	32	theorem opposite_disjR_eliminated {Γ Δ Θ F U : List (NormalForm P)} {A B C : NormalForm P}
+DosenPetric/GentzenLogicalPentagon.lean	14	theorem assocL_pentagon
+DosenPetric/GentzenOppositeLogicalDescent.lean	14	theorem opposite_conjL_descent {F U Δ Θ Λ : List (NormalForm P)} {A B C : NormalForm P}
+DosenPetric/GentzenOppositeLogicalDescent.lean	22	theorem opposite_disjR_descent {Γ Δ Θ F U : List (NormalForm P)} {A B C : NormalForm P}
+DosenPetric/GentzenOppositeLogicalDescent.lean	34	theorem opposite_conjL_rank_step {F U Δ Θ Λ : List (NormalForm P)} {A B C : NormalForm P}
+DosenPetric/GentzenOppositeLogicalDescent.lean	46	theorem opposite_disjR_rank_step {Γ Δ Θ F U : List (NormalForm P)} {A B C : NormalForm P}
+DosenPetric/GentzenPrefixArrows.lean	13	def prefixSide (o : Op) : (K : List (NormalForm P)) →
+DosenPetric/GentzenPrefixArrows.lean	20	theorem prefixSide_join (o : Op) (K : List (NormalForm P))
+DosenPetric/GentzenPrefixArrows.lean	41	theorem prefixSide_split (o : Op) (K : List (NormalForm P))
+DosenPetric/GentzenPrefixLogical.lean	15	theorem consFixed_arrow (p : ExchangeScript P F U) (A : NormalForm P) (o : Op) :
+DosenPetric/GentzenPrefixLogical.lean	27	theorem appendAssoc_cons (K F U : List (NormalForm P)) (A : NormalForm P) :
+DosenPetric/GentzenPrefixLogical.lean	30	theorem appendAssoc_inverse_cons (K F U : List (NormalForm P)) (A : NormalForm P) :
+DosenPetric/GentzenPrefixLogical.lean	33	theorem appendAssoc_nil_arrow (F U : List (NormalForm P)) (o : Op) :
+DosenPetric/GentzenPrefixLogical.lean	36	theorem appendAssoc_nil_inverse_arrow (F U : List (NormalForm P)) (o : Op) :
+DosenPetric/GentzenPrefixLogical.lean	43	theorem prefixSide_logical (o : Op) (K F U : List (NormalForm P)) (A B : NormalForm P) :
+DosenPetric/GentzenPrefixedLogicalRules.lean	14	def conjL (K F U Δ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenPrefixedLogicalRules.lean	19	theorem conjL_denote (K F U Δ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenPrefixedLogicalRules.lean	30	theorem conjL_count (K F U Δ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenPrefixedLogicalRules.lean	35	theorem conjL_atomized (K F U Δ : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenPrefixedLogicalRules.lean	41	def disjR (Γ K F U : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenPrefixedLogicalRules.lean	46	theorem disjR_denote (Γ K F U : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenPrefixedLogicalRules.lean	57	theorem disjR_count (Γ K F U : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenPrefixedLogicalRules.lean	62	theorem disjR_atomized (Γ K F U : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenSuffixLogical.lean	13	def suffixLogicalSide (o : Op) (F U K : List (NormalForm P)) (A B : NormalForm P) :
+DosenPetric/GentzenSuffixLogical.lean	20	theorem suffixLogicalSide_nil (o : Op) (U K : List (NormalForm P)) (A B : NormalForm P) :
+DosenPetric/GentzenSuffixLogical.lean	30	theorem suffixLogicalSide_cons (o : Op) (H : NormalForm P) (F U K : List (NormalForm P))
+DosenPetric/GentzenSuffixLogical.lean	41	theorem suffixLogicalSide_join (o : Op) (F U K : List (NormalForm P)) (A B : NormalForm P) :
+DosenPetric/GentzenSuffixLogical.lean	97	theorem suffixLogicalSide_split (o : Op) (F U K : List (NormalForm P)) (A B : NormalForm P) :
+DosenPetric/GentzenSuffixedLogicalRules.lean	14	def disjR (Γ F U K : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenSuffixedLogicalRules.lean	19	theorem disjR_denote (Γ F U K : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenSuffixedLogicalRules.lean	29	theorem disjR_count (Γ F U K : List (NormalForm P)) (A B : NormalForm P)
+DosenPetric/GentzenSuffixedLogicalRules.lean	33	theorem disjR_atomized (Γ F U K : List (NormalForm P)) (A B : NormalForm P)

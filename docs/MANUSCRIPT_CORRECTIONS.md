@@ -304,3 +304,21 @@ negative atomization example and simultaneous clean-cut correction. The decision
 and scope are carried into all active maps, contract and continuation records.
 No manuscript change or new source erratum is implied. All v7 and earlier
 manuscript bytes, diagrams and disclosure are preserved.
+
+## Opposite logical rule transports and recursion (28 October 2026)
+
+The two opposite unary logical cut families now use actual prefixed/suffixed
+native rules at the original selected sequents. Both list-association transports
+and all append/unit comparisons are explicit. The suffix associativity identity
+is proved from the existing product coordinates and applied to the actual side
+structure; no unproved coherence or duality premise is inserted. The recursive
+child inherits complete cleanliness through the existing selected-predecessor
+address theorem and has strictly smaller original selected rank. Reconstruction
+occurs only after that recursive call.
+
+This resolves the opposite logical portion recorded as open at f4a8da3. Same-side
+logical, binary and blocked families and the global induction remain open. The
+same decision/status is carried into the continuation, contract, statements,
+coverage, correspondence and validation. No manuscript or source theorem
+correction is implied. All v7 and earlier manuscript bytes, appendices, diagrams
+and disclosure remain preserved.

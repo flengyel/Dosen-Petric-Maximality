@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-28T18:38:13.248773+00:00",
+  "checked_staged_source_files": 528,
+  "archives": 26,
+  "public_modules": 9,
+  "negative_controls": [
+    "direct-axiom",
+    "private-axiom",
+    "hidden-dependency",
+    "identified-projections",
+    "zero-without-arrow-witness"
+  ],
+  "preserved_all_prior_production_and_exact_checks": true,
+  "preserved_stash": "dedfd8fc8cd49930e9a162d5be585215b062a43c"
+}

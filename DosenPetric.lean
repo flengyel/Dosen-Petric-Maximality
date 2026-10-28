@@ -464,3 +464,12 @@ public import DosenPetric.GentzenStructuralCutDescent
 public import DosenPetric.GentzenStructuralCutReplacement
 public import DosenPetric.GentzenStructuralResiduals
 public import DosenPetric.GentzenStructuralSingleFibers
+public import DosenPetric.GentzenCutOppositeConjunction
+public import DosenPetric.GentzenCutOppositeDisjunction
+public import DosenPetric.GentzenLogicalPentagon
+public import DosenPetric.GentzenOppositeLogicalDescent
+public import DosenPetric.GentzenPrefixArrows
+public import DosenPetric.GentzenPrefixLogical
+public import DosenPetric.GentzenPrefixedLogicalRules
+public import DosenPetric.GentzenSuffixLogical
+public import DosenPetric.GentzenSuffixedLogicalRules

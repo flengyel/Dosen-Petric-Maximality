@@ -22,7 +22,47 @@ correspondence remains open. Selected-cut positivity and native fresh-principal 
 the concrete blocked reductions remain open. Global cut elimination, coherence and all other full-paper obligations
 retain their current status. The underlying v6 target is supplemented, not reduced.
 
-## Current structural selected-cut checkpoint (28 October 2026)
+## Current opposite logical checkpoint (28 October 2026)
+
+`CutCommutation.opposite_conjL` and `opposite_disjR` prove the two actual opposite
+unary logical commuting families at arbitrary selected gaps and original output
+sequents. Their `eliminated` lemmas rebuild actual cut-free atomized witnesses.
+`opposite_conjL_descent`/`opposite_disjR_descent` reuse the completed addressed
+selected-predecessor inheritance to prove complete cleanliness and strict original
+selected-rank descent. Both `rank_step` lemmas recurse on that exact child before
+reconstructing the logical rule; no unchanged-degree cleaning or routed-rank
+substitution occurs.
+
+`prefixSide` and its actual join/split comparison laws support prefixed native
+logical rules. `suffixLogicalSide_join`/`split` prove both side suffix diagrams,
+including units and association transports. The required `assocL_pentagon` is
+proved from established product coordinates and instantiated with actual side
+laws. `PrefixedLogical` and `SuffixedLogical` give native rules with checked
+Reduced denotations, cut counts and Atomized laws. No unproved coherence or
+duality input is assumed.
+
+Checked: **510 screened Lean files / 11,669 audited project declarations**.
+Strict build/transitive audit, eight exact public type files, five expected
+negative control rejections, public closure, all manuscript hashes and whitespace
+pass. Evidence: `provenance/wsl-gentzen-opposite-logical-cuts/`; report:
+`GENTZEN_OPPOSITE_LOGICAL_CUTS_REPORT.md`; reviews:
+`reviews/GENTZEN_OPPOSITE_LOGICAL_CUTS_HOSTILE.md`,
+`reviews/GENTZEN_OPPOSITE_LOGICAL_CUTS_WRITING.md`.
+
+Reuse all principal, structural, opposite logical, selected-predecessor,
+Reducibility and simultaneous clean-cut work. Continue the same-side logical and
+binary commutations, all fourteen blocked families and the complete constructor
+dispatcher; then prove the all-ranks clean theorem, strict degree induction and
+global elimination. DegreeBelow remains uninstantiated globally. The full-paper
+endpoint, all later coherence/intended-presentation/substitution/maximality/model
+and appendix obligations remain active. Appendix C's concrete blocked reductions
+remain open. All three milestone statuses and all accepted corrections persist.
+
+## Retained structural selected-cut checkpoint (28 October 2026)
+
+Historical scope at f4a8da3; the current checkpoint proves the opposite logical
+families recorded as open here. The structural scope and atomization decision remain.
+
 
 `CutCommutation.same_right` and `same_left` prove both actual same-side structural
 commuting equations at the original selected output sequent. `Route.SingleFiber`
@@ -52,8 +92,9 @@ Evidence: `provenance/wsl-gentzen-structural-cuts/`; report:
 
 Reuse both principal equations, both conditional degree steps, exhaustive
 rank-two classification/step, all structural results, Reducibility and simultaneous
-clean-cut construction. Continue the remaining logical and binary commutations,
-all fourteen blocked families and the complete constructor dispatcher. Then prove
+clean-cut construction. The current checkpoint proves the opposite logical
+families. Continue the remaining same-side logical and binary commutations, all
+fourteen blocked families and the complete constructor dispatcher. Then prove
 the all-ranks clean theorem, discharge DegreeBelow and prove global elimination.
 At unchanged degree recurse on the inherited original clean child with proved
 smaller selected rank; at smaller degree allow arbitrary returned ranks. Coherence
@@ -226,8 +267,9 @@ NEXT CONSTRUCTION
    constructions. rank_two_degree_step exhausts the least-rank cases under
    DegreeBelow; discharge that strict outer hypothesis only in the full induction.
    Reuse both same-side structural rank steps and arbitrary-position opposite
-   structural equations/descent. Prove opposite/same-side logical and both
-   binary-branch commutations, then complete the constructor dispatcher.
+   structural equations/descent, both opposite logical equations/reconstructions
+   and their strict clean rank steps. Prove the remaining same-side logical and
+   both binary-branch commutations, then complete the constructor dispatcher.
 4. Prove all seven BlockedL and seven BlockedR reductions. General native fresh
    rank-one and selected predecessor facts compile; instantiate them in the
    actual sequential/parallel constructions with explicit source adapters.
@@ -265,11 +307,11 @@ ordinal-correspondence or witnessed-zero decisions.
 
 VERIFY AND DELIVER LOCALLY
 
-The current proof verification records 500 Lean files / 11,626 audited declarations,
-seven exact-signature checks, five control rejections, v4/v5/v6/v7 manuscript hashes
+The current proof verification records 510 Lean files / 11,669 audited declarations,
+eight exact-signature checks, five control rejections, v4/v5/v6/v7 manuscript hashes
 and whitespace. The prior evidence remains retained; current source inventory,
-current command exits and failed attempts are in provenance/wsl-gentzen-structural-cuts,
-with all preceding principal/positional evidence preserved.
+current command exits and failed attempts are in provenance/wsl-gentzen-opposite-logical-cuts,
+with all preceding structural/principal/positional evidence preserved.
 Use the pinned toolchain, one heavy build/audit at a time, exact public types,
 full dependency audit and existing controls for new source. Update all active
 records consistently. Commit/push verified scoped work to main without force;
