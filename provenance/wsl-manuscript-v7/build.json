@@ -1,0 +1,14 @@
+{
+  "command": [
+    "latexmk",
+    "-pdf",
+    "-interaction=nonstopmode",
+    "-halt-on-error",
+    "-file-line-error",
+    "Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex"
+  ],
+  "cwd": "/tmp/dp-cut-errata",
+  "exit_status": 0,
+  "seconds": 6.53,
+  "log_sha256": "514bfe7773014f67680a4f0ac3bbaf037150c63fee4e34af4ad4b64e3dbb157e"
+}

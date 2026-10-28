@@ -1,4 +1,26 @@
-CONTINUE THE UNCHANGED V6 FULL-PAPER FORMALIZATION
+CONTINUE THE V7 FULL-PAPER FORMALIZATION (ALL V6 CONTENT PLUS APPENDIX C)
+
+## Current manuscript: v7 with the authorized errata appendix
+
+V7, dated 28 October 2026, preserves all v6 mathematical content and adds the
+exact author-requested Appendix C plus its introduction roadmap sentence.
+Appendix C records the source p.260 inequality r' < r and p.262 right-rank-one
+qualification. The entire Appendix C is on PDF p.12, followed by the unchanged
+disclosure; references are on p.13. The final local TeX build resolves all
+references/citations and has no overfull/underfull boxes or warnings. All ten
+TikZ diagrams, Appendices A–B, the disclosure and bibliography are unchanged
+in source. The v4/v5/v6 source/PDF pairs remain byte-identical.
+
+Active source: `manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex`,
+SHA-256 `70b4f82c03e165e6a6da36d869968531a509341b93f90eedde964506568c8e96`. Active PDF: the same basename with .pdf,
+SHA-256 `957048538137ef085c0a581b399272db753377b76c6a83c1adc307ad8b2e256a`. Evidence: `provenance/wsl-manuscript-v7/`;
+report: `MANUSCRIPT_V7_ERRATA_REPORT.md`; reviews:
+`reviews/MANUSCRIPT_V7_ERRATA_HOSTILE.md`, `reviews/MANUSCRIPT_V7_ERRATA_WRITING.md`.
+
+The manuscript addition is complete; its concrete blocked-reduction Lean
+correspondence remains open. The existing head-cut positivity theorem is
+available. Global cut elimination, coherence and all other full-paper obligations
+retain their current status. The underlying v6 target is supplemented, not reduced.
 
 The completed implementation checkpoint is
 5c72a84c665bdc5102e546cef88f9fd29838e9b4, incorporating a006ecd.
@@ -65,10 +87,9 @@ At printed p.260 (w gamma 3), the new-rank inequality must read r' < r.
 At printed p.262 (w disjunction 1), the stated rank one is the RIGHT rank;
 the total rank is at least two. Both readings were checked in rendered pages.
 They correct the external source. The author has now requested their inclusion
-in the arXiv paper. Create the next manuscript version from the preserved v6
-baseline, add the supplied Appendix C and roadmap sentence, then build and
-inspect it locally. Update hashes, active version pointers and all affected
-claim/correction records. Keep the accepted disclosure and v4/v5/v6 intact.
+in the arXiv paper. V7 now contains the exact supplied Appendix C and roadmap
+sentence. Its local build, rendered inspection, hashes and active claim/correction
+records are complete. The accepted disclosure and v4/v5/v6 remain intact.
 Prove the corresponding Lean inequalities; their status stays open until checked.
 
 CONTINUE THE FULL CONTRACT

@@ -26,19 +26,20 @@ other checkouts, including FailureOfComposition and Categorical_Rice_Shapiro.
 Read `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md`,
 `docs/CODEX_NEXT_SESSION.txt`, `docs/MANUSCRIPT_STATEMENTS.md`,
 `docs/MANUSCRIPT_COVERAGE.md`, and
-`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v6;
-v4 and v5 remain preserved. Preserve the text, diagrams, and Appendix A references
+`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v7;
+v4, v5 and v6 remain preserved. Preserve the text, diagrams, and Appendix A references
 unless revision is requested. On 28 October 2026 the author requested that the
-two verified source errata appear in the arXiv paper. Follow the exact Appendix C
-addition in the current successor, create the next manuscript version while
-preserving v6, and build/inspect it locally before updating the active anchors.
+two verified source errata appear in the arXiv paper. The exact Appendix C
+addition has been built and inspected in v7, preserving v6; its source and PDF
+anchors and remaining Lean correspondences are recorded in the active maps.
 
 ## Full-paper objective
 
-Formalize the complete mathematical content of manuscript v6: the short q_A/e_A
+Formalize the complete mathematical content of manuscript v7 (all v6 content
+and the authorized Appendix C addition): the short q_A/e_A
 proof, maximality for the actual equation-generated presentation with every
 required input proved, the model corollary, all unnumbered mathematical claims,
-and both appendices' constructions, equations, examples and diagram identities.
+and all three appendices' constructions, equations, examples and diagram identities.
 Maintain exact claim-to-declaration correspondence. Preserve the existing
 symmetric-fold proof as an alternative route.
 

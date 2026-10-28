@@ -1,0 +1,54 @@
+--- v6.tex
++++ v7.tex
+@@ -15,7 +15,7 @@
+ \newcommand{\FormulaSet}{\operatorname{Form}}
+ \title{Maximality of the Do\v{s}en--Petri\'c Boolean Category}
+ \author{Florian Lengyel\thanks{Email: \href{mailto:flengyel@gradcenter.cuny.edu}{\texttt{flengyel@gradcenter.cuny.edu}}}}
+-\date{October 25, 2026}
++\date{October 28, 2026}
+ \begin{document}
+ \maketitle
+ 
+@@ -97,7 +97,10 @@
+ Appendix~\ref{app:substitution} gives the commutative diagrams relating
+ them to Do\v{s}en and Petri\'c's ordinal substitution operation.
+ Section~\ref{sec:formalization} describes the Lean formalization and
+-its explicit coherence inputs. References to \cite{DP} use the printed
++its explicit coherence inputs.
++Appendix~\ref{app:cut-errata} records two typographical corrections to the
++cut-elimination proof in \cite{DP}.
++References to \cite{DP} use the printed
+ pagination of its September 2007 revised version.
+ 
+ \section{The Boolean proof category}\label{sec:category}
+@@ -867,6 +870,30 @@
+ The upper-right path is $f\circ0_A:A\to C$, and the lower-left
+ path is $0_C\circ g:A\to C$. The arrows $f$ and $g$ need not be equal.
+ 
++\clearpage
++\section{Two corrections to the cut-elimination proof}\label{app:cut-errata}
++
++The cut-elimination proof in \cite[\S11.2]{DP} contains two
++typographical errors in its rank comparisons. We use the notation of
++that proof: $r$ is the rank of the cut being reduced and $r'$ is the
++rank of a recursive subcut. The left and right ranks are positive;
++their sum is the cut rank \cite[p.~249]{DP}.
++
++\paragraph{Page 260, case $(w\,\gamma\,3)$.}
++In the sentence immediately following the displayed reduction,
++the inequality $r<r'$ should read $r'<r$.
++The recursive cuts have the same cut formula and smaller rank:
++the corresponding one-sided ranks decrease on passing to the
++indicated premises, while the other one-sided rank is unchanged.
++
++\paragraph{Page 262, case $(w\,\vee\,1)$.}
++In the continuation of this case, the phrase ``whose rank is~1''
++should read ``whose right rank is~1'', as in the analogous
++argument on p.~261. The selected formula in the right premise
++is newly introduced by the displayed $\vee L$ rule, so its right
++rank is~1. Its total rank is the unchanged left rank plus~1,
++and is therefore at least~2.
++
+ \section*{Use of AI tools}
+ OpenAI's ChatGPT was used to assist with the development of the proof,
+ preparation of the manuscript, and checks of the arguments and references.

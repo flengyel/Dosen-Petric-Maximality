@@ -1,5 +1,27 @@
 # Current Gentzen validation
 
+## Current manuscript: v7 with the authorized errata appendix
+
+V7, dated 28 October 2026, preserves all v6 mathematical content and adds the
+exact author-requested Appendix C plus its introduction roadmap sentence.
+Appendix C records the source p.260 inequality r' < r and p.262 right-rank-one
+qualification. The entire Appendix C is on PDF p.12, followed by the unchanged
+disclosure; references are on p.13. The final local TeX build resolves all
+references/citations and has no overfull/underfull boxes or warnings. All ten
+TikZ diagrams, Appendices A–B, the disclosure and bibliography are unchanged
+in source. The v4/v5/v6 source/PDF pairs remain byte-identical.
+
+Active source: `manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex`,
+SHA-256 `70b4f82c03e165e6a6da36d869968531a509341b93f90eedde964506568c8e96`. Active PDF: the same basename with .pdf,
+SHA-256 `957048538137ef085c0a581b399272db753377b76c6a83c1adc307ad8b2e256a`. Evidence: `provenance/wsl-manuscript-v7/`;
+report: `MANUSCRIPT_V7_ERRATA_REPORT.md`; reviews:
+`reviews/MANUSCRIPT_V7_ERRATA_HOSTILE.md`, `reviews/MANUSCRIPT_V7_ERRATA_WRITING.md`.
+
+The manuscript addition is complete; its concrete blocked-reduction Lean
+correspondence remains open. The existing head-cut positivity theorem is
+available. Global cut elimination, coherence and all other full-paper obligations
+retain their current status. The underlying v6 target is supplemented, not reduced.
+
 ## Completed-run review and successor (28 October 2026)
 
 The [review of 5c72a84](reviews/GENTZEN_5C72A84_REVIEW.md) supports the clean-cut
@@ -9,11 +31,12 @@ selected-position transport, degree/rank induction and the nested fresh-principa
 argument for global elimination. Its new construction targets remain unproved.
 Two source typos at printed pp.260 and 262 are recorded in
 [the correction ledger](MANUSCRIPT_CORRECTIONS.md). The author subsequently
-requested both in the arXiv paper; the instruction supplies exact Appendix C
-TeX for the next manuscript version, preserving v6. Local insertion, PDF build,
-rendered review and updated manuscript/claim anchors remain to be performed.
-The earlier six Downloads deliveries are author-reported complete; this
-successor's instruction and two reviews await local committed-byte delivery.
+requested both in the arXiv paper. V7 implements the exact Appendix C and
+roadmap sentence, preserving v6. Local insertion, PDF build, rendered review
+and updated manuscript/claim anchors are complete; see the v7 report above.
+The earlier six Downloads deliveries remain complete. This successor's
+instruction, two reviews and the new v7 artifacts are included in the current
+committed-byte delivery, certified by the post-commit receipt.
 
 ## Current simultaneous clean-cut checkpoint (28 October 2026)
 

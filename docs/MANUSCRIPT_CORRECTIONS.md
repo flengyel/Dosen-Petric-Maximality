@@ -1,9 +1,17 @@
-# Manuscript corrections and unresolved findings
+# Manuscript corrections and source errata
 
-Current manuscript: v6, source commit
-`810dcdbccc76a4307028773c561f36b910b5170c`, SHA-256
-`2c30fd10cb81f5d8246dabdc7f343d6d9adeac91358d84273d2799ab514972b0`.
-Record established: 25 October 2026.
+Current manuscript: v7, dated 28 October 2026. Source SHA-256
+`70b4f82c03e165e6a6da36d869968531a509341b93f90eedde964506568c8e96`; PDF SHA-256
+`957048538137ef085c0a581b399272db753377b76c6a83c1adc307ad8b2e256a`. V6 remains the preserved reviewed baseline
+at 810dcdbccc76a4307028773c561f36b910b5170c, source SHA-256
+2c30fd10cb81f5d8246dabdc7f343d6d9adeac91358d84273d2799ab514972b0.
+
+The author-requested Appendix C addition is complete and locally built/inspected.
+It contains the supplied corrections to the external source, without changing
+Appendices A–B or the accepted disclosure. See MANUSCRIPT_V7_ERRATA_REPORT.md
+and its two reviews. The two concrete blocked-reduction Lean correspondences
+remain open, as recorded in the v7 statement ledger. No manuscript theorem is
+marked formalized merely because its TeX has been added.
 
 ## Current correction status
 
@@ -221,3 +229,16 @@ from their committed bytes. The old continuation is archived verbatim at
 history/CODEX_NEXT_SESSION_5C72A84.txt. No Lean or manuscript source is changed by
 this documentation pass; the exact authorized manuscript addition is handed to
 local Codex for insertion and build.
+
+## V7 addition completed early in the cut-elimination continuation
+
+The exact Appendix C and roadmap sentence supplied at 1376bcb were inserted
+into v7, dated 28 October 2026. A page break keeps Appendix C together on p.12.
+The disclosure and bibliography are byte-identical to v6 source, as are all
+ten TikZ diagrams and the complete Appendix A/B source. The source p.260,
+p.261 and p.262 rendered pages were rechecked, and all thirteen v7 pages were
+inspected for layout with enlarged diagram and Appendix C checks. The final
+latexmk build has resolved references/citations and no layout warnings.
+Old manuscript blobs retain their hashes. The active anchors and claim/status
+records are updated together. This resolves the manuscript-addition obligation;
+it does not close the new concrete Lean rank-correspondence obligations.

@@ -1,22 +1,31 @@
-# Complete Lean formalization of manuscript v6
+# Complete Lean formalization of manuscript v7
 
 Authorized scope: 25 October 2026. The project target is the complete mathematical
 content of *Maximality of the Došen–Petrić Boolean Category*, including the short
 proof in v6, the actual-presentation maximality theorem, the model corollary,
-and both appendices. A conditional maximality theorem alone does not complete
+and all three appendices. A conditional maximality theorem alone does not complete
 this task.
 
 On 28 October 2026 the author additionally requested inclusion of two verified
 source errata in the arXiv paper. The exact Appendix C addition is in
 [the current successor](CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt), section 7.
-Prepare the next manuscript version from the preserved v6 baseline, build and
-inspect it locally, and update the governing source/PDF anchors and claim ledger.
+V7 implements that addition from the preserved v6 baseline. It has been built
+and inspected locally; the governing source/PDF anchors and claim ledger are updated.
 This explicit addition supplements all v6 obligations; it does not narrow them.
 Its mathematical rank explanations also require exact Lean correspondence.
 
 ## Governing source and instruction order
 
-The fixed manuscript baseline is
+The active manuscript is v7, dated 28 October 2026. Its source is
+`manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex`, SHA-256
+`70b4f82c03e165e6a6da36d869968531a509341b93f90eedde964506568c8e96`; its PDF has SHA-256
+`957048538137ef085c0a581b399272db753377b76c6a83c1adc307ad8b2e256a`. The exact addition and checks are
+recorded in MANUSCRIPT_V7_ERRATA_REPORT.md and provenance/wsl-manuscript-v7.
+All v6 obligations remain; Appendix C adds the source-rank explanations to
+formalize. The source commit is identified by the v7 addition in Git history;
+these hashes fix its bytes independently of a self-referential commit identifier.
+
+The preserved reviewed v6 baseline is
 `manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v6.tex` at commit
 `810dcdbccc76a4307028773c561f36b910b5170c`, SHA-256
 `2c30fd10cb81f5d8246dabdc7f343d6d9adeac91358d84273d2799ab514972b0`.

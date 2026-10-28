@@ -1,5 +1,29 @@
 # Došen–Petrić maximality in Lean
 
+## Current manuscript: v7 with the authorized errata appendix
+
+V7, dated 28 October 2026, preserves all v6 mathematical content and adds the
+exact author-requested Appendix C plus its introduction roadmap sentence.
+Appendix C records the source p.260 inequality r' < r and p.262 right-rank-one
+qualification. The entire Appendix C is on PDF p.12, followed by the unchanged
+disclosure; references are on p.13. The final local TeX build resolves all
+references/citations and has no overfull/underfull boxes or warnings. All ten
+TikZ diagrams, Appendices A–B, the disclosure and bibliography are unchanged
+in source. The v4/v5/v6 source/PDF pairs remain byte-identical.
+
+Active source: `manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex`,
+SHA-256 `70b4f82c03e165e6a6da36d869968531a509341b93f90eedde964506568c8e96`. Active PDF: the same basename with .pdf,
+SHA-256 `957048538137ef085c0a581b399272db753377b76c6a83c1adc307ad8b2e256a`. Evidence: `provenance/wsl-manuscript-v7/`;
+report: [MANUSCRIPT_V7_ERRATA_REPORT.md](docs/MANUSCRIPT_V7_ERRATA_REPORT.md); reviews:
+[hostile review](docs/reviews/MANUSCRIPT_V7_ERRATA_HOSTILE.md),
+[writing review](docs/reviews/MANUSCRIPT_V7_ERRATA_WRITING.md).
+
+The manuscript addition is complete; its concrete blocked-reduction Lean
+correspondence remains open. The existing head-cut positivity theorem is
+available. Global cut elimination, coherence and all other full-paper obligations
+retain their current status. The underlying v6 target is supplemented, not reduced.
+
+
 Simultaneous **clean-cut normalization** now compiles in the existing Reduced
 presentation: original sequents, cut-free and atomized premises, individual
 Reduced equalities and every tied contraction blocked on both sides.
@@ -25,14 +49,14 @@ docs/history/README_A006ECD.md.
 The [completed-run review](docs/reviews/GENTZEN_5C72A84_REVIEW.md) and
 [detailed successor](docs/CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt) now address
 global cut elimination. The author has also requested the two verified source
-errata in the arXiv paper. Exact Appendix C text is supplied for the next
-manuscript version; local insertion and PDF verification are pending.
+errata in the arXiv paper. V7 now includes the exact supplied Appendix C;
+local insertion, PDF verification and active manuscript records are complete.
 
 ## Full-paper formalization target
 
-The authorized target is the complete mathematical content of manuscript v6:
+The authorized target is the complete mathematical content of manuscript v7:
 the short q_A/e_A proof, maximality for the actual equation-generated category
-with all inputs proved, the model corollary, unnumbered claims and both
+with all inputs proved, the model corollary, unnumbered claims and all three
 appendices. Full local Reducibility is one prerequisite. Keep the three
 milestones below separate and preserve the existing symmetric-fold alternative.
 See the [full-paper contract](docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md),
@@ -77,13 +101,15 @@ The [statement map](docs/MANUSCRIPT_STATEMENTS.md) and
 [coverage map](docs/MANUSCRIPT_COVERAGE.md) record the precise boundary.
 Use [the next-session prompt](docs/CODEX_NEXT_SESSION.txt) to continue in WSL2.
 
-The current manuscript is v6: [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v6.tex)
-and [PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v6.pdf).
+The current manuscript is v7: [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex)
+and [PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.pdf).
 It gives a shorter contextual-collapse proof from the published structural
 isomorphisms, distinguishes the result from Joyal's theorem, and describes the
 conditional Lean formalization. No earlier explicit statement of the same
 maximality theorem was found; derivability from older results does not establish
-prior publication. The v6 manuscript is unchanged; the Lean proof work is recorded above and its coherence obligations remain open.
+prior publication. V7 adds the author-requested Appendix C source errata to the preserved v6
+baseline. Its TeX build and rendered review pass; the corresponding concrete
+Lean rank reductions and the coherence obligations remain open.
 See the [corrected novelty review](docs/DOSEN_PETRIC_MAXIMALITY_NOVELTY_REVIEW_2026-10-25.md),
 [v6 hostile review](docs/reviews/V6_HOSTILE_REVIEW.md),
 [writing review](docs/reviews/V6_WRITING_REVIEW.md),
