@@ -1,0 +1,420 @@
+{
+  "incorporated_history": [
+    {
+      "reference": "1376bcb",
+      "commit": "1376bcbe1d1a8aa8eb69142f85401f078cfc14c9",
+      "ancestor": true
+    },
+    {
+      "reference": "5c72a84",
+      "commit": "5c72a84c665bdc5102e546cef88f9fd29838e9b4",
+      "ancestor": true
+    },
+    {
+      "reference": "a006ecd",
+      "commit": "a006ecdf7ca961f5355a44ed97629f960d5605d2",
+      "ancestor": true
+    },
+    {
+      "reference": "85a16cdc",
+      "commit": "85a16cdc077e8a3c4deedd3b7a521361e1e54e54",
+      "ancestor": true
+    },
+    {
+      "reference": "5b8a199",
+      "commit": "5b8a1996cab3f53e8c771dbd6126274236b1db4a",
+      "ancestor": true
+    }
+  ],
+  "utc": "2026-10-28T18:39:49.932311+00:00",
+  "verified_against_commit": "59e2c12528ecb6e48df436136265afb81edc20de",
+  "origin_main": "59e2c12528ecb6e48df436136265afb81edc20de",
+  "live_ssh_main": "59e2c12528ecb6e48df436136265afb81edc20de",
+  "checked_sources": 528,
+  "preserved_stash": "dedfd8fc8cd49930e9a162d5be585215b062a43c",
+  "artifacts": [
+    {
+      "phase": "V7",
+      "delivered_at_commit": "d3a2336cf652f561e624b384ebcb48b991586df9",
+      "repository": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex",
+      "downloads": "/mnt/c/Users/fleng/Downloads/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex",
+      "sha256": "70b4f82c03e165e6a6da36d869968531a509341b93f90eedde964506568c8e96",
+      "bytes": 41052
+    },
+    {
+      "phase": "V7",
+      "delivered_at_commit": "d3a2336cf652f561e624b384ebcb48b991586df9",
+      "repository": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.pdf",
+      "downloads": "/mnt/c/Users/fleng/Downloads/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.pdf",
+      "sha256": "957048538137ef085c0a581b399272db753377b76c6a83c1adc307ad8b2e256a",
+      "bytes": 437205
+    },
+    {
+      "phase": "V7",
+      "delivered_at_commit": "d3a2336cf652f561e624b384ebcb48b991586df9",
+      "repository": "docs/MANUSCRIPT_V7_ERRATA_REPORT.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/MANUSCRIPT_V7_ERRATA_REPORT.md",
+      "sha256": "1c05615eadad2d70da5fa28cd40f28f51062f9cf61ce42bf7458a1ac6a8369b5",
+      "bytes": 4129
+    },
+    {
+      "phase": "V7",
+      "delivered_at_commit": "d3a2336cf652f561e624b384ebcb48b991586df9",
+      "repository": "docs/reviews/MANUSCRIPT_V7_ERRATA_HOSTILE.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/MANUSCRIPT_V7_ERRATA_HOSTILE.md",
+      "sha256": "68f95eaf9efd0a5fd5e3862a65971a423d19de15b856394a0771206336d343d9",
+      "bytes": 4552
+    },
+    {
+      "phase": "V7",
+      "delivered_at_commit": "d3a2336cf652f561e624b384ebcb48b991586df9",
+      "repository": "docs/reviews/MANUSCRIPT_V7_ERRATA_WRITING.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/MANUSCRIPT_V7_ERRATA_WRITING.md",
+      "sha256": "4febe322ddab272ce6684248751dcd40d5f4ff33ec50da4587bac60c66c35e71",
+      "bytes": 5010
+    },
+    {
+      "phase": "V7",
+      "delivered_at_commit": "d3a2336cf652f561e624b384ebcb48b991586df9",
+      "repository": "docs/CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt",
+      "downloads": "/mnt/c/Users/fleng/Downloads/CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt",
+      "sha256": "bb6fde0263150cf467410408b9e9beaa812d2ebc69d52e8788d28a87f9340726",
+      "bytes": 20619
+    },
+    {
+      "phase": "V7",
+      "delivered_at_commit": "d3a2336cf652f561e624b384ebcb48b991586df9",
+      "repository": "docs/reviews/GENTZEN_5C72A84_REVIEW.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_5C72A84_REVIEW.md",
+      "sha256": "1b208169a889d2039afbe269e7192bc57063e17c87cbb8971eb5dd754dbc3698",
+      "bytes": 12999
+    },
+    {
+      "phase": "V7",
+      "delivered_at_commit": "d3a2336cf652f561e624b384ebcb48b991586df9",
+      "repository": "docs/reviews/GENTZEN_5C72A84_WRITING.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_5C72A84_WRITING.md",
+      "sha256": "07a3a300e9d98895993399bb77b4803780dc0d4e80c767b36b2243efbb8a4da3",
+      "bytes": 6462
+    },
+    {
+      "phase": "POSITIONAL",
+      "delivered_at_commit": "df2b9eefb48c2f30f4400fdf8ab8b21dd3e46697",
+      "repository": "docs/GENTZEN_POSITIONAL_CUTS_REPORT.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_POSITIONAL_CUTS_REPORT.md",
+      "sha256": "690798d5917e847f1c511aa760148b6b20dac3ccdf8b105d6c4bf6af8aed8c96",
+      "bytes": 7736
+    },
+    {
+      "phase": "POSITIONAL",
+      "delivered_at_commit": "df2b9eefb48c2f30f4400fdf8ab8b21dd3e46697",
+      "repository": "docs/reviews/GENTZEN_POSITIONAL_CUTS_HOSTILE.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_POSITIONAL_CUTS_HOSTILE.md",
+      "sha256": "3f6e3c66b2a640b6513f86a34d8c62e8a8cb8320b27a599ac11498438be7dde1",
+      "bytes": 6534
+    },
+    {
+      "phase": "POSITIONAL",
+      "delivered_at_commit": "df2b9eefb48c2f30f4400fdf8ab8b21dd3e46697",
+      "repository": "docs/reviews/GENTZEN_POSITIONAL_CUTS_WRITING.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_POSITIONAL_CUTS_WRITING.md",
+      "sha256": "a52a9d923dd7dd8ada5e95def0b8b9016a1c893d6f1f508b0ed203746acd8419",
+      "bytes": 5404
+    },
+    {
+      "phase": "PRINCIPAL",
+      "delivered_at_commit": "dff29948c9b78523dcd347268d81210d91c8ee14",
+      "repository": "docs/GENTZEN_PRINCIPAL_CONJUNCTION_REPORT.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_PRINCIPAL_CONJUNCTION_REPORT.md",
+      "sha256": "e399546b7808e749dd1c050a617c373886626d420dc1ca793309674aa1ba16d6",
+      "bytes": 6035
+    },
+    {
+      "phase": "PRINCIPAL",
+      "delivered_at_commit": "dff29948c9b78523dcd347268d81210d91c8ee14",
+      "repository": "docs/reviews/GENTZEN_PRINCIPAL_CONJUNCTION_HOSTILE.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_PRINCIPAL_CONJUNCTION_HOSTILE.md",
+      "sha256": "4ac880b06862441db3a7acfa2d1c27c08442d162dd04056b793ae90910b14420",
+      "bytes": 6166
+    },
+    {
+      "phase": "PRINCIPAL",
+      "delivered_at_commit": "dff29948c9b78523dcd347268d81210d91c8ee14",
+      "repository": "docs/reviews/GENTZEN_PRINCIPAL_CONJUNCTION_WRITING.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_PRINCIPAL_CONJUNCTION_WRITING.md",
+      "sha256": "1e9b254b05e0f033a09f08171697161624d247b6b21d865de85d1dad092fe7bb",
+      "bytes": 4539
+    },
+    {
+      "phase": "DISJUNCTION",
+      "delivered_at_commit": "ef25f484b00d29fe23a835fdc97fe1ea74cf3d24",
+      "repository": "docs/GENTZEN_PRINCIPAL_DISJUNCTION_REPORT.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_PRINCIPAL_DISJUNCTION_REPORT.md",
+      "sha256": "62c6b689cb138ff2024c9009876e55dd07117b2727195d2fd868687f9805d6c1",
+      "bytes": 6633
+    },
+    {
+      "phase": "DISJUNCTION",
+      "delivered_at_commit": "ef25f484b00d29fe23a835fdc97fe1ea74cf3d24",
+      "repository": "docs/reviews/GENTZEN_PRINCIPAL_DISJUNCTION_HOSTILE.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_PRINCIPAL_DISJUNCTION_HOSTILE.md",
+      "sha256": "2c972a27deb41d795a2b0ab53b27b2b69995870db4b09beebcc2a46138f9e777",
+      "bytes": 6362
+    },
+    {
+      "phase": "DISJUNCTION",
+      "delivered_at_commit": "ef25f484b00d29fe23a835fdc97fe1ea74cf3d24",
+      "repository": "docs/reviews/GENTZEN_PRINCIPAL_DISJUNCTION_WRITING.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_PRINCIPAL_DISJUNCTION_WRITING.md",
+      "sha256": "653e0e13d9a1d980d67ae07d4418b0628c918585d0c413126c4852a474d5e700",
+      "bytes": 5822
+    },
+    {
+      "phase": "STRUCTURAL",
+      "delivered_at_commit": "f4a8da3304f993526270db5c18085ec8f2c96efc",
+      "repository": "docs/GENTZEN_STRUCTURAL_CUTS_REPORT.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_STRUCTURAL_CUTS_REPORT.md",
+      "sha256": "6888941df41af15b8af52e4d8e85a1efe01e62303e89ad94e172cdc77699b692",
+      "bytes": 5947
+    },
+    {
+      "phase": "STRUCTURAL",
+      "delivered_at_commit": "f4a8da3304f993526270db5c18085ec8f2c96efc",
+      "repository": "docs/reviews/GENTZEN_STRUCTURAL_CUTS_HOSTILE.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_STRUCTURAL_CUTS_HOSTILE.md",
+      "sha256": "efa9464b39554d1c58aa8e77a499384b0939bd03a6c92a28055e2d000e107ef0",
+      "bytes": 6253
+    },
+    {
+      "phase": "STRUCTURAL",
+      "delivered_at_commit": "f4a8da3304f993526270db5c18085ec8f2c96efc",
+      "repository": "docs/reviews/GENTZEN_STRUCTURAL_CUTS_WRITING.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_STRUCTURAL_CUTS_WRITING.md",
+      "sha256": "5378672d033d419b173eff10525fe945c2cd45249f4b4a49a72eeb95b10143d7",
+      "bytes": 5354
+    },
+    {
+      "phase": "LOGICAL",
+      "delivered_at_commit": "59e2c12528ecb6e48df436136265afb81edc20de",
+      "repository": "docs/GENTZEN_OPPOSITE_LOGICAL_CUTS_REPORT.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_OPPOSITE_LOGICAL_CUTS_REPORT.md",
+      "sha256": "ad9d54b69b36d3ea6e4d8b9b907c9661e1868dcecde6c8b691cc9563e4058d50",
+      "bytes": 4875
+    },
+    {
+      "phase": "LOGICAL",
+      "delivered_at_commit": "59e2c12528ecb6e48df436136265afb81edc20de",
+      "repository": "docs/reviews/GENTZEN_OPPOSITE_LOGICAL_CUTS_HOSTILE.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_OPPOSITE_LOGICAL_CUTS_HOSTILE.md",
+      "sha256": "20bee059aebeb2f252c49f2057141546fec3c6a548a7e69da49f4c85922bd796",
+      "bytes": 5460
+    },
+    {
+      "phase": "LOGICAL",
+      "delivered_at_commit": "59e2c12528ecb6e48df436136265afb81edc20de",
+      "repository": "docs/reviews/GENTZEN_OPPOSITE_LOGICAL_CUTS_WRITING.md",
+      "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_OPPOSITE_LOGICAL_CUTS_WRITING.md",
+      "sha256": "cec466685c235607686790657465956ff70e7390f65b32b0bddec58815e38709",
+      "bytes": 4723
+    }
+  ],
+  "original_receipts": {
+    "V7": {
+      "commit": "d3a2336cf652f561e624b384ebcb48b991586df9",
+      "origin_main": "d3a2336cf652f561e624b384ebcb48b991586df9",
+      "live_ssh_main": "d3a2336cf652f561e624b384ebcb48b991586df9",
+      "preserved_stash": "dedfd8fc8cd49930e9a162d5be585215b062a43c",
+      "working_tree": "",
+      "deliveries": [
+        {
+          "repository": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex",
+          "downloads": "/mnt/c/Users/fleng/Downloads/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex",
+          "sha256": "70b4f82c03e165e6a6da36d869968531a509341b93f90eedde964506568c8e96",
+          "bytes": 41052
+        },
+        {
+          "repository": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.pdf",
+          "downloads": "/mnt/c/Users/fleng/Downloads/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.pdf",
+          "sha256": "957048538137ef085c0a581b399272db753377b76c6a83c1adc307ad8b2e256a",
+          "bytes": 437205
+        },
+        {
+          "repository": "docs/MANUSCRIPT_V7_ERRATA_REPORT.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/MANUSCRIPT_V7_ERRATA_REPORT.md",
+          "sha256": "1c05615eadad2d70da5fa28cd40f28f51062f9cf61ce42bf7458a1ac6a8369b5",
+          "bytes": 4129
+        },
+        {
+          "repository": "docs/reviews/MANUSCRIPT_V7_ERRATA_HOSTILE.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/MANUSCRIPT_V7_ERRATA_HOSTILE.md",
+          "sha256": "68f95eaf9efd0a5fd5e3862a65971a423d19de15b856394a0771206336d343d9",
+          "bytes": 4552
+        },
+        {
+          "repository": "docs/reviews/MANUSCRIPT_V7_ERRATA_WRITING.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/MANUSCRIPT_V7_ERRATA_WRITING.md",
+          "sha256": "4febe322ddab272ce6684248751dcd40d5f4ff33ec50da4587bac60c66c35e71",
+          "bytes": 5010
+        },
+        {
+          "repository": "docs/CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt",
+          "downloads": "/mnt/c/Users/fleng/Downloads/CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt",
+          "sha256": "bb6fde0263150cf467410408b9e9beaa812d2ebc69d52e8788d28a87f9340726",
+          "bytes": 20619
+        },
+        {
+          "repository": "docs/reviews/GENTZEN_5C72A84_REVIEW.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_5C72A84_REVIEW.md",
+          "sha256": "1b208169a889d2039afbe269e7192bc57063e17c87cbb8971eb5dd754dbc3698",
+          "bytes": 12999
+        },
+        {
+          "repository": "docs/reviews/GENTZEN_5C72A84_WRITING.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_5C72A84_WRITING.md",
+          "sha256": "07a3a300e9d98895993399bb77b4803780dc0d4e80c767b36b2243efbb8a4da3",
+          "bytes": 6462
+        }
+      ]
+    },
+    "POSITIONAL": {
+      "checked_committed_files": 482,
+      "commit": "df2b9eefb48c2f30f4400fdf8ab8b21dd3e46697",
+      "origin_main": "df2b9eefb48c2f30f4400fdf8ab8b21dd3e46697",
+      "live_ssh_main": "df2b9eefb48c2f30f4400fdf8ab8b21dd3e46697",
+      "preserved_stash": "dedfd8fc8cd49930e9a162d5be585215b062a43c",
+      "working_tree": "",
+      "deliveries": [
+        {
+          "repository": "docs/GENTZEN_POSITIONAL_CUTS_REPORT.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_POSITIONAL_CUTS_REPORT.md",
+          "sha256": "690798d5917e847f1c511aa760148b6b20dac3ccdf8b105d6c4bf6af8aed8c96",
+          "bytes": 7736
+        },
+        {
+          "repository": "docs/reviews/GENTZEN_POSITIONAL_CUTS_HOSTILE.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_POSITIONAL_CUTS_HOSTILE.md",
+          "sha256": "3f6e3c66b2a640b6513f86a34d8c62e8a8cb8320b27a599ac11498438be7dde1",
+          "bytes": 6534
+        },
+        {
+          "repository": "docs/reviews/GENTZEN_POSITIONAL_CUTS_WRITING.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_POSITIONAL_CUTS_WRITING.md",
+          "sha256": "a52a9d923dd7dd8ada5e95def0b8b9016a1c893d6f1f508b0ed203746acd8419",
+          "bytes": 5404
+        }
+      ]
+    },
+    "PRINCIPAL": {
+      "checked_committed_files": 492,
+      "commit": "dff29948c9b78523dcd347268d81210d91c8ee14",
+      "origin_main": "dff29948c9b78523dcd347268d81210d91c8ee14",
+      "live_ssh_main": "dff29948c9b78523dcd347268d81210d91c8ee14",
+      "preserved_stash": "dedfd8fc8cd49930e9a162d5be585215b062a43c",
+      "working_tree": "",
+      "deliveries": [
+        {
+          "repository": "docs/GENTZEN_PRINCIPAL_CONJUNCTION_REPORT.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_PRINCIPAL_CONJUNCTION_REPORT.md",
+          "sha256": "e399546b7808e749dd1c050a617c373886626d420dc1ca793309674aa1ba16d6",
+          "bytes": 6035
+        },
+        {
+          "repository": "docs/reviews/GENTZEN_PRINCIPAL_CONJUNCTION_HOSTILE.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_PRINCIPAL_CONJUNCTION_HOSTILE.md",
+          "sha256": "4ac880b06862441db3a7acfa2d1c27c08442d162dd04056b793ae90910b14420",
+          "bytes": 6166
+        },
+        {
+          "repository": "docs/reviews/GENTZEN_PRINCIPAL_CONJUNCTION_WRITING.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_PRINCIPAL_CONJUNCTION_WRITING.md",
+          "sha256": "1e9b254b05e0f033a09f08171697161624d247b6b21d865de85d1dad092fe7bb",
+          "bytes": 4539
+        }
+      ]
+    },
+    "DISJUNCTION": {
+      "checked_committed_files": 509,
+      "commit": "ef25f484b00d29fe23a835fdc97fe1ea74cf3d24",
+      "origin_main": "ef25f484b00d29fe23a835fdc97fe1ea74cf3d24",
+      "live_ssh_main": "ef25f484b00d29fe23a835fdc97fe1ea74cf3d24",
+      "preserved_stash": "dedfd8fc8cd49930e9a162d5be585215b062a43c",
+      "working_tree": "",
+      "deliveries": [
+        {
+          "repository": "docs/GENTZEN_PRINCIPAL_DISJUNCTION_REPORT.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_PRINCIPAL_DISJUNCTION_REPORT.md",
+          "sha256": "62c6b689cb138ff2024c9009876e55dd07117b2727195d2fd868687f9805d6c1",
+          "bytes": 6633
+        },
+        {
+          "repository": "docs/reviews/GENTZEN_PRINCIPAL_DISJUNCTION_HOSTILE.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_PRINCIPAL_DISJUNCTION_HOSTILE.md",
+          "sha256": "2c972a27deb41d795a2b0ab53b27b2b69995870db4b09beebcc2a46138f9e777",
+          "bytes": 6362
+        },
+        {
+          "repository": "docs/reviews/GENTZEN_PRINCIPAL_DISJUNCTION_WRITING.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_PRINCIPAL_DISJUNCTION_WRITING.md",
+          "sha256": "653e0e13d9a1d980d67ae07d4418b0628c918585d0c413126c4852a474d5e700",
+          "bytes": 5822
+        }
+      ]
+    },
+    "STRUCTURAL": {
+      "checked_committed_files": 518,
+      "commit": "f4a8da3304f993526270db5c18085ec8f2c96efc",
+      "origin_main": "f4a8da3304f993526270db5c18085ec8f2c96efc",
+      "live_ssh_main": "f4a8da3304f993526270db5c18085ec8f2c96efc",
+      "preserved_stash": "dedfd8fc8cd49930e9a162d5be585215b062a43c",
+      "working_tree": "",
+      "deliveries": [
+        {
+          "repository": "docs/GENTZEN_STRUCTURAL_CUTS_REPORT.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_STRUCTURAL_CUTS_REPORT.md",
+          "sha256": "6888941df41af15b8af52e4d8e85a1efe01e62303e89ad94e172cdc77699b692",
+          "bytes": 5947
+        },
+        {
+          "repository": "docs/reviews/GENTZEN_STRUCTURAL_CUTS_HOSTILE.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_STRUCTURAL_CUTS_HOSTILE.md",
+          "sha256": "efa9464b39554d1c58aa8e77a499384b0939bd03a6c92a28055e2d000e107ef0",
+          "bytes": 6253
+        },
+        {
+          "repository": "docs/reviews/GENTZEN_STRUCTURAL_CUTS_WRITING.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_STRUCTURAL_CUTS_WRITING.md",
+          "sha256": "5378672d033d419b173eff10525fe945c2cd45249f4b4a49a72eeb95b10143d7",
+          "bytes": 5354
+        }
+      ]
+    },
+    "LOGICAL": {
+      "checked_committed_files": 528,
+      "commit": "59e2c12528ecb6e48df436136265afb81edc20de",
+      "origin_main": "59e2c12528ecb6e48df436136265afb81edc20de",
+      "live_ssh_main": "59e2c12528ecb6e48df436136265afb81edc20de",
+      "preserved_stash": "dedfd8fc8cd49930e9a162d5be585215b062a43c",
+      "working_tree": "",
+      "deliveries": [
+        {
+          "repository": "docs/GENTZEN_OPPOSITE_LOGICAL_CUTS_REPORT.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_OPPOSITE_LOGICAL_CUTS_REPORT.md",
+          "sha256": "ad9d54b69b36d3ea6e4d8b9b907c9661e1868dcecde6c8b691cc9563e4058d50",
+          "bytes": 4875
+        },
+        {
+          "repository": "docs/reviews/GENTZEN_OPPOSITE_LOGICAL_CUTS_HOSTILE.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_OPPOSITE_LOGICAL_CUTS_HOSTILE.md",
+          "sha256": "20bee059aebeb2f252c49f2057141546fec3c6a548a7e69da49f4c85922bd796",
+          "bytes": 5460
+        },
+        {
+          "repository": "docs/reviews/GENTZEN_OPPOSITE_LOGICAL_CUTS_WRITING.md",
+          "downloads": "/mnt/c/Users/fleng/Downloads/GENTZEN_OPPOSITE_LOGICAL_CUTS_WRITING.md",
+          "sha256": "cec466685c235607686790657465956ff70e7390f65b32b0bddec58815e38709",
+          "bytes": 4723
+        }
+      ]
+    }
+  }
+}
