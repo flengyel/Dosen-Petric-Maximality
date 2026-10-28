@@ -253,3 +253,17 @@ p.260 gammaDisj and p.262 sequential blocked disjunction reduction correspondenc
 remain open until their actual equations/adapters are implemented. No source
 wrapper is assigned the native rank. All current statement/coverage/correspondence,
 validation, contract and continuation records carry this distinction together.
+
+## Native principal conjunction reduction order (28 October 2026)
+
+The checked reduction cuts A then B and uses canonical list association at the
+outer boundary. The source's p.254 display uses the other nesting order with
+its permutations. This is a directly proved alternate reduction of the same
+original principal cut, recorded in PrincipalConjunction.selected_equation;
+it is not asserted to be the identical displayed source equation. The proof
+uses Reduced distribution/naturality laws and established product uniqueness,
+not unproved Symmetric Net Coherence. This implementation correspondence applies
+to the statement/coverage/correspondence, validation, contract and continuation
+records together. No manuscript/source theorem correction is implied. V7 and
+all earlier manuscript versions remain byte-identical. Appendix C's concrete
+blocked reduction correspondences remain open.

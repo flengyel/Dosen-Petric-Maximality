@@ -24,7 +24,44 @@ the concrete blocked reductions remain open. Global cut elimination, coherence a
 retain their current status. The underlying v6 target is supplemented, not reduced.
 
 
-## Current selected-cut checkpoint (28 October 2026)
+## Current principal conjunction checkpoint (28 October 2026)
+
+`PrincipalConjunction.selected_equation` proves the actual principal conjunction
+reduction at every selected gap, in Reduced and at the unchanged output sequent.
+The native construction cuts A then B, with explicit component and list-fold
+transports. It is a directly proved alternative to the displayed source p.254
+order. `selectedReduction_count` records its two component cuts;
+`selectedReduction_atomized` preserves the exact Atomized conjunction. Both
+component degrees are strictly smaller, with no returned-rank hypothesis.
+This is a reduction equation; its cut-free representative still requires the
+smaller-degree recursive calls in the full induction.
+
+`CutDistribution.mixed_strength`, the product-coordinate adapters and
+`PrincipalConjunction.equation` prove the categorical diagram without a coherence
+premise. Canonical triple-fold inverses and every association tag are checked.
+`LogicalHeadRouting.square`, `G.conjL_toHead` and `G.disjR_toHead` transport a
+selected logical formula by moving its two component tags below a fresh native
+rule, including empty contexts and repeated labels. No wrapper inherits a
+rank-one claim. The dual disjunction principal equation remains open.
+
+Checked: **474 screened Lean files / 11,403 audited project declarations**.
+Strict build/transitive audit, five exact type files, five expected control
+rejections, public closure, v4/v5/v6/v7 manuscript hashes and whitespace pass.
+Evidence: `provenance/wsl-gentzen-principal-conjunction/`; report:
+`GENTZEN_PRINCIPAL_CONJUNCTION_REPORT.md`; reviews:
+`reviews/GENTZEN_PRINCIPAL_CONJUNCTION_HOSTILE.md`,
+`reviews/GENTZEN_PRINCIPAL_CONJUNCTION_WRITING.md`.
+
+Reuse the completed positional interface, complete rank-two classification,
+atomic elimination, selected clean normalization, strict predecessor inheritance
+and opposite-side structural commutations. Continue the dual principal equation,
+all remaining parametric and fourteen blocked reductions, then discharge the
+outer degree/inner all-ranks induction and global elimination. Coherence and all
+later full-paper obligations retain their open statuses. All three milestones
+remain distinct; the v7 manuscript and Appendix C blocked correspondences are
+unchanged by this checkpoint.
+
+## Retained selected-cut checkpoint (28 October 2026)
 
 The positional interface and complete least-rank classification now compile.
 `PositionalCut.atomic_rank_two` returns a cut-free atomized witness with Reduced

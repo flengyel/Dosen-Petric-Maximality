@@ -431,3 +431,12 @@ public import DosenPetric.GentzenSelectedRecursion
 public import DosenPetric.GentzenStructuralPrefix
 public import DosenPetric.GentzenStructuralProgramRanks
 public import DosenPetric.GentzenStructuralSuffix
+public import DosenPetric.GentzenContextAssociativity
+public import DosenPetric.GentzenCutDistribution
+public import DosenPetric.GentzenLogicalHeadRouting
+public import DosenPetric.GentzenPrincipalConjunction
+public import DosenPetric.GentzenPrincipalConjunctionRule
+public import DosenPetric.GentzenPrincipalConjunctionSelected
+public import DosenPetric.GentzenPrincipalLogicalTransport
+public import DosenPetric.GentzenProductCalculations
+public import DosenPetric.GentzenTripleContexts

@@ -22,7 +22,44 @@ correspondence remains open. Selected-cut positivity and native fresh-principal 
 the concrete blocked reductions remain open. Global cut elimination, coherence and all other full-paper obligations
 retain their current status. The underlying v6 target is supplemented, not reduced.
 
-## Current selected-cut checkpoint (28 October 2026)
+## Current principal conjunction checkpoint (28 October 2026)
+
+`PrincipalConjunction.selected_equation` proves the actual principal conjunction
+reduction at every selected gap, in Reduced and at the unchanged output sequent.
+The native construction cuts A then B, with explicit component and list-fold
+transports. It is a directly proved alternative to the displayed source p.254
+order. `selectedReduction_count` records its two component cuts;
+`selectedReduction_atomized` preserves the exact Atomized conjunction. Both
+component degrees are strictly smaller, with no returned-rank hypothesis.
+This is a reduction equation; its cut-free representative still requires the
+smaller-degree recursive calls in the full induction.
+
+`CutDistribution.mixed_strength`, the product-coordinate adapters and
+`PrincipalConjunction.equation` prove the categorical diagram without a coherence
+premise. Canonical triple-fold inverses and every association tag are checked.
+`LogicalHeadRouting.square`, `G.conjL_toHead` and `G.disjR_toHead` transport a
+selected logical formula by moving its two component tags below a fresh native
+rule, including empty contexts and repeated labels. No wrapper inherits a
+rank-one claim. The dual disjunction principal equation remains open.
+
+Checked: **474 screened Lean files / 11,403 audited project declarations**.
+Strict build/transitive audit, five exact type files, five expected control
+rejections, public closure, v4/v5/v6/v7 manuscript hashes and whitespace pass.
+Evidence: `provenance/wsl-gentzen-principal-conjunction/`; report:
+`GENTZEN_PRINCIPAL_CONJUNCTION_REPORT.md`; reviews:
+`reviews/GENTZEN_PRINCIPAL_CONJUNCTION_HOSTILE.md`,
+`reviews/GENTZEN_PRINCIPAL_CONJUNCTION_WRITING.md`.
+
+Reuse the completed positional interface, complete rank-two classification,
+atomic elimination, selected clean normalization, strict predecessor inheritance
+and opposite-side structural commutations. Continue the dual principal equation,
+all remaining parametric and fourteen blocked reductions, then discharge the
+outer degree/inner all-ranks induction and global elimination. Coherence and all
+later full-paper obligations retain their open statuses. All three milestones
+remain distinct; the v7 manuscript and Appendix C blocked correspondences are
+unchanged by this checkpoint.
+
+## Retained selected-cut checkpoint (28 October 2026)
 
 The positional interface and complete least-rank classification now compile.
 `PositionalCut.atomic_rank_two` returns a cut-free atomized witness with Reduced
@@ -496,3 +533,11 @@ complete rewrite dispatch, macro/tied-site ranks and broader elimination/coheren
 | app:cut-errata, opening | Both one-sided ranks are positive; total rank is their sum. | G.rho_pos, PositionalCut.rank, rank_ge_two and rank_head; native G.cutRank retained. | Compiled for all exact selected positions, including heads. |
 | Appendix C, p.260 paragraph | The two recursive subcuts in source (w gamma 3) have unchanged formula degree and rank r' < r. | Selected address/predecessor cleanliness and strict rank laws compile; requires the actual gammaDisj blocked cut reduction with adapters. | Rendered source correction and general rank facts verified; concrete reduction proof open. |
 | Appendix C, p.262 paragraph | The new native disjL principal occurrence in the right premise has right rank one; total rank is the unchanged left rank plus one and at least two. | rank_fresh_disjL, rank_ge_two and native principal blockedness compile. Requires the actual sequential blocked disjunction reduction; source disjLLast exchanges stay explicit. | General native rank statements compiled; concrete source reduction correspondence open. |
+
+## Native principal conjunction correspondence
+
+| Source / target | Exact checked declaration | Scope |
+| --- | --- | --- |
+| §11.2 p.254 principal conjunction degree step | PrincipalConjunction.rule_equation and selected_equation | Actual Reduced equality for the same principal cut; native A-then-B reduction is an alternative to the displayed B-then-A source order. No global elimination is inferred. |
+| Component recursive calls | selectedReduction_count, selectedReduction_atomized, component_degrees | Two component cuts, same atomization condition and both smaller degrees; their actual elimination awaits the discharged global induction. |
+| Internal logical principal routing | LogicalHeadRouting.square, G.conjL_toHead, G.disjR_toHead | Both consumed tags and all fixed tags, including empty contexts and repeated labels; no false exchange-wrapper rank. |
