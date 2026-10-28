@@ -1,0 +1,282 @@
+CONTINUE FROM BLOCKED-W TO SIMULTANEOUS CLEAN-CUT NORMALIZATION
+
+Reviewed proof checkpoint: ba5af8bc2c1f3ec7c218d54b840fb1df5d24d61c.
+The author supplied this completed run. This commit is an evidence anchor,
+not a reset target. Inspect current Git status and task state, integrate the
+successor documentation without discarding intervening changes, and preserve
+stash dedfd8fc8cd49930e9a162d5be585215b062a43c, historical reports, manuscript
+v4/v5/v6, other repositories and private visibility. Work locally in
+/home/flengyel/src/Dosen-Petric-Maximality. Commit verified scoped work to main
+and push over SSH without force under the standing authorization.
+
+Read current AGENTS.md, CODEX_FULL_MANUSCRIPT_FORMALIZATION.md,
+CODEX_NEXT_SESSION.txt, MANUSCRIPT_STATEMENTS.md, MANUSCRIPT_COVERAGE.md,
+PRESENTATION_CORRESPONDENCE.md, MANUSCRIPT_CORRECTIONS.md, VALIDATION.md and
+PALOMAR_REQUIREMENTS.md. Read GENTZEN_BLOCKED_W_REPORT.md, its two reviews,
+and reviews/GENTZEN_BA5AF8B_REVIEW.md and GENTZEN_BA5AF8B_WRITING.md.
+Carry all recorded mathematical and writing corrections forward. Historical
+open-status snapshots do not reopen completed work or narrow the full-paper task.
+
+Local Codex implements and builds. ChatGPT supplies instructions, mathematics,
+literature assistance, manuscript checks and author-side review after completed
+local runs. This division creates no additional local approval checkpoint.
+
+1. RETAIN THE COMPLETED ENDPOINTS AND THE COUNTEREXAMPLE
+
+Reuse BlockedL/R.replace_lower, complete typed address/eligibility
+correspondence, finite occurrence enumeration, rank_replacement,
+FiniteRank.descent_wf and blocked_w_premises/blocked_w. Reuse full unrestricted
+reducibility_left/right and every completed W6, exchange, logical and binary
+construction. Keep their definitions, statements and complete descendant
+quantifiers. Do not repeat containing preservation or finite descent from scratch.
+
+The retained local evidence covers 412 screened Lean files and 10,906 audited
+project declarations; the inventory contains 428 files. The successor review
+inspected source and archived evidence without a cloud Lean build. Reuse the
+unchanged verification; check all changed source and the final public closure.
+
+Preserve GentzenAtomizationBlockedBoundary.lean. Its before proof has type
+G Empty [top, disj top bot] [top], is CutFree and AllBlockedL, but G.atomize
+introduces a tied unblocked left contraction at [0,0,0,0]. The new contraction's
+immediate premise is native disjL, which its BlockedL classification excludes.
+cutFree_equal_atomized also proves equality and the two positive invariants.
+This disproves preservation by this atomizer. It does not disprove existence
+of simultaneous representatives or establish a manuscript defect.
+
+2. EXACT NEXT PUBLIC THEOREM
+
+For arbitrary P : Type u, C : NormalForm P, all contexts, and
+
+  f : G P Gamma (C::Delta),  g : G P (C::Theta) Lambda,
+  ht : G.Topmost f g,
+
+construct f' and g' at those SAME sequents such that
+
+  G.Topmost f' g' /\ f'.Atomized /\ g'.Atomized /\
+  ofTerm f'.denote = ofTerm f.denote /\
+  ofTerm g'.denote = ofTerm g.denote /\
+  AllBlockedR f' /\ AllBlockedL g'.
+
+Derive equal denotation of the old and new cuts using Rules.cut_congr. Export
+the fully expanded universal tied-contraction clauses as well, or an exact
+type check unfolding AllBlockedL/R. Preserve arbitrary P, both literal signs,
+constants, contexts, and every addressed tied contraction. No Nonempty P,
+DecidableEq P, coherence, normal form or caller-supplied compatibility premise.
+
+Preferred construction: apply G.atomize to both original cut-free premises
+FIRST, then perform blocked normalization with repairs that preserve Atomized.
+This needs a stronger proved reduction construction. The existing existential
+Reduces theorem does not certify that an atomized witness can be chosen.
+Nor does arbitrary post-atomization preserve the rank decrease or blockedness.
+
+The following construction is a proposal to implement and check, not an already
+proved theorem. If an exact obstruction appears, record it and prove another
+concrete compatibility construction; retain all completed endpoints.
+
+3. REALIZE ROUTES WITHOUT UNNECESSARY COMPOUND THINNING
+
+Inspect GentzenRoutePrograms, GentzenStructuralPrograms,
+GentzenAnchoredRoutes and GentzenAnchoredRouteFactor. Route K F has
+
+  r.get : {A : NormalForm P} -> At F A -> At K A.
+
+Its product arrow is ante K -> ante F; its coproduct arrow is succ F -> succ K.
+A StructuralProgram P K F sends a premise at F to one at K on either side.
+Keep this variance explicit. The existing Route.program duplicates requested
+positions and then thins away the original context. Even an identity route
+on a compound formula can therefore introduce compound thinning.
+
+Use the precise support condition
+
+  forall {A} (a : At K A),
+    (not (exists b : At F A, r.get b = a)) -> AtomicFormula A.
+
+AtomicFormula is the EXISTING predicate: literals, top and bot satisfy it;
+conjunctions and disjunctions do not. The condition concerns each position in
+K separately. Equal formula labels do not identify positions or fibers.
+
+Construct a StructuralProgram P K F realizing r whose every thin instruction
+has an AtomicFormula label. Prove its get equality at every typed position,
+its arrow equality for both Ops using the existing component/extensionality
+laws, CutFree preservation, and Atomized preservation on both sides. Prove
+preservation of the program's atomic-thinning condition under seq, reindex,
+consFixed, and conversion of exchange scripts. No new G constructor is needed.
+
+A concrete recursion is on K, not on the number of requested copies:
+
+- K=[]: a Route [] F forces F=[]; use the identity program.
+- K=A::K0 with an empty fiber over here A K0: the support condition supplies
+  AtomicFormula A. Drop that head from the route, recursively realize the
+  residual route into K0, then insert A by one atomic thinning.
+- K=A::K0 with a nonempty fiber: use selection_of_fiber to contract exactly
+  that fiber and normalize its retained position to the head. A singleton
+  uses the existing node-free selection; a larger fiber uses actual contraction.
+  Remove those selected occurrences from F, drop the unused head from the
+  residual route, recurse into K0, and apply the recursive program under
+  consFixed A. Reassemble the selection, normalization and tail program.
+
+Prove the support condition for the recursive residual route in both cases.
+Use actual SelectionMask embeddings and typed Route.get laws. Keep the actual
+selected and fixed tags, including equal labels. Recursion decreases K.length;
+it does not need a label-equality instance. Prove the component identities in
+the original Reduced category, without invoking coherence or relation reflection.
+
+4. PROVE THE SUPPORT CONDITION FOR ACTUAL UNARY REPAIRS
+
+For q : ContractionSelection C U K and r : Route U F from an actual same-side
+unary rule, use the existing nonempty selected-fiber theorem and factor_route.
+The fixed tail has type
+
+  s : Route q.mask.erased p.mask.erased,
+
+where p is the actual selection in F. Prove that every unused position of
+q.mask.erased is atomic when the old proof is Atomized. Do not leave this
+condition as a hypothesis in the final producer or public Reducibility theorem.
+
+First prove the condition for r: exchange and contraction hit every lower
+position; thinning omits only the inserted position, whose label is atomic
+by the input Atomized hypothesis. Then transport it through q.route and the
+normalizing permutation. Finally prove the residual preimage correspondence:
+
+  (exists b : At p.mask.erased A, s.get b = a)
+    iff
+  (exists z : At F A,
+    q.normalize.get (q.route.get (r.get z)) = At.there a)
+
+for each a : At q.mask.erased A. All casts and mask embeddings must be proved.
+This is the step that justifies using the economical program on the fixed tail;
+component equality alone does not supply atomicity of omitted slots. Retain
+the distinction between the selected C and a fixed slot also labelled C.
+
+Parameterize the unary repair calculation by an actual tail program t with
+t.get=s.get, or add compatible helper theorems. Preserve the existing exports.
+Reuse StructuralProgram.consFixed_boundL/R: these theorems already apply to
+ANY structural program. Every new tail contraction is outside the distinguished
+head ancestry. The inner selected contraction has the existing smaller-rank
+bound; extra exit operations need not make the repaired ROOT rank smaller.
+Prove denotation via the all-position square and component laws, and prove
+Atomized for the very same repair used in the bound.
+
+5. STRENGTHEN ALL ACTUAL PRODUCERS, WITH ONE JOINT WITNESS
+
+Prove the following left statement, preserving the original ambient types and
+all the quantifiers of ReducesL. For w : G P U V, x : At U C and w.Atomized:
+
+  forall (a : ProofAddress g w), ReducibleL f g a x ->
+  exists h : G P U V,
+    h.CutFree /\ h.Atomized /\ ofTerm h.denote = ofTerm w.denote /\
+    forall {I J} {v : G P I J} (b : ProofAddress h v) (y : At I C),
+      ReducibleL f (a.replace h) ((a.inserted h).append b) y ->
+      v.rho .left y < w.rho .left x.
+
+Prove the independently typed right statement with x : At V C,
+a : ProofAddress f w, y : At J C, ReducibleR (a.replace h) g, and .right ranks.
+The conclusion uses ONE h for CutFree, Atomized, equality and every descendant
+bound. Separate existence theorems for different witnesses do not suffice.
+These are stronger theorems on atomized inputs; leave unrestricted ReducesL/R
+and reducibility_left/right unchanged.
+
+Account for every actual input schema in AllInputReducer. Same-side structural
+inputs use section 4. Opposite-side unary inputs retain only input thinnings,
+whose atomicity must be carried through their constructors. Fixed/selected
+logical, mix, conjunction and disjunction repairs must have Atomized proved
+for the concrete witnesses already used in their bounds. Audit their bodies;
+do not infer this from CutFree or Reduced equality. Reuse existing Atomized
+laws wherever applicable. Include native binary dispatch, selected logical
+singletons, the right HEAD-disjunction repair, and source terminal W6 packages.
+Basis/cut impossibilities remain internal to the unchanged source syntax.
+
+6. REUSE FINITE DESCENT WITH THE ATOMIZED WITNESSES
+
+The current rank_replacement theorems choose witnesses from unrestricted
+reducibility_left/right. Do not call them and then assert their witness is
+atomized. Factor the rank-list argument so it accepts the chosen h, its
+CutFree proof and its complete rebuilt eligible-descendant bound. The existing
+outside_keys proof is already independent of the particular local producer.
+
+For that SAME atomized h, prove the unchanged decomposition
+
+  R_old ~ r::O,    R_new ~ I++O,    every entry of I < r,
+
+where ~ is List.Perm, r is the selected old rank, O is the outside rank list,
+and I is the inside rank list. Preserve multiplicity, the inserted root, all
+outside sites and exclusion of new eligible containing ancestors. Reuse
+FiniteRank.of_replacement and descent_wf.
+
+Strengthen blocked_normalization_left/right by carrying Atomized through
+well-founded induction. An atomized root gives an atomized addressed subproof;
+ProofAddress.replace_atomized preserves the whole root using the joint local
+witness. The no-eligible-site argument and two-side independence are already
+proved. Normalize the two atomized premises successively, retaining their
+individual Reduced equalities and the earlier side's AllBlocked clause.
+
+Compose this construction with the initial G.atomize calls to prove section 2.
+The initial atomization may increase ranks: choose the finite support bound
+for descent AFTER atomization. No comparison with pre-atomization ranks is
+required. Do not alternate the two existence procedures without a proved
+invariant and terminating measure.
+
+7. CONTINUE TO CUT ELIMINATION AND THE FULL PAPER
+
+Export actual simultaneous clean-cut representatives before using clean cuts
+in the elimination argument. Then continue cut elimination with constants and
+atomic zero, restricted mix/positive coherence, Reduced.Faithful and Boolean
+Coherence, the actual source instances and substitution/congruence bridges,
+short q_A/e_A proof, unconditional actual-presentation maximality, model
+corollary, and every v6 appendix claim. Keep the three milestones and the
+additional full-paper endpoint distinct. The clean-cut theorem alone does
+not prove cut elimination or coherence.
+
+Preserve the existing symmetric-fold proof, short proof, tagged occurrence
+blocks, typed diagrams, ordinal correspondence and both appendices. Keep
+left-first composition, opposite coproduct variance, empty hom-sets and typed
+existing-arrow witnesses for zeros. Keep source/native ranks, node-free
+singletons and actual empty exchanges. No coherence assumption, proof hole,
+custom mathematical axiom, native_decide, equality reflection or supplied
+normalization witness in production dependencies.
+
+No new manuscript defect was established in this review. Follow the recorded
+correction procedure if one is established; apply it throughout its affected
+scope. Keep mathematical documents free of editorial-process and model-facing
+remarks, including source comments and footnotes. Use the KLR source and the
+recorded writing requirements; preserve substantive hypotheses and negative
+mathematics. Keep reviews and verification records outside the manuscript.
+
+8. FOCUSED VERIFICATION AND DELIVERY
+
+Verify actual economical programs on a compound identity route, exchange of
+equal-labelled positions, singleton and larger fibers, an omitted atomic slot,
+and an empty context. Include top, bot and signed literals without a global
+Nonempty P assumption. For two equal compound slots with only one used, check
+that the other remains a distinct omission; do not discharge the support
+condition by label membership. Preserve the old atomizer counterexample.
+Instantiate the new simultaneous theorem at G.topI and that before proof,
+so its full positive conclusion is checked on the obstructing example.
+
+Check both full strengthened public signatures, every actual input family,
+unchanged unrestricted Reducibility, Blocked-w and the existing regressions.
+Run final strict verification, transitive axiom audit, the five established
+negative controls, manuscript hashes and whitespace checks. Use the pinned
+Lean 4.35.0, Init-only policy, module headers and per-file length limit; one
+heavy build/audit at a time. Preserve failed attempts and actual exit statuses.
+New declarations and dependencies must enter the audited public closure.
+
+Update current maps, correction record, validation, README and continuation
+together. Retain historical evidence. Apply both author-side reviews to the
+actual new proofs and correspondence. Verify final checked bytes against the
+commit and local/origin/live SSH refs. Keep local build, independent replay,
+Comparator, official preflight, service verification and publication separate.
+No submission, author contact, license choice or visibility change is authorized.
+
+Retain new implementation reports under docs/ and docs/reviews/. Also deliver
+this instruction and the two GENTZEN_BA5AF8B reviews from their committed copies
+to /mnt/c/Users/fleng/Downloads. Preserve a differing existing destination and
+use a dated or commit-suffixed name. Verify bytes against committed content and
+record actual paths in the post-commit receipt. The cloud reviewer cannot access
+WSL Downloads; these three NEW deliveries are pending local Codex. The author's
+six deliveries for ba5af8b are already reported complete and are not reopened.
+
+Continue the authorized implementation without another permission question.
+If a genuine obstruction remains, record its exact typed statement, evidence,
+failed inference and next proof step. Do not replace a requested proof with
+an interface, a successful build, or another general plan.

@@ -1,5 +1,14 @@
 CONTINUE THE UNCHANGED V6 FULL-PAPER FORMALIZATION
 
+Reviewed proof checkpoint: ba5af8bc2c1f3ec7c218d54b840fb1df5d24d61c.
+Read CODEX_AFTER_BA5AF8B_CLEAN_CUTS.txt and the two GENTZEN_BA5AF8B reviews
+for the concrete support condition, structural recursion, joint atomized
+replacement witnesses and reuse of finite descent. These remain proof targets;
+the successor review adds no Lean theorem. Its three new Downloads copies
+await local byte-verified delivery. The six ba5af8b deliveries were reported
+complete. The preceding continuation is preserved at
+history/CODEX_NEXT_SESSION_BA5AF8B.txt.
+
 Current checked result: actual Blocked-w, containing BlockedL/R preservation,
 complete eligible-site correspondence and finite multiset descent. Read AGENTS,
 CODEX_FULL_MANUSCRIPT_FORMALIZATION, the current maps/corrections, and

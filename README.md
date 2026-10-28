@@ -19,6 +19,12 @@ tied contraction. Clean-cut normalization, cut elimination, coherence and the
 full-paper endpoint remain unproved. Historical instructions and reports retain
 their original scope; the preceding README is preserved in docs/history/README_85A16CD.md.
 
+The completed run at `ba5af8b` has a [source/evidence review](docs/reviews/GENTZEN_BA5AF8B_REVIEW.md)
+and [writing review](docs/reviews/GENTZEN_BA5AF8B_WRITING.md). The
+[successor instruction](docs/CODEX_AFTER_BA5AF8B_CLEAN_CUTS.txt) specifies
+atomization first, followed by blocked normalization with atomized repairs.
+That construction remains to be proved; the review adds no Lean result.
+
 ## Full-paper formalization target
 
 The authorized target is the complete mathematical content of manuscript v6:

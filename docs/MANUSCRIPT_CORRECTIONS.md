@@ -24,8 +24,9 @@ the review scope to an independent reproof of the whole paper or its sources.
 
 ## Proof obligations are tracked separately
 
-Containing-blocked transport, Blocked-w, Boolean Coherence for the actual source quotient, the
-short proof's Lean implementation, actual-presentation maximality, the model
+Simultaneous atomization and blockedness, cut elimination, Boolean Coherence
+for the actual source quotient, the short proof's Lean implementation,
+actual-presentation maximality, the model
 corollary and remaining appendix correspondences are unfinished formalization
 obligations. Their open status alone is not evidence of an error in the written
 mathematics. Track exact hypotheses and implementation status in
@@ -136,3 +137,30 @@ clean-cut normalization. A simultaneous representative remains an open construct
 No manuscript mathematical defect is inferred; v4/v5/v6 and all accepted
 mathematical/writing decisions are preserved. The current continuation records
 the exact compatibility target and a proposed next construction.
+
+## Completed Blocked-w run: successor review (28 October 2026)
+
+After the author supplied completed commit
+`ba5af8bc2c1f3ec7c218d54b840fb1df5d24d61c`, the cloud reviewer inspected the
+new proof modules, exact public statements, atomizer counterexample and retained
+local evidence. See `reviews/GENTZEN_BA5AF8B_REVIEW.md` and
+`reviews/GENTZEN_BA5AF8B_WRITING.md`. No confirmed defect in the completed
+Blocked-w result was found. The review does not assert a new Lean theorem,
+independent kernel replay or manuscript correction.
+
+The successor `CODEX_AFTER_BA5AF8B_CLEAN_CUTS.txt` gives a concrete proposal:
+realize routes with atomic omitted positions using only atomic thinnings,
+prove the support condition for actual unary repairs, strengthen all producers
+with one joint atomized/equality/bound witness, and retain atomization during
+the existing finite descent. Apply atomization before this strengthened
+normalization. All new construction claims remain unproved until checked locally.
+
+AGENTS' immediate-scope phrase, the current open-obligation summary above and
+the validation title were stale; they are updated to the completed Blocked-w
+scope. This is a documentation correction. Current maps, full-paper contract,
+README and continuation point to the same successor; historical records remain.
+The preceding continuation is retained in `history/CODEX_NEXT_SESSION_BA5AF8B.txt`.
+No Lean or manuscript source is changed by this review. The author's six
+ba5af8b deliveries remain reported complete. The new instruction and two
+successor reviews await local conflict-preserving Downloads delivery and byte
+comparison with their committed repository copies.

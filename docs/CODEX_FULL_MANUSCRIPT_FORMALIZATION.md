@@ -204,8 +204,13 @@ Successor instruction 85a16cdc is incorporated. The current checked endpoint is
 actual Blocked-w, both containing-shape theorems, complete eligibility correspondence
 and finite multiset descent. Reuse these and full unchanged Reducibility; exact
 scope and evidence are in GENTZEN_BLOCKED_W_REPORT.md and its reviews.
-Current continuation: CODEX_NEXT_SESSION.txt. Historical construction instructions
-do not reset or narrow the verified scope or the full-paper endpoint.
+Reviewed proof checkpoint: ba5af8bc2c1f3ec7c218d54b840fb1df5d24d61c.
+Current continuation: CODEX_NEXT_SESSION.txt and the concrete successor
+CODEX_AFTER_BA5AF8B_CLEAN_CUTS.txt. The successor specifies atomization first,
+then blocked normalization using atomized replacement witnesses and the existing
+finite descent. Its route-support and producer proofs remain implementation
+targets. Historical instructions do not reset or narrow the verified scope
+or the full-paper endpoint.
 
 The next proof is simultaneous atomization and blockedness. The compiled
 AtomizationBlockedBoundary.cutFree_equal_atomized refutes preservation of the

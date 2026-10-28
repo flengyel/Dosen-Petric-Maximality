@@ -1,4 +1,4 @@
-# Current full Reducibility validation
+# Current Gentzen validation
 
 ## Current Blocked-w checkpoint (28 October 2026)
 
@@ -34,6 +34,14 @@ corollary and remaining v6 appendices stay open. Milestones I–III remain disti
 | Finite descent | `EligibleSites.left/right`, `ReducibleL/R.rank_replacement`, `FiniteRank.descent_wf` | R_old permutes to r::O; R_new to I++O; every I rank is less than r. |
 | §11.2 printed p.253 Blocked-w | `blocked_normalization_left/right`, `blocked_w_premises`, `blocked_w` | Actual cut-free witnesses and Reduced equality; no coherence or supplied normalization input. |
 | Atomization boundary | `AtomizationBlockedBoundary.before_blocked`, `atomize_not_blocked` | Existing atomize does not preserve the needed blocked predicate. |
+
+The completed `ba5af8b` run was checked in the
+[source/evidence review](reviews/GENTZEN_BA5AF8B_REVIEW.md) and
+[writing review](reviews/GENTZEN_BA5AF8B_WRITING.md). The
+[successor instruction](CODEX_AFTER_BA5AF8B_CLEAN_CUTS.txt) specifies a proposed
+route construction with atomic omissions, atomized local repair witnesses,
+and preservation of atomization during the existing finite descent. These
+are open proof obligations; this documentation pass adds no Lean theorem.
 
 ## Retained earlier checkpoints
 
