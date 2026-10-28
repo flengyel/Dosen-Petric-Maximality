@@ -285,3 +285,22 @@ carried together into the continuation, contract, statement, coverage,
 correspondence and validation records. The earlier conjunction/source-order
 distinction is preserved. No manuscript/source theorem correction is implied;
 v7 and all earlier manuscript bytes, Appendix C and all diagrams are unchanged.
+
+## Structural selected-cut recursion and final atomization (28 October 2026)
+
+The same-side structural equations now delete the exact singleton selected fiber
+and reconstruct the residual context by actual structural rules. All old thinning
+positions, all exchange positions and every unselected contraction position have
+explicit fiber instances. The selected lower contraction is not part of this
+parametric family. Original proof addresses give complete inherited cleanliness
+and strict selected-rank descent for every nonempty program, including an actual
+empty exchange. Equality transports add no structural step.
+
+The residual route realization can introduce compound thinning. The final returned
+cut-free reconstruction is atomized with the existing atomizer. The recursive
+call has already used the original inherited clean child; no blockedness or rank
+bound is inferred for this final atomized output. This preserves the earlier
+negative atomization example and simultaneous clean-cut correction. The decision
+and scope are carried into all active maps, contract and continuation records.
+No manuscript change or new source erratum is implied. All v7 and earlier
+manuscript bytes, diagrams and disclosure are preserved.

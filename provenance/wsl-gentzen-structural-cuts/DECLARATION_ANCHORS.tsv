@@ -1,0 +1,47 @@
+DosenPetric/GentzenResidualPositions.lean	15	def remove {Γ : List (NormalForm P)} {C E : NormalForm P} (x : At Γ C) (b : At Γ E) (h : b.index ≠ x.index) : At x.erase E :=
+DosenPetric/GentzenResidualPositions.lean	22	theorem retain_ne (x : At Γ C) (b : At x.erase E) : (x.retain b).index ≠ x.index := by
+DosenPetric/GentzenResidualPositions.lean	26	theorem retain_remove (x : At Γ C) (b : At Γ E) (h : b.index ≠ x.index) :
+DosenPetric/GentzenResidualPositions.lean	36	theorem remove_retain (x : At Γ C) (b : At x.erase E) :
+DosenPetric/GentzenResidualPositions.lean	45	theorem formula_eq {A B : NormalForm P} (a : At Γ A) (b : At Γ B)
+DosenPetric/GentzenResidualPositions.lean	60	def tabulate (K : List (NormalForm P)) : (U : List (NormalForm P)) →
+DosenPetric/GentzenResidualPositions.lean	65	theorem get_tabulate (f : {A : NormalForm P} → At U A → At K A)
+DosenPetric/GentzenResidualRoutes.lean	15	def SingleFiber (r : Route K U) (x : At K C) (y : At U C) : Prop :=
+DosenPetric/GentzenResidualRoutes.lean	19	theorem residual_ne (r : Route K U) (x : At K C) (y : At U C)
+DosenPetric/GentzenResidualRoutes.lean	26	def residual (r : Route K U) (x : At K C) (y : At U C) (h : r.SingleFiber x y) :
+DosenPetric/GentzenResidualRoutes.lean	30	theorem residual_get (r : Route K U) (x : At K C) (y : At U C)
+DosenPetric/GentzenResidualRoutes.lean	36	theorem residual_square (r : Route K U) (x : At K C) (y : At U C)
+DosenPetric/GentzenSelectedOppositeStructural.lean	14	theorem selected_opposite_left {F U Δ Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenSelectedOppositeStructural.lean	29	theorem selected_opposite_right {Γ Δ Θ F U : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenSelectedOppositeStructural.lean	48	theorem selected_opposite_left_descent {F U Δ Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenSelectedOppositeStructural.lean	60	theorem selected_opposite_right_descent {Γ Δ Θ F U : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenStructuralAddresses.lean	15	noncomputable def leftAddress {F U Δ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenStructuralAddresses.lean	26	noncomputable def rightAddress {F U Γ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenStructuralAddresses.lean	36	theorem leftAddress_seq {F U K Δ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenStructuralAddresses.lean	40	theorem rightAddress_seq {F U K Γ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenStructuralAddresses.lean	44	theorem leftAddress_ascend {F U Δ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenStructuralAddresses.lean	55	theorem rightAddress_ascend {F U Γ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenStructuralAddresses.lean	67	theorem leftAddress_opposite {F U Δ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenStructuralAddresses.lean	79	theorem rightAddress_opposite {F U Γ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenStructuralAddresses.lean	90	theorem leftAddress_length {F U Δ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenStructuralAddresses.lean	100	theorem rightAddress_length {F U Γ : List (NormalForm P)} (p : StructuralProgram P F U)
+DosenPetric/GentzenStructuralCutDescent.lean	14	theorem clean_same_right {F U Γ Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenStructuralCutDescent.lean	23	theorem clean_same_left {F U Γ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenStructuralCutDescent.lean	33	theorem rank_same_right {F U Γ Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenStructuralCutDescent.lean	49	theorem rank_same_left {F U Γ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenStructuralCutDescent.lean	69	theorem same_right_rank_step {F U Γ Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenStructuralCutDescent.lean	84	theorem same_left_rank_step {F U Γ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenStructuralCutReplacement.lean	14	theorem same_right_eliminated {F U Γ Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenStructuralCutReplacement.lean	32	theorem same_left_eliminated {F U Γ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenStructuralResiduals.lean	17	def route (p : StructuralProgram P F U) : Route F U := Route.tabulate F U (fun a => p.get a)
+DosenPetric/GentzenStructuralResiduals.lean	19	theorem route_get (p : StructuralProgram P F U) {E : NormalForm P} (a : At U E) :
+DosenPetric/GentzenStructuralResiduals.lean	22	theorem route_arrow (p : StructuralProgram P F U) (o : Op) :
+DosenPetric/GentzenStructuralResiduals.lean	29	def residual (p : StructuralProgram P F U) (x : At F C) (y : At U C)
+DosenPetric/GentzenStructuralResiduals.lean	33	theorem residual_square (p : StructuralProgram P F U) (x : At F C) (y : At U C)
+DosenPetric/GentzenStructuralResiduals.lean	47	theorem splice_denote (f : G P Γ Δ) (x : At Δ C) (g : G P Θ Λ) (y : At Θ C) :
+DosenPetric/GentzenStructuralResiduals.lean	59	theorem same_right {F U Γ Θ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenStructuralResiduals.lean	79	theorem same_left {F U Γ Δ Λ : List (NormalForm P)} {C : NormalForm P}
+DosenPetric/GentzenStructuralSingleFibers.lean	15	theorem singleFiber_of_unique (r : Route F U) (x : At F C) (y : At U C)
+DosenPetric/GentzenStructuralSingleFibers.lean	24	theorem singleFiber_of_injective (r : Route F U)
+DosenPetric/GentzenStructuralSingleFibers.lean	33	theorem exchange_singleFiber (F X Y U : List (NormalForm P))
+DosenPetric/GentzenStructuralSingleFibers.lean	44	theorem thin_singleFiber (F U : List (NormalForm P)) (E : NormalForm P)
+DosenPetric/GentzenStructuralSingleFibers.lean	55	theorem contract_singleFiber (E : NormalForm P) (gs : List (List (NormalForm P)))

@@ -14,7 +14,49 @@ and inspected locally; the governing source/PDF anchors and claim ledger are upd
 This explicit addition supplements all v6 obligations; it does not narrow them.
 Its mathematical rank explanations also require exact Lean correspondence.
 
-## Current disjunction and principal degree checkpoint (28 October 2026)
+## Current structural selected-cut checkpoint (28 October 2026)
+
+`CutCommutation.same_right` and `same_left` prove both actual same-side structural
+commuting equations at the original selected output sequent. `Route.SingleFiber`
+requires one upper preimage of the exact lower tag, across all formula labels.
+`Route.residual_square` proves the component diagram; the residual route is
+realized by actual structural rules. `exchange_singleFiber`, `thin_singleFiber`
+and `contract_singleFiber` instantiate exchange, every old thinning position and
+every unselected contraction position. Equal fixed labels and empty blocks remain
+explicit. The selected lower contraction belongs to the still-open blocked cases.
+
+`leftAddress`/`rightAddress` prove the actual original-proof addresses and exact
+step lengths. Their ascent laws and existing address inheritance give the same
+recursive child's CutFree, Atomized and complete AllBlockedAt condition.
+`rank_same_right`/`rank_same_left` prove strict original selected-rank decrease for
+nonempty programs. `same_right_rank_step`/`same_left_rank_step` use that exact
+clean smaller-rank child. Residual reconstruction is atomized only after its cut
+is eliminated; no output-rank or output-blockedness claim is inferred.
+`selected_opposite_left`/`selected_opposite_right` and both descent lemmas extend
+the completed opposite structural results to arbitrary selected gaps.
+
+Checked: **500 screened Lean files / 11,626 audited project declarations**.
+Strict build/transitive audit, seven exact type files, five expected negative
+control rejections, public closure, all manuscript hashes and whitespace pass.
+Evidence: `provenance/wsl-gentzen-structural-cuts/`; report:
+`GENTZEN_STRUCTURAL_CUTS_REPORT.md`; reviews:
+`reviews/GENTZEN_STRUCTURAL_CUTS_HOSTILE.md`, `reviews/GENTZEN_STRUCTURAL_CUTS_WRITING.md`.
+
+Reuse both principal equations, both conditional degree steps, exhaustive
+rank-two classification/step, all structural results, Reducibility and simultaneous
+clean-cut construction. Continue the remaining logical and binary commutations,
+all fourteen blocked families and the complete constructor dispatcher. Then prove
+the all-ranks clean theorem, discharge DegreeBelow and prove global elimination.
+At unchanged degree recurse on the inherited original clean child with proved
+smaller selected rank; at smaller degree allow arbitrary returned ranks. Coherence
+and all later full-paper obligations retain their open statuses. Appendix C's
+concrete blocked correspondences remain open. All three milestones stay distinct.
+
+## Retained disjunction and principal degree checkpoint (28 October 2026)
+
+Historical scope at ef25f48. The current checkpoint above supersedes its open
+same-side structural status; its principal/degree scope and source decisions remain.
+
 
 `PrincipalDisjunction.selected_equation` proves the actual positional disjunction
 principal reduction at every selected gap, in Reduced and at the original output
@@ -43,9 +85,9 @@ Evidence: `provenance/wsl-gentzen-principal-disjunction/`; report:
 `reviews/GENTZEN_PRINCIPAL_DISJUNCTION_WRITING.md`.
 
 Reuse all completed principal, positional, Reducibility, simultaneous clean-cut,
-predecessor and opposite structural results. Continue the remaining same-side
-structural, logical and binary commutations and all fourteen blocked families;
-then prove the all-ranks clean theorem, discharge the degree induction and prove
+predecessor and opposite structural results. The same-side structural cases recorded as open here are now proved.
+Continue the remaining logical and binary commutations and all fourteen blocked
+families; then prove the all-ranks clean theorem, discharge the degree induction and prove
 global elimination. Unchanged-degree recursion requires actual inherited
 cleanliness and strict selected-rank descent; do not re-clean and infer a bound.
 At smaller degree, arbitrary returned ranks are allowed. Coherence and all later

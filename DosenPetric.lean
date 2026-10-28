@@ -456,3 +456,11 @@ public import DosenPetric.GentzenPrincipalDisjunctionRule
 public import DosenPetric.GentzenPrincipalDisjunctionSelected
 public import DosenPetric.GentzenRankTwoDegreeStep
 public import DosenPetric.GentzenSideProductCalculations
+public import DosenPetric.GentzenResidualPositions
+public import DosenPetric.GentzenResidualRoutes
+public import DosenPetric.GentzenSelectedOppositeStructural
+public import DosenPetric.GentzenStructuralAddresses
+public import DosenPetric.GentzenStructuralCutDescent
+public import DosenPetric.GentzenStructuralCutReplacement
+public import DosenPetric.GentzenStructuralResiduals
+public import DosenPetric.GentzenStructuralSingleFibers
