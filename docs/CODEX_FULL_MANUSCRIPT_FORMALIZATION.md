@@ -1,36 +1,43 @@
 # Complete Lean formalization of manuscript v7
 
-## Completed-run review and active continuation (28 October 2026)
+## Current same-side unary logical construction (28 October 2026)
 
-The completed `67de18a` run has been reviewed against its new source and retained
-evidence. Reuse both principal equations, conditional rank-two elimination,
-structural and opposite logical commutations. Continue same-side logical/binary
-cases, fourteen blocked families and the full induction. Global elimination
-and the full-paper endpoint remain open; v7's authorized appendix is complete.
-See [the concrete successor](CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt),
-[the source/evidence review](reviews/GENTZEN_67DE18A_REVIEW.md) and
-[the writing review](reviews/GENTZEN_67DE18A_WRITING.md).
-[CODEX_NEXT_SESSION.txt](CODEX_NEXT_SESSION.txt) is the active next-task list;
-its previous text is [archived verbatim](history/CODEX_NEXT_SESSION_67DE18A.txt).
-Retained checkpoint sections below record historical scope, not a reset of the
-current construction. The 23 existing deliveries remain complete in the local
-receipt; the three new successor artifacts await local committed-byte delivery.
+Successor ad95fb7 is incorporated without resetting intervening proof work or the
+stash. All four same-side unary logical prefix/suffix branches now have proved
+logical deletion squares, exact original positional equations, native cut-free
+atomized reconstructions, inherited Clean and strict original-rank steps.
+The opposite structural elimination/rank-step wrappers are also proved. All
+twelve binary parametric branches have checked Clean/rank descent at their
+actual child positions; their equations/reconstructions remain open.
 
-Authorized scope: 25 October 2026. The project target is the complete mathematical
-content of *Maximality of the Došen–Petrić Boolean Category*, including the short
-proof in v6, the actual-presentation maximality theorem, the model corollary,
-and all three appendices. A conditional maximality theorem alone does not complete
-this task.
+See [the construction report](GENTZEN_SAME_SIDE_LOGICAL_CUTS_REPORT.md),
+[hostile audit](reviews/GENTZEN_SAME_SIDE_LOGICAL_CUTS_HOSTILE.md),
+[writing review](reviews/GENTZEN_SAME_SIDE_LOGICAL_CUTS_WRITING.md) and
+[live constructor/tag table](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
+Verification: 522 screened Lean files, 11,765 transitive project declarations,
+nine exact public check files, five established and two focused rejected negative
+controls, complete production import closure. Evidence is retained under
+provenance/wsl-gentzen-after-67de18a/. Both reviews are author-side local reviews;
+no independent replay or official/service verification is claimed.
 
-On 28 October 2026 the author additionally requested inclusion of two verified
-source errata in the arXiv paper. The exact Appendix C addition is in
-[the retained appendix instruction](CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt), section 7.
-V7 implements that addition from the preserved v6 baseline. It has been built
-and inspected locally; the governing source/PDF anchors and claim ledger are updated.
-This explicit addition supplements all v6 obligations; it does not narrow them.
-Its mathematical rank explanations also require exact Lean correspondence.
+The three successor artifacts have completed committed-byte Downloads delivery;
+SUCCESSOR_DELIVERY.json records actual paths/hashes. Earlier 23 deliveries stay
+complete. New run reports/status records use the committed-byte delivery receipt
+in the same evidence directory. Current tasks are binary commuting equations and
+reconstructions, fourteen blocked reductions, the complete dispatcher and rank /
+degree / structural induction assembly. Both unrestricted elimination endpoints,
+coherence and the full-paper endpoint remain open. Appendix C is complete in v7;
+its two concrete blocked-rank Lean correspondences remain open.
 
-## Current opposite logical checkpoint (28 October 2026)
+CODEX_NEXT_SESSION.txt is the active continuation; all older checkpoint sections
+below describe historical scope where superseded. No older next-task list resets
+the checked local construction or the unchanged full-paper endpoint.
+
+## Retained opposite logical checkpoint (28 October 2026)
+
+Historical scope through 67de18a; the current construction above supersedes its
+open same-side unary logical and opposite structural-wrapper status. Binary
+descent is now checked, while binary equations/reconstructions remain open.
 
 `CutCommutation.opposite_conjL` and `opposite_disjR` prove the two actual opposite
 unary logical commuting families at arbitrary selected gaps and original output
@@ -448,24 +455,21 @@ model universe general enough to express the printed corollary.
 
 ## Immediate continuation and dependency order
 
-The completed run through 67de18a incorporated 1376bcb and preserved the prior
-proof work and stash. The latest proof-source commit is 59e2c12528ec; 67de18a
-adds delivery evidence only. The completed-run source/evidence and writing
-reviews are [GENTZEN_67DE18A_REVIEW.md](reviews/GENTZEN_67DE18A_REVIEW.md) and
-[GENTZEN_67DE18A_WRITING.md](reviews/GENTZEN_67DE18A_WRITING.md).
-[CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt](CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt)
-gives the concrete successor; CODEX_NEXT_SESSION.txt is the concise current
-continuation. Its predecessor is archived verbatim under docs/history/.
+Successor ad95fb7 and its three committed-byte deliveries are incorporated.
+The four same-side unary logical prefix/suffix equations, reconstruction and
+original-rank branches are now proved, along with opposite structural recursive
+wrappers. All twelve binary original-predecessor descents are proved; their
+commuting equations and reconstructions remain open. See the current construction
+report and live constructor/tag table. Preserve all completed Reducibility,
+Blocked-w, simultaneous cleaning, principal and structural/opposite logical work.
 
-Reuse simultaneous clean-cut normalization, both principal equations and their
-conditional degree steps, selected rank-two classification/elimination,
-structural commutations and opposite unary logical commutations. Prove the
-remaining same-side unary logical tag regions, all binary parametric branches
-and the seven BlockedL/seven BlockedR cut reductions. Assemble the complete
-constructor dispatcher, all-ranks clean theorem under DegreeBelow, outer degree
-induction and global structural induction. CutElimination and
-AtomizedCutElimination are definitions until actual unrestricted inhabitants
-are proved. No global elimination theorem is currently claimed.
+Continue actual binary equations/reconstructions, all seven BlockedL and seven
+BlockedR cut reductions, and the complete constructor dispatcher. Then prove the
+all-ranks clean theorem under DegreeBelow, outer degree induction and arbitrary-G
+structural normalization. CutElimination and AtomizedCutElimination remain
+endpoint definitions until their unrestricted inhabitants are proved. The current
+continuation and live table record the exact scope; historical records do not
+reset it. All later full-paper obligations remain unchanged.
 
 At unchanged degree use the original inherited clean child and strict selected
 rank; do not infer a bound after re-cleaning or head routing. Final cut-free

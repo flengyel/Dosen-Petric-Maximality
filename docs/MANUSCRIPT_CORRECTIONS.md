@@ -15,6 +15,15 @@ marked formalized merely because its TeX has been added.
 
 ## Current correction status
 
+The ad95fb7 continuation established no new manuscript defect. Its four
+same-side unary logical cut branches and twelve binary predecessor descents
+preserve actual occurrence tags, left-first composition and native mix order.
+The source/type elaboration repairs are implementation corrections, not new
+errata. All accepted manuscript/source decisions remain in force, including
+Appendix C's two still-open concrete blocked-rank correspondences. The three
+successor instruction/review deliveries are now completed from committed bytes;
+see provenance/wsl-gentzen-after-67de18a/SUCCESSOR_DELIVERY.json.
+
 No outstanding confirmed manuscript correction is recorded in the completed
 [v6 hostile review](reviews/V6_HOSTILE_REVIEW.md) or
 [v6 writing review](reviews/V6_WRITING_REVIEW.md). The writing review's local

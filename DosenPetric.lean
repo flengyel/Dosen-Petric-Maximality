@@ -473,3 +473,14 @@ public import DosenPetric.GentzenPrefixLogical
 public import DosenPetric.GentzenPrefixedLogicalRules
 public import DosenPetric.GentzenSuffixLogical
 public import DosenPetric.GentzenSuffixedLogicalRules
+public import DosenPetric.GentzenBinaryParametricDescent
+public import DosenPetric.GentzenCutResidueTransport
+public import DosenPetric.GentzenErasureContexts
+public import DosenPetric.GentzenLogicalDeletionPrefix
+public import DosenPetric.GentzenLogicalDeletionTail
+public import DosenPetric.GentzenOppositeStructuralReplacement
+public import DosenPetric.GentzenSameSideLogicalDescent
+public import DosenPetric.GentzenSameSideLogicalHeads
+public import DosenPetric.GentzenSameSideLogicalPrefix
+public import DosenPetric.GentzenSameSideLogicalReplacement
+public import DosenPetric.GentzenSameSideLogicalTail

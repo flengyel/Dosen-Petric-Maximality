@@ -1,20 +1,37 @@
 # Coverage and next proof obligations
 
-## Completed-run review and active continuation (28 October 2026)
+## Current same-side unary logical construction (28 October 2026)
 
-The completed `67de18a` run has been reviewed against its new source and retained
-evidence. Reuse both principal equations, conditional rank-two elimination,
-structural and opposite logical commutations. Continue same-side logical/binary
-cases, fourteen blocked families and the full induction. Global elimination
-and the full-paper endpoint remain open; v7's authorized appendix is complete.
-See [the concrete successor](CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt),
-[the source/evidence review](reviews/GENTZEN_67DE18A_REVIEW.md) and
-[the writing review](reviews/GENTZEN_67DE18A_WRITING.md).
-[CODEX_NEXT_SESSION.txt](CODEX_NEXT_SESSION.txt) is the active next-task list;
-its previous text is [archived verbatim](history/CODEX_NEXT_SESSION_67DE18A.txt).
-Retained checkpoint sections below record historical scope, not a reset of the
-current construction. The 23 existing deliveries remain complete in the local
-receipt; the three new successor artifacts await local committed-byte delivery.
+Successor ad95fb7 is incorporated without resetting intervening proof work or the
+stash. All four same-side unary logical prefix/suffix branches now have proved
+logical deletion squares, exact original positional equations, native cut-free
+atomized reconstructions, inherited Clean and strict original-rank steps.
+The opposite structural elimination/rank-step wrappers are also proved. All
+twelve binary parametric branches have checked Clean/rank descent at their
+actual child positions; their equations/reconstructions remain open.
+
+See [the construction report](GENTZEN_SAME_SIDE_LOGICAL_CUTS_REPORT.md),
+[hostile audit](reviews/GENTZEN_SAME_SIDE_LOGICAL_CUTS_HOSTILE.md),
+[writing review](reviews/GENTZEN_SAME_SIDE_LOGICAL_CUTS_WRITING.md) and
+[live constructor/tag table](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
+Verification: 522 screened Lean files, 11,765 transitive project declarations,
+nine exact public check files, five established and two focused rejected negative
+controls, complete production import closure. Evidence is retained under
+provenance/wsl-gentzen-after-67de18a/. Both reviews are author-side local reviews;
+no independent replay or official/service verification is claimed.
+
+The three successor artifacts have completed committed-byte Downloads delivery;
+SUCCESSOR_DELIVERY.json records actual paths/hashes. Earlier 23 deliveries stay
+complete. New run reports/status records use the committed-byte delivery receipt
+in the same evidence directory. Current tasks are binary commuting equations and
+reconstructions, fourteen blocked reductions, the complete dispatcher and rank /
+degree / structural induction assembly. Both unrestricted elimination endpoints,
+coherence and the full-paper endpoint remain open. Appendix C is complete in v7;
+its two concrete blocked-rank Lean correspondences remain open.
+
+CODEX_NEXT_SESSION.txt is the active continuation; all older checkpoint sections
+below describe historical scope where superseded. No older next-task list resets
+the checked local construction or the unchanged full-paper endpoint.
 
 ## Current manuscript: v7 with the authorized errata appendix
 
@@ -38,7 +55,11 @@ correspondence remains open. Selected-cut positivity and native fresh-principal 
 the concrete blocked reductions remain open. Global cut elimination, coherence and all other full-paper obligations
 retain their current status. The underlying v6 target is supplemented, not reduced.
 
-## Current opposite logical checkpoint (28 October 2026)
+## Retained opposite logical checkpoint (28 October 2026)
+
+Historical scope through 67de18a; the current construction above supersedes its
+open same-side unary logical and opposite structural-wrapper status. Binary
+descent is now checked, while binary equations/reconstructions remain open.
 
 `CutCommutation.opposite_conjL` and `opposite_disjR` prove the two actual opposite
 unary logical commuting families at arbitrary selected gaps and original output

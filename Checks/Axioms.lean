@@ -1947,3 +1947,11 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.CutBase.thinning_bot
 #print axioms DosenPetric.Reduced.Gentzen.CutBase.endomorphism_thinning
 #print axioms DosenPetric.Reduced.Gentzen.CutBase.thinning_endomorphism
+#print axioms DosenPetric.Reduced.Gentzen.LogicalDeletion.before_square
+#print axioms DosenPetric.Reduced.Gentzen.LogicalDeletion.tail_square
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.same_conjL_before_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.same_conjL_tail_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.same_disjR_before_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.same_disjR_tail_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.selected_opposite_left_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.selected_opposite_right_rank_step

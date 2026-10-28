@@ -1,109 +1,90 @@
-CONTINUE THE V7 FULL-PAPER FORMALIZATION AFTER 67DE18A
+CONTINUE THE V7 FULL-PAPER FORMALIZATION AFTER THE SAME-SIDE LOGICAL CONSTRUCTION
 
-Read AGENTS.md and CODEX_FULL_MANUSCRIPT_FORMALIZATION.md, then:
-  docs/CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt
-  docs/reviews/GENTZEN_67DE18A_REVIEW.md
-  docs/reviews/GENTZEN_67DE18A_WRITING.md
-Read the live claim, coverage, correction and validation records. Preserve newer
-commits, unrelated checkouts, all manuscript versions and the stash. The previous
-continuation is retained verbatim in docs/history/CODEX_NEXT_SESSION_67DE18A.txt.
-Its superseded next-task lists do not reset the current proved scope.
+Read AGENTS.md, CODEX_FULL_MANUSCRIPT_FORMALIZATION.md and the current claim,
+coverage, correction and validation records. The incorporated successor is
+ad95fb77fbab69663a1d9af73218d563ceb45f29. Its three committed-byte Downloads
+copies are recorded in provenance/wsl-gentzen-after-67de18a/SUCCESSOR_DELIVERY.json.
+The previous continuation is archived verbatim in
+history/CODEX_NEXT_SESSION_AD95FB7.txt; earlier history stays preserved.
 
-COMPLETED CHECKPOINT
+Read GENTZEN_SAME_SIDE_LOGICAL_CUTS_REPORT.md and both corresponding reviews.
+GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md is the live constructor/tag table. Keep it
+current during implementation; a binary predecessor descent is not a commuting
+equation or a completed elimination branch.
 
-The reviewed head is 67de18a77f1c3901c68b82f5e0533d873ce6e80d. Its parent
-59e2c12528ecb6e48df436136265afb81edc20de contains the checked Lean changes;
-67de18a is evidence-only. The completed run incorporated 1376bcb and preserved
-the earlier clean-cut construction. Local verification records 510 Lean files,
-11,669 audited declarations, eight exact check files and five rejected controls.
+COMPILED SCOPE
 
-Reuse both unrestricted Reducibility theorems, Blocked-w and simultaneous
-atomized/blocked normalization. Reuse the selected cut/tag/cleanliness/rank
-interface, complete rank-two classification and atomic elimination, both
-principal equations and conditional degree steps, structural commutations and
-both opposite unary logical commutations with their exact recursive descent.
+Reuse all unrestricted Reducibility, Blocked-w, simultaneous atomized/blocked
+normalization, exact positional cut/rank/clean interfaces, atomic and exhaustive
+rank-two cases, both principal equations/conditional degree steps, structural
+and opposite logical work. The four same-side unary logical branches are now
+proved: disjR in the left cut premise and conjL in the right cut premise, each
+at prefix/suffix tags. LogicalDeletion.before_square/tail_square prove actual
+logical squares; native reconstruction and exact PositionalCut equations, all
+six inherited Clean components and strict original-rank steps compile.
 
-Both CutElimination and AtomizedCutElimination remain unproved endpoint
-definitions. DegreeBelow has not been discharged globally. Coherence and later
-actual-presentation/full-paper obligations remain open. Keep all three existing
-milestones and the additional whole-paper endpoint separate.
+The opposite structural elimination and rank-step wrappers now compile. Final
+cut-free structural reconstruction is atomized after recursion. All twelve
+binary parametric branches have actual original-child Clean/rank descent:
+PositionalCut.{mix,conjR,disjL}_{left,right}_{first,second}_descent.
+Their equations and native reconstruction wrappers remain open.
 
-CONCRETE NEXT CONSTRUCTION
+Local verification: 522 screened Lean files, 11,765 audited declarations,
+nine explicit public-type check files; production closure and five established
+plus two focused negative controls pass. The source/log/evidence snapshot is
+provenance/wsl-gentzen-after-67de18a/. Reviews are local author-side reviews;
+no independent kernel replay, Comparator, official/service verification or
+publication is implied. Both unrestricted elimination endpoints remain open.
 
-1. Same-side unary logical cases: nonprincipal prefix/suffix selections for
-   disjR in the left cut premise and conjL in the right cut premise. Prove actual
-   logical deletion squares, Reduced reconstruction equations, inherited Clean
-   and strict original selected-rank steps.
-2. Binary parametric cases: both selected child branches of mix/conjR/disjL on
-   each cut side, excluding fresh principal selections where appropriate.
-   Account for all twelve branches at their exact context order. Reuse the
-   completed splice/distribution and fixed-context comparisons.
-3. Finish any missing elimination wrappers around the completed opposite
-   structural equations/descent. Maintain exhaustive constructor/tag coverage.
-4. Prove all seven BlockedL and seven BlockedR cut reductions from their actual
-   witnesses. Gamma families use parallel smaller-rank branch cuts; logical
-   families eliminate the parametric copy/copies before the fresh-principal
-   recursive cut. Preserve actual source/native adapters and copy multiplicity.
-5. Assemble the all-ranks clean selected-cut theorem under DegreeBelow.
-   Only then clean arbitrary cut-free premises at that degree. Discharge the
-   outer strong degree induction and normalize arbitrary G proofs structurally.
-   Export actual proofs of both exact elimination endpoints with no extra
-   elimination/coherence/degree/rank premise.
-6. Continue every later full-paper obligation in the governing contract.
-   A local family or global elimination is a checkpoint, not a stop condition.
+CONCRETE CONTINUATION
 
-PERSISTENT MATHEMATICAL DECISIONS
+1. Prove actual Reduced commuting equations and native cut-free atomized
+reconstruction for all twelve binary branches. Preserve native mix order
+Theta++Gamma and Lambda++Delta. Reuse the compiled original-child descent;
+apply rankIH to that exact child BEFORE routing or context adapters. Exclude
+fresh principal selections where required, and cover both selected child tags.
+2. Prove all seven BlockedL and seven BlockedR actual cut reductions, from the
+unchanged predicates and witnesses. Gamma families use parallel smaller-rank
+branch cuts; logical families eliminate parametric copies first, then use a
+fresh native principal rank 1 for the sequential cut. Route BELOW that native
+rule. BlockedSource.disjLLast has exchanges above it and is not a rank-one leaf.
+Retain both families' multiplicities and exact source/native adapters.
+3. Assemble the complete selected constructor/tag dispatcher and fixed-degree
+all-ranks clean theorem under DegreeBelow. Only afterward clean arbitrary
+cut-free premises at that degree. Discharge the outer strong degree induction,
+then arbitrary-G structural normalization. Export actual CutElimination and
+AtomizedCutElimination inhabitants without caller-supplied eliminators/coherence.
+4. Continue every later v7 full-paper claim, coherence/intended-presentation and
+substitution bridges, actual maximality, model corollary and both appendices.
+A local family or global elimination is a checkpoint, not the full-paper endpoint.
 
-At unchanged degree recurse on the actual inherited clean child with strictly
-smaller ORIGINAL selected rank, before head-routing or reconstruction. Native
-routed rank includes its exchange costs. Re-cleaning supplies no rank bound.
+PERSISTENT REQUIREMENTS
 
-Structural reconstruction may be atomized after its recursive cut is eliminated.
-It needs no output-rank/blockedness preservation unless used by another cut.
-Retain the negative atomizer example; do not reopen a general Atomic-residual-
-route obligation. For sequential blocked cuts use a genuinely fresh native
-logical principal of one-sided rank 1, not the exchange-wrapped disjLLast macro.
-The unchanged opposite side plus 1 gives the next strict bound.
+All source G syntax/equations, rho, blocked predicates and full quantifiers stay
+unchanged. Original selected rank differs from the routed native rank. Do not
+re-clean at unchanged degree and infer a bound. At smaller degree returned ranks
+are unrestricted. Keep conjunction A-then-B and disjunction B-then-A, the proved
+particular reflected-diagram interpretation, distinct tags even for equal labels,
+negative literals, units/empty contexts, left-first composition, witnessed zeros,
+empty hom-sets and explicit uniform substitution. Do not reopen general Atomic
+residual routes; post-elimination structural atomization is already accepted.
 
-At smaller degree, returned ranks are unrestricted. Reuse the proved conjunction
-A-then-B and disjunction B-then-A reductions. The reflected categorical diagrams
-are proved interpretations, not an assumed general proof duality.
+V7 Appendix C and its author-requested prose are complete; do not repeat the
+appendix task or rebuild unchanged TeX. Preserve all manuscript versions,
+diagrams, Appendix A's tagged-block/ordinal correspondence and accepted disclosure.
+Source p.260 has r'<r; p.262 says RIGHT rank 1, with positive opposite rank making
+total rank at least 2. Their two concrete blocked-reduction correspondences
+remain open. No new manuscript correction was established by this run.
 
-Keep source syntax/predicates/full quantifiers unchanged, explicit list/unit
-transports, empty contexts and distinct tags for repeated labels. Preserve
-left-first composition, witnessed zeros and empty hom-sets, negative literals,
-uniform substitution and all accepted writing/correspondence requirements.
+Use the pinned toolchain, one heavy job at a time, full source/dependency audits,
+expanded exact inhabitants and established/focused controls. Preserve real exits,
+failed attempts and immutable checked-source evidence. Apply both required
+reviews at milestones. Commit/push verified scoped work without force, preserving
+newer work and stash dedfd8fc8cd49930e9a162d5be585215b062a43c.
 
-V7 AND APPENDIX C
-
-The exact authorized appendix is implemented and reviewed in v7, with both
-correction paragraphs on PDF p.12. Earlier manuscript versions, all ten diagrams,
-Appendices A–B and the accepted disclosure are unchanged. No new manuscript
-correction was established. Do not repeat the appendix task or rebuild unchanged
-TeX merely because Lean advances.
-
-The source p.260 inequality is r' < r; p.262 says RIGHT rank 1, with positive
-left rank making total rank at least 2. Generic rank/leaf facts are proved;
-the two concrete blocked-reduction Lean correspondences remain open.
-The exact manuscript hashes and source anchors are in the successor and maps.
-
-VERIFICATION, RETENTION AND DELIVERY
-
-Local Codex implements/builds; ChatGPT reviews and supplies instructions.
-Use the pinned toolchain, one heavy build/audit at a time, exact new theorem
-inhabitants, full dependency/source-closure audits and the established controls.
-Retain real exits, failed attempts and immutable checked-source evidence.
-Update active records consistently; preserve historical evidence. Commit/push
-verified scoped work without force and preserve newer work/stash.
-
-The existing 23 deliveries remain complete according to the local receipt;
-the uploaded register and all listed repository artifacts were independently
-byte/hash matched in the completed-run review. The THREE NEW successor artifacts
-listed at the top still require local committed-byte delivery to
-/mnt/c/Users/fleng/Downloads/. Preserve differing destinations, verify exact bytes
-and record actual paths/hashes. Deliver every new run report and both reviews
-by the same rule. Cloud review cannot perform that WSL copy.
-
-No independent kernel, Comparator, official/service verification or publication
-is implied. Keep the repository private. No license, author-contact or submission
-action is authorized. Continue the full contract without reopening settled scope.
+Every finalized report/review needs a repository copy and a byte-verified
+committed-byte Downloads delivery; preserve differing destinations. Earlier 23
+and the successor three deliveries stay complete. The new run's actual paths,
+source commits and hashes are in its DELIVERY_REGISTER.json after delivery.
+Keep the repository private; no license/visibility change, author contact,
+Palomar/arXiv submission or publication is authorized.
