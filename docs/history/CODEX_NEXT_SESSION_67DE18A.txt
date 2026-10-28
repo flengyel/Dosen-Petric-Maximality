@@ -1,0 +1,344 @@
+CONTINUE THE V7 FULL-PAPER FORMALIZATION (ALL V6 CONTENT PLUS APPENDIX C)
+
+## Current manuscript: v7 with the authorized errata appendix
+
+V7, dated 28 October 2026, preserves all v6 mathematical content and adds the
+exact author-requested Appendix C plus its introduction roadmap sentence.
+Appendix C records the source p.260 inequality r' < r and p.262 right-rank-one
+qualification. The entire Appendix C is on PDF p.12, followed by the unchanged
+disclosure; references are on p.13. The final local TeX build resolves all
+references/citations and has no overfull/underfull boxes or warnings. All ten
+TikZ diagrams, Appendices A–B, the disclosure and bibliography are unchanged
+in source. The v4/v5/v6 source/PDF pairs remain byte-identical.
+
+Active source: `manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex`,
+SHA-256 `70b4f82c03e165e6a6da36d869968531a509341b93f90eedde964506568c8e96`. Active PDF: the same basename with .pdf,
+SHA-256 `957048538137ef085c0a581b399272db753377b76c6a83c1adc307ad8b2e256a`. Evidence: `provenance/wsl-manuscript-v7/`;
+report: `MANUSCRIPT_V7_ERRATA_REPORT.md`; reviews:
+`reviews/MANUSCRIPT_V7_ERRATA_HOSTILE.md`, `reviews/MANUSCRIPT_V7_ERRATA_WRITING.md`.
+
+The manuscript addition is complete; its concrete blocked-reduction Lean
+correspondence remains open. Selected-cut positivity and native fresh-principal rank-one laws now compile;
+the concrete blocked reductions remain open. Global cut elimination, coherence and all other full-paper obligations
+retain their current status. The underlying v6 target is supplemented, not reduced.
+
+## Current opposite logical checkpoint (28 October 2026)
+
+`CutCommutation.opposite_conjL` and `opposite_disjR` prove the two actual opposite
+unary logical commuting families at arbitrary selected gaps and original output
+sequents. Their `eliminated` lemmas rebuild actual cut-free atomized witnesses.
+`opposite_conjL_descent`/`opposite_disjR_descent` reuse the completed addressed
+selected-predecessor inheritance to prove complete cleanliness and strict original
+selected-rank descent. Both `rank_step` lemmas recurse on that exact child before
+reconstructing the logical rule; no unchanged-degree cleaning or routed-rank
+substitution occurs.
+
+`prefixSide` and its actual join/split comparison laws support prefixed native
+logical rules. `suffixLogicalSide_join`/`split` prove both side suffix diagrams,
+including units and association transports. The required `assocL_pentagon` is
+proved from established product coordinates and instantiated with actual side
+laws. `PrefixedLogical` and `SuffixedLogical` give native rules with checked
+Reduced denotations, cut counts and Atomized laws. No unproved coherence or
+duality input is assumed.
+
+Checked: **510 screened Lean files / 11,669 audited project declarations**.
+Strict build/transitive audit, eight exact public type files, five expected
+negative control rejections, public closure, all manuscript hashes and whitespace
+pass. Evidence: `provenance/wsl-gentzen-opposite-logical-cuts/`; report:
+`GENTZEN_OPPOSITE_LOGICAL_CUTS_REPORT.md`; reviews:
+`reviews/GENTZEN_OPPOSITE_LOGICAL_CUTS_HOSTILE.md`,
+`reviews/GENTZEN_OPPOSITE_LOGICAL_CUTS_WRITING.md`.
+
+Reuse all principal, structural, opposite logical, selected-predecessor,
+Reducibility and simultaneous clean-cut work. Continue the same-side logical and
+binary commutations, all fourteen blocked families and the complete constructor
+dispatcher; then prove the all-ranks clean theorem, strict degree induction and
+global elimination. DegreeBelow remains uninstantiated globally. The full-paper
+endpoint, all later coherence/intended-presentation/substitution/maximality/model
+and appendix obligations remain active. Appendix C's concrete blocked reductions
+remain open. All three milestone statuses and all accepted corrections persist.
+
+## Retained structural selected-cut checkpoint (28 October 2026)
+
+Historical scope at f4a8da3; the current checkpoint proves the opposite logical
+families recorded as open here. The structural scope and atomization decision remain.
+
+
+`CutCommutation.same_right` and `same_left` prove both actual same-side structural
+commuting equations at the original selected output sequent. `Route.SingleFiber`
+requires one upper preimage of the exact lower tag, across all formula labels.
+`Route.residual_square` proves the component diagram; the residual route is
+realized by actual structural rules. `exchange_singleFiber`, `thin_singleFiber`
+and `contract_singleFiber` instantiate exchange, every old thinning position and
+every unselected contraction position. Equal fixed labels and empty blocks remain
+explicit. The selected lower contraction belongs to the still-open blocked cases.
+
+`leftAddress`/`rightAddress` prove the actual original-proof addresses and exact
+step lengths. Their ascent laws and existing address inheritance give the same
+recursive child's CutFree, Atomized and complete AllBlockedAt condition.
+`rank_same_right`/`rank_same_left` prove strict original selected-rank decrease for
+nonempty programs. `same_right_rank_step`/`same_left_rank_step` use that exact
+clean smaller-rank child. Residual reconstruction is atomized only after its cut
+is eliminated; no output-rank or output-blockedness claim is inferred.
+`selected_opposite_left`/`selected_opposite_right` and both descent lemmas extend
+the completed opposite structural results to arbitrary selected gaps.
+
+Checked: **500 screened Lean files / 11,626 audited project declarations**.
+Strict build/transitive audit, seven exact type files, five expected negative
+control rejections, public closure, all manuscript hashes and whitespace pass.
+Evidence: `provenance/wsl-gentzen-structural-cuts/`; report:
+`GENTZEN_STRUCTURAL_CUTS_REPORT.md`; reviews:
+`reviews/GENTZEN_STRUCTURAL_CUTS_HOSTILE.md`, `reviews/GENTZEN_STRUCTURAL_CUTS_WRITING.md`.
+
+Reuse both principal equations, both conditional degree steps, exhaustive
+rank-two classification/step, all structural results, Reducibility and simultaneous
+clean-cut construction. The current checkpoint proves the opposite logical
+families. Continue the remaining same-side logical and binary commutations, all
+fourteen blocked families and the complete constructor dispatcher. Then prove
+the all-ranks clean theorem, discharge DegreeBelow and prove global elimination.
+At unchanged degree recurse on the inherited original clean child with proved
+smaller selected rank; at smaller degree allow arbitrary returned ranks. Coherence
+and all later full-paper obligations retain their open statuses. Appendix C's
+concrete blocked correspondences remain open. All three milestones stay distinct.
+
+## Retained disjunction and principal degree checkpoint (28 October 2026)
+
+Historical scope at ef25f48. The current checkpoint above supersedes its open
+same-side structural status; its principal/degree scope and source decisions remain.
+
+
+`PrincipalDisjunction.selected_equation` proves the actual positional disjunction
+principal reduction at every selected gap, in Reduced and at the original output
+sequent. It cuts B, then A, with all component, unit and association transports
+explicit. The reduction has two component cuts and preserves the conjunction of
+the three Atomized predicates. `MirrorInterpretation` identifies the reflected
+diagrams with the actual `Rules.sourceConj` and cut splice; all reflected laws
+are proved from Reduced. No unproved quotient-arrow duality is assumed.
+
+`HeadRouting.front_arrow`, `front_split` and `front_singleton` prove the exact
+selected exchanges; all prefix/head/tail tags and empty contexts are included.
+`PrincipalConjunction.degree_step` and `PrincipalDisjunction.degree_step` construct
+cut-free atomized witnesses by eliminating the inner component cut before the
+outer cut, using strictly smaller formula degrees and arbitrary returned ranks.
+`PositionalCut.rank_two_degree_step` now exhausts selected rank-two elimination
+under the explicit `DegreeBelow` hypothesis. That hypothesis is the strict outer
+induction hypothesis; it is not discharged globally. `CutElimination` and
+`AtomizedCutElimination` remain unproved endpoint definitions.
+
+Checked: **491 screened Lean files / 11,561 audited project declarations**.
+Strict build/transitive audit, six exact type files, five expected negative
+control rejections, public closure, manuscript hashes and whitespace pass.
+Evidence: `provenance/wsl-gentzen-principal-disjunction/`; report:
+`GENTZEN_PRINCIPAL_DISJUNCTION_REPORT.md`; reviews:
+`reviews/GENTZEN_PRINCIPAL_DISJUNCTION_HOSTILE.md`,
+`reviews/GENTZEN_PRINCIPAL_DISJUNCTION_WRITING.md`.
+
+Reuse all completed principal, positional, Reducibility, simultaneous clean-cut,
+predecessor and opposite structural results. The same-side structural cases recorded as open here are now proved.
+Continue the remaining logical and binary commutations and all fourteen blocked
+families; then prove the all-ranks clean theorem, discharge the degree induction and prove
+global elimination. Unchanged-degree recursion requires actual inherited
+cleanliness and strict selected-rank descent; do not re-clean and infer a bound.
+At smaller degree, arbitrary returned ranks are allowed. Coherence and all later
+full-paper obligations retain their open statuses. Appendix C's concrete blocked
+correspondences remain open. All three milestones remain distinct.
+
+## Retained principal conjunction checkpoint (28 October 2026)
+
+Historical scope at dff2994; the current checkpoint above supersedes its open
+disjunction and principal-recursion status. Its source-order decision remains.
+
+
+`PrincipalConjunction.selected_equation` proves the actual principal conjunction
+reduction at every selected gap, in Reduced and at the unchanged output sequent.
+The native construction cuts A then B, with explicit component and list-fold
+transports. It is a directly proved alternative to the displayed source p.254
+order. `selectedReduction_count` records its two component cuts;
+`selectedReduction_atomized` preserves the exact Atomized conjunction. Both
+component degrees are strictly smaller, with no returned-rank hypothesis.
+This is a reduction equation; its cut-free representative still requires the
+smaller-degree recursive calls in the full induction.
+
+`CutDistribution.mixed_strength`, the product-coordinate adapters and
+`PrincipalConjunction.equation` prove the categorical diagram without a coherence
+premise. Canonical triple-fold inverses and every association tag are checked.
+`LogicalHeadRouting.square`, `G.conjL_toHead` and `G.disjR_toHead` transport a
+selected logical formula by moving its two component tags below a fresh native
+rule, including empty contexts and repeated labels. No wrapper inherits a
+rank-one claim. At this retained checkpoint the dual disjunction principal
+equation was open; the current checkpoint proves it.
+
+Checked: **474 screened Lean files / 11,403 audited project declarations**.
+Strict build/transitive audit, five exact type files, five expected control
+rejections, public closure, v4/v5/v6/v7 manuscript hashes and whitespace pass.
+Evidence: `provenance/wsl-gentzen-principal-conjunction/`; report:
+`GENTZEN_PRINCIPAL_CONJUNCTION_REPORT.md`; reviews:
+`reviews/GENTZEN_PRINCIPAL_CONJUNCTION_HOSTILE.md`,
+`reviews/GENTZEN_PRINCIPAL_CONJUNCTION_WRITING.md`.
+
+Reuse the completed positional interface, complete rank-two classification,
+atomic elimination, selected clean normalization, strict predecessor inheritance
+and opposite-side structural commutations. The dual principal equation and its
+conditional degree branch are now proved. Continue the remaining parametric and
+fourteen blocked reductions, then discharge the
+outer degree/inner all-ranks induction and global elimination. Coherence and all
+later full-paper obligations retain their open statuses. All three milestones
+remain distinct; the v7 manuscript and Appendix C blocked correspondences are
+unchanged by this checkpoint.
+
+## Retained selected-cut checkpoint (28 October 2026)
+
+The positional interface and complete least-rank classification now compile.
+`PositionalCut.atomic_rank_two` returns a cut-free atomized witness with Reduced
+equality at the exact positional output for every literal and both constants.
+`rank_two_classification` exhausts all selected rank-two cuts: this atomic branch
+or the conjunction/disjunction principal pair. At this retained checkpoint the
+compound principal equations were open; the current checkpoint proves both
+equations and their conditional strict-degree elimination steps. `CutElimination` and `AtomizedCutElimination` are endpoint definitions,
+not proved theorems.
+
+`At.erase`, `retain`, `toHead_get` and `toHead_get_retain` retain every tag;
+head routing is identity. `PositionalCut.rank` measures the original premises.
+`routed_rank_eq` separately accounts for zero/one exchange per routed selection.
+`AllBlockedAt` has exact cluster and head correspondences, branch characterization
+and complete address/predecessor inheritance. `clean_premises` reuses the completed
+simultaneous clean-cut theorem at arbitrary original selected sequents, without a
+rank bound. The actual predecessor clean/rank lemmas justify smaller subcuts.
+
+Fresh native principal occurrences have rank one and no tied lower contraction,
+independently of the returned inner proof sizes. Source disjLLast exchange
+wrappers remain separate. `CutCommutation.opposite_left` and `opposite_right`
+prove actual Reduced equations for all opposite-side structural programs,
+including contractions, using fixed-context transports. The remaining same-side,
+logical, binary and fourteen blocked reductions remain open.
+
+Checked: **464 screened Lean files / 11,310 audited project declarations**.
+Strict build/dependency audit, four exact signature files, five expected control
+rejections, public source closure, v4/v5/v6/v7 hashes and whitespace pass.
+Evidence: `provenance/wsl-gentzen-positional-cuts/`; report:
+`GENTZEN_POSITIONAL_CUTS_REPORT.md`; reviews:
+`reviews/GENTZEN_POSITIONAL_CUTS_HOSTILE.md`,
+`reviews/GENTZEN_POSITIONAL_CUTS_WRITING.md`.
+
+| Source / target | Exact declaration | Status |
+| --- | --- | --- |
+| Selected cut and residual tags | `PositionalCut.cut`, `head`, `count`, `atomized`, `congr`; `At.toHead_get_retain` | Compiled, actual existing G rules and transports. |
+| Original selected measure | `rank_ge_two`, `rank_two_iff_leaves`, `routed_rank_eq` | Compiled; native exchange cost is explicit. |
+| Clean recursive premises | `AllBlockedAt.inherit`, `clean_left/right_predecessor`, `rank_left/right_predecessor` | Compiled for actual selected ancestry; no re-cleaning rank inference. |
+| Simultaneous selected normalization | `PositionalCut.clean_premises` | Compiled at original sequents, without rank bound. |
+| §11.2 pp.253–254, §11.5, §12.5 | `atomic_rank_two`, `rank_two_classification` | Exhaustive atomic base elimination and complete least-rank classification; compound branch remains to eliminate. |
+| Fresh principal rank argument | `rank_fresh_disjL`, `rank_fresh_conjR`, both strict comparison lemmas | Native rank one compiled; concrete sequential blocked reductions remain open. |
+| Opposite structural commutations | `CutCommutation.opposite_left`, `opposite_right` | Compiled equations; remaining commutations and global induction open. |
+
+Continue the full-paper contract. Actual compound equations, all remaining
+commutations and blocked reductions, global cut elimination, coherence, actual
+presentation/congruence/substitution bridges, short q_A/e_A, maximality, model
+corollary and every appendix claim remain the authorized work. The three
+milestones and the whole-paper endpoint remain distinct. V7 is unchanged.
+
+The incorporated successor is 1376bcbe1d1a8aa8eb69142f85401f078cfc14c9;
+its exact instructions/reviews are retained. V7 and its eight committed-byte
+Downloads deliveries were completed early at e113c00/d3a2336. The preceding
+proof baseline is 5c72a84; all its Reducibility, Blocked-w, simultaneous clean-cut
+and regression work remains intact. Preserve the stash and all intervening work.
+This checkpoint does not terminate the full-paper authorization.
+
+REUSE
+
+clean_cut_premises and clean_cut_normalization supply the same original-sequent
+premises with Topmost, both Atomized, individual/cut Reduced equality and both
+complete universal tied-contraction Blocked clauses. Reuse atomic route support,
+joint atomized Reducibility, chosen-witness rank decomposition and the completed
+finite descent. Preserve the unrestricted exports and old negative atomizer
+example; boundary_clean supplies its positive simultaneous representative.
+
+Reuse CutBase, CutConstants and CutThinning together with the completed
+PositionalCut.rank_two_classification and atomic_rank_two. Both principal
+equations and their DegreeBelow branches now compile; global elimination remains open. The prior source review and
+current local verification retain their distinct evidence scope.
+
+NEXT CONSTRUCTION
+
+1. Continue the outer strong formula-degree / inner all-selected-ranks plan.
+   The exact endpoints and correct degrees are now defined; they remain unproved.
+2. The selected interface, clean inheritance, routing costs, complete rank-two
+   classification and its atomic elimination branch compile. Reuse them.
+3. Reuse both actual selected principal equations and both degree_step
+   constructions. rank_two_degree_step exhausts the least-rank cases under
+   DegreeBelow; discharge that strict outer hypothesis only in the full induction.
+   Reuse both same-side structural rank steps and arbitrary-position opposite
+   structural equations/descent, both opposite logical equations/reconstructions
+   and their strict clean rank steps. Prove the remaining same-side logical and
+   both binary-branch commutations, then complete the constructor dispatcher.
+4. Prove all seven BlockedL and seven BlockedR reductions. General native fresh
+   rank-one and selected predecessor facts compile; instantiate them in the
+   actual sequential/parallel constructions with explicit source adapters.
+5. Complete the clean fixed-degree theorem for all ranks before unrestricted
+   clean normalization at that degree. Then assemble topmost elimination and
+   global structural induction. Continue all later full-paper obligations.
+
+At unchanged degree, do not re-clean a recursive cut and infer a rank decrease:
+clean_cut_premises has no rank bound. Prove the actual subcut is clean and smaller.
+For a newly built principal occurrence use its genuine leaf property; a source
+wrapper with exchanges above the rule does not automatically have rank one.
+
+SOURCE CORRECTIONS TO CARRY FORWARD
+
+September-2007 source PDF hash:
+e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e.
+At printed p.260 (w gamma 3), the new-rank inequality must read r' < r.
+At printed p.262 (w disjunction 1), the stated rank one is the RIGHT rank;
+the total rank is at least two. Both readings were checked in rendered pages.
+They correct the external source. The author has now requested their inclusion
+in the arXiv paper. V7 now contains the exact supplied Appendix C and roadmap
+sentence. Its local build, rendered inspection, hashes and active claim/correction
+records are complete. The accepted disclosure and v4/v5/v6 remain intact.
+Prove the corresponding Lean inequalities; their status stays open until checked.
+
+CONTINUE THE FULL CONTRACT
+
+After elimination, continue restricted mix/positive/reduced/Boolean coherence,
+actual source instances, congruence/substitution bridges, short q_A/e_A and
+retained symmetric-fold proofs, unconditional actual-presentation maximality,
+model corollary and every appendix claim, including the new errata explanations. Preserve all three milestones and
+the additional whole-paper endpoint. Do not stop at a preparatory module or
+reopen settled writing, source/native, singleton, empty-exchange, tagged-block,
+ordinal-correspondence or witnessed-zero decisions.
+
+VERIFY AND DELIVER LOCALLY
+
+The current proof verification records 510 Lean files / 11,669 audited declarations,
+eight exact-signature checks, five control rejections, v4/v5/v6/v7 manuscript hashes
+and whitespace. The prior evidence remains retained; current source inventory,
+current command exits and failed attempts are in provenance/wsl-gentzen-opposite-logical-cuts,
+with all preceding structural/principal/positional evidence preserved.
+Use the pinned toolchain, one heavy build/audit at a time, exact public types,
+full dependency audit and existing controls for new source. Update all active
+records consistently. Commit/push verified scoped work to main without force;
+compare checked and committed bytes, refs and the preserved stash.
+
+The SIX 5c72a84 deliveries remain complete. The THREE 1376bcb successor artifacts
+CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt, GENTZEN_5C72A84_REVIEW.md and
+GENTZEN_5C72A84_WRITING.md were also committed-byte delivered and verified with
+the v7 addition; see V7_POST_COMMIT_DELIVERY.json. The positional, conjunction
+and disjunction reports/reviews were delivered in their recorded checkpoints.
+Deliver every new run's report and both reviews with committed-byte verification. Preserve conflicting
+destinations and record byte/SHA-256 comparisons with actual paths.
+
+No cloud build, independent-kernel, Comparator, official/service verification
+or publication status is implied. No license, visibility, contact or submission
+action is authorized. Continue implementation under the existing authorization.
+
+FINALIZED DELIVERY REGISTER FOR THIS CONTINUATION
+
+All 23 artifacts from the v7, positional, principal conjunction/disjunction,
+structural and opposite-logical checkpoints have matching committed repository
+and Downloads bytes. Retained paths, actual Downloads paths, SHA-256 values,
+original receipts and incorporated-history checks are in
+provenance/wsl-gentzen-opposite-logical-cuts/DELIVERY_REGISTER.json.
+The register was also delivered byte-identically as
+/mnt/c/Users/fleng/Downloads/Dosen_Petric_Cut_Continuation_DELIVERY_REGISTER-59e2c12528ec.json.
+The latest proof-source checkpoint is 59e2c12528ecb6e48df436136265afb81edc20de;
+the following evidence-only commit does not change any checked Lean source.
+The next mathematical work remains the same-side logical/binary/blocked cases
+and full induction above; the full-paper authorization remains unchanged.

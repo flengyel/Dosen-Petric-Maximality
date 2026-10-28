@@ -1,5 +1,21 @@
 # Current Gentzen validation
 
+## Completed-run review and active continuation (28 October 2026)
+
+The completed `67de18a` run has been reviewed against its new source and retained
+evidence. Reuse both principal equations, conditional rank-two elimination,
+structural and opposite logical commutations. Continue same-side logical/binary
+cases, fourteen blocked families and the full induction. Global elimination
+and the full-paper endpoint remain open; v7's authorized appendix is complete.
+See [the concrete successor](CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt),
+[the source/evidence review](reviews/GENTZEN_67DE18A_REVIEW.md) and
+[the writing review](reviews/GENTZEN_67DE18A_WRITING.md).
+[CODEX_NEXT_SESSION.txt](CODEX_NEXT_SESSION.txt) is the active next-task list;
+its previous text is [archived verbatim](history/CODEX_NEXT_SESSION_67DE18A.txt).
+Retained checkpoint sections below record historical scope, not a reset of the
+current construction. The 23 existing deliveries remain complete in the local
+receipt; the three new successor artifacts await local committed-byte delivery.
+
 ## Current manuscript: v7 with the authorized errata appendix
 
 V7, dated 28 October 2026, preserves all v6 mathematical content and adds the
@@ -1834,3 +1850,24 @@ or publication has run. The official policy must be rechecked before those
 separate tasks. The historical CI baseline at code commit
 `75b3a70482e90094bd147236b22324995522ad5d` remains in
 `provenance/ci-75b3a704-build.txt`; it is not substituted for local WSL evidence.
+
+## Independent source/evidence comparison at 67de18a
+
+The completed-run review read all 63 new production Lean modules and five new
+Checks after 1376bcb. Only the import aggregator changed among older Lean files.
+The six v4/v5/v6 source/PDF blobs are unchanged. V7 source/PDF hashes and its exact
+authorized appendix match were independently checked.
+
+The reviewer matched 113 retrieved text Git blobs, 71 text entries and v7 PDF
+against the 528-entry checked-source inventory, all 26 final-phase compressed/raw
+log hashes, and every one of the 23 registered delivered artifacts against the
+repository. This is not an independent check of all 528 inventoried files or
+of WSL/Downloads storage. The register's proof anchor is 59e2c12528ec; 67de18a
+adds evidence without changing Lean.
+
+Final local records show strict build/transitive audit, eight exact public check
+files, all five expected negative-control rejections, manuscript hashes and
+whitespace passing. Ten earlier nonzero implementation/check attempts remain
+in the 26-command final-phase record. No cloud build, independent kernel,
+Comparator, official/service verification or publication was performed.
+See reviews/GENTZEN_67DE18A_REVIEW.md for precise scope and limitations.

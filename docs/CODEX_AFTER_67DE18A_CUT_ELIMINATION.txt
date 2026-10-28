@@ -1,0 +1,282 @@
+CONTINUE AFTER 67DE18A: COMPLETE GENTZEN CUT ELIMINATION AND THE FULL PAPER
+
+1. Read the live checkout and preserve the completed construction
+
+Work in /home/flengyel/src/Dosen-Petric-Maximality under WSL. Read AGENTS.md,
+CODEX_FULL_MANUSCRIPT_FORMALIZATION.md, CODEX_NEXT_SESSION.txt, the current claim,
+coverage, correction and validation records, and the two 67de18a reviews.
+Inspect branch/status, newer commits, running tasks and the stash before editing.
+Integrate this documentation without resetting newer work, replacing the stash,
+or repeating completed constructions. The reviewed main checkpoint is
+67de18a77f1c3901c68b82f5e0533d873ce6e80d. Its parent
+59e2c12528ecb6e48df436136265afb81edc20de contains the latest checked proof sources;
+67de18a adds delivery evidence, not Lean changes. Incorporation of 1376bcb and
+the intervening v7/principal/structural/logical work is confirmed in Git history.
+
+The author reported this local run complete before the successor review.
+ChatGPT supplies instructions/review; local Codex implements and builds.
+The existing full-paper authorization continues. A completed helper family or
+cut-elimination theorem is a checkpoint, not a new stop/approval condition.
+
+Reuse the exact results already proved:
+- Both unrestricted Reducibility theorems, outside/containing transport, finite
+  blocked descent, Blocked-w and simultaneous atomized/blocked normalization.
+- PositionalCut.cut at selected tags x : At Delta C and y : At Theta C,
+  with output (y.erase ++ Gamma) -> (Lambda ++ x.erase), actual tag retention,
+  head specialization, Reduced congruence, cut-count and Atomized laws.
+- AllBlockedAt's complete address/cluster correspondence, selected cleaning,
+  actual clean predecessor inheritance and strict original selected-rank descent.
+- Complete rank-two classification and atomic rank-two elimination, both native
+  principal equations at arbitrary gaps, both degree_step constructions and
+  rank_two_degree_step under the explicit strict DegreeBelow hypothesis.
+- Same-side structural equations/rank steps, opposite structural equations and
+  selected descent, and both opposite logical equations/reconstructions/rank steps.
+- The actual splice, fold, prefix/suffix, logical-head and reflected-diagram
+  comparison lemmas supporting those constructions.
+
+Do not reopen the accepted principal-conjunction A-then-B construction. Its
+Reduced equation proves a valid alternative to the source's displayed order.
+The disjunction construction cuts B then A. MirrorCalculus supplies the particular
+proved reflected diagrams; it is not an assumed quotient-arrow or G-proof duality.
+
+The 67de18a checkpoint reports 510 Lean files, 11,669 audited declarations,
+eight exact check files and five rejected controls. These counts describe that
+source, not later additions. Both CutElimination and AtomizedCutElimination are
+currently Prop definitions, with no unrestricted inhabitant.
+
+2. Fix the induction invariant before extending the dispatcher
+
+For a fixed C, use the original selected rank
+  r = f.rho .right x + g.rho .left y.
+Do not replace it with the native G.cut rank after head routing:
+routed_rank_eq proves the additional zero/one exchange costs. Even an empty
+actual exchange is a proof node. Equality reindexing adds no node.
+
+Under DegreeBelow P (cutDegree C), prove every Clean selected cut on C has an
+Eliminated witness by strong induction on r, uniformly in every context and
+both selected tags. Eliminated supplies one actual cut-free atomized proof at
+the exact output and its Reduced equality. Retain all universal AllBlockedAt
+quantifiers. There is no DecidableEq P, Nonempty P, distinct-label or nonempty-
+context assumption in this Gentzen endpoint.
+
+For a same-degree recursive call:
+- identify the actual original child and selected predecessor/address;
+- derive its CutFree, Atomized and complete selected blockedness;
+- prove its original selected rank is strictly smaller;
+- invoke the hypothesis on that child before adding reconstruction adapters.
+No unchanged-degree re-cleaning may supply an unproved rank bound.
+
+After a recursive cut has been eliminated, a structural residual reconstruction
+may be atomized at its final cut-free output, exactly as in
+GentzenStructuralCutReplacement. No output rank or output blockedness is then
+needed unless that result becomes a premise of ANOTHER recursive cut. Preserve
+this accepted distinction and the old negative atomizer example. Do not create
+an unnecessary general Atomic-residual-route obligation.
+
+At smaller formula degree, DegreeBelow permits arbitrary returned ranks.
+Reuse the two completed principal degree steps without strengthening them.
+
+3. Immediate implementation: finish the parametric commutations
+
+First implement the same-side unary logical cases. The selected tag is outside
+the newly formed principal formula:
+- left cut premise f ends in disjR: selection is in its prefix or suffix;
+- right cut premise g ends in conjL: selection is in its prefix or suffix.
+
+These are four tag regions, or two general theorems with exhaustive region
+classification. Construct the actual predecessor tag and the residual logical
+gap after deleting it. Prove the Reduced commuting equation, inherited Clean,
+strict original selected-rank decrease and an Eliminated/rank_step theorem.
+Keep equal formula labels at different tags distinct.
+
+Reuse LogicalHeadRouting, prefixSide, prefixSide_logical, suffixLogicalSide and
+the existing native prefixed/suffixed rules where their types fit. The residual
+disjR on the left premise is reconstructed inside the output prefix Lambda;
+the residual conjL on the right premise is reconstructed before the fixed input
+suffix Gamma. Add the precisely typed missing logical comparison if needed.
+A logical rule changes a formula, so Route.SingleFiber for a structural route
+does not by itself prove this logical deletion square.
+
+Then cover both actual branches of each binary parametric family:
+  left cut premise f:  mix; conjR at a nonprincipal output; disjL.
+  right cut premise g: mix; conjR; disjL at a nonprincipal input.
+There are twelve branch obligations. A generic lemma is welcome only when its
+instantiations cover every constructor/tag branch at the original sequent.
+Respect mix's actual context order; it differs from the logical binary order.
+
+For each branch, eliminate the cut against the actual selected child, retain
+the untouched child, and rebuild the actual binary rule with explicit context
+exchanges/associations. State its Reduced equality, original output type,
+CutFree and Atomized result. If a component tag must be routed before rebuilding
+a logical principal, place that routing in the reconstruction and prove its
+denotation; do not charge it to an already discharged recursive child's rank.
+Use proved distribution/mix equations for the categorical square. A citation
+to symmetric-net coherence, an uninstantiated naturality field or an assumed
+G-duality is not a proof of the needed equation.
+
+Complete any missing Eliminated/rank_step wrappers for the already proved
+selected opposite structural equations/descent. Reuse their actual structural
+program step counts; identity/reindex programs cannot justify strict descent.
+
+Keep a constructor-by-selected-tag coverage table during implementation.
+The final dispatcher must distinguish a selected leaf, a genuine parametric
+predecessor, and the selected lower contraction. CutFree excludes a cut root.
+When r > 2 at least one selected side is not a leaf; use an actual eligible
+side. A fresh principal on one side does not prevent descent on the other.
+
+4. Complete all fourteen selected blocked-contraction families
+
+Invert the actual BlockedL/BlockedR witness supplied by Clean at the selected
+lower contraction. BlockedL occurs in the right cut premise; BlockedR occurs
+in the left cut premise. Do not assume arbitrary contractions are binary:
+derive the source pattern and its arity from that witness.
+
+Cover every constructor of GentzenBlockedPatterns:
+  BlockedL: gammaMix, gammaConj, gammaDisj, conjunction,
+            disjunctionFirst, disjunctionSecond, disjunctionBoth.
+  BlockedR: gammaMix, gammaDisj, gammaConj, disjunction,
+            conjunctionFirst, conjunctionSecond, conjunctionBoth.
+
+For the gamma families, construct the two actual branch subcuts with the
+unchanged opposite premise. Prove complete inherited cleanliness through their
+actual addresses and strict selected-rank decrease. Eliminate both subcuts,
+rebuild the binary rule, and contract the duplicated fixed contexts with the
+existing actual programs and their Reduced equations. Check both source and
+target context orders, including empty duplicated blocks.
+
+For the logical families, implement the sequential construction:
+a. Eliminate the cut(s) at the parametric copy/copies using their original
+   clean smaller-rank premises.
+b. Obtain the actual cut-free atomized witness(es), retaining exact denotation.
+c. Rebuild the logical principal, with component routing BELOW a fresh native
+   logical rule whenever the next cut uses that fresh principal.
+d. Prove that selected occurrence is a leaf, hence its one-sided rank is 1 and
+   AllBlockedAt holds there. The unchanged opposite premise retains Clean.
+e. Compare the next cut's total rank with the ORIGINAL selected contraction:
+   unchanged opposite rank plus 1 is strictly smaller because the original
+   contraction's selected rank exceeds 1. Recurse, then finish context repair.
+
+Use rank_fresh_disjL/rank_fresh_conjR and their strict comparisons. Unary
+conjL/disjR leaf and AllBlockedAt results also exist; export their analogous
+rank comparisons if useful. No bound on an arbitrary returned proof's rank is
+needed. The Both families require two initial branch eliminations and the
+subsequent principal cut; retain the actual multiplicity of all context copies.
+
+BlockedSource.disjLLast has exchanges above its native principal. It cannot be
+assigned native rank 1. Prove the source/native adapter equation and use the
+actual selected rank at each recursive call. Preserve primitive last-retaining
+contraction, source first-retaining transport, singleton/node-free conventions
+and explicit empty exchanges. Do not alter G, rho, BlockedL/R or their meaning
+to simplify these cases.
+
+Close the two Appendix C Lean rows only after these concrete instantiations:
+- source p.260, (w gamma 3): both recursive cuts have r' < r;
+- source p.262, (w disjunction 1): the fresh RIGHT rank is 1, and the total is
+  the unchanged positive left rank plus 1, hence at least 2 and strictly below
+  the original contracted cut's rank as required.
+Generic positivity/fresh-leaf facts are completed prerequisites, not the entire
+concrete blocked-reduction correspondence.
+
+5. Discharge the hypotheses and export the actual endpoints
+
+Assemble the complete constructor dispatcher and all-ranks clean theorem under
+DegreeBelow. Internal lemmas may take explicit strict induction hypotheses, but
+the final exported elimination theorem must discharge them.
+
+Only AFTER the fixed-degree clean theorem holds for all ranks, use the completed
+simultaneous clean_cut_premises/PositionalCut.clean_premises on arbitrary cut-free
+premises at that degree. Compose the individual Reduced equalities with cut
+congruence. No bound on the newly cleaned ranks is necessary at this stage.
+
+Use strong formula-degree induction to establish the all-rank cut-free-premise
+elimination theorem without a DegreeBelow assumption. Constants have degree 1;
+literals have degree 0. Both component degrees are strictly smaller for each
+logical principal. Reuse the completed atomic and principal rank-two steps.
+
+Finally use structural induction on arbitrary G proofs: normalize the actual
+premises at the same original sequents, rebuild each noncut constructor, and
+eliminate each cut using the unconditional cut-free-premise theorem. Obtain both
+  CutElimination P
+  AtomizedCutElimination P
+with actual proofs at the exact types in GentzenCutEliminationSpec, for arbitrary
+P and all contexts, and Reduced equality to the original proof. A definition,
+#check of the Prop, conditional handler bundle or caller-supplied eliminator
+does not satisfy this endpoint. Audit the new theorem inhabitants and their full
+dependency closure.
+
+Then continue the full contract: restricted mix/positive/reduced/Boolean coherence,
+actual source instances and congruence/substitution bridges, the short q_A/e_A
+proof and retained symmetric-fold route, actual-presentation maximality, model
+corollary and every mathematical appendix claim. Keep all three milestones and
+the additional whole-paper endpoint separate. Full-paper completion is not
+implied by cut elimination alone.
+
+6. Preserve manuscript v7 and all settled writing requirements
+
+V7 already contains the exact authorized errata appendix, dated 28 October 2026.
+Its addition is complete. Do not request it again or rebuild unchanged TeX merely
+because Lean advances. Preserve v4/v5/v6, all ten TikZ diagrams, Appendices A–B,
+tagged-block substitution exposition, ordinal correspondence and the accepted
+disclosure. No confirmed new manuscript defect was found in the completed-run
+review. Section 6 still accurately distinguishes relative_maximality from an
+instantiated full-presentation theorem.
+
+Source v7 SHA-256:
+70b4f82c03e165e6a6da36d869968531a509341b93f90eedde964506568c8e96
+PDF v7 SHA-256:
+957048538137ef085c0a581b399272db753377b76c6a83c1adc307ad8b2e256a
+
+Apply the mandatory mathematical-writing and hostile-referee workflows at
+mathematical milestones. Consult Knuth--Larrabee--Roberts; retain definitions
+before use, explicit arrow types and composition order, and typed TikZ paths.
+Keep research/tool/review/process narration outside the mathematical manuscript,
+including comments and footnotes; retain the expressly accepted disclosure.
+An actual necessary correction remains authorized: establish it, record evidence,
+apply it across all affected passages/maps, and rebuild/inspect changed TeX
+locally. Do not equate an unfinished Lean obligation with a manuscript error.
+
+Preserve witnessed zeros and empty hom-sets, negative literals and repeated
+occurrence tags, genuine substitution closure and all endpoint transports.
+Coherence may be applied only where already proved, in the original category.
+
+7. Verify, retain and deliver the checked result
+
+Use the pinned toolchain and one heavy build/audit at a time. Run scripts/verify.sh,
+all applicable exact checks and full dependency/source-closure audits, plus the
+five established negative controls. Extend exact checks to actual new endpoints
+and adversarial empty/repeated-label/constant-only cases that exercise new
+correspondences; do not add redundant tests that merely restate helper bodies.
+Retain real command exits and failed attempts. Never report service verification,
+independent kernel replay, Comparator or publication from local build evidence.
+
+Update README, the full contract's immediate continuation, claim/coverage/
+correction/validation records and NEXT_SESSION consistently. Keep superseded
+checkpoints historical. The pre-handoff NEXT_SESSION is archived verbatim at
+docs/history/CODEX_NEXT_SESSION_67DE18A.txt. Do not keep appending stale "next"
+instructions to the current continuation.
+
+Retain a run report and both actual reviews under docs/ and docs/reviews/.
+Commit/push verified scoped work to main without force, preserving intervening
+work. Compare checked source with committed bytes; verify local/origin/live SSH
+refs and stash status locally. Keep the repository private. No submission,
+author contact, license choice or visibility change is authorized here.
+
+The existing 23 deliveries are complete in the user's receipt. The uploaded
+register matches its committed repository file, and the reviewer independently
+matched all 23 registered artifacts to the reviewed repository bytes. Do not
+repeat or relabel those deliveries as pending.
+
+Deliver these THREE NEW successor artifacts from their committed bytes:
+  docs/CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt
+  docs/reviews/GENTZEN_67DE18A_REVIEW.md
+  docs/reviews/GENTZEN_67DE18A_WRITING.md
+to /mnt/c/Users/fleng/Downloads/ with the same basenames unless a differing
+destination requires a preserved, commit-suffixed copy. Deliver every new run
+report/review as well. Record exact repository and actual Downloads paths,
+SHA-256/byte comparisons and the source commit. The cloud review cannot perform
+this WSL copy; these three new deliveries remain pending until local verification.
+
+Continue the concrete construction. If genuinely blocked, retain the exact
+unproved statement, current hypotheses, smallest failing case or equation and
+the next mathematical obligation. Do not report the whole paper complete while
+any required dependency or correspondence remains open.

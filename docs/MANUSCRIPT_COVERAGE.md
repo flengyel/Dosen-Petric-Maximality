@@ -1,5 +1,21 @@
 # Coverage and next proof obligations
 
+## Completed-run review and active continuation (28 October 2026)
+
+The completed `67de18a` run has been reviewed against its new source and retained
+evidence. Reuse both principal equations, conditional rank-two elimination,
+structural and opposite logical commutations. Continue same-side logical/binary
+cases, fourteen blocked families and the full induction. Global elimination
+and the full-paper endpoint remain open; v7's authorized appendix is complete.
+See [the concrete successor](CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt),
+[the source/evidence review](reviews/GENTZEN_67DE18A_REVIEW.md) and
+[the writing review](reviews/GENTZEN_67DE18A_WRITING.md).
+[CODEX_NEXT_SESSION.txt](CODEX_NEXT_SESSION.txt) is the active next-task list;
+its previous text is [archived verbatim](history/CODEX_NEXT_SESSION_67DE18A.txt).
+Retained checkpoint sections below record historical scope, not a reset of the
+current construction. The 23 existing deliveries remain complete in the local
+receipt; the three new successor artifacts await local committed-byte delivery.
+
 ## Current manuscript: v7 with the authorized errata appendix
 
 V7, dated 28 October 2026, preserves all v6 mathematical content and adds the

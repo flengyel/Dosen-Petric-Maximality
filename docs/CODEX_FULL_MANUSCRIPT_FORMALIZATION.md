@@ -1,5 +1,21 @@
 # Complete Lean formalization of manuscript v7
 
+## Completed-run review and active continuation (28 October 2026)
+
+The completed `67de18a` run has been reviewed against its new source and retained
+evidence. Reuse both principal equations, conditional rank-two elimination,
+structural and opposite logical commutations. Continue same-side logical/binary
+cases, fourteen blocked families and the full induction. Global elimination
+and the full-paper endpoint remain open; v7's authorized appendix is complete.
+See [the concrete successor](CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt),
+[the source/evidence review](reviews/GENTZEN_67DE18A_REVIEW.md) and
+[the writing review](reviews/GENTZEN_67DE18A_WRITING.md).
+[CODEX_NEXT_SESSION.txt](CODEX_NEXT_SESSION.txt) is the active next-task list;
+its previous text is [archived verbatim](history/CODEX_NEXT_SESSION_67DE18A.txt).
+Retained checkpoint sections below record historical scope, not a reset of the
+current construction. The 23 existing deliveries remain complete in the local
+receipt; the three new successor artifacts await local committed-byte delivery.
+
 Authorized scope: 25 October 2026. The project target is the complete mathematical
 content of *Maximality of the Došen–Petrić Boolean Category*, including the short
 proof in v6, the actual-presentation maximality theorem, the model corollary,
@@ -8,7 +24,7 @@ this task.
 
 On 28 October 2026 the author additionally requested inclusion of two verified
 source errata in the arXiv paper. The exact Appendix C addition is in
-[the current successor](CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt), section 7.
+[the retained appendix instruction](CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt), section 7.
 V7 implements that addition from the preserved v6 baseline. It has been built
 and inspected locally; the governing source/PDF anchors and claim ledger are updated.
 This explicit addition supplements all v6 obligations; it does not narrow them.
@@ -371,6 +387,7 @@ claim found during the complete manuscript read.
 | Appendix A.2 | Prefix sums, both ordinal encodings and their inverses, existence and uniqueness of delta, the ordinal square and coordinate equation, the unique block locator including empty blocks, and correspondence with the book's generalized composition. Prove skeleton-plus-profile reconstruction and its compatibility with substituted patterns; verify the displayed eight-position example and delta(2)=3. |
 | Appendix A.3 | Renaming and substitution square for arbitrary, possibly noninjective rho; preservation of separate occurrence positions under repeated names; specialization to the positive and negative substitutions in Proposition 4.2 with the stated endpoint types. |
 | Appendix B | Explicitly typed path equalities for the first-injection triangle, five-arrow zero diagram and zero-law square, identified with the actual source operations. Reuse existing equations where they already prove these exact paths; duplicate proofs are unnecessary. |
+| Appendix C | Selected side-rank positivity and total-rank correspondence; the actual (w gamma 3) recursive-cut strict inequalities r' < r; the (w disjunction 1) fresh right-principal rank 1 and unchanged-left-rank comparison, with explicit source/native adapters. Generic rank facts alone do not complete the concrete reduction correspondence. |
 
 For Appendix A, cover empty profiles and blocks whenever the displayed maps
 exist. Do not impose positivity, injectivity of label maps, distinct actual
@@ -431,25 +448,37 @@ model universe general enough to express the printed corollary.
 
 ## Immediate continuation and dependency order
 
-Successor documentation a006ecd was incorporated by fast-forward while retaining
-ba5af8b and the existing stash. Simultaneous clean-cut normalization is now proved:
-clean_cut_premises and clean_cut_normalization preserve the original sequents,
-CutFree, Atomized, per-premise/cut equality and both complete AllBlocked clauses.
-Reuse atomic route realization, proved positional support, joint atomized
-Reducibility, chosen-witness rank decomposition and the completed finite descent.
-See GENTZEN_CLEAN_CUTS_REPORT.md, its reviews, the completed-run review
-reviews/GENTZEN_5C72A84_REVIEW.md and CODEX_NEXT_SESSION.txt. The detailed successor
-CODEX_AFTER_5C72A84_CUT_ELIMINATION.txt specifies positional cut transport,
-outer degree/inner rank induction, the fresh-principal argument for sequential
-blocked cuts, and the author-requested errata appendix.
+The completed run through 67de18a incorporated 1376bcb and preserved the prior
+proof work and stash. The latest proof-source commit is 59e2c12528ec; 67de18a
+adds delivery evidence only. The completed-run source/evidence and writing
+reviews are [GENTZEN_67DE18A_REVIEW.md](reviews/GENTZEN_67DE18A_REVIEW.md) and
+[GENTZEN_67DE18A_WRITING.md](reviews/GENTZEN_67DE18A_WRITING.md).
+[CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt](CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt)
+gives the concrete successor; CODEX_NEXT_SESSION.txt is the concise current
+continuation. Its predecessor is archived verbatim under docs/history/.
 
-The next proof is global cut elimination. Initial identity/atomic-zero/thinning
-and constant equations are implemented in GentzenCutBase, GentzenCutConstants
-and GentzenCutThinning. Prove the exhaustive minimal-rank classification and the
-principal, parametric and blocked-contraction reductions with their actual rank
-bounds. Assemble the lexicographic elimination induction; no such theorem is
-currently claimed. The original atomizer counterexample remains a valid negative
-preservation result, while simultaneous representatives now exist by the new construction.
+Reuse simultaneous clean-cut normalization, both principal equations and their
+conditional degree steps, selected rank-two classification/elimination,
+structural commutations and opposite unary logical commutations. Prove the
+remaining same-side unary logical tag regions, all binary parametric branches
+and the seven BlockedL/seven BlockedR cut reductions. Assemble the complete
+constructor dispatcher, all-ranks clean theorem under DegreeBelow, outer degree
+induction and global structural induction. CutElimination and
+AtomizedCutElimination are definitions until actual unrestricted inhabitants
+are proved. No global elimination theorem is currently claimed.
+
+At unchanged degree use the original inherited clean child and strict selected
+rank; do not infer a bound after re-cleaning or head routing. Final cut-free
+structural reconstruction may be atomized after recursion, as already proved.
+For a subsequent blocked cut, prove the fresh native principal's one-sided
+rank 1 and its clean status, with actual source/native adapters. At smaller
+degree allow arbitrary returned ranks. Preserve both accepted principal cut
+orders and the proved reflected-diagram interpretation.
+
+The exact v7 Appendix C addition is complete. Its two concrete blocked-rank
+Lean correspondences remain open. Preserve all older manuscript versions and
+settled writing/correction requirements; no further manuscript defect was
+established by this review.
 
 Then prove restricted mix/positive/reduced/Boolean coherence, actual source
 instances and substitution/congruence bridges, both maximality proofs, the model
@@ -475,8 +504,9 @@ Full-paper completion requires all of the following:
   needed by a final paper theorem has an actual source-presentation instance.
 - Both the short §5 argument and the retained symmetric-fold route have their
   stated scope verified. The main theorem and model corollary have no open
-  coherence or presentation premise. Appendices A and B are accounted for,
-  including examples, uniqueness statements and coordinate correspondences.
+  coherence or presentation premise. All three appendices are accounted for,
+  including examples, uniqueness statements, coordinate correspondences and
+  Appendix C's concrete corrected rank arguments.
 - No custom mathematical axioms, proof holes, `native_decide`, conclusion-shaped
   assumptions, unwitnessed zeros, or circular uses of the coherence being proved
   occur in production proof dependencies. Apply the existing foundation-axiom

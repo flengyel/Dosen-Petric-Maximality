@@ -322,3 +322,35 @@ same decision/status is carried into the continuation, contract, statements,
 coverage, correspondence and validation. No manuscript or source theorem
 correction is implied. All v7 and earlier manuscript bytes, appendices, diagrams
 and disclosure remain preserved.
+
+## Completed-run review through 67de18a (28 October 2026)
+
+Category: source/evidence and instruction-consistency review, not a new manuscript
+defect. The reviewed run completed both principal equations and conditional
+rank-two elimination, structural commutations and the opposite logical families.
+The source/evidence review is reviews/GENTZEN_67DE18A_REVIEW.md; its writing
+companion is reviews/GENTZEN_67DE18A_WRITING.md. The concrete continuation is
+CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt.
+
+The independent v6-to-v7 diff and exact supplied Appendix C match were checked.
+No further manuscript edit is warranted by this review. Preserve the completed
+v7 addition, earlier versions and accepted disclosure. Both concrete blocked
+Lean correspondences remain open despite the completed general rank/leaf facts.
+
+Retain the accepted post-elimination atomization argument for structural
+reconstruction: it makes no output-rank or output-blockedness claim. The negative
+atomizer example does not invalidate this use. Keep original selected rank
+separate from routed native rank, and use a genuinely fresh native principal
+for a subsequent sequential blocked cut. Preserve both directly proved principal
+cut orders and the particular reflected-diagram interpretation.
+
+The former NEXT_SESSION is archived verbatim at
+history/CODEX_NEXT_SESSION_67DE18A.txt. Its active replacement and the full
+contract's immediate paragraph now start at the actual missing same-side logical,
+binary and fourteen blocked families. Historical incomplete lists do not reset
+current scope. No Lean or manuscript source changes were made by this review.
+
+The uploaded register matches its committed file and all 23 registered artifacts
+match repository bytes. Actual WSL/Downloads state is reported by the local
+receipt, not independently inspected here. The three new successor artifacts
+require their own local committed-byte delivery; prior deliveries stay complete.
