@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-28T11:25:53.136629+00:00",
+  "checked_working_and_staged_sources": 428,
+  "verified_archives": 60,
+  "expected_rejected_controls": [
+    "direct-axiom",
+    "private-axiom",
+    "hidden-dependency",
+    "identified-projections",
+    "zero-without-arrow-witness"
+  ],
+  "public_module_closure": [
+    "DosenPetric/FiniteRankDescent.lean",
+    "DosenPetric/GentzenAddressComparison.lean",
+    "DosenPetric/GentzenAtomizationBlockedBoundary.lean",
+    "DosenPetric/GentzenBlockedChecks.lean",
+    "DosenPetric/GentzenBlockedNormalization.lean",
+    "DosenPetric/GentzenBlockedReplacement.lean",
+    "DosenPetric/GentzenContainingTransport.lean",
+    "DosenPetric/GentzenEligibleCorrespondence.lean",
+    "DosenPetric/GentzenEligibleEnumeration.lean",
+    "DosenPetric/GentzenFiniteOccurrences.lean",
+    "DosenPetric/GentzenOutsideEligibility.lean",
+    "DosenPetric/GentzenRankReplacement.lean",
+    "DosenPetric/GentzenUnblockedAncestor.lean"
+  ],
+  "whitespace": {
+    "git diff --check": 0,
+    "git diff --cached --check": 0
+  }
+}

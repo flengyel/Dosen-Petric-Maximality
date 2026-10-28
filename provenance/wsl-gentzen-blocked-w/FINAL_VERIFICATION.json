@@ -1,0 +1,95 @@
+{
+  "utc": "2026-10-28T11:19:05.743020+00:00",
+  "checks": [
+    {
+      "name": "strict",
+      "command": [
+        "bash",
+        "scripts/verify.sh"
+      ],
+      "actual_command": [
+        "bash",
+        "scripts/verify.sh"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 0,
+      "seconds": 6.489,
+      "log": ".codex-work/gentzen-blocked-w/strict-20261028T111849803452.log",
+      "sha256": "472a86701edc7b65f30be6117fc29a0a25e18ab8092e596bc5dd4bb3683f6051"
+    },
+    {
+      "name": "audit-boundaries",
+      "command": [
+        "python3",
+        "scripts/check-audit-boundaries.py"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "python3",
+        "scripts/check-audit-boundaries.py"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 0,
+      "seconds": 8.361,
+      "log": ".codex-work/gentzen-blocked-w/audit-boundaries-20261028T111849803452.log",
+      "sha256": "377643b2b8fc2ff8c9b228992b82e2fd82c36bf57a7c3914aa71572ffbf89ac0"
+    },
+    {
+      "name": "presentation-boundaries",
+      "command": [
+        "python3",
+        "scripts/check-presentation-boundaries.py"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "python3",
+        "scripts/check-presentation-boundaries.py"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 0,
+      "seconds": 1.028,
+      "log": ".codex-work/gentzen-blocked-w/presentation-boundaries-20261028T111849803452.log",
+      "sha256": "306041f8b1c343270cc1f8c841a6a6f6aa03451e17bb5f034cd495d3b5f49f66"
+    },
+    {
+      "name": "manuscript",
+      "command": [
+        "sha256sum",
+        "-c",
+        "SHA256SUMS"
+      ],
+      "actual_command": [
+        "sha256sum",
+        "-c",
+        "SHA256SUMS"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/manuscript",
+      "exit_status": 0,
+      "seconds": 0.036,
+      "log": ".codex-work/gentzen-blocked-w/manuscript-20261028T111849803452.log",
+      "sha256": "981ddaf841a9e180549394690d9e77a25e7992874a5238705e5331b1aff01ae6"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "actual_command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 0,
+      "seconds": 0.019,
+      "log": ".codex-work/gentzen-blocked-w/diff-check-20261028T111849803452.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

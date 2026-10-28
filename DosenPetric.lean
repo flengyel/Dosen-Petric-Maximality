@@ -395,3 +395,16 @@ public import DosenPetric.GentzenUnaryRouteRanks
 public import DosenPetric.GentzenUnaryRouteRepair
 public import DosenPetric.GentzenUnaryRouteRepairBounds
 public import DosenPetric.GentzenUnrestrictedExchangeReducers
+public import DosenPetric.FiniteRankDescent
+public import DosenPetric.GentzenBlockedReplacement
+public import DosenPetric.GentzenUnblockedAncestor
+public import DosenPetric.GentzenAddressComparison
+public import DosenPetric.GentzenFiniteOccurrences
+public import DosenPetric.GentzenContainingTransport
+public import DosenPetric.GentzenOutsideEligibility
+public import DosenPetric.GentzenEligibleCorrespondence
+public import DosenPetric.GentzenEligibleEnumeration
+public import DosenPetric.GentzenRankReplacement
+public import DosenPetric.GentzenBlockedNormalization
+public import DosenPetric.GentzenBlockedChecks
+public import DosenPetric.GentzenAtomizationBlockedBoundary

@@ -200,42 +200,27 @@ model universe general enough to express the printed corollary.
 
 ## Immediate continuation and dependency order
 
-The author assigns implementation/builds to local Codex and research,
-instructions and review to ChatGPT. The W6 construction instruction and its
-two linked reviews remain historical construction records; the implemented
-results and current continuation determine the remaining work.
+Successor instruction 85a16cdc is incorporated. The current checked endpoint is
+actual Blocked-w, both containing-shape theorems, complete eligibility correspondence
+and finite multiset descent. Reuse these and full unchanged Reducibility; exact
+scope and evidence are in GENTZEN_BLOCKED_W_REPORT.md and its reviews.
+Current continuation: CODEX_NEXT_SESSION.txt. Historical construction instructions
+do not reset or narrow the verified scope or the full-paper endpoint.
 
-The reviewed full-Reducibility checkpoint is
-`5b8a1996cab3f53e8c771dbd6126274236b1db4a`. Inspect the live repository and
-preserve newer changes; this is not an instruction to reset to that checkpoint.
-The earlier `1e967bc` and `b2ab0a8` checkpoints remain historical evidence.
+The next proof is simultaneous atomization and blockedness. The compiled
+AtomizationBlockedBoundary.cutFree_equal_atomized refutes preservation of the
+required AllBlockedL predicate by the existing atomize. This is a construction
+boundary, not a manuscript defect. Prove a new concrete compatibility route
+before exporting clean cuts. Then prove cut elimination with constants/atomic
+zero, positive/reduced/Boolean coherence, the actual source instances and
+substitution/congruence bridges, both maximality proofs, the model corollary
+and every appendix claim under the unchanged contract.
 
-Continue from `CODEX_NEXT_SESSION.txt` and `CODEX_AFTER_5B8A199_BLOCKED_W.txt`.
-The latter supplies the concrete containing-shape, site-correspondence,
-termination and Blocked-w targets, followed by atomization compatibility.
-Both full ReducesL/R producers now compile, together with both terminal-source
-one-premise W6 packages, unrestricted exchange, every remaining unary placement,
-and outside-address/cluster transport. Reuse these constructions and all prior
-binary work. The checked report and current continuation identify their exact
-scope; neither the source one/two-exchange proposal nor a root-rank-decrease
-condition is an extra hypothesis of the final theorems.
-
-Continue with containing-blocked-contraction transport, full eligible-site
-correspondence, finite multiset descent, Blocked-w and cut elimination. Generic
-routing repairs preserve CutFree but do not assert Atomized witnesses; resolve
-that interaction before clean-cut normalization. Then obtain positive/reduced
-and Boolean Coherence for the actual presentation, all source instances and
-congruence bridges, the short proof and actual maximality, the model corollary
-and appendices. Full local Reducibility does not narrow or complete this
-full-paper endpoint. Independent algebra/correspondence tasks may proceed when
-they do not interfere with this chain or sequential verification.
-
-Do not change rho, blockedness, reducibility, the source equations, or a theorem's
-quantifiers to make a candidate pass. If a genuine mismatch is discovered,
-record the exact statement and counterexample or failed obligation, establish
-the smallest justified correction, and update the correspondence explicitly.
-No caller-supplied reduct, injectivity, rank bound, assumed coherence, or
-unproved equality reflection may discharge a general Reducibility theorem.
+Keep the source G syntax/equations, rho and blocked/reducible predicates and
+quantifiers unchanged. Record established corrections and verify their full
+scope; never assume coherence, equality reflection or a supplied normalization
+witness. Preserve the accepted source/native, singleton and empty-exchange
+decisions, left-first composition, empty hom-sets and witnessed zeros.
 
 ## Completion and verification
 

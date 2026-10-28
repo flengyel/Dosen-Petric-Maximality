@@ -1,30 +1,23 @@
 # Došen–Petrić maximality in Lean
 
-Both full Gentzen Reducibility theorems now compile for the existing syntactic
-Reduced presentation, with every addressed rebuilt eligible descendant covered.
-Terminal-source W6, unrestricted same-side exchange, and all remaining unary
-inputs are implemented. Typed outside-site replacement transport also compiles.
-The next result is containing-blocked preservation, followed by full finite-site
-multiset descent and Blocked-w. Cut elimination, coherence and the full-paper
-endpoint remain open.
+The actual **Blocked-w Lemma** now compiles for the existing Reduced presentation.
+It preserves the cut formula and contexts, supplies cut-free representatives,
+proves Reduced cut equality and blocks every tied contraction on both sides.
+Containing preservation, full eligible-site correspondence, exact finite multiset
+replacement and well-founded descent are proved. Full Reducibility is reused.
 
-The [reviewed successor instruction](docs/CODEX_AFTER_5B8A199_BLOCKED_W.txt)
-specifies the containing-blockedness theorems, complete eligible-site
-correspondence, multiset descent and Blocked-w. Its
-[source/evidence review](docs/reviews/GENTZEN_5B8A199_REVIEW.md) and
-[writing review](docs/reviews/GENTZEN_5B8A199_WRITING.md) introduce no new
-Lean result or manuscript revision.
+Final local verification: **412 screened Lean files / 10,906 audited project
+declarations**, including generated helpers. Exact signature checks, five negative
+controls and manuscript hashes pass. See the [report](docs/GENTZEN_BLOCKED_W_REPORT.md),
+[hostile review](docs/reviews/GENTZEN_BLOCKED_W_HOSTILE.md),
+[writing review](docs/reviews/GENTZEN_BLOCKED_W_WRITING.md),
+[maps](docs/MANUSCRIPT_COVERAGE.md) and [continuation](docs/CODEX_NEXT_SESSION.txt).
 
-The maintained [validation record](docs/VALIDATION.md) reports **398 screened
-Lean files and 10,606 audited project declarations**, including generated
-helpers. The [checkpoint report](docs/GENTZEN_FULL_REDUCIBILITY_REPORT.md),
-[author-side hostile review](docs/reviews/GENTZEN_FULL_REDUCIBILITY_HOSTILE.md),
-[writing review](docs/reviews/GENTZEN_FULL_REDUCIBILITY_WRITING.md),
-[correspondence](docs/PRESENTATION_CORRESPONDENCE.md) and
-[continuation](docs/CODEX_NEXT_SESSION.txt) give exact hypotheses and remaining
-obligations. Historical reports remain available; the preceding README and its
-full checkpoint/link history are preserved in
-[README_434AA77.md](docs/history/README_434AA77.md).
+Simultaneous atomization remains open. A compiled Empty-variable example shows
+that applying the existing atomize after Blocked-w can introduce an unblocked
+tied contraction. Clean-cut normalization, cut elimination, coherence and the
+full-paper endpoint remain unproved. Historical instructions and reports retain
+their original scope; the preceding README is preserved in docs/history/README_85A16CD.md.
 
 ## Full-paper formalization target
 

@@ -1,0 +1,116 @@
+CONTINUE THE UNCHANGED V6 FULL-PAPER FORMALIZATION
+
+The reviewed proof checkpoint is 5b8a1996cab3f53e8c771dbd6126274236b1db4a.
+Read docs/CODEX_AFTER_5B8A199_BLOCKED_W.txt for the concrete successor task,
+with docs/reviews/GENTZEN_5B8A199_REVIEW.md and GENTZEN_5B8A199_WRITING.md.
+It expands the containing-shape, complete eligible-site correspondence,
+multiset descent, Blocked-w and atomization-compatibility obligations below.
+No new Lean theorem is asserted by that instruction/review pass. Its three
+Downloads deliveries are pending local Codex; preserve and deliver their
+committed bytes as specified. The preceding continuation is retained in
+docs/history/CODEX_NEXT_SESSION_5B8A199.txt.
+
+Current checked checkpoint: both full Reducibility Lemmata plus general
+outside-site transport. Read AGENTS.md, CODEX_FULL_MANUSCRIPT_FORMALIZATION.md,
+GENTZEN_FULL_REDUCIBILITY_REPORT.md and both associated reviews, current maps,
+MANUSCRIPT_CORRECTIONS.md and PALOMAR_REQUIREMENTS.md. Preserve newer work,
+stash dedfd8fc8cd49930e9a162d5be585215b062a43c, manuscript v4/v5/v6 and privacy.
+Use Git over SSH; no resets, cleans, force push or stash deletion. Local Codex
+implements/builds; author-side cloud review follows completed local work and
+does not impose a local stop/approval checkpoint. Current source evidence
+supersedes historical open-branch snapshots.
+
+COMPLETED — REUSE THESE CONSTRUCTIONS
+
+Gentzen.reducibility_left/right prove the exact unchanged ReducesL/R endpoints
+for arbitrary P, all contexts, proofs and positions. Every actual containing
+address and every eligible descendant relative to the rebuilt cut is covered.
+No Binary/Unary/caller reduct, decomposition, rank/coherence or injectivity
+hypothesis. Both terminal-source one-premise W6 families have actual blocked
+repairs, equality and old S+3k+3 / repaired S+δ(k)+6 ranks, including singleton.
+UnrestrictedExchange.left/right have no interval exclusions. Generic selected-
+fiber routing handles all same-side exchange, thinning and nested contraction
+placements. Fixed/selected logical input dispatch retains positional tags.
+All existing native binary producers are reused. All 16 actual input schemas
+are covered; basis/cut impossibilities are internal.
+
+ProofAddress.outside_of_incomparable constructs the surviving actual address
+for every pair of incomparable paths. Its proof value, path, all typed ancestry
+maps and whole-formula cluster membership are preserved (outside_cluster).
+It does not yet prove the full outside Reducible predicate because containing
+contractions may be rebuilt. Reuse typed replacement, rank/entry machinery,
+G0/G1, Atomic-k and all earlier reductions/factorizations.
+
+Checked sources: 398 Lean files / 10,606 audited declarations. Strict, exact
+public signatures, both boundary scripts with five expected rejections,
+manuscript hashes and diff checks passed. Evidence:
+provenance/wsl-gentzen-full-reducibility/. Baseline b2ab0a8 receipts were reused
+as instructed. Recheck changed sources, one heavy build/audit at a time.
+
+NEXT CONCRETE THEOREMS — NO PRODUCTION ASSUMPTIONS FOR THEM
+
+For arbitrary P, contexts and k : G P Γ Δ, w : G P U V:
+
+ (hb : BlockedL k) (a : ProofAddress k w) (hp : a.path≠[])
+ (C : NormalForm P) (x : At U C) (hw : w.LowerContraction .left x)
+ (h : G P U V) : BlockedL (a.replace h)
+
+and independently
+
+ (hb : BlockedR k) (a : ProofAddress k w) (hp : a.path≠[])
+ (C : NormalForm P) (x : At V C) (hw : w.LowerContraction .right x)
+ (h : G P U V) : BlockedR (a.replace h).
+
+Prove by the actual seven blocked envelopes per side and occurrence-address
+routing. Source disjLLast has actual exchanges; do not transfer blockedness
+along Reduced equality. A proper lower-contraction site cannot be a logical
+or exchange node in the envelope; it lies within one of its proof parameters.
+Retain exact source/native endpoints and handle all indexed casts.
+
+Then prove complete outside/containing eligible-site transport and enumerate
+finite addressed reducible sites without deduplicating equal labels or proof
+values. Establish the well-founded multiset decrease: replacing one eligible
+site may create several smaller-rank eligible descendants. The local bound
+alone is not a whole-cut decrease. Prove Blocked-w, then clean-cut and cut
+elimination with the constants/atomic-zero extension, restricted mix/positive
+coherence, Reduced.Faithful and actual Boolean Coherence. Continue all actual
+instances/congruence bridges, q_A/e_A short proof, unconditional maximality,
+model corollary, tagged/ordinal substitution square and entire v6 appendix
+ledger under the full-paper contract. No unchanged-baseline rebuild merely
+because a new continuation starts.
+
+SETTLED CORRECTIONS AND BOUNDARIES
+
+- Generic routing programs are derived operations of existing G rules. They
+  preserve CutFree, but may introduce compound thinning. Full Reduces requires
+  no Atomized witness; do not silently claim one. Resolve Atomic-k/Blocked-w
+  sequencing or strengthen the actual repair for future clean-cut arguments.
+- Right selected logical repair uses the head-disjunction blocked form. The
+  old terminal right candidate is proved unblocked; preserve its regression.
+- A singleton inner selection is node-free. No arity-one contraction node.
+- Source terminal disjLLast parametric rank contribution is three macro nodes;
+  principal rank is two. Native syntax has separately checked rank equations.
+- Centering-based unrestricted exchange can use more than two exits. Never
+  demand repaired-root strictness when ContractionBound already skips
+  noneligible exchange nodes. Empty exchanges remain syntactic nodes.
+- Whole-formula ancestry uses At and proof addresses, not literal-occurrence
+  relations. Fixed slots equal in label to selected slots remain distinct.
+- Keep left-first composition, opposite coproduct variance, empty hom-sets,
+  existing-arrow zero witnesses, Init-only and pinned Lean 4.35.0, original
+  equations/predicates/rho/Reduces quantifiers. No coherence assumption, custom
+  mathematical axiom, proof hole, native_decide or equality reflection.
+
+Update maps/corrections/validation/README with each checked result, preserve
+historical reports and access records, and apply both author-side reviews to
+actual source and correspondence. Keep process text outside manuscripts.
+Commit scoped verified work to main and push SSH without force under standing
+authorization. Verify checked/committed bytes and local/origin/live main refs.
+Deliver finalized report copies to Downloads conflict-preservingly and compare
+with committed bytes. Current commit and delivery identities are in the local
+post-commit receipt and final response; do not create a self-hash cycle.
+
+Historical prior continuation, with settled requirements and original status
+snapshots: docs/history/CODEX_NEXT_SESSION_434AA77.txt. The B2AB0A8 instruction
+and its reviews are retained and delivered with this checkpoint; their
+remaining unary/source-package statuses are now historical. No formalization
+gap here establishes a manuscript defect or independent publication verdict.

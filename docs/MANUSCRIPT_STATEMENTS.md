@@ -1,6 +1,46 @@
 # Manuscript v6: statements and formal scope
 
-## Current full Reducibility checkpoint (26 October 2026)
+## Current Blocked-w checkpoint (28 October 2026)
+
+`DosenPetric.Reduced.Gentzen.blocked_w` proves the actual Blocked-w endpoint:
+for arbitrary P and a topmost cut, the same cut formula and contexts have cut-free
+representatives with equal Reduced cut denotation and both universal tied-contraction
+blockedness clauses. `blocked_w_premises` also preserves each premise's denotation.
+Both full Reducibility theorems and their complete descendant quantifiers are reused.
+
+Containing preservation covers all fourteen source envelopes with arbitrary
+same-sequent replacements at proper lower-contraction occurrences. Complete
+outside eligibility equivalence, exclusion of new strict containing sites,
+finite typed enumeration and exact multiset replacement compile on both sides.
+The multiset proof retains multiplicities and uses fixed-support count vectors.
+
+Checked: **412 Lean files / 10,906 audited project declarations**. Strict
+verification, both exact signature files, five expected control rejections,
+manuscript checksums and whitespace checks passed. Evidence:
+`provenance/wsl-gentzen-blocked-w/`; report: `GENTZEN_BLOCKED_W_REPORT.md`.
+
+The next obligation is simultaneous atomization and blockedness. The compiled
+`AtomizationBlockedBoundary.cutFree_equal_atomized` gives a cut-free Empty-variable
+counterexample to preservation of AllBlockedL by the existing G.atomize.
+Its new unblocked tied contraction has path [0,0,0,0]. This is a boundary of that
+construction, not a manuscript defect or a refutation of clean-cut existence.
+Clean cuts, cut elimination, coherence, actual-presentation maximality, the model
+corollary and remaining v6 appendices stay open. Milestones I–III remain distinct.
+
+| Source / claim | Exact declaration | Scope |
+| --- | --- | --- |
+| Containing shapes | `BlockedL.replace_lower`, `BlockedR.replace_lower` | Arbitrary D and replacement; proper address and actual same-side lower contraction. |
+| Complete eligible-site correspondence | `ReducibleL/R.outside_iff`, `new_site`, `outside_or_same` | Typed actual suffixes, inserted root, strict containing exclusion, positional uniqueness. |
+| Finite descent | `EligibleSites.left/right`, `ReducibleL/R.rank_replacement`, `FiniteRank.descent_wf` | R_old permutes to r::O; R_new to I++O; every I rank is less than r. |
+| §11.2 printed p.253 Blocked-w | `blocked_normalization_left/right`, `blocked_w_premises`, `blocked_w` | Actual cut-free witnesses and Reduced equality; no coherence or supplied normalization input. |
+| Atomization boundary | `AtomizationBlockedBoundary.before_blocked`, `atomize_not_blocked` | Existing atomize does not preserve the needed blocked predicate. |
+
+## Retained earlier checkpoints
+
+All sections below describe their own earlier source/evidence snapshots and
+are superseded by the current checkpoint above wherever their open statuses differ.
+
+## Historical full Reducibility checkpoint (26 October 2026)
 
 Both `DosenPetric.Reduced.Gentzen.reducibility_left` and
 `reducibility_right` compile for arbitrary P, contexts, proofs and selected

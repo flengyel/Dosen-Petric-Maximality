@@ -1932,3 +1932,5 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.W6.TerminalOne.reducesSecond
 #print axioms DosenPetric.Reduced.Gentzen.ProofAddress.outside_of_incomparable
 #print axioms DosenPetric.Reduced.Gentzen.ProofAddress.outside_cluster
+#print axioms DosenPetric.Reduced.Gentzen.blocked_w
+#print axioms DosenPetric.FiniteRank.descent_wf

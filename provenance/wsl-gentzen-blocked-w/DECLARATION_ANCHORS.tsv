@@ -1,0 +1,139 @@
+DosenPetric/FiniteRankDescent.lean	11	def Descent (new old : List Nat) : Prop :=
+DosenPetric/FiniteRankDescent.lean	14	def Vector : Nat → Type
+DosenPetric/FiniteRankDescent.lean	18	def Less : (n : Nat) → Vector n → Vector n → Prop
+DosenPetric/FiniteRankDescent.lean	22	theorem less_wf : ∀ n, WellFounded (Less n)
+DosenPetric/FiniteRankDescent.lean	27	def counts : (n : Nat) → List Nat → Vector n
+DosenPetric/FiniteRankDescent.lean	31	theorem counts_lt {new old : List Nat} (N r : Nat) (hr : r < N)
+DosenPetric/FiniteRankDescent.lean	47	def Bounded (N : Nat) (xs : List Nat) : Prop := ∀ k ∈ xs, k < N
+DosenPetric/FiniteRankDescent.lean	49	theorem pivot_lt {new old : List Nat} {N r : Nat}
+DosenPetric/FiniteRankDescent.lean	53	theorem bounded_step {new old : List Nat} {N : Nat}
+DosenPetric/FiniteRankDescent.lean	64	theorem counts_descent {new old : List Nat} {N : Nat}
+DosenPetric/FiniteRankDescent.lean	70	theorem bounded_accessible (N : Nat) (old : List Nat) (hb : Bounded N old) :
+DosenPetric/FiniteRankDescent.lean	84	def supportBound : List Nat → Nat
+DosenPetric/FiniteRankDescent.lean	88	theorem support_bounded (xs : List Nat) : Bounded (supportBound xs) xs := by
+DosenPetric/FiniteRankDescent.lean	98	theorem descent_wf : WellFounded Descent :=
+DosenPetric/FiniteRankDescent.lean	103	theorem of_replacement {old new outside inserted : List Nat} {r : Nat}
+DosenPetric/GentzenAddressComparison.lean	12	theorem rebuild_sourceArity {Γ Δ U V : List (NormalForm P)}
+DosenPetric/GentzenAddressComparison.lean	25	theorem compare (a : ProofSpine k w) (b : ProofSpine k v) :
+DosenPetric/GentzenAddressComparison.lean	48	theorem replace_sourceArity (a : ProofSpine k w) (hp : a.path ≠ [])
+DosenPetric/GentzenAddressComparison.lean	56	theorem suffix_of_prefix (a : ProofSpine k w) (b : ProofSpine k v)
+DosenPetric/GentzenAddressComparison.lean	77	theorem split_prefix (a : ProofSpine k w) (xs : List Nat)
+DosenPetric/GentzenAddressComparison.lean	105	theorem compare (a : ProofAddress k w) (b : ProofAddress k v) :
+DosenPetric/GentzenAddressComparison.lean	110	theorem suffix_of_prefix (a : ProofAddress k w) (b : ProofAddress k v)
+DosenPetric/GentzenAddressComparison.lean	116	theorem split_prefix (a : ProofAddress k w) (xs : List Nat)
+DosenPetric/GentzenAddressComparison.lean	124	theorem replace_lower_iff (a : ProofAddress k w) (hp : a.path ≠ [])
+DosenPetric/GentzenAtomizationBlockedBoundary.lean	10	def insertedFormula : NormalForm Empty := .disj .top .bot
+DosenPetric/GentzenAtomizationBlockedBoundary.lean	12	def before : G Empty [.top,insertedFormula] [.top] :=
+DosenPetric/GentzenAtomizationBlockedBoundary.lean	15	def newContraction : ProofOccurrence (G.atomize before) :=
+DosenPetric/GentzenAtomizationBlockedBoundary.lean	18	theorem new_path : newContraction.address.path = [0,0,0,0] := by decide
+DosenPetric/GentzenAtomizationBlockedBoundary.lean	20	theorem before_blocked : AllBlockedL before := by
+DosenPetric/GentzenAtomizationBlockedBoundary.lean	38	theorem new_tied : (G.atomize before).TiedRight
+DosenPetric/GentzenAtomizationBlockedBoundary.lean	45	theorem new_unblocked : ¬ BlockedL newContraction.proof := by
+DosenPetric/GentzenAtomizationBlockedBoundary.lean	54	theorem atomize_not_blocked : ¬ AllBlockedL (G.atomize before) := by
+DosenPetric/GentzenAtomizationBlockedBoundary.lean	58	theorem cutFree_equal_atomized :
+DosenPetric/GentzenBlockedChecks.lean	13	def lowerLeft (D : NormalForm Empty) (Γ : List (NormalForm Empty)) : G Empty (D::Γ) [.top] :=
+DosenPetric/GentzenBlockedChecks.lean	15	def lowerRight (D : NormalForm Empty) (Δ : List (NormalForm Empty)) : G Empty [.bot] (D::Δ) :=
+DosenPetric/GentzenBlockedChecks.lean	18	structure CaseL where
+DosenPetric/GentzenBlockedChecks.lean	23	structure CaseR where
+DosenPetric/GentzenBlockedChecks.lean	29	def mixL : CaseL := ⟨_,_,_,.gammaMix .top [] [] [] [] [.top] [.top] (lowerLeft .top []) (lowerLeft .top [])⟩
+DosenPetric/GentzenBlockedChecks.lean	30	def conjL : CaseL := ⟨_,_,_,.gammaConj .top .top .top [] [] [] [] [] [] (lowerLeft .top []) (lowerLeft .top [])⟩
+DosenPetric/GentzenBlockedChecks.lean	31	def disjL : CaseL := ⟨_,_,_,.gammaDisj .top .top .bot [] [] [] [] [.top] [.top] (lowerLeft .top [.top]) (lowerLeft .top [.bot])⟩
+DosenPetric/GentzenBlockedChecks.lean	32	def conjunctionL : CaseL := ⟨_,_,_,.conjunction .top .bot [] [] [.top] (lowerLeft (.conj .top .bot) [.top,.bot])⟩
+DosenPetric/GentzenBlockedChecks.lean	33	def firstL : CaseL := ⟨_,_,_,.disjunctionFirst .top .bot [] [] [] [.top] [.top] (lowerLeft (.disj .top .bot) [.top]) (lowerLeft .bot [])⟩
+DosenPetric/GentzenBlockedChecks.lean	34	def secondL : CaseL := ⟨_,_,_,.disjunctionSecond .top .bot [] [] [] [.top] [.top] (lowerLeft .top []) (lowerLeft (.disj .top .bot) [.bot])⟩
+DosenPetric/GentzenBlockedChecks.lean	35	def bothL : CaseL := ⟨_,_,_,.disjunctionBoth .top .bot [] [] [] [] [.top] [.top] (lowerLeft (.disj .top .bot) [.top]) (lowerLeft (.disj .top .bot) [.bot])⟩
+DosenPetric/GentzenBlockedChecks.lean	36	def mixR : CaseR := ⟨_,_,_,.gammaMix .top [.bot] [.bot] [] [] [] [] (lowerRight .top []) (lowerRight .top [])⟩
+DosenPetric/GentzenBlockedChecks.lean	37	def disjR : CaseR := ⟨_,_,_,.gammaDisj .top .bot .bot [] [] [] [] [] [] (lowerRight .top []) (lowerRight .top [])⟩
+DosenPetric/GentzenBlockedChecks.lean	38	def conjR : CaseR := ⟨_,_,_,.gammaConj .top .bot .bot [.bot] [.bot] [] [] [] [] (lowerRight .bot [.top]) (lowerRight .bot [.top])⟩
+DosenPetric/GentzenBlockedChecks.lean	39	def disjunctionR : CaseR := ⟨_,_,_,.disjunction .bot .bot [.bot] [] [] (lowerRight .bot [.bot,.disj .bot .bot])⟩
+DosenPetric/GentzenBlockedChecks.lean	40	def firstR : CaseR := ⟨_,_,_,.conjunctionFirst .bot .bot [.bot] [.bot] [] [] [] (lowerRight .bot [.conj .bot .bot]) (lowerRight .bot [])⟩
+DosenPetric/GentzenBlockedChecks.lean	41	def secondR : CaseR := ⟨_,_,_,.conjunctionSecond .bot .bot [.bot] [.bot] [] [] [] (lowerRight .bot []) (lowerRight .bot [.conj .bot .bot])⟩
+DosenPetric/GentzenBlockedChecks.lean	42	def bothR : CaseR := ⟨_,_,_,.conjunctionBoth .bot .bot [.bot] [.bot] [] [] [] [] (lowerRight .bot [.conj .bot .bot]) (lowerRight .bot [.conj .bot .bot])⟩
+DosenPetric/GentzenBlockedChecks.lean	44	def lowerPaths {Γ Δ : List (NormalForm Empty)} (g : G Empty Γ Δ) (s : SequentSide) : List (List Nat) :=
+DosenPetric/GentzenBlockedChecks.lean	50	theorem all_fourteen_paths :
+DosenPetric/GentzenBlockedChecks.lean	58	theorem every_left_replacement (c : CaseL) {U V : List (NormalForm Empty)} {w : G Empty U V}
+DosenPetric/GentzenBlockedChecks.lean	63	theorem every_right_replacement (c : CaseR) {U V : List (NormalForm Empty)} {w : G Empty U V}
+DosenPetric/GentzenBlockedChecks.lean	68	def nestedEmptyExchange : CaseL :=
+DosenPetric/GentzenBlockedChecks.lean	74	theorem nested_empty_exchange_paths : lowerPaths nestedEmptyExchange.proof .left =
+DosenPetric/GentzenBlockedChecks.lean	80	def common (t : Literal P) : G P [.lit t] [.lit t,.lit t] :=
+DosenPetric/GentzenBlockedChecks.lean	84	theorem common_blocked (t : Literal P) : BlockedL (common t) :=
+DosenPetric/GentzenBlockedChecks.lean	88	def firstAddress (t : Literal P) : ProofAddress (common t) (ReducibleExamples.left t) :=
+DosenPetric/GentzenBlockedChecks.lean	93	def secondAddress (t : Literal P) : ProofAddress (common t) (ReducibleExamples.left t) :=
+DosenPetric/GentzenBlockedChecks.lean	98	theorem common_paths (t : Literal P) :
+DosenPetric/GentzenBlockedChecks.lean	101	theorem common_tied (t : Literal P) :
+DosenPetric/GentzenBlockedChecks.lean	111	theorem common_preserved (t : Literal P) (h : G P [.lit t] [.lit t]) :
+DosenPetric/GentzenBlockedChecks.lean	119	theorem common_shallow_blocked (t : Literal P)
+DosenPetric/GentzenBlockedChecks.lean	141	theorem common_eligible (t : Literal P) :
+DosenPetric/GentzenBlockedChecks.lean	155	theorem multiset_boundaries :
+DosenPetric/GentzenBlockedNormalization.lean	14	def AllBlockedL (g : G P (C::Θ) Λ) : Prop :=
+DosenPetric/GentzenBlockedNormalization.lean	19	def AllBlockedR (f : G P Γ (C::Δ)) : Prop :=
+DosenPetric/GentzenBlockedNormalization.lean	24	theorem blocked_normalization_left (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ)
+DosenPetric/GentzenBlockedNormalization.lean	51	theorem blocked_normalization_right (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ)
+DosenPetric/GentzenBlockedNormalization.lean	79	theorem blocked_w_premises (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ)
+DosenPetric/GentzenBlockedNormalization.lean	89	theorem blocked_w (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ)
+DosenPetric/GentzenBlockedReplacement.lean	15	theorem lower_through_reindex {Γ' Δ' : List (NormalForm P)}
+DosenPetric/GentzenBlockedReplacement.lean	145	theorem blockedL_replace (hb : BlockedL k) (a : ProofSpine k w)
+DosenPetric/GentzenBlockedReplacement.lean	182	theorem blockedR_replace (hb : BlockedR k) (a : ProofSpine k w)
+DosenPetric/GentzenBlockedReplacement.lean	223	theorem BlockedL.replace_lower {Γ Δ U V : List (NormalForm P)}
+DosenPetric/GentzenBlockedReplacement.lean	233	theorem BlockedR.replace_lower {Γ Δ U V : List (NormalForm P)}
+DosenPetric/GentzenContainingTransport.lean	15	def castRoot (e : root = root') (a : ProofAddress root w) : ProofAddress root' w := e ▸ a
+DosenPetric/GentzenContainingTransport.lean	17	theorem castRoot_path (e : root = root') (a : ProofAddress root w) :
+DosenPetric/GentzenContainingTransport.lean	20	theorem castRoot_ascend (e : root = root') (a : ProofAddress root w)
+DosenPetric/GentzenContainingTransport.lean	25	def containing (a : ProofAddress root v) (b : ProofAddress v w) (h : G P U V) :
+DosenPetric/GentzenContainingTransport.lean	29	theorem containing_path (a : ProofAddress root v) (b : ProofAddress v w) (h : G P U V) :
+DosenPetric/GentzenContainingTransport.lean	33	theorem containing_ascend (a : ProofAddress root v) (b : ProofAddress v w) (h : G P U V)
+DosenPetric/GentzenContainingTransport.lean	38	theorem ProperContains.prefix {a : ProofAddress root v} {b : ProofAddress root w}
+DosenPetric/GentzenContainingTransport.lean	43	theorem proper_of_prefix (a : ProofAddress root v) (b : ProofAddress root w)
+DosenPetric/GentzenContainingTransport.lean	54	theorem proper_of_prefix_ne (a : ProofAddress root v) (b : ProofAddress root w)
+DosenPetric/GentzenContainingTransport.lean	66	theorem outside_inverse (a : ProofAddress root w) (h : G P U V)
+DosenPetric/GentzenContainingTransport.lean	88	theorem ReducibleL.blocked_containing {a : ProofAddress g w} {x : At U C}
+DosenPetric/GentzenContainingTransport.lean	126	theorem ReducibleR.blocked_containing {a : ProofAddress f w} {x : At V C}
+DosenPetric/GentzenEligibleCorrespondence.lean	14	theorem ReducibleL.lower_unique {a : ProofAddress g w} {x : At U C}
+DosenPetric/GentzenEligibleCorrespondence.lean	18	theorem ReducibleR.lower_unique {a : ProofAddress f w} {x : At V C}
+DosenPetric/GentzenEligibleCorrespondence.lean	24	theorem ReducibleL.new_site {a : ProofAddress g w} {x : At U C}
+DosenPetric/GentzenEligibleCorrespondence.lean	57	theorem ReducibleR.new_site {a : ProofAddress f w} {x : At V C}
+DosenPetric/GentzenEligibleCorrespondence.lean	90	theorem ReducibleL.outside_or_same {a : ProofAddress g w} {x : At U C}
+DosenPetric/GentzenEligibleCorrespondence.lean	104	theorem ReducibleR.outside_or_same {a : ProofAddress f w} {x : At V C}
+DosenPetric/GentzenEligibleEnumeration.lean	16	noncomputable def key (o : ProofOccurrence root) : Option (List Nat × Nat) := by
+DosenPetric/GentzenEligibleEnumeration.lean	21	theorem key_path (o : ProofOccurrence root) (k : List Nat × Nat)
+DosenPetric/GentzenEligibleEnumeration.lean	29	theorem key_spec
+DosenPetric/GentzenEligibleEnumeration.lean	52	noncomputable def keys : List (List Nat × Nat) :=
+DosenPetric/GentzenEligibleEnumeration.lean	55	theorem keys_nodup : (keys root s C Q).Nodup := by
+DosenPetric/GentzenEligibleEnumeration.lean	64	theorem keys_path_unique {k k' : List Nat × Nat}
+DosenPetric/GentzenEligibleEnumeration.lean	75	theorem mem_keys
+DosenPetric/GentzenEligibleEnumeration.lean	97	noncomputable def left : List (List Nat × Nat) :=
+DosenPetric/GentzenEligibleEnumeration.lean	100	noncomputable def right : List (List Nat × Nat) :=
+DosenPetric/GentzenEligibleEnumeration.lean	103	theorem mem_left (k : List Nat × Nat) :
+DosenPetric/GentzenEligibleEnumeration.lean	108	theorem mem_right (k : List Nat × Nat) :
+DosenPetric/GentzenEligibleEnumeration.lean	113	theorem left_nodup : (left f g).Nodup := EligibleEnumeration.keys_nodup ..
+DosenPetric/GentzenEligibleEnumeration.lean	114	theorem right_nodup : (right f g).Nodup := EligibleEnumeration.keys_nodup ..
+DosenPetric/GentzenEligibleEnumeration.lean	116	theorem left_path_unique {k k' : List Nat × Nat}
+DosenPetric/GentzenEligibleEnumeration.lean	120	theorem right_path_unique {k k' : List Nat × Nat}
+DosenPetric/GentzenFiniteOccurrences.lean	12	structure ProofOccurrence {Γ Δ : List (NormalForm P)} (root : G P Γ Δ) where
+DosenPetric/GentzenFiniteOccurrences.lean	21	def lift (p : Premise root w) (a : ProofOccurrence w) : ProofOccurrence root :=
+DosenPetric/GentzenFiniteOccurrences.lean	24	def atRoot (root : G P Γ Δ) : ProofOccurrence root := ⟨Γ,Δ,root,.root⟩
+DosenPetric/GentzenFiniteOccurrences.lean	26	def ofAddress (a : ProofAddress root w) : ProofOccurrence root := ⟨U,V,w,a⟩
+DosenPetric/GentzenFiniteOccurrences.lean	31	def unique {α : Type u} [DecidableEq α] : List α → List α
+DosenPetric/GentzenFiniteOccurrences.lean	35	theorem mem_unique {α : Type u} [DecidableEq α] (a : α) (xs : List α) :
+DosenPetric/GentzenFiniteOccurrences.lean	43	theorem unique_nodup {α : Type u} [DecidableEq α] (xs : List α) :
+DosenPetric/GentzenFiniteOccurrences.lean	57	def occurrences : {Γ Δ : List (NormalForm P)} → (g : G P Γ Δ) → List (ProofOccurrence g)
+DosenPetric/GentzenFiniteOccurrences.lean	95	theorem occurrences_eq {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) :
+DosenPetric/GentzenFiniteOccurrences.lean	101	noncomputable def finiteOccurrences {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) :
+DosenPetric/GentzenFiniteOccurrences.lean	106	theorem finiteOccurrences_mem {Γ Δ : List (NormalForm P)} (g : G P Γ Δ)
+DosenPetric/GentzenFiniteOccurrences.lean	111	theorem finiteOccurrences_nodup {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) :
+DosenPetric/GentzenFiniteOccurrences.lean	121	theorem occurrence_mem (a : ProofSpine root w) :
+DosenPetric/GentzenFiniteOccurrences.lean	133	theorem occurrence_eq_of_path {I J : List (NormalForm P)} {v : G P I J}
+DosenPetric/GentzenFiniteOccurrences.lean	154	theorem occurrence_mem (a : ProofAddress root w) :
+DosenPetric/GentzenFiniteOccurrences.lean	158	theorem occurrence_eq_of_path {I J : List (NormalForm P)} {v : G P I J}
+DosenPetric/GentzenOutsideEligibility.lean	27	theorem ReducibleL.outside_iff {a : ProofAddress g w} {x : At U C}
+DosenPetric/GentzenOutsideEligibility.lean	92	theorem ReducibleR.outside_iff {a : ProofAddress f w} {x : At V C}
+DosenPetric/GentzenRankReplacement.lean	16	noncomputable def leftRanks (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ) : List Nat :=
+DosenPetric/GentzenRankReplacement.lean	19	noncomputable def rightRanks (f : G P Γ (C::Δ)) (g : G P (C::Θ) Λ) : List Nat :=
+DosenPetric/GentzenRankReplacement.lean	24	theorem ReducibleL.outside_keys {a : ProofAddress g w} {x : At U C}
+DosenPetric/GentzenRankReplacement.lean	74	theorem ReducibleL.rank_replacement {a : ProofAddress g w} {x : At U C}
+DosenPetric/GentzenRankReplacement.lean	107	theorem ReducibleR.outside_keys {a : ProofAddress f w} {x : At V C}
+DosenPetric/GentzenRankReplacement.lean	157	theorem ReducibleR.rank_replacement {a : ProofAddress f w} {x : At V C}
+DosenPetric/GentzenUnblockedAncestor.lean	14	theorem exists_reducible_left (ht : G.Topmost f g)
+DosenPetric/GentzenUnblockedAncestor.lean	41	theorem blocked_left_of_no_reducible (ht : G.Topmost f g)
+DosenPetric/GentzenUnblockedAncestor.lean	55	theorem exists_reducible_right (ht : G.Topmost f g)
+DosenPetric/GentzenUnblockedAncestor.lean	82	theorem blocked_right_of_no_reducible (ht : G.Topmost f g)

@@ -119,3 +119,20 @@ not manuscript corrections. Containing-blockedness, complete eligibility
 transport, descent, Blocked-w and simultaneous atomization remain proof tasks.
 No production Lean source or manuscript is revised by this handoff. The three
 new instruction/review copies await local Downloads delivery.
+
+## Blocked-w checkpoint and atomization boundary (28 October 2026)
+
+Both containing-shape theorems, complete eligible-site correspondence, exact
+rank-multiset replacement, well-founded descent and actual Blocked-w now compile.
+Historical open statuses above refer to their original checkpoints. Current
+maps, full-paper contract, continuation and README were reconciled in one pass.
+
+Category: confirmed limitation of an existing implementation, with no earlier
+preservation theorem to retract. AtomizationBlockedBoundary.before is cut-free
+and AllBlockedL, but atomize introduces an unblocked tied contraction at path
+[0,0,0,0]. The exact before/new_tied/new_unblocked/cutFree_equal_atomized proofs
+compile. Therefore applying the existing atomizer after Blocked-w does not prove
+clean-cut normalization. A simultaneous representative remains an open construction.
+No manuscript mathematical defect is inferred; v4/v5/v6 and all accepted
+mathematical/writing decisions are preserved. The current continuation records
+the exact compatibility target and a proposed next construction.
