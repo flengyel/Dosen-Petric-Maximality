@@ -59,8 +59,9 @@ actual sequential source/rank proof, closing the concrete Appendix C p.262 row
 with fresh right-premise rho.left=1 and total h.rho.right+1≥2. BlockedL.disjunctionSecond
 also has its actual source/rank construction. BlockedL.disjunctionBoth now has
 the actual left3 source equation, both original descents and three instantiated
-rank calls. Every BlockedL family is complete. Complete the three remaining
-BlockedR conjunction reductions and global induction. Reuse all completed binary, unary, structural,
+rank calls. Every BlockedL family is complete. BlockedR.conjunctionFirst now has its actual
+source equation and both instantiated original-rank calls. Complete the two
+remaining BlockedR conjunctionSecond/Both reductions and global induction. Reuse all completed binary, unary, structural,
 principal, cleaning and descent results. Retain earlier source/rank/atomization decisions.
 The existing three milestones remain distinct;
 even actual-presentation maximality alone does not certify the entire paper.

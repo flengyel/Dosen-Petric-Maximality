@@ -1,56 +1,56 @@
 # Došen–Petrić maximality in Lean
 
-## Current eleven blocked reductions (29 October 2026)
+## Current twelve blocked reductions (29 October 2026)
 
-All twelve binary branches and every BlockedL family have actual source equations
-and instantiated original-rank steps. Eleven blocked families are complete;
-BlockedR.conjunctionFirst/Second/Both and global induction remain open. Both
-Appendix C concrete source/rank correspondences remain proved. All earlier
-results, corrections, source bytes and delivery receipts persist.
+All twelve binary branches and twelve blocked families have actual source equations
+and instantiated original-rank steps. Every BlockedL family and BlockedR gammaMix,
+gammaConj, gammaDisj, disjunction and conjunctionFirst are complete. Only
+BlockedR.conjunctionSecond/Both and global induction remain open. Both Appendix C
+concrete source/rank correspondences remain proved. All earlier results,
+corrections, source bytes and delivery receipts persist.
 
-BlockedDisjBoth.parent_source/source_equation identify the actual left3/disjLLast
-source, contracting two original parametric copies and the terminal fresh copy.
-first_get/second_get/fresh_get compare every selected tag; first_fixed/second_fixed
-and the two residues compare all other tags, including equal-labelled formulas.
-SequentialDisjBoth.terminal_factor/source_denote and native_equation give the
-arbitrary-tag three-cut equation. Its inputProgram has a proved unique fresh
-fiber; all fixed adapters move past the fresh native G.disjL cut. Both original
-child calls inherit full Clean and strict original rank, with unchanged h/z,
-before routing. fresh_clean_and_rank proves full Clean and total h.rho.right+1
-below the original contracted rank independently of returned k/l. The third call
-is instantiated before concrete three-copy repairs. Final atomization follows
-cut-freeness and preserves exact output/equality. No returned-rank bound or
-output blockedness promise is introduced.
+BlockedConjFirst.parent_source/source_equation identify the actual right2/conjR
+source and its complete arbitrary-tag Reduced equality. Selected/fixed maps and
+residues preserve every ordinal coordinate, including equal-labelled fixed U tags.
+SequentialConjFirst.native_equation uses the completed binary and right contraction
+equations. SequentialAdapters.right_equation moves all fixed programs after the
+fresh native G.conjR recursive cut. original_descent supplies original f full Clean
+and strict original rank with unchanged h/z before routing; untouched g supplies
+CutFree/Atomized. fresh_clean_and_rank proves native selected succedent rho.right=1,
+full Clean and total 1+h.rho.left below the original rank for every returned k.
+Both recursive calls are instantiated. Concrete association/residue/duplicate
+repair and final atomization preserve exact output, CutFree, Atomized and equality.
+No returned-rank bound, output blockedness or general G duality is introduced.
 
-Appendix C p.260 retains its actual gammaDisj equation and both strict descents.
-p.262 retains the actual first-disjunction source/rank step and
-fresh_principal_rank/fresh_total_rank/fresh_total_rank_ge_two. The right cut
-premise has rho.left=1 at its native fresh leaf; total is unchanged opposite
-h.rho.right+1≥2. No exchanged source wrapper is assigned native rank one. No new
-manuscript defect was established; all nine blobs and the stash are unchanged.
+Both Appendix C concrete rows retain their actual source/rank declarations:
+p.260's gammaDisj equation and both strict descents, and p.262's first-disjunction
+source/rank step and fresh_principal_rank/fresh_total_rank/fresh_total_rank_ge_two.
+No exchanged wrapper is assigned native rank one. No new manuscript defect was
+established; all nine manuscript blobs and the stash remain unchanged.
 
-See [report](docs/GENTZEN_BLOCKED_DISJ_BOTH_REPORT.md),
-[hostile review](docs/reviews/GENTZEN_BLOCKED_DISJ_BOTH_HOSTILE.md),
-[writing review](docs/reviews/GENTZEN_BLOCKED_DISJ_BOTH_WRITING.md) and
+See [report](docs/GENTZEN_BLOCKED_CONJ_FIRST_REPORT.md),
+[hostile review](docs/reviews/GENTZEN_BLOCKED_CONJ_FIRST_HOSTILE.md),
+[writing review](docs/reviews/GENTZEN_BLOCKED_CONJ_FIRST_WRITING.md) and
 [constructor/tag map](docs/GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
-Evidence: provenance/wsl-gentzen-blocked-left-disj-both/. Eight modules contain
-49 source declarations; 755 Lean files are screened. Twenty-five public files
-and 35 expected rejections are checked. Actual audit totals/exits, checked/committed
+Evidence: provenance/wsl-gentzen-blocked-right-conj-first/. Eight modules contain
+45 source declarations; 764 Lean files are screened. Twenty-six public files
+and 37 expected rejections are checked. Actual audit totals/exits, checked/committed
 bytes and Downloads paths are in FINAL_VERIFICATION.json and DELIVERY_REGISTER.json.
-Four actual terminal-output smoke witnesses use witnessed bottom-tail first
-children and are distinguished from the general source/rank proof. Reviews are
-local author-side. Independent replay, Comparator, official/service verification
-and publication remain separate unperformed statuses.
+Four actual initial-output smoke witnesses use witnessed bottom-source proofs and
+initiality, covering signed/negative literals, Empty/constants and populated
+repeated X/Y/U. They are distinguished from the general source/rank proof.
+Reviews are local author-side. Independent replay, Comparator, official/service
+verification and publication remain separate unperformed statuses.
 
-Next complete the three BlockedR conjunction families, preserving its three-copy
-case. Assemble exhaustive dispatch, fixed-degree all-ranks Clean under strict
-DegreeBelow, arbitrary-premise cleaning, strong degree induction and arbitrary-G
-normalization. Export actual unrestricted elimination, then continue coherence,
-intended-presentation and uniform-substitution/congruence bridges, both maximality
-routes, the model corollary and every mathematical claim in all three v7 appendices.
-The three milestones and full-paper endpoint remain distinct. Deliver committed-
-byte reports/records with verified conflict-preserving copies, then continue
-under existing authorization without a routine approval checkpoint.
+Next complete BlockedR.conjunctionSecond/Both, retaining the last three-copy case.
+Assemble exhaustive dispatch, fixed-degree all-ranks Clean under strict DegreeBelow,
+arbitrary-premise cleaning, strong degree induction and arbitrary-G normalization.
+Export actual unrestricted elimination, then continue coherence, intended-presentation
+and uniform-substitution/congruence bridges, both maximality routes, model corollary
+and every claim in all three v7 appendices. The three milestones and full-paper
+endpoint stay distinct. Deliver committed-byte reports/records with verified
+conflict-preserving copies; continue under existing authorization without a
+routine approval checkpoint.
 
 ## Current manuscript: v7 with the authorized errata appendix
 

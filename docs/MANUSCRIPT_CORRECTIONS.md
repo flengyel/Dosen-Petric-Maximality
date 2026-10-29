@@ -1,5 +1,17 @@
 # Manuscript corrections and source errata
 
+## First-conjunction continuation (29 October 2026)
+
+BlockedR.conjunctionFirst now has its actual right2/conjR source equation,
+full original first-child Clean/strict descent, fresh native G.conjR full Clean
+and both instantiated rank calls. The right-adapter transport is proved separately;
+no general G duality or returned-rank bound is assumed. Fixed U tags equal to C
+remain distinct from the selected pair. Twelve blocked families are complete;
+only BlockedR.conjunctionSecond/Both remain. Both Appendix C rows retain their
+proved declarations. No new manuscript defect was found; all nine blobs, stash
+and receipts persist. See GENTZEN_BLOCKED_CONJ_FIRST_REPORT.md and its two local
+reviews. Preceding local checkpoints remain historical.
+
 ## Three-copy disjunction continuation (29 October 2026)
 
 BlockedL.disjunctionBoth now has its actual left3/disjLLast source equation,

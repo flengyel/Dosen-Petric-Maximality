@@ -2062,3 +2062,9 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.BlockedDisjBoth.second_descent
 #print axioms DosenPetric.Reduced.Gentzen.BlockedDisjBoth.fresh_clean_and_rank
 #print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blockedL_disjunctionBoth_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.SequentialAdapters.right_equation
+#print axioms DosenPetric.Reduced.Gentzen.SequentialConjFirst.native_equation
+#print axioms DosenPetric.Reduced.Gentzen.BlockedConjFirst.source_equation
+#print axioms DosenPetric.Reduced.Gentzen.BlockedConjFirst.original_descent
+#print axioms DosenPetric.Reduced.Gentzen.BlockedConjFirst.fresh_clean_and_rank
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blockedR_conjunctionFirst_rank_step

@@ -1,9 +1,10 @@
-CONTINUE V7 AFTER ALL BLOCKEDL: THREE BLOCKEDR CONJUNCTION CASES REMAIN
+CONTINUE V7 AFTER TWELVE BLOCKED FAMILIES: CONJUNCTIONSECOND/BOTH REMAIN
 
 Read AGENTS.md, CODEX_FULL_MANUSCRIPT_FORMALIZATION.md, current statement,
 coverage, correction, validation and constructor/tag records, and
 CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt with both 77199AC reviews.
-Read GENTZEN_BLOCKED_DISJ_BOTH_REPORT.md and its hostile/writing reviews, reusing
+Read GENTZEN_BLOCKED_CONJ_FIRST_REPORT.md and its hostile/writing reviews, reusing
+GENTZEN_BLOCKED_DISJ_BOTH_REPORT.md and its hostile/writing reviews, reusing
 GENTZEN_BLOCKED_DISJ_SECOND_REPORT.md and its hostile/writing reviews, reusing
 GENTZEN_BLOCKED_DISJ_FIRST_REPORT.md and its hostile/writing reviews, reusing
 GENTZEN_BLOCKED_DISJUNCTION_REPORT.md and its hostile/writing reviews, reusing
@@ -15,7 +16,8 @@ GENTZEN_BLOCKED_GAMMA_REPORT.md and its reviews, plus
 GENTZEN_DISJL_BINARY_CUTS_REPORT.md and all its reviews, plus
 all preceding reports, accepted corrections and sections 4–7 of
 CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt and the later B8FCD28 contract.
-Prior continuation: history/CODEX_NEXT_SESSION_8A7EE15.txt, archived verbatim.
+Prior continuation: history/CODEX_NEXT_SESSION_1A89A84.txt, archived verbatim.
+The 8A7EE15 continuation remains preserved.
 The D59CB83 continuation remains preserved.
 The 0CEF4A4 continuation remains preserved.
 The 668FB50 continuation remains preserved.
@@ -96,7 +98,17 @@ rank with unchanged h/z before routing. The third call is on literal G.disjL,
 proved fresh full Clean and total h.rho.right+1 below the original rank for every
 returned pair, before all fixed adapters and three-copy repairs. Exact output,
 CutFree/Atomized/equality follow through final atomization. Every BlockedL family
-is now complete; only three BlockedR conjunction families remain.
+is now complete. BlockedR.conjunctionFirst is also complete:
+BlockedConjFirst.parent_source/source_equation, original_descent,
+fresh_clean_and_rank and CutCommutation.blockedR_conjunctionFirst_rank_step.
+The actual right2 source and arbitrary-tag equations preserve all fixed tags,
+including equal-labelled U tags. SequentialAdapters.right_equation moves fixed
+programs after the fresh native G.conjR call. First ih uses original f full Clean
+and strict original rank with unchanged h/z before routing; untouched g supplies
+CutFree/Atomized. The second uses full fresh Clean and total 1+h.rho.left below
+original rank for every returned k, before repair. No returned-rank promise or
+assumed general G duality. Final atomization preserves exact output/equality.
+Only BlockedR.conjunctionSecond/Both remain.
 
 
 Reuse full Reducibility, Blocked-w, simultaneous atomized/blocked cleaning,
@@ -119,22 +131,22 @@ separately typed leftFirst macro. firstRaw/secondRaw use actual structural
 programs and are atomized after cut-freeness. Other completed builders preserve
 Atomized directly. No output blockedness or returned-rank promise is added.
 
-Current local evidence: 755 screened Lean files, twenty-five public files and
-35 expected rejections; eight new modules and 49 source declarations. Exact
+Current local evidence: 764 screened Lean files, twenty-six public files and
+37 expected rejections; eight new modules and 45 source declarations. Exact
 actual audit totals/exits and checked/committed-byte source evidence:
-provenance/wsl-gentzen-blocked-left-disj-both/. Four actual terminal-output smoke
-witnesses use witnessed bottom-tail first children, covering signed/negative
-literals, Empty/constants and all four populated repeated context groups. They
-are distinguished from the general source/rank proof. All earlier evidence
-persists. Reviews are local author-side; independent replay, Comparator and
-official/service checks were not performed.
+provenance/wsl-gentzen-blocked-right-conj-first/. Four actual initial-output smoke
+witnesses use witnessed bottom-source proofs and initiality, covering signed/
+negative literals, Empty/constants and populated repeated X/Y/U. They are
+separate from the general source/rank proof. All earlier evidence persists.
+Reviews are local author-side; independent replay, Comparator and official/service
+checks were not performed.
 
 CONCRETE CONTINUATION
 
-1. Complete the remaining three logical blocked reductions:
- BlockedR: conjunctionFirst, conjunctionSecond, conjunctionBoth.
+1. Complete the remaining two logical blocked reductions:
+ BlockedR: conjunctionSecond, conjunctionBoth.
 Every BlockedL family, all three gamma families on both sides and both unary
-logical blocked cases are complete; reuse them.
+logical blocked cases and BlockedR.conjunctionFirst are complete; reuse them.
 Invert Clean's actual source-shaped witness at the selected lower contraction.
 BlockedL is in the right premise; BlockedR is in the left premise. Derive actual
 arities/positions, retaining all two/three-copy cases. Gamma families use parallel
@@ -184,7 +196,7 @@ unchanged TeX. Propagate an established correction across its full scope and ver
 Use pinned Lean 4.35.0, module headers and files below 10,000 lines. One heavy
 build/audit at a time; retain actual logs and exits in .codex-work. Run verify.sh,
 all exact public/actual witness checks, full dependency/source closure and all
-35 controls. Apply both required local reviews to actual milestones.
+37 controls. Apply both required local reviews to actual milestones.
 Commit/push verified scope without force and compare checked/committed bytes.
 
 DELIVERY
@@ -195,7 +207,7 @@ disjL register at cf3741a / 26e6d8d and the seventeen-entry three-blocked
 register at b95abc6 / f04b638 and the seventeen-entry right-gammaDisj register
 at 1d09a27 / ecfe8da and seventeen-entry left-gammaDisj register at
 17b25c6 / fab64c2 / 2f66237, and the right-gammaConj proof/receipt 5278d5e /
-787ee6c, plus the sequential-conjunction proof/receipt 4e5c3b1 / 668fb50, and the sequential-disjunction proof/receipt 5e42101 / 0cef4a4, plus the first-disjunction proof/receipt cecdc79 / d59cb83, plus the second-disjunction proof/receipt f81846b / 8a7ee15. Deliver all new reports/reviews and changed records
+787ee6c, plus the sequential-conjunction proof/receipt 4e5c3b1 / 668fb50, and the sequential-disjunction proof/receipt 5e42101 / 0cef4a4, plus the first-disjunction proof/receipt cecdc79 / d59cb83, plus the second-disjunction proof/receipt f81846b / 8a7ee15, plus the three-copy/all-BlockedL proof/receipt bd56c03 / 1a89a84. Deliver all new reports/reviews and changed records
 from committed bytes to /mnt/c/Users/fleng/Downloads, preserve differing files
 with commit suffixes, verify every copy and retain exact paths/hashes in the
 current delivery register. Report any failure explicitly. Keep prior receipts.

@@ -1,0 +1,546 @@
+[
+  {
+    "name": "missing-parallel-input-contraction",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/missing-parallel-input-contraction.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/missing-parallel-input-contraction.lean",
+    "source_sha256": "8356606292d26c8f803157408ac382c7735842a7df695486e31e5e979f71913b",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/missing-parallel-input-contraction.log",
+    "log_sha256": "aa1a7ec86904e060ae159657aa5e23254d05114a13c62dd47785e2e3191c87c6"
+  },
+  {
+    "name": "missing-parallel-output-contraction",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/missing-parallel-output-contraction.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/missing-parallel-output-contraction.lean",
+    "source_sha256": "3db73fa2c4f0eab7a2aa5c6f7903a8c278873e928d612edb3e6172e030b6c7ae",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/missing-parallel-output-contraction.log",
+    "log_sha256": "2ce6858dd55285c527b69ec4a56f36e44efb4df17686822a88a873be8cd8fc8a"
+  },
+  {
+    "name": "blocked-equal-label-fixed-tag",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/blocked-equal-label-fixed-tag.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/blocked-equal-label-fixed-tag.lean",
+    "source_sha256": "27100726ae10bd5fe0e1f7389999903354b2dc1f725203e25141616c5e5b152e",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/blocked-equal-label-fixed-tag.log",
+    "log_sha256": "701e90d86d715cd57933f4e48f69821e6f7d03eceddb4c1f880960355482cc08"
+  },
+  {
+    "name": "missing-disj-output-exchange",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/missing-disj-output-exchange.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/missing-disj-output-exchange.lean",
+    "source_sha256": "48fd7010df304d3e51746db497066bd7b383eb91a303ddb0c83e532002c542fc",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/missing-disj-output-exchange.log",
+    "log_sha256": "f9e3c046321741c465a79131079a58a1d0399b37d0eb8905ca53eb9f8ee2fa17"
+  },
+  {
+    "name": "missing-disj-retained-input",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/missing-disj-retained-input.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/missing-disj-retained-input.lean",
+    "source_sha256": "83f9d55bf59240538f3e52db03c8f042aa77e2f54350d7096053225f446272d2",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/missing-disj-retained-input.log",
+    "log_sha256": "206e2f121e29fd332e74bf810c3c6b54aa2e47c6e139a29742f6b4e6444c1e9e"
+  },
+  {
+    "name": "missing-second-output-exchange",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/missing-second-output-exchange.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/missing-second-output-exchange.lean",
+    "source_sha256": "e2ffe6cf1a72280be8e7b0dd1273f90033ce05dde0ac8981aa95f0e1f3cc9741",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/missing-second-output-exchange.log",
+    "log_sha256": "d52121280d42788f62f12ba4ae0d379cb346ea12e20ab534e525c3caa5e14c3b"
+  },
+  {
+    "name": "missing-retained-A",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/missing-retained-A.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/missing-retained-A.lean",
+    "source_sha256": "3ffd8a977b3cb89e2354fff546e61a1663c193f6f9b40302be37e0c61860f178",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/missing-retained-A.log",
+    "log_sha256": "ae118e5c28262a6c5a1003617bacab947595bd00bd6cd142dc538e88c2fbd1fa"
+  },
+  {
+    "name": "missing-conj-output-exchange",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/missing-conj-output-exchange.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/missing-conj-output-exchange.lean",
+    "source_sha256": "15eb1c0755d22a9407498aca022dbd6066c5f26b07ea01e212b94da2e1ffe444",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/missing-conj-output-exchange.log",
+    "log_sha256": "e144c1b8541be3d98dcea19217957e37ce6022b39ba1d1968db3de8c47106c73"
+  },
+  {
+    "name": "missing-retained-B",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/missing-retained-B.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/missing-retained-B.lean",
+    "source_sha256": "7f05dc18a69748570ac03eaaa096c865ebf52c999f1fb9ef5702e855633ef3e2",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/missing-retained-B.log",
+    "log_sha256": "3c055d3f804d20954744fc79ca839e02f4d1ffd919e04b600a3a1a289d19150e"
+  },
+  {
+    "name": "missing-first-input-exchange",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/missing-first-input-exchange.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/missing-first-input-exchange.lean",
+    "source_sha256": "511473cb75afdc4c7b9d0af6f1d398b990a2baf3a24ca6c343ea90e06316e5eb",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/missing-first-input-exchange.log",
+    "log_sha256": "99d5260cc29dc38bdc46faf79fcba3686222c909e42eed9919906a68e7e40605"
+  },
+  {
+    "name": "equal-label-collapse",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/equal-label-collapse.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/equal-label-collapse.lean",
+    "source_sha256": "48cd2a94cbe5014149ab421050dbe1da92e0a42bab799f343d08d5717262fc50",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/equal-label-collapse.log",
+    "log_sha256": "9216ee53c8b4079cba63c033e56ff908efe71d72eda40c0809245cc4e6f34822"
+  },
+  {
+    "name": "mix-conventional-order",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/mix-conventional-order.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/mix-conventional-order.lean",
+    "source_sha256": "6cc6e58ead8817aa46985ddc93819bea1cc50986a2cf5b22d94e6cadd57d2ce8",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/mix-conventional-order.log",
+    "log_sha256": "51cdc3b40717735f86917b58a0d291478345f2e81d5e6fc02de1e23cb3e511e4"
+  },
+  {
+    "name": "missing-terminal-input-contraction",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/missing-terminal-input-contraction.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/missing-terminal-input-contraction.lean",
+    "source_sha256": "7d95d5a8dde30d66470fdcea4b5d7b04587255c1629c2815e4bf1e675fc85dd6",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/missing-terminal-input-contraction.log",
+    "log_sha256": "0ca0caab89cc671f6032a40c05397cadc7c7bed703e48dd6a3e3ff2c07f9a8a8"
+  },
+  {
+    "name": "missing-terminal-output-contraction",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/missing-terminal-output-contraction.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/missing-terminal-output-contraction.lean",
+    "source_sha256": "4bf485218547875a2a84288d40d04bd455dad63bc1e880b564a29dfc945280a1",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/missing-terminal-output-contraction.log",
+    "log_sha256": "6d822db6c5483cc40b5a4c7410106660ee79ebbe561a997a003f40cfbae3cebc"
+  },
+  {
+    "name": "terminal-equal-label-principal-tag",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/terminal-equal-label-principal-tag.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/terminal-equal-label-principal-tag.lean",
+    "source_sha256": "31e2d61066fea2e853a3f88be95c47120e8dcc4e6a8c982aba0d3530a18ef009",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/terminal-equal-label-principal-tag.log",
+    "log_sha256": "7cef27e3150f1277577c519e277a29c8e5ca0f802567c469017f888831f60819"
+  },
+  {
+    "name": "terminal-principal-is-fixed-copy",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/terminal-principal-is-fixed-copy.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/terminal-principal-is-fixed-copy.lean",
+    "source_sha256": "1a571e21edf1a8887f258d5fdd7e72e2ae486eff4035d1411a7c02db779b23fb",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/terminal-principal-is-fixed-copy.log",
+    "log_sha256": "9a3b151333c64516135495a4b670ff5009038f9ba118261a6644ed27b5376c70"
+  },
+  {
+    "name": "conjunction-principal-is-fixed-copy",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/conjunction-principal-is-fixed-copy.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/conjunction-principal-is-fixed-copy.lean",
+    "source_sha256": "38116ff9619223f81f85d8364e068957b644d20150409704f46d83e5582a7091",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/conjunction-principal-is-fixed-copy.log",
+    "log_sha256": "89bc1c1787e68a25851f539641eaf2f417b092e02876b8936a1c93bbdfcc650e"
+  },
+  {
+    "name": "missing-sequential-second-cut",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/missing-sequential-second-cut.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/missing-sequential-second-cut.lean",
+    "source_sha256": "6ba226d25d468e6bc99461054308c591d714dfdfebffbae9bcdefc18ff819c5a",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/missing-sequential-second-cut.log",
+    "log_sha256": "0cc24ca0da91fde46c9632848f6d7c0a2822623e462bee6d6eb48bf4c2febc35"
+  },
+  {
+    "name": "missing-sequential-repair",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/missing-sequential-repair.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/missing-sequential-repair.lean",
+    "source_sha256": "2cf45398ad410e639888cfb9496ec73e1216f939cd1339e7cc89ef49e90e7aef",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/missing-sequential-repair.log",
+    "log_sha256": "2d4e460d2c1693985ffd354a55a3dba6b1f6ba1ed9cd8f85713e00f19aff7b4b"
+  },
+  {
+    "name": "sequential-returned-rank",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/sequential-returned-rank.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/sequential-returned-rank.lean",
+    "source_sha256": "be2e52de6e4c6df0263e3216fa78d7ce8e2b3b26957696c712b070e572b1b831",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/sequential-returned-rank.log",
+    "log_sha256": "c92727a9590742c147b159b0d387bed8cbde6aca1f22c04e7886823703727979"
+  },
+  {
+    "name": "sequential-distinct-parametric-principal",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/sequential-distinct-parametric-principal.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/sequential-distinct-parametric-principal.lean",
+    "source_sha256": "2488869a235b97d46b2ca162a77103975ff9591929e85436c12e3cecbd5b580b",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/sequential-distinct-parametric-principal.log",
+    "log_sha256": "953df5e113a16e0058f63fc2c408415a30409d71978ef0272d245f798fca4cf5"
+  },
+  {
+    "name": "missing-prefix-repair",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/missing-prefix-repair.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/missing-prefix-repair.lean",
+    "source_sha256": "2cf45398ad410e639888cfb9496ec73e1216f939cd1339e7cc89ef49e90e7aef",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/missing-prefix-repair.log",
+    "log_sha256": "b96f6edb2f7e9355d616e244c02e1e6d5d51e1a7815d0f7bd06a57443661d202"
+  },
+  {
+    "name": "prefix-distinct-equal-labels",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/prefix-distinct-equal-labels.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/prefix-distinct-equal-labels.lean",
+    "source_sha256": "1fc3f785c278091d97ceb19cdf8baf51f142ad7f15091dd80bdf4f86311e9615",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/prefix-distinct-equal-labels.log",
+    "log_sha256": "3939a0893b4aedd50de8065c8989ef65e2e4712713a5056010be4a5d4e1b5ade"
+  },
+  {
+    "name": "fresh-disjunction-returned-rank",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/fresh-disjunction-returned-rank.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/fresh-disjunction-returned-rank.lean",
+    "source_sha256": "878bb40369fe3ae8122dc81b05960095890f6a069f342918080fc2b76bf87260",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/fresh-disjunction-returned-rank.log",
+    "log_sha256": "03e0c307939eadd21a6da808c11085c01fa260f78d35b54fe06342d38ac8b35f"
+  },
+  {
+    "name": "fresh-right-total-rank-one",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/fresh-right-total-rank-one.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/fresh-right-total-rank-one.lean",
+    "source_sha256": "749e88dea2abe1cd9a871ed2d334b364a400842cb85f116110bf2e264ae45e6a",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/fresh-right-total-rank-one.log",
+    "log_sha256": "ba598279d2ab73ab03d5ab1924ee230fe7a81bf7bc1103c3ce42844488fd1072"
+  },
+  {
+    "name": "source-wrapper-native-rank-one",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/source-wrapper-native-rank-one.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/source-wrapper-native-rank-one.lean",
+    "source_sha256": "da581037e78b2778a2936912e8d1441baf6fce6bb89eceae3680fb5742db58ac",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/source-wrapper-native-rank-one.log",
+    "log_sha256": "9cbd527d304beca0ad67d0c880bb370664483dfdd56e8798ad9f8249cbec545d"
+  },
+  {
+    "name": "second-branch-fixed-first-context",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/second-branch-fixed-first-context.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/second-branch-fixed-first-context.lean",
+    "source_sha256": "3d13e5f54e088b6f4bcc9758a82007fb0d84b5e5567dd1dcb529c91152a6e3fc",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/second-branch-fixed-first-context.log",
+    "log_sha256": "edb89c798b5ac5d09c519e69bb68bc244d5011de412a0408a0b4a7cd89cddc1c"
+  },
+  {
+    "name": "three-copy-fixed-tag",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/three-copy-fixed-tag.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/three-copy-fixed-tag.lean",
+    "source_sha256": "6b63922336fbb32da6c0e642a806ee796d50e417e2e802094a5ab622e1cef0c8",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/three-copy-fixed-tag.log",
+    "log_sha256": "b328dd1dcc28ff45e4a3ebbc574b933d6cf47c8ae3bc0d9c9003fab8127ee337"
+  },
+  {
+    "name": "three-copy-original-tags",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/three-copy-original-tags.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/three-copy-original-tags.lean",
+    "source_sha256": "eff37094218e3c04cfa5613ff6bcc94d80c30d2b6200bee7ca7a41d677601afc",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/three-copy-original-tags.log",
+    "log_sha256": "0107843ae2ad2fd0a83e2ae19fdb6ce0f7e1b092e80b26fb257176462eac3577"
+  },
+  {
+    "name": "missing-third-copy-repair",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/missing-third-copy-repair.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/missing-third-copy-repair.lean",
+    "source_sha256": "df8a7af8ffc66d082e9a8c0b2ae56d5effee2fd6281fc4b4bed861c155a84331",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/missing-third-copy-repair.log",
+    "log_sha256": "dc869798528548181ab2e52b6089cbaba4669011c14074cf219f99699d1cfe7a"
+  },
+  {
+    "name": "right-first-fixed-tail",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/right-first-fixed-tail.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/right-first-fixed-tail.lean",
+    "source_sha256": "625893c27be462b21aa6fc1bbc8467f1c9d6b8988dd0570e8c8cad24823cec86",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/right-first-fixed-tail.log",
+    "log_sha256": "8892ee328b5b8f3a81ca767c8ad5cc8d1a5ca96226e57d39f0b62d6faeb18cbf"
+  },
+  {
+    "name": "fresh-conjunction-returned-rank",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-blocked-right-conj-first/fresh-conjunction-returned-rank.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-blocked-right-conj-first/fresh-conjunction-returned-rank.lean",
+    "source_sha256": "be1c0135fc01583f1950701959918a4708d0df2ca7aee037e9622699838a4c17",
+    "log": ".codex-work/gentzen-blocked-right-conj-first/fresh-conjunction-returned-rank.log",
+    "log_sha256": "f5cd80b97e15808e566753d82a1f746ce5d2d5a813efcdaf77db8913a39a721e"
+  }
+]
