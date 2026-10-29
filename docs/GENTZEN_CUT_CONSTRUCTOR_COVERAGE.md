@@ -81,3 +81,11 @@ are now proved; see GENTZEN_COHERENCE_REPORT.md. Finite atomic mix normal forms,
 DNF/CNF comparison maps and one-sided recovery are constructed. Full source
 congruence/substitution correspondence, maximality, model and remaining full-paper
 claims continue; constructor coverage is not the full-paper certificate.
+
+## Actual source maximality continuation (29 October 2026)
+
+All constructor/tag/rank and coherence results persist. Actual quotient reduction,
+derived negation/naturality, full proof-congruence/closure correspondence and
+Presentation.maximality/congruence_dichotomy/raw_maximality are now proved; see
+SOURCE_MAXIMALITY_REPORT.md. The separate short proof, model and remaining full-
+paper claims continue. Constructor coverage remains a discharged prerequisite.

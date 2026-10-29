@@ -1,6 +1,56 @@
 # Coverage and next proof obligations
 
-## Current Positive, Reduced and Boolean coherence (29 October 2026)
+## Current actual source maximality and derived negation (29 October 2026)
+
+`Presentation.maximality`, `congruence_dichotomy` and `raw_maximality` are proved
+for the actual equation-generated quotient and full proof congruences. Every
+relative-maximality input is instantiated. P is arbitrary, hence includes the
+manuscript's nonempty case. Totality ranges only over existing hom-sets. The three
+milestones remain distinct from complete-paper certification. The short q_A/e_A
+proof, model corollary and remaining operation/appendix claims continue.
+
+| Manuscript/source claim | Exact declarations and files | Scope/status |
+| --- | --- | --- |
+| Quotient reduction and inclusion | Reduced.reduceHom, reductionFunctor/inclusionFunctor; ReducedQuotientReduction.lean, ReducedReductionFunctor.lean | Actual typed quotient lift, identities, comp/tensors, equality reflection and explicit recovery casts; arbitrary P : Type u. |
+| Normalization equivalence laws | normalizationNaturalIso, reduction_inclusion, recover_reduceHom/reduce_recoverHom; ReducedReductionFunctor.lean, ReducedRecovery.lean | Source-side natural isomorphism and reverse recovery at exact endpoint casts. |
+| §2 contravariant negation | Reduced.Term.dual, dual_relation, dualHom_involutive; Presentation.negationFunctor; ReducedDual*.lean, PresentationNegationFunctor.lean | Complete raw reflection, quotient descent, id/reversed comp; no Gentzen-proof duality assumption. |
+| Natural DN/DM comparisons | dnOut_natural/dnIn_natural, all four dmConj/Disj Out/In_natural, doubleNegationNaturalIso; PresentationNegationNaturality.lean | Actual original-category naturality and existing two-sided comparison laws, including constant inverse laws. |
+| Explicit source negation syntax | forwardTerm/backwardTerm, their denotation laws, Term.negate/negateTerm_denotes/negate_derives; PresentationNormalizationTerms.lean, PresentationNegationTerms.lean | Uses only the existing primitive source grammar and generated equality. |
+| Original negation occurrence graph | toOcc_neg; occurrence_negate; PresentationNegationCoordinates.lean, PresentationNegationOccurrence.lean | Exact converse at original tags, both signs and repeated positions. |
+| Full proof-congruence correspondence | ProofCongruence, RawProofCongruence, fragment, toRaw/toQuotient, raw_quotient_rel/quotient_raw_rel; PresentationProofCongruence.lean | All primitive arrow-argument operations and actual derived negation; pair/copair derived; both pointwise inverse correspondences. |
+| Uniform closure correspondence | toRaw_closed/toQuotient_closed, fragment_closed; PresentationProofCongruence.lean | Explicit endosubstitution closure transfers at both typed levels. No fixed-kernel closure assumption. |
+| thm:main | Presentation.maximality, congruence_dichotomy, raw_maximality; PresentationMaximality.lean | Actual source theorem, equality/total dichotomy and raw generated-equality formulation; every relative input proved. |
+| Remaining full-paper scope | Short q/e proof, model corollary, further operation/substitution/ordinal/diagram claims | Open. In particular derived-negation/whole-arrow-substitution compatibility is not inferred from the congruence correspondence. |
+
+The original symmetric-fold route supplies this actual maximality instance; its
+source, all completed cuts/coherence, prior reports, stash and manuscript versions
+remain preserved. Milestone I's intended faithful interface and milestone II's
+conditional theorem remain complete. Milestone III's actual maximality theorem
+and its raw/quotient closure bridge are now instantiated. This is not the full-
+paper endpoint: prove the separate short proof and every remaining v7 claim.
+
+Evidence: provenance/wsl-full-source-bridges/. Strict pinned verification, all
+31 public check files, actual source witnesses and 52 expected rejection controls
+are recorded with exact counts, exits and hashes in FINAL_VERIFICATION.json.
+The checked source archive is read back and compared with committed bytes.
+See [report](SOURCE_MAXIMALITY_REPORT.md),
+[hostile review](reviews/SOURCE_MAXIMALITY_HOSTILE.md),
+[writing review](reviews/SOURCE_MAXIMALITY_WRITING.md). Reviews are local author-
+side. Independent replay, Comparator, official/service verification and publication
+were not performed. DELIVERY_REGISTER.json records verified conflict-preserving
+repository/Downloads copies. No manuscript defect was established; all nine
+manuscript blobs and ten diagrams remain unchanged.
+
+Current continuation: construct the particular q_A/e_A inverses and prove the
+short collapse route directly modulo congruence, preserving the symmetric-fold
+route. Complete negation/substitution compatibility and whole-arrow substitution
+operation/coordinate laws, the universal-model corollary and every remaining
+claim in the three v7 appendices. Reuse all completed results without reopening
+settled source/rank/atomization decisions. Historical checkpoints below preserve
+their dated scope; this active table supersedes their earlier open statuses.
+
+
+## Retained Positive, Reduced and Boolean coherence checkpoint (29 October 2026)
 
 `Gentzen.positive_coherence : PositiveCoherence P`, `Reduced.faithful : Faithful P`
 and `Presentation.coherence` are proved for arbitrary P. The full intended
@@ -611,8 +661,8 @@ See [the common atomic report](COMMON_ATOMIC_FACTORIZATION_REPORT.md),
 | Milestone | Required endpoint | Current status |
 | --- | --- | --- |
 | I | Contextual collapse, relation calculations, and the complete structural/faithful-interpretation interface for the intended nonthin category | Complete: Presentation.interpretation P instantiates every field in the actual equation-generated category, with interpretation_signedLabel, the existing nonthin p theorem (public Nat witness) and preserved empty Hom(top,bot). The generated fragment remains preserved. |
-| II | Maximality conditional on explicit coherence, normalization, presentation, and substitution inputs | relative_maximality remains proved. Actual source coherence, normalization, signed labels, substitution and double negation are now constructed; the full source congruence/uniform-substitution correspondence and explicit final instantiation remain continuing duties. |
-| III | Maximality for the actual Došen–Petrić presentation with all bridges proved | Open: coherence and the intended occurrence interface are now proved. Complete the full source congruence/substitution correspondence and actual maximality theorem. This does not certify the full paper. |
+| II | Maximality conditional on explicit coherence, normalization, presentation, and substitution inputs | Complete: relative_maximality remains proved and preserved; its complete actual-source instance is now Presentation.maximality. |
+| III | Maximality for the actual Došen–Petrić presentation with all bridges proved | Complete for the actual maximality theorem: Presentation.maximality/congruence_dichotomy/raw_maximality, full raw/quotient proof-congruence correspondence, closure transfer and every relative input instantiated. The distinct full-paper endpoint remains open: short q/e route, model corollary and further operation/substitution/appendix claims. |
 
 ## The unchanged conditional argument and fragment check
 
@@ -679,7 +729,7 @@ definition is unchanged and can be adapted once that interpretation exists.
 | Gentzen proof-occurrence replacement and W5 integration | Typed reconstruction at any existing ProofAddress preserves the outer sequent and every sibling/parameter; original-hole recovery, inserted path, repeated replacement, address composition/associativity and Reduced congruence compile. Exact cutCount/proofSize balances, CutFree/Atomized preservation and tagged relation consequence compile. Both other-placement W5 duals lift to arbitrary addresses, with concrete depth-two signed-cut and Empty constant examples. Reconstruction gap closed; blocked/reducible encodings and profiles are proved below, while complete rewrite dispatch and tied-site rank control remain open. |
 | Blocked/reducible encodings and finite selected-ancestry classification | Actual seven left blocked-pattern constructors and separately typed right analogues, explicit source-order exchanges, exact selected offsets and proper occurrence ancestry compile. Typed reducibility retains topmost/tied/position/unblocked/proper blocked-ancestor conditions. Unique per-position origin evidence and seven ordered profile regimes cover every original arity≥2 cut-free input, excluding basis/cut by proof. All fourteen blocked and seven regime examples compile. The finite ledger separates available local scopes from missing certified dispatch, mixed-premise/binary W5/W6 and tied-site rank control. |
 | Positive-fragment coherence | Gentzen.positive_coherence proves PositiveCoherence P for arbitrary P by actual finite atomic normalization, DNF/CNF expansion and one-sided recovery. The existing faithful_of_positive_coherence is now instantiated by Reduced.faithful. |
-| Boolean Coherence / faithful interpretation | Presentation.coherence proves occurrence faithfulness for every parallel pair in the actual source quotient. Presentation.interpretation and interpretation_signedLabel instantiate the complete interface. Full quotient red-functor/equivalence laws remain separate appendix duties. |
+| Boolean Coherence / faithful interpretation | Presentation.coherence proves occurrence faithfulness for every parallel pair in the actual source quotient. Presentation.interpretation and interpretation_signedLabel instantiate the complete interface. The actual quotient reduction/inclusion functors, normalization natural isomorphism and explicit reverse recovery are now proved. |
 | Normalization and occurrence correspondence | `Presentation.normalization` constructs the existing record for every P by simultaneous sign recursion and source n/r/rho arrows. Both inverse laws, inverse occurrence coordinates, both graph laws, literal/label/polarity correspondence, repeated-tag injectivity, Empty cases, and transport formulas compile. No coherence or arrow-negation premise. |
 | Global signed-label preservation | The existing direct occurrence_literal theorem now supplies Presentation.interpretation_signedLabel for the actual faithful interpretation; all signs, repeated coordinates and normalization transports persist. |
 | Derived contravariant negation | Open: the exact source clauses, descent, functor laws, and n-r/rho naturality / eta-epsilon dinaturality. |

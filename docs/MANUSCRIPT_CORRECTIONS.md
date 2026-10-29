@@ -1,5 +1,17 @@
 # Manuscript corrections and source errata
 
+## Actual source maximality continuation (29 October 2026)
+
+Actual quotient reduction/inclusion, both recovery laws, derived negation with
+natural DN/DM comparisons, explicit raw negation and its original-tag converse
+relation are proved. Full raw/quotient proof-congruence correspondence and uniform
+closure transfer now instantiate actual maximality and its equality/total
+dichotomy. All relevant live maps and milestone rows are reconciled together.
+No new manuscript defect was established. All nine manuscript blobs, three
+appendices, ten diagrams, accepted corrections, prior proofs and the stash
+remain unchanged. Full-paper completion is separate: the short q/e proof,
+model and remaining substitution/operation/ordinal/appendix claims continue.
+
 ## Actual coherence and intended interface continuation (29 October 2026)
 
 Actual PositiveCoherence, Reduced faithfulness and Boolean coherence now supply

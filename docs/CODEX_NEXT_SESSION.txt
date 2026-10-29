@@ -1,9 +1,10 @@
-CONTINUE V7 AFTER BOOLEAN COHERENCE: COMPLETE SOURCE MAXIMALITY BRIDGES
+CONTINUE V7 AFTER ACTUAL MAXIMALITY: SHORT PROOF AND FULL-PAPER CLAIMS
 
 Read AGENTS.md, CODEX_FULL_MANUSCRIPT_FORMALIZATION.md, current statement,
 coverage, correction, validation and constructor/tag records, and
 CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt with both 77199AC reviews.
-Read GENTZEN_COHERENCE_REPORT.md and its hostile/writing reviews, reusing
+Read SOURCE_MAXIMALITY_REPORT.md and its hostile/writing reviews, reusing
+GENTZEN_COHERENCE_REPORT.md and its hostile/writing reviews, reusing
 GENTZEN_CUT_ELIMINATION_REPORT.md and its hostile/writing reviews, reusing
 GENTZEN_ALL_BLOCKED_REPORT.md and its hostile/writing reviews, reusing
 GENTZEN_BLOCKED_CONJ_SECOND_REPORT.md and its hostile/writing reviews, reusing
@@ -20,7 +21,8 @@ GENTZEN_BLOCKED_GAMMA_REPORT.md and its reviews, plus
 GENTZEN_DISJL_BINARY_CUTS_REPORT.md and all its reviews, plus
 all preceding reports, accepted corrections and sections 4–7 of
 CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt and the later B8FCD28 contract.
-Prior continuation: history/CODEX_NEXT_SESSION_75B8E48.txt, archived verbatim.
+Prior continuation: history/CODEX_NEXT_SESSION_A80A353.txt, archived verbatim.
+The 75B8E48 continuation remains preserved.
 The 263C452 continuation remains preserved.
 The 19B3002 continuation remains preserved.
 The 375356F continuation remains preserved.
@@ -176,13 +178,26 @@ Milestone I's full intended interface is instantiated and a Nat nonthin witness
 is checked; the empty Hom(top,bot) persists. Full source congruence/substitution
 correspondence and final actual maximality instantiation remain continuing duties.
 
-Current local evidence: eighteen production modules; all thirty public files,
-actual intended-interface/nonthin/empty/constant/signed-tag witnesses and 48
-expected rejections; full strict source/dependency audit and checked/committed
-source archive in provenance/wsl-gentzen-positive-coherence/. Actual counts,
-exits/hashes and delivery paths are retained there. Prior results and all receipts
-persist. Reviews are local author-side; independent replay, Comparator and
-official/service checks were not performed.
+Actual source maximality is now proved by Presentation.maximality,
+congruence_dichotomy and raw_maximality. Full ProofCongruence/RawProofCongruence
+relations correspond pointwise in both directions; uniform closure transfers;
+fragment and fragment_closed instantiate the exact relative interface. All other
+inputs are actual source data. Reduced quotient reduction/inclusion, normalization
+natural isomorphism and both recovery equations are proved. Derived source
+negation has a full raw representative, exact original-tag converse graph,
+contravariant functor laws and natural DN/DM comparison equations. Preserve them.
+Milestone III's actual theorem is now instantiated; full-paper completion remains
+separate. Derived-negation/substitution compatibility is still an explicit
+operation-law duty, alongside the short proof/model/remaining appendix claims.
+
+Current local evidence: eighteen production modules; all 31 public files,
+actual source functor/negation/congruence/main signatures and 52 expected
+rejections; strict full dependency/source audit and checked/committed source
+archive in provenance/wsl-full-source-bridges/. Actual counts/exits/hashes and
+committed-byte delivery paths are retained there. Earlier coherence proof/receipt
+8c9e0f3 / a80a353 and all preceding results, reports and receipts persist.
+Reviews are local author-side; independent replay, Comparator and official/service
+verification were not performed.
 
 CONCRETE CONTINUATION
 
@@ -201,10 +216,10 @@ CutElimination P and AtomizedCutElimination P inhabitants preserve exact origina
 sequents and Reduced equality. No conditional handler bundle remains in these
 endpoints. Reuse them; do not reopen their accepted recursion contract.
 
-1. Complete full source proof-congruence and uniform-substitution correspondence,
-instantiate actual-presentation maximality, and formalize the short q_A/e_A proof,
-retained symmetric-fold route, actual-presentation maximality, model corollary and
-every mathematical claim in all three v7 appendices. All three milestones and
+1. Formalize the distinct short q_A/e_A proof and its actual inverse equations.
+Complete remaining negation/substitution compatibility and operation/coordinate
+laws, the model corollary and every mathematical claim in all three v7 appendices.
+Reuse actual-presentation maximality and preserve its symmetric-fold route. All three milestones and
 the complete-paper endpoint remain distinct.
 
 PERSISTENT REQUIREMENTS
@@ -225,7 +240,7 @@ unchanged TeX. Propagate an established correction across its full scope and ver
 Use pinned Lean 4.35.0, module headers and files below 10,000 lines. One heavy
 build/audit at a time; retain actual logs and exits in .codex-work. Run verify.sh,
 all exact public/actual witness checks, full dependency/source closure and all
-48 controls. Apply both required local reviews to actual milestones.
+52 controls. Apply both required local reviews to actual milestones.
 Commit/push verified scope without force and compare checked/committed bytes.
 
 DELIVERY
@@ -238,7 +253,7 @@ at 1d09a27 / ecfe8da and seventeen-entry left-gammaDisj register at
 17b25c6 / fab64c2 / 2f66237, and the right-gammaConj proof/receipt 5278d5e /
 787ee6c, plus the sequential-conjunction proof/receipt 4e5c3b1 / 668fb50, and the sequential-disjunction proof/receipt 5e42101 / 0cef4a4, plus the first-disjunction proof/receipt cecdc79 / d59cb83, plus the second-disjunction proof/receipt f81846b / 8a7ee15, plus the three-copy/all-BlockedL proof/receipt bd56c03 / 1a89a84, plus the first-conjunction proof/receipt a4f265e / 375356f, plus the second-conjunction proof/receipt 7d14053 / 19b3002 and the all-fourteen
 proof/receipt 80b9472 / 263c452 and unrestricted cut-elimination proof/receipt
-852502b / 75b8e48. Deliver all new reports/reviews and changed records
+852502b / 75b8e48 and actual-coherence proof/receipt 8c9e0f3 / a80a353. Deliver all new reports/reviews and changed records
 from committed bytes to /mnt/c/Users/fleng/Downloads, preserve differing files
 with commit suffixes, verify every copy and retain exact paths/hashes in the
 current delivery register. Report any failure explicitly. Keep prior receipts.

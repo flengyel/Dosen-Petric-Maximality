@@ -1,6 +1,56 @@
 # Manuscript v7: statements and formal scope
 
-## Current Positive, Reduced and Boolean coherence (29 October 2026)
+## Current actual source maximality and derived negation (29 October 2026)
+
+`Presentation.maximality`, `congruence_dichotomy` and `raw_maximality` are proved
+for the actual equation-generated quotient and full proof congruences. Every
+relative-maximality input is instantiated. P is arbitrary, hence includes the
+manuscript's nonempty case. Totality ranges only over existing hom-sets. The three
+milestones remain distinct from complete-paper certification. The short q_A/e_A
+proof, model corollary and remaining operation/appendix claims continue.
+
+| Manuscript/source claim | Exact declarations and files | Scope/status |
+| --- | --- | --- |
+| Quotient reduction and inclusion | Reduced.reduceHom, reductionFunctor/inclusionFunctor; ReducedQuotientReduction.lean, ReducedReductionFunctor.lean | Actual typed quotient lift, identities, comp/tensors, equality reflection and explicit recovery casts; arbitrary P : Type u. |
+| Normalization equivalence laws | normalizationNaturalIso, reduction_inclusion, recover_reduceHom/reduce_recoverHom; ReducedReductionFunctor.lean, ReducedRecovery.lean | Source-side natural isomorphism and reverse recovery at exact endpoint casts. |
+| §2 contravariant negation | Reduced.Term.dual, dual_relation, dualHom_involutive; Presentation.negationFunctor; ReducedDual*.lean, PresentationNegationFunctor.lean | Complete raw reflection, quotient descent, id/reversed comp; no Gentzen-proof duality assumption. |
+| Natural DN/DM comparisons | dnOut_natural/dnIn_natural, all four dmConj/Disj Out/In_natural, doubleNegationNaturalIso; PresentationNegationNaturality.lean | Actual original-category naturality and existing two-sided comparison laws, including constant inverse laws. |
+| Explicit source negation syntax | forwardTerm/backwardTerm, their denotation laws, Term.negate/negateTerm_denotes/negate_derives; PresentationNormalizationTerms.lean, PresentationNegationTerms.lean | Uses only the existing primitive source grammar and generated equality. |
+| Original negation occurrence graph | toOcc_neg; occurrence_negate; PresentationNegationCoordinates.lean, PresentationNegationOccurrence.lean | Exact converse at original tags, both signs and repeated positions. |
+| Full proof-congruence correspondence | ProofCongruence, RawProofCongruence, fragment, toRaw/toQuotient, raw_quotient_rel/quotient_raw_rel; PresentationProofCongruence.lean | All primitive arrow-argument operations and actual derived negation; pair/copair derived; both pointwise inverse correspondences. |
+| Uniform closure correspondence | toRaw_closed/toQuotient_closed, fragment_closed; PresentationProofCongruence.lean | Explicit endosubstitution closure transfers at both typed levels. No fixed-kernel closure assumption. |
+| thm:main | Presentation.maximality, congruence_dichotomy, raw_maximality; PresentationMaximality.lean | Actual source theorem, equality/total dichotomy and raw generated-equality formulation; every relative input proved. |
+| Remaining full-paper scope | Short q/e proof, model corollary, further operation/substitution/ordinal/diagram claims | Open. In particular derived-negation/whole-arrow-substitution compatibility is not inferred from the congruence correspondence. |
+
+The original symmetric-fold route supplies this actual maximality instance; its
+source, all completed cuts/coherence, prior reports, stash and manuscript versions
+remain preserved. Milestone I's intended faithful interface and milestone II's
+conditional theorem remain complete. Milestone III's actual maximality theorem
+and its raw/quotient closure bridge are now instantiated. This is not the full-
+paper endpoint: prove the separate short proof and every remaining v7 claim.
+
+Evidence: provenance/wsl-full-source-bridges/. Strict pinned verification, all
+31 public check files, actual source witnesses and 52 expected rejection controls
+are recorded with exact counts, exits and hashes in FINAL_VERIFICATION.json.
+The checked source archive is read back and compared with committed bytes.
+See [report](SOURCE_MAXIMALITY_REPORT.md),
+[hostile review](reviews/SOURCE_MAXIMALITY_HOSTILE.md),
+[writing review](reviews/SOURCE_MAXIMALITY_WRITING.md). Reviews are local author-
+side. Independent replay, Comparator, official/service verification and publication
+were not performed. DELIVERY_REGISTER.json records verified conflict-preserving
+repository/Downloads copies. No manuscript defect was established; all nine
+manuscript blobs and ten diagrams remain unchanged.
+
+Current continuation: construct the particular q_A/e_A inverses and prove the
+short collapse route directly modulo congruence, preserving the symmetric-fold
+route. Complete negation/substitution compatibility and whole-arrow substitution
+operation/coordinate laws, the universal-model corollary and every remaining
+claim in the three v7 appendices. Reuse all completed results without reopening
+settled source/rank/atomization decisions. Historical checkpoints below preserve
+their dated scope; this active table supersedes their earlier open statuses.
+
+
+## Retained Positive, Reduced and Boolean coherence checkpoint (29 October 2026)
 
 `Gentzen.positive_coherence : PositiveCoherence P`, `Reduced.faithful : Faithful P`
 and `Presentation.coherence` are proved for arbitrary P. The full intended
@@ -609,14 +659,14 @@ interpretation of variables, not one fixed valuation.
 | §3 formulas and positions | `Formula`, `Formula.Occ`, `Formula.label`, `Formula.subst` | Arbitrary variable types; negation preserves positions; each connective uses Sum tags; constants have Empty positions. |
 | `eq:occ-substitution` | `Formula.expand`, `contract`, `contract_expand`, `expand_contract` | For every substitution σ : P → Formula Q and formula A, mutually inverse maps between Occ(A[σ]) and Σ x : Occ(A), Occ(σ(label A x)). No nonemptiness assumption is needed. |
 | §3 repeated variables | `Formula.repeated_positions_distinct` | The two positions in p ∧ p are distinct even though their labels coincide. |
-| §3 relation operations | `Relations.comp`, `graph`, `sumMap`, `fstRel`, `sndRel`, `copair`, `reassoc` | Binary relations on types. These operations apply in particular to finite occurrence types. `Presentation.occurrenceMap` now descends from the source equation quotient and preserves identity, composition, and the specified operations; faithfulness remains open. |
+| §3 relation operations | `Relations.comp`, `graph`, `sumMap`, `fstRel`, `sndRel`, `copair`, `reassoc` | Binary relations on types. These operations apply in particular to finite occurrence types. `Presentation.occurrenceMap` now descends from the source equation quotient and preserves identity, composition, and the specified operations; Presentation.coherence proves faithfulness in that same original quotient. |
 | `eq:first-injection` | `Relations.first_injection`, `OccurrenceInterpretation.first_injection` | The relation equation is unconditional; its original-category counterpart is derived under the typed faithful-interpretation input. |
 | §6 symmetric fold (v5 `lem:symmetric`) | `Relations.hRel_eq_fold`, `hRel_independent`, `hRel_swap`; `OccurrenceInterpretation.fold_independent`, `fold_swap` | The relation fold is calculated from operations; categorical independence and swap invariance follow by original-category faithfulness. The manuscript identifies this map as mix followed by the codiagonal. |
 | §6 formal collapse argument (v5 `eq:second-block`) | `Relations.second_block`, `OccurrenceInterpretation.second_block` | The relation equation discards the first source block; the categorical equation follows by original-category faithfulness. This calculation belongs to the retained formal proof, not the replacement §5 proof. |
 | `lem:structural-isos` | Not implemented as this lemma | The manuscript derives the specified q_A and e_A isomorphisms from the published structural isomorphisms using original-category coherence and uniform substitution. |
 | §3 distinct projections | `Relations.projections_distinct`, `GeneratedModel.nonthin`, `Presentation.nonthin` | Every v5 §5 interface field is instantiated in a generated structural-fragment model, with distinct categorical projections and `GeneratedModel.empty_hom`. This does not identify the fragment model with B(P). Separately, `Presentation.nonthin p` proves distinct projections in the equation-generated source quotient; `Presentation.empty_hom` proves its Hom(top,bot) empty. |
 | `thm:coherence` | Presentation.coherence; Reduced.faithful/boolean_coherence; Presentation.interpretation | Boolean coherence is proved for the actual equation-generated presentation through actual PositiveCoherence, common atomic factorization and existing normalization transfers. Full intended faithful interface and signed-label invariant are instantiated. |
-| §14.2 source signed-literal reduction used toward §3 coherence | `Reduced.Term/Equation/Derives/Hom/category`, `inclusion`, `red_sound`, `representation` | Genuine restricted syntactic quotient on NormalForm P; 21 term/61 inherited equation schemas, atomic eta/epsilon only. Every full raw term has a reduced representative equal after inclusion to normalization transport; every full normal-form arrow is in the inclusion image. Equality reflection and quotient descent of red are not proved. |
+| §14.2 source signed-literal reduction used toward §3 coherence | Reduced.reduceHom/reductionFunctor/inclusionFunctor, normalizationNaturalIso, reduction_inclusion, recover_reduceHom/reduce_recoverHom | Actual quotient descent, functor laws, equality reflection, source natural isomorphism and reverse endpoint-cast recovery are proved for arbitrary P. Earlier raw red/representation proofs remain preserved. |
 | §14.2 contextual factorizations toward §3 coherence | `Reduced.Context`, `gConj/gDisj`, `gEta/gEpsilon`, `gEta_comp/gEpsilon_comp`; tagged context and composed occurrence laws | Unconditional equalities in Reduced.Hom for arbitrary P, all one-hole contexts and existing top-domain/bottom-codomain arrows (atomic η/ε specializations give (gη)/(gε)/(gηf)/(gεf)). Needed positive identities are directly derived from the unchanged equations. Common atomic factorization is now proved; §12.5 positive-fragment coherence remains open. |
 | §14.2 common atomic factorization toward §3 coherence | commonAtomicFactor; faithful_of_positive_coherence; Reduced.faithful | Complete shared supported factorization is instantiated with Gentzen.positive_coherence, giving full Reduced faithfulness without additional mathematical inputs. |
 | §12.5 algebra toward positive coherence | `Reduced.tensor_zero/tensor_zeroOf`, derived `Term.union/Derives.union/union`, union algebra and occurrence formulas | Unconditional for arbitrary P and existing reduced arrows; positive raw closure is explicit. Union-unit follows the direct p.291 structural proof. No new equation, empty-hom-set zero, coherence or fullness is assumed. Positive Gentzenization, unrestricted cut elimination and actual restricted/unrestricted positive coherence are now proved; see the current table. |
@@ -644,7 +694,7 @@ interpretation of variables, not one fixed valuation.
 | `lem:isolation` | `Isolation.selector_edge`, `coselector_edge`, `isolate_edge`, `normalized_literal_context` | Normal-form witness equations and the normalized contextual consequence under faithful interpretation, normalization, and signed-label inputs. The full original-category witness formulation is not a separate declaration; no actual presentation is inferred. |
 | `prop:all-contexts` | `ContextualCollapse.context_retract`, `all_contexts` | Typed substitution on arrows and endpoints, separate congruence closure, positive substitution, and negative substitution followed by double-negation transport. |
 | `lem:collapse` | `ContextualCollapse.total` | Same conclusion by different proofs: v6 §5 uses q_A and e_A; Lean retains the symmetric-fold argument described in §6. Both concern existing arrows and use no quotient faithfulness or cancellation of j_A. |
-| `thm:main` | `relative_maximality` is the conditional counterpart | The actual-presentation theorem remains open. The conditional theorem quantifies over every compatible congruence with explicit substitution closure. |
+| `thm:main` | Presentation.maximality; congruence_dichotomy; raw_maximality, PresentationMaximality.lean | Actual equation-generated source, arbitrary P : Type u, full proof congruences with explicit endosubstitution closure; complete inputs and exact raw/quotient correspondence. The symmetric-fold route is instantiated; the distinct short q/e proof remains open. |
 | `cor:models` | Not implemented | All interpretations; use nonempty P to choose a variable and interpret it as an arbitrary object. |
 | Appendix A | Partial; full coverage required | Tagged block bijection is implemented. Complete profiles, gamma/chi maps and all squares, ordinal bijections and block locator, delta and the book-operation bridge, skeleton/profile reconstruction, the worked example, and renaming with shared variables; connect the specializations to Proposition 4.2. |
 | Appendix B | Exact diagram correspondence required | Reuse the proved first-injection, constructed-zero and zero-law equations to certify the three displayed typed path equalities in the actual presentation. Record exact declaration links; the existence of the diagrams alone is not a Lean proof. |
@@ -660,8 +710,9 @@ operation-level relation laws. `fold_independent`, `fold_swap`,
 `first_injection`, and `second_block` derive the corresponding categorical
 equations by faithfulness in the original category. The `GeneratedModel`
 checks the entire v5 §5 interface, but includes no full Boolean presentation.
-`Congruence` records the compatibility needed by this argument; a bridge must
-restrict each actual proof congruence to it.
+`Congruence` records the compatibility needed by this argument;
+Presentation.ProofCongruence.fragment and fragment_closed now prove the actual
+full-source restriction and closure bridge.
 
 `Substitution.map σ f` has type `Hom (A.subst σ) (B.subst σ)` for
 `f : Hom A B`. Its per-substitution functor/operation laws are inputs;
@@ -691,14 +742,14 @@ proved substitution closed.
 `Presentation.Equation.relation`, `Derives.relation`, and `occurrenceMap` prove
 well-definedness of the occurrence interpretation and the operation images.
 Presentation.coherence now proves faithfulness, and Presentation.interpretation
-instantiates the complete intended OccurrenceInterpretation. The final full-source
-congruence bridge and actual relative_maximality instantiation remain continuing duties. `Presentation.normalization`
+instantiates the complete intended OccurrenceInterpretation. The full raw/quotient source proof-congruence and closure correspondence now
+instantiates Presentation.maximality and its dichotomy. `Presentation.normalization`
 now constructs the existing normalization record with occurrence graphs and
 signed coordinate correspondence. `Presentation.occurrence_signedLabel` now
 proves global signed-label preservation directly, with normal-form literal
-and transport consequences. Derived contravariant arrow negation/naturality,
-congruence restriction, and the remaining Appendix A/model correspondences are
-still open. The reduced signed-literal syntax and existential representation
+and transport consequences. Derived contravariant arrow negation, natural DN/DM comparisons and congruence
+restriction are now proved. Remaining negation/substitution compatibility,
+Appendix A/model correspondences and the short proof are still open. The reduced signed-literal syntax and existential representation
 bridge and actual Reduced.faithful are now constructed, with occurrence
 compatibility and the instantiated original-category coherence transfer. See the
 [reduction report](SIGNED_LITERAL_REDUCTION_REPORT.md),
@@ -711,9 +762,9 @@ The [contextual factorization report](CONTEXTUAL_FACTORIZATION_REPORT.md) record
 the next completed source step. The context functor descends through Derives;
 its occurrence action fixes surrounding tags and acts on the distinguished hole.
 The two “same pairs” comparisons use explicit Sum.inl endpoint embeddings.
-Neither these identities nor the earlier representation theorem proves reduced
-faithfulness. The source's common atomic factorization and complete support are now proved.
-The §12.5 positive-fragment coherence input remains an obligation.
+These earlier identities remain preserved. Common atomic factorization, complete
+support and actual §12.5 positive coherence now prove Reduced.faithful; see the
+current coherence/maximality tables for the assembled result.
 
 The [common atomic report](COMMON_ATOMIC_FACTORIZATION_REPORT.md) records the
 shared factorization and full auxiliary-edge exclusion. Positive describes the

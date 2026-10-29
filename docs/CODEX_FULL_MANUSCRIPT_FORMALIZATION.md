@@ -1,6 +1,56 @@
 # Complete Lean formalization of manuscript v7
 
-## Current Positive, Reduced and Boolean coherence (29 October 2026)
+## Current actual source maximality and derived negation (29 October 2026)
+
+`Presentation.maximality`, `congruence_dichotomy` and `raw_maximality` are proved
+for the actual equation-generated quotient and full proof congruences. Every
+relative-maximality input is instantiated. P is arbitrary, hence includes the
+manuscript's nonempty case. Totality ranges only over existing hom-sets. The three
+milestones remain distinct from complete-paper certification. The short q_A/e_A
+proof, model corollary and remaining operation/appendix claims continue.
+
+| Manuscript/source claim | Exact declarations and files | Scope/status |
+| --- | --- | --- |
+| Quotient reduction and inclusion | Reduced.reduceHom, reductionFunctor/inclusionFunctor; ReducedQuotientReduction.lean, ReducedReductionFunctor.lean | Actual typed quotient lift, identities, comp/tensors, equality reflection and explicit recovery casts; arbitrary P : Type u. |
+| Normalization equivalence laws | normalizationNaturalIso, reduction_inclusion, recover_reduceHom/reduce_recoverHom; ReducedReductionFunctor.lean, ReducedRecovery.lean | Source-side natural isomorphism and reverse recovery at exact endpoint casts. |
+| §2 contravariant negation | Reduced.Term.dual, dual_relation, dualHom_involutive; Presentation.negationFunctor; ReducedDual*.lean, PresentationNegationFunctor.lean | Complete raw reflection, quotient descent, id/reversed comp; no Gentzen-proof duality assumption. |
+| Natural DN/DM comparisons | dnOut_natural/dnIn_natural, all four dmConj/Disj Out/In_natural, doubleNegationNaturalIso; PresentationNegationNaturality.lean | Actual original-category naturality and existing two-sided comparison laws, including constant inverse laws. |
+| Explicit source negation syntax | forwardTerm/backwardTerm, their denotation laws, Term.negate/negateTerm_denotes/negate_derives; PresentationNormalizationTerms.lean, PresentationNegationTerms.lean | Uses only the existing primitive source grammar and generated equality. |
+| Original negation occurrence graph | toOcc_neg; occurrence_negate; PresentationNegationCoordinates.lean, PresentationNegationOccurrence.lean | Exact converse at original tags, both signs and repeated positions. |
+| Full proof-congruence correspondence | ProofCongruence, RawProofCongruence, fragment, toRaw/toQuotient, raw_quotient_rel/quotient_raw_rel; PresentationProofCongruence.lean | All primitive arrow-argument operations and actual derived negation; pair/copair derived; both pointwise inverse correspondences. |
+| Uniform closure correspondence | toRaw_closed/toQuotient_closed, fragment_closed; PresentationProofCongruence.lean | Explicit endosubstitution closure transfers at both typed levels. No fixed-kernel closure assumption. |
+| thm:main | Presentation.maximality, congruence_dichotomy, raw_maximality; PresentationMaximality.lean | Actual source theorem, equality/total dichotomy and raw generated-equality formulation; every relative input proved. |
+| Remaining full-paper scope | Short q/e proof, model corollary, further operation/substitution/ordinal/diagram claims | Open. In particular derived-negation/whole-arrow-substitution compatibility is not inferred from the congruence correspondence. |
+
+The original symmetric-fold route supplies this actual maximality instance; its
+source, all completed cuts/coherence, prior reports, stash and manuscript versions
+remain preserved. Milestone I's intended faithful interface and milestone II's
+conditional theorem remain complete. Milestone III's actual maximality theorem
+and its raw/quotient closure bridge are now instantiated. This is not the full-
+paper endpoint: prove the separate short proof and every remaining v7 claim.
+
+Evidence: provenance/wsl-full-source-bridges/. Strict pinned verification, all
+31 public check files, actual source witnesses and 52 expected rejection controls
+are recorded with exact counts, exits and hashes in FINAL_VERIFICATION.json.
+The checked source archive is read back and compared with committed bytes.
+See [report](SOURCE_MAXIMALITY_REPORT.md),
+[hostile review](reviews/SOURCE_MAXIMALITY_HOSTILE.md),
+[writing review](reviews/SOURCE_MAXIMALITY_WRITING.md). Reviews are local author-
+side. Independent replay, Comparator, official/service verification and publication
+were not performed. DELIVERY_REGISTER.json records verified conflict-preserving
+repository/Downloads copies. No manuscript defect was established; all nine
+manuscript blobs and ten diagrams remain unchanged.
+
+Current continuation: construct the particular q_A/e_A inverses and prove the
+short collapse route directly modulo congruence, preserving the symmetric-fold
+route. Complete negation/substitution compatibility and whole-arrow substitution
+operation/coordinate laws, the universal-model corollary and every remaining
+claim in the three v7 appendices. Reuse all completed results without reopening
+settled source/rank/atomization decisions. Historical checkpoints below preserve
+their dated scope; this active table supersedes their earlier open statuses.
+
+
+## Retained Positive, Reduced and Boolean coherence checkpoint (29 October 2026)
 
 `Gentzen.positive_coherence : PositiveCoherence P`, `Reduced.faithful : Faithful P`
 and `Presentation.coherence` are proved for arbitrary P. The full intended
@@ -518,15 +568,15 @@ model universe general enough to express the printed corollary.
 
 ## Immediate continuation and dependency order
 
-811eceeb and all successor reviews are incorporated. All unrestricted cut-
-elimination interfaces and actual Positive, Reduced and Boolean coherence are now
-proved. Presentation.interpretation P instantiates the full intended occurrence
-interface, with signed labels and a nonthin Nat witness. Milestone I's intended
-interface requirement is closed. Reuse every completed proof. Complete the full
-source congruence/uniform-substitution correspondence and instantiate actual
-maximality, then the short q_A/e_A route, model corollary and all remaining v7
-claims under the unchanged full-paper endpoint. Preserve the accepted recursion
-contract below as the already discharged cut-elimination argument.
+811eceeb and all successor reviews are incorporated. All cut elimination,
+Positive/Reduced/Boolean coherence, intended occurrence interpretation, actual
+quotient reduction/inclusion and recovery, derived negation/naturality, full
+raw/quotient proof-congruence correspondence and actual maximality are proved.
+The actual main theorem and its equality/total dichotomy now instantiate every
+relative input. Reuse them. Continue the separate short q_A/e_A proof, remaining
+negation/substitution compatibility and operation/coordinate laws, universal-
+model corollary and all remaining v7 claims. The three milestones do not certify
+the complete paper. Preserve the discharged recursion contract below.
 
 At unchanged degree use the original inherited clean child and strict selected
 rank; do not infer a bound after re-cleaning or head routing. Final cut-free
