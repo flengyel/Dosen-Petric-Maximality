@@ -68,11 +68,15 @@ original-rank induction, strong degree induction and arbitrary-G normalization
 now prove actual CutElimination P and AtomizedCutElimination P inhabitants.
 Actual PositiveCoherence, Reduced faithfulness and Boolean coherence now
 instantiate Presentation.interpretation P with signed labels in the intended
-category. Actual full proof-congruence correspondence, substitution-closure transfer,
-derived arrow negation/naturality and actual maximality are now proved. Continue
-remaining operation/substitution compatibility, original isolation witnesses,
-model corollary and every full-paper obligation. The distinct short q_A/e_A route
-is now proved with explicit inverses and actual short_maximality. Preserve both routes. Reuse all completed binary, unary, structural,
+category. Actual full proof-congruence correspondence, substitution closure,
+both actual
+maximality routes, original isolation, complete whole-arrow block/label squares,
+negation/substitution compatibility, Appendix B, categorical consequences and
+exact symmetric-fold correspondence are now proved. Continue full-source model
+interpretations and the model corollary, remaining substitution-action and
+Appendix A profile/ordinal/renaming/example claims, and final manuscript scope
+refresh. Preserve both proof routes and every completed result. Reuse all
+completed binary, unary, structural,
 principal, cleaning and descent results. Retain earlier source/rank/atomization decisions.
 The existing three milestones remain distinct;
 even actual-presentation maximality alone does not certify the entire paper.

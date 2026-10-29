@@ -1,6 +1,50 @@
 # Manuscript v7: statements and formal scope
 
-## Current short q_A/e_A proof (29 October 2026)
+## Current original isolation and complete substitution square (29 October 2026)
+
+The printed original-endpoint isolation theorem, source nonzero identities and
+cartesian-closure obstruction, all Appendix B paths and exact symmetric-fold
+correspondence now have actual declarations. All 31 primitive constructors and
+the actual quotient satisfy the whole-arrow occurrence-block substitution square;
+substitution commutes with derived negation and the full arrow operations. Both
+proved actual maximality routes are preserved. The model corollary, remaining
+substitution-action composition and Appendix A profile/ordinal claims continue.
+
+| Manuscript/source anchor | Exact declarations and files | Scope/status |
+| --- | --- | --- |
+| Lemma 4.1 original witnesses | Isolation.original_composite/original_witnesses; Presentation.occurrence_isolation; OriginalIsolation.lean | Original l∧bot→A and B→l∨top, both equations and permitted interchange; all actual inputs instantiated, arbitrary P : Type u. |
+| §3 nonzero identity/global points | top_hom_subsingleton, literal_identity_ne_zero/identity_ne_zero/identity_ne_primitive_zero; PresentationConsequences.lean | Both literal signs, primitive/constructed zero, no hom-set existence added. |
+| §3 cartesian-closure obstruction | ExponentialData.hom_unique; no_projection_exponential/not_cartesian_closed; CartesianClosureObstruction.lean | Standard evaluation/beta/eta; global-point uniqueness and unit retraction, distinct projections, actual variable p required. |
+| Appendix B, three diagrams | first_triangle, zero_diagram/zero_primitive, zero_square; ManuscriptStructuralDiagrams.lean | Every displayed path component typed and exact original source equalities proved. |
+| §6 displayed symmetric fold | tensor_prodMap, fold_source_mix/fold_manuscript, mix/fold_parameter_independent, fold_symmetric; PresentationSymmetricFold.lean | Exact mix;codiagonal/copair identities and pair-of-projections symmetry, original coherence only. |
+| Actual substitution label square | contract_injective/contract_eq_iff/contract_label/expand_label/fiber_identity; FormulaSubstitutionCoordinates.lean | Actual dependent block bijection, labels, empties, repeated tags; arbitrary source/target variable universes. |
+| Complete raw and quotient block square | Term.substitution_coordinates; occurrence_substitute_coordinates/expanded; PresentationSubstitution*.lean | Exhaustive 31 primitive constructors, exact inner-coordinate equality, old signed-label invariant; no injective-label or nonempty-block assumptions. |
+| Full substitution operation preservation | substitute_negate/negate_subst_derives/substitutionFunctor; tensor/pair/copair/zero laws; PresentationSubstitutionOperations.lean | Actual derived-negation compatibility, raw admissibility, categorical id/comp and all source arrow operations. |
+| Formula substitution action | subst_identity/subst_composition/subst_ext; FormulaSubstitutionLaws.lean | Actual object-level identities between independent variable universes. General arrow-action composition transports remain separate. |
+| Remaining full-paper scope | Model, arrow-action composition, Appendix A profiles/gamma/chi/ordinals/renaming/example and final manuscript scope refresh | Open; do not equate the complete block theorem with the entire Appendix A or certify the whole paper. |
+
+Evidence: provenance/wsl-full-paper-claims/. Strict pinned verification, all 33
+public files and 61 rejection controls have exact counts/exits/hashes in
+FINAL_VERIFICATION.json. Checked sources are archived, read back and compared
+with committed bytes. See [report](FULL_PAPER_CORRESPONDENCES_REPORT.md),
+[hostile review](reviews/FULL_PAPER_CORRESPONDENCES_HOSTILE.md),
+[writing review](reviews/FULL_PAPER_CORRESPONDENCES_WRITING.md). Reviews are local
+author-side; independent replay, Comparator, official/service verification and
+publication were not performed. DELIVERY_REGISTER.json retains exact verified
+conflict-preserving repository/Downloads paths. The stash and all nine manuscript
+blobs remain preserved. V7's dated §6 status paragraph is historical after these
+proofs; a coordinated scope refresh is explicitly pending before full-paper
+certification. No false mathematical theorem was established.
+
+Continue the full-paper contract: construct full-source model interpretations,
+their substitution composition and universal-agreement congruence, then prove
+the model corollary and every remaining Appendix A claim. Complete general arrow-
+substitution action transports and the final manuscript scope refresh. Preserve
+all completed proofs, both maximality routes and every accepted correction.
+The retained dated checkpoints below preserve their historical scope.
+
+
+## Retained short q_A/e_A proof checkpoint (29 October 2026)
 
 The particular manuscript q_A and e_A now have explicit raw primitive-arrow
 inverses and both original inverse equations. The distinct short collapse proof
@@ -697,11 +741,11 @@ interpretation of variables, not one fixed valuation.
 | §2 zero arrow | `ZeroIdentity.zeroOf` | Requires f : Hom A B. No arrow is supplied to an empty hom-set. |
 | §2 witness independence and absorption | `zeroOf_independent`, `commute`, `postcompose`, `precompose`, `zero_idempotent` | All categories with the explicit zero-identity law. `Presentation.zeroConstruction_eq` now proves that formula equals primitive zero in the source quotient; `Presentation.zeroIdentity` uses the construction. |
 | §3 formulas and positions | `Formula`, `Formula.Occ`, `Formula.label`, `Formula.subst` | Arbitrary variable types; negation preserves positions; each connective uses Sum tags; constants have Empty positions. |
-| `eq:occ-substitution` | `Formula.expand`, `contract`, `contract_expand`, `expand_contract` | For every substitution σ : P → Formula Q and formula A, mutually inverse maps between Occ(A[σ]) and Σ x : Occ(A), Occ(σ(label A x)). No nonemptiness assumption is needed. |
+| `eq:occ-substitution` | Formula.expand/contract and inverse laws; contract_label/expand_label; Term.substitution_coordinates and occurrence_substitute_coordinates/expanded | Actual tagged block bijection, label square and complete raw/quotient whole-arrow block square are proved for arbitrary substitutions and both variable universes. Appendix A profiles/ordinals/book correspondence remain separate. |
 | §3 repeated variables | `Formula.repeated_positions_distinct` | The two positions in p ∧ p are distinct even though their labels coincide. |
 | §3 relation operations | `Relations.comp`, `graph`, `sumMap`, `fstRel`, `sndRel`, `copair`, `reassoc` | Binary relations on types. These operations apply in particular to finite occurrence types. `Presentation.occurrenceMap` now descends from the source equation quotient and preserves identity, composition, and the specified operations; Presentation.coherence proves faithfulness in that same original quotient. |
 | `eq:first-injection` | `Relations.first_injection`, `OccurrenceInterpretation.first_injection` | The relation equation is unconditional; its original-category counterpart is derived under the typed faithful-interpretation input. |
-| §6 symmetric fold (v5 `lem:symmetric`) | `Relations.hRel_eq_fold`, `hRel_independent`, `hRel_swap`; `OccurrenceInterpretation.fold_independent`, `fold_swap` | The relation fold is calculated from operations; categorical independence and swap invariance follow by original-category faithfulness. The manuscript identifies this map as mix followed by the codiagonal. |
+| §6 symmetric fold (v5 `lem:symmetric`) | Presentation.fold_source_mix/fold_manuscript, mix_parameter_independent/fold_parameter_independent/fold_symmetric, PresentationSymmetricFold.lean | Exact categorical identification with displayed mix followed by copair(id,id), parameter independence and pair-of-projections symmetry in the original source. Existing relation and generic interface equations preserved. |
 | §6 formal collapse argument (v5 `eq:second-block`) | `Relations.second_block`, `OccurrenceInterpretation.second_block` | The relation equation discards the first source block; the categorical equation follows by original-category faithfulness. This calculation belongs to the retained formal proof, not the replacement §5 proof. |
 | `lem:structural-isos` | ShortProof.q_definition/e_definition, q_qInverse/qInverse_q, e_eInverse/eInverse_e; PresentationShortQ.lean, PresentationShortE.lean | Complete direct correspondence: particular manuscript maps, explicit original raw inverses and both inverse laws for every formula A and P : Type u. Ten raw/quotient substitution equations give exact cross-universe transport. |
 | §3 distinct projections | `Relations.projections_distinct`, `GeneratedModel.nonthin`, `Presentation.nonthin` | Every v5 §5 interface field is instantiated in a generated structural-fragment model, with distinct categorical projections and `GeneratedModel.empty_hom`. This does not identify the fragment model with B(P). Separately, `Presentation.nonthin p` proves distinct projections in the equation-generated source quotient; `Presentation.empty_hom` proves its Hom(top,bot) empty. |
@@ -731,13 +775,13 @@ interpretation of variables, not one fixed valuation.
 | Blocked/reducible occurrences and finite selection classification | `BlockedL/R`, `ReducibleL/R`, `ProofAddress.ProperContains`, `PortOrigin`, `ContractionBlock.classificationL/R` and source-order macros | Seven actual source left patterns and separately typed canonical right encodings with explicit first-retention comparisons. Reducibility retains topmost-cut, cluster/address/position, unblocked and proper blocked-ancestor conditions. Every arity≥2 cut-free input has a unique seven-regime selected profile with complete per-position origin evidence; basis/cut excluded by proof. This is classification, not a reducer. Constructed mixed-premise mix W5 now has both addressed descendant theorems. Full profile dispatch, logical W5/W6, remaining local cases, outside-site ranks and global G2 remain open; see the follow-up report. |
 | Normalization, §3 | `Presentation.normalization`; `NegationNormalization.forward_backward/backward_forward`, `forward_graph/backward_graph`, `transport_apply` | Actual source-quotient instance for every P, with signed-leaf normal forms, both inverse arrows, inverse tagged coordinates, literal/label/polarity correspondence, Empty cases, and relation transport. Recovery/injectivity reuse the existing theorems. No coherence or naturality premise. |
 | Global signed-label preservation, §3 | Presentation.occurrence_literal; interpretation_signedLabel | The direct signed-label theorem now instantiates the invariant of the actual Presentation.interpretation P, for arbitrary P and every source arrow. |
-| `lem:isolation` | `Isolation.selector_edge`, `coselector_edge`, `isolate_edge`, `normalized_literal_context` | Normal-form witness equations and the normalized contextual consequence under faithful interpretation, normalization, and signed-label inputs. The full original-category witness formulation is not a separate declaration; no actual presentation is inferred. |
+| `lem:isolation` | Isolation.original_witnesses; Presentation.occurrence_isolation, OriginalIsolation.lean | Complete exact original-endpoint statement for arbitrary P : Type u, distinct existing f/g, signed literal, actual i/r, both equalities and permitted interchange. All source normalization/faithfulness/labels instantiated. |
 | `prop:all-contexts` | `ContextualCollapse.context_retract`, `all_contexts` | Typed substitution on arrows and endpoints, separate congruence closure, positive substitution, and negative substitution followed by double-negation transport. |
 | `lem:collapse` | ShortProof.total, terminal_id/terminal_pair, r_i, projection_id, diagonal_u, projections; PresentationShortTerminal.lean, PresentationShortProjection.lean | Complete distinct short q/e proof directly modulo arbitrary Congruence (Presentation.operations P), assuming every K_A. Original inverse equations and original coherence only; no quotient faithfulness or cancellation of j_A. Existing ContextualCollapse.total symmetric-fold route preserved. |
 | `thm:main` | Presentation.short_maximality and Presentation.maximality; congruence_dichotomy; raw_maximality | Both actual source proof routes are instantiated. P : Type u arbitrary, full proof congruences and explicit uniform endosubstitution closure; all inputs and raw/quotient correspondence proved. |
 | `cor:models` | Not implemented | All interpretations; use nonempty P to choose a variable and interpret it as an arbitrary object. |
-| Appendix A | Partial; full coverage required | Tagged block bijection is implemented. Complete profiles, gamma/chi maps and all squares, ordinal bijections and block locator, delta and the book-operation bridge, skeleton/profile reconstruction, the worked example, and renaming with shared variables; connect the specializations to Proposition 4.2. |
-| Appendix B | Exact diagram correspondence required | Reuse the proved first-injection, constructed-zero and zero-law equations to certify the three displayed typed path equalities in the actual presentation. Record exact declaration links; the existence of the diagrams alone is not a Lean proof. |
+| Appendix A | Actual block bijection, label and whole-arrow squares complete; profiles/ordinals remain open | Formula.expand/contract, contract_label/expand_label and all source substitution squares are instantiated. Complete profiles, gamma/chi and all their squares, ordinal bijections/locator, delta/book bridge, skeleton/profile reconstruction, worked example and noninjective renaming/specializations. |
+| Appendix B | ManuscriptDiagrams.first_triangle/zero_diagram/zero_primitive/zero_square, ManuscriptStructuralDiagrams.lean | Complete exact source paths: typed triangle; five named arrows and their zero identity; arbitrary parallel f/g square. Uses existing source equations, no duplicated proof assumptions. |
 
 The structural record fields are hypotheses of the conditional theorems.
 They are not substitute definitions of the free Boolean category. Adding fields
@@ -775,8 +819,9 @@ endpoint substitution and its preservation of the source-generated equality.
 `Substitution` interface, including the constructed zero.
 `Presentation.doubleNegation` instantiates `DoubleNegation` from the two n-arrows
 and their inverse equations. These instances use no coherence hypothesis.
-Schema identity/composition with endpoint identifications and occurrence-block
-transport remain separate obligations. No arbitrary extra congruence is thereby
+General arrow-action identity/composition with endpoint identifications remains
+a separate obligation. The actual occurrence-block and label transport square
+is now completely proved for all source constructors and the quotient. No arbitrary extra congruence is thereby
 proved substitution closed.
 
 `Presentation.Equation.relation`, `Derives.relation`, and `occurrenceMap` prove
@@ -788,8 +833,9 @@ now constructs the existing normalization record with occurrence graphs and
 signed coordinate correspondence. `Presentation.occurrence_signedLabel` now
 proves global signed-label preservation directly, with normal-form literal
 and transport consequences. Derived contravariant arrow negation, natural DN/DM comparisons and congruence
-restriction are now proved. Remaining negation/substitution compatibility,
-Appendix A/model correspondences remain open. The distinct short proof is now
+restriction are now proved. Negation/substitution compatibility is now proved by substitute_negate and
+negate_subst_derives. Remaining arrow-action, Appendix A/profile/ordinal and
+model correspondences stay open. The distinct short proof is now
 complete by Presentation.short_maximality. The reduced signed-literal syntax and existential representation
 bridge and actual Reduced.faithful are now constructed, with occurrence
 compatibility and the instantiated original-category coherence transfer. See the

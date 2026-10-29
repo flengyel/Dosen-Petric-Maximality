@@ -96,3 +96,12 @@ All completed constructor/rank/coherence/source-main results persist. The exact
 q_A/e_A inverses, direct short congruence collapse and actual short_maximality
 are now proved; see SHORT_QE_REPORT.md. Both maximality routes are retained.
 Remaining model, substitution/operation/isolation and appendix duties continue.
+
+## Further full-paper correspondences (29 October 2026)
+
+The source original-isolation witnesses, non-cartesian-closure consequence,
+Appendix B and exact fold/mix correspondence are now proved. All 31 source
+constructors have actual whole-arrow substitution block squares and negation
+commutes with substitution. See FULL_PAPER_CORRESPONDENCES_REPORT.md. Constructor/
+cut/rank/coherence results and both actual main routes remain preserved. Model,
+remaining Appendix A/action laws and the final scope refresh continue.

@@ -1,5 +1,27 @@
 # Manuscript corrections and source errata
 
+## Further exact correspondences and retained scope update (29 October 2026)
+
+Original isolation, source nonzero identities/global points, the cartesian-
+closure obstruction, Appendix B paths, the exact fold/mix identity and complete
+raw/quotient substitution block square are now proved. Derived negation commutes
+with whole-arrow substitution. All affected active maps and continuation are
+reconciled. An early proof attempt incorrectly used a reverse-arrow helper across
+product/coproduct endpoints; Lean rejected it. All affected cases now use typed
+occurrence functions and the actual two endpoint label maps. Parallel usages
+were checked, and the complete 31-constructor theorem compiles. This was an
+implementation typing correction, not a manuscript mathematical defect.
+
+Pending scope refresh FP-SCOPE-20261029: v7 §6, the paragraph beginning “For the
+equation-generated”, states faithfulness remains unproved and the full source
+inputs are not instantiated. This dated development-status paragraph is now
+historical after the completed source proofs. It requires one coordinated final
+scope update across manuscript and linked records before full-paper certification;
+that prose repair is not reported as completed. Preserve prior versions and all
+ten diagrams, rebuild/inspect any changed TeX, and record exact source/PDF hashes.
+No false mathematical theorem was established. Current nine manuscript blobs,
+accepted corrections, all completed proofs and the original stash remain intact.
+
 ## Exact short q_A/e_A proof continuation (29 October 2026)
 
 The particular q_A and e_A have concrete raw inverses, both original inverse

@@ -1,9 +1,10 @@
-CONTINUE V7 AFTER BOTH MAXIMALITY ROUTES: MODEL AND REMAINING PAPER CLAIMS
+CONTINUE V7 AFTER COMPLETE BLOCK SQUARE: MODEL AND APPENDIX A
 
 Read AGENTS.md, CODEX_FULL_MANUSCRIPT_FORMALIZATION.md, current statement,
 coverage, correction, validation and constructor/tag records, and
 CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt with both 77199AC reviews.
-Read SHORT_QE_REPORT.md and its hostile/writing reviews, reusing
+Read FULL_PAPER_CORRESPONDENCES_REPORT.md and its hostile/writing reviews, reusing
+SHORT_QE_REPORT.md and its hostile/writing reviews, reusing
 SOURCE_MAXIMALITY_REPORT.md and its hostile/writing reviews, reusing
 GENTZEN_COHERENCE_REPORT.md and its hostile/writing reviews, reusing
 GENTZEN_CUT_ELIMINATION_REPORT.md and its hostile/writing reviews, reusing
@@ -22,7 +23,8 @@ GENTZEN_BLOCKED_GAMMA_REPORT.md and its reviews, plus
 GENTZEN_DISJL_BINARY_CUTS_REPORT.md and all its reviews, plus
 all preceding reports, accepted corrections and sections 4–7 of
 CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt and the later B8FCD28 contract.
-Prior continuation: history/CODEX_NEXT_SESSION_D68DA50.txt, archived verbatim.
+Prior continuation: history/CODEX_NEXT_SESSION_D8DC710.txt, archived verbatim.
+The D68DA50 continuation remains preserved.
 The A80A353 continuation remains preserved.
 The 75B8E48 continuation remains preserved.
 The 263C452 continuation remains preserved.
@@ -205,13 +207,36 @@ Both actual main proofs are now preserved; the full paper still has remaining
 model, negation/substitution/operation, isolation, non-cartesian-closure and
 appendix claims. Do not reopen the completed short construction.
 
-Current local evidence: six production modules, all 32 public files and 55
-expected rejections, full strict dependency/source audit and checked/committed
-archive in provenance/wsl-short-proof/. Actual counts/exits/hashes and delivery
-paths are retained there. Actual-main proof/receipt 640cc9e / d68da50 and
-coherence proof/receipt 8c9e0f3 / a80a353, all prior proofs, stash and receipts
-persist. Reviews are local author-side; independent replay, Comparator and
-official/service checks were not performed.
+Further full-paper claims are now proved: Presentation.occurrence_isolation
+has actual original-endpoint witnesses, both equations and the permitted swap.
+top_hom_subsingleton, literal_identity_ne_zero and no_projection_exponential/
+not_cartesian_closed close the stated global-point/nonzero/closure consequences.
+Appendix B's three exact typed source paths and the displayed fold/mix/copair
+identification, parameter independence and symmetry are proved.
+
+Term.substitution_coordinates exhausts all 31 primitive constructors;
+occurrence_substitute_coordinates/expanded give the actual quotient block square.
+Formula.contract_label/expand_label give the actual label square. Fiber relation
+identity/comp/converse/graph laws retain both old and inner tags, including empty
+blocks. Typed occurrence functions preserve the distinct source formulas.
+substitute_negate and negate_subst_derives prove actual/raw negation compatibility;
+substitutionFunctor and both tensors/pair/copair/zero laws preserve the full arrow
+operations. Formula identity/composition/extensionality are proved; general
+arrow-action composition transports and full Appendix A remain separate duties.
+
+Current local evidence: fourteen production modules, all 33 public files and 61
+expected rejections; strict full dependency/source audit and checked/committed
+archive in provenance/wsl-full-paper-claims/. Exact counts/exits/hashes and
+delivery paths are retained there. Short-proof proof/receipt 3d30b77 / d8dc710,
+actual-main 640cc9e / d68da50, coherence 8c9e0f3 / a80a353 and all prior results,
+stash and receipts persist. Reviews are local author-side; independent replay,
+Comparator and official/service checks were not performed.
+
+Pending FP-SCOPE-20261029: v7 §6's dated paragraph still describes faithfulness
+and source inputs as unproved. Preserve the versions/diagrams and perform one
+coordinated final scope refresh before whole-paper certification, with TeX build/
+inspection and correction/map records. It is not a false mathematical theorem;
+the prose refresh remains explicitly unfinished.
 
 CONCRETE CONTINUATION
 
@@ -230,10 +255,12 @@ CutElimination P and AtomizedCutElimination P inhabitants preserve exact origina
 sequents and Reduced equality. No conditional handler bundle remains in these
 endpoints. Reuse them; do not reopen their accepted recursion contract.
 
-1. Complete remaining negation/substitution compatibility and general operation/
-coordinate laws needed for the model corollary. Finish original isolation witnesses,
-non-cartesian-closure and every mathematical claim in all three v7 appendices.
-Reuse actual maximality and both proof routes without reopening them. All three milestones and
+1. Construct full-source model interpretations and composition with substitution;
+prove the universal-agreement congruence and model corollary. Complete general
+arrow-substitution action transports and all Appendix A profiles/gamma/chi/ordinal/
+renaming/example/book correspondences, including empty profiles and both literal
+signs. Finish the recorded manuscript scope refresh. Reuse all completed claims
+and both main routes without reopening them. All three milestones and
 the complete-paper endpoint remain distinct.
 
 PERSISTENT REQUIREMENTS
@@ -254,7 +281,7 @@ unchanged TeX. Propagate an established correction across its full scope and ver
 Use pinned Lean 4.35.0, module headers and files below 10,000 lines. One heavy
 build/audit at a time; retain actual logs and exits in .codex-work. Run verify.sh,
 all exact public/actual witness checks, full dependency/source closure and all
-55 controls. Apply both required local reviews to actual milestones.
+61 controls. Apply both required local reviews to actual milestones.
 Commit/push verified scope without force and compare checked/committed bytes.
 
 DELIVERY
@@ -267,7 +294,7 @@ at 1d09a27 / ecfe8da and seventeen-entry left-gammaDisj register at
 17b25c6 / fab64c2 / 2f66237, and the right-gammaConj proof/receipt 5278d5e /
 787ee6c, plus the sequential-conjunction proof/receipt 4e5c3b1 / 668fb50, and the sequential-disjunction proof/receipt 5e42101 / 0cef4a4, plus the first-disjunction proof/receipt cecdc79 / d59cb83, plus the second-disjunction proof/receipt f81846b / 8a7ee15, plus the three-copy/all-BlockedL proof/receipt bd56c03 / 1a89a84, plus the first-conjunction proof/receipt a4f265e / 375356f, plus the second-conjunction proof/receipt 7d14053 / 19b3002 and the all-fourteen
 proof/receipt 80b9472 / 263c452 and unrestricted cut-elimination proof/receipt
-852502b / 75b8e48 and actual-coherence proof/receipt 8c9e0f3 / a80a353 and actual-main proof/receipt 640cc9e / d68da50. Deliver all new reports/reviews and changed records
+852502b / 75b8e48 and actual-coherence proof/receipt 8c9e0f3 / a80a353 and actual-main proof/receipt 640cc9e / d68da50 and short-proof proof/receipt 3d30b77 / d8dc710. Deliver all new reports/reviews and changed records
 from committed bytes to /mnt/c/Users/fleng/Downloads, preserve differing files
 with commit suffixes, verify every copy and retain exact paths/hashes in the
 current delivery register. Report any failure explicitly. Keep prior receipts.
