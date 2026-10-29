@@ -56,8 +56,9 @@ original-child strict inequalities and the actual gammaDisj source equation.
 BlockedL.conjunction and BlockedR.disjunction also have their actual sequential
 source equations and original-rank steps. BlockedL.disjunctionFirst also has its
 actual sequential source/rank proof, closing the concrete Appendix C p.262 row
-with fresh right-premise rho.left=1 and total h.rho.right+1≥2. Complete the five
-remaining logical blocked reductions and global induction. Reuse all completed binary, unary, structural,
+with fresh right-premise rho.left=1 and total h.rho.right+1≥2. BlockedL.disjunctionSecond
+also has its actual source/rank construction. Complete the four remaining logical
+blocked reductions and global induction. Reuse all completed binary, unary, structural,
 principal, cleaning and descent results. Retain earlier source/rank/atomization decisions.
 The existing three milestones remain distinct;
 even actual-presentation maximality alone does not certify the entire paper.

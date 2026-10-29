@@ -1,6 +1,17 @@
 # Manuscript corrections and source errata
 
-## Both Appendix C correspondences proved (29 October 2026)
+## Second-disjunction continuation (29 October 2026)
+
+BlockedL.disjunctionSecond now has its actual left2/disjLLast source equation,
+original second-child full Clean/strict descent, fresh native G.disjL full Clean
+and instantiated two-call rank step. The first context stays fixed even when its
+formulas equal C; exact positive/negative tag checks preserve this distinction.
+Ten blocked families are complete and four remain. Both Appendix C concrete rows
+remain proved by their existing declarations. No new manuscript defect was found;
+all nine manuscript blobs, stash and receipts persist. See
+GENTZEN_BLOCKED_DISJ_SECOND_REPORT.md and its two local reviews.
+
+## Historical ninth-family checkpoint: both Appendix C correspondences proved (29 October 2026)
 
 BlockedL.disjunctionFirst now has its actual left2/disjLLast source equation,
 original first-child full Clean/strict descent, fresh native G.disjL full Clean,

@@ -1,53 +1,53 @@
 # Complete Lean formalization of manuscript v7
 
-## Current nine blocked reductions and both Appendix C correspondences (29 October 2026)
+## Current ten blocked reductions (29 October 2026)
 
-All twelve binary branches, all six gamma blocked families, BlockedL.conjunction,
-BlockedR.disjunction and BlockedL.disjunctionFirst have actual source equations
-and instantiated original-rank steps. Five blocked families and global induction
-remain open. Successor 811eceeb, all earlier results/corrections and receipts persist.
+All twelve binary branches, all six gamma families, both unary logical blocked
+families and BlockedL.disjunctionFirst/Second have actual source equations and
+instantiated original-rank steps. Four blocked families and global induction
+remain open. Both Appendix C concrete source/rank correspondences are proved.
+All earlier results, corrections, source bytes and delivery receipts persist.
 
-BlockedDisjFirst.parent_source and source_equation prove the exact left2/disjLLast
-source and complete selected Reduced equality. original_descent supplies the
-original first child full Clean and strict original rank before routing, with
-unchanged h/z. Structural adapter equations put component routes below literal
-G.disjL k g₀ and defer both binary reconstruction adapters until after its cut.
-fresh_clean_and_rank and blockedL_disjunctionFirst_rank_step discharge both ih
-calls without a returned-rank bound. Exact duplicate/context repair and final
-atomization yield the original-output CutFree/Atomized proof and equation.
+BlockedDisjSecond.parent_source/source_equation identify the actual left2/
+disjLLast source and complete selected Reduced equality. original_descent supplies
+original g full Clean and strict original rank before routing, with unchanged
+h/z. The untouched first child is CutFree/Atomized. Fixed association adapters
+are moved after the fresh native G.disjL f₀ k cut. fresh_clean_and_rank and
+blockedL_disjunctionSecond_rank_step instantiate both calls, without a returned-
+rank bound. Concrete residue/duplicate repair and final atomization preserve
+original output, CutFree, Atomized and equation. X's fixed equal-labelled Cs
+remain distinct from the selected second-child/fresh pair.
 
-Both Appendix C erratum correspondences are now proved. The existing p.260
-actual gammaDisj equation and both strict descents persist. For p.262,
-BlockedDisjFirst.fresh_principal_rank proves rho.left=1 at the right cut premise's
-selected antecedent; fresh_total_rank and fresh_total_rank_ge_two prove total
-h.rho.right+1≥2. The actual source/rank step and full Clean close this concrete
-sequential instance. Right rank names its cut-premise role, not SequentSide.right.
-The exchanged disjLLast wrapper is not assigned native rank one. No new manuscript
-defect was found; all nine manuscript blobs and the stash are unchanged.
+Appendix C p.260 retains the actual gammaDisj equation and both strict descents.
+p.262 retains BlockedDisjFirst.source_equation, fresh_clean_and_rank, final rank
+step and fresh_principal_rank/fresh_total_rank/fresh_total_rank_ge_two. Right
+premise rank one means rho.left=1 at its selected antecedent; total is unchanged
+opposite h.rho.right+1≥2. No source wrapper is assigned native rank one. No new
+manuscript defect was found. All nine manuscript blobs and the stash are unchanged.
 
-See [report](GENTZEN_BLOCKED_DISJ_FIRST_REPORT.md),
-[hostile review](reviews/GENTZEN_BLOCKED_DISJ_FIRST_HOSTILE.md),
-[writing review](reviews/GENTZEN_BLOCKED_DISJ_FIRST_WRITING.md) and
+See [report](GENTZEN_BLOCKED_DISJ_SECOND_REPORT.md),
+[hostile review](reviews/GENTZEN_BLOCKED_DISJ_SECOND_HOSTILE.md),
+[writing review](reviews/GENTZEN_BLOCKED_DISJ_SECOND_WRITING.md) and
 [constructor/tag map](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
-Evidence: provenance/wsl-gentzen-blocked-left-disj-first/. Twelve modules contain
-60 new source declarations; 739 Lean files are screened. Twenty-three public
-files and 31 expected rejections are checked. Exact audit totals/exits, checked/
-committed source bytes and Downloads paths are in FINAL_VERIFICATION.json and
-DELIVERY_REGISTER.json. Four actual terminal-output smoke witnesses use witnessed
-bottom-tail children; they are distinguished from the general source/rank proof.
-Reviews are local author-side reviews. Independent replay, Comparator, official/
-service checks and publication remain separate unperformed statuses.
+Evidence: provenance/wsl-gentzen-blocked-left-disj-second/. Six modules contain
+40 new source declarations; 746 Lean files are screened. Twenty-four public files
+and 32 expected rejections are checked. Exact audit totals/exits, checked/committed
+bytes and Downloads paths are in FINAL_VERIFICATION.json and DELIVERY_REGISTER.json.
+Four actual terminal-output smoke witnesses use witnessed bottom-tail first
+children and are distinguished from the general source/rank proof. Reviews are
+local author-side. Independent replay, Comparator, official/service verification
+and publication remain separate unperformed statuses.
 
-Next complete BlockedL.disjunctionSecond/Both and BlockedR.conjunctionFirst/Second/
-Both. Preserve two/three-copy arities, original Clean/ranks before adapters,
-fresh native principals and final structural atomization. Discharge exhaustive
-dispatch, fixed-degree all-ranks Clean under strict DegreeBelow, arbitrary-premise
-cleaning, strong degree induction and arbitrary-G normalization. Export actual
-unrestricted CutElimination/AtomizedCutElimination, then continue coherence,
-intended-presentation and uniform-substitution/congruence bridges, both maximality
-routes, model corollary and all claims in all three v7 appendices. The three
-milestones and full-paper endpoint remain distinct. Deliver committed-byte reports/
-records with verified conflict-preserving copies; continue without a routine checkpoint.
+Next complete BlockedL.disjunctionBoth and BlockedR.conjunctionFirst/Second/Both.
+Preserve both three-copy cases, original Clean/ranks before adapters, native fresh
+principals and final structural atomization. Assemble exhaustive dispatch,
+fixed-degree all-ranks Clean under strict DegreeBelow, arbitrary-premise cleaning,
+strong degree induction and arbitrary-G normalization. Export actual unrestricted
+elimination, then continue coherence, intended-presentation and uniform-substitution/
+congruence bridges, both maximality routes, model corollary and every claim in all
+three v7 appendices. The three milestones and full-paper endpoint stay distinct.
+Deliver committed-byte reports/records with verified conflict-preserving copies;
+continue under existing authorization without a routine approval checkpoint.
 
 ## Retained opposite logical checkpoint (28 October 2026)
 
@@ -477,9 +477,9 @@ The completed 77199ac run incorporates b767c19 and its three committed-byte
 deliveries. Follow CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt and both 77199AC
 reviews. Both comparison targets and the retained conjR_right_first equation,
 arbitrary-tag reconstruction and rank step are now proved. Continue from
-the five remaining logical blocked reductions. All six gamma families,
-BlockedL.conjunction, BlockedR.disjunction and BlockedL.disjunctionFirst have
-actual source equations and rank steps. All twelve binary native/selected
+the four remaining logical blocked reductions. All six gamma families, both
+unary logical families and BlockedL.disjunctionFirst/Second have actual source
+equations and rank steps. All twelve binary native/selected
 branches are now proved, including all four disjL equations and original-rank steps.
 The four same-side unary logical prefix/suffix equations, reconstruction and
 original-rank branches are now proved, along with opposite structural recursive
@@ -492,7 +492,7 @@ Blocked-w, simultaneous cleaning, principal and structural/opposite logical work
 
 The four mix branches are complete through their actual original-sequent
 equations, native/structural reconstructions and rank steps. All four disjL branches now have actual native diagrams, selected equations and
-instantiated rank steps. Complete the remaining two BlockedL and three BlockedR
+instantiated rank steps. Complete the remaining one BlockedL and three BlockedR
 reductions and the complete dispatcher.
 Then prove the all-ranks clean theorem under DegreeBelow, outer degree induction and arbitrary-G
 structural normalization. CutElimination and AtomizedCutElimination remain
