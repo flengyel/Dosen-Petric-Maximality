@@ -1,11 +1,11 @@
 # Selected cut constructor and tag coverage
 
-Current construction incorporates 811eceeb. All twelve mix/conjR/disjL binary
-branches have actual native/selected equations, exact-output reconstructions,
-eliminated witnesses and instantiated original-rank steps. Fourteen blocked
-reductions, full dispatch, discharged global induction and the complete-paper
-endpoint remain open. Measure original selected rank before adapters. Current
-report: GENTZEN_DISJL_BINARY_CUTS_REPORT.md; continuation: CODEX_NEXT_SESSION.txt.
+Current construction incorporates 811eceeb. All twelve binary branches are
+complete. BlockedL.gammaMix, BlockedR.gammaMix and BlockedL.gammaConj now have
+actual source equations, parallel reconstructions, eliminated witnesses and
+instantiated original-rank steps. Eleven blocked reductions and global induction
+remain open. Current report: GENTZEN_BLOCKED_GAMMA_REPORT.md; continuation:
+CODEX_NEXT_SESSION.txt. Measure original selected rank before adapters.
 
 | Root and selected region | Left cut premise | Right cut premise |
 | --- | --- | --- |
@@ -14,7 +14,7 @@ report: GENTZEN_DISJL_BINARY_CUTS_REPORT.md; continuation: CODEX_NEXT_SESSION.tx
 | Opposite exchange/thinning/contraction | Equation, descent and elimination/rank-step wrappers checked | Equation, descent and elimination/rank-step wrappers checked |
 | Same-side exchange/thinning/contraction, unique predecessor | Existing single-fiber equations, reconstruction and rank steps | Existing single-fiber equations, reconstruction and rank steps |
 | Same-side thinning, fresh selected tag | Existing rank-two/leaf classification; dispatcher pending | Existing rank-two/leaf classification; dispatcher pending |
-| Same-side contraction, selected copy cluster | BlockedR reductions pending | BlockedL reductions pending |
+| Same-side contraction, selected copy cluster | gammaMix complete; six BlockedR reductions pending | gammaMix/gammaConj complete; five BlockedL reductions pending |
 | Unary logical, opposite side | conjL equation, reconstruction and rank step checked | disjR equation, reconstruction and rank step checked |
 | Unary logical, same-side prefix | disjR before equation, reconstruction and original-rank step checked | conjL before equation, reconstruction and original-rank step checked |
 | Unary logical, same-side suffix | disjR tail equation, reconstruction and original-rank step checked | conjL tail equation, reconstruction and original-rank step checked |
@@ -45,12 +45,13 @@ separate tags. Their exact equations and count/Atomized/congruence laws are
 proved. All earlier native/selected candidates are resolved. Current evidence:
 provenance/wsl-gentzen-disjl-cuts/. Actual sourceConj/disjPair symmetries and
 particular reflected diagrams are proved; no general G/arrow duality is assumed.
-No blocked family is closed by the completed parametric commutations.
+The three completed blocked families have separate actual contraction/source
+proofs; parametric commutation alone does not supply them.
 
 | Blocked constructor family | BlockedL | BlockedR |
 | --- | --- | --- |
-| gammaMix | Pending actual cut reduction | Pending actual cut reduction |
-| gammaConj | Pending actual cut reduction | Pending actual cut reduction |
+| gammaMix | Actual source equation/reconstruction; blockedL_gammaMix_eliminated/rank_step | Actual source equation/reconstruction; blockedR_gammaMix_eliminated/rank_step |
+| gammaConj | Actual source equation/reconstruction; blockedL_gammaConj_eliminated/rank_step | Pending actual cut reduction |
 | gammaDisj | Pending actual cut reduction | Pending actual cut reduction |
 | conjunction / disjunction | Pending sequential actual cut reduction | Pending sequential actual cut reduction |
 | disjunctionFirst / conjunctionFirst | Pending sequential actual cut reduction | Pending sequential actual cut reduction |
@@ -58,8 +59,8 @@ No blocked family is closed by the completed parametric commutations.
 | disjunctionBoth / conjunctionBoth | Pending sequential actual cut reduction | Pending sequential actual cut reduction |
 
 The paired names give BlockedL / BlockedR constructors. Actual source/native
-adapters remain to be implemented with their reductions. No family is closed
-by the already proved blockedness predicate or by a generic rank estimate.
+adapters are proved for the three completed entries; the eleven other entries
+remain open. Neither blockedness alone nor a generic rank estimate completes an entry.
 
 Remaining induction assembly: fixed-degree all-ranks clean theorem under the
 strict outer DegreeBelow hypothesis; only then arbitrary-premise cleaning;

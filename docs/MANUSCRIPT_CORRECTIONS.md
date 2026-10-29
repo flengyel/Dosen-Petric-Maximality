@@ -1,5 +1,20 @@
 # Manuscript corrections and source errata
 
+## Current three blocked reductions, 28 October 2026
+
+BlockedL.gammaMix, BlockedR.gammaMix and BlockedL.gammaConj are now proved through
+actual source equations, parallel reconstructions and instantiated original-rank
+steps. Every original child inherits full Clean, both cuts use the unchanged
+opposite premise and strict original selected rank precedes routing. Fixed
+positions with the same label remain distinct. The conjunction lift includes
+its final associator and both residual-copy contractions. Public examples name
+their namespaces and all four context splits explicitly. Eleven blocked cases,
+global induction and Appendix C's gamma-3/fresh-right correspondences remain open.
+No manuscript defect was established; all nine v7/preserved-version blobs remain
+unchanged. Current claim maps supersede historical checkpoint counts without
+resetting any proved result or completed delivery. Evidence and both local
+reviews: GENTZEN_BLOCKED_GAMMA_REPORT.md and linked records.
+
 Current manuscript: v7, dated 28 October 2026. Source SHA-256
 `70b4f82c03e165e6a6da36d869968531a509341b93f90eedde964506568c8e96`; PDF SHA-256
 `957048538137ef085c0a581b399272db753377b76c6a83c1adc307ad8b2e256a`. V6 remains the preserved reviewed baseline

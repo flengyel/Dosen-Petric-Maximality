@@ -1,71 +1,65 @@
 # Coverage and next proof obligations
 
-## Current complete binary cut commutations (28 October 2026)
+## Current three blocked reductions (28 October 2026)
 
-Successor 811eceeb remains incorporated, preserving newer work and stash
-dedfd8fc8cd49930e9a162d5be585215b062a43c. All twelve binary branches are now
-complete through actual native/selected Reduced equations, exact-output
-reconstruction, count/Atomized/congruence, eliminated witnesses and instantiated
-original-rank steps: four mix, four conjR and four disjL branches.
+Successor 811eceeb remains incorporated and all twelve binary commutations remain
+proved. BlockedL.gammaMix, BlockedR.gammaMix and BlockedL.gammaConj now have actual
+source equations, exact-output parallel reconstructions, eliminated witnesses and
+instantiated original-rank steps. Eleven blocked reductions, discharged global
+induction and the full-paper endpoint remain open. Stash
+dedfd8fc8cd49930e9a162d5be585215b062a43c and all intervening work are preserved.
 
-The new DisjLogical builders are disjLLeftFirst/LeftSecond/RightFirst/RightSecond.
-Their four Native_equation and selected equation families instantiate every
-fold/unit, retained-head, headBefore/headShift, erasure, association and block
-comparison. The four rank calls use the original child before adapters:
-ih f a h z; ih g a h z; ih h z f a.there; ih h z g a.there.
-Full Clean and strict original selected-rank bounds come from existing descents.
-No output blockedness or returned-rank bound is asserted.
+The three final handlers are CutCommutation.blockedL_gammaMix_rank_step,
+blockedR_gammaMix_rank_step and blockedL_gammaConj_rank_step. Both recursive calls
+inherit full Clean through the original contraction and original binary child,
+with strict selected-rank decrease before any adapter. They use the unchanged
+opposite premise. Actual two-copy source terms, fixed equal-labelled tags, all
+folds and both duplicated fixed-context repairs are proved. Final structural
+atomization preserves cut-freeness, exact output and Reduced equality.
 
-Actual sourceConj_swap/disjPair_swap and both reflected mixed laws are proved.
-Particular MirrorCalculus diagrams are identified with actual sourceConj arrows;
-coCross has the explicit coproduct variance. No general G/quotient-arrow duality,
-coherence hypothesis, supplied diagram or graph reflection is assumed.
+The mix equations use the proved union calculation and splice naturality. The
+conjunction calculation factors both child cuts through one common splice kernel.
+Its lifted_pair equation is proved on the two coproduct injections using actual
+mixedDisj naturality, mixedDisj_inr and diag_mix_codiag. No coherence hypothesis,
+graph reflection, general proof duality or supplied diagram is used.
 
-See [the new report](GENTZEN_DISJL_BINARY_CUTS_REPORT.md),
-[hostile audit](reviews/GENTZEN_DISJL_BINARY_CUTS_HOSTILE.md),
-[writing review](reviews/GENTZEN_DISJL_BINARY_CUTS_WRITING.md),
-[the successor](CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt) and
+See [the report](GENTZEN_BLOCKED_GAMMA_REPORT.md),
+[hostile review](reviews/GENTZEN_BLOCKED_GAMMA_HOSTILE.md),
+[writing review](reviews/GENTZEN_BLOCKED_GAMMA_WRITING.md) and
 [live constructor/tag table](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
-All preceding constructions and accepted decisions retain their proved scope.
+Previous binary evidence: cf3741a / 26e6d8d,
+provenance/wsl-gentzen-disjl-cuts/. Its seventeen deliveries are complete.
 
-| Local phase | Lean files | Audited declarations | Public files | Rejected controls | Evidence |
-| --- | ---: | ---: | ---: | ---: | --- |
-| Four mix; a654ed0 / 408257b | 538 | 11,886 | 11 | 8 | provenance/wsl-gentzen-binary-cuts/ |
-| Right-second conjunction/symmetry; 9af0a8a / 77199ac | 546 | 11,911 | 12 | 9 | provenance/wsl-gentzen-logical-binary-cuts/ |
-| Right-first conjunction; 05a02ff / d0c3cca | 555 | 11,967 | 13 | 10 | provenance/wsl-gentzen-conjr-right-first/ |
-| Left-first conjunction; a2ca733 / 730e855 | 566 | 12,015 | 14 | 11 | provenance/wsl-gentzen-conjr-left-first/ |
-| Left-second conjunction; 67716ab / fa5b380 | 576 | 12,055 | 15 | 12 | provenance/wsl-gentzen-conjr-left-second/ |
-| Four disjL branches; all binary commutations | 610 | 12,254 | 16 | 14 | provenance/wsl-gentzen-disjl-cuts/ |
+Current local evidence: 631 screened Lean files, 12,384 audited project
+declarations, seventeen public files and seventeen expected rejections, including
+twelve actual signed/repeated/Empty/populated blocked witnesses. Twenty new
+production modules contain 103 source declarations. Retained evidence is under
+provenance/wsl-gentzen-blocked-cuts/. Reviews are local author-side reviews;
+independent replay, Comparator, official/service verification and publication
+are separate unperformed statuses.
 
-Strict/transitive audit, sixteen expanded public files, sixteen actual signed/
-repeated/constant-only/empty/populated witnesses, full source closure and fourteen
-expected rejections pass locally. Reviews are local author-side reviews. No
-independent replay, Comparator, official/service verification or publication is
-claimed. All nine manuscript blobs match fa5b380; unchanged TeX is not rebuilt.
-No manuscript defect was established. All former logical-binary candidates are
-resolved; their retained earlier attempts remain historical evidence.
+Continue BlockedL.gammaDisj and the remaining ten blocked cases, preserving all
+two/three-copy multiplicities and source/native adapters. Logical cases first
+eliminate parametric copies, then rebuild a fresh native principal with component
+routes below it. Prove leaf/rank-one/full Clean before the next original-rank
+recursive call. source disjLLast contains exchanges above its native principal.
+Appendix C's p.260 gamma-3 and p.262 fresh-right-rank-one Lean rows remain open.
 
-Fourteen blocked reductions, the complete dispatcher, discharged rank/degree/
-structural inductions and unrestricted elimination inhabitants remain open.
-Continue seven BlockedL and seven BlockedR cases by actual witness/arity inversion,
-parallel original gamma subcuts and sequential parametric-copy/principal cuts.
-Prove fresh native one-sided rank one and full Clean with routing below the rule.
-source disjLLast includes exchanges above its native constructor; it does not
-supply that rank-one fact. Preserve actual two/three-copy multiplicities.
+Then assemble complete constructor dispatch, fixed-degree all-ranks Clean under
+strict DegreeBelow, arbitrary premise cleaning at that completed degree, strong
+degree induction and arbitrary-G normalization. Export actual unrestricted
+CutElimination and AtomizedCutElimination inhabitants. Continue coherence,
+intended-presentation/substitution/congruence bridges, both maximality routes,
+model corollary and every claim in all three v7 appendices. The three milestones
+and the complete-paper endpoint remain distinct.
 
-Then complete fixed-degree all-ranks Clean under strict DegreeBelow, premise
-cleaning at that degree, strong degree induction and arbitrary-G normalization.
-Continue coherence, intended-presentation/substitution/congruence bridges, both
-maximality routes, model corollary and every claim of all three v7 appendices.
-Appendix C is written; its p.260/p.262 concrete blocked-rank correspondences remain
-open. The three milestones and complete-paper endpoint remain distinct.
-
-All previous delivery receipts remain complete, including the three 811eceeb
-successor files and the 20-, 17- and 17-entry conjunction-phase registers. New
-reports/reviews and changed records use this phase's committed-byte register;
-preserve differing Downloads files and verify each copy. The prior continuation
-is archived verbatim at history/CODEX_NEXT_SESSION_FA5B380.txt. Historical records
-do not reset proved scope or completed delivery. Continue without a routine stop.
+All nine manuscript blobs match 26e6d8d; v7, older versions, all diagrams and the
+authorized errata appendix are preserved. No manuscript defect was established;
+unchanged TeX is not rebuilt. All accepted mathematical/writing/verification
+requirements and previous delivery receipts remain effective. The prior
+continuation is archived verbatim in history/CODEX_NEXT_SESSION_26E6D8D.txt.
+Deliver new reports and changed records from committed bytes, preserving differing
+Downloads files and verifying every copy. Continue without a routine approval stop.
 
 ## Current manuscript: v7 with the authorized errata appendix
 

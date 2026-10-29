@@ -48,8 +48,9 @@ symmetric-fold proof as an alternative route.
 The concrete successor is `docs/CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt`;
 read its two 77199AC reviews and the current completed binary report/reviews.
 All twelve mix/conjR/disjL branches have actual native/selected equations and
-instantiated original-rank steps. Complete fourteen source-shaped blocked
-reductions and global induction. Reuse all completed binary, unary, structural,
+instantiated original-rank steps. BlockedL.gammaMix, BlockedR.gammaMix and
+BlockedL.gammaConj are complete through actual source equations and rank steps.
+Complete the eleven remaining blocked reductions and global induction. Reuse all completed binary, unary, structural,
 principal, cleaning and descent results. Retain earlier source/rank/atomization decisions.
 The existing three milestones remain distinct;
 even actual-presentation maximality alone does not certify the entire paper.

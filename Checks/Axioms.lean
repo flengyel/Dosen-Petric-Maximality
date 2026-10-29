@@ -1999,3 +1999,10 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.DisjLogical.disjLLeftSecond_equation
 #print axioms DosenPetric.Reduced.Gentzen.DisjLogical.disjLRightFirst_equation
 #print axioms DosenPetric.Reduced.Gentzen.DisjLogical.disjLRightSecond_equation
+#print axioms DosenPetric.Reduced.Gentzen.BlockedMix.gamma_equation
+#print axioms DosenPetric.Reduced.Gentzen.BlockedMix.gamma_right_equation
+#print axioms DosenPetric.Reduced.Gentzen.BlockedConj.gamma_equation
+#print axioms DosenPetric.Reduced.Gentzen.BlockedConj.lifted_pair
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blockedL_gammaMix_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blockedR_gammaMix_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blockedL_gammaConj_rank_step
