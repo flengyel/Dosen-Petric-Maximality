@@ -1,0 +1,10 @@
+{
+  "lock_rejections": [],
+  "production_checks_final": "FINAL_VERIFICATION.json",
+  "next_diagram_attempts_are_open_obligations": false,
+  "failed_control_harness_dispatch": {
+    "status": "control_setup_attempts/STATUS.json",
+    "counted_as_expected_rejection": false,
+    "resolved_by_phase_specific_runner_source": true
+  }
+}

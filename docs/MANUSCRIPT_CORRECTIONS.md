@@ -1,5 +1,17 @@
 # Manuscript corrections and source errata
 
+## Three-copy disjunction continuation (29 October 2026)
+
+BlockedL.disjunctionBoth now has its actual left3/disjLLast source equation,
+three exact selected-tag comparisons, both original full Clean/strict descents,
+fresh native G.disjL full Clean and instantiated three-call rank step. Fixed
+adapters and all three duplicate copies are repaired after the fresh cut; no
+returned-rank promise is added. Eleven blocked families and every BlockedL family
+are complete; three BlockedR conjunction families remain. Both Appendix C rows
+retain their proved concrete declarations. No new manuscript defect was found;
+all nine blobs, stash and receipts persist. See GENTZEN_BLOCKED_DISJ_BOTH_REPORT.md
+and its two local reviews. The preceding tenth-family checkpoint is historical.
+
 ## Second-disjunction continuation (29 October 2026)
 
 BlockedL.disjunctionSecond now has its actual left2/disjLLast source equation,
