@@ -66,7 +66,10 @@ now has its actual right3 source equation, both original descents and three
 instantiated rank calls. All fourteen blocked families are complete. Exhaustive constructor/tag dispatch,
 original-rank induction, strong degree induction and arbitrary-G normalization
 now prove actual CutElimination P and AtomizedCutElimination P inhabitants.
-Continue restricted mix/positive/reduced/Boolean coherence and the full-paper bridges. Reuse all completed binary, unary, structural,
+Actual PositiveCoherence, Reduced faithfulness and Boolean coherence now
+instantiate Presentation.interpretation P with signed labels in the intended
+category. Continue full source congruence/uniform-substitution correspondence,
+actual maximality, both proof routes, model corollary and full-paper obligations. Reuse all completed binary, unary, structural,
 principal, cleaning and descent results. Retain earlier source/rank/atomization decisions.
 The existing three milestones remain distinct;
 even actual-presentation maximality alone does not certify the entire paper.

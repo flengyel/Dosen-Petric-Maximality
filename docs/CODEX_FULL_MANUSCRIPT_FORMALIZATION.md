@@ -1,6 +1,54 @@
 # Complete Lean formalization of manuscript v7
 
-## Current unrestricted Gentzen cut elimination (29 October 2026)
+## Current Positive, Reduced and Boolean coherence (29 October 2026)
+
+`Gentzen.positive_coherence : PositiveCoherence P`, `Reduced.faithful : Faithful P`
+and `Presentation.coherence` are proved for arbitrary P. The full intended
+`Presentation.interpretation P` and its signed-label invariant are instantiated.
+The public Nat instance is nonthin; Empty/constants and the original empty
+Hom(top,bot) are preserved. Milestone I's complete intended faithful-interface
+requirement is met. The conditional maximality theorem remains proved; the full
+source congruence/substitution correspondence and actual maximality instantiation
+remain to be completed. The three milestones and full-paper endpoint are distinct.
+
+| Claim / source scope | Actual declarations | Exact status |
+| --- | --- | --- |
+| Positive cut-free representation | positive_cutFree_represented; positive_mix_represented | Actual CutFree/Atomized witnesses, exact original tags, pure-endpoint mix fragment. |
+| Signed atomic paths | PurePort.position_ofPosition/position_injective; PureEdge.relation | Independent source/target positions; singleton relation; constants have no ports. |
+| Finite atomic normal forms | finiteUnion laws; PureEdge.evaluate_faithful; G.mix_normal_form | Witnessed empty union, exact rule constructions and reversed-block mix; no assumed normalizer. |
+| Restricted positive coherence | pure_positive_coherence; normal_positive_coherence | Pure base, then DNF source/CNF target via actual universal properties. |
+| General formula expansions | NormalRetract; dnf_expansion/cnf_expansion | Explicit represented maps with only forward;backward=id_original. No distributive isomorphism. |
+| Unrestricted positive coherence | Gentzen.represented_coherence; positive_coherence | Complete actual normal-form argument for arbitrary P. |
+| Full Reduced coherence | Reduced.faithful | Existing common atomic factorization instantiated with proved PositiveCoherence. |
+| Boolean coherence of the source quotient | Reduced.boolean_coherence; Presentation.coherence | Existing signed reduction, representation and original normalization transfers instantiated. |
+| Intended full occurrence interface | Presentation.interpretation; interpretation_signedLabel | Every field is constructed in the equation-generated category, including faithfulness. |
+
+All unrestricted cut elimination, twelve binary branches, fourteen blocked families,
+Reducibility, Blocked-w, simultaneous cleaning and both Appendix C concrete rows
+remain proved. All nine manuscript blobs, source decisions, stash and receipts
+are preserved. No new manuscript defect was found. Coherence is used in the
+original category; a fixed-valuation kernel is not assumed substitution-closed.
+
+See [report](GENTZEN_COHERENCE_REPORT.md),
+[hostile review](reviews/GENTZEN_COHERENCE_HOSTILE.md),
+[writing review](reviews/GENTZEN_COHERENCE_WRITING.md).
+Evidence: provenance/wsl-gentzen-positive-coherence/. Strict pinned verification,
+all thirty public check files and 48 expected rejections have exact counts,
+commands, exits and hashes in FINAL_VERIFICATION.json. Checked source archives
+are read back and compared with committed bytes; DELIVERY_REGISTER.json retains
+verified conflict-preserving repository/Downloads paths. Reviews are local
+author-side; independent replay, Comparator, official/service verification and
+publication remain separate unperformed statuses.
+
+Next complete the full source congruence/uniform-substitution correspondence,
+instantiate actual maximality, formalize the short q_A/e_A proof while retaining
+the symmetric-fold route, and finish the model corollary and every remaining
+mathematical claim in all three v7 appendices. Continue under the existing full-
+paper authorization. Retained checkpoints below keep their historical scope;
+this current table supersedes their earlier open coherence/normalization statuses.
+
+
+## Retained unrestricted Gentzen cut elimination checkpoint (29 October 2026)
 
 `cut_elimination : CutElimination P` and
 `atomized_cut_elimination : AtomizedCutElimination P` are proved for arbitrary P.
@@ -470,16 +518,15 @@ model universe general enough to express the printed corollary.
 
 ## Immediate continuation and dependency order
 
-811eceeb and all successor reviews are incorporated. The retained conjR_right_first
-equation, all twelve binary branches, all fourteen blocked families, complete
-tag/constructor dispatch, original-rank induction, strict degree induction and
-arbitrary-G normalization are now proved. Actual CutElimination P and
-AtomizedCutElimination P inhabitants are exported in GentzenCutElimination.lean.
-Reuse full Reducibility, Blocked-w, simultaneous cleaning and every completed
-principal, structural, unary, binary and blocked source/rank theorem. Coherence
-is the immediate mathematical continuation; cut elimination alone does not close
-any remaining intended-presentation or full-paper bridge. Historical records do
-not reset this compiled scope. Preserve the following accepted recursion contract.
+811eceeb and all successor reviews are incorporated. All unrestricted cut-
+elimination interfaces and actual Positive, Reduced and Boolean coherence are now
+proved. Presentation.interpretation P instantiates the full intended occurrence
+interface, with signed labels and a nonthin Nat witness. Milestone I's intended
+interface requirement is closed. Reuse every completed proof. Complete the full
+source congruence/uniform-substitution correspondence and instantiate actual
+maximality, then the short q_A/e_A route, model corollary and all remaining v7
+claims under the unchanged full-paper endpoint. Preserve the accepted recursion
+contract below as the already discharged cut-elimination argument.
 
 At unchanged degree use the original inherited clean child and strict selected
 rank; do not infer a bound after re-cleaning or head routing. Final cut-free

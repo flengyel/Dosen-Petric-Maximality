@@ -1,0 +1,250 @@
+{
+  "failed_development_checks": [
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenNormalRetracts"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenNormalRetracts"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 4.483,
+      "log": ".codex-work/gentzen-positive-coherence/build-GentzenNormalRetracts-20261029T180453345272.log",
+      "sha256": "31a2a8a830008822d0ea74b543a8cc8ee79507b7d927ff05007896e6ac5c41d4"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenPurePortCoordinates"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenPurePortCoordinates"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 3.158,
+      "log": ".codex-work/gentzen-positive-coherence/build-GentzenPurePortCoordinates-20261029T175144486083.log",
+      "sha256": "cb5b248e4994d9f460688d73956aa28a8f4d9dcf1bd1165c239469dbecb94a50"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenPurePortRelations"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenPurePortRelations"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 4.618,
+      "log": ".codex-work/gentzen-positive-coherence/build-GentzenPurePortRelations-20261029T175532469192.log",
+      "sha256": "57c9fbfe3404269e858374ccd5681b2b1014e9258c76798b0f73caee0634afbf"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenPurePortRelations"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenPurePortRelations"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 5.772,
+      "log": ".codex-work/gentzen-positive-coherence/build-GentzenPurePortRelations-20261029T175554511979.log",
+      "sha256": "d84ee02b49e327113b77c5a8e7151e6987b9d7e771cf65c0654b38863b7db9b2"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenPurePortRelations"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenPurePortRelations"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 4.051,
+      "log": ".codex-work/gentzen-positive-coherence/build-GentzenPurePortRelations-20261029T175626540817.log",
+      "sha256": "e23f34bcec9790a114ac73193549e97d8c8944e8e3848c4c1b659d89974a12ce"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenPurePortTransport"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenPurePortTransport"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 5.413,
+      "log": ".codex-work/gentzen-positive-coherence/build-GentzenPurePortTransport-20261029T175315550913.log",
+      "sha256": "31028b86cc41a64446a2b8c294cf907018f14bf291a71c4c150855e7cac043c6"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenPurePorts"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenPurePorts"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 7.175,
+      "log": ".codex-work/gentzen-positive-coherence/build-GentzenPurePorts-20261029T175023452890.log",
+      "sha256": "2039eea9ee3e9d2309cda39a9c5d1259bf39825cc28248f18c841ef842f4306a"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.PresentationCoherence"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.PresentationCoherence"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 3.966,
+      "log": ".codex-work/gentzen-positive-coherence/build-PresentationCoherence-20261029T181312249097.log",
+      "sha256": "0f5d483ebc6f133a7985d4d682457be0e800c0a01d747c8073928ca9a30f6bd9"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.PresentationCoherence"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.PresentationCoherence"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 3.394,
+      "log": ".codex-work/gentzen-positive-coherence/build-PresentationCoherence-20261029T181412218217.log",
+      "sha256": "646fd120a9b5fb8233e84bfde0244fadd0831d54c8d69112a45e9a4610670c1c"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.PresentationCoherence"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.PresentationCoherence"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 5.376,
+      "log": ".codex-work/gentzen-positive-coherence/build-PresentationCoherence-20261029T181608727538.log",
+      "sha256": "c551a83520a6aa8d5fbb2708e6d192711657e9edf7baed1e7d281b84594ff1fc"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.ReducedFiniteUnion"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.ReducedFiniteUnion"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 2.046,
+      "log": ".codex-work/gentzen-positive-coherence/build-ReducedFiniteUnion-20261029T175429651425.log",
+      "sha256": "fa1d7e4d03abfcb149d42071f304c5499bf3883c00b6155f9832dc25f8174e42"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Checks/PositiveCoherence.lean"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Checks/PositiveCoherence.lean"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 3.67,
+      "log": ".codex-work/gentzen-positive-coherence/lean-20261029T181200768932.log",
+      "sha256": "e7598ce90d7d230e03efff4f57d8675d6bd2a7fc6f1ddcbe7eff9c1e783b7628"
+    }
+  ],
+  "counted_as_expected_rejection": false,
+  "final_checks": "FINAL_VERIFICATION.json"
+}

@@ -1,5 +1,21 @@
 # Manuscript corrections and source errata
 
+## Actual coherence and intended interface continuation (29 October 2026)
+
+Actual PositiveCoherence, Reduced faithfulness and Boolean coherence now supply
+the full Presentation.interpretation P with signed-label preservation. Milestone
+I's intended nonthin-interface requirement is closed by the actual Nat witness;
+the source category and its empty hom-sets are unchanged. Explicit DNF/CNF
+expansions use only the source's one-sided recovery laws, never distributive
+isomorphisms. Tagged literal paths retain repeated positions and both signs;
+empty unions retain existing-arrow witnesses. Current maps and milestone statuses
+are reconciled together. No new manuscript defect was established; all nine
+manuscript blobs and both Appendix C rows remain unchanged. A concrete public
+coordinate check exposed inefficient automatic well-founded reduction; port
+positions now use explicit structural matches for each connective. This is an
+implementation correction, verified through the affected source and checks,
+not a manuscript correction. Full congruence/maximality/model/appendix duties persist.
+
 ## Global cut-elimination continuation (29 October 2026)
 
 Complete constructor/tag dispatch and nested original-rank/formula-degree induction

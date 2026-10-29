@@ -1,6 +1,54 @@
 # Manuscript v7: statements and formal scope
 
-## Current unrestricted Gentzen cut elimination (29 October 2026)
+## Current Positive, Reduced and Boolean coherence (29 October 2026)
+
+`Gentzen.positive_coherence : PositiveCoherence P`, `Reduced.faithful : Faithful P`
+and `Presentation.coherence` are proved for arbitrary P. The full intended
+`Presentation.interpretation P` and its signed-label invariant are instantiated.
+The public Nat instance is nonthin; Empty/constants and the original empty
+Hom(top,bot) are preserved. Milestone I's complete intended faithful-interface
+requirement is met. The conditional maximality theorem remains proved; the full
+source congruence/substitution correspondence and actual maximality instantiation
+remain to be completed. The three milestones and full-paper endpoint are distinct.
+
+| Claim / source scope | Actual declarations | Exact status |
+| --- | --- | --- |
+| Positive cut-free representation | positive_cutFree_represented; positive_mix_represented | Actual CutFree/Atomized witnesses, exact original tags, pure-endpoint mix fragment. |
+| Signed atomic paths | PurePort.position_ofPosition/position_injective; PureEdge.relation | Independent source/target positions; singleton relation; constants have no ports. |
+| Finite atomic normal forms | finiteUnion laws; PureEdge.evaluate_faithful; G.mix_normal_form | Witnessed empty union, exact rule constructions and reversed-block mix; no assumed normalizer. |
+| Restricted positive coherence | pure_positive_coherence; normal_positive_coherence | Pure base, then DNF source/CNF target via actual universal properties. |
+| General formula expansions | NormalRetract; dnf_expansion/cnf_expansion | Explicit represented maps with only forward;backward=id_original. No distributive isomorphism. |
+| Unrestricted positive coherence | Gentzen.represented_coherence; positive_coherence | Complete actual normal-form argument for arbitrary P. |
+| Full Reduced coherence | Reduced.faithful | Existing common atomic factorization instantiated with proved PositiveCoherence. |
+| Boolean coherence of the source quotient | Reduced.boolean_coherence; Presentation.coherence | Existing signed reduction, representation and original normalization transfers instantiated. |
+| Intended full occurrence interface | Presentation.interpretation; interpretation_signedLabel | Every field is constructed in the equation-generated category, including faithfulness. |
+
+All unrestricted cut elimination, twelve binary branches, fourteen blocked families,
+Reducibility, Blocked-w, simultaneous cleaning and both Appendix C concrete rows
+remain proved. All nine manuscript blobs, source decisions, stash and receipts
+are preserved. No new manuscript defect was found. Coherence is used in the
+original category; a fixed-valuation kernel is not assumed substitution-closed.
+
+See [report](GENTZEN_COHERENCE_REPORT.md),
+[hostile review](reviews/GENTZEN_COHERENCE_HOSTILE.md),
+[writing review](reviews/GENTZEN_COHERENCE_WRITING.md).
+Evidence: provenance/wsl-gentzen-positive-coherence/. Strict pinned verification,
+all thirty public check files and 48 expected rejections have exact counts,
+commands, exits and hashes in FINAL_VERIFICATION.json. Checked source archives
+are read back and compared with committed bytes; DELIVERY_REGISTER.json retains
+verified conflict-preserving repository/Downloads paths. Reviews are local
+author-side; independent replay, Comparator, official/service verification and
+publication remain separate unperformed statuses.
+
+Next complete the full source congruence/uniform-substitution correspondence,
+instantiate actual maximality, formalize the short q_A/e_A proof while retaining
+the symmetric-fold route, and finish the model corollary and every remaining
+mathematical claim in all three v7 appendices. Continue under the existing full-
+paper authorization. Retained checkpoints below keep their historical scope;
+this current table supersedes their earlier open coherence/normalization statuses.
+
+
+## Retained unrestricted Gentzen cut elimination checkpoint (29 October 2026)
 
 `cut_elimination : CutElimination P` and
 `atomized_cut_elimination : AtomizedCutElimination P` are proved for arbitrary P.
@@ -567,12 +615,12 @@ interpretation of variables, not one fixed valuation.
 | §6 formal collapse argument (v5 `eq:second-block`) | `Relations.second_block`, `OccurrenceInterpretation.second_block` | The relation equation discards the first source block; the categorical equation follows by original-category faithfulness. This calculation belongs to the retained formal proof, not the replacement §5 proof. |
 | `lem:structural-isos` | Not implemented as this lemma | The manuscript derives the specified q_A and e_A isomorphisms from the published structural isomorphisms using original-category coherence and uniform substitution. |
 | §3 distinct projections | `Relations.projections_distinct`, `GeneratedModel.nonthin`, `Presentation.nonthin` | Every v5 §5 interface field is instantiated in a generated structural-fragment model, with distinct categorical projections and `GeneratedModel.empty_hom`. This does not identify the fragment model with B(P). Separately, `Presentation.nonthin p` proves distinct projections in the equation-generated source quotient; `Presentation.empty_hom` proves its Hom(top,bot) empty. |
-| `thm:coherence` | `OccurrenceInterpretation.faithful` is explicit input; `Reduced.normal_faithful_of_reduced/global_faithful_of_reduced` are conditional transfers | Boolean Coherence remains unproved. Reduced syntactic inclusion is now surjective on normal-form hom-sets, with occurrence compatibility. Faithfulness of Reduced.occurrenceMap is an explicit unproved premise, not an axiom or instance. GeneratedModel faithfulness remains fragment-only. |
+| `thm:coherence` | Presentation.coherence; Reduced.faithful/boolean_coherence; Presentation.interpretation | Boolean coherence is proved for the actual equation-generated presentation through actual PositiveCoherence, common atomic factorization and existing normalization transfers. Full intended faithful interface and signed-label invariant are instantiated. |
 | §14.2 source signed-literal reduction used toward §3 coherence | `Reduced.Term/Equation/Derives/Hom/category`, `inclusion`, `red_sound`, `representation` | Genuine restricted syntactic quotient on NormalForm P; 21 term/61 inherited equation schemas, atomic eta/epsilon only. Every full raw term has a reduced representative equal after inclusion to normalization transport; every full normal-form arrow is in the inclusion image. Equality reflection and quotient descent of red are not proved. |
 | §14.2 contextual factorizations toward §3 coherence | `Reduced.Context`, `gConj/gDisj`, `gEta/gEpsilon`, `gEta_comp/gEpsilon_comp`; tagged context and composed occurrence laws | Unconditional equalities in Reduced.Hom for arbitrary P, all one-hole contexts and existing top-domain/bottom-codomain arrows (atomic η/ε specializations give (gη)/(gε)/(gηf)/(gεf)). Needed positive identities are directly derived from the unchanged equations. Common atomic factorization is now proved; §12.5 positive-fragment coherence remains open. |
-| §14.2 common atomic factorization toward §3 coherence | `Term.Positive`, `atomicFactor`, `supportedAtomicFactor`, `commonAtomicFactor`, common support and `relations_equal` | For every arbitrary P and parallel raw pair, shared expanded endpoints/outer factors and positive raw middles with complete tagged support compile unconditionally. Exact repeated-occurrence lists are concatenated. `faithful_of_positive_coherence` is conditional on the unsupplied eta/epsilon-free PositiveCoherence P; §12.5 coherence remains open. |
-| §12.5 algebra toward positive coherence | `Reduced.tensor_zero/tensor_zeroOf`, derived `Term.union/Derives.union/union`, union algebra and occurrence formulas | Unconditional for arbitrary P and existing reduced arrows; positive raw closure is explicit. Union-unit follows the direct p.291 structural proof. No new equation, empty-hom-set zero, coherence or fullness is assumed. Positive Gentzenization is now proved below; cut elimination and restricted coherence remain open. |
-| Positive Gentzenization toward §12.5 coherence | `Reduced.Gentzen.G/denote/denote_positive`, `gentzenization`, `gentzenization_decode`, `gentzenization_occurrences` | G0/G1 compile for arbitrary P and every positive raw term, with atomic/constant leaves only, visible contextual cuts, actual singleton units and tagged occurrence coordinates. All 19 Positive schemas are covered. This is existential representation with cuts; Atomic-k is now proved below, while elimination and coherence remain open. |
+| §14.2 common atomic factorization toward §3 coherence | commonAtomicFactor; faithful_of_positive_coherence; Reduced.faithful | Complete shared supported factorization is instantiated with Gentzen.positive_coherence, giving full Reduced faithfulness without additional mathematical inputs. |
+| §12.5 algebra toward positive coherence | `Reduced.tensor_zero/tensor_zeroOf`, derived `Term.union/Derives.union/union`, union algebra and occurrence formulas | Unconditional for arbitrary P and existing reduced arrows; positive raw closure is explicit. Union-unit follows the direct p.291 structural proof. No new equation, empty-hom-set zero, coherence or fullness is assumed. Positive Gentzenization, unrestricted cut elimination and actual restricted/unrestricted positive coherence are now proved; see the current table. |
+| Positive Gentzenization toward §12.5 coherence | `Reduced.Gentzen.G/denote/denote_positive`, `gentzenization`, `gentzenization_decode`, `gentzenization_occurrences` | G0/G1 compile for arbitrary P and every positive raw term, with atomic/constant leaves only, visible contextual cuts, actual singleton units and tagged occurrence coordinates. All 19 Positive schemas are covered. positive_cutFree_represented now strengthens this to actual cut-free atomized witnesses, used in the completed coherence argument. |
 | Atomic-k toward G2 cut elimination | `Reduced.Gentzen.G.atomization`, `atomization_cutFree`, `atomization_occurrences`; positional `atomThinL/R` and actual mixed-map consequences | Unconditional for arbitrary P and every G proof at unchanged contexts: atomized representative, equal Reduced denotation, preservation of existing CutFree and complete tagged relation equality. All sixteen schemas and four compound-thinning cases compile. The cluster/rank prerequisite is now proved below; blocked-contraction transformations and the rest of G2 remain open. |
 | Gentzen clusters/rank prerequisite within G2 | `G.predecessors_correct/sourceArity_correct/position_classification`, `cluster_correct/cluster_address`, `rho_node_list/rho_child_lt`, `contractionRankL_eq/R_eq`, `cutRank_two_iff_leaves` | Unconditional typed finite tracing/rank for arbitrary P and every G proof, including cuts; all sixteen rules, full separated contraction copies and source leaves covered. Reindex and topmost/cut-free specializations compile. Tied sites are characterized; blocked transformations, Reducibility and cut elimination remain open. |
 | Two opposite-side W1 thinning instances | `W1.denoteL/R`, `contraction_lossL/R`, `endpoint_rankL/R`, `endpoint_lossL/R`, both strict decreases; CutFree/Atomized equivalences, exact cutCount and relation equality | Unconditional for arbitrary P,C,D and premise f with hn ≥ 2. Contraction rank loses n = gs.length; whole selected endpoint loses n−1. The dual is separately checked. Other W1 cases, all-site rank control, Reducibility and cut elimination remain open. |
@@ -592,7 +640,7 @@ interpretation of variables, not one fixed valuation.
 | Proof-occurrence replacement and W5 integration toward G2 | `Premise.rebuild/inserted`, `ProofAddress.replace/inserted/append`, recovery/composition/congruence/preservation; `OtherPremiseMix.replace_denote/count/cutFree/atomizedL/R` | Arbitrary existing root, proof occurrence/address and replacement at the exact same sequent. Outer endpoints/siblings preserved; inserted address keeps its path; complete Reduced congruence and tagged relation consequence. Exact additive cutCount/proofSize balances; root/replacement CutFree or Atomized imply rebuilt predicate. Existing W5 duals lift at any address, with nested signed-cut/Empty examples. Blocked/Reducible encodings and finite profiles are now proved below; certified rewrite dispatch, tied-site ranks and global G2/G3 remain open. |
 | Blocked/reducible occurrences and finite selection classification | `BlockedL/R`, `ReducibleL/R`, `ProofAddress.ProperContains`, `PortOrigin`, `ContractionBlock.classificationL/R` and source-order macros | Seven actual source left patterns and separately typed canonical right encodings with explicit first-retention comparisons. Reducibility retains topmost-cut, cluster/address/position, unblocked and proper blocked-ancestor conditions. Every arity≥2 cut-free input has a unique seven-regime selected profile with complete per-position origin evidence; basis/cut excluded by proof. This is classification, not a reducer. Constructed mixed-premise mix W5 now has both addressed descendant theorems. Full profile dispatch, logical W5/W6, remaining local cases, outside-site ranks and global G2 remain open; see the follow-up report. |
 | Normalization, §3 | `Presentation.normalization`; `NegationNormalization.forward_backward/backward_forward`, `forward_graph/backward_graph`, `transport_apply` | Actual source-quotient instance for every P, with signed-leaf normal forms, both inverse arrows, inverse tagged coordinates, literal/label/polarity correspondence, Empty cases, and relation transport. Recovery/injectivity reuse the existing theorems. No coherence or naturality premise. |
-| Global signed-label preservation, §3 | `Presentation.Term.relation_signedLabel`, `occurrence_signedLabel`, `occurrence_literal` | Proved directly for every raw term and quotient arrow, with no nonemptiness, decidable-equality or coherence hypothesis. Complete literal equality, letter/polarity consequences, opposite-sign exclusion and normalized transport compile. The unchanged `SignedLabelPreservation` definition still takes the separately unconstructed faithful interpretation; no instance is fabricated. |
+| Global signed-label preservation, §3 | Presentation.occurrence_literal; interpretation_signedLabel | The direct signed-label theorem now instantiates the invariant of the actual Presentation.interpretation P, for arbitrary P and every source arrow. |
 | `lem:isolation` | `Isolation.selector_edge`, `coselector_edge`, `isolate_edge`, `normalized_literal_context` | Normal-form witness equations and the normalized contextual consequence under faithful interpretation, normalization, and signed-label inputs. The full original-category witness formulation is not a separate declaration; no actual presentation is inferred. |
 | `prop:all-contexts` | `ContextualCollapse.context_retract`, `all_contexts` | Typed substitution on arrows and endpoints, separate congruence closure, positive substitution, and negative substitution followed by double-negation transport. |
 | `lem:collapse` | `ContextualCollapse.total` | Same conclusion by different proofs: v6 §5 uses q_A and e_A; Lean retains the symmetric-fold argument described in §6. Both concern existing arrows and use no quotient faithfulness or cancellation of j_A. |
@@ -642,16 +690,17 @@ proved substitution closed.
 
 `Presentation.Equation.relation`, `Derives.relation`, and `occurrenceMap` prove
 well-definedness of the occurrence interpretation and the operation images.
-Faithfulness remains open, so no complete `OccurrenceInterpretation` instance
-or intended `relative_maximality` instance is claimed. `Presentation.normalization`
+Presentation.coherence now proves faithfulness, and Presentation.interpretation
+instantiates the complete intended OccurrenceInterpretation. The final full-source
+congruence bridge and actual relative_maximality instantiation remain continuing duties. `Presentation.normalization`
 now constructs the existing normalization record with occurrence graphs and
 signed coordinate correspondence. `Presentation.occurrence_signedLabel` now
 proves global signed-label preservation directly, with normal-form literal
 and transport consequences. Derived contravariant arrow negation/naturality,
 congruence restriction, and the remaining Appendix A/model correspondences are
 still open. The reduced signed-literal syntax and existential representation
-bridge are now constructed, with occurrence compatibility and conditional
-coherence transfer; reduced faithfulness remains open. See the
+bridge and actual Reduced.faithful are now constructed, with occurrence
+compatibility and the instantiated original-category coherence transfer. See the
 [reduction report](SIGNED_LITERAL_REDUCTION_REPORT.md),
 [signed-label report](SIGNED_LABEL_REPORT.md),
 [normalization report](NORMALIZATION_REPORT.md), and the historical

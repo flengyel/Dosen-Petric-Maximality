@@ -72,3 +72,12 @@ discharges strict DegreeBelow, and G.cut_free_normalization handles arbitrary
 proof trees. cut_elimination and atomized_cut_elimination supply both unrestricted
 interfaces. Exact signatures and actual global witnesses are in
 Checks/GlobalCutElimination.lean. Coherence and full-paper maximality remain open.
+
+## Actual coherence continuation (29 October 2026)
+
+All unrestricted elimination interfaces remain complete. The actual positive,
+Reduced and Boolean coherence argument and intended occurrence interpretation
+are now proved; see GENTZEN_COHERENCE_REPORT.md. Finite atomic mix normal forms,
+DNF/CNF comparison maps and one-sided recovery are constructed. Full source
+congruence/substitution correspondence, maximality, model and remaining full-paper
+claims continue; constructor coverage is not the full-paper certificate.

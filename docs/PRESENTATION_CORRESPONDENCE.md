@@ -1,5 +1,53 @@
 # Published presentation correspondence
 
+## Current Positive, Reduced and Boolean coherence (29 October 2026)
+
+`Gentzen.positive_coherence : PositiveCoherence P`, `Reduced.faithful : Faithful P`
+and `Presentation.coherence` are proved for arbitrary P. The full intended
+`Presentation.interpretation P` and its signed-label invariant are instantiated.
+The public Nat instance is nonthin; Empty/constants and the original empty
+Hom(top,bot) are preserved. Milestone I's complete intended faithful-interface
+requirement is met. The conditional maximality theorem remains proved; the full
+source congruence/substitution correspondence and actual maximality instantiation
+remain to be completed. The three milestones and full-paper endpoint are distinct.
+
+| Claim / source scope | Actual declarations | Exact status |
+| --- | --- | --- |
+| Positive cut-free representation | positive_cutFree_represented; positive_mix_represented | Actual CutFree/Atomized witnesses, exact original tags, pure-endpoint mix fragment. |
+| Signed atomic paths | PurePort.position_ofPosition/position_injective; PureEdge.relation | Independent source/target positions; singleton relation; constants have no ports. |
+| Finite atomic normal forms | finiteUnion laws; PureEdge.evaluate_faithful; G.mix_normal_form | Witnessed empty union, exact rule constructions and reversed-block mix; no assumed normalizer. |
+| Restricted positive coherence | pure_positive_coherence; normal_positive_coherence | Pure base, then DNF source/CNF target via actual universal properties. |
+| General formula expansions | NormalRetract; dnf_expansion/cnf_expansion | Explicit represented maps with only forward;backward=id_original. No distributive isomorphism. |
+| Unrestricted positive coherence | Gentzen.represented_coherence; positive_coherence | Complete actual normal-form argument for arbitrary P. |
+| Full Reduced coherence | Reduced.faithful | Existing common atomic factorization instantiated with proved PositiveCoherence. |
+| Boolean coherence of the source quotient | Reduced.boolean_coherence; Presentation.coherence | Existing signed reduction, representation and original normalization transfers instantiated. |
+| Intended full occurrence interface | Presentation.interpretation; interpretation_signedLabel | Every field is constructed in the equation-generated category, including faithfulness. |
+
+All unrestricted cut elimination, twelve binary branches, fourteen blocked families,
+Reducibility, Blocked-w, simultaneous cleaning and both Appendix C concrete rows
+remain proved. All nine manuscript blobs, source decisions, stash and receipts
+are preserved. No new manuscript defect was found. Coherence is used in the
+original category; a fixed-valuation kernel is not assumed substitution-closed.
+
+See [report](GENTZEN_COHERENCE_REPORT.md),
+[hostile review](reviews/GENTZEN_COHERENCE_HOSTILE.md),
+[writing review](reviews/GENTZEN_COHERENCE_WRITING.md).
+Evidence: provenance/wsl-gentzen-positive-coherence/. Strict pinned verification,
+all thirty public check files and 48 expected rejections have exact counts,
+commands, exits and hashes in FINAL_VERIFICATION.json. Checked source archives
+are read back and compared with committed bytes; DELIVERY_REGISTER.json retains
+verified conflict-preserving repository/Downloads paths. Reviews are local
+author-side; independent replay, Comparator, official/service verification and
+publication remain separate unperformed statuses.
+
+Next complete the full source congruence/uniform-substitution correspondence,
+instantiate actual maximality, formalize the short q_A/e_A proof while retaining
+the symmetric-fold route, and finish the model corollary and every remaining
+mathematical claim in all three v7 appendices. Continue under the existing full-
+paper authorization. Retained checkpoints below keep their historical scope;
+this current table supersedes their earlier open coherence/normalization statuses.
+
+
 ## Current manuscript: v7 with the authorized errata appendix
 
 V7, dated 28 October 2026, preserves all v6 mathematical content and adds the
@@ -22,7 +70,7 @@ correspondence remains open. Selected-cut positivity and native fresh-principal 
 the concrete blocked reductions remain open. Global cut elimination, coherence and all other full-paper obligations
 retain their current status. The underlying v6 target is supplemented, not reduced.
 
-## Current opposite logical checkpoint (28 October 2026)
+## Retained opposite logical checkpoint (28 October 2026)
 
 `CutCommutation.opposite_conjL` and `opposite_disjR` prove the two actual opposite
 unary logical commuting families at arbitrary selected gaps and original output
@@ -488,7 +536,7 @@ page index is the printed number plus 11 (the one-based PDF page number is the p
 The source PDF and extracted text are local consultation evidence, not
 redistributed as repository source.
 
-## Current Reducibility correspondence: verified partial follow-up
+## Retained Reducibility correspondence: verified partial follow-up
 
 The governing endpoint remains both full Reducibility Lemmata in
 [the active instruction](CODEX_AFTER_05C6BC8_REDUCIBILITY.txt).
@@ -684,7 +732,11 @@ The historical presentation report records the occurrence equations and
 operation-preservation laws, keeping well-definedness distinct from
 faithfulness. The normalization construction below now supplies manuscript
 §3 object normal forms, both inverse comparisons, and their occurrence
-correspondence. Boolean Coherence (§14.2, conclusion p.321) remains open.
+correspondence. Boolean Coherence (§14.2, conclusion p.321) is now proved by
+Presentation.coherence through actual positive/reduced coherence. The original
+quotient remains generated equational equality; it is not redefined as relation equality.
+Presentation.interpretation supplies the full intended faithful interface. Full
+source congruence/substitution correspondence and maximality remain continuing duties.
 
 
 ## Actual normalization comparisons (current checkpoint)
@@ -1017,11 +1069,13 @@ occurrence type is Empty, the existential support statement has no witnesses,
 so the completed relation is empty; no auxiliary edge remains. These relation
 proofs interpret proved syntactic equalities in the forward direction only.
 
-The zero-tensor and union-unit algebraic steps are now proved below. The next
-concrete §12.5 construction is typed positive Gentzen syntax and its
-representation theorem, followed by cut elimination and restricted coherence.
-PositiveCoherence P and general §11.5 coherence remain open. Contravariant
-arrow negation and the other bridges remain separate.
+The zero-tensor and union-unit algebra, positive Gentzen representation,
+unrestricted cut elimination, finite atomic mix normal forms, restricted DNF/CNF
+coherence and actual PositiveCoherence P are now proved. Reduced.faithful and
+Presentation.coherence instantiate the original faithful occurrence interface.
+Contravariant arrow negation, the full quotient red-functor/equivalence laws and
+remaining full-paper bridges stay separate duties. The local construction ledgers
+below preserve their historical scopes, superseded by the current theorem table.
 
 ## Positive-fragment zero and derived union algebra
 

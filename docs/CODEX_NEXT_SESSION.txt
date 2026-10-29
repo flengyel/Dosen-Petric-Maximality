@@ -1,9 +1,10 @@
-CONTINUE V7 AFTER UNRESTRICTED CUT ELIMINATION: PROVE COHERENCE
+CONTINUE V7 AFTER BOOLEAN COHERENCE: COMPLETE SOURCE MAXIMALITY BRIDGES
 
 Read AGENTS.md, CODEX_FULL_MANUSCRIPT_FORMALIZATION.md, current statement,
 coverage, correction, validation and constructor/tag records, and
 CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt with both 77199AC reviews.
-Read GENTZEN_CUT_ELIMINATION_REPORT.md and its hostile/writing reviews, reusing
+Read GENTZEN_COHERENCE_REPORT.md and its hostile/writing reviews, reusing
+GENTZEN_CUT_ELIMINATION_REPORT.md and its hostile/writing reviews, reusing
 GENTZEN_ALL_BLOCKED_REPORT.md and its hostile/writing reviews, reusing
 GENTZEN_BLOCKED_CONJ_SECOND_REPORT.md and its hostile/writing reviews, reusing
 GENTZEN_BLOCKED_CONJ_FIRST_REPORT.md and its hostile/writing reviews, reusing
@@ -19,7 +20,8 @@ GENTZEN_BLOCKED_GAMMA_REPORT.md and its reviews, plus
 GENTZEN_DISJL_BINARY_CUTS_REPORT.md and all its reviews, plus
 all preceding reports, accepted corrections and sections 4–7 of
 CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt and the later B8FCD28 contract.
-Prior continuation: history/CODEX_NEXT_SESSION_263C452.txt, archived verbatim.
+Prior continuation: history/CODEX_NEXT_SESSION_75B8E48.txt, archived verbatim.
+The 263C452 continuation remains preserved.
 The 19B3002 continuation remains preserved.
 The 375356F continuation remains preserved.
 The 1A89A84 continuation remains preserved.
@@ -163,15 +165,24 @@ separately typed leftFirst macro. firstRaw/secondRaw use actual structural
 programs and are atomized after cut-freeness. Other completed builders preserve
 Atomized directly. No output blockedness or returned-rank promise is added.
 
-Current local evidence: eight new production modules, exact general signatures
-and actual global normalization witnesses, strict pinned source/dependency audit,
-all public check files and 44 expected rejections. Actual counts/exits/hashes and
-checked/committed source bytes: provenance/wsl-gentzen-global-induction/.
-Checks/GlobalCutElimination.lean covers arbitrary P, signed/negative literals,
-Empty/constants, a cut below thinning and duplicated arbitrary contexts, using
-the actual unrestricted eliminator. All prior evidence remains preserved.
-Reviews are local author-side; independent replay, Comparator and official/service
-checks were not performed.
+Actual coherence is now proved: pure_positive_coherence, normal_positive_coherence,
+explicit dnf_expansion/cnf_expansion with represented one-sided recovery,
+Gentzen.positive_coherence, Reduced.faithful/boolean_coherence and
+Presentation.coherence/interpretation/interpretation_signedLabel. G.mix_normal_form
+constructs actual finite atomic forms; PurePort coordinates and singleton edge
+relations are exact. finiteUnion requires an existing-arrow witness for its empty
+case. Mix's reversed blocks, repeated tags, signs and constants are preserved.
+Milestone I's full intended interface is instantiated and a Nat nonthin witness
+is checked; the empty Hom(top,bot) persists. Full source congruence/substitution
+correspondence and final actual maximality instantiation remain continuing duties.
+
+Current local evidence: eighteen production modules; all thirty public files,
+actual intended-interface/nonthin/empty/constant/signed-tag witnesses and 48
+expected rejections; full strict source/dependency audit and checked/committed
+source archive in provenance/wsl-gentzen-positive-coherence/. Actual counts,
+exits/hashes and delivery paths are retained there. Prior results and all receipts
+persist. Reviews are local author-side; independent replay, Comparator and
+official/service checks were not performed.
 
 CONCRETE CONTINUATION
 
@@ -190,8 +201,8 @@ CutElimination P and AtomizedCutElimination P inhabitants preserve exact origina
 sequents and Reduced equality. No conditional handler bundle remains in these
 endpoints. Reuse them; do not reopen their accepted recursion contract.
 
-1. Continue restricted mix/positive/reduced/Boolean coherence, actual intended-
-presentation and uniform-substitution/congruence bridges, the short q_A/e_A proof,
+1. Complete full source proof-congruence and uniform-substitution correspondence,
+instantiate actual-presentation maximality, and formalize the short q_A/e_A proof,
 retained symmetric-fold route, actual-presentation maximality, model corollary and
 every mathematical claim in all three v7 appendices. All three milestones and
 the complete-paper endpoint remain distinct.
@@ -214,7 +225,7 @@ unchanged TeX. Propagate an established correction across its full scope and ver
 Use pinned Lean 4.35.0, module headers and files below 10,000 lines. One heavy
 build/audit at a time; retain actual logs and exits in .codex-work. Run verify.sh,
 all exact public/actual witness checks, full dependency/source closure and all
-44 controls. Apply both required local reviews to actual milestones.
+48 controls. Apply both required local reviews to actual milestones.
 Commit/push verified scope without force and compare checked/committed bytes.
 
 DELIVERY
@@ -226,7 +237,8 @@ register at b95abc6 / f04b638 and the seventeen-entry right-gammaDisj register
 at 1d09a27 / ecfe8da and seventeen-entry left-gammaDisj register at
 17b25c6 / fab64c2 / 2f66237, and the right-gammaConj proof/receipt 5278d5e /
 787ee6c, plus the sequential-conjunction proof/receipt 4e5c3b1 / 668fb50, and the sequential-disjunction proof/receipt 5e42101 / 0cef4a4, plus the first-disjunction proof/receipt cecdc79 / d59cb83, plus the second-disjunction proof/receipt f81846b / 8a7ee15, plus the three-copy/all-BlockedL proof/receipt bd56c03 / 1a89a84, plus the first-conjunction proof/receipt a4f265e / 375356f, plus the second-conjunction proof/receipt 7d14053 / 19b3002 and the all-fourteen
-proof/receipt 80b9472 / 263c452. Deliver all new reports/reviews and changed records
+proof/receipt 80b9472 / 263c452 and unrestricted cut-elimination proof/receipt
+852502b / 75b8e48. Deliver all new reports/reviews and changed records
 from committed bytes to /mnt/c/Users/fleng/Downloads, preserve differing files
 with commit suffixes, verify every copy and retain exact paths/hashes in the
 current delivery register. Report any failure explicitly. Keep prior receipts.

@@ -2092,3 +2092,16 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.G.cut_free_normalization
 #print axioms DosenPetric.Reduced.Gentzen.cut_elimination
 #print axioms DosenPetric.Reduced.Gentzen.atomized_cut_elimination
+#print axioms DosenPetric.Reduced.Gentzen.positive_coherence
+#print axioms DosenPetric.Reduced.faithful
+#print axioms DosenPetric.Reduced.boolean_coherence
+#print axioms DosenPetric.Presentation.coherence
+#print axioms DosenPetric.Presentation.interpretation
+#print axioms DosenPetric.Presentation.interpretation_signedLabel
+#print axioms DosenPetric.Reduced.Gentzen.G.mix_normal_form
+#print axioms DosenPetric.Reduced.Gentzen.G.pure_cutFree_faithful
+#print axioms DosenPetric.Reduced.Gentzen.normal_positive_coherence
+#print axioms DosenPetric.Reduced.Gentzen.dnf_expansion
+#print axioms DosenPetric.Reduced.Gentzen.cnf_expansion
+#print axioms DosenPetric.Reduced.Gentzen.PureEdge.evaluate_faithful
+#print axioms DosenPetric.Reduced.finiteUnion.eq_of_members
