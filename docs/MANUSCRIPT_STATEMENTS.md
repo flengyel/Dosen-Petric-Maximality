@@ -1,6 +1,40 @@
 # Manuscript v7: statements and formal scope
 
-## Current original isolation and complete substitution square (29 October 2026)
+## Current full-source models and model corollary (29 October 2026)
+
+The v7 model corollary is now proved for the actual complete primitive source
+presentation. Full interpretations, all-valuation canonical functors, substitution
+composition and free evaluation correspondence are constructed; Source.model
+instantiates every model law in the intended category. Universal agreement is a
+uniformly substitution-closed full proof congruence. Actual maximality and the
+native target product laws prove that all existing target hom-sets are
+subsingletons. Nonempty source variables are used exactly to choose p. No
+surjectivity, fixed-kernel closure, new arrow existence or mathematical axiom is
+assumed. Target object/hom and source-variable universes are independent.
+
+| Manuscript/source claim | Exact declarations | Scope/status |
+| --- | --- | --- |
+| Full model semantics | PresentationSemantics.Objects/Primitives, formula, Primitives.evaluate/SatisfiesTheory | All 31 raw constructor families and every actual Equation schema. |
+| Quotient functor and full interpretations | evaluate_derives/evaluateHom/evaluationFunctor/canonicalInterpretation, Interpretation | Generated soundness and every finite primitive/object preservation law are proved. |
+| Substitution composition and evaluation | Interpretation.precompose/object_evaluation/raw_evaluation/hom_evaluation | Independent variable universes, explicit object equalities and exhaustive constructor induction. |
+| Intended model witness | Source.equations/bicartesian/model | Fully instantiated, including Nat nonthinness and Empty/top/bot checks; no unproved model bridge. |
+| Universal agreement | Agreement.fragment_closed/congruence/closed/iff_valuations | Full family, equivalent to all canonical valuations. Additional derived-negation closure follows from proved fragment_dichotomy/of_closed_fragment, not an assumed kernel law. |
+| cor:models | model_corollary/model_corollary_interpretations | All native target arrows collapse using equal projections and both native product beta laws. |
+| Remaining whole paper | Arrow-action transports; Appendix A profiles/gamma/chi/ordinals/renaming/example; FP-SCOPE-20261029 | Open. All earlier reduction/coherence/main/short-proof/Appendix B and C results remain preserved. |
+
+Exact declarations, immutable local evidence and committed-byte delivery paths
+are in provenance/wsl-full-source-models/. Required local verification comprises
+strict full dependency/source audit, all 34 public files and 66 rejection controls.
+See [report](FULL_SOURCE_MODELS_REPORT.md),
+[hostile review](reviews/FULL_SOURCE_MODELS_HOSTILE.md) and
+[writing review](reviews/FULL_SOURCE_MODELS_WRITING.md). Both reviews are local
+author-side. Independent replay, Comparator, official/service verification and
+publication were not performed. All nine manuscript blobs and the stash remain
+preserved. The final manuscript scope refresh remains pending before whole-paper
+certification. Dated checkpoints below retain their historical scope.
+
+
+## Retained original isolation and complete substitution square checkpoint (29 October 2026)
 
 The printed original-endpoint isolation theorem, source nonzero identities and
 cartesian-closure obstruction, all Appendix B paths and exact symmetric-fold
@@ -779,7 +813,7 @@ interpretation of variables, not one fixed valuation.
 | `prop:all-contexts` | `ContextualCollapse.context_retract`, `all_contexts` | Typed substitution on arrows and endpoints, separate congruence closure, positive substitution, and negative substitution followed by double-negation transport. |
 | `lem:collapse` | ShortProof.total, terminal_id/terminal_pair, r_i, projection_id, diagonal_u, projections; PresentationShortTerminal.lean, PresentationShortProjection.lean | Complete distinct short q/e proof directly modulo arbitrary Congruence (Presentation.operations P), assuming every K_A. Original inverse equations and original coherence only; no quotient faithfulness or cancellation of j_A. Existing ContextualCollapse.total symmetric-fold route preserved. |
 | `thm:main` | Presentation.short_maximality and Presentation.maximality; congruence_dichotomy; raw_maximality | Both actual source proof routes are instantiated. P : Type u arbitrary, full proof congruences and explicit uniform endosubstitution closure; all inputs and raw/quotient correspondence proved. |
-| `cor:models` | Not implemented | All interpretations; use nonempty P to choose a variable and interpret it as an arbitrary object. |
+| `cor:models` | PresentationSemantics.model_corollary/model_corollary_interpretations; full semantic/interpretation/source-model/universal-agreement modules | Complete for actual full primitive source models, arbitrary independent universes, Nonempty P, all valuations/full interpretations and arbitrary native target parallel arrows. All quotient/model bridges and full congruence closure proved. |
 | Appendix A | Actual block bijection, label and whole-arrow squares complete; profiles/ordinals remain open | Formula.expand/contract, contract_label/expand_label and all source substitution squares are instantiated. Complete profiles, gamma/chi and all their squares, ordinal bijections/locator, delta/book bridge, skeleton/profile reconstruction, worked example and noninjective renaming/specializations. |
 | Appendix B | ManuscriptDiagrams.first_triangle/zero_diagram/zero_primitive/zero_square, ManuscriptStructuralDiagrams.lean | Complete exact source paths: typed triangle; five named arrows and their zero identity; arbitrary parallel f/g square. Uses existing source equations, no duplicated proof assumptions. |
 
@@ -802,7 +836,8 @@ full-source restriction and closure bridge.
 `f : Hom A B`. Its per-substitution functor/operation laws are inputs;
 composition and identity laws for substitution schemas themselves have not
 been formalized. No closure under substitution is inferred from one
-interpretation kernel. The model corollary still requires every interpretation.
+interpretation kernel. The model corollary is now proved using every full interpretation, with its
+all-valuations equivalence and universal-agreement closure proved explicitly.
 
 ## Source-presentation instances
 
@@ -834,8 +869,8 @@ signed coordinate correspondence. `Presentation.occurrence_signedLabel` now
 proves global signed-label preservation directly, with normal-form literal
 and transport consequences. Derived contravariant arrow negation, natural DN/DM comparisons and congruence
 restriction are now proved. Negation/substitution compatibility is now proved by substitute_negate and
-negate_subst_derives. Remaining arrow-action, Appendix A/profile/ordinal and
-model correspondences stay open. The distinct short proof is now
+negate_subst_derives. The full-source model corollary is now proved and instantiated. Remaining
+arrow-action and Appendix A/profile/ordinal correspondences stay open. The distinct short proof is now
 complete by Presentation.short_maximality. The reduced signed-literal syntax and existential representation
 bridge and actual Reduced.faithful are now constructed, with occurrence
 compatibility and the instantiated original-category coherence transfer. See the

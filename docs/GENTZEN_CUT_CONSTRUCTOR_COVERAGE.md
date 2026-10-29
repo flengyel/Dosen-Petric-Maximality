@@ -105,3 +105,12 @@ constructors have actual whole-arrow substitution block squares and negation
 commutes with substitution. See FULL_PAPER_CORRESPONDENCES_REPORT.md. Constructor/
 cut/rank/coherence results and both actual main routes remain preserved. Model,
 remaining Appendix A/action laws and the final scope refresh continue.
+
+## Full-source models (29 October 2026)
+
+Full primitive interpretations, canonical valuations, substitution composition,
+free evaluation correspondence and intended model laws are proved. Universal
+agreement is a full closed congruence; actual maximality proves the model
+corollary for arbitrary native target arrows. See FULL_SOURCE_MODELS_REPORT.md.
+All cut/rank/coherence and both actual main proof routes are preserved. Remaining
+Appendix A/action claims and the final scope refresh continue.

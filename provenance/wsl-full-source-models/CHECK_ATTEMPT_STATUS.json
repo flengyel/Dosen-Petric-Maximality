@@ -1,0 +1,106 @@
+{
+  "failed_development_checks": [
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.SemanticInterpretationEvaluation"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.SemanticInterpretationEvaluation"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 5.393,
+      "log": ".codex-work/full-source-models/build-SemanticInterpretationEvaluation-20261029T203459907646.log",
+      "sha256": "d4c6f3ea15ebf5cf2909c17199fb3662d949a592db091a2969a065f01c3c16d8"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.SemanticInterpretationSubstitution"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.SemanticInterpretationSubstitution"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 6.172,
+      "log": ".codex-work/full-source-models/build-SemanticInterpretationSubstitution-20261029T202908842837.log",
+      "sha256": "7c3012b361f61a3e5f0259ad0e3dabf208ae2427ecc756c769fcb18bfff2836b"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.SemanticModelCorollary"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.SemanticModelCorollary"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 4.202,
+      "log": ".codex-work/full-source-models/build-SemanticModelCorollary-20261029T204458439402.log",
+      "sha256": "9f3827dd01d03157f33ed36cdc8fd176c54ca92cd8551324c2ec21603fa3bb78"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.SemanticSourceModel"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.SemanticSourceModel"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 6.504,
+      "log": ".codex-work/full-source-models/build-SemanticSourceModel-20261029T204050211469.log",
+      "sha256": "d855a8d0e063803608568839d5398987322a7240db1f54cdc539534752f2b35a"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.SemanticUniversalAgreement"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.SemanticUniversalAgreement"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 4.63,
+      "log": ".codex-work/full-source-models/build-SemanticUniversalAgreement-20261029T204439279586.log",
+      "sha256": "2cd1a2b0c213dba48b1ae0a600b40c99b52d2bc3127682754a473dee45914018"
+    }
+  ],
+  "counted_as_expected_rejection": false,
+  "final_checks": "FINAL_VERIFICATION.json"
+}

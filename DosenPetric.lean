@@ -785,3 +785,15 @@ public import DosenPetric.PresentationSubstitutionWiring
 public import DosenPetric.PresentationSymmetricFold
 public import DosenPetric.SubstitutionFiberGraphs
 public import DosenPetric.SubstitutionFiberRelations
+public import DosenPetric.PresentationFragmentMaximality
+public import DosenPetric.SemanticBicartesian
+public import DosenPetric.SemanticEvaluation
+public import DosenPetric.SemanticInterpretation
+public import DosenPetric.SemanticInterpretationEvaluation
+public import DosenPetric.SemanticInterpretationSubstitution
+public import DosenPetric.SemanticModelCorollary
+public import DosenPetric.SemanticQuotientEvaluation
+public import DosenPetric.SemanticSignature
+public import DosenPetric.SemanticSourceModel
+public import DosenPetric.SemanticTransport
+public import DosenPetric.SemanticUniversalAgreement

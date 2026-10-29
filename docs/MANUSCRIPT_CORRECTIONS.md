@@ -1,5 +1,17 @@
 # Manuscript corrections and source errata
 
+## Full-source model correspondence (29 October 2026)
+
+The model corollary now has its actual full primitive semantics and every
+interpretation/evaluation/substitution/source-model bridge proved. Universal
+agreement's full negation closure is explicitly derived from the already proved
+fragment dichotomy; no fixed-kernel substitution law is assumed. The initial
+source-model proof needed explicit implicit binders for the tensor preservation
+field, and proposition-valued witnesses use theorem declarations. Lean rejected
+the incomplete versions; corrected source and the full affected scope compile.
+No new manuscript mathematical defect was established. FP-SCOPE-20261029 remains
+pending, with all nine manuscript blobs, versions and diagrams preserved.
+
 ## Further exact correspondences and retained scope update (29 October 2026)
 
 Original isolation, source nonzero identities/global points, the cartesian-

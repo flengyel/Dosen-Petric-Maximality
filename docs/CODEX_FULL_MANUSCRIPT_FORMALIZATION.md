@@ -1,6 +1,40 @@
 # Complete Lean formalization of manuscript v7
 
-## Current original isolation and complete substitution square (29 October 2026)
+## Current full-source models and model corollary (29 October 2026)
+
+The v7 model corollary is now proved for the actual complete primitive source
+presentation. Full interpretations, all-valuation canonical functors, substitution
+composition and free evaluation correspondence are constructed; Source.model
+instantiates every model law in the intended category. Universal agreement is a
+uniformly substitution-closed full proof congruence. Actual maximality and the
+native target product laws prove that all existing target hom-sets are
+subsingletons. Nonempty source variables are used exactly to choose p. No
+surjectivity, fixed-kernel closure, new arrow existence or mathematical axiom is
+assumed. Target object/hom and source-variable universes are independent.
+
+| Manuscript/source claim | Exact declarations | Scope/status |
+| --- | --- | --- |
+| Full model semantics | PresentationSemantics.Objects/Primitives, formula, Primitives.evaluate/SatisfiesTheory | All 31 raw constructor families and every actual Equation schema. |
+| Quotient functor and full interpretations | evaluate_derives/evaluateHom/evaluationFunctor/canonicalInterpretation, Interpretation | Generated soundness and every finite primitive/object preservation law are proved. |
+| Substitution composition and evaluation | Interpretation.precompose/object_evaluation/raw_evaluation/hom_evaluation | Independent variable universes, explicit object equalities and exhaustive constructor induction. |
+| Intended model witness | Source.equations/bicartesian/model | Fully instantiated, including Nat nonthinness and Empty/top/bot checks; no unproved model bridge. |
+| Universal agreement | Agreement.fragment_closed/congruence/closed/iff_valuations | Full family, equivalent to all canonical valuations. Additional derived-negation closure follows from proved fragment_dichotomy/of_closed_fragment, not an assumed kernel law. |
+| cor:models | model_corollary/model_corollary_interpretations | All native target arrows collapse using equal projections and both native product beta laws. |
+| Remaining whole paper | Arrow-action transports; Appendix A profiles/gamma/chi/ordinals/renaming/example; FP-SCOPE-20261029 | Open. All earlier reduction/coherence/main/short-proof/Appendix B and C results remain preserved. |
+
+Exact declarations, immutable local evidence and committed-byte delivery paths
+are in provenance/wsl-full-source-models/. Required local verification comprises
+strict full dependency/source audit, all 34 public files and 66 rejection controls.
+See [report](FULL_SOURCE_MODELS_REPORT.md),
+[hostile review](reviews/FULL_SOURCE_MODELS_HOSTILE.md) and
+[writing review](reviews/FULL_SOURCE_MODELS_WRITING.md). Both reviews are local
+author-side. Independent replay, Comparator, official/service verification and
+publication were not performed. All nine manuscript blobs and the stash remain
+preserved. The final manuscript scope refresh remains pending before whole-paper
+certification. Dated checkpoints below retain their historical scope.
+
+
+## Retained original isolation and complete substitution square checkpoint (29 October 2026)
 
 The printed original-endpoint isolation theorem, source nonzero identities and
 cartesian-closure obstruction, all Appendix B paths and exact symmetric-fold
@@ -659,8 +693,8 @@ Appendix B and the displayed symmetric-fold correspondence are proved.
 The complete 31-constructor/quotient occurrence-block substitution square,
 actual label square and derived-negation/whole-arrow-substitution compatibility
 are also proved, with full operation and witnessed-zero laws. Preserve them.
-Continue full-source model interpretations, composition with substitution and
-the universal-agreement congruence/model corollary; remaining arrow-action
+Full-source model interpretations, composition with substitution and
+the universal-agreement congruence/model corollary are now proved. Continue arrow-action
 composition and all Appendix A profile/ordinal/renaming/example constructions.
 The dated §6 development-status paragraph requires a coordinated final scope
 refresh before full-paper certification; preserve all versions and diagrams.

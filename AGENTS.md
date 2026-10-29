@@ -72,8 +72,9 @@ category. Actual full proof-congruence correspondence, substitution closure,
 both actual
 maximality routes, original isolation, complete whole-arrow block/label squares,
 negation/substitution compatibility, Appendix B, categorical consequences and
-exact symmetric-fold correspondence are now proved. Continue full-source model
-interpretations and the model corollary, remaining substitution-action and
+exact symmetric-fold correspondence are now proved. Full-source model
+interpretations, substitution composition, universal agreement and the model
+corollary are now proved and instantiated. Continue remaining substitution-action and
 Appendix A profile/ordinal/renaming/example claims, and final manuscript scope
 refresh. Preserve both proof routes and every completed result. Reuse all
 completed binary, unary, structural,
