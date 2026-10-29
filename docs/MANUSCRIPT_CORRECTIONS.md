@@ -15,6 +15,14 @@ marked formalized merely because its TeX has been added.
 
 ## Current correction status
 
+All twelve binary commutations now have actual native/selected equations,
+reconstructions and instantiated original-rank steps, including all four disjL
+branches. Every former logical-binary open candidate is resolved. Fourteen blocked
+reductions and global induction remain open. No manuscript defect was established;
+GENTZEN_DISJL_BINARY_CUTS_REPORT.md and current evidence give exact scope. Earlier
+open binary records below are superseded historical checkpoints. All accepted
+source/rank/atomization, writing and delivery decisions persist.
+
 All four conjR branches are now proved, including the retained conjR_left_second
 native candidate and full selected reconstruction/rank step. Four disjL and
 fourteen blocked reductions remain open. The next exact native candidate is

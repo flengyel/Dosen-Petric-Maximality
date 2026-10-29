@@ -1987,3 +1987,15 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.BinaryLogical.conjLeftSecondNative_equation
 #print axioms DosenPetric.Reduced.Gentzen.BinaryLogical.conjRLeftSecond_equation
 #print axioms DosenPetric.Reduced.Gentzen.CutCommutation.conjR_left_second_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.DisjLogical.disjL_left_first_core
+#print axioms DosenPetric.Reduced.Gentzen.DisjLogical.sourceConj_swap
+#print axioms DosenPetric.Reduced.Gentzen.DisjLogical.disjL_right_second_core
+#print axioms DosenPetric.Reduced.Gentzen.DisjLogical.disjL_right_first_core
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.disjL_left_first_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.disjL_left_second_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.disjL_right_first_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.disjL_right_second_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.DisjLogical.disjLLeftFirst_equation
+#print axioms DosenPetric.Reduced.Gentzen.DisjLogical.disjLLeftSecond_equation
+#print axioms DosenPetric.Reduced.Gentzen.DisjLogical.disjLRightFirst_equation
+#print axioms DosenPetric.Reduced.Gentzen.DisjLogical.disjLRightSecond_equation
