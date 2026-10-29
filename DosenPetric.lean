@@ -523,3 +523,12 @@ public import DosenPetric.GentzenConjLeftParent
 public import DosenPetric.GentzenConjLeftRoutes
 public import DosenPetric.GentzenConjLeftSelected
 public import DosenPetric.GentzenConjLeftStrength
+public import DosenPetric.GentzenConjSecondCoordinates
+public import DosenPetric.GentzenConjSecondCore
+public import DosenPetric.GentzenConjSecondDeletion
+public import DosenPetric.GentzenConjSecondEquation
+public import DosenPetric.GentzenConjSecondNative
+public import DosenPetric.GentzenConjSecondParent
+public import DosenPetric.GentzenConjSecondRoutes
+public import DosenPetric.GentzenConjSecondSelected
+public import DosenPetric.GentzenFirstBlockExchange

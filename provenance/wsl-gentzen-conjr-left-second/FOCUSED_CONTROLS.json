@@ -1,0 +1,121 @@
+[
+  {
+    "name": "missing-second-output-exchange",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-conjr-left-second/missing-second-output-exchange.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-conjr-left-second/missing-second-output-exchange.lean",
+    "source_sha256": "e2ffe6cf1a72280be8e7b0dd1273f90033ce05dde0ac8981aa95f0e1f3cc9741",
+    "log": ".codex-work/gentzen-conjr-left-second/missing-second-output-exchange.log",
+    "log_sha256": "8d8746b6fe2b92b034c20c8013ee04c4e587ff0ca0a70b19310336b63f648e75"
+  },
+  {
+    "name": "missing-retained-A",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-conjr-left-second/missing-retained-A.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-conjr-left-second/missing-retained-A.lean",
+    "source_sha256": "3ffd8a977b3cb89e2354fff546e61a1663c193f6f9b40302be37e0c61860f178",
+    "log": ".codex-work/gentzen-conjr-left-second/missing-retained-A.log",
+    "log_sha256": "d95bfa6d0050f72efcc528c5b637a11db8382067a77181b1e711db559ba74591"
+  },
+  {
+    "name": "missing-conj-output-exchange",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-conjr-left-second/missing-conj-output-exchange.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-conjr-left-second/missing-conj-output-exchange.lean",
+    "source_sha256": "15eb1c0755d22a9407498aca022dbd6066c5f26b07ea01e212b94da2e1ffe444",
+    "log": ".codex-work/gentzen-conjr-left-second/missing-conj-output-exchange.log",
+    "log_sha256": "2ff03cc01a2624207af695b4151bab21c3ab297c2fead678aa0bb4d8df4408c2"
+  },
+  {
+    "name": "missing-retained-B",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-conjr-left-second/missing-retained-B.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-conjr-left-second/missing-retained-B.lean",
+    "source_sha256": "7f05dc18a69748570ac03eaaa096c865ebf52c999f1fb9ef5702e855633ef3e2",
+    "log": ".codex-work/gentzen-conjr-left-second/missing-retained-B.log",
+    "log_sha256": "d6ddac8e7d618495ee4404ceea8e376cfc22fdb53d15b20282f822b2e392489b"
+  },
+  {
+    "name": "missing-first-input-exchange",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-conjr-left-second/missing-first-input-exchange.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-conjr-left-second/missing-first-input-exchange.lean",
+    "source_sha256": "511473cb75afdc4c7b9d0af6f1d398b990a2baf3a24ca6c343ea90e06316e5eb",
+    "log": ".codex-work/gentzen-conjr-left-second/missing-first-input-exchange.log",
+    "log_sha256": "44460044d568bb2f45f12cc37bdce84c3abfbabcfc23bcfb58f1a5f18e11da23"
+  },
+  {
+    "name": "equal-label-collapse",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-conjr-left-second/equal-label-collapse.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-conjr-left-second/equal-label-collapse.lean",
+    "source_sha256": "48cd2a94cbe5014149ab421050dbe1da92e0a42bab799f343d08d5717262fc50",
+    "log": ".codex-work/gentzen-conjr-left-second/equal-label-collapse.log",
+    "log_sha256": "67ec784197225920089aac628928432d76b466d4ef48824b83ad51947da41c21"
+  },
+  {
+    "name": "mix-conventional-order",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-conjr-left-second/mix-conventional-order.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-conjr-left-second/mix-conventional-order.lean",
+    "source_sha256": "6cc6e58ead8817aa46985ddc93819bea1cc50986a2cf5b22d94e6cadd57d2ce8",
+    "log": ".codex-work/gentzen-conjr-left-second/mix-conventional-order.log",
+    "log_sha256": "0d62c1da743611db7f7e7969503a0ae5c365fa34b27c31a2d8a84cbc42212c62"
+  }
+]

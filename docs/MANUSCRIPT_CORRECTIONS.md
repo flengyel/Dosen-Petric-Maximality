@@ -15,6 +15,13 @@ marked formalized merely because its TeX has been added.
 
 ## Current correction status
 
+All four conjR branches are now proved, including the retained conjR_left_second
+native candidate and full selected reconstruction/rank step. Four disjL and
+fourteen blocked reductions remain open. The next exact native candidate is
+disjL_left_second. No manuscript defect was established. Current report:
+GENTZEN_CONJR_LEFT_SECOND_REPORT.md. Earlier open conjunction records below
+remain historical checkpoints, now superseded. All accepted decisions persist.
+
 conjR_left_first now resolves the formerly open mixed-rule core and completes
 its native/selected equations, reconstruction and original-rank step. Five logical
 binary and fourteen blocked reductions remain open. The next exact native

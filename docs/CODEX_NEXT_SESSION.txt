@@ -1,15 +1,15 @@
-CONTINUE V7 AFTER CONJR LEFT-FIRST: FIVE LOGICAL BINARY BRANCHES
+CONTINUE V7 AFTER ALL CONJR BRANCHES: FOUR DISJL BRANCHES
 
 Read AGENTS.md, CODEX_FULL_MANUSCRIPT_FORMALIZATION.md, current statement,
 coverage, correction, validation and constructor/tag records, and
 CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt with both 77199AC reviews.
-Read GENTZEN_CONJR_LEFT_FIRST_REPORT.md and its hostile/writing reviews, reusing
+Read GENTZEN_CONJR_LEFT_SECOND_REPORT.md and its hostile/writing reviews, reusing
 all preceding reports and accepted corrections. The prior continuation is
-archived verbatim at history/CODEX_NEXT_SESSION_D0C3CCA.txt; older archives persist.
+archived verbatim at history/CODEX_NEXT_SESSION_730E855.txt; older archives persist.
 
 811eceebf9991640cf9dcd3923925f75235d4199 is incorporated, preserving newer work.
 Preceding proof/receipt pairs: a654ed0 / 408257b (four mix), 9af0a8a / 77199ac
-(right-second conjunction and symmetry), 05a02ff / d0c3cca (right-first conjunction).
+(right-second conjunction and symmetry), 05a02ff / d0c3cca (right-first conjunction), a2ca733 / 730e855 (first-child parametric output).
 Inspect current task/status. Preserve stash dedfd8fc8cd49930e9a162d5be585215b062a43c
 and unrelated checkouts. ChatGPT reviews/prepares; local WSL Codex implements/builds.
 
@@ -24,33 +24,33 @@ Four mix branches are complete through actual equations, reconstructions and
 instantiated rank steps. first_equation uses firstRaw, not the separately typed
 leftFirst macro. firstRaw/secondRaw use actual residual structural programs and
 are atomized after cut-freeness. Leading/rightFirstAt preserve Atomized directly.
-Both right-side conjR branches and conjR_left_first have native/selected Reduced
+All four conjR branches have native/selected Reduced
 equations, exact-output builders, count/Atomized/congruence and eliminated/rank
 steps. mixedDisj_swap is an actual Reduced equation, not a general G duality.
 
-conjR_left_first_core resolves the formerly retained open diagram using actual
-dist_b_conj, selectedMixed_eq and actual coproduct deletion coordinates.
-conjLeftFirstNative_equation proves its actual native reconstruction;
-conjRLeftFirst_equation handles arbitrary original tags. The rank call is
-ih f a.there h z hd.2 hd.1 before adapters. No output blockedness or rank promise.
-Do not report the old left-first core as the current blocker.
+Both left-side conjR cores resolve the formerly retained open diagrams.
+conjLeftFirstNative_equation/conjLeftSecondNative_equation prove the exact
+native builders; conjRLeftFirst_equation/conjRLeftSecond_equation handle all
+original tags. The new rank call is ih g a.there h z hd.2 hd.1 before adapters.
+Actual mixed symmetry, coproduct coordinates and first-block exchange/fold
+comparisons are proved. No output blockedness/rank promise or general G duality.
 
-Current local evidence: 566 screened Lean files, 12,015 audited declarations,
-fourteen public files, eleven expected rejections; ten new production modules,
-39 source declarations. Evidence: provenance/wsl-gentzen-conjr-left-first/.
-Earlier phase evidence remains preserved. Reviews are local author-side reviews;
-no independent replay, Comparator or official/service verification is claimed.
+Current local evidence: 576 screened Lean files, 12,055 audited declarations,
+fifteen public files and twelve expected rejections. Nine new production modules,
+34 source declarations; provenance/wsl-gentzen-conjr-left-second/. Earlier evidence
+persists. Reviews are local author-side; no independent replay, Comparator or
+official/service verification is claimed. All conjunction candidates are resolved.
 
 CONCRETE CONTINUATION
 
-1. Complete conjR_left_second and all four disjL branches through actual equations,
-exact-output reconstructions and original-child rank steps. The exact next native
-candidate is current evidence open/next-conjr-left-second.lean. It selects C under
-the fresh A∧B and first residual Δ, cuts the original second child retaining B,
-then restores the input and output block orders. Both paths type-check; their
-actual Reduced equality remains unproved. Prove it and all selected-tag lifts.
-A reflected calculation requires actual definitions/interpretation laws, never
-an assumed proof duality. All retained-tag recipes and original descents persist.
+1. Complete all four disjL branches through actual native/selected equations,
+exact-output reconstructions and original-child rank steps. The exact next
+candidate is current evidence open/next-disjl-left-second.lean: cut the original
+second child retaining B, rebuild actual G.disjL, restore T and fixed Γ in the
+input and J/Δ in the output. Both paths type-check; their actual sourceConj/
+disjLeft equation is unproved. Derive any reflected calculation from proved
+actual definitions/interpretation laws; do not assume G duality. Preserve all
+retained-tag recipes and original descents.
 2. Prove seven BlockedL and seven BlockedR reductions. Invert actual witnesses and
 arities. Gamma cases use parallel original smaller-rank cuts; logical cases
 eliminate parametric copies before a fresh native principal cut. Route below it
@@ -82,13 +82,13 @@ p.262 RIGHT-rank-one concrete blocked correspondences remain open.
 Use the pinned toolchain, module headers and files below 10,000 lines. One heavy
 build/audit at a time; preserve actual logs/exits in .codex-work. Run verify.sh,
 exact public and actual reconstruction witnesses, full dependency/source closure
-and all eleven controls. Apply both required local reviews to each milestone.
+and all twelve controls. Apply both required local reviews to each milestone.
 Commit/push scoped verified work without force, compare checked/committed bytes.
 
 DELIVERY
 
 Earlier deliveries remain complete under their receipts, including the 19-entry
-mix, 16-entry logical and 20-entry right-first registers, older successor files
+mix, 16-entry logical and 20-entry right-first and 17-entry left-first registers, older successor files
 and these three instruction/review files from 811eceeb committed bytes:
  docs/CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt
  docs/reviews/GENTZEN_77199AC_REVIEW.md

@@ -1,64 +1,62 @@
 # Coverage and next proof obligations
 
-## Current first-child parametric-output conjunction construction (28 October 2026)
+## Current second-child parametric-output conjunction construction (28 October 2026)
 
-Successor 811eceeb is integrated; all completed results and stash
-dedfd8fc8cd49930e9a162d5be585215b062a43c are preserved. conjR_left_first is
-now proved through the actual mixed-rule core, native/selected equations,
-exact-output reconstruction, count/Atomized/congruence, eliminated witness and
-instantiated original-rank step. This resolves the old left-first core retained
-in the preceding right-first report; that historical report remains preserved.
+Successor 811eceeb is incorporated, preserving all completed results and stash
+dedfd8fc8cd49930e9a162d5be585215b062a43c. All four conjR and four mix branches
+are now complete through actual native/selected Reduced equations, exact-output
+reconstruction, count/Atomized/congruence, eliminated witnesses and instantiated
+original-rank steps. conjR_left_second resolves the preceding native candidate.
 
-splice_distRight follows from actual dist_b_conj. selectedMixed_eq uses the
-proved first-residual comparison and actual opposite-category coordinates.
-conjLeftFirstNative_equation and conjRLeftFirst_equation instantiate every
-fold/unit, front/inverse-front, residual-route and erasure comparison. The rank
-call is ih f a.there h z hd.2 hd.1 on the original inherited clean child before
-adapters. No assumed diagram, general proof duality or graph reflection is used.
+Its core uses actual mixedDisj_swap and proved coproduct coordinates, retaining
+the internal principal swap. BinaryMix.swapBlocks_arrow/split identify actual
+first-block exchanges on both sides, including empty blocks. Native fold/unit,
+head/inverse-head, arbitrary headShift/residual-prefix and erasure comparisons
+are all instantiated. The rank call is ih g a.there h z hd.2 hd.1 before routing.
+No assumed diagram, general G duality or graph reflection is used.
 
-See [the new report](GENTZEN_CONJR_LEFT_FIRST_REPORT.md),
-[hostile audit](reviews/GENTZEN_CONJR_LEFT_FIRST_HOSTILE.md),
-[writing review](reviews/GENTZEN_CONJR_LEFT_FIRST_WRITING.md),
+See [the report](GENTZEN_CONJR_LEFT_SECOND_REPORT.md),
+[hostile audit](reviews/GENTZEN_CONJR_LEFT_SECOND_HOSTILE.md),
+[writing review](reviews/GENTZEN_CONJR_LEFT_SECOND_WRITING.md),
 [the successor](CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt) and
 [live constructor/tag table](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
-All earlier completed constructions and accepted decisions retain their scope.
+All preceding results, accepted decisions and historical reports remain preserved.
 
-| Local proof phase | Lean files | Audited declarations | Public files | Rejected controls | Evidence |
+| Local phase | Lean files | Audited declarations | Public files | Rejected controls | Evidence |
 | --- | ---: | ---: | ---: | ---: | --- |
 | Four mix; a654ed0 / 408257b | 538 | 11,886 | 11 | 8 | provenance/wsl-gentzen-binary-cuts/ |
-| Right-second conjunction and symmetry; 9af0a8a / 77199ac | 546 | 11,911 | 12 | 9 | provenance/wsl-gentzen-logical-binary-cuts/ |
+| Right-second conjunction/symmetry; 9af0a8a / 77199ac | 546 | 11,911 | 12 | 9 | provenance/wsl-gentzen-logical-binary-cuts/ |
 | Right-first conjunction; 05a02ff / d0c3cca | 555 | 11,967 | 13 | 10 | provenance/wsl-gentzen-conjr-right-first/ |
-| First-child parametric-output conjunction | 566 | 12,015 | 14 | 11 | provenance/wsl-gentzen-conjr-left-first/ |
+| First-child parametric-output conjunction; a2ca733 / 730e855 | 566 | 12,015 | 14 | 11 | provenance/wsl-gentzen-conjr-left-first/ |
+| Second-child parametric-output conjunction | 576 | 12,055 | 15 | 12 | provenance/wsl-gentzen-conjr-left-second/ |
 
-Strict/transitive audit, all public checks, actual literal/constant/empty/
-populated/deeper-tag witnesses, source closure and eleven expected rejections
-pass locally. Reviews are local author-side reviews; no independent replay,
-Comparator, official/service verification or publication is claimed. All nine
-manuscript blobs match the prior checkpoint. Unchanged TeX is not rebuilt.
+Strict/transitive audit, fifteen exact public files, actual signed/constant-only/
+empty/populated/deeper-tag witnesses, full source closure and twelve expected
+rejections pass locally. Reviews are local author-side reviews; no independent
+replay, Comparator, official/service verification or publication is claimed.
+All nine manuscript blobs match the preceding checkpoint; unchanged TeX is not
+rebuilt. No new manuscript defect was established.
 
-Seven binary branches are complete: four mix, both right-side conjR and
-conjR_left_first. Five logical branches, fourteen blocked reductions, the full
-dispatcher, discharged rank/degree/structural inductions and unrestricted
-elimination inhabitants remain open. The next exact native candidate is
-open/next-conjr-left-second.lean in current evidence: the original second-child
-cut retains B and the reconstruction restores actual input/output block orders.
-Its two paths are well-typed but their equality remains unproved. It is not a
-counterexample, negative control or manuscript defect. The old left-first core
-is resolved and must not be named as the current blocker.
+Four disjL branches, fourteen blocked reductions, the full dispatcher, discharged
+rank/degree/structural inductions and unrestricted elimination inhabitants remain
+open. Current evidence open/next-disjl-left-second.lean retains the exact next
+native candidate: cut the second child retaining B, rebuild actual G.disjL and
+restore T, fixed Γ and J/Δ block orders. Both paths type-check; their actual
+sourceConj equation is unproved. It is not a counterexample or negative control.
+The previous conjunction candidate is resolved.
 
-Coherence, later intended-presentation/substitution/congruence bridges, both
-maximality routes, model corollary and every claim of all three v7 appendices
-remain in scope. Appendix C is written; both concrete blocked-rank Lean
-correspondences remain open. All three milestones and the whole-paper endpoint
-remain distinct. No new manuscript correction was established.
+Coherence, intended-presentation/substitution/congruence bridges, both maximality
+routes, model corollary and every claim of all three v7 appendices remain in
+scope. Appendix C is written; its two concrete blocked-rank Lean correspondences
+remain open. All three milestones and the complete-paper endpoint stay distinct.
 
-Earlier delivery receipts remain complete, including the three 811eceeb
-instruction/review files and the 20-entry right-first register. Current reports,
-reviews and changed records have a separate committed-byte DELIVERY_REGISTER.json.
-Preserve differing Downloads files using commit-suffixed names and verify copies.
+Earlier delivery receipts remain complete, including the three 811eceeb successor
+files, the 20-entry right-first and 17-entry left-first registers. Current reports,
+reviews and changed records use a separate committed-byte delivery register;
+preserve differing Downloads files with commit suffixes and byte-verify copies.
 The preceding continuation is archived verbatim at
-history/CODEX_NEXT_SESSION_D0C3CCA.txt. Historical sections below do not reset
-proved scope or completed deliveries. Continue without a routine approval stop.
+history/CODEX_NEXT_SESSION_730E855.txt. Historical records do not reset proved
+scope or completed deliveries. Continue without a routine approval checkpoint.
 
 ## Current manuscript: v7 with the authorized errata appendix
 
