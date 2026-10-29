@@ -60,8 +60,9 @@ with fresh right-premise rho.left=1 and total h.rho.right+1≥2. BlockedL.disjun
 also has its actual source/rank construction. BlockedL.disjunctionBoth now has
 the actual left3 source equation, both original descents and three instantiated
 rank calls. Every BlockedL family is complete. BlockedR.conjunctionFirst now has its actual
-source equation and both instantiated original-rank calls. Complete the two
-remaining BlockedR conjunctionSecond/Both reductions and global induction. Reuse all completed binary, unary, structural,
+source equation and both instantiated original-rank calls. BlockedR.conjunctionSecond
+now has the same complete original-source/rank contract. Complete the last
+BlockedR.conjunctionBoth reduction and global induction. Reuse all completed binary, unary, structural,
 principal, cleaning and descent results. Retain earlier source/rank/atomization decisions.
 The existing three milestones remain distinct;
 even actual-presentation maximality alone does not certify the entire paper.

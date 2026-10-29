@@ -1,26 +1,25 @@
 # Došen–Petrić maximality in Lean
 
-## Current twelve blocked reductions (29 October 2026)
+## Current thirteen blocked reductions (29 October 2026)
 
-All twelve binary branches and twelve blocked families have actual source equations
-and instantiated original-rank steps. Every BlockedL family and BlockedR gammaMix,
-gammaConj, gammaDisj, disjunction and conjunctionFirst are complete. Only
-BlockedR.conjunctionSecond/Both and global induction remain open. Both Appendix C
-concrete source/rank correspondences remain proved. All earlier results,
-corrections, source bytes and delivery receipts persist.
+All twelve binary branches and thirteen blocked families have actual source equations
+and instantiated original-rank steps. Only BlockedR.conjunctionBoth and global
+induction remain open. Both Appendix C concrete source/rank correspondences remain
+proved. All earlier results, corrections, source bytes and delivery receipts persist.
 
-BlockedConjFirst.parent_source/source_equation identify the actual right2/conjR
-source and its complete arbitrary-tag Reduced equality. Selected/fixed maps and
-residues preserve every ordinal coordinate, including equal-labelled fixed U tags.
-SequentialConjFirst.native_equation uses the completed binary and right contraction
-equations. SequentialAdapters.right_equation moves all fixed programs after the
-fresh native G.conjR recursive cut. original_descent supplies original f full Clean
-and strict original rank with unchanged h/z before routing; untouched g supplies
-CutFree/Atomized. fresh_clean_and_rank proves native selected succedent rho.right=1,
-full Clean and total 1+h.rho.left below the original rank for every returned k.
-Both recursive calls are instantiated. Concrete association/residue/duplicate
-repair and final atomization preserve exact output, CutFree, Atomized and equality.
-No returned-rank bound, output blockedness or general G duality is introduced.
+BlockedConjSecond.parent_source/source_equation identify the actual right2/conjR
+source and its arbitrary-tag Reduced equality. Selected/fixed maps and erased
+residues preserve every ordinal coordinate, including equal-labelled fixed F tags.
+SequentialConjSecond.native_equation uses the completed second-conjunction binary
+and right-contraction equations. The proved right-adapter transport moves all fixed
+block exchanges after the fresh native G.conjR recursive cut. original_descent
+supplies original g full Clean and strict original rank with unchanged h/z before
+routing; untouched f supplies CutFree/Atomized. fresh_clean_and_rank proves native
+selected succedent rho.right=1, full Clean and total 1+h.rho.left below the original
+rank for every returned k. Both calls are instantiated. Concrete block-exchange,
+residue and duplicate repairs plus final atomization preserve exact output,
+CutFree, Atomized and equation. No returned-rank bound, output blockedness or
+general G duality is introduced.
 
 Both Appendix C concrete rows retain their actual source/rank declarations:
 p.260's gammaDisj equation and both strict descents, and p.262's first-disjunction
@@ -28,29 +27,29 @@ source/rank step and fresh_principal_rank/fresh_total_rank/fresh_total_rank_ge_t
 No exchanged wrapper is assigned native rank one. No new manuscript defect was
 established; all nine manuscript blobs and the stash remain unchanged.
 
-See [report](docs/GENTZEN_BLOCKED_CONJ_FIRST_REPORT.md),
-[hostile review](docs/reviews/GENTZEN_BLOCKED_CONJ_FIRST_HOSTILE.md),
-[writing review](docs/reviews/GENTZEN_BLOCKED_CONJ_FIRST_WRITING.md) and
+See [report](docs/GENTZEN_BLOCKED_CONJ_SECOND_REPORT.md),
+[hostile review](docs/reviews/GENTZEN_BLOCKED_CONJ_SECOND_HOSTILE.md),
+[writing review](docs/reviews/GENTZEN_BLOCKED_CONJ_SECOND_WRITING.md) and
 [constructor/tag map](docs/GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
-Evidence: provenance/wsl-gentzen-blocked-right-conj-first/. Eight modules contain
-45 source declarations; 764 Lean files are screened. Twenty-six public files
-and 37 expected rejections are checked. Actual audit totals/exits, checked/committed
+Evidence: provenance/wsl-gentzen-blocked-right-conj-second/. Six modules contain
+36 source declarations; 771 Lean files are screened. Twenty-seven public files
+and 38 expected rejections are checked. Actual audit totals/exits, checked/committed
 bytes and Downloads paths are in FINAL_VERIFICATION.json and DELIVERY_REGISTER.json.
 Four actual initial-output smoke witnesses use witnessed bottom-source proofs and
 initiality, covering signed/negative literals, Empty/constants and populated
-repeated X/Y/U. They are distinguished from the general source/rank proof.
+repeated F/Z/T. They are distinguished from the general source/rank proof.
 Reviews are local author-side. Independent replay, Comparator, official/service
 verification and publication remain separate unperformed statuses.
 
-Next complete BlockedR.conjunctionSecond/Both, retaining the last three-copy case.
-Assemble exhaustive dispatch, fixed-degree all-ranks Clean under strict DegreeBelow,
-arbitrary-premise cleaning, strong degree induction and arbitrary-G normalization.
-Export actual unrestricted elimination, then continue coherence, intended-presentation
-and uniform-substitution/congruence bridges, both maximality routes, model corollary
+Next complete the three-copy BlockedR.conjunctionBoth case. Assemble exhaustive
+dispatch, fixed-degree all-ranks Clean under strict DegreeBelow, arbitrary-premise
+cleaning, strong degree induction and arbitrary-G normalization. Export actual
+unrestricted elimination, then continue coherence, intended-presentation and
+uniform-substitution/congruence bridges, both maximality routes, model corollary
 and every claim in all three v7 appendices. The three milestones and full-paper
 endpoint stay distinct. Deliver committed-byte reports/records with verified
-conflict-preserving copies; continue under existing authorization without a
-routine approval checkpoint.
+conflict-preserving copies, then continue under existing authorization without
+a routine approval checkpoint.
 
 ## Current manuscript: v7 with the authorized errata appendix
 

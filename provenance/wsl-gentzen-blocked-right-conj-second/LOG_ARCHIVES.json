@@ -1,0 +1,410 @@
+[
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/audit-boundaries-20261029T170655086747.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/audit-boundaries-20261029T170655086747.log.gz",
+    "sha256": "377643b2b8fc2ff8c9b228992b82e2fd82c36bf57a7c3914aa71572ffbf89ac0",
+    "gzip_sha256": "a82fac14cef21463e52a48a71b1c44f1a44db926d22ae66fad9d79b84a37810b"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/blocked-equal-label-fixed-tag.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/blocked-equal-label-fixed-tag.log.gz",
+    "sha256": "b1fea14246499918b26e848a595b5dc9461b0b5891ae6498a88b91d3d29364d8",
+    "gzip_sha256": "a757df26e5fbb71d53facd7cc4c60e1ae808ba06b7e7a088d5f8785551a2c94d"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/build-DosenPetric-20261029T170341015079.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/build-DosenPetric-20261029T170341015079.log.gz",
+    "sha256": "68461244743f967415f4c9b9f85cf9548edb47c544d7082220007a6a9e41da9a",
+    "gzip_sha256": "d8950d5b830730138b3c15f7234c1350d5541c54919ee84dfb0b39bc2897b2bc"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/build-GentzenBlockedConjSecondRank-20261029T170136819420.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/build-GentzenBlockedConjSecondRank-20261029T170136819420.log.gz",
+    "sha256": "9debf7a189a286735826e8b5e458fcad26610884be42989f0abc6c10ee84615e",
+    "gzip_sha256": "37cda49c18241751c9c57b2a09b0ec051070e6b9c6a758f2de7de77e35baf148"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/build-GentzenBlockedConjSecondRank-20261029T170210101474.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/build-GentzenBlockedConjSecondRank-20261029T170210101474.log.gz",
+    "sha256": "46410e2085f11473b0e8443f4266df70e2995640d1280ef384677ccc845a7910",
+    "gzip_sha256": "8d7a2f43102ce0f92478a7fdc031981d33f9f9d135b70f471e107a3ae445abcd"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/conjunction-principal-is-fixed-copy.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/conjunction-principal-is-fixed-copy.log.gz",
+    "sha256": "35c0c8a203d5beb35852edc55516b3e7b9dccf1e12126616b5b1526e828909fa",
+    "gzip_sha256": "1db65b2e8db5b22c2d84fbdbf187e131bf88755c0c84c9e84407188319bee515"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/diff-check-20261029T170812070951.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/diff-check-20261029T170812070951.log.gz",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/equal-label-collapse.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/equal-label-collapse.log.gz",
+    "sha256": "708c2e91f6df796f4700479c9ecc7d2a6b5600526ba3e72f965b2895b4d24a27",
+    "gzip_sha256": "2af951bdae4544edf4affd12db3e636cec6b9f3d3b7a4ecb2c88b633ff346a5c"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/fresh-conjunction-returned-rank.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/fresh-conjunction-returned-rank.log.gz",
+    "sha256": "f935f885d758de06863638fb313442f6d0d91ab5cf241d60fe17f404efd666b4",
+    "gzip_sha256": "c54176ed6590db69ce5620c3b4674d54020134b6087d6562d18505238cfe917b"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/fresh-disjunction-returned-rank.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/fresh-disjunction-returned-rank.log.gz",
+    "sha256": "eba5518d4567ce9613b505b61ff74bce81967104432e6e396202ed55ef252280",
+    "gzip_sha256": "395d47d47b7c7303ce2bf4e2b51805f337c7a13d12135ae0c4878f1f5b505652"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/fresh-right-total-rank-one.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/fresh-right-total-rank-one.log.gz",
+    "sha256": "874e478b4ba3d4b1e18e13183a5a69758f06027387d7a6142e8d83f6381ef586",
+    "gzip_sha256": "69e6697fb7c3c2318934ec385245896df285a0689d69ae13e55c643890b397c8"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/lean-20261029T170405790085.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/lean-20261029T170405790085.log.gz",
+    "sha256": "0767b95caa12b567a311410133f0a0fc31d389b206e40e8d67ccbe0962813f96",
+    "gzip_sha256": "b967760f724c132656aa218e159d68fd806a908018c03c910dce54aec8240f8a"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/missing-conj-output-exchange.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/missing-conj-output-exchange.log.gz",
+    "sha256": "3eda5d581f2c6db927aa4c2584f205de84a58691b4a3ab55afe0c90063ba850f",
+    "gzip_sha256": "7bad40c742e3534154111fcf7bb445818e48dd034e4282193bbee520ec2bd9b9"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/missing-disj-output-exchange.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/missing-disj-output-exchange.log.gz",
+    "sha256": "f6ba8fca595424d68ac2222e1e8a7c871b1ebe1b6f430d9588b6b67ca544fd91",
+    "gzip_sha256": "9b40c55d37e5e95cfa8780a08653d00c4157171316b798e7e647510bdbca9c41"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/missing-disj-retained-input.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/missing-disj-retained-input.log.gz",
+    "sha256": "3ee998cf108f174281484a39824d5c7a452d070feb59e55e93919c1acc33ffd8",
+    "gzip_sha256": "1ce366d90ab9296de4b502925a0431ca207c09a3c592228a45ae5f05ab76161e"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/missing-first-input-exchange.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/missing-first-input-exchange.log.gz",
+    "sha256": "22a03ed97282e82ba157bf10f4e20f982e5affe45f91359267cfea1024288866",
+    "gzip_sha256": "6a472fea9b25f2aaa3d0ece02f4e96673d46f3f6ac819c9cc86ab4c22760d7b2"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/missing-parallel-input-contraction.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/missing-parallel-input-contraction.log.gz",
+    "sha256": "43f182369a91e567b6a31b6f299829cbc651bb2ab0b531928b4bf6da4ad02102",
+    "gzip_sha256": "165a3e54996af5aa0913e7a99c6709e7b5d78f896f5166acd974354ac04c5b35"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/missing-parallel-output-contraction.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/missing-parallel-output-contraction.log.gz",
+    "sha256": "12baf9101b17260d542813d28dae8d09791de1180f1e0a10c1b3b8f03a57d4fa",
+    "gzip_sha256": "9e4870fc7b1cc21927a399810d833548aced0d832cdd8f989193ed11935e29c2"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/missing-prefix-repair.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/missing-prefix-repair.log.gz",
+    "sha256": "3c10bc4f614c3f637ff776ca2d619abaa5140bcfc9f7ece37124e44b6ba0ac7a",
+    "gzip_sha256": "a5c32a53b11f27e45e254f247b3648a17d05a8a9f8596af9683f016c9471f429"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/missing-retained-A.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/missing-retained-A.log.gz",
+    "sha256": "64974804244263197dc1b98040076aa8fc31aff8fd3865991d033d8ca2a1354e",
+    "gzip_sha256": "41d2a883fe6ee005274580fe6fd678d1cebd9b24964c9a31cf5a90d2894e7063"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/missing-retained-B.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/missing-retained-B.log.gz",
+    "sha256": "c2dfd5a4b1253749748da33321acab8650cba134e9e76b77aafeecdc533e9323",
+    "gzip_sha256": "a6de53032bacd222b122db76f883cd6e8a8b420bd528b63dc1c6e52815378acf"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/missing-second-output-exchange.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/missing-second-output-exchange.log.gz",
+    "sha256": "7a065b4a3626d527f2921523b4d55dbbb7ebc4e978b3d6699bef0916603f55f6",
+    "gzip_sha256": "8d1bca365f34f4c67b26bf7b30cf8dacde04a97f00f6f4d8d9dd1547a06d11e1"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/missing-sequential-repair.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/missing-sequential-repair.log.gz",
+    "sha256": "fa0a0522d1716ac0396343497b5982425b850468c58110da3fdbe214c3e5c237",
+    "gzip_sha256": "17b483e20728a44d49513365ed3244774823a84393069f92161f05c4517b97a1"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/missing-sequential-second-cut.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/missing-sequential-second-cut.log.gz",
+    "sha256": "b4b4f6adec0d5ebe5031028d270ba0b7ed1522aeae401d321cba3ab96619ecf3",
+    "gzip_sha256": "dd63b13105604b975f029237a64ed2aca58fd4cf901c714482d9efbfb00a2978"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/missing-terminal-input-contraction.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/missing-terminal-input-contraction.log.gz",
+    "sha256": "7e899cd1cf7bda0491c2463f471a4317fdba37710023691e359a99ef5ba89154",
+    "gzip_sha256": "fec55c5a60e86c6427d0dceb665c2c8edb4c83c5324a6f7068bb184d2b9dfde7"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/missing-terminal-output-contraction.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/missing-terminal-output-contraction.log.gz",
+    "sha256": "b03980714cd8e2567a9fc831fcc3179a6e0de4621f14de10341ea679a625d745",
+    "gzip_sha256": "5576cd2aaff3a3ec1c7b40899f655a6d33cc9184c566e17b73d8a76a88fb2e9f"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/missing-third-copy-repair.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/missing-third-copy-repair.log.gz",
+    "sha256": "3fec961a2e4762fe9490dd8dfe4233f3baaf0cbb07bac495ff53fda150f1560e",
+    "gzip_sha256": "f4e5fd3d1b0fdf76bbbc4810e497e434f2b7b3c4e564faec45dfcd7ea642d6bb"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/mix-conventional-order.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/mix-conventional-order.log.gz",
+    "sha256": "733c9110273aa9e07a1d05cd0305d1a35e45229cc11f4bda48672bcb6a22b078",
+    "gzip_sha256": "b2bf95e2e3c88099c97eb1c4246225a562b7d047ff698e9032590ed87c9c5810"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/prefix-distinct-equal-labels.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/prefix-distinct-equal-labels.log.gz",
+    "sha256": "5c334e4b8c647f3f4e9dfb7b525e79c693bd4243e31f9bc9c884cfcf277cf445",
+    "gzip_sha256": "9d6d815397d13e62323d3eab1ab5741fb77ef287048d4eb1c69c4e3695593b27"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/presentation-boundaries-20261029T170711958816.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/presentation-boundaries-20261029T170711958816.log.gz",
+    "sha256": "306041f8b1c343270cc1f8c841a6a6f6aa03451e17bb5f034cd495d3b5f49f66",
+    "gzip_sha256": "c15921aa45d8e11ad49cc56d2fd468c9b56d2885c4b982b00dabd299339a6b8e"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/right-first-fixed-tail.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/right-first-fixed-tail.log.gz",
+    "sha256": "0725fe46346bacf5e713d87c1dda502c35a8c0f5a3a1a98a9babc18ccb45291d",
+    "gzip_sha256": "22cc7b3afc971485a753d62ad60ac200ae2098b5142be3ba30ba581409157498"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/right-second-fixed-first.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/right-second-fixed-first.log.gz",
+    "sha256": "6c285099c68375b5e772f77b686969eec482b6661e3a1fe2675d26ad6c5564f0",
+    "gzip_sha256": "bddabddfbceae90950692c6fccb7fcd499e6b03a5dbff0ba111f597c355a5956"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/second-branch-fixed-first-context.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/second-branch-fixed-first-context.log.gz",
+    "sha256": "fec19aa900acebe7da5e30715dbe2597fef87bd74c166fc967bb722ffb759fba",
+    "gzip_sha256": "3cbeef8e7eedfdb4c9b1fee01b09fa8662e66bae3b363526c8a881d81a15d36d"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/sequential-distinct-parametric-principal.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/sequential-distinct-parametric-principal.log.gz",
+    "sha256": "8ab243b655777fdad5d31c7175ddd6fd4c766e0b941ef01ba48a938d3e10bd2f",
+    "gzip_sha256": "3df0803d44e6b9c52ff90c3f5dbac4dfe0af159d9d4045a948f78760f06c7c02"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/sequential-returned-rank.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/sequential-returned-rank.log.gz",
+    "sha256": "6187ba7cee47931a1369f4a3ab84f11e4e542fd0937955cf24bd115eb2ed458c",
+    "gzip_sha256": "2ad3bac884970a35a90fb6121c5fd1c1a631441ffd931567ecae2f082a6cb595"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-BinaryMixCuts-20261029T170555803330.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-BinaryMixCuts-20261029T170555803330.log.gz",
+    "sha256": "1a0eb52e1cf0b07a642637f959881da0c1ddef45beb528d0c4aa04104a19d732",
+    "gzip_sha256": "a5ecc0196b03144dd755bd458524846b24586f6bfc313095bfd856540f86e0fc"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-BlockedConjFirst-20261029T170557258398.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-BlockedConjFirst-20261029T170557258398.log.gz",
+    "sha256": "95694919e3efac46fd393d6e1d1938bcc91b708141669233f180a66222b5898e",
+    "gzip_sha256": "2b17013d33b1e9e73b7caf186d5dc48fbdaf9cf4f513ec1fae0fed414b3ca298"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-BlockedConjSecond-20261029T170559575718.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-BlockedConjSecond-20261029T170559575718.log.gz",
+    "sha256": "0767b95caa12b567a311410133f0a0fc31d389b206e40e8d67ccbe0962813f96",
+    "gzip_sha256": "b967760f724c132656aa218e159d68fd806a908018c03c910dce54aec8240f8a"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-BlockedConjunction-20261029T170602146130.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-BlockedConjunction-20261029T170602146130.log.gz",
+    "sha256": "998283c7eb3961e079804ccea6921513109f235b39119d10690c93beecbae21b",
+    "gzip_sha256": "89d6f426a4fd846b9352a3cf69510052621d95de3f4ad04b1590f6492dfa9ff4"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-BlockedDisj-20261029T170604832391.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-BlockedDisj-20261029T170604832391.log.gz",
+    "sha256": "02920431fc065de5e4b73965bbcc8f876dff5164f75730c19a2a88c3475c4374",
+    "gzip_sha256": "a953ca7025b5fc3b91182d435dfed0ccd56502912e709754c092507bb0934afa"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-BlockedDisjBoth-20261029T170607620786.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-BlockedDisjBoth-20261029T170607620786.log.gz",
+    "sha256": "799cf2507a2b30bb39fa237e59844cd73ca505056f92e826b366d419707b26a7",
+    "gzip_sha256": "8cf3899dd62023e908f9a167f772e732ccd2722107cd97a4192cf542f7d1988e"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-BlockedDisjFirst-20261029T170610833669.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-BlockedDisjFirst-20261029T170610833669.log.gz",
+    "sha256": "460cac1846ade0f4b8f8158285eb3db34cb4f38af3089bf30d5b50d689a72ec6",
+    "gzip_sha256": "50dbe0093e79659600c14b649349a5eabe5b16b53d9e7286befa8de9c9a054ef"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-BlockedDisjSecond-20261029T170612943769.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-BlockedDisjSecond-20261029T170612943769.log.gz",
+    "sha256": "f4f9989c7576d6cf0716878e0c791ad7ab3d1c7cc7c13b2477fe10c2585ce87d",
+    "gzip_sha256": "65319a0611d6d20b6b1931788ec620559ba268e696521b2b4d26c31b8194ef67"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-BlockedDisjunction-20261029T170614917827.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-BlockedDisjunction-20261029T170614917827.log.gz",
+    "sha256": "64262a35f7ff9b1390185dff18c3813f13ebcc8fcff4dc223bb64a782391cdbf",
+    "gzip_sha256": "8839b7c5a10226f03d04048701eb127935e7700c2bb4e0c39ed83d73d405327e"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-BlockedGamma-20261029T170616860746.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-BlockedGamma-20261029T170616860746.log.gz",
+    "sha256": "e99e583af4d45cd50299de849dd4a3be7130bed1a95d4c306ae23458962d75e7",
+    "gzip_sha256": "8aef6928ab4d5097f97f09bea610e311762be7d91ae73137f64d9ff2fef57af9"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-BlockedLeftDisj-20261029T170618712122.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-BlockedLeftDisj-20261029T170618712122.log.gz",
+    "sha256": "4538e6b2d38ba770bc146583a18db219413b213dcbdddcbddbffd8207bdc4ab2",
+    "gzip_sha256": "5f63986d2b990a9c4fe5ec5b95b64b227608df6babce5b9f56382dfb26b20edb"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-BlockedRightConj-20261029T170621319923.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-BlockedRightConj-20261029T170621319923.log.gz",
+    "sha256": "d6526d698192e9367cd6565c959054fc695f317d6e3c2af98840c2974a6e20b0",
+    "gzip_sha256": "ab94123ba3571975d2e4b0e8958edfebcb97e3d842ee017db1995143fdb8e640"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-BlockedW-20261029T170623255897.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-BlockedW-20261029T170623255897.log.gz",
+    "sha256": "cf54f67163ea0663b376a26e0752b4502c4da32387ca41be876d6019d258454e",
+    "gzip_sha256": "758fb6164a22b33ec28e9da2fcaa30fac2d060a5446b9e8e977e128fc98e7ffb"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-CleanCuts-20261029T170624336450.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-CleanCuts-20261029T170624336450.log.gz",
+    "sha256": "7cda3b6ba4efab5385990b2b40bf80d3f5c4354314c3feab0e790b400e2ae6d0",
+    "gzip_sha256": "ef73e5a919042c80581ad448749f0ac416328849bb26c6b0286f30d7a181733b"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-ConjLeftFirst-20261029T170625556915.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-ConjLeftFirst-20261029T170625556915.log.gz",
+    "sha256": "1afe31c3721a4a0955fcf2be6bbd3b3f032c6d528eb050676b0f8ff2d1721ad2",
+    "gzip_sha256": "8f2d7e07f20242b7c162375c991fd8cb9839114b4a6c6a52b524ecaacc2682d1"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-ConjLeftSecond-20261029T170627397899.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-ConjLeftSecond-20261029T170627397899.log.gz",
+    "sha256": "333bf93060bcbeb69521986607a12fe598f5e9a737115e0be834755ebfd477d7",
+    "gzip_sha256": "8f2525c2f8ed32f01db41c7c8575ae8446be99b81eec53ffdc82ad971169ed8e"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-ConjRightFirst-20261029T170629130151.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-ConjRightFirst-20261029T170629130151.log.gz",
+    "sha256": "ccbe59d417ce44a1b7ca0c2140d14774430319cf5b0c060e821e6f5830f6021d",
+    "gzip_sha256": "05251e21d4de6dbe8bac3dc2b61af679f207a736263f55d0ce9e464d79b1f606"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-DisjBinaryCuts-20261029T170631003110.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-DisjBinaryCuts-20261029T170631003110.log.gz",
+    "sha256": "af16ecb53ecb1bca138a54f3701925f66516f1485bf24beecf4407116a621c39",
+    "gzip_sha256": "e4f3a33c8b0a371dc3e0a1dc1f13f0201096ae250389d044acb0ae54e39f424b"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-LogicalBinaryCuts-20261029T170635021267.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-LogicalBinaryCuts-20261029T170635021267.log.gz",
+    "sha256": "c0f88acca9a1543b0c042eb1f493f7af9588ddf53a8f194dc92f93a4e2f2a975",
+    "gzip_sha256": "66f99ebd2ef7511fb767acb24e2f36a2212f7fc5af082516118e6cfb2858e7e3"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-MixUnion-20261029T170636723547.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-MixUnion-20261029T170636723547.log.gz",
+    "sha256": "d337cf0ae819977b61cfb223363775708f71a50db0d5faaaf7273423829c79d5",
+    "gzip_sha256": "6b778249399412d037f1444b0838067298eb29fff966acd34e56da676fc24142"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-OppositeLogicalCuts-20261029T170638358520.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-OppositeLogicalCuts-20261029T170638358520.log.gz",
+    "sha256": "1ca2678e80bcdd1759aee4cd28671ef21c9c7f69f738811db6a9cc443e8b5d89",
+    "gzip_sha256": "d393c260317b4b830d360360cc4c48be4126449079bc107f4c8f453c6080be75"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-PositionalCuts-20261029T170639273290.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-PositionalCuts-20261029T170639273290.log.gz",
+    "sha256": "540be987f4526fb41502bd6f9181ce179d427f2671db9cb4363b22278dea1818",
+    "gzip_sha256": "14a9338628d44b18a481ca0760cb48034f64f04fb7c77f7e394a51ad7c8bb494"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-PrincipalConjunction-20261029T170640242746.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-PrincipalConjunction-20261029T170640242746.log.gz",
+    "sha256": "7968918271c8fc2eec6371428974caeb5b205f60e2a1ed481a16a5e49d195bb1",
+    "gzip_sha256": "8267ae8ba54c1b28049c0d590c2c2037d97531d5eb30f7e8f1dab817909324d5"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-PrincipalDisjunction-20261029T170641737228.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-PrincipalDisjunction-20261029T170641737228.log.gz",
+    "sha256": "fbd1c748b19227c05028cf5118051cd66ef4d5aeb832007b56675355afdabb24",
+    "gzip_sha256": "5292d058b9b8313699fa9e3217ce913ea07268c39dba708995602578ee47b565"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-Reducibility-20261029T170643040897.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-Reducibility-20261029T170643040897.log.gz",
+    "sha256": "6014be42220982f3f098607c65ad00d661da8503c138630052d7d794c360ac1f",
+    "gzip_sha256": "17ca3efeff58ffd2eb2d156f8a0fc4f5b5641860c7efce8e32872bbd6d90273e"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-SameSideLogicalCuts-20261029T170644246933.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-SameSideLogicalCuts-20261029T170644246933.log.gz",
+    "sha256": "9909492f74e82e4a60fd6f2f283adc866a2dc94683b796bf3009a662d64fe301",
+    "gzip_sha256": "de4e8752692957b8bb7745980514201858111980f8b9a66a5a9158645bc797e8"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/signature-StructuralCuts-20261029T170646558767.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/signature-StructuralCuts-20261029T170646558767.log.gz",
+    "sha256": "5cff7cda6dbfc4f45794e6ea297ee46a06d92e6cd699cdb566acf03a8b2c5913",
+    "gzip_sha256": "4b890231817860bb784b4757e98514708951074ecaaf38ac2e87da1ebf74540a"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/source-wrapper-native-rank-one.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/source-wrapper-native-rank-one.log.gz",
+    "sha256": "259becdf124635a9139445cac6ab6b3d8a0479a43fd440186738239633db47a0",
+    "gzip_sha256": "919636cecc2ca0a3dd3af7c8a520e0a92d3f187cc24c9dd44058a12ca1aafa11"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/strict-20261029T170503220390.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/strict-20261029T170503220390.log.gz",
+    "sha256": "32393f839c171a06be87d1a29de38f9a7f5bd8d781a09fc14f21fad710fd8ab0",
+    "gzip_sha256": "e9cb46c66fe965d792a9aca5d8450f957d8e666994240e38e33ce13ce6d8bf92"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/terminal-equal-label-principal-tag.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/terminal-equal-label-principal-tag.log.gz",
+    "sha256": "eb7040dc72369cc682b962de4b2a15f3a552bcb600de3b5c42f01aa55ccc8327",
+    "gzip_sha256": "f30767ef198618bf73fb4066e0fc931a7f726addd620902b04c23c70964b7c10"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/terminal-principal-is-fixed-copy.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/terminal-principal-is-fixed-copy.log.gz",
+    "sha256": "03cd2e343cddb91eab0184dc324ef656e3d4c04ff8be8b7352490db4920044a0",
+    "gzip_sha256": "673e0d47222f6d81a1d71a4fa634c192ca0352d135ff74037fb99353b19d3cfa"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/three-copy-fixed-tag.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/three-copy-fixed-tag.log.gz",
+    "sha256": "08cad1ca34aced377c117052d5a4ac066ed799f7201447e7cb3d92dd84b1d7d9",
+    "gzip_sha256": "3aa64e6f2c8bc518dc0376ec9da06af992834dfbe317ebaaee211f878c8eb547"
+  },
+  {
+    "original": ".codex-work/gentzen-blocked-right-conj-second/three-copy-original-tags.log",
+    "retained": "provenance/wsl-gentzen-blocked-right-conj-second/logs/three-copy-original-tags.log.gz",
+    "sha256": "d4d569855f7ffe9990f775fa4240e14a5cc8470253612501c307dfefcf2a1319",
+    "gzip_sha256": "914b93e53b1d5c27f05634c0ec9ea294ed8930cf82b138cf9b387b4ff9cf2fe6"
+  }
+]
