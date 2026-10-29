@@ -1,5 +1,19 @@
 # Manuscript corrections and source errata
 
+## Six gamma reductions and reconciled current prose (29 October 2026)
+
+BlockedR.gammaConj now has its actual right2 source identity, arbitrary-tag
+Reduced equation, exact reconstruction, full original Clean/strict descent and
+CutCommutation.blockedR_gammaConj_rank_step. All six gamma families are complete;
+eight sequential logical blocked cases remain. The leading conjunction principal
+stays fixed even when its formula equals C, as checked by exact indices and a
+rejected false identification. The existing p.260 source/rank correspondence is
+preserved; p.262 remains open. Two older current prose passages still described
+both concrete Appendix C rows as open. Those live passages are corrected, and
+superseded checkpoint prose is labeled historical. No new manuscript erratum
+was established; all nine manuscript blobs, corrections and deliveries persist.
+Current report/reviews: GENTZEN_RIGHT_GAMMA_CONJ_REPORT.md and linked records.
+
 ## Fifth blocked reduction and concrete p.260 correction (29 October 2026)
 
 BlockedL.gammaDisj is proved through BlockedLeftDisj.gammaParent_source,
@@ -55,11 +69,12 @@ at 810dcdbccc76a4307028773c561f36b910b5170c, source SHA-256
 The author-requested Appendix C addition is complete and locally built/inspected.
 It contains the supplied corrections to the external source, without changing
 Appendices A–B or the accepted disclosure. See MANUSCRIPT_V7_ERRATA_REPORT.md
-and its two reviews. The two concrete blocked-reduction Lean correspondences
-remain open, as recorded in the v7 statement ledger. No manuscript theorem is
+and its two reviews. The p.260 concrete source/rank correspondence is proved;
+the p.262 sequential fresh-right-principal correspondence remains open, as
+recorded in the v7 statement ledger. No manuscript theorem is
 marked formalized merely because its TeX has been added.
 
-## Current correction status
+## Historical correction checkpoints (superseded by current scope above)
 
 All twelve binary commutations now have actual native/selected equations,
 reconstructions and instantiated original-rank steps, including all four disjL

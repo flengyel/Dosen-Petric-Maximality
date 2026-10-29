@@ -49,10 +49,11 @@ The concrete successor is `docs/CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt`;
 read its two 77199AC reviews and the current completed binary report/reviews.
 All twelve mix/conjR/disjL branches have actual native/selected equations and
 instantiated original-rank steps. BlockedL.gammaMix, BlockedR.gammaMix,
-BlockedL.gammaConj, BlockedR.gammaDisj and BlockedL.gammaDisj are complete through
+BlockedL.gammaConj, BlockedR.gammaDisj, BlockedL.gammaDisj and BlockedR.gammaConj
+are complete through
 actual source equations and rank steps. Appendix C p.260 is matched by both
 original-child strict inequalities and the actual gammaDisj source equation.
-Complete the nine remaining blocked reductions and global induction. Reuse all completed binary, unary, structural,
+Complete the eight remaining sequential logical blocked reductions and global induction. Reuse all completed binary, unary, structural,
 principal, cleaning and descent results. Retain earlier source/rank/atomization decisions.
 The existing three milestones remain distinct;
 even actual-presentation maximality alone does not certify the entire paper.
