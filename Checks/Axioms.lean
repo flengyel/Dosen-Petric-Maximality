@@ -2027,3 +2027,9 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.BlockedRightConj.gamma_first_descent
 #print axioms DosenPetric.Reduced.Gentzen.BlockedRightConj.gamma_second_descent
 #print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blockedR_gammaConj_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.SequentialConjunction.native_equation
+#print axioms DosenPetric.Reduced.Gentzen.SequentialConjunction.source_denote
+#print axioms DosenPetric.Reduced.Gentzen.BlockedConjunction.source_equation
+#print axioms DosenPetric.Reduced.Gentzen.BlockedConjunction.original_descent
+#print axioms DosenPetric.Reduced.Gentzen.BlockedConjunction.fresh_clean_and_rank
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blockedL_conjunction_rank_step

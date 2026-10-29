@@ -1,0 +1,24 @@
+{
+  "lock_rejections": [
+    {
+      "command": [
+        "python3",
+        "scripts/check-audit-boundaries.py"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "python3",
+        "scripts/check-audit-boundaries.py"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 0.005,
+      "log": ".codex-work/gentzen-sequential-blocked/audit-boundaries-20261029T053856842791.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "production_checks_final": "FINAL_VERIFICATION.json",
+  "next_diagram_attempts_are_open_obligations": false
+}

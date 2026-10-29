@@ -1,6 +1,18 @@
 # Manuscript corrections and source errata
 
-## Six gamma reductions and reconciled current prose (29 October 2026)
+## Sequential conjunction completed (29 October 2026)
+
+BlockedL.conjunction now has its exact left2/conjLLast source, arbitrary-tag
+Reduced two-cut equation, concrete exact-output repair and instantiated
+original-rank step. The second cut is on a literal native G.conjL principal,
+with component exchanges below it; full Clean and rank one are proved without
+any returned-proof rank bound. Seven blocked families are complete and seven
+remain open. Appendix C p.260 stays proved and p.262 stays open because it
+concerns sequential disjunction. No new manuscript defect was established.
+All nine manuscript blobs, preceding corrections, stash and deliveries persist.
+See GENTZEN_BLOCKED_CONJUNCTION_REPORT.md and its two local reviews.
+
+## Historical six-gamma checkpoint and reconciled prose (29 October 2026)
 
 BlockedR.gammaConj now has its actual right2 source identity, arbitrary-tag
 Reduced equation, exact reconstruction, full original Clean/strict descent and
