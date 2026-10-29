@@ -1,0 +1,123 @@
+{
+  "failed_development_checks": [
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.PresentationShortMaximality"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.PresentationShortMaximality"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 5.402,
+      "log": ".codex-work/short-proof/build-PresentationShortMaximality-20261029T190900914054.log",
+      "sha256": "e7b9b6c6ff57069d4c44e2e5d33e976ece3e7c10145182be90daf10aaf544979"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.PresentationShortProjection"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.PresentationShortProjection"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 2.948,
+      "log": ".codex-work/short-proof/build-PresentationShortProjection-20261029T190817860366.log",
+      "sha256": "d3109179624b7a2a2c1199a3a9dd7c50bacbc21f0dbc2d618f713a8b5bcab6c2"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.PresentationShortTerminal"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.PresentationShortTerminal"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 2.705,
+      "log": ".codex-work/short-proof/build-PresentationShortTerminal-20261029T190705554513.log",
+      "sha256": "cc7687b9067875cf9ca2d89748b4bbe480684792b06c6ac15cfd1f0804f0f732"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.PresentationShortTerminal"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.PresentationShortTerminal"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 3.499,
+      "log": ".codex-work/short-proof/build-PresentationShortTerminal-20261029T190724533428.log",
+      "sha256": "b1ff907e407512f30a262a184f813609502258219427e9080314ad0b6328d1cd"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Checks/ShortProof.lean"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Checks/ShortProof.lean"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 1.873,
+      "log": ".codex-work/short-proof/lean-20261029T191220797775.log",
+      "sha256": "627fa0e397f1180db73d9dd25871f388d40588ce0f68a9d7f7fce2f7a5ced126"
+    },
+    {
+      "command": [
+        "python3",
+        "/tmp/dp-cut-elimination-records.py",
+        "after_77199",
+        "qe-records"
+      ],
+      "exit_status": 1,
+      "log": ".codex-work/short-proof/record-preparation-first-attempt.log",
+      "sha256": "104e453105d7bc6ccf6f22225280b1f35abf4dc62dc7b84b0b403c7c93995c02",
+      "kind": "evidence_preparation",
+      "resolved": "Corrected the focused-controls input to the current short-proof phase."
+    }
+  ],
+  "counted_as_expected_rejection": false,
+  "final_checks": "FINAL_VERIFICATION.json"
+}

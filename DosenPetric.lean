@@ -765,3 +765,9 @@ public import DosenPetric.ReducedNegationLaws
 public import DosenPetric.ReducedQuotientReduction
 public import DosenPetric.ReducedRecovery
 public import DosenPetric.ReducedReductionFunctor
+public import DosenPetric.PresentationShortE
+public import DosenPetric.PresentationShortMaximality
+public import DosenPetric.PresentationShortProjection
+public import DosenPetric.PresentationShortQ
+public import DosenPetric.PresentationShortSubstitution
+public import DosenPetric.PresentationShortTerminal

@@ -1,6 +1,46 @@
 # Published presentation correspondence
 
-## Current actual source maximality and derived negation (29 October 2026)
+## Current short q_A/e_A proof (29 October 2026)
+
+The particular manuscript q_A and e_A now have explicit raw primitive-arrow
+inverses and both original inverse equations. The distinct short collapse proof
+is proved directly modulo congruence and connected to actual maximality by
+`Presentation.short_maximality`. The existing `Presentation.maximality` symmetric-
+fold route and dichotomy remain unchanged. Full-paper completion stays separate:
+the model, remaining operation/substitution/isolation/appendix claims continue.
+
+| Claim / manuscript anchor | Exact declarations and files | Scope/status |
+| --- | --- | --- |
+| Lemma 5.1, particular q_A | ShortProof.qTerm/qInverseTerm, q_definition, q_qInverse/qInverse_q; PresentationShortQ.lean | Arbitrary P : Type u and every formula A. Actual raw inverse and both original equations. |
+| Lemma 5.1, particular e_A | sourceConjTerm/sectionTerm/eTerm/eInverseTerm, e_definition, e_eInverse/eInverse_e; PresentationShortE.lean | Actual section and explicit zero witness fst;diag; both original inverse equations. Distribution itself is not invertible. |
+| Lemma 5.1, substitution transport | Ten *_subst/*_substitute theorems; PresentationShortSubstitution.lean | Whole-arrow raw and quotient substitution between independent variable universes, with exact endpoint types. |
+| Lemma 5.2, terminal E=A∨top modulo Q | context_zero_through_top, q_zero_form, q_terminal, terminal_id/hom/pair; PresentationShortTerminal.lean | Every K_A and exact Congruence closure; q inverse is original. No symmetric-fold collapse is invoked. |
+| Lemma 5.2, projection/diagonal collapse | i_r/e_r/r_i/projection_id/diagonal_u/projection_diagonal/projections/total; PresentationShortProjection.lean | Original e inverse and quotient-terminal uniqueness; direct modulo-congruence proof, no quotient coherence or cancellation of j_A. |
+| thm:main by the short route | Presentation.short_maximality; PresentationShortMaximality.lean | Actual full proof congruence and uniform closure, actual isolation/all-contexts/substitution inputs, arbitrary P. |
+| Existing alternative route | Presentation.maximality/congruence_dichotomy/raw_maximality | Preserved unchanged, with all actual source inputs and full congruence correspondence. |
+| Remaining full-paper scope | Universal-model corollary, further operation/substitution laws, original isolation witnesses, non-cartesian-closure and appendix correspondences | Open; the three milestones and both maximality routes do not certify the whole paper. |
+
+All completed cut elimination, coherence, source negation/naturality, quotient
+functors and congruence bridges remain preserved. No new manuscript defect was
+established; all nine manuscript blobs, three appendices, ten diagrams, accepted
+corrections and the stash are unchanged. Evidence: provenance/wsl-short-proof/.
+Strict pinned verification, all 32 public files and 55 rejection controls have
+exact counts/exits/hashes in FINAL_VERIFICATION.json. The checked source archive
+is read back and compared with committed bytes. See [report](SHORT_QE_REPORT.md),
+[hostile review](reviews/SHORT_QE_HOSTILE.md),
+[writing review](reviews/SHORT_QE_WRITING.md). Reviews are local author-side;
+independent replay, Comparator, official/service verification and publication
+were not performed. DELIVERY_REGISTER.json retains exact byte-verified conflict-
+preserving repository/Downloads paths.
+
+Continue the unchanged full-paper contract. Complete derived-negation/substitution
+compatibility and general substitution operation/coordinate laws, the universal-
+model corollary and every remaining v7 claim. Preserve both proved maximality
+routes and all settled mathematical decisions. The retained dated checkpoints
+below preserve their historical scope, superseded by this active theorem table.
+
+
+## Retained actual source maximality and derived negation checkpoint (29 October 2026)
 
 `Presentation.maximality`, `congruence_dichotomy` and `raw_maximality` are proved
 for the actual equation-generated quotient and full proof congruences. Every
@@ -1125,8 +1165,9 @@ coherence and actual PositiveCoherence P are now proved. Reduced.faithful and
 Presentation.coherence instantiate the original faithful occurrence interface.
 Contravariant arrow negation/naturality, the actual quotient reduction/inclusion
 functors, both recovery laws and the full proof-congruence bridge are now proved.
-The short proof, model, remaining substitution/operation laws and appendix
-correspondences stay separate duties. The local construction ledgers
+The short q/e proof is now separately completed by Presentation.short_maximality.
+The model, remaining substitution/operation laws and appendix correspondences
+stay separate duties. The local construction ledgers
 below preserve their historical scopes, superseded by the current theorem table.
 
 ## Positive-fragment zero and derived union algebra

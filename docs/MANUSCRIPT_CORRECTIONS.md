@@ -1,5 +1,18 @@
 # Manuscript corrections and source errata
 
+## Exact short q_A/e_A proof continuation (29 October 2026)
+
+The particular q_A and e_A have concrete raw inverses, both original inverse
+equations and exact whole-arrow substitution transport. The manuscript's short
+collapse proof is now implemented directly modulo congruence and connected to
+actual main theorem by Presentation.short_maximality. The retained symmetric-
+fold route is unchanged. This uses the full contract's permitted direct inverse
+proofs, not a bijective-graph inference. The e inverse uses a distributive
+section and an explicit witnessed-zero branch; no distributive isomorphism is
+introduced. All affected active maps and continuation are reconciled. No new
+manuscript defect was established; nine manuscript blobs and all accepted
+corrections remain preserved. Model and remaining full-paper claims continue.
+
 ## Actual source maximality continuation (29 October 2026)
 
 Actual quotient reduction/inclusion, both recovery laws, derived negation with

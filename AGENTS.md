@@ -70,8 +70,9 @@ Actual PositiveCoherence, Reduced faithfulness and Boolean coherence now
 instantiate Presentation.interpretation P with signed labels in the intended
 category. Actual full proof-congruence correspondence, substitution-closure transfer,
 derived arrow negation/naturality and actual maximality are now proved. Continue
-the separate short q_A/e_A route, remaining operation/substitution compatibility,
-model corollary and every full-paper obligation. Preserve the symmetric-fold route. Reuse all completed binary, unary, structural,
+remaining operation/substitution compatibility, original isolation witnesses,
+model corollary and every full-paper obligation. The distinct short q_A/e_A route
+is now proved with explicit inverses and actual short_maximality. Preserve both routes. Reuse all completed binary, unary, structural,
 principal, cleaning and descent results. Retain earlier source/rank/atomization decisions.
 The existing three milestones remain distinct;
 even actual-presentation maximality alone does not certify the entire paper.

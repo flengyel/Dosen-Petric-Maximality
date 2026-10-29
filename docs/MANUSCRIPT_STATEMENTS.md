@@ -1,6 +1,46 @@
 # Manuscript v7: statements and formal scope
 
-## Current actual source maximality and derived negation (29 October 2026)
+## Current short q_A/e_A proof (29 October 2026)
+
+The particular manuscript q_A and e_A now have explicit raw primitive-arrow
+inverses and both original inverse equations. The distinct short collapse proof
+is proved directly modulo congruence and connected to actual maximality by
+`Presentation.short_maximality`. The existing `Presentation.maximality` symmetric-
+fold route and dichotomy remain unchanged. Full-paper completion stays separate:
+the model, remaining operation/substitution/isolation/appendix claims continue.
+
+| Claim / manuscript anchor | Exact declarations and files | Scope/status |
+| --- | --- | --- |
+| Lemma 5.1, particular q_A | ShortProof.qTerm/qInverseTerm, q_definition, q_qInverse/qInverse_q; PresentationShortQ.lean | Arbitrary P : Type u and every formula A. Actual raw inverse and both original equations. |
+| Lemma 5.1, particular e_A | sourceConjTerm/sectionTerm/eTerm/eInverseTerm, e_definition, e_eInverse/eInverse_e; PresentationShortE.lean | Actual section and explicit zero witness fst;diag; both original inverse equations. Distribution itself is not invertible. |
+| Lemma 5.1, substitution transport | Ten *_subst/*_substitute theorems; PresentationShortSubstitution.lean | Whole-arrow raw and quotient substitution between independent variable universes, with exact endpoint types. |
+| Lemma 5.2, terminal E=A∨top modulo Q | context_zero_through_top, q_zero_form, q_terminal, terminal_id/hom/pair; PresentationShortTerminal.lean | Every K_A and exact Congruence closure; q inverse is original. No symmetric-fold collapse is invoked. |
+| Lemma 5.2, projection/diagonal collapse | i_r/e_r/r_i/projection_id/diagonal_u/projection_diagonal/projections/total; PresentationShortProjection.lean | Original e inverse and quotient-terminal uniqueness; direct modulo-congruence proof, no quotient coherence or cancellation of j_A. |
+| thm:main by the short route | Presentation.short_maximality; PresentationShortMaximality.lean | Actual full proof congruence and uniform closure, actual isolation/all-contexts/substitution inputs, arbitrary P. |
+| Existing alternative route | Presentation.maximality/congruence_dichotomy/raw_maximality | Preserved unchanged, with all actual source inputs and full congruence correspondence. |
+| Remaining full-paper scope | Universal-model corollary, further operation/substitution laws, original isolation witnesses, non-cartesian-closure and appendix correspondences | Open; the three milestones and both maximality routes do not certify the whole paper. |
+
+All completed cut elimination, coherence, source negation/naturality, quotient
+functors and congruence bridges remain preserved. No new manuscript defect was
+established; all nine manuscript blobs, three appendices, ten diagrams, accepted
+corrections and the stash are unchanged. Evidence: provenance/wsl-short-proof/.
+Strict pinned verification, all 32 public files and 55 rejection controls have
+exact counts/exits/hashes in FINAL_VERIFICATION.json. The checked source archive
+is read back and compared with committed bytes. See [report](SHORT_QE_REPORT.md),
+[hostile review](reviews/SHORT_QE_HOSTILE.md),
+[writing review](reviews/SHORT_QE_WRITING.md). Reviews are local author-side;
+independent replay, Comparator, official/service verification and publication
+were not performed. DELIVERY_REGISTER.json retains exact byte-verified conflict-
+preserving repository/Downloads paths.
+
+Continue the unchanged full-paper contract. Complete derived-negation/substitution
+compatibility and general substitution operation/coordinate laws, the universal-
+model corollary and every remaining v7 claim. Preserve both proved maximality
+routes and all settled mathematical decisions. The retained dated checkpoints
+below preserve their historical scope, superseded by this active theorem table.
+
+
+## Retained actual source maximality and derived negation checkpoint (29 October 2026)
 
 `Presentation.maximality`, `congruence_dichotomy` and `raw_maximality` are proved
 for the actual equation-generated quotient and full proof congruences. Every
@@ -663,7 +703,7 @@ interpretation of variables, not one fixed valuation.
 | `eq:first-injection` | `Relations.first_injection`, `OccurrenceInterpretation.first_injection` | The relation equation is unconditional; its original-category counterpart is derived under the typed faithful-interpretation input. |
 | §6 symmetric fold (v5 `lem:symmetric`) | `Relations.hRel_eq_fold`, `hRel_independent`, `hRel_swap`; `OccurrenceInterpretation.fold_independent`, `fold_swap` | The relation fold is calculated from operations; categorical independence and swap invariance follow by original-category faithfulness. The manuscript identifies this map as mix followed by the codiagonal. |
 | §6 formal collapse argument (v5 `eq:second-block`) | `Relations.second_block`, `OccurrenceInterpretation.second_block` | The relation equation discards the first source block; the categorical equation follows by original-category faithfulness. This calculation belongs to the retained formal proof, not the replacement §5 proof. |
-| `lem:structural-isos` | Not implemented as this lemma | The manuscript derives the specified q_A and e_A isomorphisms from the published structural isomorphisms using original-category coherence and uniform substitution. |
+| `lem:structural-isos` | ShortProof.q_definition/e_definition, q_qInverse/qInverse_q, e_eInverse/eInverse_e; PresentationShortQ.lean, PresentationShortE.lean | Complete direct correspondence: particular manuscript maps, explicit original raw inverses and both inverse laws for every formula A and P : Type u. Ten raw/quotient substitution equations give exact cross-universe transport. |
 | §3 distinct projections | `Relations.projections_distinct`, `GeneratedModel.nonthin`, `Presentation.nonthin` | Every v5 §5 interface field is instantiated in a generated structural-fragment model, with distinct categorical projections and `GeneratedModel.empty_hom`. This does not identify the fragment model with B(P). Separately, `Presentation.nonthin p` proves distinct projections in the equation-generated source quotient; `Presentation.empty_hom` proves its Hom(top,bot) empty. |
 | `thm:coherence` | Presentation.coherence; Reduced.faithful/boolean_coherence; Presentation.interpretation | Boolean coherence is proved for the actual equation-generated presentation through actual PositiveCoherence, common atomic factorization and existing normalization transfers. Full intended faithful interface and signed-label invariant are instantiated. |
 | §14.2 source signed-literal reduction used toward §3 coherence | Reduced.reduceHom/reductionFunctor/inclusionFunctor, normalizationNaturalIso, reduction_inclusion, recover_reduceHom/reduce_recoverHom | Actual quotient descent, functor laws, equality reflection, source natural isomorphism and reverse endpoint-cast recovery are proved for arbitrary P. Earlier raw red/representation proofs remain preserved. |
@@ -693,8 +733,8 @@ interpretation of variables, not one fixed valuation.
 | Global signed-label preservation, §3 | Presentation.occurrence_literal; interpretation_signedLabel | The direct signed-label theorem now instantiates the invariant of the actual Presentation.interpretation P, for arbitrary P and every source arrow. |
 | `lem:isolation` | `Isolation.selector_edge`, `coselector_edge`, `isolate_edge`, `normalized_literal_context` | Normal-form witness equations and the normalized contextual consequence under faithful interpretation, normalization, and signed-label inputs. The full original-category witness formulation is not a separate declaration; no actual presentation is inferred. |
 | `prop:all-contexts` | `ContextualCollapse.context_retract`, `all_contexts` | Typed substitution on arrows and endpoints, separate congruence closure, positive substitution, and negative substitution followed by double-negation transport. |
-| `lem:collapse` | `ContextualCollapse.total` | Same conclusion by different proofs: v6 §5 uses q_A and e_A; Lean retains the symmetric-fold argument described in §6. Both concern existing arrows and use no quotient faithfulness or cancellation of j_A. |
-| `thm:main` | Presentation.maximality; congruence_dichotomy; raw_maximality, PresentationMaximality.lean | Actual equation-generated source, arbitrary P : Type u, full proof congruences with explicit endosubstitution closure; complete inputs and exact raw/quotient correspondence. The symmetric-fold route is instantiated; the distinct short q/e proof remains open. |
+| `lem:collapse` | ShortProof.total, terminal_id/terminal_pair, r_i, projection_id, diagonal_u, projections; PresentationShortTerminal.lean, PresentationShortProjection.lean | Complete distinct short q/e proof directly modulo arbitrary Congruence (Presentation.operations P), assuming every K_A. Original inverse equations and original coherence only; no quotient faithfulness or cancellation of j_A. Existing ContextualCollapse.total symmetric-fold route preserved. |
+| `thm:main` | Presentation.short_maximality and Presentation.maximality; congruence_dichotomy; raw_maximality | Both actual source proof routes are instantiated. P : Type u arbitrary, full proof congruences and explicit uniform endosubstitution closure; all inputs and raw/quotient correspondence proved. |
 | `cor:models` | Not implemented | All interpretations; use nonempty P to choose a variable and interpret it as an arbitrary object. |
 | Appendix A | Partial; full coverage required | Tagged block bijection is implemented. Complete profiles, gamma/chi maps and all squares, ordinal bijections and block locator, delta and the book-operation bridge, skeleton/profile reconstruction, the worked example, and renaming with shared variables; connect the specializations to Proposition 4.2. |
 | Appendix B | Exact diagram correspondence required | Reuse the proved first-injection, constructed-zero and zero-law equations to certify the three displayed typed path equalities in the actual presentation. Record exact declaration links; the existence of the diagrams alone is not a Lean proof. |
@@ -749,7 +789,8 @@ signed coordinate correspondence. `Presentation.occurrence_signedLabel` now
 proves global signed-label preservation directly, with normal-form literal
 and transport consequences. Derived contravariant arrow negation, natural DN/DM comparisons and congruence
 restriction are now proved. Remaining negation/substitution compatibility,
-Appendix A/model correspondences and the short proof are still open. The reduced signed-literal syntax and existential representation
+Appendix A/model correspondences remain open. The distinct short proof is now
+complete by Presentation.short_maximality. The reduced signed-literal syntax and existential representation
 bridge and actual Reduced.faithful are now constructed, with occurrence
 compatibility and the instantiated original-category coherence transfer. See the
 [reduction report](SIGNED_LITERAL_REDUCTION_REPORT.md),

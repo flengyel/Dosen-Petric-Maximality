@@ -89,3 +89,10 @@ derived negation/naturality, full proof-congruence/closure correspondence and
 Presentation.maximality/congruence_dichotomy/raw_maximality are now proved; see
 SOURCE_MAXIMALITY_REPORT.md. The separate short proof, model and remaining full-
 paper claims continue. Constructor coverage remains a discharged prerequisite.
+
+## Distinct short-proof continuation (29 October 2026)
+
+All completed constructor/rank/coherence/source-main results persist. The exact
+q_A/e_A inverses, direct short congruence collapse and actual short_maximality
+are now proved; see SHORT_QE_REPORT.md. Both maximality routes are retained.
+Remaining model, substitution/operation/isolation and appendix duties continue.
