@@ -1,6 +1,19 @@
 # Manuscript corrections and source errata
 
-## Sequential conjunction completed (29 October 2026)
+## Sequential disjunction completed (29 October 2026)
+
+BlockedR.disjunction now has its actual right2/disjR source, arbitrary-tag
+Reduced equation, concrete exact-output prefix repair and instantiated original-rank
+step. Its fresh native disjR has component exchanges below it; only node-free
+residual-list equality transport follows it. rho=1, blockedness, full Clean and
+strict comparison with the original contracted rank are proved without a returned
+rank bound. Eight blocked families are complete; six First/Second/Both families
+remain. Appendix C p.260 remains proved and p.262 remains open: the latter is the
+BlockedL.disjunctionFirst fresh right-premise case. No new manuscript defect was
+established. All nine manuscript blobs, preceding corrections, stash and receipts
+persist. See GENTZEN_BLOCKED_DISJUNCTION_REPORT.md and its two local reviews.
+
+## Historical sequential-conjunction checkpoint (29 October 2026)
 
 BlockedL.conjunction now has its exact left2/conjLLast source, arbitrary-tag
 Reduced two-cut equation, concrete exact-output repair and instantiated

@@ -53,8 +53,9 @@ BlockedL.gammaConj, BlockedR.gammaDisj, BlockedL.gammaDisj and BlockedR.gammaCon
 are complete through
 actual source equations and rank steps. Appendix C p.260 is matched by both
 original-child strict inequalities and the actual gammaDisj source equation.
-BlockedL.conjunction also has its actual sequential source equation and original-rank
-step. Complete the seven remaining sequential logical blocked reductions and global induction. Reuse all completed binary, unary, structural,
+BlockedL.conjunction and BlockedR.disjunction also have their actual sequential
+source equations and original-rank steps. Complete the six remaining First/Second/Both
+logical blocked reductions and global induction. Reuse all completed binary, unary, structural,
 principal, cleaning and descent results. Retain earlier source/rank/atomization decisions.
 The existing three milestones remain distinct;
 even actual-presentation maximality alone does not certify the entire paper.
