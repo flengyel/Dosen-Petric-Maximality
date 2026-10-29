@@ -1,5 +1,36 @@
 # Manuscript corrections and source errata
 
+## Final scope and citation corrections resolved (29 October 2026)
+
+FP-SCOPE-20261029 is resolved in preserved manuscript v8: its abstract,
+introduction and section 6 now describe actual coherence/input instantiation,
+both maximality proofs, the model corollary and appendix correspondences.
+V4–v7 remain byte-preserved. All mathematical text, appendices, ten diagrams,
+references and AI disclosure are unchanged except the proof-source revision
+anchor described next. Current linked maps, README, AGENTS, continuation and
+validation records all point to the complete local scope.
+
+FP-CITATION-20261029: the inherited Formalization bibliography anchor cited
+1e967bcb913a, an early source revision lacking the completed proofs now described.
+V8 cites completed mathematical-source commit 630c4b6e47da16a1434476a211fd29ce6adc5569. This avoids a
+self-referential commit citation; the later manuscript/evidence commit records
+its own exact bytes separately. Prior versions retain their historical anchor.
+Three stable TeX passes, source/PDF hashes, reference/overflow checks and visual
+inspection of all 13 pages and the corrected bibliography are retained in
+provenance/wsl-appendix-a/. The complete text of all three appendices is byte-identical
+between v7 and v8; the later bibliography has only the recorded anchor update. Both corrections are closed; no false mathematical theorem
+was established during the work.
+
+Final correspondence additions include exact p⇒p nonexistence and its
+hom/global-point bijection, the genuine congruence quotient retaining products/
+coproducts/units, the finite relation functor, the contextual-zero alternative,
+and the actual signed single-variable substitutions and double-negation diagram.
+The complete source-index/ordinal bridge is proved, rather than assuming an
+arbitrary finite bijection matches the printed order. Every parallel affected
+passage and the active claim map were reconciled. Earlier failed elaboration
+attempts are retained as development checks; they do not count as successful
+negative controls or as manuscript defects.
+
 ## Full-source model correspondence (29 October 2026)
 
 The model corollary now has its actual full primitive semantics and every

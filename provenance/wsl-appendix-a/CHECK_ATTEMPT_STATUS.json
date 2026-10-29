@@ -1,0 +1,358 @@
+{
+  "failed_development_checks": [
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.ExponentialGlobalPoints",
+        "DosenPetric.ManuscriptSingleSubstitution"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.ExponentialGlobalPoints",
+        "DosenPetric.ManuscriptSingleSubstitution"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 4.652,
+      "log": ".codex-work/appendix-a/build-ExponentialGlobalPoints-20261029T211222602589.log",
+      "sha256": "228f3fb379ad78f8ebda4da7d2f1d5351f1ff96c165a525dbe1d1c6334023867"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.FiniteBlockConcatenation"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.FiniteBlockConcatenation"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 5.085,
+      "log": ".codex-work/appendix-a/build-FiniteBlockConcatenation-20261029T210253034115.log",
+      "sha256": "eba384ea5d57be13711946f37d626d23ec71e151ccc29a27fe53a47508a28c53"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.FiniteBlockConcatenation"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.FiniteBlockConcatenation"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 5.898,
+      "log": ".codex-work/appendix-a/build-FiniteBlockConcatenation-20261029T210437073100.log",
+      "sha256": "38511d17a9a162b9faccb19cb1066615be52546af953185803b14bb63e5dca00"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.FiniteBlockConcatenation",
+        "DosenPetric.PatternProfileExample"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.FiniteBlockConcatenation",
+        "DosenPetric.PatternProfileExample"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 7.192,
+      "log": ".codex-work/appendix-a/build-FiniteBlockConcatenation-20261029T210456129286.log",
+      "sha256": "9dc67427ab067885ed36456938c15252d4bc8a7f36c77d5da5dd5e234dedfc21"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.FiniteBlockCoordinates"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.FiniteBlockCoordinates"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 6.966,
+      "log": ".codex-work/appendix-a/build-FiniteBlockCoordinates-20261029T205327877165.log",
+      "sha256": "ab3ca37b531496234313eb9c81062d0d0480b80d083e537a5a3fabea136c7ddb"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.FiniteBlockCoordinates"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.FiniteBlockCoordinates"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 6.566,
+      "log": ".codex-work/appendix-a/build-FiniteBlockCoordinates-20261029T205348998269.log",
+      "sha256": "4d6a06815062cd065fdb36abf5cfd09ae4d1b30af34a848f2831eefbba26ca3b"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.FormulaSubstitutionOrdinals"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.FormulaSubstitutionOrdinals"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 14.752,
+      "log": ".codex-work/appendix-a/build-FormulaSubstitutionOrdinals-20261029T210557021707.log",
+      "sha256": "2ac108376c87c693b3357515bed924b0b45555132ef5012f68e79bb458c33e98"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.FormulaSubstitutionOrdinals",
+        "DosenPetric.FormulaSkeletonProfiles"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.FormulaSubstitutionOrdinals",
+        "DosenPetric.FormulaSkeletonProfiles"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 7.611,
+      "log": ".codex-work/appendix-a/build-FormulaSubstitutionOrdinals-20261029T210638628425.log",
+      "sha256": "079a177cdc166cd0b3a4a96c47ed0090049cb7d05d883ca6c2c3e736318da9f6"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.ManuscriptSubstitutionSpecializations"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.ManuscriptSubstitutionSpecializations"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 4.438,
+      "log": ".codex-work/appendix-a/build-ManuscriptSubstitutionSpecializations-20261029T210838148154.log",
+      "sha256": "88702fb66d52961d2564771adb907c75f7723e2a80041a7587e6ef3d7fdce8f0"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.PatternProfileExample"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.PatternProfileExample"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 2.825,
+      "log": ".codex-work/appendix-a/build-PatternProfileExample-20261029T210117562945.log",
+      "sha256": "fe2ff362779a3e929a210a11336c9ed7bbc6ca6e63c62ef40c4fdb2b4bfc8374"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.PatternProfileExample"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.PatternProfileExample"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 7.581,
+      "log": ".codex-work/appendix-a/build-PatternProfileExample-20261029T210304476821.log",
+      "sha256": "28a01d3ec199ed711412c50a594920519412d8e79fbdbda57226c8210b739910"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.PatternSubstitutionOrdinals"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.PatternSubstitutionOrdinals"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 5.87,
+      "log": ".codex-work/appendix-a/build-PatternSubstitutionOrdinals-20261029T210802366047.log",
+      "sha256": "aa99ebdccec998798242abe2bba39b359c9acb04fde198a9239f3386669afbd9"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.PatternSubstitutionProfiles"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.PatternSubstitutionProfiles"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 4.485,
+      "log": ".codex-work/appendix-a/build-PatternSubstitutionProfiles-20261029T210000480761.log",
+      "sha256": "ca3bc04dce9af4b84bbbd47b3f9df0068399f0445b778d445550c48403155c41"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.PresentationSubstitutionAction"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.PresentationSubstitutionAction"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 7.392,
+      "log": ".codex-work/appendix-a/build-PresentationSubstitutionAction-20261029T205441315670.log",
+      "sha256": "c8a71fa8aaf68590bc84d0a98296d158a2bdd294657064097b96d58294869a64"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.PresentationSubstitutionAction",
+        "DosenPetric.FormulaRenaming"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.PresentationSubstitutionAction",
+        "DosenPetric.FormulaRenaming"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 10.058,
+      "log": ".codex-work/appendix-a/build-PresentationSubstitutionAction-20261029T205615223959.log",
+      "sha256": "937e74f43c9c0c766a1ec453761fefb1be6628a14914f920977ec45896d4f2b4"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.ProfileComposition",
+        "DosenPetric.PresentationSubstitutionActionQuotient"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.ProfileComposition",
+        "DosenPetric.PresentationSubstitutionActionQuotient"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 4.798,
+      "log": ".codex-work/appendix-a/build-ProfileComposition-20261029T205721173465.log",
+      "sha256": "93e683709e272dbd1f80a15c4c0707b5e01635273170e54f4a290842415bf4eb"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.ProfileComposition",
+        "DosenPetric.PresentationSubstitutionActionQuotient"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.ProfileComposition",
+        "DosenPetric.PresentationSubstitutionActionQuotient"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 7.46,
+      "log": ".codex-work/appendix-a/build-ProfileComposition-20261029T205845946728.log",
+      "sha256": "968e1fe626ebba2523880eea2a6feeeef00670acfdbf17ca804ef2676c5692af"
+    }
+  ],
+  "counted_as_expected_rejection": false,
+  "final_checks": "FINAL_VERIFICATION.json"
+}

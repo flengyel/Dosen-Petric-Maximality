@@ -1,0 +1,30 @@
+[
+  {
+    "command": [
+      "python3",
+      "/tmp/dp-cut-elimination-records.py",
+      "after_77199",
+      "ap-manuscript-final"
+    ],
+    "exit_status": 1,
+    "error": "AssertionError at manuscript-final helper line15",
+    "reason": "The preservation assertion included the bibliography after the appendix and rejected the intended citation correction.",
+    "repair": "Compare the three complete appendices byte for byte and compare the later source with only the exact revision substitution normalized.",
+    "mathematical_sources_changed": false,
+    "counted_as_negative_control": false
+  },
+  {
+    "command": [
+      "python3",
+      "/tmp/dp-cut-elimination-records.py",
+      "after_77199",
+      "ap-records"
+    ],
+    "exit_status": 1,
+    "error": "AssertionError: eq:context in manuscript anchor extraction",
+    "reason": "A flat regex did not parse the custom nested TeX tag {$K_A$}.",
+    "repair": "Balanced-group auxiliary-file parser tested against all30labels and the exact custom tag/PDFpage5.",
+    "mathematical_sources_changed": false,
+    "counted_as_negative_control": false
+  }
+]

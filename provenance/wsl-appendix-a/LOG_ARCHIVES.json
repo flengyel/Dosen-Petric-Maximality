@@ -1,0 +1,878 @@
+[
+  {
+    "original": ".codex-work/appendix-a/audit-boundaries-20261029T212138539517.log",
+    "retained": "provenance/wsl-appendix-a/logs/audit-boundaries-20261029T212138539517.log.gz",
+    "sha256": "377643b2b8fc2ff8c9b228992b82e2fd82c36bf57a7c3914aa71572ffbf89ac0",
+    "gzip_sha256": "a82fac14cef21463e52a48a71b1c44f1a44db926d22ae66fad9d79b84a37810b"
+  },
+  {
+    "original": ".codex-work/appendix-a/blocked-equal-label-fixed-tag.log",
+    "retained": "provenance/wsl-appendix-a/logs/blocked-equal-label-fixed-tag.log.gz",
+    "sha256": "a5819ca52ab0d410432bf0804b2f46e6caec134a3e285f342f25c6a624eb99b4",
+    "gzip_sha256": "fc42b7d9febd1bd179da259046ed0245026ab0785f87ca4f00ce5dbec78620a1"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-ExponentialGlobalPoints-20261029T211222602589.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-ExponentialGlobalPoints-20261029T211222602589.log.gz",
+    "sha256": "228f3fb379ad78f8ebda4da7d2f1d5351f1ff96c165a525dbe1d1c6334023867",
+    "gzip_sha256": "560ea50262aa80268af2f4e31b52c2fe2b1411629417596fbc745de0183aba8f"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-FiniteBlockConcatenation-20261029T210253034115.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-FiniteBlockConcatenation-20261029T210253034115.log.gz",
+    "sha256": "eba384ea5d57be13711946f37d626d23ec71e151ccc29a27fe53a47508a28c53",
+    "gzip_sha256": "8dd08702c914c91017c081351d9e1eba601bb30e130771caef2abb795cbc4ab5"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-FiniteBlockConcatenation-20261029T210437073100.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-FiniteBlockConcatenation-20261029T210437073100.log.gz",
+    "sha256": "38511d17a9a162b9faccb19cb1066615be52546af953185803b14bb63e5dca00",
+    "gzip_sha256": "a8b18b0a8188c673853a1a1f6b85d68264d999a9e007514f2a4a6bbf25caa428"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-FiniteBlockConcatenation-20261029T210456129286.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-FiniteBlockConcatenation-20261029T210456129286.log.gz",
+    "sha256": "9dc67427ab067885ed36456938c15252d4bc8a7f36c77d5da5dd5e234dedfc21",
+    "gzip_sha256": "68d3c8e573e3d2fbe9225688a03f1dd69a95477575596d7c2f7d986d0d8a5794"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-FiniteBlockCoordinates-20261029T205327877165.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-FiniteBlockCoordinates-20261029T205327877165.log.gz",
+    "sha256": "ab3ca37b531496234313eb9c81062d0d0480b80d083e537a5a3fabea136c7ddb",
+    "gzip_sha256": "c20c6652716e8ea6fbbbf85e6cda14476b8c6868a25d784eea2c568f1dd615fa"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-FiniteBlockCoordinates-20261029T205348998269.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-FiniteBlockCoordinates-20261029T205348998269.log.gz",
+    "sha256": "4d6a06815062cd065fdb36abf5cfd09ae4d1b30af34a848f2831eefbba26ca3b",
+    "gzip_sha256": "0815bcbc4c53ec03f99b772b00fade4e6b4844fc74867657d43250901eb61879"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-FiniteBlockCoordinates-20261029T205429601590.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-FiniteBlockCoordinates-20261029T205429601590.log.gz",
+    "sha256": "7bd91d0c3df27082fa33d1fc6a3731f9417b5dd869ed6323369d749eb3f8aaa6",
+    "gzip_sha256": "15d85dd4033591e12b21f51d584cc3341b6cfd1889a2719c7e78490acf3651fa"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-FiniteBlockLocator-20261029T205526636186.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-FiniteBlockLocator-20261029T205526636186.log.gz",
+    "sha256": "56b5a374e49605e29674539fbf6ee32f380b2a1a62a8309d4284e6a6c4aff74d",
+    "gzip_sha256": "9e4083bb44eeb43bf59b89676c625f19bbd356094cee0fa12c0a2e1eacc23860"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-FormulaSubstitutionOrdinals-20261029T210557021707.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-FormulaSubstitutionOrdinals-20261029T210557021707.log.gz",
+    "sha256": "2ac108376c87c693b3357515bed924b0b45555132ef5012f68e79bb458c33e98",
+    "gzip_sha256": "e994bd68a1855512ad3947e5bcd2ea40ca414b339667ee54bf2062530d2d1222"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-FormulaSubstitutionOrdinals-20261029T210638628425.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-FormulaSubstitutionOrdinals-20261029T210638628425.log.gz",
+    "sha256": "079a177cdc166cd0b3a4a96c47ed0090049cb7d05d883ca6c2c3e736318da9f6",
+    "gzip_sha256": "3bf41fb5e71e032f005657dd6a9afed1fb105e1509463ce1e80669a8615cf719"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-ManuscriptAdditionalDiagrams-20261029T211515651845.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-ManuscriptAdditionalDiagrams-20261029T211515651845.log.gz",
+    "sha256": "1f4161bc0c31c142b15aac3478739fbf46ac05229ed332f930de41db3adda3f6",
+    "gzip_sha256": "891fddc1b565ae32f0a88dfcb9bc14d6a58210ce36c3edf48acbc3ac6bba0736"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-ManuscriptAdditionalDiagrams-20261029T211554249899.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-ManuscriptAdditionalDiagrams-20261029T211554249899.log.gz",
+    "sha256": "24212ff0a64a08b969d822c105f2664290c23dd13c4bb692a2b2912a6e214bd3",
+    "gzip_sha256": "d3f93fecf9b931d2bacb935d19ecf283df45b71b412b19ae87cd755970318b46"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-ManuscriptFinalConsequences-20261029T211044513987.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-ManuscriptFinalConsequences-20261029T211044513987.log.gz",
+    "sha256": "9b63600674edfaf5ede5d1d16a938359df3ac610b7ac36789270638e28adc903",
+    "gzip_sha256": "1e71ccca17dbe7ad75c834c006fed27912b34bd08ef773d452514a605207efeb"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-ManuscriptSingleSubstitution-20261029T211300836455.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-ManuscriptSingleSubstitution-20261029T211300836455.log.gz",
+    "sha256": "741e7b00adce1fb01a101573481ac9bdd180605a4b761d54f3b13384d7695fb5",
+    "gzip_sha256": "0231e60c5c987e8d42b94e19e8f3163fa0e5290a8888f083afedd3f362d2627e"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-ManuscriptSubstitutionSpecializations-20261029T210838148154.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-ManuscriptSubstitutionSpecializations-20261029T210838148154.log.gz",
+    "sha256": "88702fb66d52961d2564771adb907c75f7723e2a80041a7587e6ef3d7fdce8f0",
+    "gzip_sha256": "5a9896180fda538519a4bc31d22e00030c30a3510e9a1c346fa2f52b44b3c8ea"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-ManuscriptSubstitutionSpecializations-20261029T210942896715.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-ManuscriptSubstitutionSpecializations-20261029T210942896715.log.gz",
+    "sha256": "61ceec66903e45b6deff2ef78d6bbc04bcde75711ed0cf26ef4b229b9ad2998c",
+    "gzip_sha256": "2abb0b405d2c702edf9e0975f380f122474d1970dc869bf1a0f4505d64788a81"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-PatternProfileExample-20261029T210117562945.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-PatternProfileExample-20261029T210117562945.log.gz",
+    "sha256": "fe2ff362779a3e929a210a11336c9ed7bbc6ca6e63c62ef40c4fdb2b4bfc8374",
+    "gzip_sha256": "35950ca2a081199a8fdcfcca6c9dd4aeca1b3124d5102e312a9ee8735f31f24d"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-PatternProfileExample-20261029T210304476821.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-PatternProfileExample-20261029T210304476821.log.gz",
+    "sha256": "28a01d3ec199ed711412c50a594920519412d8e79fbdbda57226c8210b739910",
+    "gzip_sha256": "3ece93c96f197c9fbd759128caebf6d11b2a31ba649f79f7a931891530fc3f57"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-PatternSubstitutionOrdinals-20261029T210802366047.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-PatternSubstitutionOrdinals-20261029T210802366047.log.gz",
+    "sha256": "aa99ebdccec998798242abe2bba39b359c9acb04fde198a9239f3386669afbd9",
+    "gzip_sha256": "440d4c353edae13e5905e0847fd740a1fffc9a5f1ab05deb9c4baa4dc10c3cc5"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-PatternSubstitutionProfiles-20261029T210000480761.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-PatternSubstitutionProfiles-20261029T210000480761.log.gz",
+    "sha256": "ca3bc04dce9af4b84bbbd47b3f9df0068399f0445b778d445550c48403155c41",
+    "gzip_sha256": "66d76720f7e4e9c1d690dd62d9f23387c5f5927ff3820fe21a4f4e5d6dae2ca5"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-PresentationSubstitutionAction-20261029T205441315670.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-PresentationSubstitutionAction-20261029T205441315670.log.gz",
+    "sha256": "c8a71fa8aaf68590bc84d0a98296d158a2bdd294657064097b96d58294869a64",
+    "gzip_sha256": "e5722dd46cc86c28fdb4626185418293c27680f3579f241f1a7467deb843f0d9"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-PresentationSubstitutionAction-20261029T205615223959.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-PresentationSubstitutionAction-20261029T205615223959.log.gz",
+    "sha256": "937e74f43c9c0c766a1ec453761fefb1be6628a14914f920977ec45896d4f2b4",
+    "gzip_sha256": "4bc58ed2498582fa172e2f9b98e60729e882c25352d662b3e0621a3e7d99e047"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-ProfileComposition-20261029T205721173465.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-ProfileComposition-20261029T205721173465.log.gz",
+    "sha256": "93e683709e272dbd1f80a15c4c0707b5e01635273170e54f4a290842415bf4eb",
+    "gzip_sha256": "3549c1ee1b3a7532e3f70c97d331ec68c9c788edc0a105bd5f8aac8d07b58589"
+  },
+  {
+    "original": ".codex-work/appendix-a/build-ProfileComposition-20261029T205845946728.log",
+    "retained": "provenance/wsl-appendix-a/logs/build-ProfileComposition-20261029T205845946728.log.gz",
+    "sha256": "968e1fe626ebba2523880eea2a6feeeef00670acfdbf17ca804ef2676c5692af",
+    "gzip_sha256": "3ec56552fda18a1e1e440c687bc6777b731f7cea7473d5e49f18cf2156382264"
+  },
+  {
+    "original": ".codex-work/appendix-a/conjunction-principal-is-fixed-copy.log",
+    "retained": "provenance/wsl-appendix-a/logs/conjunction-principal-is-fixed-copy.log.gz",
+    "sha256": "8e8fd8950c03efc8d47d8f933171aa0e475e7ad896b7cc4fdef89267b79723d3",
+    "gzip_sha256": "1dbbf6c440cb39ab4b533c4745b03e808390a8e21b0c89ca543f6924f35158bc"
+  },
+  {
+    "original": ".codex-work/appendix-a/diff-check-20261029T212958430909.log",
+    "retained": "provenance/wsl-appendix-a/logs/diff-check-20261029T212958430909.log.gz",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original": ".codex-work/appendix-a/diff-check-20261029T213058588714.log",
+    "retained": "provenance/wsl-appendix-a/logs/diff-check-20261029T213058588714.log.gz",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original": ".codex-work/appendix-a/dual-repeated-port-crossing.log",
+    "retained": "provenance/wsl-appendix-a/logs/dual-repeated-port-crossing.log.gz",
+    "sha256": "365849a85b29b6fb1dc0441a511247ac5569cfc07d392c6c0e11d4abb64c68ad",
+    "gzip_sha256": "b974aa68e025550912098d6fa8e95486e03e9c9f459badde2fc730d754d9aabf"
+  },
+  {
+    "original": ".codex-work/appendix-a/equal-label-collapse.log",
+    "retained": "provenance/wsl-appendix-a/logs/equal-label-collapse.log.gz",
+    "sha256": "139eed98f4daef70931df606a524d96e779b62c6ba5641982adbeee3b460b88d",
+    "gzip_sha256": "e4031f737815741fcadadc2385badad2c97c7e8ec50d11798ac931129a595316"
+  },
+  {
+    "original": ".codex-work/appendix-a/fresh-conjunction-returned-rank.log",
+    "retained": "provenance/wsl-appendix-a/logs/fresh-conjunction-returned-rank.log.gz",
+    "sha256": "46f2772a801be961f6279aa12224e9789b7fbaeddaa4c4678afd4439c8143663",
+    "gzip_sha256": "3141efb0c3f002f7f31c9efdcd7741493b08ef32caf1b8d0cbeb8934c84b2bd9"
+  },
+  {
+    "original": ".codex-work/appendix-a/fresh-disjunction-returned-rank.log",
+    "retained": "provenance/wsl-appendix-a/logs/fresh-disjunction-returned-rank.log.gz",
+    "sha256": "f103e70cde0e8d6eb576736d7ff294499c84d25dcf0f47454b94b31ed7a4a93a",
+    "gzip_sha256": "87a40b08f019e965d37e2b9c5040cb90a19a018df45f87cd892efa25bc39866e"
+  },
+  {
+    "original": ".codex-work/appendix-a/fresh-right-total-rank-one.log",
+    "retained": "provenance/wsl-appendix-a/logs/fresh-right-total-rank-one.log.gz",
+    "sha256": "697a251e78a732b2325ec5e48bc3c408838b86e3af360fab6e6bc183ab869185",
+    "gzip_sha256": "0aba086993fd167219a6c642f9409c163ab858bf5de5108d56bf51cc92460a71"
+  },
+  {
+    "original": ".codex-work/appendix-a/global-bottom-degree-zero.log",
+    "retained": "provenance/wsl-appendix-a/logs/global-bottom-degree-zero.log.gz",
+    "sha256": "fdec24c5727770673b704a8ed66b103a13d80c0296e5edea5b156311d2b43d99",
+    "gzip_sha256": "c15315ed12ed9f70eac578202208c06ba7eb18fdd9a3455c021dee6d5c7338d3"
+  },
+  {
+    "original": ".codex-work/appendix-a/global-source-equality-is-not-syntax.log",
+    "retained": "provenance/wsl-appendix-a/logs/global-source-equality-is-not-syntax.log.gz",
+    "sha256": "f20ad493d47c0bfc792340dbc45ab6eb435df424d6446d298bfd94dce09ac7e7",
+    "gzip_sha256": "b9b5e8acc4913a368dde54f75ab3fa6b9c02f108cd3d530c7b0e0ca00c9c96b0"
+  },
+  {
+    "original": ".codex-work/appendix-a/global-top-degree-zero.log",
+    "retained": "provenance/wsl-appendix-a/logs/global-top-degree-zero.log.gz",
+    "sha256": "808b2a9fa4b4660ee75d006671a674b667ba016735539c1350997fc684ef019e",
+    "gzip_sha256": "272af4142f62e09dbf68f181efe835fa8f2d2850a9d14eb517f8265033707689"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-action-endpoint-transport.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-action-endpoint-transport.log.gz",
+    "sha256": "7a02586667bde9e4b498e355e9da1e875b9fee7e0870e1730cab2221168ebd74",
+    "gzip_sha256": "d98e720e16a3cd9f053ddb0cf23e3193100d3f53292fb8cb4d73a65bcb425ec4"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-action-substitution-order.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-action-substitution-order.log.gz",
+    "sha256": "05b355d3b0a1fd5f9bdd12c272d21ed377d0f2426c4a4fa608a1cfb8570ae2d9",
+    "gzip_sha256": "b27c96d065f317df05914fdaa485ab94da756ad190a6b1942090f218a6c79bc6"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-conj-output-exchange.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-conj-output-exchange.log.gz",
+    "sha256": "e6620a208fbcac61c0e3a1e860e97173489dc67a773740e3f297c8973d7919a1",
+    "gzip_sha256": "9b2cbddcbb0e8f3241a6ec040f4da3332f1b884bc12975506d6d8cede68629b5"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-disj-output-exchange.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-disj-output-exchange.log.gz",
+    "sha256": "d8dc6bb7db7ad84a861a4ae9fae4b7bf342a79581dadab5648773bdd4c9f8314",
+    "gzip_sha256": "3669407b6517c56987cc2d671eea3b4fb2a6d4bbd82afde96c41cb3353d32fd1"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-disj-retained-input.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-disj-retained-input.log.gz",
+    "sha256": "0f516fa3366500fda0de978b77f27a310c63ed8dd1b131d6b021410d74714dc8",
+    "gzip_sha256": "3e3b0b7b7f2f0d7a9cab6990a064bfa06049e853d9b71e6d3114e41ae00d46a6"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-dual-involution-endpoint-casts.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-dual-involution-endpoint-casts.log.gz",
+    "sha256": "c459e889fb6e46b9cd5d20b2f0b09a66cbe01ea6332d1c5c187e8463b66aaf7e",
+    "gzip_sha256": "489bfa28f439ad59b04ae1be1bae5a1e280e979c29198ca4730a58b97de5a960"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-empty-substitution-block-point.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-empty-substitution-block-point.log.gz",
+    "sha256": "0901cc8ef889f7441de65a9b7aa4050d8d91b22aad4c38f05c431f802a802c99",
+    "gzip_sha256": "861f89b1ac34003c087f7795093188e62a515881b2a897cb3ecea1ca56044111"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-first-input-exchange.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-first-input-exchange.log.gz",
+    "sha256": "3d53afcc16ffbe710f8ed6d227f498424603e1ec0ce19cdc6b65d1e61d54dbb7",
+    "gzip_sha256": "d371a0e02b809fccb08fc5cb4f4d25a26d6da2672eef07f3e7b3d67e2daf9c73"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-full-source-substitution-closure.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-full-source-substitution-closure.log.gz",
+    "sha256": "ce9fc75deb6b953c0ba9605d536e76509568162bb6cc7413ba4ff4f90e5890d2",
+    "gzip_sha256": "54f1449277a44375b89a2dfb6ca5e640ed4d488b6f637464d93e39a5325f8961"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-model-evaluation-reverses-endpoints.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-model-evaluation-reverses-endpoints.log.gz",
+    "sha256": "6d83ec5c1a2dacbce561c5e0e7348c34dee885d38671cb689178b00ee6218c2a",
+    "gzip_sha256": "2fc32deb160fc62da130c8c39aaf2fd87a10e21763a4bde316a9fd5b69112994"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-model-missing-generating-equations.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-model-missing-generating-equations.log.gz",
+    "sha256": "d14f3042431331615ba2b1f9ee82ef99b5776315e4161d1ef004276ef820ba79",
+    "gzip_sha256": "ce2a153d39a2258cd4a8a34be24b83cc301cda48edb7ba65993cbb014c50e405"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-model-one-valuation-kernel.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-model-one-valuation-kernel.log.gz",
+    "sha256": "4c72f61925ae059ce1194fc742dfc9374310f3533af59146419a3fde3b015ab7",
+    "gzip_sha256": "6fb1a46d09cb5465184751da72866afff10e0eacc459cd1ada53b7bcee300027"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-model-substitution-precomposition-variance.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-model-substitution-precomposition-variance.log.gz",
+    "sha256": "8a9de66a167d8f904fbcd3c5f2f13179a300ce87555886789cb939c3cb9a992e",
+    "gzip_sha256": "ed7df7680b70ce65ca7247ba7f7847a38450b661cbd7c8db666e0854248a40c5"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-negate-substitute-variance.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-negate-substitute-variance.log.gz",
+    "sha256": "33403fc3fe44d8dd61fa3e8445ae28356822cc41fa3809835f3795c96efd4235",
+    "gzip_sha256": "5dfcecd776898e7905a5211cb510850b85aceace16db3bc40e4eab25dc9b3552"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-negation-reversed-composition.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-negation-reversed-composition.log.gz",
+    "sha256": "a8fe160d5246a99cbcb4e08d9778a2e742fbce7f9e29626cb41bfa5bf627825b",
+    "gzip_sha256": "85fe7c08f646d336768b547c970a1c6340fd50edc2e4b3c0d274c0462c9c6612"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-negative-context-double-negation.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-negative-context-double-negation.log.gz",
+    "sha256": "b5e516e4881bbbb5280cfd52286757f39647485c3985d032674d641c4777f608",
+    "gzip_sha256": "28de59479648f538446d9c5ae5ee9a4aac893a5ea38a3f6f47e9d770b96a0a85"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-normal-form-zero-witness.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-normal-form-zero-witness.log.gz",
+    "sha256": "ee6ca5860815bcb4afd8731bb22c64f359a98ba7ba90eaf2756f8c97327797e5",
+    "gzip_sha256": "0286654a9a8ae14d20ccea0c887a689f10d2411e90df45de9fea3792020ed095"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-normal-retraction-direction.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-normal-retraction-direction.log.gz",
+    "sha256": "6a8d227f337e65e01b6bb1c62528b1183cd8f503b9858adcaba62400341b6f4b",
+    "gzip_sha256": "aeddafba94745eddd00712c72aa40808a94dc5e74f97a732b859350c2f02fb2e"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-original-isolation-endpoint-transport.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-original-isolation-endpoint-transport.log.gz",
+    "sha256": "fb16b6ae94c9388e9a765e5a3a0a3332db257b3a6c17caadb29cdcf7123506e9",
+    "gzip_sha256": "ff4c604228e4087e6daaf4827d9b3c360d6812cb8cea4f6830d963d39c9483cd"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-original-output-sequent.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-original-output-sequent.log.gz",
+    "sha256": "822bfb867e8cd65ffe79815f182f516c9422d065d021a4b8420fbac58d0fa7bc",
+    "gzip_sha256": "fd98f1d8facf946b5d652666bd23015dec84547d21b4990695b5b8bddfd339b7"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-parallel-input-contraction.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-parallel-input-contraction.log.gz",
+    "sha256": "c1c2fff3efca6874bb70bc1e701fe33532e6086e83a933ddd6bf255e7a029381",
+    "gzip_sha256": "768ef31a3988cb942adfd27164f714b429271efbe2b7b6b2b310de5ba75a55a1"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-parallel-output-contraction.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-parallel-output-contraction.log.gz",
+    "sha256": "2bbee71084997e058e7a1a5362374071c23242bf8c0aac6e2facadfc4c5abfd6",
+    "gzip_sha256": "4320d98cc44b32a910cfc0184755af678f9364f0f01dd0dedc8e9f9eceb0e2a6"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-prefix-repair.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-prefix-repair.log.gz",
+    "sha256": "1640624fb0304c32ff790e91853ca51d5681d71d167b226a9c9d20558c74a754",
+    "gzip_sha256": "fd9404ed8246a59f455f78b04ce6247eb1fcc7d2a7b08a67b21e4711cf922f25"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-quotient-hom-witness.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-quotient-hom-witness.log.gz",
+    "sha256": "8a855ad34eef3ae18f3ed24f463ef665a543c63bcc233785f7f7d285fc8209f1",
+    "gzip_sha256": "04f7e7ccf85526e5e1195ad20d2f852b06990c8417e7cbb5c3426541701d9e29"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-retained-A.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-retained-A.log.gz",
+    "sha256": "ac54f98568c921f9af1ccc54b5d82fce5f964d16c92e63ec85048394eaf2418b",
+    "gzip_sha256": "3fd3be01eeb4fe179df9e817db4d4ad3335fc80b2dcf4e7df1442f1f5a586cfb"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-retained-B.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-retained-B.log.gz",
+    "sha256": "aebf508ebc2adf8fcd261f6060bcb91c19abf3890264bbf83817bda25db66a81",
+    "gzip_sha256": "57698211361efd4d841c15c8d8ed1432140d32721b746c395940e521b8edad7d"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-right-third-repair.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-right-third-repair.log.gz",
+    "sha256": "44ab0bda2fcaedf8cbdcf50d6a269155c82f28948a0431bdab0b319cd4ab3bd4",
+    "gzip_sha256": "b3ee5fb8b0b6f19062ccf6dd5586ee9aa6cc13354d5752c19adbd7994e6be46d"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-second-output-exchange.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-second-output-exchange.log.gz",
+    "sha256": "e907ecb05776fe7131dd8dd4c131b47c81dfe2b238e08d0a6a809fedd592a42c",
+    "gzip_sha256": "3e313c2e3cdeb4f54a356491970440c82fc872d14bc0ed0e528400efef1592ff"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-sequential-repair.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-sequential-repair.log.gz",
+    "sha256": "ee884266834ceb4c7e498571f1c8be1914ac759a304b9d9184cc83ccda202ea0",
+    "gzip_sha256": "3b31e838e4bedaf0bb268975bc9152409dd3222f57f585f341aa168db8ed2a0e"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-sequential-second-cut.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-sequential-second-cut.log.gz",
+    "sha256": "c63304b9eaaae38ebc8527d84015bc5f4126f389a454e1fb6e71155dd40f3fe8",
+    "gzip_sha256": "d5a5c4d935a8985d95f90d7239074f6151c62b5d57c3ba944b1f1c0c8054f702"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-short-all-contexts.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-short-all-contexts.log.gz",
+    "sha256": "38a885542b104ce0f372c1c28419ff3e5b801c01bd2d450b1ece0608f8e8590c",
+    "gzip_sha256": "8f7713241a6c09e042d987eb217280d68a8c16d01419f11f13c5359214deafb1"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-short-cancel-first-injection.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-short-cancel-first-injection.log.gz",
+    "sha256": "39a52765a3bcc20e9df42503877d3f7d9c00fbe896a68b003c74208b3b80cab3",
+    "gzip_sha256": "303bbc48f1f50544c5d075292e6afcfe5676383ed1b1307659fd66b6750b9072"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-short-inverse-direction.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-short-inverse-direction.log.gz",
+    "sha256": "69ef8dc817319cc31eb6ae63ba8f7cc5b969a5ea20573a6e68ff51ed251f9427",
+    "gzip_sha256": "887d486472f2b63c8a726cb31137c15d47a11fdf44e1fb73649a6fc33f8793e3"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-terminal-input-contraction.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-terminal-input-contraction.log.gz",
+    "sha256": "13d9c203bdccd6ec0099f3b881a30f2bfa727ca7b0ffb3f3279c26ff41de6082",
+    "gzip_sha256": "9d41fab9a4fa971cbe1663c07fa2394b4df6e5469590702d1cf3ee3675ef17b0"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-terminal-output-contraction.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-terminal-output-contraction.log.gz",
+    "sha256": "a5e17dd6e85b409b115e0770e631fd44acf0d4701f0d8127569ea19ffc25a3a4",
+    "gzip_sha256": "ec57413891e294f7fbef40be1fc05dbcf4672c136951dfaeda7edcfddf1eed98"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-third-copy-repair.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-third-copy-repair.log.gz",
+    "sha256": "6a2d3c82e8f5c06d8e0a2ed7c7b468a59af316a6e724b5687001c9531e2f9284",
+    "gzip_sha256": "835d855fc30568531a64c6e3b02b317ba7dbc032b6b054eddc8d47c8814cb38a"
+  },
+  {
+    "original": ".codex-work/appendix-a/missing-variable-for-cartesian-obstruction.log",
+    "retained": "provenance/wsl-appendix-a/logs/missing-variable-for-cartesian-obstruction.log.gz",
+    "sha256": "b32f33bb83059c3a821b1baada679a7ec76c857f56c66404b0c15560df8b84cf",
+    "gzip_sha256": "d0bed3d095edfe7d151cfacdeec8383a866bdfe70907c708b2bca26b5159fc68"
+  },
+  {
+    "original": ".codex-work/appendix-a/mix-conventional-order.log",
+    "retained": "provenance/wsl-appendix-a/logs/mix-conventional-order.log.gz",
+    "sha256": "7b4690cb0136566005c6e50cb149ecf1b4394a926ff12c179859e350e40c9ad9",
+    "gzip_sha256": "c24bfcf7a33f1fd4f50a425a2d9340144411cbe71698b8c9f267dec4b449e123"
+  },
+  {
+    "original": ".codex-work/appendix-a/model-missing-nonempty-variables.log",
+    "retained": "provenance/wsl-appendix-a/logs/model-missing-nonempty-variables.log.gz",
+    "sha256": "4f3fb17545a65f324f0202bdb3aaf6ff46842c812145dd2961d8d01b302483a3",
+    "gzip_sha256": "b0efa1e2da58d0a8bfaaf58a72a46ab69dbb23a0b7b84ce6467724a4b75d6b58"
+  },
+  {
+    "original": ".codex-work/appendix-a/noninjective-renaming-keeps-positions.log",
+    "retained": "provenance/wsl-appendix-a/logs/noninjective-renaming-keeps-positions.log.gz",
+    "sha256": "65f39bbe320bbda4a47912b294043a86de3255ca34907141b0cbb0742c68f928",
+    "gzip_sha256": "146597cb72fcacef73725922c0865423b276120c44be417bc48d7ae6170fc750"
+  },
+  {
+    "original": ".codex-work/appendix-a/ordinal-empty-block-locator.log",
+    "retained": "provenance/wsl-appendix-a/logs/ordinal-empty-block-locator.log.gz",
+    "sha256": "5aa65f46a224676a22adf19313b92bb571acb730b77494e53795839f8b5d756f",
+    "gzip_sha256": "209794e09b7594584e7e1b3d6b4a30a07d8cdd74a60ae2783a7dcef6cfab3335"
+  },
+  {
+    "original": ".codex-work/appendix-a/ordinal-example-one-based-shift.log",
+    "retained": "provenance/wsl-appendix-a/logs/ordinal-example-one-based-shift.log.gz",
+    "sha256": "6ab9bdb0583f6d81f2d014960a5daac38ccb21b870463765a01f37230e166d96",
+    "gzip_sha256": "75efb7f50af79b23da453ae8c1f14c654338170bf9d1e3e9b931e5af220d2abc"
+  },
+  {
+    "original": ".codex-work/appendix-a/pdf-v8-final-links-20261029T212743215936.log",
+    "retained": "provenance/wsl-appendix-a/logs/pdf-v8-final-links-20261029T212743215936.log.gz",
+    "sha256": "31e802fa966cb235fe45f6ea3f409006b46039a43eeca85cf7ca22afbc0c8650",
+    "gzip_sha256": "2aaaecd562ad59540b6a12624d862385805b676fd2b30aca51ebffe2b4d66802"
+  },
+  {
+    "original": ".codex-work/appendix-a/pdf-v8-final-render-20261029T212743564007.log",
+    "retained": "provenance/wsl-appendix-a/logs/pdf-v8-final-render-20261029T212743564007.log.gz",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original": ".codex-work/appendix-a/pdf-v8-final-text-20261029T212742818934.log",
+    "retained": "provenance/wsl-appendix-a/logs/pdf-v8-final-text-20261029T212742818934.log.gz",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original": ".codex-work/appendix-a/pdf-v8-info-20261029T211646316531.log",
+    "retained": "provenance/wsl-appendix-a/logs/pdf-v8-info-20261029T211646316531.log.gz",
+    "sha256": "58466e9eaf68da0aa48ab0bc65fdebc55c3c74ae80e92e5a8f6f8b769c8da6e9",
+    "gzip_sha256": "0c142687a3bc26084d639d8e5c37711b835df5d361f1e003c77f9920fc4f5e2a"
+  },
+  {
+    "original": ".codex-work/appendix-a/pdf-v8-text-20261029T211645721635.log",
+    "retained": "provenance/wsl-appendix-a/logs/pdf-v8-text-20261029T211645721635.log.gz",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gzip_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+  },
+  {
+    "original": ".codex-work/appendix-a/prefix-distinct-equal-labels.log",
+    "retained": "provenance/wsl-appendix-a/logs/prefix-distinct-equal-labels.log.gz",
+    "sha256": "7db925cd5ffe9f5b493d640a96b5b7077a9a83a28a330fc64d9f8d16f76fbf15",
+    "gzip_sha256": "7255dae25175dc79662959a2b72b02c68410f785c8845a0fd347eb615e5d6cd8"
+  },
+  {
+    "original": ".codex-work/appendix-a/presentation-boundaries-20261029T212158298968.log",
+    "retained": "provenance/wsl-appendix-a/logs/presentation-boundaries-20261029T212158298968.log.gz",
+    "sha256": "306041f8b1c343270cc1f8c841a6a6f6aa03451e17bb5f034cd495d3b5f49f66",
+    "gzip_sha256": "c15921aa45d8e11ad49cc56d2fd468c9b56d2885c4b982b00dabd299339a6b8e"
+  },
+  {
+    "original": ".codex-work/appendix-a/profile-repeated-source-tags.log",
+    "retained": "provenance/wsl-appendix-a/logs/profile-repeated-source-tags.log.gz",
+    "sha256": "251b9e5b12cafa66408245b02b34165e7b46c40b1645481211c60000ad5cb401",
+    "gzip_sha256": "3dee0928194205e8c9ecdd6dd6276f23101600de08bef0631adf229315ba7616"
+  },
+  {
+    "original": ".codex-work/appendix-a/pure-edge-crossed-target.log",
+    "retained": "provenance/wsl-appendix-a/logs/pure-edge-crossed-target.log.gz",
+    "sha256": "1fec04a37f36271dc60735a3e85fe043ac436a456637173fc2798173a81a6ae6",
+    "gzip_sha256": "075e4521c9e2c14b854426c92396baa751ed4365e458b637e43e9e4d45debf33"
+  },
+  {
+    "original": ".codex-work/appendix-a/pure-port-repeated-label-collapse.log",
+    "retained": "provenance/wsl-appendix-a/logs/pure-port-repeated-label-collapse.log.gz",
+    "sha256": "962c29335a4700574f5a67622f4c03e012696066db451ca56d8a579c3d5f3b27",
+    "gzip_sha256": "e117373f157e69da638c2d15f82d955dd53d82cf7691a723403c00e678029e3b"
+  },
+  {
+    "original": ".codex-work/appendix-a/right-first-fixed-tail.log",
+    "retained": "provenance/wsl-appendix-a/logs/right-first-fixed-tail.log.gz",
+    "sha256": "f6016aa13c8c8365e8df42bf0fa7574600bc0f0bd0bed372e7c3e17305a06448",
+    "gzip_sha256": "10d8f10325ba60c23494a5060fedc1136177a7cb8267fdc89cacceb73bb124e3"
+  },
+  {
+    "original": ".codex-work/appendix-a/right-second-fixed-first.log",
+    "retained": "provenance/wsl-appendix-a/logs/right-second-fixed-first.log.gz",
+    "sha256": "2a5073bbb3041e6cfbca023de3f80eef685fd69fffc90544bb8ae3269f825d25",
+    "gzip_sha256": "930c8c99740192dd400b54001d9247fc94d1289c0631e9f330d1473c091aa0e5"
+  },
+  {
+    "original": ".codex-work/appendix-a/right-three-copy-original-tags.log",
+    "retained": "provenance/wsl-appendix-a/logs/right-three-copy-original-tags.log.gz",
+    "sha256": "2068a5155c85a44ba899bf7e6a8c2bbc71cd37efaa75f4dbb617a34e00116ad4",
+    "gzip_sha256": "87bda61272079ec1f6979d7a4024c1905c3f1001452c3ea98c2b0c5af65a2cc5"
+  },
+  {
+    "original": ".codex-work/appendix-a/second-branch-fixed-first-context.log",
+    "retained": "provenance/wsl-appendix-a/logs/second-branch-fixed-first-context.log.gz",
+    "sha256": "b8c2906d2efd9fee9c2f15062e3b26b226ecd4e9868f7cd4a829b4e5e264ee95",
+    "gzip_sha256": "063b3ca3da7c7bd669f4e2188878cfe6c08d555008245a38694393c863ca4360"
+  },
+  {
+    "original": ".codex-work/appendix-a/sequential-distinct-parametric-principal.log",
+    "retained": "provenance/wsl-appendix-a/logs/sequential-distinct-parametric-principal.log.gz",
+    "sha256": "b5dbdaef5c84187996ecf1ee924192fd5b8c1970566d445fa760688beacf264d",
+    "gzip_sha256": "2bfd9ceb13ef7c8759165f7c6c3c5f0d05945bd3170e0bd7e8ee0dfbb1b1ace8"
+  },
+  {
+    "original": ".codex-work/appendix-a/sequential-returned-rank.log",
+    "retained": "provenance/wsl-appendix-a/logs/sequential-returned-rank.log.gz",
+    "sha256": "87f5f1e8c94169ac69ca2b0573d9fa576b64aafc6315e8ebaa16a248c12deda8",
+    "gzip_sha256": "f28b28aa7de5b2096af7c3790293fde54466541c26698d80d0e8b0d7ea122064"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-BinaryMixCuts-20261029T211903627405.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-BinaryMixCuts-20261029T211903627405.log.gz",
+    "sha256": "1a0eb52e1cf0b07a642637f959881da0c1ddef45beb528d0c4aa04104a19d732",
+    "gzip_sha256": "a5ecc0196b03144dd755bd458524846b24586f6bfc313095bfd856540f86e0fc"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-BlockedConjBoth-20261029T211905570975.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-BlockedConjBoth-20261029T211905570975.log.gz",
+    "sha256": "6b5f2849d8656c32abbf607926d89c6f06ffcef33ddac64ea14137327a0bde15",
+    "gzip_sha256": "51997f11871ec63459c65d47fee242cf18a187ac83464c11eb20571229ea7633"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-BlockedConjFirst-20261029T211908180994.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-BlockedConjFirst-20261029T211908180994.log.gz",
+    "sha256": "95694919e3efac46fd393d6e1d1938bcc91b708141669233f180a66222b5898e",
+    "gzip_sha256": "2b17013d33b1e9e73b7caf186d5dc48fbdaf9cf4f513ec1fae0fed414b3ca298"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-BlockedConjSecond-20261029T211909939742.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-BlockedConjSecond-20261029T211909939742.log.gz",
+    "sha256": "0767b95caa12b567a311410133f0a0fc31d389b206e40e8d67ccbe0962813f96",
+    "gzip_sha256": "b967760f724c132656aa218e159d68fd806a908018c03c910dce54aec8240f8a"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-BlockedConjunction-20261029T211911549449.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-BlockedConjunction-20261029T211911549449.log.gz",
+    "sha256": "998283c7eb3961e079804ccea6921513109f235b39119d10690c93beecbae21b",
+    "gzip_sha256": "89d6f426a4fd846b9352a3cf69510052621d95de3f4ad04b1590f6492dfa9ff4"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-BlockedDisj-20261029T211913450532.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-BlockedDisj-20261029T211913450532.log.gz",
+    "sha256": "02920431fc065de5e4b73965bbcc8f876dff5164f75730c19a2a88c3475c4374",
+    "gzip_sha256": "a953ca7025b5fc3b91182d435dfed0ccd56502912e709754c092507bb0934afa"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-BlockedDisjBoth-20261029T211915654239.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-BlockedDisjBoth-20261029T211915654239.log.gz",
+    "sha256": "799cf2507a2b30bb39fa237e59844cd73ca505056f92e826b366d419707b26a7",
+    "gzip_sha256": "8cf3899dd62023e908f9a167f772e732ccd2722107cd97a4192cf542f7d1988e"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-BlockedDisjFirst-20261029T211919622072.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-BlockedDisjFirst-20261029T211919622072.log.gz",
+    "sha256": "460cac1846ade0f4b8f8158285eb3db34cb4f38af3089bf30d5b50d689a72ec6",
+    "gzip_sha256": "50dbe0093e79659600c14b649349a5eabe5b16b53d9e7286befa8de9c9a054ef"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-BlockedDisjSecond-20261029T211921200560.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-BlockedDisjSecond-20261029T211921200560.log.gz",
+    "sha256": "f4f9989c7576d6cf0716878e0c791ad7ab3d1c7cc7c13b2477fe10c2585ce87d",
+    "gzip_sha256": "65319a0611d6d20b6b1931788ec620559ba268e696521b2b4d26c31b8194ef67"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-BlockedDisjunction-20261029T211922687455.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-BlockedDisjunction-20261029T211922687455.log.gz",
+    "sha256": "64262a35f7ff9b1390185dff18c3813f13ebcc8fcff4dc223bb64a782391cdbf",
+    "gzip_sha256": "8839b7c5a10226f03d04048701eb127935e7700c2bb4e0c39ed83d73d405327e"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-BlockedGamma-20261029T211923868336.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-BlockedGamma-20261029T211923868336.log.gz",
+    "sha256": "e99e583af4d45cd50299de849dd4a3be7130bed1a95d4c306ae23458962d75e7",
+    "gzip_sha256": "8aef6928ab4d5097f97f09bea610e311762be7d91ae73137f64d9ff2fef57af9"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-BlockedLeftDisj-20261029T211927113048.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-BlockedLeftDisj-20261029T211927113048.log.gz",
+    "sha256": "4538e6b2d38ba770bc146583a18db219413b213dcbdddcbddbffd8207bdc4ab2",
+    "gzip_sha256": "5f63986d2b990a9c4fe5ec5b95b64b227608df6babce5b9f56382dfb26b20edb"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-BlockedRightConj-20261029T211929238261.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-BlockedRightConj-20261029T211929238261.log.gz",
+    "sha256": "d6526d698192e9367cd6565c959054fc695f317d6e3c2af98840c2974a6e20b0",
+    "gzip_sha256": "ab94123ba3571975d2e4b0e8958edfebcb97e3d842ee017db1995143fdb8e640"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-BlockedW-20261029T211931437785.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-BlockedW-20261029T211931437785.log.gz",
+    "sha256": "cf54f67163ea0663b376a26e0752b4502c4da32387ca41be876d6019d258454e",
+    "gzip_sha256": "758fb6164a22b33ec28e9da2fcaa30fac2d060a5446b9e8e977e128fc98e7ffb"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-CleanCuts-20261029T211934339736.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-CleanCuts-20261029T211934339736.log.gz",
+    "sha256": "7cda3b6ba4efab5385990b2b40bf80d3f5c4354314c3feab0e790b400e2ae6d0",
+    "gzip_sha256": "ef73e5a919042c80581ad448749f0ac416328849bb26c6b0286f30d7a181733b"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-CompletePaper-20261029T211936247423.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-CompletePaper-20261029T211936247423.log.gz",
+    "sha256": "d797846b2bd57ceb9cf53711bca977c444b49691f2562b5296f760609318cc05",
+    "gzip_sha256": "3bd6a66446d68e00ca64735c4f321c22e7a4678586e8b73ec1a6cdbf22e5be5f"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-ConjLeftFirst-20261029T211938558503.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-ConjLeftFirst-20261029T211938558503.log.gz",
+    "sha256": "1afe31c3721a4a0955fcf2be6bbd3b3f032c6d528eb050676b0f8ff2d1721ad2",
+    "gzip_sha256": "8f2d7e07f20242b7c162375c991fd8cb9839114b4a6c6a52b524ecaacc2682d1"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-ConjLeftSecond-20261029T211940492398.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-ConjLeftSecond-20261029T211940492398.log.gz",
+    "sha256": "333bf93060bcbeb69521986607a12fe598f5e9a737115e0be834755ebfd477d7",
+    "gzip_sha256": "8f2525c2f8ed32f01db41c7c8575ae8446be99b81eec53ffdc82ad971169ed8e"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-ConjRightFirst-20261029T211942577295.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-ConjRightFirst-20261029T211942577295.log.gz",
+    "sha256": "ccbe59d417ce44a1b7ca0c2140d14774430319cf5b0c060e821e6f5830f6021d",
+    "gzip_sha256": "05251e21d4de6dbe8bac3dc2b61af679f207a736263f55d0ce9e464d79b1f606"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-DisjBinaryCuts-20261029T211946000971.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-DisjBinaryCuts-20261029T211946000971.log.gz",
+    "sha256": "af16ecb53ecb1bca138a54f3701925f66516f1485bf24beecf4407116a621c39",
+    "gzip_sha256": "e4f3a33c8b0a371dc3e0a1dc1f13f0201096ae250389d044acb0ae54e39f424b"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-FullPaperClaims-20261029T211949992574.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-FullPaperClaims-20261029T211949992574.log.gz",
+    "sha256": "8131350277c093d565352b14837921ea9a13ff356a60622d125f2e89969b8c22",
+    "gzip_sha256": "7e91386b804dfd796413290f19e565e2e68e2e18a9631971bcb74409d46f402f"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-FullSourceModels-20261029T211952564553.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-FullSourceModels-20261029T211952564553.log.gz",
+    "sha256": "03f9a7bdfa524fd6ea24c11ebb096d1efa7b37a2b269b4ccd2d1ae85d714e418",
+    "gzip_sha256": "e9f1538dcd0f544b6fb0e4f7975d92c4f81241aa09b53b3652e29949b9ee8073"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-GlobalCutElimination-20261029T211953934622.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-GlobalCutElimination-20261029T211953934622.log.gz",
+    "sha256": "eefbf21a29c3561659282499fa9158c90c30cc51e5cd69ec62e3b845a0ccaa05",
+    "gzip_sha256": "c761f98737a0086ff2d7f35216f8bba1aa94231bab686235cf335a66befeb59d"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-LogicalBinaryCuts-20261029T211956086019.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-LogicalBinaryCuts-20261029T211956086019.log.gz",
+    "sha256": "c0f88acca9a1543b0c042eb1f493f7af9588ddf53a8f194dc92f93a4e2f2a975",
+    "gzip_sha256": "66f99ebd2ef7511fb767acb24e2f36a2212f7fc5af082516118e6cfb2858e7e3"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-MixUnion-20261029T211957592440.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-MixUnion-20261029T211957592440.log.gz",
+    "sha256": "d337cf0ae819977b61cfb223363775708f71a50db0d5faaaf7273423829c79d5",
+    "gzip_sha256": "6b778249399412d037f1444b0838067298eb29fff966acd34e56da676fc24142"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-OppositeLogicalCuts-20261029T211958676874.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-OppositeLogicalCuts-20261029T211958676874.log.gz",
+    "sha256": "1ca2678e80bcdd1759aee4cd28671ef21c9c7f69f738811db6a9cc443e8b5d89",
+    "gzip_sha256": "d393c260317b4b830d360360cc4c48be4126449079bc107f4c8f453c6080be75"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-PositionalCuts-20261029T212000064964.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-PositionalCuts-20261029T212000064964.log.gz",
+    "sha256": "540be987f4526fb41502bd6f9181ce179d427f2671db9cb4363b22278dea1818",
+    "gzip_sha256": "14a9338628d44b18a481ca0760cb48034f64f04fb7c77f7e394a51ad7c8bb494"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-PositiveCoherence-20261029T212001734990.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-PositiveCoherence-20261029T212001734990.log.gz",
+    "sha256": "e1bc7a425c1c93dacf94991f9ff64ebb755579f91ed40b6bfb887b5c2584c16f",
+    "gzip_sha256": "a5b14b31679f5a0b1227191ba6577acce7e811498a2d34b6071db50cfd81dc69"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-PrincipalConjunction-20261029T212004279141.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-PrincipalConjunction-20261029T212004279141.log.gz",
+    "sha256": "7968918271c8fc2eec6371428974caeb5b205f60e2a1ed481a16a5e49d195bb1",
+    "gzip_sha256": "8267ae8ba54c1b28049c0d590c2c2037d97531d5eb30f7e8f1dab817909324d5"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-PrincipalDisjunction-20261029T212006006059.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-PrincipalDisjunction-20261029T212006006059.log.gz",
+    "sha256": "fbd1c748b19227c05028cf5118051cd66ef4d5aeb832007b56675355afdabb24",
+    "gzip_sha256": "5292d058b9b8313699fa9e3217ce913ea07268c39dba708995602578ee47b565"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-Reducibility-20261029T212008137100.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-Reducibility-20261029T212008137100.log.gz",
+    "sha256": "6014be42220982f3f098607c65ad00d661da8503c138630052d7d794c360ac1f",
+    "gzip_sha256": "17ca3efeff58ffd2eb2d156f8a0fc4f5b5641860c7efce8e32872bbd6d90273e"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-SameSideLogicalCuts-20261029T212009499105.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-SameSideLogicalCuts-20261029T212009499105.log.gz",
+    "sha256": "9909492f74e82e4a60fd6f2f283adc866a2dc94683b796bf3009a662d64fe301",
+    "gzip_sha256": "de4e8752692957b8bb7745980514201858111980f8b9a66a5a9158645bc797e8"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-ShortProof-20261029T212011613259.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-ShortProof-20261029T212011613259.log.gz",
+    "sha256": "8966a4d4c7e894be48c4c62423179885d9ceb397f1a2acc4d7ce47300357eebb",
+    "gzip_sha256": "c8155bf39bfcbc179c20f6d4ba01e1099cbed1be9694637bdb7f6b6a16b7e4d0"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-SourceMaximality-20261029T212013281997.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-SourceMaximality-20261029T212013281997.log.gz",
+    "sha256": "ae232c6fc2c43879a9ac4adfeca5a522e62b34f0053197374aeec9700086cd67",
+    "gzip_sha256": "f1ca6561c84d9e034d78095a9c0049ad1d99b78c98010a9a812facc2c29584bf"
+  },
+  {
+    "original": ".codex-work/appendix-a/signature-StructuralCuts-20261029T212015444206.log",
+    "retained": "provenance/wsl-appendix-a/logs/signature-StructuralCuts-20261029T212015444206.log.gz",
+    "sha256": "5cff7cda6dbfc4f45794e6ea297ee46a06d92e6cd699cdb566acf03a8b2c5913",
+    "gzip_sha256": "4b890231817860bb784b4757e98514708951074ecaaf38ac2e87da1ebf74540a"
+  },
+  {
+    "original": ".codex-work/appendix-a/source-wrapper-native-rank-one.log",
+    "retained": "provenance/wsl-appendix-a/logs/source-wrapper-native-rank-one.log.gz",
+    "sha256": "867e2b98d61357d9367bece062d4541ee5bbe9f628c59f73a762d6173d565662",
+    "gzip_sha256": "c5354e56d820e6cc54cf9deaf70ceacfb43e2a83380dea73e9415ccba12cdf4d"
+  },
+  {
+    "original": ".codex-work/appendix-a/strict-20261029T211736031110.log",
+    "retained": "provenance/wsl-appendix-a/logs/strict-20261029T211736031110.log.gz",
+    "sha256": "6f4186c22cb8fc63444ee55f6e6b63c1b891083dcff67cab52eb1941d45f02dd",
+    "gzip_sha256": "275dc96a9759c94cc28ad70c27b045c156d1f91364fef50deb0ce2a20d27b702"
+  },
+  {
+    "original": ".codex-work/appendix-a/substituted-inner-crossing.log",
+    "retained": "provenance/wsl-appendix-a/logs/substituted-inner-crossing.log.gz",
+    "sha256": "f13706f1cfbc3e2849f82cd4f420a353509222b1fd03fafc5529e8b8faf9d5be",
+    "gzip_sha256": "93d65b0c894a13b73d390058b1ac8899ebd1ab9120937f181f29c503818b9dba"
+  },
+  {
+    "original": ".codex-work/appendix-a/substituted-old-repeated-tag-collapse.log",
+    "retained": "provenance/wsl-appendix-a/logs/substituted-old-repeated-tag-collapse.log.gz",
+    "sha256": "b72bd86235d5f42122696e4743bad4f6ecec2a3c7feb5a2549393f8e320e1c19",
+    "gzip_sha256": "06d8aa8691119deb975540f0567b8bd97436998e753970ce3a91ef1e5462ef96"
+  },
+  {
+    "original": ".codex-work/appendix-a/terminal-equal-label-principal-tag.log",
+    "retained": "provenance/wsl-appendix-a/logs/terminal-equal-label-principal-tag.log.gz",
+    "sha256": "5e71ef183db1376313acfe9310b497baeb5f18167ec1ef26ee7a540044ad574b",
+    "gzip_sha256": "a46cd34959ea9bac4a5558e2afe9a0785abf6744febb907116726165b0da74fe"
+  },
+  {
+    "original": ".codex-work/appendix-a/terminal-principal-is-fixed-copy.log",
+    "retained": "provenance/wsl-appendix-a/logs/terminal-principal-is-fixed-copy.log.gz",
+    "sha256": "91ad0ee8b667b333ab7cd328c70cd6d24257fe7525f2d4ce8d5733ee4751cbb7",
+    "gzip_sha256": "d5098f685e5449502152d57f1f4ec4d90f09ff94d4006636c557de216dced370"
+  },
+  {
+    "original": ".codex-work/appendix-a/tex-v8-citation-pass1-20261029T212722128077.log",
+    "retained": "provenance/wsl-appendix-a/logs/tex-v8-citation-pass1-20261029T212722128077.log.gz",
+    "sha256": "27dcce0367f87cd7395c9a9b26387cb9bbfd22447629114ad22dadc4b7e97719",
+    "gzip_sha256": "fd38583818aba5a3209206b863d1dcf29946128cdb66603245342011cb8e6c3b"
+  },
+  {
+    "original": ".codex-work/appendix-a/tex-v8-citation-pass2-20261029T212731138938.log",
+    "retained": "provenance/wsl-appendix-a/logs/tex-v8-citation-pass2-20261029T212731138938.log.gz",
+    "sha256": "27dcce0367f87cd7395c9a9b26387cb9bbfd22447629114ad22dadc4b7e97719",
+    "gzip_sha256": "fd38583818aba5a3209206b863d1dcf29946128cdb66603245342011cb8e6c3b"
+  },
+  {
+    "original": ".codex-work/appendix-a/tex-v8-citation-pass3-20261029T212738603190.log",
+    "retained": "provenance/wsl-appendix-a/logs/tex-v8-citation-pass3-20261029T212738603190.log.gz",
+    "sha256": "27dcce0367f87cd7395c9a9b26387cb9bbfd22447629114ad22dadc4b7e97719",
+    "gzip_sha256": "fd38583818aba5a3209206b863d1dcf29946128cdb66603245342011cb8e6c3b"
+  },
+  {
+    "original": ".codex-work/appendix-a/tex-v8-final.log",
+    "retained": "provenance/wsl-appendix-a/logs/tex-v8-final.log.gz",
+    "sha256": "0bd77cb28867473794ec3e61fa82935e038ebf571c32c166c25a21202cd2a5fe",
+    "gzip_sha256": "9a3b969f227c0a0a3edd9be7e607cbddb4d2491c1751d08dc3e0cc4c226c36c5"
+  },
+  {
+    "original": ".codex-work/appendix-a/tex-v8-pass1-20261029T211632606644.log",
+    "retained": "provenance/wsl-appendix-a/logs/tex-v8-pass1-20261029T211632606644.log.gz",
+    "sha256": "3a3905151975f72e91b872f00c60c4cb843dc5a1e4443a07ac1fd92751377e6a",
+    "gzip_sha256": "15ce52bc9bd8c08ee4e20c0ab337ed506706d1ef804051f8cd050a9cd01ea4c3"
+  },
+  {
+    "original": ".codex-work/appendix-a/tex-v8-pass2-20261029T211637345767.log",
+    "retained": "provenance/wsl-appendix-a/logs/tex-v8-pass2-20261029T211637345767.log.gz",
+    "sha256": "82d19c790ae30f229a9ac19e4bfdbc5c115098e6d661222729fcf31ce2aa0098",
+    "gzip_sha256": "265bb8066763f4886b93e8049330f7a1b3d7143f911b30e951ba8f9d774fc16f"
+  },
+  {
+    "original": ".codex-work/appendix-a/tex-v8-pass3-20261029T211642402020.log",
+    "retained": "provenance/wsl-appendix-a/logs/tex-v8-pass3-20261029T211642402020.log.gz",
+    "sha256": "82d19c790ae30f229a9ac19e4bfdbc5c115098e6d661222729fcf31ce2aa0098",
+    "gzip_sha256": "265bb8066763f4886b93e8049330f7a1b3d7143f911b30e951ba8f9d774fc16f"
+  },
+  {
+    "original": ".codex-work/appendix-a/three-copy-fixed-tag.log",
+    "retained": "provenance/wsl-appendix-a/logs/three-copy-fixed-tag.log.gz",
+    "sha256": "5814c8d657c66936894a1bde95bd7b76bd8908ac4d39bcc38557555978eb7c16",
+    "gzip_sha256": "88c4dbe20a0b389a78ad088d6c6d6aaae956192ac2986ceeb7db9f64da0e56a3"
+  },
+  {
+    "original": ".codex-work/appendix-a/three-copy-original-tags.log",
+    "retained": "provenance/wsl-appendix-a/logs/three-copy-original-tags.log.gz",
+    "sha256": "3ba1f547cc10d78ffe674856ce2a8c9ed26a772f54657dea74105cb0b90aedb2",
+    "gzip_sha256": "9b21e31061c6b15f6a4e4ab4bd5d5230c066f61b3f7290a91480369a90f07ad3"
+  },
+  {
+    "original": ".codex-work/appendix-a/pdf-v8-final-info-20261029T213119586797.log",
+    "retained": "provenance/wsl-appendix-a/logs/pdf-v8-final-info-20261029T213119586797.log.gz",
+    "sha256": "9bf286d53649321c5fb6bb2977d02c2e218ebe9c37adeea14ce681a86b8b2e6c",
+    "gzip_sha256": "752157a9d474b7c8e2580426537b06a9f510766b18a40805371f8e8ed8e11f53"
+  }
+]

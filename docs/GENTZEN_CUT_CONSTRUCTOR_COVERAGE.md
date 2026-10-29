@@ -114,3 +114,13 @@ agreement is a full closed congruence; actual maximality proves the model
 corollary for arbitrary native target arrows. See FULL_SOURCE_MODELS_REPORT.md.
 All cut/rank/coherence and both actual main proof routes are preserved. Remaining
 Appendix A/action claims and the final scope refresh continue.
+
+## Complete full-paper endpoint (29 October 2026)
+
+All source/rank/cleaning/atomization/coherence and both actual maximality routes
+are retained. Full model semantics, action transports, all Appendix A profiles/
+ordinal/renaming/skeleton/example constructions, all unnumbered consequences,
+Appendix B and both Appendix C source/rank correspondences are now complete.
+See MANUSCRIPT_COMPLETE_CLAIM_MAP.md and FULL_PAPER_COMPLETION_REPORT.md. Local
+source/audit/check scope is complete; independent/service/publication statuses
+remain separate and unperformed. Every previous correction and proof remains.

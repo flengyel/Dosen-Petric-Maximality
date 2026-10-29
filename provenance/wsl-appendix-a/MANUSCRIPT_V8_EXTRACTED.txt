@@ -1,0 +1,644 @@
+                 Maximality of the Došen–Petrić Boolean Category
+                                                 Florian Lengyel∗
+
+                                                October 29, 2026
+
+
+
+                                                     Abstract
+              The freely generated zero-identity Boolean category of Došen and Petrić is maximal: every
+          additional equation between distinct parallel arrows, closed under the proof operations and
+          uniform formula substitution, makes the quotient a preorder. This disproves the nonmaximality
+          conjecture in Section 14.2 of the September 2007 revision of Proof-Theoretical Coherence. Boolean
+          Coherence reduces a new equation to a contextual equation involving one literal. Uniform
+          substitution extends that equation to every formula. Two structural isomorphisms of Došen and
+          Petrić then force the product projections to coincide. A Lean formalization proves coherence
+          for the equation-generated presentation and verifies maximality, the model corollary, and the
+          occurrence-coordinate constructions. Tagged occurrence sets give coordinates for the reduction
+          and substitution.
+
+Mathematics Subject Classification (2020). Primary 03G30; Secondary 03F07, 18A32.
+Keywords. Boolean categories, maximality, categorial proof theory, coherence, substitution congru-
+ences.
+
+
+1        Introduction
+Došen and Petrić’s Boolean proof category admits distinct arrows with the same source and target.
+Their Boolean Coherence theorem distinguishes these arrows by relations between occurrences of
+propositional variables. In [1, §14.2, p. 322], they leave open whether the category is maximal
+and conjecture that it is not. We prove maximality: adjoining any new arrow equation as a
+substitution-closed schema identifies every pair of parallel arrows.
+    The proof has two parts. First, a relation distinguishing two arrows contains an edge that can
+be isolated by composition with a selector and a coselector. This yields the contextual equation
+used in Došen and Petrić’s relative-maximality argument [1, §9.7, pp. 215–216]. Second, we apply
+two isomorphisms listed in [1, §12.5, p. 294] to turn that contextual equation into equality of the
+product projections. Their invertibility also follows from the proof of [4, Lemma 7]. This application
+of the isomorphisms proves the required collapse.
+    Došen and Petrić prove maximality for cartesian categories [2, §5]. Their proof uses coherence,
+uniform substitution, and precomposition and postcomposition to reduce a new cartesian equation
+to equality of the product projections. The corresponding reduction for Boolean arrow equations is
+proved in Sections 4 and 5.
+    Earlier results establish maximality for lattice categories and relative maximality for dicartesian
+categories [3, §§8–10]; these results concern products and coproducts without distribution. Related
+    ∗
+        Email: flengyel@gradcenter.cuny.edu
+
+
+
+                                                         1
+occurrence-selection constructions appear in [4, Lemma 6]. A differing-edge argument also proves
+maximality for presentations of split preorders, split equivalence relations, and binary relations [5,
+§16].
+    Lamarche and Straßburger give a proof-net construction of free categories for their Boolean-
+category axioms [6, Theorem 3.5.4]. Straßburger studies axioms for ∗-autonomous categories with
+monoid and comonoid structures [8]. Führmann and Pym interpret cut reduction by an order on
+arrows and prove soundness and completeness for their net theories [7, Theorems 6.4–6.5]. After
+precomposition with the inverse right unit isomorphism, their negation triangle [7, (11), p. 28]
+equates an endomorphism with the identity. The corresponding structural composite defines the
+zero identity in (2).
+    We use the occurrence coordinates of [10, §9]: occurrences in a compound formula form tagged
+disjoint unions, and substitution replaces each occurrence by its own block of occurrences. Section 3
+describes these blocks, and Appendix A gives the commutative diagrams relating them to Došen and
+Petrić’s ordinal substitution operation. Section 6 describes the Lean formalization, including the
+proved inputs to its general maximality theorem. Appendix C records two typographical corrections
+to the cut-elimination proof in [1]. References to [1] use the printed pagination of its September
+2007 revised version.
+
+
+2    The Boolean proof category
+Fix a nonempty set P of propositional variables. Write Form(P ) for the formulas built from P ,
+the constants ⊤, ⊥, the binary connectives ∧, ∨, and negation ¬. Let B(P ) be the freely generated
+zero-identity Boolean category defined in [1, §§14.2–14.3]. Its objects are these formulas, and its
+arrows are the arrow terms of that presentation modulo its equations. We write B when P is fixed.
+We recall the structure and equations used in the proof.
+    The connectives ∧ and ∨ give binary products and coproducts; ⊤ is terminal and ⊥ is initial.
+For A1 = A and A2 = B, denote the projections and injections by
+
+                     πiA,B : A ∧ B −→ Ai ,       ιA,B
+                                                  i   : Ai −→ A ∨ B          (i = 1, 2).
+
+Pairing and copairing are denoted by ⟨f, g⟩ and [f, g], respectively. Write !A : A → ⊤ and κA : ⊥ → A
+for the terminal and initial arrows, and 1A for the identity of A. Composition g ◦ f applies f first.
+The symbols f ∧ g and f ∨ g denote the arrows induced by the product and coproduct bifunctors.
+    The distributor is an arrow
+
+                                  dA,B,C : A ∧ (B ∨ C) −→ (A ∧ B) ∨ C.
+
+Its first-injection equation is
+                                     dA,B,C ◦ (1A ∧ ιB,C
+                                                     1   ) = ιA∧B,C
+                                                              1     .                             (1)
+This is the coproduct-injection equation of [1, §11.1, p. 234].
+   Negation is represented by a functor ¬ : Bop → B, with specified natural double-negation and
+De Morgan isomorphisms. In particular, write nA : ¬¬A → A for the double-negation isomorphism.
+The presentation also has arrows ηA : ⊤ → ¬A ∨ A and ϵA : A ∧ ¬A → ⊥. The zero identity is the
+endomorphism 0A : A → A defined by
+
+                      0A = [κA , 1A ] ◦ (ϵA ∨ 1A ) ◦ dA,¬A,A ◦ (1A ∧ ηA ) ◦ ⟨1A , !A ⟩.           (2)
+
+The defining zero-identity equation asserts that
+
+                                   f ◦ 0A = 0C ◦ g       (f, g : A → C).                          (3)
+
+                                                     2
+Equation (2) is (0ηϵ) of [1, §14.2, p. 317]. Its product and coproduct unit isomorphisms are expressed
+here in pairing and copairing notation. Equation (3) is the zero-identity law (0I); see [1, §14.3,
+p. 322].
+Remark. Appendix B gives diagrammatic forms of equations (1)–(3), with the source and target of
+every arrow displayed.
+    Whenever B(A, C) is nonempty, define 0A,C = f ◦ 0A for any f : A → C. Equation (3) makes
+this independent of f : both f ◦ 0A and g ◦ 0A equal 0C ◦ g. Taking f = g gives f ◦ 0A = 0C ◦ f .
+Consequently zero arrows absorb composition whenever the composites are defined: h ◦ 0A,C = 0A,D
+for h : C → D, and 0A,C ◦ k = 0X,C for k : X → A.
+    Two arrows are parallel when they have the same source and target. A proof congruence on B is
+an equivalence relation on each hom-set preserved by composition and every arrow operation of the
+presentation, including the derived operations of pairing, copairing, and negation. A substitution
+congruence is a proof congruence also preserved by every uniform substitution σ : P → Form(P ).
+Here substitution acts on the entire arrow term, including its source and target; this is rule (su) of
+[1, §2.7, p. 51].
+    The total congruence identifies every parallel pair. A category is thin, or a preorder, when each
+hom-set has at most one element. We call B maximal when its only substitution congruences are
+equality and the total congruence. The main result is the following theorem.
+
+Theorem 2.1. Let P be a nonempty set of propositional variables. The freely generated zero-identity
+Boolean category B(P ) of Došen and Petrić is maximal. Equivalently, every substitution congruence
+on B(P ) that identifies two distinct parallel arrows identifies all parallel arrows.
+
+    The proof is completed in Section 5.
+
+
+3    Occurrences and substitution
+For a formula A, write Occ(A) for the finite set of positions occupied by propositional variables in
+A. Repeated occurrences of the same variable occupy distinct positions. We use tagged coordinates
+for these positions.
+    For finite sets X, Y , let X ⊔ Y = ({1} × X) ∪ ({2} × Y ) be their tagged disjoint union. The
+occurrence sets are defined recursively by
+
+                  Occ(p) = {∗},            Occ(⊤) = Occ(⊥) = ∅,
+               Occ(¬A) = Occ(A), Occ(A ⋆ C) = Occ(A) ⊔ Occ(C)              (⋆ ∈ {∧, ∨}).
+
+The label map λA : Occ(A) → P assigns to each occurrence its underlying variable. Distinct
+positions may have the same label. The left-to-right order gives a bijection from Occ(A) to
+{1, . . . , | Occ(A)|}, interpreted as the empty set when the cardinality is zero. This bijection relates
+the tagged coordinates to the finite ordinals used in [1]; Appendix A.2 expresses the corresponding
+change of substitution coordinates by a commutative square and a worked example.
+    Let Relfin be the category of finite sets and binary relations. A relation R : X → Y is a subset
+of X × Y ; identities are diagonal relations, and composition is relational composition. Transporting
+the occurrence interpretation of [1] to the tagged coordinates gives a functor G : B → Relfin with
+GA = Occ(A). For example,
+
+            Gπ1A,C = {((1, x), x) : x ∈ Occ(A)},       GιA,C
+                                                         1   = {(x, (1, x)) : x ∈ Occ(A)}.
+
+
+
+                                                   3
+The second projection and injection use tag 2. Pairing takes the union of the two relations after
+tagging their targets; copairing takes the union after tagging their sources. The relation GdA,B,C is
+the graph of the rebracketing bijection
+                                                                             
+                 Occ(A) ⊔ Occ(B) ⊔ Occ(C) −→ Occ(A) ⊔ Occ(B) ⊔ Occ(C),
+
+which preserves each occurrence of A, B, C [1, §2.9, p. 60]. Zero arrows have empty relations.
+
+Theorem 3.1 (Boolean Coherence, Došen–Petrić). The functor G : B → Relfin is faithful: parallel
+arrows f, g of B are equal if and only if Gf = Gg.
+
+    This is [1, §14.2, p. 321]. In particular, for p ∈ P , the two projections p ∧ p → p have different
+occurrence relations, so B is nonthin.
+    Joyal’s collapse theorem concerns cartesian closed categories with a dualizing object; see [1,
+§14.3, pp. 324–326]. The category B is not cartesian closed. Indeed, faithfulness gives at most one
+arrow ⊤ → E for every E, since Occ(⊤) is empty, whereas 1p ̸= 0p . An exponential p ⇒ p would
+give a bijection B(p, p) ∼
+                         = B(⊤, p ⇒ p), a contradiction.
+    A signed literal is p or ¬p for p ∈ P . A formula is in negation normal form when negation
+occurs only immediately before a propositional variable. The double-negation and De Morgan
+isomorphisms, including the isomorphisms for the truth constants, give an isomorphism aA : A → A◦
+to a formula in negation normal form. Its occurrence relation is the graph of the correspondence of
+positions [1, §14.1, pp. 313–315].
+    For arrows between formulas in negation normal form, every edge of the occurrence relation joins
+occurrences of the same signed literal. Indeed, the equivalent presentation of [1, §14.2, pp. 318–321]
+has signed literals as generators. Its positive structural generators preserve these labels; zero
+endomorphisms and the arrows ηp and ϵp have empty relations. Composition and both tensor
+operations preserve label agreement. The equivalence with B preserves the occurrence interpretation.
+    Substitution replaces each occurrence of a variable by a separate block of occurrences of its
+substituted formula. Appendix A.1 describes these blocks and their label maps by commutative
+diagrams, following [10, §9]. Let Q be a set of propositional variables and σ : P → Form(Q) a
+substitution. If A[σ] denotes the result of uniform substitution, there is a canonical bijection
+                                ∼ DA,σ ,
+                                                             a                     
+                      Occ(A[σ]) =               DA,σ =                Occ σ(λA (x)) .              (4)
+                                                           x∈Occ(A)
+
+The set on the right consists of pairs (x, t), where x is an old occurrence and t is an occurrence
+within the formula inserted there. Induction on A proves the bijection: the variable case has one
+block, the constant cases have none, binary connectives form tagged unions, and negation preserves
+the occurrence set. In particular, two occurrences of the same variable give two separately tagged
+copies of its substituted formula.
+    The organization of these blocks is expressed by a square of sets and functions. Put Eσ =
+  p∈P Occ(σ(p)). Define prD : DA,σ → Occ(A) and prE : Eσ → P by prD (x, t) = x and prE (p, t) = p.
+`
+
+The function λ b A,σ : DA,σ → Eσ sends (x, t) to (λA (x), t). Thus
+
+                                                    λA,σ
+                                                    b
+                                         DA,σ                Eσ
+
+                                       prD                     prE                                 (5)
+
+                                       Occ(A)        λA
+                                                              P.
+
+
+                                                    4
+Both routes send (x, t) to the variable λA (x) whose substituted formula contains t. The upper arrow
+forgets which occurrence of that variable supplied the copy; the source DA,σ retains it.
+    Substitution on arrow terms induces a functor
+
+                         Fσ : B(P ) −→ B(Q),            A 7−→ A[σ],      f 7−→ f [σ].
+
+Rule (su) makes this functor well defined on arrow terms modulo the defining equations. It preserves
+identities, composition, and the specified arrow operations. For each arrow, the blocks in (4) describe
+the occurrence sets of its substituted source and target.
+
+
+4    Isolating an occurrence
+Put jA = ιA,⊤
+          1   : A → A ∨ ⊤. The contextual equation needed in the proof is
+
+                                          jA ◦ π1A,⊥ = 0A∧⊥,A∨⊤ .                                    (KA )
+
+The right-hand side is also ιA,⊤       A,⊥
+                              2 ◦!⊥ ◦ π2 : its occurrence relation is empty, so Boolean Coherence
+identifies it with the zero arrow. Thus (KA ) is the contextual equation of [1, §9.7, pp. 215–216].
+
+Lemma 4.1 (Occurrence isolation). For distinct parallel arrows f, g : A → C in B, there are a
+signed literal ℓ and arrows
+                            i : ℓ ∧ ⊥ −→ A,    r : C −→ ℓ ∨ ⊤
+such that, after possibly interchanging f and g,
+
+                             r ◦ f ◦ i = jℓ ◦ π1ℓ,⊥ ,       r ◦ g ◦ i = 0ℓ∧⊥,ℓ∨⊤ .
+
+Proof. First replace f, g by aC ◦ f ◦ a−1               −1
+                                       A and aC ◦ g ◦ aA . These remain distinct, so it suffices to
+construct the arrows for the negation normal forms A , C ◦ . If their selector and coselector are i◦ , r◦ ,
+                                                     ◦
+
+the required arrows for the original formulas are a−1    ◦         ◦
+                                                    A ◦ i and r ◦ aC . We may therefore assume
+that A, C are in negation normal form.
+   Faithfulness of G gives an edge belonging to exactly one of Gf, Gg. Interchange f, g if necessary,
+and choose (x, y) ∈ Gf \ Gg. The occurrences x and y have the same signed literal ℓ. Set D = ℓ ∧ ⊥
+and E = ℓ ∨ ⊤. For every formula V , the arrows
+
+                         bV = κV ◦ π2ℓ,⊥ : D → V,            tV = ιℓ,⊤
+                                                                   2 ◦!V : V → E
+
+have empty occurrence relations.
+    Construct the selector i : D → A recursively along the tagged path to x. At the selected literal,
+use π1ℓ,⊥ . At a conjunction, pair the recursively constructed arrow with bV for the unselected factor,
+placing it in the order specified by the tag. At a disjunction, compose the recursively constructed
+arrow with the injection of the selected summand. The displayed rules for G show inductively that
+Gi consists of the single edge from the sole occurrence of D to x.
+    Construct r : C → E dually along the path to y. At the selected literal, use ιℓ,⊤       1 . At a
+conjunction, first project to the selected factor and then apply the recursively constructed arrow.
+At a disjunction, copair that arrow with tV on the unselected summand. Thus Gr is the single edge
+from y to the sole occurrence of E.
+    Relational composition now makes G(r ◦ f ◦ i) the one-edge relation from Occ(D) to Occ(E),
+whereas G(r ◦ g ◦ i) is empty. Boolean Coherence gives the asserted equations.
+
+
+                                                        5
+Proposition 4.2. If a substitution congruence θ on B identifies distinct parallel arrows, then (KA )
+holds modulo θ for every formula A.
+Proof. Lemma 4.1 and compatibility with composition give (KA ) for a signed literal ℓ. If ℓ = p,
+let σ substitute A for p and fix the other variables. This yields (KA ) for A: under (4), the literal
+occurrence in each endpoint becomes the block Occ(A), and the arrow operations are preserved by
+Fσ . Appendix A.3 describes this one-occurrence case of the substitution diagrams.
+    If ℓ = ¬p, substitute ¬A for p, obtaining the equation for ¬¬A. Transport it along nA : ¬¬A → A.
+Explicitly, let kA = jA ◦ π1A,⊥ : A ∧ ⊥ → A ∨ ⊤. The product and coproduct equations give the
+commutative square
+                                                  kA
+                                     A∧⊥                  A∨⊤
+                                 n−1
+                                  A ∧1⊥
+                                                              nA ∨1⊤
+
+
+                                    ¬¬A ∧ ⊥     k¬¬A
+                                                        ¬¬A ∨ ⊤.
+
+Precomposition and postcomposition of the zero arrow give a zero arrow by absorption. The equation
+for ¬¬A therefore gives (KA ) for A.
+
+
+5    Contextual collapse
+We use the following two isomorphisms to remove the constants from (KA ). Their types occur
+among the isomorphisms of [1, §12.5, p. 294]; the proof identifies the particular arrows needed here.
+Lemma 5.1. For every formula A, the arrows
+
+                          qA = [jA ◦ π1A,⊥ , ιA,⊤
+                                              2 ] : (A ∧ ⊥) ∨ ⊤ −→ A ∨ ⊤,
+                          eA = 1A ∧ jA : A ∧ A −→ A ∧ (A ∨ ⊤)
+are isomorphisms in B.
+Proof. First take A = p ∈ P . By [1, §12.5, p. 294], the source and target of qp are isomorphic. Each
+has one occurrence of p, so the relation of any such isomorphism is the unique bijection between
+these occurrence sets. The arrow qp has the same relation. Boolean Coherence therefore identifies
+qp with that isomorphism.
+     The same cited list gives an isomorphism b : p ∧ p → p ∧ (p ∨ ⊤): take n = m = 1 in
+pn ∧ (pm ∨ ⊤) ∼ = pn+m and choose p2 = p ∧ p. The relation Gb is a bijection between two-element
+occurrence sets. After precomposing b with the product symmetry if necessary, it agrees with
+the order-preserving bijection Gep . Coherence then identifies ep with an isomorphism. These two
+identifications also follow from the occurrence-bijection construction in the proof of [4, Lemma 7].
+     For arbitrary A, substitute A for p and fix the other variables. The functor Fσ sends qp , ep to
+qA , eA and preserves their inverse equations.
+
+Lemma 5.2 (Contextual collapse). Let θ be a proof congruence on B such that (KA ) holds modulo
+θ for every formula A. Then B/θ is a preorder.
+Proof. Write ≡ for equality modulo θ. The quotient retains products and coproducts: their
+pairing, copairing, and defining equations pass to equivalence classes. Fix A, and put E = A ∨ ⊤,
+S = (A ∧ ⊥) ∨ ⊤, and s = ιA,⊤2   : ⊤ → E. The arrows 0A∧⊥,E and s◦!A∧⊥ have empty occurrence
+relations and hence are equal in B. Thus (KA ) and the coproduct equations give
+                                      qA ≡ [s◦!A∧⊥ , s] = s◦!S .
+
+                                                  6
+The inverse equations for qA hold in the quotient, so
+                                            −1           −1
+                                1 E = qA ◦ qA  ≡ s◦!S ◦ qA  = s◦!E .
+
+Together with !E ◦ s = 1⊤ , this makes E terminal in the quotient.
+    Consequently the projection r = π1A,E : A ∧ E → A is invertible, with inverse ⟨1A , s◦!A ⟩.
+Lemma 5.1 makes eA invertible too, and the product equations give r ◦ eA = π1A,A . Hence π1A,A is
+invertible. Its right inverse is the diagonal ∆A = ⟨1A , 1A ⟩ : A → A ∧ A, which must therefore be its
+inverse. It follows that
+                                    π2A,A ≡ π2A,A ◦ ∆A ◦ π1A,A = π1A,A .
+For parallel arrows f, g : X → A, pairing gives f = π1A,A ◦ ⟨f, g⟩ ≡ π2A,A ◦ ⟨f, g⟩ = g. Thus the
+quotient is a preorder.
+
+Proof of Theorem 2.1. Suppose that a substitution congruence θ on B(P ) identifies two distinct
+parallel arrows. Proposition 4.2 gives (KA ) modulo θ for every formula A. Lemma 5.2 then makes
+θ total.
+
+    The same argument gives the formulation of maximality in terms of models used in [1, §9.3,
+p. 194]. An interpretation in a zero-identity Boolean category C assigns an object of C to each
+propositional variable and interprets the specified operations; it induces a structure-preserving
+functor B(P ) → C.
+Corollary 5.3. Let P be a nonempty set of propositional variables, and let f, g : A → C be distinct
+arrows of B(P ). If a zero-identity Boolean category C satisfies f = g under every interpretation of
+the propositional variables, then C is a preorder.
+Proof. Declare two parallel arrows of B(P ) equivalent when all their interpretations in C agree. This
+defines a substitution congruence: composing an interpretation with Fσ is another interpretation.
+The congruence contains f = g, so Theorem 2.1 makes it total. In particular, π1p,p = π2p,p holds under
+every interpretation, for any p ∈ P . Interpret p as an arbitrary object X of C. Its two projections
+X ∧ X → X are equal. For any arrows a, b : Y → X, composing ⟨a, b⟩ : Y → X ∧ X with the equal
+projections gives a = b.
+
+
+6    Lean formalization
+The accompanying Lean 4 development [9] represents formulas and arrow terms by inductive
+types. An arrow term is indexed by its source and target formulas. The generated equational
+relation Derives defines a quotient category, in which the structural operations and zero-identity
+construction are proved to satisfy their specified equations. Formula substitution, normalization
+and the tagged occurrence interpretation are constructed on this syntax.
+    The theorem relative_maximality formalizes the passage from a new substitution-closed
+equation to totality of the congruence. Its arguments include the structural operations, a faithful
+occurrence interpretation, normalization, signed-label preservation, substitution and double negation.
+An alternative contextual-collapse theorem uses the symmetric map
+
+                                hA = [1A , 1A ] ◦ mA,A : A ∧ A −→ A,
+
+where the mix arrow mA,C : A ∧ C → A ∨ C is given, for any formula B, by
+
+                            mA,C = (π1A,B ∨ 1C ) ◦ dA,B,C ◦ (1A ∧ ιB,C
+                                                                   2   ).
+
+                                                  7
+This is equation (dm) of [1, §11.1, p. 234]. Its independence of B and the symmetry of mix give
+hA ◦ ⟨π2A,A , π1A,A ⟩ = hA . The formal proof uses this identity to derive projection equality from the
+contextual equations.
+    For the equation-generated Došen–Petrić presentation, cut elimination and Boolean Coherence are
+proved in Lean. The development constructs normalization, signed-label preservation, and uniform
+whole-arrow substitution, and supplies the full presentation as an instance of every hypothesis of
+relative_maximality. The theorem Presentation.maximality gives the resulting maximality
+statement.
+    The theorem Presentation.short_maximality formalizes the proof in Section 5, with explicit
+inverses for qA and eA . The model corollary is proved using full structure-preserving interpretations
+and their composition with substitution. The formalization also verifies the occurrence-profile and
+finite-ordinal constructions of Appendix A, the diagram identities of Appendix B, and the concrete
+source reductions and rank comparisons recorded in Appendix C.
+
+
+A     Substitution in occurrence coordinates
+The generalized composition of definable connectives in [1, §2.5, pp. 45–46] records how repeated
+arguments are substituted into repeated positions. We give its diagrammatic description from [10,
+§§9.2–9.3]. The diagrams separate the choice of an outer occurrence, the choice of an occurrence
+within an inserted formula, and the name assigned to that occurrence.
+
+A.1    Profiles and their fibres
+For an integer n ≥ 0, put n = {1, . . . , n}, with 0 = ∅. A formula pattern on a finite set of
+placeholders is a formula in those placeholders. Its occurrence profile records the placeholder at
+each position, reading positions from left to right.
+    Let U = {p1 , . . . , pk } consist of distinct placeholders and let M ∈ Form(U ) have m occurrences.
+Its profile is
+                       oM : m −→ k,           oM (r) = i when position r contains pi .
+For each i ∈ k, choose a set Qi = {qi,1 , . . . , qi,ℓi } of distinct local placeholders and a pattern
+Ni ∈ Form(Qi ) with ni occurrences. The sets Qi are pairwise disjoint. Write oi : ni → ℓi for the
+profile of Ni . All these numbers may be zero whenever the displayed maps exist.
+   The occurrences after substitution and the local placeholder indices form, respectively, the sets
+                                   D = {(r, t) : r ∈ m, t ∈ noM (r) },
+                                   C = {(i, s) : i ∈ k, s ∈ ℓi }.
+Thus (r, t) specifies an occurrence in the copy of NoM (r) inserted at position r of M . The pair (i, s)
+specifies a local placeholder of Ni . Define the injections
+                ar : noM (r) −→ D,    ar (t) = (r, t),          bi : ℓi −→ C,   bi (s) = (i, s).
+
+There is a unique function γ : D → C for which, for every r ∈ m, the following square commutes:
+                                                           ar
+                                           noM (r)                 D
+
+                                        ooM (r)                     γ                               (6)
+
+                                           ℓoM (r)       boM (r)
+                                                                   C.
+
+
+                                                     8
+The square says that an occurrence inside one inserted copy is labelled by that pattern’s profile and
+then placed in the corresponding target block. Since D is the disjoint union of its source blocks,
+these squares determine γ on every element. Explicitly,
+                                                                            
+                                      γ(r, t) = oM (r), ooM (r) (t) .
+
+   Define the block projections pD : D → m and pC : C → k by pD (r, t) = r and pC (i, s) = i. The
+same construction fits over the outer profile:
+                                                         γ
+                                                 D                C
+                                               pD                     pC                                         (7)
+
+                                                 m      oM        k.
+
+Both routes send (r, t) to oM (r). This square records which inserted pattern is used; square (6)
+specifies the map within each such block. Repeated values of oM give separate source blocks, one
+for each occurrence of the corresponding outer placeholder.
+    To identify this construction with actual pattern substitution, replace each qi,s in Ni by (i, s) and
+denote the resulting pattern over C by N  ei . Let Φ0 : U → Form(C) be given by Φ0 (pi ) = N   ei . Every
+occurrence of M [Φ0 ] has unique coordinates (r, t) ∈ D. This gives a bijection χ : Occ(M [Φ0 ]) → D,
+and its relation to the label map is the commutative square
+                                                                  χ
+                                          Occ(M [Φ0 ])            ∼
+                                                                  =
+                                                                           D
+
+                                          λM [Φ0 ]                          γ                                    (8)
+
+                                                 C           1C
+                                                                           C.
+                                                                                                                  
+Indeed, the occurrence with coordinates (r, t) contains precisely the placeholder oM (r), ooM (r) (t) .
+
+A.2    The finite-ordinal presentation
+The finite ordinals used in [1] number the elements of each block consecutively. Put
+                                    r
+                                    X                                                  i
+                                                                                       X
+            s0 = t0 = 0,     sr =         noM (q)     (1 ≤ r ≤ m),              ti =         ℓj   (1 ≤ i ≤ k).
+                                    q=1                                                j=1
+
+The block encodings are the bijections
+
+                                 θD : D −→ sm , θD (r, t) = sr−1 + t,
+                                 θC : C −→ tk ,         θC (i, s) = ti−1 + s.
+
+Define δ : sm → tk as the unique function making the following square commute:
+                                                        γ
+                                                D                 C
+                                               ∼
+                                               = θD               ∼
+                                                                  = θC                                           (9)
+
+                                                sm      δ
+                                                                  tk .
+
+
+                                                         9
+The vertical maps change coordinates. The top route keeps the block and local position visible; the
+bottom route uses a single position number. In coordinates, commutativity says
+                                                                                
+                          δ(sr−1 + t) = toM (r)−1 + ooM (r) (t)       (r, t) ∈ D .                   (10)
+
+Every source position belongs to exactly one nonempty block, so this formula determines δ even
+when some blocks are empty.
+    In Došen and Petrić’s notation, µ and νi correspond to oM and oi , and µ(ν1 , . . . , νk ) corresponds
+to δ. Their block locator selects the unique r for which sr−1 < x ≤ sr ; substituting t = x − sr−1
+in (10) gives their formula [1, §2.5, p. 46]. The square therefore describes the occurrence-profile
+component of their generalized composition. A pattern can equivalently be specified by erasing its
+placeholder names to one common symbol and attaching its occurrence profile. In that notation,
+the generalized composite is represented by the skeleton of the substituted pattern together with
+the profile δ.
+    For example, take
+
+               M (p, q) = q ∧ (p ∨ q),       N1 (a, b) = a ∧ b,      N2 (c, d) = d ∧ (c ∨ d).
+
+The profiles, listed by successive values, are oM = (2, 1, 2), o1 = (1, 2), and o2 = (2, 1, 2). The source
+blocks have sizes 3, 2, 3, while the target blocks list (a, b) and (c, d). Thus
+
+                              source position 1 2 3 4 5 6 7 8
+                                placeholder   d c d a b d c d
+                                     δ        4 3 4 1 2 4 3 4
+
+For instance, source position 2 has coordinates (1, 2). The profile map gives γ(1, 2) = (2, 1), and the
+target encoding then gives θC (2, 1) = 3. Thus δ(2) = 3.
+
+A.3    Shared variables and the maximality argument
+The local placeholders may be assigned names in a common variable set Q. Let ρ : C → Q be that
+assignment; different elements of C may have the same image. Replace each placeholder c ∈ C by the
+variable ρ(c), obtaining the renaming map (−)[ρ] : Form(C) → Form(Q). Define σ : U → Form(Q)
+by σ(pi ) = N
+            ei [ρ]. Then the following square commutes:
+
+                                                  (−)[Φ0 ]
+                                      Form(U )               Form(C)
+
+                                    (−)[σ]                        (−)[ρ]                             (11)
+
+                                      Form(Q)        1
+                                                             Form(Q).
+
+At pi , both routes give σ(pi ). The constant and connective clauses agree, so structural induction
+proves commutativity. Renaming changes the labels on the occurrences, while the pairs (r, t)
+continue to distinguish their positions. This permits the same actual variable to occur in several
+inserted patterns without identifying their separate occurrences.
+    For the substitution p 7→ A in Proposition 4.2, the outer pattern is p, so there is a single source
+block. This block is Occ(A). The source and target formulas of the contextual equation are p ∧ ⊥
+and p ∨ ⊤; each has one occurrence of p. Their substituted occurrence sets therefore each contain
+one copy of Occ(A), and the substituted arrow has type A ∧ ⊥ → A ∨ ⊤. If the isolated literal is
+¬p, the substitution p 7→ ¬A instead gives ¬¬A ∧ ⊥ → ¬¬A ∨ ⊤; the double-negation square in
+Proposition 4.2 then gives the required equation for A.
+
+                                                    10
+B    Diagrammatic forms of the structural equations
+The first-injection equation. For formulas A, B, C, equation (1) is the commutative triangle
+
+                                                1A ∧ιB,C
+                                                     1
+                                   A∧B                     A ∧ (B ∨ C)
+
+                                                                    dA,B,C
+                                            ιA∧B,C
+                                             1
+
+                                                           (A ∧ B) ∨ C.
+
+Both paths have source A ∧ B and target (A ∧ B) ∨ C. The upper arrow is induced by 1A : A → A
+and ιB,C
+     1   : B → B ∨ C.
+
+The zero identity. For a formula A, equation (2) is expressed by the commutative diagram
+
+                                ⟨1A ,!A ⟩              1A ∧ηA
+                            A               A∧⊤                     A ∧ (¬A ∨ A)
+
+                           0A                                                dA,¬A,A
+
+                                [κA ,1A ]              ϵA ∨1A
+                            A               ⊥∨A                     (A ∧ ¬A) ∨ A.
+
+The path across the top, down the right side, and back along the bottom is the five-arrow composite
+in (2). Its first arrow pairs 1A : A → A with !A : A → ⊤; its last arrow copairs κA : ⊥ → A with
+1A : A → A. The arrows between them use ηA : ⊤ → ¬A ∨ A and ϵA : A ∧ ¬A → ⊥, together with
+the distributor.
+
+The zero law. For any parallel arrows f, g : A → C, equation (3) is the commutative square
+
+                                                      0A
+                                             A                  A
+                                            g                   f
+
+
+                                             C        0C
+                                                             C.
+
+The upper-right path is f ◦ 0A : A → C, and the lower-left path is 0C ◦ g : A → C. The arrows f
+and g need not be equal.
+
+
+
+
+                                                      11
+C    Two corrections to the cut-elimination proof
+The cut-elimination proof in [1, §11.2] contains two typographical errors in its rank comparisons.
+We use the notation of that proof: r is the rank of the cut being reduced and r′ is the rank of a
+recursive subcut. The left and right ranks are positive; their sum is the cut rank [1, p. 249].
+
+Page 260, case (w γ 3). In the sentence immediately following the displayed reduction, the
+inequality r < r′ should read r′ < r. The recursive cuts have the same cut formula and smaller rank:
+the corresponding one-sided ranks decrease on passing to the indicated premises, while the other
+one-sided rank is unchanged.
+
+Page 262, case (w ∨ 1). In the continuation of this case, the phrase “whose rank is 1” should
+read “whose right rank is 1”, as in the analogous argument on p. 261. The selected formula in the
+right premise is newly introduced by the displayed ∨L rule, so its right rank is 1. Its total rank is
+the unchanged left rank plus 1, and is therefore at least 2.
+
+
+Use of AI tools
+OpenAI’s ChatGPT was used to assist with the development of the proof, preparation of the
+manuscript, and checks of the arguments and references.
+
+
+
+
+                                                 12
+References
+ [1] Kosta Došen and Zoran Petrić, Proof-Theoretical Coherence, Studies in Logic, vol. 1, King’s College
+     Publications, London, 2004. Revised author version, September 2007. https://www.mi.sanu.ac.rs/
+     novi_sajt/biography/kosta/coh.pdf.
+ [2] Kosta Došen and Zoran Petrić, The maximality of cartesian categories, Mathematical Logic Quarterly
+     47 (2001), 137–144. https://arxiv.org/abs/math/9911059.
+ [3] Kosta Došen and Zoran Petrić, Bicartesian coherence revisited, in Zoran Ognjanović (ed.), Logic in
+     Computer Science, Zbornik radova 12(20) (2009), 5–34. https://arxiv.org/abs/0711.4961. Author
+     version: arXiv:0711.4961v3, December 8, 2008.
+ [4] Kosta Došen and Zoran Petrić, Isomorphic formulae in classical propositional logic, Mathematical
+     Logic Quarterly 58 (2012), 5–17. https://doi.org/10.1002/malq.201020020. Author version: https:
+     //arxiv.org/abs/0912.1271, arXiv:0912.1271v3, October 4, 2010.
+ [5] Kosta Došen and Zoran Petrić, Syntax for split preorders, Annals of Pure and Applied Logic 164 (2013),
+     443–481. https://arxiv.org/abs/0902.0742. Author version: arXiv:0902.0742v7, October 18, 2012.
+ [6] François Lamarche and Lutz Straßburger, Constructing free Boolean categories, in Proceedings of the
+     20th Annual IEEE Symposium on Logic in Computer Science (LICS 2005), IEEE Computer Society,
+     2005, pp. 209–218. https://doi.org/10.1109/LICS.2005.13.
+ [7] Carsten Führmann and David Pym, Order-enriched categorical models of the classical sequent calculus,
+     Journal of Pure and Applied Algebra 204 (2006), 21–78. https://doi.org/10.1016/j.jpaa.2005.03.
+     016.
+ [8] Lutz Straßburger, On the axiomatisation of Boolean categories with and without medial, Theory
+     and Applications of Categories 18 (2007), 536–601. https://www.tac.mta.ca/tac/volumes/18/18/
+     18-18abs.html.
+ [9] Florian Lengyel, Došen–Petrić maximality in Lean, Lean 4 source development, 2026, revision
+     630c4b6e47da. https://github.com/flengyel/Dosen-Petric-Maximality.
+[10] Florian Lengyel, The Unbearable Notation of Logic, version 8, September 19, 2026, Section 9. https:
+     //github.com/flengyel/notes/blob/main/logic/The-Unbearable-Notation-of-Logic_v8.pdf.
+
+
+
+
+                                                   13
+

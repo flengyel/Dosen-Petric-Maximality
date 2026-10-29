@@ -26,8 +26,10 @@ other checkouts, including FailureOfComposition and Categorical_Rice_Shapiro.
 Read `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md`,
 `docs/CODEX_NEXT_SESSION.txt`, `docs/MANUSCRIPT_STATEMENTS.md`,
 `docs/MANUSCRIPT_COVERAGE.md`, and
-`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v7;
-v4, v5 and v6 remain preserved. Preserve the text, diagrams, and Appendix A references
+`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v8;
+v4, v5, v6 and v7 remain preserved. V8 updates only the formalization status,
+date and immutable proof-source citation; the full mathematical contract is
+all v7 content unchanged. Preserve the text, diagrams, and Appendix A references
 unless revision is requested. On 28 October 2026 the author requested that the
 two verified source errata appear in the arXiv paper. The exact Appendix C
 addition has been built and inspected in v7, preserving v6; its source and PDF
@@ -44,7 +46,9 @@ Maintain exact claim-to-declaration correspondence. Preserve the existing
 symmetric-fold proof as an alternative route.
 
 `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md` governs this overall endpoint;
-`docs/CODEX_NEXT_SESSION.txt` governs the immediate continuation after 811eceeb integration.
+`docs/CODEX_NEXT_SESSION.txt` records the completed endpoint and preservation
+requirements after 811eceeb integration. The active complete ledger is
+`docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md`.
 The concrete successor is `docs/CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt`;
 read its two 77199AC reviews and the current completed binary report/reviews.
 All twelve mix/conjR/disjL branches have actual native/selected equations and
@@ -74,9 +78,13 @@ maximality routes, original isolation, complete whole-arrow block/label squares,
 negation/substitution compatibility, Appendix B, categorical consequences and
 exact symmetric-fold correspondence are now proved. Full-source model
 interpretations, substitution composition, universal agreement and the model
-corollary are now proved and instantiated. Continue remaining substitution-action and
-Appendix A profile/ordinal/renaming/example claims, and final manuscript scope
-refresh. Preserve both proof routes and every completed result. Reuse all
+corollary are now proved and instantiated. General substitution-action transports,
+all Appendix A profile/ordinal/renaming/example/skeleton claims, every unnumbered
+mathematical assertion and the final manuscript scope/citation refresh are now
+proved and locally verified. The full-paper mathematical endpoint is complete;
+independent verification, Comparator, official/service checks and publication
+remain separate, unperformed statuses. Preserve both proof routes and every
+completed result. Reuse all
 completed binary, unary, structural,
 principal, cleaning and descent results. Retain earlier source/rank/atomization decisions.
 The existing three milestones remain distinct;

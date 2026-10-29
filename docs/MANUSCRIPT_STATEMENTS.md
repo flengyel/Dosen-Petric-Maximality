@@ -1,6 +1,42 @@
 # Manuscript v7: statements and formal scope
 
-## Current full-source models and model corollary (29 October 2026)
+## Current complete full-paper formalization (29 October 2026)
+
+All mathematical content of v7 is now proved for the actual equation-generated
+Došen–Petrić presentation, with the status/citation refresh preserved in v8.
+This includes both maximality routes, the full-source model corollary, all
+unnumbered claims, the complete substitution action and actual occurrence/block/
+profile/ordinal/renaming/skeleton constructions, all examples and all three
+appendices' equations and diagrams. All published inputs used by the actual
+proofs are proved or supplied by compatible verified core Lean constructions;
+no uninstantiated handler/coherence/conclusion field remains at those endpoints.
+
+The active exhaustive ledger is [MANUSCRIPT_COMPLETE_CLAIM_MAP.md](MANUSCRIPT_COMPLETE_CLAIM_MAP.md).
+See [completion report](FULL_PAPER_COMPLETION_REPORT.md),
+[hostile review](reviews/FULL_PAPER_COMPLETION_HOSTILE.md) and
+[writing review](reviews/FULL_PAPER_COMPLETION_WRITING.md), plus the separate
+FULL_SOURCE_MODELS_REPORT.md and all preserved earlier reports. The three old
+milestones are explicitly separate rows in the current map. Full-paper closure
+includes every additional appendix/model/operation obligation; it is not inferred
+from actual maximality alone. Exact mathematical-source commit: 630c4b6e47da16a1434476a211fd29ce6adc5569.
+
+Local checks cover 883 Lean files, 14,849 declarations, all 35 public files,
+full transitive dependency/source closure and 74 expected rejections. Exact exits,
+hashes, checked/committed archive and delivery paths are in provenance/wsl-appendix-a/.
+Both reviews are local author-side. Independent replay, Comparator, official
+preflight, service verification and publication were not performed. The repository
+remains private. The original stash and all preceding source/results/receipts persist.
+
+V8 updates the date and the abstract/introduction/section 6 formalization status,
+and cites the immutable completed proof source. V4–v7 remain preserved; all
+mathematical text, all appendices and ten diagrams are unchanged. Three stable
+TeX passes and visual inspection cover all 13 pages and the updated citation.
+FP-SCOPE-20261029 and FP-CITATION-20261029 are resolved. Older dated checkpoints
+below retain their historical open statuses and are superseded by this complete
+map; they are not new outstanding mathematical tasks.
+
+
+## Retained full-source models and model corollary checkpoint (29 October 2026)
 
 The v7 model corollary is now proved for the actual complete primitive source
 presentation. Full interpretations, all-valuation canonical functors, substitution
@@ -775,7 +811,7 @@ interpretation of variables, not one fixed valuation.
 | §2 zero arrow | `ZeroIdentity.zeroOf` | Requires f : Hom A B. No arrow is supplied to an empty hom-set. |
 | §2 witness independence and absorption | `zeroOf_independent`, `commute`, `postcompose`, `precompose`, `zero_idempotent` | All categories with the explicit zero-identity law. `Presentation.zeroConstruction_eq` now proves that formula equals primitive zero in the source quotient; `Presentation.zeroIdentity` uses the construction. |
 | §3 formulas and positions | `Formula`, `Formula.Occ`, `Formula.label`, `Formula.subst` | Arbitrary variable types; negation preserves positions; each connective uses Sum tags; constants have Empty positions. |
-| `eq:occ-substitution` | Formula.expand/contract and inverse laws; contract_label/expand_label; Term.substitution_coordinates and occurrence_substitute_coordinates/expanded | Actual tagged block bijection, label square and complete raw/quotient whole-arrow block square are proved for arbitrary substitutions and both variable universes. Appendix A profiles/ordinals/book correspondence remain separate. |
+| `eq:occ-substitution` | Formula.expand/contract and inverses; blockLabel/block_square/contract_label; Term.substitution_coordinates; PatternProfiles.actual_ordinal_square | Complete actual tags, labels, full raw/quotient arrow relation, profile/finite-ordinal correspondence, empties and repeated positions. |
 | §3 repeated variables | `Formula.repeated_positions_distinct` | The two positions in p ∧ p are distinct even though their labels coincide. |
 | §3 relation operations | `Relations.comp`, `graph`, `sumMap`, `fstRel`, `sndRel`, `copair`, `reassoc` | Binary relations on types. These operations apply in particular to finite occurrence types. `Presentation.occurrenceMap` now descends from the source equation quotient and preserves identity, composition, and the specified operations; Presentation.coherence proves faithfulness in that same original quotient. |
 | `eq:first-injection` | `Relations.first_injection`, `OccurrenceInterpretation.first_injection` | The relation equation is unconditional; its original-category counterpart is derived under the typed faithful-interpretation input. |
@@ -814,7 +850,7 @@ interpretation of variables, not one fixed valuation.
 | `lem:collapse` | ShortProof.total, terminal_id/terminal_pair, r_i, projection_id, diagonal_u, projections; PresentationShortTerminal.lean, PresentationShortProjection.lean | Complete distinct short q/e proof directly modulo arbitrary Congruence (Presentation.operations P), assuming every K_A. Original inverse equations and original coherence only; no quotient faithfulness or cancellation of j_A. Existing ContextualCollapse.total symmetric-fold route preserved. |
 | `thm:main` | Presentation.short_maximality and Presentation.maximality; congruence_dichotomy; raw_maximality | Both actual source proof routes are instantiated. P : Type u arbitrary, full proof congruences and explicit uniform endosubstitution closure; all inputs and raw/quotient correspondence proved. |
 | `cor:models` | PresentationSemantics.model_corollary/model_corollary_interpretations; full semantic/interpretation/source-model/universal-agreement modules | Complete for actual full primitive source models, arbitrary independent universes, Nonempty P, all valuations/full interpretations and arbitrary native target parallel arrows. All quotient/model bridges and full congruence closure proved. |
-| Appendix A | Actual block bijection, label and whole-arrow squares complete; profiles/ordinals remain open | Formula.expand/contract, contract_label/expand_label and all source substitution squares are instantiated. Complete profiles, gamma/chi and all their squares, ordinal bijections/locator, delta/book bridge, skeleton/profile reconstruction, worked example and noninjective renaming/specializations. |
+| Appendix A | ProfileComposition.Data, PatternProfiles actual finite coordinate/label/ordinal constructions; Formula skeleton/renaming/action theorems; ManuscriptSubstitution signed specializations | Complete all profiles, D/C injections and unique gamma/chi/delta, all squares, prefix sums/inverse/locator including zero blocks, actual left-to-right index/book correspondence, skeleton reconstruction, eight-position example, noninjective renaming and both signs. See the exhaustive complete claim map. |
 | Appendix B | ManuscriptDiagrams.first_triangle/zero_diagram/zero_primitive/zero_square, ManuscriptStructuralDiagrams.lean | Complete exact source paths: typed triangle; five named arrows and their zero identity; arbitrary parallel f/g square. Uses existing source equations, no duplicated proof assumptions. |
 
 The structural record fields are hypotheses of the conditional theorems.
@@ -854,8 +890,8 @@ endpoint substitution and its preservation of the source-generated equality.
 `Substitution` interface, including the constructed zero.
 `Presentation.doubleNegation` instantiates `DoubleNegation` from the two n-arrows
 and their inverse equations. These instances use no coherence hypothesis.
-General arrow-action identity/composition with endpoint identifications remains
-a separate obligation. The actual occurrence-block and label transport square
+General arrow-action identity/composition/extensionality with explicit endpoint
+transports is now proved by PresentationSubstitutionActionQuotient.lean. The actual occurrence-block and label transport square
 is now completely proved for all source constructors and the quotient. No arbitrary extra congruence is thereby
 proved substitution closed.
 
@@ -869,8 +905,8 @@ signed coordinate correspondence. `Presentation.occurrence_signedLabel` now
 proves global signed-label preservation directly, with normal-form literal
 and transport consequences. Derived contravariant arrow negation, natural DN/DM comparisons and congruence
 restriction are now proved. Negation/substitution compatibility is now proved by substitute_negate and
-negate_subst_derives. The full-source model corollary is now proved and instantiated. Remaining
-arrow-action and Appendix A/profile/ordinal correspondences stay open. The distinct short proof is now
+negate_subst_derives. The full-source model corollary, arrow-action laws and complete Appendix A
+profile/ordinal/skeleton/renaming correspondences are now proved and instantiated. The distinct short proof is now
 complete by Presentation.short_maximality. The reduced signed-literal syntax and existential representation
 bridge and actual Reduced.faithful are now constructed, with occurrence
 compatibility and the instantiated original-category coherence transfer. See the

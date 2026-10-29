@@ -1,6 +1,42 @@
 # Published presentation correspondence
 
-## Current full-source models and model corollary (29 October 2026)
+## Current complete full-paper formalization (29 October 2026)
+
+All mathematical content of v7 is now proved for the actual equation-generated
+Došen–Petrić presentation, with the status/citation refresh preserved in v8.
+This includes both maximality routes, the full-source model corollary, all
+unnumbered claims, the complete substitution action and actual occurrence/block/
+profile/ordinal/renaming/skeleton constructions, all examples and all three
+appendices' equations and diagrams. All published inputs used by the actual
+proofs are proved or supplied by compatible verified core Lean constructions;
+no uninstantiated handler/coherence/conclusion field remains at those endpoints.
+
+The active exhaustive ledger is [MANUSCRIPT_COMPLETE_CLAIM_MAP.md](MANUSCRIPT_COMPLETE_CLAIM_MAP.md).
+See [completion report](FULL_PAPER_COMPLETION_REPORT.md),
+[hostile review](reviews/FULL_PAPER_COMPLETION_HOSTILE.md) and
+[writing review](reviews/FULL_PAPER_COMPLETION_WRITING.md), plus the separate
+FULL_SOURCE_MODELS_REPORT.md and all preserved earlier reports. The three old
+milestones are explicitly separate rows in the current map. Full-paper closure
+includes every additional appendix/model/operation obligation; it is not inferred
+from actual maximality alone. Exact mathematical-source commit: 630c4b6e47da16a1434476a211fd29ce6adc5569.
+
+Local checks cover 883 Lean files, 14,849 declarations, all 35 public files,
+full transitive dependency/source closure and 74 expected rejections. Exact exits,
+hashes, checked/committed archive and delivery paths are in provenance/wsl-appendix-a/.
+Both reviews are local author-side. Independent replay, Comparator, official
+preflight, service verification and publication were not performed. The repository
+remains private. The original stash and all preceding source/results/receipts persist.
+
+V8 updates the date and the abstract/introduction/section 6 formalization status,
+and cites the immutable completed proof source. V4–v7 remain preserved; all
+mathematical text, all appendices and ten diagrams are unchanged. Three stable
+TeX passes and visual inspection cover all 13 pages and the updated citation.
+FP-SCOPE-20261029 and FP-CITATION-20261029 are resolved. Older dated checkpoints
+below retain their historical open statuses and are superseded by this complete
+map; they are not new outstanding mathematical tasks.
+
+
+## Retained full-source models and model corollary checkpoint (29 October 2026)
 
 The v7 model corollary is now proved for the actual complete primitive source
 presentation. Full interpretations, all-valuation canonical functors, substitution

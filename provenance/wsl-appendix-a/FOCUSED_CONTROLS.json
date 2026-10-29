@@ -1,0 +1,1175 @@
+[
+  {
+    "name": "missing-parallel-input-contraction",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-parallel-input-contraction.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-parallel-input-contraction.lean",
+    "source_sha256": "8356606292d26c8f803157408ac382c7735842a7df695486e31e5e979f71913b",
+    "log": ".codex-work/appendix-a/missing-parallel-input-contraction.log",
+    "log_sha256": "c1c2fff3efca6874bb70bc1e701fe33532e6086e83a933ddd6bf255e7a029381"
+  },
+  {
+    "name": "missing-parallel-output-contraction",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-parallel-output-contraction.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-parallel-output-contraction.lean",
+    "source_sha256": "3db73fa2c4f0eab7a2aa5c6f7903a8c278873e928d612edb3e6172e030b6c7ae",
+    "log": ".codex-work/appendix-a/missing-parallel-output-contraction.log",
+    "log_sha256": "2bbee71084997e058e7a1a5362374071c23242bf8c0aac6e2facadfc4c5abfd6"
+  },
+  {
+    "name": "blocked-equal-label-fixed-tag",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/blocked-equal-label-fixed-tag.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/blocked-equal-label-fixed-tag.lean",
+    "source_sha256": "27100726ae10bd5fe0e1f7389999903354b2dc1f725203e25141616c5e5b152e",
+    "log": ".codex-work/appendix-a/blocked-equal-label-fixed-tag.log",
+    "log_sha256": "a5819ca52ab0d410432bf0804b2f46e6caec134a3e285f342f25c6a624eb99b4"
+  },
+  {
+    "name": "missing-disj-output-exchange",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-disj-output-exchange.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-disj-output-exchange.lean",
+    "source_sha256": "48fd7010df304d3e51746db497066bd7b383eb91a303ddb0c83e532002c542fc",
+    "log": ".codex-work/appendix-a/missing-disj-output-exchange.log",
+    "log_sha256": "d8dc6bb7db7ad84a861a4ae9fae4b7bf342a79581dadab5648773bdd4c9f8314"
+  },
+  {
+    "name": "missing-disj-retained-input",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-disj-retained-input.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-disj-retained-input.lean",
+    "source_sha256": "83f9d55bf59240538f3e52db03c8f042aa77e2f54350d7096053225f446272d2",
+    "log": ".codex-work/appendix-a/missing-disj-retained-input.log",
+    "log_sha256": "0f516fa3366500fda0de978b77f27a310c63ed8dd1b131d6b021410d74714dc8"
+  },
+  {
+    "name": "missing-second-output-exchange",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-second-output-exchange.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-second-output-exchange.lean",
+    "source_sha256": "e2ffe6cf1a72280be8e7b0dd1273f90033ce05dde0ac8981aa95f0e1f3cc9741",
+    "log": ".codex-work/appendix-a/missing-second-output-exchange.log",
+    "log_sha256": "e907ecb05776fe7131dd8dd4c131b47c81dfe2b238e08d0a6a809fedd592a42c"
+  },
+  {
+    "name": "missing-retained-A",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-retained-A.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-retained-A.lean",
+    "source_sha256": "3ffd8a977b3cb89e2354fff546e61a1663c193f6f9b40302be37e0c61860f178",
+    "log": ".codex-work/appendix-a/missing-retained-A.log",
+    "log_sha256": "ac54f98568c921f9af1ccc54b5d82fce5f964d16c92e63ec85048394eaf2418b"
+  },
+  {
+    "name": "missing-conj-output-exchange",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-conj-output-exchange.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-conj-output-exchange.lean",
+    "source_sha256": "15eb1c0755d22a9407498aca022dbd6066c5f26b07ea01e212b94da2e1ffe444",
+    "log": ".codex-work/appendix-a/missing-conj-output-exchange.log",
+    "log_sha256": "e6620a208fbcac61c0e3a1e860e97173489dc67a773740e3f297c8973d7919a1"
+  },
+  {
+    "name": "missing-retained-B",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-retained-B.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-retained-B.lean",
+    "source_sha256": "7f05dc18a69748570ac03eaaa096c865ebf52c999f1fb9ef5702e855633ef3e2",
+    "log": ".codex-work/appendix-a/missing-retained-B.log",
+    "log_sha256": "aebf508ebc2adf8fcd261f6060bcb91c19abf3890264bbf83817bda25db66a81"
+  },
+  {
+    "name": "missing-first-input-exchange",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-first-input-exchange.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-first-input-exchange.lean",
+    "source_sha256": "511473cb75afdc4c7b9d0af6f1d398b990a2baf3a24ca6c343ea90e06316e5eb",
+    "log": ".codex-work/appendix-a/missing-first-input-exchange.log",
+    "log_sha256": "3d53afcc16ffbe710f8ed6d227f498424603e1ec0ce19cdc6b65d1e61d54dbb7"
+  },
+  {
+    "name": "equal-label-collapse",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/equal-label-collapse.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/equal-label-collapse.lean",
+    "source_sha256": "48cd2a94cbe5014149ab421050dbe1da92e0a42bab799f343d08d5717262fc50",
+    "log": ".codex-work/appendix-a/equal-label-collapse.log",
+    "log_sha256": "139eed98f4daef70931df606a524d96e779b62c6ba5641982adbeee3b460b88d"
+  },
+  {
+    "name": "mix-conventional-order",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/mix-conventional-order.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/mix-conventional-order.lean",
+    "source_sha256": "6cc6e58ead8817aa46985ddc93819bea1cc50986a2cf5b22d94e6cadd57d2ce8",
+    "log": ".codex-work/appendix-a/mix-conventional-order.log",
+    "log_sha256": "7b4690cb0136566005c6e50cb149ecf1b4394a926ff12c179859e350e40c9ad9"
+  },
+  {
+    "name": "missing-terminal-input-contraction",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-terminal-input-contraction.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-terminal-input-contraction.lean",
+    "source_sha256": "7d95d5a8dde30d66470fdcea4b5d7b04587255c1629c2815e4bf1e675fc85dd6",
+    "log": ".codex-work/appendix-a/missing-terminal-input-contraction.log",
+    "log_sha256": "13d9c203bdccd6ec0099f3b881a30f2bfa727ca7b0ffb3f3279c26ff41de6082"
+  },
+  {
+    "name": "missing-terminal-output-contraction",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-terminal-output-contraction.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-terminal-output-contraction.lean",
+    "source_sha256": "4bf485218547875a2a84288d40d04bd455dad63bc1e880b564a29dfc945280a1",
+    "log": ".codex-work/appendix-a/missing-terminal-output-contraction.log",
+    "log_sha256": "a5e17dd6e85b409b115e0770e631fd44acf0d4701f0d8127569ea19ffc25a3a4"
+  },
+  {
+    "name": "terminal-equal-label-principal-tag",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/terminal-equal-label-principal-tag.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/terminal-equal-label-principal-tag.lean",
+    "source_sha256": "31e2d61066fea2e853a3f88be95c47120e8dcc4e6a8c982aba0d3530a18ef009",
+    "log": ".codex-work/appendix-a/terminal-equal-label-principal-tag.log",
+    "log_sha256": "5e71ef183db1376313acfe9310b497baeb5f18167ec1ef26ee7a540044ad574b"
+  },
+  {
+    "name": "terminal-principal-is-fixed-copy",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/terminal-principal-is-fixed-copy.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/terminal-principal-is-fixed-copy.lean",
+    "source_sha256": "1a571e21edf1a8887f258d5fdd7e72e2ae486eff4035d1411a7c02db779b23fb",
+    "log": ".codex-work/appendix-a/terminal-principal-is-fixed-copy.log",
+    "log_sha256": "91ad0ee8b667b333ab7cd328c70cd6d24257fe7525f2d4ce8d5733ee4751cbb7"
+  },
+  {
+    "name": "conjunction-principal-is-fixed-copy",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/conjunction-principal-is-fixed-copy.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/conjunction-principal-is-fixed-copy.lean",
+    "source_sha256": "38116ff9619223f81f85d8364e068957b644d20150409704f46d83e5582a7091",
+    "log": ".codex-work/appendix-a/conjunction-principal-is-fixed-copy.log",
+    "log_sha256": "8e8fd8950c03efc8d47d8f933171aa0e475e7ad896b7cc4fdef89267b79723d3"
+  },
+  {
+    "name": "missing-sequential-second-cut",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-sequential-second-cut.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-sequential-second-cut.lean",
+    "source_sha256": "6ba226d25d468e6bc99461054308c591d714dfdfebffbae9bcdefc18ff819c5a",
+    "log": ".codex-work/appendix-a/missing-sequential-second-cut.log",
+    "log_sha256": "c63304b9eaaae38ebc8527d84015bc5f4126f389a454e1fb6e71155dd40f3fe8"
+  },
+  {
+    "name": "missing-sequential-repair",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-sequential-repair.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-sequential-repair.lean",
+    "source_sha256": "2cf45398ad410e639888cfb9496ec73e1216f939cd1339e7cc89ef49e90e7aef",
+    "log": ".codex-work/appendix-a/missing-sequential-repair.log",
+    "log_sha256": "ee884266834ceb4c7e498571f1c8be1914ac759a304b9d9184cc83ccda202ea0"
+  },
+  {
+    "name": "sequential-returned-rank",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/sequential-returned-rank.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/sequential-returned-rank.lean",
+    "source_sha256": "be2e52de6e4c6df0263e3216fa78d7ce8e2b3b26957696c712b070e572b1b831",
+    "log": ".codex-work/appendix-a/sequential-returned-rank.log",
+    "log_sha256": "87f5f1e8c94169ac69ca2b0573d9fa576b64aafc6315e8ebaa16a248c12deda8"
+  },
+  {
+    "name": "sequential-distinct-parametric-principal",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/sequential-distinct-parametric-principal.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/sequential-distinct-parametric-principal.lean",
+    "source_sha256": "2488869a235b97d46b2ca162a77103975ff9591929e85436c12e3cecbd5b580b",
+    "log": ".codex-work/appendix-a/sequential-distinct-parametric-principal.log",
+    "log_sha256": "b5dbdaef5c84187996ecf1ee924192fd5b8c1970566d445fa760688beacf264d"
+  },
+  {
+    "name": "missing-prefix-repair",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-prefix-repair.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-prefix-repair.lean",
+    "source_sha256": "2cf45398ad410e639888cfb9496ec73e1216f939cd1339e7cc89ef49e90e7aef",
+    "log": ".codex-work/appendix-a/missing-prefix-repair.log",
+    "log_sha256": "1640624fb0304c32ff790e91853ca51d5681d71d167b226a9c9d20558c74a754"
+  },
+  {
+    "name": "prefix-distinct-equal-labels",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/prefix-distinct-equal-labels.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/prefix-distinct-equal-labels.lean",
+    "source_sha256": "1fc3f785c278091d97ceb19cdf8baf51f142ad7f15091dd80bdf4f86311e9615",
+    "log": ".codex-work/appendix-a/prefix-distinct-equal-labels.log",
+    "log_sha256": "7db925cd5ffe9f5b493d640a96b5b7077a9a83a28a330fc64d9f8d16f76fbf15"
+  },
+  {
+    "name": "fresh-disjunction-returned-rank",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/fresh-disjunction-returned-rank.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/fresh-disjunction-returned-rank.lean",
+    "source_sha256": "878bb40369fe3ae8122dc81b05960095890f6a069f342918080fc2b76bf87260",
+    "log": ".codex-work/appendix-a/fresh-disjunction-returned-rank.log",
+    "log_sha256": "f103e70cde0e8d6eb576736d7ff294499c84d25dcf0f47454b94b31ed7a4a93a"
+  },
+  {
+    "name": "fresh-right-total-rank-one",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/fresh-right-total-rank-one.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/fresh-right-total-rank-one.lean",
+    "source_sha256": "749e88dea2abe1cd9a871ed2d334b364a400842cb85f116110bf2e264ae45e6a",
+    "log": ".codex-work/appendix-a/fresh-right-total-rank-one.log",
+    "log_sha256": "697a251e78a732b2325ec5e48bc3c408838b86e3af360fab6e6bc183ab869185"
+  },
+  {
+    "name": "source-wrapper-native-rank-one",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/source-wrapper-native-rank-one.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/source-wrapper-native-rank-one.lean",
+    "source_sha256": "da581037e78b2778a2936912e8d1441baf6fce6bb89eceae3680fb5742db58ac",
+    "log": ".codex-work/appendix-a/source-wrapper-native-rank-one.log",
+    "log_sha256": "867e2b98d61357d9367bece062d4541ee5bbe9f628c59f73a762d6173d565662"
+  },
+  {
+    "name": "second-branch-fixed-first-context",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/second-branch-fixed-first-context.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/second-branch-fixed-first-context.lean",
+    "source_sha256": "3d13e5f54e088b6f4bcc9758a82007fb0d84b5e5567dd1dcb529c91152a6e3fc",
+    "log": ".codex-work/appendix-a/second-branch-fixed-first-context.log",
+    "log_sha256": "b8c2906d2efd9fee9c2f15062e3b26b226ecd4e9868f7cd4a829b4e5e264ee95"
+  },
+  {
+    "name": "three-copy-fixed-tag",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/three-copy-fixed-tag.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/three-copy-fixed-tag.lean",
+    "source_sha256": "6b63922336fbb32da6c0e642a806ee796d50e417e2e802094a5ab622e1cef0c8",
+    "log": ".codex-work/appendix-a/three-copy-fixed-tag.log",
+    "log_sha256": "5814c8d657c66936894a1bde95bd7b76bd8908ac4d39bcc38557555978eb7c16"
+  },
+  {
+    "name": "three-copy-original-tags",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/three-copy-original-tags.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/three-copy-original-tags.lean",
+    "source_sha256": "eff37094218e3c04cfa5613ff6bcc94d80c30d2b6200bee7ca7a41d677601afc",
+    "log": ".codex-work/appendix-a/three-copy-original-tags.log",
+    "log_sha256": "3ba1f547cc10d78ffe674856ce2a8c9ed26a772f54657dea74105cb0b90aedb2"
+  },
+  {
+    "name": "missing-third-copy-repair",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-third-copy-repair.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-third-copy-repair.lean",
+    "source_sha256": "df8a7af8ffc66d082e9a8c0b2ae56d5effee2fd6281fc4b4bed861c155a84331",
+    "log": ".codex-work/appendix-a/missing-third-copy-repair.log",
+    "log_sha256": "6a2d3c82e8f5c06d8e0a2ed7c7b468a59af316a6e724b5687001c9531e2f9284"
+  },
+  {
+    "name": "right-first-fixed-tail",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/right-first-fixed-tail.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/right-first-fixed-tail.lean",
+    "source_sha256": "625893c27be462b21aa6fc1bbc8467f1c9d6b8988dd0570e8c8cad24823cec86",
+    "log": ".codex-work/appendix-a/right-first-fixed-tail.log",
+    "log_sha256": "f6016aa13c8c8365e8df42bf0fa7574600bc0f0bd0bed372e7c3e17305a06448"
+  },
+  {
+    "name": "fresh-conjunction-returned-rank",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/fresh-conjunction-returned-rank.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/fresh-conjunction-returned-rank.lean",
+    "source_sha256": "be1c0135fc01583f1950701959918a4708d0df2ca7aee037e9622699838a4c17",
+    "log": ".codex-work/appendix-a/fresh-conjunction-returned-rank.log",
+    "log_sha256": "46f2772a801be961f6279aa12224e9789b7fbaeddaa4c4678afd4439c8143663"
+  },
+  {
+    "name": "right-second-fixed-first",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/right-second-fixed-first.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/right-second-fixed-first.lean",
+    "source_sha256": "ac3f222f701ccfdbc3b3c6d38c6e3d180e1d4c8101a5000c0bc2392b6f50654a",
+    "log": ".codex-work/appendix-a/right-second-fixed-first.log",
+    "log_sha256": "2a5073bbb3041e6cfbca023de3f80eef685fd69fffc90544bb8ae3269f825d25"
+  },
+  {
+    "name": "right-three-copy-original-tags",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/right-three-copy-original-tags.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/right-three-copy-original-tags.lean",
+    "source_sha256": "b9f2a1ab7404cd64044ecf206b52de9a3a4a1d57d0aab64555651167ccba7ecb",
+    "log": ".codex-work/appendix-a/right-three-copy-original-tags.log",
+    "log_sha256": "2068a5155c85a44ba899bf7e6a8c2bbc71cd37efaa75f4dbb617a34e00116ad4"
+  },
+  {
+    "name": "missing-right-third-repair",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-right-third-repair.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-right-third-repair.lean",
+    "source_sha256": "7adedfc446f129ba242acb9d281ac91b978b752836eab99875e34be2dd8264c3",
+    "log": ".codex-work/appendix-a/missing-right-third-repair.log",
+    "log_sha256": "44ab0bda2fcaedf8cbdcf50d6a269155c82f28948a0431bdab0b319cd4ab3bd4"
+  },
+  {
+    "name": "global-source-equality-is-not-syntax",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/global-source-equality-is-not-syntax.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/global-source-equality-is-not-syntax.lean",
+    "source_sha256": "c9ef6e26e5c3b52ba6ac7057cb21344cbe2d6507a75a845f98109e1ec8da3367",
+    "log": ".codex-work/appendix-a/global-source-equality-is-not-syntax.log",
+    "log_sha256": "f20ad493d47c0bfc792340dbc45ab6eb435df424d6446d298bfd94dce09ac7e7"
+  },
+  {
+    "name": "missing-original-output-sequent",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-original-output-sequent.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-original-output-sequent.lean",
+    "source_sha256": "bf7d4864dbdaf28ca6b1f1fbe9e83adec477df7b4dbbbabe87c13dd6e6390e3e",
+    "log": ".codex-work/appendix-a/missing-original-output-sequent.log",
+    "log_sha256": "822bfb867e8cd65ffe79815f182f516c9422d065d021a4b8420fbac58d0fa7bc"
+  },
+  {
+    "name": "global-top-degree-zero",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/global-top-degree-zero.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/global-top-degree-zero.lean",
+    "source_sha256": "2da3f94a2bce786e57d421b0d2e976dba6495278841d62cdf5b65c8c97cfa4b3",
+    "log": ".codex-work/appendix-a/global-top-degree-zero.log",
+    "log_sha256": "808b2a9fa4b4660ee75d006671a674b667ba016735539c1350997fc684ef019e"
+  },
+  {
+    "name": "global-bottom-degree-zero",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/global-bottom-degree-zero.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/global-bottom-degree-zero.lean",
+    "source_sha256": "7298b029f8aef0b5dbc26274dfb33a11efeb2b2ca2f387681c45d55f7d7dc6c1",
+    "log": ".codex-work/appendix-a/global-bottom-degree-zero.log",
+    "log_sha256": "fdec24c5727770673b704a8ed66b103a13d80c0296e5edea5b156311d2b43d99"
+  },
+  {
+    "name": "pure-port-repeated-label-collapse",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/pure-port-repeated-label-collapse.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/pure-port-repeated-label-collapse.lean",
+    "source_sha256": "f0b9c99b93e79d7b989ed98d2b73a0bf770a015414c7e82313275a4e7a6e8221",
+    "log": ".codex-work/appendix-a/pure-port-repeated-label-collapse.log",
+    "log_sha256": "962c29335a4700574f5a67622f4c03e012696066db451ca56d8a579c3d5f3b27"
+  },
+  {
+    "name": "pure-edge-crossed-target",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/pure-edge-crossed-target.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/pure-edge-crossed-target.lean",
+    "source_sha256": "18754843a969d2b4651e65c07929c3897c549a34cd6ba3c944b7da0a4b02f133",
+    "log": ".codex-work/appendix-a/pure-edge-crossed-target.log",
+    "log_sha256": "1fec04a37f36271dc60735a3e85fe043ac436a456637173fc2798173a81a6ae6"
+  },
+  {
+    "name": "missing-normal-retraction-direction",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-normal-retraction-direction.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-normal-retraction-direction.lean",
+    "source_sha256": "1ee06ed735fd8d32620e3c8019db8139f92e3a43dd03714bf7cb5031f015fc9f",
+    "log": ".codex-work/appendix-a/missing-normal-retraction-direction.log",
+    "log_sha256": "6a8d227f337e65e01b6bb1c62528b1183cd8f503b9858adcaba62400341b6f4b"
+  },
+  {
+    "name": "missing-normal-form-zero-witness",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-normal-form-zero-witness.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-normal-form-zero-witness.lean",
+    "source_sha256": "817ee6e8e08bc126929073f865a853b99ae885d5dec6573c4a32e35efb8b9a88",
+    "log": ".codex-work/appendix-a/missing-normal-form-zero-witness.log",
+    "log_sha256": "ee6ca5860815bcb4afd8731bb22c64f359a98ba7ba90eaf2756f8c97327797e5"
+  },
+  {
+    "name": "missing-full-source-substitution-closure",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-full-source-substitution-closure.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-full-source-substitution-closure.lean",
+    "source_sha256": "e688833047b6c542fd083439e1afbcc55db04234d4bc1adc1da5079a0ca03d30",
+    "log": ".codex-work/appendix-a/missing-full-source-substitution-closure.log",
+    "log_sha256": "ce9fc75deb6b953c0ba9605d536e76509568162bb6cc7413ba4ff4f90e5890d2"
+  },
+  {
+    "name": "missing-dual-involution-endpoint-casts",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-dual-involution-endpoint-casts.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-dual-involution-endpoint-casts.lean",
+    "source_sha256": "fd99cbf05cccca1fd01ea7bfef4c93112e1c5c1492933f19984654a701c8be2a",
+    "log": ".codex-work/appendix-a/missing-dual-involution-endpoint-casts.log",
+    "log_sha256": "c459e889fb6e46b9cd5d20b2f0b09a66cbe01ea6332d1c5c187e8463b66aaf7e"
+  },
+  {
+    "name": "missing-negation-reversed-composition",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-negation-reversed-composition.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-negation-reversed-composition.lean",
+    "source_sha256": "df530891a9e6b33d11b39baa21bfb6cb3a32c641e4353dd31eea216db6d1439d",
+    "log": ".codex-work/appendix-a/missing-negation-reversed-composition.log",
+    "log_sha256": "a8fe160d5246a99cbcb4e08d9778a2e742fbce7f9e29626cb41bfa5bf627825b"
+  },
+  {
+    "name": "dual-repeated-port-crossing",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/dual-repeated-port-crossing.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/dual-repeated-port-crossing.lean",
+    "source_sha256": "dfbcd4e2f518a67ae1ab6ada5deea8610c81d34970ffd572b4c3cba58b627b4d",
+    "log": ".codex-work/appendix-a/dual-repeated-port-crossing.log",
+    "log_sha256": "365849a85b29b6fb1dc0441a511247ac5569cfc07d392c6c0e11d4abb64c68ad"
+  },
+  {
+    "name": "missing-short-cancel-first-injection",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-short-cancel-first-injection.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-short-cancel-first-injection.lean",
+    "source_sha256": "ec5c07d95ed62762e61940a8e989e9580f123f85ee7a5b4141e8827ff8b5a50d",
+    "log": ".codex-work/appendix-a/missing-short-cancel-first-injection.log",
+    "log_sha256": "39a52765a3bcc20e9df42503877d3f7d9c00fbe896a68b003c74208b3b80cab3"
+  },
+  {
+    "name": "missing-short-all-contexts",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-short-all-contexts.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-short-all-contexts.lean",
+    "source_sha256": "98d8d674a62b869cf3869bea83d18211f6c67c429b92f17fd69e44ac77750a1b",
+    "log": ".codex-work/appendix-a/missing-short-all-contexts.log",
+    "log_sha256": "38a885542b104ce0f372c1c28419ff3e5b801c01bd2d450b1ece0608f8e8590c"
+  },
+  {
+    "name": "missing-short-inverse-direction",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-short-inverse-direction.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-short-inverse-direction.lean",
+    "source_sha256": "ff919201c973aa6620cd32c482e7e80adfdebf33bca5965588ea50dd43b2403d",
+    "log": ".codex-work/appendix-a/missing-short-inverse-direction.log",
+    "log_sha256": "69ef8dc817319cc31eb6ae63ba8f7cc5b969a5ea20573a6e68ff51ed251f9427"
+  },
+  {
+    "name": "substituted-inner-crossing",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/substituted-inner-crossing.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/substituted-inner-crossing.lean",
+    "source_sha256": "ffb728928c41194afa677ef99a107ecf7a80cc4e70aa19cd27292ab03bedd97f",
+    "log": ".codex-work/appendix-a/substituted-inner-crossing.log",
+    "log_sha256": "f13706f1cfbc3e2849f82cd4f420a353509222b1fd03fafc5529e8b8faf9d5be"
+  },
+  {
+    "name": "substituted-old-repeated-tag-collapse",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/substituted-old-repeated-tag-collapse.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/substituted-old-repeated-tag-collapse.lean",
+    "source_sha256": "d793a63bfd631cc45e45fdefeff6811dc2b66d6cfa108714d8956ea4c5268152",
+    "log": ".codex-work/appendix-a/substituted-old-repeated-tag-collapse.log",
+    "log_sha256": "b72bd86235d5f42122696e4743bad4f6ecec2a3c7feb5a2549393f8e320e1c19"
+  },
+  {
+    "name": "missing-empty-substitution-block-point",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-empty-substitution-block-point.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-empty-substitution-block-point.lean",
+    "source_sha256": "904dafaabb863a1480921a0d37d1a41accc82d45a0f8eef6d2bc78bf7c771862",
+    "log": ".codex-work/appendix-a/missing-empty-substitution-block-point.log",
+    "log_sha256": "0901cc8ef889f7441de65a9b7aa4050d8d91b22aad4c38f05c431f802a802c99"
+  },
+  {
+    "name": "missing-original-isolation-endpoint-transport",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-original-isolation-endpoint-transport.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-original-isolation-endpoint-transport.lean",
+    "source_sha256": "992c2cc85b3c6ae6fd68b80b5394c34b95145244f5b310912eabd7e720ad91f3",
+    "log": ".codex-work/appendix-a/missing-original-isolation-endpoint-transport.log",
+    "log_sha256": "fb16b6ae94c9388e9a765e5a3a0a3332db257b3a6c17caadb29cdcf7123506e9"
+  },
+  {
+    "name": "missing-negate-substitute-variance",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-negate-substitute-variance.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-negate-substitute-variance.lean",
+    "source_sha256": "c5aa514b693f43d3a2862bc42af821420f0fdb026e40132c3a052323810a9ee1",
+    "log": ".codex-work/appendix-a/missing-negate-substitute-variance.log",
+    "log_sha256": "33403fc3fe44d8dd61fa3e8445ae28356822cc41fa3809835f3795c96efd4235"
+  },
+  {
+    "name": "missing-variable-for-cartesian-obstruction",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-variable-for-cartesian-obstruction.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-variable-for-cartesian-obstruction.lean",
+    "source_sha256": "789046f483aa8926aa6d0074d7bebb7f408efd168ba2f3b0900f2aeb5982aa50",
+    "log": ".codex-work/appendix-a/missing-variable-for-cartesian-obstruction.log",
+    "log_sha256": "b32f33bb83059c3a821b1baada679a7ec76c857f56c66404b0c15560df8b84cf"
+  },
+  {
+    "name": "model-missing-nonempty-variables",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/model-missing-nonempty-variables.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/model-missing-nonempty-variables.lean",
+    "source_sha256": "340b48e73b23e6aca50cf5016155b0d2d9f43bd07ca5ccaf38411d5e38ae023b",
+    "log": ".codex-work/appendix-a/model-missing-nonempty-variables.log",
+    "log_sha256": "4f3fb17545a65f324f0202bdb3aaf6ff46842c812145dd2961d8d01b302483a3"
+  },
+  {
+    "name": "missing-model-one-valuation-kernel",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-model-one-valuation-kernel.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-model-one-valuation-kernel.lean",
+    "source_sha256": "e1ba82b55f4d4e09b8d9b58a3b71d28632c6e1f0cac37b879fb1091af79b28f6",
+    "log": ".codex-work/appendix-a/missing-model-one-valuation-kernel.log",
+    "log_sha256": "4c72f61925ae059ce1194fc742dfc9374310f3533af59146419a3fde3b015ab7"
+  },
+  {
+    "name": "missing-model-substitution-precomposition-variance",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-model-substitution-precomposition-variance.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-model-substitution-precomposition-variance.lean",
+    "source_sha256": "caa87985b7a4c31c073acc7871955962d2d5ae53445621e78302c3deddfcc6ef",
+    "log": ".codex-work/appendix-a/missing-model-substitution-precomposition-variance.log",
+    "log_sha256": "8a9de66a167d8f904fbcd3c5f2f13179a300ce87555886789cb939c3cb9a992e"
+  },
+  {
+    "name": "missing-model-evaluation-reverses-endpoints",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-model-evaluation-reverses-endpoints.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-model-evaluation-reverses-endpoints.lean",
+    "source_sha256": "c2704352c38dd255ab3b8045b4908b7435455688ee78ed63534a326ce1bd0da3",
+    "log": ".codex-work/appendix-a/missing-model-evaluation-reverses-endpoints.log",
+    "log_sha256": "6d83ec5c1a2dacbce561c5e0e7348c34dee885d38671cb689178b00ee6218c2a"
+  },
+  {
+    "name": "missing-model-missing-generating-equations",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-model-missing-generating-equations.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-model-missing-generating-equations.lean",
+    "source_sha256": "e6d173423d4f3cfe13de466c05ce83a4809c6a5fdf7155feda221270211d9c19",
+    "log": ".codex-work/appendix-a/missing-model-missing-generating-equations.log",
+    "log_sha256": "d14f3042431331615ba2b1f9ee82ef99b5776315e4161d1ef004276ef820ba79"
+  },
+  {
+    "name": "ordinal-empty-block-locator",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/ordinal-empty-block-locator.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/ordinal-empty-block-locator.lean",
+    "source_sha256": "e7dd1a9f1e5fd4567ee907371b979aaa91336e8de1f46640d9814788e3cb4f1e",
+    "log": ".codex-work/appendix-a/ordinal-empty-block-locator.log",
+    "log_sha256": "5aa65f46a224676a22adf19313b92bb571acb730b77494e53795839f8b5d756f"
+  },
+  {
+    "name": "ordinal-example-one-based-shift",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/ordinal-example-one-based-shift.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/ordinal-example-one-based-shift.lean",
+    "source_sha256": "bb7751bb3ec2b2169bde178fb5b8a95aaa6000e539a143c5616d99e46c7a0a0d",
+    "log": ".codex-work/appendix-a/ordinal-example-one-based-shift.log",
+    "log_sha256": "6ab9bdb0583f6d81f2d014960a5daac38ccb21b870463765a01f37230e166d96"
+  },
+  {
+    "name": "profile-repeated-source-tags",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/profile-repeated-source-tags.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/profile-repeated-source-tags.lean",
+    "source_sha256": "a71086f4110367ea62599ff2fd7a17b3a7f2cb87cf8d97c6550aeffdc0a74654",
+    "log": ".codex-work/appendix-a/profile-repeated-source-tags.log",
+    "log_sha256": "251b9e5b12cafa66408245b02b34165e7b46c40b1645481211c60000ad5cb401"
+  },
+  {
+    "name": "missing-action-endpoint-transport",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-action-endpoint-transport.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-action-endpoint-transport.lean",
+    "source_sha256": "39019be2a21f1c60f7e22f2edcf9804e9c11fdae03a585524bc5a854b5bc8a77",
+    "log": ".codex-work/appendix-a/missing-action-endpoint-transport.log",
+    "log_sha256": "7a02586667bde9e4b498e355e9da1e875b9fee7e0870e1730cab2221168ebd74"
+  },
+  {
+    "name": "missing-action-substitution-order",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-action-substitution-order.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-action-substitution-order.lean",
+    "source_sha256": "accfdebc1e00b48d7461921629be9094d8ccd36166d53555f42dcd43748d2d93",
+    "log": ".codex-work/appendix-a/missing-action-substitution-order.log",
+    "log_sha256": "05b355d3b0a1fd5f9bdd12c272d21ed377d0f2426c4a4fa608a1cfb8570ae2d9"
+  },
+  {
+    "name": "missing-negative-context-double-negation",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-negative-context-double-negation.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-negative-context-double-negation.lean",
+    "source_sha256": "099f9322eb24727116ab6c8aef546d75a155b3e42f4b7e7617ce3998d1e30846",
+    "log": ".codex-work/appendix-a/missing-negative-context-double-negation.log",
+    "log_sha256": "b5e516e4881bbbb5280cfd52286757f39647485c3985d032674d641c4777f608"
+  },
+  {
+    "name": "missing-quotient-hom-witness",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/missing-quotient-hom-witness.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/missing-quotient-hom-witness.lean",
+    "source_sha256": "f55a5cda598611769bfca151779d965f2303ada54695101c30c530adaa7ae4cb",
+    "log": ".codex-work/appendix-a/missing-quotient-hom-witness.log",
+    "log_sha256": "8a855ad34eef3ae18f3ed24f463ef665a543c63bcc233785f7f7d285fc8209f1"
+  },
+  {
+    "name": "noninjective-renaming-keeps-positions",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/appendix-a/noninjective-renaming-keeps-positions.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/appendix-a/noninjective-renaming-keeps-positions.lean",
+    "source_sha256": "74c2c7fc3dc66e8c46fee20814ab331a7f8254444e00e336a83c1caec2ae2def",
+    "log": ".codex-work/appendix-a/noninjective-renaming-keeps-positions.log",
+    "log_sha256": "65f39bbe320bbda4a47912b294043a86de3255ca34907141b0cbb0742c68f928"
+  }
+]
