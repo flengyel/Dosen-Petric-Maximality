@@ -513,3 +513,13 @@ public import DosenPetric.GentzenConjFirstSelected
 public import DosenPetric.GentzenConjFirstSplice
 public import DosenPetric.GentzenLastBlockExchange
 public import DosenPetric.GentzenLastBlockSplit
+public import DosenPetric.GentzenConjLeftCoordinates
+public import DosenPetric.GentzenConjLeftCore
+public import DosenPetric.GentzenConjLeftDeletion
+public import DosenPetric.GentzenConjLeftEquation
+public import DosenPetric.GentzenConjLeftNative
+public import DosenPetric.GentzenConjLeftNativeLaws
+public import DosenPetric.GentzenConjLeftParent
+public import DosenPetric.GentzenConjLeftRoutes
+public import DosenPetric.GentzenConjLeftSelected
+public import DosenPetric.GentzenConjLeftStrength

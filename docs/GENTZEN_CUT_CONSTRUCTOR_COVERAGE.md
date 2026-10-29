@@ -1,14 +1,11 @@
 # Selected cut constructor and tag coverage
 
-Current construction incorporates successor 811eceeb. Four mix branches and both
-right-side conjR branches have exact equations, reconstructions, eliminated
-witnesses and instantiated original-rank steps. Six logical binary and fourteen
-blocked reductions remain open. Global elimination and the full-paper endpoint
-remain open. Original selected rank is measured before adapters.
-
-The active successor remains CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt;
-CODEX_NEXT_SESSION.txt records its proved right-first endpoint and continuation
-into conjR_left_first. All earlier builders and atomization decisions persist.
+Current construction incorporates 811eceeb. Four mix branches, both right-side
+conjR branches and conjR_left_first have actual equations, exact-output
+reconstructions, eliminated witnesses and instantiated original-rank steps.
+Five logical binary and fourteen blocked reductions remain open. Global
+elimination and the full-paper endpoint remain open. Measure original selected
+rank before adapters. CODEX_NEXT_SESSION.txt and the current report give scope.
 
 | Root and selected region | Left cut premise | Right cut premise |
 | --- | --- | --- |
@@ -23,7 +20,7 @@ into conjR_left_first. All earlier builders and atomization decisions persist.
 | Unary logical, same-side suffix | disjR tail equation, reconstruction and original-rank step checked | conjL tail equation, reconstruction and original-rank step checked |
 | mix, first child tag | Equation/reconstruction and instantiated rank step checked (BinaryMix.firstRaw/first_equation; mix_left_first_rank_step) | Equation/reconstruction and instantiated rank step checked (BinaryMix.rightFirstAt/rightFirstAt_equation; mix_right_first_rank_step) |
 | mix, second child tag | Native equation/reconstruction and instantiated rank step checked (BinaryMix.leadingAt; mix_left_second_rank_step) | Equation/reconstruction and instantiated rank step checked (BinaryMix.secondRaw/second_equation; mix_right_second_rank_step) |
-| conjR, first child parametric tag | Clean/rank descent checked; equation, reconstruction and rank step pending | Equation/reconstruction and instantiated rank step checked (BinaryLogical.conjRRightFirst/conjRRightFirst_equation; CutCommutation.conjR_right_first_rank_step) |
+| conjR, first child parametric tag | Equation/reconstruction and instantiated rank step checked (BinaryLogical.conjRLeftFirst/conjRLeftFirst_equation; CutCommutation.conjR_left_first_rank_step) | Equation/reconstruction and instantiated rank step checked (BinaryLogical.conjRRightFirst/conjRRightFirst_equation; CutCommutation.conjR_right_first_rank_step) |
 | conjR, second child parametric tag | Clean/rank descent checked; equation, reconstruction and rank step pending | Equation/reconstruction and instantiated rank step checked (BinaryLogical.conjRRightSecond/conjRRightSecond_equation; CutCommutation.conjR_right_second_rank_step) |
 | disjL, first child parametric tag | Clean/rank descent checked; equation, reconstruction and rank step pending | Clean/rank descent checked; equation, reconstruction and rank step pending |
 | disjL, second child parametric tag | Clean/rank descent checked; equation, reconstruction and rank step pending | Clean/rank descent checked; equation, reconstruction and rank step pending |
@@ -38,21 +35,19 @@ instances of the structural SingleFiber residual theorem.
 MixCalculation supplies eight concrete tensor/union, mix/union, splice/union and
 native-mix equations. Native mix keeps its reversed child blocks. These inputs
 are checked; four mix branches now have actual equations/reconstructions/rank steps;
-both right-side conjR branches are now complete; six logical binary branches remain open.
+both right-side conjR branches and conjR_left_first are complete; five logical binary branches remain open.
 The eight algebraic inputs are recorded in GENTZEN_MIX_UNION_REPORT.md and
 provenance/wsl-gentzen-mix-union/. The four completed mix reductions are recorded
 in GENTZEN_BINARY_MIX_CUTS_REPORT.md and provenance/wsl-gentzen-binary-cuts/.
 
-Both right-side conjunction reconstructions preserve the retained A/B tag,
-cut count and Atomized condition through actual native fold/unit and head-route
-comparisons. The former right-first native equation is resolved. Its report and
-evidence are GENTZEN_CONJR_RIGHT_FIRST_REPORT.md and
-provenance/wsl-gentzen-conjr-right-first/. The preceding right-second/symmetry
-phase is GENTZEN_LOGICAL_BINARY_CUTS_REPORT.md and
-provenance/wsl-gentzen-logical-binary-cuts/. mixedDisj_swap remains an actual
-Reduced equation, not a general G duality. The next left-first parametric-output
-diagram is retained in current evidence open/next-conjr-left-first.lean and is
-unproved. No blocked family is closed by these commutations.
+The three completed conjunction reconstructions preserve retained principal
+tags, count and Atomized through actual native fold/unit and routing comparisons.
+The former right-first native equation and left-first parametric-output core are
+resolved. Current report: GENTZEN_CONJR_LEFT_FIRST_REPORT.md; evidence:
+provenance/wsl-gentzen-conjr-left-first/. Earlier reports remain historical.
+The actual mixedDisj_swap does not assert general G duality. The next exact
+native candidate is open/next-conjr-left-second.lean in current evidence; its
+equality remains open. No blocked family is closed by these commutations.
 
 | Blocked constructor family | BlockedL | BlockedR |
 | --- | --- | --- |

@@ -1975,3 +1975,9 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.BinaryLogical.conjFirstNative_equation
 #print axioms DosenPetric.Reduced.Gentzen.BinaryLogical.conjRRightFirst_equation
 #print axioms DosenPetric.Reduced.Gentzen.CutCommutation.conjR_right_first_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.BinaryLogical.splice_distRight
+#print axioms DosenPetric.Reduced.Gentzen.BinaryLogical.selectedMixed_eq
+#print axioms DosenPetric.Reduced.Gentzen.BinaryLogical.conjR_left_first_core
+#print axioms DosenPetric.Reduced.Gentzen.BinaryLogical.conjLeftFirstNative_equation
+#print axioms DosenPetric.Reduced.Gentzen.BinaryLogical.conjRLeftFirst_equation
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.conjR_left_first_rank_step

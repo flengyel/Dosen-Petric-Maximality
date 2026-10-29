@@ -15,6 +15,14 @@ marked formalized merely because its TeX has been added.
 
 ## Current correction status
 
+conjR_left_first now resolves the formerly open mixed-rule core and completes
+its native/selected equations, reconstruction and original-rank step. Five logical
+binary and fourteen blocked reductions remain open. The next exact native
+candidate is conjR_left_second. No manuscript defect was established. This
+supersedes the left-first open count in earlier checkpoint records below;
+GENTZEN_CONJR_LEFT_FIRST_REPORT.md and current evidence give exact scope.
+All accepted source/rank/atomization, writing and delivery decisions persist.
+
 conjR_right_first is now proved through both supplied comparison targets,
 the exact retained native equation, arbitrary-tag reconstruction and original-rank
 step. Six logical binary and fourteen blocked reductions remain open. The next

@@ -46,11 +46,11 @@ symmetric-fold proof as an alternative route.
 `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md` governs this overall endpoint;
 `docs/CODEX_NEXT_SESSION.txt` governs the immediate continuation after 811eceeb integration.
 The concrete successor is `docs/CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt`;
-read its two 77199AC reviews. conjR_right_first is now proved through its
-retained native/selected equations and instantiated rank step. Complete the six
-remaining logical binary branches, blocked reductions and global induction.
-Reuse all four mix branches, both right-side conjR branches, mixedDisj_swap
-and the completed unary/descent results. Retain earlier source/rank/atomization decisions.
+read its two 77199AC reviews. Both right-side conjR branches and conjR_left_first
+are proved through native/selected equations and instantiated rank steps.
+Complete the five remaining logical binary branches, blocked reductions and
+global induction. Reuse all four mix branches, these three conjR branches,
+mixedDisj_swap and the completed unary/descent results. Retain earlier source/rank/atomization decisions.
 The existing three milestones remain distinct;
 even actual-presentation maximality alone does not certify the entire paper.
 Published dependencies used in the proof must be proved or supplied by verified,

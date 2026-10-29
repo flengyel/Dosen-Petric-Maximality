@@ -1,0 +1,104 @@
+[
+  {
+    "name": "missing-retained-A",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-conjr-left-first/missing-retained-A.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-conjr-left-first/missing-retained-A.lean",
+    "source_sha256": "3ffd8a977b3cb89e2354fff546e61a1663c193f6f9b40302be37e0c61860f178",
+    "log": ".codex-work/gentzen-conjr-left-first/missing-retained-A.log",
+    "log_sha256": "045d615603dcb87a499dd4d25366799893e573be8350d66c53d96d289e68a714"
+  },
+  {
+    "name": "missing-conj-output-exchange",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-conjr-left-first/missing-conj-output-exchange.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-conjr-left-first/missing-conj-output-exchange.lean",
+    "source_sha256": "15eb1c0755d22a9407498aca022dbd6066c5f26b07ea01e212b94da2e1ffe444",
+    "log": ".codex-work/gentzen-conjr-left-first/missing-conj-output-exchange.log",
+    "log_sha256": "b9f2af12b13c3dbf5b28f592afbdeb92b7cb74a9acfe551185ed40c7d947b133"
+  },
+  {
+    "name": "missing-retained-B",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-conjr-left-first/missing-retained-B.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-conjr-left-first/missing-retained-B.lean",
+    "source_sha256": "7f05dc18a69748570ac03eaaa096c865ebf52c999f1fb9ef5702e855633ef3e2",
+    "log": ".codex-work/gentzen-conjr-left-first/missing-retained-B.log",
+    "log_sha256": "b6bebb9bcdfca2465e7349f2edfc3c5f4c2faa906e780fc237321db40b114500"
+  },
+  {
+    "name": "missing-first-input-exchange",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-conjr-left-first/missing-first-input-exchange.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-conjr-left-first/missing-first-input-exchange.lean",
+    "source_sha256": "511473cb75afdc4c7b9d0af6f1d398b990a2baf3a24ca6c343ea90e06316e5eb",
+    "log": ".codex-work/gentzen-conjr-left-first/missing-first-input-exchange.log",
+    "log_sha256": "ad886128b28f824ebb64b3702ae39be5c361a3f6333fb7fa35f1a32ac68afa77"
+  },
+  {
+    "name": "equal-label-collapse",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-conjr-left-first/equal-label-collapse.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-conjr-left-first/equal-label-collapse.lean",
+    "source_sha256": "48cd2a94cbe5014149ab421050dbe1da92e0a42bab799f343d08d5717262fc50",
+    "log": ".codex-work/gentzen-conjr-left-first/equal-label-collapse.log",
+    "log_sha256": "f2e10b751fe8d622666888b87df0bcc8ad6dc962583369701d2b866e5b8f7a6a"
+  },
+  {
+    "name": "mix-conventional-order",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/gentzen-conjr-left-first/mix-conventional-order.lean"
+    ],
+    "exit_status": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "source": ".codex-work/gentzen-conjr-left-first/mix-conventional-order.lean",
+    "source_sha256": "6cc6e58ead8817aa46985ddc93819bea1cc50986a2cf5b22d94e6cadd57d2ce8",
+    "log": ".codex-work/gentzen-conjr-left-first/mix-conventional-order.log",
+    "log_sha256": "0256be19295aef163e73555827ecc3adcc56799d0688becf1591edb946537326"
+  }
+]
