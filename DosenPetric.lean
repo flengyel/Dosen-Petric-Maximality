@@ -721,3 +721,11 @@ public import DosenPetric.GentzenBlockedConjBothEquation
 public import DosenPetric.GentzenBlockedConjBothRank
 public import DosenPetric.GentzenSequentialConjBothNative
 public import DosenPetric.GentzenSequentialConjBothSource
+public import DosenPetric.GentzenBlockedLeftRankDispatch
+public import DosenPetric.GentzenBlockedRankDispatch
+public import DosenPetric.GentzenCleanRankInduction
+public import DosenPetric.GentzenCutElimination
+public import DosenPetric.GentzenDegreeInduction
+public import DosenPetric.GentzenParametricLeftDispatch
+public import DosenPetric.GentzenParametricRightDispatch
+public import DosenPetric.GentzenPositionalReindex

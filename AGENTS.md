@@ -63,8 +63,10 @@ rank calls. Every BlockedL family is complete. BlockedR.conjunctionFirst now has
 source equation and both instantiated original-rank calls. BlockedR.conjunctionSecond
 now has the same complete original-source/rank contract. BlockedR.conjunctionBoth
 now has its actual right3 source equation, both original descents and three
-instantiated rank calls. All fourteen blocked families are complete. Assemble
-exhaustive dispatch and global rank/degree induction. Reuse all completed binary, unary, structural,
+instantiated rank calls. All fourteen blocked families are complete. Exhaustive constructor/tag dispatch,
+original-rank induction, strong degree induction and arbitrary-G normalization
+now prove actual CutElimination P and AtomizedCutElimination P inhabitants.
+Continue restricted mix/positive/reduced/Boolean coherence and the full-paper bridges. Reuse all completed binary, unary, structural,
 principal, cleaning and descent results. Retain earlier source/rank/atomization decisions.
 The existing three milestones remain distinct;
 even actual-presentation maximality alone does not certify the entire paper.

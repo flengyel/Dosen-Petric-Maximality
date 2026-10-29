@@ -1,0 +1,130 @@
+{
+  "failed_development_checks": [
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenBlockedLeftRankDispatch"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenBlockedLeftRankDispatch"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 4.115,
+      "log": ".codex-work/gentzen-global-induction/build-GentzenBlockedLeftRankDispatch-20261029T172829964012.log",
+      "sha256": "d73d1241f4b1b55d5203ccce5e6cf5ead0d003bf2578ce89b070355532df46fa"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenBlockedRankDispatch"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenBlockedRankDispatch"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 2.361,
+      "log": ".codex-work/gentzen-global-induction/build-GentzenBlockedRankDispatch-20261029T172137616370.log",
+      "sha256": "cc248650995701e4c2c35211c0d015687954ca477971d2ae35cea777ce6f5060"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenBlockedRankDispatch"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenBlockedRankDispatch"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 3.149,
+      "log": ".codex-work/gentzen-global-induction/build-GentzenBlockedRankDispatch-20261029T172400354516.log",
+      "sha256": "d96925cb2f385cc7fd3c2d99a1f046176fbeb688f82232d44e96d9585d3f82fe"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenCleanRankInduction"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenCleanRankInduction"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 3.563,
+      "log": ".codex-work/gentzen-global-induction/build-GentzenCleanRankInduction-20261029T173620659811.log",
+      "sha256": "eb45b74130a0affb87d967a2dcd55385dad42b6807bfb85a23b856c28fbd8e49"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "DosenPetric.GentzenParametricRightDispatch"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "build",
+        "DosenPetric.GentzenParametricRightDispatch"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 3.794,
+      "log": ".codex-work/gentzen-global-induction/build-GentzenParametricRightDispatch-20261029T173509588460.log",
+      "sha256": "f67cfa3e07e4abb7cda86819c3099a039a53a75eb5d4ad8435ed6da781fc904d"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Checks/GlobalCutElimination.lean"
+      ],
+      "actual_command": [
+        "flock",
+        "-n",
+        "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Checks/GlobalCutElimination.lean"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_status": 1,
+      "seconds": 1.935,
+      "log": ".codex-work/gentzen-global-induction/lean-20261029T173957699160.log",
+      "sha256": "d1840827e74a58d3228b716a6cb17c3b8d8be274fd2c003b64b69e795c72c912"
+    }
+  ],
+  "counted_as_expected_rejection": false,
+  "final_checks": "FINAL_VERIFICATION.json"
+}

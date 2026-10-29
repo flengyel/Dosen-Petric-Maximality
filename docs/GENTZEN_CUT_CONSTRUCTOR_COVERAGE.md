@@ -1,11 +1,11 @@
 # Selected cut constructor and tag coverage
 
 Current construction incorporates 811eceeb. All twelve binary branches and all
-fourteen blocked families are complete through actual source equations and
-instantiated original-rank steps. Exhaustive constructor/tag dispatch and global
-rank/degree induction remain open. Current report: GENTZEN_ALL_BLOCKED_REPORT.md;
-continuation: CODEX_NEXT_SESSION.txt. Both Appendix C concrete source/rank rows
-remain proved. Measure original selected rank before adapters.
+fourteen blocked families are proved. Both parametric and blocked dispatchers,
+the complete classification, nested rank/degree induction and arbitrary-proof
+normalization now supply actual unrestricted CutElimination P and
+AtomizedCutElimination P inhabitants. Current report: GENTZEN_CUT_ELIMINATION_REPORT.md.
+Both Appendix C rows remain proved; original ranks are measured before adapters.
 
 | Root and selected region | Left cut premise | Right cut premise |
 | --- | --- | --- |
@@ -13,7 +13,7 @@ remain proved. Measure original selected rank before adapters.
 | Cut root | Excluded by Clean cut-freeness | Excluded by Clean cut-freeness |
 | Opposite exchange/thinning/contraction | Equation, descent and elimination/rank-step wrappers checked | Equation, descent and elimination/rank-step wrappers checked |
 | Same-side exchange/thinning/contraction, unique predecessor | Existing single-fiber equations, reconstruction and rank steps | Existing single-fiber equations, reconstruction and rank steps |
-| Same-side thinning, fresh selected tag | Existing rank-two/leaf classification; dispatcher pending | Existing rank-two/leaf classification; dispatcher pending |
+| Same-side thinning, fresh selected tag | Leaf case in clean_rank_step; rank-two degree step when both sides are leaves | Leaf case in clean_rank_step; rank-two degree step when both sides are leaves |
 | Same-side contraction, selected copy cluster | all seven BlockedR families complete, including the three-copy conjunctionBoth case | all seven BlockedL families complete, including the three-copy disjunctionBoth case |
 | Unary logical, opposite side | conjL equation, reconstruction and rank step checked | disjR equation, reconstruction and rank step checked |
 | Unary logical, same-side prefix | disjR before equation, reconstruction and original-rank step checked | conjL before equation, reconstruction and original-rank step checked |
@@ -61,12 +61,14 @@ proofs; parametric commutation alone does not supply them.
 The paired names give BlockedL / BlockedR constructors. Actual source/native
 adapters are proved for all six gamma entries, both unary logical entries and
 all three BlockedL disjunction entries and all three BlockedR conjunction entries.
-All fourteen local blocked reductions are proved; global dispatch/induction
-remains open. Neither blockedness alone nor a generic rank estimate completes
+All fourteen local blocked reductions are proved and instantiated by the two
+complete blocked dispatchers and global induction. Neither blockedness alone nor a generic rank estimate completes
 an entry.
 
-Remaining induction assembly: fixed-degree all-ranks clean theorem under the
-strict outer DegreeBelow hypothesis; only then arbitrary-premise cleaning;
-strong degree induction; arbitrary-proof structural normalization; actual
-CutElimination and AtomizedCutElimination inhabitants. No new global inhabitant
-is asserted by this table.
+Completed induction assembly: PositionalCut.clean_rank_step exhausts all selected
+classes, clean_elimination proves all original ranks at a fixed degree,
+cutFree_degree_step applies simultaneous cleaning afterward, head_cut_elimination
+discharges strict DegreeBelow, and G.cut_free_normalization handles arbitrary
+proof trees. cut_elimination and atomized_cut_elimination supply both unrestricted
+interfaces. Exact signatures and actual global witnesses are in
+Checks/GlobalCutElimination.lean. Coherence and full-paper maximality remain open.

@@ -2080,3 +2080,15 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.BlockedConjBoth.second_descent
 #print axioms DosenPetric.Reduced.Gentzen.BlockedConjBoth.fresh_clean_and_rank
 #print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blockedR_conjunctionBoth_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blocked_right_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blocked_left_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.parametric_right_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.parametric_left_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.PositionalCut.clean_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.PositionalCut.clean_elimination
+#print axioms DosenPetric.Reduced.Gentzen.PositionalCut.cutFree_degree_step
+#print axioms DosenPetric.Reduced.Gentzen.head_cut_elimination
+#print axioms DosenPetric.Reduced.Gentzen.PositionalCut.cutFree_elimination
+#print axioms DosenPetric.Reduced.Gentzen.G.cut_free_normalization
+#print axioms DosenPetric.Reduced.Gentzen.cut_elimination
+#print axioms DosenPetric.Reduced.Gentzen.atomized_cut_elimination

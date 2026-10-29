@@ -1,5 +1,18 @@
 # Manuscript corrections and source errata
 
+## Global cut-elimination continuation (29 October 2026)
+
+Complete constructor/tag dispatch and nested original-rank/formula-degree induction
+now supply actual CutElimination P and AtomizedCutElimination P inhabitants.
+Cleaning is applied only after fixed-degree all-ranks elimination. The left
+gammaDisj dispatcher uses node-free context association preserving rank, Clean
+and Eliminated. Equal-labelled positions remain distinct. All accepted source/
+rank/atomization decisions and both Appendix C concrete rows persist. No new
+manuscript defect was found; all nine blobs and the stash are unchanged. Current
+maps and full-paper immediate continuation are reconciled in one pass; dated
+historical evidence remains preserved. See GENTZEN_CUT_ELIMINATION_REPORT.md and
+its two local reviews. Coherence and all later full-paper duties remain open.
+
 ## All blocked families continuation (29 October 2026)
 
 BlockedR.conjunctionBoth now has the actual right3/conjR source equation,

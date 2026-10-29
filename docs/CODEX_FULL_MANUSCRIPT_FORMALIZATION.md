@@ -1,62 +1,50 @@
 # Complete Lean formalization of manuscript v7
 
-## Current all fourteen blocked reductions (29 October 2026)
+## Current unrestricted Gentzen cut elimination (29 October 2026)
 
-All twelve binary branches and all fourteen blocked families have actual source
-equations and instantiated original-rank steps. Exhaustive constructor/tag
-dispatch, global rank/degree induction and unrestricted elimination remain open.
-Both Appendix C concrete source/rank correspondences remain proved. All earlier
-results, corrections, source bytes and delivery receipts persist.
+`cut_elimination : CutElimination P` and
+`atomized_cut_elimination : AtomizedCutElimination P` are proved for arbitrary P.
+Every G proof has a CutFree representative at its exact original sequent with
+Reduced equality; the second result also supplies Atomized. No handler, Clean,
+degree or rank hypothesis is supplied by the caller. Coherence and full-paper
+maximality remain separate continuing obligations; the three milestones are unchanged.
 
-BlockedConjBoth.parent_source/source_equation identify the actual right3/conjR
-source and its complete three-copy Reduced equality. The leading fresh and two
-original parametric tags are contracted, retaining the last original parameter.
-Selected/fixed maps and both residues compare every ordinal coordinate, including
-equal-labelled fixed formulas. SequentialConjBoth.prepend_shared/front_factor/
-source_denote compare native intermediate heads to those original tags.
-native_equation combines the proved right-gamma and head-contraction equations.
-After inverse output exchange cancellation, the fresh proof is literal G.conjR
-with component routes below it. Its surrounding output program has a proved
-unique fresh fiber; every fixed program moves after the fresh recursive cut.
+| Construction | Actual declaration | Scope |
+| --- | --- | --- |
+| All seven blocked cases on each side | CutCommutation.blocked_right_rank_step / blocked_left_rank_step | Original lower tag, full Clean and strict original-rank recursion; node-free gammaDisj association. |
+| Every parametric G constructor on each side | CutCommutation.parametric_right_rank_step / parametric_left_rank_step | Actual original child with unchanged opposite premise before reconstruction. |
+| Complete leaf/parametric/lower dispatch | PositionalCut.clean_rank_step | Clean gives root blockedness; two leaves invoke exhaustive rank-two degree step. |
+| Fixed-degree all-ranks clean theorem | PositionalCut.clean_elimination | Strong original selected-rank induction under strict DegreeBelow. |
+| Arbitrary cut-free premises at that degree | PositionalCut.cutFree_degree_step | Simultaneous cleaning follows completed all-ranks theorem; no cleaned-rank bound. |
+| Strong formula-degree induction | head_cut_elimination | No supplied degree hypothesis; smaller degrees allow arbitrary ranks. |
+| Arbitrary tagged cut-free premises | PositionalCut.cutFree_elimination | Exact erased output and Reduced equality. |
+| Arbitrary proof trees, including nested cuts | G.cut_free_normalization; cut_elimination | Exact original sequent and Reduced equality. |
+| Simultaneous final atomization | atomized_cut_elimination | Actual unrestricted CutFree/Atomized representative. |
 
-Both original-child calls inherit full Clean and strict original ranks with
-unchanged h/z before routing. fresh_clean_and_rank proves full Clean and native
-selected succedent rho.right=1, with total 1+h.rho.left below the original rank
-for every returned k/l. All three recursive calls are instantiated. Concrete
-three-copy repairs and final atomization preserve exact original output, CutFree,
-Atomized and equation. No returned-rank bound, output blockedness or assumed
-general G duality is introduced.
+All twelve binary branches and fourteen blocked reductions are reused unchanged.
+Constants have degree one, literals zero; conjunction cuts A-then-B and disjunction
+B-then-A. No returned-rank bound, output blockedness or general G duality is assumed.
+Both concrete Appendix C source/rank correspondences remain proved. All nine
+manuscript blobs, prior results, stash and delivery receipts are preserved.
 
-Both Appendix C rows retain their actual source/rank declarations: p.260's
-gammaDisj equation and both strict descents, and p.262's first-disjunction source/
-rank step and fresh_principal_rank/fresh_total_rank/fresh_total_rank_ge_two.
-No exchanged wrapper is assigned native rank one. No new manuscript defect was
-established; all nine manuscript blobs and the stash remain unchanged.
-
-See [report](GENTZEN_ALL_BLOCKED_REPORT.md),
-[hostile review](reviews/GENTZEN_ALL_BLOCKED_HOSTILE.md),
-[writing review](reviews/GENTZEN_ALL_BLOCKED_WRITING.md) and
+See [report](GENTZEN_CUT_ELIMINATION_REPORT.md),
+[hostile review](reviews/GENTZEN_CUT_ELIMINATION_HOSTILE.md),
+[writing review](reviews/GENTZEN_CUT_ELIMINATION_WRITING.md) and
 [constructor/tag map](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
-Evidence: provenance/wsl-gentzen-blocked-right-conj-both/. Six modules contain
-32 source declarations; 778 Lean files are screened. Twenty-eight public files
-and 40 expected rejections are checked. Actual audit totals/exits, checked/committed
-bytes and Downloads paths are in FINAL_VERIFICATION.json and DELIVERY_REGISTER.json.
-Four actual initial-output smoke witnesses use witnessed bottom-source proofs and
-initiality, covering signed/negative literals, Empty/constants and all four
-populated repeated context groups. They are separate from the general source/
-rank proof. Reviews are local author-side. Independent replay, Comparator,
-official/service verification and publication are separate unperformed statuses.
+Evidence: provenance/wsl-gentzen-global-induction/. Strict pinned verification,
+all public checks, actual global witnesses and 44 expected rejections are recorded
+with actual counts/exits/hashes in FINAL_VERIFICATION.json. Checked source bytes
+are archived and compared with committed bytes. Reviews are local author-side;
+independent replay, Comparator, official/service verification and publication
+remain separate unperformed statuses. DELIVERY_REGISTER.json records exact
+committed-byte repository/Downloads paths and verified conflict-preserving copies.
 
-Next assemble exhaustive constructor/tag dispatch and fixed-degree all-ranks
-Clean under strict DegreeBelow. Only then apply arbitrary-premise simultaneous
-cleaning, strong degree induction and arbitrary-G normalization. Export actual
-CutElimination P and AtomizedCutElimination P inhabitants, then continue coherence,
-intended-presentation and uniform-substitution/congruence bridges, both maximality
-routes, model corollary and every claim in all three v7 appendices. Conditional
-local rank steps or handler bundles are not unrestricted elimination. The three
-milestones and full-paper endpoint stay distinct. Deliver committed-byte reports/
-records with verified conflict-preserving copies and continue under existing
-authorization without a routine approval checkpoint.
+Next prove restricted mix/positive/reduced/Boolean coherence, instantiate the
+intended-presentation and uniform-substitution/congruence bridges, and complete
+both maximality routes, the model corollary and all remaining mathematical claims
+in all three v7 appendices. The historical checkpoints below retain their dated
+scope; their open normalization statuses are superseded by this current table.
+Continue under the full-paper authorization without another routine checkpoint.
 
 ## Retained opposite logical checkpoint (28 October 2026)
 
@@ -482,31 +470,16 @@ model universe general enough to express the printed corollary.
 
 ## Immediate continuation and dependency order
 
-The completed 77199ac run incorporates b767c19 and its three committed-byte
-deliveries. Follow CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt and both 77199AC
-reviews. Both comparison targets and the retained conjR_right_first equation,
-arbitrary-tag reconstruction and rank step are now proved. Next complete
-constructor/tag dispatch and fixed-degree all-ranks Clean under strict DegreeBelow. All fourteen BlockedL/BlockedR families have actual source equations
-and instantiated original-rank steps. All twelve binary native/selected
-branches are now proved, including all four disjL equations and original-rank steps.
-The four same-side unary logical prefix/suffix equations, reconstruction and
-original-rank branches are now proved, along with opposite structural recursive
-wrappers. All twelve binary original-predecessor descents are proved. The four
-mix branches and both right-side conjR branches have actual equations,
-reconstructions and rank steps, as do both left-side conjR and all four disjL
-branches. All twelve binary commutations are complete. See the current construction
-report and live constructor/tag table. Preserve all completed Reducibility,
-Blocked-w, simultaneous cleaning, principal and structural/opposite logical work.
-
-The four mix branches are complete through their actual original-sequent
-equations, native/structural reconstructions and rank steps. All four disjL branches now have actual native diagrams, selected equations and
-instantiated rank steps. Complete the global dispatch and induction
-reductions and the complete dispatcher.
-Then prove the all-ranks clean theorem under DegreeBelow, outer degree induction and arbitrary-G
-structural normalization. CutElimination and AtomizedCutElimination remain
-endpoint definitions until their unrestricted inhabitants are proved. The current
-continuation and live table record the exact scope; historical records do not
-reset it. All later full-paper obligations remain unchanged.
+811eceeb and all successor reviews are incorporated. The retained conjR_right_first
+equation, all twelve binary branches, all fourteen blocked families, complete
+tag/constructor dispatch, original-rank induction, strict degree induction and
+arbitrary-G normalization are now proved. Actual CutElimination P and
+AtomizedCutElimination P inhabitants are exported in GentzenCutElimination.lean.
+Reuse full Reducibility, Blocked-w, simultaneous cleaning and every completed
+principal, structural, unary, binary and blocked source/rank theorem. Coherence
+is the immediate mathematical continuation; cut elimination alone does not close
+any remaining intended-presentation or full-paper bridge. Historical records do
+not reset this compiled scope. Preserve the following accepted recursion contract.
 
 At unchanged degree use the original inherited clean child and strict selected
 rank; do not infer a bound after re-cleaning or head routing. Final cut-free
