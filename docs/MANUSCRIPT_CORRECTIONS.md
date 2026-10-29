@@ -1,5 +1,18 @@
 # Manuscript corrections and source errata
 
+## All blocked families continuation (29 October 2026)
+
+BlockedR.conjunctionBoth now has the actual right3/conjR source equation,
+all three original selected-tag comparisons, both original full Clean/strict
+descents, fresh native G.conjR full Clean and instantiated three-call rank step.
+Native intermediate heads and the last retained original second-child parameter
+are compared by an explicit route square. Fixed programs and all three copies
+are repaired after the fresh cut. All fourteen local blocked families are proved;
+exhaustive dispatch and global rank/degree induction remain open. Both Appendix C
+rows and all earlier results persist. No new manuscript defect was found; all
+nine blobs, stash and receipts remain unchanged. See GENTZEN_ALL_BLOCKED_REPORT.md
+and its two local reviews. Earlier local checkpoints remain historical.
+
 ## Second-conjunction continuation (29 October 2026)
 
 BlockedR.conjunctionSecond now has its actual right2/conjR source equation,

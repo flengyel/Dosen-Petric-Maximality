@@ -1,55 +1,62 @@
 # Došen–Petrić maximality in Lean
 
-## Current thirteen blocked reductions (29 October 2026)
+## Current all fourteen blocked reductions (29 October 2026)
 
-All twelve binary branches and thirteen blocked families have actual source equations
-and instantiated original-rank steps. Only BlockedR.conjunctionBoth and global
-induction remain open. Both Appendix C concrete source/rank correspondences remain
-proved. All earlier results, corrections, source bytes and delivery receipts persist.
+All twelve binary branches and all fourteen blocked families have actual source
+equations and instantiated original-rank steps. Exhaustive constructor/tag
+dispatch, global rank/degree induction and unrestricted elimination remain open.
+Both Appendix C concrete source/rank correspondences remain proved. All earlier
+results, corrections, source bytes and delivery receipts persist.
 
-BlockedConjSecond.parent_source/source_equation identify the actual right2/conjR
-source and its arbitrary-tag Reduced equality. Selected/fixed maps and erased
-residues preserve every ordinal coordinate, including equal-labelled fixed F tags.
-SequentialConjSecond.native_equation uses the completed second-conjunction binary
-and right-contraction equations. The proved right-adapter transport moves all fixed
-block exchanges after the fresh native G.conjR recursive cut. original_descent
-supplies original g full Clean and strict original rank with unchanged h/z before
-routing; untouched f supplies CutFree/Atomized. fresh_clean_and_rank proves native
-selected succedent rho.right=1, full Clean and total 1+h.rho.left below the original
-rank for every returned k. Both calls are instantiated. Concrete block-exchange,
-residue and duplicate repairs plus final atomization preserve exact output,
-CutFree, Atomized and equation. No returned-rank bound, output blockedness or
+BlockedConjBoth.parent_source/source_equation identify the actual right3/conjR
+source and its complete three-copy Reduced equality. The leading fresh and two
+original parametric tags are contracted, retaining the last original parameter.
+Selected/fixed maps and both residues compare every ordinal coordinate, including
+equal-labelled fixed formulas. SequentialConjBoth.prepend_shared/front_factor/
+source_denote compare native intermediate heads to those original tags.
+native_equation combines the proved right-gamma and head-contraction equations.
+After inverse output exchange cancellation, the fresh proof is literal G.conjR
+with component routes below it. Its surrounding output program has a proved
+unique fresh fiber; every fixed program moves after the fresh recursive cut.
+
+Both original-child calls inherit full Clean and strict original ranks with
+unchanged h/z before routing. fresh_clean_and_rank proves full Clean and native
+selected succedent rho.right=1, with total 1+h.rho.left below the original rank
+for every returned k/l. All three recursive calls are instantiated. Concrete
+three-copy repairs and final atomization preserve exact original output, CutFree,
+Atomized and equation. No returned-rank bound, output blockedness or assumed
 general G duality is introduced.
 
-Both Appendix C concrete rows retain their actual source/rank declarations:
-p.260's gammaDisj equation and both strict descents, and p.262's first-disjunction
-source/rank step and fresh_principal_rank/fresh_total_rank/fresh_total_rank_ge_two.
+Both Appendix C rows retain their actual source/rank declarations: p.260's
+gammaDisj equation and both strict descents, and p.262's first-disjunction source/
+rank step and fresh_principal_rank/fresh_total_rank/fresh_total_rank_ge_two.
 No exchanged wrapper is assigned native rank one. No new manuscript defect was
 established; all nine manuscript blobs and the stash remain unchanged.
 
-See [report](docs/GENTZEN_BLOCKED_CONJ_SECOND_REPORT.md),
-[hostile review](docs/reviews/GENTZEN_BLOCKED_CONJ_SECOND_HOSTILE.md),
-[writing review](docs/reviews/GENTZEN_BLOCKED_CONJ_SECOND_WRITING.md) and
+See [report](docs/GENTZEN_ALL_BLOCKED_REPORT.md),
+[hostile review](docs/reviews/GENTZEN_ALL_BLOCKED_HOSTILE.md),
+[writing review](docs/reviews/GENTZEN_ALL_BLOCKED_WRITING.md) and
 [constructor/tag map](docs/GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
-Evidence: provenance/wsl-gentzen-blocked-right-conj-second/. Six modules contain
-36 source declarations; 771 Lean files are screened. Twenty-seven public files
-and 38 expected rejections are checked. Actual audit totals/exits, checked/committed
+Evidence: provenance/wsl-gentzen-blocked-right-conj-both/. Six modules contain
+32 source declarations; 778 Lean files are screened. Twenty-eight public files
+and 40 expected rejections are checked. Actual audit totals/exits, checked/committed
 bytes and Downloads paths are in FINAL_VERIFICATION.json and DELIVERY_REGISTER.json.
 Four actual initial-output smoke witnesses use witnessed bottom-source proofs and
-initiality, covering signed/negative literals, Empty/constants and populated
-repeated F/Z/T. They are distinguished from the general source/rank proof.
-Reviews are local author-side. Independent replay, Comparator, official/service
-verification and publication remain separate unperformed statuses.
+initiality, covering signed/negative literals, Empty/constants and all four
+populated repeated context groups. They are separate from the general source/
+rank proof. Reviews are local author-side. Independent replay, Comparator,
+official/service verification and publication are separate unperformed statuses.
 
-Next complete the three-copy BlockedR.conjunctionBoth case. Assemble exhaustive
-dispatch, fixed-degree all-ranks Clean under strict DegreeBelow, arbitrary-premise
+Next assemble exhaustive constructor/tag dispatch and fixed-degree all-ranks
+Clean under strict DegreeBelow. Only then apply arbitrary-premise simultaneous
 cleaning, strong degree induction and arbitrary-G normalization. Export actual
-unrestricted elimination, then continue coherence, intended-presentation and
-uniform-substitution/congruence bridges, both maximality routes, model corollary
-and every claim in all three v7 appendices. The three milestones and full-paper
-endpoint stay distinct. Deliver committed-byte reports/records with verified
-conflict-preserving copies, then continue under existing authorization without
-a routine approval checkpoint.
+CutElimination P and AtomizedCutElimination P inhabitants, then continue coherence,
+intended-presentation and uniform-substitution/congruence bridges, both maximality
+routes, model corollary and every claim in all three v7 appendices. Conditional
+local rank steps or handler bundles are not unrestricted elimination. The three
+milestones and full-paper endpoint stay distinct. Deliver committed-byte reports/
+records with verified conflict-preserving copies and continue under existing
+authorization without a routine approval checkpoint.
 
 ## Current manuscript: v7 with the authorized errata appendix
 

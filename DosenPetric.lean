@@ -715,3 +715,9 @@ public import DosenPetric.GentzenBlockedConjSecondEquation
 public import DosenPetric.GentzenBlockedConjSecondRank
 public import DosenPetric.GentzenSequentialConjSecondNative
 public import DosenPetric.GentzenSequentialConjSecondSource
+public import DosenPetric.GentzenBlockedConjBothData
+public import DosenPetric.GentzenBlockedConjBothDescent
+public import DosenPetric.GentzenBlockedConjBothEquation
+public import DosenPetric.GentzenBlockedConjBothRank
+public import DosenPetric.GentzenSequentialConjBothNative
+public import DosenPetric.GentzenSequentialConjBothSource
