@@ -1,0 +1,16 @@
+{
+  "exact_native_target": "BlockedLeftDisj.canonical_equation specialized to identity arrows",
+  "original_source_equation": "BlockedLeftDisj.gamma_equation",
+  "original_rank_step": "CutCommutation.blockedL_gammaDisj_rank_step",
+  "appendix_c_p260": [
+    "BlockedLeftDisj.gamma_first_descent",
+    "BlockedLeftDisj.gamma_second_descent"
+  ],
+  "appendix_c_p262_complete": false,
+  "runner_event": {
+    "action": "lg-focused",
+    "first_exit_status": 1,
+    "error": "SyntaxError in nested runner-source slice; no Lean control ran",
+    "resolved": "The slice ends at newline followed by rows=[]; all sixteen actual controls then rejected as expected"
+  }
+}

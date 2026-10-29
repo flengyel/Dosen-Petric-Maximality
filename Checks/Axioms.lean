@@ -2010,3 +2010,12 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.BlockedDisj.headParent_equation
 #print axioms DosenPetric.Reduced.Gentzen.BlockedDisj.gamma_equation
 #print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blockedR_gammaDisj_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.ContractionSplice.binary
+#print axioms DosenPetric.Reduced.Gentzen.DoubleDisjSplice.equation
+#print axioms DosenPetric.Reduced.Gentzen.BlockedLeftDisj.canonical_equation
+#print axioms DosenPetric.Reduced.Gentzen.BlockedLeftDisj.headParent_equation
+#print axioms DosenPetric.Reduced.Gentzen.BlockedLeftDisj.selected_equation
+#print axioms DosenPetric.Reduced.Gentzen.BlockedLeftDisj.gamma_equation
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blockedL_gammaDisj_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.BlockedLeftDisj.gamma_first_descent
+#print axioms DosenPetric.Reduced.Gentzen.BlockedLeftDisj.gamma_second_descent

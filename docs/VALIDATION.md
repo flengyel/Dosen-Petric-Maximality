@@ -1,55 +1,56 @@
 # Current Gentzen validation
 
-## Current four blocked reductions (28 October 2026)
+## Current five blocked reductions (29 October 2026)
 
-Successor 811eceeb remains incorporated and all twelve binary branches remain
-proved. BlockedL.gammaMix, BlockedR.gammaMix, BlockedL.gammaConj and now
-BlockedR.gammaDisj have actual source equations, exact-output reconstructions,
-eliminated witnesses and instantiated original-rank steps. Ten blocked reductions,
-global induction and the full-paper endpoint remain open. The existing stash
-and all preceding work and committed-byte deliveries are preserved.
+Successor 811eceeb remains incorporated. All twelve binary branches and five
+blocked reductions are proved: BlockedL.gammaMix/gammaConj/gammaDisj and
+BlockedR.gammaMix/gammaDisj. Each has an actual source equation, exact-output
+reconstruction, eliminated witness and instantiated original-rank step. Nine
+blocked reductions and global induction remain open. Preserve all earlier work,
+the stash and prior committed-byte delivery receipts.
 
-The new declaration is CutCommutation.blockedR_gammaDisj_rank_step. It inherits
-full Clean and strict original-child rank through the actual contraction, outer
-exchange, native disjL and child exchange before any routing adapter. Both calls
-use the unchanged opposite premise. The particular reflected diagram expands to
-an actual Reduced equation; singleton units, terminal rotations, equal-labelled
-fixed tags and both duplicated-context contractions are proved. The finished
-cut-free reconstruction is atomized, preserving exact output and equality.
+The new final declaration is CutCommutation.blockedL_gammaDisj_rank_step.
+BlockedLeftDisj.gammaParent_source identifies the actual left2 source after its
+list cast; gamma_equation proves its arbitrary-tag equation. Both original child
+calls inherit full Clean and strict original-rank decrease through the contraction
+and all three macro predecessors before adapters. The completed cut-free
+reconstruction is atomized. The native equation uses the proved principal
+conjunction equation as an arrow calculation, then the two existing disjL cores;
+it introduces no recursive call on an artificial conjunction.
 
-See [the report](GENTZEN_BLOCKED_DISJ_REPORT.md),
-[hostile review](reviews/GENTZEN_BLOCKED_DISJ_HOSTILE.md),
-[writing review](reviews/GENTZEN_BLOCKED_DISJ_WRITING.md) and
+Appendix C's p.260 (w gamma 3) correspondence is now proved by
+BlockedLeftDisj.gamma_first_descent/gamma_second_descent together with the source
+equation. The formula C and its degree are unchanged, and each new rank is
+strictly smaller. The p.262 sequential fresh-right-principal correspondence
+remains open. V7 and all nine manuscript blobs are unchanged; no TeX rebuild
+was needed.
+
+See [the report](GENTZEN_LEFT_GAMMA_DISJ_REPORT.md),
+[hostile review](reviews/GENTZEN_LEFT_GAMMA_DISJ_HOSTILE.md),
+[writing review](reviews/GENTZEN_LEFT_GAMMA_DISJ_WRITING.md) and
 [constructor/tag table](GENTZEN_CUT_CONSTRUCTOR_COVERAGE.md).
-Earlier three blocked reductions: b95abc6 / f04b638 and
-provenance/wsl-gentzen-blocked-cuts/. Current evidence:
-provenance/wsl-gentzen-blocked-disj/, thirteen modules and 67 source declarations;
-eighteen public files and twenty expected control rejections. Strict counts,
-command exits and exact source hashes are in FINAL_VERIFICATION.json.
+Current evidence: provenance/wsl-gentzen-left-gamma-disj/. It retains 32 new
+modules and 131 source declarations, 678 screened Lean files, 12,654 audited
+project declarations, nineteen public check files and twenty-one expected
+control rejections. Exact exits, source/archive hashes and delivery paths are
+in FINAL_VERIFICATION.json and DELIVERY_REGISTER.json. Earlier four-family
+proof/receipt commits are 1d09a27 / ecfe8da; all older evidence persists.
 
-Continue BlockedL.gammaDisj and BlockedR.gammaConj, then eight sequential logical
-blocked cases, preserving all two/three-copy multiplicities and source/native
-adapters. Fresh logical principals must have component routes BELOW them and
-proved leaf/rank-one/full Clean before the next original-rank call. No returned
-proof rank bound is assumed. Appendix C's p.260 left gamma-3 and p.262 fresh-right
-Lean correspondences remain open.
-
+Next complete BlockedR.gammaConj, then eight sequential logical blocked cases,
+including their actual two/three-copy arities. Put component routing below each
+fresh native principal, and prove its selected leaf, one-sided rank one and full
+Clean before the sequential call. No returned-proof rank bound is assumed.
 Then discharge constructor dispatch, fixed-degree all-ranks Clean under strict
-DegreeBelow, arbitrary premise cleaning, strong degree induction and arbitrary-G
-normalization; export actual unrestricted CutElimination and
-AtomizedCutElimination inhabitants. Continue coherence, intended-presentation and
-uniform-substitution/congruence bridges, both maximality routes, model corollary
-and every mathematical claim in all three v7 appendices. The three milestones
-and the complete-paper endpoint remain distinct. Independent replay, Comparator,
-official/service verification and publication are separate unperformed statuses.
-
-All nine manuscript blobs match f04b638; v7, the authorized errata appendix,
-older versions and diagrams are unchanged. No new manuscript defect was
-established; unchanged TeX is not rebuilt. Carry forward every accepted correction
-and verification/delivery obligation. The prior continuation is archived verbatim
-in history/CODEX_NEXT_SESSION_F04B638.txt. Deliver new reports and changed records
-from committed bytes, preserving differing Downloads files and verifying each
-copy. Continue the full-paper contract without a routine approval stop.
+DegreeBelow, simultaneous cleaning, strong degree induction and arbitrary-G
+normalization. Export actual unrestricted CutElimination and
+AtomizedCutElimination inhabitants. Continue coherence, intended-presentation
+and uniform-substitution/congruence bridges, both maximality routes, the model
+corollary and every mathematical claim in all three v7 appendices. The three
+milestones and complete-paper endpoint remain distinct. Independent replay,
+Comparator, official/service verification and publication remain separate
+unperformed statuses. Deliver committed-byte reports and changed records,
+preserving differing Downloads files and verifying each copy. Continue the
+full-paper contract without a routine approval stop.
 
 ## Current manuscript: v7 with the authorized errata appendix
 

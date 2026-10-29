@@ -1,5 +1,22 @@
 # Manuscript corrections and source errata
 
+## Fifth blocked reduction and concrete p.260 correction (29 October 2026)
+
+BlockedL.gammaDisj is proved through BlockedLeftDisj.gammaParent_source,
+gamma_equation, gamma_first_descent, gamma_second_descent and
+CutCommutation.blockedL_gammaDisj_rank_step. Both recursive cuts keep C and its
+degree and have strictly smaller original rank before adapters, with full Clean
+and unchanged opposite h/z. This resolves the concrete Lean correspondence for
+Appendix C's p.260 (w gamma 3) inequality r′ < r. The source macro retains its
+three inference predecessors. Extending the two-copy contraction keeps the
+terminal A∨B fixed, including when it equals C as a formula. Exact-index and
+negative controls verify this distinction. The p.262 sequential fresh-right
+correspondence and nine blocked reductions remain open. All nine manuscript
+blobs, every prior correction and all earlier deliveries are preserved.
+Current report/reviews: GENTZEN_LEFT_GAMMA_DISJ_REPORT.md and linked records.
+The dated earlier progress sections below describe their historical checkpoints;
+the current declaration map supersedes their then-open p.260 status.
+
 ## Fourth blocked reduction, 28 October 2026
 
 BlockedR.gammaDisj is proved through its actual disjLLast/right2 source equation,
@@ -325,7 +342,7 @@ Printed p.260 and p.262 are PDF pages 272 and 274 (one-based).
 
 | Exact anchor | Confirmed wording problem | Repair and evidence | Formal correspondence status |
 | --- | --- | --- | --- |
-| p.260, (w gamma 3), comparison below the displayed reduction | The new-rank inequality is reversed. | Read r' < r. The recursive selected occurrences lie strictly above the old selected contraction, with the other premise unchanged. Confirmed in the rendered page; require the actual typed inequality with adapters accounted for. | Concrete blocked cut-reduction inequality remains to be proved. Existing strict predecessor-rank lemmas are available. |
+| p.260, (w gamma 3), comparison below the displayed reduction | The new-rank inequality is reversed. | Read r' < r. The recursive selected occurrences lie strictly above the old selected contraction, with the other premise unchanged. Confirmed in the rendered page; require the actual typed inequality with adapters accounted for. | Compiled actual BlockedLeftDisj.gammaParent_source/gamma_equation and gamma_first_descent/gamma_second_descent; both original recursive ranks strictly decrease with C unchanged. blockedL_gammaDisj_rank_step uses those exact facts. |
 | p.262, continuation of (w disjunction 1), outer cut | “rank is 1” omits the side. | Read right rank one, as in the analogous p.261 argument. A fresh principal occurrence has rank one; total rank sums two positive components and is at least two, also explicitly defined on p.249. Confirmed in rendered pp.261–262. | Existing cutRank_ge_two covers head cuts. The concrete fresh-principal calculation and positional correspondence remain to be proved. |
 
 The author then explicitly requested that these errata be included in the arXiv
