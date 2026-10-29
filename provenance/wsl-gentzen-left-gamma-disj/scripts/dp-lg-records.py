@@ -66,7 +66,7 @@ print(json.dumps({k:v for k,v in final.items() if not isinstance(v,dict)},indent
 assert len(mods)==32 and len(anchors)==131,(len(mods),len(anchors))
 assert len(sourcepaths)==686
 for p in sorted(local.glob('*.lean')):
- if not any(p.name.startswith(k) for k in ['missing-','equal-label','mix-conventional','blocked-equal','terminal-equal']):
+ if not any(p.name.startswith(k) for k in ['missing-','equal-label','mix-conventional','blocked-equal','terminal-equal','terminal-principal']):
   target=evidence/'open'/p.name;target.parent.mkdir(exist_ok=True);target.write_bytes(p.read_bytes())
 # All binary diagrams, including the formerly retained disjL candidate, are proved.
 (evidence/'OPEN_OBLIGATIONS.json').write_text(json.dumps(dict(

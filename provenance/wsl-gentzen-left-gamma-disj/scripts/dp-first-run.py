@@ -78,7 +78,7 @@ elif action=='left-core':
  command(['lake','env','lean','-DwarningAsError=true',str(local/'next-conjr-left-first.lean')],name='left-core')
 elif action=='focused':exec(Path('/tmp/dp-'+('lg' if lg_phase else 'bd' if bd_phase else 'blocked' if blocked_phase else 'disj' if disj_phase else 'second' if second_phase else 'left' if left_phase else 'first')+'-controls.py').read_text())
 elif action=='documents':exec(Path('/tmp/dp-'+('lg' if lg_phase else 'bd' if bd_phase else 'blocked' if blocked_phase else 'disj' if disj_phase else 'second' if second_phase else 'left' if left_phase else 'first')+'-docs.py').read_text())
-elif action=='polish':exec(Path('/tmp/dp-first-polish.py').read_text())
+elif action=='polish':exec(Path('/tmp/dp-'+('lg' if lg_phase else 'first')+'-polish.py').read_text())
 elif action=='records':exec(Path('/tmp/dp-'+('lg' if lg_phase else 'bd' if bd_phase else 'blocked' if blocked_phase else 'disj' if disj_phase else 'second' if second_phase else 'left' if left_phase else 'first')+'-records.py').read_text())
 elif action=='review-polish':
  (root/'docs/reviews/GENTZEN_CONJR_RIGHT_FIRST_HOSTILE.md').write_bytes(Path('/tmp/dp-first-hostile.md').read_bytes())
