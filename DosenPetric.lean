@@ -585,3 +585,16 @@ public import DosenPetric.GentzenBlockedRightMixNative
 public import DosenPetric.GentzenBlockedRightMixSource
 public import DosenPetric.GentzenSelectedContractionDescent
 public import DosenPetric.GentzenSelectedRouteFactor
+public import DosenPetric.GentzenBlockedDisjCore
+public import DosenPetric.GentzenBlockedDisjEquation
+public import DosenPetric.GentzenBlockedDisjInput
+public import DosenPetric.GentzenBlockedDisjNative
+public import DosenPetric.GentzenBlockedDisjSource
+public import DosenPetric.GentzenBlockedGammaDisj
+public import DosenPetric.GentzenMirrorBlockedAlgebra
+public import DosenPetric.GentzenMirrorBlockedConjCore
+public import DosenPetric.GentzenMirrorBlockedConjLift
+public import DosenPetric.GentzenTerminalCutDescent
+public import DosenPetric.GentzenTerminalDisjDenotation
+public import DosenPetric.GentzenTerminalFoldCoordinates
+public import DosenPetric.GentzenTerminalFoldPrograms

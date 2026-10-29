@@ -1,5 +1,19 @@
 # Manuscript corrections and source errata
 
+## Fourth blocked reduction, 28 October 2026
+
+BlockedR.gammaDisj is proved through its actual disjLLast/right2 source equation,
+exact reconstruction and original-rank step. Preserve the established reversed
+parameter order: the first source child uses gammaSecondRoute. Terminal singleton
+units, all three exchanges and both fixed-context contractions are explicit.
+Clean/rank descents pass through the actual contraction and original macro
+children before adapters. The native source macro is not assigned rank one.
+The new constant-only public witness explicitly supplies empty context splits.
+Ten blocked reductions and global induction remain open; the two Appendix C Lean
+rows are unchanged. No new manuscript defect was established. Current report and
+local reviews: GENTZEN_BLOCKED_DISJ_REPORT.md and linked records. All earlier
+corrections and delivery receipts remain effective.
+
 ## Current three blocked reductions, 28 October 2026
 
 BlockedL.gammaMix, BlockedR.gammaMix and BlockedL.gammaConj are now proved through

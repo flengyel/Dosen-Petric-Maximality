@@ -1,13 +1,15 @@
-CONTINUE V7 AFTER THREE BLOCKED REDUCTIONS: ELEVEN BLOCKED CASES REMAIN
+CONTINUE V7 AFTER FOUR BLOCKED REDUCTIONS: TEN BLOCKED CASES REMAIN
 
 Read AGENTS.md, CODEX_FULL_MANUSCRIPT_FORMALIZATION.md, current statement,
 coverage, correction, validation and constructor/tag records, and
 CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt with both 77199AC reviews.
-Read GENTZEN_BLOCKED_GAMMA_REPORT.md and its hostile/writing reviews, reusing
+Read GENTZEN_BLOCKED_DISJ_REPORT.md and its hostile/writing reviews, reusing
+GENTZEN_BLOCKED_GAMMA_REPORT.md and its reviews, plus
 GENTZEN_DISJL_BINARY_CUTS_REPORT.md and all its reviews, plus
 all preceding reports, accepted corrections and sections 4–7 of
 CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt and the later B8FCD28 contract.
-Prior continuation: history/CODEX_NEXT_SESSION_26E6D8D.txt, archived verbatim.
+Prior continuation: history/CODEX_NEXT_SESSION_F04B638.txt, archived verbatim.
+The 26E6D8D continuation remains preserved.
 The earlier FA5B380 continuation and all previous checkpoints remain preserved.
 
 811eceebf9991640cf9dcd3923925f75235d4199 is incorporated. Preceding proof/receipt
@@ -20,17 +22,20 @@ for successor review does not stop this authorized local implementation.
 
 COMPLETED SCOPE
 
-The three actual source reductions are complete:
+The four actual source reductions are complete:
  BlockedL.gammaMix: BlockedMix.gamma_equation; blockedL_gammaMix_rank_step.
  BlockedR.gammaMix: BlockedMix.gamma_right_equation; blockedR_gammaMix_rank_step.
  BlockedL.gammaConj: BlockedConj.gamma_equation; blockedL_gammaConj_rank_step.
+ BlockedR.gammaDisj: BlockedDisj.gamma_equation; blockedR_gammaDisj_rank_step.
 Names of final steps are under CutCommutation. gammaParent_source equalities
 identify the existing BlockedSource terms. Both original child cuts inherit full
 Clean and strict original-rank decrease before adapters, using the unchanged
 opposite premise. StructuralPrograms repair both duplicated fixed contexts,
 including empties; the completed cut-free result is atomized. Preserve these
-three reductions and their exact tag/fold correspondence. Next is
-BlockedL.gammaDisj; do not reopen the three completed constructions.
+four reductions and their exact tag/fold correspondence. The new right gammaDisj
+uses TerminalFold coordinates and the particular MirrorCalculus lifted-pair
+calculation, then all three original source exchange/constructor predecessors.
+Next are BlockedL.gammaDisj and BlockedR.gammaConj; reuse all four completed cases.
 
 
 Reuse full Reducibility, Blocked-w, simultaneous atomized/blocked cleaning,
@@ -53,18 +58,18 @@ separately typed leftFirst macro. firstRaw/secondRaw use actual structural
 programs and are atomized after cut-freeness. Other completed builders preserve
 Atomized directly. No output blockedness or returned-rank promise is added.
 
-Current local evidence: 631 screened Lean files, 12,384 audited declarations,
-seventeen public files and seventeen expected rejections; twenty new production
-modules and 103 source declarations. Evidence: provenance/wsl-gentzen-blocked-cuts/. Earlier
+Current local evidence: strict source/dependency audit and eighteen public files,
+twenty expected rejections; thirteen new production modules and 67 source
+declarations. Exact totals: provenance/wsl-gentzen-blocked-disj/FINAL_VERIFICATION.json. Earlier
 phase evidence persists. Reviews are local author-side reviews; no independent
 replay, Comparator or official/service verification is claimed.
 
 CONCRETE CONTINUATION
 
-1. Complete the remaining eleven source-shaped blocked reductions:
+1. Complete the remaining ten source-shaped blocked reductions:
  BlockedL: gammaDisj, conjunction, disjunctionFirst, disjunctionSecond, disjunctionBoth.
- BlockedR: gammaDisj, gammaConj, disjunction, conjunctionFirst, conjunctionSecond, conjunctionBoth.
-The two gammaMix and left gammaConj families are complete; reuse them.
+ BlockedR: gammaConj, disjunction, conjunctionFirst, conjunctionSecond, conjunctionBoth.
+The two gammaMix, left gammaConj and right gammaDisj families are complete; reuse them.
 Invert Clean's actual source-shaped witness at the selected lower contraction.
 BlockedL is in the right premise; BlockedR is in the left premise. Derive actual
 arities/positions, retaining all two/three-copy cases. Gamma families use parallel
@@ -113,14 +118,15 @@ unchanged TeX. Propagate an established correction across its full scope and ver
 Use pinned Lean 4.35.0, module headers and files below 10,000 lines. One heavy
 build/audit at a time; retain actual logs and exits in .codex-work. Run verify.sh,
 all exact public/actual witness checks, full dependency/source closure and all
-seventeen controls. Apply both required local reviews to actual milestones.
+twenty controls. Apply both required local reviews to actual milestones.
 Commit/push verified scope without force and compare checked/committed bytes.
 
 DELIVERY
 
 Every preceding receipt remains complete, including the three 811eceeb successor
 files, the 20-, 17- and 17-entry conjunction registers and the seventeen-entry
-disjL register at cf3741a / 26e6d8d. Deliver all new reports/reviews and changed records
+disjL register at cf3741a / 26e6d8d and the seventeen-entry three-blocked
+register at b95abc6 / f04b638. Deliver all new reports/reviews and changed records
 from committed bytes to /mnt/c/Users/fleng/Downloads, preserve differing files
 with commit suffixes, verify every copy and retain exact paths/hashes in the
 current delivery register. Report any failure explicitly. Keep prior receipts.

@@ -2006,3 +2006,7 @@ run_elab do
 #print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blockedL_gammaMix_rank_step
 #print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blockedR_gammaMix_rank_step
 #print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blockedL_gammaConj_rank_step
+#print axioms DosenPetric.Reduced.Gentzen.BlockedDisj.right_shared_splice
+#print axioms DosenPetric.Reduced.Gentzen.BlockedDisj.headParent_equation
+#print axioms DosenPetric.Reduced.Gentzen.BlockedDisj.gamma_equation
+#print axioms DosenPetric.Reduced.Gentzen.CutCommutation.blockedR_gammaDisj_rank_step

@@ -1,0 +1,26 @@
+{
+  "completed_binary_branches": 12,
+  "remaining_logical_branches": 0,
+  "completed_blocked_reductions": 4,
+  "remaining_blocked_reductions": 10,
+  "next_family": "BlockedL.gammaDisj",
+  "remaining_families": {
+    "BlockedL": [
+      "gammaDisj",
+      "conjunction",
+      "disjunctionFirst",
+      "disjunctionSecond",
+      "disjunctionBoth"
+    ],
+    "BlockedR": [
+      "gammaConj",
+      "disjunction",
+      "conjunctionFirst",
+      "conjunctionSecond",
+      "conjunctionBoth"
+    ]
+  },
+  "global_clean_rank_induction_complete": false,
+  "unrestricted_cut_elimination_complete": false,
+  "full_paper_complete": false
+}

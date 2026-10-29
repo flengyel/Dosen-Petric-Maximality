@@ -1,0 +1,32 @@
+[
+  {
+    "name": "identified-projections",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/presentation-bridge/presentation-controls/identified-projections.lean"
+    ],
+    "exit_status": 1,
+    "expected": "Tactic `rfl` failed",
+    "passed": true,
+    "source_sha256": "3762ac0c94656d802f9e160b3ab8f506a459e5effe2d8eada034f6e2e5d8d416",
+    "log_sha256": "4415eaeeb998cc4fb2a3cd9fc5fe65b62b3351cbf29a69292987a40ec4ae6976"
+  },
+  {
+    "name": "zero-without-arrow-witness",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/presentation-bridge/presentation-controls/zero-without-arrow-witness.lean"
+    ],
+    "exit_status": 1,
+    "expected": "Type mismatch",
+    "passed": true,
+    "source_sha256": "7bc1b2228385eae21a0db3f3d62da91204163c126eb71a679b13ac0171cd6ca0",
+    "log_sha256": "1806feba6614087893d2ecc4e4a906eec8e7f9fb9b0cc1dbf7499cd8f9a93e50"
+  }
+]
