@@ -1,0 +1,13 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-DwarningAsError=true",
+    ".codex-work/gentzen-blocked-left-disj-first/sequential-returned-rank.lean"
+  ],
+  "exit_status": 1,
+  "classification": "control normalization setup failure, not expected semantic rejection",
+  "source_sha256": "6f6d487c3c77c3c060afc93a27887a4ef6fb6bae59902c7bfd398c318060f05e",
+  "log_sha256": "58af7c78020c40463c6bf838b0366be9f824e011e7ff79c9d2c1a7817f155734"
+}

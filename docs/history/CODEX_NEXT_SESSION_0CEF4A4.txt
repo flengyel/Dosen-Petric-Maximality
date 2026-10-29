@@ -1,0 +1,172 @@
+CONTINUE V7 AFTER BOTH UNARY LOGICAL REDUCTIONS: SIX BLOCKED CASES REMAIN
+
+Read AGENTS.md, CODEX_FULL_MANUSCRIPT_FORMALIZATION.md, current statement,
+coverage, correction, validation and constructor/tag records, and
+CODEX_AFTER_77199AC_LOGICAL_BINARY_CUTS.txt with both 77199AC reviews.
+Read GENTZEN_BLOCKED_DISJUNCTION_REPORT.md and its hostile/writing reviews, reusing
+GENTZEN_BLOCKED_CONJUNCTION_REPORT.md and its hostile/writing reviews, reusing
+GENTZEN_RIGHT_GAMMA_CONJ_REPORT.md and its hostile/writing reviews, reusing
+GENTZEN_LEFT_GAMMA_DISJ_REPORT.md and its hostile/writing reviews, reusing
+GENTZEN_BLOCKED_DISJ_REPORT.md and its hostile/writing reviews, reusing
+GENTZEN_BLOCKED_GAMMA_REPORT.md and its reviews, plus
+GENTZEN_DISJL_BINARY_CUTS_REPORT.md and all its reviews, plus
+all preceding reports, accepted corrections and sections 4–7 of
+CODEX_AFTER_67DE18A_CUT_ELIMINATION.txt and the later B8FCD28 contract.
+Prior continuation: history/CODEX_NEXT_SESSION_668FB50.txt, archived verbatim.
+The 787EE6C continuation remains preserved.
+The 2F66237 continuation remains preserved.
+The ECFE8DA continuation remains preserved.
+The F04B638 continuation remains preserved.
+The 26E6D8D continuation remains preserved.
+The earlier FA5B380 continuation and all previous checkpoints remain preserved.
+
+811eceebf9991640cf9dcd3923925f75235d4199 is incorporated. Preceding proof/receipt
+pairs: a654ed0 / 408257b (mix), 9af0a8a / 77199ac (right-second conjR/symmetry),
+05a02ff / d0c3cca (right-first conjR), a2ca733 / 730e855 (left-first conjR),
+67716ab / fa5b380 (left-second conjR). Inspect current task/status. Preserve newer
+work, stash dedfd8fc8cd49930e9a162d5be585215b062a43c and unrelated checkouts.
+ChatGPT reviews/prepares; local WSL Codex implements/builds. The sequencing rule
+for successor review does not stop this authorized local implementation.
+
+COMPLETED SCOPE
+
+All six gamma source reductions are complete:
+ BlockedL.gammaMix: BlockedMix.gamma_equation; blockedL_gammaMix_rank_step.
+ BlockedR.gammaMix: BlockedMix.gamma_right_equation; blockedR_gammaMix_rank_step.
+ BlockedL.gammaConj: BlockedConj.gamma_equation; blockedL_gammaConj_rank_step.
+ BlockedR.gammaDisj: BlockedDisj.gamma_equation; blockedR_gammaDisj_rank_step.
+ BlockedL.gammaDisj: BlockedLeftDisj.gamma_equation; blockedL_gammaDisj_rank_step.
+ BlockedR.gammaConj: BlockedRightConj.gamma_equation; blockedR_gammaConj_rank_step.
+Names of final steps are under CutCommutation. gammaParent_source equalities
+identify the existing BlockedSource terms. Both original child cuts inherit full
+Clean and strict original-rank decrease before adapters, using the unchanged
+opposite premise. StructuralPrograms repair both duplicated fixed contexts,
+including empties; the completed cut-free result is atomized. Preserve these
+six reductions and their exact tag/fold correspondence. The left gammaDisj
+native equation uses ContractionSplice.binary, the completed principal conjunction
+arrow equation and both existing disjL cores, without an artificial-formula ih.
+Terminal fold/exchange and actual source/tag/residue comparisons are proved.
+Appendix C p.260 is closed by the actual gamma source equation and both strict
+original-child gamma descents; p.262 remains open. Right gammaConj uses the completed principal disjunction
+arrow equation and both existing conjunction cores. Actual output naturality,
+fixed principal, source and child comparisons are proved. BlockedL.conjunction is also complete: BlockedConjunction.parent_source,
+source_equation, original_descent, fresh_clean_and_rank and
+CutCommutation.blockedL_conjunction_rank_step. The first ih uses the original
+child before routing; the second uses unchanged h/z and a literal native G.conjL
+principal, proved full Clean with h.rho+1 below the original contracted rank.
+No rank bound on the returned proof is used. Exact duplicate repair and final
+atomization preserve the original result sequent. BlockedR.disjunction is also complete: BlockedDisjunction.parent_source,
+source_equation, original_descent and CutCommutation.blockedR_disjunction_rank_step.
+The first ih is on original f before component routing, with unchanged h/z.
+SequentialDisjunction.fresh_rho/fresh_blocked/fresh_clean/fresh_rank_lt prove the
+native disjR principal's rank one and full Clean through its node-free equality
+transport; the second ih has total 1+h.rho below original rank. Both prefix
+duplicate repairs and output residue preserve exact sequent/equality; final
+structural atomization is retained. Six First/Second/Both cases remain.
+Appendix C p.262 still requires BlockedL.disjunctionFirst, since this completed
+BlockedR branch introduces its fresh principal in the other cut premise.
+
+
+Reuse full Reducibility, Blocked-w, simultaneous atomized/blocked cleaning,
+complete original tagged address/rank/clean interfaces, atomic and conditional
+rank-two results, principal equations/degree steps, structural/opposite/unary
+branches and all twelve original-child binary descents.
+
+All twelve binary branches now have actual native/selected Reduced equations,
+exact-output reconstructions, count/Atomized/congruence and eliminated/rank steps.
+The new builders are DisjLogical.disjLLeftFirst/LeftSecond/RightFirst/RightSecond.
+Their exact rank calls use hd.2 and hd.1 on original inherited clean children:
+ih f a h z; ih g a h z; ih h z f a.there; ih h z g a.there.
+Every native fold/unit, head/inverse-head, residual prefix/suffix, erasure,
+association and block comparison is instantiated. All former binary candidates
+are resolved. mixedDisj_swap, sourceConj_swap and disjPair_swap are actual equations.
+MirrorCalculus supplies proved particular diagrams; no general G/arrow duality.
+
+Preserve mix's actual reversed blocks. first_equation uses firstRaw, not the
+separately typed leftFirst macro. firstRaw/secondRaw use actual structural
+programs and are atomized after cut-freeness. Other completed builders preserve
+Atomized directly. No output blockedness or returned-rank promise is added.
+
+Current local evidence: 726 screened Lean files, twenty-two public files and
+29 expected rejections; twelve new production modules and 53 source declarations.
+Exact audited declaration totals/exits and committed-byte source evidence:
+provenance/wsl-gentzen-sequential-disjunction/. Actual initial-output witnesses
+are smoke checks, distinguished from the general source/rank proof. Earlier
+evidence persists. Reviews are local author-side reviews; independent replay,
+Comparator and official/service verification were not performed.
+
+CONCRETE CONTINUATION
+
+1. Complete the remaining six First/Second/Both logical blocked reductions:
+ BlockedL: disjunctionFirst, disjunctionSecond, disjunctionBoth.
+ BlockedR: conjunctionFirst, conjunctionSecond, conjunctionBoth.
+All three gamma families on both sides, BlockedL.conjunction and BlockedR.disjunction
+are complete; reuse them.
+Invert Clean's actual source-shaped witness at the selected lower contraction.
+BlockedL is in the right premise; BlockedR is in the left premise. Derive actual
+arities/positions, retaining all two/three-copy cases. Gamma families use parallel
+original smaller-rank cuts with unchanged opposite premise, concrete binary
+reconstruction and contraction of duplicated fixed contexts, including empties.
+
+Logical families first eliminate parametric copy/copies at original smaller
+ranks, then rebuild a fresh native logical principal with component routes BELOW
+it. Prove the selected principal is a leaf, its one-sided rank is one and full
+Clean holds. The unchanged opposite rank plus one is strictly below the original
+contracted cut; recurse before context repair. No returned-proof rank bound.
+source disjLLast includes exchanges above its constructor and cannot be assigned
+native rank one. Preserve first/last-retaining and singleton/empty-exchange rules.
+Preserve Appendix C's completed p.260 source/rank correspondence. Close its
+p.262 Lean row only after the actual sequential blocked instance.
+
+2. Assemble complete constructor/tag dispatch and fixed-degree all-ranks Clean
+under strict DegreeBelow. Distinguish selected leaves, genuine parametric
+predecessors and selected lower contractions; CutFree excludes cut roots. Only
+then clean arbitrary cut-free premises at that completed degree. Discharge strong
+formula-degree induction, preserving constants' degree one and literals' zero,
+and arbitrary-G structural normalization. Export actual unrestricted
+CutElimination P and AtomizedCutElimination P inhabitants, with exact output and
+equality; conditional handler bundles or caller-supplied eliminators do not suffice.
+
+3. Continue restricted mix/positive/reduced/Boolean coherence, actual intended-
+presentation and uniform-substitution/congruence bridges, the short q_A/e_A proof,
+retained symmetric-fold route, actual-presentation maximality, model corollary and
+every mathematical claim in all three v7 appendices. All three milestones and
+the complete-paper endpoint remain distinct.
+
+PERSISTENT REQUIREMENTS
+
+Keep G syntax/equations, rho, blocked predicates and every descendant quantifier.
+Same-degree recursion uses original Clean and strict original selected rank before
+routing. Do not substitute routed/native rank, re-cleaning bounds or returned
+proof rank. Smaller degree permits arbitrary ranks. Preserve conjunction A-then-B,
+disjunction B-then-A, signed/repeated tags, empty contexts/hom-sets, witnessed zeros,
+uniform substitution and left-first composition. Accepted final cut-free structural
+atomization persists. No Nonempty or DecidableEq hypothesis is added.
+
+V7 and Appendix C remain unchanged; all nine blobs match the prior checkpoint.
+Preserve older versions, ten diagrams, exact tagged-block/ordinal correspondence
+and accepted disclosure. No manuscript defect was established. Do not rebuild
+unchanged TeX. Propagate an established correction across its full scope and verify.
+
+Use pinned Lean 4.35.0, module headers and files below 10,000 lines. One heavy
+build/audit at a time; retain actual logs and exits in .codex-work. Run verify.sh,
+all exact public/actual witness checks, full dependency/source closure and all
+29 controls. Apply both required local reviews to actual milestones.
+Commit/push verified scope without force and compare checked/committed bytes.
+
+DELIVERY
+
+Every preceding receipt remains complete, including the three 811eceeb successor
+files, the 20-, 17- and 17-entry conjunction registers and the seventeen-entry
+disjL register at cf3741a / 26e6d8d and the seventeen-entry three-blocked
+register at b95abc6 / f04b638 and the seventeen-entry right-gammaDisj register
+at 1d09a27 / ecfe8da and seventeen-entry left-gammaDisj register at
+17b25c6 / fab64c2 / 2f66237, and the right-gammaConj proof/receipt 5278d5e /
+787ee6c, plus the sequential-conjunction proof/receipt 4e5c3b1 / 668fb50. Deliver all new reports/reviews and changed records
+from committed bytes to /mnt/c/Users/fleng/Downloads, preserve differing files
+with commit suffixes, verify every copy and retain exact paths/hashes in the
+current delivery register. Report any failure explicitly. Keep prior receipts.
+
+Keep the repository private. No publication, arXiv/Palomar submission, license or
+visibility change or author contact is authorized. Continue the full-paper
+contract without another routine approval checkpoint.

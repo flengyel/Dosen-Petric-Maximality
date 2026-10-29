@@ -1,6 +1,22 @@
 # Manuscript corrections and source errata
 
-## Sequential disjunction completed (29 October 2026)
+## Both Appendix C correspondences proved (29 October 2026)
+
+BlockedL.disjunctionFirst now has its actual left2/disjLLast source equation,
+original first-child full Clean/strict descent, fresh native G.disjL full Clean,
+and instantiated two-call original-rank step. This closes the p.262 concrete
+correspondence: fresh_principal_rank proves rho.left=1 in the right cut premise;
+fresh_total_rank and fresh_total_rank_ge_two prove unchanged opposite rho.right+1≥2.
+The source disjLLast wrapper itself is not assigned native rank one. Both adapters
+are moved after the fresh recursive cut. The p.260 actual gammaDisj correspondence
+is preserved. Nine blocked families are complete and five remain open.
+All live parallel passages and both errata rows are reconciled in this pass.
+No new manuscript defect was established; all nine manuscript blobs and the
+stash persist. Report/reviews: GENTZEN_BLOCKED_DISJ_FIRST_REPORT.md and its two reviews.
+Earlier dated progress entries retain their checkpoint statements; the current
+status is this paragraph and the updated formal-correspondence errata table.
+
+## Historical eight-family checkpoint (29 October 2026)
 
 BlockedR.disjunction now has its actual right2/disjR source, arbitrary-tag
 Reduced equation, concrete exact-output prefix repair and instantiated original-rank
@@ -95,8 +111,10 @@ The author-requested Appendix C addition is complete and locally built/inspected
 It contains the supplied corrections to the external source, without changing
 Appendices A–B or the accepted disclosure. See MANUSCRIPT_V7_ERRATA_REPORT.md
 and its two reviews. The p.260 concrete source/rank correspondence is proved;
-the p.262 sequential fresh-right-principal correspondence remains open, as
-recorded in the v7 statement ledger. No manuscript theorem is
+the p.262 actual sequential source/rank correspondence is now also proved by
+BlockedDisjFirst.source_equation, fresh_clean_and_rank, the three concrete
+fresh/total-rank declarations and blockedL_disjunctionFirst_rank_step, as recorded
+in the v7 statement ledger. No manuscript theorem is
 marked formalized merely because its TeX has been added.
 
 ## Historical correction checkpoints (superseded by current scope above)
@@ -383,7 +401,7 @@ Printed p.260 and p.262 are PDF pages 272 and 274 (one-based).
 | Exact anchor | Confirmed wording problem | Repair and evidence | Formal correspondence status |
 | --- | --- | --- | --- |
 | p.260, (w gamma 3), comparison below the displayed reduction | The new-rank inequality is reversed. | Read r' < r. The recursive selected occurrences lie strictly above the old selected contraction, with the other premise unchanged. Confirmed in the rendered page; require the actual typed inequality with adapters accounted for. | Compiled actual BlockedLeftDisj.gammaParent_source/gamma_equation and gamma_first_descent/gamma_second_descent; both original recursive ranks strictly decrease with C unchanged. blockedL_gammaDisj_rank_step uses those exact facts. |
-| p.262, continuation of (w disjunction 1), outer cut | “rank is 1” omits the side. | Read right rank one, as in the analogous p.261 argument. A fresh principal occurrence has rank one; total rank sums two positive components and is at least two, also explicitly defined on p.249. Confirmed in rendered pp.261–262. | Existing cutRank_ge_two covers head cuts. The concrete fresh-principal calculation and positional correspondence remain to be proved. |
+| p.262, continuation of (w disjunction 1), outer cut | “rank is 1” omits the side. | Read right rank one, as in the analogous p.261 argument. A fresh principal occurrence has rank one; total rank sums two positive components and is at least two, also explicitly defined on p.249. Confirmed in rendered pp.261–262. | BlockedDisjFirst.source_equation and blockedL_disjunctionFirst_rank_step prove the actual sequential instance. fresh_principal_rank gives rho.left=1 in the right cut premise; fresh_total_rank and fresh_total_rank_ge_two give unchanged opposite rho.right+1≥2. original_descent and fresh_clean_and_rank discharge original Clean/strict rank before adapters. Concrete correspondence proved. |
 
 The author then explicitly requested that these errata be included in the arXiv
 paper. This supersedes the earlier plan to record them only outside the paper.
@@ -416,7 +434,7 @@ Old manuscript blobs retain their hashes. The active anchors and claim/status
 records are updated together. This resolves the manuscript-addition obligation;
 it does not close the new concrete Lean rank-correspondence obligations.
 
-## Selected-cut rank and base-case progress (28 October 2026)
+## Historical selected-cut rank and base-case checkpoint (28 October 2026)
 
 The v7 Appendix C source/PDF bytes remain unchanged. PositionalCut.rank_ge_two
 and rank_head now close the opening rank/positivity correspondence at arbitrary
