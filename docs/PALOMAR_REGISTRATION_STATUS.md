@@ -12,8 +12,8 @@ The preparation branch and original stash are preserved.
 | Strict production and whole-source audits | Complete: 887 files / 14,907 declarations; all 1,870 source headers and closures checked. |
 | Publication and license | Explicit author approval received; repository public under Apache-2.0, including manuscript/history. |
 | Official full preflight | **Pass**: [run 41129351329](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329); pinned pipeline `14aa8d6b3c2f14a8540605e37144560b9a00e7e7`, full mode, standard profile, `preflight001`, exact source `2e771844077fd8cebfbe365230f13d4dd13a75b1`. |
-| Service intake / verification | Not requested. Bring official preflight result to author before proceeding. |
-| Service review / final registration | Not performed. Actual service review and digest require author approval. |
+| Service intake / verification | Intake verified as `wy75d6nipd4e`; **pass** in [service run 41137470993](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41137470993). Temporary tag and secret gist removed. |
+| Service review / final registration | Private editorial stage; exact review and digest require the author’s decision before registration. No registry entry is claimed. |
 | ArXiv | Not submitted; follows successful Palomar Registry registration. |
 | Following project | Local connectedness in recursion categories and essential incompleteness; after arXiv. |
 

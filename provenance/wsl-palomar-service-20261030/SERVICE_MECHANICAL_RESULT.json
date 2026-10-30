@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-30T22:27:22.771659+00:00",
+  "submission_id": "wy75d6nipd4e",
+  "repository": "flengyel/Dosen-Petric-Maximality",
+  "source_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+  "workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41137470993",
+  "workflow_run_id": 41137470993,
+  "mechanical_status": "pass",
+  "phase": "verification",
+  "stage": "complete",
+  "artifact_id": 13017144307,
+  "artifact_zip_sha256": "5da90a89d365da7b6cfcc953af0641730a5259e0cca36da485f4e46f55f96df9",
+  "mechanical_report_sha256": "870e5722919f2d00d8e5bc600a36af655efc2ee448ab1722f2e8e8dcbf1915cb",
+  "warnings": [
+    "configured Challenge source exceeds the preferred 32 KiB / 300-line review surface"
+  ],
+  "errors": []
+}

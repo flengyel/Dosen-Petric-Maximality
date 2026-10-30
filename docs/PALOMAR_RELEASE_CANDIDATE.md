@@ -38,7 +38,8 @@ closed relations. The retained complete-paper scope remains unchanged.
 | Metadata official loader/schema/taxonomy and pinned workflow | Pass |
 | Commit-byte/source correspondence | Pass |
 | Official full preflight | Pass for the exact verified submission; Lean, NanoDa and con-ron accepted. |
-| Service intake / editorial / registration | Not performed. |
+| Service intake / verification | Verified intake `wy75d6nipd4e`; [service verification passed](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41137470993). |
+| Editorial / registration | Private review and author decision are separate; no registry entry claimed. |
 
 | Submission input | SHA-256 |
 | --- | --- |
@@ -77,7 +78,7 @@ recorded in `provenance/wsl-palomar-official-preflight-20261030/`.
 
 The repository is public. Main includes the candidate and receipts through
 `23ec1bc` and subsequent documentation/evidence. The stash remains
-`dedfd8fc8cd49930e9a162d5be585215b062a43c`. No service intake or final registration has occurred.
+`dedfd8fc8cd49930e9a162d5be585215b062a43c`. Service intake `wy75d6nipd4e` and mechanical verification are complete; final registration is separate.
 
 ## Toolchain and next required check
 
@@ -107,6 +108,5 @@ registration of that review's digest. No unseen review is approved here. This
 release-candidate preparation does not claim a service verdict or registry entry.
 
 The author specified Palomar Registry registration before arXiv submission.
-After the official mechanical result is reviewed with the author, service intake
-may proceed. Final registration still requires approval of the actual service
+The author approved the exact service intake; its mechanical verification passed. Final registration still requires approval of the actual service
 review. The later Local connectedness project follows arXiv submission.

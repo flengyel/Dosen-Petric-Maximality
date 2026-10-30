@@ -188,8 +188,8 @@ Keep Lean at 4.35.0 and reuse the completed local verification. Official full
 preflight passed at https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329.
 
 Preserve the verified source commit; later reports/evidence do not replace it.
-Bring the official mechanical result to the author before proceeding with service
-intake. Final registration requires the author to see and approve the actual
+The author approved the exact service intake. Submission `wy75d6nipd4e` passed service
+verification at https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41137470993. Final registration requires the author to see and approve the actual
 service review and digest. Do not automate browser sign-in or treat release
 approval as consent to an unseen review.
 

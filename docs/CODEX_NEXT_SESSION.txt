@@ -1,4 +1,4 @@
-Current task: present the passed official full preflight result before Palomar intake.
+Current task: deliver the private service review, obtain the author’s decision, then complete registration before arXiv.
 
 Verified immutable submission: 2e771844077fd8cebfbe365230f13d4dd13a75b1.
 Repository: flengyel/Dosen-Petric-Maximality, now public under author-approved Apache-2.0, including
@@ -24,8 +24,9 @@ verification; do not restart the full-paper proof sequence or change the fixed
 source for unchanged-input workflow issues. See docs/PALOMAR_OFFICIAL_PREFLIGHT_REPORT.md,
 docs/PALOMAR_REGISTRATION_STATUS.md and docs/CODEX_PALOMAR_REGISTRATION.txt.
 
-Bring the official result to the author before proceeding with Palomar service
-intake. No service intake or final registration has occurred. The existing Windows
+The author approved the exact service intake. Submission wy75d6nipd4e passed service
+verification at https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41137470993. Temporary proof artifacts were removed.
+The editorial review and access credential remain private. No final registration is claimed. The existing Windows
 GitHub CLI session is authenticated as flengyel. Do not automate browser sign-in
 or expose tokens/private service review in the public repository. The author must
 see and approve the actual service review and digest before final registration.

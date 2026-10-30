@@ -26,7 +26,8 @@ and retained history, on 30 October 2026. The repository is public. Its immutabl
 submission SHA remains `2e771844077fd8cebfbe365230f13d4dd13a75b1`. Lean stays at 4.35.0.
 [Official full preflight](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329) passed with the pinned standard profile;
 the [stage report](docs/PALOMAR_OFFICIAL_PREFLIGHT_REPORT.md) distinguishes its
-result from local verification, service intake and final registration. The
+result from local verification and final registration. [Service verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41137470993)
+also passed; [the service report](docs/PALOMAR_SERVICE_VERIFICATION_REPORT.md) records its evidence. The
 publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
@@ -700,5 +701,5 @@ The verified package is merged into main and publicly released under the
 author-approved Apache-2.0 license, including the original manuscript and retained
 history. Original proposals remain under `docs/palomar/` as historical materials.
 The verified source remains `2e771844077fd8cebfbe365230f13d4dd13a75b1`. Official full preflight passed;
-service verification and registration remain subsequent stages. ArXiv submission
+service verification also passed. The private review and author’s registration decision remain separate. ArXiv submission
 follows successful Palomar registration.
