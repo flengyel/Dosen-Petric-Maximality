@@ -1,56 +1,131 @@
-# Palomar contract checked for this project
+# Palomar requirements checked on 30 October 2026
 
-Checked on 22 October 2026 UTC. The [official verifier](https://github.com/PalomarRegistry/PalomarSubmission/tree/5cfaefe2f4c18f237c63d9635f9f54ab68785d89)
-is pinned to `5cfaefe2f4c18f237c63d9635f9f54ab68785d89`. The policy snapshot is
-`28bd48b9b71bbb2a82c718ce761d5a4220ef8e60`. The three relevant JSON policy
-files are preserved under `provenance/`. Recheck upstream before submission.
+The author has requested registration. [The active handoff](CODEX_PALOMAR_REGISTRATION.txt)
+and [stage record](PALOMAR_REGISTRATION_STATUS.md) describe the current work.
 
-## Changes from FailureOfComposition
+## Current authoritative sources
 
-| Area | Current contract and project action |
+| Source | Immutable revision |
 | --- | --- |
-| Toolchain | Schema 2 specifies minimum v4.35.0-rc2. This project selects stable v4.35.0, rather than copying the predecessor's release candidate. |
-| Proof tools | The submitted Lean release supplies Lake Comparator, exporter, checker, and independent kernels. Do not copy the predecessor's standalone-tool pins. |
-| Required acceptance | Lean and NanoDa must accept. The verifier independently attempts con-ron. A recognized support, fuel, or authenticated capacity decline may be inconclusive; rejection, an unknown error, or a nonstandard axiom blocks acceptance. |
-| Checker update | For v4.35.0, the protected manifest selects con-ron from v4.36.0-rc1, release commit c9afcddf514a6772bd4d649f7cfc04eff0b9f15e. The archive and executable hashes are in `palomar-checker-revisions.json`. Source Lean, exporter, and NanoDa stay at v4.35.0. |
-| Metadata | `formalization.yaml` uses version v0.4 and current provenance fields. The verifier's separate formalization profile has schema version 4. These are different version identifiers. |
-| License | One recognized, nonempty repository-root license must match `project.license` as an SPDX identifier. No distribution license has been selected for this private project. |
-| Repository | Service verification requires a public GitHub repository and a full immutable commit. This repository remains private; public release and submission are later actions. |
-| Selection | Exactly one Comparator configuration per entry; one configuration may select several declarations. Names must state conditional scope accurately. |
-| Challenge | Independently compiled against canonical allowed inputs. Maximum 1,000 physical lines and 100 KiB. It cannot import the submitted Solution or arbitrary project modules. Shared definitions must be included and compared faithfully. |
-| Source | Regular Lean files use the module system; all submitted Lean files have at most 10,000 physical lines. The lakefile.lean module-header exemption does not remove the line limit. |
-| Dependencies | Full 40-character commits of public GitHub sources; complete manifest closure. No submitted submodules, LFS pointers, or prebuilt proof artifacts replacing source. |
-| Axioms | At most `propext`, `Quot.sound`, `Classical.choice` in Solution dependencies. Deliberate selected theorem holes belong only in Challenge. |
-| Reports | Inspect full JSON verdicts, including `kernels`, `kernel_attempts`, actual tool digests, and con-ron provenance. Record declines separately from acceptance. |
+| [PalomarSubmission verifier](https://github.com/PalomarRegistry/PalomarSubmission/tree/14aa8d6b3c2f14a8540605e37144560b9a00e7e7) | `14aa8d6b3c2f14a8540605e37144560b9a00e7e7` |
+| [Submission policy](https://github.com/PalomarRegistry/PalomarPolicy/blob/28bd48b9b71bbb2a82c718ce761d5a4220ef8e60/CONTRIBUTING.md) and [protocol specification](https://github.com/PalomarRegistry/PalomarPolicy/blob/28bd48b9b71bbb2a82c718ce761d5a4220ef8e60/docs/specification.md) | `28bd48b9b71bbb2a82c718ce761d5a4220ef8e60` |
+| [formalization.yaml standard](https://github.com/mathlib-initiative/formalization.yaml/tree/99c678e569c7c4c0772db297c5ddd5e4c9b6322e) | `99c678e569c7c4c0772db297c5ddd5e4c9b6322e` |
+| [Service instructions](https://submit.palomar-registry.org/llms.txt) | Live service document read on 30 October; reread before intake. |
 
-The current verifier's [README](https://github.com/PalomarRegistry/PalomarSubmission/blob/5cfaefe2f4c18f237c63d9635f9f54ab68785d89/README.md)
-documents the implementation contract, including the protected checker update.
-Older policy wording about standalone binaries must not silently override it.
+Hashes of inspected upstream files and the small current policy JSON files are
+retained in `provenance/palomar-registration-2026-10-30/`. Earlier snapshots remain
+historical evidence. Recheck upstream before the actual service submission;
+record a changed pin and rerun only the checks affected by the change.
 
-## Adapted predecessor procedure
+## Statement and proof package
 
-The inspected FailureOfComposition snapshot is
-`506d1f1494d6c05b0ba304edf5fe0bfa6c32864b`; its registered source is
-`fb32a19c4883baad83b286d4594cfbc6b1d2ad5c`, entry
-[PALOMAR-2026-10-01-000013 v1](https://palomar-registry.org/entry?id=PALOMAR-2026-10-01-000013&version=1).
+Use one Comparator configuration for this entry. Its required fields are
+`challenge_module`, `solution_module`, nonempty `theorem_names`, and
+`permitted_axioms`. The optional `definition_names` is empty for this project.
+Do not put workflow profiles or external-kernel configuration in this JSON.
 
-The two manuscript maps preserve mathematical scope. The independent interface
-check compares selected types and transitively reachable shared definitions
-under consistent universe renaming. Dependency audits reject unexpected
-axioms and illicit Challenge dependencies. Focused negative controls change
-a shared definition or inject an illicit dependency and require rejection.
-These checks must be adapted after the first actual theorem is selected; no
-arithmetic dependencies or “Nine” naming are carried into this project.
+The Challenge is independently compiled. Its only nonlocal dependencies may be
+Lean core or verified canonical Mathlib, Tau Ceti or CSLib closures. It cannot
+import a DosenPetric module, directly or transitively. Prefer core-only definitions
+for this package. The actual source grammar, generating equations and derivation
+relation must be visible and concrete; Solution then uses the completed library.
 
-The current scripts provide only source screening, a strict build, and a
-transitive axiom audit. Exact Challenge/Solution comparison, source-closure
-policy, negative controls, and official verification remain to be implemented.
+The Challenge limit is 1,000 physical lines and 100 KiB. More than 300 lines or
+32 KiB produces an auditability warning, not automatic rejection. Keep meaningful
+docstrings and the actual mathematical statement instead of compressing code to
+evade readability requirements. Exactly the selected theorem declarations may
+have deliberate Challenge proof holes. Solution and its transitive proof
+dependencies may use only `propext`, `Quot.sound`, and `Classical.choice`.
 
-Before an authorized registry submission, prepare a license and metadata,
-build each side independently, run the current Comparator and official
-verifier on one immutable commit, reconstruct from that commit, and preserve
-logs, command exit statuses, source hashes, tools, and complete reports.
-Read `https://submit.palomar-registry.org/llms.txt` when submission is actually
-requested. Local compilation, local Comparator acceptance, official preflight,
-service verification, automated editorial review, and publication remain
-distinct statuses.
+Every regular committed Lean file, including historical negative controls and
+unused files, must use `module` and have at most 10,000 physical lines. The
+`lakefile.lean` header exemption does not remove its line limit. Reject Lean
+symlinks, submitted compiled artifacts, LFS pointers and submitted submodules.
+Exclude `.git` and `.lake` from the source scan. Preserve historical evidence
+through an explicit byte-preserving relocation/archive if a fixture needs a
+different retention form; do not silently rewrite its recorded bytes.
+
+Pin public GitHub dependencies to full 40-character revisions with credential-free
+HTTPS manifest URLs. This project currently has no external Lake packages and
+should not acquire Mathlib or Foundation solely to imitate the predecessor.
+
+## Compiler and kernels
+
+The current toolchain minimum remains Lean `v4.35.0-rc2`. Preserve the project's
+stable `leanprover/lean4:v4.35.0`. The release supplies Lake Comparator, exporter,
+Lean checker and NanoDa. Palomar requires acceptance by Lean and NanoDa and
+independently attempts con-ron. Its protected checker manifest selects the
+authenticated con-ron from Lean `v4.36.0-rc1` for this source compiler. A recognized
+support/fuel/capacity decline is recorded as inconclusive for con-ron; an actual
+rejection, unknown error, authentication failure or nonstandard axiom blocks the
+run. Retain the full report's `kernels`, `kernel_attempts`, `tool_digests` and
+`con_ron_checker`, and do not turn a decline into an acceptance.
+
+## Metadata and publication inputs
+
+Use `version: v0.4` in `formalization.yaml`; the verifier's metadata repair profile
+has schema version 4, which is a different identifier. Required facts include a
+project title and description, human authors and responsible maintainers, SPDX
+license, valid arXiv classifications, substantive sources, automation methods and
+accurate pre-submission review status. Use `sources[].relationship` precisely;
+this project formalizes its existing manuscript and the published dependencies.
+It must not claim the formalization was the first presentation of the result.
+
+The submitted repository is the substantive development, so no thin-wrapper
+section is needed. Any change to a separate wrapper repository would require a
+public pinned substantive repository and corresponding metadata; it does not
+avoid the source-publication requirement.
+
+The repository must be public at a full immutable commit. Exactly one recognized
+root license file must match `project.license`. The project remains private and
+has no selected license at this preparation checkpoint. The Apache-2.0 text and
+metadata under `docs/palomar/` are release proposals, not an adopted license or
+claim that the package is mechanically ready.
+
+## Official full preflight
+
+After the candidate is public with its agreed license, invoke the exact reusable
+workflow `.github/workflows/submission.yml` from the pinned PalomarSubmission
+revision. Use the same full revision for the workflow `uses` and `pipeline_commit`,
+`mode: full`, and `execution_profile: palomar-standard-v1`. Supply a 12-character
+lowercase alphanumeric `request_id`, the repository, exact candidate commit,
+Comparator path and truthful authorization relationship. The retained workflow
+example uses `preflight001`, which has exactly twelve characters.
+
+The standard external profile is `ubuntu-24.04`, with a 19,800-second execution
+budget and a minimum host memory of 15,032,385,536 bytes. Palomar's own default
+Namespace profile is different. The local WSL run must inspect actual memory and
+swap; setting `LEAN_NUM_THREADS=1` is not a RAM limit.
+
+Read the complete mechanical report and require `status: pass`. A standalone
+Comparator success or preparation-only `mode: preflight` does not meet this gate.
+On resource or infrastructure failures, follow the structured diagnosis; do not
+blindly resubmit or repeatedly rerun unchanged successful checks.
+
+## Intake, review and registration
+
+`https://submit.palomar-registry.org/` is the sole intake. Before agent-driven
+intake, the service requires the author to agree to the displayed repository,
+full commit, Comparator path and authorization relationship. Prepare all these
+values and the publication/license proposal before requesting that decision.
+
+The author may use the browser flow personally. An agent must not automate the
+browser sign-in or reuse a browser session to impersonate that authorization.
+The documented agent alternative uses authenticated `gh`, a temporary tag at the
+candidate commit and a newly created secret gist. Use it only when its existing
+authorization and permissions suffice; never solicit a password or put tokens
+in reports. Remove the temporary artifacts after verification. Preserve the
+submission bearer token privately and keep private review content out of public
+commits before registration.
+
+For an ordinary new submission, leave `existing_id` absent unless the registry's
+repository/identity lookup finds an existing entry for this exact registration
+identity. Poll running verification at most once a minute and awaiting review at
+most once every five minutes. Honor service cooldowns and terminal states.
+
+After the service supplies its review, show the author that exact review and what
+registration will publish. `POST /register` requires the digest from
+`GET /api/review` and the author's decision concerning that review. A request to
+prepare registration does not establish consent to an unseen review. Mechanical
+preflight, service verification, editorial review and registered status remain
+distinct facts.

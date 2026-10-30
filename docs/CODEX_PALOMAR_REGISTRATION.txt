@@ -1,0 +1,293 @@
+TASK: Prepare Došen–Petrić maximality for Palomar registration, then carry the
+authorized verification/submission workflow as far as the actual environment
+and the author's concrete publication decisions permit.
+
+AUTHORITY AND STARTING POINT
+
+On 30 October 2026 the author requested: "Well, then we should do whatever is
+needed for Palomar Registration." This starts the registration phase. Do not
+stop because a historical continuation said Palomar work was not authorized.
+The local mathematical endpoint is complete, not a new proof-development task.
+
+Repository: /home/flengyel/src/Dosen-Petric-Maximality
+GitHub: flengyel/Dosen-Petric-Maximality
+Mathematical source: 630c4b6e47da16a1434476a211fd29ce6adc5569
+Completion head: 6a66b14b382aac214b52c055b8bf281b35302239
+Cloud review head: a2467d0fc64704be27e0eab8e1726c24fb5766b9
+Manuscript: v8, with v7 mathematical content preserved.
+
+Inspect status, current branch, live remote and stash before integrating this
+handoff. Fetch over the existing SSH remote; do not force-push, reset away work,
+consume the stash or overwrite another checkout. If newer work is present,
+reconcile it and use an isolated worktree/branch for packaging. Read AGENTS.md,
+docs/PALOMAR_REQUIREMENTS.md, docs/PALOMAR_REGISTRATION_STATUS.md,
+docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md and the two FULL_PAPER_6A66B14 reviews.
+Preserve every completed proof, all manuscript versions and existing evidence.
+
+Finish routine implementation and verification autonomously. Resolve ordinary
+layout, naming and build choices yourself. Ask about a genuine irreducible
+mathematical ambiguity only after investigating it. Do not turn the proposed
+declaration names below into an excuse for a new approval checkpoint.
+
+1. CONSTRUCT A SMALL INDEPENDENT STATEMENT
+
+Create root Challenge.lean and Solution.lean with distinct module identities,
+and one root comparator.json. Use module/public/expose conventions appropriate
+to Lean 4.35.0. Challenge may import Init/core but must not import any project
+module, including through an indirect dependency. Solution may import the full
+proved library but must never import Challenge or depend on its sorryAx.
+
+Keep the actual Formula, Presentation.Op, Term, Constant, Equation, Derives and
+whole-arrow substitution definitions. Preserve every constructor, endpoint,
+equation and side condition, especially Constant's positive-letterless grammar.
+The relevant source is Formula.lean, PresentationSyntax.lean,
+PresentationEquations.lean and the Term.subst definition in
+PresentationSubstitution.lean. Those excerpts total about 535 lines/22,088 bytes
+before adding the compact statement. There is room under the hard 1,000-line,
+100-KiB Challenge limits; measure the final file instead of assuming this estimate.
+Over 300 lines/32 KiB is a warning. Do not sacrifice mathematical readability to
+avoid it. Explain why the finite presentation needs to be included.
+
+Preferred compact interface: a new primitive raw congruence R on the actual
+typed Term P A B, with reflexivity, symmetry, transitivity, every Equation,
+composition and both tensors; separate Closed means preservation by every
+sigma : P -> Formula P acting on both the term and endpoints. Total means
+R k l for every pair of parallel raw terms. All these definitions must have
+concrete bodies on both sides of the comparison.
+
+This compact interface is a packaging choice, not a replacement category. Prove
+that it descends through Derives to the actual quotient and supplies the
+existing bicartesian fragment congruence and its substitution closure. Conversely
+restrict every existing full ProofCongruence to the raw terms and prove the
+relation correspondence and preservation of distinctness/totality. If claiming
+equivalence of the complete congruence classes, prove that correspondence as
+well, including derived negation; Presentation.ProofCongruence.of_closed_fragment
+is available. Do not simply assert that dropping an operation leaves the same
+definition. Clearly explain any stronger raw formulation in the public account.
+
+Suggested selected declarations, all with universe-polymorphic P:
+
+  DosenPetric.Palomar.maximality
+    Given R, R.Closed, f g : Term P A B, not Derives f g, and R.Rel f g,
+    conclude R.Total. Use the fully instantiated source/fold route.
+
+  DosenPetric.Palomar.short_maximality
+    The same statement, proved through actual source isolation, uniform
+    contextual equations and ShortProof.total with the particular q/e arrows.
+    Do not implement it as an alias for the fold theorem. A primitive quotient
+    fragment suffices for the existing short-collapse argument; do not use
+    fragment_dichotomy to manufacture totality and then call that a second proof.
+
+  DosenPetric.Palomar.congruence_dichotomy
+    For R and R.Closed, either R.Rel f g iff Derives f g for every parallel
+    pair, or R.Total. Translate precisely to equality/totality on the quotient.
+
+  DosenPetric.Palomar.identity_ne_zero
+    For p : P, not Derives (Term.id (.var p)) (Term.zero (.var p)).
+    Use Presentation.identity_ne_primitive_zero and the actual quotient map.
+
+  DosenPetric.Palomar.no_top_to_bot
+    Not Nonempty (Term P .top .bot), using the existing truth interpretation
+    or Presentation.empty_hom. This states an empty hom-set, not a zero arrow.
+
+Retain [Nonempty P] in the three public maximality statements if useful to match
+manuscript Theorem 2.1 literally. The underlying existing theorem is stronger
+and does not require it; explain that harmless specialization. The identity
+witness uses p explicitly; the empty-hom theorem needs no such assumption.
+
+Directly comparing the original quotient statement is also acceptable if its
+complete concrete definition closure fits and remains readable. Never replace
+it by relative_maximality with coherence/normalization as uninstantiated fields,
+an arbitrary supplied category, a relation-kernel surrogate, a supplied maximality
+property, or a definition hole. Prefer definition_names: [].
+
+Put proof wrappers and correspondence lemmas in normal production modules so the
+existing axiom audit sees them. Solution should import the proved declarations.
+Challenge repeats the exact required statement definitions in an independent
+environment and has deliberate holes only at the selected theorem proofs.
+Adjust build configuration so those intentional Challenge warnings do not relax
+strict production checking. Preserve the exact standard permitted axiom set.
+
+The public scope is the selected maximality family and its two structural
+witnesses. The repository also formalizes coherence, the model corollary and
+all appendices; do not imply that each additional theorem is independently
+selected by Comparator. Do not discard those results or weaken the full-paper
+claim map to accommodate this entry's compact selection.
+
+2. CHECK THE PACKAGE AND ITS BOUNDARIES
+
+Build Challenge and Solution in independent clean environments against the
+pinned Lean 4.35.0. Do not reuse the Solution's .olean files for Challenge.
+Record source closures and verify every shared definition, selected type,
+constructor, universe parameter and relevant value. Comparator checks the
+formal comparison; an auxiliary audit must not silently restrict itself to
+surface theorem text. Retain commands, exits and full machine-readable evidence.
+
+Run the release's lake comparator with the actual final configuration and the
+officially supported independent-kernel setup. Inspect the pinned implementation
+and its help for exact flags; do not copy outdated standalone binaries from
+FailureOfComposition. Require Lean and NanoDa acceptance. Preserve con-ron
+attempt/decline/rejection evidence under the current protected checker policy.
+Do not relabel a local Comparator run as official full preflight.
+
+Add focused packaging controls that must be rejected for the intended reason:
+  - a changed concrete generating equation or Formula/Term constructor;
+  - a changed selected hypothesis or conclusion;
+  - an illicit axiom reached through a helper in Solution;
+  - dependency on a selected Challenge hole;
+  - a direct or transitive forbidden project import in Challenge.
+Keep deliberate failed fixtures outside ordinary production imports. A failure
+from a missing module or unrelated parser error does not validate a control.
+Use the existing audit-boundary controls where they already test the exact path;
+do not duplicate them merely to increase a count.
+
+The tree at the reviewed head has 1,868 Lean files, including 985 historical
+fixtures under provenance/. Palomar's source policy applies to every committed
+Lean source, not only the 883 files in the existing production checker. Scan all
+of them for module headers, <=10,000 physical lines, symlinks and prebuilt
+artifacts; scan repository and dependency closure for forbidden submodules/LFS.
+Retain all existing evidence. If historical bytes must be stored as .lean.txt or
+inside an evidence archive to satisfy submission layout, record a byte-preserving
+path/hash mapping and update affected references without silently altering the
+old reports' historical claims. Do not rename failing production code as evidence.
+
+Inspect memory, swap, free disk and existing jobs before a large run. Run one
+build/export/replay at a time. LEAN_NUM_THREADS=1 does not limit total RAM.
+Do not invent machine-specific cgroup numbers. Keep the first actionable error
+and use the actual diagnostic to repair it. After a successful final check,
+repeat it only for changed inputs or a concrete unresolved issue.
+
+Run the strict project verification after the wrapper changes. Preserve the
+earlier public-check/control evidence; rerun affected checks and any checks
+required by the new dependency audit. Do not repeatedly rebuild an unchanged
+883-file library merely to create more verification reports.
+
+3. FINALIZE THE PUBLIC DESCRIPTION AND RELEASE CANDIDATE
+
+The proposals are under docs/palomar/:
+  formalization.proposed.yaml
+  comparator.proposed.json
+  palomar-preflight.yml.example
+  LICENSE.Apache-2.0.proposed.txt
+
+Finalize them against what the package actually proves. Install the agreed
+submission files in the candidate tree at the conventional root paths. The
+metadata must identify Florian Lengyel as human author and maintainer, disclose
+the actual ChatGPT/Codex roles, accurately cite manuscript v8 and Došen–Petrić,
+and describe prior agent review without claiming human peer review or Palomar
+acceptance. Use source-based provenance, not original-proof. Do not invent model
+versions, hardware measurements, costs, author endorsements or novelty results.
+
+Proposed repository: flengyel/Dosen-Petric-Maximality itself, as the substantive
+development. Proposed license: Apache-2.0, following the predecessor. These are
+concrete proposals, not an instruction to assume an unrecorded license choice or
+silently make the private history public. Prepare the complete candidate and
+exact publication scope first. If later explicit author approval already covers
+the license and public release, proceed under it; otherwise present one concrete
+decision identifying the exact commit, license (including the contained original
+manuscript), publication scope, comparator.json and the maintainer relationship.
+Do not ask for this before the local candidate is complete and reviewable.
+
+The license proposal is not the repository's currently adopted license. Do not
+describe the current private source as public. A separate thin wrapper would
+still require public substantive source and new provenance; it is not a way to
+hide or bypass the source-publication requirement.
+
+Read the complete Challenge as mathematics and apply the hostile-referee and
+mathematical-writing reviews to the new statement/definition correspondence and
+metadata. Preserve their reports under docs/reviews. Do not reopen or rewrite
+the v8 manuscript without an exhibited mathematical/correspondence defect.
+
+Commit and push the complete private candidate through the authorized repository
+workflow, preserving unrelated changes. Record its full SHA and exact file hashes.
+Keep the final submission source immutable. Evidence produced for that candidate
+may live in a subsequent evidence-only commit without changing which candidate
+SHA was verified or is submitted.
+
+4. OFFICIAL FULL PREFLIGHT
+
+Current PalomarSubmission pin:
+  14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+Current policy pin:
+  28bd48b9b71bbb2a82c718ce761d5a4220ef8e60
+Current formalization.yaml standard pin:
+  99c678e569c7c4c0772db297c5ddd5e4c9b6322e
+
+Run bash scripts/fetch-palomar.sh to obtain the revision-specific verifier source
+without disturbing the old checkout. The checked JSON policies and hashes are
+under provenance/palomar-registration-2026-10-30/. Recheck current upstream before
+intake and retain the effective revisions. Keep Lean itself at v4.35.0.
+
+Once publication/license approval has been effected, install/use the full
+preflight workflow with both uses and pipeline_commit pinned to the same SHA,
+mode: full, execution_profile: palomar-standard-v1, request_id: preflight001,
+the exact candidate source commit, comparator.json, and the truthful relationship
+"I am a responsible author or maintainer" for Florian Lengyel. It uses the
+repository root; omit project_path and formalization_metadata_path unless the
+final package genuinely uses different paths and all related values are updated.
+
+Run the exact full reusable workflow and require mechanical report status: pass.
+Preparation-only mode or local build success is insufficient. Read full verdicts,
+tool digests, independent-kernel attempts and resource diagnostics. For a profile,
+input or infrastructure failure, repair the indicated cause. Do not keep making
+new source commits for unchanged-input workflow mistakes. Do not invent access
+to a larger Palomar runner or treat an OOM as a successful replay.
+
+5. SUBMISSION AND FINAL REGISTRATION
+
+Read https://submit.palomar-registry.org/llms.txt immediately before intake.
+Check the registry's repository/registration-identity data before using an
+existing_id. This project has no known entry; do not reuse FailureOfComposition's
+ID. Require the passing full preflight before actual intake.
+
+The service requires agreement to the displayed repository, exact full commit,
+Comparator path and author's relationship before an agent submits. If the
+author's earlier concrete release decision covers exactly these values, reuse
+it. If the candidate changed, present the changed candidate accurately.
+
+Prefer the author's personal browser flow when there is no existing approved
+authenticated gh session. Never automate Palomar's GitHub sign-in, reuse browser
+cookies as author consent, solicit a GitHub password, or create a new credential
+behind the user's back. Existing Git SSH access is not by itself the documented
+API authentication proof. The authorized agent API route requires the temporary
+tag and new secret gist procedure, followed by cleanup. If that route is
+unavailable, give the author the exact form fields for the browser flow and
+continue from the resulting submission status when available.
+
+Retain submission identifiers, workflow links and mechanical evidence. Keep the
+bearer token and private review private. Do not put tokens or unregistered
+private review text into public Git history, issue comments or delivery logs.
+Poll verification no faster than once a minute and awaiting review no faster
+than once every five minutes. Honor cooldowns, resource diagnostics and terminal
+states; do not repeatedly submit unchanged failures.
+
+After the service returns its review, show that exact review to the author and
+explain what becomes public. Palomar requires their decision about that review
+before POST /register with its review_sha256. General registration preparation
+authorization is not consent to an unseen review. If it changes, use the review
+and digest the author actually approved. Confirm the resulting registry ID,
+version, immutable source and published evidence before claiming registration.
+
+6. REPORTS AND DELIVERY
+
+Maintain one current stage report and a machine-readable record separating:
+local mathematics; package build; type/definition comparison; local independent
+replay; official full preflight; service verification; editorial outcome;
+registration. Include exact failures and next actions without reopening unrelated
+mathematical work. Keep the source claim map complete.
+
+Copy all finalized new reports/reviews and the requested instructions to
+/mnt/c/Users/fleng/Downloads, preserving a different existing file with a dated
+or commit-suffixed filename. Verify repository/Downloads bytes or SHA-256 and
+retain a register. Also deliver the previously cloud-only files:
+  docs/reviews/FULL_PAPER_6A66B14_REVIEW.md
+  docs/reviews/FULL_PAPER_6A66B14_WRITING.md
+  docs/PALOMAR_REGISTRATION_STATUS.md
+  docs/CODEX_PALOMAR_REGISTRATION.txt
+
+The final response must distinguish completed steps from the remaining concrete
+release/intake/review decision or unavailable capability. A generic statement
+that "Palomar remains separate" does not finish this task. Do all authorized
+implementation and verification first, and present any necessary decision only
+with the exact ready candidate. Do not claim service or registry success from a
+local log.

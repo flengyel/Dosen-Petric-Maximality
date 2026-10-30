@@ -1,90 +1,38 @@
-FULL-PAPER MATHEMATICAL FORMALIZATION COMPLETE — PRESERVE VERIFIED SOURCE
+Current task: prepare the completed Došen–Petrić formalization for Palomar registration.
 
-Read AGENTS.md, MANUSCRIPT_COMPLETE_CLAIM_MAP.md, FULL_PAPER_COMPLETION_REPORT.md
-with both local reviews, MANUSCRIPT_CORRECTIONS.md and the final evidence under
-provenance/wsl-appendix-a/. The current manuscript is v8, preserving all v7
-mathematics and all three appendices; only formalization status/date/citation
-changed. V4–v7, all ten diagrams, references and AI disclosure remain preserved.
-The full mathematical-source commit cited by v8 is 630c4b6e47da16a1434476a211fd29ce6adc5569.
+Read and execute docs/CODEX_PALOMAR_REGISTRATION.txt. It supersedes the previous
+continuation's statement that no Palomar work is authorized. The author requested
+on 30 October 2026: "Well, then we should do whatever is needed for Palomar
+Registration."
 
-The full-paper contract is locally complete. Do not reopen historical open
-statuses as current mathematical duties. The prior continuation and all its
-linked handoffs, corrections, reviews, verification and delivery requirements
-are archived verbatim in history/CODEX_NEXT_SESSION_37CCE28.txt and predecessor
-histories. 811eceebf9991640cf9dcd3923925f75235d4199 and its reviews are incorporated;
-all earlier requested successors were preserved and incorporated. No reset was
-used. Preserve stash dedfd8fc8cd49930e9a162d5be585215b062a43c and unrelated checkouts.
+The full-paper mathematical formalization is complete. Preserve it. Mathematical
+source: 630c4b6e47da16a1434476a211fd29ce6adc5569. Completion head:
+6a66b14b382aac214b52c055b8bf281b35302239. The source/evidence and writing reviews
+are committed at a2467d0fc64704be27e0eab8e1726c24fb5766b9:
+  docs/reviews/FULL_PAPER_6A66B14_REVIEW.md
+  docs/reviews/FULL_PAPER_6A66B14_WRITING.md
+The latter two reviews still need byte-verified delivery to Windows Downloads.
+The previous continuation is preserved in docs/history/CODEX_NEXT_SESSION_A2467D0.txt.
 
-COMPLETED ENDPOINTS
+Proceed through the independent Challenge/Solution package, exact statement and
+shared-definition comparison, local kernel verification, current Palomar
+metadata, and a concrete release candidate. Preserve all completed mathematical
+results, manuscripts, historical evidence, the stash and unrelated work. Use an
+isolated worktree if the main checkout has newer work. Do not ask routine
+implementation questions or reopen completed proof branches.
 
-All twelve binary and fourteen blocked source/selected equations, exact
-reconstructions and original-rank calls; Reducibility, Blocked-w, simultaneous
-atomization/blocked cleaning, exhaustive constructor/tag dispatch, original Clean/
-rho contracts, original-rank/degree/global induction, actual cut elimination and
-atomized cut elimination; both Appendix C concrete source/rank comparisons.
+Current policy and verifier pins, the proposed five selected declarations, a
+metadata proposal, a proposed Apache-2.0 license, and the full preflight workflow
+example are linked from docs/PALOMAR_REGISTRATION_STATUS.md. The proposed license
+is not an adopted repository license. Build and review the complete candidate
+before presenting its exact publication/license/submission decision. Respect any
+later explicit author approval already given; do not request it again.
 
-Actual positive/Reduced/Boolean coherence, signed normalization, intended faithful
-interpretation, nonthin Nat and empty hom-sets; full raw/quotient congruence and
-uniform closure bridges; actual maximality, raw maximality and equality/total
-dichotomy. Both proofs remain: symmetric fold/mix and the exact short q/e proof
-with constructed inverses and every displayed intermediate equation. The three
-milestones remain separately recorded, and the extra full-paper obligations are
-individually closed in the complete claim map.
+An actual Palomar submission requires the public immutable source, passing
+official full preflight, and the submitter relationship. Palomar separately
+requires the author to see its eventual review before deciding to register that
+review's digest. Do not drive a browser sign-in on the author's behalf.
 
-Complete-source models, all-valuation/full interpretations, quotient functors,
-evaluation correspondence and substitution precomposition; universal-agreement
-full congruence, model instantiation and model corollary for all native target
-parallel arrows. No fixed-kernel closure or surjectivity assumption.
-
-All source operation/substitution/negation laws and general raw/quotient action
-identity/composition/extensionality with both endpoint transports; actual complete
-31-constructor occurrence-block/label/relation square; all Appendix A profiles,
-D/C injections, unique gamma/chi/delta and all squares, zero-block prefix sums,
-encoders/inverses/unique locator/one-based book formula, exact actual occurrence
-indices, skeleton/profile/generalized-composite reconstruction, all eight example
-outputs and delta(2)=3, noninjective renaming and both signed context specializations.
-
-All unnumbered consequences, including exact p⇒p exponential obstruction and
-hom/global-point bijection, finite-relation functor, witnessed zero independence/
-absorption and contextual alternative, genuine congruence quotients retaining
-products/coprod/units/zero identities/empty hom-sets, exact DN diagram and all
-Appendix B source identities. FP-SCOPE-20261029 and FP-CITATION-20261029 are repaired
-and verified in v8 with all linked current records reconciled.
-
-VERIFICATION AND DELIVERY
-
-Pinned Lean 4.35.0 core only. Strict local build, 883 source files, 14,849 audited
-project declarations, all 35 public checks and 74 expected rejections. One heavy
-build/audit at a time, actual exits/logs retained. All sources use module headers
-and are below 10,000 physical lines. No custom mathematical axioms, proof holes,
-native_decide, assumed source handlers/coherence/normalization or conclusion-
-restatement fields occur at actual endpoints. Empty hom-sets and witnessed zeros,
-repeated tags, both signs and original left-first composition are preserved.
-
-V8: three stable TeX passes, no undefined references/citations or overfull boxes,
-all13 pages visually inspected, corrected immutable proof citation checked, all
-appendices and ten diagrams preserved. Exact hashes, source archive readback and
-checked/committed comparisons are in the final evidence. Local hostile/writing
-reviews are retained under docs/reviews and delivered with every new report.
-
-All reports/reviews/changed records and v8 artifacts are delivered from committed
-bytes to /mnt/c/Users/fleng/Downloads, preserving differing existing filenames
-with commit suffixes and verifying every copy. Exact repository/Downloads paths,
-source commits and SHA-256 values are in provenance/wsl-appendix-a/DELIVERY_REGISTER.json.
-The previous model register (4f40450/37cce28), full block/isolation register
-(c366dc3/b257325), short proof (3d30b77/d8dc710), actual main (640cc9e/d68da50),
-coherence (8c9e0f3/a80a353), cut elimination (852502b/75b8e48), all-blocked
-(80b9472/263c452) and every preceding receipt remain preserved. The three
-811eceeb instruction/review files were already delivered and verified.
-
-SEPARATE FUTURE STATUSES
-
-Independent kernel replay, Comparator, official preflight, service verification
-and publication were not performed. They are not mathematical proof holes and
-must not be reported as complete. Follow PALOMAR_REQUIREMENTS.md and recheck
-upstream only if submission/independent verification is later authorized.
-Keep this repository private. No arXiv/Palomar submission, author contact,
-distribution license selection, visibility change or publication is authorized.
-For future requested changes, preserve both proof routes, every accepted
-correction and the complete current claim-to-declaration correspondence; rerun
-only checks justified by the affected scope and deliver all new reports.
+Keep local proof completion, package verification, independent kernel replay,
+official preflight, service verification, editorial review and registration as
+separate recorded statuses. No Palomar verification or registration has yet run.

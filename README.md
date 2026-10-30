@@ -654,12 +654,20 @@ Run `bash scripts/verify.sh`. CI uses the hash-checked official Lean release,
 a strict build, source screening, and transitive axiom collection. Evidence
 and its limitations are in [validation](docs/VALIDATION.md).
 
-The [Palomar requirements](docs/PALOMAR_REQUIREMENTS.md) adapt the
-FailureOfComposition procedure to the current toolchain and kernel policy.
-Upstream policy snapshots and exact commits are in `provenance/`.
-`bash scripts/fetch-palomar.sh` fetches the pinned verifier source for inspection.
-Comparator packaging, independent kernel replay, and registry verification
-remain to be implemented for a substantive theorem.
+The author requested Palomar registration on 30 October 2026. The
+[registration stage record](docs/PALOMAR_REGISTRATION_STATUS.md) and
+[local Codex instructions](docs/CODEX_PALOMAR_REGISTRATION.txt) cover the
+independent Challenge/Solution package, exact definition correspondence,
+independent kernels and the current full official preflight. The completed
+mathematical source and full-paper claim map are preserved.
 
-The repository is private. Public release, license selection, and registry
-submission are later decisions. No submission has been made.
+The [current requirements](docs/PALOMAR_REQUIREMENTS.md) pin the verifier to
+`14aa8d6b3c2f14a8540605e37144560b9a00e7e7`; upstream hashes and policy JSON
+are retained in `provenance/palomar-registration-2026-10-30/`.
+`bash scripts/fetch-palomar.sh` fetches that source into its own revision-specific
+directory and preserves the older checkout.
+
+The repository remains private. Metadata, the Comparator selection, the full
+preflight workflow and Apache-2.0 license text under `docs/palomar/` are proposals
+for the release candidate. They do not establish a completed package, adopted
+license, public release, service verification or registration.

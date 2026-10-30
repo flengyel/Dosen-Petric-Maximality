@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "roots": [
+    {
+      "repository": "leanprover-community/mathlib4",
+      "repository_aliases": [],
+      "official_ref": "refs/heads/master",
+      "include_semver_release_tags": true,
+      "include_pinned_manifest_closure": true,
+      "trust_level": "high"
+    },
+    {
+      "repository": "TauCetiProject/TauCeti",
+      "repository_aliases": [
+        "FormalFrontier/TauCeti"
+      ],
+      "official_ref": "refs/heads/main",
+      "accepted_revisions": [
+        "221bb56a017bb794421eac4fa543d7a5e85add75"
+      ],
+      "include_pinned_manifest_closure": true,
+      "trust_level": "qualified"
+    },
+    {
+      "repository": "leanprover/cslib",
+      "repository_aliases": [],
+      "official_ref": "refs/heads/main",
+      "include_pinned_manifest_closure": true,
+      "trust_level": "qualified"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 root=$(CDPATH= cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
-dest="$root/.codex-work/upstream/PalomarSubmission"
-pin=5cfaefe2f4c18f237c63d9635f9f54ab68785d89
+pin=14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+dest="$root/.codex-work/upstream/PalomarSubmission-$pin"
 if [[ -e $dest ]]; then
   [[ -d $dest/.git ]] || { echo 'Upstream destination is not a Git checkout.' >&2; exit 1; }
   [[ $(git -C "$dest" rev-parse HEAD) == "$pin" ]] || {

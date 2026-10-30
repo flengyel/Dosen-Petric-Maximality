@@ -1,0 +1,157 @@
+# Preparation proposal. Finalize against the compiled registration package.
+# Apache-2.0 is proposed; this file does not adopt a repository license.
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/99c678e569c7c4c0772db297c5ddd5e4c9b6322e/schema/formalization.schema.json
+version: v0.4
+
+project:
+  name: Maximality of the Došen–Petrić Boolean Category
+  description: >-
+    The freely generated zero-identity Boolean category of Došen and Petrić is
+    maximal: every congruence preserved by the proof operations and uniform
+    substitution is either equality or identifies every pair of parallel arrows.
+    The Lean development constructs the equation-generated category and proves
+    cut elimination and Boolean coherence, then proves maximality through both
+    a symmetric-fold argument and the manuscript's short argument using two
+    particular isomorphisms. It also formalizes the model corollary and the
+    occurrence-substitution, finite-ordinal and structural-diagram constructions
+    in the appendices. The proposed registry selection compares the two
+    maximality proofs, the congruence dichotomy, a nonzero literal identity and
+    the absence of arrows from the terminal object to the initial object.
+  authors:
+    - Florian Lengyel
+  responsible_maintainers:
+    - Florian Lengyel
+  license: Apache-2.0
+
+classification:
+  arxiv: [math.CT, math.LO]
+  msc2020: [03G30, 03F05]
+
+sources:
+  - title: Maximality of the Došen–Petrić Boolean Category, version 8
+    authors: [Florian Lengyel]
+    type: paper
+    relationship: formalizes
+    id: https://github.com/flengyel/Dosen-Petric-Maximality/blob/6a66b14b382aac214b52c055b8bf281b35302239/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v8.tex
+    location: Theorem 2.1; Sections 2–6; Appendices A–C; October 29, 2026.
+    author_endorsement: participated
+    note: >-
+      The manuscript is retained with the substantive Lean development. This is
+      source-based formalization of the manuscript's result. Its v8 mathematical
+      content is unchanged from v7. The selected declarations and the broader
+      complete-paper correspondence are identified separately below.
+  - title: Proof-Theoretical Coherence
+    authors: [Kosta Došen, Zoran Petrić]
+    type: book
+    relationship: formalizes
+    id: https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf
+    location: >-
+      King's College Publications, 2004; revised author version September 2007;
+      the zero-identity Boolean presentation in Sections 14.2–14.3 and the
+      cut-elimination and coherence arguments used by that presentation.
+    author_endorsement: not-contacted
+    note: >-
+      The development includes proofs of the cut-elimination and coherence inputs
+      needed for the actual source category. It does not attribute the manuscript's
+      maximality theorem to this book. Appendix C identifies two source rank
+      corrections and gives their concrete formal correspondences.
+  - title: Isomorphic formulae in classical propositional logic
+    authors: [Kosta Došen, Zoran Petrić]
+    type: paper
+    relationship: background
+    id: https://doi.org/10.1002/malq.201020020
+    location: Mathematical Logic Quarterly 58 (2012), 5–17; Lemma 7; author version arXiv:0912.1271v3.
+    author_endorsement: not-contacted
+    note: >-
+      The manuscript relates its particular q/e isomorphisms to the
+      occurrence-bijection construction in Lemma 7. The actual arrows and their
+      inverses are proved in the source category; no assumed isomorphism field
+      replaces those constructions.
+
+related_formalizations: []
+
+status:
+  scope: >-
+    The full-paper production development is locally complete at mathematical
+    source 630c4b6e47da16a1434476a211fd29ce6adc5569 and completion head
+    6a66b14b382aac214b52c055b8bf281b35302239. The independent Palomar wrappers
+    described by this proposal have not yet been implemented or compared. Update
+    this paragraph after their verification. The proposed entry selects five
+    statements from the maximality family and its structural witnesses; the
+    wider manuscript map includes additional proved results. No official
+    preflight, service verification, Palomar review or registration is claimed.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: [propext, Quot.sound, Classical.choice]
+
+automation:
+  methods:
+    - method: agent
+      models: []
+      framework: OpenAI Codex / ChatGPT
+      tool_setup: >-
+        Local WSL Codex developed Lean proofs and ran builds and audits. ChatGPT
+        research/review sessions prepared mathematical instructions, inspected
+        source and evidence, and reviewed the manuscript and its correspondence
+        with the formal statements. Exact historical model identifiers and
+        aggregate costs are not reconstructed here.
+  notes: >-
+    Florian Lengyel is the human author and responsible maintainer. The author
+    supplied the mathematical objective, corrected scope and presentation, and
+    requested the complete-paper formalization. AI systems are credited here
+    rather than listed as authors. The manuscript contains the author's
+    authorized disclosure of ChatGPT assistance.
+
+fidelity:
+  divergences: >-
+    The production maximality theorem is universe-polymorphic and does not need
+    the manuscript's nonempty-variable hypothesis. A registry wrapper may retain
+    that hypothesis to state the printed theorem directly. The proposed compact
+    raw congruence interface exposes the entire primitive grammar, generating
+    equations and uniform substitution. Its exact relation to the manuscript's
+    full quotient congruence, including the derived operations, must be proved
+    before this proposal is installed as final metadata. Existing empty hom-sets
+    and distinct occurrence tags are preserved. No new priority or exhaustive
+    novelty assessment was performed during registration packaging.
+
+review:
+  status: agent-reviewed
+  reviewers:
+    - OpenAI Codex local source and manuscript reviews
+    - ChatGPT source/evidence and mathematical-writing review at a2467d0
+  notes: >-
+    The completed source and retained evidence were reviewed in
+    docs/reviews/FULL_PAPER_6A66B14_REVIEW.md and
+    docs/reviews/FULL_PAPER_6A66B14_WRITING.md. These are AI-assisted author-side
+    reviews, not external human peer review or independent kernel replay. The
+    new Challenge and its definition correspondence require a separate packaging
+    review once implemented; record that review and actual kernel results here.
+
+alignment:
+  namespace: DosenPetric.Palomar
+  statements:
+    - source: Manuscript Theorem 2.1; alternative fold proof in Section 6
+      lean: DosenPetric.Palomar.maximality
+      module: Solution
+      status: proposed-wrapper
+      note: Existing production endpoint is DosenPetric.Presentation.maximality; preserve the actual source and prove raw/quotient correspondence.
+    - source: Manuscript Theorem 2.1; q/e proof in Section 5
+      lean: DosenPetric.Palomar.short_maximality
+      module: Solution
+      status: proposed-wrapper
+      note: Existing endpoint is DosenPetric.Presentation.short_maximality; use the actual q/e proof route.
+    - source: Manuscript Theorem 2.1, equality/total dichotomy
+      lean: DosenPetric.Palomar.congruence_dichotomy
+      module: Solution
+      status: proposed-wrapper
+      note: Existing endpoint is DosenPetric.Presentation.congruence_dichotomy; raw equality must be Derives.
+    - source: Manuscript Section 3, nonzero variable identity
+      lean: DosenPetric.Palomar.identity_ne_zero
+      module: Solution
+      status: proposed-wrapper
+      note: Use the proved identity_ne_primitive_zero and the actual quotient map.
+    - source: Manuscript Sections 2–3, preservation of empty hom-sets
+      lean: DosenPetric.Palomar.no_top_to_bot
+      module: Solution
+      status: proposed-wrapper
+      note: Use the actual source truth interpretation; no top-to-bottom term exists.

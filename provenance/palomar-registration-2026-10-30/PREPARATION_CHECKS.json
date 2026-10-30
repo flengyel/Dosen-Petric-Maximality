@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "scope": "Cloud preparation documents and inactive configuration proposals only; no Lean, Comparator, kernel, official service or registration run.",
+  "upstream_blob_hashes_checked": 19,
+  "retained_upstream_json_snapshots": 7,
+  "checks": [
+    "JSON and YAML parsing",
+    "Applicable v0.4 schema shape/value constraints",
+    "arXiv and MSC2020 taxonomy membership",
+    "Five proposed declaration names agree",
+    "Workflow input compatibility and matching immutable pins",
+    "Relative Markdown target existence",
+    "Historical continuation preserved byte for byte",
+    "AGENTS changes append only",
+    "Downloader changes limited to pin and destination",
+    "bash -n downloader",
+    "No Lean, manuscript, adopted license or active workflow edits",
+    "Six policy snapshots and metadata schema match upstream bytes",
+    "Proposed license matches predecessor bytes"
+  ],
+  "reviewed_tree_lean_files": 1868,
+  "reviewed_tree_provenance_lean_files": 985
+}

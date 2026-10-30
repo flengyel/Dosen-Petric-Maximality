@@ -172,3 +172,22 @@ statement and shared-definition correspondence, complete proof-dependency and
 source-closure audits, focused negative controls, and immutable-source evidence.
 Keep local build, Comparator, official preflight, service verification, automated
 review, and publication as separate statuses.
+
+## Palomar registration phase — 30 October 2026
+
+The author has requested the work needed for Palomar registration. Read
+`docs/CODEX_PALOMAR_REGISTRATION.txt` and `docs/PALOMAR_REGISTRATION_STATUS.md`.
+The full-paper mathematical endpoint remains complete. The current local task
+is the independent Challenge/Solution package, its definition correspondence,
+kernel verification, metadata and concrete release candidate. This phase
+supersedes historical instructions saying that no Palomar preparation is
+authorized; it does not restart the completed proof-development sequence.
+
+ChatGPT prepares and reviews the registration instructions; local WSL Codex
+implements and builds the package. Complete authorized reversible preparation
+before presenting the exact publication/license/submission decision. Reuse any
+later explicit approval already given. The retained Apache-2.0 file is a proposal,
+not an adopted license, and the repository remains private at this checkpoint.
+Follow Palomar's current requirements for exact submission authorization and the
+author's decision after seeing the service review. Do not automate browser
+sign-in or claim that general preparation authorization approves an unseen review.
