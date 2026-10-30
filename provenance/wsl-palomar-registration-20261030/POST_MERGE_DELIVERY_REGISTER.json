@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "documentation_commit": "dc6559434a77e39cac79dc423d3ed7d4cab81866",
+  "merged_through": "23ec1bc6a492fab4de42c209f00f692b1851cf9a",
+  "verified_submission": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+  "toolchain": "leanprover/lean4:v4.35.0",
+  "local_verification_reused": true,
+  "unchanged_critical_submission_files": 17,
+  "publication_confirmation": "pending",
+  "repository_visibility": "private",
+  "official_full_preflight": "not run",
+  "deliveries": [
+    {
+      "repository_path": "AGENTS.md",
+      "absolute_repository_path": "/home/flengyel/src/Dosen-Petric-Maximality/AGENTS.md",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/AGENTS_20261030-dc6559434a77.md",
+      "source_commit": "dc6559434a77e39cac79dc423d3ed7d4cab81866",
+      "sha256": "cb48427749acfe990ead6a90c8ddece1d2be52356bb03290f9f32d5ed28d22aa",
+      "byte_verified": true,
+      "preserved_existing": [
+        {
+          "path": "/mnt/c/Users/fleng/Downloads/AGENTS.md",
+          "sha256": "ab1baa7c21e7974a0968b1db30363fa4c52381d749c0a2b501188b020a2c87ea"
+        }
+      ]
+    },
+    {
+      "repository_path": "README.md",
+      "absolute_repository_path": "/home/flengyel/src/Dosen-Petric-Maximality/README.md",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/README_20261030-dc6559434a77.md",
+      "source_commit": "dc6559434a77e39cac79dc423d3ed7d4cab81866",
+      "sha256": "9049e754149ef79ab61b20d422fdb056b7f452e23be90c564181326b9650b94e",
+      "byte_verified": true,
+      "preserved_existing": [
+        {
+          "path": "/mnt/c/Users/fleng/Downloads/README.md",
+          "sha256": "a87a7ec47e11306b8b59407bd43fb61c745ab4acc3b012ae4e22da82f907533d"
+        }
+      ]
+    },
+    {
+      "repository_path": "docs/CODEX_NEXT_SESSION.txt",
+      "absolute_repository_path": "/home/flengyel/src/Dosen-Petric-Maximality/docs/CODEX_NEXT_SESSION.txt",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/CODEX_NEXT_SESSION_20261030-dc6559434a77.txt",
+      "source_commit": "dc6559434a77e39cac79dc423d3ed7d4cab81866",
+      "sha256": "df4a87be3babb3ff9aa84948fa1d3930845d1ddebb1b6edad11c9ca5e62cf2f8",
+      "byte_verified": true,
+      "preserved_existing": [
+        {
+          "path": "/mnt/c/Users/fleng/Downloads/CODEX_NEXT_SESSION.txt",
+          "sha256": "5fb4f6f572b3a4598f3e8f28a9d65515948511548d9673ba494426a656361f8d"
+        }
+      ]
+    },
+    {
+      "repository_path": "docs/PALOMAR_REGISTRATION_LOCAL_REPORT.md",
+      "absolute_repository_path": "/home/flengyel/src/Dosen-Petric-Maximality/docs/PALOMAR_REGISTRATION_LOCAL_REPORT.md",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/PALOMAR_REGISTRATION_LOCAL_REPORT_20261030-dc6559434a77.md",
+      "source_commit": "dc6559434a77e39cac79dc423d3ed7d4cab81866",
+      "sha256": "e7f7a37262f78bc2d6df6602509574a6ddd448cd7fd1a87562c07680782f68aa",
+      "byte_verified": true,
+      "preserved_existing": [
+        {
+          "path": "/mnt/c/Users/fleng/Downloads/PALOMAR_REGISTRATION_LOCAL_REPORT.md",
+          "sha256": "ac9ccbb5da43dba872caafa47faa7c7f832066412fd84f067dca1d5a8bef0517"
+        }
+      ]
+    },
+    {
+      "repository_path": "docs/PALOMAR_REGISTRATION_STATUS.md",
+      "absolute_repository_path": "/home/flengyel/src/Dosen-Petric-Maximality/docs/PALOMAR_REGISTRATION_STATUS.md",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/PALOMAR_REGISTRATION_STATUS_20261030-dc6559434a77.md",
+      "source_commit": "dc6559434a77e39cac79dc423d3ed7d4cab81866",
+      "sha256": "75455c16a1e5496523651e96f83fda6d2d72493f8c5e12a749a071f02fcf82f2",
+      "byte_verified": true,
+      "preserved_existing": [
+        {
+          "path": "/mnt/c/Users/fleng/Downloads/PALOMAR_REGISTRATION_STATUS.md",
+          "sha256": "8d0d941ec810d0963c8f758db1f8de08a8a81adde5b097e12d6a181fec5969bf"
+        }
+      ]
+    },
+    {
+      "repository_path": "docs/PALOMAR_RELEASE_CANDIDATE.md",
+      "absolute_repository_path": "/home/flengyel/src/Dosen-Petric-Maximality/docs/PALOMAR_RELEASE_CANDIDATE.md",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/PALOMAR_RELEASE_CANDIDATE_20261030-dc6559434a77.md",
+      "source_commit": "dc6559434a77e39cac79dc423d3ed7d4cab81866",
+      "sha256": "ec6841f5e82cbdbaace8e6c828c1df443486bf97cf651389eb11da808941eb78",
+      "byte_verified": true,
+      "preserved_existing": [
+        {
+          "path": "/mnt/c/Users/fleng/Downloads/PALOMAR_RELEASE_CANDIDATE.md",
+          "sha256": "38968f44f478798758081e53ba67e2b6dba63fbb545dea62a87ae40c72331a0f"
+        }
+      ]
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-registration-20261030/REGISTRATION_STAGE.json",
+      "absolute_repository_path": "/home/flengyel/src/Dosen-Petric-Maximality/provenance/wsl-palomar-registration-20261030/REGISTRATION_STAGE.json",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/REGISTRATION_STAGE_20261030-dc6559434a77.json",
+      "source_commit": "dc6559434a77e39cac79dc423d3ed7d4cab81866",
+      "sha256": "37e3aab46c07d0c7843d4c9832a41fa1601ba4031c07e70d84fdd4327e7a9df7",
+      "byte_verified": true,
+      "preserved_existing": [
+        {
+          "path": "/mnt/c/Users/fleng/Downloads/REGISTRATION_STAGE.json",
+          "sha256": "cb05c71b79e13d555d676524d16a78e70eb392f67f49e55d3a866728587e70d3"
+        }
+      ]
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-registration-20261030/RELEASE_CANDIDATE.json",
+      "absolute_repository_path": "/home/flengyel/src/Dosen-Petric-Maximality/provenance/wsl-palomar-registration-20261030/RELEASE_CANDIDATE.json",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/RELEASE_CANDIDATE_20261030-dc6559434a77.json",
+      "source_commit": "dc6559434a77e39cac79dc423d3ed7d4cab81866",
+      "sha256": "24e1ae4e71728b1448d40cab11a12ce7092603262bc35002732e3b7a7a5e3567",
+      "byte_verified": true,
+      "preserved_existing": [
+        {
+          "path": "/mnt/c/Users/fleng/Downloads/RELEASE_CANDIDATE.json",
+          "sha256": "8e0eff5b1121d6b915aeb24b399aac40c155459c1216ad825212c5905405e146"
+        }
+      ]
+    }
+  ],
+  "failures": []
+}
