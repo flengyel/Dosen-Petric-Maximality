@@ -2,8 +2,10 @@ Current task: the local Palomar registration release candidate is verified.
 
 Do not reopen the completed full-paper proof sequence. Preserve all existing
 mathematics, manuscript versions, historical evidence, the original stash and
-unrelated checkouts. Main remains clean at 2c8e096; preparation is on the isolated
-private branch palomar/registration-20261030. The previous continuation is retained
+unrelated checkouts. Candidate and receipts are merged into main through
+23ec1bc6a492fab4de42c209f00f692b1851cf9a. The preparation branch
+palomar/registration-20261030 remains preserved. Subsequent documentation
+commits do not replace the verified submission SHA. The previous continuation is retained
 in docs/history/CODEX_NEXT_SESSION_2C8E096.txt.
 
 Read AGENTS.md, docs/CODEX_PALOMAR_REGISTRATION.txt,
@@ -21,13 +23,19 @@ all 1,870 committed Lean source headers/closures/layout checks. All 11 manuscrip
 files are unchanged. Earlier full-paper 35 public checks/74 controls remain
 retained evidence. No official reusable full preflight or service stage has run.
 
-The prepared root Apache-2.0 file is a proposal on the private candidate. Main
-has no adopted root license and repository visibility remains private. The next
+The root Apache-2.0 text and prepared workflow are now present on main. The
+repository remains private, with explicit publication/license confirmation
+pending. The next
 required author decision identifies the exact candidate SHA, license including
 the original manuscript, publication scope of the substantive repository and
 history, root comparator.json, and Florian Lengyel's responsible maintainer
 relationship. Reuse any later explicit approval of those exact values; do not
 ask again or introduce routine implementation checkpoints.
+
+Keep Lean at 4.35.0; the current checker policy supports it. Reuse completed
+local verification. Official full preflight is the next required check. The
+Windows GitHub CLI at /mnt/c/Program Files/GitHub CLI/gh.exe has an existing
+authenticated flengyel session, and the prepared workflow is registered.
 
 After authorized publication/license action, run the exact pinned full reusable
 workflow, for the immutable candidate, with mode full/profile palomar-standard-v1

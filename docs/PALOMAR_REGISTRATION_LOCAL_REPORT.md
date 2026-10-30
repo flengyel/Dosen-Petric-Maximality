@@ -11,8 +11,11 @@ candidate; official full preflight and service registration have not run.
 The main checkout was fast-forwarded safely from
 `6a66b14b382aac214b52c055b8bf281b35302239` through
 `2c8e0968ad4fa3d318b98bcab4e531bb728b86cd`, incorporating `a2467d0` and the
-registration handoff. Preparation takes place on `palomar/registration-20261030`
-in an isolated worktree. Main remains clean at `2c8e0968ad4fa3d318b98bcab4e531bb728b86cd`.
+registration handoff. Preparation was completed on `palomar/registration-20261030`
+in an isolated worktree. The candidate and receipts were then fast-forwarded
+into main through `23ec1bc6a492fab4de42c209f00f692b1851cf9a`. The verified
+submission remains `2e771844077fd8cebfbe365230f13d4dd13a75b1`; later documentation
+and evidence commits do not change that source identity.
 The stash remains `dedfd8fc8cd49930e9a162d5be585215b062a43c`. Existing proof modules and all 11 manuscript
 files are unchanged; v8 and the earlier versions are preserved. No other project
 checkout was modified.
@@ -131,8 +134,9 @@ and resolution script. No failed production proof was moved out of the build.
 ## Release and delivery boundary
 
 The candidate installs the proposed Apache-2.0 text, root metadata/configuration
-and full-preflight workflow on the private isolated branch. Main has no adopted
-root license and repository visibility remains private. The next decision must
+and full-preflight workflow, now merged into main through `23ec1bc`. The root
+license text is present on main, and repository visibility remains private.
+Explicit release/license confirmation is pending. The release decision must
 identify the exact candidate commit, Apache-2.0 including the contained original
 manuscript, publication of the substantive repository and its retained history,
 root `comparator.json`, and Florian Lengyel's relationship, “I am a responsible

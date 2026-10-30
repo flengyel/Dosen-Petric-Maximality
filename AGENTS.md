@@ -82,8 +82,9 @@ corollary are now proved and instantiated. General substitution-action transport
 all Appendix A profile/ordinal/renaming/example/skeleton claims, every unnumbered
 mathematical assertion and the final manuscript scope/citation refresh are now
 proved and locally verified. The full-paper mathematical endpoint is complete;
-independent verification, Comparator, official/service checks and publication
-remain separate, unperformed statuses. Preserve both proof routes and every
+local Comparator and independent kernel verification of the selected Palomar
+family are now complete. Official/service checks and publication remain separate
+subsequent stages. Preserve both proof routes and every
 completed result. Reuse all
 completed binary, unary, structural,
 principal, cleaning and descent results. Retain earlier source/rank/atomization decisions.
@@ -178,8 +179,10 @@ review, and publication as separate statuses.
 The author has requested the work needed for Palomar registration. Read
 `docs/CODEX_PALOMAR_REGISTRATION.txt` and `docs/PALOMAR_REGISTRATION_STATUS.md`.
 The full-paper mathematical endpoint remains complete. The current local task
-is the independent Challenge/Solution package, its definition correspondence,
-kernel verification, metadata and concrete release candidate. This phase
+has completed the independent Challenge/Solution package, definition correspondence,
+kernel verification, metadata and concrete release candidate. Those results are
+merged into main through 23ec1bc. Official full preflight is the next required
+check, with verified source 2e771844077fd8cebfbe365230f13d4dd13a75b1 fixed. This phase
 supersedes historical instructions saying that no Palomar preparation is
 authorized; it does not restart the completed proof-development sequence.
 

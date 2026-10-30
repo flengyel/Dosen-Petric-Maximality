@@ -3,7 +3,10 @@
 Verified immutable source: **`2e771844077fd8cebfbe365230f13d4dd13a75b1`**.
 
 Private repository: `flengyel/Dosen-Petric-Maximality`.
-Private branch: `palomar/registration-20261030`.
+Current integration branch: `main`. The candidate and evidence were fast-forwarded
+into main through `23ec1bc6a492fab4de42c209f00f692b1851cf9a` on 30 October 2026.
+The preserved preparation branch is `palomar/registration-20261030`.
+Subsequent documentation commits do not replace the verified submission SHA.
 [Exact source tree](https://github.com/flengyel/Dosen-Petric-Maximality/tree/2e771844077fd8cebfbe365230f13d4dd13a75b1).
 Git tree: `51c600eda4a839e519d89e28efdca100723b210a`.
 
@@ -60,7 +63,8 @@ Machine records: `provenance/wsl-palomar-registration-20261030/RELEASE_CANDIDATE
 and `COMMITTED_SOURCE_AUDIT.json`. The [local report](PALOMAR_REGISTRATION_LOCAL_REPORT.md)
 retains the mathematical scope, tools, outcomes and corrected first failures.
 The source, original cloud reports, current reviews and instructions are retained
-in this private worktree; committed-byte Downloads receipts are recorded separately.
+on main and in the preserved preparation worktree. Committed-byte Downloads
+receipts identify the exact versions previously delivered.
 
 ## Concrete release decision
 
@@ -72,17 +76,31 @@ manuscripts and evidence, for the exact candidate
 The author/maintainer is **Florian Lengyel**, with the authorization relationship
 **“I am a responsible author or maintainer.”**
 
-This decision is pending. The repository remains private, main is clean at
-`2c8e0968ad4fa3d318b98bcab4e531bb728b86cd`, and the stash remains
-`dedfd8fc8cd49930e9a162d5be585215b062a43c`. The candidate's root license is the
-reviewable proposal; no license adoption or visibility change has been effected
-on main.
+The repository remains private. Main now includes the complete candidate and
+receipts through `23ec1bc6a492fab4de42c209f00f692b1851cf9a`, including the root
+Apache-2.0 license text and prepared workflow. The stash remains
+`dedfd8fc8cd49930e9a162d5be585215b062a43c`. Explicit public release/license
+confirmation is pending; the recommendation to approve release has been
+recorded without treating it as a completed visibility change.
 
 This gate comes from `AGENTS.md`, “Complete authorized reversible preparation
 before presenting the exact publication/license/submission decision,” and
 `docs/CODEX_PALOMAR_REGISTRATION.txt` §3, which states that the retained license
 proposal is not the repository's currently adopted license. General preparation
 authorization therefore does not silently supply this concrete release choice.
+
+## Toolchain and next required check
+
+Keep Lean pinned at 4.35.0. The current verifier remains
+`14aa8d6b3c2f14a8540605e37144560b9a00e7e7`; its
+[checker policy](https://github.com/PalomarRegistry/PalomarSubmission/blob/14aa8d6b3c2f14a8540605e37144560b9a00e7e7/checker-revisions.json)
+explicitly supplies the protected con-ron checker for Lean 4.35.0. No Lean
+upgrade is required. Reuse the completed local comparison and kernel evidence.
+Official full preflight is the next verification stage.
+
+An authenticated Windows GitHub CLI session for `flengyel` and the registered
+manual-only workflow are available. Publication and dispatch can proceed after
+the explicit release confirmation.
 
 ## After that decision
 

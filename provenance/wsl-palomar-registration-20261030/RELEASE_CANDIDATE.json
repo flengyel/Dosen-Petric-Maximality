@@ -134,5 +134,13 @@
   "editorial_outcome": "not requested",
   "registration": "not requested",
   "source_immutable_after_verification": true,
-  "evidence_commit_policy": "Subsequent commits contain reports/evidence only and do not replace verified_source_commit."
+  "evidence_commit_policy": "Subsequent commits contain reports/evidence only and do not replace verified_source_commit.",
+  "integration": {
+    "merged_through_commit": "23ec1bc6a492fab4de42c209f00f692b1851cf9a",
+    "preparation_branch": "palomar/registration-20261030",
+    "preparation_branch_preserved": true,
+    "verified_submission_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+    "source_unchanged": true
+  },
+  "root_license_file_on_main": true
 }

@@ -1,8 +1,9 @@
 # Palomar registration release candidate — 30 October 2026
 
-The local package is complete and verified on the private branch
-`palomar/registration-20261030`. Main remains clean at
-`2c8e0968ad4fa3d318b98bcab4e531bb728b86cd`; the original stash is preserved.
+The local package is complete, verified and merged into main through
+`23ec1bc6a492fab4de42c209f00f692b1851cf9a`. The preparation branch
+`palomar/registration-20261030` is preserved, together with the original stash.
+The immutable submission remains `2e771844077fd8cebfbe365230f13d4dd13a75b1`.
 The full-paper mathematical endpoint and all manuscript versions remain intact.
 
 | Stage | Current status |
@@ -15,7 +16,7 @@ The full-paper mathematical endpoint and all manuscript versions remain intact.
 | Whole-tree policy/closure | Pass: 1,870 Lean sources, compiler-parsed headers and complete local import closures; four historical fixtures preserved byte-for-byte under mapped `.lean.txt` paths. |
 | Packaging controls | Six intended rejections; original full-paper public-check/control evidence preserved. |
 | Metadata/workflow | Official loader/schema/taxonomy pass. Root configuration, metadata, proposed license and pinned manual-only full workflow prepared. |
-| Repository/license | Repository remains private. Apache-2.0 is proposed on the isolated candidate only; main has no adopted root license. |
+| Main integration / repository / license | Candidate and receipts merged through `23ec1bc`. Root Apache-2.0 text is present on main. Repository remains private; explicit release/license confirmation is pending. |
 | Official full preflight | Pending the concrete publication/license decision. |
 | Service verification / editorial outcome / registration | Not requested or performed. |
 
@@ -42,7 +43,10 @@ Upstream pins remain verifier `14aa8d6b3c2f14a8540605e37144560b9a00e7e7`, policy
 `28bd48b9b71bbb2a82c718ce761d5a4220ef8e60`, metadata standard
 `99c678e569c7c4c0772db297c5ddd5e4c9b6322e`. They were rechecked locally. The
 prepared workflow uses full mode, `palomar-standard-v1`, `preflight001`, the exact
-source commit and root `comparator.json`.
+source commit and root `comparator.json`. Lean remains pinned at 4.35.0, supported
+by the current checker policy. Reuse the completed local verification; official
+full preflight is the next required check. The existing Windows GitHub CLI
+session is authenticated as `flengyel`, and GitHub recognizes the workflow.
 
 The concrete release decision concerns Apache-2.0, including the contained
 original manuscript, publication of `flengyel/Dosen-Petric-Maximality` as the

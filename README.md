@@ -2,7 +2,8 @@
 
 ## Palomar registration release candidate (30 October 2026)
 
-The private candidate packages five statements in `DosenPetric.Palomar`: both
+The verified package, merged into main through `23ec1bc`, selects five statements
+in `DosenPetric.Palomar`: both
 actual-source maximality proofs, their congruence dichotomy, a nonzero variable
 identity and the empty top-to-bottom hom-set. The independent
 [Challenge](Challenge.lean) contains the concrete presentation and five theorem
@@ -21,10 +22,11 @@ Protected local comparison and independent-kernel outcomes are recorded in
 commands, inputs and diagnostics under `provenance/wsl-palomar-registration-20261030/`.
 
 The root metadata, license text and manual-only full-preflight workflow form a
-release proposal on this private candidate branch. Apache-2.0, including the
-contained original manuscript, and public release of the substantive repository
-await the author's concrete decision. The main branch's license and visibility
-have not been changed. Official full preflight, service verification, editorial
+release package now present on main. Its immutable submission SHA remains
+`2e771844077fd8cebfbe365230f13d4dd13a75b1`. The Apache-2.0 text is included;
+explicit license/public release confirmation is pending. Repository visibility
+remains private. Lean stays at 4.35.0, supported by the current checker policy.
+Official full preflight is the next required check. Service verification, editorial
 review and registration remain separate pending stages.
 
 ## Current complete full-paper formalization (29 October 2026)
@@ -694,7 +696,8 @@ are retained in `provenance/palomar-registration-2026-10-30/`.
 `bash scripts/fetch-palomar.sh` fetches that source into its own revision-specific
 directory and preserves the older checkout.
 
-The repository remains private. Metadata, the Comparator selection, the full
-preflight workflow and Apache-2.0 license text under `docs/palomar/` are proposals
-for the release candidate. They do not establish a completed package, adopted
-license, public release, service verification or registration.
+The complete verified package is merged into main. Original proposals remain
+under `docs/palomar/`; the root metadata, Comparator configuration, Apache-2.0
+text and prepared workflow are present on main. The repository remains private
+pending explicit release/license confirmation. Official full preflight, service
+verification and registration remain separate subsequent stages.

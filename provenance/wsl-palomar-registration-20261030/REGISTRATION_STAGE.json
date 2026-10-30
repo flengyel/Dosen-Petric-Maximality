@@ -3,7 +3,7 @@
   "date": "2026-10-30",
   "source_base": "2c8e0968ad4fa3d318b98bcab4e531bb728b86cd",
   "mathematical_source": "630c4b6e47da16a1434476a211fd29ce6adc5569",
-  "branch": "palomar/registration-20261030",
+  "branch": "main",
   "stages": {
     "local_mathematics": "complete; existing full-paper endpoint preserved",
     "package_build": "pass",
@@ -39,12 +39,19 @@
   "repository": {
     "name": "flengyel/Dosen-Petric-Maximality",
     "visibility": "private",
-    "license": "Apache-2.0 proposal on isolated candidate only",
-    "root_license_on_main": false
+    "license": "Apache-2.0 text present on main; explicit publication/license confirmation pending",
+    "root_license_on_main": true
   },
   "stash": "dedfd8fc8cd49930e9a162d5be585215b062a43c",
   "main_clean": true,
   "publication_or_service_action_performed": false,
   "verified_source_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
-  "source_tree": "51c600eda4a839e519d89e28efdca100723b210a"
+  "source_tree": "51c600eda4a839e519d89e28efdca100723b210a",
+  "integration": {
+    "merged_through_commit": "23ec1bc6a492fab4de42c209f00f692b1851cf9a",
+    "preparation_branch": "palomar/registration-20261030",
+    "preparation_branch_preserved": true,
+    "verified_submission_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+    "source_unchanged": true
+  }
 }
