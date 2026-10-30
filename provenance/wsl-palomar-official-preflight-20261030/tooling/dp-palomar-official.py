@@ -12,10 +12,19 @@ def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
 def sha(data):return hashlib.sha256(data).hexdigest()
 def git(*args):return subprocess.check_output(['git',*args],cwd=root,text=True).strip()
 def save(path,data):path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(data,indent=2)+'\n')
+def redact_capture(value):
+ sensitive={'token','access_token','refresh_token','temp_clone_token','client_secret','authorization','password'}
+ def walk(x):
+  if isinstance(x,dict):return {k:('[REDACTED]' if k.lower() in sensitive and v else walk(v)) for k,v in x.items()}
+  if isinstance(x,list):return [walk(v) for v in x]
+  return x
+ try:return json.dumps(walk(json.loads(value)),separators=(',',':'))+'\n'
+ except (ValueError,TypeError):return value
+
 def run(argv,label,stdin=None,check=True):
  start=time.monotonic();stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%f')
  p=subprocess.run(list(map(str,argv)),cwd=root,input=stdin,capture_output=True,text=True)
- row=dict(command=list(map(str,argv)),exit_status=p.returncode,seconds=round(time.monotonic()-start,3),stdout=p.stdout,stderr=p.stderr,utc=now())
+ row=dict(command=list(map(str,argv)),exit_status=p.returncode,seconds=round(time.monotonic()-start,3),stdout=redact_capture(p.stdout),stderr=redact_capture(p.stderr),utc=now())
  save(stage/'logs'/(label+'-'+stamp+'.json'),row)
  if check and p.returncode:print(json.dumps(row,indent=2),flush=True);raise SystemExit(p.returncode)
  return p

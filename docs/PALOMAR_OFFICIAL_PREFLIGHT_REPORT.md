@@ -72,8 +72,8 @@ root Comparator and all 17 critical input hashes remain fixed. The completed
 local package, strict audit, expanded definition audit and focused controls were
 reused. No local proof rewrite, new mathematical assumption or Lean upgrade was
 introduced for this official run. The complete-paper claim map and manuscripts
-remain preserved; the registry selection is the five-statement maximality family
-and its two structural witnesses.
+remain preserved; the five selected statements are the two maximality routes,
+the maximality dichotomy, and two structural witnesses.
 
 The release authorization, public visibility check, dispatch inputs, run/job
 records, artifact listing, original mechanical JSON and ZIP, and tool digests are
@@ -96,6 +96,13 @@ review material out of public Git history.
 The author explicitly specified **Palomar Registry registration first, then
 arXiv submission**. No arXiv submission has occurred. The Local connectedness in
 recursion categories and essential incompleteness project follows arXiv.
+
+## Metadata correction
+
+One temporary clone-credential field in a repository-metadata log was redacted
+after the final audit. GitHub documents a five-minute lifetime; the credential
+had expired before the log was committed. The original official report and ZIP
+remain byte-identical. See [the correction record](PALOMAR_PREFLIGHT_METADATA_CORRECTION.md).
 
 ## Delivery
 
