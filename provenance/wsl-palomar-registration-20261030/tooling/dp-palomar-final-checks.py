@@ -1,0 +1,5 @@
+row=command(['lake','build','Challenge'],'challenge-lake-build')
+(ev/'CHALLENGE_PACKAGE_BUILD.json').write_text(json.dumps(row,indent=2)+'\n')
+row=command(['bash','scripts/verify.sh'],'strict-candidate')
+(ev/'STRICT_VERIFICATION.json').write_text(json.dumps(row,indent=2)+'\n')
+exec(Path('/tmp/dp-palomar-source-audit.py').read_text())

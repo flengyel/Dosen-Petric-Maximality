@@ -1,0 +1,10 @@
+Running nanoda kernel on solution
+nanoda kernel rejected the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+
+
+thread 'main' (2) panicked at src/parser.rs:784:17:
+assertion failed: !matches!(safety, DefinitionSafety::Unsafe | DefinitionSafety::Partial)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: nanoda exited with 101

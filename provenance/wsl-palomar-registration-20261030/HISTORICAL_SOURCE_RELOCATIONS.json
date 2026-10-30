@@ -1,0 +1,51 @@
+{
+  "relocations": [
+    {
+      "original": "provenance/wsl-gentzen-blocked-classification/PublicTypes.lean",
+      "retained": "provenance/wsl-gentzen-blocked-classification/PublicTypes.lean.txt",
+      "sha256": "b7171dd4233d46239b33e7c8553b1dfef0cb0de01cccc423fe8f6dae24c5810c",
+      "bytes": 8473,
+      "reason": "Historical non-module PublicTypes fixture; no production import or proof was renamed.",
+      "historical_references": [
+        "docs/PALOMAR_SOURCE_LAYOUT.md",
+        "provenance/wsl-palomar-registration-20261030/INITIAL_SOURCE_AUDIT.json"
+      ]
+    },
+    {
+      "original": "provenance/wsl-gentzen-proof-replacement/PublicTypes.lean",
+      "retained": "provenance/wsl-gentzen-proof-replacement/PublicTypes.lean.txt",
+      "sha256": "461b6081a05f90dc874f3741fd108529ae54c7fa62eba5f090bdd4f02709d2ab",
+      "bytes": 4459,
+      "reason": "Historical non-module PublicTypes fixture; no production import or proof was renamed.",
+      "historical_references": [
+        "docs/PALOMAR_SOURCE_LAYOUT.md",
+        "provenance/wsl-palomar-registration-20261030/INITIAL_SOURCE_AUDIT.json"
+      ]
+    },
+    {
+      "original": "provenance/wsl-gentzen-reducibility-integration/verification/PublicTypes.lean",
+      "retained": "provenance/wsl-gentzen-reducibility-integration/verification/PublicTypes.lean.txt",
+      "sha256": "46aac9dcab0d564a653071ce03df647ac8faa610408fffedd77057e9b65f06e7",
+      "bytes": 965,
+      "reason": "Historical non-module PublicTypes fixture; no production import or proof was renamed.",
+      "historical_references": [
+        "docs/PALOMAR_SOURCE_LAYOUT.md",
+        "provenance/wsl-palomar-registration-20261030/INITIAL_SOURCE_AUDIT.json"
+      ]
+    },
+    {
+      "original": "provenance/wsl-gentzen-w5-other-premise-mix/PublicTypes.lean",
+      "retained": "provenance/wsl-gentzen-w5-other-premise-mix/PublicTypes.lean.txt",
+      "sha256": "62fe2eae3738146b4e9b2803ac7daf52b53f089768ae5c1f79cb93dd7b6b3410",
+      "bytes": 10015,
+      "reason": "Historical non-module PublicTypes fixture; no production import or proof was renamed.",
+      "historical_references": [
+        "docs/PALOMAR_SOURCE_LAYOUT.md",
+        "provenance/wsl-palomar-registration-20261030/INITIAL_SOURCE_AUDIT.json"
+      ]
+    }
+  ],
+  "byte_preserving": true,
+  "historical_report_bytes_unchanged": true,
+  "reference_resolution": "scripts/resolve-historical-evidence.py"
+}

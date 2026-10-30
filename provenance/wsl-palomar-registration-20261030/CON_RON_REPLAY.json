@@ -1,0 +1,13 @@
+{
+  "name": "con-ron",
+  "status": "accepted",
+  "reason": "complete",
+  "exit_code": 0,
+  "detail": "con-ron: accepted 9639 declarations (--verified)\n\ncon-ron: 2 inductive blocks modelled in-process: Lean.Syntax, DosenPetric.TraceTree (51 generated records, checked by the fold as declarations and not counted as records of the file)\ncon-ron: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul",
+  "argv": [
+    "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/checkers/con-ron-v4.36.0-rc1-authenticated/con-ron",
+    "--jobs=2",
+    "--verified"
+  ],
+  "budget_seconds": 1800
+}

@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/tooling/python/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "PyYAML==6.0.3",
+    "jsonschema==4.25.1"
+  ],
+  "actual_command": [
+    "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/tooling/python/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "PyYAML==6.0.3",
+    "jsonschema==4.25.1"
+  ],
+  "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate",
+  "exit_status": 0,
+  "seconds": 3.725,
+  "log": ".codex-work/palomar-registration-20261030/logs/python-tools-20261030T173540322430.log",
+  "sha256": "f693220ce0e9c32ca552762a6b447fc5b651c1b4af0f1c1c5652c6f86edec53d"
+}

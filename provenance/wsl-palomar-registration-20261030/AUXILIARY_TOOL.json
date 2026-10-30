@@ -1,0 +1,8 @@
+{
+  "source": "scripts/PalomarClosureAudit.lean",
+  "sha256": "b733d92f3e3365eca651c520765515d300bb0e125abc75cebac57f211e134ebe",
+  "native_sdk_library": "/home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean/libLake_shared.so",
+  "native_library_sha256": "d68867df340056b40726fde3939a9d2021901cc6944f971dd6a6a778bd9ea25b",
+  "main_comparator_unmodified": true,
+  "extra_audit_alpha_conversion": "bound universe parameter names only; arity, order and every type/value use retained"
+}

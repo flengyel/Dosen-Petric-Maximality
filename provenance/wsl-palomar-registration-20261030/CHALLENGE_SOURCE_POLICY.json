@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "actual_challenge": {
+    "source_count": 1,
+    "dependencies": [],
+    "untrusted_sources": [],
+    "trust_level": "high"
+  },
+  "negative_controls": [
+    {
+      "name": "DirectForbiddenImport",
+      "result": {
+        "source_count": 1,
+        "dependencies": [],
+        "untrusted_sources": [
+          "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate/DosenPetric/Formula.lean"
+        ],
+        "trust_level": "high"
+      }
+    },
+    {
+      "name": "TransitiveForbiddenImport",
+      "result": {
+        "source_count": 2,
+        "dependencies": [],
+        "untrusted_sources": [
+          "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/verification-v2/package-controls-v2/TransitiveForbiddenImport/Bridge.lean",
+          "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate/DosenPetric/Formula.lean"
+        ],
+        "trust_level": "high"
+      }
+    }
+  ],
+  "official_policy_pin": "PalomarSubmission-14aa8d6b3c2f14a8540605e37144560b9a00e7e7"
+}

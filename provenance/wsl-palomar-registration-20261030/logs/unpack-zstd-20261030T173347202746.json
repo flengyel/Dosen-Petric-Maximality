@@ -1,0 +1,19 @@
+{
+  "command": [
+    "dpkg-deb",
+    "-x",
+    "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/tooling/packages/zstd_1.5.7+dfsg-1_amd64.deb",
+    "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/tooling/zstd"
+  ],
+  "actual_command": [
+    "dpkg-deb",
+    "-x",
+    "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/tooling/packages/zstd_1.5.7+dfsg-1_amd64.deb",
+    "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/tooling/zstd"
+  ],
+  "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/tooling/packages",
+  "exit_status": 0,
+  "seconds": 0.139,
+  "log": ".codex-work/palomar-registration-20261030/logs/unpack-zstd-20261030T173347202746.log",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

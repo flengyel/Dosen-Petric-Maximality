@@ -1,0 +1,101 @@
+[
+  {
+    "name": "ChangedEquation",
+    "status": "rejected_as_required",
+    "reason": "Const does not match between challenge and target 'DosenPetric.Presentation.Equation",
+    "verdict": "comparator.rejected",
+    "exit_status": 1,
+    "log": ".codex-work/palomar-registration-20261030/logs/CONTROL_CHANGEDEQUATION.log",
+    "sha256": "23c9042645602dbdf5c79eebec23ad1676e5cd39954f86f24031bf33dee10366",
+    "fixture": {
+      "repository_path": "provenance/wsl-palomar-registration-20261030/controls/ChangedEquation-Challenge.lean.txt",
+      "sha256": "6f734d1854f7f076ffb9702a3efa7dab6dcc92f5409663239338422fc0d7fbc2"
+    },
+    "compiled": true,
+    "exported": true,
+    "challenge_export_sha256": "931c5acb24fca1057e57fa6657648f91757e6f922ab2df092093e8ca0c08b259"
+  },
+  {
+    "name": "ChangedSelectedType",
+    "status": "rejected_as_required",
+    "reason": "Challenge and solution theorem statement do not match",
+    "verdict": "comparator.rejected",
+    "exit_status": 1,
+    "log": ".codex-work/palomar-registration-20261030/logs/CONTROL_CHANGEDSELECTEDTYPE.log",
+    "sha256": "568d46c1cca8ad9b71cdad486c9007b60405c4aeafd4c280a69177b081652675",
+    "fixture": {
+      "repository_path": "provenance/wsl-palomar-registration-20261030/controls/ChangedSelectedType-Challenge.lean.txt",
+      "sha256": "7f0105571c4b5950af6b29e947b8d53c572cfa99e6c654ddd1023f708229131b"
+    },
+    "compiled": true,
+    "exported": true,
+    "challenge_export_sha256": "2f382ae856c1853a76534ed19915afb1736de97f6f26d4b6fe15c47117489346"
+  },
+  {
+    "name": "IllicitAxiomHelper",
+    "status": "rejected_as_required",
+    "reason": "Illegal axiom detected:",
+    "verdict": "comparator.illegal_axiom",
+    "exit_status": 1,
+    "log": ".codex-work/palomar-registration-20261030/logs/CONTROL_ILLICITAXIOMHELPER.log",
+    "sha256": "8fee41bb07e13311f4370248b78054a0d47e82e6cee124b31d2b927bdb4c3e2f",
+    "fixture": {
+      "repository_path": "provenance/wsl-palomar-registration-20261030/controls/IllicitAxiomHelper-IllicitAxiomHelper.lean.txt",
+      "sha256": "712a32a530c82ccba5c4691cef4398b8b21d7bab70fda60228ca9bf9afe6882d"
+    },
+    "compiled": true,
+    "exported": true,
+    "solution_export_sha256": "7e2ff06250591075e62d62fb669cfbf575f3e454bac7b35ce510ecaf10a7713b"
+  },
+  {
+    "name": "SelectedChallengeHole",
+    "status": "rejected_as_required",
+    "reason": "Illegal axiom detected: 'sorryAx'",
+    "verdict": "comparator.illegal_axiom",
+    "exit_status": 1,
+    "log": ".codex-work/palomar-registration-20261030/logs/CONTROL_SELECTEDCHALLENGEHOLE.log",
+    "sha256": "61719c184c75bd81a30c4a2ccf40257194509ad21cf3a9e537652f2219cd2f72",
+    "fixture": {
+      "repository_path": "provenance/wsl-palomar-registration-20261030/controls/SelectedChallengeHole-SelectedChallengeHole.lean.txt",
+      "sha256": "94c75031d604aa4e264e25cb2fd47f4bea0c1ccff8c7aa1e62df48611e8d43c2"
+    },
+    "compiled": true,
+    "exported": true,
+    "solution_export_sha256": "8ca337c4b17f8741734759b7df7dde79f1f167221e4f904ac5b60242aebeeefc"
+  },
+  {
+    "name": "DirectForbiddenImport",
+    "status": "rejected_as_required",
+    "reason": "Challenge source closure contains a forbidden candidate project import",
+    "parsed_headers": true,
+    "elaboration_attempted": false,
+    "dependency_chain": [
+      "Challenge",
+      "DosenPetric.Formula"
+    ],
+    "fixture": {
+      "repository_path": "provenance/wsl-palomar-registration-20261030/controls/DirectForbiddenImport-Challenge.lean.txt",
+      "sha256": "5efaafc5467dbc7eded7447fd4a268b3de9698a8ab6d16ff2c31625a685c8c25"
+    }
+  },
+  {
+    "name": "TransitiveForbiddenImport",
+    "status": "rejected_as_required",
+    "reason": "Challenge source closure contains a forbidden candidate project import",
+    "parsed_headers": true,
+    "elaboration_attempted": false,
+    "dependency_chain": [
+      "Challenge",
+      "Bridge",
+      "DosenPetric.Formula"
+    ],
+    "fixture": {
+      "repository_path": "provenance/wsl-palomar-registration-20261030/controls/TransitiveForbiddenImport-Challenge.lean.txt",
+      "sha256": "8079d94b8f4a53193df6bc185a73649f385ff4d0918f5cbd170a478c10008783"
+    },
+    "helper_fixture": {
+      "repository_path": "provenance/wsl-palomar-registration-20261030/controls/TransitiveForbiddenImport-Bridge.lean.txt",
+      "sha256": "c6a5361fbbc44f578acc577d0fcc978c6800355be8ac06141c9381826adec954"
+    }
+  }
+]

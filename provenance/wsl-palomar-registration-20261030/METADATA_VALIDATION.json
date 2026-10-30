@@ -1,0 +1,85 @@
+{
+  "status": "pass",
+  "official_loader_pin": "PalomarSubmission-14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+  "metadata_sha256": "ffd9b763a744d0e2f895772a36a01321ec1dc128476dfebc19d91a569f5efb03",
+  "comparator_sha256": "db36e6b9256356ca97a16be363a878b1feb337afd3217ef86096a29218290abb",
+  "license_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+  "workflow_sha256": "f96f61d30ae94145a0a75c8862c3c0b7d621bbb42ef731cbf6a8fc2263be1176",
+  "taxonomy": {
+    "arxiv": [
+      "math.CT",
+      "math.LO"
+    ],
+    "msc2020": [
+      "03G30",
+      "03F07",
+      "18A32"
+    ]
+  },
+  "taxonomy_matches_manuscript": true,
+  "provenance": {
+    "result_origin": "source-based",
+    "repository_role": "substantive-development",
+    "responsible_maintainers": [
+      {
+        "name": "Florian Lengyel"
+      }
+    ],
+    "mathematical_sources": [
+      {
+        "title": "Maximality of the Do\u0161en\u2013Petri\u0107 Boolean Category, version 8",
+        "authors": [
+          {
+            "name": "Florian Lengyel"
+          }
+        ],
+        "relationship": "formalizes",
+        "identifier": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/6a66b14b382aac214b52c055b8bf281b35302239/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v8.tex",
+        "location": "Theorem 2.1; Sections 2\u20136; Appendices A\u2013C; October 29, 2026.",
+        "note": "The manuscript is retained with the substantive Lean development. This is source-based formalization of the manuscript's result. Its v8 mathematical content is unchanged from v7. The selected declarations and the broader complete-paper correspondence are identified separately below.",
+        "author_endorsement": "participated",
+        "type": "paper"
+      },
+      {
+        "title": "Proof-Theoretical Coherence",
+        "authors": [
+          {
+            "name": "Kosta Do\u0161en"
+          },
+          {
+            "name": "Zoran Petri\u0107"
+          }
+        ],
+        "relationship": "formalizes",
+        "identifier": "https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf",
+        "location": "King's College Publications, 2004; revised author version September 2007; the zero-identity Boolean presentation in Sections 14.2\u201314.3 and the cut-elimination and coherence arguments used by that presentation.",
+        "note": "The development includes proofs of the cut-elimination and coherence inputs needed for the actual source category. It does not attribute the manuscript's maximality theorem to this book. Appendix C identifies two source rank corrections and gives their concrete formal correspondences.",
+        "author_endorsement": "not-contacted",
+        "type": "book"
+      },
+      {
+        "title": "Isomorphic formulae in classical propositional logic",
+        "authors": [
+          {
+            "name": "Kosta Do\u0161en"
+          },
+          {
+            "name": "Zoran Petri\u0107"
+          }
+        ],
+        "relationship": "background",
+        "identifier": "https://doi.org/10.1002/malq.201020020",
+        "location": "Mathematical Logic Quarterly 58 (2012), 5\u201317; Lemma 7; author version arXiv:0912.1271v3.",
+        "note": "The manuscript relates its particular q/e isomorphisms to the occurrence-bijection construction in Lemma 7. The actual arrows and their inverses are proved in the source category; no assumed isomorphism field replaces those constructions.",
+        "author_endorsement": "not-contacted",
+        "type": "paper"
+      }
+    ],
+    "related_formalizations": []
+  },
+  "repository_visibility": "private",
+  "license_proposal_only": true,
+  "production_warning_as_error": true,
+  "challenge_exception_only": true
+}

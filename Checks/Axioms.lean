@@ -2270,3 +2270,9 @@ run_elab do
 #print axioms DosenPetric.Congruence.quotient_preserves_empty
 #print axioms DosenPetric.ExponentialData.from_toGlobalPoint
 #print axioms DosenPetric.ExponentialData.to_fromGlobalPoint
+
+#print axioms DosenPetric.Palomar.maximality
+#print axioms DosenPetric.Palomar.short_maximality
+#print axioms DosenPetric.Palomar.congruence_dichotomy
+#print axioms DosenPetric.Palomar.identity_ne_zero
+#print axioms DosenPetric.Palomar.no_top_to_bot

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-30",
+  "source_base": "2c8e0968ad4fa3d318b98bcab4e531bb728b86cd",
+  "mathematical_source": "630c4b6e47da16a1434476a211fd29ce6adc5569",
+  "branch": "palomar/registration-20261030",
+  "stages": {
+    "local_mathematics": "complete; existing full-paper endpoint preserved",
+    "package_build": "pass",
+    "type_and_definition_comparison": "pass; unmodified public Comparator plus expanded declaration audit",
+    "local_independent_replay": {
+      "Lean": "accepted",
+      "NanoDa": "accepted",
+      "con_ron": "accepted"
+    },
+    "official_full_preflight": "not run; awaits concrete release/license decision",
+    "service_verification": "not requested",
+    "editorial_outcome": "not requested",
+    "registration": "not requested"
+  },
+  "production_files": 887,
+  "audited_declarations": 14907,
+  "whole_tree_lean_files": 1870,
+  "expanded_concrete_declarations": 360,
+  "selected_types": 5,
+  "negative_packaging_controls": 6,
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "challenge": {
+    "lines": 562,
+    "bytes": 23920,
+    "proof_holes": 5,
+    "definition_holes": 0,
+    "sha256": "2bbfaf6f18b1385adc6d36694f1b05a632e4ebc26a775ed455c60abf19b856f5"
+  },
+  "repository": {
+    "name": "flengyel/Dosen-Petric-Maximality",
+    "visibility": "private",
+    "license": "Apache-2.0 proposal on isolated candidate only",
+    "root_license_on_main": false
+  },
+  "stash": "dedfd8fc8cd49930e9a162d5be585215b062a43c",
+  "main_clean": true,
+  "publication_or_service_action_performed": false
+}

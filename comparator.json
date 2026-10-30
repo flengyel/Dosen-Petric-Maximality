@@ -1,0 +1,13 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "DosenPetric.Palomar.maximality",
+    "DosenPetric.Palomar.short_maximality",
+    "DosenPetric.Palomar.congruence_dichotomy",
+    "DosenPetric.Palomar.identity_ne_zero",
+    "DosenPetric.Palomar.no_top_to_bot"
+  ],
+  "definition_names": [],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

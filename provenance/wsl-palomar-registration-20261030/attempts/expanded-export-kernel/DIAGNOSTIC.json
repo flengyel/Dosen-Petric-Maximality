@@ -1,0 +1,11 @@
+{
+  "Lean": "accepted",
+  "NanoDa": "parser panic on DefinitionSafety::Partial",
+  "extra_unselected_compiler_definitions": [
+    "DosenPetric.Formula.Occ._unsafe_rec",
+    "DosenPetric.Formula.subst._unsafe_rec",
+    "DosenPetric.Presentation.Term.subst._unsafe_rec"
+  ],
+  "repair": "Use the exact comparator_export_targets for the public configuration in kernel replay. Keep the expanded all-declaration exports for the separate definition/value audit.",
+  "proof_or_statement_changed": false
+}

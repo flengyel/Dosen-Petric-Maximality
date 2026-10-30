@@ -1,0 +1,5 @@
+{
+  "exit_status": 2,
+  "stdout": "DosenPetric/PalomarCorrespondence.lean:55: trailing whitespace.\n+    induction g' using Quotient.inductionOn with | h g' => \nDosenPetric/PalomarCorrespondence.lean:62: trailing whitespace.\n+    induction g' using Quotient.inductionOn with | h g' => \n",
+  "stderr": ""
+}

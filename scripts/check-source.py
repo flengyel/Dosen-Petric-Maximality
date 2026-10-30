@@ -5,7 +5,7 @@ import pathlib
 import re
 
 root = pathlib.Path(__file__).resolve().parent.parent
-paths = sorted([root / 'DosenPetric.lean', *root.glob('DosenPetric/**/*.lean'),
+paths = sorted([root / 'DosenPetric.lean', root / 'Solution.lean', *root.glob('DosenPetric/**/*.lean'),
                 *root.glob('Checks/**/*.lean')])
 errors = []
 for path in paths:

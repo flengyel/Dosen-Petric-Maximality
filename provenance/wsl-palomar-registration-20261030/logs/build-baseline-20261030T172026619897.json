@@ -1,0 +1,18 @@
+{
+  "command": [
+    "lake",
+    "build"
+  ],
+  "actual_command": [
+    "flock",
+    "-n",
+    "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+    "lake",
+    "build"
+  ],
+  "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate",
+  "exit_status": 0,
+  "seconds": 1623.327,
+  "log": ".codex-work/palomar-registration-20261030/logs/build-baseline-20261030T172026619897.log",
+  "sha256": "52f5d7427871b238d0722b1fd451e07daf527156b9d2225e9bcf38aeb21994c1"
+}

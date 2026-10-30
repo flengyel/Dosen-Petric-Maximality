@@ -1,0 +1,7 @@
+{
+  "failure": "The compiler reused Formula.Occ.match_1 in the actual Formula.subst._f, while the initial excerpt generated Formula.subst.match_1.",
+  "evidence": "Both exported Formula.subst._f value closures were inspected. The auxiliary all-declaration export identified the missing generated helper in Solution.",
+  "repair": "Include the original concrete Formula.Occ definition immediately before Formula.subst in Challenge, preserving the original compilation context and matching the complete value closure.",
+  "production_mathematics_changed": false,
+  "failed_exports_retained_under": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/verification"
+}

@@ -1,0 +1,66 @@
+✔ [7/8] Built DosenPetric.PalomarDefinitions (464ms)
+✖ [735/758] Building DosenPetric.PalomarCorrespondence (1.0s)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate/DosenPetric/PalomarCorrespondence.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate/.lake/build/lib/lean/DosenPetric/PalomarCorrespondence.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate/.lake/build/lib/lean/DosenPetric/PalomarCorrespondence.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate/.lake/build/ir/DosenPetric/PalomarCorrespondence.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate/.lake/build/ir/DosenPetric/PalomarCorrespondence.setup.json --json
+error: DosenPetric/PalomarCorrespondence.lean:86:7: Variable name `f` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _f
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: DosenPetric/PalomarCorrespondence.lean:91:12: Variable name `A` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _A
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: DosenPetric/PalomarCorrespondence.lean:91:14: Variable name `B` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _B
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: DosenPetric/PalomarCorrespondence.lean:91:16: Variable name `C` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _C
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: DosenPetric/PalomarCorrespondence.lean:91:18: Variable name `D` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _D
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: DosenPetric/PalomarCorrespondence.lean:91:20: Variable name `f` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _f
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: DosenPetric/PalomarCorrespondence.lean:91:22: Variable name `f'` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _f'
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: DosenPetric/PalomarCorrespondence.lean:91:25: Variable name `g` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _g
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: DosenPetric/PalomarCorrespondence.lean:91:27: Variable name `g'` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _g'
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: DosenPetric/PalomarCorrespondence.lean:93:84: Type mismatch
+  h
+has type
+  Q.Closed
+but is expected to have type
+  (ofFull Q).Closed
+Some required targets logged failures:
+- DosenPetric.PalomarCorrespondence
+error: build failed

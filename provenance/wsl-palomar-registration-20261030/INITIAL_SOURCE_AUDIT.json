@@ -1,0 +1,37 @@
+{
+  "tracked_lean_files": 1868,
+  "invalid_regular_lean": [
+    {
+      "path": "provenance/wsl-gentzen-blocked-classification/PublicTypes.lean",
+      "lines": 139,
+      "module_header": false,
+      "symlink": false,
+      "sha256": "b7171dd4233d46239b33e7c8553b1dfef0cb0de01cccc423fe8f6dae24c5810c"
+    },
+    {
+      "path": "provenance/wsl-gentzen-proof-replacement/PublicTypes.lean",
+      "lines": 69,
+      "module_header": false,
+      "symlink": false,
+      "sha256": "461b6081a05f90dc874f3741fd108529ae54c7fa62eba5f090bdd4f02709d2ab"
+    },
+    {
+      "path": "provenance/wsl-gentzen-reducibility-integration/verification/PublicTypes.lean",
+      "lines": 18,
+      "module_header": false,
+      "symlink": false,
+      "sha256": "46aac9dcab0d564a653071ce03df647ac8faa610408fffedd77057e9b65f06e7"
+    },
+    {
+      "path": "provenance/wsl-gentzen-w5-other-premise-mix/PublicTypes.lean",
+      "lines": 145,
+      "module_header": false,
+      "symlink": false,
+      "sha256": "62fe2eae3738146b4e9b2803ac7daf52b53f089768ae5c1f79cb93dd7b6b3410"
+    }
+  ],
+  "prebuilt_artifacts": [],
+  "submodules": [],
+  "lfs_pointers": [],
+  "stash": "dedfd8fc8cd49930e9a162d5be585215b062a43c"
+}

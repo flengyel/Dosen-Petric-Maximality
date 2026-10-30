@@ -1,0 +1,17 @@
+{
+  "command": [
+    "apt-get",
+    "download",
+    "zstd"
+  ],
+  "actual_command": [
+    "apt-get",
+    "download",
+    "zstd"
+  ],
+  "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/tooling/packages",
+  "exit_status": 0,
+  "seconds": 2.064,
+  "log": ".codex-work/palomar-registration-20261030/logs/download-zstd-20261030T173345132111.log",
+  "sha256": "170f9fc2173d7028cb211fcb5991dca77406a65d9f2cb88f5183375fcc8e084b"
+}

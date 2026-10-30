@@ -11,3 +11,10 @@ name = "DosenPetric"
 
 [[lean_lib]]
 name = "Checks"
+
+[[lean_lib]]
+name = "Challenge"
+leanOptions = { warningAsError = false }
+
+[[lean_lib]]
+name = "Solution"

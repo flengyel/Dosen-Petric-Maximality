@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/usr/bin/systemd-run",
+    "--user",
+    "--scope",
+    "--quiet",
+    "--property=Delegate=yes",
+    "--",
+    "/usr/bin/python3.13",
+    "-I",
+    "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/upstream/PalomarSubmission-14aa8d6b3c2f14a8540605e37144560b9a00e7e7/scripts/supervise_cgroup.py",
+    "--parent",
+    "self",
+    "--collect",
+    "--deadline",
+    "20",
+    "--grace",
+    "1",
+    "--cwd",
+    "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate",
+    "--status",
+    "/tmp/palomar-supervisor-probe-krvz7s23/status.json",
+    "--",
+    "/usr/bin/true"
+  ],
+  "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate",
+  "exit_status": 0,
+  "seconds": 0.479,
+  "stdout": "",
+  "stderr": ""
+}

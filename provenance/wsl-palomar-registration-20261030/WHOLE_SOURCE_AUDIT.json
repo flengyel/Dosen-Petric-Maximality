@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "policy": {
+    "schema_version": 1,
+    "module_required": true,
+    "maximum_lines": 10000,
+    "files_checked": 1870
+  },
+  "regular_lean_files": 1870,
+  "maximum_physical_lines": 2278,
+  "prebuilt_artifacts": [],
+  "symlinks": [],
+  "submodules": [],
+  "lfs_pointers": [],
+  "dependency_packages": 0,
+  "unchanged_manuscript_files": 11,
+  "historical_relocations": 4,
+  "main_head": "2c8e0968ad4fa3d318b98bcab4e531bb728b86cd",
+  "main_status": "",
+  "stash": "dedfd8fc8cd49930e9a162d5be585215b062a43c"
+}

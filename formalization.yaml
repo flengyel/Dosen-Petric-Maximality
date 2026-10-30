@@ -1,0 +1,147 @@
+# Release candidate: Apache-2.0 and public release await the author's concrete decision.
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/99c678e569c7c4c0772db297c5ddd5e4c9b6322e/schema/formalization.schema.json
+version: v0.4
+project:
+  name: Maximality of the Došen–Petrić Boolean Category
+  description: 'The freely generated zero-identity Boolean category of Došen and Petrić is maximal: every
+    congruence preserved by the proof operations and uniform substitution is either equality or identifies
+    every pair of parallel arrows. The Lean development constructs the equation-generated category and
+    proves cut elimination and Boolean coherence, then proves maximality through both a symmetric-fold
+    argument and the manuscript''s short argument using two particular isomorphisms. It also formalizes
+    the model corollary and the occurrence-substitution, finite-ordinal and structural-diagram constructions
+    in the appendices. The registry selection compares the two maximality proofs, the congruence dichotomy,
+    a nonzero literal identity and the absence of arrows from the terminal object to the initial object.'
+  authors:
+  - Florian Lengyel
+  responsible_maintainers:
+  - Florian Lengyel
+  license: Apache-2.0
+classification:
+  arxiv:
+  - math.CT
+  - math.LO
+  msc2020:
+  - 03G30
+  - 03F07
+  - 18A32
+sources:
+- title: Maximality of the Došen–Petrić Boolean Category, version 8
+  authors:
+  - Florian Lengyel
+  type: paper
+  relationship: formalizes
+  id: https://github.com/flengyel/Dosen-Petric-Maximality/blob/6a66b14b382aac214b52c055b8bf281b35302239/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v8.tex
+  location: Theorem 2.1; Sections 2–6; Appendices A–C; October 29, 2026.
+  author_endorsement: participated
+  note: The manuscript is retained with the substantive Lean development. This is source-based formalization
+    of the manuscript's result. Its v8 mathematical content is unchanged from v7. The selected declarations
+    and the broader complete-paper correspondence are identified separately below.
+- title: Proof-Theoretical Coherence
+  authors:
+  - Kosta Došen
+  - Zoran Petrić
+  type: book
+  relationship: formalizes
+  id: https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf
+  location: King's College Publications, 2004; revised author version September 2007; the zero-identity
+    Boolean presentation in Sections 14.2–14.3 and the cut-elimination and coherence arguments used by
+    that presentation.
+  author_endorsement: not-contacted
+  note: The development includes proofs of the cut-elimination and coherence inputs needed for the actual
+    source category. It does not attribute the manuscript's maximality theorem to this book. Appendix
+    C identifies two source rank corrections and gives their concrete formal correspondences.
+- title: Isomorphic formulae in classical propositional logic
+  authors:
+  - Kosta Došen
+  - Zoran Petrić
+  type: paper
+  relationship: background
+  id: https://doi.org/10.1002/malq.201020020
+  location: Mathematical Logic Quarterly 58 (2012), 5–17; Lemma 7; author version arXiv:0912.1271v3.
+  author_endorsement: not-contacted
+  note: The manuscript relates its particular q/e isomorphisms to the occurrence-bijection construction
+    in Lemma 7. The actual arrows and their inverses are proved in the source category; no assumed isomorphism
+    field replaces those constructions.
+related_formalizations: []
+status:
+  scope: 'The full-paper production development is complete at mathematical source 630c4b6e47da16a1434476a211fd29ce6adc5569
+    and completion head 6a66b14b382aac214b52c055b8bf281b35302239. This candidate selects five actual-source
+    statements: two maximality proofs, the congruence dichotomy, a nonzero literal identity, and an empty
+    hom-set. The retained complete-paper claim map covers the additional coherence, model and appendix
+    results. The exact local build, definition comparison and independent replay outcomes are recorded
+    in docs/PALOMAR_REGISTRATION_LOCAL_REPORT.md. Official full preflight, service verification, editorial
+    outcome and registration remain pending.'
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+  - propext
+  - Quot.sound
+  - Classical.choice
+automation:
+  methods:
+  - method: agent
+    models: []
+    framework: OpenAI Codex / ChatGPT
+    tool_setup: Local WSL Codex developed Lean proofs and ran builds and audits. ChatGPT research/review
+      sessions prepared mathematical instructions, inspected source and evidence, and reviewed the manuscript
+      and its correspondence with the formal statements. Exact historical model identifiers and aggregate
+      costs are not reconstructed here.
+  notes: Florian Lengyel is the human author and responsible maintainer. The author supplied the mathematical
+    objective, corrected scope and presentation, and requested the complete-paper formalization. AI systems
+    are credited here rather than listed as authors. The manuscript contains the author's authorized disclosure
+    of ChatGPT assistance.
+fidelity:
+  divergences: The three maximality statements retain the manuscript's nonempty-variable hypothesis; the
+    underlying production theorems are stronger. The compact primitive congruence acts on actual typed
+    raw terms and contains all generating equations. Uniform substitution acts on terms and both endpoints.
+    PalomarCorrespondence proves descent to the actual quotient, the inverse restriction of full proof
+    congruences, pointwise relation correspondence, substitution closure, totality and distinctness correspondence,
+    and admissibility of derived negation. Its closed-class extension uses the previously proved fragment
+    dichotomy. The selected short proof instead uses the fragment directly, actual source isolation, uniform
+    contextual collapse and ShortProof.total with the particular q/e arrows. Empty hom-sets and distinct
+    occurrence tags are preserved. No new priority or exhaustive novelty assessment was performed during
+    packaging.
+review:
+  status: agent-reviewed
+  reviewers:
+  - OpenAI Codex local source and manuscript reviews
+  - ChatGPT source/evidence and mathematical-writing review at a2467d0
+  notes: The full development has AI-assisted author-side reviews in docs/reviews/FULL_PAPER_6A66B14_REVIEW.md
+    and docs/reviews/FULL_PAPER_6A66B14_WRITING.md. The new statement, definition correspondence and metadata
+    are reviewed separately in docs/reviews/PALOMAR_REGISTRATION_REVIEW.md and docs/reviews/PALOMAR_REGISTRATION_WRITING.md.
+    These are agent reviews, not external human peer review or Palomar acceptance. Independent-kernel
+    outcomes are recorded separately in the local report.
+alignment:
+  namespace: DosenPetric.Palomar
+  statements:
+  - source: Manuscript Theorem 2.1; alternative fold proof in Section 6
+    lean: DosenPetric.Palomar.maximality
+    module: Solution
+    status: proved
+    note: The source/fold proof uses the fully instantiated actual equation-generated presentation through
+      fragment_maximality. Raw/quotient correspondence is proved in PalomarCorrespondence.
+  - source: Manuscript Theorem 2.1; q/e proof in Section 5
+    lean: DosenPetric.Palomar.short_maximality
+    module: Solution
+    status: proved
+    note: The actual q/e proof uses normalized_literal_context, all_contexts and ShortProof.total directly,
+      without invoking the fold maximality theorem or manufacturing totality through the full-congruence
+      extension.
+  - source: Manuscript Theorem 2.1, equality/total dichotomy
+    lean: DosenPetric.Palomar.congruence_dichotomy
+    module: Solution
+    status: proved
+    note: Generated equality is Derives; quotient equality, full congruence relations and totality have
+      proved correspondence.
+  - source: Manuscript Section 3, nonzero variable identity
+    lean: DosenPetric.Palomar.identity_ne_zero
+    module: Solution
+    status: proved
+    note: The actual quotient witness identity_ne_primitive_zero rules out generated equality with zero
+      at each supplied variable.
+  - source: Manuscript Sections 2–3, preservation of empty hom-sets
+    lean: DosenPetric.Palomar.no_top_to_bot
+    module: Solution
+    status: proved
+    note: The actual source truth interpretation proves that no raw term inhabits the terminal-to-initial
+      hom-set.

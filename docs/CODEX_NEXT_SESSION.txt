@@ -1,38 +1,43 @@
-Current task: prepare the completed Došen–Petrić formalization for Palomar registration.
+Current task: the local Palomar registration release candidate is verified.
 
-Read and execute docs/CODEX_PALOMAR_REGISTRATION.txt. It supersedes the previous
-continuation's statement that no Palomar work is authorized. The author requested
-on 30 October 2026: "Well, then we should do whatever is needed for Palomar
-Registration."
+Do not reopen the completed full-paper proof sequence. Preserve all existing
+mathematics, manuscript versions, historical evidence, the original stash and
+unrelated checkouts. Main remains clean at 2c8e096; preparation is on the isolated
+private branch palomar/registration-20261030. The previous continuation is retained
+in docs/history/CODEX_NEXT_SESSION_2C8E096.txt.
 
-The full-paper mathematical formalization is complete. Preserve it. Mathematical
-source: 630c4b6e47da16a1434476a211fd29ce6adc5569. Completion head:
-6a66b14b382aac214b52c055b8bf281b35302239. The source/evidence and writing reviews
-are committed at a2467d0fc64704be27e0eab8e1726c24fb5766b9:
-  docs/reviews/FULL_PAPER_6A66B14_REVIEW.md
-  docs/reviews/FULL_PAPER_6A66B14_WRITING.md
-The latter two reviews still need byte-verified delivery to Windows Downloads.
-The previous continuation is preserved in docs/history/CODEX_NEXT_SESSION_A2467D0.txt.
+Read AGENTS.md, docs/CODEX_PALOMAR_REGISTRATION.txt,
+docs/PALOMAR_REGISTRATION_LOCAL_REPORT.md, docs/PALOMAR_REGISTRATION_STATUS.md,
+and the PALOMAR_REGISTRATION_REVIEW/WRITING reports. Exact immutable candidate
+identity and hashes are recorded in the release-candidate evidence after the
+source commit. Later evidence/delivery commits do not change the verified source.
 
-Proceed through the independent Challenge/Solution package, exact statement and
-shared-definition comparison, local kernel verification, current Palomar
-metadata, and a concrete release candidate. Preserve all completed mathematical
-results, manuscripts, historical evidence, the stash and unrelated work. Use an
-isolated worktree if the main checkout has newer work. Do not ask routine
-implementation questions or reopen completed proof branches.
+Completed locally: five production endpoints, raw/full quotient correspondence
+including derived negation, independent core-only Challenge, exact public
+Comparator, extended 360-definition/five-type audit, complete selected proof
+closure, Lean/NanoDa/authenticated con-ron acceptance, six packaging controls,
+strict verification of 887 production/check files and 14,907 declarations, and
+all 1,870 committed Lean source headers/closures/layout checks. All 11 manuscript
+files are unchanged. Earlier full-paper 35 public checks/74 controls remain
+retained evidence. No official reusable full preflight or service stage has run.
 
-Current policy and verifier pins, the proposed five selected declarations, a
-metadata proposal, a proposed Apache-2.0 license, and the full preflight workflow
-example are linked from docs/PALOMAR_REGISTRATION_STATUS.md. The proposed license
-is not an adopted repository license. Build and review the complete candidate
-before presenting its exact publication/license/submission decision. Respect any
-later explicit author approval already given; do not request it again.
+The prepared root Apache-2.0 file is a proposal on the private candidate. Main
+has no adopted root license and repository visibility remains private. The next
+required author decision identifies the exact candidate SHA, license including
+the original manuscript, publication scope of the substantive repository and
+history, root comparator.json, and Florian Lengyel's responsible maintainer
+relationship. Reuse any later explicit approval of those exact values; do not
+ask again or introduce routine implementation checkpoints.
 
-An actual Palomar submission requires the public immutable source, passing
-official full preflight, and the submitter relationship. Palomar separately
-requires the author to see its eventual review before deciding to register that
-review's digest. Do not drive a browser sign-in on the author's behalf.
+After authorized publication/license action, run the exact pinned full reusable
+workflow, for the immutable candidate, with mode full/profile palomar-standard-v1
+and request preflight001. Require mechanical pass before actual intake. Recheck
+current upstream and service instructions immediately before intake; do not
+automate browser sign-in. Keep service review private and show it to the author
+before any registration request for that review's digest.
 
-Keep local proof completion, package verification, independent kernel replay,
-official preflight, service verification, editorial review and registration as
-separate recorded statuses. No Palomar verification or registration has yet run.
+Downloads delivery uses committed bytes, preserves differing files, and records
+exact paths/hashes/source commits in the registration delivery register. Keep
+local mathematical completion, packaging, comparison, independent replay,
+official preflight, service verification, editorial outcome and registration
+as distinct statuses.

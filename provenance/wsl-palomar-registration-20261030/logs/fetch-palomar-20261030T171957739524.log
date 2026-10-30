@@ -1,0 +1,16 @@
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/flengyel/src/Dosen-Petric-Maximality/.codex-work/upstream/PalomarSubmission-14aa8d6b3c2f14a8540605e37144560b9a00e7e7/.git/
+From https://github.com/PalomarRegistry/PalomarSubmission
+ * branch            14aa8d6b3c2f14a8540605e37144560b9a00e7e7 -> FETCH_HEAD
+HEAD is now at 14aa8d6 Merge pull request #184 from PalomarRegistry/fix/verso-dotted-docstring-attribution-20261027
+Pinned verifier source: /home/flengyel/src/Dosen-Petric-Maximality/.codex-work/upstream/PalomarSubmission-14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+No verifier or submission service has been invoked.

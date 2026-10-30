@@ -1,0 +1,18 @@
+{
+  "command": [
+    "bash",
+    "scripts/verify.sh"
+  ],
+  "actual_command": [
+    "flock",
+    "-n",
+    "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/build.lock",
+    "bash",
+    "scripts/verify.sh"
+  ],
+  "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate",
+  "exit_status": 0,
+  "seconds": 5.465,
+  "log": ".codex-work/palomar-registration-20261030/logs/strict-candidate-20261030T181514206146.log",
+  "sha256": "50012d6e059f3d23320d8b674a4fa4efe61086ae8a1498d39e31b7a4302650d2"
+}

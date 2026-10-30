@@ -1,0 +1,912 @@
+[
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/CHALLENGE_EXPORT.log",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "bytes": 1
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/CHALLENGE_SELECTED_EXPORT.log",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "bytes": 1
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/COMPARATOR_ACTUAL.log",
+    "sha256": "a4c054116f47fb75735bf45206014ac34a17452cae18f9d5dfb3ef526be63521",
+    "bytes": 403
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/COMPARATOR_SELECTED.log",
+    "sha256": "ba70bf705f67a7d50936586b59f5ed2490bf8d606a6f401eebb1161515e442d4",
+    "bytes": 174
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/CONTROL_CHANGEDEQUATION.log",
+    "sha256": "23c9042645602dbdf5c79eebec23ad1676e5cd39954f86f24031bf33dee10366",
+    "bytes": 108
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/CONTROL_CHANGEDSELECTEDTYPE.log",
+    "sha256": "568d46c1cca8ad9b71cdad486c9007b60405c4aeafd4c280a69177b081652675",
+    "bytes": 96
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/CONTROL_ILLICITAXIOMHELPER.log",
+    "sha256": "8fee41bb07e13311f4370248b78054a0d47e82e6cee124b31d2b927bdb4c3e2f",
+    "bytes": 67
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/CONTROL_ILLICITAXIOMHELPER_COMPILE.log",
+    "sha256": "f7e0a2d6d3df6f9f6244fa8564cadc554ab93e6e5185487d2e33d7ca20e2655c",
+    "bytes": 1426
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/CONTROL_SELECTEDCHALLENGEHOLE.log",
+    "sha256": "61719c184c75bd81a30c4a2ccf40257194509ad21cf3a9e537652f2219cd2f72",
+    "bytes": 42
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/CONTROL_SELECTEDCHALLENGEHOLE_COMPILE.log",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "bytes": 1
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/DECLARATION_ENUMERATION.log",
+    "sha256": "2d1bc5587c0cf3e3220c78c51ef876ea9b6c1f0416b92cafc8df6d3a3dedc4a3",
+    "bytes": 48
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/DEFINITION_AUDIT_FINAL.log",
+    "sha256": "0327c629055f0b6c6c03ba414d0487a0f71034fe00f5f73ae302907955f0337c",
+    "bytes": 118
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/SOLUTION_EXPORT.log",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "bytes": 1
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/SOLUTION_FINAL_EXPORT.log",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "bytes": 1
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/SOLUTION_SELECTED_EXPORT.log",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "bytes": 1
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/build-Solution-20261030T174736525243.json",
+    "sha256": "f9d6ed605305bdc3e8906500d17dee51fea786b0eb2355afc5f4b8d2bbb8efe9",
+    "bytes": 553
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/build-Solution-20261030T174736525243.log",
+    "sha256": "a3d33efdf4464eb389d873f757f750ff692ee031616f2303dd40bbc36c303ff7",
+    "bytes": 4411
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/build-Solution-20261030T174758474593.json",
+    "sha256": "364db2db265e05f180f98431561b663efefe1828c17428b3e98aeee027f099b0",
+    "bytes": 552
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/build-Solution-20261030T174758474593.log",
+    "sha256": "f4fbc19bb78e119039bb4da3a46af5494acf1354aff242a7b1bf378976ed0b74",
+    "bytes": 1360
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/build-Solution-20261030T174813124377.json",
+    "sha256": "48f8f93dfc7f49f2ca639d2cd748132faa8de4ff49a9f299e84e02ca8945a559",
+    "bytes": 553
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/build-Solution-20261030T174813124377.log",
+    "sha256": "341f509e57c144681f513457787deb1eeb80e9646b384af7a05273bb6a48f941",
+    "bytes": 136
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/build-baseline-20261030T172026619897.json",
+    "sha256": "7aaf208b35ef35a9d24de531eddabd069e42f9c532775cdf2beb2d53563de8f9",
+    "bytes": 524
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/build-baseline-20261030T172026619897.log",
+    "sha256": "52f5d7427871b238d0722b1fd451e07daf527156b9d2225e9bcf38aeb21994c1",
+    "bytes": 56030
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/challenge-lake-build-20261030T181510725844.json",
+    "sha256": "8e8bf13b6f47000744935a86facd8d4e7a3f96b41b4fb17aa2910b51cb873e84",
+    "bytes": 561
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/challenge-lake-build-20261030T181510725844.log",
+    "sha256": "e3e0de02e906db71d62dacbd1ce3f6741e14e1d3163e69db4b45307d809edae1",
+    "bytes": 352
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/download-zstd-20261030T173345132111.json",
+    "sha256": "edf2f2491eddf4c736d4651069b04e4d92b021eeb838d2fc3802a4b25b491ab7",
+    "bytes": 467
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/download-zstd-20261030T173345132111.log",
+    "sha256": "170f9fc2173d7028cb211fcb5991dca77406a65d9f2cb88f5183375fcc8e084b",
+    "bytes": 119
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/fetch-palomar-20261030T171957739524.json",
+    "sha256": "4d8dbdf78680b7bb541e9ff41d3b8a6a66d770062efa603a82bbd1406bcbb307",
+    "bytes": 410
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/fetch-palomar-20261030T171957739524.log",
+    "sha256": "c21255ca3456b2d10122d38ce61541bd3fea7aad62374a34c52a1b8be0a526a7",
+    "bytes": 1096
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174856448227.json",
+    "sha256": "bce995a57b26bce20ee1adbb4e358fbe37a9d4c856e9338935d42abaffb2ad6f",
+    "bytes": 874
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174856867122.json",
+    "sha256": "1545930cf7be1d9a5c81bc461af841222c96a3e25ced13ad0183511edbac61db",
+    "bytes": 10566
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174914711628.json",
+    "sha256": "3533ba63f49aa902cb627ae0602043217dbd4e797e2d318f1da956a78d7f9e64",
+    "bytes": 874
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174915130663.json",
+    "sha256": "bc35d396e956c9a1b483c2ffdbc8f181258b37d41938cf1438d908c8df722de4",
+    "bytes": 6152
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174916812645.json",
+    "sha256": "22c6275a538926fb0798dfb55b6b796e3c4e30e21cc546169fc3b3a24711bb8e",
+    "bytes": 5786
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174918835111.json",
+    "sha256": "90971c8927ebc87666deff3298982be7a4cc6dc8814242850254108e6d992255",
+    "bytes": 6150
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174919709465.json",
+    "sha256": "656c3ddc64a2baf0fbc3021b1c4740317b5be4882fbe5c9b7d245891de9d9339",
+    "bytes": 5784
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174921909973.json",
+    "sha256": "c6c142934bde827be80c3763b0aadc88768cb3b25e472f1c1492242f88e99ff1",
+    "bytes": 6144
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174922724779.json",
+    "sha256": "1d08f2d90105d2eaa280075b2c560733dc67e2cec32cf4caa952373b41934656",
+    "bytes": 5778
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174924335677.json",
+    "sha256": "82b9e78811de28df5d313f7fc21737ebfb12df31c63c57371355a8768e775c16",
+    "bytes": 6158
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174925374704.json",
+    "sha256": "88a3fb560f62c9d75702a74ccbfa1f1f9a0c672e0cbc498a89ebc5580fd62946",
+    "bytes": 5792
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174927498208.json",
+    "sha256": "05e87b24ae18e8492cfe70b1ea38ed12113d102959cd8b084146479b428cc248",
+    "bytes": 7095
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174928701942.json",
+    "sha256": "78ae22ee5eafe59e80d9c939efaa5f68f56abfeb37d4828b382b8c04543ab76b",
+    "bytes": 6960
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174929635925.json",
+    "sha256": "d9272d38ca006f86dd23d46b0fd64fb87ea8ea2d0a780fd54674c6a5afa91f5f",
+    "bytes": 7399
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174930925798.json",
+    "sha256": "52bf0d6224ab5900f3107fb4c9e2f4078344a38b33def27ffe9d1a9c09ba3091",
+    "bytes": 7021
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174931640985.json",
+    "sha256": "eae61a30d87ec916299f34ef11038db04ca81dd49de049abd54d23fcf46a3e0a",
+    "bytes": 4799
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T174946382537.json",
+    "sha256": "0c5aad0c4e3fd855954a423308b70e9f3736d2a070f36ba1c3c03beb97dffb66",
+    "bytes": 4867
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175000214197.json",
+    "sha256": "8abf6dd6544b8082055beaee65c4d22e5d9ab1f820a89a3211c7e12ce4bf2bbe",
+    "bytes": 6459
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175004495962.json",
+    "sha256": "00aedce72f00288d0179b7a238b4af58a7d8b2e32268f2504cdf71bca8ceeb91",
+    "bytes": 5830
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175004981634.json",
+    "sha256": "c77f2c1615e5abc44333aa805a46fb1570406687bfcae50ab77b8dc520687fae",
+    "bytes": 5776
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175036181532.json",
+    "sha256": "40bafc0e6999d96fd5ee25b863a95e0fb8fb6416cd93bbf5e8b563e909bd83d3",
+    "bytes": 826
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175036603359.json",
+    "sha256": "8d5bcd3342db2a4631bce3c651573b94410f1c40bb80fd4f7e134ba81d29b9cd",
+    "bytes": 10116
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175100679379.json",
+    "sha256": "c54bced01b93547b48562283d836e1c102acc53cf9ca4f41216f5e574bf8a4ba",
+    "bytes": 826
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175101447659.json",
+    "sha256": "14a231b7b4feea1c1c3d85de783f12e3ff15da3b7932b0561d16acf71c34bb9c",
+    "bytes": 5210
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175113351778.json",
+    "sha256": "9ab0f15699ce5bc57f296f038bb3a857d77ed983b82bb8a8cd116f0512ae7e15",
+    "bytes": 22809
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175115586754.json",
+    "sha256": "c126f7c68a70f86bff7c5e96dcee18b95ee814fe88ba49c65ac5785712e613bf",
+    "bytes": 24473
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175339920084.json",
+    "sha256": "45facc6122ebbd47f88bd3b0f74fe5e238b8f9315b8ee8ec539b95a5934022b5",
+    "bytes": 826
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175340287946.json",
+    "sha256": "4d88969f0def59f9bf1e8bebdef884392c89cc242f317e1b012db59f43895212",
+    "bytes": 6480
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175344540661.json",
+    "sha256": "ee8d7c022ff44c902d0d0f17cf9b0ad590f5b67e1a13d1d58d0906235fd0d305",
+    "bytes": 5848
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175345026658.json",
+    "sha256": "8b470067b240d1aca1ddccdf88b40bffc88051fa146b5e294fb399c4cb43f431",
+    "bytes": 5794
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175413742863.json",
+    "sha256": "679de2dfac738d889cddee3e79963d3995ee4d38b8ae6c6d77ec6ad587db7628",
+    "bytes": 826
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175414212465.json",
+    "sha256": "966bfd5db41d49b5149639fb9946153e86b475cbe188beca1c78cfa4a986a902",
+    "bytes": 5226
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175418962766.json",
+    "sha256": "cc1ef9caab22d06ca24227e7c7305263af91a89999e9506f1d9437d64273800d",
+    "bytes": 22970
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175420923677.json",
+    "sha256": "39ddcd07faec54112da3e2a7734d5dd0097c9dc7329206aafdfb44b502607368",
+    "bytes": 22918
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175446905847.json",
+    "sha256": "6daee8598b1abfe365935847cc75a3b200c318547d07556f6d9e9dac8ef41d77",
+    "bytes": 5822
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175608418629.json",
+    "sha256": "942819f31345679dc2e901763a33dd5218f7d7d2a669977c0b675eda093496da",
+    "bytes": 825
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175608788960.json",
+    "sha256": "cd5377a05065a9b3cb915b954755ca7f362f639ca34c8c406e6166e5cae82962",
+    "bytes": 5225
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175615746869.json",
+    "sha256": "d2b28994b3d768f4d20f0e4a59e0568e117b439d2cd8930e19e7c48f40af711e",
+    "bytes": 5729
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175851728528.json",
+    "sha256": "f61af91b984f26c397b997094a3a2c897ee66453d05d323851eeec0efad4ce20",
+    "bytes": 879
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T175852149443.json",
+    "sha256": "15757c654292f59477190fdcf97e5d7e06592a620f2d078e0af3874bb5814516",
+    "bytes": 6694
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T180239046174.json",
+    "sha256": "354b71d5a4151616f18c6804de734a995f5a124fc40c55aa58d78e3d6b6a4b84",
+    "bytes": 826
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T180239465385.json",
+    "sha256": "2fb71362b72b6bc3cb30941e021d071ee140521b83ff4c5d5bfb133c0403eaa2",
+    "bytes": 5572
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T180241727080.json",
+    "sha256": "6ee22219466cf3579071143d00836bfc34fb5757c12ea6eacbb76a64068c63da",
+    "bytes": 5520
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T180303496169.json",
+    "sha256": "750c1e94a56415f670c6b6aadd8f53a92531543579a9ac30044f8972739244ed",
+    "bytes": 6597
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T180445848342.json",
+    "sha256": "747db89e9fca7580cd1c25458f96a6b7da2eb0e3ed07ebf610ed3d87638b0b2e",
+    "bytes": 4714
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T180736598664.json",
+    "sha256": "f1c8085d3c1fb1c1a2b31803366db7914d95f159405542d4382f11b580e45013",
+    "bytes": 826
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T180736967962.json",
+    "sha256": "368cd64cbedc82ddd27036145b72cff22dcb92facc208b22f8a1ebde4c80fd1b",
+    "bytes": 5547
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T180839018547.json",
+    "sha256": "60148db84fcfa3b1c8ed026f5e18193b9061fddee9a8c26795fb26cbdb3c0610",
+    "bytes": 826
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T180839385943.json",
+    "sha256": "e642293439c7e0a7e2a9b0884f0553baaa2dbf57861cff84a16c17ed38b24c38",
+    "bytes": 5444
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T180934273701.json",
+    "sha256": "31fd844817b84acfe4a04c851e2e0cba43cba00c1c0a34ce4c5133b65af651fb",
+    "bytes": 826
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T180934642470.json",
+    "sha256": "22b80c24a4fcbfb229946704c0c922e3763c0300f41ea698eda1097b0bd58e40",
+    "bytes": 5488
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181039897687.json",
+    "sha256": "86a5111a4e8b71b7892cb8debff78f03258fc723cfad2b6c814961324ad4b35d",
+    "bytes": 826
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181040315249.json",
+    "sha256": "067373107697e7cda64e54d2796a3c9f7e4d4e37db4652e8de5de205f41eaa0f",
+    "bytes": 6822
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181154159099.json",
+    "sha256": "fc426b08a71ba8f04f982be359dfecd2eacf2c3343575188b1e49d0d2d046969",
+    "bytes": 910
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181154578477.json",
+    "sha256": "ea6705976049172c8885ca17b18f3a02091beff7a4e20a7a669d7eea6e99dbe5",
+    "bytes": 7730
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181159706933.json",
+    "sha256": "875224f6de4bacece142e46e141831bfdababa4a12c5db648a2ac0d3127dea7e",
+    "bytes": 6852
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181201988520.json",
+    "sha256": "df9ddb70d99dce3bc9009991a27f7dbbf77dd38635d1729d4e820ecc1a5bf24a",
+    "bytes": 6798
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181205210708.json",
+    "sha256": "8353946c5a750445e6aeaee45d73597b2caeeecfd798b60316002d64440141a3",
+    "bytes": 5710
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181209475817.json",
+    "sha256": "3acdd0e174457a39752facba3c87faf5670e27063e987380d3b75770cefc542e",
+    "bytes": 6892
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181223317482.json",
+    "sha256": "61d1856ca6d1b10e7c4852c86b95f3d50186e588b489112c84a8031f25975998",
+    "bytes": 7806
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181229027850.json",
+    "sha256": "67c221f0d2377126b0f1c6512edde8b93419441226e1a1eee8aef9d4d8b199e4",
+    "bytes": 6904
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181231035054.json",
+    "sha256": "e6cb24583e72db8a989eb1d5d64cfacda48b92fbeaa44158d49af115b6053427",
+    "bytes": 6850
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181232697095.json",
+    "sha256": "19c244e656c6b48e460eaf03f3250902f9807027aa7bd0bbac1ab5e6c20259d6",
+    "bytes": 5723
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181235934095.json",
+    "sha256": "91536b3fcd937b6d3ef25208976ee911ed27368c14a2e0d69c49a7b4b09b6e7f",
+    "bytes": 6944
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181251412900.json",
+    "sha256": "c10e41de3c5288b2b452f237f984888402b19123fe225c50546531c54e15f094",
+    "bytes": 7633
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181253926412.json",
+    "sha256": "eb1c3e631d5f2de522f1fe7bba508eb7c08cb9044d7622535db1e95574330586",
+    "bytes": 6491
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181326750877.json",
+    "sha256": "a74473e7e0b0b9d30644f93086abb50444db89e6ab1f087e67be364ffb4369bd",
+    "bytes": 6815
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181341113985.json",
+    "sha256": "25f062f60f2a90aefd79a7abc98b754092c3ac551a42753ac890ad4e8e3ba4a7",
+    "bytes": 6227
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181344538199.json",
+    "sha256": "b412428f8c84a514b170bc729a7ebafc69569b2aa6a0c280b846827ad79557bf",
+    "bytes": 6514
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181348421291.json",
+    "sha256": "38f2d3118955db04bc1a864fbe89b35211b32c725f316b778a9d7e23c5d9582c",
+    "bytes": 6828
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181351331013.json",
+    "sha256": "142b04265f36e9e01253c7e5c3cd63671b32e7182cf3c13ca8949cbc4e69d499",
+    "bytes": 5110
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181353957480.json",
+    "sha256": "b7d982a7e65cbb290df85ccf50170136e54222688c12862110bc1237c89dd769",
+    "bytes": 5117
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181356587453.json",
+    "sha256": "82c8631e620736df8f67fdc8d9e494a62108539df6f7bf89f0530f0dcd180989",
+    "bytes": 5127
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181520394974.json",
+    "sha256": "748b5828f5b54139cd85a973f9c593733d06126df2dc93bb3b496eb88cfac122",
+    "bytes": 826
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181520762071.json",
+    "sha256": "6bb0d18ad1e8896114ffbc09d7044328bc67e6a3be2688bf01a792013f3d8ef3",
+    "bytes": 125108
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181521283629.json",
+    "sha256": "c950668995bab18d9a6c818e1241a6dcbab5bd1bde648cd96f2f1ecb27aae486",
+    "bytes": 39578
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181521697312.json",
+    "sha256": "1ca707f45300b8634c1db8f6b1906c84a313ac25e90d28d0ce687a88fcd32609",
+    "bytes": 37253
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181522103154.json",
+    "sha256": "951409316e7f4be2b9aae52c3dad64cdff3564e914cacbd00ffc6608fdd8d830",
+    "bytes": 36396
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181522566648.json",
+    "sha256": "b08bf359ae98abbb63bfe0706edaf3a6912b43a45fe1b87f9f29ee876687112a",
+    "bytes": 35812
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181522973462.json",
+    "sha256": "c0d3afbde264535ffa3a4a989233cd5213ed20313c4c75059f24f78356f43ce3",
+    "bytes": 36369
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181523381594.json",
+    "sha256": "37f96582ea9d2ac10d915f8a3e3b53445a8767601d9b51f6ef8df3a0b49301ad",
+    "bytes": 37032
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181523808848.json",
+    "sha256": "78725bba8f0c985323597cf09fa68b6c48022c1d5e05394985099633b45d701c",
+    "bytes": 39138
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181524241401.json",
+    "sha256": "aba4e95f6898fb2813ea7ca2862f0e1e4772dbd01a6c15914f5e0eb09be46515",
+    "bytes": 39301
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181524731420.json",
+    "sha256": "bb654f74f9f165fe01be636a25f9f4e42aa928a3cda4dac46b43daad69182df4",
+    "bytes": 37727
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181525145973.json",
+    "sha256": "01380095dee0ce22941ef110916a94462493d6a7d10045dccadd19d24f2df7c5",
+    "bytes": 37067
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181525572979.json",
+    "sha256": "ed09e9f59c1fb074b162b29ca5e82cefe933d3a0dc5a0a0c6235314be71ed77a",
+    "bytes": 37928
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181526098872.json",
+    "sha256": "0983badd36ced3ae29a058fd33bfe63680e5c6cdf5bffbd616c857813df68b4d",
+    "bytes": 36659
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181526656770.json",
+    "sha256": "1823d85269d274347e77ac462a95842f0067adc90e2b6914d7df374e07880117",
+    "bytes": 35115
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181527131180.json",
+    "sha256": "46a397334452e36304aef653f65146062b13d7fa3ca914fbb0b8ad0439558ad3",
+    "bytes": 34737
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181527618304.json",
+    "sha256": "f5401b8e800a97298e7789a0cf4952eef169a7f15e2959349dc3eec1c992dcca",
+    "bytes": 35684
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181528037301.json",
+    "sha256": "d421a76cfaf3cff0934f8f7ae2588298a494bc8cb61273f1783b419c28d77b92",
+    "bytes": 35269
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181528451115.json",
+    "sha256": "c274d9cf3748fa54f2d37878009ffb7b1497b0e54668b811b41f176bd9865dc2",
+    "bytes": 35272
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181528822970.json",
+    "sha256": "a43d06ed58202daefdfeec67dae69ef0160786eea9b5131d140a1cba4f760daa",
+    "bytes": 36179
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181529233711.json",
+    "sha256": "bb309ee68ce01e76b730bb329ea3d77d50a6196ce77a7cb9a17ea8a10d77ca64",
+    "bytes": 36110
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181529653904.json",
+    "sha256": "5dc3641b1234a837798c1e4c67c9d4a13a669fa64e586e4e6912e05aafb4a261",
+    "bytes": 36205
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181530069076.json",
+    "sha256": "744a56d88860ded16cafea2786ebb28eb1cd30f72b500ff23ea18ae65e451b0a",
+    "bytes": 36194
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181530483070.json",
+    "sha256": "073525fc76c1debdea0bb82709cd75be1adc0d0e6e5967eefa30f201cbf3abcc",
+    "bytes": 36292
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181530894146.json",
+    "sha256": "10b56e435a349c610ec8d7714f344dcf34d70e513e099daf217ce747b1fcc815",
+    "bytes": 35699
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181531319551.json",
+    "sha256": "b34a12d5122df5605d76ca03c4ad54d2c727cf436b3d3d86ce393fc28f1c9f25",
+    "bytes": 36183
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181531747908.json",
+    "sha256": "fb80db0ff360a342456204818ecf5586922d16d6bfb964481ad8f958c91e8531",
+    "bytes": 36181
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181532159586.json",
+    "sha256": "14d54f2eb9f29a405c92aad3b30de566da3b810a5b0eb9df22138717d8fdb287",
+    "bytes": 36506
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181532588512.json",
+    "sha256": "8cd120aa504048ce6c66140cb51eb74650caf6d101b46a69ec686f094a23e718",
+    "bytes": 38406
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181533016025.json",
+    "sha256": "91a926424cabaa8e11ee8ba2a784b379150fd547bd635ce812ea4418192fb77f",
+    "bytes": 35926
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T181533445870.json",
+    "sha256": "8bcdee1d54430e1411c6f2f5019096f0327ccf3969e89a3b0a76c683c05d35b1",
+    "bytes": 10866
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182643709895.json",
+    "sha256": "9e32c3e8c5e113b385f45a4a63d0fc7a3ac47c4e98957ed4f8eb927aeb2b4400",
+    "bytes": 826
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182644190226.json",
+    "sha256": "41db230a2c336fc268d60b0a12c38220383b2676a40b47f3c90be0c56e5f05ec",
+    "bytes": 5517
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182859975920.json",
+    "sha256": "d425755af2e354d55f3f8e53690eb371913e25d93489d125446b86b0e1e5ce39",
+    "bytes": 826
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182900343499.json",
+    "sha256": "c66e09e9bac39b1a558fc272f1ff889a0b9d03c7f9bd08a684c8ff0d69b69262",
+    "bytes": 125108
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182900771001.json",
+    "sha256": "1e9879cbee2f698185135751f6d6c32808e5abec417e2c1134f32a2346857237",
+    "bytes": 39578
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182901243516.json",
+    "sha256": "c705780922b06f7957f1baa3be94bf8b1ca4bbe47162305e9f382f0e1ce2704e",
+    "bytes": 37253
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182901727144.json",
+    "sha256": "809f2cf18551de28d32825874315067b45f3588ec46369152e87ad0f65476313",
+    "bytes": 36396
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182902195306.json",
+    "sha256": "9775fc6e1b0930db504ceb92d2b72640df4125e04f951fca7172211b6ea460b3",
+    "bytes": 35812
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182902652886.json",
+    "sha256": "bbca601644d71c97946e19c59f077bea60f90dcba4f56de3d49f0041fa1e823d",
+    "bytes": 36369
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182903081516.json",
+    "sha256": "d24c6e2f3e52d51102a7138ba38d13ac11a3fa025e1a6d7655ac7c3e23b63b6e",
+    "bytes": 37032
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182903520264.json",
+    "sha256": "a10591d28ab2a2db616cbf62dcb32f623eabdc1c9eaca69b1200319346cd33ed",
+    "bytes": 39138
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182903981159.json",
+    "sha256": "fb98082fc7669dfd8e7efa40de7a4cb66c0f24d91dc2aaf2007cb4eeff8956ba",
+    "bytes": 39301
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182904408426.json",
+    "sha256": "a5bc559255daf16dab01b9b35b5a07b229ebee56d8cd6695a8c51f11b34ef37f",
+    "bytes": 37727
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182904839903.json",
+    "sha256": "0ca05ada397a6824cf890d0192c8d41eaded0f21e49b41fc20c787cd78a80054",
+    "bytes": 37067
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182905269346.json",
+    "sha256": "c4e936d14e3cd10ea6592534fc2960e45fda2e7e14d2b22132a5365712aa07b4",
+    "bytes": 37928
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182905735091.json",
+    "sha256": "134b4a09364c8df28ef6ddeb79dafcb9401f2c0582163913545f385b64706dd4",
+    "bytes": 36659
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182906161830.json",
+    "sha256": "56314a07732442a74ac5a7d77ef400331ece822dceff91b57ee37e1538171acb",
+    "bytes": 35115
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182906584197.json",
+    "sha256": "26201180b9068fe8b7110677d92f74af5d32f8e1eb0e5ff7bab9d87267a5870d",
+    "bytes": 34737
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182906999600.json",
+    "sha256": "4ba7f94300531597a42357988f1fc6122cc19beb058208953d35765573d752ab",
+    "bytes": 35684
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182907460864.json",
+    "sha256": "348feffd2582e0cf299d056c94bcb4519630d30e2981b63ee15643e0f16621b9",
+    "bytes": 35269
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182907991987.json",
+    "sha256": "299c14b9adb929c8dfb5ce9b8b3006b8e3f9e607f1afce580b42486774717869",
+    "bytes": 35272
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182908424008.json",
+    "sha256": "60e21a9508e350f63ba9031073b441e5289d51c2668b6c89c03e16ddb55389d8",
+    "bytes": 36179
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182908851289.json",
+    "sha256": "46c347d6c2f919f5bce301b190ea6a2133de580af05715dd3a1265fa164ebd9f",
+    "bytes": 36110
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182909267508.json",
+    "sha256": "81d0f7b473f844c1431ce24c5d96c2b47f590eee68fe2311b1677166352610e8",
+    "bytes": 36205
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182909730940.json",
+    "sha256": "2bef0b6c770612e90beb904df45aa3c03a10ac7c5deec87d2a9145664bfb3b54",
+    "bytes": 36194
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182910155723.json",
+    "sha256": "98c1a39be848d43b7d669ff54a4dc7d5c4173146cbe3df0b743d5087e287c4d2",
+    "bytes": 36292
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182910568294.json",
+    "sha256": "1d8d38d824d57effafb629385771ba352187a107ef37c2fa76bffe819162f177",
+    "bytes": 35699
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182910986761.json",
+    "sha256": "83d4e50431bdb76f8c16540d0b64f609d800041dca1276f27d1c40fc2052dade",
+    "bytes": 36183
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182911425153.json",
+    "sha256": "5c7e59c7f424bc8c2f93b46c7e9c9414f8bf3a23d5e35329d287420922796462",
+    "bytes": 36181
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182911857472.json",
+    "sha256": "0e3e2d90f4d89e63c84734e297a23be6de0a5c6ba70f0ca2e9c055650834d754",
+    "bytes": 36506
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182912295494.json",
+    "sha256": "ce0c61aa3f22208c74e0ec6155cc458f5b0439dd74cb96e85c2dc24c6d6b707c",
+    "bytes": 38406
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182912781212.json",
+    "sha256": "1e819e8496e93f0e5962617ebb79db5e5eca053000486c55f4702fb4e645fef4",
+    "bytes": 35926
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/protected-20261030T182913193289.json",
+    "sha256": "54735dd4469c601a081f5a21395ded2c01aa0ba9981f70d6b796f4de7e7d1bc3",
+    "bytes": 10865
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/python-tools-20261030T173540322430.json",
+    "sha256": "26c896cd2f376d46a0dc300ec762b69e96cd187ab963293fb39a38f087e3df9a",
+    "bytes": 775
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/python-tools-20261030T173540322430.log",
+    "sha256": "f693220ce0e9c32ca552762a6b447fc5b651c1b4af0f1c1c5652c6f86edec53d",
+    "bytes": 1496
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/python-venv-20261030T173533704776.json",
+    "sha256": "3f2966902145c925070e4c565c62b208148039544424fc0c690e50b754322683",
+    "bytes": 660
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/python-venv-20261030T173533704776.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/solution-final-source-20261030T182642385851.json",
+    "sha256": "11eeaafa096173018da5a20268b01a441b09a10a78b644d0c752e52bd0ef7df2",
+    "bytes": 559
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/solution-final-source-20261030T182642385851.log",
+    "sha256": "8f5e25eee15d01af4712b57083195846ac70d716015830bb22052dbf43688ceb",
+    "bytes": 41
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/stage-candidate-20261030T182531723412.json",
+    "sha256": "e454faac0dc3fa6428820d6a41d62e94164673958ca5b088e88e403e2e4ed5b1",
+    "bytes": 439
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/stage-candidate-20261030T182531723412.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/strict-candidate-20261030T181514206146.json",
+    "sha256": "84b15bf3a044debef4ee3f8c4d325098ea1a4d8159c881971e1adc57eff7c3ef",
+    "bytes": 547
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/strict-candidate-20261030T181514206146.log",
+    "sha256": "50012d6e059f3d23320d8b674a4fa4efe61086ae8a1498d39e31b7a4302650d2",
+    "bytes": 338020
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/strict-final-source-20261030T182635469341.json",
+    "sha256": "6c5bb296e2f1933137ba62edf4d302b9f6c9ef44324a8ff930a942f2aee7c9bd",
+    "bytes": 550
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/strict-final-source-20261030T182635469341.log",
+    "sha256": "ca3000106306947e2807ecdec74bdab5c6d1ea213e758877bfea7b485ec7ff86",
+    "bytes": 356237
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/unpack-zstd-20261030T173347202746.json",
+    "sha256": "ef81bc23be16f6877087703de226a82bcffd3d0dab37d024733a1554f361bced",
+    "bytes": 915
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/unpack-zstd-20261030T173347202746.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/zstd-version-20261030T173347349170.json",
+    "sha256": "39e1fc238dd42a6392456a89979fc2501f8645fe3932d8fe7b7ea612248cd8fc",
+    "bytes": 643
+  },
+  {
+    "path": "provenance/wsl-palomar-registration-20261030/logs/zstd-version-20261030T173347349170.log",
+    "sha256": "f6d344e585f9a9ceb9500ff65355ce23bcc39dec9e4164aceab9da0a5ac3113e",
+    "bytes": 54
+  }
+]

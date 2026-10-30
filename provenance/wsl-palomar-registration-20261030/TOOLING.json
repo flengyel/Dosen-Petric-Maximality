@@ -1,0 +1,12 @@
+{
+  "zstd_package": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/tooling/packages/zstd_1.5.7+dfsg-1_amd64.deb",
+  "package_sha256": "6da09b6aad171ef9b50d6a2bb4c62f756b3561aac5e05b452b80516223e5e0f5",
+  "binary": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/tooling/zstd/usr/bin/zstd",
+  "binary_sha256": "3eb7744cf8fd1ecd46d617098ee870b3e7911fe570ffaba662c1c5b7d6456020",
+  "system_installation_modified": false,
+  "first_checker_install_failure": {
+    "exit_status": 1,
+    "cause": "tar exit 2: zstd: Cannot exec: No such file or directory",
+    "checker_archive_authenticated_before_unpack": true
+  }
+}

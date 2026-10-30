@@ -819,3 +819,7 @@ public import DosenPetric.PatternSubstitutionProfiles
 public import DosenPetric.PresentationSubstitutionAction
 public import DosenPetric.PresentationSubstitutionActionQuotient
 public import DosenPetric.ProfileComposition
+
+public import DosenPetric.PalomarDefinitions
+public import DosenPetric.PalomarCorrespondence
+public import DosenPetric.PalomarMaximality

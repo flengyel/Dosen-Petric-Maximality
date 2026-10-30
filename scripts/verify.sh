@@ -21,4 +21,4 @@ lake build
 cp lake-manifest.json "$out/lake-manifest.json"
 cat lake-manifest.json
 lake env lean -DwarningAsError=true Checks/Axioms.lean
-echo 'PASS: build and transitive axiom audit. Palomar verification has not run.'
+echo 'PASS: build and transitive axiom audit. See the registration report for separate Comparator/kernel and official preflight statuses.'

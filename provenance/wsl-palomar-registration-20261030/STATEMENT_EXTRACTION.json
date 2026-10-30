@@ -1,0 +1,18 @@
+{
+  "challenge_lines": 562,
+  "challenge_bytes": 23920,
+  "challenge_sha256": "2bbfaf6f18b1385adc6d36694f1b05a632e4ebc26a775ed455c60abf19b856f5",
+  "source_paths": [
+    "DosenPetric/Formula.lean",
+    "DosenPetric/PresentationSyntax.lean",
+    "DosenPetric/PresentationEquations.lean",
+    "DosenPetric/PresentationSubstitution.lean",
+    "DosenPetric/PalomarDefinitions.lean",
+    "DosenPetric/PalomarMaximality.lean"
+  ],
+  "intentional_holes": 5,
+  "definition_holes": 0,
+  "challenge_imports": [
+    "Init"
+  ]
+}

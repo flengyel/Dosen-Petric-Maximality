@@ -1,0 +1,12 @@
+✔ [735/758] Built DosenPetric.PalomarCorrespondence (754ms)
+✖ [756/758] Building DosenPetric.PalomarMaximality (544ms)
+trace: .> LEAN_PATH=/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate/.lake/build/lib/lean /home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate/DosenPetric/PalomarMaximality.lean -o /home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate/.lake/build/lib/lean/DosenPetric/PalomarMaximality.olean -i /home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate/.lake/build/lib/lean/DosenPetric/PalomarMaximality.ilean -c /home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate/.lake/build/ir/DosenPetric/PalomarMaximality.c --setup /home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate/.lake/build/ir/DosenPetric/PalomarMaximality.setup.json --json
+error: DosenPetric/PalomarMaximality.lean:57:4: Type mismatch
+  maximality R closed f g hne hfg
+has type
+  ∀ (f g : Term P ?m.137 ?m.138), R.Rel f g
+but is expected to have type
+  R.Total
+Some required targets logged failures:
+- DosenPetric.PalomarMaximality
+error: build failed

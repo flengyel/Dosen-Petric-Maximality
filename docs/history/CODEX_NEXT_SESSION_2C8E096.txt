@@ -1,0 +1,38 @@
+Current task: prepare the completed Došen–Petrić formalization for Palomar registration.
+
+Read and execute docs/CODEX_PALOMAR_REGISTRATION.txt. It supersedes the previous
+continuation's statement that no Palomar work is authorized. The author requested
+on 30 October 2026: "Well, then we should do whatever is needed for Palomar
+Registration."
+
+The full-paper mathematical formalization is complete. Preserve it. Mathematical
+source: 630c4b6e47da16a1434476a211fd29ce6adc5569. Completion head:
+6a66b14b382aac214b52c055b8bf281b35302239. The source/evidence and writing reviews
+are committed at a2467d0fc64704be27e0eab8e1726c24fb5766b9:
+  docs/reviews/FULL_PAPER_6A66B14_REVIEW.md
+  docs/reviews/FULL_PAPER_6A66B14_WRITING.md
+The latter two reviews still need byte-verified delivery to Windows Downloads.
+The previous continuation is preserved in docs/history/CODEX_NEXT_SESSION_A2467D0.txt.
+
+Proceed through the independent Challenge/Solution package, exact statement and
+shared-definition comparison, local kernel verification, current Palomar
+metadata, and a concrete release candidate. Preserve all completed mathematical
+results, manuscripts, historical evidence, the stash and unrelated work. Use an
+isolated worktree if the main checkout has newer work. Do not ask routine
+implementation questions or reopen completed proof branches.
+
+Current policy and verifier pins, the proposed five selected declarations, a
+metadata proposal, a proposed Apache-2.0 license, and the full preflight workflow
+example are linked from docs/PALOMAR_REGISTRATION_STATUS.md. The proposed license
+is not an adopted repository license. Build and review the complete candidate
+before presenting its exact publication/license/submission decision. Respect any
+later explicit author approval already given; do not request it again.
+
+An actual Palomar submission requires the public immutable source, passing
+official full preflight, and the submitter relationship. Palomar separately
+requires the author to see its eventual review before deciding to register that
+review's digest. Do not drive a browser sign-in on the author's behalf.
+
+Keep local proof completion, package verification, independent kernel replay,
+official preflight, service verification, editorial review and registration as
+separate recorded statuses. No Palomar verification or registration has yet run.

@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "module": "PalomarCanonical8cba36595bb2373247c7bae0.Challenge",
+  "canonical": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/verification/canonical-challenge/PalomarCanonical8cba36595bb2373247c7bae0/Challenge.olean",
+  "dependencies": [
+    "/home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/src/lean/Init.lean"
+  ],
+  "trusted_lean_paths": [
+    "/home/flengyel/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean"
+  ],
+  "artifacts": [
+    {
+      "path": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/verification/canonical-challenge/PalomarCanonical8cba36595bb2373247c7bae0/Challenge.olean",
+      "sha256": "40d73bfce1d0566b5a3a95b0628708358d72497f5d635d21f8e70deb3b76c058"
+    },
+    {
+      "path": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/verification/canonical-challenge/PalomarCanonical8cba36595bb2373247c7bae0/Challenge.olean.private",
+      "sha256": "dd03b417f627002d73551a388e2644765527fa7a701c3643d775905d1cbefb79"
+    },
+    {
+      "path": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/verification/canonical-challenge/PalomarCanonical8cba36595bb2373247c7bae0/Challenge.olean.server",
+      "sha256": "0028fe0b2efed315d8c14e61a7b081c1bbf861baec719cdd3cd56e1075042a39"
+    },
+    {
+      "path": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/verification/canonical-challenge/PalomarCanonical8cba36595bb2373247c7bae0/Challenge.ir",
+      "sha256": "b82f07ca02bbe8a75341e03a46c55e6406846a1206e990aa2a62c253e4b77e8e"
+    }
+  ],
+  "source_sha256": "972509241be64ec6e59e61e1c3afcbecb00384992dab094268fccf3ab867de46",
+  "independent_core_only": true
+}

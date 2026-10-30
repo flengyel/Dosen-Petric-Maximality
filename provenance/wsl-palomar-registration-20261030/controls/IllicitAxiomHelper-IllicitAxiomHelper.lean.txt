@@ -1,0 +1,69 @@
+module
+
+public import DosenPetric.PalomarCorrespondence
+public import DosenPetric.PresentationShortMaximality
+public import DosenPetric.PresentationConsequences
+
+@[expose] public section
+set_option autoImplicit false
+set_option backward.isDefEq.respectTransparency false
+namespace DosenPetric.Palomar
+universe u
+open Presentation
+variable {P : Type u}
+
+axiom illicitFalse : False
+private theorem hiddenFalse : False := illicitFalse
+
+/-- Uniformly substitution-closed primitive congruences on the actual generated
+arrow syntax collapse when they identify two arrows not equated by Derives. -/
+theorem maximality [Nonempty P] (R : PrimitiveCongruence P) (closed : R.Closed)
+    {A B : Formula P} (f g : Term P A B) (hne : ¬ Derives f g) (hfg : R.Rel f g) : R.Total := by
+  exact False.elim hiddenFalse
+
+/-- The same raw statement through actual source isolation and the particular
+q_A/e_A short-collapse proof. -/
+theorem short_maximality [Nonempty P] (R : PrimitiveCongruence P) (closed : R.Closed)
+    {A B : Formula P} (f g : Term P A B) (hne : ¬ Derives f g) (hfg : R.Rel f g) : R.Total := by
+  have hneq := (PrimitiveCongruence.raw_distinct_iff f g).mp hne
+  obtain ⟨l,hl⟩ := Isolation.normalized_literal_context (interpretation P) (normalization P)
+    (interpretation_signedLabel P) R.fragment (ofTerm f) (ofTerm g) hneq hfg
+  have allK : ∀ C, ContextualCollapse.K R.fragment (Z:=zeroIdentity P) C :=
+    ContextualCollapse.all_contexts R.fragment (substitution P) (doubleNegation P)
+      (R.fragment_closed closed) l hl
+  intro C D k l
+  exact ShortProof.total R.fragment allK (ofTerm k) (ofTerm l)
+
+/-- Generated equality and totality are the only uniformly substitution-closed
+primitive proof congruences. -/
+theorem congruence_dichotomy [Nonempty P] (R : PrimitiveCongruence P) (closed : R.Closed) :
+    (∀ {A B} (f g : Term P A B), R.Rel f g ↔ Derives f g) ∨ R.Total := by
+  classical
+  by_cases h : ∀ {A B} (f g : Term P A B), R.Rel f g → Derives f g
+  · left
+    intro A B f g
+    exact ⟨h f g,R.of_derives⟩
+  · right
+    have hex : ∃ A B, ∃ f g : Term P A B, R.Rel f g ∧ ¬ Derives f g := by
+      apply Classical.byContradiction
+      intro hn
+      apply h
+      intro A B f g hf
+      apply Classical.byContradiction
+      intro hne
+      exact hn ⟨A,B,f,g,hf,hne⟩
+    obtain ⟨A,B,f,g,hfg,hne⟩ := hex
+    intro C D k l
+    exact maximality R closed f g hne hfg k l
+
+/-- Nonthinness is witnessed at every supplied propositional variable. -/
+theorem identity_ne_zero (p : P) : ¬ Derives (Term.id (.var p)) (Term.zero (.var p)) := by
+  intro h
+  exact Presentation.identity_ne_primitive_zero p (Presentation.sound h)
+
+/-- Empty hom-sets are preserved: the grammar contains no arrow top→bot. -/
+theorem no_top_to_bot (P : Type u) : ¬ Nonempty (Term P .top .bot) := by
+  intro ⟨f⟩
+  exact Presentation.empty_hom P ⟨ofTerm f⟩
+
+end DosenPetric.Palomar
