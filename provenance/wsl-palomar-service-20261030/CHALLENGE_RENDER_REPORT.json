@@ -1,0 +1,91 @@
+{
+  "artifact_tree_sha256": "c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48",
+  "bwrap_source_tag": "v0.12.0",
+  "entrypoint": "Challenge/index.html",
+  "errors": [],
+  "format": "verso-html",
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "limits": {
+    "artifact_bytes": 26214400,
+    "artifact_files": 2000,
+    "artifact_nodes": 4000,
+    "build_file_bytes": 2147483648,
+    "memory_bytes": 12884901888,
+    "open_files": 4096,
+    "per_file_bytes": 8388608,
+    "tasks": 512,
+    "wall_seconds": 21600,
+    "workspace_bytes": 12884901888
+  },
+  "mathlib_cache": {
+    "bytes": 0,
+    "downloaded": 0,
+    "requested": 0
+  },
+  "prepared_at": "2026-10-30T22:32:30Z",
+  "rendered_at": "2026-10-30T22:33:58Z",
+  "renderer_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "schema_version": 3,
+  "source": {
+    "challenge_path": "Challenge.lean",
+    "challenge_sha256": "2bbfaf6f18b1385adc6d36694f1b05a632e4ebc26a775ed455c60abf19b856f5",
+    "commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+    "comparator_config_path": "comparator.json",
+    "lakefile_path": "lakefile.toml",
+    "lean_toolchain_path": "lean-toolchain",
+    "project_path": "",
+    "repository": "flengyel/Dosen-Petric-Maximality",
+    "repository_url": "https://github.com/flengyel/Dosen-Petric-Maximality",
+    "solution_path": "Solution.lean"
+  },
+  "stage": "complete",
+  "status": "pass",
+  "surface": {
+    "audit_declarations": [
+      {
+        "declaration": "theorem DosenPetric.Palomar.maximality.{u} {P : Type u} [Nonempty P] (R : DosenPetric.Palomar.PrimitiveCongruence P)\n  (closed : DosenPetric.Palomar.PrimitiveCongruence.Closed R) {A B : DosenPetric.Formula P}\n  (f g : DosenPetric.Presentation.Term P A B) (hne : Not (DosenPetric.Presentation.Derives f g))\n  (hfg : DosenPetric.Palomar.PrimitiveCongruence.Rel R f g) : DosenPetric.Palomar.PrimitiveCongruence.Total R",
+        "name": "DosenPetric.Palomar.maximality"
+      },
+      {
+        "declaration": "theorem DosenPetric.Palomar.short_maximality.{u} {P : Type u} [Nonempty P] (R : DosenPetric.Palomar.PrimitiveCongruence P)\n  (closed : DosenPetric.Palomar.PrimitiveCongruence.Closed R) {A B : DosenPetric.Formula P}\n  (f g : DosenPetric.Presentation.Term P A B) (hne : Not (DosenPetric.Presentation.Derives f g))\n  (hfg : DosenPetric.Palomar.PrimitiveCongruence.Rel R f g) : DosenPetric.Palomar.PrimitiveCongruence.Total R",
+        "name": "DosenPetric.Palomar.short_maximality"
+      },
+      {
+        "declaration": "theorem DosenPetric.Palomar.congruence_dichotomy.{u} {P : Type u} [Nonempty P] (R : DosenPetric.Palomar.PrimitiveCongruence P)\n  (closed : DosenPetric.Palomar.PrimitiveCongruence.Closed R) :\n  Or\n    (\u2200 {A B : DosenPetric.Formula P} (f g : DosenPetric.Presentation.Term P A B),\n      Iff (DosenPetric.Palomar.PrimitiveCongruence.Rel R f g) (DosenPetric.Presentation.Derives f g))\n    (DosenPetric.Palomar.PrimitiveCongruence.Total R)",
+        "name": "DosenPetric.Palomar.congruence_dichotomy"
+      },
+      {
+        "declaration": "theorem DosenPetric.Palomar.identity_ne_zero.{u} {P : Type u} (p : P) :\n  Not\n    (DosenPetric.Presentation.Derives (DosenPetric.Presentation.Term.id (DosenPetric.Formula.var p))\n      (DosenPetric.Presentation.Term.zero (DosenPetric.Formula.var p)))",
+        "name": "DosenPetric.Palomar.identity_ne_zero"
+      },
+      {
+        "declaration": "theorem DosenPetric.Palomar.no_top_to_bot.{u} (P : Type u) :\n  Not (Nonempty (DosenPetric.Presentation.Term P DosenPetric.Formula.top DosenPetric.Formula.bot))",
+        "name": "DosenPetric.Palomar.no_top_to_bot"
+      }
+    ],
+    "declarations": [
+      "DosenPetric.Palomar.maximality",
+      "DosenPetric.Palomar.short_maximality",
+      "DosenPetric.Palomar.congruence_dichotomy",
+      "DosenPetric.Palomar.identity_ne_zero",
+      "DosenPetric.Palomar.no_top_to_bot"
+    ],
+    "imports": [],
+    "module_doc": "The equation-generated Boolean arrow presentation and uniform raw\nsubstitution congruences. Composition applies its first argument first.\nThe five results concern actual generated equality and existing parallel\narrows.",
+    "schema_version": 3,
+    "solution_imports": [
+      "DosenPetric.PalomarMaximality"
+    ]
+  },
+  "verso_backport": {
+    "after_sha256": "ef28d0ae002ae91d25cb744807922ba4dc00883e6656d9b9a2d8b91fcaf8e230",
+    "before_sha256": "87f5acecca083d83edb8302bec588afacc47832459c5370323c813208530e608",
+    "fixes": [
+      "dotted-declaration-docstring-attribution"
+    ],
+    "path": "src/verso-literate/VersoLiterateMain.lean",
+    "upstream_commit": "cb7dc84d54b69269254bf4390a2e53db49a0e26f"
+  },
+  "verso_commit": "304b8561790c50222551c937ce02928df0d5b445",
+  "workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41138721868"
+}

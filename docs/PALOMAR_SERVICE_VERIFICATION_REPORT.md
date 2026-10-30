@@ -35,3 +35,21 @@ The ZIP digest was checked against GitHub's artifact metadata. The recorded
 mechanical JSON identifies the exact source commit above. Evidence copies are
 under `provenance/wsl-palomar-service-20261030/`. The source, existing stash,
 manuscript and completed verification are preserved.
+
+## Challenge rendering
+
+The independent public [Challenge-rendering run 41138721868](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41138721868)
+completed successfully for the same immutable source. Its actual `report.json`
+records `pass`, `complete`, no errors, and Lean 4.35.0. Its Challenge source hash
+matches the service-verified Challenge. The downloaded artifact ZIP matches
+GitHub's advertised digest:
+`17d964eaabd2a93f60bdec1b30ade35a0c94d588bd6484798ed1d39d23575f1b`.
+The report, original ZIP and digest summary are retained in the service
+provenance directory. This is a rendering result, separate from editorial review.
+
+The current continuation reuses the existing service submission and completed
+verification. Public records contain neither private review material nor access
+credentials. The exact service review and its digest must be delivered privately
+before the author decides whether to register; no registration consent is inferred
+from the authorization to perform intake. Later evidence commits on main do not
+replace the verified submission SHA.

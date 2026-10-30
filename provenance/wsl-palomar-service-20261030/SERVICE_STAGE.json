@@ -17,5 +17,19 @@
   "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
   "server_commit": "67dfae64856a319397e2e6966b1e0302fa5ee352",
   "registry_repository_lookup_status": 404,
-  "registry_identity_lookup_status": 404
+  "registry_identity_lookup_status": 404,
+  "challenge_rendering": {
+    "utc": "2026-10-30T23:06:28.457636+00:00",
+    "submission_id": "wy75d6nipd4e",
+    "verified_source_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+    "status": "pass",
+    "stage": "complete",
+    "workflow_run_id": 41138721868,
+    "workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41138721868",
+    "artifact_id": 13018800386,
+    "artifact_zip_sha256": "17d964eaabd2a93f60bdec1b30ade35a0c94d588bd6484798ed1d39d23575f1b",
+    "report_sha256": "098a4657aba3eabb3683f8132453199bf4e5f4cca1350170226ca3c8d1a221eb",
+    "artifact_tree_sha256": "c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48",
+    "github_artifact_digest_verified": true
+  }
 }
