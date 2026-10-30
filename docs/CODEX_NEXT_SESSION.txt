@@ -1,46 +1,38 @@
-Current task: deliver the private service review, obtain the author’s decision, then complete registration before arXiv.
+Current phase: Palomar registration is complete; arXiv preparation is ready.
 
-Verified immutable submission: 2e771844077fd8cebfbe365230f13d4dd13a75b1.
-Repository: flengyel/Dosen-Petric-Maximality, now public under author-approved Apache-2.0, including
-the original manuscript and retained history. Candidate and receipts are on main;
-the preparation branch and stash remain preserved. Do not ask for release/license
-approval again. Approval records are in
-provenance/wsl-palomar-official-preflight-20261030/RELEASE_AUTHORIZATION.json.
+Registered identity: PALOMAR-2026-10-30-000014, version 1.
+https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1
+Immutable proof source: 2e771844077fd8cebfbe365230f13d4dd13a75b1
+Repository: flengyel/Dosen-Petric-Maximality; root comparator.json; Lean 4.35.0.
+Later main/manuscript/evidence commits do not replace the registered source.
+Do not create another intake or register this unchanged identity/commit again.
 
-Official workflow: https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329
-Run ID: 41129351329; completed successfully. Mechanical report: pass, verification, complete.
-Lean, NanoDa and protected con-ron accepted. Pipeline pin: 14aa8d6b3c2f14a8540605e37144560b9a00e7e7.
-Mode full; profile palomar-standard-v1; request preflight001; root comparator.json.
-Official report and digest:
-provenance/wsl-palomar-official-preflight-20261030/mechanical-report.json
-SHA-256: b21cdb78ae39b47b11e96be06a388787cd8d6d8ace045e4d403fb50cd14db8c9.
-The workflow caller head is ac2503166ebbb5084a3da4999f4193c8607e1d14, distinct from the immutable
-submission SHA above. The actual mechanical report was retrieved and its artifact digest verified.
-Preserve diagnostics and fix only the indicated cause. Do not invent a passed
-replay from an OOM, infrastructure error, or green setup job.
+The author personally registered the delivered service review. The authenticated
+service confirms registered status and the public entry/versions/repository index
+agree. Its approved canonical consent digest remains private. Public mechanical,
+workflow, archived-review and source-preservation bytes match their manifest;
+the native PalomarArchive tag resolves to the exact registered commit.
 
-Keep Lean at 4.35.0. Reuse the completed local package/comparison/kernel/source
-verification; do not restart the full-paper proof sequence or change the fixed
-source for unchanged-input workflow issues. See docs/PALOMAR_OFFICIAL_PREFLIGHT_REPORT.md,
-docs/PALOMAR_REGISTRATION_STATUS.md and docs/CODEX_PALOMAR_REGISTRATION.txt.
+The original render artifact matches its full manifest. Two HTML responses on the
+public data service contain added Cloudflare Insights markup and differ from the
+manifest; eleven other files match. This is recorded as a service delivery issue,
+not a new Lean proof or source failure. Do not claim all served render bytes pass.
+See docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md; no operator contact was sent.
 
-The author approved the exact service intake. Submission wy75d6nipd4e passed service
-verification at https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41137470993. Temporary proof artifacts were removed.
-The editorial review and access credential remain private. No final registration is claimed. The existing Windows
-GitHub CLI session is authenticated as flengyel. Do not automate browser sign-in
-or expose tokens/private service review in the public repository. The author must
-see and approve the actual service review and digest before final registration.
+Current manuscript: v9; all v4–v8 files remain byte-preserved. V9 expands the
+expressly requested AI acknowledgment to include Codex and author responsibility,
+retains MSC Primary 03G30; Secondary 03F07, 18A32, and adds the verified Palomar
+citation/date. All previous mathematical text, labels and diagrams are unchanged.
+The source upload package is submission/arxiv-v9/Dosen-Petric-Maximality-v9-arxiv-source.tar.gz;
+it contains only main.tex, identical to manuscript v9. Local PDFLaTeX passes,
+resolved references, hyperlink and affected rendered pages were checked.
+No arXiv upload or submission has occurred; the author selects the arXiv license
+in that form. The existing Apache-2.0 publication authorization remains recorded.
 
-Publication order, explicitly clarified by the author: Palomar Registry
-registration first, then arXiv submission, then Local connectedness in recursion
-categories and essential incompleteness. Do not submit the paper to arXiv before
-Palomar registration. Keep reports/evidence/Downloads deliveries byte-verified
-and preserve differing prior copies and all completed mathematical results.
-
-Service continuation: reuse existing submission wy75d6nipd4e; do not create a
-second intake for the unchanged commit. Its public Challenge-rendering run
-41138721868 also passed; the report and original artifact are retained under
-provenance/wsl-palomar-service-20261030/. The private publication preview is in
-the ignored service staging directory. Obtain the actual review and digest,
-deliver them privately, and obtain the author's explicit decision before final
-registration. Keep the existing five-minute review polling limit.
+Read docs/PALOMAR_REGISTRATION_REPORT.md, docs/ARXIV_PREPARATION_REPORT.md,
+docs/reviews/ARXIV_V9_WRITING_2026-10-30.md and the final publication delivery
+receipt. Reports and artifacts are delivered from committed bytes, with differing
+Downloads copies preserved. Preserve the existing stash and all other projects.
+Do not reopen completed proof development or repeat unchanged verification.
+After actual arXiv submission, continue to Local connectedness in recursion
+categories and essential incompleteness under the author's instructions.

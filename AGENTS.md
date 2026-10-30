@@ -26,10 +26,13 @@ other checkouts, including FailureOfComposition and Categorical_Rice_Shapiro.
 Read `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md`,
 `docs/CODEX_NEXT_SESSION.txt`, `docs/MANUSCRIPT_STATEMENTS.md`,
 `docs/MANUSCRIPT_COVERAGE.md`, and
-`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v8;
-v4, v5, v6 and v7 remain preserved. V8 updates only the formalization status,
-date and immutable proof-source citation; the full mathematical contract is
-all v7 content unchanged. Preserve the text, diagrams, and Appendix A references
+`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v9;
+v4–v8 remain preserved. V8
+updated the formalization status/date/source citation. V9 adds the author-requested
+Codex disclosure, author-responsibility sentence and verified Palomar citation,
+and updates the date. MSC 2020 Primary 03G30; Secondary 03F07, 18A32 is preserved.
+The full mathematical contract is all v7 content unchanged. Preserve the text,
+diagrams, and Appendix A references
 unless revision is requested. On 28 October 2026 the author requested that the
 two verified source errata appear in the arXiv paper. The exact Appendix C
 addition has been built and inspected in v7, preserving v6; its source and PDF
@@ -175,25 +178,29 @@ source-closure audits, focused negative controls, and immutable-source evidence.
 Keep local build, Comparator, official preflight, service verification, automated
 review, and publication as separate statuses.
 
-## Palomar registration phase — 30 October 2026
+## Publication phase — 30 October 2026
 
-The author has requested the work needed for Palomar registration. Read
-`docs/CODEX_PALOMAR_REGISTRATION.txt` and `docs/PALOMAR_REGISTRATION_STATUS.md`.
-The full-paper mathematical endpoint remains complete. The independent
-Challenge/Solution package, correspondence, local kernel verification and
-metadata are complete and merged into main. The author explicitly approved
-Apache-2.0 publication of the repository, original manuscript and retained history;
-the repository is now public. Verified submission source: 2e771844077fd8cebfbe365230f13d4dd13a75b1.
-Keep Lean at 4.35.0 and reuse the completed local verification. Official full
-preflight passed at https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329.
+Palomar registration is complete: PALOMAR-2026-10-30-000014, version 1.
+https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1
+The exact registered proof source remains 2e771844077fd8cebfbe365230f13d4dd13a75b1, root
+comparator.json, Lean 4.35.0. Full preflight and service verification passed.
+The author registered the actual delivered review personally; the service and
+public entry confirm registration. Do not repeat intake or registration.
 
-Preserve the verified source commit; later reports/evidence do not replace it.
-The author approved the exact service intake. Submission `wy75d6nipd4e` passed service
-verification at https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41137470993. Final registration requires the author to see and approve the actual
-service review and digest. Do not automate browser sign-in or treat release
-approval as consent to an unseen review.
+Read docs/CODEX_NEXT_SESSION.txt, docs/PALOMAR_REGISTRATION_REPORT.md and
+docs/ARXIV_PREPARATION_REPORT.md. V9 and the minimal arXiv source package are
+prepared and locally compiled. No arXiv upload has occurred. Keep mathematical
+proof development closed, retain all previous manuscripts and the stash, and
+reuse verification. Do not change the immutable registered source or its frozen
+submission inputs when refreshing documentation.
 
-The author clarified the publication order: Palomar Registry registration first,
-then arXiv submission, then work on Local connectedness in recursion categories
-and essential incompleteness. Do not submit to arXiv before Palomar registration.
-Do not reopen the completed proof-development or local packaging sequence.
+Public evidence hashes and the native source tag were verified. The two served
+HTML render pages have added Cloudflare analytics markup and do not match their
+manifest bytes; the original artifact does. Keep this readback limitation separate
+from successful mechanical verification and registration; see the diagnostic.
+
+Credentials, private API responses, the original author-facing review and consent
+digest remain in ignored private staging and out of public Git. Only the publicly
+registered archived review is retained in public provenance. Preserve differing
+Downloads copies and deliver reports from committed bytes. Palomar registration
+precedes arXiv submission; the later Local connectedness project follows arXiv.

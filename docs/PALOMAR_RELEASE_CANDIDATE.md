@@ -1,5 +1,9 @@
 # Verified Palomar release candidate
 
+Subsequent publication: [PALOMAR-2026-10-30-000014, version 1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1);
+the registered source remains the candidate below. The current arXiv manuscript
+is v9; its mathematical text is unchanged. See the final registration report.
+
 Verified immutable source: **`2e771844077fd8cebfbe365230f13d4dd13a75b1`**.
 
 Public repository: `flengyel/Dosen-Petric-Maximality`.
@@ -39,7 +43,7 @@ closed relations. The retained complete-paper scope remains unchanged.
 | Commit-byte/source correspondence | Pass |
 | Official full preflight | Pass for the exact verified submission; Lean, NanoDa and con-ron accepted. |
 | Service intake / verification | Verified intake `wy75d6nipd4e`; [service verification passed](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41137470993). |
-| Editorial / registration | Private review and author decision are separate; no registry entry claimed. |
+| Editorial / registration | Author registered [PALOMAR-2026-10-30-000014, version 1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1); public archived review and preservation verified. |
 
 | Submission input | SHA-256 |
 | --- | --- |

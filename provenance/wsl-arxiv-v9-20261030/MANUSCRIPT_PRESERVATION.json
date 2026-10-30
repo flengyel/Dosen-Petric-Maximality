@@ -1,0 +1,34 @@
+{
+  "base_commit": "8b1a329368b57b925a1d912af5415e0a794d7dc6",
+  "base_manuscript": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v8.tex",
+  "base_manuscript_sha256": "3e578fea8c27c292736090a6c959f474d0da58074b7d2a8f7ff9d481c49c44b1",
+  "revised_manuscript": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v9.tex",
+  "revised_manuscript_sha256": "b08b26dc3c4eed6d08e0db31eae56da2fb47c81bca0f6c30c3e2e5b8724f2de4",
+  "permitted_changes": [
+    "Date",
+    "AI acknowledgment roles and author responsibility",
+    "Registered statement-selection paragraph",
+    "Palomar bibliographic entry"
+  ],
+  "reverse_patch_recovers_v8_byte_for_byte": true,
+  "labels_identical": true,
+  "diagrams_identical": true,
+  "mathematical_statements_and_proofs_identical": true,
+  "msc_unchanged": "Primary 03G30; Secondary 03F07, 18A32",
+  "original_manuscript_files_preserved": {
+    "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.pdf": "dd88c37805c889ab420ad11303886a04b8be54857c91dda70bfc91ec23c72b62",
+    "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v4.tex": "aebd6a8be39dcbdcc1a7e5061b4e65a585de2345784011fb03d28cc3326fc93e",
+    "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.pdf": "7ba0ca5964039d3a951753ba925f80765d674f913b148e0b4add24a66fe86a30",
+    "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v5.tex": "50f92e84c8ccc5a14e8e403b89f4dbd68e798bacce32dd57f40f990de7d06de7",
+    "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v6.pdf": "3385c2c2a34482d62de2182e84f2a9c393649e7c9256eadbbd8f8346ada7f0a5",
+    "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v6.tex": "2c30fd10cb81f5d8246dabdc7f343d6d9adeac91358d84273d2799ab514972b0",
+    "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.pdf": "957048538137ef085c0a581b399272db753377b76c6a83c1adc307ad8b2e256a",
+    "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex": "70b4f82c03e165e6a6da36d869968531a509341b93f90eedde964506568c8e96",
+    "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v8.pdf": "ea32f33f027a672125d9f2e162a75e6cdff9d980abc2c0ecbc4ccfb4632a83ea",
+    "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v8.tex": "3e578fea8c27c292736090a6c959f474d0da58074b7d2a8f7ff9d481c49c44b1",
+    "manuscript/SHA256SUMS": "2d18bf69440e1d422c2ccd940550e1ae8d9836686cb740053a889b05b1447fc3"
+  },
+  "registered_proof_source": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "new_lean_builds_or_kernel_replays": 0
+}

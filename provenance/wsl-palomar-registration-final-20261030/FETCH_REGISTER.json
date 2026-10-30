@@ -1,0 +1,145 @@
+{
+  "utc": "2026-10-30T23:32:23.362690+00:00",
+  "files": {
+    "evidence/evidence-manifest.json": {
+      "url": "https://data.palomar-registry.org/evidence/PALOMAR-2026-10-30-000014-v1/504c8031c043d58134d93bbb3a8fd539b8bd6cf59b86ba954462ef42196902df/evidence-manifest.json",
+      "http_status": 200,
+      "sha256": "b5dad38a1eb169d812facb10b078c673bc179fdd284db5a56b69c85b142fb8fc",
+      "bytes": 745,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "evidence/mechanical-report.json": {
+      "url": "https://data.palomar-registry.org/evidence/PALOMAR-2026-10-30-000014-v1/504c8031c043d58134d93bbb3a8fd539b8bd6cf59b86ba954462ef42196902df/mechanical-report.json",
+      "http_status": 200,
+      "sha256": "870e5722919f2d00d8e5bc600a36af655efc2ee448ab1722f2e8e8dcbf1915cb",
+      "bytes": 96230,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "evidence/workflow-run.json": {
+      "url": "https://data.palomar-registry.org/evidence/PALOMAR-2026-10-30-000014-v1/504c8031c043d58134d93bbb3a8fd539b8bd6cf59b86ba954462ef42196902df/workflow-run.json",
+      "http_status": 200,
+      "sha256": "0e45542d8077a5ab4b89cacf4c13cb9a54dafbb8ea5f5041fdae8bec39ecdcd3",
+      "bytes": 948,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "evidence/review.json": {
+      "url": "https://data.palomar-registry.org/evidence/PALOMAR-2026-10-30-000014-v1/504c8031c043d58134d93bbb3a8fd539b8bd6cf59b86ba954462ef42196902df/review.json",
+      "http_status": 200,
+      "sha256": "66251028a49a973a73a3aaf486fc652f9c1075244239853016928432fea1b8db",
+      "bytes": 8447,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "evidence/source-archive.json": {
+      "url": "https://data.palomar-registry.org/evidence/PALOMAR-2026-10-30-000014-v1/504c8031c043d58134d93bbb3a8fd539b8bd6cf59b86ba954462ef42196902df/source-archive.json",
+      "http_status": 200,
+      "sha256": "c5290164454f673c2a438fd792e873508abb231801eccf69e95b8c8c380f77d3",
+      "bytes": 511,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "render/artifact-manifest.json": {
+      "url": "https://data.palomar-registry.org/renders/PALOMAR-2026-10-30-000014-v1/c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48/artifact-manifest.json",
+      "http_status": 200,
+      "sha256": "60db14c0a3caf5eee5e2875692e5e86aec38042e521b4f94a615e20b067100bf",
+      "bytes": 2172,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "versions.json": {
+      "url": "https://data.palomar-registry.org/versions/PALOMAR-2026-10-30-000014.json",
+      "http_status": 200,
+      "sha256": "ea84cb36e52482d51eaa55ddf693aa03025936c5b986f45ac7c6a4b3899ef56b",
+      "bytes": 325,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "render/-verso-docs.json": {
+      "url": "https://data.palomar-registry.org/renders/PALOMAR-2026-10-30-000014-v1/c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48/-verso-docs.json",
+      "http_status": 200,
+      "sha256": "66f99192b1b0943dda2f854308b1562928b6c416032441c88041564ff3324574",
+      "bytes": 53855,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "render/-verso-search/README.txt": {
+      "url": "https://data.palomar-registry.org/renders/PALOMAR-2026-10-30-000014-v1/c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48/-verso-search/README.txt",
+      "http_status": 200,
+      "sha256": "c2592e93a155651c869ea357d9b4c8bbd28920eb841b6a7c984841fd5fe9993a",
+      "bytes": 4716,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "render/-verso-search/domain-mappers.d.ts": {
+      "url": "https://data.palomar-registry.org/renders/PALOMAR-2026-10-30-000014-v1/c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48/-verso-search/domain-mappers.d.ts",
+      "http_status": 200,
+      "sha256": "b347aa85cd1497191ce7e7166ef113e7c4c83f79345a6a4f7816a2155a5f7665",
+      "bytes": 120,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "render/-verso-search/fuzzysort.d.ts": {
+      "url": "https://data.palomar-registry.org/renders/PALOMAR-2026-10-30-000014-v1/c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48/-verso-search/fuzzysort.d.ts",
+      "http_status": 200,
+      "sha256": "7c3f3de27ad6eb8ab420f1aade753483e1a597820ff7b5d80fa210e1c6f7c4e5",
+      "bytes": 2845,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "render/-verso-search/jsconfig.json": {
+      "url": "https://data.palomar-registry.org/renders/PALOMAR-2026-10-30-000014-v1/c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48/-verso-search/jsconfig.json",
+      "http_status": 200,
+      "sha256": "6ae5ab90515f1ad5d923aca1616366dc67a1961b78c0285d02e4182791df7796",
+      "bytes": 233,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "render/-verso-search/licenses.md": {
+      "url": "https://data.palomar-registry.org/renders/PALOMAR-2026-10-30-000014-v1/c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48/-verso-search/licenses.md",
+      "http_status": 200,
+      "sha256": "437e3dad49ac48ebfeabcaaf4c020b6580b13690b24ca0c5b31e4f3c797b0e43",
+      "bytes": 2274,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "render/Challenge/index.html": {
+      "url": "https://data.palomar-registry.org/renders/PALOMAR-2026-10-30-000014-v1/c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48/Challenge/index.html",
+      "http_status": 200,
+      "sha256": "fe02d42eefed4b9aee3b3f2782255568ee5dab7525f78a42ac30e0eb9283a4cd",
+      "bytes": 995885,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "render/challenge-metadata.json": {
+      "url": "https://data.palomar-registry.org/renders/PALOMAR-2026-10-30-000014-v1/c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48/challenge-metadata.json",
+      "http_status": 200,
+      "sha256": "4179be157e9bd182bc3dc3618e74bd0628e52e44564a67173958f208242a07c5",
+      "bytes": 2766,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "render/palomar-render.css": {
+      "url": "https://data.palomar-registry.org/renders/PALOMAR-2026-10-30-000014-v1/c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48/palomar-render.css",
+      "http_status": 200,
+      "sha256": "f16b4aa1e470cb136215b68cf37d60122ed4cfb3daf1ff3d761f87867a24f8d7",
+      "bytes": 44274,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "render/palomar-sanitize.js": {
+      "url": "https://data.palomar-registry.org/renders/PALOMAR-2026-10-30-000014-v1/c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48/palomar-sanitize.js",
+      "http_status": 200,
+      "sha256": "37003e46e52ea8ca4ab4dc59e99a5fa35c4db8e029abddd7c4996df8b94815f6",
+      "bytes": 16471,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "render/palomar-verso.js": {
+      "url": "https://data.palomar-registry.org/renders/PALOMAR-2026-10-30-000014-v1/c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48/palomar-verso.js",
+      "http_status": 200,
+      "sha256": "332773edafa3ac712ec3fba31d4c6ece2339693958873a9020a9be1bddb22538",
+      "bytes": 7820,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "render/search/index.html": {
+      "url": "https://data.palomar-registry.org/renders/PALOMAR-2026-10-30-000014-v1/c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48/search/index.html",
+      "http_status": 200,
+      "sha256": "6c652ed1229157758bf6255eeba3f8842c1faf25e199ba7c34bda3eb78146d14",
+      "bytes": 12397,
+      "capture": "Retained successful response; not re-requested"
+    },
+    "render/xref.json": {
+      "url": "https://data.palomar-registry.org/renders/PALOMAR-2026-10-30-000014-v1/c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48/xref.json",
+      "http_status": 200,
+      "sha256": "6e212c5a49e7db6bc9e3500c6012527d3af03e1392f4def43f8064d65d9e2137",
+      "bytes": 34282,
+      "capture": "Retained successful response; not re-requested"
+    }
+  }
+}

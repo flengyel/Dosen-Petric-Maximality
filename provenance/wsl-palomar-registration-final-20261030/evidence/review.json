@@ -1,0 +1,153 @@
+{
+  "checks": [
+    {
+      "codes_checked": [
+        "arxiv:math.CT",
+        "arxiv:math.LO",
+        "msc2020:03G30",
+        "msc2020:03F07",
+        "msc2020:18A32"
+      ],
+      "declarations_checked": [],
+      "findings": [],
+      "outcome": "neutral",
+      "sources_checked": [
+        "formalization_metadata",
+        "challenge_source",
+        "mechanical_report"
+      ],
+      "step": "classification",
+      "summary": "All submitted subject codes have plausible mathematical relevance; no egregious mismatch was identified.",
+      "trust_level": "high"
+    },
+    {
+      "codes_checked": [],
+      "declarations_checked": [],
+      "findings": [],
+      "outcome": "neutral",
+      "sources_checked": [
+        "formalization_metadata",
+        "challenge_source",
+        "project_readme",
+        "submission",
+        "mechanical_report",
+        "previous_findings",
+        "2e771844077fd8cebfbe365230f13d4dd13a75b1:comparator.json",
+        "2e771844077fd8cebfbe365230f13d4dd13a75b1:docs/PALOMAR_REGISTRATION_LOCAL_REPORT.md",
+        "2e771844077fd8cebfbe365230f13d4dd13a75b1:docs/PALOMAR_STATEMENT_CORRESPONDENCE.md",
+        "2e771844077fd8cebfbe365230f13d4dd13a75b1:docs/PALOMAR_REGISTRATION_STATUS.md",
+        "2e771844077fd8cebfbe365230f13d4dd13a75b1:docs/reviews/PALOMAR_REGISTRATION_REVIEW.md",
+        "2e771844077fd8cebfbe365230f13d4dd13a75b1:docs/reviews/PALOMAR_REGISTRATION_WRITING.md",
+        "2e771844077fd8cebfbe365230f13d4dd13a75b1:docs/reviews/FULL_PAPER_6A66B14_REVIEW.md",
+        "2e771844077fd8cebfbe365230f13d4dd13a75b1:docs/DOSEN_PETRIC_MAXIMALITY_NOVELTY_REVIEW_2026-10-25.md",
+        "2e771844077fd8cebfbe365230f13d4dd13a75b1:manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v8.tex"
+      ],
+      "step": "metadata",
+      "summary": "The structured provenance and narrative accurately distinguish the selected results, broader development, source contributions, AI assistance, and verification stages.",
+      "trust_level": "high"
+    },
+    {
+      "codes_checked": [],
+      "declarations_checked": [
+        "DosenPetric.Palomar.maximality",
+        "DosenPetric.Palomar.short_maximality",
+        "DosenPetric.Palomar.congruence_dichotomy",
+        "DosenPetric.Palomar.identity_ne_zero",
+        "DosenPetric.Palomar.no_top_to_bot"
+      ],
+      "findings": [],
+      "outcome": "neutral",
+      "sources_checked": [
+        "challenge_source",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:Challenge.lean",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:README.md",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:formalization.yaml",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:comparator.json",
+        "mechanical_report",
+        "previous_findings"
+      ],
+      "step": "statement_alignment",
+      "summary": "All five selected statements agree with the assembled mathematical account; no material statement-alignment discrepancy was found.",
+      "trust_level": "high"
+    },
+    {
+      "codes_checked": [],
+      "declarations_checked": [
+        "DosenPetric.Palomar.maximality",
+        "DosenPetric.Palomar.short_maximality",
+        "DosenPetric.Palomar.congruence_dichotomy",
+        "DosenPetric.Palomar.identity_ne_zero",
+        "DosenPetric.Palomar.no_top_to_bot"
+      ],
+      "findings": [],
+      "outcome": "neutral",
+      "sources_checked": [
+        "challenge_source",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:Challenge.lean",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:comparator.json",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:formalization.yaml",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:README.md",
+        "mechanical_report",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:docs/PALOMAR_STATEMENT_CORRESPONDENCE.md",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v8.tex",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:DosenPetric/Formula.lean",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:DosenPetric/PresentationSyntax.lean",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:DosenPetric/PresentationEquations.lean",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:DosenPetric/PresentationSubstitution.lean",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:DosenPetric/PresentationCategory.lean",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:DosenPetric/PresentationZero.lean",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:DosenPetric/PresentationProofCongruence.lean",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:DosenPetric/PresentationFragmentMaximality.lean",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:DosenPetric/PresentationConsequences.lean",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:DosenPetric/PalomarDefinitions.lean",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:DosenPetric/PalomarCorrespondence.lean",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:DosenPetric/PalomarMaximality.lean"
+      ],
+      "step": "definition_fidelity",
+      "summary": "No material definition mismatch or manufactured conclusion was found in the selected statements.",
+      "trust_level": "high"
+    },
+    {
+      "codes_checked": [],
+      "declarations_checked": [
+        "DosenPetric.Palomar.maximality",
+        "DosenPetric.Palomar.short_maximality",
+        "DosenPetric.Palomar.congruence_dichotomy",
+        "DosenPetric.Palomar.identity_ne_zero",
+        "DosenPetric.Palomar.no_top_to_bot"
+      ],
+      "findings": [],
+      "outcome": "neutral",
+      "sources_checked": [
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:comparator.json",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:Challenge.lean",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:formalization.yaml",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:README.md",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v8.tex",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:docs/PALOMAR_STATEMENT_CORRESPONDENCE.md",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:docs/LITERATURE_REVIEW.md",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:docs/LITERATURE_REVIEW_V5_2026-10-23.md",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:docs/PRIOR_ART_UPDATE_V5.md",
+        "flengyel/Dosen-Petric-Maximality@2e771844077fd8cebfbe365230f13d4dd13a75b1:docs/DOSEN_PETRIC_MAXIMALITY_NOVELTY_REVIEW_2026-10-25.md"
+      ],
+      "step": "literature_notability",
+      "summary": "The selected maximality result has a credible specialist audience and a substantive, bounded literature account; its two structural witnesses support that result.",
+      "trust_level": "qualified"
+    }
+  ],
+  "mechanical_report": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41137470993",
+  "outcome": "neutral",
+  "policy_commit": "28bd48b9b71bbb2a82c718ce761d5a4220ef8e60",
+  "requested_changes": [],
+  "reviewed_at": "2026-10-30T23:11:44Z",
+  "reviewer_models": [
+    "codex:gpt-6-sol"
+  ],
+  "schema_version": 3,
+  "source": {
+    "commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+    "repository": "flengyel/Dosen-Petric-Maximality"
+  },
+  "submission_id": "wy75d6nipd4e",
+  "summary": "Mechanical verification passed, and the completed editorial checks identified no blocking problem with the selected statements or their presentation. This outcome is not registration or endorsement."
+}

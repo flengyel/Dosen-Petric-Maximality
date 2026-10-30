@@ -3,7 +3,9 @@
 ## Current complete full-paper formalization (29 October 2026)
 
 All mathematical content of v7 is now proved for the actual equation-generated
-Došen–Petrić presentation, with the status/citation refresh preserved in v8.
+Došen–Petrić presentation, with the status/citation refresh preserved in v8 and the publication metadata
+update in v9. V9 retains the MSC codes, expands the authorized AI acknowledgment
+and cites the registered proof; the mathematical content is unchanged.
 This includes both maximality routes, the full-source model corollary, all
 unnumbered claims, the complete substitution action and actual occurrence/block/
 profile/ordinal/renaming/skeleton constructions, all examples and all three

@@ -1,5 +1,18 @@
 # Manuscript corrections and source errata
 
+## Publication metadata resolved (30 October 2026)
+
+PUB-AI-20261030: the author requested an AI acknowledgment and MSC codes.
+V8 already contained the ChatGPT disclosure and MSC 2020 Primary 03G30;
+Secondary 03F07, 18A32. V9 retains those codes and expands the acknowledgment
+with Codex's Lean-formalization/verification role and the author's responsibility.
+It also cites verified Palomar entry PALOMAR-2026-10-30-000014, version 1, and dates the
+publication update October 30. All v4–v8 files remain byte-preserved. Reversing
+these four metadata edits recovers the entire v8 source byte for byte; no new
+mathematical correction or proof obligation is introduced. The 13-page PDF was
+compiled with resolved references and its affected pages inspected. Exact source
+comparison and writing-review scope are recorded outside the paper.
+
 ## Final scope and citation corrections resolved (29 October 2026)
 
 FP-SCOPE-20261029 is resolved in preserved manuscript v8: its abstract,

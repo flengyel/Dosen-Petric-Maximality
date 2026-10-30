@@ -4,8 +4,8 @@ The independent five-statement package passes local verification. Lean, NanoDa
 and the authenticated protected con-ron checker accept its complete selected
 proof closure. The expanded audit also compares all 360 concrete presentation
 declarations and the five selected types. This is a locally verified release candidate, now publicly released with the
-author's Apache-2.0 approval. Official full preflight passed; service
-registration has not occurred.
+author's Apache-2.0 approval. Official full preflight and service verification passed; registration is now
+complete as [PALOMAR-2026-10-30-000014, version 1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1).
 
 ## Source and preservation
 
@@ -26,8 +26,9 @@ branch. All 1,870 committed Lean files and the critical submission inputs were
 matched against the checked bytes from the Git object database. The exact source
 tree and file hashes are recorded in `RELEASE_CANDIDATE.json` and
 `COMMITTED_SOURCE_AUDIT.json`. Later evidence/delivery commits retain this
-verified source identity. No public release, repository visibility change,
-service intake or registration was performed.
+verified source identity. At completion of the local packaging checks, public release, visibility change,
+service intake and registration had not yet occurred. Those later stages are
+recorded in the final registration report.
 
 ## Selected mathematics
 

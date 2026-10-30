@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-30T23:32:22.842737+00:00",
+  "registry_id": "PALOMAR-2026-10-30-000014",
+  "version": 1,
+  "published_tree_sha256": "c74e22dcdcc6f47a03b322a7086e3ff0b0259abe6be557a2d0363ee2bf7f4a48",
+  "original_render_archive_verified": true,
+  "original_files_matching_manifest": 13,
+  "default_served_files_matching_manifest": 11,
+  "default_served_files_matching_manifest_completely": false,
+  "mismatches": [
+    {
+      "path": "Challenge/index.html",
+      "expected_sha256": "12e3c93667d42ee6315da3acbca88cb6062f1a249c1ca7aa03980cb119708803",
+      "actual_sha256": "fe02d42eefed4b9aee3b3f2782255568ee5dab7525f78a42ac30e0eb9283a4cd",
+      "expected_bytes": 995518,
+      "actual_bytes": 995885,
+      "difference": "One Cloudflare Insights script insertion and newline; removing it in memory exactly reproduces the archived original."
+    },
+    {
+      "path": "search/index.html",
+      "expected_sha256": "140520877e6b7442f471c668ffe209523e1ae312b5cae4e691711b7f9f48cb66",
+      "actual_sha256": "6c652ed1229157758bf6255eeba3f8842c1faf25e199ba7c34bda3eb78146d14",
+      "expected_bytes": 12030,
+      "actual_bytes": 12397,
+      "difference": "One Cloudflare Insights script insertion and newline; removing it in memory exactly reproduces the archived original."
+    }
+  ],
+  "action": "No proof rerun or source alteration; service-side HTML analytics transformation is recorded as a publication readback limitation. No operator contact was sent."
+}

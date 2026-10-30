@@ -24,7 +24,9 @@ That completed preflight was reused; no additional preflight was started.
 The private editorial review, its digest and the submission access credential
 are excluded from this public report and public provenance. Final registration
 requires the author's decision about the exact delivered service review.
-No registry entry or arXiv submission is claimed here.
+Subsequent author registration is confirmed as [PALOMAR-2026-10-30-000014, version 1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1).
+No arXiv submission has occurred. The final report retains public archived evidence
+and the separate served-HTML diagnostic.
 
 | Evidence | SHA-256 |
 | --- | --- |

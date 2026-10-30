@@ -81,8 +81,10 @@ retained under `provenance/wsl-palomar-official-preflight-20261030/`.
 
 ## Next stages and author control
 
-No Palomar service intake, editorial review or final registration has occurred.
-The agreed scope is to bring this official result to the author before intake.
+At completion of this preflight, service intake, editorial review and registration
+had not yet occurred. Subsequent service verification and author registration are
+complete: [PALOMAR-2026-10-30-000014, version 1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1).
+The original preflight decision boundary and immutable source below are preserved.
 When proceeding, use repository `flengyel/Dosen-Petric-Maximality`, exact source `2e771844077fd8cebfbe365230f13d4dd13a75b1`, root
 `comparator.json`, and the responsible author/maintainer relationship for Florian
 Lengyel. Recheck current service instructions and registration identity before

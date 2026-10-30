@@ -1,7 +1,9 @@
 # Complete manuscript claim map
 
 This is the active exact correspondence for all mathematical content of v7,
-preserved in v8 with a formalization-status/date/citation refresh. Earlier
+preserved in v8 with a formalization-status/date/citation refresh and in v9 with
+the AI-disclosure/registry-citation publication update. V9 has exactly the same
+mathematical text, labels and diagrams. Earlier
 coverage/statement maps and reports remain as dated checkpoints. “Complete” here
 means local pinned Lean proof/source closure; it does not mean independent replay,
 Comparator, official/service verification, public release or publication.

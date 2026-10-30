@@ -1,0 +1,26 @@
+{
+  "evidence_tree_sha256": "504c8031c043d58134d93bbb3a8fd539b8bd6cf59b86ba954462ef42196902df",
+  "files": [
+    {
+      "bytes": 96230,
+      "path": "mechanical-report.json",
+      "sha256": "870e5722919f2d00d8e5bc600a36af655efc2ee448ab1722f2e8e8dcbf1915cb"
+    },
+    {
+      "bytes": 8447,
+      "path": "review.json",
+      "sha256": "66251028a49a973a73a3aaf486fc652f9c1075244239853016928432fea1b8db"
+    },
+    {
+      "bytes": 511,
+      "path": "source-archive.json",
+      "sha256": "c5290164454f673c2a438fd792e873508abb231801eccf69e95b8c8c380f77d3"
+    },
+    {
+      "bytes": 948,
+      "path": "workflow-run.json",
+      "sha256": "0e45542d8077a5ab4b89cacf4c13cb9a54dafbb8ea5f5041fdae8bec39ecdcd3"
+    }
+  ],
+  "schema_version": 1
+}

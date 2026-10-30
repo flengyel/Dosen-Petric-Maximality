@@ -1,0 +1,35 @@
+{
+  "passes": [
+    {
+      "command": [
+        "pdflatex",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-file-line-error",
+        "main.tex"
+      ],
+      "pass": 1,
+      "exit_status": 0,
+      "seconds": 5.26
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-file-line-error",
+        "main.tex"
+      ],
+      "pass": 2,
+      "exit_status": 0,
+      "seconds": 4.597
+    }
+  ],
+  "unresolved_references": false,
+  "warnings": [
+    "Package epstopdf Warning: Shell escape feature is not enabled.",
+    "Underfull \\hbox (badness 7291) in paragraph at lines 987--994"
+  ]
+}

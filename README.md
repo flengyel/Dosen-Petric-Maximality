@@ -1,8 +1,19 @@
 # Došen–Petrić maximality in Lean
 
-## Palomar registration release candidate (30 October 2026)
+## Palomar registration and arXiv preparation (30 October 2026)
 
-The verified package, merged into main through `23ec1bc`, selects five statements
+Registered as [**PALOMAR-2026-10-30-000014, version 1**](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1). The permanent entry,
+archived mechanical evidence and source-preservation tag bind the exact proof
+commit below. The [registration report](docs/PALOMAR_REGISTRATION_REPORT.md)
+records the public readback; a separate [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
+records the analytics injection in two served render pages.
+
+The arXiv package is ready in [submission/arxiv-v9](submission/arxiv-v9/README.md).
+V9 explicitly acknowledges ChatGPT and Codex, retains MSC 2020 Primary 03G30;
+Secondary 03F07, 18A32, and cites the registered proof. No arXiv submission has
+been made. The manuscript's mathematical text and all previous versions are preserved.
+
+The verified package was merged into main through `23ec1bc`. It selects five statements
 in `DosenPetric.Palomar`: both
 actual-source maximality proofs, their congruence dichotomy, a nonzero variable
 identity and the empty top-to-bottom hom-set. The independent
@@ -32,7 +43,7 @@ publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
-Current manuscript: [v8 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v8.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v8.tex).
+Current manuscript: [v9 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v9.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v9.tex). V8 and all earlier versions remain preserved.
 
 All mathematical content of v7 is now proved for the actual equation-generated
 Došen–Petrić presentation, with the status/citation refresh preserved in v8.
@@ -55,9 +66,10 @@ from actual maximality alone. Exact mathematical-source commit: 630c4b6e47da16a1
 Local checks cover 883 Lean files, 14,849 declarations, all 35 public files,
 full transitive dependency/source closure and 74 expected rejections. Exact exits,
 hashes, checked/committed archive and delivery paths are in provenance/wsl-appendix-a/.
-Both reviews are local author-side. Independent replay, Comparator, official
-preflight, service verification and publication were not performed. The repository
-remains private. The original stash and all preceding source/results/receipts persist.
+Both completion reviews are local author-side. At mathematical completion on
+29 October, independent replay, Comparator, official preflight, service verification
+and publication had not yet been performed and the repository was private. Their
+subsequent results and public registration are recorded above. The original stash and all preceding source/results/receipts persist.
 
 V8 updates the date and the abstract/introduction/section 6 formalization status,
 and cites the immutable completed proof source. V4–v7 remain preserved; all
