@@ -17,11 +17,13 @@ The stash remains `dedfd8fc8cd49930e9a162d5be585215b062a43c`. Existing proof mod
 files are unchanged; v8 and the earlier versions are preserved. No other project
 checkout was modified.
 
-The immutable candidate SHA and exact committed file hashes are assigned in a
-subsequent evidence-only record after this source snapshot is committed. That
-record identifies the verified source, independently of later report/delivery
-commits. No public release, repository visibility change, service intake or
-registration was performed.
+Verified immutable candidate: `2e771844077fd8cebfbe365230f13d4dd13a75b1`, pushed to the isolated private
+branch. All 1,870 committed Lean files and the critical submission inputs were
+matched against the checked bytes from the Git object database. The exact source
+tree and file hashes are recorded in `RELEASE_CANDIDATE.json` and
+`COMMITTED_SOURCE_AUDIT.json`. Later evidence/delivery commits retain this
+verified source identity. No public release, repository visibility change,
+service intake or registration was performed.
 
 ## Selected mathematics
 

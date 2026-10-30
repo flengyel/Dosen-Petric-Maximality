@@ -1,0 +1,21 @@
+{
+  "command": [
+    "git",
+    "push",
+    "-u",
+    "origin",
+    "HEAD:refs/heads/palomar/registration-20261030"
+  ],
+  "actual_command": [
+    "git",
+    "push",
+    "-u",
+    "origin",
+    "HEAD:refs/heads/palomar/registration-20261030"
+  ],
+  "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate",
+  "exit_status": 0,
+  "seconds": 3.006,
+  "log": ".codex-work/palomar-registration-20261030/logs/push-private-candidate-20261030T183252112397.log",
+  "sha256": "66a980c7bf3b491a19de39463ab2cb3105bb28eb4a35e6de13e71eafba0760cf"
+}

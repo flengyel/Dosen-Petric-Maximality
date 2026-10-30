@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "verified_source_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+  "source_tree": "51c600eda4a839e519d89e28efdca100723b210a",
+  "repository": "flengyel/Dosen-Petric-Maximality",
+  "private_branch": "palomar/registration-20261030",
+  "all_committed_lean_files_checked_against_verified_source": 1870,
+  "critical_files": [
+    {
+      "path": "Challenge.lean",
+      "git_blob": "d5539e006762e83975a670e317c8afd78cdd673b",
+      "sha256": "2bbfaf6f18b1385adc6d36694f1b05a632e4ebc26a775ed455c60abf19b856f5",
+      "bytes": 23920
+    },
+    {
+      "path": "DosenPetric.lean",
+      "git_blob": "2c12a1a7b80719018ae8a0292f5afc845b4c156d",
+      "sha256": "eb76110e1dfdbf18f7d75ba4a86e775b19668fb3669243487a902596a8a17a3c",
+      "bytes": 43222
+    },
+    {
+      "path": "Solution.lean",
+      "git_blob": "490fb97f5eee626ca79f26caaa89946bf619288c",
+      "sha256": "418b69bd252a93b7f420be67f5d0418a1a39f79e17988cd81dfe0f2eec4f9b91",
+      "bytes": 52
+    },
+    {
+      "path": "Checks/Axioms.lean",
+      "git_blob": "da8afa45d770342ba797fce9a98e01b96598364f",
+      "sha256": "32fe1605e5b14d07aa9d0ffb6171fdcb923199c30870f3892e87ff80aae5c0a6",
+      "bytes": 159969
+    },
+    {
+      "path": "DosenPetric/PalomarCorrespondence.lean",
+      "git_blob": "292a5458e04db67a4a3e58c78533d1e65706c682",
+      "sha256": "05c0087512136a77c4ced9c2a466dee7d40a65a3247ba69f131d437321d962e9",
+      "bytes": 5247
+    },
+    {
+      "path": "DosenPetric/PalomarDefinitions.lean",
+      "git_blob": "4f3bbddc31156f02962e5358a09b1693287dab8e",
+      "sha256": "20aebf0d443f561646d183418e5c211dc9dbface77fe4be32b8359924296a1e6",
+      "bytes": 1432
+    },
+    {
+      "path": "DosenPetric/PalomarMaximality.lean",
+      "git_blob": "4191feddd50335146bcd6c1cf9f696fe5e559a28",
+      "sha256": "d203c8c017e32d755938a5a1f0caae2d83bd2d7c119a54885e0f4bc339eadf39",
+      "bytes": 3053
+    },
+    {
+      "path": "scripts/PalomarClosureAudit.lean",
+      "git_blob": "7145c07a0d7fb376ff0e2d45178b27f51c042e44",
+      "sha256": "b733d92f3e3365eca651c520765515d300bb0e125abc75cebac57f211e134ebe",
+      "bytes": 6993
+    },
+    {
+      "path": "comparator.json",
+      "git_blob": "3cb8c021a020f34a40a113deb9c52c506b7b4783",
+      "sha256": "db36e6b9256356ca97a16be363a878b1feb337afd3217ef86096a29218290abb",
+      "bytes": 406
+    },
+    {
+      "path": "formalization.yaml",
+      "git_blob": "21f5e2ab9500a91be77d65f8f4206652105f9e9e",
+      "sha256": "ffd9b763a744d0e2f895772a36a01321ec1dc128476dfebc19d91a569f5efb03",
+      "bytes": 8405
+    },
+    {
+      "path": "LICENSE",
+      "git_blob": "8dada3edaf50dbc082c9a125058f25def75e625a",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "bytes": 11357
+    },
+    {
+      "path": "lean-toolchain",
+      "git_blob": "a6aff065db2882c535684f8c5bcd4f16e9a23915",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "bytes": 25
+    },
+    {
+      "path": "lakefile.toml",
+      "git_blob": "05dcc7830467cbea7e6f57f43dc37af71a2bdc53",
+      "sha256": "1a20167e2938ffcc6ffeca143dfd65883be292f2ffd039953fb5ea24fc188796",
+      "bytes": 313
+    },
+    {
+      "path": "lake-manifest.json",
+      "git_blob": "92c5d00dfc7bea7770960ef16c772f97afbbce78",
+      "sha256": "01a12079da418a0c2cb55ddb97259aeb6b1a66c9ccc15b222e172b17f56c5822",
+      "bytes": 155
+    },
+    {
+      "path": ".github/workflows/palomar-preflight.yml",
+      "git_blob": "8e16285e88569c0364cd70aa80d8c1bc42d3d869",
+      "sha256": "f96f61d30ae94145a0a75c8862c3c0b7d621bbb42ef731cbf6a8fc2263be1176",
+      "bytes": 913
+    },
+    {
+      "path": "scripts/check-source.py",
+      "git_blob": "0fb5d058e5761ba5341bf890cdda0d7981f768c6",
+      "sha256": "1dd02d451eaf4a6334c821191a09e9346287389c72e6c5a5032efb3f16c627a9",
+      "bytes": 1469
+    },
+    {
+      "path": "scripts/verify.sh",
+      "git_blob": "d2aba5a3aa4dd89a16e1f4f5310345c7975f69f6",
+      "sha256": "1a3b0cc1c0677c40bab8ab742c30b73a6d1a10eb58f227f16f606a400f22047b",
+      "bytes": 980
+    }
+  ],
+  "local_verification": "pass",
+  "independent_kernels": {
+    "Lean": "accepted",
+    "NanoDa": "accepted",
+    "con_ron": "accepted"
+  },
+  "public_comparator": "comparator.json",
+  "definition_holes": 0,
+  "selected_theorems": [
+    "DosenPetric.Palomar.maximality",
+    "DosenPetric.Palomar.short_maximality",
+    "DosenPetric.Palomar.congruence_dichotomy",
+    "DosenPetric.Palomar.identity_ne_zero",
+    "DosenPetric.Palomar.no_top_to_bot"
+  ],
+  "license_proposal": "Apache-2.0, including the contained original manuscript",
+  "publication_scope": "The substantive flengyel/Dosen-Petric-Maximality repository, this exact source commit, and retained repository history/manuscript/evidence; no visibility change performed.",
+  "maintainer": "Florian Lengyel",
+  "authorization_relationship": "I am a responsible author or maintainer",
+  "approval": "pending",
+  "official_full_preflight": "not run",
+  "service_verification": "not requested",
+  "editorial_outcome": "not requested",
+  "registration": "not requested",
+  "source_immutable_after_verification": true,
+  "evidence_commit_policy": "Subsequent commits contain reports/evidence only and do not replace verified_source_commit."
+}

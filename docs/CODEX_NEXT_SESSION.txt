@@ -8,9 +8,9 @@ in docs/history/CODEX_NEXT_SESSION_2C8E096.txt.
 
 Read AGENTS.md, docs/CODEX_PALOMAR_REGISTRATION.txt,
 docs/PALOMAR_REGISTRATION_LOCAL_REPORT.md, docs/PALOMAR_REGISTRATION_STATUS.md,
-and the PALOMAR_REGISTRATION_REVIEW/WRITING reports. Exact immutable candidate
-identity and hashes are recorded in the release-candidate evidence after the
-source commit. Later evidence/delivery commits do not change the verified source.
+and the PALOMAR_REGISTRATION_REVIEW/WRITING reports. Verified immutable source: 2e771844077fd8cebfbe365230f13d4dd13a75b1.
+Exact file hashes are recorded in docs/PALOMAR_RELEASE_CANDIDATE.md and
+provenance/wsl-palomar-registration-20261030/RELEASE_CANDIDATE.json. Later evidence/delivery commits do not change the verified source.
 
 Completed locally: five production endpoints, raw/full quotient correspondence
 including derived negation, independent core-only Challenge, exact public

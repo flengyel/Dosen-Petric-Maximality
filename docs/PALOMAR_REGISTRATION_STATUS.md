@@ -31,8 +31,12 @@ See the [local verification report](PALOMAR_REGISTRATION_LOCAL_REPORT.md),
 [writing review](reviews/PALOMAR_REGISTRATION_WRITING.md), and
 [source-layout record](PALOMAR_SOURCE_LAYOUT.md). The machine-readable current
 stage is `provenance/wsl-palomar-registration-20261030/REGISTRATION_STAGE.json`.
-The immutable source SHA, exact file hashes and release fields are recorded
-after committing the source in the separate release-candidate evidence.
+The verified immutable source is `2e771844077fd8cebfbe365230f13d4dd13a75b1`. Exact file hashes and release
+fields are in [the release-candidate report](PALOMAR_RELEASE_CANDIDATE.md) and
+`provenance/wsl-palomar-registration-20261030/RELEASE_CANDIDATE.json`. All committed
+Lean source bytes match the checked source. Later evidence/delivery commits do
+not replace that candidate. The original cloud status is preserved verbatim in
+`docs/history/PALOMAR_REGISTRATION_STATUS_2C8E096.md` and is included in delivery.
 
 Upstream pins remain verifier `14aa8d6b3c2f14a8540605e37144560b9a00e7e7`, policy
 `28bd48b9b71bbb2a82c718ce761d5a4220ef8e60`, metadata standard
