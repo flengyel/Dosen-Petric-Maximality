@@ -2,7 +2,7 @@
 
 Verified immutable source: **`2e771844077fd8cebfbe365230f13d4dd13a75b1`**.
 
-Private repository: `flengyel/Dosen-Petric-Maximality`.
+Public repository: `flengyel/Dosen-Petric-Maximality`.
 Current integration branch: `main`. The candidate and evidence were fast-forwarded
 into main through `23ec1bc6a492fab4de42c209f00f692b1851cf9a` on 30 October 2026.
 The preserved preparation branch is `palomar/registration-20261030`.
@@ -68,26 +68,15 @@ receipts identify the exact versions previously delivered.
 
 ## Concrete release decision
 
-The proposed decision is to adopt **Apache-2.0, including the contained original
-manuscript**, and publish the substantive repository
-**`flengyel/Dosen-Petric-Maximality`**, including its retained source history,
-manuscripts and evidence, for the exact candidate
-**`2e771844077fd8cebfbe365230f13d4dd13a75b1`**, using root **`comparator.json`**.
-The author/maintainer is **Florian Lengyel**, with the authorization relationship
-**“I am a responsible author or maintainer.”**
+The author explicitly approved **Apache-2.0**, including the original manuscript
+and retained history, and public release of **`flengyel/Dosen-Petric-Maximality`**, for the exact source
+**`2e771844077fd8cebfbe365230f13d4dd13a75b1`**, using root **`comparator.json`**. Florian Lengyel is the
+responsible author/maintainer. The approval and completed visibility change are
+recorded in `provenance/wsl-palomar-official-preflight-20261030/`.
 
-The repository remains private. Main now includes the complete candidate and
-receipts through `23ec1bc6a492fab4de42c209f00f692b1851cf9a`, including the root
-Apache-2.0 license text and prepared workflow. The stash remains
-`dedfd8fc8cd49930e9a162d5be585215b062a43c`. Explicit public release/license
-confirmation is pending; the recommendation to approve release has been
-recorded without treating it as a completed visibility change.
-
-This gate comes from `AGENTS.md`, “Complete authorized reversible preparation
-before presenting the exact publication/license/submission decision,” and
-`docs/CODEX_PALOMAR_REGISTRATION.txt` §3, which states that the retained license
-proposal is not the repository's currently adopted license. General preparation
-authorization therefore does not silently supply this concrete release choice.
+The repository is public. Main includes the candidate and receipts through
+`23ec1bc` and subsequent documentation/evidence. The stash remains
+`dedfd8fc8cd49930e9a162d5be585215b062a43c`. No service intake or final registration has occurred.
 
 ## Toolchain and next required check
 
@@ -96,13 +85,12 @@ Keep Lean pinned at 4.35.0. The current verifier remains
 [checker policy](https://github.com/PalomarRegistry/PalomarSubmission/blob/14aa8d6b3c2f14a8540605e37144560b9a00e7e7/checker-revisions.json)
 explicitly supplies the protected con-ron checker for Lean 4.35.0. No Lean
 upgrade is required. Reuse the completed local comparison and kernel evidence.
-Official full preflight is the next verification stage.
+Official full preflight is running at [run 41129351329](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329).
 
-An authenticated Windows GitHub CLI session for `flengyel` and the registered
-manual-only workflow are available. Publication and dispatch can proceed after
-the explicit release confirmation.
+The authenticated Windows GitHub CLI session for `flengyel` performed the
+approved visibility change and dispatched the registered manual-only workflow.
 
-## After that decision
+## Official workflow and publication order
 
 Use the prepared manual-only reusable workflow, with both `uses` and
 `pipeline_commit` pinned to `14aa8d6b3c2f14a8540605e37144560b9a00e7e7`, exact
@@ -115,3 +103,8 @@ not by itself the service's API authentication proof.
 The eventual private service review must be shown to the author before any
 registration of that review's digest. No unseen review is approved here. This
 release-candidate preparation does not claim a service verdict or registry entry.
+
+The author specified Palomar Registry registration before arXiv submission.
+After the official mechanical result is reviewed with the author, service intake
+may proceed. Final registration still requires approval of the actual service
+review. The later Local connectedness project follows arXiv submission.

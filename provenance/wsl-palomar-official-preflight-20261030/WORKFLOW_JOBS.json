@@ -1,0 +1,285 @@
+{
+  "total_count": 2,
+  "jobs": [
+    {
+      "id": 124316004626,
+      "run_id": 41129351329,
+      "workflow_name": "Palomar full mechanical preflight",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVS4lCs8AAAAc8c-xEg",
+      "head_sha": "ac2503166ebbb5084a3da4999f4193c8607e1d14",
+      "url": "https://api.github.com/repos/flengyel/Dosen-Petric-Maximality/actions/jobs/124316004626",
+      "html_url": "https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329/job/124316004626",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-30T21:13:09Z",
+      "started_at": "2026-10-30T21:13:10Z",
+      "completed_at": "2026-10-30T21:13:15Z",
+      "name": "palomar-preflight / profile",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-30T21:13:11Z",
+          "completed_at": "2026-10-30T21:13:11Z"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-30T21:13:11Z",
+          "completed_at": "2026-10-30T21:13:13Z"
+        },
+        {
+          "name": "Resolve approved execution profile",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-30T21:13:13Z",
+          "completed_at": "2026-10-30T21:13:13Z"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-30T21:13:13Z",
+          "completed_at": "2026-10-30T21:13:13Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-30T21:13:13Z",
+          "completed_at": "2026-10-30T21:13:13Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/flengyel/Dosen-Petric-Maximality/check-runs/124316004626",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000000625,
+      "runner_name": "GitHub Actions 1000000625",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 124316053804,
+      "run_id": 41129351329,
+      "workflow_name": "Palomar full mechanical preflight",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVS4lCs8AAAAc8dBxLA",
+      "head_sha": "ac2503166ebbb5084a3da4999f4193c8607e1d14",
+      "url": "https://api.github.com/repos/flengyel/Dosen-Petric-Maximality/actions/jobs/124316053804",
+      "html_url": "https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329/job/124316053804",
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-10-30T21:13:15Z",
+      "started_at": "2026-10-30T21:13:18Z",
+      "completed_at": null,
+      "name": "palomar-preflight / verify",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-30T21:13:18Z",
+          "completed_at": "2026-10-30T21:13:20Z"
+        },
+        {
+          "name": "Record verification deadline origin",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-30T21:13:20Z",
+          "completed_at": "2026-10-30T21:13:20Z"
+        },
+        {
+          "name": "Validate pinned pipeline revision",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-30T21:13:20Z",
+          "completed_at": "2026-10-30T21:13:20Z"
+        },
+        {
+          "name": "Checkout submission pipeline",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-30T21:13:20Z",
+          "completed_at": "2026-10-30T21:13:21Z"
+        },
+        {
+          "name": "Set up Python",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-30T21:13:21Z",
+          "completed_at": "2026-10-30T21:13:29Z"
+        },
+        {
+          "name": "Set up Ruby",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-30T21:13:29Z",
+          "completed_at": "2026-10-30T21:13:41Z"
+        },
+        {
+          "name": "Install verifier dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-30T21:13:41Z",
+          "completed_at": "2026-10-30T21:13:41Z"
+        },
+        {
+          "name": "Parse and fetch immutable source",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-30T21:13:41Z",
+          "completed_at": "2026-10-30T21:13:44Z"
+        },
+        {
+          "name": "Free disk space",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-30T21:13:44Z",
+          "completed_at": "2026-10-30T21:14:57Z"
+        },
+        {
+          "name": "Check palomar-standard-v1 runner capacity",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-30T21:14:57Z",
+          "completed_at": "2026-10-30T21:14:57Z"
+        },
+        {
+          "name": "Install pinned elan",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-10-30T21:14:57Z",
+          "completed_at": "2026-10-30T21:14:58Z"
+        },
+        {
+          "name": "Install the submitted Lean toolchain",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-10-30T21:14:58Z",
+          "completed_at": "2026-10-30T21:15:12Z"
+        },
+        {
+          "name": "Build pinned bubblewrap",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-10-30T21:15:12Z",
+          "completed_at": "2026-10-30T21:15:25Z"
+        },
+        {
+          "name": "Run lake comparator and challenge provenance audit",
+          "status": "in_progress",
+          "conclusion": null,
+          "number": 14,
+          "started_at": "2026-10-30T21:15:25Z",
+          "completed_at": null
+        },
+        {
+          "name": "Finalize interrupted mechanical report",
+          "status": "pending",
+          "conclusion": null,
+          "number": 15,
+          "started_at": null,
+          "completed_at": null
+        },
+        {
+          "name": "Upload bounded mechanical report",
+          "status": "pending",
+          "conclusion": null,
+          "number": 16,
+          "started_at": null,
+          "completed_at": null
+        },
+        {
+          "name": "Wait before report upload retry 2",
+          "status": "pending",
+          "conclusion": null,
+          "number": 17,
+          "started_at": null,
+          "completed_at": null
+        },
+        {
+          "name": "Retry bounded mechanical report upload 2",
+          "status": "pending",
+          "conclusion": null,
+          "number": 18,
+          "started_at": null,
+          "completed_at": null
+        },
+        {
+          "name": "Wait before report upload retry 3",
+          "status": "pending",
+          "conclusion": null,
+          "number": 19,
+          "started_at": null,
+          "completed_at": null
+        },
+        {
+          "name": "Retry bounded mechanical report upload 3",
+          "status": "pending",
+          "conclusion": null,
+          "number": 20,
+          "started_at": null,
+          "completed_at": null
+        },
+        {
+          "name": "Fail the run when verification did not pass",
+          "status": "pending",
+          "conclusion": null,
+          "number": 21,
+          "started_at": null,
+          "completed_at": null
+        },
+        {
+          "name": "Post Set up Python",
+          "status": "pending",
+          "conclusion": null,
+          "number": 41,
+          "started_at": null,
+          "completed_at": null
+        },
+        {
+          "name": "Post Checkout submission pipeline",
+          "status": "pending",
+          "conclusion": null,
+          "number": 42,
+          "started_at": null,
+          "completed_at": null
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/flengyel/Dosen-Petric-Maximality/check-runs/124316053804",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000000626,
+      "runner_name": "GitHub Actions 1000000626",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

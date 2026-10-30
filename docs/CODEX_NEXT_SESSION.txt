@@ -1,51 +1,33 @@
-Current task: the local Palomar registration release candidate is verified.
+Current task: monitor the approved official full Palomar preflight.
 
-Do not reopen the completed full-paper proof sequence. Preserve all existing
-mathematics, manuscript versions, historical evidence, the original stash and
-unrelated checkouts. Candidate and receipts are merged into main through
-23ec1bc6a492fab4de42c209f00f692b1851cf9a. The preparation branch
-palomar/registration-20261030 remains preserved. Subsequent documentation
-commits do not replace the verified submission SHA. The previous continuation is retained
-in docs/history/CODEX_NEXT_SESSION_2C8E096.txt.
+Verified immutable submission: 2e771844077fd8cebfbe365230f13d4dd13a75b1.
+Repository: flengyel/Dosen-Petric-Maximality, now public under author-approved Apache-2.0, including
+the original manuscript and retained history. Candidate and receipts are on main;
+the preparation branch and stash remain preserved. Do not ask for release/license
+approval again. Approval records are in
+provenance/wsl-palomar-official-preflight-20261030/RELEASE_AUTHORIZATION.json.
 
-Read AGENTS.md, docs/CODEX_PALOMAR_REGISTRATION.txt,
-docs/PALOMAR_REGISTRATION_LOCAL_REPORT.md, docs/PALOMAR_REGISTRATION_STATUS.md,
-and the PALOMAR_REGISTRATION_REVIEW/WRITING reports. Verified immutable source: 2e771844077fd8cebfbe365230f13d4dd13a75b1.
-Exact file hashes are recorded in docs/PALOMAR_RELEASE_CANDIDATE.md and
-provenance/wsl-palomar-registration-20261030/RELEASE_CANDIDATE.json. Later evidence/delivery commits do not change the verified source.
+Official workflow: https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329
+Run ID: 41129351329. Pipeline pin: 14aa8d6b3c2f14a8540605e37144560b9a00e7e7.
+Mode full; profile palomar-standard-v1; request preflight001; root comparator.json.
+The workflow caller head is ac2503166ebbb5084a3da4999f4193c8607e1d14, distinct from the immutable
+submission SHA above. Read the actual mechanical report; require status pass.
+Preserve diagnostics and fix only the indicated cause. Do not invent a passed
+replay from an OOM, infrastructure error, or green setup job.
 
-Completed locally: five production endpoints, raw/full quotient correspondence
-including derived negation, independent core-only Challenge, exact public
-Comparator, extended 360-definition/five-type audit, complete selected proof
-closure, Lean/NanoDa/authenticated con-ron acceptance, six packaging controls,
-strict verification of 887 production/check files and 14,907 declarations, and
-all 1,870 committed Lean source headers/closures/layout checks. All 11 manuscript
-files are unchanged. Earlier full-paper 35 public checks/74 controls remain
-retained evidence. No official reusable full preflight or service stage has run.
+Keep Lean at 4.35.0. Reuse the completed local package/comparison/kernel/source
+verification; do not restart the full-paper proof sequence or change the fixed
+source for unchanged-input workflow issues. See docs/PALOMAR_OFFICIAL_PREFLIGHT_REPORT.md,
+docs/PALOMAR_REGISTRATION_STATUS.md and docs/CODEX_PALOMAR_REGISTRATION.txt.
 
-The root Apache-2.0 text and prepared workflow are now present on main. The
-repository remains private, with explicit publication/license confirmation
-pending. The next
-required author decision identifies the exact candidate SHA, license including
-the original manuscript, publication scope of the substantive repository and
-history, root comparator.json, and Florian Lengyel's responsible maintainer
-relationship. Reuse any later explicit approval of those exact values; do not
-ask again or introduce routine implementation checkpoints.
+Bring the official result to the author before proceeding with Palomar service
+intake. No service intake or final registration has occurred. The existing Windows
+GitHub CLI session is authenticated as flengyel. Do not automate browser sign-in
+or expose tokens/private service review in the public repository. The author must
+see and approve the actual service review and digest before final registration.
 
-Keep Lean at 4.35.0; the current checker policy supports it. Reuse completed
-local verification. Official full preflight is the next required check. The
-Windows GitHub CLI at /mnt/c/Program Files/GitHub CLI/gh.exe has an existing
-authenticated flengyel session, and the prepared workflow is registered.
-
-After authorized publication/license action, run the exact pinned full reusable
-workflow, for the immutable candidate, with mode full/profile palomar-standard-v1
-and request preflight001. Require mechanical pass before actual intake. Recheck
-current upstream and service instructions immediately before intake; do not
-automate browser sign-in. Keep service review private and show it to the author
-before any registration request for that review's digest.
-
-Downloads delivery uses committed bytes, preserves differing files, and records
-exact paths/hashes/source commits in the registration delivery register. Keep
-local mathematical completion, packaging, comparison, independent replay,
-official preflight, service verification, editorial outcome and registration
-as distinct statuses.
+Publication order, explicitly clarified by the author: Palomar Registry
+registration first, then arXiv submission, then Local connectedness in recursion
+categories and essential incompleteness. Do not submit the paper to arXiv before
+Palomar registration. Keep reports/evidence/Downloads deliveries byte-verified
+and preserve differing prior copies and all completed mathematical results.

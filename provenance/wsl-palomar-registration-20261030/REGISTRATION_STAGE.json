@@ -13,7 +13,13 @@
       "NanoDa": "accepted",
       "con_ron": "accepted"
     },
-    "official_full_preflight": "not run; awaits concrete release/license decision",
+    "official_full_preflight": {
+      "status": "in_progress",
+      "workflow_url": "https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329",
+      "run_id": 41129351329,
+      "verified_source_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+      "mechanical_report_status": "not yet available"
+    },
     "service_verification": "not requested",
     "editorial_outcome": "not requested",
     "registration": "not requested"
@@ -38,13 +44,13 @@
   },
   "repository": {
     "name": "flengyel/Dosen-Petric-Maximality",
-    "visibility": "private",
-    "license": "Apache-2.0 text present on main; explicit publication/license confirmation pending",
+    "visibility": "public",
+    "license": "Apache-2.0 adopted with explicit author approval, including original manuscript and retained history",
     "root_license_on_main": true
   },
   "stash": "dedfd8fc8cd49930e9a162d5be585215b062a43c",
   "main_clean": true,
-  "publication_or_service_action_performed": false,
+  "publication_or_service_action_performed": true,
   "verified_source_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
   "source_tree": "51c600eda4a839e519d89e28efdca100723b210a",
   "integration": {
@@ -53,5 +59,16 @@
     "preparation_branch_preserved": true,
     "verified_submission_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
     "source_unchanged": true
-  }
+  },
+  "publication": {
+    "status": "public",
+    "approval_record": "provenance/wsl-palomar-official-preflight-20261030/RELEASE_AUTHORIZATION.json",
+    "license": "Apache-2.0"
+  },
+  "publication_order": [
+    "Palomar Registry registration",
+    "arXiv submission",
+    "Local connectedness project"
+  ],
+  "service_intake_scope": "Bring official preflight result to author before proceeding with intake"
 }

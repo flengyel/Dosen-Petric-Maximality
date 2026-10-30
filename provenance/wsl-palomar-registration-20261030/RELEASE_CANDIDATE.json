@@ -125,11 +125,15 @@
     "DosenPetric.Palomar.no_top_to_bot"
   ],
   "license_proposal": "Apache-2.0, including the contained original manuscript",
-  "publication_scope": "The substantive flengyel/Dosen-Petric-Maximality repository, this exact source commit, and retained repository history/manuscript/evidence; no visibility change performed.",
+  "publication_scope": "Substantive repository, original manuscript and retained history made public with explicit author approval; verified submission commit remains fixed.",
   "maintainer": "Florian Lengyel",
   "authorization_relationship": "I am a responsible author or maintainer",
-  "approval": "pending",
-  "official_full_preflight": "not run",
+  "approval": "explicitly approved by author",
+  "official_full_preflight": {
+    "status": "in_progress",
+    "run_id": 41129351329,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329"
+  },
   "service_verification": "not requested",
   "editorial_outcome": "not requested",
   "registration": "not requested",
@@ -142,5 +146,9 @@
     "verified_submission_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
     "source_unchanged": true
   },
-  "root_license_file_on_main": true
+  "root_license_file_on_main": true,
+  "publication_status": "public",
+  "license_adopted": "Apache-2.0",
+  "approval_record": "provenance/wsl-palomar-official-preflight-20261030/RELEASE_AUTHORIZATION.json",
+  "preparation_branch": "palomar/registration-20261030"
 }

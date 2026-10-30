@@ -3,8 +3,9 @@
 The independent five-statement package passes local verification. Lean, NanoDa
 and the authenticated protected con-ron checker accept its complete selected
 proof closure. The expanded audit also compares all 360 concrete presentation
-declarations and the five selected types. This is a verified private release
-candidate; official full preflight and service registration have not run.
+declarations and the five selected types. This is a locally verified release candidate, now publicly released with the
+author's Apache-2.0 approval. Official full preflight is running; service
+registration has not occurred.
 
 ## Source and preservation
 
@@ -133,22 +134,20 @@ and resolution script. No failed production proof was moved out of the build.
 
 ## Release and delivery boundary
 
-The candidate installs the proposed Apache-2.0 text, root metadata/configuration
-and full-preflight workflow, now merged into main through `23ec1bc`. The root
-license text is present on main, and repository visibility remains private.
-Explicit release/license confirmation is pending. The release decision must
-identify the exact candidate commit, Apache-2.0 including the contained original
-manuscript, publication of the substantive repository and its retained history,
-root `comparator.json`, and Florian Lengyel's relationship, “I am a responsible
-author or maintainer.” Preparation authorization does not supply that unrecorded
-release decision.
+The author explicitly approved Apache-2.0 publication, including the original
+manuscript and retained history. The root release package is on main and the
+repository is public. The verified submission remains `2e771844077fd8cebfbe365230f13d4dd13a75b1`.
+[Official full preflight](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329) is running for that exact commit. Its outcome
+is recorded separately in `PALOMAR_OFFICIAL_PREFLIGHT_REPORT.md`; the local
+proof, comparison and kernel evidence above is reused without a Lean upgrade.
 
-After approval, dispatch the pinned full reusable workflow for that exact source
-and require mechanical `pass` before intake. Service authentication and exact
-submission agreement follow the then-current instructions. The eventual service
-review must be shown to the author before any registration of its digest.
+No service intake or final registration has occurred. Bring the official result
+to the author before intake. The actual service review must be shown to the
+author before registration of its digest. The agreed publication order is
+Palomar Registry registration, then arXiv submission, then the Local connectedness
+project. Earlier private/release-proposal states remain in the immutable history.
 
 Every finalized report/review and requested instruction is delivered from
-committed bytes to Windows Downloads. Differing existing files are preserved;
-exact paths, hashes and source commits are recorded in the separate delivery
-register and receipt. Copy/verification failures, if any, must remain explicit.
+committed bytes to Windows Downloads, preserving differing existing files.
+Delivery registers distinguish each source commit and version; no local or
+preflight log is treated as a registry result.

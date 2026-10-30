@@ -83,8 +83,9 @@ all Appendix A profile/ordinal/renaming/example/skeleton claims, every unnumbere
 mathematical assertion and the final manuscript scope/citation refresh are now
 proved and locally verified. The full-paper mathematical endpoint is complete;
 local Comparator and independent kernel verification of the selected Palomar
-family are now complete. Official/service checks and publication remain separate
-subsequent stages. Preserve both proof routes and every
+family are now complete. The author has approved Apache-2.0 public release,
+including the original manuscript and retained history, and the repository is
+public. Official preflight and service/registration remain separate stages. Preserve both proof routes and every
 completed result. Reuse all
 completed binary, unary, structural,
 principal, cleaning and descent results. Retain earlier source/rank/atomization decisions.
@@ -178,19 +179,21 @@ review, and publication as separate statuses.
 
 The author has requested the work needed for Palomar registration. Read
 `docs/CODEX_PALOMAR_REGISTRATION.txt` and `docs/PALOMAR_REGISTRATION_STATUS.md`.
-The full-paper mathematical endpoint remains complete. The current local task
-has completed the independent Challenge/Solution package, definition correspondence,
-kernel verification, metadata and concrete release candidate. Those results are
-merged into main through 23ec1bc. Official full preflight is the next required
-check, with verified source 2e771844077fd8cebfbe365230f13d4dd13a75b1 fixed. This phase
-supersedes historical instructions saying that no Palomar preparation is
-authorized; it does not restart the completed proof-development sequence.
+The full-paper mathematical endpoint remains complete. The independent
+Challenge/Solution package, correspondence, local kernel verification and
+metadata are complete and merged into main. The author explicitly approved
+Apache-2.0 publication of the repository, original manuscript and retained history;
+the repository is now public. Verified submission source: 2e771844077fd8cebfbe365230f13d4dd13a75b1.
+Keep Lean at 4.35.0 and reuse the completed local verification. Official full
+preflight is running at https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329.
 
-ChatGPT prepares and reviews the registration instructions; local WSL Codex
-implements and builds the package. Complete authorized reversible preparation
-before presenting the exact publication/license/submission decision. Reuse any
-later explicit approval already given. The retained Apache-2.0 file is a proposal,
-not an adopted license, and the repository remains private at this checkpoint.
-Follow Palomar's current requirements for exact submission authorization and the
-author's decision after seeing the service review. Do not automate browser
-sign-in or claim that general preparation authorization approves an unseen review.
+Preserve the verified source commit; later reports/evidence do not replace it.
+Bring the official mechanical result to the author before proceeding with service
+intake. Final registration requires the author to see and approve the actual
+service review and digest. Do not automate browser sign-in or treat release
+approval as consent to an unseen review.
+
+The author clarified the publication order: Palomar Registry registration first,
+then arXiv submission, then work on Local connectedness in recursion categories
+and essential incompleteness. Do not submit to arXiv before Palomar registration.
+Do not reopen the completed proof-development or local packaging sequence.

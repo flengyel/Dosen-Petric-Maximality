@@ -21,13 +21,13 @@ Protected local comparison and independent-kernel outcomes are recorded in
 [the registration report](docs/PALOMAR_REGISTRATION_LOCAL_REPORT.md), with exact
 commands, inputs and diagnostics under `provenance/wsl-palomar-registration-20261030/`.
 
-The root metadata, license text and manual-only full-preflight workflow form a
-release package now present on main. Its immutable submission SHA remains
-`2e771844077fd8cebfbe365230f13d4dd13a75b1`. The Apache-2.0 text is included;
-explicit license/public release confirmation is pending. Repository visibility
-remains private. Lean stays at 4.35.0, supported by the current checker policy.
-Official full preflight is the next required check. Service verification, editorial
-review and registration remain separate pending stages.
+The author approved Apache-2.0 publication, including the original manuscript
+and retained history, on 30 October 2026. The repository is public. Its immutable
+submission SHA remains `2e771844077fd8cebfbe365230f13d4dd13a75b1`. Lean stays at 4.35.0.
+[Official full preflight](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329) is running with the pinned standard profile;
+the [stage report](docs/PALOMAR_OFFICIAL_PREFLIGHT_REPORT.md) distinguishes its
+result from local verification, service intake and final registration. The
+publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
@@ -696,8 +696,9 @@ are retained in `provenance/palomar-registration-2026-10-30/`.
 `bash scripts/fetch-palomar.sh` fetches that source into its own revision-specific
 directory and preserves the older checkout.
 
-The complete verified package is merged into main. Original proposals remain
-under `docs/palomar/`; the root metadata, Comparator configuration, Apache-2.0
-text and prepared workflow are present on main. The repository remains private
-pending explicit release/license confirmation. Official full preflight, service
-verification and registration remain separate subsequent stages.
+The verified package is merged into main and publicly released under the
+author-approved Apache-2.0 license, including the original manuscript and retained
+history. Original proposals remain under `docs/palomar/` as historical materials.
+The verified source remains `2e771844077fd8cebfbe365230f13d4dd13a75b1`. Official full preflight is running;
+service verification and registration remain subsequent stages. ArXiv submission
+follows successful Palomar registration.
