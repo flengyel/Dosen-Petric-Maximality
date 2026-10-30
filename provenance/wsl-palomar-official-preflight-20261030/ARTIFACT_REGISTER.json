@@ -1,0 +1,74 @@
+{
+  "workflow_run_id": 41129351329,
+  "artifact_id": 13012687151,
+  "original_zip_sha256": "d6b0921b4b8d6b237a39c8d47e760fbb3a47b435877ff59dcd6d06a3957e36ff",
+  "original_json_sha256": "b21cdb78ae39b47b11e96be06a388787cd8d6d8ace045e4d403fb50cd14db8c9",
+  "sha256_verified_against_github": true,
+  "files": [
+    {
+      "path": "provenance/wsl-palomar-official-preflight-20261030/DISPATCH_ACCEPTED.json",
+      "sha256": "d6318fe7ce859988902756cb52cf06037fd708815b89524ae60a24fb2c951d72",
+      "bytes": 160
+    },
+    {
+      "path": "provenance/wsl-palomar-official-preflight-20261030/DISPATCH_REQUEST.json",
+      "sha256": "4d475f89a1db94583c01b6085fc66565ec7264592f2f9ce3a1787f32d3e01953",
+      "bytes": 569
+    },
+    {
+      "path": "provenance/wsl-palomar-official-preflight-20261030/MECHANICAL_RESULT.json",
+      "sha256": "d42f5f79c4a0dd5322416ca1eeb2dbdca42735c6336bea8d864f2518a8e5d8ce",
+      "bytes": 65869
+    },
+    {
+      "path": "provenance/wsl-palomar-official-preflight-20261030/OFFICIAL_PREFLIGHT_STAGE.json",
+      "sha256": "1ac791565eb40271715a5087826b38b4be9683dabcc390b59b02a8ff46789c8a",
+      "bytes": 1711
+    },
+    {
+      "path": "provenance/wsl-palomar-official-preflight-20261030/PUBLIC_RELEASE.json",
+      "sha256": "605262a3a6520576eddb5210d829ae978c75998adce97c3dafdaa94a14fac874",
+      "bytes": 792
+    },
+    {
+      "path": "provenance/wsl-palomar-official-preflight-20261030/RELEASE_AUTHORIZATION.json",
+      "sha256": "6b0c8b2e8709c7f4dcc9afdd84067900b041f56e4abc87971c2ed4f699bc274d",
+      "bytes": 720
+    },
+    {
+      "path": "provenance/wsl-palomar-official-preflight-20261030/WORKFLOW_ARTIFACTS.json",
+      "sha256": "4206db84687a39d16c00820c741dd406994e1d884910b3fc72dd85ed52f9f8a7",
+      "bytes": 929
+    },
+    {
+      "path": "provenance/wsl-palomar-official-preflight-20261030/WORKFLOW_JOBS.json",
+      "sha256": "55420399bd302c421cfdcb9c873981b8ce073ae12baf30037ef3a2f36c7a0bdd",
+      "bytes": 10020
+    },
+    {
+      "path": "provenance/wsl-palomar-official-preflight-20261030/WORKFLOW_RUN.json",
+      "sha256": "a9b0700690ae94a951547287e9711b799333d8118ee0119a034fc6dc37068fe1",
+      "bytes": 14722
+    },
+    {
+      "path": "provenance/wsl-palomar-official-preflight-20261030/job-124316004626.log",
+      "sha256": "300e38af1ef65887e043edc23dbf9a55bf655144e0c71e513fe100daf7a5b920",
+      "bytes": 17732
+    },
+    {
+      "path": "provenance/wsl-palomar-official-preflight-20261030/job-124316053804.log",
+      "sha256": "9b66a5563e3c8c3636c1eecb0d543fcc200ec3de8d4db69e050dfe4b85c907dd",
+      "bytes": 89453
+    },
+    {
+      "path": "provenance/wsl-palomar-official-preflight-20261030/mechanical-report.json",
+      "sha256": "b21cdb78ae39b47b11e96be06a388787cd8d6d8ace045e4d403fb50cd14db8c9",
+      "bytes": 95977
+    },
+    {
+      "path": "provenance/wsl-palomar-official-preflight-20261030/mechanical-report.zip",
+      "sha256": "d6b0921b4b8d6b237a39c8d47e760fbb3a47b435877ff59dcd6d06a3957e36ff",
+      "bytes": 11037
+    }
+  ]
+}

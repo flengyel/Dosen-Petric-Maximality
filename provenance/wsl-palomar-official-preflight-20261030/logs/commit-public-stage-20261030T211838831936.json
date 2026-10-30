@@ -1,0 +1,13 @@
+{
+  "command": [
+    "git",
+    "commit",
+    "-m",
+    "Record approved Apache-2.0 public release and official full preflight"
+  ],
+  "exit_status": 0,
+  "seconds": 0.227,
+  "stdout": "[main 6479529] Record approved Apache-2.0 public release and official full preflight\n 16 files changed, 799 insertions(+), 186 deletions(-)\n create mode 100644 docs/PALOMAR_OFFICIAL_PREFLIGHT_REPORT.md\n create mode 100644 provenance/wsl-palomar-official-preflight-20261030/DISPATCH_ACCEPTED.json\n create mode 100644 provenance/wsl-palomar-official-preflight-20261030/DISPATCH_REQUEST.json\n create mode 100644 provenance/wsl-palomar-official-preflight-20261030/OFFICIAL_PREFLIGHT_STAGE.json\n create mode 100644 provenance/wsl-palomar-official-preflight-20261030/PUBLIC_RELEASE.json\n create mode 100644 provenance/wsl-palomar-official-preflight-20261030/RELEASE_AUTHORIZATION.json\n create mode 100644 provenance/wsl-palomar-official-preflight-20261030/WORKFLOW_JOBS.json\n create mode 100644 provenance/wsl-palomar-official-preflight-20261030/WORKFLOW_RUN.json\n",
+  "stderr": "",
+  "utc": "2026-10-30T21:18:39.059297+00:00"
+}

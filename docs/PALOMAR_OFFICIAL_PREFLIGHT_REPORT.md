@@ -1,44 +1,106 @@
-# Official Palomar full preflight
+# Official full Palomar preflight — passed
 
-The author approved Apache-2.0 publication, including the original manuscript
-and retained history, and official full preflight for the fixed verified source
-`2e771844077fd8cebfbe365230f13d4dd13a75b1`. The repository is now public:
-https://github.com/flengyel/Dosen-Petric-Maximality.
+**Official mechanical status: `pass`; phase: `verification`; stage: `complete`.**
+[GitHub run 41129351329](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329) completed successfully for the immutable submission
+`2e771844077fd8cebfbe365230f13d4dd13a75b1`. The repository is public under the author-approved Apache-2.0
+license, including the original manuscript and retained history.
 
-**Current official run: [run 41129351329](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329), in_progress.**
-A mechanical result has not yet been collected. Local verification is complete
-and reused; it is not relabelled as this official outcome. Lean stays at 4.35.0.
+## Exact run and evidence
 
-| Exact field | Value |
+| Field | Verified value |
 | --- | --- |
-| Verified submission | `2e771844077fd8cebfbe365230f13d4dd13a75b1` |
-| Comparator | `comparator.json` |
-| Relationship | I am a responsible author or maintainer |
-| Pipeline | `14aa8d6b3c2f14a8540605e37144560b9a00e7e7` |
-| Workflow | `.github/workflows/palomar-preflight.yml` |
-| Mode | `full` |
-| Profile | `palomar-standard-v1` |
+| Repository | `flengyel/Dosen-Petric-Maximality` |
+| Submitted proof source | `2e771844077fd8cebfbe365230f13d4dd13a75b1` |
+| Comparator path | `comparator.json` |
+| Pipeline pin | `14aa8d6b3c2f14a8540605e37144560b9a00e7e7` |
+| Mode / profile | `full` / `palomar-standard-v1` |
 | Request | `preflight001` |
-| Caller head | `ac2503166ebbb5084a3da4999f4193c8607e1d14` |
-| Actual GitHub run | `41129351329` |
+| Workflow caller head | `ac2503166ebbb5084a3da4999f4193c8607e1d14` |
+| Lean toolchain | `leanprover/lean4:v4.35.0` |
+| Lean toolchain commit | `eb6cafb7290e8bd5f2937522d8d804f58f02bafc` |
+| Official mechanical report SHA-256 | `b21cdb78ae39b47b11e96be06a388787cd8d6d8ace045e4d403fb50cd14db8c9` |
+| Artifact ZIP SHA-256 | `d6b0921b4b8d6b237a39c8d47e760fbb3a47b435877ff59dcd6d06a3957e36ff` |
+| GitHub artifact | `mechanical-report-preflight001`, ID `13012687151` |
 
-The repository visibility change and GitHub dispatch were checked through the
-existing authenticated Windows GitHub CLI session for `flengyel`. GitHub reports
-the license as Apache-2.0. No credential was created or extracted. Public release
-and dispatch records are retained under
-`provenance/wsl-palomar-official-preflight-20261030/`. Raw user-profile responses
-and any future service token/review are excluded from public evidence.
+The downloaded ZIP's SHA-256 matches GitHub's advertised artifact digest. Its
+single `mechanical-report.json` was retained byte-for-byte and checked for the
+exact repository, immutable source, workflow URL, standard profile and full
+verification phase. The caller head identifies the workflow launch, while the
+submitted proof source above identifies what was checked. `preflight001` is the
+workflow request identifier, not a Palomar service submission or registry ID.
 
-The author asked whether the agent was registering on their behalf. The scope
-was clarified and accepted: public release and official preflight are being
-handled; no Palomar intake or registration has occurred. Bring the official
-result to the author before proceeding with intake. Final registration requires
-the author to read and approve the actual service review and digest.
+## Mechanical outcomes
 
-The publication order is **Palomar Registry registration first, then arXiv**.
-The Local connectedness in recursion categories and essential incompleteness
-project follows arXiv submission. No arXiv submission has occurred.
+| Check | Actual official result |
+| --- | --- |
+| Source and license | Exact source fetched; Apache-2.0 declared and detected. |
+| Whole-source policy | All 1,870 regular Lean sources checked with `lean --deps-json`; module/line policy passed. |
+| Challenge provenance | High trust; no project imports, no untrusted sources; one core source dependency. |
+| Independent Challenge | 562 lines, 23,920 bytes; concrete definitions and five intended statement-proof placeholders. |
+| Solution build | Fresh build passed: 758 build jobs. |
+| Public Comparator | Exact five selected types and their required definition closure matched; definition holes `[]`; only `propext`, `Quot.sound`, `Classical.choice` permitted. |
+| Lean kernel | Accepted. |
+| NanoDa | Accepted. |
+| Protected authenticated con-ron | Accepted 9,639 declarations in `--verified` mode. |
+| Resource outcome | No OOM/OOM-kill, deadline or supervisor timeout event. |
 
-The verified source and all 17 critical input hashes remain unchanged. The stash
-is preserved. Earlier private/proposal states and delivery copies remain valid
-historical records; this report records the subsequent approved public stage.
+The protected con-ron binary is SHA-256
+`4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef`, from the policy-authenticated
+v4.36.0-rc1 checker update for the submitted Lean 4.35.0 toolchain. **The Lean
+compiler was not upgraded.** Its output records two inductive blocks modelled
+in-process (Lean.Syntax and DosenPetric.TraceTree; 51 generated records checked
+as declarations) and the two pinned Nat-operation hoists. These actual outcomes
+are retained, not inferred from the earlier local replay.
+
+The sole official warning is that the Challenge exceeds the preferred
+300-line/32-KiB review surface. Its 562 lines exceed the preferred line count;
+its 23,920 bytes are below 32 KiB. Both hard limits, 1,000 lines and 100 KiB,
+are satisfied. The finite concrete presentation is preserved.
+
+The standard GitHub-hosted runner reported 4 CPUs and 16,760,332,288 bytes of
+host memory. Measured solution build time was 282.559 seconds, Solution export
+5.621 seconds, Comparator 39.781 seconds, and con-ron 26.059 seconds. These are
+observed phase measurements, not estimates of proof-development cost or total
+job duration. Supervised proof phases returned success. Deliberate confinement
+negative probes have expected nonzero exits; they are not failed proof phases.
+Full resource records, tool digests and complete public job logs are retained.
+
+## Source and publication scope
+
+The author approved the concrete public-release question with “Yes.” The source,
+root Comparator and all 17 critical input hashes remain fixed. The completed
+local package, strict audit, expanded definition audit and focused controls were
+reused. No local proof rewrite, new mathematical assumption or Lean upgrade was
+introduced for this official run. The complete-paper claim map and manuscripts
+remain preserved; the registry selection is the five-statement maximality family
+and its two structural witnesses.
+
+The release authorization, public visibility check, dispatch inputs, run/job
+records, artifact listing, original mechanical JSON and ZIP, and tool digests are
+retained under `provenance/wsl-palomar-official-preflight-20261030/`.
+
+## Next stages and author control
+
+No Palomar service intake, editorial review or final registration has occurred.
+The agreed scope is to bring this official result to the author before intake.
+When proceeding, use repository `flengyel/Dosen-Petric-Maximality`, exact source `2e771844077fd8cebfbe365230f13d4dd13a75b1`, root
+`comparator.json`, and the responsible author/maintainer relationship for Florian
+Lengyel. Recheck current service instructions and registration identity before
+intake; do not reuse another project's registry ID or automate browser sign-in.
+
+The actual private service review must be shown to the author, with its digest
+and what registration publishes, before final registration. Public-release
+approval does not approve an unseen review. Keep service tokens and private
+review material out of public Git history.
+
+The author explicitly specified **Palomar Registry registration first, then
+arXiv submission**. No arXiv submission has occurred. The Local connectedness in
+recursion categories and essential incompleteness project follows arXiv.
+
+## Delivery
+
+Final reports and principal machine evidence are delivered from committed Git
+bytes to `/mnt/c/Users/fleng/Downloads`. Differing prior files are preserved.
+The official-preflight delivery receipt records exact source commits, repository
+paths, Downloads paths and hashes; the evidence source commit does not replace
+the verified submission SHA above.

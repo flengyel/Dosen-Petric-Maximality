@@ -37,7 +37,8 @@ closed relations. The retained complete-paper scope remains unchanged.
 | Manuscript preservation | All 11 files unchanged |
 | Metadata official loader/schema/taxonomy and pinned workflow | Pass |
 | Commit-byte/source correspondence | Pass |
-| Official full preflight / service / editorial / registration | Not performed |
+| Official full preflight | Pass for the exact verified submission; Lean, NanoDa and con-ron accepted. |
+| Service intake / editorial / registration | Not performed. |
 
 | Submission input | SHA-256 |
 | --- | --- |
@@ -85,7 +86,8 @@ Keep Lean pinned at 4.35.0. The current verifier remains
 [checker policy](https://github.com/PalomarRegistry/PalomarSubmission/blob/14aa8d6b3c2f14a8540605e37144560b9a00e7e7/checker-revisions.json)
 explicitly supplies the protected con-ron checker for Lean 4.35.0. No Lean
 upgrade is required. Reuse the completed local comparison and kernel evidence.
-Official full preflight is running at [run 41129351329](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329).
+Official full preflight passed at [run 41129351329](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329); the mechanical report
+records status `pass`, phase `verification`, and stage `complete`.
 
 The authenticated Windows GitHub CLI session for `flengyel` performed the
 approved visibility change and dispatched the registered manual-only workflow.

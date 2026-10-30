@@ -1,0 +1,198 @@
+﻿2026-10-30T21:13:11.4822310Z Current runner version: '2.338.2'
+2026-10-30T21:13:11.4841783Z ##[group]Runner Image Provisioner
+2026-10-30T21:13:11.4842406Z Hosted Compute Agent
+2026-10-30T21:13:11.4842844Z Version: 20261021.618
+2026-10-30T21:13:11.4843289Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-30T21:13:11.4843736Z Build Date: 2026-10-21T00:45:21Z
+2026-10-30T21:13:11.4844354Z Worker ID: {0fbde10a-9839-43f5-953d-c6e2c9d2ee05}
+2026-10-30T21:13:11.4844801Z Region: centralus
+2026-10-30T21:13:11.4845183Z Cloud: Azure
+2026-10-30T21:13:11.4845619Z ##[endgroup]
+2026-10-30T21:13:11.4846442Z ##[group]Operating System
+2026-10-30T21:13:11.4846889Z Ubuntu
+2026-10-30T21:13:11.4847235Z 24.04.5
+2026-10-30T21:13:11.4847597Z LTS
+2026-10-30T21:13:11.4847989Z ##[endgroup]
+2026-10-30T21:13:11.4848346Z ##[group]Runner Image
+2026-10-30T21:13:11.4848770Z Image: ubuntu-24.04
+2026-10-30T21:13:11.4849175Z Version: 20261025.353.1
+2026-10-30T21:13:11.4850035Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-30T21:13:11.4851003Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+2026-10-30T21:13:11.4851611Z ##[endgroup]
+2026-10-30T21:13:11.4852331Z ##[group]GITHUB_TOKEN Permissions
+2026-10-30T21:13:11.4853607Z Contents: read
+2026-10-30T21:13:11.4854582Z Metadata: read
+2026-10-30T21:13:11.4854944Z ##[endgroup]
+2026-10-30T21:13:11.4856392Z Secret source: Actions
+2026-10-30T21:13:11.4856978Z Cache mode: write
+2026-10-30T21:13:11.4857449Z Prepare workflow directory
+2026-10-30T21:13:11.5093406Z Prepare all required actions
+2026-10-30T21:13:11.5128504Z Getting action download info
+2026-10-30T21:13:11.7406302Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-10-30T21:13:11.8985035Z Uses: PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+2026-10-30T21:13:11.8988424Z ##[group] Inputs
+2026-10-30T21:13:11.8988974Z   repository: flengyel/Dosen-Petric-Maximality
+2026-10-30T21:13:11.8989448Z   commit: 2e771844077fd8cebfbe365230f13d4dd13a75b1
+2026-10-30T21:13:11.8989935Z   pipeline_commit: 14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+2026-10-30T21:13:11.8990454Z   request_id: preflight001
+2026-10-30T21:13:11.8990825Z   mode: full
+2026-10-30T21:13:11.8991236Z   execution_profile: palomar-standard-v1
+2026-10-30T21:13:11.8991701Z   execution_attempt: 
+2026-10-30T21:13:11.8992322Z   options: {"comparator_config_path":"comparator.json","authorization_relationship":"I am a responsible author or maintainer"}
+2026-10-30T21:13:11.8993049Z ##[endgroup]
+2026-10-30T21:13:11.8993423Z Complete job name: palomar-preflight / profile
+2026-10-30T21:13:11.9653153Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-10-30T21:13:11.9653719Z with:
+2026-10-30T21:13:11.9654284Z   repository: PalomarRegistry/PalomarSubmission
+2026-10-30T21:13:11.9654669Z   ref: 14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+2026-10-30T21:13:11.9655043Z   persist-credentials: false
+2026-10-30T21:13:11.9657123Z   token: ***
+2026-10-30T21:13:11.9657376Z   ssh-strict: true
+2026-10-30T21:13:11.9657633Z   ssh-user: git
+2026-10-30T21:13:11.9657883Z   clean: true
+2026-10-30T21:13:11.9658149Z   sparse-checkout-cone-mode: true
+2026-10-30T21:13:11.9658458Z   fetch-depth: 1
+2026-10-30T21:13:11.9658710Z   fetch-tags: false
+2026-10-30T21:13:11.9658972Z   show-progress: true
+2026-10-30T21:13:11.9659236Z   lfs: false
+2026-10-30T21:13:11.9659485Z   submodules: false
+2026-10-30T21:13:11.9659770Z   set-safe-directory: true
+2026-10-30T21:13:11.9660074Z   allow-unsafe-pr-checkout: false
+2026-10-30T21:13:11.9660475Z ##[endgroup]
+2026-10-30T21:13:12.2031571Z Syncing repository: PalomarRegistry/PalomarSubmission
+2026-10-30T21:13:12.2033034Z ##[group]Getting Git version info
+2026-10-30T21:13:12.2033533Z Working directory is '/home/runner/work/Dosen-Petric-Maximality/Dosen-Petric-Maximality'
+2026-10-30T21:13:12.2034631Z [command]/usr/bin/git version
+2026-10-30T21:13:12.2108649Z git version 2.56.0
+2026-10-30T21:13:12.2122010Z ##[endgroup]
+2026-10-30T21:13:12.2130686Z Temporarily overriding HOME='/home/runner/work/_temp/25258f6b-807e-4837-a6ff-64e2be3faace' before making global git config changes
+2026-10-30T21:13:12.2132348Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-30T21:13:12.2136028Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Dosen-Petric-Maximality/Dosen-Petric-Maximality
+2026-10-30T21:13:12.2215475Z Deleting the contents of '/home/runner/work/Dosen-Petric-Maximality/Dosen-Petric-Maximality'
+2026-10-30T21:13:12.2216790Z ##[group]Determining repository object format
+2026-10-30T21:13:12.2217654Z ##[endgroup]
+2026-10-30T21:13:12.2218309Z ##[group]Initializing the repository
+2026-10-30T21:13:12.2221492Z [command]/usr/bin/git init /home/runner/work/Dosen-Petric-Maximality/Dosen-Petric-Maximality
+2026-10-30T21:13:12.2327147Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-30T21:13:12.2328335Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-30T21:13:12.2329229Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-30T21:13:12.2329950Z hint: call:
+2026-10-30T21:13:12.2330335Z hint:
+2026-10-30T21:13:12.2330840Z hint: 	git config --global init.defaultBranch <name>
+2026-10-30T21:13:12.2331426Z hint:
+2026-10-30T21:13:12.2331982Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-30T21:13:12.2332911Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-30T21:13:12.2333570Z hint:
+2026-10-30T21:13:12.2334061Z hint: 	git branch -m <name>
+2026-10-30T21:13:12.2334508Z hint:
+2026-10-30T21:13:12.2335097Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-30T21:13:12.2337852Z Initialized empty Git repository in /home/runner/work/Dosen-Petric-Maximality/Dosen-Petric-Maximality/.git/
+2026-10-30T21:13:12.2346228Z [command]/usr/bin/git remote add origin https://github.com/PalomarRegistry/PalomarSubmission
+2026-10-30T21:13:12.2396429Z ##[endgroup]
+2026-10-30T21:13:12.2399563Z ##[group]Disabling automatic garbage collection
+2026-10-30T21:13:12.2399968Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-30T21:13:12.2436221Z ##[endgroup]
+2026-10-30T21:13:12.2436857Z ##[group]Setting up auth
+2026-10-30T21:13:12.2437323Z Removing SSH command configuration
+2026-10-30T21:13:12.2441479Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-30T21:13:12.2481824Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-30T21:13:12.2827196Z Removing HTTP extra header
+2026-10-30T21:13:12.2832388Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-30T21:13:12.2874424Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-30T21:13:12.3071638Z Removing includeIf entries pointing to credentials config files
+2026-10-30T21:13:12.3076536Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-30T21:13:12.3122924Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-30T21:13:12.3325689Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-4830b144-0284-44bd-86cd-3fa80bc66871.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-30T21:13:12.3369984Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Dosen-Petric-Maximality/Dosen-Petric-Maximality/.git.path /home/runner/work/_temp/git-credentials-4830b144-0284-44bd-86cd-3fa80bc66871.config
+2026-10-30T21:13:12.3409144Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Dosen-Petric-Maximality/Dosen-Petric-Maximality/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-4830b144-0284-44bd-86cd-3fa80bc66871.config
+2026-10-30T21:13:12.3447984Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-4830b144-0284-44bd-86cd-3fa80bc66871.config
+2026-10-30T21:13:12.3534789Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-4830b144-0284-44bd-86cd-3fa80bc66871.config
+2026-10-30T21:13:12.3571269Z ##[endgroup]
+2026-10-30T21:13:12.3571936Z ##[group]Fetching the repository
+2026-10-30T21:13:12.3575905Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+2026-10-30T21:13:13.0078571Z From https://github.com/PalomarRegistry/PalomarSubmission
+2026-10-30T21:13:13.0079843Z  * branch            14aa8d6b3c2f14a8540605e37144560b9a00e7e7 -> FETCH_HEAD
+2026-10-30T21:13:13.0087171Z [command]/usr/bin/git rev-parse --verify --quiet 14aa8d6b3c2f14a8540605e37144560b9a00e7e7^{object}
+2026-10-30T21:13:13.0126012Z 14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+2026-10-30T21:13:13.0130488Z ##[endgroup]
+2026-10-30T21:13:13.0131072Z ##[group]Determining the checkout info
+2026-10-30T21:13:13.0131839Z ##[endgroup]
+2026-10-30T21:13:13.0135592Z [command]/usr/bin/git sparse-checkout disable
+2026-10-30T21:13:13.0200290Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-30T21:13:13.0246757Z ##[group]Checking out the ref
+2026-10-30T21:13:13.0248767Z [command]/usr/bin/git checkout --progress --force 14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+2026-10-30T21:13:13.0376858Z Note: switching to '14aa8d6b3c2f14a8540605e37144560b9a00e7e7'.
+2026-10-30T21:13:13.0377515Z 
+2026-10-30T21:13:13.0377950Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-30T21:13:13.0379208Z changes and commit them, and you can discard any commits you make in this
+2026-10-30T21:13:13.0380375Z state without impacting any branches by switching back to a branch.
+2026-10-30T21:13:13.0381030Z 
+2026-10-30T21:13:13.0381436Z If you want to create a new branch to retain commits you create, you may
+2026-10-30T21:13:13.0382427Z do so (now or later) by using -c with the switch command. Example:
+2026-10-30T21:13:13.0383041Z 
+2026-10-30T21:13:13.0383306Z   git switch -c <new-branch-name>
+2026-10-30T21:13:13.0384032Z 
+2026-10-30T21:13:13.0384333Z Or undo this operation with:
+2026-10-30T21:13:13.0384836Z 
+2026-10-30T21:13:13.0385103Z   git switch -
+2026-10-30T21:13:13.0385494Z 
+2026-10-30T21:13:13.0386393Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-30T21:13:13.0387357Z 
+2026-10-30T21:13:13.0388585Z HEAD is now at 14aa8d6 Merge pull request #184 from PalomarRegistry/fix/verso-dotted-docstring-attribution-20261027
+2026-10-30T21:13:13.0392161Z ##[endgroup]
+2026-10-30T21:13:13.0438852Z [command]/usr/bin/git log -1 --format=%H
+2026-10-30T21:13:13.0472538Z 14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+2026-10-30T21:13:13.0481583Z ##[group]Removing auth
+2026-10-30T21:13:13.0482564Z Removing SSH command configuration
+2026-10-30T21:13:13.0484730Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-30T21:13:13.0523678Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-30T21:13:13.0731302Z Removing HTTP extra header
+2026-10-30T21:13:13.0733518Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-30T21:13:13.0775688Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-30T21:13:13.0980037Z Removing includeIf entries pointing to credentials config files
+2026-10-30T21:13:13.0981830Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-30T21:13:13.1018042Z includeif.gitdir:/home/runner/work/Dosen-Petric-Maximality/Dosen-Petric-Maximality/.git.path
+2026-10-30T21:13:13.1020739Z includeif.gitdir:/home/runner/work/Dosen-Petric-Maximality/Dosen-Petric-Maximality/.git/worktrees/*.path
+2026-10-30T21:13:13.1023100Z includeif.gitdir:/github/workspace/.git.path
+2026-10-30T21:13:13.1024791Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-30T21:13:13.1029174Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Dosen-Petric-Maximality/Dosen-Petric-Maximality/.git.path
+2026-10-30T21:13:13.1066065Z /home/runner/work/_temp/git-credentials-4830b144-0284-44bd-86cd-3fa80bc66871.config
+2026-10-30T21:13:13.1075401Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Dosen-Petric-Maximality/Dosen-Petric-Maximality/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-4830b144\-0284\-44bd\-86cd\-3fa80bc66871\.config
+2026-10-30T21:13:13.1218006Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Dosen-Petric-Maximality/Dosen-Petric-Maximality/.git/worktrees/*.path
+2026-10-30T21:13:13.1255824Z /home/runner/work/_temp/git-credentials-4830b144-0284-44bd-86cd-3fa80bc66871.config
+2026-10-30T21:13:13.1263152Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Dosen-Petric-Maximality/Dosen-Petric-Maximality/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-4830b144\-0284\-44bd\-86cd\-3fa80bc66871\.config
+2026-10-30T21:13:13.1302422Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-10-30T21:13:13.1336570Z /github/runner_temp/git-credentials-4830b144-0284-44bd-86cd-3fa80bc66871.config
+2026-10-30T21:13:13.1342496Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-4830b144\-0284\-44bd\-86cd\-3fa80bc66871\.config
+2026-10-30T21:13:13.1385084Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-30T21:13:13.1415952Z /github/runner_temp/git-credentials-4830b144-0284-44bd-86cd-3fa80bc66871.config
+2026-10-30T21:13:13.1423011Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-4830b144\-0284\-44bd\-86cd\-3fa80bc66871\.config
+2026-10-30T21:13:13.1464094Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-30T21:13:13.1662658Z Removing credentials config '/home/runner/work/_temp/git-credentials-4830b144-0284-44bd-86cd-3fa80bc66871.config'
+2026-10-30T21:13:13.1675362Z ##[endgroup]
+2026-10-30T21:13:13.1873793Z ##[group]Run python3 scripts/verification_profile.py --resolve
+2026-10-30T21:13:13.1875099Z [36;1mpython3 scripts/verification_profile.py --resolve[0m
+2026-10-30T21:13:13.1895190Z shell: /usr/bin/bash -e {0}
+2026-10-30T21:13:13.1895772Z env:
+2026-10-30T21:13:13.1896322Z   PALOMAR_EXECUTION_PROFILE: palomar-standard-v1
+2026-10-30T21:13:13.1897054Z ##[endgroup]
+2026-10-30T21:13:13.2863377Z Post job cleanup.
+2026-10-30T21:13:13.3473843Z [command]/usr/bin/git version
+2026-10-30T21:13:13.3518828Z git version 2.56.0
+2026-10-30T21:13:13.3547391Z Temporarily overriding HOME='/home/runner/work/_temp/0b620ea2-6b8c-4c89-bb09-5ff1f49a73f5' before making global git config changes
+2026-10-30T21:13:13.3550198Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-30T21:13:13.3552824Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Dosen-Petric-Maximality/Dosen-Petric-Maximality
+2026-10-30T21:13:13.3590423Z Removing SSH command configuration
+2026-10-30T21:13:13.3591862Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-30T21:13:13.3629710Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-30T21:13:13.3942358Z Removing HTTP extra header
+2026-10-30T21:13:13.3944303Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-30T21:13:13.3949066Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-30T21:13:13.4135278Z Removing includeIf entries pointing to credentials config files
+2026-10-30T21:13:13.4139620Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-30T21:13:13.4180626Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-30T21:13:13.4528221Z Evaluate and set job outputs
+2026-10-30T21:13:13.4535514Z Set output 'labels'
+2026-10-30T21:13:13.4537142Z Set output 'timeout'
+2026-10-30T21:13:13.4538127Z Set output 'budget'
+2026-10-30T21:13:13.4539027Z Cleaning up orphan processes

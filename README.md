@@ -24,7 +24,7 @@ commands, inputs and diagnostics under `provenance/wsl-palomar-registration-2026
 The author approved Apache-2.0 publication, including the original manuscript
 and retained history, on 30 October 2026. The repository is public. Its immutable
 submission SHA remains `2e771844077fd8cebfbe365230f13d4dd13a75b1`. Lean stays at 4.35.0.
-[Official full preflight](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329) is running with the pinned standard profile;
+[Official full preflight](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329) passed with the pinned standard profile;
 the [stage report](docs/PALOMAR_OFFICIAL_PREFLIGHT_REPORT.md) distinguishes its
 result from local verification, service intake and final registration. The
 publication order is Palomar Registry registration first, then arXiv submission.
@@ -699,6 +699,6 @@ directory and preserves the older checkout.
 The verified package is merged into main and publicly released under the
 author-approved Apache-2.0 license, including the original manuscript and retained
 history. Original proposals remain under `docs/palomar/` as historical materials.
-The verified source remains `2e771844077fd8cebfbe365230f13d4dd13a75b1`. Official full preflight is running;
+The verified source remains `2e771844077fd8cebfbe365230f13d4dd13a75b1`. Official full preflight passed;
 service verification and registration remain subsequent stages. ArXiv submission
 follows successful Palomar registration.

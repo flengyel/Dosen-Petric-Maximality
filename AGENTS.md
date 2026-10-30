@@ -185,7 +185,7 @@ metadata are complete and merged into main. The author explicitly approved
 Apache-2.0 publication of the repository, original manuscript and retained history;
 the repository is now public. Verified submission source: 2e771844077fd8cebfbe365230f13d4dd13a75b1.
 Keep Lean at 4.35.0 and reuse the completed local verification. Official full
-preflight is running at https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329.
+preflight passed at https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329.
 
 Preserve the verified source commit; later reports/evidence do not replace it.
 Bring the official mechanical result to the author before proceeding with service

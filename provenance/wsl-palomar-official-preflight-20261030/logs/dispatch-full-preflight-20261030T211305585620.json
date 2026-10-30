@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/mnt/c/Program Files/GitHub CLI/gh.exe",
+    "api",
+    "repos/flengyel/Dosen-Petric-Maximality/actions/workflows/palomar-preflight.yml/dispatches",
+    "--method",
+    "POST",
+    "--input",
+    "-"
+  ],
+  "exit_status": 0,
+  "seconds": 1.955,
+  "stdout": "",
+  "stderr": "",
+  "utc": "2026-10-30T21:13:07.540266+00:00"
+}

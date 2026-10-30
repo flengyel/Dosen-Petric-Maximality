@@ -14,11 +14,16 @@
       "con_ron": "accepted"
     },
     "official_full_preflight": {
-      "status": "in_progress",
+      "status": "pass",
+      "phase": "verification",
+      "stage": "complete",
       "workflow_url": "https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329",
       "run_id": 41129351329,
       "verified_source_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
-      "mechanical_report_status": "not yet available"
+      "mechanical_report_sha256": "b21cdb78ae39b47b11e96be06a388787cd8d6d8ace045e4d403fb50cd14db8c9",
+      "Lean": "accepted",
+      "NanoDa": "accepted",
+      "con_ron": "accepted"
     },
     "service_verification": "not requested",
     "editorial_outcome": "not requested",

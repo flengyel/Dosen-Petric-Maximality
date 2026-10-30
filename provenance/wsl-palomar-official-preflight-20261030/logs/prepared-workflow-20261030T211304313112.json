@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/mnt/c/Program Files/GitHub CLI/gh.exe",
+    "api",
+    "repos/flengyel/Dosen-Petric-Maximality/actions/workflows/palomar-preflight.yml"
+  ],
+  "exit_status": 0,
+  "seconds": 0.595,
+  "stdout": "{\"id\":402163979,\"node_id\":\"W_kwDOVS4lCs4X-IkL\",\"name\":\"Palomar full mechanical preflight\",\"path\":\".github/workflows/palomar-preflight.yml\",\"state\":\"active\",\"created_at\":\"2026-10-30T15:32:42.000-04:00\",\"updated_at\":\"2026-10-30T15:32:42.000-04:00\",\"url\":\"https://api.github.com/repos/flengyel/Dosen-Petric-Maximality/actions/workflows/402163979\",\"html_url\":\"https://github.com/flengyel/Dosen-Petric-Maximality/blob/main/.github/workflows/palomar-preflight.yml\",\"badge_url\":\"https://github.com/flengyel/Dosen-Petric-Maximality/workflows/Palomar%20full%20mechanical%20preflight/badge.svg\"}",
+  "stderr": "",
+  "utc": "2026-10-30T21:13:04.908147+00:00"
+}

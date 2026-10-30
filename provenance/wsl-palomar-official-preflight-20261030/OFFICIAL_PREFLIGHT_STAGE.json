@@ -1,5 +1,5 @@
 {
-  "utc": "2026-10-30T21:18:38.532009+00:00",
+  "utc": "2026-10-30T21:30:43.061664+00:00",
   "repository": "flengyel/Dosen-Petric-Maximality",
   "repository_visibility": "public",
   "license": "Apache-2.0",
@@ -14,11 +14,23 @@
   "request_id": "preflight001",
   "toolchain": "leanprover/lean4:v4.35.0",
   "local_verification_reused": true,
-  "official_full_preflight_status": "in_progress",
-  "mechanical_report_status": "not yet available",
+  "official_full_preflight_status": "pass",
+  "mechanical_report_status": "pass",
   "palomar_service_intake": "not requested",
   "palomar_registration": "not performed",
   "arxiv_submission": "not performed; only after Palomar registration",
   "next_project": "Local connectedness in recursion categories and essential incompleteness; after arXiv",
-  "stash": "dedfd8fc8cd49930e9a162d5be585215b062a43c"
+  "stash": "dedfd8fc8cd49930e9a162d5be585215b062a43c",
+  "mechanical_report_sha256": "b21cdb78ae39b47b11e96be06a388787cd8d6d8ace045e4d403fb50cd14db8c9",
+  "artifact_zip_sha256": "d6b0921b4b8d6b237a39c8d47e760fbb3a47b435877ff59dcd6d06a3957e36ff",
+  "mandatory_Lean": "accepted",
+  "mandatory_NanoDa": "accepted",
+  "protected_con_ron": "accepted",
+  "resource_alarm_count": 0,
+  "warnings": [
+    "configured Challenge source exceeds the preferred 32 KiB / 300-line review surface"
+  ],
+  "service_intake": "not requested",
+  "registration": "not performed",
+  "arxiv": "not submitted; after Palomar registration"
 }

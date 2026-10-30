@@ -4,7 +4,7 @@ The independent five-statement package passes local verification. Lean, NanoDa
 and the authenticated protected con-ron checker accept its complete selected
 proof closure. The expanded audit also compares all 360 concrete presentation
 declarations and the five selected types. This is a locally verified release candidate, now publicly released with the
-author's Apache-2.0 approval. Official full preflight is running; service
+author's Apache-2.0 approval. Official full preflight passed; service
 registration has not occurred.
 
 ## Source and preservation
@@ -75,7 +75,7 @@ purport to select every coherence, model or appendix result independently.
 | Source closure | Pass: Challenge is core-only, and Solution's full local import graph has no Challenge or protected alias dependency. |
 | Metadata | Pass: pinned official loader, v0.4 schema and taxonomy; human author/maintainer Florian Lengyel; actual source-based ChatGPT/Codex roles; no invented model IDs/costs or external peer review claim. |
 | Manuscripts | All 11 retained files match the integrated source bytes. |
-| Official full preflight | Not run. The pinned manual-only full workflow is prepared. |
+| Official full preflight | Pass: [run 41129351329](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329), exact immutable source; Lean, NanoDa and con-ron accepted. |
 | Service verification, editorial outcome, registration | Not requested or performed. |
 
 The 35 earlier public check files and 74 earlier rejection controls remain
@@ -137,7 +137,7 @@ and resolution script. No failed production proof was moved out of the build.
 The author explicitly approved Apache-2.0 publication, including the original
 manuscript and retained history. The root release package is on main and the
 repository is public. The verified submission remains `2e771844077fd8cebfbe365230f13d4dd13a75b1`.
-[Official full preflight](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329) is running for that exact commit. Its outcome
+[Official full preflight](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329) passed for that exact commit. Its outcome
 is recorded separately in `PALOMAR_OFFICIAL_PREFLIGHT_REPORT.md`; the local
 proof, comparison and kernel evidence above is reused without a Lean upgrade.
 

@@ -1,0 +1,2598 @@
+{
+  "build_log_tail": "enPetric.GentzenBinaryParametricDescent (315ms)\n\u2714 [455/758] Built DosenPetric.GentzenSelectedContractionDescent (283ms)\n\u2714 [456/758] Built DosenPetric.GentzenMixUnion (337ms)\n\u2714 [457/758] Built DosenPetric.GentzenBinaryMixDiagram (391ms)\n\u2714 [458/758] Built DosenPetric.GentzenTerminalCutDescent (354ms)\n\u2714 [459/758] Built DosenPetric.GentzenBlockedMixCore (417ms)\n\u2714 [460/758] Built DosenPetric.GentzenBinaryMixFirst (483ms)\n\u2714 [461/758] Built DosenPetric.GentzenBlockedRightMixCore (478ms)\n\u2714 [462/758] Built DosenPetric.GentzenBlockedMixRoutes (471ms)\n\u2714 [463/758] Built DosenPetric.GentzenTerminalInputCutDescent (562ms)\n\u2714 [464/758] Built DosenPetric.GentzenBlockedMixCoordinates (429ms)\n\u2714 [465/758] Built DosenPetric.GentzenSelectedRouteFactor (451ms)\n\u2714 [466/758] Built DosenPetric.GentzenBinaryMixNative (558ms)\n\u2714 [467/758] Built DosenPetric.GentzenBlockedMixNative (445ms)\n\u2714 [468/758] Built DosenPetric.GentzenBlockedRightMixCoordinates (493ms)\n\u2714 [469/758] Built DosenPetric.GentzenBinaryMixRoutes (563ms)\n\u2714 [470/758] Built DosenPetric.GentzenBlockedMixSource (473ms)\n\u2714 [471/758] Built DosenPetric.GentzenBlockedRightMixNative (551ms)\n\u2714 [472/758] Built DosenPetric.GentzenBinaryMixSelected (627ms)\n\u2714 [473/758] Built DosenPetric.GentzenBlockedRightMixSource (490ms)\n\u2714 [474/758] Built DosenPetric.GentzenBlockedGammaMixData (616ms)\n\u2714 [475/758] Built DosenPetric.GentzenBinaryMixSymmetry (486ms)\n\u2714 [476/758] Built DosenPetric.GentzenBlockedConjLift (343ms)\n\u2714 [477/758] Built DosenPetric.GentzenBinaryMixLeftStep (323ms)\n\u2714 [478/758] Built DosenPetric.GentzenBlockedConjCore (326ms)\n\u2714 [479/758] Built DosenPetric.GentzenBinaryMixMirror (527ms)\n\u2714 [480/758] Built DosenPetric.GentzenBlockedGammaMix (661ms)\n\u2714 [481/758] Built DosenPetric.GentzenBlockedConjNative (673ms)\n\u2714 [482/758] Built DosenPetric.GentzenBinaryMixRightDiagram (383ms)\n\u2714 [483/758] Built DosenPetric.GentzenBlockedRightGammaMix (497ms)\n\u2714 [484/758] Built DosenPetric.GentzenBlockedConjSource (432ms)\n\u2714 [485/758] Built DosenPetric.GentzenBinaryMixInputRoutes (375ms)\n\u2714 [486/758] Built DosenPetric.GentzenBlockedConjEquation (299ms)\n\u2714 [487/758] Built DosenPetric.GentzenBinaryMixRightNative (644ms)\n\u2714 [488/758] Built DosenPetric.GentzenBlockedGammaConj (521ms)\n\u2714 [489/758] Built DosenPetric.GentzenBinaryMixRightSelected (289ms)\n\u2714 [490/758] Built DosenPetric.GentzenTerminalFoldCoordinates (414ms)\n\u2714 [491/758] Built DosenPetric.GentzenBinaryMixRightStep (348ms)\n\u2714 [492/758] Built DosenPetric.GentzenTerminalDisjDenotation (327ms)\n\u2714 [493/758] Built DosenPetric.GentzenBinaryLogicalAssociativity (281ms)\n\u2714 [494/758] Built DosenPetric.GentzenTerminalFoldPrograms (427ms)\n\u2714 [495/758] Built DosenPetric.GentzenBinaryLogicalDiagram (378ms)\n\u2714 [496/758] Built DosenPetric.GentzenConjRightSecondDiagram (240ms)\n\u2714 [497/758] Built DosenPetric.GentzenConjRightSecondNative (919ms)\n\u2714 [498/758] Built DosenPetric.GentzenConjRightSecondParent (390ms)\n\u2714 [499/758] Built DosenPetric.GentzenConjRightSecondSelected (323ms)\n\u2714 [500/758] Built DosenPetric.GentzenMixedDisjSymmetry (319ms)\n\u2714 [501/758] Built DosenPetric.GentzenConjFirstSplice (262ms)\n\u2714 [502/758] Built DosenPetric.GentzenConjFirstResidual (290ms)\n\u2714 [503/758] Built DosenPetric.GentzenConjFirstCore (229ms)\n\u2714 [504/758] Built DosenPetric.GentzenLastBlockExchange (468ms)\n\u2714 [505/758] Built DosenPetric.GentzenLastBlockSplit (344ms)\n\u2714 [506/758] Built DosenPetric.GentzenConjFirstNative (358ms)\n\u2714 [507/758] Built DosenPetric.GentzenConjFirstEquation (535ms)\n\u2714 [508/758] Built DosenPetric.GentzenConjFirstSelected (337ms)\n\u2714 [509/758] Built DosenPetric.GentzenConjLeftStrength (262ms)\n\u2714 [510/758] Built DosenPetric.GentzenConjLeftCoordinates (326ms)\n\u2714 [511/758] Built DosenPetric.GentzenConjLeftDeletion (270ms)\n\u2714 [512/758] Built DosenPetric.GentzenConjLeftCore (303ms)\n\u2714 [513/758] Built DosenPetric.GentzenConjLeftNative (513ms)\n\u2714 [514/758] Built DosenPetric.GentzenConjLeftParent (298ms)\n\u2714 [515/758] Built DosenPetric.GentzenConjLeftEquation (1.0s)\n\u2714 [516/758] Built DosenPetric.GentzenConjLeftRoutes (748ms)\n\u2714 [517/758] Built DosenPetric.GentzenConjLeftNativeLaws (324ms)\n\u2714 [518/758] Built DosenPetric.GentzenConjLeftSelected (468ms)\n\u2714 [519/758] Built DosenPetric.GentzenConjSecondCoordinates (291ms)\n\u2714 [520/758] Built DosenPetric.GentzenConjSecondDeletion (285ms)\n\u2714 [521/758] Built DosenPetric.GentzenConjSecondCore (318ms)\n\u2714 [522/758] Built DosenPetric.GentzenFirstBlockExchange (435ms)\n\u2714 [523/758] Built DosenPetric.GentzenConjSecondNative (524ms)\n\u2714 [524/758] Built DosenPetric.GentzenConjSecondParent (724ms)\n\u2714 [525/758] Built DosenPetric.GentzenConjSecondEquation (1.1s)\n\u2714 [526/758] Built DosenPetric.GentzenConjSecondRoutes (391ms)\n\u2714 [527/758] Built DosenPetric.GentzenConjSecondSelected (282ms)\n\u2714 [528/758] Built DosenPetric.GentzenMirrorBinaryCoordinates (249ms)\n\u2714 [529/758] Built DosenPetric.GentzenMirrorBinaryDiagram (321ms)\n\u2714 [530/758] Built DosenPetric.GentzenMirrorBinaryCore (237ms)\n\u2714 [531/758] Built DosenPetric.GentzenDisjReflectedCore (277ms)\n\u2714 [532/758] Built DosenPetric.GentzenDisjNativeCoordinates (296ms)\n\u2714 [533/758] Built DosenPetric.GentzenDisjFirstCore (300ms)\n\u2714 [534/758] Built DosenPetric.GentzenDisjRuleLaws (259ms)\n\u2714 [535/758] Built DosenPetric.GentzenDisjFirstNative (363ms)\n\u2714 [536/758] Built DosenPetric.GentzenDisjFirstEquation (1.2s)\n\u2714 [537/758] Built DosenPetric.GentzenDisjFirstSelected (391ms)\n\u2714 [538/758] Built DosenPetric.GentzenMirrorBinaryStrength (256ms)\n\u2714 [539/758] Built DosenPetric.GentzenMirrorMixedSymmetry (315ms)\n\u2714 [540/758] Built DosenPetric.GentzenMirrorBinaryResidual (326ms)\n\u2714 [541/758] Built DosenPetric.GentzenDisjSymmetry (265ms)\n\u2714 [542/758] Built DosenPetric.GentzenMirrorDeletionCoordinates (399ms)\n\u2714 [543/758] Built DosenPetric.GentzenMirrorBlockedAlgebra (399ms)\n\u2714 [544/758] Built DosenPetric.GentzenDisjSecondCore (509ms)\n\u2714 [545/758] Built DosenPetric.GentzenMirrorSelectedStrength (350ms)\n\u2714 [546/758] Built DosenPetric.GentzenMirrorBlockedConjLift (354ms)\n\u2714 [547/758] Built DosenPetric.GentzenDisjSecondNative (503ms)\n\u2714 [548/758] Built DosenPetric.GentzenMirrorBlockedConjCore (332ms)\n\u2714 [549/758] Built DosenPetric.GentzenMirrorSelectedDeletion (401ms)\n\u2714 [550/758] Built DosenPetric.GentzenBlockedDisjCore (492ms)\n\u2714 [551/758] Built DosenPetric.GentzenMirrorSelectedCore (496ms)\n\u2714 [552/758] Built DosenPetric.GentzenBlockedDisjInput (354ms)\n\u2714 [553/758] Built DosenPetric.GentzenBlockedDisjNative (492ms)\n\u2714 [554/758] Built DosenPetric.GentzenDisjSecondEquation (1.6s)\n\u2714 [555/758] Built DosenPetric.GentzenDisjSecondSelected (435ms)\n\u2714 [556/758] Built DosenPetric.GentzenBlockedDisjEquation (569ms)\n\u2714 [557/758] Built DosenPetric.GentzenDisjRightReflection (291ms)\n\u2714 [558/758] Built DosenPetric.GentzenBlockedDisjSource (330ms)\n\u2714 [559/758] Built DosenPetric.GentzenDisjRightCoordinates (413ms)\n\u2714 [560/758] Built DosenPetric.GentzenBlockedGammaDisj (406ms)\n\u2714 [561/758] Built DosenPetric.GentzenDisjRightFactors (290ms)\n\u2714 [562/758] Built DosenPetric.GentzenDistributiveEpi (307ms)\n\u2714 [563/758] Built DosenPetric.GentzenDisjRightCore (303ms)\n\u2714 [564/758] Built DosenPetric.GentzenDistributiveMono (299ms)\n\u2714 [565/758] Built DosenPetric.GentzenSpliceSelectedNaturality (427ms)\n\u2714 [566/758] Built DosenPetric.GentzenSplitPairs (513ms)\n\u2714 [567/758] Built DosenPetric.GentzenBlockedLeftDisjCore (541ms)\n\u2714 [568/758] Built DosenPetric.GentzenDisjRightSecondNative (798ms)\n\u2714 [569/758] Built DosenPetric.GentzenBinaryContractionSplice (315ms)\n\u2714 [570/758] Built DosenPetric.GentzenSourceMixedProjections (365ms)\n\u2714 [571/758] Built DosenPetric.GentzenBlockedLeftDisjCoordinates (278ms)\n\u2714 [572/758] Built DosenPetric.GentzenBlockedLeftDisjSelected (303ms)\n\u2714 [573/758] Built DosenPetric.GentzenBlockedLeftDisjFixedCoordinates (276ms)\n\u2714 [574/758] Built DosenPetric.GentzenBlockedLeftDisjFixedEquation (314ms)\n\u2714 [575/758] Built DosenPetric.GentzenDisjRightSecondEquation (1.6s)\n\u2714 [576/758] Built DosenPetric.GentzenDisjRightSecondSelected (423ms)\n\u2714 [577/758] Built DosenPetric.GentzenDisjRightFirstCore (335ms)\n\u2714 [578/758] Built DosenPetric.GentzenDoubleDisjSpliceCoordinates (412ms)\n\u2714 [579/758] Built DosenPetric.GentzenDisjRightFirstNative (411ms)\n\u2714 [580/758] Built DosenPetric.GentzenDoubleDisjSplice (284ms)\n\u2714 [581/758] Built DosenPetric.GentzenDoubleDisjOutput (287ms)\n\u2714 [582/758] Built DosenPetric.GentzenDoubleDisjInput (290ms)\n\u2714 [583/758] Built DosenPetric.GentzenDisjRightFirstEquation (1.0s)\n\u2714 [584/758] Built DosenPetric.GentzenBlockedLeftDisjTerminalSquares (392ms)\n\u2714 [585/758] Built DosenPetric.GentzenDisjRightFirstSelected (567ms)\n\u2714 [586/758] Built DosenPetric.GentzenBlockedLeftDisjCanonical (366ms)\n\u2714 [587/758] Built DosenPetric.GentzenBlockedLeftDisjRoutes (269ms)\n\u2714 [588/758] Built DosenPetric.GentzenTerminalSelectedFolds (276ms)\n\u2714 [589/758] Built DosenPetric.GentzenBlockedLeftDisjNative (263ms)\n\u2714 [590/758] Built DosenPetric.GentzenBlockedLeftDisjHeadDenotation (359ms)\n\u2714 [591/758] Built DosenPetric.GentzenTerminalFoldComponents (319ms)\n\u2714 [592/758] Built DosenPetric.GentzenTerminalExchangeFold (415ms)\n\u2714 [593/758] Built DosenPetric.GentzenBlockedLeftDisjCutCoordinates (426ms)\n\u2714 [594/758] Built DosenPetric.GentzenBlockedLeftDisjEquation (1.3s)\n\u2714 [595/758] Built DosenPetric.GentzenScriptRoutes (241ms)\n\u2714 [596/758] Built DosenPetric.GentzenSelectedRouteVector (244ms)\n\u2714 [597/758] Built DosenPetric.GentzenBlockedLeftDisjSource (308ms)\n\u2714 [598/758] Built DosenPetric.GentzenBlockedLeftDisjSelectedEquation (408ms)\n\u2714 [599/758] Built DosenPetric.GentzenBlockedLeftGammaDisj (286ms)\n\u2714 [600/758] Built DosenPetric.GentzenBlockedLeftGammaDisjRank (336ms)\n\u2714 [601/758] Built DosenPetric.GentzenReflectedSpliceNaturality (224ms)\n\u2714 [602/758] Built DosenPetric.GentzenRightContractionSplice (237ms)\n\u2714 [603/758] Built DosenPetric.GentzenRightContractionCoordinates (258ms)\n\u2714 [604/758] Built DosenPetric.GentzenRightContractionHead (239ms)\n\u2714 [605/758] Built DosenPetric.GentzenDoubleConjCoordinates (380ms)\n\u2714 [606/758] Built DosenPetric.GentzenDoubleConjSplice (278ms)\n\u2714 [607/758] Built DosenPetric.GentzenDoubleConjOutput (332ms)\n\u2714 [608/758] Built DosenPetric.GentzenDoubleConjEquation (310ms)\n\u2714 [609/758] Built DosenPetric.GentzenDoubleConjParent (262ms)\n\u2714 [610/758] Built DosenPetric.GentzenBlockedRightConjCanonical (231ms)\n\u2714 [611/758] Built DosenPetric.GentzenBlockedRightConjRoutes (274ms)\n\u2714 [612/758] Built DosenPetric.GentzenBlockedRightConjNative (356ms)\n\u2714 [613/758] Built DosenPetric.GentzenBlockedRightConjOutput (262ms)\n\u2714 [614/758] Built DosenPetric.GentzenBlockedRightConjEquation (1.2s)\n\u2714 [615/758] Built DosenPetric.GentzenConjOutputNaturality (339ms)\n\u2714 [616/758] Built DosenPetric.GentzenBlockedRightConjSource (362ms)\n\u2714 [617/758] Built DosenPetric.GentzenBlockedRightConjBlock (255ms)\n\u2714 [618/758] Built DosenPetric.GentzenBlockedRightGammaConj (283ms)\n\u2714 [619/758] Built DosenPetric.GentzenBlockedRightGammaConjRank (325ms)\n\u2714 [620/758] Built DosenPetric.GentzenFreshUnaryRecursion (239ms)\n\u2714 [621/758] Built DosenPetric.GentzenSequentialRepairCoordinates (283ms)\n\u2714 [622/758] Built DosenPetric.GentzenSequentialContractionHead (294ms)\n\u2714 [623/758] Built DosenPetric.GentzenSequentialCutDenotation (353ms)\n\u2714 [624/758] Built DosenPetric.GentzenSequentialConjunctionNative (302ms)\n\u2714 [625/758] Built DosenPetric.GentzenTerminalLogicalHeadSquare (298ms)\n\u2714 [626/758] Built DosenPetric.GentzenSequentialLogicalScripts (286ms)\n\u2714 [627/758] Built DosenPetric.GentzenSequentialContractionRoute (263ms)\n\u2714 [628/758] Built DosenPetric.GentzenSequentialConjunctionSource (604ms)\n\u2714 [629/758] Built DosenPetric.GentzenSequentialRouteRepair (244ms)\n\u2714 [630/758] Built DosenPetric.GentzenBlockedConjunctionData (380ms)\n\u2714 [631/758] Built DosenPetric.GentzenBlockedConjunctionEquation (274ms)\n\u2714 [632/758] Built DosenPetric.GentzenBlockedConjunctionDescent (260ms)\n\u2714 [633/758] Built DosenPetric.GentzenBlockedConjunctionRank (350ms)\n\u2714 [634/758] Built DosenPetric.GentzenSequentialPrefixRepair (291ms)\n\u2714 [635/758] Built DosenPetric.GentzenSequentialCoproductHead (310ms)\n\u2714 [636/758] Built DosenPetric.GentzenSequentialRightCutDenotation (423ms)\n\u2714 [637/758] Built DosenPetric.GentzenSequentialDisjunctionNative (392ms)\n\u2714 [638/758] Built DosenPetric.GentzenSequentialFrontContractionRoute (276ms)\n\u2714 [639/758] Built DosenPetric.GentzenFreshDisjunctionRecursion (269ms)\n\u2714 [640/758] Built DosenPetric.GentzenSequentialDisjunctionSource (785ms)\n\u2714 [641/758] Built DosenPetric.GentzenBlockedDisjunctionData (361ms)\n\u2714 [642/758] Built DosenPetric.GentzenSequentialRightRouteRepair (246ms)\n\u2714 [643/758] Built DosenPetric.GentzenBlockedDisjunctionEquation (265ms)\n\u2714 [644/758] Built DosenPetric.GentzenBlockedDisjunctionDescent (248ms)\n\u2714 [645/758] Built DosenPetric.GentzenBlockedDisjunctionRank (294ms)\n\u2714 [646/758] Built DosenPetric.GentzenTerminalContractionFactor (329ms)\n\u2714 [647/758] Built DosenPetric.GentzenSequentialCutAdapters (246ms)\n\u2714 [648/758] Built DosenPetric.GentzenSequentialTerminalTransports (278ms)\n\u2714 [649/758] Built DosenPetric.GentzenExchangeStructuralProofs (255ms)\n\u2714 [650/758] Built DosenPetric.GentzenSequentialDisjFirstNative (295ms)\n\u2714 [651/758] Built DosenPetric.GentzenSequentialDisjFirstSource (469ms)\n\u2714 [652/758] Built DosenPetric.GentzenTerminalContractionSource (412ms)\n\u2714 [653/758] Built DosenPetric.GentzenBlockedDisjFirstData (422ms)\n\u2714 [654/758] Built DosenPetric.GentzenBlockedDisjFirstEquation (332ms)\n\u2714 [655/758] Built DosenPetric.GentzenBlockedDisjFirstDescent (304ms)\n\u2714 [656/758] Built DosenPetric.GentzenBlockedDisjFirstRank (370ms)\n\u2714 [657/758] Built DosenPetric.GentzenAppendixCFreshRight (233ms)\n\u2714 [658/758] Built DosenPetric.GentzenSequentialDisjSecondNative (286ms)\n\u2714 [659/758] Built DosenPetric.GentzenSequentialDisjSecondSource (587ms)\n\u2714 [660/758] Built DosenPetric.GentzenBlockedDisjSecondData (422ms)\n\u2714 [661/758] Built DosenPetric.GentzenBlockedDisjSecondEquation (304ms)\n\u2714 [662/758] Built DosenPetric.GentzenBlockedDisjSecondDescent (274ms)\n\u2714 [663/758] Built DosenPetric.GentzenBlockedDisjSecondRank (382ms)\n\u2714 [664/758] Built DosenPetric.GentzenSequentialThreeFibers (270ms)\n\u2714 [665/758] Built DosenPetric.GentzenSequentialDisjBothNative (341ms)\n\u2714 [666/758] Built DosenPetric.GentzenSequentialDisjBothEquation (269ms)\n\u2714 [667/758] Built DosenPetric.GentzenSequentialDisjBothSource (311ms)\n\u2714 [668/758] Built DosenPetric.GentzenBlockedDisjBothData (864ms)\n\u2714 [669/758] Built DosenPetric.GentzenBlockedDisjBothEquation (247ms)\n\u2714 [670/758] Built DosenPetric.GentzenBlockedDisjBothDescent (273ms)\n\u2714 [671/758] Built DosenPetric.GentzenBlockedDisjBothRank (415ms)\n\u2714 [672/758] Built DosenPetric.GentzenSequentialRightAdapters (239ms)\n\u2714 [673/758] Built DosenPetric.GentzenSequentialConjFirstNative (376ms)\n\u2714 [674/758] Built DosenPetric.GentzenSequentialConjFirstSource (300ms)\n\u2714 [675/758] Built DosenPetric.GentzenBlockedConjFirstData (448ms)\n\u2714 [676/758] Built DosenPetric.GentzenSequentialRightSourceTransport (803ms)\n\u2714 [677/758] Built DosenPetric.GentzenBlockedConjFirstEquation (307ms)\n\u2714 [678/758] Built DosenPetric.GentzenBlockedConjFirstDescent (269ms)\n\u2714 [679/758] Built DosenPetric.GentzenBlockedConjFirstRank (313ms)\n\u2714 [680/758] Built DosenPetric.GentzenSequentialConjSecondNative (391ms)\n\u2714 [681/758] Built DosenPetric.GentzenSequentialConjSecondSource (292ms)\n\u2714 [682/758] Built DosenPetric.GentzenBlockedConjSecondData (399ms)\n\u2714 [683/758] Built DosenPetric.GentzenBlockedConjSecondEquation (317ms)\n\u2714 [684/758] Built DosenPetric.GentzenBlockedConjSecondDescent (266ms)\n\u2714 [685/758] Built DosenPetric.GentzenBlockedConjSecondRank (297ms)\n\u2714 [686/758] Built DosenPetric.GentzenSequentialConjBothNative (399ms)\n\u2714 [687/758] Built DosenPetric.GentzenSequentialConjBothSource (297ms)\n\u2714 [688/758] Built DosenPetric.GentzenBlockedConjBothData (847ms)\n\u2714 [689/758] Built DosenPetric.GentzenBlockedConjBothEquation (244ms)\n\u2714 [690/758] Built DosenPetric.GentzenBlockedConjBothDescent (261ms)\n\u2714 [691/758] Built DosenPetric.GentzenBlockedConjBothRank (332ms)\n\u2714 [692/758] Built DosenPetric.GentzenBlockedRankDispatch (498ms)\n\u2714 [693/758] Built DosenPetric.GentzenPositionalReindex (224ms)\n\u2714 [694/758] Built DosenPetric.GentzenBlockedLeftRankDispatch (523ms)\n\u2714 [695/758] Built DosenPetric.GentzenParametricRightDispatch (369ms)\n\u2714 [696/758] Built DosenPetric.GentzenParametricLeftDispatch (377ms)\n\u2714 [697/758] Built DosenPetric.GentzenCleanRankInduction (241ms)\n\u2714 [698/758] Built DosenPetric.GentzenDegreeInduction (244ms)\n\u2714 [699/758] Built DosenPetric.GentzenCutElimination (364ms)\n\u2714 [700/758] Built DosenPetric.GentzenPositiveNormalization (239ms)\n\u2714 [701/758] Built DosenPetric.GentzenPureFormulas (388ms)\n\u2714 [702/758] Built DosenPetric.GentzenPurePorts (350ms)\n\u2714 [703/758] Built DosenPetric.GentzenPurePortCoordinates (692ms)\n\u2714 [704/758] Built DosenPetric.GentzenPurePortTransport (264ms)\n\u2714 [705/758] Built DosenPetric.GentzenPurePortRelations (454ms)\n\u2714 [706/758] Built DosenPetric.GentzenPureEdgeEvaluation (239ms)\n\u2714 [707/758] Built DosenPetric.GentzenPureNormalForms (244ms)\n\u2714 [708/758] Built DosenPetric.GentzenPureNormalFormRules (259ms)\n\u2714 [709/758] Built DosenPetric.GentzenMixNormalForm (284ms)\n\u2714 [710/758] Built DosenPetric.GentzenPurePositiveCoherence (280ms)\n\u2714 [711/758] Built DosenPetric.GentzenNormalFormCoherence (405ms)\n\u2714 [712/758] Built DosenPetric.GentzenNormalRetracts (270ms)\n\u2714 [713/758] Built DosenPetric.GentzenNormalExpansion (227ms)\n\u2714 [714/758] Built DosenPetric.GentzenPositiveCoherence (230ms)\n\u2714 [715/758] Built DosenPetric.ReducedCoherence (214ms)\n\u2714 [716/758] Built DosenPetric.PresentationCoherence (225ms)\n\u2714 [717/758] Built DosenPetric.ReducedQuotientReduction (248ms)\n\u2714 [718/758] Built DosenPetric.ReducedReductionFunctor (257ms)\n\u2714 [719/758] Built DosenPetric.ReducedRecovery (276ms)\n\u2714 [720/758] Built DosenPetric.ReducedDualSyntax (336ms)\n\u2714 [721/758] Built DosenPetric.ReducedDualCoordinates (1.1s)\n\u2714 [722/758] Built DosenPetric.ReducedDualRelations (9.5s)\n\u2714 [723/758] Built DosenPetric.ReducedDualFunctor (256ms)\n\u2714 [724/758] Built DosenPetric.PresentationNegationFunctor (288ms)\n\u2714 [725/758] Built DosenPetric.ReducedDualInvolution (317ms)\n\u2714 [726/758] Built DosenPetric.ReducedNegationLaws (256ms)\n\u2714 [727/758] Built DosenPetric.PresentationNegationNaturality (282ms)\n\u2714 [728/758] Built DosenPetric.PresentationNormalizationTerms (304ms)\n\u2714 [729/758] Built DosenPetric.PresentationNegationTerms (241ms)\n\u2714 [730/758] Built DosenPetric.PresentationProofCongruence (338ms)\n\u2714 [731/758] Built DosenPetric.PresentationMaximality (234ms)\n\u2714 [732/758] Built DosenPetric.PresentationFragmentMaximality (291ms)\n\u2714 [733/758] Built DosenPetric.PresentationNegationCoordinates (449ms)\n\u2714 [734/758] Built DosenPetric.PalomarCorrespondence (308ms)\n\u2714 [735/758] Built DosenPetric.PresentationNegationOccurrence (287ms)\n\u2714 [736/758] Built DosenPetric.PresentationShortQ (747ms)\n\u2714 [737/758] Built DosenPetric.PresentationShortTerminal (312ms)\n\u2714 [738/758] Built DosenPetric.PresentationShortE (7.5s)\n\u2714 [739/758] Built DosenPetric.PresentationShortProjection (271ms)\n\u2714 [740/758] Built DosenPetric.PresentationShortSubstitution (391ms)\n\u2714 [741/758] Built DosenPetric.PresentationShortMaximality (233ms)\n\u2714 [742/758] Built DosenPetric.OriginalIsolation (266ms)\n\u2714 [743/758] Built DosenPetric.FormulaSubstitutionLaws (252ms)\n\u2714 [744/758] Built DosenPetric.CartesianClosureObstruction (288ms)\n\u2714 [745/758] Built DosenPetric.SubstitutionFiberRelations (276ms)\n\u2714 [746/758] Built DosenPetric.ManuscriptStructuralDiagrams (282ms)\n\u2714 [747/758] Built DosenPetric.FormulaSubstitutionCoordinates (297ms)\n\u2714 [748/758] Built DosenPetric.PresentationSymmetricFold (259ms)\n\u2714 [749/758] Built DosenPetric.SubstitutionFiberGraphs (247ms)\n\u2714 [750/758] Built DosenPetric.PresentationSubstitutionCoordinates (1.1s)\n\u2714 [751/758] Built DosenPetric.PresentationSubstitutionWiring (598ms)\n\u2714 [752/758] Built DosenPetric.PresentationSubstitutionRemaining (477ms)\n\u2714 [753/758] Built DosenPetric.PresentationSubstitutionRelation (241ms)\n\u2714 [754/758] Built DosenPetric.PresentationSubstitutionOperations (279ms)\n\u2714 [755/758] Built DosenPetric.PresentationConsequences (257ms)\n\u2714 [756/758] Built DosenPetric.PalomarMaximality (243ms)\n\u2714 [757/758] Built Solution (216ms)\nBuild completed successfully (758 jobs).",
+  "bwrap_source_tag": "v0.12.0",
+  "challenge": {
+    "bytes": 23920,
+    "canonical_olean_sha256": "6e3eebc987ed0ee35c24eac13b5a4ce1db853fb523a97fbbd4fb7f53550f5342",
+    "dependencies": [],
+    "direct_imports": [],
+    "lines": 562,
+    "module": "Challenge",
+    "path": "Challenge.lean",
+    "sha256": "2bbfaf6f18b1385adc6d36694f1b05a632e4ebc26a775ed455c60abf19b856f5",
+    "transitive_source_count": 1,
+    "trust_level": "high",
+    "untrusted_sources": []
+  },
+  "checked_at": "2026-10-30T21:22:00Z",
+  "classification": {
+    "arxiv": [
+      {
+        "code": "math.CT",
+        "name": "Category Theory"
+      },
+      {
+        "code": "math.LO",
+        "name": "Logic"
+      }
+    ],
+    "msc2020": [
+      {
+        "code": "03G30",
+        "name": "Categorical logic, topoi"
+      },
+      {
+        "code": "03F07",
+        "name": "Structure of proofs"
+      },
+      {
+        "code": "18A32",
+        "name": "Factorization systems, substructures, quotient structures, congruences, amalgams"
+      }
+    ]
+  },
+  "comparator": {
+    "challenge_module": "Challenge",
+    "definition_names": [],
+    "path": "comparator.json",
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "sha256": "db36e6b9256356ca97a16be363a878b1feb337afd3217ef86096a29218290abb",
+    "solution_module": "Solution",
+    "theorem_names": [
+      "DosenPetric.Palomar.maximality",
+      "DosenPetric.Palomar.short_maximality",
+      "DosenPetric.Palomar.congruence_dichotomy",
+      "DosenPetric.Palomar.identity_ne_zero",
+      "DosenPetric.Palomar.no_top_to_bot"
+    ]
+  },
+  "comparator_log_tail": "Running nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!",
+  "con_ron_checker": {
+    "archive_sha256": "26b3cea1a006ad419215520b8668dcd3f6a9eeba1a123756563a739f9c6274b2",
+    "archive_url": "https://github.com/leanprover/lean4/releases/download/v4.36.0-rc1/lean-4.36.0-rc1-linux.tar.zst",
+    "binary_sha256": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+    "kind": "maintainer-pinned-release",
+    "release_commit": "c9afcddf514a6772bd4d649f7cfc04eff0b9f15e",
+    "release_tag": "v4.36.0-rc1",
+    "source_toolchain": "leanprover/lean4:v4.35.0"
+  },
+  "errors": [],
+  "existing_id": null,
+  "formalization": {
+    "automation_method_count": 1,
+    "path": "formalization.yaml",
+    "project_name": "Maximality of the Do\u0161en\u2013Petri\u0107 Boolean Category",
+    "review_status": "agent-reviewed",
+    "sha256": "ffd9b763a744d0e2f895772a36a01321ec1dc128476dfebc19d91a569f5efb03",
+    "source_count": 3
+  },
+  "kernel_attempts": [
+    {
+      "argv": [
+        "/home/runner/work/_temp/palomar/trusted-checker-update/con-ron",
+        "--jobs=2",
+        "--verified"
+      ],
+      "budget_seconds": 1800,
+      "detail": "con-ron: accepted 9639 declarations (--verified)\n\ncon-ron: 2 inductive blocks modelled in-process: Lean.Syntax, DosenPetric.TraceTree (51 generated records, checked by the fold as declarations and not counted as records of the file)\ncon-ron: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul",
+      "exit_code": 0,
+      "name": "con-ron",
+      "reason": "complete",
+      "status": "accepted"
+    }
+  ],
+  "kernels": [
+    {
+      "argv": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/nanoda_bin"
+      ],
+      "name": "nanoda"
+    },
+    {
+      "argv": [
+        "/home/runner/work/_temp/palomar/trusted-checker-update/con-ron",
+        "--jobs=2",
+        "--verified"
+      ],
+      "name": "con-ron"
+    }
+  ],
+  "lake_manifest": {
+    "path": "lake-manifest.json",
+    "sha256": "01a12079da418a0c2cb55ddb97259aeb6b1a66c9ccc15b222e172b17f56c5822"
+  },
+  "lakefile": {
+    "format": "toml",
+    "path": "lakefile.toml",
+    "sha256": "1a20167e2938ffcc6ffeca143dfd65883be292f2ffd039953fb5ea24fc188796"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "lean_toolchain_path": "lean-toolchain",
+  "license": {
+    "declared_identifier": "Apache-2.0",
+    "detected_identifier": "Apache-2.0",
+    "path": "LICENSE",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+  },
+  "mathlib_cache": {
+    "available": null,
+    "required": false
+  },
+  "mathlib_toolchain": [],
+  "orcid_validation": {
+    "checked_at": "2026-10-30T21:13:43Z",
+    "records": [],
+    "registry": "https://orcid.org",
+    "schema_version": 1
+  },
+  "phase": "verification",
+  "project_dependencies": [],
+  "protected_config": "{\n  \"challenge_module\": \"PalomarCanonical2e614690e3255b651534ab45.Challenge\",\n  \"definition_names\": [],\n  \"external_kernels\": {\n    \"nanoda\": [\n      \"/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/nanoda_bin\"\n    ]\n  },\n  \"permitted_axioms\": [\n    \"propext\",\n    \"Quot.sound\",\n    \"Classical.choice\"\n  ],\n  \"solution_module\": \"Solution\",\n  \"theorem_names\": [\n    \"DosenPetric.Palomar.maximality\",\n    \"DosenPetric.Palomar.short_maximality\",\n    \"DosenPetric.Palomar.congruence_dichotomy\",\n    \"DosenPetric.Palomar.identity_ne_zero\",\n    \"DosenPetric.Palomar.no_top_to_bot\"\n  ]\n}\n",
+  "protected_config_sha256": "50955aec242b8b1ebe8a93cbb21eedbd4a34355bb7a03e62c8875672f6e8f1ce",
+  "provenance": {
+    "mathematical_sources": [
+      {
+        "author_endorsement": "participated",
+        "authors": [
+          {
+            "name": "Florian Lengyel"
+          }
+        ],
+        "identifier": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/6a66b14b382aac214b52c055b8bf281b35302239/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v8.tex",
+        "location": "Theorem 2.1; Sections 2\u20136; Appendices A\u2013C; October 29, 2026.",
+        "note": "The manuscript is retained with the substantive Lean development. This is source-based formalization of the manuscript's result. Its v8 mathematical content is unchanged from v7. The selected declarations and the broader complete-paper correspondence are identified separately below.",
+        "relationship": "formalizes",
+        "title": "Maximality of the Do\u0161en\u2013Petri\u0107 Boolean Category, version 8",
+        "type": "paper"
+      },
+      {
+        "author_endorsement": "not-contacted",
+        "authors": [
+          {
+            "name": "Kosta Do\u0161en"
+          },
+          {
+            "name": "Zoran Petri\u0107"
+          }
+        ],
+        "identifier": "https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf",
+        "location": "King's College Publications, 2004; revised author version September 2007; the zero-identity Boolean presentation in Sections 14.2\u201314.3 and the cut-elimination and coherence arguments used by that presentation.",
+        "note": "The development includes proofs of the cut-elimination and coherence inputs needed for the actual source category. It does not attribute the manuscript's maximality theorem to this book. Appendix C identifies two source rank corrections and gives their concrete formal correspondences.",
+        "relationship": "formalizes",
+        "title": "Proof-Theoretical Coherence",
+        "type": "book"
+      },
+      {
+        "author_endorsement": "not-contacted",
+        "authors": [
+          {
+            "name": "Kosta Do\u0161en"
+          },
+          {
+            "name": "Zoran Petri\u0107"
+          }
+        ],
+        "identifier": "https://doi.org/10.1002/malq.201020020",
+        "location": "Mathematical Logic Quarterly 58 (2012), 5\u201317; Lemma 7; author version arXiv:0912.1271v3.",
+        "note": "The manuscript relates its particular q/e isomorphisms to the occurrence-bijection construction in Lemma 7. The actual arrows and their inverses are proved in the source category; no assumed isomorphism field replaces those constructions.",
+        "relationship": "background",
+        "title": "Isomorphic formulae in classical propositional logic",
+        "type": "paper"
+      }
+    ],
+    "related_formalizations": [],
+    "repository_role": "substantive-development",
+    "responsible_maintainers": [
+      {
+        "name": "Florian Lengyel"
+      }
+    ],
+    "result_origin": "source-based"
+  },
+  "resource_usage": [
+    {
+      "elapsed_seconds": 0.011,
+      "max_rss_kib": 13412,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "confinement-initial",
+      "returncode": 0,
+      "system_cpu_seconds": 0.014,
+      "user_cpu_seconds": 0.019,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 37932000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 8781824,
+      "phase": "confinement-initial:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.025,
+      "max_rss_kib": 13296,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "confinement-initial",
+      "returncode": 0,
+      "system_cpu_seconds": 0.019,
+      "user_cpu_seconds": 0.03,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 54063000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 13176832,
+      "phase": "confinement-initial:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.011,
+      "max_rss_kib": 13420,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "confinement-initial",
+      "returncode": 1,
+      "system_cpu_seconds": 0.015,
+      "user_cpu_seconds": 0.019,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 38996000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "1",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 9003008,
+      "phase": "confinement-initial:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "exit-code"
+    },
+    {
+      "elapsed_seconds": 0.025,
+      "max_rss_kib": 13248,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "confinement-initial",
+      "returncode": 0,
+      "system_cpu_seconds": 0.016,
+      "user_cpu_seconds": 0.031,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 53040000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 13492224,
+      "phase": "confinement-initial:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.025,
+      "max_rss_kib": 13420,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "confinement-initial",
+      "returncode": 1,
+      "system_cpu_seconds": 0.018,
+      "user_cpu_seconds": 0.03,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 54267000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "1",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 13717504,
+      "phase": "confinement-initial:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "exit-code"
+    },
+    {
+      "elapsed_seconds": 0.025,
+      "max_rss_kib": 13420,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "confinement-initial",
+      "returncode": 1,
+      "system_cpu_seconds": 0.022,
+      "user_cpu_seconds": 0.024,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 52155000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "1",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 13717504,
+      "phase": "confinement-initial:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "exit-code"
+    },
+    {
+      "elapsed_seconds": 0.023,
+      "max_rss_kib": 13420,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "confinement-initial",
+      "returncode": 1,
+      "system_cpu_seconds": 0.016,
+      "user_cpu_seconds": 0.029,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 49209000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "1",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 12910592,
+      "phase": "confinement-initial:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "exit-code"
+    },
+    {
+      "elapsed_seconds": 0.051,
+      "max_rss_kib": 25392,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.02,
+      "user_cpu_seconds": 0.053,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 79235000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26263552,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.044,
+      "max_rss_kib": 25140,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.027,
+      "user_cpu_seconds": 0.039,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 72833000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26005504,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.05,
+      "max_rss_kib": 25144,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.028,
+      "user_cpu_seconds": 0.045,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 78483000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26009600,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.043,
+      "max_rss_kib": 25156,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.024,
+      "user_cpu_seconds": 0.041,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 70677000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26021888,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.045,
+      "max_rss_kib": 25144,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.03,
+      "user_cpu_seconds": 0.037,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 73304000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26009600,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.044,
+      "max_rss_kib": 25152,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.03,
+      "user_cpu_seconds": 0.036,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 71114000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26017792,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.05,
+      "max_rss_kib": 25392,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.023,
+      "user_cpu_seconds": 0.049,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 77598000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26263552,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.044,
+      "max_rss_kib": 25380,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.028,
+      "user_cpu_seconds": 0.039,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 72690000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26251264,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.043,
+      "max_rss_kib": 25128,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.03,
+      "user_cpu_seconds": 0.034,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 70693000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 25993216,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.043,
+      "max_rss_kib": 25392,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.028,
+      "user_cpu_seconds": 0.038,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 72265000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26263552,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.043,
+      "max_rss_kib": 25408,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.021,
+      "user_cpu_seconds": 0.044,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 70993000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26279936,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.044,
+      "max_rss_kib": 25384,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.024,
+      "user_cpu_seconds": 0.042,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 72473000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26255360,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.05,
+      "max_rss_kib": 25128,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.03,
+      "user_cpu_seconds": 0.043,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 79020000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 25993216,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.044,
+      "max_rss_kib": 25384,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.026,
+      "user_cpu_seconds": 0.042,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 74045000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26009600,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.044,
+      "max_rss_kib": 25400,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.031,
+      "user_cpu_seconds": 0.035,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 72567000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26271744,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.044,
+      "max_rss_kib": 25384,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.028,
+      "user_cpu_seconds": 0.039,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 72929000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26009600,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.045,
+      "max_rss_kib": 25640,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.026,
+      "user_cpu_seconds": 0.041,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 73026000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26517504,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.045,
+      "max_rss_kib": 25636,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.023,
+      "user_cpu_seconds": 0.046,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 73805000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26513408,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.049,
+      "max_rss_kib": 27496,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.031,
+      "user_cpu_seconds": 0.04,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 76285000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 28418048,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.045,
+      "max_rss_kib": 25648,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.022,
+      "user_cpu_seconds": 0.044,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 72143000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26525696,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.046,
+      "max_rss_kib": 25384,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.026,
+      "user_cpu_seconds": 0.042,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 73910000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26255360,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.046,
+      "max_rss_kib": 25628,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.026,
+      "user_cpu_seconds": 0.041,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 73015000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26505216,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.046,
+      "max_rss_kib": 25120,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.023,
+      "user_cpu_seconds": 0.045,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 74466000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 25985024,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.05,
+      "max_rss_kib": 25140,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.025,
+      "user_cpu_seconds": 0.047,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 78273000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26005504,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.047,
+      "max_rss_kib": 25652,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.029,
+      "user_cpu_seconds": 0.041,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 76053000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26529792,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.047,
+      "max_rss_kib": 27404,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.025,
+      "user_cpu_seconds": 0.045,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 75408000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 28323840,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.045,
+      "max_rss_kib": 25148,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.029,
+      "user_cpu_seconds": 0.039,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 72976000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26013696,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.047,
+      "max_rss_kib": 29720,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.018,
+      "user_cpu_seconds": 0.051,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 75331000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 30695424,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.045,
+      "max_rss_kib": 25392,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.027,
+      "user_cpu_seconds": 0.04,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 72942000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 26263552,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.048,
+      "max_rss_kib": 23112,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "source-requirements",
+      "returncode": 0,
+      "system_cpu_seconds": 0.025,
+      "user_cpu_seconds": 0.045,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 75711000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 23928832,
+      "phase": "source-requirements:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.198,
+      "max_rss_kib": 78264,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "comparator-preflight",
+      "returncode": 0,
+      "system_cpu_seconds": 0.105,
+      "user_cpu_seconds": 0.117,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 227500000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 80404480,
+      "phase": "comparator-preflight:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.404,
+      "max_rss_kib": 350232,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "comparator-preflight",
+      "returncode": 0,
+      "system_cpu_seconds": 0.222,
+      "user_cpu_seconds": 0.205,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 432597000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 358899712,
+      "phase": "comparator-preflight:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.227,
+      "max_rss_kib": 78256,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "comparator-preflight",
+      "returncode": 0,
+      "system_cpu_seconds": 0.114,
+      "user_cpu_seconds": 0.136,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 255591000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 80396288,
+      "phase": "comparator-preflight:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.397,
+      "max_rss_kib": 350096,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "comparator-preflight",
+      "returncode": 0,
+      "system_cpu_seconds": 0.217,
+      "user_cpu_seconds": 0.203,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 425959000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 358760448,
+      "phase": "comparator-preflight:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.191,
+      "max_rss_kib": 78256,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "comparator-preflight",
+      "returncode": 0,
+      "system_cpu_seconds": 0.108,
+      "user_cpu_seconds": 0.106,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 219714000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 80396288,
+      "phase": "comparator-preflight:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.394,
+      "max_rss_kib": 349892,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "comparator-preflight",
+      "returncode": 0,
+      "system_cpu_seconds": 0.215,
+      "user_cpu_seconds": 0.203,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 422626000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 358551552,
+      "phase": "comparator-preflight:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.197,
+      "max_rss_kib": 78244,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "comparator-preflight",
+      "returncode": 0,
+      "system_cpu_seconds": 0.094,
+      "user_cpu_seconds": 0.127,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 225925000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 80384000,
+      "phase": "comparator-preflight:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.402,
+      "max_rss_kib": 349832,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "comparator-preflight",
+      "returncode": 0,
+      "system_cpu_seconds": 0.217,
+      "user_cpu_seconds": 0.207,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 430100000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 358490112,
+      "phase": "comparator-preflight:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.225,
+      "max_rss_kib": 51692,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "comparator-preflight",
+      "returncode": 0,
+      "system_cpu_seconds": 0.062,
+      "user_cpu_seconds": 0.206,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 274662000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 53194752,
+      "phase": "comparator-preflight:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.096,
+      "max_rss_kib": 30056,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "comparator-preflight",
+      "returncode": 1,
+      "system_cpu_seconds": 0.025,
+      "user_cpu_seconds": 0.095,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 125802000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "1",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 31039488,
+      "phase": "comparator-preflight:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "exit-code"
+    },
+    {
+      "elapsed_seconds": 0.22,
+      "max_rss_kib": 51604,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "comparator-preflight",
+      "returncode": 1,
+      "system_cpu_seconds": 0.064,
+      "user_cpu_seconds": 0.197,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 266430000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "1",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 53104640,
+      "phase": "comparator-preflight:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "exit-code"
+    },
+    {
+      "elapsed_seconds": 0.104,
+      "max_rss_kib": 31644,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "comparator-preflight",
+      "returncode": 1,
+      "system_cpu_seconds": 0.028,
+      "user_cpu_seconds": 0.098,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 131478000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "1",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 32665600,
+      "phase": "comparator-preflight:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "exit-code"
+    },
+    {
+      "elapsed_seconds": 5.731,
+      "max_rss_kib": 133548,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "comparator-preflight",
+      "returncode": 0,
+      "system_cpu_seconds": 0.044,
+      "user_cpu_seconds": 5.737,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 5786277000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 137015296,
+      "phase": "comparator-preflight:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 5.629,
+      "max_rss_kib": 127720,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "comparator-preflight",
+      "returncode": 1,
+      "system_cpu_seconds": 0.047,
+      "user_cpu_seconds": 5.605,
+      "workspace_disk_peak_bytes": 4096
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 5657124000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "1",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 130801664,
+      "phase": "comparator-preflight:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "exit-code"
+    },
+    {
+      "elapsed_seconds": 0.05,
+      "max_rss_kib": 23820,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "module-resolution",
+      "returncode": 0,
+      "system_cpu_seconds": 0.024,
+      "user_cpu_seconds": 0.049,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 78980000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 24653824,
+      "phase": "module-resolution:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.044,
+      "max_rss_kib": 23396,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "module-resolution",
+      "returncode": 0,
+      "system_cpu_seconds": 0.026,
+      "user_cpu_seconds": 0.041,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 71960000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 24219648,
+      "phase": "module-resolution:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.967,
+      "max_rss_kib": 155816,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "canonical-challenge",
+      "returncode": 0,
+      "system_cpu_seconds": 0.111,
+      "user_cpu_seconds": 1.137,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 1254046000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 159817728,
+      "phase": "canonical-challenge:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.042,
+      "max_rss_kib": 23372,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "canonical-challenge",
+      "returncode": 0,
+      "system_cpu_seconds": 0.026,
+      "user_cpu_seconds": 0.039,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 70053000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 23949312,
+      "phase": "canonical-challenge:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.044,
+      "max_rss_kib": 23172,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "canonical-challenge",
+      "returncode": 0,
+      "system_cpu_seconds": 0.024,
+      "user_cpu_seconds": 0.042,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 72299000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 23990272,
+      "phase": "canonical-challenge:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.011,
+      "max_rss_kib": 13256,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "confinement-final",
+      "returncode": 0,
+      "system_cpu_seconds": 0.016,
+      "user_cpu_seconds": 0.016,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 38110000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 8998912,
+      "phase": "confinement-final:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.025,
+      "max_rss_kib": 13416,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "confinement-final",
+      "returncode": 0,
+      "system_cpu_seconds": 0.018,
+      "user_cpu_seconds": 0.029,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 52305000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 13443072,
+      "phase": "confinement-final:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.01,
+      "max_rss_kib": 13256,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "confinement-final",
+      "returncode": 1,
+      "system_cpu_seconds": 0.015,
+      "user_cpu_seconds": 0.019,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 37482000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "1",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 8769536,
+      "phase": "confinement-final:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "exit-code"
+    },
+    {
+      "elapsed_seconds": 0.025,
+      "max_rss_kib": 13420,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "confinement-final",
+      "returncode": 0,
+      "system_cpu_seconds": 0.02,
+      "user_cpu_seconds": 0.028,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 52778000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 13697024,
+      "phase": "confinement-final:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.024,
+      "max_rss_kib": 13420,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "confinement-final",
+      "returncode": 1,
+      "system_cpu_seconds": 0.019,
+      "user_cpu_seconds": 0.027,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 51864000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "1",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 13430784,
+      "phase": "confinement-final:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "exit-code"
+    },
+    {
+      "elapsed_seconds": 0.024,
+      "max_rss_kib": 13244,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "confinement-final",
+      "returncode": 1,
+      "system_cpu_seconds": 0.022,
+      "user_cpu_seconds": 0.024,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 51290000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "1",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 13717504,
+      "phase": "confinement-final:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "exit-code"
+    },
+    {
+      "elapsed_seconds": 0.024,
+      "max_rss_kib": 13256,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "confinement-final",
+      "returncode": 1,
+      "system_cpu_seconds": 0.019,
+      "user_cpu_seconds": 0.027,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 51334000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "1",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 12656640,
+      "phase": "confinement-final:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "failed",
+      "systemd_result": "exit-code"
+    },
+    {
+      "elapsed_seconds": 0.05,
+      "max_rss_kib": 24052,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "candidate-configuration",
+      "returncode": 0,
+      "system_cpu_seconds": 0.03,
+      "user_cpu_seconds": 0.042,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 78152000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 24891392,
+      "phase": "candidate-configuration:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.054,
+      "max_rss_kib": 23880,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "candidate-configuration",
+      "returncode": 0,
+      "system_cpu_seconds": 0.029,
+      "user_cpu_seconds": 0.047,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 81371000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 24715264,
+      "phase": "candidate-configuration:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 0.475,
+      "max_rss_kib": 351192,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 1,
+      "phase": "challenge-export",
+      "returncode": 0,
+      "system_cpu_seconds": 0.217,
+      "user_cpu_seconds": 0.28,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 502961000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 359882752,
+      "phase": "challenge-export:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 282.559,
+      "max_rss_kib": 748520,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "solution-build",
+      "returncode": 0,
+      "system_cpu_seconds": 72.957,
+      "user_cpu_seconds": 533.183,
+      "workspace_disk_peak_bytes": 433692672
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 606144821000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 766500864,
+      "phase": "solution-build:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 5.621,
+      "max_rss_kib": 650832,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "solution-export",
+      "returncode": 0,
+      "system_cpu_seconds": 0.42,
+      "user_cpu_seconds": 5.226,
+      "workspace_disk_peak_bytes": 163303424
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 5652057000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 666468352,
+      "phase": "solution-export:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 39.781,
+      "max_rss_kib": 521268,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "comparator",
+      "returncode": 0,
+      "system_cpu_seconds": 0.438,
+      "user_cpu_seconds": 54.014,
+      "workspace_disk_peak_bytes": 4096
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 54457743000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 534040576,
+      "phase": "comparator:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    },
+    {
+      "elapsed_seconds": 26.059,
+      "max_rss_kib": 724144,
+      "memory_source": "cgroup",
+      "peak_tasks_observed": 3,
+      "phase": "con-ron",
+      "returncode": 0,
+      "system_cpu_seconds": 0.258,
+      "user_cpu_seconds": 43.845,
+      "workspace_disk_peak_bytes": 0
+    },
+    {
+      "cpu_max_applied": false,
+      "cpu_usage_nanoseconds": 44108708000,
+      "deadline_fired": false,
+      "exec_main_code": "1",
+      "exec_main_status": "0",
+      "memory_events": {
+        "oom": 0,
+        "oom_kill": 0
+      },
+      "memory_peak_bytes": 741785600,
+      "phase": "con-ron:cgroup",
+      "pids_events_max": 0,
+      "rlimits_applied": {
+        "FSIZE": 1099511627776,
+        "NOFILE": 65536
+      },
+      "supervisor": "cgroup",
+      "supervisor_timeout": false,
+      "systemd_active_state": "inactive",
+      "systemd_result": "success"
+    }
+  ],
+  "schema_version": 2,
+  "solution": {
+    "module": "Solution",
+    "path": "Solution.lean",
+    "sha256": "418b69bd252a93b7f420be67f5d0418a1a39f79e17988cd81dfe0f2eec4f9b91"
+  },
+  "source": {
+    "bytes": 99447982,
+    "commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+    "repository": "flengyel/Dosen-Petric-Maximality",
+    "repository_url": "https://github.com/flengyel/Dosen-Petric-Maximality",
+    "tree_url": "https://github.com/flengyel/Dosen-Petric-Maximality/tree/2e771844077fd8cebfbe365230f13d4dd13a75b1"
+  },
+  "source_requirements": {
+    "files_checked": 1870,
+    "header_parser": "lean --deps-json",
+    "maximum_lines": 10000,
+    "module_required": true,
+    "schema_version": 1
+  },
+  "stage": "complete",
+  "status": "pass",
+  "submission": {
+    "authorization": {
+      "relationship": "maintainer"
+    },
+    "requested_paths": {
+      "comparator_config_path": "comparator.json",
+      "formalization_metadata_path": "",
+      "project_path": ""
+    },
+    "submission_id": "preflight001"
+  },
+  "tool_digests": {
+    "bwrap": "02d6b3d735b14e1727895371bc56f918d49adce0a459712cd3bec52b08a0e675",
+    "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+    "lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "leanexport": "f6a6483d518a11b323c28b9bac176d2220df0e9fc3230833815db9586669c074",
+    "nanoda_bin": "cbf13950fc4a48f635a0beceeb5ed32dd82568b870cfd081b6391c1f2cf02ba5"
+  },
+  "toolchain_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+  "verification_profile": {
+    "id": "palomar-standard-v1",
+    "limits": {
+      "execution_budget_seconds": 19800,
+      "file_size_max_bytes": 1099511627776,
+      "job_timeout_minutes": 350,
+      "memory_high_percent": 95,
+      "memory_max_percent": 98,
+      "minimum_host_memory_bytes": 15032385536,
+      "minimum_workspace_free_bytes": 21474836480,
+      "open_files_max": 1048576,
+      "tasks_max": 32768
+    },
+    "observed_host": {
+      "architecture": "x86_64",
+      "effective_cpus": 4.0,
+      "memory_bytes": 16760332288,
+      "memory_high_bytes": 15922315673,
+      "memory_max_bytes": 16425125642,
+      "workspace_free_bytes": 115332624384
+    },
+    "runner": {
+      "architecture": "x86_64",
+      "label": "ubuntu-24.04",
+      "provider": "github-hosted"
+    },
+    "sha256": "94fcd7906a1b6c076c0036d742e1c5add8625e49bb474818ec8924576dbf0caa",
+    "trusted_tools": {
+      "bwrap_source_tag": "v0.12.0",
+      "toolchain_floor": "v4.35.0-rc2"
+    }
+  },
+  "warnings": [
+    "configured Challenge source exceeds the preferred 32 KiB / 300-line review surface"
+  ],
+  "workflow_url": "https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329",
+  "execution_profile": "palomar-standard-v1"
+}
