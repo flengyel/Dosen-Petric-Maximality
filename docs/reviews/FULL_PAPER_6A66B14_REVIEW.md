@@ -1,0 +1,90 @@
+## (A) Kill-shots / hard blockers
+
+No hard blocker was confirmed in this review. The evidence supports completion of the authorized **local full-paper formalization**, including both maximality arguments, the model corollary, and all three appendices. This conclusion concerns the scope recorded in the current manuscript and claim map; it is not independent kernel certification or a publication decision.
+
+This is an AI-assisted author-side audit using [HostileRefereeGPT](plugin://plugin_867af61c251c819194f29c5c462eafbe), dated 2026-10-30 UTC. The reviewed repository head is `6a66b14b382aac214b52c055b8bf281b35302239`; the mathematical source commit is `630c4b6e47da16a1434476a211fd29ce6adc5569`. The manuscript is *Maximality of the Došen–Petrić Boolean Category*, v8, dated October 29, 2026. The complete manuscript and current claim map were read. Source inspection concentrated on the theorem endpoints and the critical dependency chains identified below. It was not a line-by-line audit of every production module.
+
+The former incomplete endpoint at `77199ac` is not the present endpoint. The final records contain twelve completed logical binary branches, fourteen completed blocked families, exhaustive dispatch, rank and degree induction, and arbitrary-proof normalization. The remaining mathematical obligations recorded at that earlier checkpoint are not being dismissed merely because a new report calls them complete: the corresponding declarations and their uses are now present in the checked source.
+
+### Central claims and proof checks
+
+| Manuscript claim / source anchor | Hypotheses, construction and reviewed argument | Assessment |
+| --- | --- | --- |
+| Cut elimination dependency; `GentzenCutElimination.lean:14`, `:88`, `:91` | `G.cut_free_normalization` takes an arbitrary `G` proof, including nested cuts. Its structural induction invokes head-cut elimination after normalizing the children. `GentzenDegreeInduction.lean:13` discharges the lower-degree interface by strong induction; `GentzenCleanRankInduction.lean:40` discharges the clean rank interface. Both final elimination inhabitants are constructed. | The endpoint does not retain a supplied cut eliminator or a family of assumed blocked handlers. |
+| All blocked families; `GentzenBlockedRankDispatch.lean`, `GentzenBlockedLeftRankDispatch.lean` | Each side dispatches all seven blocked constructors. Selected occurrences are transported by their tags. The both-copy cases use the original child descents and the subsequent fresh principal cut, with the required cleanliness and original-rank comparisons. | Actual dispatch and selected critical sequential reductions were inspected. Individual helper proofs throughout the entire reduction library were not all manually rederived. |
+| Boolean coherence, p. 4, Theorem 3.1; `PresentationCoherence.lean:13` | Finite atomic normal forms are faithful because their full endpoint positions determine their edges. Mix proofs acquire such forms by induction. Pure coherence extends through normal-form products and coproducts, then through proved normal retracts and the full/reduced recovery maps. `Reduced.faithful` supplies the actual source interpretation. | The final theorem reflects relation equality in the generated quotient, without a coherence hypothesis. Finite unions retain an existing arrow as the zero witness. |
+| Occurrence isolation, p. 5, Lemma 4.1; `OriginalIsolation.lean` | Distinct arrows give a differing edge after normalization. Signed-label preservation supplies the literal. Selectors and coselectors isolate that edge, and the normalization inverse maps reattach them to the original endpoints. The statement explicitly permits interchanging the two arrows. | The original-domain and original-codomain statement is proved and instantiated in `Presentation.occurrence_isolation`. |
+| Uniform contextual equation, p. 6, Proposition 4.2; `ManuscriptSingleSubstitution.lean` | Whole-arrow substitution replaces the selected variable and fixes the others. The positive branch gives the desired context directly; the negative branch uses the proved double-negation comparison and retraction. | The signs and endpoint transports remain explicit. No extra decidable-equality hypothesis is imposed on the variable type. |
+| Both particular isomorphisms, p. 6, Lemma 5.1; `PresentationShortQ.lean`, `PresentationShortE.lean` | The displayed `q_A` and `e_A` have constructed inverse terms and both inverse equations. Their types are the manuscript's types; the unused summand in the second inverse is handled in an inhabited hom-set. | The short proof uses the specified arrows, not merely the existence of some isomorphism between the objects. |
+| Contextual collapse, pp. 6–7, Lemma 5.2; `PresentationShortTerminal.lean`, `PresentationShortProjection.lean` | The contextual equation makes the relevant object terminal in the quotient. The `q/e` equations then make the first product projection invertible. Its diagonal inverse gives equality of the two projections, and pairing gives equality of arbitrary parallel arrows. | This is the manuscript's short route. The symmetric-fold route remains separately available. |
+| Maximality, pp. 3 and 7, Theorem 2.1; `PresentationMaximality.lean:13`, `PresentationShortMaximality.lean:13` | A proof congruence closed under uniform substitution that identifies distinct parallel source arrows is total. The source operations, normalization, coherence, labels and substitution data are all instantiated. Raw and quotient congruence correspondence is supplied. | Both actual-presentation endpoints have the required hypotheses and conclusion. The older relative theorem remains distinguishable from these instantiated results. |
+| Model corollary, p. 7, Corollary 5.3; `SemanticModelCorollary.lean:15`, `:33` | The target has the complete primitive signature, source equations at every valuation, native bicartesian laws and the zero-identity law. Agreement over all full interpretations is substitution closed by precomposition. The independently established fragment dichotomy supplies full congruence closure. After maximality, a constant valuation at any target object identifies its projections; native pairing then equates arbitrary parallel target arrows. | The conclusion covers arrows outside the interpretation images. `[Nonempty P]` is used to choose a source variable. Neither a single functor kernel nor surjectivity onto target arrows is assumed. |
+| Whole-arrow occurrence square, §3; `PresentationSubstitutionRelation.lean:13`, `:53`, `:61` | Induction covers the complete primitive term grammar. Composition uses the dependent fibre relation and the old occurrence label; quotient induction yields the statement for every source arrow. | Repeated tags and inner positions remain separate; equality of labels does not identify occurrences. |
+| Appendix A.1–A.2; `PatternSubstitutionProfiles.lean`, `PatternSubstitutionOrdinals.lean` | The actual occurrence bijection is constructed from tagged inserted formulas. Its inverse laws and label square are proved. Recursive finite-block encoders match actual left-to-right formula occurrence indices, and the resulting profile is `delta`. Skeleton/profile reconstruction recovers the full formula. | The correspondence is to the printed order, not an unspecified finite bijection. Empty blocks are allowed and excluded only from containing a position. |
+| Appendix A worked example and shared variables; `PatternProfileExample.lean` | The actual patterns produce `[4,3,4,1,2,4,3,4]` and one-based `delta(2)=3`. Renaming permits arbitrary, including noninjective, maps on the shared variable labels. | The example and noninjective renaming law have explicit declarations. |
+| Appendix B and categorical consequences; claim-map rows, `ManuscriptFinalConsequences.lean`, `ExponentialGlobalPoints.lean` | The three structural diagrams are mapped to source equations. The exact `p ⇒ p` obstruction uses nonzero literal identity and the two inverse hom/global-point maps. The alternative contextual zero path is identified with the witnessed zero. | The map records concrete declarations rather than leaving these assertions outside the formalization contract. |
+| Appendix C; `GentzenBlockedLeftGammaDisjRank.lean`, `GentzenAppendixCFreshRight.lean` | The p. 260 correction is represented by the actual gamma-disjunction source equation and strict descent for both original children. For p. 262, the fresh right-premise rank is one, while the total rank is `h.rho .right z + 1`, hence at least two. | The right rank and total rank are distinguished. These are source reductions with the original opposite premise retained. |
+
+Evidence for these assessments is source-level structural argument and the retained local verification records. No counterexample to a reviewed central assertion was found. This is not a claim of exhaustive counterexample search or a fresh manual proof of the whole library.
+
+## (B) Major weaknesses
+
+No confirmed major mathematical weakness is reported for the local completion claim. The following evidence boundaries prevent a stronger certification claim:
+
+1. The local build was not independently replayed here. The inspected logs are evidence from the implementation run. Their hashes and source correspondence were checked; that does not make their execution independent.
+2. The present review did not repeat the complete published-source collation or establish novelty. It therefore supplies no new verdict on priority, journal acceptance or conformity with an external verification service.
+3. The local WSL working tree, stash and Windows Downloads directory are not accessible from this review environment. Statements about those live locations rely on the local run's receipts and status records.
+
+These are explicit limits of this review, not exhibited failures in the mathematics. No theorem is weakened and no additional implementation obligation is inferred from them.
+
+## (C) Minor issues
+
+No necessary manuscript correction was established. The separate writing report records the complete-source and rendered-page review. V8 changes from v7 are confined to the date, formalization-status text and immutable proof-source reference; the mathematical text and diagrams are preserved.
+
+The phrase “everything is done” should retain its stated scope in communications with the author: the authorized local formalization, local verification, recorded deliveries and push. It must not be reused as a claim that independent kernel replay, Comparator, official/service verification or publication has occurred. The completion report and active claim map already make this distinction.
+
+## (D) Cross-section consistency failures
+
+No new cross-section failure was confirmed. The main consistency checks were as follows.
+
+- **Category and equality.** The source is the quotient of the actual primitive term grammar by generated equations. Later proof congruences are relations on its parallel arrows. Their raw correspondence, quotient category and induced operations are constructed. `quotient_preserves_empty` does not introduce arrows into empty hom-sets.
+- **Composition and variance.** Lean `comp f g` applies `f` and then `g`, corresponding to manuscript `g ∘ f`. The derived negation has type `Hom A B → Hom (neg B) (neg A)`. Its composition law reverses order; the double-negation and De Morgan naturality equations use the appropriate endpoint comparisons.
+- **Zeros.** The zero-identity operation is an endomorphism at each object. A zero between different objects uses an existing-arrow witness. Neither the finite-union coherence argument nor the quotient construction assumes all hom-sets are inhabited.
+- **Interpretations.** `Interpretation` is a covariant functor from the actual source category with typed preservation laws for every primitive. Object identifications are retained through heterogeneous equalities. `raw_evaluation` derives agreement with evaluation by induction; it is not assumed as a record field. `Source.model` instantiates the target laws in the intended category.
+- **Substitution and occurrence coordinates.** Formula and arrow substitution have identity and composition laws with the endpoint transports displayed. Negation compatibility and the dependent occurrence-block square are separate proved results. Appendix A then identifies the actual coordinates with the finite ordinals used in the manuscript.
+- **Versioned scope.** The current complete claim map and continuation record agree with the final source endpoints. Earlier incomplete reports remain historical. The mathematical source at `630c4b6` has no Lean/toolchain/Lake changes in the two commits through `6a66b14`.
+
+### Evidence correspondence
+
+| Check performed in this review | Result and limitation |
+| --- | --- |
+| Checked-source archive extraction | All 891 retained files passed the supplied SHA-256 manifest and Git blob correspondence against the reviewed head. Extraction contained regular files with safe relative paths. |
+| Final execution evidence | All 39 final command records report exit zero: the strict verification, 35 public check files, two boundary-check wrappers and the whitespace/diff check. Retained compressed and decompressed logs were hash checked. This is evidence inspection, not rerunning the commands. |
+| Strict audit | The retained strict log reports 883 Lean source files and transitive axiom checks for 14,849 project declarations. The audit permits only `propext`, `Quot.sound` and `Classical.choice`. The pinned toolchain is Lean 4.35.0. |
+| Rejection controls | The records contain 69 focused controls, three axiom-boundary controls and two presentation-boundary controls, all with expected rejection. All 74 retained control sources were hash checked; all 69 focused raw logs were inspected. The other five results were checked through their records and final boundary-wrapper logs, not five separately retrieved raw logs. A rejected `rfl` attempt is not a semantic counterexample. |
+| Final delivery register | All 25 registered artifact byte lengths and SHA-256 hashes match the retained bytes and reviewed Git blobs. The final register and receipt attachments match the repository. |
+| Earlier model deliveries | The earlier receipt records another 18 deliveries. Its register/receipt bytes and register hash were checked, and its three report/review files were rechecked. The other fifteen older delivery artifacts were not all independently revalidated in this review. Thus 43 is the sum of the two local delivery registers, not a claim that this reviewer accessed 43 Windows files. |
+| Preservation | Earlier manuscript v4–v7 source/PDF blobs and the prior production-source definitions are preserved relative to the reviewed baseline. Live stash and working-tree preservation remain local-run attestations. |
+| Manuscript | V8 has 13 pages. The full TeX source was read and every rendered page inspected. The PDF bytes match the completion register. No Lean or TeX build was run here. |
+
+The checked-source archive SHA-256 is `a2fc017bc6e856fa88e9e2a8899a1a6e600446df8a1b1c2d2b936d68327002c2`; its manifest SHA-256 is `0812fb1937cef66edc5e565f232e66671bf5bc01bdc932badcdc7f48461447e2`. The v8 PDF SHA-256 is `ea32f33f027a672125d9f2e162a75e6cdff9d980abc2c0ecbc4ccfb4632a83ea`.
+
+## (E) Acceptance conditions, non-negotiable
+
+For the **local full-paper completion claim**, the relevant conditions are satisfied on the inspected source and retained evidence:
+
+| Required deliverable | Verifiable endpoint | Consequence if absent |
+| --- | --- | --- |
+| Actual theorem inhabitants and complete correspondence | Unrestricted cut elimination, actual coherence, both actual maximality routes, the full model corollary, and declarations for the main text and appendices | Reject the affected full-paper completion claim until repaired. |
+| Exact checked source and successful strict evidence | Source archive matching Git, pinned toolchain, source/axiom audit and public checks tied to retained logs | Withhold the claim of locally verified completion. |
+| Scope and delivery records | Current claim map and completion/model registers distinguish mathematical completion from later stages and identify exact artifact bytes | Withhold the unsupported verification or delivery assertion. |
+
+Independent replay and service-specific checks would be conditions for those stronger later claims. They are not being retroactively added to the authorized local task. This review establishes no new mathematical implementation request and recommends no repeat of unchanged local checks.
+
+## (F) Not checked / uncertainty log
+
+No independent Lean kernel replay, Comparator run, official preflight, service verification, public release or publication was performed. No complete new literature search or primary-source collation was performed. Not every new Lean module was read line by line. The complete manuscript and claim map were read, and the proof chains and typed endpoints identified above were inspected. Claims about the actual local filesystem beyond the supplied bytes remain dependent on the implementation receipts.
+
+This report is retained at `docs/reviews/FULL_PAPER_6A66B14_REVIEW.md`. Its requested WSL delivery destination is `/mnt/c/Users/fleng/Downloads/FULL_PAPER_6A66B14_REVIEW.md`. This review environment cannot access that directory, so **this new report has not been copied or byte-verified there**. This limitation concerns the newly created cloud review; it does not change the earlier registers' delivery records.
+
+Strongest confirmed blocker: none within the reviewed local-completion scope. Strongest suspected but unconfirmed blocker: none identified; this does not certify absence throughout the entire library. Most important unchecked item: an independent replay of the exact proof source. A stronger external-acceptance recommendation would require work not performed here. Final recommendation: **unknown** for external mathematical/publication acceptance; the authorized **local completion claim is supported**.
