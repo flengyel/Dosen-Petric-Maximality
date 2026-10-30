@@ -1,0 +1,217 @@
+{
+  "utc": "2026-10-30T21:41:36.142186+00:00",
+  "verified_submission_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+  "evidence_source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+  "workflow_run_id": 41129351329,
+  "workflow_url": "https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329",
+  "official_full_preflight": "pass",
+  "service_intake": "not performed",
+  "registration": "not performed",
+  "arxiv": "after Palomar registration; not submitted",
+  "copy_policy": "Committed Git blobs only; SHA-256 and bytes checked; differing earlier files preserved.",
+  "files": [
+    {
+      "repository_path": "AGENTS.md",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/AGENTS-20261030-9309c0d.md",
+      "sha256": "db3dbaabbad9a94bb2c185d8fc9ac64145033537a20729936c9e58052de300b0",
+      "bytes": 12174,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "README.md",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/README-20261030-9309c0d.md",
+      "sha256": "4827e503dc0fbee0e8576008f622eedf6c13cbae26b9ce87ce4c7da570c8f89f",
+      "bytes": 53003,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "docs/CODEX_NEXT_SESSION.txt",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/CODEX_NEXT_SESSION-20261030-9309c0d.txt",
+      "sha256": "1d5e988466079141436ed73c38923ce34c381a88c96c833eb86cd80406f7004d",
+      "bytes": 2559,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "docs/PALOMAR_RELEASE_CANDIDATE.md",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/PALOMAR_RELEASE_CANDIDATE-20261030-9309c0d.md",
+      "sha256": "1830bb42e25080063a782643e90de1d96971aa6a8ed505650fe35ba3539188e1",
+      "bytes": 7213,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "docs/PALOMAR_REGISTRATION_STATUS.md",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/PALOMAR_REGISTRATION_STATUS-20261030-9309c0d.md",
+      "sha256": "273e099cef28cd20a850b388ea26ea563ca1d71ca553f0cff70199b4df2e2963",
+      "bytes": 2423,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "docs/PALOMAR_REGISTRATION_LOCAL_REPORT.md",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/PALOMAR_REGISTRATION_LOCAL_REPORT-20261030-9309c0d.md",
+      "sha256": "2bd7f55692b899aaa78e34679d8acff3ee5731de2bcaf2defe5c37a2185bb460",
+      "bytes": 12046,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "docs/PALOMAR_OFFICIAL_PREFLIGHT_REPORT.md",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/PALOMAR_OFFICIAL_PREFLIGHT_REPORT.md",
+      "sha256": "0f5276723a1717649a8f3d674fd9b40a54d06fd5f18fc4353122ef690230b03b",
+      "bytes": 6670,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "docs/PALOMAR_PREFLIGHT_METADATA_CORRECTION.md",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/PALOMAR_PREFLIGHT_METADATA_CORRECTION.md",
+      "sha256": "abd3a74b5215d9fd2a2915f4712aaad9a4c9f0fc0d6651a7fcf1d7d515055eb2",
+      "bytes": 2014,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-official-preflight-20261030/RELEASE_AUTHORIZATION.json",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/RELEASE_AUTHORIZATION.json",
+      "sha256": "6b0c8b2e8709c7f4dcc9afdd84067900b041f56e4abc87971c2ed4f699bc274d",
+      "bytes": 720,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-official-preflight-20261030/PUBLIC_RELEASE.json",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/PUBLIC_RELEASE.json",
+      "sha256": "605262a3a6520576eddb5210d829ae978c75998adce97c3dafdaa94a14fac874",
+      "bytes": 792,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-official-preflight-20261030/DISPATCH_REQUEST.json",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/DISPATCH_REQUEST.json",
+      "sha256": "4d475f89a1db94583c01b6085fc66565ec7264592f2f9ce3a1787f32d3e01953",
+      "bytes": 569,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-official-preflight-20261030/DISPATCH_ACCEPTED.json",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/DISPATCH_ACCEPTED.json",
+      "sha256": "d6318fe7ce859988902756cb52cf06037fd708815b89524ae60a24fb2c951d72",
+      "bytes": 160,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-official-preflight-20261030/WORKFLOW_RUN.json",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/WORKFLOW_RUN.json",
+      "sha256": "a9b0700690ae94a951547287e9711b799333d8118ee0119a034fc6dc37068fe1",
+      "bytes": 14722,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-official-preflight-20261030/WORKFLOW_JOBS.json",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/WORKFLOW_JOBS.json",
+      "sha256": "55420399bd302c421cfdcb9c873981b8ce073ae12baf30037ef3a2f36c7a0bdd",
+      "bytes": 10020,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-official-preflight-20261030/WORKFLOW_ARTIFACTS.json",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/WORKFLOW_ARTIFACTS.json",
+      "sha256": "4206db84687a39d16c00820c741dd406994e1d884910b3fc72dd85ed52f9f8a7",
+      "bytes": 929,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-official-preflight-20261030/mechanical-report.json",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/mechanical-report.json",
+      "sha256": "b21cdb78ae39b47b11e96be06a388787cd8d6d8ace045e4d403fb50cd14db8c9",
+      "bytes": 95977,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-official-preflight-20261030/mechanical-report.zip",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/mechanical-report.zip",
+      "sha256": "d6b0921b4b8d6b237a39c8d47e760fbb3a47b435877ff59dcd6d06a3957e36ff",
+      "bytes": 11037,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-official-preflight-20261030/MECHANICAL_RESULT.json",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/MECHANICAL_RESULT.json",
+      "sha256": "d42f5f79c4a0dd5322416ca1eeb2dbdca42735c6336bea8d864f2518a8e5d8ce",
+      "bytes": 65869,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-official-preflight-20261030/OFFICIAL_PREFLIGHT_STAGE.json",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/OFFICIAL_PREFLIGHT_STAGE.json",
+      "sha256": "1ac791565eb40271715a5087826b38b4be9683dabcc390b59b02a8ff46789c8a",
+      "bytes": 1711,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-official-preflight-20261030/ARTIFACT_REGISTER.json",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/ARTIFACT_REGISTER.json",
+      "sha256": "5821c25e7a56288e1cc321fa293ccb327fd65664879c18fe5023cbd5d0b592eb",
+      "bytes": 3013,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-registration-20261030/REGISTRATION_STAGE.json",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/REGISTRATION_STAGE-20261030-9309c0d.json",
+      "sha256": "dee529c226e3e0b7e2d83e4cf52ce9f8900bc6ed952f2ef1c247ab5aa46ce132",
+      "bytes": 2883,
+      "byte_verified": true,
+      "already_identical": false
+    },
+    {
+      "repository_path": "provenance/wsl-palomar-registration-20261030/RELEASE_CANDIDATE.json",
+      "source_commit": "9309c0d949f7754fbe2451c56cf2cfd9de9bb5d1",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/RELEASE_CANDIDATE-20261030-9309c0d.json",
+      "sha256": "ab50dc0bcde8bd0dd562b996a9d3a58aea15960232ecfac27eb263ca385ffaed",
+      "bytes": 6279,
+      "byte_verified": true,
+      "already_identical": false
+    }
+  ],
+  "receipt_downloads_paths": [
+    "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-Official-Preflight-Delivery-20261030-9309c0d.md",
+    "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-Official-Preflight-Delivery-20261030-9309c0d.json"
+  ],
+  "receipt_policy": "Both receipts are copied and byte-verified after their own commit; that final verification is retained in ignored local staging to avoid a self-referential manifest."
+}
