@@ -1,0 +1,628 @@
+{
+  "scope": "Working classifications of blank-line-separated source blocks before the bibliography; not manuscript text.",
+  "blocks": [
+    {
+      "line": 21,
+      "section": "Front matter",
+      "function": "state abstract result or publication metadata",
+      "opening": "\\maketitle",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 23,
+      "section": "Front matter",
+      "function": "state abstract result or publication metadata",
+      "opening": "\\begin{abstract}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 38,
+      "section": "Front matter",
+      "function": "state abstract result or publication metadata",
+      "opening": "\\medskip",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 42,
+      "section": "Front matter",
+      "function": "state abstract result or publication metadata",
+      "opening": "\\smallskip",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 46,
+      "section": "Introduction",
+      "function": "heading and reading order",
+      "opening": "\\section{Introduction}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 48,
+      "section": "Introduction",
+      "function": "introduce problem, compare sources and explain proof strategy",
+      "opening": "Do\\v{s}en and Petri\\'c's Boolean proof category admits distinct arrows",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 56,
+      "section": "Introduction",
+      "function": "introduce problem, compare sources and explain proof strategy",
+      "opening": "The proof has two parts. First, a relation distinguishing two arrows",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 65,
+      "section": "Introduction",
+      "function": "introduce problem, compare sources and explain proof strategy",
+      "opening": "Do\\v{s}en and Petri\\'c prove maximality for cartesian categories",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 72,
+      "section": "Introduction",
+      "function": "introduce problem, compare sources and explain proof strategy",
+      "opening": "Earlier results establish maximality for lattice categories and relative",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 80,
+      "section": "Introduction",
+      "function": "introduce problem, compare sources and explain proof strategy",
+      "opening": "Lamarche and Stra{\\ss}burger give a proof-net construction of free",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 93,
+      "section": "Introduction",
+      "function": "introduce problem, compare sources and explain proof strategy",
+      "opening": "We use the occurrence coordinates of \\cite[\\S9]{Notation}: occurrences",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 106,
+      "section": "The Boolean proof category",
+      "function": "heading and reading order",
+      "opening": "\\section{The Boolean proof category}\\label{sec:category}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 108,
+      "section": "The Boolean proof category",
+      "function": "define presentation, operations and congruences",
+      "opening": "Fix a nonempty set $P$ of propositional variables. Write $\\FormulaSet(P)$",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 117,
+      "section": "The Boolean proof category",
+      "function": "define presentation, operations and congruences",
+      "opening": "The connectives $\\wedge$ and $\\vee$ give binary products and coproducts;",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 133,
+      "section": "The Boolean proof category",
+      "function": "define presentation, operations and congruences",
+      "opening": "The distributor is an arrow",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 146,
+      "section": "The Boolean proof category",
+      "function": "define presentation, operations and congruences",
+      "opening": "Negation is represented by a functor",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 171,
+      "section": "The Boolean proof category",
+      "function": "define presentation, operations and congruences",
+      "opening": "\\noindent\\textit{Remark.}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 176,
+      "section": "The Boolean proof category",
+      "function": "define presentation, operations and congruences",
+      "opening": "Whenever $\\B(A,C)$ is nonempty, define $0_{A,C}=f\\circ0_A$ for any",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 184,
+      "section": "The Boolean proof category",
+      "function": "define presentation, operations and congruences",
+      "opening": "Two arrows are \\emph{parallel} when they have the same source and",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 194,
+      "section": "The Boolean proof category",
+      "function": "define presentation, operations and congruences",
+      "opening": "The \\emph{total congruence} identifies every parallel pair. A category",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 200,
+      "section": "The Boolean proof category",
+      "function": "state mathematical result",
+      "opening": "\\begin{theorem}\\label{thm:main}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 208,
+      "section": "The Boolean proof category",
+      "function": "define presentation, operations and congruences",
+      "opening": "Sections~\\ref{sec:isolation} and~\\ref{sec:collapse} give the proof.",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 210,
+      "section": "Occurrences and substitution",
+      "function": "heading and reading order",
+      "opening": "\\section{Occurrences and substitution}\\label{sec:occurrences}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 212,
+      "section": "Occurrences and substitution",
+      "function": "define coordinates and construct substitution",
+      "opening": "For a formula $A$, write $\\Occ(A)$ for the finite set of positions",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 217,
+      "section": "Occurrences and substitution",
+      "function": "define coordinates and construct substitution",
+      "opening": "For finite sets $X,Y$, let",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 239,
+      "section": "Occurrences and substitution",
+      "function": "give computed example",
+      "opening": "Let $\\Rel$ be the category of finite sets and binary relations.",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 262,
+      "section": "Occurrences and substitution",
+      "function": "state mathematical result",
+      "opening": "\\begin{theorem}[Boolean Coherence, Do\\v{s}en--Petri\\'c]",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 268,
+      "section": "Occurrences and substitution",
+      "function": "define coordinates and construct substitution",
+      "opening": "This is \\cite[\\S14.2, p.~321]{DP}. In particular, for $p\\in P$, the",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 272,
+      "section": "Occurrences and substitution",
+      "function": "define coordinates and construct substitution",
+      "opening": "Joyal's collapse theorem concerns cartesian closed categories with a",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 279,
+      "section": "Occurrences and substitution",
+      "function": "define coordinates and construct substitution",
+      "opening": "A \\emph{signed literal} is $p$ or $\\neg p$ for $p\\in P$.",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 287,
+      "section": "Occurrences and substitution",
+      "function": "define coordinates and construct substitution",
+      "opening": "For arrows between formulas in negation normal form, every edge of",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 298,
+      "section": "Occurrences and substitution",
+      "function": "define coordinates and construct substitution",
+      "opening": "Substitution replaces each occurrence of a variable by a separate",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 319,
+      "section": "Occurrences and substitution",
+      "function": "define coordinates and construct substitution",
+      "opening": "The organization of these blocks is expressed by a square of sets and",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 341,
+      "section": "Occurrences and substitution",
+      "function": "define coordinates and construct substitution",
+      "opening": "Substitution on arrow terms induces a functor",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 352,
+      "section": "Isolating an occurrence",
+      "function": "heading and reading order",
+      "opening": "\\section{Isolating an occurrence}\\label{sec:isolation}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 354,
+      "section": "Isolating an occurrence",
+      "function": "construct occurrence-isolating arrows",
+      "opening": "Put $j_A=\\iota_1^{A,\\top}:A\\to A\\vee\\top$. The contextual equation",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 367,
+      "section": "Isolating an occurrence",
+      "function": "state mathematical result",
+      "opening": "\\begin{lemma}[Occurrence isolation]\\label{lem:isolation}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 382,
+      "section": "Isolating an occurrence",
+      "function": "prove mathematical result",
+      "opening": "\\begin{proof}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 391,
+      "section": "Isolating an occurrence",
+      "function": "prove mathematical result",
+      "opening": "Faithfulness of $G$ gives an edge belonging to exactly one of $Gf,Gg$.",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 403,
+      "section": "Isolating an occurrence",
+      "function": "prove mathematical result",
+      "opening": "Construct $i:D\\to A$ recursively along the tagged path",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 412,
+      "section": "Isolating an occurrence",
+      "function": "prove mathematical result",
+      "opening": "Construct $r:C\\to E$ dually along the path to $y$.",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 419,
+      "section": "Isolating an occurrence",
+      "function": "prove mathematical result",
+      "opening": "Relational composition now makes $G(r\\circ f\\circ i)$ the one-edge",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 425,
+      "section": "Isolating an occurrence",
+      "function": "state mathematical result",
+      "opening": "\\begin{proposition}\\label{prop:all-contexts}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 431,
+      "section": "Isolating an occurrence",
+      "function": "prove mathematical result",
+      "opening": "\\begin{proof}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 441,
+      "section": "Isolating an occurrence",
+      "function": "prove mathematical result",
+      "opening": "If $\\ell=\\neg p$, substitute $\\neg A$ for $p$, obtaining the equation",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 459,
+      "section": "Contextual collapse",
+      "function": "heading and reading order",
+      "opening": "\\section{Contextual collapse}\\label{sec:collapse}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 461,
+      "section": "Contextual collapse",
+      "function": "derive projection equality and maximality",
+      "opening": "We use the following two isomorphisms to remove the constants from",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 465,
+      "section": "Contextual collapse",
+      "function": "state mathematical result",
+      "opening": "\\begin{lemma}\\label{lem:structural-isos}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 478,
+      "section": "Contextual collapse",
+      "function": "prove mathematical result",
+      "opening": "\\begin{proof}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 485,
+      "section": "Contextual collapse",
+      "function": "prove mathematical result",
+      "opening": "The same cited list gives an isomorphism",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 495,
+      "section": "Contextual collapse",
+      "function": "prove mathematical result",
+      "opening": "For arbitrary $A$, substitute $A$ for $p$ and fix the other variables.",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 500,
+      "section": "Contextual collapse",
+      "function": "state mathematical result",
+      "opening": "\\begin{lemma}[Contextual collapse]\\label{lem:collapse}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 506,
+      "section": "Contextual collapse",
+      "function": "prove mathematical result",
+      "opening": "\\begin{proof}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 527,
+      "section": "Contextual collapse",
+      "function": "prove mathematical result",
+      "opening": "Consequently the projection",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 547,
+      "section": "Contextual collapse",
+      "function": "prove mathematical result",
+      "opening": "\\begin{proof}[Proof of Theorem~\\ref{thm:main}]",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 554,
+      "section": "Contextual collapse",
+      "function": "derive projection equality and maximality",
+      "opening": "The same argument gives the formulation of maximality in terms of",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 561,
+      "section": "Contextual collapse",
+      "function": "state mathematical result",
+      "opening": "\\begin{corollary}\\label{cor:models}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 569,
+      "section": "Contextual collapse",
+      "function": "prove mathematical result",
+      "opening": "\\begin{proof}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 581,
+      "section": "Lean formalization",
+      "function": "heading and reading order",
+      "opening": "\\section{Lean formalization}\\label{sec:formalization}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 583,
+      "section": "Lean formalization",
+      "function": "describe quotient, theorem hypotheses, proof routes and registered statements",
+      "opening": "The accompanying Lean~4 development \\cite{Formalization} represents",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 591,
+      "section": "Lean formalization",
+      "function": "describe quotient, theorem hypotheses, proof routes and registered statements",
+      "opening": "The theorem \\texttt{relative\\_maximality} derives totality for a",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 613,
+      "section": "Lean formalization",
+      "function": "describe quotient, theorem hypotheses, proof routes and registered statements",
+      "opening": "For the presentation defining $\\B(P)$, cut elimination and Boolean",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 620,
+      "section": "Lean formalization",
+      "function": "describe quotient, theorem hypotheses, proof routes and registered statements",
+      "opening": "The theorem \\texttt{Presentation.short\\_maximality} formalizes the proof",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 629,
+      "section": "Lean formalization",
+      "function": "describe quotient, theorem hypotheses, proof routes and registered statements",
+      "opening": "Five declarations are registered in the Palomar Registry",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 634,
+      "section": "Substitution in occurrence coordinates",
+      "function": "heading and reading order",
+      "opening": "\\appendix",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 637,
+      "section": "Substitution in occurrence coordinates",
+      "function": "define profiles, ordinal coordinates and substitution",
+      "opening": "The generalized composition of definable connectives in",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 644,
+      "section": "Substitution in occurrence coordinates",
+      "function": "heading and reading order",
+      "opening": "\\subsection{Profiles and their fibres}\\label{app:profiles}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 646,
+      "section": "Substitution in occurrence coordinates",
+      "function": "define profiles, ordinal coordinates and substitution",
+      "opening": "For an integer $n\\geq0$, put $\\underline n=\\{1,\\ldots,n\\}$, with",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 652,
+      "section": "Substitution in occurrence coordinates",
+      "function": "define profiles, ordinal coordinates and substitution",
+      "opening": "Let $U=\\{p_1,\\ldots,p_k\\}$ consist of distinct placeholders and let",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 665,
+      "section": "Substitution in occurrence coordinates",
+      "function": "define profiles, ordinal coordinates and substitution",
+      "opening": "The occurrences after substitution and the local placeholder indices",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 698,
+      "section": "Substitution in occurrence coordinates",
+      "function": "define profiles, ordinal coordinates and substitution",
+      "opening": "Define the block projections $p_D:D\\to\\underline m$ and",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 713,
+      "section": "Substitution in occurrence coordinates",
+      "function": "define profiles, ordinal coordinates and substitution",
+      "opening": "To identify this construction with pattern substitution,",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 730,
+      "section": "Substitution in occurrence coordinates",
+      "function": "heading and reading order",
+      "opening": "\\subsection{The finite-ordinal presentation}\\label{app:ordinals}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 732,
+      "section": "Substitution in occurrence coordinates",
+      "function": "define profiles, ordinal coordinates and substitution",
+      "opening": "The finite ordinals used in \\cite{DP} number the elements of each",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 767,
+      "section": "Substitution in occurrence coordinates",
+      "function": "define profiles, ordinal coordinates and substitution",
+      "opening": "In Do\\v{s}en and Petri\\'c's notation, $\\mu$ and $\\nu_i$ correspond to",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 779,
+      "section": "Substitution in occurrence coordinates",
+      "function": "give computed example",
+      "opening": "For example, take",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 800,
+      "section": "Substitution in occurrence coordinates",
+      "function": "heading and reading order",
+      "opening": "\\subsection{Shared variables and the maximality argument}\\label{app:shared}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 802,
+      "section": "Substitution in occurrence coordinates",
+      "function": "define profiles, ordinal coordinates and substitution",
+      "opening": "The local placeholders may be assigned names in a common variable",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 824,
+      "section": "Substitution in occurrence coordinates",
+      "function": "define profiles, ordinal coordinates and substitution",
+      "opening": "For the substitution $p\\mapsto A$ in",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 836,
+      "section": "Diagrams for three defining equations",
+      "function": "heading and reading order",
+      "opening": "\\section{Diagrams for three defining equations}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 839,
+      "section": "Diagrams for three defining equations",
+      "function": "state typed diagram identities",
+      "opening": "\\paragraph{The first-injection equation.}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 855,
+      "section": "Diagrams for three defining equations",
+      "function": "state typed diagram identities",
+      "opening": "\\paragraph{The zero identity.}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 876,
+      "section": "Diagrams for three defining equations",
+      "function": "state typed diagram identities",
+      "opening": "\\paragraph{The zero law.}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 888,
+      "section": "Two corrections to the cut-elimination proof",
+      "function": "heading and reading order",
+      "opening": "\\clearpage",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 891,
+      "section": "Two corrections to the cut-elimination proof",
+      "function": "identify source errata and correct rank comparisons",
+      "opening": "The cut-elimination proof in \\cite[\\S11.2]{DP} contains two",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 897,
+      "section": "Two corrections to the cut-elimination proof",
+      "function": "identify source errata and correct rank comparisons",
+      "opening": "\\paragraph{Page 260, case $(w\\,\\gamma\\,3)$.}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 904,
+      "section": "Two corrections to the cut-elimination proof",
+      "function": "identify source errata and correct rank comparisons",
+      "opening": "\\paragraph{Page 262, case $(w\\,\\vee\\,1)$.}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 912,
+      "section": "Use of AI tools",
+      "function": "heading and reading order",
+      "opening": "\\section*{Use of AI tools}",
+      "decision": "retain mathematical function; changes recorded separately"
+    },
+    {
+      "line": 919,
+      "section": "Use of AI tools",
+      "function": "author-requested disclosure",
+      "opening": "\\clearpage",
+      "decision": "retain mathematical function; changes recorded separately"
+    }
+  ]
+}

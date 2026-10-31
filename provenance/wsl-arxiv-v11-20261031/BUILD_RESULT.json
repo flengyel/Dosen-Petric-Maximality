@@ -1,0 +1,85 @@
+{
+  "final_source_sha256": "4c4597271f21216da7ea55c15a63f3a7274caae122b5b2b94195797db20b1633",
+  "runs": [
+    {
+      "command": [
+        "pdflatex",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-file-line-error",
+        "main.tex"
+      ],
+      "label": "pdflatex-1",
+      "exit_status": 0,
+      "seconds": 4.895
+    },
+    {
+      "command": [
+        "bibtex",
+        "main"
+      ],
+      "label": "bibtex",
+      "exit_status": 0,
+      "seconds": 0.476
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-file-line-error",
+        "main.tex"
+      ],
+      "label": "pdflatex-2",
+      "exit_status": 0,
+      "seconds": 4.036
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-file-line-error",
+        "main.tex"
+      ],
+      "label": "pdflatex-3",
+      "exit_status": 0,
+      "seconds": 3.268
+    },
+    {
+      "command": [
+        "pdftotext",
+        "-layout",
+        "main.pdf",
+        "main.txt"
+      ],
+      "label": "pdftotext",
+      "exit_status": 0,
+      "seconds": 0.315
+    }
+  ],
+  "all_exit_codes_zero": true,
+  "unresolved_references": false,
+  "bibtex_warnings": false,
+  "warnings": [
+    "Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)",
+    "Package epstopdf Warning: Shell escape feature is not enabled.",
+    "pdfTeX warning (ext4): destination with the same identifier (name{equation.6}) ",
+    "has been already used, duplicate ignored",
+    "pdfTeX warning (ext4): destination with the same identifier (name{equation.6}) ",
+    "has been already used, duplicate ignored",
+    "pdfTeX warning (ext4): destination with the same identifier (name{equation.6}) ",
+    "has been already used, duplicate ignored",
+    "pdfTeX warning (ext4): destination with the same identifier (name{equation.6}) ",
+    "has been already used, duplicate ignored"
+  ],
+  "pages": 13,
+  "exact_supplied_registry_uri": "https://palomar-registry.org/entry?id=PALOMAR-2026-10-30-000014&version=1",
+  "registry_uri_verified_in_pdf": true,
+  "visible_structural_occurrences": 1,
+  "structural_induction_retained": true,
+  "intervening_review_preserved": true
+}

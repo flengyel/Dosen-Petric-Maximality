@@ -5,7 +5,10 @@ preserved in v8 with a formalization-status/date/citation refresh and in v9 with
 the AI-disclosure/registry-citation publication update. V10, dated October 31,
 2026, contains the terminology revision with the same mathematical definitions,
 statements, proofs, labels and diagrams. The original v9 release is preserved.
-The correspondences below apply unchanged to v10; see MANUSCRIPT_V10_REPORT.md.
+V11 incorporates those corrections and the supplied Palomar BibTeX; empty
+qualifiers and progress narration are revised, and terminology is explained.
+All mathematical statements, displayed equations, ten diagrams and labels match
+v10. The correspondences below apply unchanged to v11; see MANUSCRIPT_V11_REPORT.md.
 Earlier
 coverage/statement maps and reports remain as dated checkpoints. “Complete” here
 means local pinned Lean proof/source closure; it does not mean independent replay,

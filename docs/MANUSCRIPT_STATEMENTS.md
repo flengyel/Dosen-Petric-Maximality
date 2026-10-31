@@ -1,9 +1,10 @@
 # Manuscript v7: statements and formal scope
 
-Current manuscript: v10, dated October 31, 2026. It publishes the terminology
-revision with definitions, statements, proofs, diagrams and citations preserved.
-The original v9 source/PDF/package are retained. Every manuscript revision must
-increment its number. See [v10 report](MANUSCRIPT_V10_REPORT.md).
+Current manuscript: v11, dated October 31, 2026. It incorporates v10
+terminology corrections, the exact supplied Palomar BibTeX and the requested
+prose revision. Mathematical statements, displayed equations, diagrams and labels
+are unchanged; definitions are clarified. All earlier source/PDF/packages remain.
+Every revision increments its number. See [v11 report](MANUSCRIPT_V11_REPORT.md).
 The dated formalization checkpoints below retain their original scope.
 
 ## Current complete full-paper formalization (29 October 2026)

@@ -1,5 +1,27 @@
 # Manuscript corrections and source errata
 
+## Supplied BibTeX and prose revision: v11 (31 October 2026)
+
+V11-PROSE-20261031: use the author's supplied Palomar @misc entry verbatim,
+including its key, protected fields and /entry URL. It is actively used through
+BibTeX; all eleven sources remain, numbered by citation order. The extra verified
+source note belongs to the Lean-source reference, not the supplied registry entry.
+
+The author's expanded correction covers empty qualifiers, unexplained terminology
+and process updates. Apply it contextually across the manuscript: name operations
+and typed arrows, define skeleton before use, explain theorem hypotheses, and state
+mathematical properties rather than development progress. Preserve meaningful
+qualifications, including structural induction on the formula, and preserve the
+intervening generator list, substitution laws and operation-preserving interpretations.
+All statements, displayed equations, ten diagrams and labels are unchanged; AI
+acknowledgment, MSC codes and Appendix C are unchanged. Previous files are preserved.
+
+The new version, PDF metadata, source package, form fields and active maps all use
+v11. Builds, source/BibTeX comparisons and archive-member checks pass; inherited
+equation-anchor warnings remain recorded. See MANUSCRIPT_V11_REPORT.md and
+reviews/ARXIV_V11_WRITING_2026-10-31.md. Further external-review findings are not
+claimed before receipt. The immutable registered proof source remains unchanged.
+
 ## Versioning correction: terminology revision is v10 (31 October 2026)
 
 V10-VERSION-20261031: the author requires every manuscript revision to increment

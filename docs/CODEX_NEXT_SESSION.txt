@@ -1,44 +1,58 @@
-Current phase: Palomar registration is complete; arXiv preparation is ready.
+Current phase: Palomar registration is complete; arXiv v11 preparation is ready.
 
 Registered identity: PALOMAR-2026-10-30-000014, version 1.
-https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1
+https://palomar-registry.org/entry?id=PALOMAR-2026-10-30-000014&version=1
 Immutable proof source: 2e771844077fd8cebfbe365230f13d4dd13a75b1
 Repository: flengyel/Dosen-Petric-Maximality; root comparator.json; Lean 4.35.0.
-Later main/manuscript/evidence commits do not replace the registered source.
-Do not create another intake or register this unchanged identity/commit again.
+Later manuscript/evidence commits do not replace that source. Do not create
+another intake or register this unchanged identity/commit again.
 
-The author personally registered the delivered service review. The authenticated
-service confirms registered status and the public entry/versions/repository index
-agree. Its approved canonical consent digest remains private. Public mechanical,
-workflow, archived-review and source-preservation bytes match their manifest;
-the native PalomarArchive tag resolves to the exact registered commit.
+The author personally registered the delivered service review. Authenticated
+service and public readback confirmed registration. Local comparison, independent
+kernels, official full preflight and service verification passed. Reuse completed
+verification unless inputs or actual service requirements change. The canonical
+consent digest, credentials, private API responses and original author-facing
+review remain private and ignored. Only publicly registered review material is
+retained in public provenance.
 
-The original render artifact matches its full manifest. Two HTML responses on the
-public data service contain added Cloudflare Insights markup and differ from the
-manifest; eleven other files match. This is recorded as a service delivery issue,
-not a new Lean proof or source failure. Do not claim all served render bytes pass.
-See docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md; no operator contact was sent.
+The native archive tag and mechanical/public evidence bytes were verified.
+The original render artifact matches its manifest; two served HTML responses
+contain added Cloudflare analytics and differ. Keep this delivery limitation
+separate from source/mechanical verification. See PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md.
+No operator message was sent and no claim that every served render byte passes.
 
-Current manuscript: v10, dated October 31, 2026; all v4–v9 files are preserved.
-Every manuscript revision must increment the version number. Never release
-changed text under an existing number. Preserve the earlier source/PDF/package.
-V10 carries the terminology revision: signed-literal generators, application of
-relative_maximality, interpretations preserving specified operations, concise
-qualifiers and the Appendix B heading. It retains the disclosure, MSC codes,
-definitions, statements, both proof routes, diagrams, labels and source citations.
-The original v9 release files and arXiv package are restored from 678ea6d;
-the briefly reused v9 editorial snapshot remains in history at fd29c0c.
-The source upload package is submission/arxiv-v10/Dosen-Petric-Maximality-v10-arxiv-source.tar.gz;
-it contains only main.tex, identical to manuscript v10. Both v10 TeX builds
-compiled to 13 pages. See docs/MANUSCRIPT_V10_REPORT.md for checks and inherited
-warnings. No Lean source or registered proof input changed; no Lean rebuild ran.
-No arXiv upload or submission has occurred; the author selects the arXiv license
-in that form. The existing Apache-2.0 publication authorization remains recorded.
+Current manuscript: v11, dated October 31, 2026. All v4–v10 source/PDF/packages
+are preserved. Every manuscript revision increments its number; never release
+changed text under an existing number. V11 incorporates intervening v10 fixes,
+the author's exact Palomar BibTeX entry and the full-source prose pass for empty
+qualifiers, unexplained terminology and progress narration. Retain mathematically
+meaningful qualifications: structural induction on the formula remains. The checked
+generator list, relative theorem hypotheses, substitution on arrow terms and both
+endpoints, interpretation wording and Appendix B title are preserved. Mathematical
+statements, displays, ten diagrams and labels are unchanged. The AI disclosure,
+MSC codes, Appendix C and both proof routes remain.
 
-Read docs/PALOMAR_REGISTRATION_REPORT.md, docs/ARXIV_PREPARATION_REPORT.md,
-docs/MANUSCRIPT_V10_REPORT.md and the v10 delivery register.
-The earlier writing review and publication receipts remain historical records. Reports and artifacts are delivered from committed bytes, with differing
-Downloads copies preserved. Preserve the existing stash and all other projects.
-Do not reopen completed proof development or repeat unchanged verification.
-After actual arXiv submission, continue to Local connectedness in recursion
+The four-file upload archive is submission/arxiv-v11/Dosen-Petric-Maximality-v11-arxiv-source.tar.gz:
+main.tex, main.bbl, references_v11.bib and palomar_v11.bib. All members match the
+manuscript/BibTeX sources. The supplied entry is used verbatim, not just retained
+as an unused file; PDF link annotations match its /entry URI. All eleven sources
+remain and numeric labels follow citation order. Form abstract/comments/hashes
+are synchronized. BibTeX and three PDFLaTeX passes returned exit 0, 13 pages,
+resolved references. Four inherited duplicate equation.6 destination warnings
+and the unused epstopdf shell-escape notice remain. No Lean input changed or
+Lean rebuild ran; source hashes and stash preservation were checked.
+
+Read MANUSCRIPT_V11_REPORT.md, ARXIV_PREPARATION_REPORT.md,
+reviews/ARXIV_V11_WRITING_2026-10-31.md, MANUSCRIPT_CORRECTIONS.md and the v11
+provenance/delivery register. Earlier v10 and terminology reports remain historical
+records. Only findings actually present from the separate Astra review were
+incorporated; no additional unavailable review is claimed. Reconcile new findings
+when received. Keep process reports outside mathematical prose.
+
+No arXiv upload or new license selection has occurred. The author selects the
+arXiv-supported license and checks the server preview in the submission account.
+Apache-2.0 publication authorization remains recorded. Palomar precedes arXiv;
+after actual arXiv submission, continue Local connectedness in recursion
 categories and essential incompleteness under the author's instructions.
+Preserve the existing stash and all other projects. Deliver every report from
+committed bytes to Downloads, preserving differing copies and verifying hashes.

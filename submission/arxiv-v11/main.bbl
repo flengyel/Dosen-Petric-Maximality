@@ -1,0 +1,95 @@
+\begin{thebibliography}{11}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Do{\v{s}}en and Petri{\'c}(2004)]{DP}
+Kosta Do{\v{s}}en and Zoran Petri{\'c}.
+\newblock \emph{{Proof-Theoretical Coherence}}, volume~1 of \emph{Studies in
+  Logic}.
+\newblock King's College Publications, London, 2004.
+\newblock URL
+  \url{https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf}.
+\newblock Revised author version, September 2007.
+
+\bibitem[Do{\v{s}}en and Petri{\'c}(2012)]{DPIsomorphic}
+Kosta Do{\v{s}}en and Zoran Petri{\'c}.
+\newblock {Isomorphic formulae in classical propositional logic}.
+\newblock \emph{Mathematical Logic Quarterly}, 58:\penalty0 5--17, 2012.
+\newblock URL \url{https://doi.org/10.1002/malq.201020020}.
+\newblock Author version: \url{https://arxiv.org/abs/0912.1271},
+  arXiv:0912.1271v3, October 4, 2010.
+
+\bibitem[Do{\v{s}}en and Petri{\'c}(2001)]{DPCartesian}
+Kosta Do{\v{s}}en and Zoran Petri{\'c}.
+\newblock {The maximality of cartesian categories}.
+\newblock \emph{Mathematical Logic Quarterly}, 47:\penalty0 137--144, 2001.
+\newblock URL \url{https://arxiv.org/abs/math/9911059}.
+
+\bibitem[Do{\v{s}}en and Petri{\'c}(2009)]{DPBicartesian}
+Kosta Do{\v{s}}en and Zoran Petri{\'c}.
+\newblock {Bicartesian coherence revisited}.
+\newblock In Zoran Ognjanovi{\'c} (ed.), \emph{Logic in Computer Science},
+  Zbornik radova \textbf{12(20)}, pages 5--34, 2009.
+\newblock URL \url{https://arxiv.org/abs/0711.4961}.
+\newblock Author version: arXiv:0711.4961v3, December 8, 2008.
+
+\bibitem[Do{\v{s}}en and Petri{\'c}(2013)]{DPSplit}
+Kosta Do{\v{s}}en and Zoran Petri{\'c}.
+\newblock {Syntax for split preorders}.
+\newblock \emph{Annals of Pure and Applied Logic}, 164:\penalty0 443--481,
+  2013.
+\newblock URL \url{https://arxiv.org/abs/0902.0742}.
+\newblock Author version: arXiv:0902.0742v7, October 18, 2012.
+
+\bibitem[Lamarche and Stra{\ss}burger(2005)]{LSFree}
+Fran{\c{c}}ois Lamarche and Lutz Stra{\ss}burger.
+\newblock {Constructing free Boolean categories}.
+\newblock In \emph{Proceedings of the 20th Annual IEEE Symposium on Logic in
+  Computer Science (LICS 2005)}, pages 209--218. IEEE Computer Society, 2005.
+\newblock URL \url{https://doi.org/10.1109/LICS.2005.13}.
+
+\bibitem[Stra{\ss}burger(2007)]{Strassburger}
+Lutz Stra{\ss}burger.
+\newblock {On the axiomatisation of Boolean categories with and without
+  medial}.
+\newblock \emph{Theory and Applications of Categories}, 18:\penalty0 536--601,
+  2007.
+\newblock URL \url{https://www.tac.mta.ca/tac/volumes/18/18/18-18abs.html}.
+
+\bibitem[F{\"u}hrmann and Pym(2006)]{FP}
+Carsten F{\"u}hrmann and David Pym.
+\newblock {Order-enriched categorical models of the classical sequent
+  calculus}.
+\newblock \emph{Journal of Pure and Applied Algebra}, 204:\penalty0 21--78,
+  2006.
+\newblock URL \url{https://doi.org/10.1016/j.jpaa.2005.03.016}.
+
+\bibitem[Lengyel(2026{\natexlab{a}})]{Notation}
+Florian Lengyel.
+\newblock {The Unbearable Notation of Logic}.
+\newblock Version 8, Section 9, September 19, 2026{\natexlab{a}}.
+\newblock URL
+  \url{https://github.com/flengyel/notes/blob/main/logic/The-Unbearable-Notation-of-Logic_v8.pdf}.
+
+\bibitem[Lengyel(2026{\natexlab{b}})]{Formalization}
+Florian Lengyel.
+\newblock {Do{\v{s}}en--Petri{\'c} maximality in Lean}.
+\newblock Lean 4 source development, 2026{\natexlab{b}}.
+\newblock URL \url{https://github.com/flengyel/Dosen-Petric-Maximality}.
+\newblock Mathematical source
+  \href{https://github.com/flengyel/Dosen-Petric-Maximality/tree/630c4b6e47da16a1434476a211fd29ce6adc5569}{revision
+  \texttt{630c4b6e47da}}; registered proofs
+  \href{https://github.com/flengyel/Dosen-Petric-Maximality/tree/2e771844077fd8cebfbe365230f13d4dd13a75b1}{revision
+  \texttt{2e771844077f}}.
+
+\bibitem[{Florian Lengyel}(2026)]{palomar-2026-10-30-000014-v1}
+{Florian Lengyel}.
+\newblock {Maximality of the Došen–Petrić Boolean Category}.
+\newblock Palomar, PALOMAR-2026-10-30-000014 v1, 2026.
+\newblock URL
+  \url{https://palomar-registry.org/entry?id=PALOMAR-2026-10-30-000014&version=1}.
+
+\end{thebibliography}

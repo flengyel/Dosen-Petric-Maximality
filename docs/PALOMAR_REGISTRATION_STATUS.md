@@ -5,7 +5,7 @@ the original manuscript and retained history. The complete verified package is
 merged into main. The immutable submission source remains **`2e771844077fd8cebfbe365230f13d4dd13a75b1`**.
 The preparation branch and original stash are preserved. Registered as
 [PALOMAR-2026-10-30-000014, version 1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1).
-V9 and its arXiv source package are ready; no arXiv upload has occurred.
+V11 and its four-file arXiv source package are ready; no arXiv upload has occurred.
 
 | Stage | Actual current status |
 | --- | --- |
@@ -17,7 +17,7 @@ V9 and its arXiv source package are ready; no arXiv upload has occurred.
 | Service intake / verification | Intake verified as `wy75d6nipd4e`; **pass** in [service run 41137470993](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41137470993). Temporary tag and secret gist removed. |
 | Challenge rendering | **Pass**: [run 41138721868](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41138721868); original artifact digest verified. |
 | Service review / final registration | **Registered** as [PALOMAR-2026-10-30-000014, v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1); the author completed registration after the delivered review. Public archived review outcome is neutral, with no requested changes or warnings. |
-| ArXiv | V9 PDF, minimal TeX archive and form metadata prepared; not uploaded. |
+| ArXiv | V11 PDF, four-file TeX/BibTeX archive and form metadata prepared; not uploaded. |
 | Following project | Local connectedness in recursion categories and essential incompleteness; after arXiv. |
 
 Keep Lean pinned at **4.35.0**, supported by the current checker policy. Reuse

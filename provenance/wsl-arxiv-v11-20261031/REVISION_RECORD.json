@@ -1,0 +1,198 @@
+{
+  "base_commit": "89ebf8390f8906a6c2529cea6f910c65ece8889f",
+  "base_source": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v10.tex",
+  "base_sha256": "f9f7f8f97ae8a9599357daa48fa0833c7e8f8314d35f7fa72ee2d4202b8f0002",
+  "new_sha256": "4c4597271f21216da7ea55c15a63f3a7274caae122b5b2b94195797db20b1633",
+  "prose_changes": [
+    {
+      "before": "\\usepackage{microtype,tikz-cd}\n",
+      "after": "\\usepackage{microtype,tikz-cd}\n\\usepackage[numbers]{natbib}\n",
+      "reason": "Numeric citations with the standard URL-aware BibTeX style.",
+      "base_line": 5
+    },
+    {
+      "before": "arrows, closed under the proof operations and uniform formula",
+      "after": "arrows, closed under the arrow operations and uniform formula",
+      "reason": "Use the operations defined for arrows, without unexplained proof-operation terminology.",
+      "base_line": 25
+    },
+    {
+      "before": "contains an edge that can be isolated by composition with a selector\nand a coselector.",
+      "after": "contains an edge that can be isolated by precomposition and\npostcomposition.",
+      "reason": "Describe the operations instead of previewing unexplained selector/coselector names.",
+      "base_line": 57
+    },
+    {
+      "before": "proof of \\cite[Lemma~7]{DPIsomorphic}. This application of the\nisomorphisms proves the required collapse.",
+      "after": "proof of \\cite[Lemma~7]{DPIsomorphic}.",
+      "reason": "Remove a recap of the collapse already stated in this paragraph.",
+      "base_line": 63
+    },
+    {
+      "before": "including the proved inputs to its general maximality theorem.",
+      "after": "including cut elimination and Boolean Coherence.",
+      "reason": "Name the mathematical inputs instead of calling the theorem general.",
+      "base_line": 101
+    },
+    {
+      "before": "The proof is completed in Section~\\ref{sec:collapse}.",
+      "after": "Sections~\\ref{sec:isolation} and~\\ref{sec:collapse} give the proof.",
+      "reason": "Reader roadmap, without completion-status phrasing.",
+      "base_line": 209
+    },
+    {
+      "before": "Composition and both tensor\noperations preserve label agreement.",
+      "after": "Composition and the product and coproduct\noperations preserve label agreement.",
+      "reason": "Tensor operations was not defined; name the two operations.",
+      "base_line": 295
+    },
+    {
+      "before": "result of uniform substitution, there is a canonical bijection",
+      "after": "result of uniform substitution, there is a bijection",
+      "reason": "The following construction specifies the bijection; canonical states no additional proved property here.",
+      "base_line": 305
+    },
+    {
+      "before": "The set on the right consists of pairs $(x,t)$, where $x$ is an old\noccurrence and $t$ is an occurrence within the formula inserted there.",
+      "after": "The set on the right consists of pairs $(x,t)$, where $x$ is an\noccurrence of $A$ and $t$ is an occurrence within the formula inserted there.",
+      "reason": "Specify the formula instead of calling an occurrence old.",
+      "base_line": 312
+    },
+    {
+      "before": "If their selector and coselector are $i^\\circ,r^\\circ$, the required",
+      "after": "If the arrows for these normal forms are $i^\\circ,r^\\circ$, the required",
+      "reason": "Use the arrows and their role already typed in the lemma.",
+      "base_line": 387
+    },
+    {
+      "before": "Construct the selector $i:D\\to A$ recursively along the tagged path",
+      "after": "Construct $i:D\\to A$ recursively along the tagged path",
+      "reason": "The construction gives the role without adding an undefined name.",
+      "base_line": 404
+    },
+    {
+      "before": "\\cite[\\S12.5, p.~294]{DP}; the proof identifies the particular arrows\nneeded here.",
+      "after": "\\cite[\\S12.5, p.~294]{DP}.",
+      "reason": "The lemma specifies the arrows and its proof establishes invertibility; the announcement is redundant.",
+      "base_line": 464
+    },
+    {
+      "before": "The formal proof uses this identity to derive projection equality\nfrom the contextual equations.",
+      "after": "Together with \\eqref{eq:context} for all formulas, this identity yields\nequality of the product projections.",
+      "reason": "State the mathematical implication instead of narrating the formal proof.",
+      "base_line": 611
+    },
+    {
+      "before": "Five declarations are registered in the Palomar Registry \\cite{Palomar}:",
+      "after": "Five declarations are registered in the Palomar Registry\n\\cite{palomar-2026-10-30-000014-v1}:",
+      "reason": "Use the exact key in the supplied BibTeX entry.",
+      "base_line": 630
+    },
+    {
+      "before": "A pattern can equivalently be specified by erasing its placeholder names to one common symbol and\nattaching its occurrence profile. In that notation, the generalized\ncomposite is represented by the skeleton of the substituted pattern\ntogether with the profile $\\delta$.",
+      "after": "The \\emph{skeleton} of a pattern is obtained by replacing every placeholder\nby one common symbol. A pattern is determined by its skeleton and\noccurrence profile. In these coordinates, generalized composition gives\nthe skeleton of the substituted pattern together with the profile $\\delta$.",
+      "reason": "Define skeleton at first use and retain the skeleton/profile correspondence.",
+      "base_line": 774
+    },
+    {
+      "before": "clauses agree, so structural induction proves commutativity.",
+      "after": "clauses agree, so structural induction on the formula proves commutativity.",
+      "reason": "Retain the accepted proof-method name and specify its induction object.",
+      "base_line": 819
+    },
+    {
+      "before": "and the\noccurrence-coordinate constructions. Tagged occurrence\nsets give coordinates for the reduction and substitution.",
+      "after": "and\noccurrence substitution in finite-ordinal coordinates.",
+      "reason": "Name the formalized construction and remove the coordinate-summary tautology.",
+      "base_line": 33
+    },
+    {
+      "before": "Explicitly, let\n$k_A=",
+      "after": "Put\n$k_A=",
+      "reason": "The formula itself gives the construction; explicitly adds no information.",
+      "base_line": 444
+    },
+    {
+      "before": "squares determine $\\gamma$ on every element. Explicitly,",
+      "after": "squares determine $\\gamma$ on every element:",
+      "reason": "Introduce the displayed formula directly.",
+      "base_line": 693
+    },
+    {
+      "before": "specified equations. Formula substitution, normalization and the tagged\noccurrence interpretation are constructed on this syntax.",
+      "after": "specified equations. Formula substitution and the occurrence interpretation\ndescend to this quotient.",
+      "reason": "Name the two constructions and their quotient property instead of leaving normalization unspecified.",
+      "base_line": 590
+    },
+    {
+      "before": "The theorem \\texttt{relative\\_maximality} formalizes the passage from a\nnew substitution-closed equation to totality of the congruence.",
+      "after": "The theorem \\texttt{relative\\_maximality} derives totality for a\nsubstitution congruence that identifies distinct parallel arrows.",
+      "reason": "Make closure a property of the congruence, as defined in Section 2, rather than an unexplained property of a single equation.",
+      "base_line": 593
+    },
+    {
+      "before": "the presentation and zero-identity construction are proved to satisfy their",
+      "after": "the presentation and zero-identity construction satisfy their",
+      "reason": "State the quotient laws directly, preserving the accepted operations-of-the-presentation wording.",
+      "base_line": 589
+    },
+    {
+      "before": "Its hypotheses specify the operations of the presentation, a faithful\noccurrence interpretation, normalization, signed-label preservation,\nsubstitution and double negation. An alternative contextual-collapse theorem uses the symmetric\nmap",
+      "after": "Its hypotheses require the operations of the presentation, a faithful\noccurrence interpretation, isomorphisms to negation normal forms,\npreservation of signed literals along occurrence-relation edges,\nuniform substitution, and double negation. An alternative proof\nof contextual collapse uses the map",
+      "reason": "Preserve all specified hypotheses; explain normalization and signed-label preservation using the constructions of Sections 2–3, without an API argument list.",
+      "base_line": 595
+    },
+    {
+      "before": "For the presentation defining $\\B(P)$, the development proves cut\nelimination and Boolean Coherence and constructs normalization,\nsigned-label preservation, and uniform substitution on arrow terms\nand their source and target formulas. These constructions verify the\nhypotheses of \\texttt{relative\\_maximality}. The theorem\n\\texttt{Presentation.maximality} proves maximality of $\\B(P)$.",
+      "after": "For the presentation defining $\\B(P)$, cut elimination and Boolean\nCoherence hold. The isomorphisms to negation normal form, preservation\nof signed literals, and uniform substitution on arrow terms and their\nsource and target formulas verify the hypotheses of\n\\texttt{relative\\_maximality}. The theorem\n\\texttt{Presentation.maximality} proves maximality of $\\B(P)$.",
+      "reason": "Preserve the accepted actual-presentation application and endpoint substitution laws while stating properties without development-progress wording.",
+      "base_line": 614
+    },
+    {
+      "before": "Boolean Category (v10)",
+      "after": "Boolean Category (v11)",
+      "reason": "Increment the PDF title metadata for the new manuscript version.",
+      "base_line": 7
+    },
+    {
+      "before": "\\date{October 31, 2026\\quad(v10)}",
+      "after": "\\date{October 31, 2026\\quad(v11)}",
+      "reason": "Increment the visible manuscript version, retaining the publication date.",
+      "base_line": 18
+    }
+  ],
+  "inherited_edits": [
+    "Retained the October 31 date of the intervening v10 release.",
+    "Structural adds no information about the two stated isomorphisms.",
+    "The preceding sentence identifies the composite; structural adds no distinction.",
+    "Name the reductions; concrete source adds no mathematical distinction.",
+    "Actual adds no distinction to the substitution operation just defined."
+  ],
+  "reconciled_overlap_reasons": [
+    "Name the label-preserving generators.",
+    "Use the defined arrow operations and state the mathematical property directly.",
+    "Remove an API-input inventory; state the instantiated category and introduce the map whose symmetry is displayed below.",
+    "Retain actual-category coherence and maximality; remove a repeated implementation checklist.",
+    "Describe the inverse constructions and interpretation laws; full could be mistaken for fullness of a functor.",
+    "Name the variable kind instead of qualifying it as actual.",
+    "Name the equations represented in this appendix."
+  ],
+  "intervening_commits": [
+    "fd29c0c1fef4685c9c2e3bdec636a749c1d8b180",
+    "9590145a356c2d02f35a6b2216eb14e2c32adafb",
+    "fd62d2673af1f6e92332a51dee5866067f318480",
+    "89ebf8390f8906a6c2529cea6f910c65ece8889f"
+  ],
+  "intervening_review": "docs/reviews/V9_TERMINOLOGY_2026-10-31.md",
+  "checked_generator_enumeration_preserved": true,
+  "accepted_renaming_paragraph_preserved": true,
+  "accepted_interpretation_wording_preserved": true,
+  "structural_induction_retained": true,
+  "october_31_manuscript_date_preserved": true,
+  "bibliography": "Exact supplied Palomar BibTeX entry; all eleven entries use BibTeX.",
+  "palomar_bib_sha256": "4d12fa9c7cca4455dfe37a63aff9596c31a02d3827388cee636caf474155fab4",
+  "displays_and_diagrams_identical": true,
+  "labels_identical": true,
+  "reverse_patch_recovers_v10": true,
+  "unmodified_v10_bibliography": "\\begin{thebibliography}{10}\n\\small\n\\setlength{\\itemsep}{2pt}\n\\setlength{\\parskip}{0pt}\n\\bibitem{DP}\nKosta Do\\v{s}en and Zoran Petri\\'c,\n\\emph{Proof-Theoretical Coherence},\nStudies in Logic, vol.~1, King's College Publications, London, 2004.\nRevised author version, September 2007.\n\\url{https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf}.\n\n\\bibitem{DPCartesian}\nKosta Do\\v{s}en and Zoran Petri\\'c,\nThe maximality of cartesian categories,\n\\emph{Mathematical Logic Quarterly} \\textbf{47} (2001), 137--144.\n\\url{https://arxiv.org/abs/math/9911059}.\n\n\\bibitem{DPBicartesian}\nKosta Do\\v{s}en and Zoran Petri\\'c,\nBicartesian coherence revisited,\nin Zoran Ognjanovi\\'c (ed.), \\emph{Logic in Computer Science},\nZbornik radova \\textbf{12(20)} (2009), 5--34.\n\\url{https://arxiv.org/abs/0711.4961}.\nAuthor version: arXiv:0711.4961v3, December 8, 2008.\n\n\\bibitem{DPIsomorphic}\nKosta Do\\v{s}en and Zoran Petri\\'c,\nIsomorphic formulae in classical propositional logic,\n\\emph{Mathematical Logic Quarterly} \\textbf{58} (2012), 5--17.\n\\url{https://doi.org/10.1002/malq.201020020}.\nAuthor version: \\url{https://arxiv.org/abs/0912.1271},\narXiv:0912.1271v3, October 4, 2010.\n\n\\bibitem{DPSplit}\nKosta Do\\v{s}en and Zoran Petri\\'c,\nSyntax for split preorders,\n\\emph{Annals of Pure and Applied Logic} \\textbf{164} (2013), 443--481.\n\\url{https://arxiv.org/abs/0902.0742}.\nAuthor version: arXiv:0902.0742v7, October 18, 2012.\n\n\\bibitem{LSFree}\nFran\\c{c}ois Lamarche and Lutz Stra{\\ss}burger,\nConstructing free Boolean categories,\nin \\emph{Proceedings of the 20th Annual IEEE Symposium on Logic in\nComputer Science (LICS 2005)}, IEEE Computer Society, 2005, pp.~209--218.\n\\url{https://doi.org/10.1109/LICS.2005.13}.\n\n\\bibitem{FP}\nCarsten F\\\"uhrmann and David Pym,\nOrder-enriched categorical models of the classical sequent calculus,\n\\emph{Journal of Pure and Applied Algebra} \\textbf{204} (2006), 21--78.\n\\url{https://doi.org/10.1016/j.jpaa.2005.03.016}.\n\n\\bibitem{Strassburger}\nLutz Stra{\\ss}burger,\nOn the axiomatisation of Boolean categories with and without medial,\n\\emph{Theory and Applications of Categories} \\textbf{18} (2007),\n536--601.\n\\url{https://www.tac.mta.ca/tac/volumes/18/18/18-18abs.html}.\n\n\\bibitem{Formalization}\nFlorian Lengyel,\n\\emph{Do\\v{s}en--Petri\\'c maximality in Lean},\nLean~4 source development, 2026,\n\\href{https://github.com/flengyel/Dosen-Petric-Maximality/tree/630c4b6e47da16a1434476a211fd29ce6adc5569}{revision \\texttt{630c4b6e47da}}.\n\\url{https://github.com/flengyel/Dosen-Petric-Maximality}.\n\n\\bibitem{Palomar}\nFlorian Lengyel,\n\\emph{Maximality of the Do\\v{s}en--Petri\\'c Boolean Category},\nPalomar Registry, \\texttt{PALOMAR-2026-10-30-000014}, version~1,\nregistered October 30, 2026.\n\\href{https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1}{Registry record}.\nVerified Lean source:\n\\href{https://github.com/flengyel/Dosen-Petric-Maximality/tree/2e771844077fd8cebfbe365230f13d4dd13a75b1}{revision \\texttt{2e771844077f}}.\n\n\\bibitem{Notation}\nFlorian Lengyel,\n\\emph{The Unbearable Notation of Logic},\nversion~8, September 19, 2026, Section~9.\n\\url{https://github.com/flengyel/notes/blob/main/logic/The-Unbearable-Notation-of-Logic_v8.pdf}.\n\\end{thebibliography}"
+}
