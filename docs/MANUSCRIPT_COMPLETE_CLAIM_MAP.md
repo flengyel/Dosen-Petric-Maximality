@@ -2,8 +2,11 @@
 
 This is the active exact correspondence for all mathematical content of v7,
 preserved in v8 with a formalization-status/date/citation refresh and in v9 with
-the AI-disclosure/registry-citation publication update. V9 has exactly the same
-mathematical text, labels and diagrams. Earlier
+the AI-disclosure/registry-citation publication update. V10, dated October 31,
+2026, contains the terminology revision with the same mathematical definitions,
+statements, proofs, labels and diagrams. The original v9 release is preserved.
+The correspondences below apply unchanged to v10; see MANUSCRIPT_V10_REPORT.md.
+Earlier
 coverage/statement maps and reports remain as dated checkpoints. “Complete” here
 means local pinned Lean proof/source closure; it does not mean independent replay,
 Comparator, official/service verification, public release or publication.

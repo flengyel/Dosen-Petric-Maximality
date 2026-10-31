@@ -1,5 +1,18 @@
 # Manuscript corrections and source errata
 
+## Versioning correction: terminology revision is v10 (31 October 2026)
+
+V10-VERSION-20261031: the author requires every manuscript revision to increment
+the version number. The terminology edits previously placed in v9 are published
+as v10, dated October 31, with visible v10 front matter and PDF metadata.
+The original v9 source, PDF and arXiv package are restored byte for byte from
+678ea6d. The edited snapshot is retained in history at fd29c0c. Original v4–v8
+files are untouched. The v10 mathematical text is identical to the edited snapshot;
+only date/version metadata changes. The arXiv v10 package, fields and active
+links are synchronized. AGENTS.md records the standing version-increment rule.
+The preceding reports remain dated evidence of the work as then performed.
+See MANUSCRIPT_V10_REPORT.md for preservation, compilation and delivery checks.
+
 ## V9 terminology review resolved (31 October 2026)
 
 V9-TERMS-20261031: the supplied review identified local prose ambiguities,

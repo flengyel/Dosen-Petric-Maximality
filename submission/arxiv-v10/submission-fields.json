@@ -1,0 +1,39 @@
+{
+  "title": "Maximality of the Do\u0161en\u2013Petri\u0107 Boolean Category",
+  "authors": [
+    "Florian Lengyel"
+  ],
+  "contact_email": "flengyel@gradcenter.cuny.edu",
+  "primary_category": "math.CT",
+  "cross_lists": [
+    "math.LO"
+  ],
+  "msc2020_primary": [
+    "03G30"
+  ],
+  "msc2020_secondary": [
+    "03F07",
+    "18A32"
+  ],
+  "abstract": "The freely generated zero-identity Boolean category of Do\u0161en and Petri\u0107 is maximal: every additional equation between distinct parallel arrows, closed under the proof operations and uniform formula substitution, makes the quotient a preorder. This disproves the nonmaximality conjecture in Section~14.2 of the September 2007 revision of Proof-Theoretical Coherence. Boolean Coherence reduces a new equation to a contextual equation involving one literal. Uniform substitution extends that equation to every formula. Two isomorphisms of Do\u0161en and Petri\u0107 then force the product projections to coincide. A Lean formalization proves coherence for the equation-generated presentation and verifies maximality, the model corollary, and the occurrence-coordinate constructions. Tagged occurrence sets give coordinates for the reduction and substitution.",
+  "abstract_latex": "The freely generated zero-identity Boolean category of Do\\v{s}en and\nPetri\\'c is maximal: every additional equation between distinct parallel\narrows, closed under the proof operations and uniform formula\nsubstitution, makes the quotient a preorder. This disproves the\nnonmaximality conjecture in Section~14.2 of the September 2007 revision\nof \\emph{Proof-Theoretical Coherence}. Boolean Coherence reduces a new\nequation to a contextual equation involving one literal. Uniform\nsubstitution extends that equation to every formula. Two\nisomorphisms of Do\\v{s}en and Petri\\'c then force the product projections\nto coincide. A Lean formalization proves coherence for the equation-generated\npresentation and verifies maximality, the model corollary, and the\noccurrence-coordinate constructions. Tagged occurrence\nsets give coordinates for the reduction and substitution.",
+  "comments": "13 pages. Lean formalization: https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1",
+  "doi": null,
+  "journal_reference": null,
+  "palomar_registry_id": "PALOMAR-2026-10-30-000014",
+  "palomar_version": 1,
+  "palomar_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1",
+  "verified_lean_source_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+  "manuscript_version": 10,
+  "source_file": "main.tex",
+  "source_archive": "Dosen-Petric-Maximality-v10-arxiv-source.tar.gz",
+  "source_archive_sha256": "f64f647aadd0c6b06e9745f72e0eeee35bbb178c359b81ba969130cb2711eb13",
+  "paper_source_sha256": "f9f7f8f97ae8a9599357daa48fa0833c7e8f8314d35f7fa72ee2d4202b8f0002",
+  "paper_pdf_sha256": "203751451ad08cefbc6e43b984e84f363de7f883dd00075b420399ea1ef584fd",
+  "pages": 13,
+  "repository_license": "Apache-2.0",
+  "arxiv_license_selection": null,
+  "arxiv_license_note": "Author selects an arXiv-supported distribution license in the submission form; the agent has not selected a new license.",
+  "arxiv_uploaded": false,
+  "manuscript_date": "2026-10-31"
+}

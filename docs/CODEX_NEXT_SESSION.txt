@@ -19,25 +19,25 @@ manifest; eleven other files match. This is recorded as a service delivery issue
 not a new Lean proof or source failure. Do not claim all served render bytes pass.
 See docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md; no operator contact was sent.
 
-Current manuscript: v9; all v4–v8 files remain byte-preserved. V9 expands the
-expressly requested AI acknowledgment to include Codex and author responsibility,
-retains MSC Primary 03G30; Secondary 03F07, 18A32, and adds the verified Palomar
-citation/date. The 31 October terminology revision clarifies the signed-literal
-generators and the application of relative_maximality, describes interpretations
-by preservation of the specified operations, and removes redundant qualifiers.
-Definitions, statements, proofs, diagrams, labels, citations and the authorized
-disclosure remain preserved. Both the revised manuscript and arXiv main.tex
-compiled to 13 pages; existing duplicate-destination/underfull warnings are
-recorded in docs/reviews/V9_TERMINOLOGY_2026-10-31.md. No Lean rebuild ran.
-The source upload package is submission/arxiv-v9/Dosen-Petric-Maximality-v9-arxiv-source.tar.gz;
-it contains only main.tex, identical to manuscript v9. Local PDFLaTeX passes,
-resolved references, hyperlink and affected rendered pages were checked.
+Current manuscript: v10, dated October 31, 2026; all v4–v9 files are preserved.
+Every manuscript revision must increment the version number. Never release
+changed text under an existing number. Preserve the earlier source/PDF/package.
+V10 carries the terminology revision: signed-literal generators, application of
+relative_maximality, interpretations preserving specified operations, concise
+qualifiers and the Appendix B heading. It retains the disclosure, MSC codes,
+definitions, statements, both proof routes, diagrams, labels and source citations.
+The original v9 release files and arXiv package are restored from 678ea6d;
+the briefly reused v9 editorial snapshot remains in history at fd29c0c.
+The source upload package is submission/arxiv-v10/Dosen-Petric-Maximality-v10-arxiv-source.tar.gz;
+it contains only main.tex, identical to manuscript v10. Both v10 TeX builds
+compiled to 13 pages. See docs/MANUSCRIPT_V10_REPORT.md for checks and inherited
+warnings. No Lean source or registered proof input changed; no Lean rebuild ran.
 No arXiv upload or submission has occurred; the author selects the arXiv license
 in that form. The existing Apache-2.0 publication authorization remains recorded.
 
 Read docs/PALOMAR_REGISTRATION_REPORT.md, docs/ARXIV_PREPARATION_REPORT.md,
-docs/reviews/ARXIV_V9_WRITING_2026-10-30.md and the final publication delivery
-receipt. Reports and artifacts are delivered from committed bytes, with differing
+docs/MANUSCRIPT_V10_REPORT.md and the v10 delivery register.
+The earlier writing review and publication receipts remain historical records. Reports and artifacts are delivered from committed bytes, with differing
 Downloads copies preserved. Preserve the existing stash and all other projects.
 Do not reopen completed proof development or repeat unchanged verification.
 After actual arXiv submission, continue to Local connectedness in recursion

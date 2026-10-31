@@ -1,5 +1,11 @@
 # Coverage and next proof obligations
 
+Current manuscript: v10, dated October 31, 2026. It publishes the terminology
+revision with definitions, statements, proofs, diagrams and citations preserved.
+The original v9 source/PDF/package are retained. Every manuscript revision must
+increment its number. See [v10 report](MANUSCRIPT_V10_REPORT.md).
+The dated formalization checkpoints below retain their original scope.
+
 ## Current complete full-paper formalization (29 October 2026)
 
 All mathematical content of v7 is now proved for the actual equation-generated

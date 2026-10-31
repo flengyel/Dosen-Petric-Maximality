@@ -8,10 +8,10 @@ commit below. The [registration report](docs/PALOMAR_REGISTRATION_REPORT.md)
 records the public readback; a separate [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
 records the analytics injection in two served render pages.
 
-The arXiv package is ready in [submission/arxiv-v9](submission/arxiv-v9/README.md).
-V9 explicitly acknowledges ChatGPT and Codex, retains MSC 2020 Primary 03G30;
+The arXiv package is ready in [submission/arxiv-v10](submission/arxiv-v10/README.md).
+V10 retains the ChatGPT and Codex disclosure and MSC 2020 Primary 03G30;
 Secondary 03F07, 18A32, and cites the registered proof. No arXiv submission has
-been made. The manuscript's mathematical text and all previous versions are preserved.
+been made. V10 carries the terminology revision; definitions, statements, proofs and all previous versions are preserved.
 
 The verified package was merged into main through `23ec1bc`. It selects five statements
 in `DosenPetric.Palomar`: both
@@ -43,10 +43,10 @@ publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
-Current manuscript: [v9 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v9.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v9.tex). V8 and all earlier versions remain preserved.
-The [31 October terminology revision](docs/reviews/V9_TERMINOLOGY_2026-10-31.md)
-clarifies the generator and formalization descriptions; both TeX builds passed
-with definitions, statements, proofs, diagrams and registered-source citations preserved.
+Current manuscript: [v10 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v10.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v10.tex), dated October 31, 2026. The original v9 release and all earlier versions remain preserved.
+The [v10 report](docs/MANUSCRIPT_V10_REPORT.md) records the terminology revision,
+successful TeX builds and version preservation. Every manuscript revision must
+increment the version number; the rule is recorded in AGENTS.md.
 
 All mathematical content of v7 is now proved for the actual equation-generated
 Došen–Petrić presentation, with the status/citation refresh preserved in v8.
@@ -345,7 +345,7 @@ in all three v7 appendices. The historical checkpoints below retain their dated
 scope; their open normalization statuses are superseded by this current table.
 Continue under the full-paper authorization without another routine checkpoint.
 
-## Current manuscript: v7 with the authorized errata appendix
+## Retained v7 manuscript checkpoint: authorized errata appendix
 
 V7, dated 28 October 2026, preserves all v6 mathematical content and adds the
 exact author-requested Appendix C plus its introduction roadmap sentence.
@@ -356,8 +356,8 @@ references/citations and has no overfull/underfull boxes or warnings. All ten
 TikZ diagrams, Appendices A–B, the disclosure and bibliography are unchanged
 in source. The v4/v5/v6 source/PDF pairs remain byte-identical.
 
-Active source: `manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex`,
-SHA-256 `70b4f82c03e165e6a6da36d869968531a509341b93f90eedde964506568c8e96`. Active PDF: the same basename with .pdf,
+Source at this checkpoint: `manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex`,
+SHA-256 `70b4f82c03e165e6a6da36d869968531a509341b93f90eedde964506568c8e96`. Checkpoint PDF: the same basename with .pdf,
 SHA-256 `957048538137ef085c0a581b399272db753377b76c6a83c1adc307ad8b2e256a`. Evidence: `provenance/wsl-manuscript-v7/`;
 report: [MANUSCRIPT_V7_ERRATA_REPORT.md](docs/MANUSCRIPT_V7_ERRATA_REPORT.md); reviews:
 [hostile review](docs/reviews/MANUSCRIPT_V7_ERRATA_HOSTILE.md),
@@ -638,7 +638,7 @@ The [statement map](docs/MANUSCRIPT_STATEMENTS.md) and
 [coverage map](docs/MANUSCRIPT_COVERAGE.md) record the precise boundary.
 Use [the next-session prompt](docs/CODEX_NEXT_SESSION.txt) to continue in WSL2.
 
-The current manuscript is v7: [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex)
+The manuscript at this historical checkpoint is v7: [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.tex)
 and [PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v7.pdf).
 It gives a shorter contextual-collapse proof from the published structural
 isomorphisms, distinguishes the result from Joyal's theorem, and describes the
