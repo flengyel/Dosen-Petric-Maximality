@@ -1,0 +1,79 @@
+{
+  "theorem": {
+    "count": 2,
+    "byte_identical_to_v11": true
+  },
+  "lemma": {
+    "count": 3,
+    "byte_identical_to_v11": true
+  },
+  "proposition": {
+    "count": 1,
+    "byte_identical_to_v11": true
+  },
+  "corollary": {
+    "count": 1,
+    "byte_identical_to_v11": true
+  },
+  "equation": {
+    "count": 12,
+    "byte_identical_to_v11": true
+  },
+  "tikzcd": {
+    "count": 10,
+    "byte_identical_to_v11": true
+  },
+  "labels": {
+    "count": 30,
+    "identical_to_v11": true
+  },
+  "appendices_B_C_and_disclosure": "byte-identical to v11",
+  "supplied_palomar_bibtex": {
+    "unchanged": true,
+    "sha256": "342ef3c6b1c30ca913c887fca03f5007659c8de7f1c07be76e627cc3edb19650"
+  },
+  "release": {
+    "pages": 13,
+    "metadata_title": "Maximality of the Dosen–Petric Boolean Category (v12)",
+    "all_pages_rendered_and_visually_inspected": true,
+    "registered_entry_uri": "https://palomar-registry.org/entry?id=PALOMAR-2026-10-30-000014&version=1",
+    "registered_entry_links": 2,
+    "source_sha256": "cebcc54c897bc6e7c41802909ad4f849b2f734d8591b2bd387ad68eeca8370d9",
+    "pdf_sha256": "f8856bb5444cacd01b7dd11f1ad80390296a94a6c67e14711ba166a8b3102d23",
+    "archive_sha256": "fcbf480b72a2b52e2f3ec721f998974f8bfbcf6d4a72db94b1aa852b7ae16316",
+    "archive_members": [
+      "main.tex",
+      "main.bbl",
+      "references_v12.bib",
+      "palomar_v12.bib"
+    ],
+    "archive_members_match_staged_files": true,
+    "extracted_archive_build": "passed",
+    "archive_layout_text_matches_manuscript": true,
+    "archive_bibliography_matches_manuscript": true,
+    "logs": {
+      "manuscript-build.log.gz": {
+        "sha256": "c4f5b3ff59fa06bd5e1c0e5a5bee79f2a7c10772c268e2fc94517d0763e28fb0",
+        "warnings_found": []
+      },
+      "bibliography-build.log.gz": {
+        "sha256": "e50f0f117a94d59323bbfcb673722c6da90706cc450c0cf54e7d39a7ef4c2c62",
+        "warnings_found": []
+      },
+      "package-build.log.gz": {
+        "sha256": "999bc92f8121e0fc0a05c647e94fa5f1ce1977b32d15728738ba4d78d3e3e011",
+        "warnings_found": []
+      }
+    }
+  },
+  "scope": {
+    "reviewed_v10_commit": "89ebf8390f8906a6c2529cea6f910c65ece8889f",
+    "reconciled_v11_commit": "97d728820d87f712c32c77dcb29fcd6fa0856e3d",
+    "registered_proof_source": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+    "lean_source_changed": false,
+    "new_lean_or_kernel_replay": false,
+    "new_palomar_intake": false,
+    "arxiv_upload": false,
+    "windows_downloads_delivery": "not available in this environment; not performed"
+  }
+}

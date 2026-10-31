@@ -26,8 +26,8 @@ other checkouts, including FailureOfComposition and Categorical_Rice_Shapiro.
 Read `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md`,
 `docs/CODEX_NEXT_SESSION.txt`, `docs/MANUSCRIPT_STATEMENTS.md`,
 `docs/MANUSCRIPT_COVERAGE.md`, and
-`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v11, dated October 31, 2026;
-v4–v10 remain preserved. V8
+`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v12, dated October 31, 2026;
+v4–v11 remain preserved. V8
 updated the formalization status/date/source citation. V9 adds the author-requested
 Codex disclosure, author-responsibility sentence and verified Palomar citation,
 and updates the date. MSC 2020 Primary 03G30; Secondary 03F07, 18A32 is preserved.
@@ -46,11 +46,17 @@ source/PDF and upload package; put revised text in the next numbered files and
 refresh the date, PDF metadata, package fields and active links together.
 V10 contains the first 31 October terminology revision. V11 incorporates that
 revision and the exact supplied Palomar BibTeX entry, explains terminology, and
-removes empty qualifiers and progress narration. It explicitly displays v11.
+removes empty qualifiers and progress narration. V12 incorporates the completed
+line-by-line hostile/writing review and primary-source comparisons. It preserves
+v11, all theorem statements, displayed equations, typed diagrams and the exact
+supplied Palomar BibTeX. See docs/MANUSCRIPT_V12_REPORT.md.
 The author requests that manuscript prose avoid empty qualifiers, unexplained
 terms and process updates. Keep mathematically meaningful qualifications, such
 as structural induction, with their objects stated; keep process reports outside
-the manuscript. Apply corrections throughout affected passages and linked records.
+the manuscript. Follow Došen and Petrić's direct manner of exposition: define
+the objects, state the equations and hypotheses, and give the deductions.
+Replace vague English by a mathematical assertion or delete it. Apply corrections
+throughout affected passages and linked records.
 The original v9 source/PDF/package are restored from 678ea6d; the briefly reused
 v9 editorial snapshot remains in Git history at fd29c0c. All mathematical claims,
 both proof routes and the immutable registered proof source are preserved.
@@ -205,7 +211,7 @@ The author registered the actual delivered review personally; the service and
 public entry confirm registration. Do not repeat intake or registration.
 
 Read docs/CODEX_NEXT_SESSION.txt, docs/PALOMAR_REGISTRATION_REPORT.md and
-docs/ARXIV_PREPARATION_REPORT.md. V11 and its four-file arXiv source package are
+docs/ARXIV_PREPARATION_REPORT.md. V12 and its four-file arXiv source package are
 prepared and locally compiled; every earlier release is preserved. No arXiv upload has occurred. Keep mathematical
 proof development closed, retain all previous manuscripts and the stash, and
 reuse verification. Do not change the immutable registered source or its frozen

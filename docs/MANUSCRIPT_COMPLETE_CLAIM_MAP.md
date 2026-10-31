@@ -8,7 +8,10 @@ statements, proofs, labels and diagrams. The original v9 release is preserved.
 V11 incorporates those corrections and the supplied Palomar BibTeX; empty
 qualifiers and progress narration are revised, and terminology is explained.
 All mathematical statements, displayed equations, ten diagrams and labels match
-v10. The correspondences below apply unchanged to v11; see MANUSCRIPT_V11_REPORT.md.
+v10. V12 adds explicit notation and equations for these same claims after a full prose
+and source review. The correspondences below apply to v12; see
+MANUSCRIPT_V12_REPORT.md and reviews/V12_HOSTILE_REVIEW_2026-10-31.md.
+No new Lean theorem or verification is claimed.
 Earlier
 coverage/statement maps and reports remain as dated checkpoints. “Complete” here
 means local pinned Lean proof/source closure; it does not mean independent replay,

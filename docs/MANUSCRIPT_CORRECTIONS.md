@@ -1,5 +1,35 @@
 # Manuscript corrections and source errata
 
+## Line-by-line prose and source review: v12 (31 October 2026)
+
+V12 incorporates the concurrent v11 release at 97d7288 and preserves its exact
+supplied Palomar BibTeX. The complete review of v10 and the v11 diff is in
+reviews/V10_LINE_REVIEW_2026-10-31.md; the mathematical findings and limits are in
+reviews/V12_HOSTILE_REVIEW_2026-10-31.md.
+
+The introduction now states the closure conditions, the selected-edge argument,
+the hypothesis of the cited occurrence-selection lemma, and the precise class
+in Lamarche–Straßburger's freeness theorem. The Führmann–Pym comparison identifies
+the negation composite and uses its stable equation number. Pairing/copairing
+types, the normal-form occurrence bijection, preserved interpretation operations,
+empty variable sets, tagged-coordinate equalities and skeleton reconstruction
+are explicit. Empty announcements and vague descriptions are removed.
+
+The pairing/copairing change is a clarification of standard notation, not a
+repair of an ill-typed construction or Lean declaration. No confirmed false
+theorem, ill-typed composite or gap in the checked maximality argument was found.
+All seven theorem statements, twelve numbered displays, ten diagrams and thirty
+labels are byte-identical to v11. Both proofs and the original category's
+coherence/empty-hom qualifications remain. Hidden equation destination names
+are corrected without changing visible numbering. No Lean source changes or
+new kernel/preflight/service run were needed.
+
+The final manuscript and four-file archive compile to matching 13-page layout
+text with resolved references/citations. Full validation and delivery limits are
+in MANUSCRIPT_V12_REPORT.md. The new reports are retained in the repository;
+this environment cannot deliver to the author's Windows Downloads directory.
+
+
 ## Supplied BibTeX and prose revision: v11 (31 October 2026)
 
 V11-PROSE-20261031: use the author's supplied Palomar @misc entry verbatim,

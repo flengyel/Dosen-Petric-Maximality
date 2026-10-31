@@ -1,11 +1,12 @@
 # Coverage and next proof obligations
 
-Current manuscript: v11, dated October 31, 2026. It incorporates v10
-terminology corrections, the exact supplied Palomar BibTeX and the requested
-prose revision. Mathematical statements, displayed equations, diagrams and labels
-are unchanged; definitions are clarified. All earlier source/PDF/packages remain.
-Every revision increments its number. See [v11 report](MANUSCRIPT_V11_REPORT.md).
-The dated formalization checkpoints below retain their original scope.
+Current manuscript: v12, dated October 31, 2026. It incorporates v11 and the
+line-by-line hostile/writing review, with primary-source checks of the literature
+comparisons. The seven theorem statements, twelve numbered displays, ten diagrams,
+thirty labels, Appendix C and supplied Palomar BibTeX are unchanged from v11.
+Notation and prose are made explicit; all earlier releases remain preserved.
+See [v12 report](MANUSCRIPT_V12_REPORT.md). The dated formalization checkpoints
+below retain their original scope; no new Lean verification is claimed.
 
 ## Current complete full-paper formalization (29 October 2026)
 

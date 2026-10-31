@@ -5,7 +5,7 @@ the original manuscript and retained history. The complete verified package is
 merged into main. The immutable submission source remains **`2e771844077fd8cebfbe365230f13d4dd13a75b1`**.
 The preparation branch and original stash are preserved. Registered as
 [PALOMAR-2026-10-30-000014, version 1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1).
-V11 and its four-file arXiv source package are ready; no arXiv upload has occurred.
+V12 and its four-file arXiv source package are ready; no arXiv upload has occurred.
 
 | Stage | Actual current status |
 | --- | --- |

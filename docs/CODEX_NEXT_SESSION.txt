@@ -1,4 +1,4 @@
-Current phase: Palomar registration is complete; arXiv v11 preparation is ready.
+Current phase: Palomar registration is complete; arXiv v12 preparation is ready.
 
 Registered identity: PALOMAR-2026-10-30-000014, version 1.
 https://palomar-registry.org/entry?id=PALOMAR-2026-10-30-000014&version=1
@@ -21,33 +21,36 @@ contain added Cloudflare analytics and differ. Keep this delivery limitation
 separate from source/mechanical verification. See PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md.
 No operator message was sent and no claim that every served render byte passes.
 
-Current manuscript: v11, dated October 31, 2026. All v4–v10 source/PDF/packages
-are preserved. Every manuscript revision increments its number; never release
-changed text under an existing number. V11 incorporates intervening v10 fixes,
-the author's exact Palomar BibTeX entry and the full-source prose pass for empty
-qualifiers, unexplained terminology and progress narration. Retain mathematically
-meaningful qualifications: structural induction on the formula remains. The checked
-generator list, relative theorem hypotheses, substitution on arrow terms and both
-endpoints, interpretation wording and Appendix B title are preserved. Mathematical
-statements, displays, ten diagrams and labels are unchanged. The AI disclosure,
-MSC codes, Appendix C and both proof routes remain.
+Current manuscript: v12, dated October 31, 2026. All v4–v11 releases and
+packages are preserved. The exact supplied Palomar BibTeX is retained as
+manuscript/palomar_v12.bib. V12 reconciles the v11 release at 97d7288 with the
+complete line-by-line hostile/writing review. It makes the literature comparisons,
+operation types and coordinate equations explicit, and removes vague summaries.
+The author requests Došen–Petrić's direct exposition. Keep meaningful technical
+terms, such as structural induction on the formula, and all mathematical content.
 
-The four-file upload archive is submission/arxiv-v11/Dosen-Petric-Maximality-v11-arxiv-source.tar.gz:
-main.tex, main.bbl, references_v11.bib and palomar_v11.bib. All members match the
-manuscript/BibTeX sources. The supplied entry is used verbatim, not just retained
-as an unused file; PDF link annotations match its /entry URI. All eleven sources
-remain and numeric labels follow citation order. Form abstract/comments/hashes
-are synchronized. BibTeX and three PDFLaTeX passes returned exit 0, 13 pages,
-resolved references. Four inherited duplicate equation.6 destination warnings
-and the unused epstopdf shell-escape notice remain. No Lean input changed or
-Lean rebuild ran; source hashes and stash preservation were checked.
+The seven theorem statements, twelve numbered displays, ten diagrams and thirty
+labels are byte-identical to v11. Both proof routes, Appendix C, AI disclosure
+and MSC codes remain. Explicit pairing/copairing types clarify prose; they do
+not correct a Lean typing defect. No such defect was found. No Lean source,
+registered input, toolchain or comparator is changed or reverified.
 
-Read MANUSCRIPT_V11_REPORT.md, ARXIV_PREPARATION_REPORT.md,
-reviews/ARXIV_V11_WRITING_2026-10-31.md, MANUSCRIPT_CORRECTIONS.md and the v11
-provenance/delivery register. Earlier v10 and terminology reports remain historical
-records. Only findings actually present from the separate Astra review were
-incorporated; no additional unavailable review is claimed. Reconcile new findings
-when received. Keep process reports outside mathematical prose.
+The four-file archive is
+submission/arxiv-v12/Dosen-Petric-Maximality-v12-arxiv-source.tar.gz:
+main.tex, main.bbl, references_v12.bib and palomar_v12.bib.
+The manuscript and extracted archive both compile to 13 pages with matching
+layout text; references/citations resolve. Duplicate equation destinations are
+fixed without changing printed numbers. All final pages are rendered and
+inspected. Hashes, source comparisons and logs are in
+provenance/manuscript-v12-review-20261031/.
+
+Read MANUSCRIPT_V12_REPORT.md, ARXIV_PREPARATION_REPORT.md,
+reviews/V10_LINE_REVIEW_2026-10-31.md and
+reviews/V12_HOSTILE_REVIEW_2026-10-31.md. This cloud review cannot access the
+author's Windows Downloads directory. Deliver the new v12 files and reports
+from committed bytes there, preserving differing copies and verifying hashes;
+do not describe that delivery as already complete. Earlier v11 receipts remain
+valid for their own files. Preserve the existing WSL stash and other work.
 
 No arXiv upload or new license selection has occurred. The author selects the
 arXiv-supported license and checks the server preview in the submission account.
