@@ -1,0 +1,46 @@
+{
+  "base_commit": "678ea6d3e15d64ff7dcfb69859ab9723671f0125",
+  "base_source_git_blob": "6948568b318b713b582a735cafe3da564de03144",
+  "original_source_sha256": "b08b26dc3c4eed6d08e0db31eae56da2fb47c81bca0f6c30c3e2e5b8724f2de4",
+  "revised_source_sha256": "90a013bc78cb9702ed306709cdb616a0b05549a912dc29061e374fa3eb308ba5",
+  "targeted_replacements": 11,
+  "byte_identical_environments": {
+    "tikzcd": 10,
+    "equation": 12,
+    "theorem": 2,
+    "proposition": 1,
+    "lemma": 3,
+    "corollary": 1,
+    "proof": 6,
+    "thebibliography": 1
+  },
+  "all_unnumbered_display_math_identical": true,
+  "labels_refs_eqrefs_citations_identical": true,
+  "bibliography_and_authorized_disclosure_identical": true,
+  "existing_inline_math_preserved_in_order": true,
+  "added_inline_math": [
+    "\\B(P)",
+    "\\B(P)",
+    "Q"
+  ],
+  "structural_induction_retained": true,
+  "qualifier_counts": {
+    "actual": {
+      "before": 2,
+      "after": 0
+    },
+    "structural": {
+      "before": 12,
+      "after": 6
+    },
+    "full": {
+      "before": 2,
+      "after": 0
+    },
+    "concrete": {
+      "before": 1,
+      "after": 0
+    }
+  },
+  "note_on_counts": "Raw source counts include labels and reference keys; printed prose retains only structural induction."
+}

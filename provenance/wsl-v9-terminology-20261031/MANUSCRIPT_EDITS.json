@@ -1,0 +1,57 @@
+[
+  {
+    "location": "abstract",
+    "before": "Two structural\nisomorphisms",
+    "after": "Two\nisomorphisms"
+  },
+  {
+    "location": "introduction",
+    "before": "The corresponding structural composite",
+    "after": "The corresponding composite"
+  },
+  {
+    "location": "signed-label generators",
+    "before": "has signed literals as generators. Its positive structural generators\npreserve these labels; zero endomorphisms and the arrows $\\eta_p$ and\n$\\epsilon_p$ have empty relations.",
+    "after": "has signed literals as generators. The identity arrows and the generators\nfor conjunction, disjunction and the truth constants (associativity,\nsymmetry, diagonals and codiagonals, projections and injections, mix,\ndistribution and unit maps) preserve these labels. Zero endomorphisms\nand the arrows $\\eta_p$ and $\\epsilon_p$ have empty relations."
+  },
+  {
+    "location": "operations of the presentation",
+    "before": "defines a quotient category, in which the structural\noperations and zero-identity construction",
+    "after": "defines a quotient category, in which the operations of\nthe presentation and zero-identity construction"
+  },
+  {
+    "location": "general theorem hypotheses",
+    "before": "Its arguments include the structural operations, a faithful occurrence\ninterpretation, normalization, signed-label preservation, substitution\nand double negation.",
+    "after": "Its hypotheses specify the operations of the presentation, a faithful\noccurrence interpretation, normalization, signed-label preservation,\nsubstitution and double negation."
+  },
+  {
+    "location": "application to the presentation",
+    "before": "For the equation-generated Do\\v{s}en--Petri\\'c presentation, cut\nelimination and Boolean Coherence are proved in Lean. The development\nconstructs normalization, signed-label preservation, and uniform\nwhole-arrow substitution, and supplies the full presentation as an\ninstance of every hypothesis of \\texttt{relative\\_maximality}. The theorem\n\\texttt{Presentation.maximality} gives the resulting maximality statement.",
+    "after": "For the presentation defining $\\B(P)$, the development proves cut\nelimination and Boolean Coherence and constructs normalization,\nsigned-label preservation, and uniform substitution on arrow terms\nand their source and target formulas. These constructions verify the\nhypotheses of \\texttt{relative\\_maximality}. The theorem\n\\texttt{Presentation.maximality} proves maximality of $\\B(P)$."
+  },
+  {
+    "location": "interpretations",
+    "before": "The model corollary is proved using full structure-preserving\ninterpretations and their composition with substitution.",
+    "after": "The model corollary is proved using interpretations preserving the\nspecified operations and their composition with substitution."
+  },
+  {
+    "location": "cut reductions",
+    "before": "Appendix~\\ref{app:structural-diagrams}, and the concrete source reductions\nand rank comparisons recorded in Appendix~\\ref{app:cut-errata}.",
+    "after": "Appendix~\\ref{app:structural-diagrams}, and the cut reductions and rank\ncomparisons discussed in Appendix~\\ref{app:cut-errata}."
+  },
+  {
+    "location": "pattern substitution",
+    "before": "with actual pattern substitution",
+    "after": "with pattern substitution"
+  },
+  {
+    "location": "shared variables",
+    "before": "Renaming changes the labels on the occurrences, while the pairs\n$(r,t)$ continue to distinguish their positions. This permits the\nsame actual variable to occur in several inserted patterns without\nidentifying their separate occurrences.",
+    "after": "Renaming changes the labels on the occurrences. Thus the same variable\nof $Q$ may occur in several inserted patterns while the pairs $(r,t)$\ndistinguish its occurrences."
+  },
+  {
+    "location": "appendix heading",
+    "before": "\\section{Diagrammatic forms of the structural equations}",
+    "after": "\\section{Diagrams for three defining equations}"
+  }
+]

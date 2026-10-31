@@ -1,5 +1,33 @@
 # Manuscript corrections and source errata
 
+## V9 terminology review resolved (31 October 2026)
+
+V9-TERMS-20261031: the supplied review identified local prose ambiguities,
+not a mathematical hard blocker. Eleven replacements identify the signed-literal
+generator class, state the general theorem's hypotheses and their application,
+use “interpretations preserving the specified operations,” and remove the
+redundant qualifiers and local “whole-arrow” wording. The generator enumeration
+was checked against the September 2007 author version, §14.2, p.318. Structural
+induction is retained. Appendix B is titled “Diagrams for three defining
+equations,” with its label unchanged. The review's proposed variable-of-Q
+sentence is used in Appendix A.3.
+
+Both proof routes, all definitions and qualifications, theorem/proof blocks,
+10 diagrams, 12 numbered equation environments, other displays, labels,
+citations, the registered-source bibliography entry and authorized disclosure
+are preserved. No mathematical claim is withdrawn. The source and minimal arXiv
+package/abstract fields are synchronized; both TeX builds succeeded (13 pages).
+Baseline compilation reproduces the four equation.6 duplicate-destination
+warnings and one underfull bibliography line; neither is introduced here.
+No Lean source or frozen verification input changed and no Lean rebuild ran.
+The manuscript's October 30 date and all v4–v8 files are preserved.
+
+See reviews/V9_TERMINOLOGY_2026-10-31.md and
+provenance/wsl-v9-terminology-20261031/ for exact scope and checks. The original
+v9 bytes remain at 678ea6d and the earlier publication commits; the editorial
+refresh does not replace registered proof source
+2e771844077fd8cebfbe365230f13d4dd13a75b1. No arXiv submission was made.
+
 ## Publication metadata resolved (30 October 2026)
 
 PUB-AI-20261030: the author requested an AI acknowledgment and MSC codes.

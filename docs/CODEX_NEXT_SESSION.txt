@@ -22,7 +22,13 @@ See docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md; no operator contact was sent.
 Current manuscript: v9; all v4–v8 files remain byte-preserved. V9 expands the
 expressly requested AI acknowledgment to include Codex and author responsibility,
 retains MSC Primary 03G30; Secondary 03F07, 18A32, and adds the verified Palomar
-citation/date. All previous mathematical text, labels and diagrams are unchanged.
+citation/date. The 31 October terminology revision clarifies the signed-literal
+generators and the application of relative_maximality, describes interpretations
+by preservation of the specified operations, and removes redundant qualifiers.
+Definitions, statements, proofs, diagrams, labels, citations and the authorized
+disclosure remain preserved. Both the revised manuscript and arXiv main.tex
+compiled to 13 pages; existing duplicate-destination/underfull warnings are
+recorded in docs/reviews/V9_TERMINOLOGY_2026-10-31.md. No Lean rebuild ran.
 The source upload package is submission/arxiv-v9/Dosen-Petric-Maximality-v9-arxiv-source.tar.gz;
 it contains only main.tex, identical to manuscript v9. Local PDFLaTeX passes,
 resolved references, hyperlink and affected rendered pages were checked.

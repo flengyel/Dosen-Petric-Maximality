@@ -18,3 +18,11 @@ the author's submission-system step. Mathematical text and all previous
 manuscript versions are preserved. V9 adds the Codex disclosure and the verified
 Palomar citation and updates the date. The registered Lean source remains
 `2e771844077fd8cebfbe365230f13d4dd13a75b1`, independent of later manuscript/evidence commits.
+
+The 31 October 2026 editorial refresh clarifies the signed-literal generators
+and the application of the general theorem, and removes redundant qualifiers.
+The source archive, abstract fields and PDF preview match the revised v9 source.
+The 13-page PDF was recompiled and the affected pages inspected. Definitions,
+proofs, all ten diagrams, labels, both source citations and the AI disclosure
+are preserved. The manuscript date remains October 30, 2026. The separate
+editorial report is `docs/reviews/V9_TERMINOLOGY_2026-10-31.md`.

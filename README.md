@@ -44,6 +44,9 @@ publication order is Palomar Registry registration first, then arXiv submission.
 ## Current complete full-paper formalization (29 October 2026)
 
 Current manuscript: [v9 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v9.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v9.tex). V8 and all earlier versions remain preserved.
+The [31 October terminology revision](docs/reviews/V9_TERMINOLOGY_2026-10-31.md)
+clarifies the generator and formalization descriptions; both TeX builds passed
+with definitions, statements, proofs, diagrams and registered-source citations preserved.
 
 All mathematical content of v7 is now proved for the actual equation-generated
 Došen–Petrić presentation, with the status/citation refresh preserved in v8.

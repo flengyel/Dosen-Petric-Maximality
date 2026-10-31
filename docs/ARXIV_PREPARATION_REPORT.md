@@ -14,12 +14,13 @@ acknowledgment. V9 preserves those codes and expands the expressly requested
 disclosure to cover Codex's development and checking of the Lean formalization,
 with author responsibility for the mathematical claims and final text. It adds
 the actual registry citation and updates the date to October 30, 2026.
-Reversing those four metadata edits recovers the complete v8 source byte for byte.
-All prior manuscript files, mathematical text, labels and diagrams are preserved.
+At the original publication commit 44f2d68, reversing those four metadata edits
+recovers the complete v8 source byte for byte. The subsequent 31 October terminology
+refresh is recorded below; all prior manuscript versions remain preserved.
 The registered Lean proof remains `2e771844077fd8cebfbe365230f13d4dd13a75b1`; v9 does not create a new proof
 submission or replace the registered source snapshot.
 
-## Checks
+## Original 30 October checks
 
 Two PDFLaTeX passes returned exit 0 using pdfTeX 1.40.26 (TeX Live 2025/dev/Debian).
 All cross-references and citations resolved. Rendered pages 1, 8, 12 and 13 were
@@ -35,6 +36,30 @@ compact check records are in `provenance/wsl-arxiv-v9-20261030/`.
 The [focused writing review](reviews/ARXIV_V9_WRITING_2026-10-30.md) records its
 source consultation and actual scope. It does not claim a new mathematical
 referee review of unchanged proofs.
+
+## 31 October terminology refresh
+
+The supplied editorial review is implemented in v9 and its matching arXiv source
+and abstract fields. It clarifies the signed-literal generator class, the general
+theorem's hypotheses and their verification for the presentation, and the model
+corollary's operation-preserving interpretations. Redundant qualifiers are
+removed and Appendix B is titled “Diagrams for three defining equations.”
+The revised manuscript retains its October 30 date. Statements, proofs,
+definitions, diagrams, labels, bibliography, disclosure and registered Lean
+source citation are preserved.
+
+The revised manuscript and identical arXiv main.tex both compiled successfully
+to 13 pages. References/citations resolved; no overfull boxes occurred. Affected
+pages were rendered and inspected. The four equation.6 duplicate-destination
+warnings and one underfull bibliography line were reproduced from the exact
+original source. This comparison qualifies the inherited log summary above.
+No Lean rebuild or new registration was performed. The minimal source archive
+still contains only main.tex, checked byte for byte against v9; source, PDF and
+archive hashes in submission-fields.json were refreshed. No arXiv upload occurred.
+
+See the [complete terminology report](reviews/V9_TERMINOLOGY_2026-10-31.md).
+Compact checks are in provenance/wsl-v9-terminology-20261031/; full local logs and
+page renders are retained under .codex-work/v9-terminology-20261031/.
 
 ## Form fields and next action
 

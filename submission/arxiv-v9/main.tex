@@ -27,7 +27,7 @@ substitution, makes the quotient a preorder. This disproves the
 nonmaximality conjecture in Section~14.2 of the September 2007 revision
 of \emph{Proof-Theoretical Coherence}. Boolean Coherence reduces a new
 equation to a contextual equation involving one literal. Uniform
-substitution extends that equation to every formula. Two structural
+substitution extends that equation to every formula. Two
 isomorphisms of Do\v{s}en and Petri\'c then force the product projections
 to coincide. A Lean formalization proves coherence for the equation-generated
 presentation and verifies maximality, the model corollary, and the
@@ -88,7 +88,7 @@ prove soundness and completeness for their net theories
 \cite[Theorems~6.4--6.5]{FP}.
 After precomposition with the inverse right unit isomorphism, their
 negation triangle \cite[(11), p.~28]{FP} equates an endomorphism with
-the identity. The corresponding structural composite defines the
+the identity. The corresponding composite defines the
 zero identity in \eqref{eq:zero-identity}.
 
 We use the occurrence coordinates of \cite[\S9]{Notation}: occurrences
@@ -288,9 +288,11 @@ correspondence of positions \cite[\S14.1, pp.~313--315]{DP}.
 For arrows between formulas in negation normal form, every edge of
 the occurrence relation joins occurrences of the same signed literal.
 Indeed, the equivalent presentation of \cite[\S14.2, pp.~318--321]{DP}
-has signed literals as generators. Its positive structural generators
-preserve these labels; zero endomorphisms and the arrows $\eta_p$ and
-$\epsilon_p$ have empty relations. Composition and both tensor
+has signed literals as generators. The identity arrows and the generators
+for conjunction, disjunction and the truth constants (associativity,
+symmetry, diagonals and codiagonals, projections and injections, mix,
+distribution and unit maps) preserve these labels. Zero endomorphisms
+and the arrows $\eta_p$ and $\epsilon_p$ have empty relations. Composition and both tensor
 operations preserve label agreement. The equivalence with $\B$ preserves the occurrence
 interpretation.
 
@@ -583,16 +585,16 @@ $\langle a,b\rangle:Y\to X\wedge X$ with the equal projections gives $a=b$.
 The accompanying Lean~4 development \cite{Formalization} represents
 formulas and arrow terms by inductive types. An arrow term is indexed
 by its source and target formulas. The generated equational relation
-\texttt{Derives} defines a quotient category, in which the structural
-operations and zero-identity construction are proved to satisfy their
+\texttt{Derives} defines a quotient category, in which the operations of
+the presentation and zero-identity construction are proved to satisfy their
 specified equations. Formula substitution, normalization and the tagged
 occurrence interpretation are constructed on this syntax.
 
 The theorem \texttt{relative\_maximality} formalizes the passage from a
 new substitution-closed equation to totality of the congruence.
-Its arguments include the structural operations, a faithful occurrence
-interpretation, normalization, signed-label preservation, substitution
-and double negation. An alternative contextual-collapse theorem uses the symmetric
+Its hypotheses specify the operations of the presentation, a faithful
+occurrence interpretation, normalization, signed-label preservation,
+substitution and double negation. An alternative contextual-collapse theorem uses the symmetric
 map
 \[
  h_A=[1_A,1_A]\circ m_{A,A}:A\wedge A\longrightarrow A,
@@ -609,21 +611,21 @@ $h_A\circ\langle\pi_2^{A,A},\pi_1^{A,A}\rangle=h_A$.
 The formal proof uses this identity to derive projection equality
 from the contextual equations.
 
-For the equation-generated Do\v{s}en--Petri\'c presentation, cut
-elimination and Boolean Coherence are proved in Lean. The development
-constructs normalization, signed-label preservation, and uniform
-whole-arrow substitution, and supplies the full presentation as an
-instance of every hypothesis of \texttt{relative\_maximality}. The theorem
-\texttt{Presentation.maximality} gives the resulting maximality statement.
+For the presentation defining $\B(P)$, the development proves cut
+elimination and Boolean Coherence and constructs normalization,
+signed-label preservation, and uniform substitution on arrow terms
+and their source and target formulas. These constructions verify the
+hypotheses of \texttt{relative\_maximality}. The theorem
+\texttt{Presentation.maximality} proves maximality of $\B(P)$.
 
 The theorem \texttt{Presentation.short\_maximality} formalizes the proof
 in Section~\ref{sec:collapse}, with explicit inverses for $q_A$ and $e_A$.
-The model corollary is proved using full structure-preserving
-interpretations and their composition with substitution. The formalization
+The model corollary is proved using interpretations preserving the
+specified operations and their composition with substitution. The formalization
 also verifies the occurrence-profile and finite-ordinal constructions of
 Appendix~\ref{app:substitution}, the diagram identities of
-Appendix~\ref{app:structural-diagrams}, and the concrete source reductions
-and rank comparisons recorded in Appendix~\ref{app:cut-errata}.
+Appendix~\ref{app:structural-diagrams}, and the cut reductions and rank
+comparisons discussed in Appendix~\ref{app:cut-errata}.
 
 Five declarations are registered in the Palomar Registry \cite{Palomar}:
 the two maximality proofs, the congruence dichotomy, nonzero variable
@@ -708,7 +710,7 @@ map within each such block. Repeated values of $o_M$ give separate
 source blocks, one for each occurrence of the corresponding outer
 placeholder.
 
-To identify this construction with actual pattern substitution,
+To identify this construction with pattern substitution,
 replace each $q_{i,s}$ in $N_i$ by $(i,s)$ and denote the resulting
 pattern over $C$ by $\widetilde N_i$. Let
 $\Phi_0:U\to\FormulaSet(C)$ be given by $\Phi_0(p_i)=\widetilde N_i$.
@@ -815,10 +817,9 @@ Then the following square commutes:
 \end{equation}
 At $p_i$, both routes give $\sigma(p_i)$. The constant and connective
 clauses agree, so structural induction proves commutativity.
-Renaming changes the labels on the occurrences, while the pairs
-$(r,t)$ continue to distinguish their positions. This permits the
-same actual variable to occur in several inserted patterns without
-identifying their separate occurrences.
+Renaming changes the labels on the occurrences. Thus the same variable
+of $Q$ may occur in several inserted patterns while the pairs $(r,t)$
+distinguish its occurrences.
 
 For the substitution $p\mapsto A$ in
 Proposition~\ref{prop:all-contexts}, the outer pattern is $p$,
@@ -832,7 +833,7 @@ $\neg\neg A\wedge\bot\to\neg\neg A\vee\top$; the
 double-negation square in Proposition~\ref{prop:all-contexts}
 then gives the required equation for $A$.
 
-\section{Diagrammatic forms of the structural equations}
+\section{Diagrams for three defining equations}
 \label{app:structural-diagrams}
 
 \paragraph{The first-injection equation.}
