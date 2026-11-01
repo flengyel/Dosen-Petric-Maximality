@@ -3,7 +3,7 @@
   "files": [
     {
       "repository_path": "docs/PALOMAR_PROSE_UPDATE_BEFORE_AFTER.md",
-      "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "source_commit": "5ddaadeab1034e284bb2812d08ebd59689dd7a13",
       "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v2-preparation-5dbee39/PALOMAR_PROSE_UPDATE_BEFORE_AFTER.md",
       "sha256": "c37d0b40f58a8ba427655ea8dd6a414a67192b9207208321969b81aa66ef53f3",
       "bytes": 62067,
@@ -11,7 +11,7 @@
     },
     {
       "repository_path": "docs/PALOMAR_PROSE_UPDATE_PUBLIC_PREVIEW.md",
-      "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "source_commit": "5ddaadeab1034e284bb2812d08ebd59689dd7a13",
       "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v2-preparation-5dbee39/PALOMAR_PROSE_UPDATE_PUBLIC_PREVIEW.md",
       "sha256": "1e06ed4e388855e15707550fd9f491ab1a0dc3c1f661ea06731cb245c663cdd1",
       "bytes": 22761,
@@ -19,7 +19,7 @@
     },
     {
       "repository_path": "docs/PALOMAR_PROSE_UPDATE_PREPARATION_REPORT.md",
-      "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "source_commit": "5ddaadeab1034e284bb2812d08ebd59689dd7a13",
       "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v2-preparation-5dbee39/PALOMAR_PROSE_UPDATE_PREPARATION_REPORT.md",
       "sha256": "dfaa9de86b2aedf8d46e0795435ac26cdf6876d0595be450275b89c8895c81a3",
       "bytes": 5650,
@@ -27,7 +27,7 @@
     },
     {
       "repository_path": "docs/reviews/PALOMAR_PROSE_UPDATE_WRITING_2026-10-31.md",
-      "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "source_commit": "5ddaadeab1034e284bb2812d08ebd59689dd7a13",
       "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v2-preparation-5dbee39/PALOMAR_PROSE_UPDATE_WRITING_2026-10-31.md",
       "sha256": "504390b535a96c7332222722aa3db53e99ade3dd9b82a07fd44361f446af2cb5",
       "bytes": 4585,
@@ -35,7 +35,7 @@
     },
     {
       "repository_path": "provenance/palomar-prose-update-20261031/public-preview.html",
-      "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "source_commit": "5ddaadeab1034e284bb2812d08ebd59689dd7a13",
       "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v2-preparation-5dbee39/public-preview.html",
       "sha256": "97f1bc6de62c366b5382383b484ccc5a3c32c6ca87aa80d29069da8af5d80873",
       "bytes": 28835,
@@ -43,10 +43,50 @@
     },
     {
       "repository_path": "provenance/palomar-prose-update-20261031/public-prose.diff",
-      "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "source_commit": "5ddaadeab1034e284bb2812d08ebd59689dd7a13",
       "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v2-preparation-5dbee39/public-prose.diff",
       "sha256": "edced902171919f0b788380153171f31280e1277f1a805957345dcf253a186f3",
       "bytes": 32723,
+      "verified": true
+    },
+    {
+      "repository_path": "docs/PALOMAR_PROSE_UPDATE_CANDIDATE_REPORT.md",
+      "source_commit": "5ddaadeab1034e284bb2812d08ebd59689dd7a13",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v2-preparation-5dbee39/PALOMAR_PROSE_UPDATE_CANDIDATE_REPORT.md",
+      "sha256": "ebabba65530ef8e243a4001cc27bd30c5c059f5e213607ffef9eeba81a4decc8",
+      "bytes": 7584,
+      "verified": true
+    },
+    {
+      "repository_path": "provenance/palomar-prose-update-20261031/official-mechanical-report.json",
+      "source_commit": "5ddaadeab1034e284bb2812d08ebd59689dd7a13",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v2-preparation-5dbee39/official-mechanical-report.json",
+      "sha256": "951da94ee305e525eb4b5a9d3be2de4d92bd97c069f30341187e7e613212aa49",
+      "bytes": 96326,
+      "verified": true
+    },
+    {
+      "repository_path": "provenance/palomar-prose-update-20261031/declaration-preservation.json",
+      "source_commit": "5ddaadeab1034e284bb2812d08ebd59689dd7a13",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v2-preparation-5dbee39/declaration-preservation.json",
+      "sha256": "2f1f0b7bfcbdca18de1c210bbd415fa96596242231c2ac0c5523b947f9a56ba7",
+      "bytes": 7377,
+      "verified": true
+    },
+    {
+      "repository_path": "provenance/palomar-prose-update-20261031/preservation-and-metadata.json",
+      "source_commit": "5ddaadeab1034e284bb2812d08ebd59689dd7a13",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v2-preparation-5dbee39/preservation-and-metadata.json",
+      "sha256": "b801217f341e52191e27a193604c92f34db42cc77f091cfa048017a3e45d8ace",
+      "bytes": 2830,
+      "verified": true
+    },
+    {
+      "repository_path": "provenance/palomar-prose-update-20261031/prepared-intake-request.json",
+      "source_commit": "5ddaadeab1034e284bb2812d08ebd59689dd7a13",
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v2-preparation-5dbee39/prepared-intake-request.json",
+      "sha256": "0f1cb8ccb34d4b373c78299a3365a269eb5033c28668798b948808afa967bd75",
+      "bytes": 305,
       "verified": true
     }
   ]
