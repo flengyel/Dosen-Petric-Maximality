@@ -1,25 +1,28 @@
 # Manuscript v7: statements and formal scope
 
-Current manuscript: v15, dated November 1, 2026. Appendix D states the five
-registered Lean theorems with their hypotheses and gives the correspondence
-between relations on terms and congruences on arrows. It defines generated
-equality and substitution, includes the typed quotient square, and derives
-preservation under negation from the dichotomy. It also identifies the
-coherence, model-corollary and expanded collapse declarations.
-All seven v14 statement bodies, twelve numbered displays, ten prior diagrams
-and thirty prior labels are unchanged. One square and one appendix label are
-added. The v14 exposition repairs, all earlier releases, both proof routes,
-Appendices A–C and the supplied Palomar BibTeX are preserved.
-See [v15 report](MANUSCRIPT_V15_REPORT.md),
-[hostile review](reviews/V15_HOSTILE_REVIEW_2026-11-01.md) and
-[writing review](reviews/V15_WRITING_REVIEW_2026-11-01.md).
+Current manuscript: v16, dated November 1, 2026, 23 pages. It incorporates
+the seven accepted Lean-to-paper additions: full substituted relation, explicit
+q/e inverses, union, substitution action, retract transport, signs and negation,
+and the coherence construction. Appendix D.2 explains Lean notation and follows
+the short maximality proof in mathematical steps. Appendix D.5 and E give
+coherence and structural terms. The 17 footnotes and proof table link to 49
+distinct declarations at the cited immutable version-1 source.
+All seven v15 statement bodies, twelve numbered displays, eleven prior diagrams
+and 31 prior labels remain. The totals are thirteen diagrams and 34 labels.
+Both proof routes, Appendices A–C, previous releases, the supplied Palomar
+BibTeX and authorized disclosure are preserved. No Lean source or registered
+input changes; passed proof/kernel/Palomar checks are reused.
+See [v16 report](MANUSCRIPT_V16_REPORT.md),
+[hostile review](reviews/V16_HOSTILE_REVIEW_2026-11-01.md) and
+[writing review](reviews/V16_WRITING_REVIEW_2026-11-01.md).
 The dated formalization checkpoints below retain their historical scope.
-No Lean source or registered input changes, and no proof replay is claimed.
 
-The [reverse content audit](FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md) records mathematical
-results in Lean that v15 does not print, with exact statements and proposed
-placements. It is separate from the forward formalization endpoint. V15 and
-its package remain unchanged; the audit is not a new proof or build milestone.
+The [reverse content audit](FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md)
+motivated these accepted additions. The purpose is to help mathematicians
+translate between the paper and Lean and to use the formal proof to improve
+the exposition. Union laws are named in Reduced and transferred to B(P);
+normal-form expansions are retracts. The active complete claim map records
+the new locations. This is not a new proof or verification milestone.
 
 ## Current complete full-paper formalization (29 October 2026)
 

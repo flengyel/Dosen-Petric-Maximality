@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-01",
+  "manuscript_version": 16,
+  "author_purpose": "Translation between rigorous mathematical exposition and the Lean proof for mathematicians new to proof assistants; use the developed formal proof to improve the paper.",
+  "source_reading": "Complete v16 TeX read continuously; new constructions and statement/proof correspondence checked in detail. Previously reviewed material retained exactly.",
+  "governing_source": {
+    "title": "Knuth, Larrabee and Roberts, Mathematical Writing",
+    "url": "https://www-cs-faculty.stanford.edu/~knuth/papers/cs1193.pdf",
+    "consulted_scope": "Section 1 and Sections 4–5; official Stanford PDF consulted through web, retained retypeset report used for local text. Identities are distinguished in the v14 source-review record.",
+    "retained_identity_record": "provenance/manuscript-v14-review-20261101/source-review-record.json"
+  },
+  "Dosen_Petric_source": {
+    "url": "https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf",
+    "edition": "September 2007 revised version",
+    "printed_pages_consulted": [
+      220,
+      290,
+      291,
+      294
+    ],
+    "purpose": "Union definition/laws, existing-arrow zero context and the cited isomorphism list; existing literature comparisons otherwise preserved."
+  },
+  "official_Lean_manual_consulted": [
+    "https://lean-lang.org/theorem_proving_in_lean4/Dependent-Type-Theory/",
+    "https://lean-lang.org/theorem_proving_in_lean4/Propositions-and-Proofs/",
+    "https://lean-lang.org/theorem_proving_in_lean4/Tactics/"
+  ],
+  "Lean_source_links": {
+    "record": "linked-declarations.json",
+    "distinct_declarations": 49,
+    "source_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+    "checks": "Each source path, hash, declaration opening and line; exact selected maximality header after Not notation expansion; actual short_maximality call sequence. All target URIs present in PDF annotations.",
+    "scope": "Typed statements and relevant proof steps/constructions, with previous reverse-audit source reading reused; not independent review of every body in the production library."
+  },
+  "important_dependency_decisions": [
+    "Section 6 may deduce union laws from faithfulness; Appendix D.5 instead uses source-equation derivations before positive coherence.",
+    "DNF/CNF expansions are retracts; only the displayed one-sided equations are used.",
+    "E.3 uses explicit sourceConj and mixedDisj structural paths rather than quotient negation, whose equality-respect theorem uses coherence.",
+    "q/e inverse equations are coherence consequences in B(P), with the zero witness printed.",
+    "Named union laws are in Reduced; B(P) statements are obtained through the proved reduction/recovery hom maps and the printed relational argument.",
+    "No extra constant-substitution, empty-P thinness or finite-hom deduction is promoted to a new selection or added statement."
+  ],
+  "skills_used": [
+    "HostileRefereeGPT — Cat/Rec 0.13.1",
+    "mathematical-writing:revise-mathematical-prose 0.1.3"
+  ],
+  "author_side_AI_assisted_reviews": true,
+  "independent_peer_review": false,
+  "new_literature_search": false,
+  "new_Lean_build_or_kernel_replay": false,
+  "new_Palomar_check": false
+}

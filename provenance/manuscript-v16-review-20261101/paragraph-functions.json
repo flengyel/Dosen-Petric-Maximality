@@ -1,0 +1,260 @@
+{
+  "method": "Complete v16 source read continuously. Prior paragraph classifications are retained by exact preservation; each added segment and its blank-line-separated paragraphs are classified below. Displays, headings and TeX layout are included in the segment record, not mistaken for prose.",
+  "retained_classification_records": [
+    "provenance/manuscript-v14-review-20261101/paragraph-functions.json",
+    "provenance/manuscript-v15-review-20261101/appendix-paragraph-functions.json"
+  ],
+  "prior_text_recovered_exactly": true,
+  "additions": [
+    {
+      "label": "ragged correspondence table columns",
+      "mathematical_function": "typesetting only; not a prose paragraph",
+      "paragraphs": [
+        {
+          "index": 1,
+          "opening": "\\usepackage{array}",
+          "function": "typesetting only; not a prose paragraph"
+        }
+      ]
+    },
+    {
+      "label": "reader-oriented appendix roadmap",
+      "mathematical_function": "explain the purpose and order of the mathematical appendices",
+      "paragraphs": [
+        {
+          "index": 1,
+          "opening": "Appendix~\\ref{app:reading-lean} explains the declarations and proof steps,",
+          "function": "explain the purpose and order of the mathematical appendices"
+        }
+      ]
+    },
+    {
+      "label": "Lean footnote convention",
+      "mathematical_function": "define notation for source declaration references",
+      "paragraphs": [
+        {
+          "index": 1,
+          "opening": "Lean declaration names in footnotes omit the namespace prefix",
+          "function": "define notation for source declaration references"
+        }
+      ]
+    },
+    {
+      "label": "R6 sign invariant",
+      "mathematical_function": "define signed labels and prove edge preservation",
+      "paragraphs": [
+        {
+          "index": 1,
+          "opening": "For an occurrence $x\\in\\Occ(A)$, define",
+          "function": "define signed labels and prove edge preservation"
+        }
+      ]
+    },
+    {
+      "label": "R6 converse under negation",
+      "mathematical_function": "state and prove the converse-relation equation",
+      "paragraphs": [
+        {
+          "index": 1,
+          "opening": "Negation takes the converse relation:",
+          "function": "state and prove the converse-relation equation"
+        }
+      ]
+    },
+    {
+      "label": "R1 relation and R4 substitution action",
+      "mathematical_function": "define the full substituted relation and prove the relation and substitution action equations",
+      "paragraphs": [
+        {
+          "index": 1,
+          "opening": "Write $\\chi_{A,\\sigma}:\\Occ(A[\\sigma])\\to D_{A,\\sigma}$ for",
+          "function": "define the full substituted relation and prove the relation and substitution action equations"
+        },
+        {
+          "index": 2,
+          "opening": "Let $R$ be a set of variables and let",
+          "function": "define the full substituted relation and prove the relation and substitution action equations"
+        }
+      ]
+    },
+    {
+      "label": "R5 retract lemma",
+      "mathematical_function": "state and prove transport of K along a retract",
+      "paragraphs": [
+        {
+          "index": 1,
+          "opening": "The equations $(K_A)$ pass to retracts. Let $\\theta$ be a proof",
+          "function": "state and prove transport of K along a retract"
+        }
+      ]
+    },
+    {
+      "label": "R2 pointer and Lean witnesses",
+      "mathematical_function": "locate the explicit mathematical construction and its source declarations",
+      "paragraphs": [
+        {
+          "index": 1,
+          "opening": "Appendix~\\ref{app:explicit-inverses} constructs inverses for",
+          "function": "locate the explicit mathematical construction and its source declarations"
+        }
+      ]
+    },
+    {
+      "label": "R3 union algebra",
+      "mathematical_function": "define union, prove its relation and algebra, and explain named Reduced laws and transfer",
+      "paragraphs": [
+        {
+          "index": 1,
+          "opening": "For parallel arrows $f,g:A\\to C$, define",
+          "function": "define union, prove its relation and algebra, and explain named Reduced laws and transfer"
+        }
+      ]
+    },
+    {
+      "label": "expanded Appendix D pointer",
+      "mathematical_function": "locate the coherence construction",
+      "paragraphs": [
+        {
+          "index": 1,
+          "opening": "It also describes the construction of the coherence proof.",
+          "function": "locate the coherence construction"
+        }
+      ]
+    },
+    {
+      "label": "Lean reading guide and proof correspondence",
+      "mathematical_function": "explain the typed statement/proof distinction, read a declaration and translate the actual short-proof steps",
+      "paragraphs": [
+        {
+          "index": 1,
+          "opening": "\\subsection{Reading a Lean declaration}\\label{app:reading-lean}",
+          "function": "explain the typed statement/proof distinction, read a declaration and translate the actual short-proof steps"
+        },
+        {
+          "index": 2,
+          "opening": "The Lean identifiers below refer to the registered source archive",
+          "function": "explain the typed statement/proof distinction, read a declaration and translate the actual short-proof steps"
+        },
+        {
+          "index": 3,
+          "opening": "For example, the statement of \\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarMaximality.lean\\#L17}{\\text",
+          "function": "explain the typed statement/proof distinction, read a declaration and translate the actual short-proof steps"
+        },
+        {
+          "index": 4,
+          "opening": "Dot notation has two uses here. In",
+          "function": "explain the typed statement/proof distinction, read a declaration and translate the actual short-proof steps"
+        },
+        {
+          "index": 5,
+          "opening": "In a proof introduced by \\texttt{by}, the commands construct this",
+          "function": "explain the typed statement/proof distinction, read a declaration and translate the actual short-proof steps"
+        },
+        {
+          "index": 6,
+          "opening": "The proof of \\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarMaximality.lean\\#L27}{\\texttt{Palomar.short\\",
+          "function": "explain the typed statement/proof distinction, read a declaration and translate the actual short-proof steps"
+        }
+      ]
+    },
+    {
+      "label": "Lean proof as a source of mathematical exposition",
+      "mathematical_function": "attribute mathematical constructions and explain where their statement/proof correspondence is given",
+      "paragraphs": [
+        {
+          "index": 1,
+          "opening": "The explicit inverse terms and several intermediate equations in this",
+          "function": "attribute mathematical constructions and explain where their statement/proof correspondence is given"
+        }
+      ]
+    },
+    {
+      "label": "R7 coherence account and R2 explicit inverses",
+      "mathematical_function": "define and prove the coherence constructions, inverse terms and split comparison equations",
+      "paragraphs": [
+        {
+          "index": 1,
+          "opening": "\\subsection{The proof of coherence}\\label{app:coherence-proof}",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        },
+        {
+          "index": 2,
+          "opening": "Let $\\mathcal R(P)$ denote the presentation on negation normal",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        },
+        {
+          "index": 3,
+          "opening": "The union equations used in the argument below have derivations",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        },
+        {
+          "index": 4,
+          "opening": "The two canonical comparison arrows",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        },
+        {
+          "index": 5,
+          "opening": "Iterating the first split comparison gives, for every formula $A$",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        },
+        {
+          "index": 6,
+          "opening": "Consider a positive arrow from a conjunction $U$ of literals",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        },
+        {
+          "index": 7,
+          "opening": "For positive $f,g:A\\to B$, choose a disjunctive expansion of $A$",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        },
+        {
+          "index": 8,
+          "opening": "For arbitrary terms $f,g:A\\to B$ of $\\mathcal R(P)$, atomic",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        },
+        {
+          "index": 9,
+          "opening": "\\section{Inverses of the two structural isomorphisms}",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        },
+        {
+          "index": 10,
+          "opening": "We construct inverses for the particular arrows in",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        },
+        {
+          "index": 11,
+          "opening": "\\subsection{The inverse of \\texorpdfstring{$q_A$}{qA}}",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        },
+        {
+          "index": 12,
+          "opening": "Put $S_A=(A\\wedge\\bot)\\vee\\top$. Define $u_A:A\\to S_A$ by",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        },
+        {
+          "index": 13,
+          "opening": "\\subsection{The inverse of \\texorpdfstring{$e_A$}{eA}}",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        },
+        {
+          "index": 14,
+          "opening": "Define $c_{X,Y;U,V}:(X\\wedge Y)\\wedge(U\\vee V)",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        },
+        {
+          "index": 15,
+          "opening": "\\subsection{The split comparisons used in coherence}",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        },
+        {
+          "index": 16,
+          "opening": "The map $s_{X,U,V}$ is also a section of $c^\\wedge_{X,U,V}$ in",
+          "function": "define and prove the coherence constructions, inverse terms and split comparison equations"
+        }
+      ]
+    }
+  ],
+  "editorial_process_narration_in_manuscript": false,
+  "authorized_disclosure_preserved": true
+}

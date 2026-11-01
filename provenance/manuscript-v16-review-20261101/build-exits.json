@@ -1,0 +1,68 @@
+{
+  "manuscript_final": [
+    {
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-output-directory=/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v16-review-20261101",
+        "Maximality_of_the_Dosen_Petric_Boolean_Category_v16.tex"
+      ],
+      "exit_code": 0,
+      "log": "latex-linked-pass1.stdout",
+      "source_sha256": "86d194330646063d46b61fdeaf17600744c161aee1223d6b1c3b7367e42cf231"
+    },
+    {
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-output-directory=/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v16-review-20261101",
+        "Maximality_of_the_Dosen_Petric_Boolean_Category_v16.tex"
+      ],
+      "exit_code": 0,
+      "log": "latex-final.stdout",
+      "source_sha256": "86d194330646063d46b61fdeaf17600744c161aee1223d6b1c3b7367e42cf231"
+    }
+  ],
+  "extracted_archive": [
+    {
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v16-review-20261101/archive-extracted",
+      "exit_code": 0,
+      "log": "archive-pass1.stdout"
+    },
+    {
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v16-review-20261101/archive-extracted",
+      "exit_code": 0,
+      "log": "archive-pass2.stdout"
+    },
+    {
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v16-review-20261101/archive-extracted",
+      "exit_code": 0,
+      "log": "archive-pass3.stdout"
+    }
+  ],
+  "bibliography_exit_code": 0,
+  "early_typesetting_failures_resolved": [
+    "TikZ comma-label grouping",
+    "TeX escaping of URL fragment markers in footnotes"
+  ]
+}

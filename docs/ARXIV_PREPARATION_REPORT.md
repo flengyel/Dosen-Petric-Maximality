@@ -1,76 +1,70 @@
-# arXiv preparation: manuscript v15
+# arXiv preparation: manuscript v16
 
-1 November 2026. Current manuscript and upload package: v15, 16 pages.
-The preceding report is preserved at
-`docs/history/ARXIV_PREPARATION_V14_2026-11-01.md`. Every prior manuscript
-source, PDF and package is preserved.
+1 November 2026. Current manuscript and upload package: v16, 23 pages.
+The exact preceding report, including its reverse-audit update, is retained at
+[the v15 checkpoint](history/ARXIV_PREPARATION_V15_2026-11-01.md).
+Every earlier manuscript and package is preserved.
 
 ## Current files
 
-- [PDF](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v15.pdf)
-- [TeX](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v15.tex)
-- [Four-file archive](../submission/arxiv-v15/Dosen-Petric-Maximality-v15-arxiv-source.tar.gz)
-- [Submission fields](../submission/arxiv-v15/submission-fields.json)
-- [Package instructions](../submission/arxiv-v15/README.md)
-- [Release report](MANUSCRIPT_V15_REPORT.md)
-- [Hostile review](reviews/V15_HOSTILE_REVIEW_2026-11-01.md)
-- [Mathematical-writing review](reviews/V15_WRITING_REVIEW_2026-11-01.md)
+- [PDF](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v16.pdf)
+- [TeX](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v16.tex)
+- [Four-file archive](../submission/arxiv-v16/Dosen-Petric-Maximality-v16-arxiv-source.tar.gz)
+- [Submission fields](../submission/arxiv-v16/submission-fields.json)
+- [Package instructions](../submission/arxiv-v16/README.md)
+- [Release report](MANUSCRIPT_V16_REPORT.md)
+- [Hostile review](reviews/V16_HOSTILE_REVIEW_2026-11-01.md)
+- [Mathematical-writing review](reviews/V16_WRITING_REVIEW_2026-11-01.md)
 
-Appendix D states the five registered Lean theorems with all hypotheses and
-explains their correspondence with the paper. It defines terms, generated
-equality, quotient classes and substitution; includes a typed commutative square;
-and explains the relation correspondence and derived preservation under negation.
-It also identifies the coherence, model-corollary and expanded collapse proofs.
-All prior v14 mathematical text is unchanged. The seven prior statement bodies,
-twelve numbered displays, ten prior diagrams and thirty prior labels remain;
-one square and one label are added. Both proof routes and Appendices A–C remain.
+V16 incorporates all seven accepted additions from the
+[Lean-to-paper audit](FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md).
+They give the substituted relation, explicit q/e inverses, union, substitution
+action, retract transport, signs and converse, and the coherence construction.
+Appendix D.2 explains the selected Lean statement and the short proof for
+mathematicians unfamiliar with proof assistants. D.5 and E give the coherence
+account and structural terms. Seventeen footnotes and the proof table link
+to 49 distinct source declarations at the cited immutable version-1 commit.
+The formal proof supplies constructions and equations improving the paper.
 
-The archive contains main.tex, main.bbl, references_v15.bib and palomar_v15.bib.
-The manuscript and separately extracted archive compile to identical 16-page
-layout text with thirteen bibliography entries and no final reference/citation,
-box or duplicate-destination warnings. All pages were rendered and inspected;
-Appendix D on pages 13–15 was additionally inspected full-page. Exact exits,
-hashes and preservation checks are in
-`provenance/manuscript-v15-review-20261101/validation.json`.
+All prior v15 text is preserved apart from version/bibliography suffixes.
+Seven statement bodies, twelve numbered displays, eleven prior diagrams and
+31 labels remain; the totals are thirteen diagrams and 34 labels. Both proof
+routes, Appendices A–C, the exact supplied bibliography and disclosure remain.
+The 97 previous release files and 857 frozen proof/input blobs are unchanged.
+
+The four archive members are main.tex, main.bbl, references_v16.bib and
+palomar_v16.bib. The manuscript and separately extracted archive compile to
+matching 23-page layout text with thirteen bibliography entries and no final
+reference, citation, box or duplicate-destination warning. All 23 rendered
+pages were inspected on contact sheets; pages 6, 16, 17 and 19–22 were also
+viewed individually. All 49 declaration links occur in the PDF annotations.
+See [validation](../provenance/manuscript-v16-review-20261101/validation.json).
 No Lean source or registered input is changed or rebuilt.
-
-## Reverse audit of mathematical content
-
-The [Lean-to-paper audit](FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md) and its
-[hostile](reviews/REVERSE_AUDIT_HOSTILE_2026-11-01.md) and
-[writing](reviews/REVERSE_AUDIT_WRITING_2026-11-01.md) reviews identify seven
-candidate additions, with exact statements and source anchors. They include
-the full substituted relation and explicit q/e inverse terms. The audit has
-not changed v15 or this four-file package; it does not establish a false
-main theorem or a missing Lean proof. A later manuscript revision must
-increment its version. Audit copies are delivered to
-`/mnt/c/Users/fleng/Downloads/Dosen-Petric-Reverse-Audit-20261101/`.
 
 ## Submission status
 
 Title: Maximality of the Došen–Petrić Boolean Category. Author: Florian Lengyel.
 Proposed primary category: math.CT; cross-list: math.LO.
 MSC 2020: Primary 03G30; Secondary 03F07, 18A32.
-The comments field records 16 pages and the version-1 registered proof URL.
-Both bibliographies and the authorized AI disclosure are byte-identical to v14.
+The comments field records 23 pages and the version-1 registered proof URL.
 
 The supplied citation remains PALOMAR-2026-10-30-000014 v1, source
 2e771844077fd8cebfbe365230f13d4dd13a75b1, Lean 4.35.0. Version 2 remains
 registered at source 5dbee39bea09539bd130f729e82636419f71f920; see
-[registration report](PALOMAR_V2_REGISTRATION_REPORT.md).
-No intake, preflight, service check or registration is repeated.
+[registration report](PALOMAR_V2_REGISTRATION_REPORT.md). The source links
+are not new theorem selections. No intake, preflight, service check,
+registration or proof/kernel replay is repeated.
 
 No arXiv upload has occurred. The author selects an arXiv-supported distribution
 license and checks the server preview in the submission account. No new license
-selection is part of this manuscript revision.
+selection is part of this revision.
 
 ## Delivery and remote synchronization
 
-The reports, reviews, PDF and package are delivered from committed bytes to
-`/mnt/c/Users/fleng/Downloads/Dosen-Petric-Manuscript-v15-20261101/`.
-Differing earlier copies are preserved; exact filenames and SHA-256/byte checks
-are recorded in
-`provenance/manuscript-v15-review-20261101/delivery-receipt.json` after delivery.
-Completed main is pushed and its remote ref checked before reporting readiness.
-The receipt records the source commit; Git history records the final receipt
-commit. No manuscript revision replaces either immutable registered source.
+Reports, reviews, PDF and package are delivered from committed bytes to
+`/mnt/c/Users/fleng/Downloads/Dosen-Petric-Manuscript-v16-20261101/`.
+Differing earlier copies are preserved. The
+[receipt](../provenance/manuscript-v16-review-20261101/delivery-receipt.json)
+records source commits, exact destinations and byte/SHA-256 checks. Completed
+main and its receipt commit are pushed and the remote ref checked before
+readiness is reported. Neither immutable registered source is changed.

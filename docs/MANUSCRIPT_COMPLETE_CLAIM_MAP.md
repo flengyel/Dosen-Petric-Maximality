@@ -15,7 +15,7 @@ the existing symmetric-fold deduction. V14, dated November 1, 2026, uses the
 hostile and mathematical-writing plugins for the complete preprint. It gives
 explicit arrow/functor types, uses literal and occurrence map, follows the
 source's dissociativity terminology and displays the calculations through v_A
-and w_A. The correspondences below apply also to v15; see MANUSCRIPT_V14_REPORT.md
+and w_A. The correspondences below apply also to v15 and v16; see MANUSCRIPT_V14_REPORT.md
 and its two review reports. Literal signs, theorem hypotheses and conclusions,
 all numbered displays, diagrams, labels, Lean theorems and registered inputs
 are preserved. The literal synonym and lemma captions change; no new Lean
@@ -31,16 +31,17 @@ statements, term/quotient relations, assumptions and substitution square are
 mapped below. All preceding v14 mathematical text and diagrams are preserved;
 no Lean source or registered input changes. See MANUSCRIPT_V15_REPORT.md.
 
-## Reverse content audit (1 November 2026)
+## Reverse content audit and v16 incorporation (1 November 2026)
 
-The [Lean-to-paper audit](FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md) checks the other direction:
-formal results absent from the written paper. Its seven candidates and typed
-proposals are separate from the current manuscript claims below. The
-module inventory includes the 95 production modules outside the five selected
-entry points' import closure. It marks source-reading depth and distinguishes
-named declarations from transfers and further deductions. This audit does not
-revise v15 or claim a new proof/kernel replay. The forward coverage conclusion
-does not assert that every result in the library is printed in the paper.
+The [Lean-to-paper audit](FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md)
+inventoried all production modules, including 95 outside the selected five
+entry points' import closure, and proposed seven additions. The author accepted
+them and requested a guide for mathematicians new to proof assistants. V16
+incorporates all seven and supplies the worked declaration/proof correspondence.
+The typed additions are mapped below. Source-reading depth remains as recorded
+in the reverse audit; this revision does not claim a new all-proof-body audit,
+Lean build or kernel replay. The full library is not asserted to be printed
+in the paper. See [v16 report](MANUSCRIPT_V16_REPORT.md).
 
 ## Three milestones and full-paper endpoint
 
@@ -131,24 +132,59 @@ closure are recorded in the final evidence. No mathematical claim in the paper's
 current scope remains assigned to an unproved field or deferred implementation
 target. Historical reports are not independent verification of this final scope.
 
-## Appendix D: registered entry points and their mathematical statements (v15)
+## Appendix D: registered statements and proof correspondence (v16)
 
 All names below have prefix DosenPetric unless stated otherwise. These are
-existing proofs in the immutable version-2 source, not newly implemented results.
+existing proofs retained in both immutable registered sources, not new results.
+V16's hyperlinks target version 1, 2e771844077fd8cebfbe365230f13d4dd13a75b1,
+matching the unchanged supplied bibliography. The version-2 source remains
+5dbee39bea09539bd130f729e82636419f71f920. Exact paths, declaration lines and
+hashes for the 49 linked names are in the v16 linked-declarations record.
 
 | Manuscript anchor | Declaration | Exact scope |
 | --- | --- | --- |
 | D.1 terms and generated equality | Presentation.Term/Equation/Derives; termSetoid/Hom/ofTerm; sound; Palomar.PrimitiveCongruence.raw_distinct_iff | Quotient by the defining equations, equivalence, composition and both binary operations; [f]=[g] iff Derives f g. |
 | D.1 primitive zero | Presentation.zeroConstruction_eq | The class of Term.zero A equals the manuscript's zero endomorphism. |
 | D.1 substitution square | Presentation.Term.subst; Derives.subst; substitute; substitutionFunctor | Arbitrary σ:P→Formula Q; the source and target of each substituted term change. The quotient square commutes by the definition of substitute. |
-| D.1 relation and properties | Palomar.PrimitiveCongruence; Closed; Total | Equivalence on parallel terms, containing Equation and preserved by comp/tensor; Closed uses self-substitution; Total quantifies over existing terms. |
-| D.2 maximality | Palomar.maximality | P nonempty; R primitive, Closed; R f g and not Derives f g imply Total. Symmetric-fold route via fragment_maximality. |
-| D.2 short_maximality | Palomar.short_maximality | Same hypotheses/conclusion; literal isolation, all_contexts and ShortProof.total give the q_A/e_A route. |
-| D.2 congruence_dichotomy | Palomar.congruence_dichotomy; PrimitiveCongruence.of_derives | P nonempty and Closed; R=Derives on all parallel terms or Total; generating induction proves Derives⊆R. |
-| D.2 identity_ne_zero | Palomar.identity_ne_zero; Presentation.identity_ne_primitive_zero | Given p:P, not Derives (id p) (zero p); diagonal versus empty occurrence relation. |
-| D.2 no_top_to_bot | Palomar.no_top_to_bot; Presentation.Truth; Term.preserves_truth; empty_hom | Every P, including empty; no Term top bot. The all-true variable valuation is preserved by every term constructor. |
-| D.3 term-to-arrow relation | PrimitiveCongruence.quotientRel/quotientRel_ofTerm/fragment/fragment_closed | Derives⊆R proves representative independence; comp/tensor give pairing/copairing; Closed descends through the quotient. |
-| D.3 negation after dichotomy | Presentation.fragment_dichotomy; ProofCongruence.of_closed_fragment; PrimitiveCongruence.full/full_closed/full_raw_rel/negate_admissible | Equality and totality each preserve negation. No preservation of negation is assumed to obtain fragment maximality. |
-| D.3 converse and totality | PrimitiveCongruence.ofFull/ofFull_closed/ofFull_full_rel/full_ofFull_rel/full_total_iff/ofFull_total_iff | Pull back a substitution congruence on arrows to terms, with exact relations and totality; distinct representatives invoke either selected maximality proof. |
-| D.3 additional results | Presentation.coherence; PresentationSemantics.model_corollary | Theorem 3.1 and Corollary 5.3; the model corollary is a further result, not asserted to be a dependency of all five selections. |
-| D.3 expanded symmetric calculations | ContextualCollapse.second_block/fold_top/terminal_retraction; Presentation.fold_manuscript/fold_symmetric | The Section 6 fold is the abstract fold under the intended presentation; the injected second projection, first projection and terminal retraction are existing theorems. |
+| D.1 relation and properties | Palomar.PrimitiveCongruence; Palomar.PrimitiveCongruence.Closed/Total | Equivalence on parallel terms, containing Equation and preserved by comp/tensor; Closed uses self-substitution; Total quantifies over existing terms. |
+| D.3 maximality | Palomar.maximality | P nonempty; R primitive, Closed; R f g and not Derives f g imply Total. Symmetric-fold route via fragment_maximality. |
+| D.3 short_maximality | Palomar.short_maximality | Same hypotheses/conclusion; literal isolation, all_contexts and ShortProof.total give the q_A/e_A route. |
+| D.3 congruence_dichotomy | Palomar.congruence_dichotomy; Palomar.PrimitiveCongruence.of_derives | P nonempty and Closed; R=Derives on all parallel terms or Total; generating induction proves Derives⊆R. |
+| D.3 identity_ne_zero | Palomar.identity_ne_zero; Presentation.identity_ne_primitive_zero | Given p:P, not Derives (id p) (zero p); diagonal versus empty occurrence relation. |
+| D.3 no_top_to_bot | Palomar.no_top_to_bot; Presentation.Truth; Term.preserves_truth; empty_hom | Every P, including empty; no Term top bot. The all-true variable valuation is preserved by every term constructor. |
+| D.4 term-to-arrow relation | Palomar.PrimitiveCongruence.quotientRel/quotientRel_ofTerm/fragment/fragment_closed | Derives⊆R proves representative independence; comp/tensor give pairing/copairing; Closed descends through the quotient. |
+| D.4 negation after dichotomy | Presentation.fragment_dichotomy; Presentation.ProofCongruence.of_closed_fragment; Palomar.PrimitiveCongruence.full/full_closed/full_raw_rel/negate_admissible | Equality and totality each preserve negation. No preservation of negation is assumed to obtain fragment maximality. |
+| D.4 converse and totality | Palomar.PrimitiveCongruence.ofFull/ofFull_closed/ofFull_full_rel/full_ofFull_rel/full_total_iff/ofFull_total_iff | Pull back a substitution congruence on arrows to terms, with exact relations and totality; distinct representatives invoke either selected maximality proof. |
+| D.4 additional results | Presentation.coherence; PresentationSemantics.model_corollary | Theorem 3.1 and Corollary 5.3; the model corollary is a further result, not asserted to be a dependency of all five selections. |
+| D.4 expanded symmetric calculations | ContextualCollapse.second_block/fold_top/terminal_retraction; Presentation.fold_manuscript/fold_symmetric | The Section 6 fold is the abstract fold under the intended presentation; the injected second projection, first projection and terminal retraction are existing theorems. |
+
+
+## V16 additions from the formal proof
+
+All declaration names below have prefix DosenPetric. Slash-separated names
+share the namespace of the first name. These rows distinguish
+native statements, transfer through the proved equivalence and explanatory
+mathematical derivations. The manuscript contains the typed statements and
+proofs; these rows identify their source locations.
+
+| Item / manuscript anchor | Declaration correspondence | Exact scope |
+| --- | --- | --- |
+| R1, Section 3 pp.5–6 | Presentation.occurrence_substitute_expanded; Relations.Fiber.lift_composition | Relation on dependent old/inner blocks; equality of labelled inner positions in E_sigma; full square and composition, including repeated and empty blocks. |
+| R2, E.1 p.20 | Presentation.ShortProof.qInverseTerm/q_qInverse/qInverse_q | Explicit inverse of the particular q_A, both equations, all formulas including empty occurrence sets. |
+| R2, E.2 p.21 | Presentation.ShortProof.sourceConjTerm/sectionTerm/eInverseTerm/e_eInverse/eInverse_e | Explicit typed five-arrow c path and section; copair with zero witnessed by Delta_A pi_1; both e inverse equations. |
+| R3, Section 6 p.10 | Reduced.union_assoc/union_comm/union_idem/union_pre/union_post/union_id_zero; Reduced.finiteUnion.eq_of_members; Reduced.reduceHom/recoverHom | Named Reduced algebra; transfer to B(P) through inverse hom maps. Printed definition and faithfulness prove the native expression's laws. No Presentation.union name is asserted. Empty union and bottom require an inhabited hom. |
+| R4, Section 3 p.6 | Formula.subst_identity/subst_composition/subst_ext; Presentation.substitute_identity/substitute_composition/substitute_ext | Independent P,Q,R, pointwise composed substitution and both endpoint identifications. |
+| R5, Section 4 p.7 | ContextualCollapse.context_retract | i:A→B,r:B→A,ri=1_A; K_B modulo the same congruence implies K_A. No two-sided inverse is needed. |
+| R6, Section 3 pp.4–5 | Presentation.occurrence_signedLabel; Reduced.Term.dual_relation; Presentation.occurrence_negate | Arbitrary formula sign preservation and exact converse relation at original occurrence positions. |
+| R7, D.5 pp.18–19 | Reduced.union_pre/union_post/union_comm/union_assoc/union_idem/union_id_zero | Source-equation derivations, used before faithfulness; separate from Section 6's consequence of coherence. |
+| R7, D.5 p.19 and E.3 pp.21–22 | Reduced.Gentzen.DistributiveEpi.section_comparison; Reduced.Gentzen.DistributiveMono.comparison_retraction; Reduced.Gentzen.Rules.sourceConj; Reduced.Term.mixedDisj | Explicit s,t terms; c-wedge s=id and t c-vee=id by structural equations and component calculations. No reliance on the quotient dual functor. |
+| R7, D.5 p.19 | Reduced.Gentzen.dnf_expansion/cnf_expansion | i:A→D_A,r:D_A→A,ri=id and the corresponding C_A retract. Not distributivity isomorphisms. |
+| R7, D.5 p.19 | Reduced.Gentzen.G.mix_normal_form; Reduced.Gentzen.HasPureNormalForm.faithful; Reduced.Gentzen.pure_positive_coherence/represented_coherence/positive_coherence | Positive means no eta/epsilon constructors; pure paths are projection/injection composites; finite unions and one-sided recovery give equality. |
+| R7, D.5 p.20 | Reduced.commonAtomicFactor/faithful_of_positive_coherence; Reduced.boolean_coherence; Presentation.coherence | Common A',B',u,v,f_0,g_0 and injective occurrence embeddings with direct-image relation equations; positive equality→Reduced equality→original source equality. |
+| D.2 pp.16–17, reading a declaration | Palomar.maximality; Palomar.PrimitiveCongruence; Palomar.PrimitiveCongruence.Closed/Total | The displayed header matches the selected type after Not expansion. P:Type u, nonemptiness, implicit formulas, terms, proofs and conclusion are explained. Total quantifies over all existing parallel terms. |
+| D.2 p.17, short-proof table | Palomar.short_maximality; Palomar.PrimitiveCongruence.raw_distinct_iff; Isolation.normalized_literal_context; ContextualCollapse.all_contexts; Presentation.ShortProof.total | Raw inequality→quotient inequality→literal K→all K→collapse, with R.fragment and the actual interpretation/normalization/substitution/doubleNegation arguments explained. |
+
+The five separately selected Palomar declarations remain the five in D.3.
+These additional source links do not create new selections or a registration.
+The full-paper endpoint, both proof routes and every old claim-map row remain.
+No extra empty-P/constant-substitution/cardinality deduction is added to v16.

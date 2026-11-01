@@ -1,5 +1,43 @@
 # Manuscript corrections and source errata
 
+## Accepted reverse-audit additions: v16 (1 November 2026)
+
+The author accepted all seven proposed additions and requested footnotes or
+other indications of their source proofs. The subsequent instruction gives
+the purpose: help mathematicians unfamiliar with proof assistants translate
+between the paper and Lean, and improve the paper using the formal proof.
+V16 implements that instruction. V15 and all earlier releases are preserved.
+
+| Accepted correction | Resolution in v16 |
+| --- | --- |
+| REVERSE-R1 | Section 3, pp.5–6: full relation R_(f,sigma), common E_sigma, typed square, composition proof, empty/repeated blocks. |
+| REVERSE-R2 | Appendix E.1–E.2, pp.20–21: explicit q/e inverse terms, four equations, graph calculations and witnessed zero; Section 5 links the construction. |
+| REVERSE-R3 | Section 6, p.10: union algebra and order on inhabited homs, composition laws and finite unions. Named Reduced theorems and their transfer to B(P) are distinguished. |
+| REVERSE-R4 | Section 3, p.6: substitution identity/composition/extensionality with both endpoint identifications. |
+| REVERSE-R5 | Section 4, p.7: K_B→K_A along i:A→B,r:B→A,ri=id, with the transported composite. |
+| REVERSE-R6 | Section 3, pp.4–5: sign preservation at arbitrary formulas and converse under negation, at original positions. |
+| REVERSE-R7 | D.5, pp.18–20, and E.3, pp.21–22: direct source union equations, split comparisons, normal-form retracts, finite-union normal forms, positive coherence, common atomic factorization and normalization transfer. |
+| Reader translation | D.2, pp.16–17: annotated selected theorem, types/propositions/proofs, binders, fields, namespaces, Total quantifiers and the short-proof correspondence table. Seventeen footnotes and the table link to 49 distinct declarations. |
+
+The proof-order check distinguishes Section 6's use of faithfulness from the
+source-equation derivations needed before positive coherence in D.5. The
+split comparisons in E.3 use structural terms directly, not the quotient
+dual functor whose equality proof depends on coherence. Only one inverse
+equation is asserted for each normal-form expansion.
+
+Removing the thirteen additions and restoring suffixes recovers v15 exactly.
+All prior theorem bodies, numbered displays and Appendices A–C remain. Both
+bibliographies and the authorized disclosure are unchanged. Final manuscript
+and extracted archive builds pass with matching 23-page text and no final
+warnings. Source links, rendered pages, 97 prior release files, 857 frozen
+proof/input blobs and the retained stash were checked. No Lean or Palomar
+verification is repeated. See MANUSCRIPT_V16_REPORT.md and its two reviews.
+
+The following reverse-audit record describes the earlier proposal stage.
+Its future-tense recommendations are resolved above; they are not outstanding
+Lean implementation tasks. Extra consequences in that report remain separate
+deductions and are not added to the paper or selected theorem list.
+
 ## Reverse content audit (1 November 2026)
 
 The author requested an audit from the formalization back to the paper. The

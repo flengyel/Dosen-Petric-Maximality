@@ -1,0 +1,135 @@
+{
+  "input_commit": "216bca6e7765eae7a494b712facde55f8311e7cf",
+  "preservation_method": "Removing the recorded additions and restoring the version/bibliography suffixes recovers the entire v15 source byte for byte.",
+  "insertion_sites": 13,
+  "labels": {
+    "prior_count": 31,
+    "current_count": 34,
+    "all_prior_bytes_preserved": true
+  },
+  "diagrams": {
+    "prior_count": 11,
+    "current_count": 13,
+    "all_prior_bytes_preserved": true
+  },
+  "numbered_displays": {
+    "prior_count": 12,
+    "current_count": 12,
+    "all_prior_bytes_preserved": true
+  },
+  "numbered_statements": {
+    "count": 7,
+    "byte_identical_to_v15": true
+  },
+  "bibliographies_Appendices_A_to_C_and_AI_disclosure": "preserved byte for byte",
+  "Lean_correspondence": {
+    "distinct_linked_declarations": 49,
+    "footnotes": 17,
+    "link_source_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+    "all_target_source_lines_verified": true,
+    "reading_guide_and_short_proof_table": true,
+    "worked_statement_matches_registered_type_after_Not_notation_expansion": true,
+    "all_49_URLs_present_in_PDF_annotations": true,
+    "URL_check_method": "pdfinfo -url; each exact source URI required in annotation list"
+  },
+  "release": {
+    "pages": 23,
+    "archive_members": [
+      "main.tex",
+      "main.bbl",
+      "references_v16.bib",
+      "palomar_v16.bib"
+    ],
+    "archive_members_match_staged_files": true,
+    "extracted_archive_build": "passed",
+    "archive_layout_text_matches_manuscript": true,
+    "source_sha256": "86d194330646063d46b61fdeaf17600744c161aee1223d6b1c3b7367e42cf231",
+    "pdf_sha256": "2b474116fe559aff7282a0afcbaad7c748c5a86b61079654de5eaa67a4ad8452",
+    "archive_sha256": "362720b0956ca0c3388b223d8ffd0880d2f8eada87f3c39e4ce481c80ce1e64a",
+    "bibliography_entries": 13,
+    "final_logs_have_warnings": false
+  },
+  "preservation": {
+    "prior_release_files": 97,
+    "all_prior_release_bytes_unchanged": true,
+    "registered_proof_tree_and_inputs_match": true,
+    "stash_ref": "dedfd8fc8cd49930e9a162d5be585215b062a43c",
+    "stash_list_matches_recorded_baseline": true,
+    "v15_preparation_report_preserved_byte_for_byte": true,
+    "registered_files_compared": 857
+  },
+  "scope": {
+    "new_Lean_build_or_kernel_replay": false,
+    "new_Palomar_submission_or_registration": false,
+    "arxiv_upload": false
+  },
+  "visual_inspection": {
+    "render_command": [
+      "pdftoppm",
+      "-scale-to",
+      "1200",
+      "-png",
+      "/home/flengyel/src/Dosen-Petric-Maximality/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v16.pdf",
+      "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v16-review-20261101/page"
+    ],
+    "render_exit_code": 0,
+    "contact_sheets_viewed": 6,
+    "pages_viewed_on_contact_sheets": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "pages_additionally_viewed_individually": [
+      6,
+      16,
+      17,
+      19,
+      20,
+      21,
+      22
+    ],
+    "observations": "No clipped/overlapping text or diagram; the code statement, proof table and source footnotes are readable.",
+    "render_files_kept_in_ignored_staging": true
+  },
+  "documentation": {
+    "active_documents_updated": [
+      "AGENTS.md",
+      "README.md",
+      "docs/ARXIV_PREPARATION_REPORT.md",
+      "docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md",
+      "docs/CODEX_NEXT_SESSION.txt",
+      "docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md",
+      "docs/MANUSCRIPT_CORRECTIONS.md",
+      "docs/MANUSCRIPT_COVERAGE.md",
+      "docs/MANUSCRIPT_STATEMENTS.md"
+    ],
+    "new_reports": [
+      "docs/MANUSCRIPT_V16_REPORT.md",
+      "docs/reviews/V16_HOSTILE_REVIEW_2026-11-01.md",
+      "docs/reviews/V16_WRITING_REVIEW_2026-11-01.md"
+    ],
+    "checked_relative_links": 297,
+    "pending_receipt_links": "provenance/manuscript-v16-review-20261101/delivery-receipt.json",
+    "historical_report_copy": "Byte-exact historical copy; its original relative links are preserved without rebasing."
+  }
+}

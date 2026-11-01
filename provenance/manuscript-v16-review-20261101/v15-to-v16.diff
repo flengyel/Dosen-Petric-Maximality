@@ -1,0 +1,646 @@
+--- v15.tex
++++ v16.tex
+@@ -3,9 +3,10 @@
+ \usepackage{lmodern,amsmath,amssymb,amsthm,mathtools}
+ \usepackage[margin=1in]{geometry}
+ \usepackage{microtype,tikz-cd}
++\usepackage{array}
+ \usepackage[numbers]{natbib}
+ \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+-\hypersetup{pdftitle={Maximality of the Dosen--Petric Boolean Category (v15)},pdfauthor={Florian Lengyel}}
++\hypersetup{pdftitle={Maximality of the Dosen--Petric Boolean Category (v16)},pdfauthor={Florian Lengyel}}
+ \renewcommand{\theHequation}{\thesection.\arabic{equation}}
+ \newtheorem{theorem}{Theorem}[section]
+ \newtheorem{lemma}[theorem]{Lemma}
+@@ -17,7 +18,7 @@
+ \newcommand{\FormulaSet}{\operatorname{Form}}
+ \title{Maximality of the Do\v{s}en--Petri\'c Boolean Category}
+ \author{Florian Lengyel\thanks{Email: \href{mailto:flengyel@gradcenter.cuny.edu}{\texttt{flengyel@gradcenter.cuny.edu}}}}
+-\date{November 1, 2026\quad(v15)}
++\date{November 1, 2026\quad(v16)}
+ \begin{document}
+ \maketitle
+ 
+@@ -121,10 +122,15 @@
+ them to Do\v{s}en and Petri\'c's ordinal substitution operation.
+ Section~\ref{sec:formalization} states the Lean theorems and their
+ hypotheses.
++Appendix~\ref{app:reading-lean} explains the declarations and proof steps,
++and Appendix~\ref{app:explicit-inverses} constructs the inverses used in
++Section~\ref{sec:collapse}.
+ Appendix~\ref{app:cut-errata} records two typographical corrections to the
+ cut-elimination proof in \cite{DP}.
+ References to \cite{DP} use the printed
+ pagination of its September 2007 revised version.
++Lean declaration names in footnotes omit the namespace prefix
++\texttt{DosenPetric.}
+ 
+ \section{The Boolean proof category}\label{sec:category}
+ 
+@@ -285,6 +291,22 @@
+ which preserves each occurrence of $A,B,C$
+ \cite[\S2.9, p.~60]{DP}. Zero arrows have empty relations.
+ 
++For an occurrence $x\in\Occ(A)$, define
++$\operatorname{sgn}_A(x)=(-1)^k\in\{+1,-1\}$, where $k$ is the
++number of negations above $x$ in $A$. Every arrow $f:A\to C$
++preserves both the variable and its sign:
++\[
++ (x,y)\in Gf\quad\Longrightarrow\quad
++ \lambda_A(x)=\lambda_C(y),\qquad
++ \operatorname{sgn}_A(x)=\operatorname{sgn}_C(y).
++\]
++Induction on arrow terms proves this assertion. The structural
++generators preserve the two labels, the double-negation and
++De Morgan maps preserve the resulting signs, and the zero,
++$\eta$ and $\epsilon$ maps have empty relations. Composition and
++the two binary operations preserve the assertion.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationSignedLabels.lean\#L73}{\texttt{Presentation.\allowbreak{}occurrence\_signedLabel}}.}
++
+ \begin{theorem}[Boolean Coherence, Do\v{s}en--Petri\'c]
+ \label{thm:coherence}
+ The functor $G:\B\to\Rel$ is faithful: parallel arrows $f,g$ of
+@@ -327,6 +349,20 @@
+ Composition, $\wedge$ and $\vee$ preserve this property.
+ The equivalence with $\B$ preserves the occurrence interpretation,
+ so the assertion follows.
++
++Negation takes the converse relation:
++\[
++ (y,x)\in G(\neg f)\quad\Longleftrightarrow\quad(x,y)\in Gf
++ \qquad(f:A\to C).
++\]
++On the normal-form presentation, negation interchanges the two
++binary operations and reverses each generator relation and the
++order of composition. Induction on terms therefore gives the
++converse relation. The occurrence bijections of normalization
++transport this equation to the original positions, using
++$\Occ(\neg A)=\Occ(A)$ and $\Occ(\neg C)=\Occ(C)$.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedDualRelations.lean\#L20}{\texttt{Reduced.Term.\allowbreak{}dual\_relation}} and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationNegationOccurrence.lean\#L25}{\texttt{Presentation.\allowbreak{}occurrence\_negate}}.}
+ 
+ Substitution replaces each occurrence of a variable by a separate
+ block of occurrences of its substituted formula.
+@@ -384,6 +420,74 @@
+ \eqref{eq:occ-substitution} describe the occurrence sets of its
+ substituted source and target.
+ 
++Write $\chi_{A,\sigma}:\Occ(A[\sigma])\to D_{A,\sigma}$ for
++the bijection in \eqref{eq:occ-substitution}. For $f:A\to C$,
++define the relation
++$R_{f,\sigma}:D_{A,\sigma}\to D_{C,\sigma}$ by
++\[
++ \begin{aligned}
++ ((x,t),(y,u))\in R_{f,\sigma}
++ \quad\Longleftrightarrow\quad&
++ (x,y)\in Gf\ \text{ and}\\
++ &(\lambda_A(x),t)=(\lambda_C(y),u)\text{ in }E_\sigma.
++ \end{aligned}
++\]
++Thus an edge of $Gf$ is replaced by the identity relation within
++the inserted block. The complete substituted relation satisfies
++\[
++ (x',y')\in G(f[\sigma])
++ \quad\Longleftrightarrow\quad
++ (\chi_{A,\sigma}(x'),\chi_{C,\sigma}(y'))\in R_{f,\sigma}.
++\]
++Regard the two bijections as their graphs. The following square
++then commutes in $\Rel$:
++\[
++\begin{tikzcd}[column sep=large,row sep=large]
++ \Occ(A[\sigma])\arrow[r,"{G(f[\sigma])}"]
++    \arrow[d,"{\chi_{A,\sigma}}"']
++   &\Occ(C[\sigma])\arrow[d,"{\chi_{C,\sigma}}"]\\
++ D_{A,\sigma}\arrow[r,"{R_{f,\sigma}}"']&D_{C,\sigma}.
++\end{tikzcd}
++\]
++Induction on the arrow term proves the relation formula. Structural
++generators give their corresponding graphs on blocks; zero,
++$\eta$ and $\epsilon$ give empty relations. The two binary
++operations retain the tags. For composition, an intermediate old
++occurrence supplies an intermediate block, and preservation of
++variable labels identifies its inner occurrence on both sides.
++The formula passes to quotient arrows because both interpretations
++respect the defining equations.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationSubstitutionRelation.lean\#L61}{\texttt{Presentation.\allowbreak{}occurrence\_substitute\_expanded}};
++the composition step is
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/SubstitutionFiberRelations.lean\#L48}{\texttt{Relations.Fiber.\allowbreak{}lift\_composition}}.}
++Repeated old occurrences retain their different first coordinates;
++an empty inserted block supplies no positions.
++
++Let $R$ be a set of variables and let
++$\tau:Q\to\FormulaSet(R)$ be another substitution. Define
++$\tau\star\sigma:P\to\FormulaSet(R)$ by
++$(\tau\star\sigma)(p)=\sigma(p)[\tau]$. For formulas $A,C$ over
++$P$ and $f:A\to C$, substitution satisfies
++\[
++ \begin{aligned}
++ A[p\mapsto p]&=A,&
++ (A[\sigma])[\tau]&=A[\tau\star\sigma],\\
++ f[p\mapsto p]&=f,&
++ (f[\sigma])[\tau]&=f[\tau\star\sigma].
++ \end{aligned}
++\]
++The arrow equalities use the displayed formula equalities to
++identify their sources and targets. Pointwise equal substitutions
++give equal substituted formulas and arrows with these same
++identifications. Formula induction proves the object equations;
++term induction and passage to the quotient prove the arrow
++equations.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/FormulaSubstitutionLaws.lean\#L11}{\texttt{Formula.\allowbreak{}subst\_identity}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/FormulaSubstitutionLaws.lean\#L20}{\texttt{Formula.\allowbreak{}subst\_composition}}, and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationSubstitutionActionQuotient.lean\#L39}{\texttt{Presentation.\allowbreak{}substitute\_identity}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationSubstitutionActionQuotient.lean\#L44}{\texttt{Presentation.\allowbreak{}substitute\_composition}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationSubstitutionActionQuotient.lean\#L57}{\texttt{Presentation.\allowbreak{}substitute\_ext}}.}
++
+ \section{Isolating an occurrence}\label{sec:isolation}
+ 
+ Put $j_A=\iota_1^{A,\top}:A\to A\vee\top$. We shall derive the equation
+@@ -461,6 +565,21 @@
+ equations.
+ \end{proof}
+ 
++The equations $(K_A)$ pass to retracts. Let $\theta$ be a proof
++congruence on $\B$, and suppose that $i:A\to B$ and $r:B\to A$
++satisfy $r\circ i=1_A$. If $(K_B)$ holds modulo $\theta$, then
++$(K_A)$ holds modulo $\theta$.
++Precomposing $(K_B)$ with $i\wedge1_\bot$ and postcomposing it
++with $r\vee1_\top$ gives $(K_A)$ modulo the same proof
++congruence. Indeed, the left side becomes
++\[
++ (r\vee1_\top)\circ j_B\circ\pi_1^{B,\bot}\circ(i\wedge1_\bot)
++ =j_A\circ(r\circ i)\circ\pi_1^{A,\bot}
++ =j_A\circ\pi_1^{A,\bot},
++\]
++and zero absorption gives the required zero on the right.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/Substitution.lean\#L74}{\texttt{ContextualCollapse.\allowbreak{}context\_retract}}.}
++
+ \begin{proposition}\label{prop:all-contexts}
+ If a substitution congruence $\theta$ on $\B$ identifies distinct
+ parallel arrows, then \eqref{eq:context} holds modulo $\theta$ for
+@@ -535,6 +654,11 @@
+ The functor $F_\sigma$ sends $q_p,e_p$ to $q_A,e_A$ and preserves
+ their inverse equations.
+ \end{proof}
++
++Appendix~\ref{app:explicit-inverses} constructs inverses for
++these particular arrows and verifies all four inverse equations.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortQ.lean\#L17}{\texttt{Presentation.ShortProof.\allowbreak{}qInverseTerm}} and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\#L30}{\texttt{Presentation.ShortProof.\allowbreak{}eInverseTerm}}.}
+ 
+ \begin{lemma}\label{lem:collapse}
+ Let $\theta$ be a proof congruence on $\B$ such that
+@@ -623,6 +747,11 @@
+ 
+ \section{Lean formalization}\label{sec:formalization}
+ 
++The explicit inverse terms and several intermediate equations in this
++paper are taken from the Lean development. Appendix~\ref{app:reading-lean}
++explains how the declarations and proof steps express the mathematical
++statements used here. The footnotes identify the corresponding source declarations.
++
+ In the Lean~4 development \cite{Formalization}, formulas and arrow
+ terms are inductive types, with arrow terms indexed by their source
+ and target. The relation \texttt{Derives} is generated by the
+@@ -700,6 +829,53 @@
+ coproduct and product equations. The symmetry of $h_A$ yields $\pi_1^{A,A}\equiv\pi_2^{A,A}$,
+ and pairing equates any two parallel arrows.
+ 
++For parallel arrows $f,g:A\to C$, define
++\[
++ f\cup g=h_C\circ(f\wedge g)\circ\Delta_A:A\longrightarrow C,
++ \qquad \Delta_A=\langle1_A,1_A\rangle.
++\]
++This is the union operation of \cite[p.~220]{DP}, written with
++the product and coproduct operations of $\B$. Its occurrence
++relation is
++\[
++ G(f\cup g)=Gf\cup Gg.
++\]
++Indeed, the diagonal supplies both source copies, $f\wedge g$
++acts on the corresponding copies, and $h_C$ joins the two target
++copies. Faithfulness gives, for parallel $f,g,k:A\to C$,
++\[
++ (f\cup g)\cup k=f\cup(g\cup k),\qquad
++ f\cup g=g\cup f,\qquad f\cup f=f.
++\]
++For $a:X\to A$ and $b:C\to Y$, relational composition and
++faithfulness give
++\[
++ \begin{aligned}
++ (f\cup g)\circ a&=(f\circ a)\cup(g\circ a),\\
++ b\circ(f\cup g)&=(b\circ f)\cup(b\circ g).
++ \end{aligned}
++\]
++On an inhabited hom-set $\B(A,C)$, its zero satisfies
++$f\cup0_{A,C}=f$; see also \cite[pp.~290--291]{DP}.
++Consequently $\B(A,C)$ is a join semilattice with least element
++$0_{A,C}$, where
++\[
++ f\leq g\quad\Longleftrightarrow\quad f\cup g=g
++ \quad\Longleftrightarrow\quad Gf\subseteq Gg.
++\]
++Finite unions are independent of the order and repeated
++summands. The empty union is the witnessed zero and is independent
++of its witness.\footnote{\raggedright The Lean laws are
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L131}{\texttt{Reduced.\allowbreak{}union\_assoc}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L90}{\texttt{Reduced.\allowbreak{}union\_comm}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L97}{\texttt{Reduced.\allowbreak{}union\_idem}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L80}{\texttt{Reduced.\allowbreak{}union\_pre}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L85}{\texttt{Reduced.\allowbreak{}union\_post}}, and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedFiniteUnion.lean\#L57}{\texttt{Reduced.finiteUnion.\allowbreak{}eq\_of\_members}}.
++The maps \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedQuotientReduction.lean\#L21}{\texttt{Reduced.\allowbreak{}reduceHom}} and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedRecovery.lean\#L26}{\texttt{Reduced.\allowbreak{}recoverHom}} identify these expressions
++with arrows of $\B(P)$ and are inverse on each hom-set.}
++
+ Cut elimination and Boolean Coherence are proved for the presentation
+ defining $\B(P)$. Normalization, preservation of literals and
+ uniform substitution on terms and their source and target formulas
+@@ -721,6 +897,7 @@
+ identities, and the absence of arrows from $\top$ to $\bot$.
+ Appendix~\ref{app:lean-statements} gives their statements in mathematical
+ notation and relates the arrow terms to arrows of $\B(P)$.
++It also describes the construction of the coherence proof.
+ 
+ \appendix
+ \section{Substitution in occurrence coordinates}\label{app:substitution}
+@@ -1077,6 +1254,97 @@
+ \]
+ These quantifiers do not assert that $\mathcal T_P(A,B)$ is nonempty.
+ 
++\subsection{Reading a Lean declaration}\label{app:reading-lean}
++
++The Lean identifiers below refer to the registered source archive
++\cite{palomar-2026-10-30-000014-v1}.
++Lean represents a mathematical set by a type and a proposition by
++an expression of type \texttt{Prop}. A proof of a proposition is a
++term having that proposition as its type. Thus
++\texttt{f : Term P A B} declares an arrow term with source $A$
++and target $B$, whereas \texttt{h : Derives f g} declares a proof
++that the two terms are related by the presentation's equations.
++The notation \texttt{Hom A B} denotes the quotient arrows, rather
++than the raw terms.\footnote{\raggedright For the general syntax, see
++\emph{Theorem Proving in Lean 4}, Chapters 2--3 and 5,
++\url{https://lean-lang.org/theorem_proving_in_lean4/}.}
++
++For example, the statement of \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarMaximality.lean\#L17}{\texttt{Palomar.maximality}},
++writing \texttt{Not} for the notation $\neg$, is
++\begin{quote}
++\begin{verbatim}
++theorem maximality [Nonempty P]
++    (R : PrimitiveCongruence P) (closed : R.Closed)
++    {A B : Formula P} (f g : Term P A B)
++    (hne : Not (Derives f g)) (hfg : R.Rel f g) :
++    R.Total
++\end{verbatim}
++\end{quote}
++Here $P$ is a parameter declared in the surrounding scope as
++\texttt{P : Type u}. This represents the variable set at universe
++level \texttt{u}; the theorem is uniform in that level.
++The bracketed \texttt{[Nonempty P]} is a hypothesis that $P$ is
++nonempty. The braces in \texttt{\{A B : Formula P\}} mark
++universally quantified arguments that Lean infers from the types
++of \texttt{f} and \texttt{g}.
++The names \texttt{closed}, \texttt{hne} and \texttt{hfg} name
++proofs of the three displayed hypotheses; the expression after
++the last colon is the conclusion.
++
++Dot notation has two uses here. In
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarDefinitions.lean\#L13}{\texttt{Palomar.PrimitiveCongruence}}, it gives the namespace of a
++definition. In \texttt{R.Rel}, it selects the relation belonging
++to $R$. The expression \texttt{R.Closed} applies the defined
++property \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarDefinitions.lean\#L28}{\texttt{PrimitiveCongruence.Closed}} to $R$.
++The assertion \texttt{R.Total} expands to
++\begin{quote}
++\begin{verbatim}
++forall {C D} (k l : Term P C D), R.Rel k l
++\end{verbatim}
++\end{quote}
++which is the universal statement in the preceding subsection.
++Consequently the theorem takes the given relation and hypotheses
++to a proof that every pair of parallel terms is related.
++
++In a proof introduced by \texttt{by}, the commands construct this
++proof term. The command \texttt{intro} introduces a universally
++quantified variable or a hypothesis; \texttt{obtain} extracts
++witnesses and their properties from an existence statement;
++\texttt{rw} replaces expressions using equations; and
++\texttt{exact} supplies a proof of the statement remaining to
++be proved. Lean's kernel checks that the resulting term has the theorem's displayed type.
++In particular, \texttt{Term.comp f g} applies \texttt{f} first,
++so it denotes $[g]\circ[f]$ on quotient arrows.
++
++The proof of \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarMaximality.lean\#L27}{\texttt{Palomar.short\_maximality}} can be read as
++the following sequence of mathematical implications.
++\begin{center}
++\small
++\begin{tabular}{>{\raggedright\arraybackslash}p{0.37\linewidth}>{\raggedright\arraybackslash}p{0.55\linewidth}}
++\textit{Lean declaration} & \textit{Mathematical step}\\[3pt]
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarCorrespondence.lean\#L121}{\texttt{Palomar.PrimitiveCongruence.\allowbreak{}raw\_distinct\_iff}}
++ & $\neg\mathcal E(f,g)$ means $[f]\ne[g]$.\\[5pt]
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/Isolation.lean\#L219}{\texttt{Isolation.\allowbreak{}normalized\_literal\_context}}
++ & Lemma~\ref{lem:isolation} and compatibility with composition give a literal $\ell$ and $(K_\ell)$
++   modulo the induced congruence.\\[5pt]
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/Substitution.lean\#L90}{\texttt{ContextualCollapse.\allowbreak{}all\_contexts}}
++ & Proposition~\ref{prop:all-contexts} gives $(K_A)$ for every formula $A$.\\[5pt]
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortProjection.lean\#L86}{\texttt{Presentation.ShortProof.\allowbreak{}total}}
++ & Lemma~\ref{lem:collapse} identifies arbitrary parallel arrows by
++   the $q_A,e_A$ argument.
++\end{tabular}
++\end{center}
++In this proof \texttt{R.fragment} is the induced relation on
++quotient arrows, with its composition, pairing and copairing
++laws. The argument \texttt{interpretation P} supplies the
++occurrence interpretation and its proved faithfulness;
++\texttt{normalization P} supplies the normal-form isomorphisms.
++The arguments \texttt{substitution P} and
++\texttt{doubleNegation P} supply the arrow substitution and
++double-negation maps used in Proposition~\ref{prop:all-contexts}.
++Thus these parameters are the mathematical structures and
++equations used at the corresponding steps.
++
+ \subsection{The five declarations}
+ 
+ \paragraph{\texttt{maximality} and \texttt{short\_maximality}.}
+@@ -1197,6 +1465,272 @@
+ The intermediate equality making $A\vee\top$ terminal is
+ \texttt{terminal\_retraction}.
+ 
++\subsection{The proof of coherence}\label{app:coherence-proof}
++
++Let $\mathcal R(P)$ denote the presentation on negation normal
++forms described in Section~\ref{sec:occurrences}. We use the same
++notation for its structural arrows. Write $G$ also for its occurrence
++interpretation; inclusion into $\B(P)$ preserves each tagged
++relation. A term of $\mathcal R(P)$
++is \emph{positive} if it contains no $\eta_p$ or $\epsilon_p$
++constructor. An arrow is positive when it has such a representative.
++
++The union equations used in the argument below have derivations
++from the defining equations of $\mathcal R(P)$.
++Naturality of the diagonal, mix and codiagonal gives compatibility
++with composition; symmetry and associativity give commutativity
++and associativity. The equation
++\[
++ [1_A,1_A]\circ m_{A,A}\circ\Delta_A=1_A
++\]
++gives idempotence, and the zero law gives $f\cup0=f$.
++These derivations do not use faithfulness.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L80}{\texttt{Reduced.\allowbreak{}union\_pre}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L85}{\texttt{Reduced.\allowbreak{}union\_post}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L90}{\texttt{Reduced.\allowbreak{}union\_comm}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L131}{\texttt{Reduced.\allowbreak{}union\_assoc}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L97}{\texttt{Reduced.\allowbreak{}union\_idem}}, and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L145}{\texttt{Reduced.\allowbreak{}union\_id\_zero}}.}
++
++The two canonical comparison arrows
++\[
++ \begin{aligned}
++ c^\wedge_{X,U,V}
++ &=[1_X\wedge\iota_1^{U,V},1_X\wedge\iota_2^{U,V}]\\
++ &:(X\wedge U)\vee(X\wedge V)\longrightarrow X\wedge(U\vee V),\\
++ c^\vee_{U,V,X}
++ &=\langle\pi_1^{U,V}\vee1_X,\pi_2^{U,V}\vee1_X\rangle\\
++ &:(U\wedge V)\vee X\longrightarrow(U\vee X)\wedge(V\vee X)
++ \end{aligned}
++\]
++have, respectively, a section $s_{X,U,V}$ and a retraction
++$t_{U,V,X}$:
++\[
++ c^\wedge_{X,U,V}\circ s_{X,U,V}=1_{X\wedge(U\vee V)},\qquad
++ t_{U,V,X}\circ c^\vee_{U,V,X}=1_{(U\wedge V)\vee X}.
++\]
++Appendix~\ref{app:explicit-inverses} defines these maps by
++structural arrow terms. Their two equations follow from the
++product, coproduct, dissociativity and mix equations.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenDistributiveEpi.lean\#L57}{\texttt{Reduced.Gentzen.DistributiveEpi.\allowbreak{}section\_comparison}}
++and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenDistributiveMono.lean\#L54}{\texttt{Reduced.Gentzen.DistributiveMono.\allowbreak{}comparison\_retraction}}.}
++
++Iterating the first split comparison gives, for every formula $A$
++of $\mathcal R(P)$, a disjunctive normal-form expansion $D_A$
++and positive arrows
++\[
++ i_A:A\longrightarrow D_A,\qquad r_A:D_A\longrightarrow A,
++ \qquad r_A\circ i_A=1_A.
++\]
++Here $D_A$ is a coproduct of conjunctions of literals and constants.
++The second split comparison gives a conjunctive expansion $C_A$,
++a product of disjunctions of literals and constants, with positive
++arrows $A\to C_A\to A$ whose composite is $1_A$.
++Induction on $A$ constructs these expansions: conjunctions of
++disjunctive expansions use $s$, disjunctions of conjunctive
++expansions use $c^\vee$, and the other connective combines
++expansions by its bifunctor.
++Only the displayed retraction equations are needed.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenNormalExpansion.lean\#L45}{\texttt{Reduced.Gentzen.\allowbreak{}dnf\_expansion}} and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenNormalExpansion.lean\#L62}{\texttt{Reduced.Gentzen.\allowbreak{}cnf\_expansion}}.}
++
++Consider a positive arrow from a conjunction $U$ of literals
++and constants to a disjunction $V$ of literals and constants.
++At occurrences $x\in\Occ(U)$ and $y\in\Occ(V)$ of the same
++literal $\ell$, the successive product projections and coproduct
++injections give
++\[
++ p_x:U\longrightarrow\ell,\qquad
++ j_y:\ell\longrightarrow V.
++\]
++The relation of $j_y\circ p_x$ is the singleton $\{(x,y)\}$.
++Gentzenization, cut elimination and atomization express the given
++arrow as a finite union of these paths; an empty union uses the
++zero in its inhabited hom-set. The relation of that union records
++exactly its paths. Idempotence and commutativity make repetitions
++and their order irrelevant, so equal occurrence relations give
++equal positive arrows at these endpoints.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenMixNormalForm.lean\#L37}{\texttt{Reduced.Gentzen.G.\allowbreak{}mix\_normal\_form}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenPureNormalForms.lean\#L84}{\texttt{Reduced.Gentzen.HasPureNormalForm.\allowbreak{}faithful}}, and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenPurePositiveCoherence.lean\#L14}{\texttt{Reduced.Gentzen.\allowbreak{}pure\_positive\_coherence}}.}
++The coproduct and product equations extend this assertion to
++arrows from a disjunctive expansion to a conjunctive expansion.
++
++For positive $f,g:A\to B$, choose a disjunctive expansion of $A$
++and a conjunctive expansion of $B$. Write their maps as
++$i_A:A\to D_A$, $r_A:D_A\to A$ and
++$i_B:B\to C_B$, $r_B:C_B\to B$, with
++$r_A\circ i_A=1_A$ and $r_B\circ i_B=1_B$.
++If $Gf=Gg$, the arrows
++$i_B\circ f\circ r_A,i_B\circ g\circ r_A:D_A\to C_B$
++have equal relations and hence are equal. Precomposing with
++$i_A$ and postcomposing with $r_B$ gives $f=g$.
++This proves positive coherence at arbitrary endpoints.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenPositiveCoherence.lean\#L14}{\texttt{Reduced.Gentzen.\allowbreak{}represented\_coherence}} and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenPositiveCoherence.lean\#L31}{\texttt{Reduced.Gentzen.\allowbreak{}positive\_coherence}}.}
++
++For arbitrary terms $f,g:A\to B$ of $\mathcal R(P)$, atomic
++factorization constructs formulas $A',B'$, arrows
++$u:A\to A'$, $v:B'\to B$ and positive terms
++$f_0,g_0:A'\to B'$ such that, on quotient arrows,
++\[
++ [f]=v\circ[f_0]\circ u,\qquad [g]=v\circ[g_0]\circ u.
++\]
++It also gives injections
++$a:\Occ(A)\to\Occ(A')$ and $b:\Occ(B)\to\Occ(B')$ with
++\[
++ G[f_0]=(a\times b)(G[f]),\qquad
++ G[g_0]=(a\times b)(G[g]).
++\]
++The right sides are direct images of relations. Thus equality
++of $G[f]$ and $G[g]$ gives equality of the middle relations.
++Positive coherence equates $[f_0]$ and $[g_0]$, and the
++factorizations give $[f]=[g]$.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/CommonAtomicFactorization.lean\#L51}{\texttt{Reduced.\allowbreak{}commonAtomicFactor}} and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/CommonAtomicFactorization.lean\#L123}{\texttt{Reduced.\allowbreak{}faithful\_of\_positive\_coherence}}.}
++The normalization and recovery maps of Section~\ref{sec:occurrences}
++then transfer faithfulness from $\mathcal R(P)$ to $\B(P)$.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedCoherence.lean\#L17}{\texttt{Reduced.\allowbreak{}boolean\_coherence}} and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationCoherence.lean\#L13}{\texttt{Presentation.\allowbreak{}coherence}}.}
++
++\section{Inverses of the two structural isomorphisms}
++\label{app:explicit-inverses}
++
++We construct inverses for the particular arrows in
++Lemma~\ref{lem:structural-isos}. Throughout this appendix,
++\[
++ \alpha^\star_{X,Y,Z}:(X\star Y)\star Z\longrightarrow
++          X\star(Y\star Z),\qquad
++ \beta^\star_{X,Y}:X\star Y\longrightarrow Y\star X
++ \quad(\star\in\{\wedge,\vee\})
++\]
++are associativity and symmetry.
++
++\subsection{The inverse of \texorpdfstring{$q_A$}{qA}}
++
++Put $S_A=(A\wedge\bot)\vee\top$. Define $u_A:A\to S_A$ by
++the path
++\[
++\begin{aligned}
++ A&\xrightarrow{\langle1_A,!_A\rangle}A\wedge\top\\
++  &\xrightarrow{1_A\wedge\iota_2^{\bot,\top}}
++       A\wedge(\bot\vee\top)
++   \xrightarrow{d_{A,\bot,\top}}S_A,
++\end{aligned}
++\]
++and put
++\[
++ \bar q_A=[u_A,\iota_2^{A\wedge\bot,\top}]:
++      A\vee\top\longrightarrow S_A.
++\]
++The occurrence relation of $\bar q_A$ is the graph sending
++$(1,x)\in\Occ(A\vee\top)$ to
++$(1,(1,x))\in\Occ(S_A)$; $Gq_A$ is the inverse graph.
++Boolean Coherence therefore gives
++\[
++ \bar q_A\circ q_A=1_{S_A},\qquad
++ q_A\circ\bar q_A=1_{A\vee\top}.
++\]
++Thus $\bar q_A=q_A^{-1}$.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortQ.lean\#L17}{\texttt{Presentation.ShortProof.\allowbreak{}qInverseTerm}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortQ.lean\#L32}{\texttt{Presentation.ShortProof.\allowbreak{}q\_qInverse}}, and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortQ.lean\#L46}{\texttt{Presentation.ShortProof.\allowbreak{}qInverse\_q}}.}
++
++\subsection{The inverse of \texorpdfstring{$e_A$}{eA}}
++
++Define $c_{X,Y;U,V}:(X\wedge Y)\wedge(U\vee V)
++\to(X\wedge U)\vee(Y\wedge V)$ by the path
++\[
++\begin{tikzcd}[row sep=large]
++ (X\wedge Y)\wedge(U\vee V)
++   \arrow[d,"{1_{X\wedge Y}\wedge\beta^\vee_{U,V}}"]\\
++ (X\wedge Y)\wedge(V\vee U)
++   \arrow[d,"{\alpha^\wedge_{X,Y,V\vee U}}"]\\
++ X\wedge(Y\wedge(V\vee U))
++   \arrow[d,"{1_X\wedge d_{Y,V,U}}"]\\
++ X\wedge((Y\wedge V)\vee U)
++   \arrow[d,"{1_X\wedge\beta^\vee_{Y\wedge V,U}}"]\\
++ X\wedge(U\vee(Y\wedge V))
++   \arrow[d,"{d_{X,U,Y\wedge V}}"]\\
++ (X\wedge U)\vee(Y\wedge V).
++\end{tikzcd}
++\]
++Set
++\[
++ s_{X,U,V}=c_{X,X;U,V}\circ(\Delta_X\wedge1_{U\vee V}):
++ X\wedge(U\vee V)\longrightarrow(X\wedge U)\vee(X\wedge V).
++\]
++With $T_A=A\wedge\top$, define
++\[
++ \bar e_A=[1_{A\wedge A},0_{T_A,A\wedge A}]
++                 \circ s_{A,A,\top}:
++ A\wedge(A\vee\top)\longrightarrow A\wedge A.
++\]
++The composite $\Delta_A\circ\pi_1^{A,\top}:T_A\to A\wedge A$
++supplies the witness defining this zero.
++The relation of $s_{A,A,\top}$ copies each occurrence of its
++first $A$ into both target summands and sends the occurrences
++of the second $A$ to the second factor of the first summand.
++Postcomposition with $[1_{A\wedge A},0_{T_A,A\wedge A}]$
++removes the second summand. Hence $G\bar e_A$ sends
++$(1,x)$ to $(1,x)$ and $(2,(1,x))$ to $(2,x)$.
++These assignments are inverse to $Ge_A$. Coherence gives
++\[
++ \bar e_A\circ e_A=1_{A\wedge A},\qquad
++ e_A\circ\bar e_A=1_{A\wedge(A\vee\top)}.
++\]
++Thus $\bar e_A=e_A^{-1}$.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\#L13}{\texttt{Presentation.ShortProof.\allowbreak{}sourceConjTerm}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\#L21}{\texttt{Presentation.ShortProof.\allowbreak{}sectionTerm}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\#L30}{\texttt{Presentation.ShortProof.\allowbreak{}eInverseTerm}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\#L44}{\texttt{Presentation.ShortProof.\allowbreak{}e\_eInverse}}, and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\#L50}{\texttt{Presentation.ShortProof.\allowbreak{}eInverse\_e}}.}
++Both inverse constructions apply to every formula $A$, including
++formulas with empty occurrence sets.
++
++\subsection{The split comparisons used in coherence}
++
++The map $s_{X,U,V}$ is also a section of $c^\wedge_{X,U,V}$ in
++Appendix~\ref{app:coherence-proof}. To construct the retraction
++of $c^\vee_{U,V,X}$, first put
++\[
++ v_{U,X;V}=(\beta^\wedge_{V,U}\vee1_X)\circ d_{V,U,X}
++                \circ\beta^\wedge_{U\vee X,V}:
++ (U\vee X)\wedge V\longrightarrow(U\wedge V)\vee X.
++\]
++For another formula $Y$, put
++\[
++ \begin{aligned}
++ b_{U,X;V,Y}
++ &=\alpha^\vee_{U\wedge V,X,Y}\circ(v_{U,X;V}\vee1_Y)
++                      \circ d_{U\vee X,V,Y}\\
++ &:(U\vee X)\wedge(V\vee Y)
++                   \longrightarrow(U\wedge V)\vee(X\vee Y).
++ \end{aligned}
++\]
++Then
++\[
++ t_{U,V,X}=(1_{U\wedge V}\vee[1_X,1_X])\circ b_{U,X;V,X}:
++ (U\vee X)\wedge(V\vee X)\longrightarrow(U\wedge V)\vee X.
++\]
++Expanding the definitions and using the presentation equations
++gives
++\[
++ \begin{aligned}
++ \pi_i^{X,U\vee V}\circ c^\wedge_{X,U,V}\circ s_{X,U,V}
++     &=\pi_i^{X,U\vee V}\quad(i=1,2),\\
++ t_{U,V,X}\circ c^\vee_{U,V,X}\circ\iota_i^{U\wedge V,X}
++     &=\iota_i^{U\wedge V,X}\quad(i=1,2).
++ \end{aligned}
++\]
++The product and coproduct equations give the two split identities.
++For the first projection in the first line and the second injection
++in the second line, the calculation uses
++$[1_Z,1_Z]\circ m_{Z,Z}\circ\Delta_Z=1_Z$.
++These calculations use only structural arrows and their equations,
++so the same expressions and identities hold in $\mathcal R(P)$.
++
+ \section*{Use of AI tools}
+ OpenAI's ChatGPT assisted with the development of the proof, preparation
+ of the manuscript, and checks of the arguments and references. OpenAI Codex
+@@ -1209,7 +1743,7 @@
+ \small
+ \setlength{\bibsep}{2pt}
+ \bibliographystyle{unsrtnat}
+-\bibliography{references_v15,palomar_v15}
++\bibliography{references_v16,palomar_v16}
+ \endgroup
+ \end{document}
+ 

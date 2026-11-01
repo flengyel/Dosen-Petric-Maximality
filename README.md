@@ -12,25 +12,27 @@ and its [registration report](docs/PALOMAR_REGISTRATION_REPORT.md) remain preser
 The earlier [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
 describes version 1.
 
-The arXiv package is ready in [submission/arxiv-v15](submission/arxiv-v15/README.md).
-V15 adds Appendix D: the five registered Lean statements in mathematical
-notation and their correspondence to relations on arrows. It states all
-hypotheses, types the substitution square, distinguishes term equality from
-quotient equality, and explains how the dichotomy gives preservation under
-negation. The appendix also identifies the existing coherence, model-corollary
-and intermediate collapse proofs. The [hostile review](docs/reviews/V15_HOSTILE_REVIEW_2026-11-01.md),
-[writing review](docs/reviews/V15_WRITING_REVIEW_2026-11-01.md) and
-[release report](docs/MANUSCRIPT_V15_REPORT.md) record the source comparison.
-V14's terminology, explicit types and expanded calculations remain unchanged.
-The ChatGPT/Codex disclosure, MSC codes, exact supplied Palomar citation,
-both proof routes and every earlier release remain. No arXiv upload has occurred.
+The arXiv package is ready in [submission/arxiv-v16](submission/arxiv-v16/README.md).
+V16 incorporates the seven accepted additions from the Lean-to-paper audit:
+the full substituted occurrence relation, q/e inverse terms, union algebra,
+substitution action laws, retract transport, signs and negation, and the
+coherence construction. Appendix D.2 explains Lean declarations and follows
+the short proof in mathematical steps for readers unfamiliar with proof
+assistants. Appendix E gives the inverse and split-comparison terms.
+Seventeen footnotes and the proof table link to 49 distinct declarations in
+the cited immutable version-1 source. The Lean development supplies explicit
+constructions and equations for the written exposition.
+The [hostile review](docs/reviews/V16_HOSTILE_REVIEW_2026-11-01.md),
+[writing review](docs/reviews/V16_WRITING_REVIEW_2026-11-01.md) and
+[release report](docs/MANUSCRIPT_V16_REPORT.md) record the checks and limits.
+Both proof routes, Appendices A–C, the supplied citation, MSC codes, disclosure
+and every earlier release remain. No arXiv upload has occurred.
 
-The [reverse audit from Lean to the paper](docs/FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md) identifies seven
-candidate additions, including the full substituted occurrence relation,
-explicit isomorphism inverses and the union algebra. It inventories all 850
-production modules and distinguishes named theorems, transfers from the reduced
-presentation and further deductions. V15 and its package are unchanged; the
-report supplies proposed mathematical wording rather than a new release.
+The [reverse audit](docs/FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md)
+inventories all 850 production modules and distinguishes named theorems,
+transfers from the reduced presentation and further deductions. Its seven
+accepted proposals are now incorporated in v16. The original report and v15
+remain dated checkpoints; the additions do not change the registered Lean proof.
 
 The verified package was merged into main through `23ec1bc`. It selects five statements
 in `DosenPetric.Palomar`: both
@@ -63,9 +65,10 @@ publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
-Current manuscript: [v15 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v15.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v15.tex), dated November 1, 2026, 16 pages. All v4–v14 releases remain preserved.
-The [v15 report](docs/MANUSCRIPT_V15_REPORT.md) records the added appendix,
-source comparison, manuscript/package builds, PDF inspection and preservation.
+Current manuscript: [v16 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v16.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v16.tex), dated November 1, 2026, 23 pages. All v4–v15 releases remain preserved.
+The [v16 report](docs/MANUSCRIPT_V16_REPORT.md) records the seven additions,
+reader's guide, source correspondence, matching manuscript/package builds,
+PDF inspection and preservation.
 Every manuscript revision increments its version; completed authorized main
 work is pushed before readiness is reported, as recorded in AGENTS.md.
 
