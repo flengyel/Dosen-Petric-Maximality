@@ -1,4 +1,21 @@
-Current phase: Palomar registration is complete; arXiv v13 preparation is ready.
+Current work (1 November 2026): ordinary version-2 registration is requested
+for existing submission txdu0y3got1o, source
+5dbee39bea09539bd130f729e82636419f71f920. After receiving the exact delivered
+review and publication explanation, the author explicitly authorized registration.
+POST /register was accepted at 15:07:30 UTC; authenticated status at 15:12:29 UTC
+confirms registration_consent=true. Public version-2 readback is pending.
+Read PALOMAR_V2_REGISTRATION_REPORT.md before doing anything else with this
+submission. Its credential, exact original review, consent digest and request
+receipt remain in ignored .codex-work/palomar-v2-service-20261031/private/.
+A read-only registration monitor runs there; inspect its launch record/log
+before starting another monitor. Do not repeat intake, register POST, preflight,
+service verification, proof builds or kernel replays. Inspect status and public
+readback at most once per five minutes. Confirm public registration before
+changing active registry links or manuscript citations. Preserve manuscript v13
+and the supplied version-1 BibTeX; a registration update does not revise them.
+
+The following completed registration record describes version 1. ArXiv v13
+preparation remains ready.
 
 Registered identity: PALOMAR-2026-10-30-000014, version 1.
 https://palomar-registry.org/entry?id=PALOMAR-2026-10-30-000014&version=1
