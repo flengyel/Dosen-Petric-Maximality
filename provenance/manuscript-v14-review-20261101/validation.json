@@ -62,5 +62,11 @@
     "previous_manuscript_and_package_files_byte_preserved": 69,
     "stash_preserved": true,
     "remote_push_performed": false
+  },
+  "format_validation": {
+    "source_whitespace_check": "passed; inherited blank EOF lines permitted, including the byte-preserved supplied BibTeX",
+    "unified_diff_validation": "Python roundtrip parser; unified-diff context spaces are data, excluded from source whitespace lint",
+    "unified_diff_hunks_applied": 36,
+    "unified_diff_reconstructs_exact_v14": true
   }
 }
