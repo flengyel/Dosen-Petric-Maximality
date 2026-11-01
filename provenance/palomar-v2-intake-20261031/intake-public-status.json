@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-11-01T03:39:37.787088+00:00",
+  "repository": "flengyel/Dosen-Petric-Maximality",
+  "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+  "submission_id": "txdu0y3got1o",
+  "requested_existing_id": "PALOMAR-2026-10-30-000014",
+  "expected_next_version": 2,
+  "requested_paths": {
+    "comparator_config_path": "comparator.json",
+    "formalization_metadata_path": "formalization.yaml"
+  },
+  "authorization_relationship": "maintainer",
+  "pre_intake_agreement_received": true,
+  "authentication_complete": true,
+  "temporary_access_proof_cleanup": {
+    "utc": "2026-11-01T03:24:18.158509+00:00",
+    "artifacts": {
+      "tag": {
+        "deleted": true,
+        "readback_http_status": 404
+      },
+      "gist": {
+        "deleted": true,
+        "readback_http_status": 404
+      }
+    }
+  },
+  "verification_run": {
+    "id": 41269034789,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41269034789",
+    "started_at": "2026-11-01T03:24:15Z"
+  },
+  "intake_complete": true,
+  "service_verification_complete": true,
+  "editorial_status": "Private; not published in this report.",
+  "registration_requested": false,
+  "public_registration_readback_performed": false,
+  "manuscript_v13_unchanged": true
+}

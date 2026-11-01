@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-11-01T03:34:35.704820+00:00",
+  "run": {
+    "id": 41269034789,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41269034789",
+    "started_at": "2026-11-01T03:24:15Z"
+  },
+  "artifact": {
+    "digest": "sha256:cd8c9876536c1ad4bb4bfca98d5fa8dc7f3a173ccd6544531760bbe33c12e146",
+    "expired": false,
+    "id": 13069135220,
+    "name": "mechanical-report-txdu0y3got1o",
+    "size_in_bytes": 11286
+  },
+  "zip_sha256": "cd8c9876536c1ad4bb4bfca98d5fa8dc7f3a173ccd6544531760bbe33c12e146",
+  "report_sha256": "d96e34d187e803941d12374406fd19ef6e241947d4846ca3f8176be6d432504c",
+  "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+  "existing_id": "PALOMAR-2026-10-30-000014",
+  "submission_id": "txdu0y3got1o"
+}
