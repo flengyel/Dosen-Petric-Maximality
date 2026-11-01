@@ -1,5 +1,41 @@
 # Manuscript corrections and source errata
 
+## Second complete review: v13 (31 October 2026)
+
+Input v12: cbcd59ca1b9382bdcd0de8c648e4a351495ccf81. The new statement review
+records 89 consecutive ranges covering all 929 input lines, all seven numbered
+statements, and every unnumbered construction and diagram. The final revised
+source was read continuously. A separate literature report records primary
+passages and limits for sources inspected only in part.
+
+V13-LIT-1: the v12 introduction omitted the negation-free hypothesis of Lemma 6
+in Došen–Petrić, Isomorphic formulae. The prior review missed it. The unrestricted
+description fails for A=p, B=¬p∨p when the negative target occurrence is chosen.
+V13 states the restriction. The paper's own isolation lemma already preserves
+signed literals; neither it nor the registered proof is changed.
+
+V13-LIT-2: add the CCC maximality antecedent and the proof-net coherence paper,
+with their different hypotheses and graph categories. Add the book's p.292
+zero-identity distributive results, separating the versions with and without
+truth constants. State the FP inequality theorem and the cited Joyal condition
+explicitly. No claim of an exhaustive novelty search is made.
+
+V13-PROSE: expand the existing symmetric-fold deduction into its intermediate
+equations, already proved in Collapse.lean. Identify the substituted pattern
+whose skeleton is used, make the positive contextual branch conditional, and
+remove redundant wording. Exact replacements and reasons are in
+provenance/manuscript-v13-review-20261031/editorial-decisions.json.
+
+All seven statement environments, twelve numbered displays, ten diagrams,
+thirty labels, Appendices B/C, AI disclosure and supplied Palomar BibTeX are
+byte-identical to v12. The manuscript and extracted archive compile to matching
+14-page layout text. All pages were rendered and inspected; final logs contain
+no reference, citation, box or duplicate-destination warnings. No Lean change,
+kernel replay, new registration or arXiv upload is claimed. No formal proof
+defect was found. See MANUSCRIPT_V13_REPORT.md and the three V13 review reports.
+New Windows Downloads copies could not be made in this environment.
+
+
 ## Line-by-line prose and source review: v12 (31 October 2026)
 
 V12 incorporates the concurrent v11 release at 97d7288 and preserves its exact

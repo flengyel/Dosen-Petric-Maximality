@@ -1,0 +1,14 @@
+{
+  "base_commit": "cbcd59ca1b9382bdcd0de8c648e4a351495ccf81",
+  "base_tree": "18b8409ef8029e9b8e56c3d100af1aa3dabb56ec",
+  "total_base_entries": 8188,
+  "expected_file_writes": 39,
+  "source_scope": "Manuscript, review, package and active documentation only.",
+  "registered_proof_source": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+  "verification_rule": "Before moving main, fetch the constructed tree and require every explicit write to match its locally computed Git blob SHA; require every other base blob and mode to be preserved; require the historical v12 preparation report to equal the old active report. Then use expected_sha on the branch update and read back the new commit.",
+  "no_lean_changes": true,
+  "no_deleted_files": true,
+  "windows_downloads_delivery": "unavailable; no copies made",
+  "library_duplication": "not applicable to externally git-backed artifacts",
+  "relative_link_check": "All current and new report/package links resolve in the release tree. The exact historical v12 report retains its original relative links; current reports link to its original path at the base commit."
+}

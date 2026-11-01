@@ -1,0 +1,161 @@
+{
+  "outline": [
+    [
+      1,
+      48,
+      "Title, metadata and abstract",
+      "State nonempty P, closure operations and principal conclusion."
+    ],
+    [
+      49,
+      110,
+      "Introduction",
+      "Conjecture, reduction to projections, comparison of related results, notation and source edition."
+    ],
+    [
+      112,
+      215,
+      "The Boolean proof category",
+      "Define formulas, operations, witnessed zeros, congruences and maximality; state main theorem."
+    ],
+    [
+      217,
+      358,
+      "Occurrences and substitution",
+      "Faithful relational interpretation, nonthinness, exponential obstruction, normal forms, signed literals and substitution maps."
+    ],
+    [
+      360,
+      464,
+      "Isolating an occurrence",
+      "Construct selected one-edge relations and transport the contextual equation by substitution, including negative literals."
+    ],
+    [
+      466,
+      585,
+      "Contextual collapse",
+      "Identify q/e, prove thinness and main theorem, then obtain the model corollary by universal agreement."
+    ],
+    [
+      587,
+      637,
+      "Lean formalization",
+      "State syntax/quotient correspondence, both proof routes and registered declaration family."
+    ],
+    [
+      640,
+      732,
+      "Appendix A.1: profiles and their fibres",
+      "Define labelled blocks, gamma and chi; prove square identities."
+    ],
+    [
+      733,
+      802,
+      "Appendix A.2: finite ordinals",
+      "Prefix sums, encoding bijections, block locator, skeleton/profile reconstruction and worked example."
+    ],
+    [
+      804,
+      836,
+      "Appendix A.3: shared variables",
+      "Renaming square and positive/negative contextual instances."
+    ],
+    [
+      838,
+      888,
+      "Appendix B",
+      "Typed diagrams of three defining equations."
+    ],
+    [
+      890,
+      912,
+      "Appendix C",
+      "Correct two source rank sentences and justify each correction."
+    ],
+    [
+      914,
+      929,
+      "Disclosure and bibliography",
+      "Preserve authorized disclosure and identify exact sources."
+    ]
+  ],
+  "edits": [
+    {
+      "id": "L1",
+      "anchor": "70–74",
+      "why": "Add the omitted cartesian-closed maximality antecedent, with its proof method and the obstruction to applying it here.",
+      "old": "For cartesian categories, Do\\v{s}en and Petri\\'c prove maximality by\nusing coherence, substitution and composition to derive equality of\nthe product projections \\cite[\\S5]{DPCartesian}.\nSections~\\ref{sec:isolation} and~\\ref{sec:collapse} give the reduction\nfor the zero-identity Boolean category.",
+      "new": "For cartesian categories, Do\\v{s}en and Petri\\'c prove maximality by\nusing coherence, substitution and composition to derive equality of\nthe product projections \\cite[\\S5]{DPCartesian}.\nFor cartesian closed categories, they obtain the same conclusion\nfrom a typed B\\\"ohm theorem \\cite[\\S11]{DPCCC}.\nThe latter result does not apply to $\\B$: the exponential\n$p\\Rightarrow p$ does not exist, as shown in\nSection~\\ref{sec:occurrences}. Sections~\\ref{sec:isolation}\nand~\\ref{sec:collapse} give the reduction to equal projections in $\\B$."
+    },
+    {
+      "id": "L2",
+      "anchor": "76–78",
+      "why": "Name the closest zero-identity distributive-lattice antecedents, verified on DP p.292.",
+      "old": "Do\\v{s}en and Petri\\'c also prove maximality for lattice categories\nand relative maximality for dicartesian categories\n\\cite[\\S\\S8--10]{DPBicartesian}, without assuming distribution.",
+      "new": "Do\\v{s}en and Petri\\'c prove maximality for lattice categories\nand relative maximality for dicartesian categories\n\\cite[\\S\\S8--10]{DPBicartesian}, without assuming distribution.\nTheir book proves maximality for zero-identity distributive lattice\ncategories without the truth constants, and relative maximality\nwhen both constants are present \\cite[\\S12.5, p.~292]{DP}."
+    },
+    {
+      "id": "L3",
+      "anchor": "79–81",
+      "why": "Restore the negation-free hypothesis of cited Lemma 6. Without it, p→(¬p∨p) and the negative target occurrence refute the unqualified description.",
+      "old": "Their Lemma~6 in \\cite{DPIsomorphic} constructs an arrow whose\nrelation links just two prescribed occurrences of the same variable,\nprovided the implication between its source and target is a tautology.",
+      "new": "For formulas $A,B$ containing no negation, with $A\\to B$ a\ntautology, \\cite[Lemma~6]{DPIsomorphic} constructs an arrow\n$A\\to B$ whose occurrence relation consists of the edge between\nany prescribed occurrences of the same variable in $A$ and $B$."
+    },
+    {
+      "id": "L4",
+      "anchor": "86",
+      "why": "Add the authors' proof-net coherence result and identify its graph category, instead of treating every graphical semantics as Rel.",
+      "old": "Other definitions of Boolean category start with monoidal operations\nfor conjunction and disjunction.",
+      "new": "For multiplicative linear logic without constants, Do\\v{s}en and\nPetri\\'c prove coherence for proof-net categories, with and without\nmix, with respect to Brauerian split equivalences \\cite{DPPN}.\n\nOther definitions of Boolean category do not require conjunction and\ndisjunction to be categorical products and coproducts."
+    },
+    {
+      "id": "L5",
+      "anchor": "92–94",
+      "why": "Replace the unspecific phrase 'ordered soundness and completeness' by the quantified statement of FP Theorems 6.4–6.5.",
+      "old": "F\\\"uhrmann and Pym use an order on arrows to interpret cut reduction;\ntheir Theorems~6.4 and~6.5 give ordered soundness and completeness\n\\cite{FP}. The negation equations differ from those used here.",
+      "new": "F\\\"uhrmann and Pym interpret cut reduction by inequalities between\narrows. An inequality belongs to a net theory if and only if it\nholds in every interpretation of that theory in their classical\ncategories \\cite[Theorems~6.4--6.5]{FP}.\nThe negation equations differ from those used here."
+    },
+    {
+      "id": "P1",
+      "anchor": "179–182",
+      "why": "Shorten the diagram announcement while retaining the Appendix B pointer.",
+      "old": "\\noindent\\textit{Remark.}\nAppendix~\\ref{app:structural-diagrams} gives diagrammatic forms of\nequations~\\eqref{eq:first-injection}--\\eqref{eq:zero-law}, with the\nsource and target of every arrow displayed.",
+      "new": "Appendix~\\ref{app:structural-diagrams} displays\nequations~\\eqref{eq:first-injection}--\\eqref{eq:zero-law}\nas commutative diagrams."
+    },
+    {
+      "id": "P2",
+      "anchor": "276–281",
+      "why": "State the collapse theorem in the exact initial-object/exponential form of the cited page; retain the independent obstruction for B.",
+      "old": "Joyal's collapse theorem concerns cartesian closed categories with a\ndualizing object; see \\cite[\\S14.3, pp.~324--326]{DP}. The category\n$\\B$ is not cartesian closed. Indeed, faithfulness gives at most one\narrow $\\top\\to E$ for every $E$, since $\\Occ(\\top)$ is empty,\nwhereas $1_p\\ne0_p$. An exponential $p\\Rightarrow p$ would give\na bijection $\\B(p,p)\\cong\\B(\\top,p\\Rightarrow p)$, a contradiction.",
+      "new": "Joyal's collapse result says that a cartesian closed category with\nan initial object $\\bot$ is a preorder if\n$A\\cong(A\\Rightarrow\\bot)\\Rightarrow\\bot$ for every object $A$\n\\cite[\\S14.3, p.~324]{DP}.\nThe category $\\B$ is not cartesian closed. Faithfulness gives at most\none arrow $\\top\\to E$ for every $E$, since $\\Occ(\\top)$ is empty,\nwhereas $1_p\\ne0_p$ for $p\\in P$. An exponential $p\\Rightarrow p$\nwould give a bijection $\\B(p,p)\\cong\\B(\\top,p\\Rightarrow p)$,\na contradiction."
+    },
+    {
+      "id": "P3",
+      "anchor": "614–617",
+      "why": "Replace the compressed claim that fold symmetry yields collapse by the intermediate equations, checked against Collapse.lean.",
+      "old": "The right-hand side is independent of $B$. The symmetry of mix gives\n$h_A\\circ\\langle\\pi_2^{A,A},\\pi_1^{A,A}\\rangle=h_A$.\nTogether with \\eqref{eq:context} for all formulas, this identity yields\nequality of the product projections.",
+      "new": "The right-hand side is independent of $B$. The symmetry of mix gives\n$h_A\\circ\\langle\\pi_2^{A,A},\\pi_1^{A,A}\\rangle=h_A$.\nWrite $\\equiv$ for equality modulo a proof congruence containing \\eqref{eq:context}\nfor every formula. Taking $B=\\bot$ in the expression for mix,\n\\eqref{eq:context} and Boolean Coherence in $\\B$ give\n\\[\n j_A\\circ h_A\\equiv j_A\\circ\\pi_2^{A,A}.\n\\]\nPrecomposing with the symmetry of $A\\wedge A$ and using the\npreceding identity for $h_A$ gives\n$j_A\\circ\\pi_1^{A,A}\\equiv j_A\\circ\\pi_2^{A,A}$.\nPrecompose this equation with $\\langle1_A,0_A\\rangle$. Since the\ncomposite $j_A\\circ0_A$ has empty occurrence relation, coherence gives\n\\[\n j_A\\equiv\\iota_2^{A,\\top}\\circ!_A.\n\\]\nThe coproduct equations then make $A\\vee\\top$ terminal in the\nquotient. By symmetry,\n$\\iota_2^{\\top,A}\\equiv\\iota_1^{\\top,A}\\circ!_A$.\nTaking $B=\\top$ in the expression for mix and using\n\\eqref{eq:first-injection} now gives $h_A\\equiv\\pi_1^{A,A}$.\nThe symmetry of $h_A$ yields $\\pi_1^{A,A}\\equiv\\pi_2^{A,A}$,\nand pairing equates any two parallel arrows."
+    },
+    {
+      "id": "P4",
+      "anchor": "730–731",
+      "why": "Remove an unnecessary lead-in from the explicit coordinate calculation.",
+      "old": "Indeed, the occurrence with coordinates $(r,t)$ contains precisely\nthe placeholder $\\bigl(o_M(r),o_{o_M(r)}(t)\\bigr)$.",
+      "new": "The occurrence with coordinates $(r,t)$ contains the placeholder\n$\\bigl(o_M(r),o_{o_M(r)}(t)\\bigr)$."
+    },
+    {
+      "id": "P5",
+      "anchor": "780–781",
+      "why": "Identify the substituted pattern by its defined formula and state determination by skeleton/profile.",
+      "old": "The generalized composite therefore consists of the skeleton of the\nsubstituted pattern and the profile $\\delta$.",
+      "new": "The generalized composite is therefore determined by the skeleton\nof $M[\\Phi_0]$ and the profile $\\delta$."
+    },
+    {
+      "id": "P6",
+      "anchor": "828–832",
+      "why": "Make the positive-literal case explicit before the separate negative-literal branch.",
+      "old": "In Proposition~\\ref{prop:all-contexts}, the source and target of\nthe contextual equation are $p\\wedge\\bot$ and $p\\vee\\top$.\nEach contains one occurrence of $p$.",
+      "new": "If the literal isolated in Proposition~\\ref{prop:all-contexts}\nis $p$, the contextual equation has source $p\\wedge\\bot$ and\ntarget $p\\vee\\top$. Each contains one occurrence of $p$."
+    }
+  ]
+}

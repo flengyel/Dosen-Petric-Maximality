@@ -1,0 +1,95 @@
+{
+  "theorem": {
+    "count": 2,
+    "byte_identical_to_v12": true
+  },
+  "lemma": {
+    "count": 3,
+    "byte_identical_to_v12": true
+  },
+  "proposition": {
+    "count": 1,
+    "byte_identical_to_v12": true
+  },
+  "corollary": {
+    "count": 1,
+    "byte_identical_to_v12": true
+  },
+  "equation": {
+    "count": 12,
+    "byte_identical_to_v12": true
+  },
+  "tikzcd": {
+    "count": 10,
+    "byte_identical_to_v12": true
+  },
+  "labels": {
+    "count": 30,
+    "identical_to_v12": true
+  },
+  "appendices_B_C_and_disclosure": "byte-identical to v12",
+  "supplied_palomar_bibtex": {
+    "unchanged": true,
+    "sha256": "342ef3c6b1c30ca913c887fca03f5007659c8de7f1c07be76e627cc3edb19650"
+  },
+  "release": {
+    "pages": 14,
+    "metadata_title": "Maximality of the Dosen\u2013Petric Boolean Category (v13)",
+    "all_pages_rendered_and_visually_inspected": true,
+    "visual_inspection_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "registered_entry_uri": "https://palomar-registry.org/entry?id=PALOMAR-2026-10-30-000014&version=1",
+    "registered_entry_links": 2,
+    "source_sha256": "5428452560eeecd55be2315f50fbf46556469af364931d2cc802ee888b4aade1",
+    "pdf_sha256": "796c9991f49feff13a11d94759de3e72fe5ac86454927092dd0fcbee52f26b3d",
+    "archive_sha256": "c23c53e8cb58a5a99d88838c41c0909d6bd3e0b25b804f87037906d32be76217",
+    "archive_members": [
+      "main.tex",
+      "main.bbl",
+      "references_v13.bib",
+      "palomar_v13.bib"
+    ],
+    "archive_members_match_staged_files": true,
+    "extracted_archive_build": "passed",
+    "archive_layout_text_matches_manuscript": true,
+    "archive_bibliography_matches_manuscript": true,
+    "bibliography_entries": 13,
+    "logs": {
+      "manuscript-build.log.gz": {
+        "sha256": "2066317622aa7061a9807de17fd2de14735f3a10ca948c20e001ebb71ac123ae",
+        "warnings_found": []
+      },
+      "bibliography-build.log.gz": {
+        "sha256": "cbba70a018eadeec2b104a6fb3c8f449fcc02fd8604287cce1c33b31d3c295a8",
+        "warnings_found": []
+      },
+      "package-build.log.gz": {
+        "sha256": "45130e3ff08287c5cdcd5f5fb9d63ef1db3938e53d25099d01bdcec4f5d42692",
+        "warnings_found": []
+      }
+    }
+  },
+  "scope": {
+    "base_commit": "cbcd59ca1b9382bdcd0de8c648e4a351495ccf81",
+    "registered_proof_source": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+    "lean_source_changed": false,
+    "new_lean_or_kernel_replay": false,
+    "new_palomar_intake": false,
+    "arxiv_upload": false,
+    "windows_downloads_delivery": "unavailable; not performed"
+  }
+}

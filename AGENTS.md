@@ -26,8 +26,8 @@ other checkouts, including FailureOfComposition and Categorical_Rice_Shapiro.
 Read `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md`,
 `docs/CODEX_NEXT_SESSION.txt`, `docs/MANUSCRIPT_STATEMENTS.md`,
 `docs/MANUSCRIPT_COVERAGE.md`, and
-`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v12, dated October 31, 2026;
-v4–v11 remain preserved. V8
+`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v13, dated October 31, 2026;
+v4–v12 remain preserved. V8
 updated the formalization status/date/source citation. V9 adds the author-requested
 Codex disclosure, author-responsibility sentence and verified Palomar citation,
 and updates the date. MSC 2020 Primary 03G30; Secondary 03F07, 18A32 is preserved.
@@ -50,6 +50,13 @@ removes empty qualifiers and progress narration. V12 incorporates the completed
 line-by-line hostile/writing review and primary-source comparisons. It preserves
 v11, all theorem statements, displayed equations, typed diagrams and the exact
 supplied Palomar BibTeX. See docs/MANUSCRIPT_V12_REPORT.md.
+V13 repeats the full mathematical/prose review and broadens the literature
+search. It corrects the omitted negation-free hypothesis in the Lemma 6
+comparison, adds the CCC and proof-net references and the zero-identity
+distributive antecedents, and expands the existing symmetric-fold deduction.
+The previous v12 review missed that citation qualification. The manuscript's
+own signed-literal isolation and registered proof are unchanged. See
+docs/MANUSCRIPT_V13_REPORT.md and its three review records.
 The author requests that manuscript prose avoid empty qualifiers, unexplained
 terms and process updates. Keep mathematically meaningful qualifications, such
 as structural induction, with their objects stated; keep process reports outside
@@ -211,7 +218,7 @@ The author registered the actual delivered review personally; the service and
 public entry confirm registration. Do not repeat intake or registration.
 
 Read docs/CODEX_NEXT_SESSION.txt, docs/PALOMAR_REGISTRATION_REPORT.md and
-docs/ARXIV_PREPARATION_REPORT.md. V12 and its four-file arXiv source package are
+docs/ARXIV_PREPARATION_REPORT.md. V13 and its four-file arXiv source package are
 prepared and locally compiled; every earlier release is preserved. No arXiv upload has occurred. Keep mathematical
 proof development closed, retain all previous manuscripts and the stash, and
 reuse verification. Do not change the immutable registered source or its frozen

@@ -1,12 +1,14 @@
 # Coverage and next proof obligations
 
-Current manuscript: v12, dated October 31, 2026. It incorporates v11 and the
-line-by-line hostile/writing review, with primary-source checks of the literature
-comparisons. The seven theorem statements, twelve numbered displays, ten diagrams,
-thirty labels, Appendix C and supplied Palomar BibTeX are unchanged from v11.
-Notation and prose are made explicit; all earlier releases remain preserved.
-See [v12 report](MANUSCRIPT_V12_REPORT.md). The dated formalization checkpoints
-below retain their original scope; no new Lean verification is claimed.
+Current manuscript: v13, dated October 31, 2026. A second complete review
+corrects the negation-free hypothesis in the introductory Lemma 6 comparison,
+adds close literature antecedents and prints the intermediate equations of the
+existing symmetric-fold proof. The seven theorem statements, twelve numbered
+displays, ten diagrams, thirty labels, Appendices B/C and supplied Palomar BibTeX
+are unchanged from v12. All earlier releases remain preserved.
+See [v13 report](MANUSCRIPT_V13_REPORT.md) and its statement, literature and
+hostile reviews. The dated formalization checkpoints below retain their original
+scope; no new Lean source change or verification is claimed.
 
 ## Current complete full-paper formalization (29 October 2026)
 

@@ -9,9 +9,12 @@ V11 incorporates those corrections and the supplied Palomar BibTeX; empty
 qualifiers and progress narration are revised, and terminology is explained.
 All mathematical statements, displayed equations, ten diagrams and labels match
 v10. V12 adds explicit notation and equations for these same claims after a full prose
-and source review. The correspondences below apply to v12; see
-MANUSCRIPT_V12_REPORT.md and reviews/V12_HOSTILE_REVIEW_2026-10-31.md.
-No new Lean theorem or verification is claimed.
+and source review. V13 adds the second complete review, corrects the scope of
+the introductory Lemma 6 citation, adds literature comparisons and spells out
+the existing symmetric-fold deduction. The correspondences below apply to v13;
+see MANUSCRIPT_V13_REPORT.md and the three V13 review reports. No numbered
+statement, diagram, Lean theorem or registered input changes. No new Lean
+verification is claimed.
 Earlier
 coverage/statement maps and reports remain as dated checkpoints. “Complete” here
 means local pinned Lean proof/source closure; it does not mean independent replay,
@@ -64,7 +67,8 @@ Comparator, official/service verification, public release or publication.
 | Corollary 5.3 / full-source model semantics | PresentationSemantics.Model; evaluate_derives/evaluateHom/evaluationFunctor/canonicalInterpretation; Source.model | Every actual primitive/equation and model law instantiated in intended category; native target bicartesian/zero laws explicit. |
 | Corollary 5.3 / full interpretations and uniform agreement | Interpretation.precompose/object_evaluation/raw_evaluation/hom_evaluation; Agreement.fragment_closed/congruence/closed/iff_valuations | Complete interpretation family; full closure proved through independent fragment dichotomy, never assumed for one kernel. |
 | Corollary 5.3 conclusion | PresentationSemantics.model_corollary/model_corollary_interpretations | Nonempty source P chooses p; constant valuation and native pairing equate arbitrary target arrows. No surjectivity or arrow existence assumed. |
-| §6 alternative fold/mix formulas and symmetry | Presentation.tensor_prodMap/fold_source_mix/fold_manuscript/mix_parameter_independent/fold_parameter_independent/fold_symmetric; original ContextualCollapse proof | Exact displayed copair(id,id);mix identification and projection-pair symmetry, original coherence only. |
+| §6 alternative fold/mix formulas and symmetry | Presentation.tensor_prodMap/fold_source_mix/fold_manuscript/mix_parameter_independent/fold_parameter_independent/fold_symmetric | Exact displayed copair(id,id);mix identification and projection-pair symmetry, original coherence only. |
+| §6 expanded symmetric-fold deduction in v13 | ContextualCollapse.second_block/injected_projections/terminal_injection/terminal_retraction/terminal_hom/other_injection/fold_top/equal_projections/total | Existing source proves jh≡jπ₂, equality of injected projections, j≡ι₂!, terminal A∨top, h≡π₁, equal projections and arbitrary-pair collapse. These intermediate deductions are now printed; no new theorem or source change. |
 
 ## Appendix A: every construction, example and diagram
 

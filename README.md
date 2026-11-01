@@ -8,13 +8,16 @@ commit below. The [registration report](docs/PALOMAR_REGISTRATION_REPORT.md)
 records the public readback; a separate [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
 records the analytics injection in two served render pages.
 
-The arXiv package is ready in [submission/arxiv-v12](submission/arxiv-v12/README.md).
-V12 retains the ChatGPT and Codex disclosure and MSC 2020 Primary 03G30;
+The arXiv package is ready in [submission/arxiv-v13](submission/arxiv-v13/README.md).
+V13 retains the ChatGPT and Codex disclosure and MSC 2020 Primary 03G30;
 Secondary 03F07, 18A32, and cites the registered proof. No arXiv submission has
-been made. V12 incorporates the line-by-line prose review and checked literature comparisons.
-The [line review](docs/reviews/V10_LINE_REVIEW_2026-10-31.md) and
-[hostile review](docs/reviews/V12_HOSTILE_REVIEW_2026-10-31.md) record the findings.
-Theorem statements, proof routes, diagrams, the supplied BibTeX and all earlier releases are preserved.
+been made. A second complete review corrects the scope of a cited lemma, adds
+close antecedents and gives the intermediate equations in the alternative
+collapse proof. See the [statement and line review](docs/reviews/V13_STATEMENT_REVIEW_2026-10-31.md),
+[literature review](docs/reviews/V13_LITERATURE_REVIEW_2026-10-31.md), and
+[hostile review](docs/reviews/V13_HOSTILE_REVIEW_2026-10-31.md).
+Theorem statements, proof routes, diagrams, the supplied BibTeX and all earlier
+releases are preserved. No defect in the formal proof was established.
 
 The verified package was merged into main through `23ec1bc`. It selects five statements
 in `DosenPetric.Palomar`: both
@@ -46,8 +49,8 @@ publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
-Current manuscript: [v12 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v12.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v12.tex), dated October 31, 2026. All v4–v11 releases remain preserved.
-The [v12 report](docs/MANUSCRIPT_V12_REPORT.md) records the prose and literature
+Current manuscript: [v13 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v13.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v13.tex), dated October 31, 2026. All v4–v12 releases remain preserved.
+The [v13 report](docs/MANUSCRIPT_V13_REPORT.md) records the prose and literature
 corrections, successful manuscript/package builds, PDF inspection and preservation. Every manuscript revision must
 increment the version number; the rule is recorded in AGENTS.md.
 

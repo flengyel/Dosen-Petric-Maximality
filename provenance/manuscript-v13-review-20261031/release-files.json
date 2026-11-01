@@ -1,0 +1,265 @@
+{
+  "base_commit": "cbcd59ca1b9382bdcd0de8c648e4a351495ccf81",
+  "note": "Explicit v13 write set. This manifest and publication-check.json are additional self-describing provenance files and are not included in their own hash list. All other Git blobs must be preserved.",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 14706,
+      "sha256": "f77f2d4b1eb19469eef78dc052a4c866e19f8f74a81b29be7676ea591fa2f858",
+      "git_blob_sha": "825e445492661305f59c15a6af990254c906a51c",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 55012,
+      "sha256": "f43df6e70f1e50ddbdebd965841807f73cdb397d835906ddc1afffeb706fef7a",
+      "git_blob_sha": "26e9b2179b3c15858025281d0880e0dec1bf35df",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "docs/ARXIV_PREPARATION_REPORT.md",
+      "bytes": 3140,
+      "sha256": "b8e2dba26919f569724d3f3dbded1990ade34450864c1498b658a1408856f3ca",
+      "git_blob_sha": "c738ca33c28ab4b8fad13e9a7c80b7c532f277a2",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "docs/CODEX_NEXT_SESSION.txt",
+      "bytes": 3925,
+      "sha256": "156b349e36a582ff52b211ebba0de7486621484ad859b57a7764a2513c2c2e58",
+      "git_blob_sha": "9833d6ef8906a960d080b9d0921bbb4f75126aec",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md",
+      "bytes": 17383,
+      "sha256": "f7f1971fc6d12e7d4a2ab40cdbd01ec35c9d154fa6ec18eb1f5d3454e2aaa928",
+      "git_blob_sha": "477cb34d706a8a6070d8ba0c3cc2213f4cbb2c26",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "docs/MANUSCRIPT_CORRECTIONS.md",
+      "bytes": 56316,
+      "sha256": "5ab9c46d9834ea3ea1bb9263f7015c7d3e2f54bfbd9326c8cc76a1f9772eba3a",
+      "git_blob_sha": "9dc5789f2e51ae7e1d3a6227381f7338c219d631",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "docs/MANUSCRIPT_COVERAGE.md",
+      "bytes": 82525,
+      "sha256": "32f981516ac61668b8b782005777a2cfcf80a4e2401c22a124521d0437868257",
+      "git_blob_sha": "46446060425096b3c5399de182e29e82a18a98f7",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "docs/MANUSCRIPT_STATEMENTS.md",
+      "bytes": 97017,
+      "sha256": "88c4eb7ff808ae43c6d5a2e4ac919f17ef226a9a74b8fb3523c9e3dfc85c8406",
+      "git_blob_sha": "d8ca591f31148a6e1e1149e5325433deab317c46",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "docs/MANUSCRIPT_V13_REPORT.md",
+      "bytes": 5197,
+      "sha256": "29feaefe1f919c2513335abc294444786d64423b87119cc1415d8544e710157d",
+      "git_blob_sha": "ce7ef10a031621eac9a4a242c1b6cc8b23a1a76e",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "docs/PALOMAR_REGISTRATION_STATUS.md",
+      "bytes": 3304,
+      "sha256": "cf0a8e77980b54c8577c83ea3d918ffde916bc06fe8e5a48d214244bc6493ee7",
+      "git_blob_sha": "870b9da97f3cf58c0bab6f29417af312c618ee30",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "docs/history/ARXIV_PREPARATION_V12_2026-10-31.md",
+      "bytes": 2826,
+      "sha256": "8e108c5937c01f6ddc040851ead16c8814379f3c4a889b1a7c29a3866408766a",
+      "git_blob_sha": "0a1600aeafe2013868869f5ae0c12fdc75cc0430",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "docs/reviews/V13_HOSTILE_REVIEW_2026-10-31.md",
+      "bytes": 10645,
+      "sha256": "151f7293805e884f76fb1b245e57ab4b06cfb7bcbd3bbdb788134a7bf2c59973",
+      "git_blob_sha": "d31da7213803bf428e9d19e510a1f5cbf6c12e6b",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "docs/reviews/V13_LITERATURE_REVIEW_2026-10-31.md",
+      "bytes": 12571,
+      "sha256": "066380b6c762601e09b75b56ad90123b666daa6e7e16615dadaccef09c4e98a4",
+      "git_blob_sha": "6ee0d5ae32fbd5db888f474b945c1bdeb28c1c40",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "docs/reviews/V13_STATEMENT_REVIEW_2026-10-31.md",
+      "bytes": 30238,
+      "sha256": "5337ef90e6910fe09942b95ad748ebfc6caa755a6ce9d9f4e634856e38718ad2",
+      "git_blob_sha": "3d7120a0ebda09c58066f7ed8aac976b5a4b6c4f",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v13.bbl",
+      "bytes": 5262,
+      "sha256": "61694dceb3cda90f688204fca445a8ddc071fe240f30b0401a1f2472d66e6c17",
+      "git_blob_sha": "00e1fe3b159c5814c76d70c0cc67df228097dd24",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v13.pdf",
+      "bytes": 445030,
+      "sha256": "796c9991f49feff13a11d94759de3e72fe5ac86454927092dd0fcbee52f26b3d",
+      "git_blob_sha": "a5cd0920fe01453440e1122b287907751cbdd028",
+      "encoding": "base64"
+    },
+    {
+      "path": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v13.tex",
+      "bytes": 40876,
+      "sha256": "5428452560eeecd55be2315f50fbf46556469af364931d2cc802ee888b4aade1",
+      "git_blob_sha": "89076e43d7fb3e88db91a2145ba74124f8929297",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "manuscript/SHA256SUMS",
+      "bytes": 2277,
+      "sha256": "f2123ed72dc780304392c1b6492ed93e9da287f28ea7445120644a2f5bc619ad",
+      "git_blob_sha": "28e6c6150c39b69aa5925db2f3eb26bc32a5b07d",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "manuscript/palomar_v13.bib",
+      "bytes": 298,
+      "sha256": "342ef3c6b1c30ca913c887fca03f5007659c8de7f1c07be76e627cc3edb19650",
+      "git_blob_sha": "0ea1a5f6d334fb6c58dcf5231ec2762dab426010",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "manuscript/references_v13.bib",
+      "bytes": 4615,
+      "sha256": "d2e9e5e8ef6e68fc8ae6018341d7b3ec801e35e97990715e28fd4fc80389060d",
+      "git_blob_sha": "21d4cdcec6450a38ed06f475b72fd2f11180eb74",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "provenance/manuscript-v13-review-20261031/bibliography-build.log.gz",
+      "bytes": 591,
+      "sha256": "cbba70a018eadeec2b104a6fb3c8f449fcc02fd8604287cce1c33b31d3c295a8",
+      "git_blob_sha": "0d340896387dc50147b81bfe41c2e275f2c64f83",
+      "encoding": "base64"
+    },
+    {
+      "path": "provenance/manuscript-v13-review-20261031/editorial-decisions.json",
+      "bytes": 10737,
+      "sha256": "e24de1b4687e10f44b82e0a8ee939b4b9e22c8da8d7ec5bf20ca4a83921d1070",
+      "git_blob_sha": "93ef246bb27148af018c748947596d0c6e1e1022",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "provenance/manuscript-v13-review-20261031/lean-source-inspection.json",
+      "bytes": 1208,
+      "sha256": "a5bc2213b2e81937c459d766bcc8612a61d2902fabac6d24b7656654d928d03e",
+      "git_blob_sha": "01490dfa3bc237f56cbf15f70830851429a0d39b",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "provenance/manuscript-v13-review-20261031/manuscript-build.log.gz",
+      "bytes": 8586,
+      "sha256": "2066317622aa7061a9807de17fd2de14735f3a10ca948c20e001ebb71ac123ae",
+      "git_blob_sha": "9d4ba24217ffd36d470028476d3e5f81f8745f01",
+      "encoding": "base64"
+    },
+    {
+      "path": "provenance/manuscript-v13-review-20261031/package-build.log.gz",
+      "bytes": 8515,
+      "sha256": "45130e3ff08287c5cdcd5f5fb9d63ef1db3938e53d25099d01bdcec4f5d42692",
+      "git_blob_sha": "893d23a5f8f269d597da81adafce859f6293536c",
+      "encoding": "base64"
+    },
+    {
+      "path": "provenance/manuscript-v13-review-20261031/primary-sources.json",
+      "bytes": 5669,
+      "sha256": "4e892f1d392f53cd3f22f2989f7ade44798fb5713a98d2722942b363d950421c",
+      "git_blob_sha": "ca87ccb40b6e14e47ddbd734692c505b9532ae7c",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "provenance/manuscript-v13-review-20261031/v12-to-v13.diff",
+      "bytes": 9146,
+      "sha256": "35242feabcaf782c241df14ef4d45df0180d1f4a41b007a20125306bdbf626a0",
+      "git_blob_sha": "2b79636b0ce50a094c16726ae92fe5c099a2a867",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "provenance/manuscript-v13-review-20261031/validation.json",
+      "bytes": 2637,
+      "sha256": "3d1ccb9079cb42cffeba4a7a31cf879a12c436fc3b7ddbb756b2f8ef2f938e4f",
+      "git_blob_sha": "67024d8c98d7ad73254183f879968d41a462ff78",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "submission/arxiv-v13/Dosen-Petric-Maximality-v13-arxiv-source.tar.gz",
+      "bytes": 16183,
+      "sha256": "c23c53e8cb58a5a99d88838c41c0909d6bd3e0b25b804f87037906d32be76217",
+      "git_blob_sha": "6bde21fe07160a91e5557f166ba1e3ffb9bf32fd",
+      "encoding": "base64"
+    },
+    {
+      "path": "submission/arxiv-v13/README.md",
+      "bytes": 1559,
+      "sha256": "183ef931b625550572930b3d7f956d6f4de714eb979657349b644c3ba3441d3d",
+      "git_blob_sha": "61e2b5c8a49f46173d82b96947559255cff61c73",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "submission/arxiv-v13/abstract.txt",
+      "bytes": 866,
+      "sha256": "9f1138a731350f761683ebc60cd6cbcf6eb2aa76ea0e36ae8a83b16096f1e0b4",
+      "git_blob_sha": "19946936a3b65aa09e3d8ccdb34c2ffb537fb508",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "submission/arxiv-v13/comments.txt",
+      "bytes": 104,
+      "sha256": "63d17bf1dc5bd451d78da5b4ee9d3c6e58e1914338975fbdb28a5df606bbcca0",
+      "git_blob_sha": "2ec925db1da097b70cc735c837f8d2361a94ead7",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "submission/arxiv-v13/main.bbl",
+      "bytes": 5262,
+      "sha256": "61694dceb3cda90f688204fca445a8ddc071fe240f30b0401a1f2472d66e6c17",
+      "git_blob_sha": "00e1fe3b159c5814c76d70c0cc67df228097dd24",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "submission/arxiv-v13/main.tex",
+      "bytes": 40876,
+      "sha256": "5428452560eeecd55be2315f50fbf46556469af364931d2cc802ee888b4aade1",
+      "git_blob_sha": "89076e43d7fb3e88db91a2145ba74124f8929297",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "submission/arxiv-v13/palomar_v13.bib",
+      "bytes": 298,
+      "sha256": "342ef3c6b1c30ca913c887fca03f5007659c8de7f1c07be76e627cc3edb19650",
+      "git_blob_sha": "0ea1a5f6d334fb6c58dcf5231ec2762dab426010",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "submission/arxiv-v13/references_v13.bib",
+      "bytes": 4615,
+      "sha256": "d2e9e5e8ef6e68fc8ae6018341d7b3ec801e35e97990715e28fd4fc80389060d",
+      "git_blob_sha": "21d4cdcec6450a38ed06f475b72fd2f11180eb74",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "submission/arxiv-v13/submission-fields.json",
+      "bytes": 3469,
+      "sha256": "b0260bc856ab0a14d1b59f09823e3f37bb3da5d4dff6219e01974e3adc87efa7",
+      "git_blob_sha": "0e92c446defc9483986e9f0a4677d3c2a7ad5e7a",
+      "encoding": "utf-8"
+    }
+  ]
+}

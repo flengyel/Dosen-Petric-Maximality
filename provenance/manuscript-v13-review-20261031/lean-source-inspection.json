@@ -1,0 +1,38 @@
+{
+  "base_commit": "cbcd59ca1b9382bdcd0de8c648e4a351495ccf81",
+  "inspection": "Source correspondence only; no fresh Lean or kernel replay.",
+  "files": [
+    {
+      "path": "DosenPetric/Collapse.lean",
+      "git_blob_sha": "306038fc9d994635204a35b5a10597cd07be596a"
+    },
+    {
+      "path": "DosenPetric/Substitution.lean",
+      "git_blob_sha": "904d8fa8f6b5fa623f6289121ea77c23ca833f2c"
+    },
+    {
+      "path": "DosenPetric/PresentationSymmetricFold.lean",
+      "git_blob_sha": "529c3a0b48f4855b98d1496e4395297ba516ff78"
+    },
+    {
+      "path": "DosenPetric/PresentationMaximality.lean",
+      "git_blob_sha": "862caec9fb02bed83751a9c6c098f50f9e74d409"
+    },
+    {
+      "path": "DosenPetric/PresentationShortMaximality.lean",
+      "git_blob_sha": "bd04e6e09392094d7db441c23103b670e3956e49"
+    },
+    {
+      "path": "DosenPetric/PresentationFragmentMaximality.lean",
+      "git_blob_sha": "876d9582ba566e370c38265f622a9bb7cf4aeba3"
+    },
+    {
+      "path": "DosenPetric/SemanticModelCorollary.lean",
+      "git_blob_sha": "e533581ddc4affd64323f1894ba2c7de7a5b89b5"
+    },
+    {
+      "path": "comparator.json",
+      "git_blob_sha": "3cb8c021a020f34a40a113deb9c52c506b7b4783"
+    }
+  ]
+}
