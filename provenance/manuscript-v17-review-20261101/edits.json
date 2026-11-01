@@ -1,0 +1,42 @@
+[
+  {
+    "label": "Sign preservation: name the generator families",
+    "old": "Induction on arrow terms proves this assertion. The structural\ngenerators preserve the two labels, the double-negation and\nDe Morgan maps preserve the resulting signs, and the zero,\n",
+    "new": "Induction on arrow terms proves this assertion. Identities,\nassociativity and symmetry maps, projections and injections,\ndiagonals and codiagonals, mix, dissociativity and unit maps\npreserve the variable and its sign. The double-negation and\nDe Morgan maps preserve the resulting signs, and the zero,\n"
+  },
+  {
+    "label": "Substitution: specify the generators and their tagged relations",
+    "old": "Induction on the arrow term proves the relation formula. Structural\ngenerators give their corresponding graphs on blocks; zero,\n$\\eta$ and $\\epsilon$ give empty relations. The two binary\n",
+    "new": "Induction on the arrow term proves the relation formula.\nIdentities, associativity and symmetry maps, projections and\ninjections, diagonals and codiagonals, mix, dissociativity and\nunit maps act on the inserted blocks by the same tagged relations.\nThe double-negation and De Morgan maps give their occurrence\nbijections on these blocks; zero, $\\eta$ and $\\epsilon$ give\nempty relations. The two binary\n"
+  },
+  {
+    "label": "Formula induction: state its object directly",
+    "old": "clauses agree, so structural induction on the formula proves commutativity.",
+    "new": "clauses agree, so induction on the formula proves commutativity."
+  },
+  {
+    "label": "Reduced presentation: name the maps sharing notation",
+    "old": "notation for its structural arrows. Write $G$ also for its occurrence\n",
+    "new": "notation for its products, coproducts, units, associativity and\nsymmetry maps, mix and dissociativity. Write $G$ also for its occurrence\n"
+  },
+  {
+    "label": "Split maps: state the operations and constituent maps",
+    "old": "Appendix~\\ref{app:explicit-inverses} defines these maps by\nstructural arrow terms. Their two equations follow from the\n",
+    "new": "Appendix~\\ref{app:explicit-inverses} defines these maps by\ncomposites, products and coproducts of identities, associativity,\nsymmetry and dissociativity maps, diagonals and codiagonals.\nTheir two equations follow from the\n"
+  },
+  {
+    "label": "Appendix E: name the isomorphisms whose inverses are constructed",
+    "old": "\\section{Inverses of the two structural isomorphisms}",
+    "new": "\\section{Inverses of \\texorpdfstring{$q_A$ and $e_A$}{qA and eA}}"
+  },
+  {
+    "label": "The u_A path: one display line",
+    "old": "\\begin{aligned}\n A&\\xrightarrow{\\langle1_A,!_A\\rangle}A\\wedge\\top\\\\\n  &\\xrightarrow{1_A\\wedge\\iota_2^{\\bot,\\top}}\n       A\\wedge(\\bot\\vee\\top)\n   \\xrightarrow{d_{A,\\bot,\\top}}S_A,\n\\end{aligned}",
+    "new": " A\\xrightarrow{\\langle1_A,!_A\\rangle}A\\wedge\\top\n  \\xrightarrow{1_A\\wedge\\iota_2^{\\bot,\\top}}A\\wedge(\\bot\\vee\\top)\n  \\xrightarrow{d_{A,\\bot,\\top}}S_A,"
+  },
+  {
+    "label": "Split identities: name the equations used",
+    "old": "These calculations use only structural arrows and their equations,\nso the same expressions and identities hold in $\\mathcal R(P)$.",
+    "new": "These calculations use only the product, coproduct, associativity,\nsymmetry, dissociativity and mix equations, so the same expressions\nand identities hold in $\\mathcal R(P)$."
+  }
+]

@@ -26,8 +26,8 @@ other checkouts, including FailureOfComposition and Categorical_Rice_Shapiro.
 Read `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md`,
 `docs/CODEX_NEXT_SESSION.txt`, `docs/MANUSCRIPT_STATEMENTS.md`,
 `docs/MANUSCRIPT_COVERAGE.md`, and
-`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v16, dated November 1, 2026;
-v4–v15 remain preserved. V8
+`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v17, dated November 1, 2026;
+v4–v16 remain preserved. V8
 updated the formalization status/date/source citation. V9 adds the author-requested
 Codex disclosure, author-responsibility sentence and verified Palomar citation,
 and updates the date. MSC 2020 Primary 03G30; Secondary 03F07, 18A32 is preserved.
@@ -81,9 +81,17 @@ the cited version-1 source. Appendix D.5 explains coherence; Appendix E gives
 the q/e inverses and split comparisons. The 23-page source/package builds
 match, all v15 text is preserved apart from suffixes, and both frozen sources
 remain. See docs/MANUSCRIPT_V16_REPORT.md and its two review records.
+V17 puts the u_A path on one line and names Appendix E's two isomorphisms:
+q_A and e_A. At the author's request, replace the adjective “structural” by
+the specific maps, equations or construction meant. The seven visible uses
+are replaced throughout; write “induction on the formula” when that is the
+argument. Preserve unprinted reference keys and immutable Lean identifiers.
+The author confirmed that Appendix A is required and must remain, with its
+main-text references and exact tagged-occurrence/ordinal correspondence.
+See docs/MANUSCRIPT_V17_REPORT.md and its focused writing review.
 The author requests that manuscript prose avoid empty qualifiers, unexplained
 terms and process updates. Keep mathematically meaningful qualifications, such
-as structural induction, with their objects stated; keep process reports outside
+as induction on a specified formula or arrow term; keep process reports outside
 the manuscript. Follow Došen and Petrić's direct manner of exposition: define
 the objects, state the equations and hypotheses, and give the deductions.
 Replace vague English by a mathematical assertion or delete it. Apply corrections
@@ -104,7 +112,7 @@ named source statements, transfer from Reduced through recovery, and further
 mathematical deductions. DNF/CNF expansions are retracts, not distributivity
 isomorphisms. The union theorem is named in Reduced, not Presentation.
 The accepted additions are resolved in docs/MANUSCRIPT_CORRECTIONS.md and mapped
-in docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md. Any further text revision must be v17
+in docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md. Any further text revision must be v18
 or later. Preserve the fixed source links and explain their mathematical role.
 The audit does not reopen the completed mathematical contract or frozen inputs.
 
@@ -280,7 +288,7 @@ full preflight and service verification passed. Do not repeat intake,
 registration or successful verification. The publication monitor has completed.
 
 Read docs/CODEX_NEXT_SESSION.txt, docs/PALOMAR_V2_REGISTRATION_REPORT.md and
-docs/ARXIV_PREPARATION_REPORT.md. V16 and its four-file arXiv source package are
+docs/ARXIV_PREPARATION_REPORT.md. V17 and its four-file arXiv source package are
 prepared and locally compiled; every earlier release is preserved. No arXiv upload has occurred. Keep mathematical
 proof development closed, retain all previous manuscripts and the stash, and
 reuse verification. Do not change the immutable registered source or its frozen
@@ -290,7 +298,7 @@ Version-2 public evidence hashes, all 13 served render files, the rendered openi
 and statement correspondence, and the native source tag were verified. The
 version-1 diagnostic about two served HTML pages with added Cloudflare analytics
 remains historical evidence about version 1; retain it. No version-2 served-render
-mismatch was found. The v16 manuscript and supplied BibTeX continue to cite
+mismatch was found. The v17 manuscript and supplied BibTeX continue to cite
 version 1; do not revise a manuscript or package solely to refresh registration.
 
 Credentials, private API responses, the original author-facing review and consent

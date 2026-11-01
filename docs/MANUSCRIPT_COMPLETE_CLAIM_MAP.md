@@ -15,7 +15,7 @@ the existing symmetric-fold deduction. V14, dated November 1, 2026, uses the
 hostile and mathematical-writing plugins for the complete preprint. It gives
 explicit arrow/functor types, uses literal and occurrence map, follows the
 source's dissociativity terminology and displays the calculations through v_A
-and w_A. The correspondences below apply also to v15 and v16; see MANUSCRIPT_V14_REPORT.md
+and w_A. The correspondences below apply also to v15, v16 and v17; see MANUSCRIPT_V14_REPORT.md
 and its two review reports. Literal signs, theorem hypotheses and conclusions,
 all numbered displays, diagrams, labels, Lean theorems and registered inputs
 are preserved. The literal synonym and lemma captions change; no new Lean
@@ -43,6 +43,24 @@ in the reverse audit; this revision does not claim a new all-proof-body audit,
 Lean build or kernel replay. The full library is not asserted to be printed
 in the paper. See [v16 report](MANUSCRIPT_V16_REPORT.md).
 
+## V17 terminology and layout (1 November 2026)
+
+V17 makes eight author-requested prose/layout edits: the u_A path occupies
+one line; Appendix E is titled “Inverses of q_A and e_A”; the other uses of
+“structural” name their generator or equation families, or say “induction on
+the formula”. Cross-reference keys and Lean names remain fixed. The substitution
+proof refers to tagged relations, accommodating diagonals and projections.
+The seven statement bodies, twelve numbered displays, thirteen diagrams,
+34 labels and all 49 declaration URLs are unchanged. The correspondences and
+page anchors below remain valid. No proof source, selected type or frozen
+input changes. See [v17 report](MANUSCRIPT_V17_REPORT.md).
+
+The author confirmed retention of Appendix A and its main-text connections.
+Section 3 refers to A.1–A.2; Proposition 4.2 points to A.3. The finite-ordinal
+calculation supplies the exact correspondence with the source's substitution
+operation, in addition to the block substitution used in the maximality proof.
+This confirmation does not reduce the full-paper mathematical contract.
+
 ## Three milestones and full-paper endpoint
 
 | Milestone | Actual result | Status |
@@ -57,7 +75,7 @@ in the paper. See [v16 report](MANUSCRIPT_V16_REPORT.md).
 | Manuscript anchor / mathematical assertion | Exact declaration correspondence | Scope |
 | --- | --- | --- |
 | §2 formulas and actual generated category | Formula; Presentation.Term/Equation/Derives/termSetoid/Hom/category | Complete primitive grammar and published generating equations; quotient equality is generated equality. |
-| §2 products, coproducts, units, dissociativity | Presentation.operations, conjDiagonal/disjDiagonal, source structural laws | Native beta/eta and uniqueness equations, all endpoints explicit. |
+| §2 products, coproducts, units, dissociativity | Presentation.operations, conjDiagonal/disjDiagonal, source product, coproduct, unit, associativity, symmetry and dissociativity laws | Native beta/eta and uniqueness equations, all endpoints explicit. |
 | Eq. (1), first injection | Presentation.Laws.dist_inl; ManuscriptDiagrams.first_triangle | Exact actual source identity. |
 | §2 contravariant negation and natural comparisons | Presentation.negate and its contravariant functor; PresentationNegationNaturality.lean; doubleNegationNaturalIso | Derived raw representative, actual involution/DN/De Morgan naturality; Reduced coordinate/recovery bridge proved. |
 | Eq. (2), zero identity | Presentation.zeroConstruction/zeroConstruction_eq/zeroConstruction_structural; ManuscriptDiagrams.zero_diagram/zero_primitive | Exact five-arrow path and equality to primitive zero. |
@@ -177,7 +195,7 @@ proofs; these rows identify their source locations.
 | R5, Section 4 p.7 | ContextualCollapse.context_retract | i:A→B,r:B→A,ri=1_A; K_B modulo the same congruence implies K_A. No two-sided inverse is needed. |
 | R6, Section 3 pp.4–5 | Presentation.occurrence_signedLabel; Reduced.Term.dual_relation; Presentation.occurrence_negate | Arbitrary formula sign preservation and exact converse relation at original occurrence positions. |
 | R7, D.5 pp.18–19 | Reduced.union_pre/union_post/union_comm/union_assoc/union_idem/union_id_zero | Source-equation derivations, used before faithfulness; separate from Section 6's consequence of coherence. |
-| R7, D.5 p.19 and E.3 pp.21–22 | Reduced.Gentzen.DistributiveEpi.section_comparison; Reduced.Gentzen.DistributiveMono.comparison_retraction; Reduced.Gentzen.Rules.sourceConj; Reduced.Term.mixedDisj | Explicit s,t terms; c-wedge s=id and t c-vee=id by structural equations and component calculations. No reliance on the quotient dual functor. |
+| R7, D.5 p.19 and E.3 pp.21–22 | Reduced.Gentzen.DistributiveEpi.section_comparison; Reduced.Gentzen.DistributiveMono.comparison_retraction; Reduced.Gentzen.Rules.sourceConj; Reduced.Term.mixedDisj | Explicit s,t terms; c-wedge s=id and t c-vee=id by the product, coproduct, associativity, symmetry, dissociativity and mix equations and component calculations. No reliance on the quotient dual functor. |
 | R7, D.5 p.19 | Reduced.Gentzen.dnf_expansion/cnf_expansion | i:A→D_A,r:D_A→A,ri=id and the corresponding C_A retract. Not distributivity isomorphisms. |
 | R7, D.5 p.19 | Reduced.Gentzen.G.mix_normal_form; Reduced.Gentzen.HasPureNormalForm.faithful; Reduced.Gentzen.pure_positive_coherence/represented_coherence/positive_coherence | Positive means no eta/epsilon constructors; pure paths are projection/injection composites; finite unions and one-sided recovery give equality. |
 | R7, D.5 p.20 | Reduced.commonAtomicFactor/faithful_of_positive_coherence; Reduced.boolean_coherence; Presentation.coherence | Common A',B',u,v,f_0,g_0 and injective occurrence embeddings with direct-image relation equations; positive equality→Reduced equality→original source equality. |

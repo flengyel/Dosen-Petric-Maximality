@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-01",
+  "manuscript_version": 17,
+  "skill": "mathematical-writing:revise-mathematical-prose 0.1.3",
+  "governing_source": {
+    "title": "Knuth, Larrabee and Roberts, Mathematical Writing",
+    "url": "https://www-cs-faculty.stanford.edu/~knuth/papers/cs1193.pdf",
+    "consulted_scope": "Section 1, especially points 10–17 and 26, in the retained retypeset text. The source identities and official/retypeset distinction remain in the v14 source-review record.",
+    "identity_record": "provenance/manuscript-v14-review-20261101/source-review-record.json"
+  },
+  "review_scope": "Search the complete source for the adjective; read the eight replacements in context; retain earlier paragraph classifications through an exact inverse text comparison. Inspect the rendered PDF. This is not a new whole-library mathematical audit.",
+  "prior_paragraph_function_record": "provenance/manuscript-v16-review-20261101/paragraph-functions.json",
+  "replacement_functions": [
+    {
+      "label": "Sign preservation: name the generator families",
+      "function": "prove preservation of variable and sign by specifying generator cases"
+    },
+    {
+      "label": "Substitution: specify the generators and their tagged relations",
+      "function": "prove the substituted relation equation by specifying constructor cases"
+    },
+    {
+      "label": "Formula induction: state its object directly",
+      "function": "prove commutativity of the renaming/substitution square by induction on the formula"
+    },
+    {
+      "label": "Reduced presentation: name the maps sharing notation",
+      "function": "define the notation used for the reduced presentation"
+    },
+    {
+      "label": "Split maps: state the operations and constituent maps",
+      "function": "explain construction of the section/retraction and identify the equations proving their laws"
+    },
+    {
+      "label": "Appendix E: name the isomorphisms whose inverses are constructed",
+      "function": "identify the appendix construction by its two named arrows"
+    },
+    {
+      "label": "The u_A path: one display line",
+      "function": "define the same typed three-arrow path with more compact layout"
+    },
+    {
+      "label": "Split identities: name the equations used",
+      "function": "justify the splitting equations in the reduced presentation by their stated source laws"
+    }
+  ],
+  "author_instruction_recorded_for_future_prose": true,
+  "Appendix_A_author_confirmation": "Required content; retain main-text references, examples, diagrams and the exact tagged-occurrence/finite-ordinal substitution correspondence.",
+  "prose_process_narration_added_to_manuscript": false,
+  "new_hostile_review": false,
+  "new_Lean_or_Palomar_check": false,
+  "reviews_are_author_side_AI_assisted": true
+}

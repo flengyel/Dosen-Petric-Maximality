@@ -1,5 +1,39 @@
 # Manuscript corrections and source errata
 
+## Specific map names and the u_A display: v17 (1 November 2026)
+
+The author requested one display line for u_A on p.20 and replacement of the
+weasel adjective “structural” by specific mathematical names throughout.
+V17 preserves v16 and implements eight edits:
+
+- The u_A path uses one line at the existing font size, with all three arrows,
+  labels and four objects preserved.
+- Appendix E is titled “Inverses of q_A and e_A”, naming the particular arrows
+  whose inverses are constructed there.
+- The sign and substitution proofs in Section 3 name their generator families.
+  The substitution proof says “tagged relations”, covering the relations of
+  diagonals and projections without treating them as total functions.
+- Appendix A.3 says “induction on the formula”. D.5 names the operations and
+  maps sharing notation and the constituent maps in its split comparisons.
+- E.3 names the product, coproduct, associativity, symmetry, dissociativity and
+  mix equations used in the calculation.
+
+There is no visible occurrence of “structural” in the revised source or PDF
+text. Unprinted label/reference keys and immutable Lean names are preserved.
+Use the specific family or operation in future prose; the author's instruction
+is not a request to rename Lean declarations or rewrite historical reports.
+
+The author also confirmed that Appendix A is required in the paper. Retain
+its main-text references, all constructions and examples, diagrams and exact
+tagged-occurrence/finite-ordinal correspondence. Section 3 cites A.1–A.2 and
+Proposition 4.2 cites A.3. No removal or reduction of that content is authorized.
+
+Undoing the eight recorded edits and version suffixes recovers v16 exactly.
+All seven statement bodies, twelve numbered displays, thirteen diagrams,
+34 labels and 49 declaration links remain. Both builds give matching 23-page
+text without final warnings. Prior releases, both registered sources and
+the stash remain. See MANUSCRIPT_V17_REPORT.md and its focused writing review.
+
 ## Accepted reverse-audit additions: v16 (1 November 2026)
 
 The author accepted all seven proposed additions and requested footnotes or
@@ -21,8 +55,9 @@ V16 implements that instruction. V15 and all earlier releases are preserved.
 
 The proof-order check distinguishes Section 6's use of faithfulness from the
 source-equation derivations needed before positive coherence in D.5. The
-split comparisons in E.3 use structural terms directly, not the quotient
-dual functor whose equality proof depends on coherence. Only one inverse
+split comparisons in E.3 use composites, products and coproducts of the
+listed diagonals, codiagonals, associativity, symmetry and dissociativity maps,
+not the quotient dual functor whose equality proof depends on coherence. Only one inverse
 equation is asserted for each normal-form expansion.
 
 Removing the thirteen additions and restoring suffixes recovers v15 exactly.

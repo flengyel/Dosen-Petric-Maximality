@@ -1,0 +1,124 @@
+{
+  "input_commit": "7a5d1cf43aaf1cd5d7497fd5c75034839dedb030",
+  "manuscript_version": 17,
+  "date": "2026-11-01",
+  "targeted_edits": 8,
+  "inverse_text_check": "Undoing the eight recorded edits and restoring version/bibliography suffixes recovers v16 byte for byte.",
+  "numbered_statements": {
+    "count": 7,
+    "unchanged": true
+  },
+  "numbered_displays": {
+    "count": 12,
+    "unchanged": true
+  },
+  "diagrams": {
+    "count": 13,
+    "unchanged": true
+  },
+  "labels": {
+    "count": 34,
+    "unchanged": true
+  },
+  "source_links": {
+    "distinct_declarations": 49,
+    "all_exact_URIs_preserved_in_PDF": true,
+    "source_commit": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+    "declaration_record_reused": "provenance/manuscript-v16-review-20261101/linked-declarations.json",
+    "footnotes": 17
+  },
+  "release": {
+    "pages": 23,
+    "archive_members": [
+      "main.tex",
+      "main.bbl",
+      "references_v17.bib",
+      "palomar_v17.bib"
+    ],
+    "all_builds_passed": true,
+    "final_warnings": [],
+    "extracted_archive_layout_text_matches": true,
+    "source_sha256": "c31e4cc32fe6e24d89de00a3e6daeddcfcdf295b33ff76ac15d1ad644369d2f5",
+    "pdf_sha256": "a0704c47f5123c85fd29408192dff92e9b0c7de016be2c3050cd509d86200a28",
+    "archive_sha256": "856ea6b7a787665666638297aae72747ad8c757722b0e1474bad894a78a139f9",
+    "bibliography_entries": 13,
+    "bibliographies_and_bbl_byte_identical_to_v16": true
+  },
+  "preservation": {
+    "prior_release_files": 111,
+    "all_prior_release_bytes_unchanged": true,
+    "registered_proof_and_inputs_preserved": true,
+    "registered_files_compared": 857,
+    "stash_preserved": true,
+    "previous_preparation_report_preserved_byte_for_byte": true
+  },
+  "terminology": {
+    "visible_structural_occurrences_in_source": 0,
+    "structural_occurrences_in_PDF_text": 0,
+    "unprinted_cross_reference_keys_preserved": true
+  },
+  "scope": {
+    "new_Lean_build_or_kernel_replay": false,
+    "new_Palomar_submission_or_registration": false,
+    "arxiv_upload": false
+  },
+  "u_A_path": {
+    "page": 20,
+    "one_line_in_rendered_PDF": true,
+    "no_font_size_change_or_scaling": true,
+    "mathematical_tokens_identical_after_removing_alignment_markup": true
+  },
+  "visual_inspection": {
+    "render_command": [
+      "pdftoppm",
+      "-scale-to",
+      "1200",
+      "-png",
+      "Maximality_of_the_Dosen_Petric_Boolean_Category_v17.pdf",
+      "page"
+    ],
+    "render_exit_code": 0,
+    "contact_sheets_viewed": 6,
+    "pages_viewed_on_contact_sheets": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "pages_additionally_viewed_individually": [
+      20
+    ],
+    "observations": "One-line u_A path fits without scaling; no clipped or overlapping text/diagrams on contact sheets; all 23 pages retained.",
+    "render_files_in_ignored_staging": true
+  },
+  "documentation": {
+    "active_files_updated": 9,
+    "new_reports": [
+      "docs/MANUSCRIPT_V17_REPORT.md",
+      "docs/reviews/V17_WRITING_REVIEW_2026-11-01.md"
+    ],
+    "checked_relative_links": 295,
+    "receipt_links_completed_at_delivery": "provenance/manuscript-v17-review-20261101/delivery-receipt.json",
+    "historical_preparation_report_links_preserved_as_original_bytes": true,
+    "Appendix_A_retention_recorded": true
+  }
+}

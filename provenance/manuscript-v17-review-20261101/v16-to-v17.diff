@@ -1,0 +1,126 @@
+--- v16.tex
++++ v17.tex
+@@ -6,7 +6,7 @@
+ \usepackage{array}
+ \usepackage[numbers]{natbib}
+ \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+-\hypersetup{pdftitle={Maximality of the Dosen--Petric Boolean Category (v16)},pdfauthor={Florian Lengyel}}
++\hypersetup{pdftitle={Maximality of the Dosen--Petric Boolean Category (v17)},pdfauthor={Florian Lengyel}}
+ \renewcommand{\theHequation}{\thesection.\arabic{equation}}
+ \newtheorem{theorem}{Theorem}[section]
+ \newtheorem{lemma}[theorem]{Lemma}
+@@ -18,7 +18,7 @@
+ \newcommand{\FormulaSet}{\operatorname{Form}}
+ \title{Maximality of the Do\v{s}en--Petri\'c Boolean Category}
+ \author{Florian Lengyel\thanks{Email: \href{mailto:flengyel@gradcenter.cuny.edu}{\texttt{flengyel@gradcenter.cuny.edu}}}}
+-\date{November 1, 2026\quad(v16)}
++\date{November 1, 2026\quad(v17)}
+ \begin{document}
+ \maketitle
+ 
+@@ -300,8 +300,10 @@
+  \lambda_A(x)=\lambda_C(y),\qquad
+  \operatorname{sgn}_A(x)=\operatorname{sgn}_C(y).
+ \]
+-Induction on arrow terms proves this assertion. The structural
+-generators preserve the two labels, the double-negation and
++Induction on arrow terms proves this assertion. Identities,
++associativity and symmetry maps, projections and injections,
++diagonals and codiagonals, mix, dissociativity and unit maps
++preserve the variable and its sign. The double-negation and
+ De Morgan maps preserve the resulting signs, and the zero,
+ $\eta$ and $\epsilon$ maps have empty relations. Composition and
+ the two binary operations preserve the assertion.\footnote{\raggedright Lean:
+@@ -449,9 +451,13 @@
+  D_{A,\sigma}\arrow[r,"{R_{f,\sigma}}"']&D_{C,\sigma}.
+ \end{tikzcd}
+ \]
+-Induction on the arrow term proves the relation formula. Structural
+-generators give their corresponding graphs on blocks; zero,
+-$\eta$ and $\epsilon$ give empty relations. The two binary
++Induction on the arrow term proves the relation formula.
++Identities, associativity and symmetry maps, projections and
++injections, diagonals and codiagonals, mix, dissociativity and
++unit maps act on the inserted blocks by the same tagged relations.
++The double-negation and De Morgan maps give their occurrence
++bijections on these blocks; zero, $\eta$ and $\epsilon$ give
++empty relations. The two binary
+ operations retain the tags. For composition, an intermediate old
+ occurrence supplies an intermediate block, and preservation of
+ variable labels identifies its inner occurrence on both sides.
+@@ -1083,7 +1089,7 @@
+ \end{tikzcd}
+ \end{equation}
+ At $p_i$, both routes give $\sigma(p_i)$. The constant and connective
+-clauses agree, so structural induction on the formula proves commutativity.
++clauses agree, so induction on the formula proves commutativity.
+ Renaming changes the labels on the occurrences. Thus the same variable
+ of $Q$ may occur in several inserted patterns while the pairs $(r,t)$
+ distinguish its occurrences.
+@@ -1469,7 +1475,8 @@
+ 
+ Let $\mathcal R(P)$ denote the presentation on negation normal
+ forms described in Section~\ref{sec:occurrences}. We use the same
+-notation for its structural arrows. Write $G$ also for its occurrence
++notation for its products, coproducts, units, associativity and
++symmetry maps, mix and dissociativity. Write $G$ also for its occurrence
+ interpretation; inclusion into $\B(P)$ preserves each tagged
+ relation. A term of $\mathcal R(P)$
+ is \emph{positive} if it contains no $\eta_p$ or $\epsilon_p$
+@@ -1510,7 +1517,9 @@
+  t_{U,V,X}\circ c^\vee_{U,V,X}=1_{(U\wedge V)\vee X}.
+ \]
+ Appendix~\ref{app:explicit-inverses} defines these maps by
+-structural arrow terms. Their two equations follow from the
++composites, products and coproducts of identities, associativity,
++symmetry and dissociativity maps, diagonals and codiagonals.
++Their two equations follow from the
+ product, coproduct, dissociativity and mix equations.\footnote{\raggedright Lean:
+ \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenDistributiveEpi.lean\#L57}{\texttt{Reduced.Gentzen.DistributiveEpi.\allowbreak{}section\_comparison}}
+ and
+@@ -1594,7 +1603,7 @@
+ \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedCoherence.lean\#L17}{\texttt{Reduced.\allowbreak{}boolean\_coherence}} and
+ \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationCoherence.lean\#L13}{\texttt{Presentation.\allowbreak{}coherence}}.}
+ 
+-\section{Inverses of the two structural isomorphisms}
++\section{Inverses of \texorpdfstring{$q_A$ and $e_A$}{qA and eA}}
+ \label{app:explicit-inverses}
+ 
+ We construct inverses for the particular arrows in
+@@ -1612,12 +1621,9 @@
+ Put $S_A=(A\wedge\bot)\vee\top$. Define $u_A:A\to S_A$ by
+ the path
+ \[
+-\begin{aligned}
+- A&\xrightarrow{\langle1_A,!_A\rangle}A\wedge\top\\
+-  &\xrightarrow{1_A\wedge\iota_2^{\bot,\top}}
+-       A\wedge(\bot\vee\top)
+-   \xrightarrow{d_{A,\bot,\top}}S_A,
+-\end{aligned}
++ A\xrightarrow{\langle1_A,!_A\rangle}A\wedge\top
++  \xrightarrow{1_A\wedge\iota_2^{\bot,\top}}A\wedge(\bot\vee\top)
++  \xrightarrow{d_{A,\bot,\top}}S_A,
+ \]
+ and put
+ \[
+@@ -1728,8 +1734,9 @@
+ For the first projection in the first line and the second injection
+ in the second line, the calculation uses
+ $[1_Z,1_Z]\circ m_{Z,Z}\circ\Delta_Z=1_Z$.
+-These calculations use only structural arrows and their equations,
+-so the same expressions and identities hold in $\mathcal R(P)$.
++These calculations use only the product, coproduct, associativity,
++symmetry, dissociativity and mix equations, so the same expressions
++and identities hold in $\mathcal R(P)$.
+ 
+ \section*{Use of AI tools}
+ OpenAI's ChatGPT assisted with the development of the proof, preparation
+@@ -1743,7 +1750,7 @@
+ \small
+ \setlength{\bibsep}{2pt}
+ \bibliographystyle{unsrtnat}
+-\bibliography{references_v16,palomar_v16}
++\bibliography{references_v17,palomar_v17}
+ \endgroup
+ \end{document}
+ 

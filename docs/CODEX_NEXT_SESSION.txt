@@ -1,5 +1,5 @@
 Current phase (1 November 2026): Palomar version 2 is registered and verified;
-arXiv v16 preparation is complete. No arXiv upload has occurred.
+arXiv v17 preparation is complete. No arXiv upload has occurred.
 
 The author subsequently requested pushing v14. Its three commits through
 9e46cdca7f2fe2f59983ecf324e08a80ad09c81a were pushed to remote main and the
@@ -35,7 +35,8 @@ concern implementation candidates; no new source erratum or main-theorem
 error was established. The author accepted all seven and requested source
 footnotes and an explanation for mathematicians unfamiliar with proof assistants.
 V16 incorporates them and uses the formal proof to improve the paper. V15 is
-preserved; any further revision must be v17 or later. Keep the exact registered
+preserved; v17 implements the later terminology/layout corrections. Any further
+revision must be v18 or later. Keep the exact registered
 inputs and reuse passed checks.
 Evidence is under provenance/reverse-manuscript-audit-20261101/; reports are
 delivered from committed bytes to
@@ -47,7 +48,7 @@ Immutable version-2 source: 5dbee39bea09539bd130f729e82636419f71f920.
 Submission: txdu0y3got1o. Repository: flengyel/Dosen-Petric-Maximality;
 root comparator.json and formalization.yaml; Lean 4.35.0.
 Version 1 and source 2e771844077fd8cebfbe365230f13d4dd13a75b1 remain available.
-The v16 manuscript and supplied BibTeX continue to cite version 1. Preserve them.
+The v17 manuscript and supplied BibTeX continue to cite version 1. Preserve them.
 
 After receiving the exact review, digest and publication explanation, the author
 explicitly authorized registration. The digest-bound request was accepted;
@@ -69,52 +70,46 @@ Retain the version-1 Cloudflare diagnostic as historical evidence for version 1.
 The preceding version-1 continuation is preserved in
 history/CODEX_NEXT_SESSION_V1_20261101.txt. Keep both immutable source snapshots.
 
-Current manuscript: v16, dated November 1, 2026; 23 pages. V15 and every earlier
-source/PDF/package are preserved. The seven accepted additions are the full
-substituted relation, concrete q/e inverses, union algebra, substitution action,
-retract transport, signs/converse and the coherence construction. D.2, pp.16–17,
-explains Lean types, proofs, binders and commands, reads the exact selected
-maximality statement and follows the short proof's mathematical implications.
-D.3 retains the five declarations and D.4 the term/arrow correspondence; D.5
-explains coherence and E.1–E.3 gives inverse and split-comparison terms.
-The 17 footnotes and proof table link to 49 distinct declarations at the cited
-version-1 source. Verify declaration paths/lines in linked-declarations.json.
-These are source references, not 49 separately registered selections.
+Current manuscript: v17, dated November 1, 2026; 23 pages. V16 and every earlier
+source/PDF/package are preserved. Eight edits put the u_A path on one line,
+title Appendix E “Inverses of q_A and e_A” and replace all seven visible uses
+of “structural” by specific maps, equations or induction on the formula.
+Keep that author preference in future prose. Internal reference keys and
+immutable Lean names are preserved. The substitution proof uses tagged relations.
 
-Read MANUSCRIPT_V16_REPORT.md and reviews/V16_HOSTILE_REVIEW_2026-11-01.md and
-reviews/V16_WRITING_REVIEW_2026-11-01.md. The active complete claim map has exact
-R1–R7 and reading-guide rows. Corrections record acceptance and resolution;
-the older reverse-audit report describes its historical proposal stage.
-No missing Lean proof or new source erratum was established. In particular,
-Reduced union transfers to B(P); no Presentation.union name is invented.
-DNF/CNF expansions are retracts. D.5 uses union equations proved from source
-laws before faithfulness; E.3 constructs both split maps directly rather than
-using a derived quotient dual functor that depends on coherence.
+The author confirmed that Appendix A is required. Retain its main-text
+references in Section 3 and Proposition 4.2, its examples and diagrams, and
+the exact tagged-occurrence/finite-ordinal substitution correspondence.
+V16's seven mathematical additions, D.2 reading guide and proof table, D.5
+coherence account and E inverse/split-comparison constructions remain.
+All seven statement bodies, twelve numbered displays, thirteen diagrams,
+34 labels, 17 footnotes and 49 declaration links are preserved. The supplied
+bibliography and authorized disclosure remain byte-identical.
 
-Removing the thirteen recorded additions and restoring suffixes recovers v15
-byte for byte. All seven statement bodies, twelve numbered displays, eleven
-prior diagrams and 31 labels remain; the totals are thirteen diagrams and 34
-labels. Appendices A–C, both proof routes, both bibliographies and authorized
-AI disclosure are preserved. All 97 preceding release files and 857 registered
-proof/input blob identities remain unchanged, as does the retained stash.
+Read MANUSCRIPT_V17_REPORT.md and reviews/V17_WRITING_REVIEW_2026-11-01.md.
+The broader v16 hostile/writing reviews and reverse audit remain historical
+evidence at their stated scope. No new mathematical milestone, proof-body
+audit or Lean/kernel/Palomar verification is claimed. The complete claim
+map records the terminology edit and Appendix A retention; prior typed
+R1–R7 correspondences and page anchors remain valid.
 
 Upload package:
-submission/arxiv-v16/Dosen-Petric-Maximality-v16-arxiv-source.tar.gz:
-main.tex, main.bbl, references_v16.bib and palomar_v16.bib.
+submission/arxiv-v17/Dosen-Petric-Maximality-v17-arxiv-source.tar.gz:
+main.tex, main.bbl, references_v17.bib and palomar_v17.bib.
 The manuscript and independently extracted archive compile to matching
 23-page layout text with thirteen bibliography entries and no final warning.
-All 23 pages were inspected on contact sheets; pages 6, 16, 17 and 19–22 were
-also viewed individually. All 49 declaration URLs occur as PDF annotations.
-Exact exits, hashes, source comparison and review limits are under
-provenance/manuscript-v16-review-20261101/. No Lean/kernel/Palomar check was
-repeated. The previous preparation report is preserved as
-history/ARXIV_PREPARATION_V15_2026-11-01.md.
+All 23 pages were inspected on contact sheets; p.20 was additionally viewed
+individually to verify the one-line path. All 49 source URLs occur in PDF links.
+Exact exits, hashes, edits and preservation checks are under
+provenance/manuscript-v17-review-20261101/. All 111 previous release files,
+857 registered proof/input blobs and the stash are preserved. The preceding
+preparation report is retained at history/ARXIV_PREPARATION_V16_2026-11-01.md.
 
 Deliver reports and release files from committed bytes to
-/mnt/c/Users/fleng/Downloads/Dosen-Petric-Manuscript-v16-20261101/.
-Use the delivery receipt for exact filenames and byte/SHA-256 verification.
-Push completed main and the receipt commit; verify the remote ref and a clean
-tree before reporting readiness. Do not leave a local-only release.
+/mnt/c/Users/fleng/Downloads/Dosen-Petric-Manuscript-v17-20261101/.
+Use the delivery receipt for exact paths and byte/SHA-256 verification.
+Push completed main and its receipt commit, verify the remote ref and clean
+tree, then report readiness. Do not leave a local-only release.
 
 No arXiv upload or new license selection has occurred. The author selects the
 arXiv-supported license and checks the server preview in the submission account.

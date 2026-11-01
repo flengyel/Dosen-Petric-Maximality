@@ -12,21 +12,25 @@ and its [registration report](docs/PALOMAR_REGISTRATION_REPORT.md) remain preser
 The earlier [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
 describes version 1.
 
-The arXiv package is ready in [submission/arxiv-v16](submission/arxiv-v16/README.md).
-V16 incorporates the seven accepted additions from the Lean-to-paper audit:
-the full substituted occurrence relation, q/e inverse terms, union algebra,
-substitution action laws, retract transport, signs and negation, and the
-coherence construction. Appendix D.2 explains Lean declarations and follows
-the short proof in mathematical steps for readers unfamiliar with proof
-assistants. Appendix E gives the inverse and split-comparison terms.
-Seventeen footnotes and the proof table link to 49 distinct declarations in
-the cited immutable version-1 source. The Lean development supplies explicit
-constructions and equations for the written exposition.
-The [hostile review](docs/reviews/V16_HOSTILE_REVIEW_2026-11-01.md),
-[writing review](docs/reviews/V16_WRITING_REVIEW_2026-11-01.md) and
-[release report](docs/MANUSCRIPT_V16_REPORT.md) record the checks and limits.
-Both proof routes, Appendices A–C, the supplied citation, MSC codes, disclosure
-and every earlier release remain. No arXiv upload has occurred.
+The arXiv package is ready in [submission/arxiv-v17](submission/arxiv-v17/README.md).
+V17 puts the u_A path on one line, titles Appendix E “Inverses of q_A and e_A”
+and replaces “structural” throughout the prose by the specific map or equation
+families. All seven mathematical statements, twelve numbered displays, thirteen
+diagrams, 34 labels and 49 declaration links remain. The author confirmed that
+Appendix A and its main-text connections are required content.
+See the [release report](docs/MANUSCRIPT_V17_REPORT.md) and
+[focused writing review](docs/reviews/V17_WRITING_REVIEW_2026-11-01.md).
+
+V16's seven additions from the Lean proof remain: substituted occurrence
+relations, q/e inverse terms, union, substitution action, retract transport,
+signs and negation, and coherence. Appendix D.2 explains Lean declarations and
+the short proof for mathematicians unfamiliar with proof assistants; D.5 and E
+give the coherence construction, inverses and split-comparison maps. The
+[v16 report](docs/MANUSCRIPT_V16_REPORT.md),
+[hostile review](docs/reviews/V16_HOSTILE_REVIEW_2026-11-01.md) and
+[writing review](docs/reviews/V16_WRITING_REVIEW_2026-11-01.md) retain that broader
+review's scope. Both proof routes, all appendices, the supplied citation,
+MSC codes, disclosure and every previous release remain. No arXiv upload has occurred.
 
 The [reverse audit](docs/FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md)
 inventories all 850 production modules and distinguishes named theorems,
@@ -65,10 +69,9 @@ publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
-Current manuscript: [v16 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v16.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v16.tex), dated November 1, 2026, 23 pages. All v4–v15 releases remain preserved.
-The [v16 report](docs/MANUSCRIPT_V16_REPORT.md) records the seven additions,
-reader's guide, source correspondence, matching manuscript/package builds,
-PDF inspection and preservation.
+Current manuscript: [v17 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v17.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v17.tex), dated November 1, 2026, 23 pages. All v4–v16 releases remain preserved.
+The [v17 report](docs/MANUSCRIPT_V17_REPORT.md) records the eight prose/layout
+edits, matching manuscript/package builds, PDF inspection and preservation.
 Every manuscript revision increments its version; completed authorized main
 work is pushed before readiness is reported, as recorded in AGENTS.md.
 

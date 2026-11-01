@@ -1,28 +1,30 @@
 # Manuscript v7: statements and formal scope
 
-Current manuscript: v16, dated November 1, 2026, 23 pages. It incorporates
-the seven accepted Lean-to-paper additions: full substituted relation, explicit
-q/e inverses, union, substitution action, retract transport, signs and negation,
-and the coherence construction. Appendix D.2 explains Lean notation and follows
-the short maximality proof in mathematical steps. Appendix D.5 and E give
-coherence and structural terms. The 17 footnotes and proof table link to 49
-distinct declarations at the cited immutable version-1 source.
-All seven v15 statement bodies, twelve numbered displays, eleven prior diagrams
-and 31 prior labels remain. The totals are thirteen diagrams and 34 labels.
-Both proof routes, Appendices A–C, previous releases, the supplied Palomar
-BibTeX and authorized disclosure are preserved. No Lean source or registered
-input changes; passed proof/kernel/Palomar checks are reused.
-See [v16 report](MANUSCRIPT_V16_REPORT.md),
-[hostile review](reviews/V16_HOSTILE_REVIEW_2026-11-01.md) and
-[writing review](reviews/V16_WRITING_REVIEW_2026-11-01.md).
+Current manuscript: v17, dated November 1, 2026, 23 pages. It puts the u_A
+path on one line and titles Appendix E “Inverses of q_A and e_A”. At the
+author's request, seven uses of “structural” are replaced by specific maps,
+equations or induction on the formula. Unprinted reference keys remain.
+The author confirmed that Appendix A and its main-text references are required.
+
+V16's seven additions and reader's guide remain. Appendix D.2 explains Lean
+notation and the short proof; D.5 and E give the coherence construction,
+inverses and split-comparison maps. The 17 footnotes and proof table retain
+all 49 declaration links at the cited immutable version-1 source. All seven
+statement bodies, twelve numbered displays, thirteen diagrams and 34 labels
+are unchanged. Both proof routes, previous releases, supplied bibliography
+and authorized disclosure remain. No Lean source or registered input changes.
+See [v17 report](MANUSCRIPT_V17_REPORT.md) and
+[focused writing review](reviews/V17_WRITING_REVIEW_2026-11-01.md).
+The [v16 hostile review](reviews/V16_HOSTILE_REVIEW_2026-11-01.md) retains its
+broader mathematical scope; it is not represented as newly repeated.
 The dated formalization checkpoints below retain their historical scope.
 
 The [reverse content audit](FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md)
-motivated these accepted additions. The purpose is to help mathematicians
-translate between the paper and Lean and to use the formal proof to improve
+motivated the seven additions. Their purpose is to help mathematicians
+translate between the paper and Lean and use the formal proof to improve
 the exposition. Union laws are named in Reduced and transferred to B(P);
 normal-form expansions are retracts. The active complete claim map records
-the new locations. This is not a new proof or verification milestone.
+the locations. Passed proof/kernel/Palomar verification is reused.
 
 ## Current complete full-paper formalization (29 October 2026)
 
