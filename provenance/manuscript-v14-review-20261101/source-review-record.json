@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-01",
+  "sources": [
+    {
+      "title": "Knuth–Larrabee–Roberts, Mathematical Writing, retained retypeset report",
+      "local_private_reference": "knuth-mathematical-writing-mit-9bf404c2.pdf",
+      "url": "https://www-cs-faculty.stanford.edu/~knuth/papers/cs1193.pdf",
+      "sha256": "9bf404c2c75633a1f39aae97af0b2e9335ce6d83cf386c84906654589b4e82e6",
+      "bytes": 555031,
+      "consulted_scope": "Section 1, printed pp.1–6 / PDF pp.3–8; Sections 4–5, printed pp.9–13 / PDF pp.11–15"
+    },
+    {
+      "title": "Došen–Petrić, Proof-Theoretical Coherence, September 2007",
+      "local_private_reference": "dosen-petric-coh-september-2007-e285235f.pdf",
+      "url": "https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf",
+      "sha256": "e285235f956214b115c4bea5e8b4a33546ea0ddad2507a0ed76fe333ed3ac16e",
+      "bytes": 1348430,
+      "consulted_scope": "Printed pp.46,215–216,234,294,317,321–322 / PDF pages each +12; no complete reproof of coherence."
+    }
+  ],
+  "official_Stanford_report_access": "Official PDF text consulted through the web tool; local retypeset source separately identified, not conflated with the scanned Stanford PDF.",
+  "LSFree_access": "Official author PDF returned HTTP 403 to the web tool; the proceedings paper Theorem 3.5.4 text was available in a mirrored primary-paper result. No new exhaustive audit or bibliography revision claimed.",
+  "literature_scope": "Unchanged v13 literature comparisons retain their documented review scope. This pass concentrates on terminology, definitions, typing and deductions.",
+  "Lean_source_inspected": [
+    "DosenPetric/Collapse.lean",
+    "DosenPetric/PresentationSymmetricFold.lean"
+  ],
+  "skills_used": [
+    "HostileRefereeGPT — Cat/Rec, instructions skill 0.13.1",
+    "mathematical-writing:revise-mathematical-prose 0.1.3"
+  ],
+  "reviews_are_author_side_AI_assisted": true
+}

@@ -1,14 +1,18 @@
 # Coverage and next proof obligations
 
-Current manuscript: v13, dated October 31, 2026. A second complete review
-corrects the negation-free hypothesis in the introductory Lemma 6 comparison,
-adds close literature antecedents and prints the intermediate equations of the
-existing symmetric-fold proof. The seven theorem statements, twelve numbered
-displays, ten diagrams, thirty labels, Appendices B/C and supplied Palomar BibTeX
-are unchanged from v12. All earlier releases remain preserved.
-See [v13 report](MANUSCRIPT_V13_REPORT.md) and its statement, literature and
-hostile reviews. The dated formalization checkpoints below retain their original
-scope; no new Lean source change or verification is claimed.
+Current manuscript: v14, dated November 1, 2026. The hostile and mathematical-
+writing reviews replace unnecessary names with equations and defined functions,
+use Došen–Petrić's dissociativity terminology, give explicit arrow types and
+expand both computations in the alternative projection-equality proof.
+All seven mathematical statements retain their hypotheses and conclusions;
+the literal synonym and lemma captions change. The twelve numbered displays,
+ten diagrams and thirty labels are byte-identical to v13. Earlier releases,
+both proof routes, all appendices and the supplied Palomar BibTeX are preserved.
+See [v14 report](MANUSCRIPT_V14_REPORT.md),
+[hostile review](reviews/V14_HOSTILE_REVIEW_2026-11-01.md) and
+[writing review](reviews/V14_WRITING_REVIEW_2026-11-01.md).
+The dated formalization checkpoints below retain their historical scope.
+No Lean source or registered input changes, and no proof replay is claimed.
 
 ## Current complete full-paper formalization (29 October 2026)
 

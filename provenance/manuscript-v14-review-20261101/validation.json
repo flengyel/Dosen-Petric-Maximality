@@ -1,0 +1,66 @@
+{
+  "labels": {
+    "count": 30,
+    "byte_identical_to_v13": true
+  },
+  "diagrams": {
+    "count": 10,
+    "byte_identical_to_v13": true
+  },
+  "numbered_displays": {
+    "count": 12,
+    "byte_identical_to_v13": true
+  },
+  "numbered_statements": {
+    "count": 7,
+    "unchanged_after_literal_synonym_and_lemma_caption_normalization": true
+  },
+  "bibliography_entries_and_supplied_palomar_entry": "byte-identical to v13",
+  "appendix_C_and_authorized_AI_disclosure": "byte-identical to v13",
+  "release": {
+    "pages": 14,
+    "archive_members": [
+      "main.tex",
+      "main.bbl",
+      "references_v14.bib",
+      "palomar_v14.bib"
+    ],
+    "archive_members_match_staged_files": true,
+    "extracted_archive_build": "passed",
+    "archive_layout_text_matches_manuscript": true,
+    "source_sha256": "a1b398409a7281f2330428d57a129122553f4230b315a0b79524ab80ec09340f",
+    "pdf_sha256": "5431d499bc14dd2547b9b8b1ac58fffd827e2108ae312ca0d4f5ce247a9e77f0",
+    "archive_sha256": "a13c3e035f0f1609341a1ad64eb47caab79a42b4891144c348ff0582763b555e",
+    "bibliography_entries": 13,
+    "final_logs_have_warnings": false,
+    "all_pages_rendered": true,
+    "visual_inspection": "All 14 final pages inspected on four contact sheets; expanded proof page 8 additionally viewed full-page.",
+    "visual_inspection_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "pdf_metadata_version": 14
+  },
+  "scope": {
+    "input_commit": "50d613e0eccea08f248d39b6ae1bc15c628514eb",
+    "registered_proof_sources_preserved": true,
+    "new_Lean_build_or_kernel_replay": false,
+    "new_Palomar_submission": false,
+    "arxiv_upload": false,
+    "previous_manuscript_and_package_files_byte_preserved": 69,
+    "stash_preserved": true,
+    "remote_push_performed": false
+  }
+}

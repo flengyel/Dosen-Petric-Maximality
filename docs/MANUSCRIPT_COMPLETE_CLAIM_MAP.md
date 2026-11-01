@@ -11,10 +11,16 @@ All mathematical statements, displayed equations, ten diagrams and labels match
 v10. V12 adds explicit notation and equations for these same claims after a full prose
 and source review. V13 adds the second complete review, corrects the scope of
 the introductory Lemma 6 citation, adds literature comparisons and spells out
-the existing symmetric-fold deduction. The correspondences below apply to v13;
-see MANUSCRIPT_V13_REPORT.md and the three V13 review reports. No numbered
-statement, diagram, Lean theorem or registered input changes. No new Lean
-verification is claimed.
+the existing symmetric-fold deduction. V14, dated November 1, 2026, uses the
+hostile and mathematical-writing plugins for the complete preprint. It gives
+explicit arrow/functor types, uses literal and occurrence map, follows the
+source's dissociativity terminology and displays the calculations through v_A
+and w_A. The correspondences below apply to v14; see MANUSCRIPT_V14_REPORT.md
+and its two review reports. Literal signs, theorem hypotheses and conclusions,
+all numbered displays, diagrams, labels, Lean theorems and registered inputs
+are preserved. The literal synonym and lemma captions change; no new Lean
+verification is claimed. Lean identifiers containing Profile or ContextualCollapse
+remain unchanged; they name the same functions and deductions.
 Earlier
 coverage/statement maps and reports remain as dated checkpoints. “Complete” here
 means local pinned Lean proof/source closure; it does not mean independent replay,
@@ -34,7 +40,7 @@ Comparator, official/service verification, public release or publication.
 | Manuscript anchor / mathematical assertion | Exact declaration correspondence | Scope |
 | --- | --- | --- |
 | §2 formulas and actual generated category | Formula; Presentation.Term/Equation/Derives/termSetoid/Hom/category | Complete primitive grammar and published generating equations; quotient equality is generated equality. |
-| §2 products, coproducts, units, distributor | Presentation.operations, conjDiagonal/disjDiagonal, source structural laws | Native beta/eta and uniqueness equations, all endpoints explicit. |
+| §2 products, coproducts, units, dissociativity | Presentation.operations, conjDiagonal/disjDiagonal, source structural laws | Native beta/eta and uniqueness equations, all endpoints explicit. |
 | Eq. (1), first injection | Presentation.Laws.dist_inl; ManuscriptDiagrams.first_triangle | Exact actual source identity. |
 | §2 contravariant negation and natural comparisons | Presentation.negate and its contravariant functor; PresentationNegationNaturality.lean; doubleNegationNaturalIso | Derived raw representative, actual involution/DN/De Morgan naturality; Reduced coordinate/recovery bridge proved. |
 | Eq. (2), zero identity | Presentation.zeroConstruction/zeroConstruction_eq/zeroConstruction_structural; ManuscriptDiagrams.zero_diagram/zero_primitive | Exact five-arrow path and equality to primitive zero. |
@@ -45,12 +51,12 @@ Comparator, official/service verification, public release or publication.
 | §3 tagged occurrence definitions and labels | Formula.Occ/label; repeated_positions_distinct | Repeated equal labels retain distinct Sum tags; constants empty, negation preserves positions. |
 | §3 finite left-to-right bijection | Formula.occurrenceCount/occurrenceIndex/occurrenceAt; occurrenceAt_index/occurrenceIndex_at; FiniteBlocks.oneBased/zeroBased and inverse laws | Explicit finite ordinal coordinates, including cardinality zero. |
 | §3 functor G into finite sets/relations | FiniteSet.relationCategory; Presentation.occurrenceFiniteSet/finiteOccurrenceFunctor | Every source object has explicit finite coordinate bijections; identities/composition proved. |
-| §3 G images of projections/injections/pair/copair/distributor/zero | Presentation.occurrence_fst/snd/inl/inr/pair/copair/dist/zero; original OccurrenceLaws | Exact tagged relations, rebracketing graph and empty zeros. |
+| §3 G images of projections/injections/pair/copair/dissociativity/zero | Presentation.occurrence_fst/snd/inl/inr/pair/copair/dist/zero; original OccurrenceLaws | Exact tagged relations, rebracketing graph and empty zeros. |
 | Theorem 3.1 Boolean Coherence | Gentzen.positive_coherence; Reduced.faithful/boolean_coherence; Presentation.coherence/finiteOccurrenceFunctor_faithful | Actual source coherence, not a supplied interface field. |
 | §3 nonthinness and nonzero literal identity | Presentation.nonthin; literal_identity_ne_zero/identity_ne_zero/identity_ne_primitive_zero | Distinct repeated-tag projections, both signed literals, primitive/constructed zero. |
 | §3 at most one global point and failure of cartesian closure | top_hom_subsingleton/fromTop_unique; ExponentialData.toGlobalPoint/fromGlobalPoint and both inverse laws; no_self_exponential/not_cartesian_closed | Exact printed p⇒p obstruction and hom/global-point bijection. |
 | §3 NNF isomorphism and occurrence graph | Presentation.normalization; NegationNormalization comparisons; PresentationNormalizationTerms.lean | Actual forward/backward representatives, inverse equations and original-position transport. |
-| §3 signed-literal preservation and equivalence of presentations | Presentation.occurrence_literal/occurrence_signedLabel; Reduced reduction/inclusion functors and recovery equations | Both signs and constants, raw and quotient bridges; no target-category coherence. |
+| §3 literal preservation and equivalence of presentations | Presentation.occurrence_literal/occurrence_signedLabel; Reduced reduction/inclusion functors and recovery equations | Both signs and constants, raw and quotient bridges; no target-category coherence. |
 | Eq. (4), substitution occurrence bijection | Formula.expand/contract; contract_expand/expand_contract | Actual dependent blocks, all formulas/substitutions, independent variable universes. |
 | Eq. (5), block square | Formula.InsertedOccurrences/blockLabel/block_square; contract_label/expand_label | Exact upper map (old tag,inner tag)↦(old variable,inner tag), and both projection routes. |
 | §3 whole-arrow substitution functor and operations | Term.subst; Equation.subst/Derives.subst; Presentation.substitutionFunctor; substitute_negate/negate_subst_derives; full operation/zero laws | All 31 primitive families, raw and quotient, actual source/target formulas. |
@@ -68,24 +74,24 @@ Comparator, official/service verification, public release or publication.
 | Corollary 5.3 / full interpretations and uniform agreement | Interpretation.precompose/object_evaluation/raw_evaluation/hom_evaluation; Agreement.fragment_closed/congruence/closed/iff_valuations | Complete interpretation family; full closure proved through independent fragment dichotomy, never assumed for one kernel. |
 | Corollary 5.3 conclusion | PresentationSemantics.model_corollary/model_corollary_interpretations | Nonempty source P chooses p; constant valuation and native pairing equate arbitrary target arrows. No surjectivity or arrow existence assumed. |
 | §6 alternative fold/mix formulas and symmetry | Presentation.tensor_prodMap/fold_source_mix/fold_manuscript/mix_parameter_independent/fold_parameter_independent/fold_symmetric | Exact displayed copair(id,id);mix identification and projection-pair symmetry, original coherence only. |
-| §6 expanded symmetric-fold deduction in v13 | ContextualCollapse.second_block/injected_projections/terminal_injection/terminal_retraction/terminal_hom/other_injection/fold_top/equal_projections/total | Existing source proves jh≡jπ₂, equality of injected projections, j≡ι₂!, terminal A∨top, h≡π₁, equal projections and arbitrary-pair collapse. These intermediate deductions are now printed; no new theorem or source change. |
+| §6 expanded projection-equality deduction in v14 | ContextualCollapse.second_block/injected_projections/terminal_injection/terminal_retraction/terminal_hom/other_injection/fold_top/equal_projections/total | Existing source proves jh≡jπ₂, equality of injected projections, j≡ι₂!, terminal A∨top, h≡π₁, equal projections and arbitrary-pair collapse. These intermediate deductions are now printed; no new theorem or source change. |
 
 ## Appendix A: every construction, example and diagram
 
 | Anchor | Exact declaration correspondence | Status |
 | --- | --- | --- |
-| Finite pattern profiles and zero cardinalities | Formula.profile/profile_index; ProfileComposition.Data | Arbitrary outer and inner functions; no assumed injectivity/nonempty blocks. |
+| Finite pattern occurrence maps and zero cardinalities | Formula.profile/profile_index; ProfileComposition.Data | Arbitrary outer and inner functions; no assumed injectivity/nonempty blocks. |
 | D,C and injections a_r,b_i | Data.Domain/Codomain/a/b/a_injective/b_injective/a_disjoint/b_disjoint | Dependent Sigma blocks retain repeated outer positions and disjoint local placeholders. |
 | Eq. (6), fibre square; unique gamma | Data.gamma/fibre_square/gamma_unique/gamma_fibre | Exact pointwise formula and uniqueness on every block. |
-| Eq. (7), profile square | Data.profile_square | Both routes send (r,t) to outer(r). |
+| Eq. (7), occurrence-map square | Data.profile_square | Both routes send (r,t) to outer(r). |
 | Tagged inserted N_i and Phi_0 | PatternProfiles.tag/insertion/data/taggedBlock | Actual renamed patterns over C, not merely abstract cardinalities. |
 | Actual chi bijection and Eq. (8) | taggedBlock_injective/surjective; chiInverse/chi; both inverse laws; unique_coordinates/occurrence_label_square | Every actual substituted occurrence has its unique old/local finite coordinates and the correct tagged label. |
-| Prefix sums and consecutive encoders | FiniteBlocks.total/prefixSum/encode/decode/encode_value; encode_decode/decode_encode; total_concat/prefix_concat_left/right | Actual left-to-right order, arbitrary zero lengths; explicit source/target encodings. |
+| Prefix sums and consecutive numbering | FiniteBlocks.total/prefixSum/encode/decode/encode_value; encode_decode/decode_encode; total_concat/prefix_concat_left/right | Actual left-to-right order, arbitrary zero lengths; explicit source/target encodings. |
 | Eq. (9), unique delta square | Data.delta/ordinal_square/delta_unique | Exact change of coordinates. |
 | Eq. (10), one-based formula | Data.coordinate_equation/coordinate_oneBased/book_locator/book_formula; FiniteBlocks.oneBased/zeroBased/locator_bounds/locator_unique/zero_block_has_no_position | Exact unique nonempty containing block and local x−s_(r−1), including intervening empty blocks. |
 | Actual finite-ordinal/book correspondence | Formula.substitution_count/substitution_index; PatternProfiles.composite_count/chiInverse_index/chiInverse_encoding/actual_ordinal_square/composite_profile | Block encoders agree with actual formula occurrence indices; no arbitrary finite bijection substituted for the printed order. |
-| Skeleton/profile equivalence and generalized composite | Formula.skeleton/decorate/skeletonProfile/fromSkeletonProfile/skeleton_profile_reconstruction/skeleton_profile_unique/skeleton_rename; generalized_composite_skeleton/flattened_profile/generalized_composite_reconstruction | Restores complete syntax, not only variable labels; identifies the actual generalized composite with skeleton plus delta. |
-| Worked profiles, sizes and eight outputs | PatternProfiles.Example.outer_profile/first_profile/second_profile/source_sizes/eight_positions | Actual M=q∧(p∨q), N1=a∧b, N2=d∧(c∨d); [4,3,4,1,2,4,3,4]. |
+| Skeleton/occurrence-map equivalence and generalized composite | Formula.skeleton/decorate/skeletonProfile/fromSkeletonProfile/skeleton_profile_reconstruction/skeleton_profile_unique/skeleton_rename; generalized_composite_skeleton/flattened_profile/generalized_composite_reconstruction | Restores complete syntax, not only variable labels; identifies the actual generalized composite with skeleton plus delta. |
+| Worked occurrence maps, sizes and eight outputs | PatternProfiles.Example.outer_profile/first_profile/second_profile/source_sizes/eight_positions | Actual M=q∧(p∨q), N1=a∧b, N2=d∧(c∨d); [4,3,4,1,2,4,3,4]. |
 | Worked position 2 | Example.source_position_two/gamma_position_two/target_encoding_three/delta_two | Source pair (1,2), target pair (2,1), theta_C=3 and delta(2)=3 in one-based notation. |
 | Eq. (11), shared-variable renaming | Formula.rename_substitution/renameOcc_injective/rename_label/rename_index_value/profile_renaming; PatternProfiles.renaming_square; Example.noninjective_renaming | Arbitrary common variable universe and noninjective rho; labels may coincide while positions remain distinct. |
 | Appendix A final positive/negative specializations | ManuscriptSubstitution.positive_context/negative_context; four block maps, exhaustiveness/contract laws; positive/negative single_context/all_contexts; double_negation_square | Both endpoints have one copy of Occ(A); exact A or neg neg A context before the actual retraction. |

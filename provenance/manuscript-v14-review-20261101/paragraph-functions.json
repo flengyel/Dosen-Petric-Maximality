@@ -1,0 +1,637 @@
+{
+  "source_sha256": "a1b398409a7281f2330428d57a129122553f4230b315a0b79524ab80ec09340f",
+  "complete_source_blocks": 90,
+  "reviewed": true,
+  "blocks": [
+    {
+      "start_line": 1,
+      "end_line": 22,
+      "section": "Front matter",
+      "function": "publication metadata and LaTeX definitions",
+      "opening": "\\documentclass[11pt]{article} \\usepackage[T1]{fontenc} \\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools} \\"
+    },
+    {
+      "start_line": 24,
+      "end_line": 42,
+      "section": "Front matter",
+      "function": "problem, main result and proof summary",
+      "opening": "\\begin{abstract} We prove that the zero-identity Boolean category of Do\\v{s}en and Petri\\'c freely generated b"
+    },
+    {
+      "start_line": 44,
+      "end_line": 46,
+      "section": "Front matter",
+      "function": "publication classification and keywords",
+      "opening": "\\medskip \\noindent\\textit{Mathematics Subject Classification (2020).} Primary 03G30; Secondary 03F07, 18A32."
+    },
+    {
+      "start_line": 48,
+      "end_line": 50,
+      "section": "Front matter",
+      "function": "publication classification and keywords",
+      "opening": "\\smallskip \\noindent\\textit{Keywords.} Boolean categories, maximality, categorial proof theory, coherence, sub"
+    },
+    {
+      "start_line": 52,
+      "end_line": 52,
+      "section": "Introduction",
+      "function": "section organization",
+      "opening": "\\section{Introduction}"
+    },
+    {
+      "start_line": 54,
+      "end_line": 61,
+      "section": "Introduction",
+      "function": "comparison or motivation",
+      "opening": "Do\\v{s}en and Petri\\'c conjecture that their freely generated zero-identity Boolean category is not maximal \\c"
+    },
+    {
+      "start_line": 63,
+      "end_line": 71,
+      "section": "Introduction",
+      "function": "comparison or motivation",
+      "opening": "By Boolean Coherence, distinct parallel arrows have different relations between occurrences of propositional v"
+    },
+    {
+      "start_line": 73,
+      "end_line": 81,
+      "section": "Introduction",
+      "function": "comparison or motivation",
+      "opening": "For cartesian categories, Do\\v{s}en and Petri\\'c prove maximality by using coherence, substitution and composi"
+    },
+    {
+      "start_line": 83,
+      "end_line": 95,
+      "section": "Introduction",
+      "function": "comparison or motivation",
+      "opening": "Do\\v{s}en and Petri\\'c prove maximality for lattice categories and relative maximality for dicartesian categor"
+    },
+    {
+      "start_line": 97,
+      "end_line": 99,
+      "section": "Introduction",
+      "function": "comparison or motivation",
+      "opening": "For multiplicative linear logic without constants, Do\\v{s}en and Petri\\'c prove coherence for proof-net catego"
+    },
+    {
+      "start_line": 101,
+      "end_line": 114,
+      "section": "Introduction",
+      "function": "comparison or motivation",
+      "opening": "Other definitions of Boolean category do not require conjunction and disjunction to be categorical products an"
+    },
+    {
+      "start_line": 116,
+      "end_line": 127,
+      "section": "Introduction",
+      "function": "comparison or motivation",
+      "opening": "We use the occurrence coordinates of \\cite[\\S9]{Notation}: occurrences in a compound formula form tagged disjo"
+    },
+    {
+      "start_line": 129,
+      "end_line": 129,
+      "section": "The Boolean proof category",
+      "function": "section organization",
+      "opening": "\\section{The Boolean proof category}\\label{sec:category}"
+    },
+    {
+      "start_line": 131,
+      "end_line": 138,
+      "section": "The Boolean proof category",
+      "function": "definition, equation or main theorem",
+      "opening": "Fix a nonempty set $P$ of propositional variables. Write $\\FormulaSet(P)$ for the formulas built from $P$, the"
+    },
+    {
+      "start_line": 140,
+      "end_line": 160,
+      "section": "The Boolean proof category",
+      "function": "definition, equation or main theorem",
+      "opening": "The connectives $\\wedge$ and $\\vee$ give binary products and coproducts; $\\top$ is terminal and $\\bot$ is init"
+    },
+    {
+      "start_line": 162,
+      "end_line": 173,
+      "section": "The Boolean proof category",
+      "function": "definition, equation or main theorem",
+      "opening": "The dissociativity arrow is \\[ d_{A,B,C}:A\\wedge(B\\vee C)\\longrightarrow(A\\wedge B)\\vee C. \\] Its first-inject"
+    },
+    {
+      "start_line": 175,
+      "end_line": 199,
+      "section": "The Boolean proof category",
+      "function": "definition, equation or main theorem",
+      "opening": "Negation is represented by a functor $\\neg:\\B^{\\mathrm{op}}\\to\\B$, sending $f:A\\to C$ to $\\neg f:\\neg C\\to\\neg"
+    },
+    {
+      "start_line": 201,
+      "end_line": 203,
+      "section": "The Boolean proof category",
+      "function": "reader navigation to the equations or proof",
+      "opening": "Appendix~\\ref{app:structural-diagrams} displays equations~\\eqref{eq:first-injection}--\\eqref{eq:zero-law} as c"
+    },
+    {
+      "start_line": 205,
+      "end_line": 211,
+      "section": "The Boolean proof category",
+      "function": "definition, equation or main theorem",
+      "opening": "Whenever $\\B(A,C)$ is nonempty, define $0_{A,C}=f\\circ0_A$ for any $f:A\\to C$. Equation~\\eqref{eq:zero-law} ma"
+    },
+    {
+      "start_line": 213,
+      "end_line": 221,
+      "section": "The Boolean proof category",
+      "function": "definition, equation or main theorem",
+      "opening": "Two arrows are \\emph{parallel} when they have the same source and target. A \\emph{proof congruence} on $\\B$ is"
+    },
+    {
+      "start_line": 223,
+      "end_line": 226,
+      "section": "The Boolean proof category",
+      "function": "definition, equation or main theorem",
+      "opening": "The \\emph{total congruence} identifies every parallel pair. A category is \\emph{thin}, or a \\emph{preorder}, w"
+    },
+    {
+      "start_line": 228,
+      "end_line": 234,
+      "section": "The Boolean proof category",
+      "function": "definition, equation or main theorem",
+      "opening": "\\begin{theorem}\\label{thm:main} Let $P$ be a nonempty set of propositional variables. The freely generated zer"
+    },
+    {
+      "start_line": 236,
+      "end_line": 236,
+      "section": "The Boolean proof category",
+      "function": "reader navigation to the equations or proof",
+      "opening": "Sections~\\ref{sec:isolation} and~\\ref{sec:collapse} give the proof."
+    },
+    {
+      "start_line": 238,
+      "end_line": 238,
+      "section": "Occurrences and substitution",
+      "function": "section organization",
+      "opening": "\\section{Occurrences and substitution}\\label{sec:occurrences}"
+    },
+    {
+      "start_line": 240,
+      "end_line": 243,
+      "section": "Occurrences and substitution",
+      "function": "definition, construction or coherence consequence",
+      "opening": "For a formula $A$, write $\\Occ(A)$ for the finite set of positions occupied by propositional variables in $A$."
+    },
+    {
+      "start_line": 245,
+      "end_line": 262,
+      "section": "Occurrences and substitution",
+      "function": "definition, construction or coherence consequence",
+      "opening": "For finite sets $X,Y$, let $X\\sqcup Y=(\\{1\\}\\times X)\\cup(\\{2\\}\\times Y)$ be their tagged disjoint union. The "
+    },
+    {
+      "start_line": 264,
+      "end_line": 286,
+      "section": "Occurrences and substitution",
+      "function": "definition, construction or coherence consequence",
+      "opening": "Let $\\Rel$ be the category of finite sets and binary relations. A relation $R:X\\to Y$ is a subset of $X\\times "
+    },
+    {
+      "start_line": 288,
+      "end_line": 292,
+      "section": "Occurrences and substitution",
+      "function": "definition, construction or coherence consequence",
+      "opening": "\\begin{theorem}[Boolean Coherence, Do\\v{s}en--Petri\\'c] \\label{thm:coherence} The functor $G:\\B\\to\\Rel$ is fai"
+    },
+    {
+      "start_line": 294,
+      "end_line": 296,
+      "section": "Occurrences and substitution",
+      "function": "definition, construction or coherence consequence",
+      "opening": "This is \\cite[\\S14.2, p.~321]{DP}. In particular, for $p\\in P$, the two projections $p\\wedge p\\to p$ have diff"
+    },
+    {
+      "start_line": 298,
+      "end_line": 306,
+      "section": "Occurrences and substitution",
+      "function": "definition, construction or coherence consequence",
+      "opening": "Joyal's collapse result says that a cartesian closed category with an initial object $\\bot$ is a preorder if $"
+    },
+    {
+      "start_line": 308,
+      "end_line": 315,
+      "section": "Occurrences and substitution",
+      "function": "definition, construction or coherence consequence",
+      "opening": "A \\emph{literal} is $p$ or $\\neg p$ for $p\\in P$. A formula is in \\emph{negation normal form} when negation oc"
+    },
+    {
+      "start_line": 317,
+      "end_line": 329,
+      "section": "Occurrences and substitution",
+      "function": "definition, construction or coherence consequence",
+      "opening": "For arrows between formulas in negation normal form, every pair in the occurrence relation consists of occurre"
+    },
+    {
+      "start_line": 331,
+      "end_line": 350,
+      "section": "Occurrences and substitution",
+      "function": "definition, construction or coherence consequence",
+      "opening": "Substitution replaces each occurrence of a variable by a separate block of occurrences of its substituted form"
+    },
+    {
+      "start_line": 352,
+      "end_line": 371,
+      "section": "Occurrences and substitution",
+      "function": "definition, construction or coherence consequence",
+      "opening": "Put $E_\\sigma=\\coprod_{p\\in P}\\Occ(\\sigma(p))$. Define $\\operatorname{pr}_D:D_{A,\\sigma}\\to\\Occ(A)$ and $\\oper"
+    },
+    {
+      "start_line": 373,
+      "end_line": 385,
+      "section": "Occurrences and substitution",
+      "function": "definition, construction or coherence consequence",
+      "opening": "The same presentation defines $\\B(Q)$ when $Q$ is empty. Substitution on arrow terms induces a functor \\[ F_\\s"
+    },
+    {
+      "start_line": 387,
+      "end_line": 387,
+      "section": "Isolating an occurrence",
+      "function": "section organization",
+      "opening": "\\section{Isolating an occurrence}\\label{sec:isolation}"
+    },
+    {
+      "start_line": 389,
+      "end_line": 399,
+      "section": "Isolating an occurrence",
+      "function": "proof or construction",
+      "opening": "Put $j_A=\\iota_1^{A,\\top}:A\\to A\\vee\\top$. We shall derive the equation \\begin{equation} j_A\\circ\\pi_1^{A,\\bot"
+    },
+    {
+      "start_line": 401,
+      "end_line": 414,
+      "section": "Isolating an occurrence",
+      "function": "proof or construction",
+      "opening": "\\begin{lemma}[Isolation of an occurrence]\\label{lem:isolation} For distinct parallel arrows $f,g:A\\to C$ in $\\"
+    },
+    {
+      "start_line": 416,
+      "end_line": 426,
+      "section": "Isolating an occurrence",
+      "function": "proof or construction",
+      "opening": "\\begin{proof} First replace $f,g$ by $a_C\\circ f\\circ a_A^{-1}$ and $a_C\\circ g\\circ a_A^{-1}$. These remain d"
+    },
+    {
+      "start_line": 428,
+      "end_line": 438,
+      "section": "Isolating an occurrence",
+      "function": "proof or construction",
+      "opening": "Faithfulness of $G$ gives a pair belonging to exactly one of $Gf,Gg$. Interchange $f,g$ if necessary, and choo"
+    },
+    {
+      "start_line": 440,
+      "end_line": 447,
+      "section": "Isolating an occurrence",
+      "function": "proof or construction",
+      "opening": "Construct $i:D\\to A$ by induction on $A$, following the subformula that contains $x$ at each binary connective"
+    },
+    {
+      "start_line": 449,
+      "end_line": 456,
+      "section": "Isolating an occurrence",
+      "function": "proof or construction",
+      "opening": "Construct $r:C\\to E$ by induction on $C$, following the subformula that contains $y$. At the selected literal,"
+    },
+    {
+      "start_line": 458,
+      "end_line": 462,
+      "section": "Isolating an occurrence",
+      "function": "proof or construction",
+      "opening": "Relational composition now makes $G(r\\circ f\\circ i)$ the singleton relation from $\\Occ(D)$ to $\\Occ(E)$, wher"
+    },
+    {
+      "start_line": 464,
+      "end_line": 468,
+      "section": "Isolating an occurrence",
+      "function": "proof or construction",
+      "opening": "\\begin{proposition}\\label{prop:all-contexts} If a substitution congruence $\\theta$ on $\\B$ identifies distinct"
+    },
+    {
+      "start_line": 470,
+      "end_line": 477,
+      "section": "Isolating an occurrence",
+      "function": "proof or construction",
+      "opening": "\\begin{proof} Lemma~\\ref{lem:isolation} and compatibility with composition give \\eqref{eq:context} for a liter"
+    },
+    {
+      "start_line": 479,
+      "end_line": 497,
+      "section": "Isolating an occurrence",
+      "function": "proof or construction",
+      "opening": "If $\\ell=\\neg p$, substitute $\\neg A$ for $p$, obtaining the equation for $\\neg\\neg A$. Precompose with $n_A^{"
+    },
+    {
+      "start_line": 499,
+      "end_line": 499,
+      "section": "Equality of the product projections",
+      "function": "section organization",
+      "opening": "\\section{Equality of the product projections}\\label{sec:collapse}"
+    },
+    {
+      "start_line": 501,
+      "end_line": 502,
+      "section": "Equality of the product projections",
+      "function": "proof or construction",
+      "opening": "The next lemma identifies two isomorphisms of the types listed in \\cite[\\S12.5, p.~294]{DP}."
+    },
+    {
+      "start_line": 504,
+      "end_line": 515,
+      "section": "Equality of the product projections",
+      "function": "proof or construction",
+      "opening": "\\begin{lemma}\\label{lem:structural-isos} For every formula $A$, the arrows \\[ \\begin{aligned} q_A&=[j_A\\circ\\p"
+    },
+    {
+      "start_line": 517,
+      "end_line": 522,
+      "section": "Equality of the product projections",
+      "function": "proof or construction",
+      "opening": "\\begin{proof} First take $A=p\\in P$. By \\cite[\\S12.5, p.~294]{DP}, the source and target of $q_p$ are isomorph"
+    },
+    {
+      "start_line": 524,
+      "end_line": 532,
+      "section": "Equality of the product projections",
+      "function": "proof or construction",
+      "opening": "The same cited list gives an isomorphism $b:p\\wedge p\\to p\\wedge(p\\vee\\top)$: take $n=m=1$ in $p^n\\wedge(p^m\\v"
+    },
+    {
+      "start_line": 534,
+      "end_line": 537,
+      "section": "Equality of the product projections",
+      "function": "proof or construction",
+      "opening": "For arbitrary $A$, substitute $A$ for $p$ and fix the other variables. The functor $F_\\sigma$ sends $q_p,e_p$ "
+    },
+    {
+      "start_line": 539,
+      "end_line": 543,
+      "section": "Equality of the product projections",
+      "function": "proof or construction",
+      "opening": "\\begin{lemma}\\label{lem:collapse} Let $\\theta$ be a proof congruence on $\\B$ such that \\eqref{eq:context} hold"
+    },
+    {
+      "start_line": 545,
+      "end_line": 564,
+      "section": "Equality of the product projections",
+      "function": "proof or construction",
+      "opening": "\\begin{proof} Write $\\equiv$ for equality modulo $\\theta$. The quotient retains products and coproducts: their"
+    },
+    {
+      "start_line": 566,
+      "end_line": 584,
+      "section": "Equality of the product projections",
+      "function": "proof or construction",
+      "opening": "Consequently the projection $r=\\pi_1^{A,E}:A\\wedge E\\to A$ is invertible, with inverse $\\langle1_A,s\\circ!_A\\r"
+    },
+    {
+      "start_line": 586,
+      "end_line": 591,
+      "section": "Equality of the product projections",
+      "function": "proof or construction",
+      "opening": "\\begin{proof}[Proof of Theorem~\\ref{thm:main}] Suppose that a substitution congruence $\\theta$ on $\\B(P)$ iden"
+    },
+    {
+      "start_line": 593,
+      "end_line": 599,
+      "section": "Equality of the product projections",
+      "function": "proof or construction",
+      "opening": "We also obtain maximality in the sense of \\cite[\\S9.3, p.~194]{DP}. An \\emph{interpretation} in a zero-identit"
+    },
+    {
+      "start_line": 601,
+      "end_line": 607,
+      "section": "Equality of the product projections",
+      "function": "proof or construction",
+      "opening": "\\begin{corollary}\\label{cor:models} Let $P$ be a nonempty set of propositional variables, and let $f,g:A\\to C$"
+    },
+    {
+      "start_line": 609,
+      "end_line": 622,
+      "section": "Equality of the product projections",
+      "function": "proof or construction",
+      "opening": "\\begin{proof} Declare two parallel arrows of $\\B(P)$ equivalent when all their interpretations in $\\mathcal C$"
+    },
+    {
+      "start_line": 624,
+      "end_line": 624,
+      "section": "Lean formalization",
+      "function": "section organization",
+      "opening": "\\section{Lean formalization}\\label{sec:formalization}"
+    },
+    {
+      "start_line": 626,
+      "end_line": 632,
+      "section": "Lean formalization",
+      "function": "formal correspondence or alternative proof",
+      "opening": "In the Lean~4 development \\cite{Formalization}, formulas and arrow terms are inductive types, with arrow terms"
+    },
+    {
+      "start_line": 634,
+      "end_line": 701,
+      "section": "Lean formalization",
+      "function": "formal correspondence or alternative proof",
+      "opening": "The theorem \\texttt{relative\\_maximality} states that a substitution congruence identifying distinct parallel "
+    },
+    {
+      "start_line": 703,
+      "end_line": 707,
+      "section": "Lean formalization",
+      "function": "formal correspondence or alternative proof",
+      "opening": "Cut elimination and Boolean Coherence are proved for the presentation defining $\\B(P)$. Normalization, preserv"
+    },
+    {
+      "start_line": 709,
+      "end_line": 716,
+      "section": "Lean formalization",
+      "function": "formal correspondence or alternative proof",
+      "opening": "The theorem \\texttt{Presentation.short\\_maximality} formalizes the proof in Section~\\ref{sec:collapse}, with e"
+    },
+    {
+      "start_line": 718,
+      "end_line": 721,
+      "section": "Lean formalization",
+      "function": "formal correspondence or alternative proof",
+      "opening": "Five declarations are registered in the Palomar Registry \\cite{palomar-2026-10-30-000014-v1}: the two maximali"
+    },
+    {
+      "start_line": 723,
+      "end_line": 724,
+      "section": "Substitution in occurrence coordinates",
+      "function": "section organization",
+      "opening": "\\appendix \\section{Substitution in occurrence coordinates}\\label{app:substitution}"
+    },
+    {
+      "start_line": 726,
+      "end_line": 732,
+      "section": "Substitution in occurrence coordinates",
+      "function": "construction, equation or worked example",
+      "opening": "Do\\v{s}en and Petri\\'c's generalized composition of definable connectives \\cite[\\S2.5, pp.~45--46]{DP} substit"
+    },
+    {
+      "start_line": 734,
+      "end_line": 734,
+      "section": "Occurrence maps and their fibres",
+      "function": "section organization",
+      "opening": "\\subsection{Occurrence maps and their fibres}\\label{app:profiles}"
+    },
+    {
+      "start_line": 736,
+      "end_line": 740,
+      "section": "Occurrence maps and their fibres",
+      "function": "construction, equation or worked example",
+      "opening": "For an integer $n\\geq0$, put $\\underline n=\\{1,\\ldots,n\\}$, with $\\underline0=\\varnothing$. A \\emph{formula pa"
+    },
+    {
+      "start_line": 742,
+      "end_line": 754,
+      "section": "Occurrence maps and their fibres",
+      "function": "construction, equation or worked example",
+      "opening": "Let $U=\\{p_1,\\ldots,p_k\\}$ consist of distinct placeholders and let $M\\in\\FormulaSet(U)$ have $m$ occurrences."
+    },
+    {
+      "start_line": 756,
+      "end_line": 784,
+      "section": "Occurrence maps and their fibres",
+      "function": "construction, equation or worked example",
+      "opening": "Define the sets of occurrence coordinates and placeholder indices by \\[ \\begin{aligned} D&=\\{(r,t):r\\in\\underl"
+    },
+    {
+      "start_line": 786,
+      "end_line": 798,
+      "section": "Occurrence maps and their fibres",
+      "function": "construction, equation or worked example",
+      "opening": "Define the projections $p_D:D\\to\\underline m$ and $p_C:C\\to\\underline k$ by $p_D(r,t)=r$ and $p_C(i,s)=i$. The"
+    },
+    {
+      "start_line": 800,
+      "end_line": 815,
+      "section": "Occurrence maps and their fibres",
+      "function": "construction, equation or worked example",
+      "opening": "To identify this construction with pattern substitution, replace each $q_{i,s}$ in $N_i$ by $(i,s)$ and denote"
+    },
+    {
+      "start_line": 817,
+      "end_line": 817,
+      "section": "The finite-ordinal presentation",
+      "function": "section organization",
+      "opening": "\\subsection{The finite-ordinal presentation}\\label{app:ordinals}"
+    },
+    {
+      "start_line": 819,
+      "end_line": 851,
+      "section": "The finite-ordinal presentation",
+      "function": "construction, equation or worked example",
+      "opening": "The finite ordinals used in \\cite{DP} number the elements of each block consecutively. Put \\[ s_0=t_0=0,\\qquad"
+    },
+    {
+      "start_line": 853,
+      "end_line": 865,
+      "section": "The finite-ordinal presentation",
+      "function": "construction, equation or worked example",
+      "opening": "In Do\\v{s}en and Petri\\'c's notation, $\\mu$ and $\\nu_i$ correspond to $o_M$ and $o_i$, and $\\mu(\\nu_1,\\ldots,\\"
+    },
+    {
+      "start_line": 867,
+      "end_line": 886,
+      "section": "The finite-ordinal presentation",
+      "function": "construction, equation or worked example",
+      "opening": "For example, take \\[ M(p,q)=q\\wedge(p\\vee q),\\qquad N_1(a,b)=a\\wedge b,\\qquad N_2(c,d)=d\\wedge(c\\vee d). \\] Th"
+    },
+    {
+      "start_line": 888,
+      "end_line": 888,
+      "section": "Shared variables and the maximality argument",
+      "function": "section organization",
+      "opening": "\\subsection{Shared variables and the maximality argument}\\label{app:shared}"
+    },
+    {
+      "start_line": 890,
+      "end_line": 910,
+      "section": "Shared variables and the maximality argument",
+      "function": "construction, equation or worked example",
+      "opening": "The local placeholders may be assigned names in a common variable set $Q$. Let $\\rho:C\\to Q$ be that assignmen"
+    },
+    {
+      "start_line": 912,
+      "end_line": 920,
+      "section": "Shared variables and the maximality argument",
+      "function": "construction, equation or worked example",
+      "opening": "If the literal isolated in Proposition~\\ref{prop:all-contexts} is $p$, equation~\\eqref{eq:context} has source "
+    },
+    {
+      "start_line": 922,
+      "end_line": 923,
+      "section": "Diagrams for three defining equations",
+      "function": "section organization",
+      "opening": "\\section{Diagrams for three defining equations} \\label{app:structural-diagrams}"
+    },
+    {
+      "start_line": 925,
+      "end_line": 939,
+      "section": "Diagrams for three defining equations",
+      "function": "typed diagram and equation",
+      "opening": "\\paragraph{The first-injection equation.} For formulas $A,B,C$, equation~\\eqref{eq:first-injection} is the com"
+    },
+    {
+      "start_line": 941,
+      "end_line": 960,
+      "section": "Diagrams for three defining equations",
+      "function": "typed diagram and equation",
+      "opening": "\\paragraph{The zero identity.} For a formula $A$, equation~\\eqref{eq:zero-identity} is expressed by the commut"
+    },
+    {
+      "start_line": 962,
+      "end_line": 972,
+      "section": "Diagrams for three defining equations",
+      "function": "typed diagram and equation",
+      "opening": "\\paragraph{The zero law.} For any parallel arrows $f,g:A\\to C$, equation~\\eqref{eq:zero-law} is the commutativ"
+    },
+    {
+      "start_line": 974,
+      "end_line": 975,
+      "section": "Two corrections to the cut-elimination proof",
+      "function": "section organization",
+      "opening": "\\clearpage \\section{Two corrections to the cut-elimination proof}\\label{app:cut-errata}"
+    },
+    {
+      "start_line": 977,
+      "end_line": 981,
+      "section": "Two corrections to the cut-elimination proof",
+      "function": "source erratum and rank argument",
+      "opening": "The cut-elimination proof in \\cite[\\S11.2]{DP} contains two typographical errors in its rank comparisons. We u"
+    },
+    {
+      "start_line": 983,
+      "end_line": 988,
+      "section": "Two corrections to the cut-elimination proof",
+      "function": "source erratum and rank argument",
+      "opening": "\\paragraph{Page 260, case $(w\\,\\gamma\\,3)$.} In the sentence immediately following the displayed reduction, th"
+    },
+    {
+      "start_line": 990,
+      "end_line": 996,
+      "section": "Two corrections to the cut-elimination proof",
+      "function": "source erratum and rank argument",
+      "opening": "\\paragraph{Page 262, case $(w\\,\\vee\\,1)$.} In the continuation of this case, the phrase ``whose rank is~1'' sh"
+    },
+    {
+      "start_line": 998,
+      "end_line": 1003,
+      "section": "Use of AI tools",
+      "function": "authorized disclosure or bibliography",
+      "opening": "\\section*{Use of AI tools} OpenAI's ChatGPT assisted with the development of the proof, preparation of the man"
+    },
+    {
+      "start_line": 1005,
+      "end_line": 1012,
+      "section": "Use of AI tools",
+      "function": "authorized disclosure or bibliography",
+      "opening": "\\clearpage \\begingroup \\small \\setlength{\\bibsep}{2pt} \\bibliographystyle{unsrtnat} \\bibliography{references_v"
+    }
+  ]
+}

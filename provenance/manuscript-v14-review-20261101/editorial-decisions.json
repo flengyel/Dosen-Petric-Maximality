@@ -1,0 +1,294 @@
+{
+  "input_commit": "50d613e0eccea08f248d39b6ae1bc15c628514eb",
+  "input_source": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v13.tex",
+  "input_sha256": "5428452560eeecd55be2315f50fbf46556469af364931d2cc802ee888b4aade1",
+  "output_source": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v14.tex",
+  "edits": [
+    {
+      "id": "pdf-version",
+      "v13_line": 8,
+      "before": "Category (v13)},pdfauthor",
+      "after": "Category (v14)},pdfauthor",
+      "reason": "Increment PDF version metadata."
+    },
+    {
+      "id": "date",
+      "v13_line": 20,
+      "before": "\\date{October 31, 2026\\quad(v13)}",
+      "after": "\\date{November 1, 2026\\quad(v14)}",
+      "reason": "Refresh visible version and date."
+    },
+    {
+      "id": "abstract",
+      "v13_line": 31,
+      "before": "\\emph{Proof-Theoretical Coherence}. Boolean Coherence and selection of\noccurrences reduce the added equation to a contextual equation on a\nsigned literal. Substitution gives this equation for every formula.\nTwo isomorphisms listed by Do\\v{s}en and Petri\\'c then yield equality\nof the product projections. The Lean formalization proves coherence,\nmaximality and the model corollary for the generated presentation,\nas well as the substitution equations in tagged and finite-ordinal\ncoordinates.",
+      "after": "\\emph{Proof-Theoretical Coherence}. Boolean Coherence and composition\nwith arrows selecting occurrences reduce the added equation to\n$\\iota_1^{\\ell,\\top}\\circ\\pi_1^{\\ell,\\bot}\n=0_{\\ell\\wedge\\bot,\\ell\\vee\\top}$ for a literal $\\ell$.\nUniform substitution and double-negation isomorphisms give this\nequation with any formula $A$ in place of $\\ell$. Two isomorphisms\nlisted by Do\\v{s}en and Petri\\'c then yield equality of the product\nprojections. The Lean formalization proves coherence, maximality and\nthe model corollary for the category presented by the defining\nequations. It also proves the equations relating substitution on\ntagged occurrence sets to substitution on finite ordinals.",
+      "reason": "State the equation and the negative-literal step; identify the two substitution constructions."
+    },
+    {
+      "id": "literature-terminology",
+      "v13_line": 100,
+      "before": "construct free graphical, $\\Delta$--$\\nabla$-strong\n$K^\\flat$- and $K^\\sharp$-autonomous categories from proof nets \\cite[Theorem~3.5.4]{LSFree}.",
+      "after": "construct free categories from classical proof nets for several\nsystems of equations on the logical operations \\cite[Theorem~3.5.4]{LSFree}.",
+      "reason": "Remove unexplained source-specific class names from the contextual comparison."
+    },
+    {
+      "id": "arrow-operation-types",
+      "v13_line": 151,
+      "before": "arrows, and $1_A$ for the identity of $A$. Composition $g\\circ f$\napplies $f$ first. The symbols $f\\wedge g$ and $f\\vee g$ denote the\narrows induced by the product and coproduct bifunctors.",
+      "after": "arrows, and $1_A:A\\to A$ for the identity. Composition $g\\circ f$\napplies $f$ first. For $f:A\\to A'$ and $g:C\\to C'$, the product and\ncoproduct bifunctors give arrows\n\\[\n f\\wedge g:A\\wedge C\\longrightarrow A'\\wedge C',\n \\qquad f\\vee g:A\\vee C\\longrightarrow A'\\vee C'.\n\\]",
+      "reason": "Give the signatures of both arrow operations."
+    },
+    {
+      "id": "negation-type",
+      "v13_line": 169,
+      "before": "$\\neg:\\B^{\\mathrm{op}}\\to\\B$, with specified natural\ndouble-negation and De Morgan isomorphisms. In particular, write",
+      "after": "$\\neg:\\B^{\\mathrm{op}}\\to\\B$, sending $f:A\\to C$ to\n$\\neg f:\\neg C\\to\\neg A$. Its double-negation and De Morgan\nisomorphisms are natural. In particular, write",
+      "reason": "Make the contravariant morphism action explicit."
+    },
+    {
+      "id": "occurrence-coordinates",
+      "v13_line": 234,
+      "before": "same variable occupy distinct positions. We use tagged coordinates for\nthese positions.",
+      "after": "same variable occupy distinct positions. We use disjoint unions to\ndistinguish these positions.",
+      "reason": "Describe the set construction."
+    },
+    {
+      "id": "G-type",
+      "v13_line": 261,
+      "before": "$G:\\B\\to\\Rel$ with $GA=\\Occ(A)$.\nFor example,",
+      "after": "$G:\\B\\to\\Rel$ with $GA=\\Occ(A)$. For $f:A\\to C$, its image is\nthe relation $Gf\\subseteq\\Occ(A)\\times\\Occ(C)$.\nFor example,",
+      "reason": "Give the relation type for the occurrence interpretation."
+    },
+    {
+      "id": "literal-terminology",
+      "occurrences": 9,
+      "before": "signed literal",
+      "after": "literal",
+      "reason": "Use the usual term for p or negation p consistently."
+    },
+    {
+      "id": "substitution-type",
+      "v13_line": 368,
+      "before": "A\\longmapsto A[\\sigma],\\quad f\\longmapsto f[\\sigma].\n\\]\nRule~$(su)$",
+      "after": "A\\longmapsto A[\\sigma],\\quad f\\longmapsto f[\\sigma].\n\\]\nHere $f:A\\to C$ is sent to\n$f[\\sigma]:A[\\sigma]\\to C[\\sigma]$.\nRule~$(su)$",
+      "reason": "State substitution on both endpoints."
+    },
+    {
+      "id": "equation-name",
+      "v13_line": 378,
+      "before": "Put $j_A=\\iota_1^{A,\\top}:A\\to A\\vee\\top$. The contextual equation\nneeded in the proof is",
+      "after": "Put $j_A=\\iota_1^{A,\\top}:A\\to A\\vee\\top$. We shall derive the equation",
+      "reason": "Refer directly to the displayed equation."
+    },
+    {
+      "id": "source-equation-name",
+      "v13_line": 388,
+      "before": "arrow. Thus \\eqref{eq:context} is the contextual equation of",
+      "after": "arrow. Thus \\eqref{eq:context} is the equation used in",
+      "reason": "Refer directly to the source equation."
+    },
+    {
+      "id": "normal-form-types",
+      "v13_line": 410,
+      "before": "If the arrows for these normal forms are $i^\\circ,r^\\circ$, the required\narrows for the original formulas are\n$a_A^{-1}\\circ i^\\circ$ and $r^\\circ\\circ a_C$.",
+      "after": "If\n$i^\\circ:\\ell\\wedge\\bot\\to A^\\circ$ and\n$r^\\circ:C^\\circ\\to\\ell\\vee\\top$ satisfy the required equations,\nthen $i=a_A^{-1}\\circ i^\\circ:\\ell\\wedge\\bot\\to A$ and\n$r=r^\\circ\\circ a_C:C\\to\\ell\\vee\\top$ satisfy them for the original\nformulas.",
+      "reason": "Type the normal-form witnesses and their composites."
+    },
+    {
+      "id": "isolation-induction",
+      "v13_line": 427,
+      "before": "Construct $i:D\\to A$ recursively along the tagged path\nto $x$.",
+      "after": "Construct $i:D\\to A$ by induction on $A$, following the subformula\nthat contains $x$ at each binary connective.",
+      "reason": "Name the induction object and selection rule."
+    },
+    {
+      "id": "dual-induction",
+      "v13_line": 436,
+      "before": "Construct $r:C\\to E$ dually along the path to $y$.",
+      "after": "Construct $r:C\\to E$ by induction on $C$, following the subformula\nthat contains $y$.",
+      "reason": "Name the second induction object."
+    },
+    {
+      "id": "relation-terminology",
+      "before": "an edge belonging to one relation",
+      "after": "a pair belonging to one relation",
+      "occurrences": 1,
+      "reason": "Use terminology for binary relations."
+    },
+    {
+      "id": "relation-terminology",
+      "before": "an edge belonging to exactly one",
+      "after": "a pair belonging to exactly one",
+      "occurrences": 1,
+      "reason": "Use terminology for binary relations."
+    },
+    {
+      "id": "relation-terminology",
+      "before": "every edge of",
+      "after": "every pair in",
+      "occurrences": 1,
+      "reason": "Use terminology for binary relations."
+    },
+    {
+      "id": "relation-terminology",
+      "before": "along occurrence-relation edges",
+      "after": "along occurrence relations",
+      "occurrences": 1,
+      "reason": "Use terminology for binary relations."
+    },
+    {
+      "id": "relation-terminology",
+      "before": "the single edge from",
+      "after": "the single pair from",
+      "occurrences": 1,
+      "reason": "Use terminology for binary relations."
+    },
+    {
+      "id": "relation-terminology",
+      "before": "the one-edge\nrelation",
+      "after": "the singleton\nrelation",
+      "occurrences": 1,
+      "reason": "Use terminology for binary relations."
+    },
+    {
+      "id": "double-negation-composition",
+      "v13_line": 465,
+      "before": "for $\\neg\\neg A$. Transport it along $n_A:\\neg\\neg A\\to A$.\nPut",
+      "after": "for $\\neg\\neg A$. Precompose with\n$n_A^{-1}\\wedge1_\\bot$ and postcompose with $n_A\\vee1_\\top$,\nwhere $n_A:\\neg\\neg A\\to A$.\nPut",
+      "reason": "Give the compositions in the typed square."
+    },
+    {
+      "id": "section-title",
+      "v13_line": 482,
+      "before": "\\section{Contextual collapse}",
+      "after": "\\section{Equality of the product projections}",
+      "reason": "State the mathematical conclusion in the heading."
+    },
+    {
+      "id": "lemma-title",
+      "v13_line": 522,
+      "before": "\\begin{lemma}[Contextual collapse]",
+      "after": "\\begin{lemma}",
+      "reason": "Use the statement instead of a descriptive local label."
+    },
+    {
+      "id": "interpretation-type",
+      "v13_line": 579,
+      "before": "each propositional variable. It extends to a functor\n$\\B(P)\\to\\mathcal C$ preserving the specified products, coproducts,",
+      "after": "each propositional variable. For an assignment\n$v:P\\to\\operatorname{Ob}(\\mathcal C)$, the induced functor\n$I_v:\\B(P)\\to\\mathcal C$ preserves the specified products, coproducts,",
+      "reason": "Name and type the interpretation."
+    },
+    {
+      "id": "model-substitution",
+      "v13_line": 593,
+      "before": "interpretations in $\\mathcal C$ agree. This defines a substitution\ncongruence: composing an interpretation with $F_\\sigma$ is another\ninterpretation. The congruence contains $f=g$, so",
+      "after": "interpretations in $\\mathcal C$ agree. Since every $I_v$ preserves\nthe arrow operations, this relation is a proof congruence. For a\nsubstitution $\\sigma:P\\to\\FormulaSet(P)$, the composite\n$I_v\\circ F_\\sigma$ is the interpretation induced by\n$p\\mapsto I_v(\\sigma(p))$. The congruence is therefore preserved\nby substitution. It contains $f=g$, so",
+      "reason": "Explain operation compatibility and give the substituted valuation."
+    },
+    {
+      "id": "alternative-proof-name",
+      "v13_line": 619,
+      "before": "Its proof of contextual collapse uses the map",
+      "after": "Its proof that the quotient is a preorder uses the arrow",
+      "reason": "State the proved conclusion."
+    },
+    {
+      "id": "alternative-bottom",
+      "v13_line": 633,
+      "before": "for every formula. Taking $B=\\bot$ in the expression for mix,\n\\eqref{eq:context} and Boolean Coherence in $\\B$ give\n\\[\n j_A\\circ h_A\\equiv j_A\\circ\\pi_2^{A,A}.\n\\]",
+      "after": "for every formula. For $B=\\bot$, put\n\\[\n v_A=d_{A,\\bot,A}\\circ(1_A\\wedge\\iota_2^{\\bot,A})\n :A\\wedge A\\longrightarrow(A\\wedge\\bot)\\vee A.\n\\]\nThe coproduct equations and \\eqref{eq:context} give\n\\[\n \\begin{aligned}\n j_A\\circ h_A\n &= [j_A\\circ\\pi_1^{A,\\bot},j_A]\\circ v_A\\\\\n &\\equiv[0_{A\\wedge\\bot,A\\vee\\top},j_A]\\circ v_A\n  =j_A\\circ\\pi_2^{A,A}.\n \\end{aligned}\n\\]\nThe last equality holds in $\\B$ by Boolean Coherence: both occurrence\nrelations send the second copy of $\\Occ(A)$ identically to the\n$A$-summand of $\\Occ(A\\vee\\top)$ and have no pairs from the first copy.",
+      "reason": "Exhibit the typed composite and the relational calculation."
+    },
+    {
+      "id": "alternative-terminal",
+      "v13_line": 646,
+      "before": "The coproduct equations then make $A\\vee\\top$ terminal in the\nquotient. By symmetry,",
+      "after": "Put $s_A=\\iota_2^{A,\\top}:\\top\\to A\\vee\\top$. The coproduct\nequations give\n\\[\n 1_{A\\vee\\top}=[j_A,s_A]\n   \\equiv[s_A\\circ!_A,s_A]=s_A\\circ!_{A\\vee\\top}.\n\\]\nSince $!_{A\\vee\\top}\\circ s_A=1_\\top$, the object $A\\vee\\top$ is\nterminal in the quotient. Composing with the coproduct symmetry gives",
+      "reason": "Display the equations establishing terminality and specify the symmetry."
+    },
+    {
+      "id": "alternative-top",
+      "v13_line": 649,
+      "before": "Taking $B=\\top$ in the expression for mix and using\n\\eqref{eq:first-injection} now gives $h_A\\equiv\\pi_1^{A,A}$.\nThe symmetry of $h_A$ yields",
+      "after": "For $B=\\top$, put\n$w_A=1_A\\wedge!_A:A\\wedge A\\to A\\wedge\\top$. Substituting the\npreceding equation for $\\iota_2^{\\top,A}$ in the expression for mix gives\n\\[\n \\begin{aligned}\n h_A&\\equiv[\\pi_1^{A,\\top},1_A]\\circ d_{A,\\top,A}\n             \\circ(1_A\\wedge\\iota_1^{\\top,A})\\circ w_A\\\\\n    &=[\\pi_1^{A,\\top},1_A]\\circ\\iota_1^{A\\wedge\\top,A}\\circ w_A\\\\\n    &=\\pi_1^{A,\\top}\\circ w_A=\\pi_1^{A,A}.\n \\end{aligned}\n\\]\nThe second line uses \\eqref{eq:first-injection}; the third uses the\ncoproduct and product equations. The symmetry of $h_A$ yields",
+      "reason": "Expand the first-injection calculation with a typed intermediate arrow."
+    },
+    {
+      "id": "projections-name",
+      "v13_line": 737,
+      "before": "Define the block projections $p_D:D\\to\\underline m$ and",
+      "after": "Define the projections $p_D:D\\to\\underline m$ and",
+      "reason": "Avoid an unnecessary modifier."
+    },
+    {
+      "id": "ordinal-bijections",
+      "v13_line": 777,
+      "before": "The block encodings are the bijections",
+      "after": "Numbering each disjoint union consecutively gives bijections",
+      "reason": "Describe the bijections instead of calling them encodings."
+    },
+    {
+      "id": "ordinal-locator",
+      "v13_line": 806,
+      "before": "Their block locator selects the unique $r$ for which\n$s_{r-1}<x\\leq s_r$; substituting $t=x-s_{r-1}$ in",
+      "after": "For $x\\in\\underline{s_m}$, let $r$ be the unique index with\n$s_{r-1}<x\\leq s_r$. Substituting $t=x-s_{r-1}$ in",
+      "reason": "Give the index and defining inequality."
+    },
+    {
+      "id": "example-coordinate",
+      "v13_line": 836,
+      "before": "The profile map gives $\\gamma(1,2)=(2,1)$, and the target encoding\nthen gives $\\theta_C(2,1)=3$. Thus $\\delta(2)=3$.",
+      "after": "The function $\\gamma$ gives $\\gamma(1,2)=(2,1)$, and\n$\\theta_C(2,1)=3$. Thus $\\delta(2)=3$.",
+      "reason": "Use the named functions."
+    },
+    {
+      "id": "application-equation",
+      "v13_line": 864,
+      "before": "is $p$, the contextual equation has source $p\\wedge\\bot$ and",
+      "after": "is $p$, equation~\\eqref{eq:context} has source $p\\wedge\\bot$ and",
+      "reason": "Use the equation reference throughout."
+    },
+    {
+      "id": "bibliography-files",
+      "v13_line": 961,
+      "before": "\\bibliography{references_v13,palomar_v13}",
+      "after": "\\bibliography{references_v14,palomar_v14}",
+      "reason": "Keep bibliography entries in new numbered files."
+    }
+  ],
+  "actual_or_genuine_in_v13_prose": false,
+  "additional_repair_families": [
+    {
+      "id": "DP-terminology",
+      "anchor": "v13 Section 2 line 155; model interpretation; Appendix B",
+      "before": "distributor",
+      "after": "dissociativity arrow",
+      "source": "Došen–Petrić, printed p.234 / PDF p.246; type unchanged"
+    },
+    {
+      "id": "occurrence-function-terminology",
+      "anchor": "v13 Appendix A.1–A.2",
+      "before": "occurrence profile; profile; block encoding; block locator",
+      "after": "occurrence map; bijection; explicit inequality defining the index",
+      "mathematics": "Same functions, prefix sums and diagrams; Lean identifiers unchanged."
+    },
+    {
+      "id": "relation-wording",
+      "anchor": "v13 Sections 1,3,4",
+      "after": "Use pairs and singleton relations; specify both components in the i and r constructions."
+    },
+    {
+      "id": "lemma-caption",
+      "anchor": "v13 Lemma 4.1",
+      "before": "Occurrence isolation",
+      "after": "Isolation of an occurrence"
+    },
+    {
+      "id": "occurrence-index-typing",
+      "anchor": "Appendix A.1",
+      "explanation": "State that o_M and o_i record the index of the placeholder after enumeration, distinguishing indices from λ labels."
+    }
+  ],
+  "final_source_sha256": "a1b398409a7281f2330428d57a129122553f4230b315a0b79524ab80ec09340f"
+}

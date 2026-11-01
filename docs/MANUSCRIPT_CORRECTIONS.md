@@ -1,5 +1,44 @@
 # Manuscript corrections and source errata
 
+## Complete exposition review: v14 (1 November 2026)
+
+The author requested both the hostile reviewer and mathematical-writing plugins
+for the whole preprint. Both were applied to v13 and the revised v14, with the
+actual source, typed diagrams and published Došen–Petrić equations inspected.
+The exact decisions and diff are in provenance/manuscript-v14-review-20261101/.
+
+V14-TERM: use the source's dissociativity arrow for d, literal for p or ¬p,
+and occurrence map for the explicitly defined finite functions. Replace block
+encoding and block locator by the bijections and the inequality defining the
+index. Apply the terminology in the abstract, proofs, appendices and active
+correspondence map. Lean identifiers and all registered inputs remain frozen.
+The words actual and genuine were absent from v13; do not claim their deletion.
+
+V14-TYPE: state the morphism types of product/coproduct operations, negation,
+G, substitution and normal-form witnesses. Name I_v and its substituted
+valuation. The existing composites were not shown ill-typed; these are
+explicit explanations of their types and operation compatibility.
+
+V14-PROOF: display the literal equation in the abstract and retain its negative
+case. In Section 6 define v_A and w_A, show the two computations, give the
+relation calculation in the original category, and display the equations
+making A∨top terminal in the quotient. The existing Lean declarations prove
+these deductions. No new formal proof or hypothesis is introduced.
+
+Seven statement bodies are unchanged after the literal synonym and lemma-caption
+normalization. Twelve numbered displays, ten diagrams and thirty labels are
+byte-identical to v13. Both proof routes, all appendices, Appendix C's exact
+text, the author-authorized AI disclosure and every bibliography entry remain.
+The manuscript and extracted four-file archive compile to matching 14-page
+layout text without final warnings. Reports and package are delivered from
+committed bytes to Downloads with exact paths and hashes in the delivery
+receipt. No Lean/kernel replay, Palomar submission or arXiv upload occurred.
+
+See MANUSCRIPT_V14_REPORT.md, reviews/V14_HOSTILE_REVIEW_2026-11-01.md and
+reviews/V14_WRITING_REVIEW_2026-11-01.md. The reviews are author-side AI-assisted
+work; their scope and unperformed checks are stated explicitly.
+
+
 ## Second complete review: v13 (31 October 2026)
 
 Input v12: cbcd59ca1b9382bdcd0de8c648e4a351495ccf81. The new statement review

@@ -12,16 +12,19 @@ and its [registration report](docs/PALOMAR_REGISTRATION_REPORT.md) remain preser
 The earlier [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
 describes version 1.
 
-The arXiv package is ready in [submission/arxiv-v13](submission/arxiv-v13/README.md).
-V13 retains the ChatGPT and Codex disclosure and MSC 2020 Primary 03G30;
-Secondary 03F07, 18A32, and cites the registered proof. No arXiv submission has
-been made. A second complete review corrects the scope of a cited lemma, adds
-close antecedents and gives the intermediate equations in the alternative
-collapse proof. See the [statement and line review](docs/reviews/V13_STATEMENT_REVIEW_2026-10-31.md),
-[literature review](docs/reviews/V13_LITERATURE_REVIEW_2026-10-31.md), and
-[hostile review](docs/reviews/V13_HOSTILE_REVIEW_2026-10-31.md).
-Theorem statements, proof routes, diagrams, the supplied BibTeX and all earlier
-releases are preserved. No defect in the formal proof was established.
+The arXiv package is ready in [submission/arxiv-v14](submission/arxiv-v14/README.md).
+V14 retains the ChatGPT and Codex disclosure and MSC 2020 Primary 03G30;
+Secondary 03F07, 18A32, and the supplied registered-proof citation. No arXiv
+submission has been made. The complete preprint has been reviewed with the
+hostile-reviewer and mathematical-writing plugins. The revision gives explicit
+types and calculations, follows Došen–Petrić's dissociativity terminology and
+uses the defined occurrence functions directly. See the
+[hostile review](docs/reviews/V14_HOSTILE_REVIEW_2026-11-01.md),
+[writing review](docs/reviews/V14_WRITING_REVIEW_2026-11-01.md) and
+[release report](docs/MANUSCRIPT_V14_REPORT.md). Mathematical statements retain
+their hypotheses and conclusions; all numbered displays, diagrams, labels,
+bibliography entries and earlier releases are preserved. No new formal proof
+defect was established.
 
 The verified package was merged into main through `23ec1bc`. It selects five statements
 in `DosenPetric.Palomar`: both
@@ -54,9 +57,9 @@ publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
-Current manuscript: [v13 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v13.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v13.tex), dated October 31, 2026. All v4–v12 releases remain preserved.
-The [v13 report](docs/MANUSCRIPT_V13_REPORT.md) records the prose and literature
-corrections, successful manuscript/package builds, PDF inspection and preservation. Every manuscript revision must
+Current manuscript: [v14 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v14.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v14.tex), dated November 1, 2026. All v4–v13 releases remain preserved.
+The [v14 report](docs/MANUSCRIPT_V14_REPORT.md) records the terminology, typing
+and proof-exposition repairs, successful manuscript/package builds, PDF inspection and preservation. Every manuscript revision must
 increment the version number; the rule is recorded in AGENTS.md.
 
 All mathematical content of v7 is now proved for the actual equation-generated

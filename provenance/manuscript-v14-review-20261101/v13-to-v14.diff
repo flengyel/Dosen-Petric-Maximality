@@ -1,0 +1,533 @@
+--- v13.tex
++++ v14.tex
+@@ -5,7 +5,7 @@
+ \usepackage{microtype,tikz-cd}
+ \usepackage[numbers]{natbib}
+ \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+-\hypersetup{pdftitle={Maximality of the Dosen--Petric Boolean Category (v13)},pdfauthor={Florian Lengyel}}
++\hypersetup{pdftitle={Maximality of the Dosen--Petric Boolean Category (v14)},pdfauthor={Florian Lengyel}}
+ \renewcommand{\theHequation}{\thesection.\arabic{equation}}
+ \newtheorem{theorem}{Theorem}[section]
+ \newtheorem{lemma}[theorem]{Lemma}
+@@ -17,7 +17,7 @@
+ \newcommand{\FormulaSet}{\operatorname{Form}}
+ \title{Maximality of the Do\v{s}en--Petri\'c Boolean Category}
+ \author{Florian Lengyel\thanks{Email: \href{mailto:flengyel@gradcenter.cuny.edu}{\texttt{flengyel@gradcenter.cuny.edu}}}}
+-\date{October 31, 2026\quad(v13)}
++\date{November 1, 2026\quad(v14)}
+ \begin{document}
+ \maketitle
+ 
+@@ -28,14 +28,17 @@
+ and closing under the arrow operations and uniform formula
+ substitution identifies all parallel arrows. This disproves the
+ conjecture in Section~14.2 of the September 2007 revision of
+-\emph{Proof-Theoretical Coherence}. Boolean Coherence and selection of
+-occurrences reduce the added equation to a contextual equation on a
+-signed literal. Substitution gives this equation for every formula.
+-Two isomorphisms listed by Do\v{s}en and Petri\'c then yield equality
+-of the product projections. The Lean formalization proves coherence,
+-maximality and the model corollary for the generated presentation,
+-as well as the substitution equations in tagged and finite-ordinal
+-coordinates.
++\emph{Proof-Theoretical Coherence}. Boolean Coherence and composition
++with arrows selecting occurrences reduce the added equation to
++$\iota_1^{\ell,\top}\circ\pi_1^{\ell,\bot}
++=0_{\ell\wedge\bot,\ell\vee\top}$ for a literal $\ell$.
++Uniform substitution and double-negation isomorphisms give this
++equation with any formula $A$ in place of $\ell$. Two isomorphisms
++listed by Do\v{s}en and Petri\'c then yield equality of the product
++projections. The Lean formalization proves coherence, maximality and
++the model corollary for the category presented by the defining
++equations. It also proves the equations relating substitution on
++tagged occurrence sets to substitution on finite ordinals.
+ \end{abstract}
+ 
+ \medskip
+@@ -59,8 +62,8 @@
+ 
+ By Boolean Coherence, distinct parallel arrows have different
+ relations between occurrences of propositional variables. We select
+-an edge belonging to one relation and not the other. Precomposition
+-and postcomposition isolate this edge and give the equation used in
++a pair belonging to one relation and not the other. Precomposition
++and postcomposition isolate this pair and give the equation used in
+ Do\v{s}en and Petri\'c's relative-maximality argument
+ \cite[\S9.7, pp.~215--216]{DP}. Two isomorphisms listed in
+ \cite[\S12.5, p.~294]{DP} then give equality of the product projections.
+@@ -97,8 +100,8 @@
+ 
+ Other definitions of Boolean category do not require conjunction and
+ disjunction to be categorical products and coproducts. Lamarche and Stra{\ss}burger
+-construct free graphical, $\Delta$--$\nabla$-strong
+-$K^\flat$- and $K^\sharp$-autonomous categories from proof nets \cite[Theorem~3.5.4]{LSFree}.
++construct free categories from classical proof nets for several
++systems of equations on the logical operations \cite[Theorem~3.5.4]{LSFree}.
+ Stra{\ss}burger studies equations on monoid and comonoid structures
+ in $*$-autonomous categories \cite{Strassburger}.
+ F\"uhrmann and Pym interpret cut reduction by inequalities between
+@@ -148,11 +151,15 @@
+ For $f:A\to X$ and $g:B\to X$, write
+ $[f,g]:A\vee B\to X$ for their copairing. Write
+ $!_A:A\to\top$ and $\kappa_A:\bot\to A$ for the terminal and initial
+-arrows, and $1_A$ for the identity of $A$. Composition $g\circ f$
+-applies $f$ first. The symbols $f\wedge g$ and $f\vee g$ denote the
+-arrows induced by the product and coproduct bifunctors.
+-
+-The distributor is an arrow
++arrows, and $1_A:A\to A$ for the identity. Composition $g\circ f$
++applies $f$ first. For $f:A\to A'$ and $g:C\to C'$, the product and
++coproduct bifunctors give arrows
++\[
++ f\wedge g:A\wedge C\longrightarrow A'\wedge C',
++ \qquad f\vee g:A\vee C\longrightarrow A'\vee C'.
++\]
++
++The dissociativity arrow is
+ \[
+  d_{A,B,C}:A\wedge(B\vee C)\longrightarrow(A\wedge B)\vee C.
+ \]
+@@ -166,8 +173,9 @@
+ \cite[\S11.1, p.~234]{DP}.
+ 
+ Negation is represented by a functor
+-$\neg:\B^{\mathrm{op}}\to\B$, with specified natural
+-double-negation and De Morgan isomorphisms. In particular, write
++$\neg:\B^{\mathrm{op}}\to\B$, sending $f:A\to C$ to
++$\neg f:\neg C\to\neg A$. Its double-negation and De Morgan
++isomorphisms are natural. In particular, write
+ $n_A:\neg\neg A\to A$ for the double-negation isomorphism.
+ The presentation also has arrows
+ $\eta_A:\top\to\neg A\vee A$ and
+@@ -231,8 +239,8 @@
+ 
+ For a formula $A$, write $\Occ(A)$ for the finite set of positions
+ occupied by propositional variables in $A$. Repeated occurrences of the
+-same variable occupy distinct positions. We use tagged coordinates for
+-these positions.
++same variable occupy distinct positions. We use disjoint unions to
++distinguish these positions.
+ 
+ For finite sets $X,Y$, let
+ $X\sqcup Y=(\{1\}\times X)\cup(\{2\}\times Y)$ be their tagged
+@@ -258,7 +266,8 @@
+ diagonal relations, and composition is relational composition.
+ Transporting the occurrence interpretation of \cite{DP} to the
+ tagged coordinates gives a functor
+-$G:\B\to\Rel$ with $GA=\Occ(A)$.
++$G:\B\to\Rel$ with $GA=\Occ(A)$. For $f:A\to C$, its image is
++the relation $Gf\subseteq\Occ(A)\times\Occ(C)$.
+ For example,
+ \[
+  G\pi_1^{A,C}=\{((1,x),x):x\in\Occ(A)\},\qquad
+@@ -296,7 +305,7 @@
+ would give a bijection $\B(p,p)\cong\B(\top,p\Rightarrow p)$,
+ a contradiction.
+ 
+-A \emph{signed literal} is $p$ or $\neg p$ for $p\in P$.
++A \emph{literal} is $p$ or $\neg p$ for $p\in P$.
+ A formula is in \emph{negation normal form} when negation occurs only
+ immediately before a propositional variable. The double-negation and
+ De Morgan isomorphisms, including the isomorphisms for the truth
+@@ -305,16 +314,16 @@
+ $\Occ(A)\to\Occ(A^\circ)$
+ \cite[\S14.1, pp.~313--315]{DP}.
+ 
+-For arrows between formulas in negation normal form, every edge of
+-the occurrence relation joins occurrences of the same signed literal.
++For arrows between formulas in negation normal form, every pair in
++the occurrence relation consists of occurrences of the same literal.
+ In the presentation on negation normal forms in
+ \cite[\S14.2, pp.~318--321]{DP}, objects are formulas built from
+-signed literals, conjunction, disjunction and the truth constants.
++literals, conjunction, disjunction and the truth constants.
+ Arrow terms are generated by identities, associativity and symmetry
+ maps, diagonals and codiagonals, projections and injections, mix,
+-distribution, unit maps, zero endomorphisms, and $\eta_p,\epsilon_p$.
++dissociativity, unit maps, zero endomorphisms, and $\eta_p,\epsilon_p$.
+ The zero endomorphisms and $\eta_p,\epsilon_p$ have empty relations;
+-each remaining generator joins equal signed literals.
++each remaining generator joins equal literals.
+ Composition, $\wedge$ and $\vee$ preserve this property.
+ The equivalence with $\B$ preserves the occurrence interpretation,
+ so the assertion follows.
+@@ -367,6 +376,8 @@
+  F_\sigma:\B(P)\longrightarrow\B(Q),\qquad
+  A\longmapsto A[\sigma],\quad f\longmapsto f[\sigma].
+ \]
++Here $f:A\to C$ is sent to
++$f[\sigma]:A[\sigma]\to C[\sigma]$.
+ Rule~$(su)$ makes this functor well defined on arrow terms modulo the
+ defining equations. It preserves identities, composition, and the
+ specified arrow operations. For each arrow, the blocks in
+@@ -375,8 +386,7 @@
+ 
+ \section{Isolating an occurrence}\label{sec:isolation}
+ 
+-Put $j_A=\iota_1^{A,\top}:A\to A\vee\top$. The contextual equation
+-needed in the proof is
++Put $j_A=\iota_1^{A,\top}:A\to A\vee\top$. We shall derive the equation
+ \begin{equation}
+  j_A\circ\pi_1^{A,\bot}
+    =0_{A\wedge\bot,A\vee\top}.
+@@ -385,12 +395,12 @@
+ The right-hand side is also
+ $\iota_2^{A,\top}\circ!_\bot\circ\pi_2^{A,\bot}$: its occurrence
+ relation is empty, so Boolean Coherence identifies it with the zero
+-arrow. Thus \eqref{eq:context} is the contextual equation of
++arrow. Thus \eqref{eq:context} is the equation used in
+ \cite[\S9.7, pp.~215--216]{DP}.
+ 
+-\begin{lemma}[Occurrence isolation]\label{lem:isolation}
++\begin{lemma}[Isolation of an occurrence]\label{lem:isolation}
+ For distinct parallel arrows $f,g:A\to C$ in $\B$, there are a
+-signed literal $\ell$ and arrows
++literal $\ell$ and arrows
+ \[
+  i:\ell\wedge\bot\longrightarrow A,
+  \qquad r:C\longrightarrow\ell\vee\top
+@@ -407,15 +417,18 @@
+ First replace $f,g$ by $a_C\circ f\circ a_A^{-1}$ and
+ $a_C\circ g\circ a_A^{-1}$. These remain distinct, so it suffices to
+ construct the arrows for the negation normal forms $A^\circ,C^\circ$.
+-If the arrows for these normal forms are $i^\circ,r^\circ$, the required
+-arrows for the original formulas are
+-$a_A^{-1}\circ i^\circ$ and $r^\circ\circ a_C$.
++If
++$i^\circ:\ell\wedge\bot\to A^\circ$ and
++$r^\circ:C^\circ\to\ell\vee\top$ satisfy the required equations,
++then $i=a_A^{-1}\circ i^\circ:\ell\wedge\bot\to A$ and
++$r=r^\circ\circ a_C:C\to\ell\vee\top$ satisfy them for the original
++formulas.
+ We may therefore assume that $A,C$ are in negation normal form.
+ 
+-Faithfulness of $G$ gives an edge belonging to exactly one of $Gf,Gg$.
++Faithfulness of $G$ gives a pair belonging to exactly one of $Gf,Gg$.
+ Interchange $f,g$ if necessary, and choose
+ $(x,y)\in Gf\setminus Gg$. The occurrences $x$ and $y$ have the same
+-signed literal $\ell$. Set $D=\ell\wedge\bot$ and $E=\ell\vee\top$.
++literal $\ell$. Set $D=\ell\wedge\bot$ and $E=\ell\vee\top$.
+ For every formula $V$, the arrows
+ \[
+  b_V=\kappa_V\circ\pi_2^{\ell,\bot}:D\to V,
+@@ -424,23 +437,25 @@
+ \]
+ have empty occurrence relations.
+ 
+-Construct $i:D\to A$ recursively along the tagged path
+-to $x$. At the selected literal, use $\pi_1^{\ell,\bot}$.
++Construct $i:D\to A$ by induction on $A$, following the subformula
++that contains $x$ at each binary connective. At the selected literal, use $\pi_1^{\ell,\bot}$.
+ At a conjunction, pair the recursively constructed arrow with $b_V$
+ for the unselected factor, placing it in the order specified by the
+ tag. At a disjunction, compose the recursively constructed arrow
+ with the injection of the selected summand. The displayed rules for
+-$G$ show inductively that $Gi$ consists of the single edge from the
+-sole occurrence of $D$ to $x$.
+-
+-Construct $r:C\to E$ dually along the path to $y$.
++$G$ show inductively that $Gi$ consists of one pair, whose first component
++is the sole occurrence of $D$ and whose second component is $x$.
++
++Construct $r:C\to E$ by induction on $C$, following the subformula
++that contains $y$.
+ At the selected literal, use $\iota_1^{\ell,\top}$.
+ At a conjunction, first project to the selected factor and then apply
+ the recursively constructed arrow. At a disjunction, copair that
+-arrow with $t_V$ on the unselected summand. Thus $Gr$ is the single
+-edge from $y$ to the sole occurrence of $E$.
+-
+-Relational composition now makes $G(r\circ f\circ i)$ the one-edge
++arrow with $t_V$ on the unselected summand. Thus $Gr$ consists of one pair,
++whose first component is $y$ and whose second component is the sole
++occurrence of $E$.
++
++Relational composition now makes $G(r\circ f\circ i)$ the singleton
+ relation from $\Occ(D)$ to $\Occ(E)$, whereas
+ $G(r\circ g\circ i)$ is empty. Boolean Coherence gives the asserted
+ equations.
+@@ -454,7 +469,7 @@
+ 
+ \begin{proof}
+ Lemma~\ref{lem:isolation} and compatibility with composition give
+-\eqref{eq:context} for a signed literal $\ell$.
++\eqref{eq:context} for a literal $\ell$.
+ If $\ell=p$, let $\sigma$ substitute $A$ for $p$ and fix the other variables.
+ This yields \eqref{eq:context} for $A$: under
+ \eqref{eq:occ-substitution}, the literal occurrence in each endpoint
+@@ -462,7 +477,9 @@
+ by $F_\sigma$; see also Appendix~\ref{app:shared}.
+ 
+ If $\ell=\neg p$, substitute $\neg A$ for $p$, obtaining the equation
+-for $\neg\neg A$. Transport it along $n_A:\neg\neg A\to A$.
++for $\neg\neg A$. Precompose with
++$n_A^{-1}\wedge1_\bot$ and postcompose with $n_A\vee1_\top$,
++where $n_A:\neg\neg A\to A$.
+ Put
+ $k_A=j_A\circ\pi_1^{A,\bot}:A\wedge\bot\to A\vee\top$.
+ The product and coproduct equations give the commutative square
+@@ -479,7 +496,7 @@
+ \eqref{eq:context} for $A$.
+ \end{proof}
+ 
+-\section{Contextual collapse}\label{sec:collapse}
++\section{Equality of the product projections}\label{sec:collapse}
+ 
+ The next lemma identifies two isomorphisms of the types listed in
+ \cite[\S12.5, p.~294]{DP}.
+@@ -519,7 +536,7 @@
+ their inverse equations.
+ \end{proof}
+ 
+-\begin{lemma}[Contextual collapse]\label{lem:collapse}
++\begin{lemma}\label{lem:collapse}
+ Let $\theta$ be a proof congruence on $\B$ such that
+ \eqref{eq:context} holds modulo $\theta$ for every formula $A$.
+ Then $\B/\theta$ is a preorder.
+@@ -576,9 +593,10 @@
+ We also obtain maximality in the sense of
+ \cite[\S9.3, p.~194]{DP}. An \emph{interpretation} in a zero-identity
+ Boolean category $\mathcal C$ assigns an object of $\mathcal C$ to
+-each propositional variable. It extends to a functor
+-$\B(P)\to\mathcal C$ preserving the specified products, coproducts,
+-units, distributor, negation maps, $\eta$ and $\epsilon$.
++each propositional variable. For an assignment
++$v:P\to\operatorname{Ob}(\mathcal C)$, the induced functor
++$I_v:\B(P)\to\mathcal C$ preserves the specified products, coproducts,
++units, dissociativity arrows, negation maps, $\eta$ and $\epsilon$.
+ 
+ \begin{corollary}\label{cor:models}
+ Let $P$ be a nonempty set of propositional variables, and let
+@@ -590,9 +608,12 @@
+ 
+ \begin{proof}
+ Declare two parallel arrows of $\B(P)$ equivalent when all their
+-interpretations in $\mathcal C$ agree. This defines a substitution
+-congruence: composing an interpretation with $F_\sigma$ is another
+-interpretation. The congruence contains $f=g$, so
++interpretations in $\mathcal C$ agree. Since every $I_v$ preserves
++the arrow operations, this relation is a proof congruence. For a
++substitution $\sigma:P\to\FormulaSet(P)$, the composite
++$I_v\circ F_\sigma$ is the interpretation induced by
++$p\mapsto I_v(\sigma(p))$. The congruence is therefore preserved
++by substitution. It contains $f=g$, so
+ Theorem~\ref{thm:main} makes it total. In particular,
+ $\pi_1^{p,p}=\pi_2^{p,p}$ holds under every interpretation, for any
+ $p\in P$. Interpret $p$ as an arbitrary object $X$ of $\mathcal C$.
+@@ -613,10 +634,10 @@
+ The theorem \texttt{relative\_maximality} states that a
+ substitution congruence identifying distinct parallel arrows is total.
+ It assumes the arrow operations, a faithful occurrence interpretation,
+-isomorphisms to negation normal forms, preservation of signed literals
+-along occurrence-relation edges, uniform substitution and double
++isomorphisms to negation normal forms, preservation of literals
++along occurrence relations, uniform substitution and double
+ negation, with their equations.
+-Its proof of contextual collapse uses the map
++Its proof that the quotient is a preorder uses the arrow
+ \[
+  h_A=[1_A,1_A]\circ m_{A,A}:A\wedge A\longrightarrow A,
+ \]
+@@ -630,11 +651,23 @@
+ The right-hand side is independent of $B$. The symmetry of mix gives
+ $h_A\circ\langle\pi_2^{A,A},\pi_1^{A,A}\rangle=h_A$.
+ Write $\equiv$ for equality modulo a proof congruence containing \eqref{eq:context}
+-for every formula. Taking $B=\bot$ in the expression for mix,
+-\eqref{eq:context} and Boolean Coherence in $\B$ give
+-\[
+- j_A\circ h_A\equiv j_A\circ\pi_2^{A,A}.
+-\]
++for every formula. For $B=\bot$, put
++\[
++ v_A=d_{A,\bot,A}\circ(1_A\wedge\iota_2^{\bot,A})
++ :A\wedge A\longrightarrow(A\wedge\bot)\vee A.
++\]
++The coproduct equations and \eqref{eq:context} give
++\[
++ \begin{aligned}
++ j_A\circ h_A
++ &= [j_A\circ\pi_1^{A,\bot},j_A]\circ v_A\\
++ &\equiv[0_{A\wedge\bot,A\vee\top},j_A]\circ v_A
++  =j_A\circ\pi_2^{A,A}.
++ \end{aligned}
++\]
++The last equality holds in $\B$ by Boolean Coherence: both occurrence
++relations send the second copy of $\Occ(A)$ identically to the
++$A$-summand of $\Occ(A\vee\top)$ and have no pairs from the first copy.
+ Precomposing with the symmetry of $A\wedge A$ and using the
+ preceding identity for $h_A$ gives
+ $j_A\circ\pi_1^{A,A}\equiv j_A\circ\pi_2^{A,A}$.
+@@ -643,16 +676,32 @@
+ \[
+  j_A\equiv\iota_2^{A,\top}\circ!_A.
+ \]
+-The coproduct equations then make $A\vee\top$ terminal in the
+-quotient. By symmetry,
++Put $s_A=\iota_2^{A,\top}:\top\to A\vee\top$. The coproduct
++equations give
++\[
++ 1_{A\vee\top}=[j_A,s_A]
++   \equiv[s_A\circ!_A,s_A]=s_A\circ!_{A\vee\top}.
++\]
++Since $!_{A\vee\top}\circ s_A=1_\top$, the object $A\vee\top$ is
++terminal in the quotient. Composing with the coproduct symmetry gives
+ $\iota_2^{\top,A}\equiv\iota_1^{\top,A}\circ!_A$.
+-Taking $B=\top$ in the expression for mix and using
+-\eqref{eq:first-injection} now gives $h_A\equiv\pi_1^{A,A}$.
+-The symmetry of $h_A$ yields $\pi_1^{A,A}\equiv\pi_2^{A,A}$,
++For $B=\top$, put
++$w_A=1_A\wedge!_A:A\wedge A\to A\wedge\top$. Substituting the
++preceding equation for $\iota_2^{\top,A}$ in the expression for mix gives
++\[
++ \begin{aligned}
++ h_A&\equiv[\pi_1^{A,\top},1_A]\circ d_{A,\top,A}
++             \circ(1_A\wedge\iota_1^{\top,A})\circ w_A\\
++    &=[\pi_1^{A,\top},1_A]\circ\iota_1^{A\wedge\top,A}\circ w_A\\
++    &=\pi_1^{A,\top}\circ w_A=\pi_1^{A,A}.
++ \end{aligned}
++\]
++The second line uses \eqref{eq:first-injection}; the third uses the
++coproduct and product equations. The symmetry of $h_A$ yields $\pi_1^{A,A}\equiv\pi_2^{A,A}$,
+ and pairing equates any two parallel arrows.
+ 
+ Cut elimination and Boolean Coherence are proved for the presentation
+-defining $\B(P)$. Normalization, preservation of signed literals and
++defining $\B(P)$. Normalization, preservation of literals and
+ uniform substitution on terms and their source and target formulas
+ satisfy the remaining hypotheses of \texttt{relative\_maximality}.
+ Its application gives \texttt{Presentation.maximality}.
+@@ -661,7 +710,7 @@
+ in Section~\ref{sec:collapse}, with explicit inverses for $q_A$ and $e_A$.
+ The model corollary is proved using interpretations preserving the
+ specified operations and their composition with substitution. The formalization
+-also verifies the occurrence-profile and finite-ordinal constructions of
++also verifies the occurrence maps and finite-ordinal constructions of
+ Appendix~\ref{app:substitution}, the diagram identities of
+ Appendix~\ref{app:structural-diagrams}, and the cut reductions and rank
+ comparisons discussed in Appendix~\ref{app:cut-errata}.
+@@ -676,22 +725,22 @@
+ 
+ Do\v{s}en and Petri\'c's generalized composition of definable
+ connectives \cite[\S2.5, pp.~45--46]{DP} substitutes formula
+-patterns and computes the profile of the resulting pattern.
+-We describe this profile by the tagged coordinates of
++patterns and computes the map labelling the resulting occurrences.
++We describe this map by the tagged coordinates of
+ \cite[\S\S9.2--9.3]{Notation}. Each occurrence after substitution
+ is indexed by an occurrence of the outer pattern and an occurrence
+ of the pattern inserted there.
+ 
+-\subsection{Profiles and their fibres}\label{app:profiles}
++\subsection{Occurrence maps and their fibres}\label{app:profiles}
+ 
+ For an integer $n\geq0$, put $\underline n=\{1,\ldots,n\}$, with
+ $\underline0=\varnothing$. A \emph{formula pattern} on a finite set
+ of placeholders is a formula in those placeholders. Its
+-\emph{occurrence profile} records the placeholder at each position,
+-reading positions from left to right.
++\emph{occurrence map} records the index of the placeholder at each position,
++after enumerating the placeholders and reading positions from left to right.
+ 
+ Let $U=\{p_1,\ldots,p_k\}$ consist of distinct placeholders and let
+-$M\in\FormulaSet(U)$ have $m$ occurrences. Its profile is
++$M\in\FormulaSet(U)$ have $m$ occurrences. Its occurrence map is
+ \[
+  o_M:\underline m\longrightarrow\underline k,
+  \qquad o_M(r)=i\quad\text{when position $r$ contains $p_i$}.
+@@ -700,7 +749,7 @@
+ $Q_i=\{q_{i,1},\ldots,q_{i,\ell_i}\}$ of distinct local placeholders and a
+ pattern $N_i\in\FormulaSet(Q_i)$ with $n_i$ occurrences. The sets
+ $Q_i$ are pairwise disjoint. Write
+-$o_i:\underline{n_i}\to\underline{\ell_i}$ for the profile of $N_i$.
++$o_i:\underline{n_i}\to\underline{\ell_i}$ for the occurrence map of $N_i$.
+ Empty placeholder sets and empty occurrence sets are allowed; a
+ pattern over an empty placeholder set has no variable occurrences.
+ 
+@@ -734,7 +783,7 @@
+  \gamma(r,t)=\bigl(o_M(r),o_{o_M(r)}(t)\bigr).
+ \]
+ 
+-Define the block projections $p_D:D\to\underline m$ and
++Define the projections $p_D:D\to\underline m$ and
+ $p_C:C\to\underline k$ by $p_D(r,t)=r$ and $p_C(i,s)=i$.
+ Then $p_C\circ\gamma=o_M\circ p_D$, so the following square commutes:
+ \begin{equation}\label{eq:app-profile}
+@@ -774,7 +823,7 @@
+  s_r=\sum_{q=1}^{r}n_{o_M(q)}\quad(1\leq r\leq m),\qquad
+  t_i=\sum_{j=1}^{i}\ell_j\quad(1\leq i\leq k).
+ \]
+-The block encodings are the bijections
++Numbering each disjoint union consecutively gives bijections
+ \[
+  \begin{aligned}
+  \theta_D:D&\longrightarrow\underline{s_m},
+@@ -803,17 +852,17 @@
+ 
+ In Do\v{s}en and Petri\'c's notation, $\mu$ and $\nu_i$ correspond to
+ $o_M$ and $o_i$, and $\mu(\nu_1,\ldots,\nu_k)$ corresponds to $\delta$.
+-Their block locator selects the unique $r$ for which
+-$s_{r-1}<x\leq s_r$; substituting $t=x-s_{r-1}$ in
++For $x\in\underline{s_m}$, let $r$ be the unique index with
++$s_{r-1}<x\leq s_r$. Substituting $t=x-s_{r-1}$ in
+ \eqref{eq:app-coordinate} gives their formula
+ \cite[\S2.5, p.~46]{DP}. The square therefore describes the
+-occurrence-profile component of their generalized composition.
++function on finite ordinals in their generalized composition.
+ The \emph{skeleton} of a pattern is obtained by replacing every
+ placeholder by one fixed symbol and leaving the constants and
+-connectives unchanged. A skeleton and an occurrence profile recover
++connectives unchanged. A skeleton and an occurrence map recover
+ the pattern by assigning the indicated placeholder to each position.
+ The generalized composite is therefore determined by the skeleton
+-of $M[\Phi_0]$ and the profile $\delta$.
++of $M[\Phi_0]$ and the map $\delta$.
+ 
+ For example, take
+ \[
+@@ -821,7 +870,7 @@
+  N_1(a,b)=a\wedge b,\qquad
+  N_2(c,d)=d\wedge(c\vee d).
+ \]
+-The profiles, listed by successive values, are
++The occurrence maps, listed by successive values, are
+ $o_M=(2,1,2)$, $o_1=(1,2)$, and $o_2=(2,1,2)$.
+ The source blocks have sizes $3,2,3$, while the target blocks list
+ $(a,b)$ and $(c,d)$. Thus
+@@ -833,8 +882,8 @@
+ \end{array}
+ \]
+ For instance, source position $2$ has coordinates $(1,2)$.
+-The profile map gives $\gamma(1,2)=(2,1)$, and the target encoding
+-then gives $\theta_C(2,1)=3$. Thus $\delta(2)=3$.
++The function $\gamma$ gives $\gamma(1,2)=(2,1)$, and
++$\theta_C(2,1)=3$. Thus $\delta(2)=3$.
+ 
+ \subsection{Shared variables and the maximality argument}\label{app:shared}
+ 
+@@ -861,7 +910,7 @@
+ distinguish its occurrences.
+ 
+ If the literal isolated in Proposition~\ref{prop:all-contexts}
+-is $p$, the contextual equation has source $p\wedge\bot$ and
++is $p$, equation~\eqref{eq:context} has source $p\wedge\bot$ and
+ target $p\vee\top$. Each contains one occurrence of $p$. Substituting $A$ for $p$
+ therefore gives one block $\Occ(A)$ at each endpoint, and the
+ substituted arrows have type $A\wedge\bot\to A\vee\top$. If the isolated literal is $\neg p$,
+@@ -908,7 +957,7 @@
+ its last arrow copairs $\kappa_A:\bot\to A$ with $1_A:A\to A$.
+ The arrows between them use
+ $\eta_A:\top\to\neg A\vee A$ and
+-$\epsilon_A:A\wedge\neg A\to\bot$, together with the distributor.
++$\epsilon_A:A\wedge\neg A\to\bot$, together with the dissociativity arrow.
+ 
+ \paragraph{The zero law.}
+ For any parallel arrows $f,g:A\to C$,
+@@ -958,7 +1007,7 @@
+ \small
+ \setlength{\bibsep}{2pt}
+ \bibliographystyle{unsrtnat}
+-\bibliography{references_v13,palomar_v13}
++\bibliography{references_v14,palomar_v14}
+ \endgroup
+ \end{document}
+ 

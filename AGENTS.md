@@ -26,8 +26,8 @@ other checkouts, including FailureOfComposition and Categorical_Rice_Shapiro.
 Read `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md`,
 `docs/CODEX_NEXT_SESSION.txt`, `docs/MANUSCRIPT_STATEMENTS.md`,
 `docs/MANUSCRIPT_COVERAGE.md`, and
-`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v13, dated October 31, 2026;
-v4–v12 remain preserved. V8
+`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v14, dated November 1, 2026;
+v4–v13 remain preserved. V8
 updated the formalization status/date/source citation. V9 adds the author-requested
 Codex disclosure, author-responsibility sentence and verified Palomar citation,
 and updates the date. MSC 2020 Primary 03G30; Secondary 03F07, 18A32 is preserved.
@@ -57,6 +57,14 @@ distributive antecedents, and expands the existing symmetric-fold deduction.
 The previous v12 review missed that citation qualification. The manuscript's
 own signed-literal isolation and registered proof are unchanged. See
 docs/MANUSCRIPT_V13_REPORT.md and its three review records.
+V14 applies the author-requested hostile-reviewer and mathematical-writing
+plugins to the complete preprint. It uses the source's dissociativity terminology,
+literal and occurrence map; gives the operation/functor/witness types; and expands
+the two computations through v_A and w_A in the alternative proof. The seven
+mathematical statements retain their hypotheses and conclusions, with a literal
+synonym and lemma-caption changes. Numbered displays, diagrams, labels and the
+supplied Palomar BibTeX remain byte-identical. See docs/MANUSCRIPT_V14_REPORT.md
+and its two review records. Carry these accepted repairs across future revisions.
 The author requests that manuscript prose avoid empty qualifiers, unexplained
 terms and process updates. Keep mathematically meaningful qualifications, such
 as structural induction, with their objects stated; keep process reports outside
@@ -222,7 +230,7 @@ full preflight and service verification passed. Do not repeat intake,
 registration or successful verification. The publication monitor has completed.
 
 Read docs/CODEX_NEXT_SESSION.txt, docs/PALOMAR_V2_REGISTRATION_REPORT.md and
-docs/ARXIV_PREPARATION_REPORT.md. V13 and its four-file arXiv source package are
+docs/ARXIV_PREPARATION_REPORT.md. V14 and its four-file arXiv source package are
 prepared and locally compiled; every earlier release is preserved. No arXiv upload has occurred. Keep mathematical
 proof development closed, retain all previous manuscripts and the stash, and
 reuse verification. Do not change the immutable registered source or its frozen
@@ -232,7 +240,7 @@ Version-2 public evidence hashes, all 13 served render files, the rendered openi
 and statement correspondence, and the native source tag were verified. The
 version-1 diagnostic about two served HTML pages with added Cloudflare analytics
 remains historical evidence about version 1; retain it. No version-2 served-render
-mismatch was found. The v13 manuscript and supplied BibTeX continue to cite
+mismatch was found. The v14 manuscript and supplied BibTeX continue to cite
 version 1; do not revise a manuscript or package solely to refresh registration.
 
 Credentials, private API responses, the original author-facing review and consent
