@@ -1,12 +1,16 @@
 # Došen–Petrić maximality in Lean
 
-## Palomar registration and arXiv preparation (30 October 2026)
+## Palomar registration and arXiv preparation (1 November 2026)
 
-Registered as [**PALOMAR-2026-10-30-000014, version 1**](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1). The permanent entry,
-archived mechanical evidence and source-preservation tag bind the exact proof
-commit below. The [registration report](docs/PALOMAR_REGISTRATION_REPORT.md)
-records the public readback; a separate [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
-records the analytics injection in two served render pages.
+Registered as [**PALOMAR-2026-10-30-000014, version 2**](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=2),
+source `5dbee39bea09539bd130f729e82636419f71f920`. This ordinary update publishes
+the approved prose and metadata. The [version-2 registration report](docs/PALOMAR_V2_REGISTRATION_REPORT.md)
+records authenticated and public readback, all four verified evidence files,
+all 13 verified served render files and the verified source-preservation tag.
+[Version 1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1)
+and its [registration report](docs/PALOMAR_REGISTRATION_REPORT.md) remain preserved.
+The earlier [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
+describes version 1.
 
 The arXiv package is ready in [submission/arxiv-v13](submission/arxiv-v13/README.md).
 V13 retains the ChatGPT and Codex disclosure and MSC 2020 Primary 03G30;
@@ -40,11 +44,12 @@ commands, inputs and diagnostics under `provenance/wsl-palomar-registration-2026
 
 The author approved Apache-2.0 publication, including the original manuscript
 and retained history, on 30 October 2026. The repository is public. Its immutable
-submission SHA remains `2e771844077fd8cebfbe365230f13d4dd13a75b1`. Lean stays at 4.35.0.
-[Official full preflight](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41129351329) passed with the pinned standard profile;
-the [stage report](docs/PALOMAR_OFFICIAL_PREFLIGHT_REPORT.md) distinguishes its
-result from local verification and final registration. [Service verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41137470993)
-also passed; [the service report](docs/PALOMAR_SERVICE_VERIFICATION_REPORT.md) records its evidence. The
+version-1 SHA remains `2e771844077fd8cebfbe365230f13d4dd13a75b1`; the version-2
+SHA is `5dbee39bea09539bd130f729e82636419f71f920`. Lean stays at 4.35.0.
+For version 2, [official full preflight](https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41266833954)
+and [service verification](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41269034789)
+passed and were reused for registration. The [version-2 report](docs/PALOMAR_V2_REGISTRATION_REPORT.md)
+keeps mechanical checks, author consent and completed registration distinct. The
 publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
@@ -721,6 +726,7 @@ directory and preserves the older checkout.
 The verified package is merged into main and publicly released under the
 author-approved Apache-2.0 license, including the original manuscript and retained
 history. Original proposals remain under `docs/palomar/` as historical materials.
-The verified source remains `2e771844077fd8cebfbe365230f13d4dd13a75b1`. Official full preflight passed;
-service verification also passed. The private review and author’s registration decision remain separate. ArXiv submission
-follows successful Palomar registration.
+The latest registered source is `5dbee39bea09539bd130f729e82636419f71f920`;
+version 1 retains `2e771844077fd8cebfbe365230f13d4dd13a75b1`. Official full preflight,
+service verification, the author's separate review-specific consent and
+version-2 registration are complete. ArXiv submission remains a separate step.

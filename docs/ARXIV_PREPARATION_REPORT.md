@@ -37,11 +37,18 @@ Title: Maximality of the Došen–Petrić Boolean Category. Author: Florian Leng
 Proposed category: math.CT; cross-list: math.LO. MSC 2020: Primary 03G30;
 Secondary 03F07, 18A32. Comments state 14 pages and the registered proof link.
 
-Palomar registration remains PALOMAR-2026-10-30-000014 v1, immutable source
+The prepared v13 package cites PALOMAR-2026-10-30-000014 v1, immutable source
 2e771844077fd8cebfbe365230f13d4dd13a75b1, Lean 4.35.0. The mathematical
 source reference is 630c4b6e47da16a1434476a211fd29ce6adc5569. No frozen input,
 Lean source, comparator or toolchain changes. No verification or registration
 was repeated for this manuscript revision.
+
+On 1 November 2026, the ordinary prose/metadata update was registered as
+[version 2](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=2),
+source `5dbee39bea09539bd130f729e82636419f71f920`; see
+[the registration report](PALOMAR_V2_REGISTRATION_REPORT.md). This later registry
+record does not revise the prepared v13 manuscript, supplied version-1 BibTeX or
+four-file package. Version 1 remains available.
 
 No arXiv upload has occurred. The author selects an arXiv-supported license
 and checks the server preview in the submission account. No new distribution

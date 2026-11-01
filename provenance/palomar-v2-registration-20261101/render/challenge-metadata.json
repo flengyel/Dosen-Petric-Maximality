@@ -1,0 +1,37 @@
+{
+  "audit_declarations": [
+    {
+      "declaration": "theorem DosenPetric.Palomar.maximality.{u} {P : Type u} [Nonempty P] (R : DosenPetric.Palomar.PrimitiveCongruence P)\n  (closed : DosenPetric.Palomar.PrimitiveCongruence.Closed R) {A B : DosenPetric.Formula P}\n  (f g : DosenPetric.Presentation.Term P A B) (hne : Not (DosenPetric.Presentation.Derives f g))\n  (hfg : DosenPetric.Palomar.PrimitiveCongruence.Rel R f g) : DosenPetric.Palomar.PrimitiveCongruence.Total R",
+      "name": "DosenPetric.Palomar.maximality"
+    },
+    {
+      "declaration": "theorem DosenPetric.Palomar.short_maximality.{u} {P : Type u} [Nonempty P] (R : DosenPetric.Palomar.PrimitiveCongruence P)\n  (closed : DosenPetric.Palomar.PrimitiveCongruence.Closed R) {A B : DosenPetric.Formula P}\n  (f g : DosenPetric.Presentation.Term P A B) (hne : Not (DosenPetric.Presentation.Derives f g))\n  (hfg : DosenPetric.Palomar.PrimitiveCongruence.Rel R f g) : DosenPetric.Palomar.PrimitiveCongruence.Total R",
+      "name": "DosenPetric.Palomar.short_maximality"
+    },
+    {
+      "declaration": "theorem DosenPetric.Palomar.congruence_dichotomy.{u} {P : Type u} [Nonempty P] (R : DosenPetric.Palomar.PrimitiveCongruence P)\n  (closed : DosenPetric.Palomar.PrimitiveCongruence.Closed R) :\n  Or\n    (\u2200 {A B : DosenPetric.Formula P} (f g : DosenPetric.Presentation.Term P A B),\n      Iff (DosenPetric.Palomar.PrimitiveCongruence.Rel R f g) (DosenPetric.Presentation.Derives f g))\n    (DosenPetric.Palomar.PrimitiveCongruence.Total R)",
+      "name": "DosenPetric.Palomar.congruence_dichotomy"
+    },
+    {
+      "declaration": "theorem DosenPetric.Palomar.identity_ne_zero.{u} {P : Type u} (p : P) :\n  Not\n    (DosenPetric.Presentation.Derives (DosenPetric.Presentation.Term.id (DosenPetric.Formula.var p))\n      (DosenPetric.Presentation.Term.zero (DosenPetric.Formula.var p)))",
+      "name": "DosenPetric.Palomar.identity_ne_zero"
+    },
+    {
+      "declaration": "theorem DosenPetric.Palomar.no_top_to_bot.{u} (P : Type u) :\n  Not (Nonempty (DosenPetric.Presentation.Term P DosenPetric.Formula.top DosenPetric.Formula.bot))",
+      "name": "DosenPetric.Palomar.no_top_to_bot"
+    }
+  ],
+  "declarations": [
+    "DosenPetric.Palomar.maximality",
+    "DosenPetric.Palomar.short_maximality",
+    "DosenPetric.Palomar.congruence_dichotomy",
+    "DosenPetric.Palomar.identity_ne_zero",
+    "DosenPetric.Palomar.no_top_to_bot"
+  ],
+  "imports": [],
+  "module_doc": "The formulas, arrow terms and equations below present the zero-identity\nBoolean category of Do\u0161en and Petri\u0107. Two arrow terms represent the same\narrow if and only if `Derives` relates them.\n\nFor `f : Term P A B` and `g : Term P B C`,\n`Term.comp f g : Term P A C` applies `f` and then `g`.",
+  "schema_version": 3,
+  "solution_imports": [
+    "DosenPetric.PalomarMaximality"
+  ]
+}

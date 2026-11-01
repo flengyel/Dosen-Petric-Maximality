@@ -208,26 +208,32 @@ source-closure audits, focused negative controls, and immutable-source evidence.
 Keep local build, Comparator, official preflight, service verification, automated
 review, and publication as separate statuses.
 
-## Publication phase — 30 October 2026
+## Publication phase — 1 November 2026
 
-Palomar registration is complete: PALOMAR-2026-10-30-000014, version 1.
-https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=1
-The exact registered proof source remains 2e771844077fd8cebfbe365230f13d4dd13a75b1, root
-comparator.json, Lean 4.35.0. Full preflight and service verification passed.
-The author registered the actual delivered review personally; the service and
-public entry confirm registration. Do not repeat intake or registration.
+Palomar registration is complete: PALOMAR-2026-10-30-000014, version 2.
+https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=2
+The exact version-2 source is 5dbee39bea09539bd130f729e82636419f71f920, root
+comparator.json, Lean 4.35.0. Submission txdu0y3got1o is registered. The author
+separately authorized the exact delivered review after seeing its digest and
+publication explanation; the agent's digest-bound request was accepted, and
+authenticated service and public readback confirm completion. Version 1 and its
+source 2e771844077fd8cebfbe365230f13d4dd13a75b1 remain preserved. Both versions'
+full preflight and service verification passed. Do not repeat intake,
+registration or successful verification. The publication monitor has completed.
 
-Read docs/CODEX_NEXT_SESSION.txt, docs/PALOMAR_REGISTRATION_REPORT.md and
+Read docs/CODEX_NEXT_SESSION.txt, docs/PALOMAR_V2_REGISTRATION_REPORT.md and
 docs/ARXIV_PREPARATION_REPORT.md. V13 and its four-file arXiv source package are
 prepared and locally compiled; every earlier release is preserved. No arXiv upload has occurred. Keep mathematical
 proof development closed, retain all previous manuscripts and the stash, and
 reuse verification. Do not change the immutable registered source or its frozen
 submission inputs when refreshing documentation.
 
-Public evidence hashes and the native source tag were verified. The two served
-HTML render pages have added Cloudflare analytics markup and do not match their
-manifest bytes; the original artifact does. Keep this readback limitation separate
-from successful mechanical verification and registration; see the diagnostic.
+Version-2 public evidence hashes, all 13 served render files, the rendered opening
+and statement correspondence, and the native source tag were verified. The
+version-1 diagnostic about two served HTML pages with added Cloudflare analytics
+remains historical evidence about version 1; retain it. No version-2 served-render
+mismatch was found. The v13 manuscript and supplied BibTeX continue to cite
+version 1; do not revise a manuscript or package solely to refresh registration.
 
 Credentials, private API responses, the original author-facing review and consent
 digest remain in ignored private staging and out of public Git. Only the publicly

@@ -1,0 +1,138 @@
+{
+  "checks": [
+    {
+      "codes_checked": [
+        "arxiv:math.CT",
+        "arxiv:math.LO",
+        "msc2020:03G30",
+        "msc2020:03F07",
+        "msc2020:18A32"
+      ],
+      "declarations_checked": [],
+      "findings": [],
+      "outcome": "neutral",
+      "sources_checked": [
+        "formalization_metadata",
+        "challenge_source",
+        "mechanical_report",
+        "policy:taxonomies/classification-guide.md"
+      ],
+      "step": "classification",
+      "summary": "All submitted subject classifications are plausibly relevant; no egregious mismatch found.",
+      "trust_level": "high"
+    },
+    {
+      "codes_checked": [],
+      "declarations_checked": [],
+      "findings": [],
+      "outcome": "neutral",
+      "sources_checked": [
+        "formalization_metadata",
+        "challenge_source",
+        "project_readme",
+        "submission",
+        "mechanical_report",
+        "previous_findings",
+        "repository@5dbee39bea09539bd130f729e82636419f71f920:manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v13.tex",
+        "repository@5dbee39bea09539bd130f729e82636419f71f920:docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md",
+        "repository@5dbee39bea09539bd130f729e82636419f71f920:docs/PALOMAR_REGISTRATION_REPORT.md",
+        "repository@5dbee39bea09539bd130f729e82636419f71f920:docs/PALOMAR_REGISTRATION_LOCAL_REPORT.md",
+        "repository@5dbee39bea09539bd130f729e82636419f71f920:docs/reviews/V13_LITERATURE_REVIEW_2026-10-31.md",
+        "repository@5dbee39bea09539bd130f729e82636419f71f920:docs/reviews/V13_STATEMENT_REVIEW_2026-10-31.md",
+        "repository@5dbee39bea09539bd130f729e82636419f71f920:docs/reviews/V13_HOSTILE_REVIEW_2026-10-31.md",
+        "repository@5dbee39bea09539bd130f729e82636419f71f920:docs/reviews/PALOMAR_REGISTRATION_REVIEW.md",
+        "repository@5dbee39bea09539bd130f729e82636419f71f920:docs/PALOMAR_STATEMENT_CORRESPONDENCE.md"
+      ],
+      "step": "metadata",
+      "summary": "The structured provenance and narrative accurately distinguish the selected results, broader development, AI involvement, and levels of review; no material metadata problem was identified.",
+      "trust_level": "qualified"
+    },
+    {
+      "codes_checked": [],
+      "declarations_checked": [
+        "DosenPetric.Palomar.maximality",
+        "DosenPetric.Palomar.short_maximality",
+        "DosenPetric.Palomar.congruence_dichotomy",
+        "DosenPetric.Palomar.identity_ne_zero",
+        "DosenPetric.Palomar.no_top_to_bot"
+      ],
+      "findings": [],
+      "outcome": "neutral",
+      "sources_checked": [
+        "challenge_source",
+        "repository@5dbee39bea09539bd130f729e82636419f71f920:Challenge.lean",
+        "repository@5dbee39bea09539bd130f729e82636419f71f920:README.md",
+        "repository@5dbee39bea09539bd130f729e82636419f71f920:formalization.yaml",
+        "repository@5dbee39bea09539bd130f729e82636419f71f920:comparator.json",
+        "mechanical_report"
+      ],
+      "step": "statement_alignment",
+      "summary": "The five selected statements agree with the available mathematical account; no material alignment problem was identified.",
+      "trust_level": "high"
+    },
+    {
+      "codes_checked": [],
+      "declarations_checked": [
+        "DosenPetric.Palomar.maximality",
+        "DosenPetric.Palomar.short_maximality",
+        "DosenPetric.Palomar.congruence_dichotomy",
+        "DosenPetric.Palomar.identity_ne_zero",
+        "DosenPetric.Palomar.no_top_to_bot"
+      ],
+      "findings": [],
+      "outcome": "neutral",
+      "sources_checked": [
+        "Challenge.lean",
+        "comparator.json",
+        "formalization.yaml",
+        "README.md",
+        "mechanical_report"
+      ],
+      "step": "definition_fidelity",
+      "summary": "No material definition mismatch or reachable vacuity was identified in the five selected statements.",
+      "trust_level": "high"
+    },
+    {
+      "codes_checked": [],
+      "declarations_checked": [
+        "DosenPetric.Palomar.maximality",
+        "DosenPetric.Palomar.short_maximality",
+        "DosenPetric.Palomar.congruence_dichotomy",
+        "DosenPetric.Palomar.identity_ne_zero",
+        "DosenPetric.Palomar.no_top_to_bot"
+      ],
+      "findings": [],
+      "outcome": "neutral",
+      "sources_checked": [
+        "flengyel/Dosen-Petric-Maximality@5dbee39bea09539bd130f729e82636419f71f920:comparator.json",
+        "flengyel/Dosen-Petric-Maximality@5dbee39bea09539bd130f729e82636419f71f920:Challenge.lean",
+        "flengyel/Dosen-Petric-Maximality@5dbee39bea09539bd130f729e82636419f71f920:formalization.yaml",
+        "flengyel/Dosen-Petric-Maximality@5dbee39bea09539bd130f729e82636419f71f920:README.md",
+        "flengyel/Dosen-Petric-Maximality@5dbee39bea09539bd130f729e82636419f71f920:manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v13.tex",
+        "flengyel/Dosen-Petric-Maximality@5dbee39bea09539bd130f729e82636419f71f920:manuscript/references_v13.bib",
+        "flengyel/Dosen-Petric-Maximality@5dbee39bea09539bd130f729e82636419f71f920:docs/reviews/V13_LITERATURE_REVIEW_2026-10-31.md",
+        "flengyel/Dosen-Petric-Maximality@5dbee39bea09539bd130f729e82636419f71f920:docs/DOSEN_PETRIC_MAXIMALITY_NOVELTY_REVIEW_2026-10-25.md",
+        "flengyel/Dosen-Petric-Maximality@5dbee39bea09539bd130f729e82636419f71f920:docs/LITERATURE_REVIEW_V5_2026-10-23.md",
+        "flengyel/Dosen-Petric-Maximality@5dbee39bea09539bd130f729e82636419f71f920:docs/PALOMAR_STATEMENT_CORRESPONDENCE.md"
+      ],
+      "step": "literature_notability",
+      "summary": "The selected maximality result and its supporting separation claims have a plausible research-paper setting and an identifiable categorical proof-theory audience. No material literature omission or unsupported priority claim was established.",
+      "trust_level": "qualified"
+    }
+  ],
+  "mechanical_report": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41269034789",
+  "outcome": "neutral",
+  "policy_commit": "28bd48b9b71bbb2a82c718ce761d5a4220ef8e60",
+  "requested_changes": [],
+  "reviewed_at": "2026-11-01T08:01:32Z",
+  "reviewer_models": [
+    "codex:gpt-6-sol"
+  ],
+  "schema_version": 3,
+  "source": {
+    "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "repository": "flengyel/Dosen-Petric-Maximality"
+  },
+  "submission_id": "txdu0y3got1o",
+  "summary": "Mechanical verification passed, and the editorial checks identified no blocking problem with the selected statements or their presentation."
+}

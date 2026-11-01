@@ -2,8 +2,8 @@
 
 This preserves the intake checkpoint before the author's separate registration
 decision. On 1 November 2026 the author authorized the delivered review, and
-Palomar accepted the registration request. Public registration readback remains
-pending; see [the successor report](PALOMAR_V2_REGISTRATION_REPORT.md). The
+Palomar completed registration as version 2, with authenticated and public
+readback verified; see [the successor report](PALOMAR_V2_REGISTRATION_REPORT.md). The
 intake-stage statuses below describe the earlier checkpoint.
 
 Intake and the agent access proof are complete for submission txdu0y3got1o. The author explicitly agreed to intake after seeing the exact candidate, revised public text, repository, paths and responsible-author-or-maintainer relationship. Registration has not been authorized or requested. Version 1 remains available; the requested ordinary successor is expected to be version 2 under PALOMAR-2026-10-30-000014.

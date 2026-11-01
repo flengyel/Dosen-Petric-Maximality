@@ -1,42 +1,33 @@
-Current work (1 November 2026): ordinary version-2 registration is requested
-for existing submission txdu0y3got1o, source
-5dbee39bea09539bd130f729e82636419f71f920. After receiving the exact delivered
-review and publication explanation, the author explicitly authorized registration.
-POST /register was accepted at 15:07:30 UTC; authenticated status at 15:12:29 UTC
-confirms registration_consent=true. Public version-2 readback is pending.
-Read PALOMAR_V2_REGISTRATION_REPORT.md before doing anything else with this
-submission. Its credential, exact original review, consent digest and request
-receipt remain in ignored .codex-work/palomar-v2-service-20261031/private/.
-A read-only registration monitor runs there; inspect its launch record/log
-before starting another monitor. Do not repeat intake, register POST, preflight,
-service verification, proof builds or kernel replays. Inspect status and public
-readback at most once per five minutes. Confirm public registration before
-changing active registry links or manuscript citations. Preserve manuscript v13
-and the supplied version-1 BibTeX; a registration update does not revise them.
+Current phase (1 November 2026): Palomar version 2 is registered and verified;
+arXiv v13 preparation remains ready. No arXiv upload has occurred.
 
-The following completed registration record describes version 1. ArXiv v13
-preparation remains ready.
+Registered identity: PALOMAR-2026-10-30-000014, version 2.
+https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=2
+Immutable version-2 source: 5dbee39bea09539bd130f729e82636419f71f920.
+Submission: txdu0y3got1o. Repository: flengyel/Dosen-Petric-Maximality;
+root comparator.json and formalization.yaml; Lean 4.35.0.
+Version 1 and source 2e771844077fd8cebfbe365230f13d4dd13a75b1 remain available.
+The v13 manuscript and supplied BibTeX continue to cite version 1. Preserve them.
 
-Registered identity: PALOMAR-2026-10-30-000014, version 1.
-https://palomar-registry.org/entry?id=PALOMAR-2026-10-30-000014&version=1
-Immutable proof source: 2e771844077fd8cebfbe365230f13d4dd13a75b1
-Repository: flengyel/Dosen-Petric-Maximality; root comparator.json; Lean 4.35.0.
-Later manuscript/evidence commits do not replace that source. Do not create
-another intake or register this unchanged identity/commit again.
+After receiving the exact review, digest and publication explanation, the author
+explicitly authorized registration. The digest-bound request was accepted;
+authenticated status and the public entry/indexes confirm completed registration.
+Do not repeat intake, register POST, passed preflight, service verification,
+proof builds or kernel replays. The read-only publication monitor has completed.
+Do not restart it. The exact original review, consent digest, credential,
+private responses and request receipt remain ignored in
+.codex-work/palomar-v2-service-20261031/private/. The private direct submission
+shortcut is delivered in the author's existing private Downloads directory.
+Only publicly registered archived review material belongs in public provenance.
 
-The author personally registered the delivered service review. Authenticated
-service and public readback confirmed registration. Local comparison, independent
-kernels, official full preflight and service verification passed. Reuse completed
-verification unless inputs or actual service requirements change. The canonical
-consent digest, credentials, private API responses and original author-facing
-review remain private and ignored. Only publicly registered review material is
-retained in public provenance.
-
-The native archive tag and mechanical/public evidence bytes were verified.
-The original render artifact matches its manifest; two served HTML responses
-contain added Cloudflare analytics and differ. Keep this delivery limitation
-separate from source/mechanical verification. See PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md.
-No operator message was sent and no claim that every served render byte passes.
+Read PALOMAR_V2_REGISTRATION_REPORT.md and
+provenance/palomar-v2-registration-20261101/public-readback-verification.json.
+All four public evidence files, all 13 served render files, the exact rendered
+opening and five unchanged statement types, the version/identity indexes and
+the native source tag verified. No version-2 served-render mismatch was found.
+Retain the version-1 Cloudflare diagnostic as historical evidence for version 1.
+The preceding version-1 continuation is preserved in
+history/CODEX_NEXT_SESSION_V1_20261101.txt. Keep both immutable source snapshots.
 
 Current manuscript: v13, dated October 31, 2026. All v4–v12 releases and
 packages are preserved. The supplied Palomar BibTeX is unchanged in
