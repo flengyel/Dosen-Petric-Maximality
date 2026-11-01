@@ -1,16 +1,18 @@
 # Coverage and next proof obligations
 
-Current manuscript: v14, dated November 1, 2026. The hostile and mathematical-
-writing reviews replace unnecessary names with equations and defined functions,
-use Došen–Petrić's dissociativity terminology, give explicit arrow types and
-expand both computations in the alternative projection-equality proof.
-All seven mathematical statements retain their hypotheses and conclusions;
-the literal synonym and lemma captions change. The twelve numbered displays,
-ten diagrams and thirty labels are byte-identical to v13. Earlier releases,
-both proof routes, all appendices and the supplied Palomar BibTeX are preserved.
-See [v14 report](MANUSCRIPT_V14_REPORT.md),
-[hostile review](reviews/V14_HOSTILE_REVIEW_2026-11-01.md) and
-[writing review](reviews/V14_WRITING_REVIEW_2026-11-01.md).
+Current manuscript: v15, dated November 1, 2026. Appendix D states the five
+registered Lean theorems with their hypotheses and gives the correspondence
+between relations on terms and congruences on arrows. It defines generated
+equality and substitution, includes the typed quotient square, and derives
+preservation under negation from the dichotomy. It also identifies the
+coherence, model-corollary and expanded collapse declarations.
+All seven v14 statement bodies, twelve numbered displays, ten prior diagrams
+and thirty prior labels are unchanged. One square and one appendix label are
+added. The v14 exposition repairs, all earlier releases, both proof routes,
+Appendices A–C and the supplied Palomar BibTeX are preserved.
+See [v15 report](MANUSCRIPT_V15_REPORT.md),
+[hostile review](reviews/V15_HOSTILE_REVIEW_2026-11-01.md) and
+[writing review](reviews/V15_WRITING_REVIEW_2026-11-01.md).
 The dated formalization checkpoints below retain their historical scope.
 No Lean source or registered input changes, and no proof replay is claimed.
 

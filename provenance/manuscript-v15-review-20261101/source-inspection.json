@@ -1,0 +1,110 @@
+{
+  "registered_source": "5dbee39bea09539bd130f729e82636419f71f920",
+  "files": [
+    {
+      "path": "Challenge.lean",
+      "sha256": "ad8c0322978f4f9da3f44070eac45b0e0e2ec5b9f67c929bfbaa37aa662819ef",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "Five selected statement types; independent challenge declarations, not Solution proofs."
+    },
+    {
+      "path": "Solution.lean",
+      "sha256": "418b69bd252a93b7f420be67f5d0418a1a39f79e17988cd81dfe0f2eec4f9b91",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "Imports the proved production declarations."
+    },
+    {
+      "path": "DosenPetric/PalomarDefinitions.lean",
+      "sha256": "1217ddfa91e6454a01352bb8d0dd61c1045a21b881cc6100cc2ad28139f66f76",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "PrimitiveCongruence, Closed and Total: exact fields, endpoints and self-substitution."
+    },
+    {
+      "path": "DosenPetric/PalomarMaximality.lean",
+      "sha256": "7607e8e12de6ad860ca31c8101f765db11baee484d2e911597249a564fc65550",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "All five selected theorem statements and their proof routes."
+    },
+    {
+      "path": "DosenPetric/PalomarCorrespondence.lean",
+      "sha256": "3f2c416708391dc421244a072fb6e429ec614bf3f3851ba7af588ea21dd4feee",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "of_derives, quotientRel, fragment, full, ofFull, raw distinctness and totality equivalences."
+    },
+    {
+      "path": "DosenPetric/PresentationEquations.lean",
+      "sha256": "563b9b38f0029850cecb2f0128ef84aac0f2dbbcba4ef52c83417e5f5b1d0126",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "Derives constructors and closure under comp/tensor/equations; final declaration."
+    },
+    {
+      "path": "DosenPetric/PresentationCategory.lean",
+      "sha256": "1cc0242b612c689a360d88218d80400029353a120edfda56b84c7cdc5f69828c",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "termSetoid, Hom, ofTerm, sound, comp/tensor, pair/copair and zero endomorphism."
+    },
+    {
+      "path": "DosenPetric/PresentationSubstitution.lean",
+      "sha256": "c16d49e33c2798ddee2094b0c4738a286df0400556a0aaf19b38da864c261d4a",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "Term.subst, Derives.subst, substitute and its object types."
+    },
+    {
+      "path": "DosenPetric/PresentationSubstitutionOperations.lean",
+      "sha256": "cd015cd94ca63fdd185a65b88b816bd1aa81f4f67e73baadc18e31d7041e2558",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "substitutionFunctor and operation preservation."
+    },
+    {
+      "path": "DosenPetric/PresentationFragmentMaximality.lean",
+      "sha256": "9cc9e4b4b78239e41174ccbcf4d341aee31bc7a03e24f1aa553cc05af527443c",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "fragment_maximality/dichotomy precede full negation closure; no circular assumption."
+    },
+    {
+      "path": "DosenPetric/PresentationConsequences.lean",
+      "sha256": "7de049aa92eda4af82f7bcb09a42a1f739fed1b25e988216c3397307291213ca",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "identity_ne_zero and identity_ne_primitive_zero via the occurrence relation."
+    },
+    {
+      "path": "DosenPetric/PresentationZero.lean",
+      "sha256": "72225bf8d7bd4a496054d18e5f356822718d836a73906b988643f7912844857c",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "zeroConstruction_eq identifies the primitive zero with the manuscript zero."
+    },
+    {
+      "path": "DosenPetric/PresentationConsistency.lean",
+      "sha256": "afa7e5f88342413807a59b1cb9d1332561a66322b9791681895b954edc4c2c41",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "All-true variable valuation and complete Term.preserves_truth induction; empty_hom."
+    },
+    {
+      "path": "DosenPetric/PresentationCoherence.lean",
+      "sha256": "cb28a4411323da114a75c5c07cd634c923065efc8679e5ce1d5a7f93d347cf56",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "Presentation.coherence statement and instantiated route."
+    },
+    {
+      "path": "DosenPetric/SemanticModelCorollary.lean",
+      "sha256": "46233c174ee80fd8c22a7fc78d6994ba3fdc158ef4f2d2fcc693b4efb83788f2",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "model_corollary and model_corollary_interpretations statements and deductions."
+    },
+    {
+      "path": "DosenPetric/Collapse.lean",
+      "sha256": "8427737a19979cad8f6988ea4323982f55602f7ba71d8da9358fc9cf689ebf09",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "second_block, terminal_retraction, fold_top and the equal-projections deduction."
+    },
+    {
+      "path": "DosenPetric/PresentationSymmetricFold.lean",
+      "sha256": "43bd667c24dbf76c2f7964b4e04d6043c3f010e5c6ec43e193eef55f9e453dbc",
+      "byte_identical_to_registered_v2": true,
+      "inspection": "fold_manuscript/fold_symmetric identify the abstract fold with the Section 6 expression."
+    }
+  ],
+  "method": "Reading existing declarations and deductions; no new Lean build or kernel replay. This list records the inspected scope, not a claim that every source file was reread.",
+  "writing_source": "Knuth/Larrabee/Roberts, Mathematical Writing, Section 1 and Sections 4–5; prior consulted source identities and passages retained in provenance/manuscript-v14-review-20261101/source-review-record.json.",
+  "literature_scope": "No new literature assertion; preserved v14/v13 comparisons and their recorded limits."
+}

@@ -1,0 +1,114 @@
+{
+  "source": "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v15.tex",
+  "blocks": [
+    {
+      "source_line": 1000,
+      "opening": "\\label{app:lean-statements}",
+      "function": "Label: persistent cross-reference for Appendix D.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1002,
+      "opening": "The five declarations in the namespace \\texttt{DosenPetric.Palomar}",
+      "function": "Scope: identify term-based selected statements and proof imports.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1008,
+      "opening": "\\subsection{Arrow terms and equations}",
+      "function": "Heading: arrange definitions, statements, then correspondence.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1010,
+      "opening": "Let $P$ be a set of propositional variables, and let",
+      "function": "Definition: typed term sets, generated equivalence and quotient.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1028,
+      "opening": "For a set $Q$ and $\\sigma:P\\to\\FormulaSet(Q)$, substitution gives",
+      "function": "Construction and proof: typed substitution descends through the quotient; commutative square.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1049,
+      "opening": "A \\texttt{PrimitiveCongruence P} is a family of equivalence relations",
+      "function": "Definition: equivalence, equations, comp/tensor preservation, Closed, Total, with empty-set qualification.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1080,
+      "opening": "\\subsection{The five declarations}",
+      "function": "Heading: arrange definitions, statements, then correspondence.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1082,
+      "opening": "\\paragraph{\\texttt{maximality} and \\texttt{short\\_maximality}.}",
+      "function": "Statement: two selected maximality declarations with all assumptions.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1093,
+      "opening": "The declaration \\texttt{maximality} uses the argument with the",
+      "function": "Proof correspondence: symmetric and short routes; required operation closure.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1105,
+      "opening": "\\paragraph{\\texttt{congruence\\_dichotomy}.}",
+      "function": "Statement and deduction: dichotomy via E contained in R and a witnessing pair.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1118,
+      "opening": "\\paragraph{\\texttt{identity\\_ne\\_zero}.}",
+      "function": "Statement and proof: identity differs from zero by their occurrence relations.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1130,
+      "opening": "\\paragraph{\\texttt{no\\_top\\_to\\_bot}.}",
+      "function": "Statement and proof: no top-to-bottom term via Boolean evaluation.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1144,
+      "opening": "\\subsection{Congruences on terms and on arrows}",
+      "function": "Heading: arrange definitions, statements, then correspondence.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1146,
+      "opening": "For a family $R$ satisfying the conditions above,",
+      "function": "Proof: quotient relation is representative-independent and closed under comp, pair/copair and self-substitution.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1162,
+      "opening": "The relation $\\overline R$ is equality on arrows if and only if",
+      "function": "Deduction: equality-or-totality yields negation preservation and a full substitution congruence.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1169,
+      "opening": "Conversely, let $P$ be nonempty and let $\\theta$ be a substitution",
+      "function": "Proof: pull back an arrow congruence, apply maximality to distinct representatives, obtain the main theorem.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1185,
+      "opening": "The theorem \\texttt{Presentation.\\allowbreak{}coherence} proves",
+      "function": "Correspondence: identify existing coherence and model-corollary proofs.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    },
+    {
+      "source_line": 1191,
+      "opening": "In the namespace \\texttt{DosenPetric.\\allowbreak{}ContextualCollapse},",
+      "function": "Correspondence: identify the existing expanded Section 6 computations.",
+      "disposition": "Retain: definition, construction, statement, proof, or exact declaration correspondence; no empty qualification or release-process update."
+    }
+  ],
+  "prior_text": "Exact inverse comparison with v14; preceding paragraph review retained under the v14 provenance."
+}

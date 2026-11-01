@@ -1,5 +1,21 @@
 Current phase (1 November 2026): Palomar version 2 is registered and verified;
-arXiv v14 preparation remains ready. No arXiv upload has occurred.
+arXiv v15 preparation is complete. No arXiv upload has occurred.
+
+The author subsequently requested pushing v14. Its three commits through
+9e46cdca7f2fe2f59983ecf324e08a80ad09c81a were pushed to remote main and the
+remote ref was verified. These commits were made after Palomar registration;
+the exact registered source 5dbee39bea09539bd130f729e82636419f71f920 was already
+public before registration. Keep completed authorized public work synchronized
+before reporting readiness; do not silently leave a local-only release.
+Check the exact public source and remote synchronization before future intake
+or registration. Preserve the frozen candidate when later documentation advances.
+
+The v14 exposition review identified omitted written calculations, not missing
+Lean proofs. The expanded steps already occur in Collapse.lean and
+PresentationSymmetricFold.lean, byte-identical to the registered version-2 source.
+The registry's five selections are entry points; the complete claim map records
+the broader development. Do not describe compression in the paper as an
+unproved formal claim without identifying the declaration that is missing.
 
 Registered identity: PALOMAR-2026-10-30-000014, version 2.
 https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=2
@@ -7,7 +23,7 @@ Immutable version-2 source: 5dbee39bea09539bd130f729e82636419f71f920.
 Submission: txdu0y3got1o. Repository: flengyel/Dosen-Petric-Maximality;
 root comparator.json and formalization.yaml; Lean 4.35.0.
 Version 1 and source 2e771844077fd8cebfbe365230f13d4dd13a75b1 remain available.
-The v14 manuscript and supplied BibTeX continue to cite version 1. Preserve them.
+The v15 manuscript and supplied BibTeX continue to cite version 1. Preserve them.
 
 After receiving the exact review, digest and publication explanation, the author
 explicitly authorized registration. The digest-bound request was accepted;
@@ -29,32 +45,40 @@ Retain the version-1 Cloudflare diagnostic as historical evidence for version 1.
 The preceding version-1 continuation is preserved in
 history/CODEX_NEXT_SESSION_V1_20261101.txt. Keep both immutable source snapshots.
 
-Current manuscript: v14, dated November 1, 2026; 14 pages. V13 and every earlier
-release/package remain preserved. The author requested the hostile reviewer
-and mathematical-writing plugins for the whole preprint. The author-side
-reviews are reviews/V14_HOSTILE_REVIEW_2026-11-01.md and
-reviews/V14_WRITING_REVIEW_2026-11-01.md. Read MANUSCRIPT_V14_REPORT.md.
-The revisions use literal, occurrence map and Došen–Petrić's dissociativity
-arrow, give the operation/functor/witness types, and expand the two computations
-in the alternative proof. All existing numbered displays, diagrams and labels
-are byte-identical; the seven statements change only a literal synonym and
-lemma captions. Both proof routes and all appendices remain. The exact supplied
-Palomar entry is preserved in manuscript/palomar_v14.bib and still cites v1.
-Do not alter the registered sources, proof development or prior versions.
+Current manuscript: v15, dated November 1, 2026; 16 pages. V14 and every earlier
+release/package remain preserved. Appendix D gives mathematical statements of
+all five registered entry points, defines the terms/equations/quotient, gives
+the typed substitution square, and proves the correspondence with congruences
+on arrows. It distinguishes the P-nonempty assumptions of the selected
+maximality/dichotomy statements from the other two selections, and derives
+preservation under negation after applying the fragment dichotomy.
+No missing Lean proof has been identified; the appendix explains existing
+proofs. It also names the existing coherence, model-corollary and intermediate
+collapse declarations. Read MANUSCRIPT_V15_REPORT.md and
+reviews/V15_HOSTILE_REVIEW_2026-11-01.md and
+reviews/V15_WRITING_REVIEW_2026-11-01.md.
+
+V14's terminology, typing and expanded computations are retained. Apart from
+version/bibliography suffixes, a Section 6 pointer and the new appendix, the
+v14 source is byte-identical. All seven prior statement bodies and twelve
+numbered displays are unchanged. The ten prior diagrams and thirty labels
+remain; Appendix D adds one typed square and one label. Both bibliographies
+and the authorized AI disclosure are byte-identical to v14.
 
 The upload package is
-submission/arxiv-v14/Dosen-Petric-Maximality-v14-arxiv-source.tar.gz:
-main.tex, main.bbl, references_v14.bib and palomar_v14.bib.
-The manuscript and separately extracted archive compile to matching 14-page
+submission/arxiv-v15/Dosen-Petric-Maximality-v15-arxiv-source.tar.gz:
+main.tex, main.bbl, references_v15.bib and palomar_v15.bib.
+The manuscript and separately extracted archive compile to matching 16-page
 layout text with thirteen bibliography entries and no final citation/reference,
 box or duplicate-destination warning. All pages were rendered and inspected;
-the expanded proof on page 8 was additionally viewed full-page. Exact exits,
-hashes, source-consultation scope and review limits are under
-provenance/manuscript-v14-review-20261101/. No new Lean/kernel replay or external
-submission occurred. Reports and release files are delivered from committed
-bytes to /mnt/c/Users/fleng/Downloads/Dosen-Petric-Manuscript-v14-20261101/;
-consult the delivery-receipt.json there and in provenance for exact filenames
-and verified hashes. Preserve differing earlier copies and the WSL stash.
+Appendix D's pages 13–15 were additionally viewed full-page. Exact exits,
+hashes, source inspection and review limits are under
+provenance/manuscript-v15-review-20261101/. All 83 preceding release files and
+856 registered proof/input blob identities are preserved. No new Lean/kernel
+replay or external submission occurred. Deliver reports and release files from
+committed bytes to /mnt/c/Users/fleng/Downloads/Dosen-Petric-Manuscript-v15-20261101/;
+consult the delivery receipt for verified filenames and hashes. Push completed
+main and verify its remote ref before reporting readiness.
 
 No arXiv upload or new license selection has occurred. The author selects the
 arXiv-supported license and checks the server preview in the submission account.

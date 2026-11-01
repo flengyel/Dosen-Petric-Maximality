@@ -15,7 +15,7 @@ the existing symmetric-fold deduction. V14, dated November 1, 2026, uses the
 hostile and mathematical-writing plugins for the complete preprint. It gives
 explicit arrow/functor types, uses literal and occurrence map, follows the
 source's dissociativity terminology and displays the calculations through v_A
-and w_A. The correspondences below apply to v14; see MANUSCRIPT_V14_REPORT.md
+and w_A. The correspondences below apply also to v15; see MANUSCRIPT_V14_REPORT.md
 and its two review reports. Literal signs, theorem hypotheses and conclusions,
 all numbered displays, diagrams, labels, Lean theorems and registered inputs
 are preserved. The literal synonym and lemma captions change; no new Lean
@@ -25,6 +25,11 @@ Earlier
 coverage/statement maps and reports remain as dated checkpoints. “Complete” here
 means local pinned Lean proof/source closure; it does not mean independent replay,
 Comparator, official/service verification, public release or publication.
+
+V15 adds Appendix D explaining the existing registered declarations. Its
+statements, term/quotient relations, assumptions and substitution square are
+mapped below. All preceding v14 mathematical text and diagrams are preserved;
+no Lean source or registered input changes. See MANUSCRIPT_V15_REPORT.md.
 
 ## Three milestones and full-paper endpoint
 
@@ -114,3 +119,25 @@ Lean toolchain. Exact public checks, negative controls and transitive axiom/sour
 closure are recorded in the final evidence. No mathematical claim in the paper's
 current scope remains assigned to an unproved field or deferred implementation
 target. Historical reports are not independent verification of this final scope.
+
+## Appendix D: registered entry points and their mathematical statements (v15)
+
+All names below have prefix DosenPetric unless stated otherwise. These are
+existing proofs in the immutable version-2 source, not newly implemented results.
+
+| Manuscript anchor | Declaration | Exact scope |
+| --- | --- | --- |
+| D.1 terms and generated equality | Presentation.Term/Equation/Derives; termSetoid/Hom/ofTerm; sound; Palomar.PrimitiveCongruence.raw_distinct_iff | Quotient by the defining equations, equivalence, composition and both binary operations; [f]=[g] iff Derives f g. |
+| D.1 primitive zero | Presentation.zeroConstruction_eq | The class of Term.zero A equals the manuscript's zero endomorphism. |
+| D.1 substitution square | Presentation.Term.subst; Derives.subst; substitute; substitutionFunctor | Arbitrary σ:P→Formula Q; the source and target of each substituted term change. The quotient square commutes by the definition of substitute. |
+| D.1 relation and properties | Palomar.PrimitiveCongruence; Closed; Total | Equivalence on parallel terms, containing Equation and preserved by comp/tensor; Closed uses self-substitution; Total quantifies over existing terms. |
+| D.2 maximality | Palomar.maximality | P nonempty; R primitive, Closed; R f g and not Derives f g imply Total. Symmetric-fold route via fragment_maximality. |
+| D.2 short_maximality | Palomar.short_maximality | Same hypotheses/conclusion; literal isolation, all_contexts and ShortProof.total give the q_A/e_A route. |
+| D.2 congruence_dichotomy | Palomar.congruence_dichotomy; PrimitiveCongruence.of_derives | P nonempty and Closed; R=Derives on all parallel terms or Total; generating induction proves Derives⊆R. |
+| D.2 identity_ne_zero | Palomar.identity_ne_zero; Presentation.identity_ne_primitive_zero | Given p:P, not Derives (id p) (zero p); diagonal versus empty occurrence relation. |
+| D.2 no_top_to_bot | Palomar.no_top_to_bot; Presentation.Truth; Term.preserves_truth; empty_hom | Every P, including empty; no Term top bot. The all-true variable valuation is preserved by every term constructor. |
+| D.3 term-to-arrow relation | PrimitiveCongruence.quotientRel/quotientRel_ofTerm/fragment/fragment_closed | Derives⊆R proves representative independence; comp/tensor give pairing/copairing; Closed descends through the quotient. |
+| D.3 negation after dichotomy | Presentation.fragment_dichotomy; ProofCongruence.of_closed_fragment; PrimitiveCongruence.full/full_closed/full_raw_rel/negate_admissible | Equality and totality each preserve negation. No preservation of negation is assumed to obtain fragment maximality. |
+| D.3 converse and totality | PrimitiveCongruence.ofFull/ofFull_closed/ofFull_full_rel/full_ofFull_rel/full_total_iff/ofFull_total_iff | Pull back a substitution congruence on arrows to terms, with exact relations and totality; distinct representatives invoke either selected maximality proof. |
+| D.3 additional results | Presentation.coherence; PresentationSemantics.model_corollary | Theorem 3.1 and Corollary 5.3; the model corollary is a further result, not asserted to be a dependency of all five selections. |
+| D.3 expanded symmetric calculations | ContextualCollapse.second_block/fold_top/terminal_retraction; Presentation.fold_manuscript/fold_symmetric | The Section 6 fold is the abstract fold under the intended presentation; the injected second projection, first projection and terminal retraction are existing theorems. |

@@ -26,8 +26,8 @@ other checkouts, including FailureOfComposition and Categorical_Rice_Shapiro.
 Read `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md`,
 `docs/CODEX_NEXT_SESSION.txt`, `docs/MANUSCRIPT_STATEMENTS.md`,
 `docs/MANUSCRIPT_COVERAGE.md`, and
-`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v14, dated November 1, 2026;
-v4–v13 remain preserved. V8
+`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v15, dated November 1, 2026;
+v4–v14 remain preserved. V8
 updated the formalization status/date/source citation. V9 adds the author-requested
 Codex disclosure, author-responsibility sentence and verified Palomar citation,
 and updates the date. MSC 2020 Primary 03G30; Secondary 03F07, 18A32 is preserved.
@@ -65,6 +65,13 @@ mathematical statements retain their hypotheses and conclusions, with a literal
 synonym and lemma-caption changes. Numbered displays, diagrams, labels and the
 supplied Palomar BibTeX remain byte-identical. See docs/MANUSCRIPT_V14_REPORT.md
 and its two review records. Carry these accepted repairs across future revisions.
+V15 adds Appendix D with the exact mathematical statements of the five registered
+Lean entry points, their assumptions, and the correspondence between relations
+on terms and arrows. It defines the generated equality, gives the typed
+substitution square, explains the derivation of negation preservation, and
+identifies the existing coherence, model and expanded collapse proofs. All v14
+text is preserved except the version/bibliography suffixes and a Section 6
+pointer. See docs/MANUSCRIPT_V15_REPORT.md and its two review records.
 The author requests that manuscript prose avoid empty qualifiers, unexplained
 terms and process updates. Keep mathematically meaningful qualifications, such
 as structural induction, with their objects stated; keep process reports outside
@@ -209,6 +216,24 @@ publication is explicitly authorized. Do not submit to Palomar or arXiv, contact
 authors, choose a distribution license, or change repository visibility as part
 of an ordinary proof task.
 
+Synchronization rule clarified by the author on 1 November 2026: within the
+authorized branch and push scope, push completed public work before reporting
+it ready or delivered. Do not silently choose local-only completion. Honor an
+explicit local-only instruction, and report a failed or unavailable push as
+unsynchronized. Preserve unrelated work and keep private staging excluded.
+Before a future Palomar intake or registration, verify that the exact submitted
+commit and intended input paths are available from the public remote, and that
+completed relevant work on main is synchronized. Compare local and remote tips;
+do not change a frozen submission merely to make it equal a later documentation
+tip. Verify the push by reading the remote ref before closing the task.
+
+Distinguish omitted written deductions from missing Lean proofs when reporting
+review findings. Name a missing theorem or declaration before claiming a formal
+gap. The five Palomar selections are entry points, not the extent of the full
+Lean development. The v14 expansions already occur in the registered source:
+ContextualCollapse.second_block, terminal_retraction, fold_top and
+equal_projections. Their exposition repairs do not establish a missing Lean proof.
+
 Before a future Palomar submission, recheck the official verifier, policy, and
 service instructions. Require independent Challenge/Solution builds, exact
 statement and shared-definition correspondence, complete proof-dependency and
@@ -230,7 +255,7 @@ full preflight and service verification passed. Do not repeat intake,
 registration or successful verification. The publication monitor has completed.
 
 Read docs/CODEX_NEXT_SESSION.txt, docs/PALOMAR_V2_REGISTRATION_REPORT.md and
-docs/ARXIV_PREPARATION_REPORT.md. V14 and its four-file arXiv source package are
+docs/ARXIV_PREPARATION_REPORT.md. V15 and its four-file arXiv source package are
 prepared and locally compiled; every earlier release is preserved. No arXiv upload has occurred. Keep mathematical
 proof development closed, retain all previous manuscripts and the stash, and
 reuse verification. Do not change the immutable registered source or its frozen
@@ -240,7 +265,7 @@ Version-2 public evidence hashes, all 13 served render files, the rendered openi
 and statement correspondence, and the native source tag were verified. The
 version-1 diagnostic about two served HTML pages with added Cloudflare analytics
 remains historical evidence about version 1; retain it. No version-2 served-render
-mismatch was found. The v14 manuscript and supplied BibTeX continue to cite
+mismatch was found. The v15 manuscript and supplied BibTeX continue to cite
 version 1; do not revise a manuscript or package solely to refresh registration.
 
 Credentials, private API responses, the original author-facing review and consent

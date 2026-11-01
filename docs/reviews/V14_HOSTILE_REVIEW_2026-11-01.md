@@ -70,9 +70,11 @@ The ten existing typed diagrams are preserved byte-for-byte.
 
 Anchor: v13 PDF p.8, Section 6, source lines 633–650:
 “K_A and Boolean Coherence … give” and “using the first-injection equation.”
-Failure mode: unproved intermediate calculation in the compressed exposition.
+Failure mode: ambiguous exposition caused by omitted intermediate calculations.
 Evidence: derivation and source correspondence, not a counterexample.
 The main proof in Section 5 is independent and already supplies the theorem.
+All formal steps identified below were already proved in the registered Lean
+source; this finding does not identify a missing Lean proof.
 
 Repair and checked derivation:
 - Define v_A:A∧A→(A∧⊥)∨A. Copairing and K_A give

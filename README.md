@@ -12,19 +12,18 @@ and its [registration report](docs/PALOMAR_REGISTRATION_REPORT.md) remain preser
 The earlier [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
 describes version 1.
 
-The arXiv package is ready in [submission/arxiv-v14](submission/arxiv-v14/README.md).
-V14 retains the ChatGPT and Codex disclosure and MSC 2020 Primary 03G30;
-Secondary 03F07, 18A32, and the supplied registered-proof citation. No arXiv
-submission has been made. The complete preprint has been reviewed with the
-hostile-reviewer and mathematical-writing plugins. The revision gives explicit
-types and calculations, follows Došen–Petrić's dissociativity terminology and
-uses the defined occurrence functions directly. See the
-[hostile review](docs/reviews/V14_HOSTILE_REVIEW_2026-11-01.md),
-[writing review](docs/reviews/V14_WRITING_REVIEW_2026-11-01.md) and
-[release report](docs/MANUSCRIPT_V14_REPORT.md). Mathematical statements retain
-their hypotheses and conclusions; all numbered displays, diagrams, labels,
-bibliography entries and earlier releases are preserved. No new formal proof
-defect was established.
+The arXiv package is ready in [submission/arxiv-v15](submission/arxiv-v15/README.md).
+V15 adds Appendix D: the five registered Lean statements in mathematical
+notation and their correspondence to relations on arrows. It states all
+hypotheses, types the substitution square, distinguishes term equality from
+quotient equality, and explains how the dichotomy gives preservation under
+negation. The appendix also identifies the existing coherence, model-corollary
+and intermediate collapse proofs. The [hostile review](docs/reviews/V15_HOSTILE_REVIEW_2026-11-01.md),
+[writing review](docs/reviews/V15_WRITING_REVIEW_2026-11-01.md) and
+[release report](docs/MANUSCRIPT_V15_REPORT.md) record the source comparison.
+V14's terminology, explicit types and expanded calculations remain unchanged.
+The ChatGPT/Codex disclosure, MSC codes, exact supplied Palomar citation,
+both proof routes and every earlier release remain. No arXiv upload has occurred.
 
 The verified package was merged into main through `23ec1bc`. It selects five statements
 in `DosenPetric.Palomar`: both
@@ -57,10 +56,11 @@ publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
-Current manuscript: [v14 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v14.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v14.tex), dated November 1, 2026. All v4–v13 releases remain preserved.
-The [v14 report](docs/MANUSCRIPT_V14_REPORT.md) records the terminology, typing
-and proof-exposition repairs, successful manuscript/package builds, PDF inspection and preservation. Every manuscript revision must
-increment the version number; the rule is recorded in AGENTS.md.
+Current manuscript: [v15 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v15.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v15.tex), dated November 1, 2026, 16 pages. All v4–v14 releases remain preserved.
+The [v15 report](docs/MANUSCRIPT_V15_REPORT.md) records the added appendix,
+source comparison, manuscript/package builds, PDF inspection and preservation.
+Every manuscript revision increments its version; completed authorized main
+work is pushed before readiness is reported, as recorded in AGENTS.md.
 
 All mathematical content of v7 is now proved for the actual equation-generated
 Došen–Petrić presentation, with the status/citation refresh preserved in v8.

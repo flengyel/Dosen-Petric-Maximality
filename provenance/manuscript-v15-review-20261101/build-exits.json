@@ -1,0 +1,42 @@
+{
+  "manuscript_final": {
+    "command": "pdflatex -interaction=nonstopmode -halt-on-error -output-directory=../.codex-work/manuscript-v15-review-20261101 Maximality_of_the_Dosen_Petric_Boolean_Category_v15.tex",
+    "exit_code": 0,
+    "bibliography": "bibtex, exit 0; generated bibliography reused in final pass"
+  },
+  "extracted_archive": [
+    {
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v15-review-20261101/archive-extracted",
+      "exit_code": 0,
+      "log": "archive-pass1.stdout"
+    },
+    {
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v15-review-20261101/archive-extracted",
+      "exit_code": 0,
+      "log": "archive-pass2.stdout"
+    },
+    {
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v15-review-20261101/archive-extracted",
+      "exit_code": 0,
+      "log": "archive-pass3.stdout"
+    }
+  ]
+}

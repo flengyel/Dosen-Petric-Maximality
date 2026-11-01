@@ -1,5 +1,42 @@
 # Manuscript corrections and source errata
 
+## Registered Lean statements: v15 (1 November 2026)
+
+The author requested mathematical English explaining the Lean entry points and
+their correspondence to the paper. V15 adds Appendix D and a Section 6 pointer.
+It defines typed arrow-term sets, generated equality, quotient classes and
+uniform substitution; states the two maximality results, dichotomy, nonzero
+identity and empty top-to-bottom hom-set; and explains both directions of the
+term/arrow relation correspondence.
+
+V15-QUANTIFIERS: distinguish the nonempty-P assumptions of the three selected
+maximality/dichotomy declarations from the given-p nonzero identity and the
+empty-P-compatible consistency statement. Totality does not create arrows.
+
+V15-SUBSTITUTION: state arbitrary P→Formula Q for the quotient square, and
+self-substitution P→Formula P for Closed. Do not apply a relation over P to
+arrows over a different Q.
+
+V15-NEGATION: obtain preservation under negation from equality-or-totality
+after the fragment maximality argument. Do not assume this closure in the
+primitive relation or make the proof circular.
+
+V15-CORRESPONDENCE: name the existing coherence, model and collapse proofs.
+Do not say that omitted English calculations identify missing Lean proofs.
+The five selected declarations do not exhaust the complete development.
+The model corollary is a further theorem, not claimed as a dependency of the
+five entry points. The all-true variable valuation describes the retained
+consistency proof exactly.
+
+Both reviews and the source comparison verify these corrections. All prior
+v14 text is byte-identical after removing the new appendix, its pointer and
+the version/bibliography changes. All 83 prior release files, registered source,
+inputs, bibliography entries and authorized disclosure are preserved. See
+MANUSCRIPT_V15_REPORT.md and its two review records. The corrected v14 hostile
+review now calls its C4 issue an omitted written calculation and explicitly
+records the existing Lean proofs. Publication workflow now requires pushing
+completed authorized main work before reporting readiness.
+
 ## Complete exposition review: v14 (1 November 2026)
 
 The author requested both the hostile reviewer and mathematical-writing plugins

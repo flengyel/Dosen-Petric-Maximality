@@ -1,0 +1,86 @@
+{
+  "input_commit": "9e46cdca7f2fe2f59983ecf324e08a80ad09c81a",
+  "only_source_changes": "version/bibliography suffixes, Section 6 pointer and Appendix D; exact inverse comparison passed",
+  "labels": {
+    "prior_count": 30,
+    "current_count": 31,
+    "all_prior_bytes_preserved": true
+  },
+  "diagrams": {
+    "prior_count": 10,
+    "current_count": 11,
+    "all_prior_bytes_preserved": true
+  },
+  "numbered_displays": {
+    "prior_count": 12,
+    "current_count": 12,
+    "all_prior_bytes_preserved": true
+  },
+  "numbered_statements": {
+    "count": 7,
+    "byte_identical_to_v14": true
+  },
+  "bibliographies_and_authorized_AI_disclosure": "byte-identical to v14",
+  "release": {
+    "pages": 16,
+    "archive_members": [
+      "main.tex",
+      "main.bbl",
+      "references_v15.bib",
+      "palomar_v15.bib"
+    ],
+    "archive_members_match_staged_files": true,
+    "extracted_archive_build": "passed",
+    "archive_layout_text_matches_manuscript": true,
+    "source_sha256": "6f2cd2d86d53ec35b73c6ab97fe93448f799b0f05d4c04ce2071a8e17de85e7a",
+    "pdf_sha256": "d00bd7f4e8c930fa3e19930c544a1dd06b988a334312dfe6a2107ff7229911b0",
+    "archive_sha256": "1cfc456f9ec6899e39a65cbf56bf30d885e7f690e6fa2da0ccaaaa512422ef92",
+    "bibliography_entries": 13,
+    "final_logs_have_warnings": false
+  },
+  "preservation": {
+    "prior_release_files": 83,
+    "all_prior_release_bytes_unchanged": true,
+    "registered_proof_tree_and_inputs_match": true
+  },
+  "scope": {
+    "new_Lean_build_or_kernel_replay": false,
+    "new_Palomar_submission_or_registration": false,
+    "arxiv_upload": false
+  },
+  "render_inspection": {
+    "pages": 16,
+    "contact_sheets_viewed": 4,
+    "individual_pages_viewed": [
+      13,
+      14,
+      15
+    ],
+    "clipping_or_overlap_found": false,
+    "renderer": "pdftoppm -scale-to 1100 -png",
+    "render_exit_code": 0
+  },
+  "source_inspection": "source-inspection.json",
+  "stash": {
+    "list_matches_retained_baseline": true,
+    "entries": [
+      "stash@{0}: On main: Preserve verified disjoint contraction work for upstream manuscript integration"
+    ],
+    "object_and_label": [
+      "dedfd8fc8cd49930e9a162d5be585215b062a43c\tOn main: Preserve verified disjoint contraction work for upstream manuscript integration"
+    ]
+  },
+  "review_records": [
+    "docs/reviews/V15_HOSTILE_REVIEW_2026-11-01.md",
+    "docs/reviews/V15_WRITING_REVIEW_2026-11-01.md"
+  ],
+  "corrected_v14_review": "C4 explicitly describes an omitted written calculation and existing Lean proof, not a missing formal proof.",
+  "local_markdown_links": {
+    "checked": 289,
+    "all_resolve": true
+  },
+  "write_set": {
+    "scope": "v15 manuscript/package/reviews/provenance and active documentation; corrected v14 review",
+    "private_staging_excluded": true
+  }
+}
