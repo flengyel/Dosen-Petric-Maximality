@@ -1,5 +1,39 @@
 # Manuscript corrections and source errata
 
+## Reverse content audit (1 November 2026)
+
+The author requested an audit from the formalization back to the paper. The
+completed audit inventories 850 production modules, examines the mathematical
+interfaces and records seven proposed additions in FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md.
+The companion hostile/writing reviews distinguish omissions in written content
+from missing formal proofs. No false main theorem or new source erratum was
+established. V15 and all release/package bytes are preserved.
+
+REVERSE-R1/R2/R4: the full substituted occurrence relation, explicit q/e inverse
+terms and substitution identity/composition/extensionality laws merit the first
+attention in a future manuscript revision. They are existing named results;
+the current paper's isomorphism proof by citation remains valid.
+
+REVERSE-R3/R5/R6/R7: union algebra, retract transport, arbitrary-formula signs
+and converse under negation, and the formal coherence proof architecture are
+additional mathematical content. Union is named in Reduced; its transfer to
+B(P) is explained through reduceHom/recoverHom, not attributed to a nonexistent
+Presentation.union declaration. DNF/CNF expansions use retract equations,
+not distributivity isomorphisms. The quoted generic comparison is defined
+arrow by arrow and its zero has an existing-arrow witness.
+
+Constant substitutions suffice in the all_contexts proof, empty P gives a
+thin source, and finite occurrence relations bound hom-set cardinality. These
+are recorded deductions, not separately registered or newly implemented results.
+The selected types, both proof routes and all previous correspondence evidence
+remain fixed. Atomization/replacement counterexamples concern particular
+implementation candidates and do not supply a third source erratum.
+
+No proposed addition is recorded as already incorporated into v15. A future
+manuscript release must increment its version and preserve v15. These findings
+are not new outstanding Lean obligations for the already completed paper
+contract. The report and its scope/reading-depth record are delivered separately.
+
 ## Registered Lean statements: v15 (1 November 2026)
 
 The author requested mathematical English explaining the Lean entry points and

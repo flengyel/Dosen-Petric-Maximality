@@ -17,6 +17,27 @@ The registry's five selections are entry points; the complete claim map records
 the broader development. Do not describe compression in the paper as an
 unproved formal claim without identifying the declaration that is missing.
 
+Reverse content audit completed on 1 November 2026: read
+FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md,
+reviews/REVERSE_AUDIT_HOSTILE_2026-11-01.md and
+reviews/REVERSE_AUDIT_WRITING_2026-11-01.md. The production inventory has 850
+modules, 719 in the Gentzen family. Detailed mathematical reading and all-module
+inventory/import coverage are distinguished in the scope record. Seven
+candidate additions concern the full relation after substitution, concrete
+q/e inverses, union, substitution action laws, retract transport, global signs
+and converse under negation, and the coherence proof architecture.
+The first two and the substitution action laws are the highest-priority
+exposition additions. Reduced union laws pass to B(P) by the proved recovery
+maps; there is no separately named Presentation.union declaration. Constant-only
+substitution closure, empty-P thinness and finite hom bounds are deductions,
+not separately selected theorem statements. Existing source counterexamples
+concern implementation candidates; no new source erratum or main-theorem
+error was established. V15 is unchanged; any later manuscript revision must
+increment to v16 or later. Preserve the exact registered inputs and reuse checks.
+Evidence is under provenance/reverse-manuscript-audit-20261101/; reports are
+delivered from committed bytes to
+/mnt/c/Users/fleng/Downloads/Dosen-Petric-Reverse-Audit-20261101/.
+
 Registered identity: PALOMAR-2026-10-30-000014, version 2.
 https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=2
 Immutable version-2 source: 5dbee39bea09539bd130f729e82636419f71f920.

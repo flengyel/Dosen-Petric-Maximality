@@ -34,6 +34,18 @@ hashes and preservation checks are in
 `provenance/manuscript-v15-review-20261101/validation.json`.
 No Lean source or registered input is changed or rebuilt.
 
+## Reverse audit of mathematical content
+
+The [Lean-to-paper audit](FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md) and its
+[hostile](reviews/REVERSE_AUDIT_HOSTILE_2026-11-01.md) and
+[writing](reviews/REVERSE_AUDIT_WRITING_2026-11-01.md) reviews identify seven
+candidate additions, with exact statements and source anchors. They include
+the full substituted relation and explicit q/e inverse terms. The audit has
+not changed v15 or this four-file package; it does not establish a false
+main theorem or a missing Lean proof. A later manuscript revision must
+increment its version. Audit copies are delivered to
+`/mnt/c/Users/fleng/Downloads/Dosen-Petric-Reverse-Audit-20261101/`.
+
 ## Submission status
 
 Title: Maximality of the Došen–Petrić Boolean Category. Author: Florian Lengyel.

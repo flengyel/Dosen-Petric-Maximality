@@ -83,6 +83,18 @@ The original v9 source/PDF/package are restored from 678ea6d; the briefly reused
 v9 editorial snapshot remains in Git history at fd29c0c. All mathematical claims,
 both proof routes and the immutable registered proof source are preserved.
 
+## Reverse content audit — 1 November 2026
+
+The author requested a Lean-to-paper audit after v15. Read
+`docs/FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md` and its two reverse-audit reviews.
+It identifies seven candidate additions; v15 and its package are unchanged.
+Do not describe omitted written results as missing Lean proofs. Distinguish
+named source statements, transfer from Reduced through recovery, and further
+mathematical deductions. DNF/CNF expansions are retracts, not distributivity
+isomorphisms. The union theorem is named in Reduced, not Presentation.
+A later manuscript release incorporating the proposals must be v16 or later.
+The audit does not reopen the completed mathematical contract or frozen inputs.
+
 ## Full-paper objective
 
 Formalize the complete mathematical content of manuscript v7 (all v6 content

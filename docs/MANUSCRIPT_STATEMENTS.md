@@ -16,6 +16,11 @@ See [v15 report](MANUSCRIPT_V15_REPORT.md),
 The dated formalization checkpoints below retain their historical scope.
 No Lean source or registered input changes, and no proof replay is claimed.
 
+The [reverse content audit](FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md) records mathematical
+results in Lean that v15 does not print, with exact statements and proposed
+placements. It is separate from the forward formalization endpoint. V15 and
+its package remain unchanged; the audit is not a new proof or build milestone.
+
 ## Current complete full-paper formalization (29 October 2026)
 
 All mathematical content of v7 is now proved for the actual equation-generated

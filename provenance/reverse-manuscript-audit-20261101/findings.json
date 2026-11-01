@@ -1,0 +1,429 @@
+{
+  "R1": {
+    "status": "named theorem in original presentation; absent relation formula in v15",
+    "paper": "Section 3, p.5, substituted source/target blocks; Appendix A",
+    "anchors": [
+      {
+        "path": "DosenPetric/PresentationSubstitutionRelation.lean",
+        "line": 53,
+        "kind": "theorem",
+        "name": "occurrence_substitute_coordinates",
+        "opening": "theorem occurrence_substitute_coordinates (σ : P → Formula R) {A B : Formula P} (f : Hom A B)"
+      },
+      {
+        "path": "DosenPetric/PresentationSubstitutionRelation.lean",
+        "line": 61,
+        "kind": "theorem",
+        "name": "occurrence_substitute_expanded",
+        "opening": "theorem occurrence_substitute_expanded (σ : P → Formula R) {A B : Formula P} (f : Hom A B)"
+      },
+      {
+        "path": "DosenPetric/SubstitutionFiberRelations.lean",
+        "line": 23,
+        "kind": "def",
+        "name": "lift",
+        "opening": "def lift {X : Type v} {Y : Type v'} (a : X → P) (b : Y → P) (r : Rel X Y) :"
+      },
+      {
+        "path": "DosenPetric/SubstitutionFiberRelations.lean",
+        "line": 48,
+        "kind": "theorem",
+        "name": "lift_composition",
+        "opening": "theorem lift_composition {X : Type v} {Y : Type v'} {Z : Type v''}"
+      }
+    ]
+  },
+  "R2": {
+    "status": "named terms and inverse equations in original presentation; cited alternative proof in paper",
+    "paper": "Lemma 5.1 pp.6–7; Section 6 p.9",
+    "anchors": [
+      {
+        "path": "DosenPetric/PresentationShortQ.lean",
+        "line": 17,
+        "kind": "def",
+        "name": "qInverseTerm",
+        "opening": "def qInverseTerm (A : Formula P) : Term P (.disj A .top) (.disj (.conj A .bot) .top) :="
+      },
+      {
+        "path": "DosenPetric/PresentationShortQ.lean",
+        "line": 32,
+        "kind": "theorem",
+        "name": "q_qInverse",
+        "opening": "theorem q_qInverse (A : Formula P) : comp (q A) (qInverse A) = id _ := by"
+      },
+      {
+        "path": "DosenPetric/PresentationShortQ.lean",
+        "line": 46,
+        "kind": "theorem",
+        "name": "qInverse_q",
+        "opening": "theorem qInverse_q (A : Formula P) : comp (qInverse A) (q A) = id _ := by"
+      },
+      {
+        "path": "DosenPetric/PresentationShortE.lean",
+        "line": 13,
+        "kind": "def",
+        "name": "sourceConjTerm",
+        "opening": "def sourceConjTerm (X Y A B : Formula P) :"
+      },
+      {
+        "path": "DosenPetric/PresentationShortE.lean",
+        "line": 21,
+        "kind": "def",
+        "name": "sectionTerm",
+        "opening": "def sectionTerm (X A B : Formula P) :"
+      },
+      {
+        "path": "DosenPetric/PresentationShortE.lean",
+        "line": 30,
+        "kind": "def",
+        "name": "eInverseTerm",
+        "opening": "def eInverseTerm (A : Formula P) : Term P (.conj A (.disj A .top)) (.conj A A) :="
+      },
+      {
+        "path": "DosenPetric/PresentationShortE.lean",
+        "line": 44,
+        "kind": "theorem",
+        "name": "e_eInverse",
+        "opening": "theorem e_eInverse (A : Formula P) : comp (e A) (eInverse A) = id _ := by"
+      },
+      {
+        "path": "DosenPetric/PresentationShortE.lean",
+        "line": 50,
+        "kind": "theorem",
+        "name": "eInverse_e",
+        "opening": "theorem eInverse_e (A : Formula P) : comp (eInverse A) (e A) = id _ := by"
+      }
+    ]
+  },
+  "R3": {
+    "status": "named results in reduced presentation; transfer to original presentation explained as a deduction",
+    "paper": "Section 6 p.8 mix/fold; union absent throughout",
+    "anchors": [
+      {
+        "path": "DosenPetric/ReducedUnion.lean",
+        "line": 13,
+        "kind": "def",
+        "name": "union",
+        "opening": "def union {A B : NormalForm P} (f g : Term P A B) : Term P A B :="
+      },
+      {
+        "path": "DosenPetric/ReducedUnion.lean",
+        "line": 25,
+        "kind": "def",
+        "name": "union",
+        "opening": "def union {A B : NormalForm P} (f g : Hom A B) : Hom A B :="
+      },
+      {
+        "path": "DosenPetric/ReducedUnion.lean",
+        "line": 80,
+        "kind": "theorem",
+        "name": "union_pre",
+        "opening": "theorem union_pre {X A B : NormalForm P} (h : Hom X A) (f g : Hom A B) :"
+      },
+      {
+        "path": "DosenPetric/ReducedUnion.lean",
+        "line": 85,
+        "kind": "theorem",
+        "name": "union_post",
+        "opening": "theorem union_post {A B C : NormalForm P} (f g : Hom A B) (h : Hom B C) :"
+      },
+      {
+        "path": "DosenPetric/ReducedUnion.lean",
+        "line": 90,
+        "kind": "theorem",
+        "name": "union_comm",
+        "opening": "theorem union_comm {A B : NormalForm P} (f g : Hom A B) : union f g = union g f := by"
+      },
+      {
+        "path": "DosenPetric/ReducedUnion.lean",
+        "line": 97,
+        "kind": "theorem",
+        "name": "union_idem",
+        "opening": "theorem union_idem {A B : NormalForm P} (f : Hom A B) : union f f = f := by"
+      },
+      {
+        "path": "DosenPetric/ReducedUnion.lean",
+        "line": 131,
+        "kind": "theorem",
+        "name": "union_assoc",
+        "opening": "theorem union_assoc {A B : NormalForm P} (f g h : Hom A B) :"
+      },
+      {
+        "path": "DosenPetric/ReducedUnion.lean",
+        "line": 163,
+        "kind": "theorem",
+        "name": "union_zeroOf",
+        "opening": "theorem union_zeroOf {A B : NormalForm P} (f w : Hom A B) : union f (zeroOf w) = f := by"
+      },
+      {
+        "path": "DosenPetric/ReducedFiniteUnion.lean",
+        "line": 12,
+        "kind": "def",
+        "name": "finiteUnion",
+        "opening": "def finiteUnion {A B : NormalForm P} (w : Hom A B) : List (Hom A B) → Hom A B"
+      },
+      {
+        "path": "DosenPetric/ReducedFiniteUnion.lean",
+        "line": 19,
+        "kind": "theorem",
+        "name": "witness_independent",
+        "opening": "theorem witness_independent (w v : Hom A B) (fs : List (Hom A B)) :"
+      },
+      {
+        "path": "DosenPetric/ReducedFiniteUnion.lean",
+        "line": 57,
+        "kind": "theorem",
+        "name": "eq_of_members",
+        "opening": "theorem eq_of_members (w v : Hom A B) (fs gs : List (Hom A B))"
+      },
+      {
+        "path": "DosenPetric/ReducedFiniteUnion.lean",
+        "line": 83,
+        "kind": "theorem",
+        "name": "occurrence",
+        "opening": "theorem occurrence (w : Hom A B) (fs : List (Hom A B))"
+      },
+      {
+        "path": "DosenPetric/ReducedRecovery.lean",
+        "line": 43,
+        "kind": "theorem",
+        "name": "recover_reduceHom",
+        "opening": "theorem recover_reduceHom {A B : Formula P} (f : Presentation.Hom A B) : recoverHom (reduceHom f) = f := by"
+      },
+      {
+        "path": "DosenPetric/ReducedRecovery.lean",
+        "line": 50,
+        "kind": "theorem",
+        "name": "reduce_recoverHom",
+        "opening": "theorem reduce_recoverHom {A B : Formula P} (f : Hom (normal A) (normal B)) :"
+      },
+      {
+        "path": "DosenPetric/ReducedRecovery.lean",
+        "line": 34,
+        "kind": "theorem",
+        "name": "recoverHom_comp",
+        "opening": "theorem recoverHom_comp {A B C : Formula P}"
+      },
+      {
+        "path": "DosenPetric/ReducedUnionOccurrences.lean",
+        "line": 25,
+        "kind": "theorem",
+        "name": "occurrence_union",
+        "opening": "theorem occurrence_union {A B : NormalForm P} (f g : Hom A B)"
+      },
+      {
+        "path": "DosenPetric/ReducedUnionOccurrences.lean",
+        "line": 34,
+        "kind": "theorem",
+        "name": "occurrence_zeroOf",
+        "opening": "theorem occurrence_zeroOf {A B : NormalForm P} (f : Hom A B) :"
+      },
+      {
+        "path": "DosenPetric/SignedLiteralReduction.lean",
+        "line": 38,
+        "kind": "def",
+        "name": "red",
+        "opening": "def red : {A B : Formula P} → Presentation.Term P A B → Term P (normal A) (normal B)"
+      },
+      {
+        "path": "DosenPetric/ReducedQuotientReduction.lean",
+        "line": 34,
+        "kind": "theorem",
+        "name": "reduceHom_tensor_conj",
+        "opening": "theorem reduceHom_tensor_conj {A B C D : Formula P}"
+      },
+      {
+        "path": "DosenPetric/ReducedQuotientReduction.lean",
+        "line": 29,
+        "kind": "theorem",
+        "name": "reduceHom_comp",
+        "opening": "theorem reduceHom_comp {A B C : Formula P} (f : Presentation.Hom A B) (g : Presentation.Hom B C) :"
+      }
+    ]
+  },
+  "R4": {
+    "status": "named original-presentation action laws; absent as general laws in v15",
+    "paper": "Section 3 p.5 / Appendix D.1 p.13",
+    "anchors": [
+      {
+        "path": "DosenPetric/FormulaSubstitutionLaws.lean",
+        "line": 11,
+        "kind": "theorem",
+        "name": "subst_identity",
+        "opening": "theorem subst_identity (A : Formula P) : A.subst Formula.var = A := by"
+      },
+      {
+        "path": "DosenPetric/FormulaSubstitutionLaws.lean",
+        "line": 20,
+        "kind": "theorem",
+        "name": "subst_composition",
+        "opening": "theorem subst_composition (σ : P → Formula R) (τ : R → Formula T) (A : Formula P) :"
+      },
+      {
+        "path": "DosenPetric/FormulaSubstitutionLaws.lean",
+        "line": 30,
+        "kind": "theorem",
+        "name": "subst_ext",
+        "opening": "theorem subst_ext (σ τ : P → Formula R) (h : ∀ p, σ p = τ p) (A : Formula P) :"
+      },
+      {
+        "path": "DosenPetric/PresentationSubstitutionActionQuotient.lean",
+        "line": 39,
+        "kind": "theorem",
+        "name": "substitute_identity",
+        "opening": "theorem substitute_identity {A B : Formula P} (f : Hom A B) :"
+      },
+      {
+        "path": "DosenPetric/PresentationSubstitutionActionQuotient.lean",
+        "line": 44,
+        "kind": "theorem",
+        "name": "substitute_composition",
+        "opening": "theorem substitute_composition (σ : P → Formula R) (τ : R → Formula T)"
+      },
+      {
+        "path": "DosenPetric/PresentationSubstitutionActionQuotient.lean",
+        "line": 57,
+        "kind": "theorem",
+        "name": "substitute_ext",
+        "opening": "theorem substitute_ext (σ τ : P → Formula R) (h : ∀ p, σ p = τ p)"
+      }
+    ]
+  },
+  "R5": {
+    "status": "named general retract result; only its double-negation instance printed",
+    "paper": "Proposition 4.2 p.6",
+    "anchors": [
+      {
+        "path": "DosenPetric/Substitution.lean",
+        "line": 74,
+        "kind": "theorem",
+        "name": "context_retract",
+        "opening": "theorem context_retract {A B : Formula P} (m : C.Hom A B) (n : C.Hom B A)"
+      }
+    ]
+  },
+  "R6": {
+    "status": "named original-presentation results; paper states only NNF literal preservation and negation variance",
+    "paper": "Section 3 p.4 / Section 2 p.3",
+    "anchors": [
+      {
+        "path": "DosenPetric/PresentationSignedLabels.lean",
+        "line": 73,
+        "kind": "theorem",
+        "name": "occurrence_signedLabel",
+        "opening": "theorem occurrence_signedLabel {A B : Formula P} (f : Hom A B)"
+      },
+      {
+        "path": "DosenPetric/PresentationSignedLabels.lean",
+        "line": 88,
+        "kind": "theorem",
+        "name": "occurrence_polarity",
+        "opening": "theorem occurrence_polarity {A B : Formula P} (f : Hom A B)"
+      },
+      {
+        "path": "DosenPetric/PresentationNegationOccurrence.lean",
+        "line": 25,
+        "kind": "theorem",
+        "name": "occurrence_negate",
+        "opening": "theorem occurrence_negate {A B : Formula P} (f : Hom A B) (x : A.Occ) (y : B.Occ) :"
+      }
+    ]
+  },
+  "R7": {
+    "status": "proved coherence architecture; current manuscript cites/states the endpoint rather than this proof outline",
+    "paper": "Section 6 p.9 / Appendix D",
+    "anchors": [
+      {
+        "path": "DosenPetric/GentzenDistributiveEpi.lean",
+        "line": 57,
+        "kind": "theorem",
+        "name": "section_comparison",
+        "opening": "theorem section_comparison (X A B : NormalForm P) :"
+      },
+      {
+        "path": "DosenPetric/GentzenDistributiveMono.lean",
+        "line": 54,
+        "kind": "theorem",
+        "name": "comparison_retraction",
+        "opening": "theorem comparison_retraction (A B R : NormalForm P) :"
+      },
+      {
+        "path": "DosenPetric/GentzenNormalExpansion.lean",
+        "line": 45,
+        "kind": "theorem",
+        "name": "dnf_expansion",
+        "opening": "theorem dnf_expansion (A : NormalForm P) :"
+      },
+      {
+        "path": "DosenPetric/GentzenNormalExpansion.lean",
+        "line": 62,
+        "kind": "theorem",
+        "name": "cnf_expansion",
+        "opening": "theorem cnf_expansion (A : NormalForm P) :"
+      },
+      {
+        "path": "DosenPetric/GentzenNormalRetracts.lean",
+        "line": 31,
+        "kind": "structure",
+        "name": "NormalRetract",
+        "opening": "structure NormalRetract (A B : NormalForm P) where"
+      },
+      {
+        "path": "DosenPetric/GentzenPureNormalForms.lean",
+        "line": 13,
+        "kind": "def",
+        "name": "HasPureNormalForm",
+        "opening": "def HasPureNormalForm {A B : NormalForm P} (f : Hom A B) : Prop :="
+      },
+      {
+        "path": "DosenPetric/GentzenPureNormalForms.lean",
+        "line": 84,
+        "kind": "theorem",
+        "name": "faithful",
+        "opening": "theorem faithful {f g : Hom A B} (hf : HasPureNormalForm f) (hg : HasPureNormalForm g)"
+      },
+      {
+        "path": "DosenPetric/GentzenPositiveCoherence.lean",
+        "line": 14,
+        "kind": "theorem",
+        "name": "represented_coherence",
+        "opening": "theorem represented_coherence {A B : NormalForm P} (f g : Hom A B)"
+      },
+      {
+        "path": "DosenPetric/GentzenPositiveCoherence.lean",
+        "line": 31,
+        "kind": "theorem",
+        "name": "positive_coherence",
+        "opening": "theorem positive_coherence : PositiveCoherence P := by"
+      },
+      {
+        "path": "DosenPetric/CommonAtomicFactorization.lean",
+        "line": 51,
+        "kind": "def",
+        "name": "commonAtomicFactor",
+        "opening": "def commonAtomicFactor {A B : NormalForm P} (t₁ t₂ : Term P A B) : CommonAtomicFactor t₁ t₂ := by"
+      },
+      {
+        "path": "DosenPetric/CommonAtomicFactorization.lean",
+        "line": 123,
+        "kind": "theorem",
+        "name": "faithful_of_positive_coherence",
+        "opening": "theorem faithful_of_positive_coherence (hC : PositiveCoherence P) : Faithful P := by"
+      },
+      {
+        "path": "DosenPetric/ReducedCoherence.lean",
+        "line": 13,
+        "kind": "theorem",
+        "name": "faithful",
+        "opening": "theorem faithful : Faithful P := faithful_of_positive_coherence Gentzen.positive_coherence"
+      },
+      {
+        "path": "DosenPetric/ReducedCoherence.lean",
+        "line": 17,
+        "kind": "theorem",
+        "name": "boolean_coherence",
+        "opening": "theorem boolean_coherence {A B : Formula P} {f g : Presentation.Hom A B}"
+      }
+    ]
+  }
+}

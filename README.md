@@ -25,6 +25,13 @@ V14's terminology, explicit types and expanded calculations remain unchanged.
 The ChatGPT/Codex disclosure, MSC codes, exact supplied Palomar citation,
 both proof routes and every earlier release remain. No arXiv upload has occurred.
 
+The [reverse audit from Lean to the paper](docs/FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md) identifies seven
+candidate additions, including the full substituted occurrence relation,
+explicit isomorphism inverses and the union algebra. It inventories all 850
+production modules and distinguishes named theorems, transfers from the reduced
+presentation and further deductions. V15 and its package are unchanged; the
+report supplies proposed mathematical wording rather than a new release.
+
 The verified package was merged into main through `23ec1bc`. It selects five statements
 in `DosenPetric.Palomar`: both
 actual-source maximality proofs, their congruence dichotomy, a nonzero variable

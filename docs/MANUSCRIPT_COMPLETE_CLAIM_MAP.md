@@ -31,6 +31,17 @@ statements, term/quotient relations, assumptions and substitution square are
 mapped below. All preceding v14 mathematical text and diagrams are preserved;
 no Lean source or registered input changes. See MANUSCRIPT_V15_REPORT.md.
 
+## Reverse content audit (1 November 2026)
+
+The [Lean-to-paper audit](FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md) checks the other direction:
+formal results absent from the written paper. Its seven candidates and typed
+proposals are separate from the current manuscript claims below. The
+module inventory includes the 95 production modules outside the five selected
+entry points' import closure. It marks source-reading depth and distinguishes
+named declarations from transfers and further deductions. This audit does not
+revise v15 or claim a new proof/kernel replay. The forward coverage conclusion
+does not assert that every result in the library is printed in the paper.
+
 ## Three milestones and full-paper endpoint
 
 | Milestone | Actual result | Status |
