@@ -1,0 +1,21 @@
+{
+  "run": {
+    "conclusion": "success",
+    "createdAt": "2026-11-01T02:51:02Z",
+    "databaseId": 41266833954,
+    "event": "workflow_dispatch",
+    "headSha": "5dbee39bea09539bd130f729e82636419f71f920",
+    "status": "completed",
+    "updatedAt": "2026-11-01T03:03:51Z",
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41266833954"
+  },
+  "artifact": {
+    "digest": "sha256:70b31afd745e7b0871d835906be0367f26f1d6ca980ab83f3a724ae657db16d0",
+    "expired": false,
+    "id": 13067876563,
+    "name": "mechanical-report-preflight001",
+    "size_in_bytes": 11263
+  },
+  "artifact_zip_sha256": "70b31afd745e7b0871d835906be0367f26f1d6ca980ab83f3a724ae657db16d0",
+  "mechanical_report_sha256": "951da94ee305e525eb4b5a9d3be2de4d92bd97c069f30341187e7e613212aa49"
+}
