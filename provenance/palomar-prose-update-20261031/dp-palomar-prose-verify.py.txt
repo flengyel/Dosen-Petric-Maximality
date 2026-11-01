@@ -1,0 +1,33 @@
+from pathlib import Path
+import subprocess,json,hashlib,datetime,sys
+R=Path('/home/flengyel/src/Dosen-Petric-Maximality')
+W=R/'.codex-work/palomar-prose-update-20261031'
+P=R/'provenance/palomar-prose-update-20261031'
+W.mkdir(exist_ok=True)
+results=[]
+def run(label,argv,cwd=R):
+ start=datetime.datetime.now(datetime.timezone.utc).isoformat()
+ p=subprocess.run(argv,cwd=cwd,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+ (W/(label+'.log')).write_bytes(p.stdout)
+ rec={'command':argv,'cwd':str(cwd),'exit_code':p.returncode,'started_utc':start,'finished_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'sha256':hashlib.sha256(p.stdout).hexdigest()}
+ results.append(rec)
+ print(json.dumps({'label':label,'exit_code':p.returncode,'log':str(W/(label+'.log'))}),flush=True)
+ (W/'local-commands.json').write_text(json.dumps(results,indent=2)+'\n')
+ if p.returncode: raise RuntimeError(p.stdout[-3500:].decode())
+ return p.stdout
+verify=(R/'.codex-work/verification/verify.log').read_bytes()
+assert b'PASS: build and transitive axiom audit.' in verify
+(W/'required-verify.log').write_bytes(verify)
+if 'fingerprints-only' not in sys.argv:
+ run('challenge-solution-build',['lake','build','Challenge','Solution'])
+old=run('v1-fingerprints',['lake','env','lean','--run','/tmp/dp-palomar-fingerprint.lean'],R/'.codex-work/palomar-registration-20261030/candidate')
+new=run('candidate-fingerprints',['lake','env','lean','--run','/tmp/dp-palomar-fingerprint.lean'])
+assert old==new,'Declaration fingerprints differ'
+rows=[]
+for line in new.decode().splitlines():
+ d=json.loads(line)
+ rows.append({'name':d['name'],'type_sha256':hashlib.sha256(d['type'].encode()).hexdigest(),'value_sha256':None if d['value'] is None else hashlib.sha256(d['value'].encode()).hexdigest()})
+assert all(r['value_sha256'] is not None for r in rows[-5:]),'Missing selected proof term'
+out={'baseline_source':'2e771844077fd8cebfbe365230f13d4dd13a75b1','method':'Lean 4.35.0 imports each Solution independently and serializes the type and available value expression of every listed declaration; both complete streams are byte-identical. SHA-256 values below identify the serialized expressions.','declarations':rows,'stream_sha256':hashlib.sha256(new).hexdigest(),'required_verify_exit_code':0,'required_verify_log_sha256':hashlib.sha256(verify).hexdigest(),'commands':results}
+(P/'declaration-preservation.json').write_text(json.dumps(out,indent=2)+'\n')
+print('PASS: 26 declaration types/values, including all five selected proof terms, unchanged from version 1.',flush=True)

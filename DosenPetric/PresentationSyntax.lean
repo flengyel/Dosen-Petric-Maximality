@@ -10,7 +10,7 @@ namespace DosenPetric.Presentation
 
 universe u
 
-/-- The two covariant binary operations of the published arrow grammar. -/
+/-- Conjunction and disjunction are the two covariant binary arrow operations. -/
 inductive Op where
   | conj
   | disj
@@ -27,9 +27,11 @@ abbrev unit {P : Type u} : Op → Formula P
 
 end Op
 
-/-- The primitive grammar C(B), September 2007, pp.310,312,316.
-`comp f g` denotes the book's g ∘ f. `swap .disj A B` denotes its c_(B,A).
-Negation on arrows, pairing, copairing, and dR are derived operations. -/
+/-- The arrow terms follow the primitive grammar C(B) in the September 2007
+revision of Proof-Theoretical Coherence, pp.310,312,316.
+The term `comp f g` denotes the book's g ∘ f, and `swap .disj A B` denotes
+its c_(B,A). Negation on arrows, pairing, copairing, and dR are derived
+operations. -/
 inductive Term (P : Type u) : Formula P → Formula P → Type u where
   | id (A) : Term P A A
   | comp {A B C} : Term P A B → Term P B C → Term P A C
@@ -68,28 +70,28 @@ namespace Term
 
 variable {P : Type u}
 
-/-- (⟨ , ⟩), p.187. -/
+/-- Pairing is defined by the diagonal and conjunction, as on p.187. -/
 def pair {X A B : Formula P} (f : Term P X A) (g : Term P X B) : Term P X (.conj A B) :=
   .comp (.diag X) (.tensor .conj f g)
 
-/-- The dual copairing definition, p.198. -/
+/-- Copairing is defined by disjunction and the codiagonal, as on p.198. -/
 def copair {A B X : Formula P} (f : Term P A X) (g : Term P B X) : Term P (.disj A B) X :=
   .comp (.tensor .disj f g) (.codiag X)
 
-/-- The terminal-arrow definition, p.191. -/
+/-- The arrow to the terminal object is defined as on p.191. -/
 def toTop (A : Formula P) : Term P A .top := .comp (.rightIn .conj A) (.snd A .top)
 
-/-- The initial-arrow definition, p.207. -/
+/-- The arrow from the initial object is defined as on p.207. -/
 def fromBot (A : Formula P) : Term P .bot A := .comp (.inr A .bot) (.rightOut .disj A)
 
-/-- (dR c), p.145, with the disjunctive symmetry indices translated. -/
+/-- The right distributor is defined by (dR c), p.145, with the disjunctive symmetry indices translated. -/
 def distRight (A B C : Formula P) : Term P (.conj (.disj A B) C) (.disj A (.conj B C)) :=
   .comp (.swap .conj (.disj A B) C)
     (.comp (.tensor .conj (.id C) (.swap .disj A B))
       (.comp (.dist C B A)
         (.comp (.tensor .disj (.swap .conj C B) (.id A)) (.swap .disj (.conj B C) A))))
 
-/-- The medial arrow used in (b c w), p.186. -/
+/-- The medial arrow occurs in equation (b c w), p.186. -/
 def medial (o : Op) (A B C D : Formula P) :
     Term P (o.formula (o.formula A B) (o.formula C D)) (o.formula (o.formula A C) (o.formula B D)) :=
   .comp (.assocL o A B (o.formula C D))
@@ -97,7 +99,7 @@ def medial (o : Op) (A B C D : Formula P) :
       (.comp (.assocR o B C D) (.comp (.tensor o (.swap o B C) (.id D)) (.assocL o C B D))))
       (.assocR o A C (o.formula B D)))
 
-/-- The source-defined zero endomorphism (0ηε), p.317, before proving its equation. -/
+/-- The composite in (0ηε), p.317, defines the zero endomorphism. -/
 def zeroConstruction (A : Formula P) : Term P A A :=
   .comp (.rightIn .conj A)
     (.comp (.tensor .conj (.id A) (.excludedMiddle A))

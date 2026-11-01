@@ -1,0 +1,169 @@
+{
+  "baseline_source": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+  "method": "Lean 4.35.0 imports each Solution independently and serializes the type and available value expression of every listed declaration; both complete streams are byte-identical. SHA-256 values below identify the serialized expressions.",
+  "declarations": [
+    {
+      "name": "DosenPetric.Formula",
+      "type_sha256": "23131fbfc6d15fac66580f261a6cbf416ecb73371e6275c9a4f2222868f15e97",
+      "value_sha256": null
+    },
+    {
+      "name": "DosenPetric.Formula.Occ",
+      "type_sha256": "efcb3d003068db7ccfd907889990e3be30f36680c3e349fda19da3ef0687b98d",
+      "value_sha256": "f38a2d2b0937dc33f963809b077a21666c1108e9722d7c9da038799647d50c51"
+    },
+    {
+      "name": "DosenPetric.Formula.subst",
+      "type_sha256": "ad7f362b1e155c5044bc1c2a1827dfeb7a2e840eb00cc3cf1c01e699207b76e9",
+      "value_sha256": "74f27f0908c5e5c2709f9761533a2435fee71ee3b3ce838fe21440e5c18ce2d8"
+    },
+    {
+      "name": "DosenPetric.Presentation.Op",
+      "type_sha256": "b4611575b2b62eb57ff8b514cf96bf01666158b035ac2fcc89065136260d1e05",
+      "value_sha256": null
+    },
+    {
+      "name": "DosenPetric.Presentation.Op.formula",
+      "type_sha256": "c4110a3c622447b7dc308736bf13ef716fafaf2e33cfbdca2c5e5027b49376a7",
+      "value_sha256": "e6e045966195e91713f091d753fddfd90c7584d1bc779f9802c0c4704137a29e"
+    },
+    {
+      "name": "DosenPetric.Presentation.Op.unit",
+      "type_sha256": "14e6ba84d35c659aa7548e87d93b9ba9d66b17a27913d97d2d50259100984804",
+      "value_sha256": "40e55e3eea52f3015be9662755dae9dd6a647f9fc96a55be6ec2b6d3ed7038b8"
+    },
+    {
+      "name": "DosenPetric.Presentation.Term",
+      "type_sha256": "5bceeba51eccef9410fee6ad91096fb6c382d2001f96f97a907fb5044caab399",
+      "value_sha256": null
+    },
+    {
+      "name": "DosenPetric.Presentation.Term.pair",
+      "type_sha256": "9215fd03c36874e1d318c2d24f7ae5ef179b094e9cd532ec56be1aef937ec8fe",
+      "value_sha256": "8ed955f40d6eb0ce03d9d1f559ffcc32f6c06db5cca54de2d6cd3a3aec2c238d"
+    },
+    {
+      "name": "DosenPetric.Presentation.Term.copair",
+      "type_sha256": "74a2b57cd48a81d705ba8e213b9c6a90d7ac3f0904571260112eead4fd6e1eba",
+      "value_sha256": "7c80e8ca5d0c635dda2f2346a7647b0dfd9b2e03f9a62442a5347926d1dd033a"
+    },
+    {
+      "name": "DosenPetric.Presentation.Term.toTop",
+      "type_sha256": "4b2ea2a4d7e32301e3dc10f774caa6624626dcc95809d7f3014a2b6445ce0c1b",
+      "value_sha256": "5821b84e367d68f003284d23adaff8d7e90f160a9e7735c81ebb243b9085387b"
+    },
+    {
+      "name": "DosenPetric.Presentation.Term.fromBot",
+      "type_sha256": "c83004d8e6f2af3d0a94f04b2f43a4967e4bb449aadb2438ffd6b24645cb80a0",
+      "value_sha256": "7e7ca8b47fee3f7ee012bfcb30f2b3a765370d9ed28f9b2c0def836086b502cf"
+    },
+    {
+      "name": "DosenPetric.Presentation.Term.distRight",
+      "type_sha256": "dd2471ecf4c59e0d73afdce8e95958a166fe627ce030a4d73af818709fe091a8",
+      "value_sha256": "f3ec7f05587089a713f3d1cc7b5f4dfbd6a2fbd47797ed85c5140e1186f1a0d1"
+    },
+    {
+      "name": "DosenPetric.Presentation.Term.medial",
+      "type_sha256": "c6ca274f121daf2b13c4f6603bce259be963fdbe77d2c54b56faf1c907285864",
+      "value_sha256": "54e5d227d3c677861545cf742ee22f3c2246539427f10bd41b1a14f175699bba"
+    },
+    {
+      "name": "DosenPetric.Presentation.Term.zeroConstruction",
+      "type_sha256": "0c292c43559ecb00e65438644b80a1457a961b5edf30fac776a4593f5607aa5f",
+      "value_sha256": "7741420c4ef91e6e4ca69159fa65c2c90b3942e0129134bc906d6a190157c902"
+    },
+    {
+      "name": "DosenPetric.Presentation.Constant",
+      "type_sha256": "fa6e2a3de30a71ce8d6241013681719913bcfa5574ec3cd9af54a19fe1b316c5",
+      "value_sha256": null
+    },
+    {
+      "name": "DosenPetric.Presentation.Equation",
+      "type_sha256": "dcca5a33c32db648c92e62cbcfff534c868e261f999fae3faf8138c673c3270b",
+      "value_sha256": null
+    },
+    {
+      "name": "DosenPetric.Presentation.Derives",
+      "type_sha256": "dcca5a33c32db648c92e62cbcfff534c868e261f999fae3faf8138c673c3270b",
+      "value_sha256": null
+    },
+    {
+      "name": "DosenPetric.Presentation.Term.subst",
+      "type_sha256": "c0c8580599bf4c8fcbabd6b79d347e64a51cc1983945e14ce33de1dcf8b092a9",
+      "value_sha256": "bd8f3ad5449403bc7ea1726c19814eeb805d96a5e7e40eff5e1ac14e38349754"
+    },
+    {
+      "name": "DosenPetric.Palomar.PrimitiveCongruence",
+      "type_sha256": "23131fbfc6d15fac66580f261a6cbf416ecb73371e6275c9a4f2222868f15e97",
+      "value_sha256": null
+    },
+    {
+      "name": "DosenPetric.Palomar.PrimitiveCongruence.Closed",
+      "type_sha256": "7dc2559b220e05ff04c702129f42d5fa24ffd9a9310a0605e432829367811e33",
+      "value_sha256": "a0dcd394f716070418deb0a6b8a25cfc49420553cb151f554d8c8fd084777986"
+    },
+    {
+      "name": "DosenPetric.Palomar.PrimitiveCongruence.Total",
+      "type_sha256": "7dc2559b220e05ff04c702129f42d5fa24ffd9a9310a0605e432829367811e33",
+      "value_sha256": "ab36e9ad32a38b9dbe635c915729fdc06b9f6a3ef94d82a968248030dbd8aa57"
+    },
+    {
+      "name": "DosenPetric.Palomar.maximality",
+      "type_sha256": "023a191c29d4fcfc3c6b7c29702379c17a58fbf27bbe33426be2257ca3d39c14",
+      "value_sha256": "6a1a38d223b0e100dd6a4274f98d732d67a55c6975ba072684b339346899a9fc"
+    },
+    {
+      "name": "DosenPetric.Palomar.short_maximality",
+      "type_sha256": "850e88e1cc9e07a88ea5cee9f578227e73d19897876266faf5df84ed56febc4e",
+      "value_sha256": "7e7c253b74f7424628a2674a3dcd4e46ebae02878a7501f249201ac6d22cccd7"
+    },
+    {
+      "name": "DosenPetric.Palomar.congruence_dichotomy",
+      "type_sha256": "bc7ac9aa83a2d048b3773518bd6e2924bcc3e090666423a2fa70f36794ad4240",
+      "value_sha256": "c5abe4266fcfd841a7383e5625a31a37d7127b03b0890e8c6ab88c803c9b7088"
+    },
+    {
+      "name": "DosenPetric.Palomar.identity_ne_zero",
+      "type_sha256": "a218e233e72c9da28cff213a76cdbd2b09f5e973df0b82fd91eeeea127949833",
+      "value_sha256": "f77ea4c5a47ae3af2baae4650abe15c6bff4b367c0e61b01357f8451d17c323f"
+    },
+    {
+      "name": "DosenPetric.Palomar.no_top_to_bot",
+      "type_sha256": "7048a6b5ef59fb2decbfae3926e2c536c844b21f5fbbb6504afcf9c35f1207d8",
+      "value_sha256": "98de63690c8a05f81d920b251b60dffd88c5147106ecaef387a39325c2ee0838"
+    }
+  ],
+  "stream_sha256": "90174ef6ddcc40e8944be81a85678565a56b9c78dfb62b30b7e9940a2c7080cf",
+  "required_verify_exit_code": 0,
+  "required_verify_log_sha256": "9048973cba7fd837ba9afa39a51bc9def04f0c0532bba4456123382b746131ea",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/tmp/dp-palomar-fingerprint.lean"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/palomar-registration-20261030/candidate",
+      "exit_code": 0,
+      "started_utc": "2026-11-01T02:50:08.391601+00:00",
+      "finished_utc": "2026-11-01T02:50:11.968311+00:00",
+      "sha256": "90174ef6ddcc40e8944be81a85678565a56b9c78dfb62b30b7e9940a2c7080cf"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/tmp/dp-palomar-fingerprint.lean"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality",
+      "exit_code": 0,
+      "started_utc": "2026-11-01T02:50:11.969808+00:00",
+      "finished_utc": "2026-11-01T02:50:15.289059+00:00",
+      "sha256": "90174ef6ddcc40e8944be81a85678565a56b9c78dfb62b30b7e9940a2c7080cf"
+    }
+  ]
+}

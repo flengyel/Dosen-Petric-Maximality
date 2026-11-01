@@ -31,8 +31,8 @@ def quotientRel {A B : Formula P} (f g : Hom A B) : Prop :=
 theorem quotientRel_ofTerm {A B : Formula P} (f g : Term P A B) :
     R.quotientRel (ofTerm f) (ofTerm g) ↔ R.Rel f g := Iff.rfl
 
-/-- Descent to the actual equation-generated quotient, with its genuine
-bicartesian fragment operations. -/
+/-- The relation descends to the quotient by `Derives` and is preserved by
+composition, pairing and copairing. -/
 def fragment : Congruence (operations P) where
   Rel := R.quotientRel
   refl f := by induction f using Quotient.inductionOn with | h f => exact R.refl f

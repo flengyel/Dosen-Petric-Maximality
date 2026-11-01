@@ -866,3 +866,10 @@ The uploaded register matches its committed file and all 23 registered artifacts
 match repository bytes. Actual WSL/Downloads state is reported by the local
 receipt, not independently inspected here. The three new successor artifacts
 require their own local committed-byte delivery; prior deliveries stay complete.
+
+
+## Palomar public-prose correction prepared (31 October 2026)
+
+The author supplied verbatim replacements for the Challenge opening, registry abstract, PrimitiveCongruence docstring and Total docstring. These are applied throughout the Challenge and corresponding production comments. Derives is explained as generated equivalence closed under composition, conjunction and disjunction. Empty qualifiers and the phrase structural-diagram constructions are removed from the submitted prose; the metadata names each diagram identity and gives manuscript/Lean correspondence. The v13 manuscript is cited at immutable commit 84d913d4ab30490ddf9c51788ed89ea5c7e9a601 and remains unchanged.
+
+The complete before/after text and diff are PALOMAR_PROSE_UPDATE_BEFORE_AFTER.md; the continuous preview is PALOMAR_PROSE_UPDATE_PUBLIC_PREVIEW.md; the local preparation and writing reports record the verification scope. All mathematical source tokens, selected theorem types and proof terms are preserved. Version 1 and source 2e771844077fd8cebfbe365230f13d4dd13a75b1 remain immutable. This is preparation for an ordinary update, expected version 2, with official preflight, pre-intake agreement and review-specific registration consent recorded as separate stages. No active registry citation or manuscript release changes during preparation.

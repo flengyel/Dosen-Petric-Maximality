@@ -1,0 +1,63 @@
+{
+  "baseline": "84d913d4ab30490ddf9c51788ed89ea5c7e9a601",
+  "version_1_source": "2e771844077fd8cebfbe365230f13d4dd13a75b1",
+  "lean_comment_only": [
+    {
+      "path": "Challenge.lean",
+      "comment_erased_token_sha256": "b9d02369d0837059464a75b72a273fe7774489304a8c958879add890ab14aaf0",
+      "unchanged_from_main_and_v1": true
+    },
+    {
+      "path": "DosenPetric/PalomarDefinitions.lean",
+      "comment_erased_token_sha256": "64c76277a33eca7b65050cd40115f1222cb67639a05b3befd43d249f727296a9",
+      "unchanged_from_main_and_v1": true
+    },
+    {
+      "path": "DosenPetric/PresentationEquations.lean",
+      "comment_erased_token_sha256": "2688d482e7f890f99eaa95b2adfcadb7ddaa23b4f1ed8488139abec950327430",
+      "unchanged_from_main_and_v1": true
+    },
+    {
+      "path": "DosenPetric/PresentationSyntax.lean",
+      "comment_erased_token_sha256": "caaa00cb820e18be3356b25aa080ff5470252b84ca06ed855cba20f4c4b8924f",
+      "unchanged_from_main_and_v1": true
+    },
+    {
+      "path": "DosenPetric/PalomarCorrespondence.lean",
+      "comment_erased_token_sha256": "0c57382ebdb7d8d60a4f6bd1f79e3c43a7d2c5eb0bb0c4ca776e22dfd019d452",
+      "unchanged_from_main_and_v1": true
+    },
+    {
+      "path": "DosenPetric/PalomarMaximality.lean",
+      "comment_erased_token_sha256": "3b7081d165ac53e5d73a0dcb11387a644bb15681fe1a483f19e0c2bc10300971",
+      "unchanged_from_main_and_v1": true
+    }
+  ],
+  "frozen_inputs": {
+    "comparator.json": "db36e6b9256356ca97a16be363a878b1feb337afd3217ef86096a29218290abb",
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lake-manifest.json": "01a12079da418a0c2cb55ddb97259aeb6b1a66c9ccc15b222e172b17f56c5822",
+    "lakefile.toml": "1a20167e2938ffcc6ffeca143dfd65883be292f2ffd039953fb5ea24fc188796",
+    "Solution.lean": "418b69bd252a93b7f420be67f5d0418a1a39f79e17988cd81dfe0f2eec4f9b91",
+    ".github/workflows/palomar-preflight.yml": "f96f61d30ae94145a0a75c8862c3c0b7d621bbb42ef731cbf6a8fc2263be1176"
+  },
+  "all_manuscript_and_arxiv_files_unchanged": 69,
+  "stash": [
+    "stash@{0}: On main: Preserve verified disjoint contraction work for upstream manuscript integration"
+  ],
+  "selected_names": [
+    "DosenPetric.Palomar.maximality",
+    "DosenPetric.Palomar.short_maximality",
+    "DosenPetric.Palomar.congruence_dichotomy",
+    "DosenPetric.Palomar.identity_ne_zero",
+    "DosenPetric.Palomar.no_top_to_bot"
+  ],
+  "metadata_schema_and_official_loader": "pass",
+  "all_registered_lean_source_files_covered": 1870,
+  "baseline_cached_source_files_verified_against_v1": 1870,
+  "unchanged_lean_file_bytes": 1864,
+  "current_public_version": 1,
+  "expected_successor_version": 2,
+  "official_policy_commit": "28bd48b9b71bbb2a82c718ce761d5a4220ef8e60",
+  "official_pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7"
+}

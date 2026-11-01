@@ -1,0 +1,28 @@
+import Lean
+open Lean
+
+def main : IO Unit := do
+  initSearchPath (← findSysroot)
+  let env ← importModules #[{ module := `Solution }] {} (trustLevel := 0)
+  let names := [
+    `DosenPetric.Formula, `DosenPetric.Formula.Occ, `DosenPetric.Formula.subst,
+    `DosenPetric.Presentation.Op, `DosenPetric.Presentation.Op.formula,
+    `DosenPetric.Presentation.Op.unit, `DosenPetric.Presentation.Term,
+    `DosenPetric.Presentation.Term.pair, `DosenPetric.Presentation.Term.copair,
+    `DosenPetric.Presentation.Term.toTop, `DosenPetric.Presentation.Term.fromBot,
+    `DosenPetric.Presentation.Term.distRight, `DosenPetric.Presentation.Term.medial,
+    `DosenPetric.Presentation.Term.zeroConstruction,
+    `DosenPetric.Presentation.Constant, `DosenPetric.Presentation.Equation,
+    `DosenPetric.Presentation.Derives, `DosenPetric.Presentation.Term.subst,
+    `DosenPetric.Palomar.PrimitiveCongruence,
+    `DosenPetric.Palomar.PrimitiveCongruence.Closed,
+    `DosenPetric.Palomar.PrimitiveCongruence.Total,
+    `DosenPetric.Palomar.maximality, `DosenPetric.Palomar.short_maximality,
+    `DosenPetric.Palomar.congruence_dichotomy,
+    `DosenPetric.Palomar.identity_ne_zero, `DosenPetric.Palomar.no_top_to_bot]
+  for name in names do
+    let some ci := env.find? name | throw (IO.userError s!"Missing declaration {name}")
+    IO.println (Json.mkObj [
+      ("name", toJson name.toString),
+      ("type", toJson (reprStr ci.type)),
+      ("value", toJson ((ci.value? true).map reprStr))]).compress

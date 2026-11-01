@@ -1,0 +1,387 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Palomar prose update: public text preview</title><style>body{max-width:900px;margin:40px auto;padding:0 20px;font:18px/1.55 system-ui;color:#202020}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f5f5;padding:1em}h1,h2,h3{line-height:1.2}h3{margin-top:2em;font-size:1.05em}</style><body>
+<h1>Text prepared for public display</h1>
+<h2>Registry title</h2>
+<p style="white-space:pre-wrap">Maximality of the Došen–Petrić Boolean Category</p>
+<h2>Registry abstract</h2>
+<p style="white-space:pre-wrap">Let P be a nonempty set of propositional variables. The freely generated zero-identity Boolean category B(P) of Došen and Petrić is maximal: every congruence on its arrows preserved by the arrow operations and uniform formula substitution is either equality or identifies every pair of parallel arrows. The formalization gives two proofs of maximality and proves the congruence dichotomy. It also proves that the identity and zero endomorphism of each variable are distinct, and that there is no arrow from the terminal object to the initial object.</p>
+<h2>Challenge opening</h2>
+<p style="white-space:pre-wrap">The formulas, arrow terms and equations below present the zero-identity
+Boolean category of Došen and Petrić. Two arrow terms represent the same
+arrow if and only if `Derives` relates them.
+
+For `f : Term P A B` and `g : Term P B C`,
+`Term.comp f g : Term P A C` applies `f` and then `g`.</p>
+<h2>Complete metadata in reading order</h2>
+<h3>version</h3>
+<p style="white-space:pre-wrap">v0.4</p>
+<h3>project.name</h3>
+<p style="white-space:pre-wrap">Maximality of the Došen–Petrić Boolean Category</p>
+<h3>project.description</h3>
+<p style="white-space:pre-wrap">Let P be a nonempty set of propositional variables. The freely generated zero-identity Boolean category B(P) of Došen and Petrić is maximal: every congruence on its arrows preserved by the arrow operations and uniform formula substitution is either equality or identifies every pair of parallel arrows. The formalization gives two proofs of maximality and proves the congruence dichotomy. It also proves that the identity and zero endomorphism of each variable are distinct, and that there is no arrow from the terminal object to the initial object.</p>
+<h3>project.authors[0]</h3>
+<p style="white-space:pre-wrap">Florian Lengyel</p>
+<h3>project.responsible_maintainers[0]</h3>
+<p style="white-space:pre-wrap">Florian Lengyel</p>
+<h3>project.license</h3>
+<p style="white-space:pre-wrap">Apache-2.0</p>
+<h3>classification.arxiv[0]</h3>
+<p style="white-space:pre-wrap">math.CT</p>
+<h3>classification.arxiv[1]</h3>
+<p style="white-space:pre-wrap">math.LO</p>
+<h3>classification.msc2020[0]</h3>
+<p style="white-space:pre-wrap">03G30</p>
+<h3>classification.msc2020[1]</h3>
+<p style="white-space:pre-wrap">03F07</p>
+<h3>classification.msc2020[2]</h3>
+<p style="white-space:pre-wrap">18A32</p>
+<h3>sources[0].title</h3>
+<p style="white-space:pre-wrap">Maximality of the Došen–Petrić Boolean Category, version 13</p>
+<h3>sources[0].authors[0]</h3>
+<p style="white-space:pre-wrap">Florian Lengyel</p>
+<h3>sources[0].type</h3>
+<p style="white-space:pre-wrap">paper</p>
+<h3>sources[0].relationship</h3>
+<p style="white-space:pre-wrap">formalizes</p>
+<h3>sources[0].id</h3>
+<p style="white-space:pre-wrap">https://github.com/flengyel/Dosen-Petric-Maximality/blob/84d913d4ab30490ddf9c51788ed89ea5c7e9a601/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v13.tex</p>
+<h3>sources[0].location</h3>
+<p style="white-space:pre-wrap">Theorem 2.1; Sections 2–6; Appendices A–C; October 31, 2026.</p>
+<h3>sources[0].author_endorsement</h3>
+<p style="white-space:pre-wrap">participated</p>
+<h3>sources[0].note</h3>
+<p style="white-space:pre-wrap">The manuscript states maximality as Theorem 2.1, gives the q_A/e_A proof in Sections 4–5 and the symmetric-fold proof in Section 6, and states the model corollary as Corollary 5.3. Section 3 and Appendices A–C give the occurrence, substitution, diagram and rank results identified in the scope and correspondence fields below. The Lean development formalizes these results; the five registry declarations state the maximality and separation results listed below.</p>
+<h3>sources[1].title</h3>
+<p style="white-space:pre-wrap">Proof-Theoretical Coherence</p>
+<h3>sources[1].authors[0]</h3>
+<p style="white-space:pre-wrap">Kosta Došen</p>
+<h3>sources[1].authors[1]</h3>
+<p style="white-space:pre-wrap">Zoran Petrić</p>
+<h3>sources[1].type</h3>
+<p style="white-space:pre-wrap">book</p>
+<h3>sources[1].relationship</h3>
+<p style="white-space:pre-wrap">formalizes</p>
+<h3>sources[1].id</h3>
+<p style="white-space:pre-wrap">https://www.mi.sanu.ac.rs/novi_sajt/biography/kosta/coh.pdf</p>
+<h3>sources[1].location</h3>
+<p style="white-space:pre-wrap">King&#x27;s College Publications, 2004; revised author version September 2007; the zero-identity Boolean presentation in Sections 14.2–14.3 and the cut-elimination and coherence arguments used by that presentation.</p>
+<h3>sources[1].author_endorsement</h3>
+<p style="white-space:pre-wrap">not-contacted</p>
+<h3>sources[1].note</h3>
+<p style="white-space:pre-wrap">The development proves the cut-elimination and coherence results used for the category presented in Sections 14.2–14.3. The maximality theorem is stated in Lengyel&#x27;s manuscript. Appendix C of manuscript v13 corrects the rank comparisons on pp.260 and 262; the corresponding Lean equations and inequalities are listed below.</p>
+<h3>sources[2].title</h3>
+<p style="white-space:pre-wrap">Isomorphic formulae in classical propositional logic</p>
+<h3>sources[2].authors[0]</h3>
+<p style="white-space:pre-wrap">Kosta Došen</p>
+<h3>sources[2].authors[1]</h3>
+<p style="white-space:pre-wrap">Zoran Petrić</p>
+<h3>sources[2].type</h3>
+<p style="white-space:pre-wrap">paper</p>
+<h3>sources[2].relationship</h3>
+<p style="white-space:pre-wrap">background</p>
+<h3>sources[2].id</h3>
+<p style="white-space:pre-wrap">https://doi.org/10.1002/malq.201020020</p>
+<h3>sources[2].location</h3>
+<p style="white-space:pre-wrap">Mathematical Logic Quarterly 58 (2012), 5–17; Lemma 7; author version arXiv:0912.1271v3.</p>
+<h3>sources[2].author_endorsement</h3>
+<p style="white-space:pre-wrap">not-contacted</p>
+<h3>sources[2].note</h3>
+<p style="white-space:pre-wrap">Lemma 7 constructs an isomorphism from a bijection of occurrences. Manuscript v13, Section 5, relates this construction to the displayed q_A and e_A arrows. ShortProof.q_definition, ShortProof.e_definition and their inverse equations prove that these arrows are isomorphisms in the category presented by the defining equations.</p>
+<h3>status.scope</h3>
+<p style="white-space:pre-wrap">The five selected declarations state two proofs of maximality, the congruence dichotomy, the distinction between the identity and zero endomorphism of each variable, and the absence of an arrow from the terminal object to the initial object. The first three declarations assume that P is nonempty, as in manuscript v13, Theorem 2.1. Version 1 is registered as PALOMAR-2026-10-30-000014 at source 2e771844077fd8cebfbe365230f13d4dd13a75b1. This prose correction is prepared for an ordinary update under the same identifier; version 1 and its source remain available.
+
+The development also proves cut elimination and Boolean coherence. The declarations DosenPetric.Reduced.Gentzen.cut_elimination and atomized_cut_elimination are in DosenPetric/GentzenCutElimination.lean. DosenPetric.Presentation.coherence is in DosenPetric/PresentationCoherence.lean and corresponds to manuscript v13, Theorem 3.1. These results supply the cut-elimination and coherence inputs from Proof-Theoretical Coherence.
+
+The model corollary is manuscript v13, Corollary 5.3. DosenPetric.PresentationSemantics.model_corollary and model_corollary_interpretations, in DosenPetric/SemanticModelCorollary.lean, prove the conclusion for models of the full presentation, using agreement under all valuations and interpretations.
+
+Manuscript v13, Section 3 and Appendix A, describe occurrence substitution by tagged blocks and finite-ordinal coordinates. DosenPetric.Formula.expand and contract are inverse bijections. Formula.substitution_count and substitution_index in DosenPetric/FormulaSubstitutionOrdinals.lean, and PatternProfiles.actual_ordinal_square in DosenPetric/PatternSubstitutionOrdinals.lean, identify the tagged construction with the finite-ordinal coordinates. ProfileComposition.Data.coordinate_oneBased in DosenPetric/ProfileComposition.lean gives the one-based coordinate formula.
+
+Manuscript v13, Appendix B, displays the first-injection triangle, the five-arrow zero-identity path and the zero-law square for equations (1), (2) and (3). DosenPetric.Presentation.ManuscriptDiagrams.first_triangle, zero_diagram, zero_primitive and zero_square, in DosenPetric/ManuscriptStructuralDiagrams.lean, prove their identities.
+
+Manuscript v13, Appendix C, corrects two rank descriptions in Proof-Theoretical Coherence. For p.260, DosenPetric.Reduced.Gentzen.BlockedLeftDisj.gamma_equation and gamma_first_descent/gamma_second_descent prove the equation and both strict recursive rank comparisons; see DosenPetric/GentzenBlockedLeftGammaDisj.lean and GentzenBlockedLeftGammaDisjRank.lean. For p.262, BlockedDisjFirst.source_equation, fresh_principal_rank, fresh_total_rank and fresh_total_rank_ge_two prove the equation, the fresh right rank of one and the total rank of at least two; see DosenPetric/GentzenBlockedDisjFirstEquation.lean and GentzenAppendixCFreshRight.lean.
+
+The complete mathematical source is 630c4b6e47da16a1434476a211fd29ce6adc5569. The exhaustive correspondence for manuscript v13 is docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md at commit 84d913d4ab30490ddf9c51788ed89ea5c7e9a601. The additional results above belong to the full development; the Comparator selection consists of the five declarations listed in alignment.statements.</p>
+<h3>status.sorry_count</h3>
+<p style="white-space:pre-wrap">0</p>
+<h3>status.sorry_in_definitions</h3>
+<p style="white-space:pre-wrap">0</p>
+<h3>status.axioms[0]</h3>
+<p style="white-space:pre-wrap">propext</p>
+<h3>status.axioms[1]</h3>
+<p style="white-space:pre-wrap">Quot.sound</p>
+<h3>status.axioms[2]</h3>
+<p style="white-space:pre-wrap">Classical.choice</p>
+<h3>automation.methods[0].method</h3>
+<p style="white-space:pre-wrap">agent</p>
+<h3>automation.methods[0].framework</h3>
+<p style="white-space:pre-wrap">OpenAI Codex / ChatGPT</p>
+<h3>automation.methods[0].tool_setup</h3>
+<p style="white-space:pre-wrap">Local WSL Codex developed Lean proofs and ran builds and audits. ChatGPT research/review sessions prepared mathematical instructions, inspected source and evidence, and reviewed the manuscript and its correspondence with the formal statements. Exact historical model identifiers and aggregate costs are not reconstructed here.</p>
+<h3>automation.notes</h3>
+<p style="white-space:pre-wrap">Florian Lengyel is the human author and responsible maintainer. The author supplied the mathematical objective, corrected scope and presentation, and requested the complete-paper formalization. AI systems are credited here rather than listed as authors. The manuscript contains the author&#x27;s authorized disclosure of ChatGPT assistance.</p>
+<h3>fidelity.divergences</h3>
+<p style="white-space:pre-wrap">The three maximality declarations retain the manuscript&#x27;s nonempty-variable hypothesis. PrimitiveCongruence is an equivalence relation on parallel typed arrow terms that contains every defining equation and is preserved by composition, conjunction and disjunction. Its Closed property requires preservation under uniform formula substitution on the terms and both endpoints. Derives is the equivalence relation generated by the defining equations and closed under those three arrow operations.
+
+DosenPetric/PalomarCorrespondence.lean proves descent from terms to the quotient by Derives, restriction of full proof congruences to terms, pointwise relation correspondence, preservation of substitution closure and totality, correspondence of distinctness, and preservation by derived negation. The extension from a congruence closed under substitution to a full proof congruence uses the proved fragment dichotomy. The short proof uses occurrence isolation, ContextualCollapse.all_contexts and ShortProof.total with the q_A/e_A arrows. All quantification over parallel arrows preserves empty hom-sets, and repeated occurrences retain distinct tags. The metadata makes no priority claim or claim to an exhaustive novelty assessment.</p>
+<h3>review.status</h3>
+<p style="white-space:pre-wrap">agent-reviewed</p>
+<h3>review.reviewers[0]</h3>
+<p style="white-space:pre-wrap">OpenAI Codex local source and manuscript reviews</p>
+<h3>review.reviewers[1]</h3>
+<p style="white-space:pre-wrap">ChatGPT source, evidence and mathematical-writing reviews through manuscript v13</p>
+<h3>review.notes</h3>
+<p style="white-space:pre-wrap">The author-side full-development reviews are docs/reviews/FULL_PAPER_6A66B14_REVIEW.md and FULL_PAPER_6A66B14_WRITING.md. The statement and definition correspondence reviews are docs/reviews/PALOMAR_REGISTRATION_REVIEW.md and PALOMAR_REGISTRATION_WRITING.md. The manuscript v13 statement, literature and hostile reviews are docs/reviews/V13_STATEMENT_REVIEW_2026-10-31.md, V13_LITERATURE_REVIEW_2026-10-31.md and V13_HOSTILE_REVIEW_2026-10-31.md at commit 84d913d4ab30490ddf9c51788ed89ea5c7e9a601. These are AI-assisted author-side reviews. The registered version-1 automated Palomar review identified no blocking problem; docs/PALOMAR_REGISTRATION_REPORT.md records its separate mechanical, review and registration evidence. This account does not claim a service review or registration for the prose update. Independent-kernel outcomes for version 1 are recorded in docs/PALOMAR_REGISTRATION_LOCAL_REPORT.md.</p>
+<h3>alignment.namespace</h3>
+<p style="white-space:pre-wrap">DosenPetric.Palomar</p>
+<h3>alignment.statements[0].source</h3>
+<p style="white-space:pre-wrap">Manuscript v13, Theorem 2.1; symmetric-fold proof in Section 6.</p>
+<h3>alignment.statements[0].lean</h3>
+<p style="white-space:pre-wrap">DosenPetric.Palomar.maximality</p>
+<h3>alignment.statements[0].module</h3>
+<p style="white-space:pre-wrap">Solution</p>
+<h3>alignment.statements[0].status</h3>
+<p style="white-space:pre-wrap">proved</p>
+<h3>alignment.statements[0].note</h3>
+<p style="white-space:pre-wrap">The symmetric-fold proof uses Presentation.fragment_maximality for the quotient by Derives. DosenPetric/PalomarCorrespondence.lean proves the relation correspondence between terms and quotient arrows.</p>
+<h3>alignment.statements[1].source</h3>
+<p style="white-space:pre-wrap">Manuscript v13, Theorem 2.1; q_A/e_A proof in Sections 4–5.</p>
+<h3>alignment.statements[1].lean</h3>
+<p style="white-space:pre-wrap">DosenPetric.Palomar.short_maximality</p>
+<h3>alignment.statements[1].module</h3>
+<p style="white-space:pre-wrap">Solution</p>
+<h3>alignment.statements[1].status</h3>
+<p style="white-space:pre-wrap">proved</p>
+<h3>alignment.statements[1].note</h3>
+<p style="white-space:pre-wrap">The q_A/e_A proof uses Isolation.normalized_literal_context, ContextualCollapse.all_contexts and ShortProof.total. Its proof is independent of the invocation of fragment_maximality in the symmetric-fold proof.</p>
+<h3>alignment.statements[2].source</h3>
+<p style="white-space:pre-wrap">Manuscript v13, Theorem 2.1, equality/totality dichotomy.</p>
+<h3>alignment.statements[2].lean</h3>
+<p style="white-space:pre-wrap">DosenPetric.Palomar.congruence_dichotomy</p>
+<h3>alignment.statements[2].module</h3>
+<p style="white-space:pre-wrap">Solution</p>
+<h3>alignment.statements[2].status</h3>
+<p style="white-space:pre-wrap">proved</p>
+<h3>alignment.statements[2].note</h3>
+<p style="white-space:pre-wrap">Equality of quotient arrows is the relation Derives on their representatives. The correspondence with full proof congruences and the preservation of totality are proved in DosenPetric/PalomarCorrespondence.lean.</p>
+<h3>alignment.statements[3].source</h3>
+<p style="white-space:pre-wrap">Manuscript v13, Section 3, nonzero variable identity.</p>
+<h3>alignment.statements[3].lean</h3>
+<p style="white-space:pre-wrap">DosenPetric.Palomar.identity_ne_zero</p>
+<h3>alignment.statements[3].module</h3>
+<p style="white-space:pre-wrap">Solution</p>
+<h3>alignment.statements[3].status</h3>
+<p style="white-space:pre-wrap">proved</p>
+<h3>alignment.statements[3].note</h3>
+<p style="white-space:pre-wrap">Presentation.identity_ne_primitive_zero proves that the variable identity differs from the primitive zero endomorphism in the quotient by Derives.</p>
+<h3>alignment.statements[4].source</h3>
+<p style="white-space:pre-wrap">Manuscript v13, Sections 2–3, empty terminal-to-initial hom-set.</p>
+<h3>alignment.statements[4].lean</h3>
+<p style="white-space:pre-wrap">DosenPetric.Palomar.no_top_to_bot</p>
+<h3>alignment.statements[4].module</h3>
+<p style="white-space:pre-wrap">Solution</p>
+<h3>alignment.statements[4].status</h3>
+<p style="white-space:pre-wrap">proved</p>
+<h3>alignment.statements[4].note</h3>
+<p style="white-space:pre-wrap">Presentation.empty_hom, proved by the truth interpretation, rules out any arrow term from the terminal object to the initial object.</p>
+<h3>alignment.broader_correspondence.manuscript</h3>
+<p style="white-space:pre-wrap">https://github.com/flengyel/Dosen-Petric-Maximality/blob/84d913d4ab30490ddf9c51788ed89ea5c7e9a601/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v13.tex</p>
+<h3>alignment.broader_correspondence.claim_map</h3>
+<p style="white-space:pre-wrap">https://github.com/flengyel/Dosen-Petric-Maximality/blob/84d913d4ab30490ddf9c51788ed89ea5c7e9a601/docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md</p>
+<h3>alignment.broader_correspondence.scope</h3>
+<p style="white-space:pre-wrap">The scope field identifies the manuscript anchors, Lean declarations and source modules for cut elimination, Boolean coherence, the model corollary, occurrence substitution and its finite-ordinal coordinates, all three Appendix B diagrams, and the Appendix C rank comparisons. These results are part of the development and are not additional Comparator selections.</p>
+<h2>Complete Challenge documentation in source order</h2>
+<h3>Documentation block 1</h3>
+<p style="white-space:pre-wrap">/-!
+The formulas, arrow terms and equations below present the zero-identity
+Boolean category of Došen and Petrić. Two arrow terms represent the same
+arrow if and only if `Derives` relates them.
+
+For `f : Term P A B` and `g : Term P B C`,
+`Term.comp f g : Term P A C` applies `f` and then `g`.
+-/</p>
+<h3>Documentation block 2</h3>
+<p style="white-space:pre-wrap">/-- Tagged positions distinguish repeated occurrences of a variable. -/</p>
+<h3>Documentation block 3</h3>
+<p style="white-space:pre-wrap">/-- Conjunction and disjunction are the two covariant binary arrow operations. -/</p>
+<h3>Documentation block 4</h3>
+<p style="white-space:pre-wrap">/-- The arrow terms follow the primitive grammar C(B) in the September 2007
+revision of Proof-Theoretical Coherence, pp.310,312,316.
+The term `comp f g` denotes the book&#x27;s g ∘ f, and `swap .disj A B` denotes
+its c_(B,A). Negation on arrows, pairing, copairing, and dR are derived
+operations. -/</p>
+<h3>Documentation block 5</h3>
+<p style="white-space:pre-wrap">/-- Pairing is defined by the diagonal and conjunction, as on p.187. -/</p>
+<h3>Documentation block 6</h3>
+<p style="white-space:pre-wrap">/-- Copairing is defined by disjunction and the codiagonal, as on p.198. -/</p>
+<h3>Documentation block 7</h3>
+<p style="white-space:pre-wrap">/-- The arrow to the terminal object is defined as on p.191. -/</p>
+<h3>Documentation block 8</h3>
+<p style="white-space:pre-wrap">/-- The arrow from the initial object is defined as on p.207. -/</p>
+<h3>Documentation block 9</h3>
+<p style="white-space:pre-wrap">/-- The right distributor is defined by (dR c), p.145, with the disjunctive symmetry indices translated. -/</p>
+<h3>Documentation block 10</h3>
+<p style="white-space:pre-wrap">/-- The medial arrow occurs in equation (b c w), p.186. -/</p>
+<h3>Documentation block 11</h3>
+<p style="white-space:pre-wrap">/-- The composite in (0ηε), p.317, defines the zero endomorphism. -/</p>
+<h3>Documentation block 12</h3>
+<p style="white-space:pre-wrap">/-- The letterless formulas of the inherited positive language, p.121. -/</p>
+<h3>Documentation block 13</h3>
+<p style="white-space:pre-wrap">/-- The defining equations of E(B), pp.316–317, include those inherited from
+E(DL_top,bot), E(L_top,bot), E(DS), E(MS), and E(I^neg_top,bot). -/</p>
+<h3>Documentation block 14</h3>
+<p style="white-space:pre-wrap">/-- (cat 1), p.332 -/</p>
+<h3>Documentation block 15</h3>
+<p style="white-space:pre-wrap">/-- (cat 1), p.332 -/</p>
+<h3>Documentation block 16</h3>
+<p style="white-space:pre-wrap">/-- (cat 2), p.332 -/</p>
+<h3>Documentation block 17</h3>
+<p style="white-space:pre-wrap">/-- (xi 1), p.332 -/</p>
+<h3>Documentation block 18</h3>
+<p style="white-space:pre-wrap">/-- (xi 2), p.332 -/</p>
+<h3>Documentation block 19</h3>
+<p style="white-space:pre-wrap">/-- (bR nat), p.332 -/</p>
+<h3>Documentation block 20</h3>
+<p style="white-space:pre-wrap">/-- (bL nat), p.332 -/</p>
+<h3>Documentation block 21</h3>
+<p style="white-space:pre-wrap">/-- (b b), p.333 -/</p>
+<h3>Documentation block 22</h3>
+<p style="white-space:pre-wrap">/-- (b b), p.333 -/</p>
+<h3>Documentation block 23</h3>
+<p style="white-space:pre-wrap">/-- (b 5), p.89; list p.333 -/</p>
+<h3>Documentation block 24</h3>
+<p style="white-space:pre-wrap">/-- (c nat), p.333; disjunctive indices reversed -/</p>
+<h3>Documentation block 25</h3>
+<p style="white-space:pre-wrap">/-- (c c), p.107; list p.334 -/</p>
+<h3>Documentation block 26</h3>
+<p style="white-space:pre-wrap">/-- (b c), p.107; list p.334 -/</p>
+<h3>Documentation block 27</h3>
+<p style="white-space:pre-wrap">/-- (delta/sigma nat), pp.332–333 -/</p>
+<h3>Documentation block 28</h3>
+<p style="white-space:pre-wrap">/-- (delta/sigma nat), pp.332–333 -/</p>
+<h3>Documentation block 29</h3>
+<p style="white-space:pre-wrap">/-- (delta delta)/(sigma sigma), p.101 -/</p>
+<h3>Documentation block 30</h3>
+<p style="white-space:pre-wrap">/-- (delta delta)/(sigma sigma), p.101 -/</p>
+<h3>Documentation block 31</h3>
+<p style="white-space:pre-wrap">/-- (delta/sigma nat), pp.332–333 -/</p>
+<h3>Documentation block 32</h3>
+<p style="white-space:pre-wrap">/-- (delta/sigma nat), pp.332–333 -/</p>
+<h3>Documentation block 33</h3>
+<p style="white-space:pre-wrap">/-- (delta delta)/(sigma sigma), p.101 -/</p>
+<h3>Documentation block 34</h3>
+<p style="white-space:pre-wrap">/-- (delta delta)/(sigma sigma), p.101 -/</p>
+<h3>Documentation block 35</h3>
+<p style="white-space:pre-wrap">/-- (b delta sigma), p.101 -/</p>
+<h3>Documentation block 36</h3>
+<p style="white-space:pre-wrap">/-- (w nat), p.333 -/</p>
+<h3>Documentation block 37</h3>
+<p style="white-space:pre-wrap">/-- (w nat), p.333 -/</p>
+<h3>Documentation block 38</h3>
+<p style="white-space:pre-wrap">/-- (k1 nat), p.333 -/</p>
+<h3>Documentation block 39</h3>
+<p style="white-space:pre-wrap">/-- (k1 nat), p.333; disjunctive indices translated -/</p>
+<h3>Documentation block 40</h3>
+<p style="white-space:pre-wrap">/-- (k2 nat), p.333 -/</p>
+<h3>Documentation block 41</h3>
+<p style="white-space:pre-wrap">/-- (k2 nat), p.333; disjunctive indices translated -/</p>
+<h3>Documentation block 42</h3>
+<p style="white-space:pre-wrap">/-- (b w), p.186 -/</p>
+<h3>Documentation block 43</h3>
+<p style="white-space:pre-wrap">/-- (b w), dual p.186; list p.336 -/</p>
+<h3>Documentation block 44</h3>
+<p style="white-space:pre-wrap">/-- (c w), p.186 -/</p>
+<h3>Documentation block 45</h3>
+<p style="white-space:pre-wrap">/-- (c w), dual p.186; list p.336 -/</p>
+<h3>Documentation block 46</h3>
+<p style="white-space:pre-wrap">/-- (b c w), p.186 -/</p>
+<h3>Documentation block 47</h3>
+<p style="white-space:pre-wrap">/-- (b c w), dual p.186; list p.336 -/</p>
+<h3>Documentation block 48</h3>
+<p style="white-space:pre-wrap">/-- (b k), p.186 -/</p>
+<h3>Documentation block 49</h3>
+<p style="white-space:pre-wrap">/-- (b k), dual p.186; list p.336 -/</p>
+<h3>Documentation block 50</h3>
+<p style="white-space:pre-wrap">/-- (c k), p.186 -/</p>
+<h3>Documentation block 51</h3>
+<p style="white-space:pre-wrap">/-- (c k), dual p.186; list p.336 -/</p>
+<h3>Documentation block 52</h3>
+<p style="white-space:pre-wrap">/-- (w k), p.186 -/</p>
+<h3>Documentation block 53</h3>
+<p style="white-space:pre-wrap">/-- (w k), dual p.186; list p.336 -/</p>
+<h3>Documentation block 54</h3>
+<p style="white-space:pre-wrap">/-- (w k), p.186 -/</p>
+<h3>Documentation block 55</h3>
+<p style="white-space:pre-wrap">/-- (w k), dual p.186; list p.336 -/</p>
+<h3>Documentation block 56</h3>
+<p style="white-space:pre-wrap">/-- (k delta), p.191 -/</p>
+<h3>Documentation block 57</h3>
+<p style="white-space:pre-wrap">/-- (k delta), dual p.191; list p.338 -/</p>
+<h3>Documentation block 58</h3>
+<p style="white-space:pre-wrap">/-- (c bottom)/(c top), p.121, inherited by p.207 -/</p>
+<h3>Documentation block 59</h3>
+<p style="white-space:pre-wrap">/-- (dL nat), p.333 -/</p>
+<h3>Documentation block 60</h3>
+<p style="white-space:pre-wrap">/-- (dR nat), p.333, dR defined by p.145 -/</p>
+<h3>Documentation block 61</h3>
+<p style="white-space:pre-wrap">/-- (dL and), p.132 -/</p>
+<h3>Documentation block 62</h3>
+<p style="white-space:pre-wrap">/-- (dL or), p.132 -/</p>
+<h3>Documentation block 63</h3>
+<p style="white-space:pre-wrap">/-- (dR and), p.132 -/</p>
+<h3>Documentation block 64</h3>
+<p style="white-space:pre-wrap">/-- (dR or), p.132 -/</p>
+<h3>Documentation block 65</h3>
+<p style="white-space:pre-wrap">/-- (d b and), p.132 -/</p>
+<h3>Documentation block 66</h3>
+<p style="white-space:pre-wrap">/-- (d b or), p.132 -/</p>
+<h3>Documentation block 67</h3>
+<p style="white-space:pre-wrap">/-- (m nat), p.333 -/</p>
+<h3>Documentation block 68</h3>
+<p style="white-space:pre-wrap">/-- (b m), section 8.2; list p.336 -/</p>
+<h3>Documentation block 69</h3>
+<p style="white-space:pre-wrap">/-- (c m), section 8.4; list p.336 -/</p>
+<h3>Documentation block 70</h3>
+<p style="white-space:pre-wrap">/-- (w m), p.219 -/</p>
+<h3>Documentation block 71</h3>
+<p style="white-space:pre-wrap">/-- (d k and), p.234 -/</p>
+<h3>Documentation block 72</h3>
+<p style="white-space:pre-wrap">/-- (d k or), p.234 -/</p>
+<h3>Documentation block 73</h3>
+<p style="white-space:pre-wrap">/-- (d m), p.234 -/</p>
+<h3>Documentation block 74</h3>
+<p style="white-space:pre-wrap">/-- (0I), p.288, inherited p.317 -/</p>
+<h3>Documentation block 75</h3>
+<p style="white-space:pre-wrap">/-- n-r/rho isomorphism equations, pp.310,312 -/</p>
+<h3>Documentation block 76</h3>
+<p style="white-space:pre-wrap">/-- n-r/rho isomorphism equations, pp.310,312 -/</p>
+<h3>Documentation block 77</h3>
+<p style="white-space:pre-wrap">/-- n-r/rho isomorphism equations, pp.310,312 -/</p>
+<h3>Documentation block 78</h3>
+<p style="white-space:pre-wrap">/-- n-r/rho isomorphism equations, pp.310,312 -/</p>
+<h3>Documentation block 79</h3>
+<p style="white-space:pre-wrap">/-- n-r/rho isomorphism equations, pp.310,312 -/</p>
+<h3>Documentation block 80</h3>
+<p style="white-space:pre-wrap">/-- n-r/rho isomorphism equations, pp.310,312 -/</p>
+<h3>Documentation block 81</h3>
+<p style="white-space:pre-wrap">/-- n-r/rho isomorphism equations, pp.310,312 -/</p>
+<h3>Documentation block 82</h3>
+<p style="white-space:pre-wrap">/-- n-r/rho isomorphism equations, pp.310,312 -/</p>
+<h3>Documentation block 83</h3>
+<p style="white-space:pre-wrap">/-- n-r/rho isomorphism equations, pp.310,312 -/</p>
+<h3>Documentation block 84</h3>
+<p style="white-space:pre-wrap">/-- n-r/rho isomorphism equations, pp.310,312 -/</p>
+<h3>Documentation block 85</h3>
+<p style="white-space:pre-wrap">/-- The relation `Derives` is the equivalence relation on parallel arrow terms
+generated by the defining equations and closed under composition and the
+conjunction and disjunction operations. Uniform substitution preserves this
+relation. -/</p>
+<h3>Documentation block 86</h3>
+<p style="white-space:pre-wrap">/-- An equivalence relation on parallel arrow terms that contains every
+defining equation and is preserved by composition, conjunction and
+disjunction. -/</p>
+<h3>Documentation block 87</h3>
+<p style="white-space:pre-wrap">/-- A congruence is closed under uniform substitution if it relates the
+substituted terms whenever it relates the original terms. Substitution acts
+on both endpoint formulas as well. -/</p>
+<h3>Documentation block 88</h3>
+<p style="white-space:pre-wrap">/-- A congruence is total if it relates every pair of parallel arrow terms. -/</p>
+</body></html>

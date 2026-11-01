@@ -8,8 +8,9 @@ namespace DosenPetric.Palomar
 universe u
 open Presentation
 
-/-- A congruence on the actual raw arrow grammar, containing every generating
-schema and preserved by composition and the two covariant tensors. -/
+/-- An equivalence relation on parallel arrow terms that contains every
+defining equation and is preserved by composition, conjunction and
+disjunction. -/
 structure PrimitiveCongruence (P : Type u) where
   Rel : {A B : Formula P} → Term P A B → Term P A B → Prop
   refl : ∀ {A B} (f : Term P A B), Rel f f
@@ -24,11 +25,13 @@ structure PrimitiveCongruence (P : Type u) where
 namespace PrimitiveCongruence
 variable {P : Type u} (R : PrimitiveCongruence P)
 
-/-- Uniform substitution acts on the entire arrow and both endpoint formulas. -/
+/-- A congruence is closed under uniform substitution if it relates the
+substituted terms whenever it relates the original terms. Substitution acts
+on both endpoint formulas as well. -/
 def Closed : Prop := ∀ (σ : P → Formula P) {A B} {f g : Term P A B},
   R.Rel f g → R.Rel (f.subst σ) (g.subst σ)
 
-/-- Totality concerns parallel arrows that already exist in the raw grammar. -/
+/-- A congruence is total if it relates every pair of parallel arrow terms. -/
 def Total : Prop := ∀ {A B} (f g : Term P A B), R.Rel f g
 
 end PrimitiveCongruence
