@@ -1,0 +1,374 @@
+[
+  {
+    "label": "Use the author-supplied version-2 citation key",
+    "old": "palomar-2026-10-30-000014-v1",
+    "new": "palomar-2026-10-30-000014-v2",
+    "occurrences": 2
+  },
+  {
+    "label": "DosenPetric.Presentation.occurrence_signedLabel",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationSignedLabels.lean\\#L73",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationSignedLabels.lean\\#L73",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.Term.dual_relation",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedDualRelations.lean\\#L20",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedDualRelations.lean\\#L20",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Presentation.occurrence_negate",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationNegationOccurrence.lean\\#L25",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationNegationOccurrence.lean\\#L25",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Presentation.occurrence_substitute_expanded",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationSubstitutionRelation.lean\\#L61",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationSubstitutionRelation.lean\\#L61",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Relations.Fiber.lift_composition",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/SubstitutionFiberRelations.lean\\#L48",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/SubstitutionFiberRelations.lean\\#L48",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Formula.subst_identity",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/FormulaSubstitutionLaws.lean\\#L11",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/FormulaSubstitutionLaws.lean\\#L11",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Formula.subst_composition",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/FormulaSubstitutionLaws.lean\\#L20",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/FormulaSubstitutionLaws.lean\\#L20",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Presentation.substitute_identity",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationSubstitutionActionQuotient.lean\\#L39",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationSubstitutionActionQuotient.lean\\#L39",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Presentation.substitute_composition",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationSubstitutionActionQuotient.lean\\#L44",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationSubstitutionActionQuotient.lean\\#L44",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Presentation.substitute_ext",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationSubstitutionActionQuotient.lean\\#L57",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationSubstitutionActionQuotient.lean\\#L57",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.ContextualCollapse.context_retract",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/Substitution.lean\\#L74",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/Substitution.lean\\#L74",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Presentation.ShortProof.qInverseTerm",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortQ.lean\\#L17",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortQ.lean\\#L17",
+    "occurrences": 2
+  },
+  {
+    "label": "DosenPetric.Presentation.ShortProof.eInverseTerm",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\\#L30",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean\\#L30",
+    "occurrences": 2
+  },
+  {
+    "label": "DosenPetric.Reduced.union_assoc",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\\#L131",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\\#L131",
+    "occurrences": 2
+  },
+  {
+    "label": "DosenPetric.Reduced.union_comm",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\\#L90",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\\#L90",
+    "occurrences": 2
+  },
+  {
+    "label": "DosenPetric.Reduced.union_idem",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\\#L97",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\\#L97",
+    "occurrences": 2
+  },
+  {
+    "label": "DosenPetric.Reduced.union_pre",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\\#L80",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\\#L80",
+    "occurrences": 2
+  },
+  {
+    "label": "DosenPetric.Reduced.union_post",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\\#L85",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\\#L85",
+    "occurrences": 2
+  },
+  {
+    "label": "DosenPetric.Reduced.finiteUnion.eq_of_members",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedFiniteUnion.lean\\#L57",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedFiniteUnion.lean\\#L57",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.reduceHom",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedQuotientReduction.lean\\#L21",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedQuotientReduction.lean\\#L21",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.recoverHom",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedRecovery.lean\\#L26",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedRecovery.lean\\#L26",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Palomar.maximality",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarMaximality.lean\\#L17",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PalomarMaximality.lean\\#L17",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Palomar.PrimitiveCongruence",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarDefinitions.lean\\#L13",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PalomarDefinitions.lean\\#L14",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Palomar.PrimitiveCongruence.Closed",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarDefinitions.lean\\#L28",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PalomarDefinitions.lean\\#L31",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Palomar.short_maximality",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarMaximality.lean\\#L27",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PalomarMaximality.lean\\#L27",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Palomar.PrimitiveCongruence.raw_distinct_iff",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarCorrespondence.lean\\#L121",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PalomarCorrespondence.lean\\#L121",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Isolation.normalized_literal_context",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/Isolation.lean\\#L219",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/Isolation.lean\\#L219",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.ContextualCollapse.all_contexts",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/Substitution.lean\\#L90",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/Substitution.lean\\#L90",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Presentation.ShortProof.total",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortProjection.lean\\#L86",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortProjection.lean\\#L86",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.union_id_zero",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\\#L145",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\\#L145",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.Gentzen.DistributiveEpi.section_comparison",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenDistributiveEpi.lean\\#L57",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenDistributiveEpi.lean\\#L57",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.Gentzen.DistributiveMono.comparison_retraction",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenDistributiveMono.lean\\#L54",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenDistributiveMono.lean\\#L54",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.Gentzen.dnf_expansion",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenNormalExpansion.lean\\#L45",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenNormalExpansion.lean\\#L45",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.Gentzen.cnf_expansion",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenNormalExpansion.lean\\#L62",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenNormalExpansion.lean\\#L62",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.Gentzen.G.mix_normal_form",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenMixNormalForm.lean\\#L37",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenMixNormalForm.lean\\#L37",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.Gentzen.HasPureNormalForm.faithful",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenPureNormalForms.lean\\#L84",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenPureNormalForms.lean\\#L84",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.Gentzen.pure_positive_coherence",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenPurePositiveCoherence.lean\\#L14",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenPurePositiveCoherence.lean\\#L14",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.Gentzen.represented_coherence",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenPositiveCoherence.lean\\#L14",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenPositiveCoherence.lean\\#L14",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.Gentzen.positive_coherence",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenPositiveCoherence.lean\\#L31",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenPositiveCoherence.lean\\#L31",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.commonAtomicFactor",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/CommonAtomicFactorization.lean\\#L51",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/CommonAtomicFactorization.lean\\#L51",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.faithful_of_positive_coherence",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/CommonAtomicFactorization.lean\\#L123",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/CommonAtomicFactorization.lean\\#L123",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Reduced.boolean_coherence",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedCoherence.lean\\#L17",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedCoherence.lean\\#L17",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Presentation.coherence",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationCoherence.lean\\#L13",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationCoherence.lean\\#L13",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Presentation.ShortProof.q_qInverse",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortQ.lean\\#L32",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortQ.lean\\#L32",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Presentation.ShortProof.qInverse_q",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortQ.lean\\#L46",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortQ.lean\\#L46",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Presentation.ShortProof.sourceConjTerm",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\\#L13",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean\\#L13",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Presentation.ShortProof.sectionTerm",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\\#L21",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean\\#L21",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Presentation.ShortProof.e_eInverse",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\\#L44",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean\\#L44",
+    "occurrences": 1
+  },
+  {
+    "label": "DosenPetric.Presentation.ShortProof.eInverse_e",
+    "old": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\\#L50",
+    "new": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean\\#L50",
+    "occurrences": 1
+  },
+  {
+    "label": "Appendix E opening: omit particular",
+    "old": "We construct inverses for the particular arrows in",
+    "new": "We construct inverses for the arrows in",
+    "occurrences": 1
+  },
+  {
+    "label": "Section 5 pointer: omit the same qualifier",
+    "old": "these particular arrows and verifies all four inverse equations.",
+    "new": "these arrows and verifies all four inverse equations.",
+    "occurrences": 1
+  },
+  {
+    "label": "Sign invariant: omit resulting",
+    "old": "De Morgan maps preserve the resulting signs",
+    "new": "De Morgan maps preserve the signs",
+    "occurrences": 1
+  },
+  {
+    "label": "Substituted relation: omit complete",
+    "old": "The complete substituted relation satisfies",
+    "new": "The substituted relation satisfies",
+    "occurrences": 1
+  },
+  {
+    "label": "Isolation proof: omit required",
+    "old": "satisfy the required equations,",
+    "new": "satisfy the equations,",
+    "occurrences": 1
+  },
+  {
+    "label": "Retract proof: omit required",
+    "old": "and zero absorption gives the required zero on the right.",
+    "new": "and zero absorption gives the zero on the right.",
+    "occurrences": 1
+  },
+  {
+    "label": "Formalization provenance: name the constructions",
+    "old": "The explicit inverse terms and several intermediate equations in this\npaper are taken from the Lean development. Appendix~\\ref{app:reading-lean}",
+    "new": "The inverse terms in Appendix~\\ref{app:explicit-inverses} and the\ncoherence argument in Appendix~\\ref{app:coherence-proof} are taken\nfrom the Lean development. Appendix~\\ref{app:reading-lean}",
+    "occurrences": 1
+  },
+  {
+    "label": "Source pointers: omit corresponding",
+    "old": "The footnotes identify the corresponding source declarations.",
+    "new": "The footnotes identify the source declarations.",
+    "occurrences": 1
+  },
+  {
+    "label": "Short proof: name inverse terms instead of explicitness",
+    "old": "in Section~\\ref{sec:collapse}, with explicit inverses for $q_A$ and $e_A$.",
+    "new": "in Section~\\ref{sec:collapse}, using the inverse terms for $q_A$ and $e_A$.",
+    "occurrences": 1
+  },
+  {
+    "label": "Appendix A application: omit required",
+    "old": "then gives the required equation for $A$.",
+    "new": "then gives the equation for $A$.",
+    "occurrences": 1
+  },
+  {
+    "label": "Reading guide: identify the four steps",
+    "old": "Thus these parameters are the mathematical structures and\nequations used at the corresponding steps.",
+    "new": "These parameters supply the structures and equations used in\nthe four steps above.",
+    "occurrences": 1
+  },
+  {
+    "label": "D.5 comparison definitions: one line per formula and type",
+    "old": " \\begin{aligned}\n c^\\wedge_{X,U,V}\n &=[1_X\\wedge\\iota_1^{U,V},1_X\\wedge\\iota_2^{U,V}]\\\\\n &:(X\\wedge U)\\vee(X\\wedge V)\\longrightarrow X\\wedge(U\\vee V),\\\\\n c^\\vee_{U,V,X}\n &=\\langle\\pi_1^{U,V}\\vee1_X,\\pi_2^{U,V}\\vee1_X\\rangle\\\\\n &:(U\\wedge V)\\vee X\\longrightarrow(U\\vee X)\\wedge(V\\vee X)\n \\end{aligned}",
+    "new": " \\begin{aligned}\n c^\\wedge_{X,U,V}\n &=[1_X\\wedge\\iota_1^{U,V},1_X\\wedge\\iota_2^{U,V}]\n :(X\\wedge U)\\vee(X\\wedge V)\\longrightarrow X\\wedge(U\\vee V),\\\\\n c^\\vee_{U,V,X}\n &=\\langle\\pi_1^{U,V}\\vee1_X,\\pi_2^{U,V}\\vee1_X\\rangle\n :(U\\wedge V)\\vee X\\longrightarrow(U\\vee X)\\wedge(V\\vee X)\n \\end{aligned}",
+    "occurrences": 1
+  }
+]

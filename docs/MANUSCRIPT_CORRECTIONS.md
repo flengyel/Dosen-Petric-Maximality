@@ -1,5 +1,35 @@
 # Manuscript corrections and source errata
 
+## Author-supplied v2 citation and qualifier review: v19 (1 November 2026)
+
+The author supplied the exact Palomar version-2 BibTeX. V19 uses that entry,
+updates the two citation keys and Formalization registered-source note, and
+resolves all 49 declaration links at 5dbee39bea09539bd130f729e82636419f71f920.
+Two line anchors move: PrimitiveCongruence 13→14 and Closed 28→31. Submission
+comments, registry version/URL and verified-source fields agree. The earlier
+preference to retain the current v1 citation is superseded by this instruction;
+all older sources, PDFs, packages and reports remain preserved.
+
+The heading already says “Inverses of q_A and e_A”. The author-requested
+deletion of “particular” is applied to Appendix E's opening and its Section 5
+pointer. The whole-source qualifier review makes nine further prose edits:
+omit “complete” for the substituted relation, “resulting” for the defined signs,
+three redundant “required” qualifiers and two redundant “corresponding” uses;
+replace “explicit” descriptions by the inverse terms/constructions meant.
+The provenance sentence names Appendices E and D.5. The reading guide refers
+to its four displayed proof steps. Mathematical uses of natural, canonical,
+direct image, original, unique, arbitrary and specified are retained with their
+scope; bibliography titles and immutable Lean identifiers are unchanged.
+
+Each D.5 c-arrow formula and type is on one line at the existing font size.
+Only alignment markup changes in that display. All mathematical assertions,
+the nine-sentence v18 abstract, seven statement bodies, twelve numbered displays,
+thirteen diagrams, 34 labels, seventeen footnotes, Appendix A and its references,
+both proof routes and disclosure remain. All 139 preceding release files and
+857 registered proof/input blobs are preserved. Both builds pass with matching
+23-page text and no final warnings. See MANUSCRIPT_V19_REPORT.md and its writing
+review. No successful Lean/kernel/Palomar check or registration is repeated.
+
 ## Reader-oriented abstract: v18 (1 November 2026)
 
 The author found the abstract's technical opening abrupt and explicitly asked

@@ -1,5 +1,5 @@
 Current phase (1 November 2026): Palomar version 2 is registered and verified;
-arXiv v18 preparation is complete. No arXiv upload has occurred.
+arXiv v19 preparation is complete. No arXiv upload has occurred.
 
 The author subsequently requested pushing v14. Its three commits through
 9e46cdca7f2fe2f59983ecf324e08a80ad09c81a were pushed to remote main and the
@@ -36,7 +36,7 @@ error was established. The author accepted all seven and requested source
 footnotes and an explanation for mathematicians unfamiliar with proof assistants.
 V16 incorporates them and uses the formal proof to improve the paper. V15 is
 preserved; v17 implements the later terminology/layout corrections. Any further
-revision must be v19 or later. Keep the exact registered
+revision must be v20 or later. Keep the exact registered
 inputs and reuse passed checks.
 Evidence is under provenance/reverse-manuscript-audit-20261101/; reports are
 delivered from committed bytes to
@@ -48,7 +48,9 @@ Immutable version-2 source: 5dbee39bea09539bd130f729e82636419f71f920.
 Submission: txdu0y3got1o. Repository: flengyel/Dosen-Petric-Maximality;
 root comparator.json and formalization.yaml; Lean 4.35.0.
 Version 1 and source 2e771844077fd8cebfbe365230f13d4dd13a75b1 remain available.
-The v18 manuscript and supplied BibTeX continue to cite version 1. Preserve them.
+The author subsequently supplied the exact version-2 BibTeX; v19 now cites
+version 2. Its declaration links and fields use the version-2 source above.
+Earlier v1-cited manuscripts and both frozen sources remain preserved.
 
 After receiving the exact review, digest and publication explanation, the author
 explicitly authorized registration. The digest-bound request was accepted;
@@ -70,42 +72,46 @@ Retain the version-1 Cloudflare diagnostic as historical evidence for version 1.
 The preceding version-1 continuation is preserved in
 history/CODEX_NEXT_SESSION_V1_20261101.txt. Keep both immutable source snapshots.
 
-Current manuscript: v18, dated November 1, 2026; 23 pages. V17 and every
-earlier source/PDF/package remain. Only the abstract is revised, apart from
-version/bibliography suffixes. The author requested Knuth–Larrabee–Roberts
-consultation: the official PDF's van Leunen exercise (§36, printed p.87) and
-Wilf's discussion (§27, p.59) were consulted. The nine-sentence abstract gives
-context, maximality and its exact meaning, significance, method, the model
-consequence and the Lean results. Do not misattribute an editorial content
-choice to a universal rule in the writing source.
+Current manuscript: v19, dated November 1, 2026; 23 pages. The exact
+author-supplied Palomar v2 BibTeX is used. Both citation keys, registered-source
+note, all 49 declaration links, comments and fields refer to version 2 at
+5dbee39bea09539bd130f729e82636419f71f920. Two anchors moved: PrimitiveCongruence
+13→14 and Closed 28→31. All target files, hashes, lines and declaration openings
+were checked locally; all 49 new URIs occur in the PDF. This uses existing
+registered proof evidence, not a new registration or successful-check repeat.
 
-All body text, seven statement bodies, twelve numbered displays, thirteen
-diagrams, 34 labels, seventeen footnotes and 49 declaration links remain.
-Keep Appendix A and its main-text references as expressly confirmed by the
-author. V17's specific map/equation names and the one-line u_A path remain.
-Both proof routes, supplied bibliography and authorized disclosure remain.
-No Lean source, selected statement, frozen input or verification script changes.
+The qualifier review makes eleven prose edits, including the two “particular”
+deletions. It removes redundant complete/explicit/resulting/required/corresponding
+uses or identifies the constructions instead. Keep mathematical qualifications
+that give a hypothesis, type, quantifier, sign, coordinate choice, naturality or
+universal property. D.5's two c-arrow formulas/types occupy one line each.
+The title remains “Inverses of q_A and e_A”. No font scaling is used.
 
-Read MANUSCRIPT_V18_REPORT.md and reviews/V18_WRITING_REVIEW_2026-11-01.md.
-The broader v16 reviews and reverse audit retain their stated scope. No new
-mathematical milestone, proof-body audit or Lean/kernel/Palomar check is claimed.
+The revised v18 abstract is unchanged: nine sentences, 171 plain-text words,
+guided by the requested Knuth–Larrabee–Roberts consultation. Keep Appendix A
+and all its main-text references and mathematics, as expressly confirmed.
+Both proof routes, seven statement bodies, twelve numbered displays, thirteen
+diagrams, 34 labels, seventeen footnotes and the authorized disclosure remain.
+No Lean source or frozen input changes. No new mathematical milestone or
+independent proof-body audit is claimed. Earlier reviews retain their scope.
+
+Read MANUSCRIPT_V19_REPORT.md and reviews/V19_WRITING_REVIEW_2026-11-01.md.
 Upload package:
-submission/arxiv-v18/Dosen-Petric-Maximality-v18-arxiv-source.tar.gz:
-main.tex, main.bbl, references_v18.bib and palomar_v18.bib.
-The manuscript abstract, abstract.txt and submission-fields.json abstract_latex
-are exact matches; the plain abstract is the corresponding Unicode text.
-The manuscript and independently extracted archive give matching 23-page text
-with thirteen bibliography entries and no final warnings. All rendered pages
-were inspected on contact sheets; p.1 was also viewed individually. Evidence
-is under provenance/manuscript-v18-review-20261101/. All 125 earlier release
-files, 857 registered proof/input blobs and the stash remain. The preceding
-preparation report is preserved in history/ARXIV_PREPARATION_V17_2026-11-01.md.
+submission/arxiv-v19/Dosen-Petric-Maximality-v19-arxiv-source.tar.gz:
+main.tex, main.bbl, references_v19.bib and palomar_v19.bib.
+The manuscript, abstract.txt, and both abstract fields agree. The two PDFs
+compile to matching 23-page layout text with thirteen bibliography entries and
+no final warnings. All pages were inspected on contact sheets; pp.19, 20 and
+23 were also viewed individually. Evidence is under
+provenance/manuscript-v19-review-20261101/. All 139 earlier release files,
+857 registered proof/input blobs and the stash remain. The preceding preparation
+report is retained at history/ARXIV_PREPARATION_V18_2026-11-01.md.
 
 Deliver committed files to
-/mnt/c/Users/fleng/Downloads/Dosen-Petric-Manuscript-v18-20261101/.
-Verify byte/SHA-256 identity and preserve differing copies; the delivery receipt
-records exact filenames and source commits. Push main and the receipt commit,
-verify the remote ref and a clean tree, then report readiness.
+/mnt/c/Users/fleng/Downloads/Dosen-Petric-Manuscript-v19-20261101/.
+Verify byte/SHA-256 identity, preserve differing copies, commit the delivery
+receipt and push it. Verify the remote main ref and clean tree before reporting
+readiness. No arXiv upload has occurred.
 
 No arXiv upload or new license selection has occurred. The author selects the
 arXiv-supported license and checks the server preview in the submission account.

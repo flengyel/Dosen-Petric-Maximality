@@ -1,0 +1,102 @@
+{
+  "removed_in_this_pass": [
+    {
+      "label": "Sign invariant: omit resulting",
+      "before": "De Morgan maps preserve the resulting signs",
+      "after": "De Morgan maps preserve the signs",
+      "reason": "The sign function has already been defined; the adjective adds no condition."
+    },
+    {
+      "label": "Substituted relation: omit complete",
+      "before": "The complete substituted relation satisfies",
+      "after": "The substituted relation satisfies",
+      "reason": "The following equivalence quantifies over all edges; completeness is already expressed by that assertion."
+    },
+    {
+      "label": "Isolation proof: omit required",
+      "before": "satisfy the required equations,",
+      "after": "satisfy the equations,",
+      "reason": "The two equations are the lemma conclusion already identified in this proof."
+    },
+    {
+      "label": "Retract proof: omit required",
+      "before": "and zero absorption gives the required zero on the right.",
+      "after": "and zero absorption gives the zero on the right.",
+      "reason": "The target zero and its endpoints are already fixed by K_A."
+    },
+    {
+      "label": "Formalization provenance: name the constructions",
+      "before": "The explicit inverse terms and several intermediate equations in this\npaper are taken from the Lean development. Appendix~\\ref{app:reading-lean}",
+      "after": "The inverse terms in Appendix~\\ref{app:explicit-inverses} and the\ncoherence argument in Appendix~\\ref{app:coherence-proof} are taken\nfrom the Lean development. Appendix~\\ref{app:reading-lean}",
+      "reason": "The named appendices identify the constructions instead of qualifying them as explicit or several."
+    },
+    {
+      "label": "Source pointers: omit corresponding",
+      "before": "The footnotes identify the corresponding source declarations.",
+      "after": "The footnotes identify the source declarations.",
+      "reason": "Each linked name already determines the correspondence."
+    },
+    {
+      "label": "Short proof: name inverse terms instead of explicitness",
+      "before": "in Section~\\ref{sec:collapse}, with explicit inverses for $q_A$ and $e_A$.",
+      "after": "in Section~\\ref{sec:collapse}, using the inverse terms for $q_A$ and $e_A$.",
+      "reason": "The noun identifies the construction used by the proof; the adjective supplies no mathematical condition."
+    },
+    {
+      "label": "Appendix A application: omit required",
+      "before": "then gives the required equation for $A$.",
+      "after": "then gives the equation for $A$.",
+      "reason": "The equation is K_A, already specified in the same paragraph."
+    },
+    {
+      "label": "Reading guide: identify the four steps",
+      "before": "Thus these parameters are the mathematical structures and\nequations used at the corresponding steps.",
+      "after": "These parameters supply the structures and equations used in\nthe four steps above.",
+      "reason": "The reference is to the four rows of the displayed proof table."
+    }
+  ],
+  "earlier_particular_removals": 2,
+  "mathematical_qualifications_retained": [
+    {
+      "term": "natural",
+      "meaning": "Naturality of double-negation and De Morgan isomorphisms."
+    },
+    {
+      "term": "canonical comparison",
+      "meaning": "The product/coproduct universal properties determine the displayed comparisons."
+    },
+    {
+      "term": "direct image",
+      "meaning": "The relation image under a product of occurrence embeddings, distinct from an inverse image."
+    },
+    {
+      "term": "original positions/formulas",
+      "meaning": "Positions and endpoints before passage to negation normal form."
+    },
+    {
+      "term": "specified operations/products",
+      "meaning": "The chosen presentation operations preserved by an interpretation."
+    },
+    {
+      "term": "arbitrary, unique, nonempty, finite, parallel, distinct, positive, negative",
+      "meaning": "Quantification, uniqueness, hypotheses, types and the defined classes of formulas/arrows."
+    },
+    {
+      "term": "remaining generators/hypotheses; corresponding copies/ranks",
+      "meaning": "The complement of an explicit list, and matching tagged copies or selected ranks."
+    },
+    {
+      "term": "resulting pattern/occurrences",
+      "meaning": "The pattern or occurrences after the stated substitution/renaming."
+    },
+    {
+      "term": "In particular",
+      "meaning": "A mathematical specialization; not an adjective modifying an object."
+    },
+    {
+      "term": "resulting proof term",
+      "meaning": "The term constructed by proof commands, distinguished from the input arrow terms and hypotheses."
+    }
+  ],
+  "scope": "Complete manuscript qualifier search and contextual prose review, including abstract, exposition and appendices; bibliography titles and immutable Lean identifiers are preserved."
+}

@@ -1,0 +1,155 @@
+{
+  "input_commit": "e2e9c85f4b33171594eab5608bdeb1d96014b8a7",
+  "manuscript_version": 19,
+  "date": "2026-11-01",
+  "targeted_edits": 62,
+  "inverse_text_check": "Undoing the recorded citation, source-link, qualifier and layout edits and restoring suffixes recovers v18 byte for byte.",
+  "numbered_statements": {
+    "count": 7,
+    "unchanged": true
+  },
+  "numbered_displays": {
+    "count": 12,
+    "unchanged": true
+  },
+  "diagrams": {
+    "count": 13,
+    "unchanged": true
+  },
+  "labels": {
+    "count": 34,
+    "unchanged": true
+  },
+  "source_links": {
+    "distinct_declarations": 49,
+    "all_version_2_URIs_present_in_PDF": true,
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "all_target_hashes_lines_and_openings_checked": true,
+    "moved_targets": [
+      {
+        "name": "DosenPetric.Palomar.PrimitiveCongruence",
+        "old_line": 13,
+        "new_line": 14
+      },
+      {
+        "name": "DosenPetric.Palomar.PrimitiveCongruence.Closed",
+        "old_line": 28,
+        "new_line": 31
+      }
+    ],
+    "footnotes": 17,
+    "worked_header_matches_registered_v2_type_after_Not_expansion": true
+  },
+  "release": {
+    "pages": 23,
+    "archive_members": [
+      "main.tex",
+      "main.bbl",
+      "references_v19.bib",
+      "palomar_v19.bib"
+    ],
+    "all_builds_passed": true,
+    "final_warnings": [],
+    "extracted_archive_layout_text_matches": true,
+    "source_sha256": "f42476251916e7a8c98bc9f9bd13a5bddd1acafecd261de47a5cf6df26ccd602",
+    "pdf_sha256": "766ae70884fc601dd8fa52d9e1382091d8c8426d6740fdc6ebf6341e76921c0a",
+    "archive_sha256": "e407db4c9524c5a307c8990614d84bbbb8631385c051bae0144cc3fe05bd7c34",
+    "bibliography_entries": 13,
+    "bibliography_changes_limited_to_author_supplied_v2_entry_and_source_note": true
+  },
+  "preservation": {
+    "prior_release_files": 139,
+    "all_prior_release_bytes_unchanged": true,
+    "registered_proof_and_inputs_preserved": true,
+    "registered_files_compared": 857,
+    "stash_preserved": true,
+    "previous_preparation_report_preserved_byte_for_byte": true
+  },
+  "terminology": {
+    "visible_structural_occurrences_in_source": 0,
+    "structural_occurrences_in_PDF_text": 0,
+    "unprinted_cross_reference_keys_preserved": true
+  },
+  "scope": {
+    "new_Lean_build_or_kernel_replay": false,
+    "new_Palomar_submission_or_registration": false,
+    "arxiv_upload": false
+  },
+  "comparison_display": {
+    "page": 19,
+    "one_line_per_definition_and_type": true,
+    "normalized_mathematical_tokens_unchanged": true,
+    "font_size_unchanged_and_no_scaling": true
+  },
+  "abstract_agreement": {
+    "unchanged_from_v18": true,
+    "sentences": 9,
+    "plain_words": 171,
+    "all_abstract_representations_agree": true
+  },
+  "citation_agreement": {
+    "exact_author_supplied_BibTeX_bytes": true,
+    "sha256": "255e0bf7bf84401d4388604ed24e0551a1532249d2bfc999d876fa2d0736f9f0",
+    "two_manuscript_citation_keys": "palomar-2026-10-30-000014-v2",
+    "palomar_version": 2,
+    "registry_URL": "https://palomar-registry.org/entry?id=PALOMAR-2026-10-30-000014&version=2",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "fields_comments_BibTeX_and_registered_source_note_agree": true,
+    "new_registration_or_successful_check_repeat": false
+  },
+  "visual_inspection": {
+    "render_command": [
+      "pdftoppm",
+      "-scale-to",
+      "1200",
+      "-png",
+      "Maximality_of_the_Dosen_Petric_Boolean_Category_v19.pdf",
+      "page"
+    ],
+    "render_exit_code": 0,
+    "contact_sheets_viewed": 6,
+    "pages_viewed_on_contact_sheets": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "pages_additionally_viewed_individually": [
+      19,
+      20,
+      23
+    ],
+    "observations": "Both c definitions/types fit on one line each at existing size; Appendix E omits the adjective; bibliography displays v2 and source 5dbee39bea09; no clipping/overlap.",
+    "render_files_in_ignored_staging": true
+  },
+  "documentation": {
+    "active_files_updated": 9,
+    "new_reports": [
+      "docs/MANUSCRIPT_V19_REPORT.md",
+      "docs/reviews/V19_WRITING_REVIEW_2026-11-01.md"
+    ],
+    "checked_relative_links": 303,
+    "receipt_links_completed_at_delivery": "provenance/manuscript-v19-review-20261101/delivery-receipt.json",
+    "historical_preparation_report_links_preserved_as_original_bytes": true,
+    "common_factorization_page_range_updated": "19–20"
+  }
+}

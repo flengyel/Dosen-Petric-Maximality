@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-01",
+  "manuscript_version": 19,
+  "skill": "mathematical-writing:revise-mathematical-prose 0.1.3",
+  "governing_source": "Knuth–Larrabee–Roberts, Mathematical Writing; consultation retained in provenance/manuscript-v18-review-20261101/writing-record.json.",
+  "review_scope": "Whole-source qualifier search and contextual prose pass; citation/source correspondence; D.5 layout; preserve typed mathematical claims. No independent proof-body audit.",
+  "qualifier_record": "adjective-decisions.json",
+  "paragraph_functions": "Existing classifications retained for unchanged paragraphs; the revised Section 6 provenance identifies Appendix E inverse terms and Appendix D.5 coherence argument; the D.2 sentence identifies its four proof steps.",
+  "prior_records": [
+    "provenance/manuscript-v16-review-20261101/paragraph-functions.json",
+    "provenance/manuscript-v17-review-20261101/writing-record.json",
+    "provenance/manuscript-v18-review-20261101/writing-record.json"
+  ],
+  "author_supplied_citation": "author-supplied-palomar.bib",
+  "source_link_record": "linked-declarations.json",
+  "mathematical_claims_hypotheses_and_quantifiers_preserved": true,
+  "process_narration_added_to_manuscript": false,
+  "new_hostile_review": false,
+  "new_Lean_or_Palomar_check": false,
+  "author_side_AI_assisted": true
+}

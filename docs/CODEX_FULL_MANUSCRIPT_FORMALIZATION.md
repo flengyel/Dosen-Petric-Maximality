@@ -1,27 +1,26 @@
 # Complete Lean formalization of manuscript v7
 
-Current manuscript: v18, dated November 1, 2026, 23 pages. Only the abstract
-is revised, apart from version/bibliography suffixes. After the author's
-request to consult Knuth–Larrabee–Roberts, the nine-sentence abstract introduces
-proof identifications, states maximality and its significance, summarizes the
-method, gives the model consequence and describes the Lean results. The
-manuscript, abstract.txt and both submission-field abstracts agree.
+Current manuscript: v19, dated November 1, 2026, 23 pages. The exact
+author-supplied Palomar version-2 entry replaces the current v1 citation.
+The registered-source note, 49 declaration links, comments and submission
+fields agree on source 5dbee39bea09539bd130f729e82636419f71f920. Two line
+targets moved and were checked. Earlier releases and their v1 citations remain.
+The qualifier review removes redundant adjectives and names the constructions;
+each D.5 comparison formula/type fits on one line. “Particular” is omitted
+from Appendix E's opening and the matching Section 5 pointer.
 
-The body is byte-identical to v17 after suffix restoration. All seven statement
-bodies, twelve numbered displays, thirteen diagrams, 34 labels, seventeen
-footnotes and 49 source links remain. Appendix A and its main-text references,
-both proof routes, every previous release, the supplied bibliography and
-authorized disclosure remain. V17's specific map terminology and one-line
-u_A path are retained. No Lean source or frozen input changes.
-See [v18 report](MANUSCRIPT_V18_REPORT.md) and
-[focused writing review](reviews/V18_WRITING_REVIEW_2026-11-01.md).
-The [v16 hostile review](reviews/V16_HOSTILE_REVIEW_2026-11-01.md) retains its
-broader scope. The dated formalization checkpoints below remain historical.
+The v18 abstract, all mathematical assertions, seven statement bodies,
+twelve numbered displays, thirteen diagrams, 34 labels, seventeen footnotes,
+Appendix A and its main-text references, both proof routes and the authorized
+disclosure remain. No Lean source, selected type, frozen input or successful
+verification changes. See [v19 report](MANUSCRIPT_V19_REPORT.md) and
+[writing review](reviews/V19_WRITING_REVIEW_2026-11-01.md).
+Earlier reports and reviews retain their dated scope; they are not new checks.
 
 The [reverse content audit](FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md)
-and v16 additions still explain the Lean-to-paper correspondence. The actual
-mathematical endpoint remains complete; successful proof/kernel/Palomar
-verification is reused. No new mathematical milestone or arXiv upload occurs.
+and v16 additions still explain the Lean-to-paper correspondence. The exact
+mathematical endpoint remains complete. No proof/kernel/Palomar check or
+registration is repeated, and no arXiv upload has occurred.
 
 ## Current complete full-paper formalization (29 October 2026)
 

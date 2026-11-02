@@ -15,7 +15,7 @@ the existing symmetric-fold deduction. V14, dated November 1, 2026, uses the
 hostile and mathematical-writing plugins for the complete preprint. It gives
 explicit arrow/functor types, uses literal and occurrence map, follows the
 source's dissociativity terminology and displays the calculations through v_A
-and w_A. The correspondences below apply also to v15–v18; see MANUSCRIPT_V14_REPORT.md
+and w_A. The correspondences below apply also to v15–v19; see MANUSCRIPT_V14_REPORT.md
 and its two review reports. Literal signs, theorem hypotheses and conclusions,
 all numbered displays, diagrams, labels, Lean theorems and registered inputs
 are preserved. The literal synonym and lemma captions change; no new Lean
@@ -74,6 +74,25 @@ formalization and occurrence/ordinal correspondence are reported precisely.
 These are summaries of the existing rows below, not additional claims.
 All main-text and appendix correspondences, page anchors and source links remain.
 See [v18 report](MANUSCRIPT_V18_REPORT.md).
+
+## V19 citation, qualifiers and comparison display (1 November 2026)
+
+The author supplied the version-2 BibTeX and requested a qualifier review and
+one-line D.5 comparison definitions. V19 incorporates all three. The source
+note and 49 declaration links now refer to registered version 2 at
+5dbee39bea09539bd130f729e82636419f71f920. PrimitiveCongruence moved from
+line 13 to 14, Closed from 28 to 31; all other linked line numbers are unchanged.
+The active link records are in the v19 provenance. The exact v2 BibTeX, plain
+and TeX abstracts, comments and submission fields are synchronized.
+
+Eleven prose edits remove redundant qualifiers or identify the constructions
+meant, including the two “particular” occurrences. Qualifications expressing
+quantifiers, hypotheses, signs, coordinate origins, naturality or universal
+properties remain. The c-arrow definition/type line breaks change without
+changing mathematical tokens. All typed correspondences below remain; the
+abstract, seven statement bodies, numbered equations, diagrams, labels, both
+proof routes and Appendix A content/references are preserved. See
+[v19 report](MANUSCRIPT_V19_REPORT.md).
 
 ## Three milestones and full-paper endpoint
 
@@ -164,14 +183,14 @@ closure are recorded in the final evidence. No mathematical claim in the paper's
 current scope remains assigned to an unproved field or deferred implementation
 target. Historical reports are not independent verification of this final scope.
 
-## Appendix D: registered statements and proof correspondence (v16)
+## Appendix D: registered statements and proof correspondence (v19)
 
 All names below have prefix DosenPetric unless stated otherwise. These are
 existing proofs retained in both immutable registered sources, not new results.
-V16's hyperlinks target version 1, 2e771844077fd8cebfbe365230f13d4dd13a75b1,
-matching the unchanged supplied bibliography. The version-2 source remains
-5dbee39bea09539bd130f729e82636419f71f920. Exact paths, declaration lines and
-hashes for the 49 linked names are in the v16 linked-declarations record.
+V19's hyperlinks target version 2, 5dbee39bea09539bd130f729e82636419f71f920,
+matching the author's newly supplied bibliography. Exact paths, declaration
+lines and hashes for all 49 linked names are in the v19 linked-declarations
+record. The preceding v16–v18 sources and version-1 link records remain preserved.
 
 | Manuscript anchor | Declaration | Exact scope |
 | --- | --- | --- |
@@ -212,7 +231,7 @@ proofs; these rows identify their source locations.
 | R7, D.5 p.19 and E.3 pp.21–22 | Reduced.Gentzen.DistributiveEpi.section_comparison; Reduced.Gentzen.DistributiveMono.comparison_retraction; Reduced.Gentzen.Rules.sourceConj; Reduced.Term.mixedDisj | Explicit s,t terms; c-wedge s=id and t c-vee=id by the product, coproduct, associativity, symmetry, dissociativity and mix equations and component calculations. No reliance on the quotient dual functor. |
 | R7, D.5 p.19 | Reduced.Gentzen.dnf_expansion/cnf_expansion | i:A→D_A,r:D_A→A,ri=id and the corresponding C_A retract. Not distributivity isomorphisms. |
 | R7, D.5 p.19 | Reduced.Gentzen.G.mix_normal_form; Reduced.Gentzen.HasPureNormalForm.faithful; Reduced.Gentzen.pure_positive_coherence/represented_coherence/positive_coherence | Positive means no eta/epsilon constructors; pure paths are projection/injection composites; finite unions and one-sided recovery give equality. |
-| R7, D.5 p.20 | Reduced.commonAtomicFactor/faithful_of_positive_coherence; Reduced.boolean_coherence; Presentation.coherence | Common A',B',u,v,f_0,g_0 and injective occurrence embeddings with direct-image relation equations; positive equality→Reduced equality→original source equality. |
+| R7, D.5 pp.19–20 | Reduced.commonAtomicFactor/faithful_of_positive_coherence; Reduced.boolean_coherence; Presentation.coherence | Common A',B',u,v,f_0,g_0 and injective occurrence embeddings with direct-image relation equations; positive equality→Reduced equality→original source equality. |
 | D.2 pp.16–17, reading a declaration | Palomar.maximality; Palomar.PrimitiveCongruence; Palomar.PrimitiveCongruence.Closed/Total | The displayed header matches the selected type after Not expansion. P:Type u, nonemptiness, implicit formulas, terms, proofs and conclusion are explained. Total quantifies over all existing parallel terms. |
 | D.2 p.17, short-proof table | Palomar.short_maximality; Palomar.PrimitiveCongruence.raw_distinct_iff; Isolation.normalized_literal_context; ContextualCollapse.all_contexts; Presentation.ShortProof.total | Raw inequality→quotient inequality→literal K→all K→collapse, with R.fragment and the actual interpretation/normalization/substitution/doubleNegation arguments explained. |
 

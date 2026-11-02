@@ -1,0 +1,394 @@
+{
+  "DosenPetric.Presentation.occurrence_signedLabel": {
+    "path": "DosenPetric/PresentationSignedLabels.lean",
+    "line": 73,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationSignedLabels.lean#L73",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "01fbc357fa420010ee352b65cb0f25bbd92ec3f92b914fb2de9fe729ee526e8b",
+    "declaration_opening": "theorem occurrence_signedLabel {A B : Formula P} (f : Hom A B)"
+  },
+  "DosenPetric.Reduced.Term.dual_relation": {
+    "path": "DosenPetric/ReducedDualRelations.lean",
+    "line": 20,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedDualRelations.lean#L20",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "464889ab9f40e83901b4a021685890374a41bc86b846e5fe61edf07e4431a0cb",
+    "declaration_opening": "theorem dual_relation {A B : NormalForm P} (f : Term P A B)"
+  },
+  "DosenPetric.Presentation.occurrence_negate": {
+    "path": "DosenPetric/PresentationNegationOccurrence.lean",
+    "line": 25,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationNegationOccurrence.lean#L25",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "8cded8e0c6237fcccd47094579ed19e88ed2e4d2734e89483e74c6a9757d8e2c",
+    "declaration_opening": "theorem occurrence_negate {A B : Formula P} (f : Hom A B) (x : A.Occ) (y : B.Occ) :"
+  },
+  "DosenPetric.Presentation.occurrence_substitute_expanded": {
+    "path": "DosenPetric/PresentationSubstitutionRelation.lean",
+    "line": 61,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationSubstitutionRelation.lean#L61",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "8725f4c4256a8174273f50e9843ac196633f82df086094f7bdb9600a1bd90761",
+    "declaration_opening": "theorem occurrence_substitute_expanded (σ : P → Formula R) {A B : Formula P} (f : Hom A B)"
+  },
+  "DosenPetric.Relations.Fiber.lift_composition": {
+    "path": "DosenPetric/SubstitutionFiberRelations.lean",
+    "line": 48,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/SubstitutionFiberRelations.lean#L48",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "e7eef0b6a6be77d56cf65cd5203cc0ad92f6c2857b8cd10bcab480befaaccb0e",
+    "declaration_opening": "theorem lift_composition {X : Type v} {Y : Type v'} {Z : Type v''}"
+  },
+  "DosenPetric.Formula.subst_identity": {
+    "path": "DosenPetric/FormulaSubstitutionLaws.lean",
+    "line": 11,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/FormulaSubstitutionLaws.lean#L11",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "5f51742263b2ce48b9ddf8b2bc4bf32ab6fc0f6ee8f8234339f8429bd8a49b29",
+    "declaration_opening": "theorem subst_identity (A : Formula P) : A.subst Formula.var = A := by"
+  },
+  "DosenPetric.Formula.subst_composition": {
+    "path": "DosenPetric/FormulaSubstitutionLaws.lean",
+    "line": 20,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/FormulaSubstitutionLaws.lean#L20",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "5f51742263b2ce48b9ddf8b2bc4bf32ab6fc0f6ee8f8234339f8429bd8a49b29",
+    "declaration_opening": "theorem subst_composition (σ : P → Formula R) (τ : R → Formula T) (A : Formula P) :"
+  },
+  "DosenPetric.Presentation.substitute_identity": {
+    "path": "DosenPetric/PresentationSubstitutionActionQuotient.lean",
+    "line": 39,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationSubstitutionActionQuotient.lean#L39",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "f43aa14ffc60d130896f6575f5649a5634dd3fe55b9f9b986ccb76b34c08c088",
+    "declaration_opening": "theorem substitute_identity {A B : Formula P} (f : Hom A B) :"
+  },
+  "DosenPetric.Presentation.substitute_composition": {
+    "path": "DosenPetric/PresentationSubstitutionActionQuotient.lean",
+    "line": 44,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationSubstitutionActionQuotient.lean#L44",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "f43aa14ffc60d130896f6575f5649a5634dd3fe55b9f9b986ccb76b34c08c088",
+    "declaration_opening": "theorem substitute_composition (σ : P → Formula R) (τ : R → Formula T)"
+  },
+  "DosenPetric.Presentation.substitute_ext": {
+    "path": "DosenPetric/PresentationSubstitutionActionQuotient.lean",
+    "line": 57,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationSubstitutionActionQuotient.lean#L57",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "f43aa14ffc60d130896f6575f5649a5634dd3fe55b9f9b986ccb76b34c08c088",
+    "declaration_opening": "theorem substitute_ext (σ τ : P → Formula R) (h : ∀ p, σ p = τ p)"
+  },
+  "DosenPetric.ContextualCollapse.context_retract": {
+    "path": "DosenPetric/Substitution.lean",
+    "line": 74,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/Substitution.lean#L74",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "b3b46aa06302bf84da6aa0eed9d48c0319591e947aa45d39af8e040755b4f821",
+    "declaration_opening": "theorem context_retract {A B : Formula P} (m : C.Hom A B) (n : C.Hom B A)"
+  },
+  "DosenPetric.Presentation.ShortProof.qInverseTerm": {
+    "path": "DosenPetric/PresentationShortQ.lean",
+    "line": 17,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortQ.lean#L17",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "3364e6c7da4817a24a5f0fe93f4250b726b9cfe24d99525234a1eddcf7a680d8",
+    "declaration_opening": "def qInverseTerm (A : Formula P) : Term P (.disj A .top) (.disj (.conj A .bot) .top) :="
+  },
+  "DosenPetric.Presentation.ShortProof.eInverseTerm": {
+    "path": "DosenPetric/PresentationShortE.lean",
+    "line": 30,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean#L30",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "62a0a4ba71b18546166b4e9501ee4dcfef4419e2ca2039d6c241c2392d9cf91e",
+    "declaration_opening": "def eInverseTerm (A : Formula P) : Term P (.conj A (.disj A .top)) (.conj A A) :="
+  },
+  "DosenPetric.Reduced.union_assoc": {
+    "path": "DosenPetric/ReducedUnion.lean",
+    "line": 131,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean#L131",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "44df406c2eaffd930d962262c417f3411cb513ffe1f604aefdf21c030b7a6171",
+    "declaration_opening": "theorem union_assoc {A B : NormalForm P} (f g h : Hom A B) :"
+  },
+  "DosenPetric.Reduced.union_comm": {
+    "path": "DosenPetric/ReducedUnion.lean",
+    "line": 90,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean#L90",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "44df406c2eaffd930d962262c417f3411cb513ffe1f604aefdf21c030b7a6171",
+    "declaration_opening": "theorem union_comm {A B : NormalForm P} (f g : Hom A B) : union f g = union g f := by"
+  },
+  "DosenPetric.Reduced.union_idem": {
+    "path": "DosenPetric/ReducedUnion.lean",
+    "line": 97,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean#L97",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "44df406c2eaffd930d962262c417f3411cb513ffe1f604aefdf21c030b7a6171",
+    "declaration_opening": "theorem union_idem {A B : NormalForm P} (f : Hom A B) : union f f = f := by"
+  },
+  "DosenPetric.Reduced.union_pre": {
+    "path": "DosenPetric/ReducedUnion.lean",
+    "line": 80,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean#L80",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "44df406c2eaffd930d962262c417f3411cb513ffe1f604aefdf21c030b7a6171",
+    "declaration_opening": "theorem union_pre {X A B : NormalForm P} (h : Hom X A) (f g : Hom A B) :"
+  },
+  "DosenPetric.Reduced.union_post": {
+    "path": "DosenPetric/ReducedUnion.lean",
+    "line": 85,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean#L85",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "44df406c2eaffd930d962262c417f3411cb513ffe1f604aefdf21c030b7a6171",
+    "declaration_opening": "theorem union_post {A B C : NormalForm P} (f g : Hom A B) (h : Hom B C) :"
+  },
+  "DosenPetric.Reduced.finiteUnion.eq_of_members": {
+    "path": "DosenPetric/ReducedFiniteUnion.lean",
+    "line": 57,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedFiniteUnion.lean#L57",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "e3f2a536e3ecdf05a5cc81e2429399c734a07f90b01e7d83a034553e1c366838",
+    "declaration_opening": "theorem eq_of_members (w v : Hom A B) (fs gs : List (Hom A B))"
+  },
+  "DosenPetric.Reduced.reduceHom": {
+    "path": "DosenPetric/ReducedQuotientReduction.lean",
+    "line": 21,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedQuotientReduction.lean#L21",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "a57e44eaa520fafc7b9bad8d2221209ff3b8c086ff5ff359560e4652cd7cae4a",
+    "declaration_opening": "def reduceHom {A B : Formula P} (f : Presentation.Hom A B) : Hom (normal A) (normal B) :="
+  },
+  "DosenPetric.Reduced.recoverHom": {
+    "path": "DosenPetric/ReducedRecovery.lean",
+    "line": 26,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedRecovery.lean#L26",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "e3cfae8a197050e765ae617ce96f05092d758c202d41eaa3a0ade848dc2d068c",
+    "declaration_opening": "def recoverHom {A B : Formula P} (f : Hom (normal A) (normal B)) : Presentation.Hom A B :="
+  },
+  "DosenPetric.Palomar.maximality": {
+    "path": "DosenPetric/PalomarMaximality.lean",
+    "line": 17,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PalomarMaximality.lean#L17",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "7607e8e12de6ad860ca31c8101f765db11baee484d2e911597249a564fc65550",
+    "declaration_opening": "theorem maximality [Nonempty P] (R : PrimitiveCongruence P) (closed : R.Closed)"
+  },
+  "DosenPetric.Palomar.PrimitiveCongruence": {
+    "path": "DosenPetric/PalomarDefinitions.lean",
+    "line": 14,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PalomarDefinitions.lean#L14",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "1217ddfa91e6454a01352bb8d0dd61c1045a21b881cc6100cc2ad28139f66f76",
+    "declaration_opening": "structure PrimitiveCongruence (P : Type u) where"
+  },
+  "DosenPetric.Palomar.PrimitiveCongruence.Closed": {
+    "path": "DosenPetric/PalomarDefinitions.lean",
+    "line": 31,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PalomarDefinitions.lean#L31",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "1217ddfa91e6454a01352bb8d0dd61c1045a21b881cc6100cc2ad28139f66f76",
+    "declaration_opening": "def Closed : Prop := ∀ (σ : P → Formula P) {A B} {f g : Term P A B},"
+  },
+  "DosenPetric.Palomar.short_maximality": {
+    "path": "DosenPetric/PalomarMaximality.lean",
+    "line": 27,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PalomarMaximality.lean#L27",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "7607e8e12de6ad860ca31c8101f765db11baee484d2e911597249a564fc65550",
+    "declaration_opening": "theorem short_maximality [Nonempty P] (R : PrimitiveCongruence P) (closed : R.Closed)"
+  },
+  "DosenPetric.Palomar.PrimitiveCongruence.raw_distinct_iff": {
+    "path": "DosenPetric/PalomarCorrespondence.lean",
+    "line": 121,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PalomarCorrespondence.lean#L121",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "3f2c416708391dc421244a072fb6e429ec614bf3f3851ba7af588ea21dd4feee",
+    "declaration_opening": "theorem raw_distinct_iff {A B : Formula P} (f g : Term P A B) :"
+  },
+  "DosenPetric.Isolation.normalized_literal_context": {
+    "path": "DosenPetric/Isolation.lean",
+    "line": 219,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/Isolation.lean#L219",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "a870a52179d5a770bd3845a55d26c6d7a493ce5cc6bdeb00320aca99ef95b243",
+    "declaration_opening": "theorem normalized_literal_context (N : Normalization C) (labels : SignedLabelPreservation I)"
+  },
+  "DosenPetric.ContextualCollapse.all_contexts": {
+    "path": "DosenPetric/Substitution.lean",
+    "line": 90,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/Substitution.lean#L90",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "b3b46aa06302bf84da6aa0eed9d48c0319591e947aa45d39af8e040755b4f821",
+    "declaration_opening": "theorem all_contexts (U : Substitution S Z) (D : DoubleNegation C) (closed : U.Closed Q)"
+  },
+  "DosenPetric.Presentation.ShortProof.total": {
+    "path": "DosenPetric/PresentationShortProjection.lean",
+    "line": 86,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortProjection.lean#L86",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "ceca37784c03e566a6d456e82a87ff3bd08fe172e25c23f7842a0d6e75e872a4",
+    "declaration_opening": "theorem total : Q.Total := by"
+  },
+  "DosenPetric.Reduced.union_id_zero": {
+    "path": "DosenPetric/ReducedUnion.lean",
+    "line": 145,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean#L145",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "44df406c2eaffd930d962262c417f3411cb513ffe1f604aefdf21c030b7a6171",
+    "declaration_opening": "theorem union_id_zero (A : NormalForm P) : union (id A) (zero A) = id A := by"
+  },
+  "DosenPetric.Reduced.Gentzen.DistributiveEpi.section_comparison": {
+    "path": "DosenPetric/GentzenDistributiveEpi.lean",
+    "line": 57,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenDistributiveEpi.lean#L57",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "e25457c8bac8aff6b7c055ff476e30f06a81249b44b7d5a0c67446f5f87c6bcc",
+    "declaration_opening": "theorem section_comparison (X A B : NormalForm P) :"
+  },
+  "DosenPetric.Reduced.Gentzen.DistributiveMono.comparison_retraction": {
+    "path": "DosenPetric/GentzenDistributiveMono.lean",
+    "line": 54,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenDistributiveMono.lean#L54",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "2f4cec1943dc8ba6d217dffe6fd71f5182b53759c71fda5513de3aed9cc8f15e",
+    "declaration_opening": "theorem comparison_retraction (A B R : NormalForm P) :"
+  },
+  "DosenPetric.Reduced.Gentzen.dnf_expansion": {
+    "path": "DosenPetric/GentzenNormalExpansion.lean",
+    "line": 45,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenNormalExpansion.lean#L45",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "050686e978709db4a6a310db41bb573416a0183315b8b17fbb266bc70d66737f",
+    "declaration_opening": "theorem dnf_expansion (A : NormalForm P) :"
+  },
+  "DosenPetric.Reduced.Gentzen.cnf_expansion": {
+    "path": "DosenPetric/GentzenNormalExpansion.lean",
+    "line": 62,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenNormalExpansion.lean#L62",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "050686e978709db4a6a310db41bb573416a0183315b8b17fbb266bc70d66737f",
+    "declaration_opening": "theorem cnf_expansion (A : NormalForm P) :"
+  },
+  "DosenPetric.Reduced.Gentzen.G.mix_normal_form": {
+    "path": "DosenPetric/GentzenMixNormalForm.lean",
+    "line": 37,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenMixNormalForm.lean#L37",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "41aa3277b1fba645d3e0eb44086a867cab11714eea8b513cb5564eea813266d4",
+    "declaration_opening": "theorem mix_normal_form {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (hg : g.MixOnly) :"
+  },
+  "DosenPetric.Reduced.Gentzen.HasPureNormalForm.faithful": {
+    "path": "DosenPetric/GentzenPureNormalForms.lean",
+    "line": 84,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenPureNormalForms.lean#L84",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "a3aa5c6756db386b32b2e8c1e69d4a5023777d0a18d337cab2147edc57d4b3d3",
+    "declaration_opening": "theorem faithful {f g : Hom A B} (hf : HasPureNormalForm f) (hg : HasPureNormalForm g)"
+  },
+  "DosenPetric.Reduced.Gentzen.pure_positive_coherence": {
+    "path": "DosenPetric/GentzenPurePositiveCoherence.lean",
+    "line": 14,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenPurePositiveCoherence.lean#L14",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "8709e4429d0aa65e46b1cb6d291436a8d3ddcc231d0900e8a1c049b64699722c",
+    "declaration_opening": "theorem pure_positive_coherence {A B : NormalForm P} (f g : Term P A B)"
+  },
+  "DosenPetric.Reduced.Gentzen.represented_coherence": {
+    "path": "DosenPetric/GentzenPositiveCoherence.lean",
+    "line": 14,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenPositiveCoherence.lean#L14",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "5324a347a7dd4595d3f244a11fba1aacfd9e294600fa97baaa4730530f8bb460",
+    "declaration_opening": "theorem represented_coherence {A B : NormalForm P} (f g : Hom A B)"
+  },
+  "DosenPetric.Reduced.Gentzen.positive_coherence": {
+    "path": "DosenPetric/GentzenPositiveCoherence.lean",
+    "line": 31,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenPositiveCoherence.lean#L31",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "5324a347a7dd4595d3f244a11fba1aacfd9e294600fa97baaa4730530f8bb460",
+    "declaration_opening": "theorem positive_coherence : PositiveCoherence P := by"
+  },
+  "DosenPetric.Reduced.commonAtomicFactor": {
+    "path": "DosenPetric/CommonAtomicFactorization.lean",
+    "line": 51,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/CommonAtomicFactorization.lean#L51",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "6ed2dc8490b7ded91078fef363b1faf698d476448d8966652a8c52300cef84e6",
+    "declaration_opening": "def commonAtomicFactor {A B : NormalForm P} (t₁ t₂ : Term P A B) : CommonAtomicFactor t₁ t₂ := by"
+  },
+  "DosenPetric.Reduced.faithful_of_positive_coherence": {
+    "path": "DosenPetric/CommonAtomicFactorization.lean",
+    "line": 123,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/CommonAtomicFactorization.lean#L123",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "6ed2dc8490b7ded91078fef363b1faf698d476448d8966652a8c52300cef84e6",
+    "declaration_opening": "theorem faithful_of_positive_coherence (hC : PositiveCoherence P) : Faithful P := by"
+  },
+  "DosenPetric.Reduced.boolean_coherence": {
+    "path": "DosenPetric/ReducedCoherence.lean",
+    "line": 17,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedCoherence.lean#L17",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "1459f6d73ded03523fa5be272ad26a82aa646d5f5813dbe60d2ca8419df24906",
+    "declaration_opening": "theorem boolean_coherence {A B : Formula P} {f g : Presentation.Hom A B}"
+  },
+  "DosenPetric.Presentation.coherence": {
+    "path": "DosenPetric/PresentationCoherence.lean",
+    "line": 13,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationCoherence.lean#L13",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "cb28a4411323da114a75c5c07cd634c923065efc8679e5ce1d5a7f93d347cf56",
+    "declaration_opening": "theorem coherence {A B : Formula P} {f g : Hom A B}"
+  },
+  "DosenPetric.Presentation.ShortProof.q_qInverse": {
+    "path": "DosenPetric/PresentationShortQ.lean",
+    "line": 32,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortQ.lean#L32",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "3364e6c7da4817a24a5f0fe93f4250b726b9cfe24d99525234a1eddcf7a680d8",
+    "declaration_opening": "theorem q_qInverse (A : Formula P) : comp (q A) (qInverse A) = id _ := by"
+  },
+  "DosenPetric.Presentation.ShortProof.qInverse_q": {
+    "path": "DosenPetric/PresentationShortQ.lean",
+    "line": 46,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortQ.lean#L46",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "3364e6c7da4817a24a5f0fe93f4250b726b9cfe24d99525234a1eddcf7a680d8",
+    "declaration_opening": "theorem qInverse_q (A : Formula P) : comp (qInverse A) (q A) = id _ := by"
+  },
+  "DosenPetric.Presentation.ShortProof.sourceConjTerm": {
+    "path": "DosenPetric/PresentationShortE.lean",
+    "line": 13,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean#L13",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "62a0a4ba71b18546166b4e9501ee4dcfef4419e2ca2039d6c241c2392d9cf91e",
+    "declaration_opening": "def sourceConjTerm (X Y A B : Formula P) :"
+  },
+  "DosenPetric.Presentation.ShortProof.sectionTerm": {
+    "path": "DosenPetric/PresentationShortE.lean",
+    "line": 21,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean#L21",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "62a0a4ba71b18546166b4e9501ee4dcfef4419e2ca2039d6c241c2392d9cf91e",
+    "declaration_opening": "def sectionTerm (X A B : Formula P) :"
+  },
+  "DosenPetric.Presentation.ShortProof.e_eInverse": {
+    "path": "DosenPetric/PresentationShortE.lean",
+    "line": 44,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean#L44",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "62a0a4ba71b18546166b4e9501ee4dcfef4419e2ca2039d6c241c2392d9cf91e",
+    "declaration_opening": "theorem e_eInverse (A : Formula P) : comp (e A) (eInverse A) = id _ := by"
+  },
+  "DosenPetric.Presentation.ShortProof.eInverse_e": {
+    "path": "DosenPetric/PresentationShortE.lean",
+    "line": 50,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean#L50",
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "source_sha256": "62a0a4ba71b18546166b4e9501ee4dcfef4419e2ca2039d6c241c2392d9cf91e",
+    "declaration_opening": "theorem eInverse_e (A : Formula P) : comp (eInverse A) (e A) = id _ := by"
+  }
+}

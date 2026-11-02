@@ -12,7 +12,16 @@ and its [registration report](docs/PALOMAR_REGISTRATION_REPORT.md) remain preser
 The earlier [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
 describes version 1.
 
-The arXiv package is ready in [submission/arxiv-v18](submission/arxiv-v18/README.md).
+The arXiv package is ready in [submission/arxiv-v19](submission/arxiv-v19/README.md).
+V19 uses the exact author-supplied Palomar version-2 citation. The registered
+source note, all 49 declaration links and submission fields now point to
+5dbee39bea09539bd130f729e82636419f71f920. Two shifted declaration lines were
+resolved. The prose pass removes redundant qualifiers; Appendix E's opening
+omits “particular”; each D.5 comparison formula and type occupies one line.
+The v18 abstract, all mathematics, Appendix A references and both proof routes
+remain. See [v19 report](docs/MANUSCRIPT_V19_REPORT.md) and
+[writing review](docs/reviews/V19_WRITING_REVIEW_2026-11-01.md).
+
 V18 revises the abstract after consulting Knuth–Larrabee–Roberts. Its nine
 sentences introduce proof identifications, state maximality and its significance,
 outline the proof, state the model consequence and describe the Lean results.
@@ -76,9 +85,9 @@ publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
-Current manuscript: [v18 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v18.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v18.tex), dated November 1, 2026, 23 pages. All v4–v17 releases remain preserved.
-The [v18 report](docs/MANUSCRIPT_V18_REPORT.md) records the source-guided abstract
-revision, matching manuscript/package builds, PDF inspection and preservation.
+Current manuscript: [v19 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v19.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v19.tex), dated November 1, 2026, 23 pages. All v4–v18 releases remain preserved.
+The [v19 report](docs/MANUSCRIPT_V19_REPORT.md) records the citation/source-link
+update, qualifier review, comparison display, matching builds and preservation.
 Every manuscript revision increments its version; completed authorized main
 work is pushed before readiness is reported, as recorded in AGENTS.md.
 

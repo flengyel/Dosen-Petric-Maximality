@@ -1,0 +1,390 @@
+--- v18.tex
++++ v19.tex
+@@ -6,7 +6,7 @@
+ \usepackage{array}
+ \usepackage[numbers]{natbib}
+ \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+-\hypersetup{pdftitle={Maximality of the Dosen--Petric Boolean Category (v18)},pdfauthor={Florian Lengyel}}
++\hypersetup{pdftitle={Maximality of the Dosen--Petric Boolean Category (v19)},pdfauthor={Florian Lengyel}}
+ \renewcommand{\theHequation}{\thesection.\arabic{equation}}
+ \newtheorem{theorem}{Theorem}[section]
+ \newtheorem{lemma}[theorem]{Lemma}
+@@ -18,7 +18,7 @@
+ \newcommand{\FormulaSet}{\operatorname{Form}}
+ \title{Maximality of the Do\v{s}en--Petri\'c Boolean Category}
+ \author{Florian Lengyel\thanks{Email: \href{mailto:flengyel@gradcenter.cuny.edu}{\texttt{flengyel@gradcenter.cuny.edu}}}}
+-\date{November 1, 2026\quad(v18)}
++\date{November 1, 2026\quad(v19)}
+ \begin{document}
+ \maketitle
+ 
+@@ -306,10 +306,10 @@
+ associativity and symmetry maps, projections and injections,
+ diagonals and codiagonals, mix, dissociativity and unit maps
+ preserve the variable and its sign. The double-negation and
+-De Morgan maps preserve the resulting signs, and the zero,
++De Morgan maps preserve the signs, and the zero,
+ $\eta$ and $\epsilon$ maps have empty relations. Composition and
+ the two binary operations preserve the assertion.\footnote{\raggedright Lean:
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationSignedLabels.lean\#L73}{\texttt{Presentation.\allowbreak{}occurrence\_signedLabel}}.}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationSignedLabels.lean\#L73}{\texttt{Presentation.\allowbreak{}occurrence\_signedLabel}}.}
+ 
+ \begin{theorem}[Boolean Coherence, Do\v{s}en--Petri\'c]
+ \label{thm:coherence}
+@@ -365,8 +365,8 @@
+ converse relation. The occurrence bijections of normalization
+ transport this equation to the original positions, using
+ $\Occ(\neg A)=\Occ(A)$ and $\Occ(\neg C)=\Occ(C)$.\footnote{\raggedright Lean:
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedDualRelations.lean\#L20}{\texttt{Reduced.Term.\allowbreak{}dual\_relation}} and
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationNegationOccurrence.lean\#L25}{\texttt{Presentation.\allowbreak{}occurrence\_negate}}.}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedDualRelations.lean\#L20}{\texttt{Reduced.Term.\allowbreak{}dual\_relation}} and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationNegationOccurrence.lean\#L25}{\texttt{Presentation.\allowbreak{}occurrence\_negate}}.}
+ 
+ Substitution replaces each occurrence of a variable by a separate
+ block of occurrences of its substituted formula.
+@@ -437,7 +437,7 @@
+  \end{aligned}
+ \]
+ Thus an edge of $Gf$ is replaced by the identity relation within
+-the inserted block. The complete substituted relation satisfies
++the inserted block. The substituted relation satisfies
+ \[
+  (x',y')\in G(f[\sigma])
+  \quad\Longleftrightarrow\quad
+@@ -465,9 +465,9 @@
+ variable labels identifies its inner occurrence on both sides.
+ The formula passes to quotient arrows because both interpretations
+ respect the defining equations.\footnote{\raggedright Lean:
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationSubstitutionRelation.lean\#L61}{\texttt{Presentation.\allowbreak{}occurrence\_substitute\_expanded}};
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationSubstitutionRelation.lean\#L61}{\texttt{Presentation.\allowbreak{}occurrence\_substitute\_expanded}};
+ the composition step is
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/SubstitutionFiberRelations.lean\#L48}{\texttt{Relations.Fiber.\allowbreak{}lift\_composition}}.}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/SubstitutionFiberRelations.lean\#L48}{\texttt{Relations.Fiber.\allowbreak{}lift\_composition}}.}
+ Repeated old occurrences retain their different first coordinates;
+ an empty inserted block supplies no positions.
+ 
+@@ -490,11 +490,11 @@
+ identifications. Formula induction proves the object equations;
+ term induction and passage to the quotient prove the arrow
+ equations.\footnote{\raggedright Lean:
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/FormulaSubstitutionLaws.lean\#L11}{\texttt{Formula.\allowbreak{}subst\_identity}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/FormulaSubstitutionLaws.lean\#L20}{\texttt{Formula.\allowbreak{}subst\_composition}}, and
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationSubstitutionActionQuotient.lean\#L39}{\texttt{Presentation.\allowbreak{}substitute\_identity}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationSubstitutionActionQuotient.lean\#L44}{\texttt{Presentation.\allowbreak{}substitute\_composition}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationSubstitutionActionQuotient.lean\#L57}{\texttt{Presentation.\allowbreak{}substitute\_ext}}.}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/FormulaSubstitutionLaws.lean\#L11}{\texttt{Formula.\allowbreak{}subst\_identity}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/FormulaSubstitutionLaws.lean\#L20}{\texttt{Formula.\allowbreak{}subst\_composition}}, and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationSubstitutionActionQuotient.lean\#L39}{\texttt{Presentation.\allowbreak{}substitute\_identity}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationSubstitutionActionQuotient.lean\#L44}{\texttt{Presentation.\allowbreak{}substitute\_composition}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationSubstitutionActionQuotient.lean\#L57}{\texttt{Presentation.\allowbreak{}substitute\_ext}}.}
+ 
+ \section{Isolating an occurrence}\label{sec:isolation}
+ 
+@@ -531,7 +531,7 @@
+ construct the arrows for the negation normal forms $A^\circ,C^\circ$.
+ If
+ $i^\circ:\ell\wedge\bot\to A^\circ$ and
+-$r^\circ:C^\circ\to\ell\vee\top$ satisfy the required equations,
++$r^\circ:C^\circ\to\ell\vee\top$ satisfy the equations,
+ then $i=a_A^{-1}\circ i^\circ:\ell\wedge\bot\to A$ and
+ $r=r^\circ\circ a_C:C\to\ell\vee\top$ satisfy them for the original
+ formulas.
+@@ -585,8 +585,8 @@
+  =j_A\circ(r\circ i)\circ\pi_1^{A,\bot}
+  =j_A\circ\pi_1^{A,\bot},
+ \]
+-and zero absorption gives the required zero on the right.\footnote{\raggedright Lean:
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/Substitution.lean\#L74}{\texttt{ContextualCollapse.\allowbreak{}context\_retract}}.}
++and zero absorption gives the zero on the right.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/Substitution.lean\#L74}{\texttt{ContextualCollapse.\allowbreak{}context\_retract}}.}
+ 
+ \begin{proposition}\label{prop:all-contexts}
+ If a substitution congruence $\theta$ on $\B$ identifies distinct
+@@ -664,9 +664,9 @@
+ \end{proof}
+ 
+ Appendix~\ref{app:explicit-inverses} constructs inverses for
+-these particular arrows and verifies all four inverse equations.\footnote{\raggedright Lean:
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortQ.lean\#L17}{\texttt{Presentation.ShortProof.\allowbreak{}qInverseTerm}} and
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\#L30}{\texttt{Presentation.ShortProof.\allowbreak{}eInverseTerm}}.}
++these arrows and verifies all four inverse equations.\footnote{\raggedright Lean:
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortQ.lean\#L17}{\texttt{Presentation.ShortProof.\allowbreak{}qInverseTerm}} and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean\#L30}{\texttt{Presentation.ShortProof.\allowbreak{}eInverseTerm}}.}
+ 
+ \begin{lemma}\label{lem:collapse}
+ Let $\theta$ be a proof congruence on $\B$ such that
+@@ -755,10 +755,11 @@
+ 
+ \section{Lean formalization}\label{sec:formalization}
+ 
+-The explicit inverse terms and several intermediate equations in this
+-paper are taken from the Lean development. Appendix~\ref{app:reading-lean}
++The inverse terms in Appendix~\ref{app:explicit-inverses} and the
++coherence argument in Appendix~\ref{app:coherence-proof} are taken
++from the Lean development. Appendix~\ref{app:reading-lean}
+ explains how the declarations and proof steps express the mathematical
+-statements used here. The footnotes identify the corresponding source declarations.
++statements used here. The footnotes identify the source declarations.
+ 
+ In the Lean~4 development \cite{Formalization}, formulas and arrow
+ terms are inductive types, with arrow terms indexed by their source
+@@ -874,14 +875,14 @@
+ Finite unions are independent of the order and repeated
+ summands. The empty union is the witnessed zero and is independent
+ of its witness.\footnote{\raggedright The Lean laws are
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L131}{\texttt{Reduced.\allowbreak{}union\_assoc}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L90}{\texttt{Reduced.\allowbreak{}union\_comm}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L97}{\texttt{Reduced.\allowbreak{}union\_idem}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L80}{\texttt{Reduced.\allowbreak{}union\_pre}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L85}{\texttt{Reduced.\allowbreak{}union\_post}}, and
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedFiniteUnion.lean\#L57}{\texttt{Reduced.finiteUnion.\allowbreak{}eq\_of\_members}}.
+-The maps \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedQuotientReduction.lean\#L21}{\texttt{Reduced.\allowbreak{}reduceHom}} and
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedRecovery.lean\#L26}{\texttt{Reduced.\allowbreak{}recoverHom}} identify these expressions
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L131}{\texttt{Reduced.\allowbreak{}union\_assoc}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L90}{\texttt{Reduced.\allowbreak{}union\_comm}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L97}{\texttt{Reduced.\allowbreak{}union\_idem}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L80}{\texttt{Reduced.\allowbreak{}union\_pre}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L85}{\texttt{Reduced.\allowbreak{}union\_post}}, and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedFiniteUnion.lean\#L57}{\texttt{Reduced.finiteUnion.\allowbreak{}eq\_of\_members}}.
++The maps \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedQuotientReduction.lean\#L21}{\texttt{Reduced.\allowbreak{}reduceHom}} and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedRecovery.lean\#L26}{\texttt{Reduced.\allowbreak{}recoverHom}} identify these expressions
+ with arrows of $\B(P)$ and are inverse on each hom-set.}
+ 
+ Cut elimination and Boolean Coherence are proved for the presentation
+@@ -891,7 +892,7 @@
+ Its application gives \texttt{Presentation.maximality}.
+ 
+ The theorem \texttt{Presentation.short\_maximality} formalizes the proof
+-in Section~\ref{sec:collapse}, with explicit inverses for $q_A$ and $e_A$.
++in Section~\ref{sec:collapse}, using the inverse terms for $q_A$ and $e_A$.
+ The model corollary is proved using interpretations preserving the
+ specified operations and their composition with substitution. The formalization
+ also verifies the occurrence maps and finite-ordinal constructions of
+@@ -900,7 +901,7 @@
+ comparisons discussed in Appendix~\ref{app:cut-errata}.
+ 
+ Five declarations are registered in the Palomar Registry
+-\cite{palomar-2026-10-30-000014-v1}:
++\cite{palomar-2026-10-30-000014-v2}:
+ the two maximality proofs, the congruence dichotomy, nonzero variable
+ identities, and the absence of arrows from $\top$ to $\bot$.
+ Appendix~\ref{app:lean-statements} gives their statements in mathematical
+@@ -1104,7 +1105,7 @@
+ the substitution $p\mapsto\neg A$ instead gives
+ $\neg\neg A\wedge\bot\to\neg\neg A\vee\top$; the
+ double-negation square in Proposition~\ref{prop:all-contexts}
+-then gives the required equation for $A$.
++then gives the equation for $A$.
+ 
+ \section{Diagrams for three defining equations}
+ \label{app:structural-diagrams}
+@@ -1265,7 +1266,7 @@
+ \subsection{Reading a Lean declaration}\label{app:reading-lean}
+ 
+ The Lean identifiers below refer to the registered source archive
+-\cite{palomar-2026-10-30-000014-v1}.
++\cite{palomar-2026-10-30-000014-v2}.
+ Lean represents a mathematical set by a type and a proposition by
+ an expression of type \texttt{Prop}. A proof of a proposition is a
+ term having that proposition as its type. Thus
+@@ -1277,7 +1278,7 @@
+ \emph{Theorem Proving in Lean 4}, Chapters 2--3 and 5,
+ \url{https://lean-lang.org/theorem_proving_in_lean4/}.}
+ 
+-For example, the statement of \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarMaximality.lean\#L17}{\texttt{Palomar.maximality}},
++For example, the statement of \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PalomarMaximality.lean\#L17}{\texttt{Palomar.maximality}},
+ writing \texttt{Not} for the notation $\neg$, is
+ \begin{quote}
+ \begin{verbatim}
+@@ -1300,10 +1301,10 @@
+ the last colon is the conclusion.
+ 
+ Dot notation has two uses here. In
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarDefinitions.lean\#L13}{\texttt{Palomar.PrimitiveCongruence}}, it gives the namespace of a
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PalomarDefinitions.lean\#L14}{\texttt{Palomar.PrimitiveCongruence}}, it gives the namespace of a
+ definition. In \texttt{R.Rel}, it selects the relation belonging
+ to $R$. The expression \texttt{R.Closed} applies the defined
+-property \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarDefinitions.lean\#L28}{\texttt{PrimitiveCongruence.Closed}} to $R$.
++property \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PalomarDefinitions.lean\#L31}{\texttt{PrimitiveCongruence.Closed}} to $R$.
+ The assertion \texttt{R.Total} expands to
+ \begin{quote}
+ \begin{verbatim}
+@@ -1324,20 +1325,20 @@
+ In particular, \texttt{Term.comp f g} applies \texttt{f} first,
+ so it denotes $[g]\circ[f]$ on quotient arrows.
+ 
+-The proof of \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarMaximality.lean\#L27}{\texttt{Palomar.short\_maximality}} can be read as
++The proof of \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PalomarMaximality.lean\#L27}{\texttt{Palomar.short\_maximality}} can be read as
+ the following sequence of mathematical implications.
+ \begin{center}
+ \small
+ \begin{tabular}{>{\raggedright\arraybackslash}p{0.37\linewidth}>{\raggedright\arraybackslash}p{0.55\linewidth}}
+ \textit{Lean declaration} & \textit{Mathematical step}\\[3pt]
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PalomarCorrespondence.lean\#L121}{\texttt{Palomar.PrimitiveCongruence.\allowbreak{}raw\_distinct\_iff}}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PalomarCorrespondence.lean\#L121}{\texttt{Palomar.PrimitiveCongruence.\allowbreak{}raw\_distinct\_iff}}
+  & $\neg\mathcal E(f,g)$ means $[f]\ne[g]$.\\[5pt]
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/Isolation.lean\#L219}{\texttt{Isolation.\allowbreak{}normalized\_literal\_context}}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/Isolation.lean\#L219}{\texttt{Isolation.\allowbreak{}normalized\_literal\_context}}
+  & Lemma~\ref{lem:isolation} and compatibility with composition give a literal $\ell$ and $(K_\ell)$
+    modulo the induced congruence.\\[5pt]
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/Substitution.lean\#L90}{\texttt{ContextualCollapse.\allowbreak{}all\_contexts}}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/Substitution.lean\#L90}{\texttt{ContextualCollapse.\allowbreak{}all\_contexts}}
+  & Proposition~\ref{prop:all-contexts} gives $(K_A)$ for every formula $A$.\\[5pt]
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortProjection.lean\#L86}{\texttt{Presentation.ShortProof.\allowbreak{}total}}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortProjection.lean\#L86}{\texttt{Presentation.ShortProof.\allowbreak{}total}}
+  & Lemma~\ref{lem:collapse} identifies arbitrary parallel arrows by
+    the $q_A,e_A$ argument.
+ \end{tabular}
+@@ -1350,8 +1351,8 @@
+ The arguments \texttt{substitution P} and
+ \texttt{doubleNegation P} supply the arrow substitution and
+ double-negation maps used in Proposition~\ref{prop:all-contexts}.
+-Thus these parameters are the mathematical structures and
+-equations used at the corresponding steps.
++These parameters supply the structures and equations used in
++the four steps above.
+ 
+ \subsection{The five declarations}
+ 
+@@ -1494,22 +1495,22 @@
+ \]
+ gives idempotence, and the zero law gives $f\cup0=f$.
+ These derivations do not use faithfulness.\footnote{\raggedright Lean:
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L80}{\texttt{Reduced.\allowbreak{}union\_pre}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L85}{\texttt{Reduced.\allowbreak{}union\_post}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L90}{\texttt{Reduced.\allowbreak{}union\_comm}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L131}{\texttt{Reduced.\allowbreak{}union\_assoc}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L97}{\texttt{Reduced.\allowbreak{}union\_idem}}, and
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedUnion.lean\#L145}{\texttt{Reduced.\allowbreak{}union\_id\_zero}}.}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L80}{\texttt{Reduced.\allowbreak{}union\_pre}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L85}{\texttt{Reduced.\allowbreak{}union\_post}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L90}{\texttt{Reduced.\allowbreak{}union\_comm}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L131}{\texttt{Reduced.\allowbreak{}union\_assoc}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L97}{\texttt{Reduced.\allowbreak{}union\_idem}}, and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L145}{\texttt{Reduced.\allowbreak{}union\_id\_zero}}.}
+ 
+ The two canonical comparison arrows
+ \[
+  \begin{aligned}
+  c^\wedge_{X,U,V}
+- &=[1_X\wedge\iota_1^{U,V},1_X\wedge\iota_2^{U,V}]\\
+- &:(X\wedge U)\vee(X\wedge V)\longrightarrow X\wedge(U\vee V),\\
++ &=[1_X\wedge\iota_1^{U,V},1_X\wedge\iota_2^{U,V}]
++ :(X\wedge U)\vee(X\wedge V)\longrightarrow X\wedge(U\vee V),\\
+  c^\vee_{U,V,X}
+- &=\langle\pi_1^{U,V}\vee1_X,\pi_2^{U,V}\vee1_X\rangle\\
+- &:(U\wedge V)\vee X\longrightarrow(U\vee X)\wedge(V\vee X)
++ &=\langle\pi_1^{U,V}\vee1_X,\pi_2^{U,V}\vee1_X\rangle
++ :(U\wedge V)\vee X\longrightarrow(U\vee X)\wedge(V\vee X)
+  \end{aligned}
+ \]
+ have, respectively, a section $s_{X,U,V}$ and a retraction
+@@ -1523,9 +1524,9 @@
+ symmetry and dissociativity maps, diagonals and codiagonals.
+ Their two equations follow from the
+ product, coproduct, dissociativity and mix equations.\footnote{\raggedright Lean:
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenDistributiveEpi.lean\#L57}{\texttt{Reduced.Gentzen.DistributiveEpi.\allowbreak{}section\_comparison}}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenDistributiveEpi.lean\#L57}{\texttt{Reduced.Gentzen.DistributiveEpi.\allowbreak{}section\_comparison}}
+ and
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenDistributiveMono.lean\#L54}{\texttt{Reduced.Gentzen.DistributiveMono.\allowbreak{}comparison\_retraction}}.}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenDistributiveMono.lean\#L54}{\texttt{Reduced.Gentzen.DistributiveMono.\allowbreak{}comparison\_retraction}}.}
+ 
+ Iterating the first split comparison gives, for every formula $A$
+ of $\mathcal R(P)$, a disjunctive normal-form expansion $D_A$
+@@ -1543,8 +1544,8 @@
+ expansions use $c^\vee$, and the other connective combines
+ expansions by its bifunctor.
+ Only the displayed retraction equations are needed.\footnote{\raggedright Lean:
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenNormalExpansion.lean\#L45}{\texttt{Reduced.Gentzen.\allowbreak{}dnf\_expansion}} and
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenNormalExpansion.lean\#L62}{\texttt{Reduced.Gentzen.\allowbreak{}cnf\_expansion}}.}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenNormalExpansion.lean\#L45}{\texttt{Reduced.Gentzen.\allowbreak{}dnf\_expansion}} and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenNormalExpansion.lean\#L62}{\texttt{Reduced.Gentzen.\allowbreak{}cnf\_expansion}}.}
+ 
+ Consider a positive arrow from a conjunction $U$ of literals
+ and constants to a disjunction $V$ of literals and constants.
+@@ -1562,9 +1563,9 @@
+ exactly its paths. Idempotence and commutativity make repetitions
+ and their order irrelevant, so equal occurrence relations give
+ equal positive arrows at these endpoints.\footnote{\raggedright Lean:
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenMixNormalForm.lean\#L37}{\texttt{Reduced.Gentzen.G.\allowbreak{}mix\_normal\_form}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenPureNormalForms.lean\#L84}{\texttt{Reduced.Gentzen.HasPureNormalForm.\allowbreak{}faithful}}, and
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenPurePositiveCoherence.lean\#L14}{\texttt{Reduced.Gentzen.\allowbreak{}pure\_positive\_coherence}}.}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenMixNormalForm.lean\#L37}{\texttt{Reduced.Gentzen.G.\allowbreak{}mix\_normal\_form}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenPureNormalForms.lean\#L84}{\texttt{Reduced.Gentzen.HasPureNormalForm.\allowbreak{}faithful}}, and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenPurePositiveCoherence.lean\#L14}{\texttt{Reduced.Gentzen.\allowbreak{}pure\_positive\_coherence}}.}
+ The coproduct and product equations extend this assertion to
+ arrows from a disjunctive expansion to a conjunctive expansion.
+ 
+@@ -1578,8 +1579,8 @@
+ have equal relations and hence are equal. Precomposing with
+ $i_A$ and postcomposing with $r_B$ gives $f=g$.
+ This proves positive coherence at arbitrary endpoints.\footnote{\raggedright Lean:
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenPositiveCoherence.lean\#L14}{\texttt{Reduced.Gentzen.\allowbreak{}represented\_coherence}} and
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/GentzenPositiveCoherence.lean\#L31}{\texttt{Reduced.Gentzen.\allowbreak{}positive\_coherence}}.}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenPositiveCoherence.lean\#L14}{\texttt{Reduced.Gentzen.\allowbreak{}represented\_coherence}} and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/GentzenPositiveCoherence.lean\#L31}{\texttt{Reduced.Gentzen.\allowbreak{}positive\_coherence}}.}
+ 
+ For arbitrary terms $f,g:A\to B$ of $\mathcal R(P)$, atomic
+ factorization constructs formulas $A',B'$, arrows
+@@ -1598,17 +1599,17 @@
+ of $G[f]$ and $G[g]$ gives equality of the middle relations.
+ Positive coherence equates $[f_0]$ and $[g_0]$, and the
+ factorizations give $[f]=[g]$.\footnote{\raggedright Lean:
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/CommonAtomicFactorization.lean\#L51}{\texttt{Reduced.\allowbreak{}commonAtomicFactor}} and
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/CommonAtomicFactorization.lean\#L123}{\texttt{Reduced.\allowbreak{}faithful\_of\_positive\_coherence}}.}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/CommonAtomicFactorization.lean\#L51}{\texttt{Reduced.\allowbreak{}commonAtomicFactor}} and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/CommonAtomicFactorization.lean\#L123}{\texttt{Reduced.\allowbreak{}faithful\_of\_positive\_coherence}}.}
+ The normalization and recovery maps of Section~\ref{sec:occurrences}
+ then transfer faithfulness from $\mathcal R(P)$ to $\B(P)$.\footnote{\raggedright Lean:
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/ReducedCoherence.lean\#L17}{\texttt{Reduced.\allowbreak{}boolean\_coherence}} and
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationCoherence.lean\#L13}{\texttt{Presentation.\allowbreak{}coherence}}.}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedCoherence.lean\#L17}{\texttt{Reduced.\allowbreak{}boolean\_coherence}} and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationCoherence.lean\#L13}{\texttt{Presentation.\allowbreak{}coherence}}.}
+ 
+ \section{Inverses of \texorpdfstring{$q_A$ and $e_A$}{qA and eA}}
+ \label{app:explicit-inverses}
+ 
+-We construct inverses for the particular arrows in
++We construct inverses for the arrows in
+ Lemma~\ref{lem:structural-isos}. Throughout this appendix,
+ \[
+  \alpha^\star_{X,Y,Z}:(X\star Y)\star Z\longrightarrow
+@@ -1641,9 +1642,9 @@
+  q_A\circ\bar q_A=1_{A\vee\top}.
+ \]
+ Thus $\bar q_A=q_A^{-1}$.\footnote{\raggedright Lean:
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortQ.lean\#L17}{\texttt{Presentation.ShortProof.\allowbreak{}qInverseTerm}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortQ.lean\#L32}{\texttt{Presentation.ShortProof.\allowbreak{}q\_qInverse}}, and
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortQ.lean\#L46}{\texttt{Presentation.ShortProof.\allowbreak{}qInverse\_q}}.}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortQ.lean\#L17}{\texttt{Presentation.ShortProof.\allowbreak{}qInverseTerm}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortQ.lean\#L32}{\texttt{Presentation.ShortProof.\allowbreak{}q\_qInverse}}, and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortQ.lean\#L46}{\texttt{Presentation.ShortProof.\allowbreak{}qInverse\_q}}.}
+ 
+ \subsection{The inverse of \texorpdfstring{$e_A$}{eA}}
+ 
+@@ -1689,11 +1690,11 @@
+  e_A\circ\bar e_A=1_{A\wedge(A\vee\top)}.
+ \]
+ Thus $\bar e_A=e_A^{-1}$.\footnote{\raggedright Lean:
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\#L13}{\texttt{Presentation.ShortProof.\allowbreak{}sourceConjTerm}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\#L21}{\texttt{Presentation.ShortProof.\allowbreak{}sectionTerm}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\#L30}{\texttt{Presentation.ShortProof.\allowbreak{}eInverseTerm}},
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\#L44}{\texttt{Presentation.ShortProof.\allowbreak{}e\_eInverse}}, and
+-\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/2e771844077fd8cebfbe365230f13d4dd13a75b1/DosenPetric/PresentationShortE.lean\#L50}{\texttt{Presentation.ShortProof.\allowbreak{}eInverse\_e}}.}
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean\#L13}{\texttt{Presentation.ShortProof.\allowbreak{}sourceConjTerm}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean\#L21}{\texttt{Presentation.ShortProof.\allowbreak{}sectionTerm}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean\#L30}{\texttt{Presentation.ShortProof.\allowbreak{}eInverseTerm}},
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean\#L44}{\texttt{Presentation.ShortProof.\allowbreak{}e\_eInverse}}, and
++\href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/PresentationShortE.lean\#L50}{\texttt{Presentation.ShortProof.\allowbreak{}eInverse\_e}}.}
+ Both inverse constructions apply to every formula $A$, including
+ formulas with empty occurrence sets.
+ 
+@@ -1752,7 +1753,7 @@
+ \small
+ \setlength{\bibsep}{2pt}
+ \bibliographystyle{unsrtnat}
+-\bibliography{references_v18,palomar_v18}
++\bibliography{references_v19,palomar_v19}
+ \endgroup
+ \end{document}
+ 

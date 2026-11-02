@@ -1,53 +1,57 @@
-# arXiv preparation: manuscript v18
+# arXiv preparation: manuscript v19
 
-1 November 2026. Current source/PDF/package: v18, 23 pages. The preceding report
-is preserved byte for byte at [the v17 checkpoint](history/ARXIV_PREPARATION_V17_2026-11-01.md).
-All previous releases remain. No arXiv upload has occurred.
+1 November 2026. Current source/PDF/package: v19, 23 pages. The previous report
+is preserved at [the v18 checkpoint](history/ARXIV_PREPARATION_V18_2026-11-01.md).
+All prior releases remain. No arXiv upload has occurred.
 
 ## Current files
 
-- [PDF](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v18.pdf)
-- [TeX](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v18.tex)
-- [Four-file archive](../submission/arxiv-v18/Dosen-Petric-Maximality-v18-arxiv-source.tar.gz)
-- [Submission fields](../submission/arxiv-v18/submission-fields.json)
-- [Abstract](../submission/arxiv-v18/abstract.txt)
-- [Package instructions](../submission/arxiv-v18/README.md)
-- [Release report](MANUSCRIPT_V18_REPORT.md)
-- [Focused writing review](reviews/V18_WRITING_REVIEW_2026-11-01.md)
+- [PDF](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v19.pdf)
+- [TeX](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v19.tex)
+- [Four-file archive](../submission/arxiv-v19/Dosen-Petric-Maximality-v19-arxiv-source.tar.gz)
+- [Submission fields](../submission/arxiv-v19/submission-fields.json)
+- [Abstract](../submission/arxiv-v19/abstract.txt)
+- [Package instructions](../submission/arxiv-v19/README.md)
+- [Release report](MANUSCRIPT_V19_REPORT.md)
+- [Writing review](reviews/V19_WRITING_REVIEW_2026-11-01.md)
 
-The author requested a less abrupt abstract and consultation of
-Knuth–Larrabee–Roberts. V18 revises only that abstract, apart from version and
-bibliography suffixes. Its nine sentences state the context, precise result,
-significance, method, model consequence and formalization scope. The manuscript,
-abstract.txt and both abstract fields agree. All body text, five appendices,
-their main-text references, seven statement bodies, twelve numbered displays,
-thirteen diagrams, 34 labels, seventeen footnotes and 49 declaration links remain.
+V19 uses the exact author-supplied version-2 citation. The registered-source
+note, all 49 declaration links and fields agree on
+5dbee39bea09539bd130f729e82636419f71f920. Two shifted source lines were corrected.
+The qualifier review removes redundant adjectives or names the constructions.
+“Particular” is omitted from Appendix E's opening and the Section 5 pointer;
+the heading already names q_A and e_A. Each D.5 c-arrow formula/type fits on
+one line at the existing font size. The v18 abstract and all mathematics remain.
 
-The archive contains main.tex, main.bbl, references_v18.bib and palomar_v18.bib.
+The archive contains main.tex, main.bbl, references_v19.bib and palomar_v19.bib.
 It was independently extracted and compiled to matching 23-page layout text.
-All builds passed; final logs have no citation/reference, box or duplicate
-destination warnings. All rendered pages were inspected on contact sheets;
-p.1 was also viewed individually. The bibliography, disclosure, 125 previous
-release files and 857 frozen proof/input blobs remain. See
-[validation](../provenance/manuscript-v18-review-20261101/validation.json).
+All builds pass without final citation/reference, box or duplicate-destination
+warnings. All pages were inspected on contact sheets; pp.19, 20 and 23 were
+viewed individually. The seven statement bodies, twelve numbered displays,
+thirteen diagrams, 34 labels, seventeen footnotes, both proof routes, Appendix A
+and its main-text references remain. All 139 previous release files and 857
+frozen proof/input blobs are preserved. See
+[validation](../provenance/manuscript-v19-review-20261101/validation.json).
 
 ## Submission status and delivery
 
 Title: Maximality of the Došen–Petrić Boolean Category. Author: Florian Lengyel.
-Proposed primary category math.CT; cross-list math.LO. MSC 2020: Primary 03G30;
-Secondary 03F07, 18A32. Comments remain 23 pages and the registered proof URL.
-The supplied citation remains version 1 at
-2e771844077fd8cebfbe365230f13d4dd13a75b1; version 2 remains registered at
-5dbee39bea09539bd130f729e82636419f71f920, Lean 4.35.0. Successful Lean/kernel/
-Palomar checks and registration are reused. Private material remains ignored.
+Proposed primary math.CT; cross-list math.LO. MSC 2020: Primary 03G30;
+Secondary 03F07, 18A32. The abstract remains nine sentences and 171 words.
+Comments record 23 pages and the author's version-2 URL. The exact supplied
+BibTeX is [palomar_v19.bib](../manuscript/palomar_v19.bib).
 
-The author selects an arXiv-supported distribution license and checks the
-server preview in the submission account; no new license selection or upload
-is part of this revision.
+Palomar version 2 is already registered, Lean 4.35.0. Its
+[registration report](PALOMAR_V2_REGISTRATION_REPORT.md) describes the then-current
+v1-cited manuscript; the author's later citation instruction is implemented here.
+Both frozen sources remain. No successful proof/kernel/Palomar check or
+registration is repeated. Private material remains ignored.
+
+The author selects an arXiv-supported distribution license and checks the server
+preview in the submission account. No upload or new license selection has occurred.
 
 Reports, review, PDF and package are delivered from committed bytes to
-`/mnt/c/Users/fleng/Downloads/Dosen-Petric-Manuscript-v18-20261101/`.
-The [receipt](../provenance/manuscript-v18-review-20261101/delivery-receipt.json)
-records exact destinations and byte/SHA-256 verification. Differing copies
-are preserved. Main and its receipt commit are pushed and the remote ref
-verified before readiness is reported.
+`/mnt/c/Users/fleng/Downloads/Dosen-Petric-Manuscript-v19-20261101/`.
+The [receipt](../provenance/manuscript-v19-review-20261101/delivery-receipt.json)
+records exact paths and byte/SHA-256 verification. Differing copies are preserved.
+Main and the receipt commit are pushed and the remote ref checked before readiness.
