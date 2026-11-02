@@ -12,12 +12,14 @@ and its [registration report](docs/PALOMAR_REGISTRATION_REPORT.md) remain preser
 The earlier [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
 describes version 1.
 
-The arXiv package is ready in [submission/arxiv-v22](submission/arxiv-v22/README.md).
-V22 introduces the Lean formalization as a formalization of the proofs given
-in the paper and their dependencies. Only the abstract tail and version suffixes
-change; all body text and mathematical content remain. See the
-[v22 report](docs/MANUSCRIPT_V22_REPORT.md) and
-[writing review](docs/reviews/V22_WRITING_REVIEW_2026-11-02.md).
+The arXiv package is ready in [submission/arxiv-v23](submission/arxiv-v23/README.md).
+V23 implements the accepted review: the introduction follows the argument,
+literature comparisons appear at their points of use, and Appendix C explains
+the two rank corrections in the cut-elimination argument used for Boolean
+Coherence. Empty modifiers are removed and the Notation citation is pinned.
+See the [v23 report](docs/MANUSCRIPT_V23_REPORT.md),
+[implementation review](docs/reviews/V23_IMPLEMENTATION_REVIEW_2026-11-02.md), and
+[complete TeX diff](provenance/manuscript-v23-review-20261102/v22-to-v23.diff).
 
 V18 revises the abstract after consulting Knuth–Larrabee–Roberts. Its nine
 sentences introduce proof identifications, state maximality and its significance,
@@ -82,8 +84,8 @@ publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
-Current manuscript: [v22 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v22.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v22.tex), dated November 2, 2026, 23 pages. All v4–v21 releases remain preserved.
-The [v22 report](docs/MANUSCRIPT_V22_REPORT.md) records the abstract repair,
+Current manuscript: [v23 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v23.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v23.tex), dated November 2, 2026, 23 pages. All v4–v22 releases remain preserved.
+The [v23 report](docs/MANUSCRIPT_V23_REPORT.md) records the applied review,
 matching builds and preservation.
 Every manuscript revision increments its version; completed authorized main
 work is pushed before readiness is reported, as recorded in AGENTS.md.
@@ -759,3 +761,4 @@ The latest registered source is `5dbee39bea09539bd130f729e82636419f71f920`;
 version 1 retains `2e771844077fd8cebfbe365230f13d4dd13a75b1`. Official full preflight,
 service verification, the author's separate review-specific consent and
 version-2 registration are complete. ArXiv submission remains a separate step.
+

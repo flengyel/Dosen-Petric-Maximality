@@ -1,16 +1,17 @@
 # Manuscript v7: statements and formal scope
 
-Current manuscript: v22, dated November 2, 2026, 23 pages. The abstract now
-introduces the Lean formalization as a formalization of the paper's proofs and
-their dependencies, using the author's accepted sentence. The paper proves
-maximality and the model corollary. The following sentence identifies Boolean
-Coherence and the occurrence/ordinal correspondence within the formalization.
-The earlier abstract opening, explicit conjecture, body, mathematics, both
-proof routes, Appendix A, bibliography and 49 source links remain unchanged.
-See the [v22 report](MANUSCRIPT_V22_REPORT.md) and
-[writing review](reviews/V22_WRITING_REVIEW_2026-11-02.md).
-The completed formalization and frozen sources remain; no successful proof/
-kernel/Palomar checks or registration are repeated. No arXiv upload has occurred.
+Current manuscript: v23, dated November 2, 2026, 23 pages. It implements the
+accepted correctness, citation and writing review. The introduction follows
+the proof and moves detailed literature comparisons to their points of use.
+Appendix C identifies the cut-elimination argument used in Boolean Coherence
+and gives both strict rank decreases. Arrow terms replaces raw terms; the
+empty-union and equational-derivation sentences are made precise.
+All seven numbered statements, both maximality proofs, Appendix A, displayed
+equations, diagrams, labels and 49 declaration destinations are preserved.
+The exact Palomar v2 citation and registered source remain. See the
+[v23 report](MANUSCRIPT_V23_REPORT.md) and
+[implementation review](reviews/V23_IMPLEMENTATION_REVIEW_2026-11-02.md).
+No Lean rebuild, kernel replay, new registration or arXiv upload was performed.
 
 ## Current complete full-paper formalization (29 October 2026)
 
@@ -1022,3 +1023,4 @@ complete rewrite dispatch, macro/tied-site ranks and broader elimination/coheren
 | Cut-free logical reconstruction | opposite_conjL_eliminated/opposite_disjR_eliminated | Actual cut-free atomized witnesses with exact equality from the child witness. |
 | Same-degree recursive call | opposite_conjL_descent/opposite_disjR_descent and both rank_step lemmas | Complete inherited original-child cleanliness and strict selected-rank descent, before rebuilding. |
 | Prefix/suffix logical comparison | prefixSide_logical, prefixSide_join/split, suffixLogicalSide_join/split | Actual association and unit comparisons; product-coordinate pentagon is proved and instantiated. |
+

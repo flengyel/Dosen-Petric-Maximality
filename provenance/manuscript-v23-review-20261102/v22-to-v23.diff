@@ -1,0 +1,325 @@
+--- manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v22.tex
++++ manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v23.tex
+@@ -6,7 +6,7 @@
+ \usepackage{array}
+ \usepackage[numbers]{natbib}
+ \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+-\hypersetup{pdftitle={Maximality of the Dosen--Petric Boolean Category (v22)},pdfauthor={Florian Lengyel}}
++\hypersetup{pdftitle={Maximality of the Dosen--Petric Boolean Category (v23)},pdfauthor={Florian Lengyel}}
+ \renewcommand{\theHequation}{\thesection.\arabic{equation}}
+ \newtheorem{theorem}{Theorem}[section]
+ \newtheorem{lemma}[theorem]{Lemma}
+@@ -18,7 +18,7 @@
+ \newcommand{\FormulaSet}{\operatorname{Form}}
+ \title{Maximality of the Do\v{s}en--Petri\'c Boolean Category}
+ \author{Florian Lengyel\thanks{Email: \href{mailto:flengyel@gradcenter.cuny.edu}{\texttt{flengyel@gradcenter.cuny.edu}}}}
+-\date{November 2, 2026\quad(v22)}
++\date{November 2, 2026\quad(v23)}
+ \begin{document}
+ \maketitle
+ 
+@@ -32,7 +32,7 @@
+ The proof uses Boolean Coherence to select a pair of variable
+ occurrences on which the two arrows differ. Composition with arrows
+ selecting these occurrences, uniform substitution and two
+-isomorphisms yield equality of the product projections. We also
++isomorphisms yield equality of the product projections. We
+ prove that any zero-identity Boolean category satisfying such an
+ additional equation under every interpretation of the variables is
+ a preorder. We also give a Lean formalization of these proofs and
+@@ -51,87 +51,54 @@
+ 
+ \section{Introduction}
+ 
+-We consider the freely generated zero-identity Boolean category of
+-Do\v{s}en and Petri\'c over a nonempty set of propositional variables.
+-We prove that adding any equation between parallel arrows that does
++We prove that the freely generated zero-identity Boolean category of
++Do\v{s}en and Petri\'c over a nonempty set of propositional variables
++is maximal. Adding any equation between parallel arrows that does
+ not follow from its defining equations, and closing under the arrow
+ operations and uniform formula substitution, collapses the category
+-to a preorder. This property is called maximality. Do\v{s}en and
+-Petri\'c conjecture that the category is not maximal
+-\cite[\S14.2, p.~322]{DP}. The category before adjoining the
+-equation is not a preorder: for any propositional variable $p$, its
+-two projections $p\wedge p\to p$ are distinct.
+-
+-By Boolean Coherence, distinct parallel arrows have different
+-relations between occurrences of propositional variables. We select
+-a pair belonging to one relation and not the other. Precomposition
+-and postcomposition isolate this pair and give the equation used in
+-Do\v{s}en and Petri\'c's relative-maximality argument
+-\cite[\S9.7, pp.~215--216]{DP}. Two isomorphisms listed in
+-\cite[\S12.5, p.~294]{DP} then give equality of the product projections.
+-The proof of \cite[Lemma~7]{DPIsomorphic} also supplies these
+-isomorphisms.
+-
+-For cartesian categories, Do\v{s}en and Petri\'c prove maximality by
+-using coherence, substitution and composition to derive equality of
+-the product projections \cite[\S5]{DPCartesian}.
+-For cartesian closed categories, they obtain the same conclusion
+-from a typed B\"ohm theorem \cite[\S11]{DPCCC}.
+-The latter result does not apply to $\B$: the exponential
+-$p\Rightarrow p$ does not exist, as shown in
+-Section~\ref{sec:occurrences}. Sections~\ref{sec:isolation}
+-and~\ref{sec:collapse} give the reduction to equal projections in $\B$.
+-
+-Do\v{s}en and Petri\'c prove maximality for lattice categories
+-and relative maximality for dicartesian categories
+-\cite[\S\S8--10]{DPBicartesian}, without assuming distribution.
+-Their book proves maximality for zero-identity distributive lattice
+-categories without the truth constants, and relative maximality
+-when both constants are present \cite[\S12.5, p.~292]{DP}.
+-For formulas $A,B$ containing no negation, with $A\to B$ a
+-tautology, \cite[Lemma~6]{DPIsomorphic} constructs an arrow
+-$A\to B$ whose occurrence relation consists of the edge between
+-any prescribed occurrences of the same variable in $A$ and $B$.
+-In \cite[\S16]{DPSplit}, they isolate a pair belonging to one relation
+-and not the other to prove maximality of the presentations of split
+-preorders, split equivalence relations and binary relations.
+-
+-For multiplicative linear logic without constants, Do\v{s}en and
+-Petri\'c prove coherence for proof-net categories, with and without
+-mix, with respect to Brauerian split equivalences \cite{DPPN}.
+-
+-Other definitions of Boolean category do not require conjunction and
+-disjunction to be categorical products and coproducts. Lamarche and Stra{\ss}burger
+-construct free categories from classical proof nets for several
+-systems of equations on the logical operations \cite[Theorem~3.5.4]{LSFree}.
+-Stra{\ss}burger studies equations on monoid and comonoid structures
+-in $*$-autonomous categories \cite{Strassburger}.
+-F\"uhrmann and Pym interpret cut reduction by inequalities between
+-arrows. An inequality belongs to a net theory if and only if it
+-holds in every interpretation of that theory in their classical
+-categories \cite[Theorems~6.4--6.5]{FP}.
+-The negation equations differ from those used here.
+-With their monoidal unit isomorphisms, the composite in
+-\eqref{eq:zero-identity} equals $1_A$ by their negation triangle
+-\cite[(11)]{FP}; in Do\v{s}en and Petri\'c's category it is $0_A$.
+-
+-We use the occurrence coordinates of \cite[\S9]{Notation}: occurrences
+-in a compound formula form tagged disjoint unions, and substitution
+-replaces each occurrence by its own block of occurrences.
+-Section~\ref{sec:occurrences} describes these blocks, and
+-Appendix~\ref{app:substitution} gives the commutative diagrams relating
+-them to Do\v{s}en and Petri\'c's ordinal substitution operation.
+-Section~\ref{sec:formalization} states the Lean theorems and their
+-hypotheses.
+-Appendix~\ref{app:reading-lean} explains the declarations and proof steps,
+-and Appendix~\ref{app:explicit-inverses} constructs the inverses used in
+-Section~\ref{sec:collapse}.
+-Appendix~\ref{app:cut-errata} records two typographical corrections to the
+-cut-elimination proof in \cite{DP}.
+-References to \cite{DP} use the printed
+-pagination of its September 2007 revised version.
+-Lean declaration names in footnotes omit the namespace prefix
+-\texttt{DosenPetric.}
++to a preorder. This disproves Do\v{s}en and Petri\'c's conjecture that the category
++is not maximal \cite[\S14.2, p.~322]{DP}. Before adjoining the equation, the
++two projections $p\wedge p\to p$ are distinct for every
++propositional variable $p$.
++
++The proof reduces an added equation to equality of the product
++projections, as in the maximality theorem for cartesian categories
++\cite[\S5]{DPCartesian}. Boolean Coherence supplies a pair of
++variable occurrences belonging to one arrow's relation and not the
++other. Precomposition and postcomposition isolate this pair and
++give the equation of \cite[\S9.7, pp.~215--216]{DP}.
++Uniform substitution and the double-negation isomorphism then give
++this equation for every formula.
++The two isomorphisms listed in \cite[\S12.5, p.~294]{DP}
++give equality of the product projections. Sections~\ref{sec:isolation}
++and~\ref{sec:collapse} present this proof; Section~\ref{sec:formalization}
++gives a second proof using mix. The proof of
++\cite[Lemma~7]{DPIsomorphic} also supplies the two isomorphisms.
++
++Other notions of Boolean category need not make conjunction and
++disjunction categorical products and coproducts. Free categories constructed from classical proof nets
++are studied in \cite[Theorem~3.5.4]{LSFree}, equations on monoid
++and comonoid structures in $*$-autonomous categories in
++\cite{Strassburger}, and inequalities interpreting cut reduction
++in \cite{FP}. Section~\ref{sec:category} compares the negation
++equation of \cite{FP} with the zero-identity equation used here.
++
++We use the occurrence coordinates of \cite[\S9]{Notation}:
++occurrences form tagged disjoint unions, and substitution replaces
++each occurrence by a block. Section~\ref{sec:occurrences} defines
++these coordinates; Appendix~\ref{app:substitution} proves their
++correspondence with the finite-ordinal substitution formula of
++Do\v{s}en and Petri\'c. Section~\ref{sec:formalization} and
++Appendix~\ref{app:lean-statements} describe the Lean formalization,
++including a guide to its declarations and proof steps.
++Appendix~\ref{app:explicit-inverses} constructs the two inverses
++used in the first maximality proof, and
++Appendix~\ref{app:cut-errata} corrects two typographical errors
++in the cut-elimination argument used in Do\v{s}en and Petri\'c's
++proof of Boolean Coherence \cite{DP}.
++References to \cite{DP} use the printed pagination of its
++September 2007 revised version. Lean declaration names in footnotes
++omit the namespace prefix \texttt{DosenPetric.}
+ 
+ \section{The Boolean proof category}\label{sec:category}
+ 
+@@ -217,6 +184,15 @@
+ $h\circ0_{A,C}=0_{A,D}$ for $h:C\to D$, and
+ $0_{A,C}\circ k=0_{X,C}$ for $k:X\to A$.
+ 
++F\"uhrmann and Pym interpret cut reduction by inequalities between
++arrows. An inequality belongs to a net theory if and only if it
++holds in every interpretation of that theory in their classical
++categories \cite[Theorems~6.4--6.5]{FP}.
++Their negation triangle makes the composite in
++\eqref{eq:zero-identity}, with the corresponding monoidal unit
++isomorphisms, equal to $1_A$ \cite[(11)]{FP}.
++Here that composite is $0_A$.
++
+ Two arrows are \emph{parallel} when they have the same source and
+ target. A \emph{proof congruence} on $\B$ is an equivalence relation
+ on each hom-set preserved by composition and every arrow operation
+@@ -335,6 +311,10 @@
+ whereas $1_p\ne0_p$ for $p\in P$. An exponential $p\Rightarrow p$
+ would give a bijection $\B(p,p)\cong\B(\top,p\Rightarrow p)$,
+ a contradiction.
++
++The maximality theorem for cartesian closed categories
++\cite[\S11]{DPCCC} uses a typed B\"ohm theorem.
++The absence of $p\Rightarrow p$ prevents its application here.
+ 
+ A \emph{literal} is $p$ or $\neg p$ for $p\in P$.
+ A formula is in \emph{negation normal form} when negation occurs only
+@@ -515,6 +495,17 @@
+ arrow. Thus \eqref{eq:context} is the equation used in
+ \cite[\S9.7, pp.~215--216]{DP}.
+ 
++For negation-free formulas $A,B$ such that $A\to B$ is a
++tautology, \cite[Lemma~6]{DPIsomorphic} constructs an arrow whose
++occurrence relation consists of the edge between any prescribed
++occurrences of the same variable in $A$ and $B$. The following
++lemma isolates an edge of either of two given arrows; normalization
++allows the formulas to contain negation.
++
++Selecting a pair on which relations differ also occurs in the
++maximality proofs for presentations of split preorders, split
++equivalence relations and binary relations \cite[\S16]{DPSplit}.
++
+ \begin{lemma}[Isolation of an occurrence]\label{lem:isolation}
+ For distinct parallel arrows $f,g:A\to C$ in $\B$, there are a
+ literal $\ell$ and arrows
+@@ -759,7 +750,14 @@
+ $\langle a,b\rangle:Y\to X\wedge X$ with the equal projections gives $a=b$.
+ \end{proof}
+ 
+-\section{Lean formalization}\label{sec:formalization}
++For zero-identity distributive lattice categories,
++\cite[\S12.5, p.~292]{DP} proves maximality without the truth
++constants and relative maximality when both constants are present.
++For lattice and dicartesian categories without an assumption of
++distribution, the maximality and relative-maximality results are
++proved in \cite[\S\S8--10]{DPBicartesian}.
++
++\section{A second proof and the Lean formalization}\label{sec:formalization}
+ 
+ The inverse terms in Appendix~\ref{app:explicit-inverses} and the
+ coherence argument in Appendix~\ref{app:coherence-proof} are taken
+@@ -879,8 +877,7 @@
+  \quad\Longleftrightarrow\quad Gf\subseteq Gg.
+ \]
+ Finite unions are independent of the order and repeated
+-summands. The empty union is the witnessed zero and is independent
+-of its witness.\footnote{\raggedright The Lean laws are
++summands. On each nonempty hom-set, the empty union is its zero arrow.\footnote{\raggedright The Lean laws are
+ \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L131}{\texttt{Reduced.\allowbreak{}union\_assoc}},
+ \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L90}{\texttt{Reduced.\allowbreak{}union\_comm}},
+ \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L97}{\texttt{Reduced.\allowbreak{}union\_idem}},
+@@ -1166,28 +1163,44 @@
+ path is $0_C\circ g:A\to C$. The arrows $f$ and $g$ need not be equal.
+ 
+ \clearpage
+-\section{Two corrections to the cut-elimination proof}\label{app:cut-errata}
+-
+-The cut-elimination proof in \cite[\S11.2]{DP} contains two
+-typographical errors in its rank comparisons. We use the notation of
+-that proof: $r$ is the rank of the cut being reduced and $r'$ is the
+-rank of a recursive subcut. The left and right ranks are positive;
+-their sum is the cut rank \cite[p.~249]{DP}.
++\section{Corrections to the cut-elimination argument used in Boolean Coherence}
++\label{app:cut-errata}
++
++Do\v{s}en and Petri\'c's proof of Boolean Coherence
++\cite[\S14.2]{DP} uses the cut-elimination theorem for distributive
++lattice categories proved in \cite[\S11.2]{DP}.
++Our maximality proof uses Boolean Coherence as
++Theorem~\ref{thm:coherence}.
++We correct two typographical errors in the rank comparisons of
++that cut-elimination argument. The displayed cut reductions are unchanged.
++
++Write $L,R$ for the left and right ranks of a cut and $r=L+R$
++for its total rank. Each one-sided rank counts the nodes of the
++corresponding cut-formula cluster, so $L,R\geq1$.
++The induction orders $(d,r)$ lexicographically, where $d$ is the
++degree of the cut formula \cite[pp.~249,253]{DP}.
++In the following cases, the cut formula is unchanged.
+ 
+ \paragraph{Page 260, case $(w\,\gamma\,3)$.}
+-In the sentence immediately following the displayed reduction,
+-the inequality $r<r'$ should read $r'<r$.
+-The recursive cuts have the same cut formula and smaller rank:
+-the corresponding one-sided ranks decrease on passing to the
+-indicated premises, while the other one-sided rank is unchanged.
++The inequality $r<r'$ following the displayed reduction, where $r'$
++is the rank of a recursive cut, should read $r'<r$.
++The two recursive cuts retain the left premise $h$.
++Their right cut-formula clusters lie properly inside the original
++right cluster. If their ranks are $R_f,R_g$, then
++$R_f<R$ and $R_g<R$. Thus both recursive cuts have smaller total
++rank: $L+R_f<r$ and $L+R_g<r$.
+ 
+ \paragraph{Page 262, case $(w\,\vee\,1)$.}
+-In the continuation of this case, the phrase ``whose rank is~1''
+-should read ``whose right rank is~1'', as in the analogous
+-argument on p.~261. The selected formula in the right premise
+-is newly introduced by the displayed $\vee L$ rule, so its right
+-rank is~1. Its total rank is the unchanged left rank plus~1,
+-and is therefore at least~2.
++The phrase ``whose rank is~1'' should read ``whose right rank
++is~1'', as in the analogous case on p.~261.
++After eliminating the first recursive cut, the selected disjunction
++in the new right premise is introduced by $\vee L$, so its
++cluster has one node. The left premise is still $h$.
++The new cut therefore has total rank $L+1$, not~1.
++The original right cluster passes through the contraction and has
++$R>1$. Hence $2\leq L+1<L+R=r$, which justifies the second
++application of the induction hypothesis.
++
+ 
+ \section{The registered Lean theorems}\label{app:lean-statements}
+ 
+@@ -1280,7 +1293,7 @@
+ and target $B$, whereas \texttt{h : Derives f g} declares a proof
+ that the two terms are related by the presentation's equations.
+ The notation \texttt{Hom A B} denotes the quotient arrows, rather
+-than the raw terms.\footnote{\raggedright For the general syntax, see
++than the arrow terms.\footnote{\raggedright For the general syntax, see
+ \emph{Theorem Proving in Lean 4}, Chapters 2--3 and 5,
+ \url{https://lean-lang.org/theorem_proving_in_lean4/}.}
+ 
+@@ -1500,7 +1513,8 @@
+ \[
+  [1_A,1_A]\circ m_{A,A}\circ\Delta_A=1_A
+ \]
+-gives idempotence, and the zero law gives $f\cup0=f$.
++gives idempotence, and the zero law and the product, coproduct
++and dissociativity equations give $f\cup0=f$.
+ These derivations do not use faithfulness.\footnote{\raggedright Lean:
+ \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L80}{\texttt{Reduced.\allowbreak{}union\_pre}},
+ \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/5dbee39bea09539bd130f729e82636419f71f920/DosenPetric/ReducedUnion.lean\#L85}{\texttt{Reduced.\allowbreak{}union\_post}},
+@@ -1760,7 +1774,7 @@
+ \small
+ \setlength{\bibsep}{2pt}
+ \bibliographystyle{unsrtnat}
+-\bibliography{references_v22,palomar_v22}
++\bibliography{references_v23,palomar_v23}
+ \endgroup
+ \end{document}
+ 

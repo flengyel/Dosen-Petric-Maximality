@@ -1,0 +1,86 @@
+{
+  "base_commit": "5b515365f5d5164ba65c91ab3571fd2f475a0b66",
+  "manuscript_version": 23,
+  "source_lines": 1781,
+  "pages": 23,
+  "preservation": {
+    "statements": {
+      "count": 7,
+      "byte_identical": true
+    },
+    "proofs": {
+      "count": 6,
+      "byte_identical": true
+    },
+    "numbered_equations": {
+      "count": 12,
+      "byte_identical": true
+    },
+    "displayed_formulas": {
+      "count": 77,
+      "byte_identical": true
+    },
+    "diagrams": {
+      "count": 13,
+      "byte_identical": true
+    },
+    "labels": {
+      "count": 34,
+      "byte_identical": true
+    },
+    "lean_links": {
+      "count": 56,
+      "byte_identical": true
+    }
+  },
+  "palomar_bib_identical": true,
+  "source_and_archive_text_and_coordinates_identical": true,
+  "source_and_archive_bibliography_identical": true,
+  "distinct_linked_declarations": 49,
+  "build_exits": [
+    {
+      "step": "latex1",
+      "exit": 0
+    },
+    {
+      "step": "bibtex",
+      "exit": 0
+    },
+    {
+      "step": "latex2",
+      "exit": 0
+    },
+    {
+      "step": "latex3",
+      "exit": 0
+    }
+  ],
+  "archive_build_exits": [
+    {
+      "step": "latex1",
+      "exit": 0
+    },
+    {
+      "step": "bibtex",
+      "exit": 0
+    },
+    {
+      "step": "latex2",
+      "exit": 0
+    },
+    {
+      "step": "latex3",
+      "exit": 0
+    }
+  ],
+  "final_warnings": [
+    "Underfull \\hbox (badness 2556) in paragraph at lines 61--66"
+  ],
+  "warning_assessment": "One underfull bibliography paragraph from pinned Notation URL; visually within margins on p.23. No undefined citations or references, overfull boxes or duplicate destinations.",
+  "visual_review": "All pages 1–23 inspected on six contact sheets; pages 15,22,23 also individually.",
+  "lean_build_or_kernel_replay": false,
+  "arxiv_uploaded": false,
+  "new_palomar_registration": false,
+  "windows_downloads_delivery": false,
+  "windows_delivery_reason": "The author Windows/WSL filesystem is unavailable in this environment."
+}

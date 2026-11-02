@@ -1,0 +1,401 @@
+{
+  "manuscript_commit": "5b515365f5d5164ba65c91ab3571fd2f475a0b66",
+  "registered_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+  "total_link_occurrences": 56,
+  "distinct_declarations": 49,
+  "distinct_linked_modules": 29,
+  "targets": [
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationSignedLabels.lean",
+      "line": 73,
+      "blob_sha": "0d5e6592130d7080d06044f801905aba5f3a7092",
+      "target_line": "theorem occurrence_signedLabel {A B : Formula P} (f : Hom A B)",
+      "declaration": "occurrence_signedLabel"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedDualRelations.lean",
+      "line": 20,
+      "blob_sha": "f7e4c1ceb02488925f48e687c845f35052b9790d",
+      "target_line": "theorem dual_relation {A B : NormalForm P} (f : Term P A B)",
+      "declaration": "dual_relation"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationNegationOccurrence.lean",
+      "line": 25,
+      "blob_sha": "70dcf5464d17e2f486241bdeb581eb715ecd6077",
+      "target_line": "theorem occurrence_negate {A B : Formula P} (f : Hom A B) (x : A.Occ) (y : B.Occ) :",
+      "declaration": "occurrence_negate"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationSubstitutionRelation.lean",
+      "line": 61,
+      "blob_sha": "020cd5b25ac3ae8feda2ee2d1325c379da1bc3ae",
+      "target_line": "theorem occurrence_substitute_expanded (σ : P → Formula R) {A B : Formula P} (f : Hom A B)",
+      "declaration": "occurrence_substitute_expanded"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/SubstitutionFiberRelations.lean",
+      "line": 48,
+      "blob_sha": "269f274b85b4415a52a88cd3461858d9d5dab26d",
+      "target_line": "theorem lift_composition {X : Type v} {Y : Type v'} {Z : Type v''}",
+      "declaration": "lift_composition"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/FormulaSubstitutionLaws.lean",
+      "line": 11,
+      "blob_sha": "6b3a30dadb9ca05b1006c85c1e837d899a7ca03f",
+      "target_line": "theorem subst_identity (A : Formula P) : A.subst Formula.var = A := by",
+      "declaration": "subst_identity"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/FormulaSubstitutionLaws.lean",
+      "line": 20,
+      "blob_sha": "6b3a30dadb9ca05b1006c85c1e837d899a7ca03f",
+      "target_line": "theorem subst_composition (σ : P → Formula R) (τ : R → Formula T) (A : Formula P) :",
+      "declaration": "subst_composition"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationSubstitutionActionQuotient.lean",
+      "line": 39,
+      "blob_sha": "b83efb2f17ea1058b9007c6773b237de9515ae4b",
+      "target_line": "theorem substitute_identity {A B : Formula P} (f : Hom A B) :",
+      "declaration": "substitute_identity"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationSubstitutionActionQuotient.lean",
+      "line": 44,
+      "blob_sha": "b83efb2f17ea1058b9007c6773b237de9515ae4b",
+      "target_line": "theorem substitute_composition (σ : P → Formula R) (τ : R → Formula T)",
+      "declaration": "substitute_composition"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationSubstitutionActionQuotient.lean",
+      "line": 57,
+      "blob_sha": "b83efb2f17ea1058b9007c6773b237de9515ae4b",
+      "target_line": "theorem substitute_ext (σ τ : P → Formula R) (h : ∀ p, σ p = τ p)",
+      "declaration": "substitute_ext"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/Substitution.lean",
+      "line": 74,
+      "blob_sha": "904d8fa8f6b5fa623f6289121ea77c23ca833f2c",
+      "target_line": "theorem context_retract {A B : Formula P} (m : C.Hom A B) (n : C.Hom B A)",
+      "declaration": "context_retract"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortQ.lean",
+      "line": 17,
+      "blob_sha": "b94f545567e6e088b37024b7120b156bfeee0620",
+      "target_line": "def qInverseTerm (A : Formula P) : Term P (.disj A .top) (.disj (.conj A .bot) .top) :=",
+      "declaration": "qInverseTerm"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortE.lean",
+      "line": 30,
+      "blob_sha": "4bf0e6a6b0f0839ac18308e4d5ead04d7805ac62",
+      "target_line": "def eInverseTerm (A : Formula P) : Term P (.conj A (.disj A .top)) (.conj A A) :=",
+      "declaration": "eInverseTerm"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedUnion.lean",
+      "line": 131,
+      "blob_sha": "544ce8ec70975a0278b32eda958a34a2d262f8e5",
+      "target_line": "theorem union_assoc {A B : NormalForm P} (f g h : Hom A B) :",
+      "declaration": "union_assoc"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedUnion.lean",
+      "line": 90,
+      "blob_sha": "544ce8ec70975a0278b32eda958a34a2d262f8e5",
+      "target_line": "theorem union_comm {A B : NormalForm P} (f g : Hom A B) : union f g = union g f := by",
+      "declaration": "union_comm"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedUnion.lean",
+      "line": 97,
+      "blob_sha": "544ce8ec70975a0278b32eda958a34a2d262f8e5",
+      "target_line": "theorem union_idem {A B : NormalForm P} (f : Hom A B) : union f f = f := by",
+      "declaration": "union_idem"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedUnion.lean",
+      "line": 80,
+      "blob_sha": "544ce8ec70975a0278b32eda958a34a2d262f8e5",
+      "target_line": "theorem union_pre {X A B : NormalForm P} (h : Hom X A) (f g : Hom A B) :",
+      "declaration": "union_pre"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedUnion.lean",
+      "line": 85,
+      "blob_sha": "544ce8ec70975a0278b32eda958a34a2d262f8e5",
+      "target_line": "theorem union_post {A B C : NormalForm P} (f g : Hom A B) (h : Hom B C) :",
+      "declaration": "union_post"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedFiniteUnion.lean",
+      "line": 57,
+      "blob_sha": "553e184226df1c3695a2ee7cbadf2eb1f320090e",
+      "target_line": "theorem eq_of_members (w v : Hom A B) (fs gs : List (Hom A B))",
+      "declaration": "eq_of_members"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedQuotientReduction.lean",
+      "line": 21,
+      "blob_sha": "dc2a463a163bad7934e2ee61b89ca1f54d3456d5",
+      "target_line": "def reduceHom {A B : Formula P} (f : Presentation.Hom A B) : Hom (normal A) (normal B) :=",
+      "declaration": "reduceHom"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedRecovery.lean",
+      "line": 26,
+      "blob_sha": "c45ce010d7fec90a214eacd41847de579a5992e1",
+      "target_line": "def recoverHom {A B : Formula P} (f : Hom (normal A) (normal B)) : Presentation.Hom A B :=",
+      "declaration": "recoverHom"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PalomarMaximality.lean",
+      "line": 17,
+      "blob_sha": "ca39178a1199223c9ed8dad488e6e81f11cf6def",
+      "target_line": "theorem maximality [Nonempty P] (R : PrimitiveCongruence P) (closed : R.Closed)",
+      "declaration": "maximality"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PalomarDefinitions.lean",
+      "line": 14,
+      "blob_sha": "991c5501c72e5d5bd4f70b6964ddaec12c01cd80",
+      "target_line": "structure PrimitiveCongruence (P : Type u) where",
+      "declaration": "PrimitiveCongruence"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PalomarDefinitions.lean",
+      "line": 31,
+      "blob_sha": "991c5501c72e5d5bd4f70b6964ddaec12c01cd80",
+      "target_line": "def Closed : Prop := ∀ (σ : P → Formula P) {A B} {f g : Term P A B},",
+      "declaration": "Closed"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PalomarMaximality.lean",
+      "line": 27,
+      "blob_sha": "ca39178a1199223c9ed8dad488e6e81f11cf6def",
+      "target_line": "theorem short_maximality [Nonempty P] (R : PrimitiveCongruence P) (closed : R.Closed)",
+      "declaration": "short_maximality"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PalomarCorrespondence.lean",
+      "line": 121,
+      "blob_sha": "b02c7e86f8995cad1c5bfa16e61ac2b25e621036",
+      "target_line": "theorem raw_distinct_iff {A B : Formula P} (f g : Term P A B) :",
+      "declaration": "raw_distinct_iff"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/Isolation.lean",
+      "line": 219,
+      "blob_sha": "357a5a84de9dc364c1a09da0e337bafb66712688",
+      "target_line": "theorem normalized_literal_context (N : Normalization C) (labels : SignedLabelPreservation I)",
+      "declaration": "normalized_literal_context"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/Substitution.lean",
+      "line": 90,
+      "blob_sha": "904d8fa8f6b5fa623f6289121ea77c23ca833f2c",
+      "target_line": "theorem all_contexts (U : Substitution S Z) (D : DoubleNegation C) (closed : U.Closed Q)",
+      "declaration": "all_contexts"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortProjection.lean",
+      "line": 86,
+      "blob_sha": "873a6a41bf6a964df3929c84e1caecba67c11b3a",
+      "target_line": "theorem total : Q.Total := by",
+      "declaration": "total"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedUnion.lean",
+      "line": 145,
+      "blob_sha": "544ce8ec70975a0278b32eda958a34a2d262f8e5",
+      "target_line": "theorem union_id_zero (A : NormalForm P) : union (id A) (zero A) = id A := by",
+      "declaration": "union_id_zero"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenDistributiveEpi.lean",
+      "line": 57,
+      "blob_sha": "ac534a51335fa2850b871090e1922ccfe7384e0e",
+      "target_line": "theorem section_comparison (X A B : NormalForm P) :",
+      "declaration": "section_comparison"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenDistributiveMono.lean",
+      "line": 54,
+      "blob_sha": "e65a2aa7051a8f2348b274c326219a48ce689aa0",
+      "target_line": "theorem comparison_retraction (A B R : NormalForm P) :",
+      "declaration": "comparison_retraction"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenNormalExpansion.lean",
+      "line": 45,
+      "blob_sha": "63f121a24077355f7e86e5bfe3966971a4a77d3f",
+      "target_line": "theorem dnf_expansion (A : NormalForm P) :",
+      "declaration": "dnf_expansion"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenNormalExpansion.lean",
+      "line": 62,
+      "blob_sha": "63f121a24077355f7e86e5bfe3966971a4a77d3f",
+      "target_line": "theorem cnf_expansion (A : NormalForm P) :",
+      "declaration": "cnf_expansion"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenMixNormalForm.lean",
+      "line": 37,
+      "blob_sha": "449f3a6de883e1ea443169dd785bdf3b021b4406",
+      "target_line": "theorem mix_normal_form {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (hg : g.MixOnly) :",
+      "declaration": "mix_normal_form"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenPureNormalForms.lean",
+      "line": 84,
+      "blob_sha": "e64a90aa405f2829843700eef795238fe9166b78",
+      "target_line": "theorem faithful {f g : Hom A B} (hf : HasPureNormalForm f) (hg : HasPureNormalForm g)",
+      "declaration": "faithful"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenPurePositiveCoherence.lean",
+      "line": 14,
+      "blob_sha": "4214cffa4c2b99aae0d7a93977f7686af96ace93",
+      "target_line": "theorem pure_positive_coherence {A B : NormalForm P} (f g : Term P A B)",
+      "declaration": "pure_positive_coherence"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenPositiveCoherence.lean",
+      "line": 14,
+      "blob_sha": "0fe09242f6c648d803698fa4ce9add276144a878",
+      "target_line": "theorem represented_coherence {A B : NormalForm P} (f g : Hom A B)",
+      "declaration": "represented_coherence"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenPositiveCoherence.lean",
+      "line": 31,
+      "blob_sha": "0fe09242f6c648d803698fa4ce9add276144a878",
+      "target_line": "theorem positive_coherence : PositiveCoherence P := by",
+      "declaration": "positive_coherence"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/CommonAtomicFactorization.lean",
+      "line": 51,
+      "blob_sha": "ee5add2e1e1046c1e80b1a71ac22bb36b7faa78d",
+      "target_line": "def commonAtomicFactor {A B : NormalForm P} (t₁ t₂ : Term P A B) : CommonAtomicFactor t₁ t₂ := by",
+      "declaration": "commonAtomicFactor"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/CommonAtomicFactorization.lean",
+      "line": 123,
+      "blob_sha": "ee5add2e1e1046c1e80b1a71ac22bb36b7faa78d",
+      "target_line": "theorem faithful_of_positive_coherence (hC : PositiveCoherence P) : Faithful P := by",
+      "declaration": "faithful_of_positive_coherence"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedCoherence.lean",
+      "line": 17,
+      "blob_sha": "84f0f4be459b56811b3a82dd08ffad118ab34f01",
+      "target_line": "theorem boolean_coherence {A B : Formula P} {f g : Presentation.Hom A B}",
+      "declaration": "boolean_coherence"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationCoherence.lean",
+      "line": 13,
+      "blob_sha": "ea6232209ce111ba5308b50d2af2d99ece7f5792",
+      "target_line": "theorem coherence {A B : Formula P} {f g : Hom A B}",
+      "declaration": "coherence"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortQ.lean",
+      "line": 32,
+      "blob_sha": "b94f545567e6e088b37024b7120b156bfeee0620",
+      "target_line": "theorem q_qInverse (A : Formula P) : comp (q A) (qInverse A) = id _ := by",
+      "declaration": "q_qInverse"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortQ.lean",
+      "line": 46,
+      "blob_sha": "b94f545567e6e088b37024b7120b156bfeee0620",
+      "target_line": "theorem qInverse_q (A : Formula P) : comp (qInverse A) (q A) = id _ := by",
+      "declaration": "qInverse_q"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortE.lean",
+      "line": 13,
+      "blob_sha": "4bf0e6a6b0f0839ac18308e4d5ead04d7805ac62",
+      "target_line": "def sourceConjTerm (X Y A B : Formula P) :",
+      "declaration": "sourceConjTerm"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortE.lean",
+      "line": 21,
+      "blob_sha": "4bf0e6a6b0f0839ac18308e4d5ead04d7805ac62",
+      "target_line": "def sectionTerm (X A B : Formula P) :",
+      "declaration": "sectionTerm"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortE.lean",
+      "line": 44,
+      "blob_sha": "4bf0e6a6b0f0839ac18308e4d5ead04d7805ac62",
+      "target_line": "theorem e_eInverse (A : Formula P) : comp (e A) (eInverse A) = id _ := by",
+      "declaration": "e_eInverse"
+    },
+    {
+      "sha": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortE.lean",
+      "line": 50,
+      "blob_sha": "4bf0e6a6b0f0839ac18308e4d5ead04d7805ac62",
+      "target_line": "theorem eInverse_e (A : Formula P) : comp (eInverse A) (e A) = id _ := by",
+      "declaration": "eInverse_e"
+    }
+  ]
+}

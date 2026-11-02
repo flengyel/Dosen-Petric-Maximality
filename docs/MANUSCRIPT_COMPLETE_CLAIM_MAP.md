@@ -15,7 +15,7 @@ the existing symmetric-fold deduction. V14, dated November 1, 2026, uses the
 hostile and mathematical-writing plugins for the complete preprint. It gives
 explicit arrow/functor types, uses literal and occurrence map, follows the
 source's dissociativity terminology and displays the calculations through v_A
-and w_A. The correspondences below apply also to v15–v22; see MANUSCRIPT_V14_REPORT.md
+and w_A. The correspondences below apply also to v15–v23; see MANUSCRIPT_V14_REPORT.md
 and its two review reports. Literal signs, theorem hypotheses and conclusions,
 all numbered displays, diagrams, labels, Lean theorems and registered inputs
 are preserved. The literal synonym and lemma captions change; no new Lean
@@ -123,6 +123,16 @@ proofs and their dependencies. It retains Boolean Coherence and the substitution
 correspondence within that scope. The body, all claims and declaration mappings
 are unchanged. See [v22 report](MANUSCRIPT_V22_REPORT.md).
 
+## V23 review implementation (2 November 2026)
+
+The statements and declaration mappings are unchanged. Appendix C now identifies
+cut elimination as an input to Boolean Coherence and spells out both strict
+rank inequalities, including L+1<L+R for the fresh cut. The introductory proof
+outline includes uniform substitution and double-negation transport. The
+coherence appendix attributes the union-zero equation to the zero law together
+with the product, coproduct and dissociativity equations, without faithfulness.
+See [v23 report](MANUSCRIPT_V23_REPORT.md) and the retained v22 review.
+
 ## Three milestones and full-paper endpoint
 
 | Milestone | Actual result | Status |
@@ -201,7 +211,7 @@ are unchanged. See [v22 report](MANUSCRIPT_V22_REPORT.md).
 | Appendix B five-arrow zero | ManuscriptDiagrams.zeroStart/zeroEta/zeroDistributor/zeroEpsilon/zeroEnd/zeroPath; zero_diagram/zero_primitive | Exact printed path and its equality to primitive zero. |
 | Appendix B zero square | ManuscriptDiagrams.zero_square; zeroIdentity.law | Arbitrary parallel existing f/g, with correct arrow order. |
 | Appendix C p.260 | BlockedLeftDisj.gamma_equation and original-child gamma rank inequalities; GENTZEN_LEFT_GAMMA_DISJ_REPORT and subsequent all-blocked records | Both original recursive children have strict original-rank descent; actual source equation proved. |
-| Appendix C p.262 | BlockedDisjFirst.source_equation; fresh_principal_rank/fresh_total_rank/fresh_total_rank_ge_two; blockedL_disjunctionFirst_rank_step | Fresh right rank one and total h.rho.right+1≥2, with unchanged opposite premise, full Clean and exact original source. |
+| Appendix C p.262 | BlockedDisjFirst.source_equation; fresh_principal_rank/fresh_total_rank/fresh_total_rank_ge_two; blockedL_disjunctionFirst_rank_step | Fresh right rank one and total h.rho.right+1≥2; fresh_clean_and_rank proves strict descent from the original cut since its contracted right rank exceeds one. The opposite premise is unchanged; full Clean and exact original source are proved. |
 | Cut-elimination published dependency | Reducibility/Blocked-w/simultaneous atomized blocked cleaning; all twelve logical binary cases and all fourteen blocked source/rank steps; cut_elimination/atomized_cut_elimination | Constructor/tag dispatch, original selected-rank and strong degree induction instantiated; no assumed handlers remain. |
 | Positive/Boolean coherence published dependency | G.mix_normal_form, actual pure/normal positive coherence and represented normal retracts, Gentzen.positive_coherence, Reduced.faithful/boolean_coherence, Presentation.coherence | Finite unions require existing-arrow witnesses; one-sided normalization recovery laws are proved; full intended source bridge instantiated. |
 | Full source/negation/normalization bridge | Reduced quotient reduction/inclusion, normalization natural isomorphism, recovery and derived dual/negation equations; source congruence and closure correspondence | Actual intended categories and coordinate transports; both literal signs and empty hom-sets preserved. |
@@ -212,11 +222,11 @@ closure are recorded in the final evidence. No mathematical claim in the paper's
 current scope remains assigned to an unproved field or deferred implementation
 target. Historical reports are not independent verification of this final scope.
 
-## Appendix D: registered statements and proof correspondence (v22)
+## Appendix D: registered statements and proof correspondence (v23)
 
 All names below have prefix DosenPetric unless stated otherwise. These are
 existing proofs retained in both immutable registered sources, not new results.
-V22 preserves v19's hyperlinks targeting version 2, 5dbee39bea09539bd130f729e82636419f71f920,
+V23 preserves v19's hyperlinks targeting version 2, 5dbee39bea09539bd130f729e82636419f71f920,
 matching the author's newly supplied bibliography. Exact paths, declaration
 lines and hashes for all 49 linked names are in the v19 linked-declarations
 record. The preceding v16–v18 sources and version-1 link records remain preserved.
@@ -268,3 +278,4 @@ The five separately selected Palomar declarations remain the five in D.3.
 These additional source links do not create new selections or a registration.
 The full-paper endpoint, both proof routes and every old claim-map row remain.
 No extra empty-P/constant-substitution/cardinality deduction is added to v16.
+

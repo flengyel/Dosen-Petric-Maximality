@@ -1,5 +1,23 @@
 # Manuscript corrections and source errata
 
+## Implement the full v22 review: v23 (2 November 2026)
+
+The author requested direct implementation and reiterated the removal of empty
+adjectives. V23 removes raw from arrow-term prose, replaces witnessed-zero wording,
+organizes the introduction around the result and proof, relocates four literature
+comparisons, removes the unused proof-net paragraph, and names the second proof
+in the Section 6 heading. The Notation URL is pinned to the inspected commit.
+Appendix C explicitly corrects two typographical errors in the cut-elimination
+argument used in Došen–Petrić's Boolean Coherence proof. It gives the strict
+rank inequalities required by the existing induction, rather than merely a
+lower bound. It defines r-prime. The introduction includes double-negation
+transport for the negative-literal case. The zero-union derivation names its
+equational inputs and retains its independence from faithfulness.
+These are exposition repairs; no defect in a Lean proof was established.
+The mathematical statements, proof environments, displayed equations, diagrams,
+labels, all 49 Lean declaration destinations and exact Palomar v2 BibTeX remain.
+See MANUSCRIPT_V23_REPORT.md and reviews/V23_IMPLEMENTATION_REVIEW_2026-11-02.md.
+
 ## Introduce the formalization and its relation to the proofs: v22 (2 November 2026)
 
 The author rejected the unintroduced subject “The Lean formalization proves ...”
@@ -1173,3 +1191,4 @@ require their own local committed-byte delivery; prior deliveries stay complete.
 The author supplied verbatim replacements for the Challenge opening, registry abstract, PrimitiveCongruence docstring and Total docstring. These are applied throughout the Challenge and corresponding production comments. Derives is explained as generated equivalence closed under composition, conjunction and disjunction. Empty qualifiers and the phrase structural-diagram constructions are removed from the submitted prose; the metadata names each diagram identity and gives manuscript/Lean correspondence. The v13 manuscript is cited at immutable commit 84d913d4ab30490ddf9c51788ed89ea5c7e9a601 and remains unchanged.
 
 The complete before/after text and diff are PALOMAR_PROSE_UPDATE_BEFORE_AFTER.md; the continuous preview is PALOMAR_PROSE_UPDATE_PUBLIC_PREVIEW.md; the local preparation and writing reports record the verification scope. All mathematical source tokens, selected theorem types and proof terms are preserved. Version 1 and source 2e771844077fd8cebfbe365230f13d4dd13a75b1 remain immutable. This is preparation for an ordinary update, expected version 2, with official preflight, pre-intake agreement and review-specific registration consent recorded as separate stages. No active registry citation or manuscript release changes during preparation.
+
