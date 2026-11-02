@@ -1,0 +1,7 @@
+[
+  {
+    "label": "Abstract: introduce the Lean formalization as a formalization of the written proofs",
+    "old": "a preorder. The Lean formalization\nproves coherence, maximality and this model corollary for the category\npresented by the defining equations. It also establishes the\ncorrespondence between substitution on tagged occurrence sets and\nsubstitution on finite ordinals.",
+    "new": "a preorder. We also give a Lean formalization of these proofs and\ntheir dependencies. It includes Boolean Coherence and the\ncorrespondence between substitution on tagged occurrence sets and\nsubstitution on finite ordinals."
+  }
+]

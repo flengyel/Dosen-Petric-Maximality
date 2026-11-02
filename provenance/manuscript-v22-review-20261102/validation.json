@@ -1,0 +1,139 @@
+{
+  "input_commit": "16e604e21a1b5505758b8b719ba879791ae9e699",
+  "manuscript_version": 22,
+  "date": "2026-11-02",
+  "targeted_edits": 1,
+  "inverse_text_check": "Undoing the abstract edit and restoring version/bibliography suffixes recovers v21 byte for byte.",
+  "numbered_displays": {
+    "count": 12,
+    "unchanged": true
+  },
+  "diagrams": {
+    "count": 13,
+    "unchanged": true
+  },
+  "labels": {
+    "count": 34,
+    "unchanged": true
+  },
+  "numbered_statements": {
+    "count": 7,
+    "unchanged": true
+  },
+  "source_links": {
+    "distinct_declarations": 49,
+    "all_exact_URIs_preserved_in_PDF": true,
+    "source_commit": "5dbee39bea09539bd130f729e82636419f71f920",
+    "declaration_record_reused": "provenance/manuscript-v19-review-20261101/linked-declarations.json",
+    "footnotes": 17
+  },
+  "release": {
+    "pages": 23,
+    "archive_members": [
+      "main.tex",
+      "main.bbl",
+      "references_v22.bib",
+      "palomar_v22.bib"
+    ],
+    "all_builds_passed": true,
+    "final_warnings": [],
+    "extracted_archive_layout_text_matches": true,
+    "source_sha256": "14c2514bce1665feacc846a4127862f196b9e32374367c02585d4c281b901ffb",
+    "pdf_sha256": "42eeddd5d3c447d15ccb0d5ea5b8b78a92785b0f9495c3f1ba5f71cfd5594433",
+    "archive_sha256": "30c1d5e722d73591f52c778afd7cafd1506c559958d8c6e7916cc37f33e4c78f",
+    "bibliography_entries": 13,
+    "bibliographies_and_bbl_byte_identical_to_v21": true
+  },
+  "preservation": {
+    "prior_release_files": 181,
+    "all_prior_release_bytes_unchanged": true,
+    "registered_proof_and_inputs_preserved": true,
+    "registered_files_compared": 857,
+    "stash_preserved": true,
+    "previous_preparation_report_preserved_byte_for_byte": true
+  },
+  "terminology": {
+    "visible_structural_occurrences_in_source": 0,
+    "structural_occurrences_in_PDF_text": 0,
+    "unprinted_cross_reference_keys_preserved": true
+  },
+  "scope": {
+    "new_Lean_build_or_kernel_replay": false,
+    "new_Palomar_submission_or_registration": false,
+    "arxiv_upload": false
+  },
+  "abstract_agreement": {
+    "sentences": 8,
+    "plain_words": 149,
+    "all_representations_agree": true,
+    "conjecture_stated_explicitly": true,
+    "author_requested_opening_used": true,
+    "general_background_sentence_omitted": true,
+    "elementary_preorder_paraphrase_omitted_from_abstract_and_introduction": true,
+    "model_corollary_concludes_is_a_preorder": true,
+    "formalization_introduced_as_formalization_of_the_paper_proofs": true
+  },
+  "citation_agreement": {
+    "exact_author_supplied_v2_BibTeX_unchanged": true,
+    "sha256": "255e0bf7bf84401d4388604ed24e0551a1532249d2bfc999d876fa2d0736f9f0",
+    "all_49_declaration_URIs_unchanged": true,
+    "precise_conjecture_citation_retained_in_introduction": true
+  },
+  "visual_inspection": {
+    "render_command": [
+      "pdftoppm",
+      "-f",
+      "1",
+      "-l",
+      "14",
+      "-scale-to",
+      "1200",
+      "-png",
+      "Maximality_of_the_Dosen_Petric_Boolean_Category_v22.pdf",
+      "page"
+    ],
+    "exit_code": 0,
+    "contact_sheets_viewed": 4,
+    "pages_viewed_on_contact_sheets": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "pages_additionally_viewed_individually": [
+      1
+    ],
+    "unchanged_pages_with_identical_text_and_coordinates": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "observations": "The final abstract sentences introduce the formalization and refer to the written proofs and dependencies. Reflowed pages fit without clipping/overlap. Remaining pages match the inspected v21 PDF.",
+    "render_files_ignored": true
+  },
+  "documentation": {
+    "active_files_updated": 9,
+    "new_reports": [
+      "docs/MANUSCRIPT_V22_REPORT.md",
+      "docs/reviews/V22_WRITING_REVIEW_2026-11-02.md"
+    ],
+    "checked_relative_links": 298,
+    "receipt_link_completed_at_delivery": "provenance/manuscript-v22-review-20261102/delivery-receipt.json"
+  }
+}

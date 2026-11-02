@@ -1,0 +1,41 @@
+--- v21.tex
++++ v22.tex
+@@ -6,7 +6,7 @@
+ \usepackage{array}
+ \usepackage[numbers]{natbib}
+ \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+-\hypersetup{pdftitle={Maximality of the Dosen--Petric Boolean Category (v21)},pdfauthor={Florian Lengyel}}
++\hypersetup{pdftitle={Maximality of the Dosen--Petric Boolean Category (v22)},pdfauthor={Florian Lengyel}}
+ \renewcommand{\theHequation}{\thesection.\arabic{equation}}
+ \newtheorem{theorem}{Theorem}[section]
+ \newtheorem{lemma}[theorem]{Lemma}
+@@ -18,7 +18,7 @@
+ \newcommand{\FormulaSet}{\operatorname{Form}}
+ \title{Maximality of the Do\v{s}en--Petri\'c Boolean Category}
+ \author{Florian Lengyel\thanks{Email: \href{mailto:flengyel@gradcenter.cuny.edu}{\texttt{flengyel@gradcenter.cuny.edu}}}}
+-\date{November 2, 2026\quad(v21)}
++\date{November 2, 2026\quad(v22)}
+ \begin{document}
+ \maketitle
+ 
+@@ -35,9 +35,8 @@
+ isomorphisms yield equality of the product projections. We also
+ prove that any zero-identity Boolean category satisfying such an
+ additional equation under every interpretation of the variables is
+-a preorder. The Lean formalization
+-proves coherence, maximality and this model corollary for the category
+-presented by the defining equations. It also establishes the
++a preorder. We also give a Lean formalization of these proofs and
++their dependencies. It includes Boolean Coherence and the
+ correspondence between substitution on tagged occurrence sets and
+ substitution on finite ordinals.
+ \end{abstract}
+@@ -1761,7 +1760,7 @@
+ \small
+ \setlength{\bibsep}{2pt}
+ \bibliographystyle{unsrtnat}
+-\bibliography{references_v21,palomar_v21}
++\bibliography{references_v22,palomar_v22}
+ \endgroup
+ \end{document}
+ 

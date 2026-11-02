@@ -1,5 +1,18 @@
 # Manuscript corrections and source errata
 
+## Introduce the formalization and its relation to the proofs: v22 (2 November 2026)
+
+The author rejected the unintroduced subject “The Lean formalization proves ...”
+and its implication that the paper omits those proofs. The paper gives the
+maximality and model-corollary arguments. V22 uses the accepted sentence:
+“We also give a Lean formalization of these proofs and their dependencies.”
+The next sentence says that it includes Boolean Coherence and the correspondence
+between tagged-occurrence and finite-ordinal substitution. This introduces the
+formalization and relates its scope to the mathematical exposition. The abstract
+opening, conjecture and other accepted wording remain. Only its final two
+sentences and version/bibliography suffixes change. No mathematical claim or
+correspondence is changed. See MANUSCRIPT_V22_REPORT.md and its writing review.
+
 ## State the conjecture; omit elementary abstract prose: v21 (2 November 2026)
 
 The author rejected an abstract that only pointed to the book's conjecture.

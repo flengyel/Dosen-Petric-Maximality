@@ -26,8 +26,8 @@ other checkouts, including FailureOfComposition and Categorical_Rice_Shapiro.
 Read `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md`,
 `docs/CODEX_NEXT_SESSION.txt`, `docs/MANUSCRIPT_STATEMENTS.md`,
 `docs/MANUSCRIPT_COVERAGE.md`, and
-`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v21, dated November 2, 2026;
-v4–v20 remain preserved. V8
+`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v22, dated November 2, 2026;
+v4–v21 remain preserved. V8
 updated the formalization status/date/source citation. V9 adds the author-requested
 Codex disclosure, author-responsibility sentence and verified Palomar citation,
 and updates the date. MSC 2020 Primary 03G30; Secondary 03F07, 18A32 is preserved.
@@ -129,6 +129,13 @@ simply “is a preorder”. Restore the earlier result-first opening “We prove
 replacing “We study ...”, as the author subsequently requested. Do not restore
 elementary paraphrases or replace the conjecture by a pointer to the book. The precise citation remains in
 the introduction. See docs/MANUSCRIPT_V21_REPORT.md and its writing review.
+V22 introduces the Lean formalization in the abstract with the author-approved
+sentence “We also give a Lean formalization of these proofs and their dependencies.”
+The paper proves maximality and the model corollary; the formalization formalizes
+these proofs and the results they use. Do not imply that mentioning Lean replaces
+the paper's arguments. The next sentence identifies the formalization's inclusion
+of Boolean Coherence and the occurrence/ordinal substitution correspondence.
+Only the abstract tail and version suffixes change. See docs/MANUSCRIPT_V22_REPORT.md.
 The author requests that manuscript prose avoid empty qualifiers, unexplained
 terms and process updates. Keep mathematically meaningful qualifications, such
 as induction on a specified formula or arrow term; keep process reports outside
@@ -152,7 +159,7 @@ named source statements, transfer from Reduced through recovery, and further
 mathematical deductions. DNF/CNF expansions are retracts, not distributivity
 isomorphisms. The union theorem is named in Reduced, not Presentation.
 The accepted additions are resolved in docs/MANUSCRIPT_CORRECTIONS.md and mapped
-in docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md. Any further text revision must be v22
+in docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md. Any further text revision must be v23
 or later. Preserve the fixed source links and explain their mathematical role.
 The audit does not reopen the completed mathematical contract or frozen inputs.
 
@@ -328,7 +335,7 @@ full preflight and service verification passed. Do not repeat intake,
 registration or successful verification. The publication monitor has completed.
 
 Read docs/CODEX_NEXT_SESSION.txt, docs/PALOMAR_V2_REGISTRATION_REPORT.md and
-docs/ARXIV_PREPARATION_REPORT.md. V21 and its four-file arXiv source package are
+docs/ARXIV_PREPARATION_REPORT.md. V22 and its four-file arXiv source package are
 prepared and locally compiled; every earlier release is preserved. No arXiv upload has occurred. Keep mathematical
 proof development closed, retain all previous manuscripts and the stash, and
 reuse verification. Do not change the immutable registered source or its frozen
@@ -338,7 +345,7 @@ Version-2 public evidence hashes, all 13 served render files, the rendered openi
 and statement correspondence, and the native source tag were verified. The
 version-1 diagnostic about two served HTML pages with added Cloudflare analytics
 remains historical evidence about version 1; retain it. No version-2 served-render
-mismatch was found. The current v21 manuscript cites version 2 using the exact
+mismatch was found. The current v22 manuscript cites version 2 using the exact
 entry subsequently supplied by the author. Keep citation, source links and
 submission fields consistent. Both registrations and frozen sources remain;
 the manuscript update does not repeat registration or successful checks.

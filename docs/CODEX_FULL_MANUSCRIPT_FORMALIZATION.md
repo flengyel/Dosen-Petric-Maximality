@@ -1,19 +1,16 @@
 # Complete Lean formalization of manuscript v7
 
-Current manuscript: v21, dated November 2, 2026, 23 pages. The abstract
-states the conjecture explicitly and disproves it by the collapse result.
-At the author's request, the general opening about categorical proof theory
-is removed, and the abstract and introduction omit the redundant elementary
-paraphrase of preorder. The model-corollary summary also says “is a preorder”.
-The precise conjecture citation remains in the introduction.
-
-All seven statement bodies, twelve numbered displays, thirteen diagrams,
-34 labels, seventeen footnotes, both proof routes, Appendix A and its references,
-the supplied v2 BibTeX and 49 source links remain. All previous releases and
-frozen inputs are preserved. See the [v21 report](MANUSCRIPT_V21_REPORT.md)
-and [writing review](reviews/V21_WRITING_REVIEW_2026-11-02.md).
-The completed formalization is unchanged; no successful proof/kernel/Palomar
-check or registration is repeated. No arXiv upload has occurred.
+Current manuscript: v22, dated November 2, 2026, 23 pages. The abstract now
+introduces the Lean formalization as a formalization of the paper's proofs and
+their dependencies, using the author's accepted sentence. The paper proves
+maximality and the model corollary. The following sentence identifies Boolean
+Coherence and the occurrence/ordinal correspondence within the formalization.
+The earlier abstract opening, explicit conjecture, body, mathematics, both
+proof routes, Appendix A, bibliography and 49 source links remain unchanged.
+See the [v22 report](MANUSCRIPT_V22_REPORT.md) and
+[writing review](reviews/V22_WRITING_REVIEW_2026-11-02.md).
+The completed formalization and frozen sources remain; no successful proof/
+kernel/Palomar checks or registration are repeated. No arXiv upload has occurred.
 
 ## Current complete full-paper formalization (29 October 2026)
 

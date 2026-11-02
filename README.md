@@ -12,15 +12,12 @@ and its [registration report](docs/PALOMAR_REGISTRATION_REPORT.md) remain preser
 The earlier [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
 describes version 1.
 
-The arXiv package is ready in [submission/arxiv-v21](submission/arxiv-v21/README.md).
-V21 states Došen–Petrić's conjecture in the abstract and disproves it by collapse
-to a preorder after any nonderivable equation, with both closure conditions.
-It omits the general opening about categorical proof theory and the redundant
-preorder paraphrase from abstract and introduction. The precise conjecture
-citation remains in §1. All mathematics, both proof routes, Appendix A, the
-supplied v2 BibTeX and 49 source links remain. See the
-[v21 report](docs/MANUSCRIPT_V21_REPORT.md) and
-[writing review](docs/reviews/V21_WRITING_REVIEW_2026-11-02.md).
+The arXiv package is ready in [submission/arxiv-v22](submission/arxiv-v22/README.md).
+V22 introduces the Lean formalization as a formalization of the proofs given
+in the paper and their dependencies. Only the abstract tail and version suffixes
+change; all body text and mathematical content remain. See the
+[v22 report](docs/MANUSCRIPT_V22_REPORT.md) and
+[writing review](docs/reviews/V22_WRITING_REVIEW_2026-11-02.md).
 
 V18 revises the abstract after consulting Knuth–Larrabee–Roberts. Its nine
 sentences introduce proof identifications, state maximality and its significance,
@@ -85,9 +82,9 @@ publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
-Current manuscript: [v21 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v21.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v21.tex), dated November 2, 2026, 23 pages. All v4–v20 releases remain preserved.
-The [v21 report](docs/MANUSCRIPT_V21_REPORT.md) records the abstract/introduction
-repairs, matching builds and preservation.
+Current manuscript: [v22 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v22.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v22.tex), dated November 2, 2026, 23 pages. All v4–v21 releases remain preserved.
+The [v22 report](docs/MANUSCRIPT_V22_REPORT.md) records the abstract repair,
+matching builds and preservation.
 Every manuscript revision increments its version; completed authorized main
 work is pushed before readiness is reported, as recorded in AGENTS.md.
 
