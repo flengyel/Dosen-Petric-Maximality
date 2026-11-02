@@ -1,5 +1,29 @@
 # Manuscript corrections and source errata
 
+## Reader-oriented abstract: v18 (1 November 2026)
+
+The author found the abstract's technical opening abrupt and explicitly asked
+for consultation of Knuth–Larrabee–Roberts about its contents. V18 replaces
+the abstract with nine sentences: context, maximality, its precise meaning,
+the conjecture resolved, two sentences of method, the model consequence,
+formalization scope and the substitution correspondence. The literal equation
+remains in the main argument. This revision changes no body mathematics.
+
+The official Stanford PDF supplies the abstract exercise in van Leunen's
+handout (§36, printed p.87), which is absent from the retained retypeset text
+extraction. Wilf's discussion is in §27, p.59. The exercise's scale informs
+the revision; the selection and order of this paper's contents are editorial
+applications, not a prescribed content template attributed to the authors.
+
+The body, all Appendix A content and its references, the one-line u_A path,
+specific map terminology, both proof routes and all registered inputs remain.
+The abstract's nonempty-variable and additional-equation hypotheses and the
+model corollary's all-interpretation condition are retained. The exact TeX and
+plain-text abstract fields, source, PDF and package are refreshed together.
+Both builds give matching 23-page text with no final warnings. All 125 prior
+release files and 857 registered proof/input blobs are preserved. See
+MANUSCRIPT_V18_REPORT.md and reviews/V18_WRITING_REVIEW_2026-11-01.md.
+
 ## Specific map names and the u_A display: v17 (1 November 2026)
 
 The author requested one display line for u_A on p.20 and replacement of the

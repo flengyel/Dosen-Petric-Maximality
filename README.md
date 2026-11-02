@@ -12,7 +12,14 @@ and its [registration report](docs/PALOMAR_REGISTRATION_REPORT.md) remain preser
 The earlier [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
 describes version 1.
 
-The arXiv package is ready in [submission/arxiv-v17](submission/arxiv-v17/README.md).
+The arXiv package is ready in [submission/arxiv-v18](submission/arxiv-v18/README.md).
+V18 revises the abstract after consulting Knuth–Larrabee–Roberts. Its nine
+sentences introduce proof identifications, state maximality and its significance,
+outline the proof, state the model consequence and describe the Lean results.
+The body is byte-identical to v17 apart from version/bibliography suffixes.
+See the [v18 report](docs/MANUSCRIPT_V18_REPORT.md) and
+[focused writing review](docs/reviews/V18_WRITING_REVIEW_2026-11-01.md).
+
 V17 puts the u_A path on one line, titles Appendix E “Inverses of q_A and e_A”
 and replaces “structural” throughout the prose by the specific map or equation
 families. All seven mathematical statements, twelve numbered displays, thirteen
@@ -69,9 +76,9 @@ publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
-Current manuscript: [v17 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v17.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v17.tex), dated November 1, 2026, 23 pages. All v4–v16 releases remain preserved.
-The [v17 report](docs/MANUSCRIPT_V17_REPORT.md) records the eight prose/layout
-edits, matching manuscript/package builds, PDF inspection and preservation.
+Current manuscript: [v18 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v18.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v18.tex), dated November 1, 2026, 23 pages. All v4–v17 releases remain preserved.
+The [v18 report](docs/MANUSCRIPT_V18_REPORT.md) records the source-guided abstract
+revision, matching manuscript/package builds, PDF inspection and preservation.
 Every manuscript revision increments its version; completed authorized main
 work is pushed before readiness is reported, as recorded in AGENTS.md.
 

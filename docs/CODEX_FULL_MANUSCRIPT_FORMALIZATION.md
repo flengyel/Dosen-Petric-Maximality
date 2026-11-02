@@ -1,30 +1,27 @@
 # Complete Lean formalization of manuscript v7
 
-Current manuscript: v17, dated November 1, 2026, 23 pages. It puts the u_A
-path on one line and titles Appendix E “Inverses of q_A and e_A”. At the
-author's request, seven uses of “structural” are replaced by specific maps,
-equations or induction on the formula. Unprinted reference keys remain.
-The author confirmed that Appendix A and its main-text references are required.
+Current manuscript: v18, dated November 1, 2026, 23 pages. Only the abstract
+is revised, apart from version/bibliography suffixes. After the author's
+request to consult Knuth–Larrabee–Roberts, the nine-sentence abstract introduces
+proof identifications, states maximality and its significance, summarizes the
+method, gives the model consequence and describes the Lean results. The
+manuscript, abstract.txt and both submission-field abstracts agree.
 
-V16's seven additions and reader's guide remain. Appendix D.2 explains Lean
-notation and the short proof; D.5 and E give the coherence construction,
-inverses and split-comparison maps. The 17 footnotes and proof table retain
-all 49 declaration links at the cited immutable version-1 source. All seven
-statement bodies, twelve numbered displays, thirteen diagrams and 34 labels
-are unchanged. Both proof routes, previous releases, supplied bibliography
-and authorized disclosure remain. No Lean source or registered input changes.
-See [v17 report](MANUSCRIPT_V17_REPORT.md) and
-[focused writing review](reviews/V17_WRITING_REVIEW_2026-11-01.md).
+The body is byte-identical to v17 after suffix restoration. All seven statement
+bodies, twelve numbered displays, thirteen diagrams, 34 labels, seventeen
+footnotes and 49 source links remain. Appendix A and its main-text references,
+both proof routes, every previous release, the supplied bibliography and
+authorized disclosure remain. V17's specific map terminology and one-line
+u_A path are retained. No Lean source or frozen input changes.
+See [v18 report](MANUSCRIPT_V18_REPORT.md) and
+[focused writing review](reviews/V18_WRITING_REVIEW_2026-11-01.md).
 The [v16 hostile review](reviews/V16_HOSTILE_REVIEW_2026-11-01.md) retains its
-broader mathematical scope; it is not represented as newly repeated.
-The dated formalization checkpoints below retain their historical scope.
+broader scope. The dated formalization checkpoints below remain historical.
 
 The [reverse content audit](FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md)
-motivated the seven additions. Their purpose is to help mathematicians
-translate between the paper and Lean and use the formal proof to improve
-the exposition. Union laws are named in Reduced and transferred to B(P);
-normal-form expansions are retracts. The active complete claim map records
-the locations. Passed proof/kernel/Palomar verification is reused.
+and v16 additions still explain the Lean-to-paper correspondence. The actual
+mathematical endpoint remains complete; successful proof/kernel/Palomar
+verification is reused. No new mathematical milestone or arXiv upload occurs.
 
 ## Current complete full-paper formalization (29 October 2026)
 

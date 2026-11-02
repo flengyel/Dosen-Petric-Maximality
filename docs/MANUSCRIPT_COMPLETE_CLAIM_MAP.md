@@ -15,7 +15,7 @@ the existing symmetric-fold deduction. V14, dated November 1, 2026, uses the
 hostile and mathematical-writing plugins for the complete preprint. It gives
 explicit arrow/functor types, uses literal and occurrence map, follows the
 source's dissociativity terminology and displays the calculations through v_A
-and w_A. The correspondences below apply also to v15, v16 and v17; see MANUSCRIPT_V14_REPORT.md
+and w_A. The correspondences below apply also to v15–v18; see MANUSCRIPT_V14_REPORT.md
 and its two review reports. Literal signs, theorem hypotheses and conclusions,
 all numbered displays, diagrams, labels, Lean theorems and registered inputs
 are preserved. The literal synonym and lemma captions change; no new Lean
@@ -60,6 +60,20 @@ Section 3 refers to A.1–A.2; Proposition 4.2 points to A.3. The finite-ordinal
 calculation supplies the exact correspondence with the source's substitution
 operation, in addition to the block substitution used in the maximality proof.
 This confirmation does not reduce the full-paper mathematical contract.
+
+## V18 abstract (1 November 2026)
+
+V18 replaces only the abstract and version/bibliography suffixes. The opening
+orients readers to equations as proof identifications. The result retains
+freeness, nonempty variables, distinct arrows with the same endpoints, closure
+under every arrow operation and uniform substitution, and totality on parallel
+arrows. The proof outline refers to coherence, occurrence selection, substitution
+and the q/e isomorphisms without formula-specific notation. The model
+consequence retains quantification over every variable interpretation; the
+formalization and occurrence/ordinal correspondence are reported precisely.
+These are summaries of the existing rows below, not additional claims.
+All main-text and appendix correspondences, page anchors and source links remain.
+See [v18 report](MANUSCRIPT_V18_REPORT.md).
 
 ## Three milestones and full-paper endpoint
 
