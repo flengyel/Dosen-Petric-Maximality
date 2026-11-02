@@ -26,8 +26,8 @@ other checkouts, including FailureOfComposition and Categorical_Rice_Shapiro.
 Read `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md`,
 `docs/CODEX_NEXT_SESSION.txt`, `docs/MANUSCRIPT_STATEMENTS.md`,
 `docs/MANUSCRIPT_COVERAGE.md`, and
-`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v19, dated November 1, 2026;
-v4–v18 remain preserved. V8
+`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v20, dated November 1, 2026;
+v4–v19 remain preserved. V8
 updated the formalization status/date/source citation. V9 adds the author-requested
 Codex disclosure, author-responsibility sentence and verified Palomar citation,
 and updates the date. MSC 2020 Primary 03G30; Secondary 03F07, 18A32 is preserved.
@@ -111,6 +111,15 @@ and its Section 5 pointer; its heading already names q_A/e_A. Each D.5 c-arrow
 definition and type fits on one line at the existing font size. Preserve
 qualifications specifying quantifiers, types, signs, coordinates, naturality
 or universal properties. See docs/MANUSCRIPT_V19_REPORT.md and its writing review.
+V20 states the result as collapse to a preorder after adding any equation
+between parallel arrows that does not follow from the defining equations,
+with closure under arrow operations and uniform formula substitution. State
+this universal condition directly; “a proper extension” alone hides it.
+Section 2 explains the quotient, thinness/totality equivalence and the name
+maximality. Theorem 2.1 has the equivalent quotient conclusion; its proof,
+the model proof and Appendix D.4 use that conclusion. Preserve the quantifier,
+nonempty-variable hypothesis and both closure conditions. See
+docs/MANUSCRIPT_V20_REPORT.md and its focused writing review.
 The author requests that manuscript prose avoid empty qualifiers, unexplained
 terms and process updates. Keep mathematically meaningful qualifications, such
 as induction on a specified formula or arrow term; keep process reports outside
@@ -134,7 +143,7 @@ named source statements, transfer from Reduced through recovery, and further
 mathematical deductions. DNF/CNF expansions are retracts, not distributivity
 isomorphisms. The union theorem is named in Reduced, not Presentation.
 The accepted additions are resolved in docs/MANUSCRIPT_CORRECTIONS.md and mapped
-in docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md. Any further text revision must be v20
+in docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md. Any further text revision must be v21
 or later. Preserve the fixed source links and explain their mathematical role.
 The audit does not reopen the completed mathematical contract or frozen inputs.
 
@@ -310,7 +319,7 @@ full preflight and service verification passed. Do not repeat intake,
 registration or successful verification. The publication monitor has completed.
 
 Read docs/CODEX_NEXT_SESSION.txt, docs/PALOMAR_V2_REGISTRATION_REPORT.md and
-docs/ARXIV_PREPARATION_REPORT.md. V19 and its four-file arXiv source package are
+docs/ARXIV_PREPARATION_REPORT.md. V20 and its four-file arXiv source package are
 prepared and locally compiled; every earlier release is preserved. No arXiv upload has occurred. Keep mathematical
 proof development closed, retain all previous manuscripts and the stash, and
 reuse verification. Do not change the immutable registered source or its frozen
@@ -320,7 +329,7 @@ Version-2 public evidence hashes, all 13 served render files, the rendered openi
 and statement correspondence, and the native source tag were verified. The
 version-1 diagnostic about two served HTML pages with added Cloudflare analytics
 remains historical evidence about version 1; retain it. No version-2 served-render
-mismatch was found. The current v19 manuscript cites version 2 using the exact
+mismatch was found. The current v20 manuscript cites version 2 using the exact
 entry subsequently supplied by the author. Keep citation, source links and
 submission fields consistent. Both registrations and frozen sources remain;
 the manuscript update does not repeat registration or successful checks.

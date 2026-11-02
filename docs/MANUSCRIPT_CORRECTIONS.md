@@ -1,5 +1,31 @@
 # Manuscript corrections and source errata
 
+## Descriptive collapse statement: v20 (1 November 2026)
+
+The author requested a simple descriptive result before its technical name,
+with the distinction between an arbitrary nonderivable equation and one chosen
+equation made visible. The abstract and introduction now say that adding any
+equation between parallel arrows not following from the defining equations,
+and closing under arrow operations and uniform formula substitution, collapses
+the category to a preorder. The explanation says all arrows with the same
+source and target then become equal.
+
+Section 2 defines the quotient and its thinness iff congruence totality before
+Theorem 2.1. The theorem now concludes that every substitution congruence
+identifying distinct parallel arrows has a preorder quotient. The paragraph
+afterward explains maximality and repeats the universal condition in words.
+The proof uses Lemma 5.2's existing quotient conclusion; the model proof and
+Appendix D.4 translate between that conclusion and totality. The equivalence
+is already proved by Congruence.quotient_thin_iff_total in the registered source.
+
+Eight wording edits preserve the mathematical claim. The other six statement
+bodies, twelve numbered displays, thirteen diagrams, 34 labels, seventeen
+footnotes, Appendix A and its references, both proof routes, exact v2 BibTeX
+and 49 links remain. All 153 prior release files and 857 frozen blobs are
+unchanged. Both source and extracted-archive builds give matching 23-page text
+without final warnings. See MANUSCRIPT_V20_REPORT.md and its writing review.
+No proof/kernel/Palomar check or registration is repeated.
+
 ## Author-supplied v2 citation and qualifier review: v19 (1 November 2026)
 
 The author supplied the exact Palomar version-2 BibTeX. V19 uses that entry,

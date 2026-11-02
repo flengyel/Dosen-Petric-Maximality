@@ -15,7 +15,7 @@ the existing symmetric-fold deduction. V14, dated November 1, 2026, uses the
 hostile and mathematical-writing plugins for the complete preprint. It gives
 explicit arrow/functor types, uses literal and occurrence map, follows the
 source's dissociativity terminology and displays the calculations through v_A
-and w_A. The correspondences below apply also to v15–v19; see MANUSCRIPT_V14_REPORT.md
+and w_A. The correspondences below apply also to v15–v20; see MANUSCRIPT_V14_REPORT.md
 and its two review reports. Literal signs, theorem hypotheses and conclusions,
 all numbered displays, diagrams, labels, Lean theorems and registered inputs
 are preserved. The literal synonym and lemma captions change; no new Lean
@@ -94,6 +94,19 @@ abstract, seven statement bodies, numbered equations, diagrams, labels, both
 proof routes and Appendix A content/references are preserved. See
 [v19 report](MANUSCRIPT_V19_REPORT.md).
 
+## V20 descriptive collapse statement (1 November 2026)
+
+The abstract and introduction state collapse after any nonderivable parallel
+arrow equation, with arrow-operation and uniform-substitution closure. Section 2
+defines the quotient and states thinness iff totality before Theorem 2.1.
+The theorem now concludes that the quotient is a preorder. This is equivalent
+to the preceding totality conclusion, by the existing
+Congruence.quotient_thin_iff_total (CongruenceQuotient.lean:93).
+The following paragraph explains the name maximality and its universal
+quantifier. The theorem proof, model proof and D.4 translation are consistent.
+No new proof or theorem obligation is introduced. See
+[v20 report](MANUSCRIPT_V20_REPORT.md).
+
 ## Three milestones and full-paper endpoint
 
 | Milestone | Actual result | Status |
@@ -115,7 +128,7 @@ proof routes and Appendix A content/references are preserved. See
 | Eq. (3), zero law | Presentation.Laws.zero_law; zeroIdentity; ManuscriptDiagrams.zero_square | All parallel existing arrows; no missing hom-set is inhabited. |
 | §2 witnessed zeros, independence and absorption | ZeroIdentity.zeroOf/zeroOf_independent/commute/precompose/postcompose | Existing-arrow witness required; no HasZeroMorphisms. |
 | §2 proof/substitution congruence | Presentation.ProofCongruence/RawProofCongruence; raw_quotient_rel/quotient_raw_rel; fragment/fragment_closed and closure transfers | Every primitive arrow operation, derived pairing/copairing/negation and uniform whole-arrow substitution. |
-| Theorem 2.1 | Presentation.maximality/congruence_dichotomy/raw_maximality; Presentation.short_maximality | Exact additional-equation collapse and equality/total dichotomy. |
+| Theorem 2.1 | Presentation.maximality/congruence_dichotomy/raw_maximality; Presentation.short_maximality; Congruence.quotient_thin_iff_total (CongruenceQuotient.lean:93) | Every substitution congruence identifying a distinct parallel pair has a preorder quotient; equivalent to totality and the equality/total dichotomy. |
 | §3 tagged occurrence definitions and labels | Formula.Occ/label; repeated_positions_distinct | Repeated equal labels retain distinct Sum tags; constants empty, negation preserves positions. |
 | §3 finite left-to-right bijection | Formula.occurrenceCount/occurrenceIndex/occurrenceAt; occurrenceAt_index/occurrenceIndex_at; FiniteBlocks.oneBased/zeroBased and inverse laws | Explicit finite ordinal coordinates, including cardinality zero. |
 | §3 functor G into finite sets/relations | FiniteSet.relationCategory; Presentation.occurrenceFiniteSet/finiteOccurrenceFunctor | Every source object has explicit finite coordinate bijections; identities/composition proved. |
@@ -183,11 +196,11 @@ closure are recorded in the final evidence. No mathematical claim in the paper's
 current scope remains assigned to an unproved field or deferred implementation
 target. Historical reports are not independent verification of this final scope.
 
-## Appendix D: registered statements and proof correspondence (v19)
+## Appendix D: registered statements and proof correspondence (v20)
 
 All names below have prefix DosenPetric unless stated otherwise. These are
 existing proofs retained in both immutable registered sources, not new results.
-V19's hyperlinks target version 2, 5dbee39bea09539bd130f729e82636419f71f920,
+V20 preserves v19's hyperlinks targeting version 2, 5dbee39bea09539bd130f729e82636419f71f920,
 matching the author's newly supplied bibliography. Exact paths, declaration
 lines and hashes for all 49 linked names are in the v19 linked-declarations
 record. The preceding v16–v18 sources and version-1 link records remain preserved.

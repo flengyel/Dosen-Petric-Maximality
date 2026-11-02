@@ -1,26 +1,25 @@
 # Coverage and next proof obligations
 
-Current manuscript: v19, dated November 1, 2026, 23 pages. The exact
-author-supplied Palomar version-2 entry replaces the current v1 citation.
-The registered-source note, 49 declaration links, comments and submission
-fields agree on source 5dbee39bea09539bd130f729e82636419f71f920. Two line
-targets moved and were checked. Earlier releases and their v1 citations remain.
-The qualifier review removes redundant adjectives and names the constructions;
-each D.5 comparison formula/type fits on one line. “Particular” is omitted
-from Appendix E's opening and the matching Section 5 pointer.
+Current manuscript: v20, dated November 1, 2026, 23 pages. The result is
+stated descriptively: adjoining any equation between parallel arrows not
+derivable from the defining equations, with closure under arrow operations
+and uniform formula substitution, collapses the category to a preorder.
+Section 2 explains the quotient and that this universal property is called
+maximality. Theorem 2.1 is restated with the equivalent quotient conclusion;
+its proof, the model proof and Appendix D.4 agree. Thinness of the quotient
+is equivalent to totality by Congruence.quotient_thin_iff_total, already proved
+in the registered source at DosenPetric/CongruenceQuotient.lean:93.
 
-The v18 abstract, all mathematical assertions, seven statement bodies,
-twelve numbered displays, thirteen diagrams, 34 labels, seventeen footnotes,
-Appendix A and its main-text references, both proof routes and the authorized
-disclosure remain. No Lean source, selected type, frozen input or successful
-verification changes. See [v19 report](MANUSCRIPT_V19_REPORT.md) and
-[writing review](reviews/V19_WRITING_REVIEW_2026-11-01.md).
-Earlier reports and reviews retain their dated scope; they are not new checks.
-
-The [reverse content audit](FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md)
-and v16 additions still explain the Lean-to-paper correspondence. The exact
-mathematical endpoint remains complete. No proof/kernel/Palomar check or
-registration is repeated, and no arXiv upload has occurred.
+The other six statement bodies, twelve numbered displays, thirteen diagrams,
+34 labels, seventeen footnotes, both proof routes, Appendix A and its references
+remain. The exact author-supplied Palomar v2 BibTeX and 49 declaration links
+are unchanged. All earlier releases and frozen inputs remain. See the
+[v20 report](MANUSCRIPT_V20_REPORT.md) and
+[writing review](reviews/V20_WRITING_REVIEW_2026-11-01.md).
+Earlier reports retain their dated scope. The completed formalization and
+[reverse content audit](FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md) remain
+the mathematical basis; this wording change does not repeat proof/kernel/
+Palomar checks or registration. No arXiv upload has occurred.
 
 ## Current complete full-paper formalization (29 October 2026)
 

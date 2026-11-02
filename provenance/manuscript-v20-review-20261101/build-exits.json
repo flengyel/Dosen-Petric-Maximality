@@ -1,0 +1,89 @@
+{
+  "source_sha256": "42abb5430593d6c2fadd8287bc2b59d607c4441c4996aa03169b91cd26b865ed",
+  "manuscript": [
+    {
+      "name": "latex-with-guide",
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-output-directory=/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v20-review-20261101",
+        "Maximality_of_the_Dosen_Petric_Boolean_Category_v20.tex"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/manuscript",
+      "exit_code": 0,
+      "log": "latex-with-guide.stdout"
+    },
+    {
+      "name": "bibliography",
+      "argv": [
+        "bibtex",
+        "Maximality_of_the_Dosen_Petric_Boolean_Category_v20"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v20-review-20261101",
+      "exit_code": 0,
+      "log": "bibliography.stdout"
+    },
+    {
+      "name": "latex-pass2",
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-output-directory=/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v20-review-20261101",
+        "Maximality_of_the_Dosen_Petric_Boolean_Category_v20.tex"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/manuscript",
+      "exit_code": 0,
+      "log": "latex-pass2.stdout"
+    },
+    {
+      "name": "latex-final",
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-output-directory=/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v20-review-20261101",
+        "Maximality_of_the_Dosen_Petric_Boolean_Category_v20.tex"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/manuscript",
+      "exit_code": 0,
+      "log": "latex-final.stdout"
+    }
+  ],
+  "extracted_archive": [
+    {
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v20-review-20261101/archive-extracted",
+      "exit_code": 0,
+      "log": "archive-pass1.stdout"
+    },
+    {
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v20-review-20261101/archive-extracted",
+      "exit_code": 0,
+      "log": "archive-pass2.stdout"
+    },
+    {
+      "argv": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "cwd": "/home/flengyel/src/Dosen-Petric-Maximality/.codex-work/manuscript-v20-review-20261101/archive-extracted",
+      "exit_code": 0,
+      "log": "archive-pass3.stdout"
+    }
+  ]
+}
