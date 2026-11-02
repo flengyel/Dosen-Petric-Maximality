@@ -12,16 +12,15 @@ and its [registration report](docs/PALOMAR_REGISTRATION_REPORT.md) remain preser
 The earlier [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
 describes version 1.
 
-The arXiv package is ready in [submission/arxiv-v20](submission/arxiv-v20/README.md).
-V20 states the result directly: adding any parallel-arrow equation not derivable
-from the defining equations, with closure under arrow operations and uniform
-formula substitution, collapses the category to a preorder. The body explains
-that this property is called maximality and relates total congruences to thin
-quotients. Theorem 2.1, its proof, the model proof and Appendix D.4 agree.
-All earlier releases, both proof routes and Appendix A remain. The supplied
-version-2 BibTeX and 49 source links are unchanged. See the
-[v20 report](docs/MANUSCRIPT_V20_REPORT.md) and
-[writing review](docs/reviews/V20_WRITING_REVIEW_2026-11-01.md).
+The arXiv package is ready in [submission/arxiv-v21](submission/arxiv-v21/README.md).
+V21 states Došen–Petrić's conjecture in the abstract and disproves it by collapse
+to a preorder after any nonderivable equation, with both closure conditions.
+It omits the general opening about categorical proof theory and the redundant
+preorder paraphrase from abstract and introduction. The precise conjecture
+citation remains in §1. All mathematics, both proof routes, Appendix A, the
+supplied v2 BibTeX and 49 source links remain. See the
+[v21 report](docs/MANUSCRIPT_V21_REPORT.md) and
+[writing review](docs/reviews/V21_WRITING_REVIEW_2026-11-02.md).
 
 V18 revises the abstract after consulting Knuth–Larrabee–Roberts. Its nine
 sentences introduce proof identifications, state maximality and its significance,
@@ -86,9 +85,9 @@ publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
-Current manuscript: [v20 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v20.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v20.tex), dated November 1, 2026, 23 pages. All v4–v19 releases remain preserved.
-The [v20 report](docs/MANUSCRIPT_V20_REPORT.md) records the descriptive result,
-equivalent theorem wording, matching builds and preservation.
+Current manuscript: [v21 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v21.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v21.tex), dated November 2, 2026, 23 pages. All v4–v20 releases remain preserved.
+The [v21 report](docs/MANUSCRIPT_V21_REPORT.md) records the abstract/introduction
+repairs, matching builds and preservation.
 Every manuscript revision increments its version; completed authorized main
 work is pushed before readiness is reported, as recorded in AGENTS.md.
 

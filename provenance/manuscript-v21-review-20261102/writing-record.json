@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-02",
+  "manuscript_version": 21,
+  "skill": "mathematical-writing:revise-mathematical-prose 0.1.3",
+  "governing_source": "Knuth–Larrabee–Roberts, Mathematical Writing, Section 1 points 12–13; retained retypeset text consulted. Earlier official-PDF abstract consultation retained.",
+  "primary_source": "Došen–Petrić, Proof-Theoretical Coherence, September 2007 revision, Section 14.2 printed p.322; retained fulltext consulted.",
+  "review_scope": "Focused abstract/introduction revision; whole-source dependency/prose continuity checked against unchanged v20 passages and paragraph-function records. No independent new proof audit.",
+  "paragraph_functions": {
+    "abstract": "Introduce category, state conjecture/disproof, explain proof method, state model result and Lean scope.",
+    "introduction_opening": "Introduce problem and collapse result; identify maximality and conjecture; give original nonthin example."
+  },
+  "unchanged_classifications_reused": [
+    "provenance/manuscript-v16-review-20261101/paragraph-functions.json",
+    "provenance/manuscript-v20-review-20261101/writing-record.json"
+  ],
+  "mathematical_content_unchanged": true,
+  "new_hostile_review": false,
+  "process_narration_added_to_paper": false,
+  "new_Lean_or_Palomar_check": false,
+  "author_side_AI_assisted": true
+}

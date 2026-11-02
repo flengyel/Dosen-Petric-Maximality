@@ -1,5 +1,29 @@
 # Manuscript corrections and source errata
 
+## State the conjecture; omit elementary abstract prose: v21 (2 November 2026)
+
+The author rejected an abstract that only pointed to the book's conjecture.
+V21 states the conjecture explicitly: Došen and Petrić conjectured that this
+category is not maximal. The disproof follows immediately with the descriptive
+collapse statement, preserving any nonderivable equation and both closure
+conditions. The precise book citation remains in the introduction.
+
+The author also removed the first abstract sentence about categorical proof
+theory. After initially retaining “We study ...”, the author asked to restore
+the previous opening. V21 therefore begins “We prove that ... is maximal”.
+Delete the redundant sentence explaining preorder as equality of all parallel
+arrows from both abstract and introduction; the model-corollary summary also
+concludes “is a preorder”. Retain the formal definition of preorder in §2.
+These preferences supersede v20's elementary paraphrases. Apply them across
+abstract representations and the introduction, rather than only one occurrence.
+
+The abstract is eight sentences, 153 words. Outside the abstract, the only
+prose change is the requested introduction deletion. All seven statement bodies,
+twelve numbered displays, thirteen diagrams, 34 labels, seventeen footnotes,
+both proof routes, Appendix A and its references, BibTeX and 49 declaration
+links remain. All 167 prior release files and 857 frozen proof/input blobs are
+preserved. See MANUSCRIPT_V21_REPORT.md and its writing review.
+
 ## Descriptive collapse statement: v20 (1 November 2026)
 
 The author requested a simple descriptive result before its technical name,

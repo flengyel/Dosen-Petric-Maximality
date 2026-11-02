@@ -15,7 +15,7 @@ the existing symmetric-fold deduction. V14, dated November 1, 2026, uses the
 hostile and mathematical-writing plugins for the complete preprint. It gives
 explicit arrow/functor types, uses literal and occurrence map, follows the
 source's dissociativity terminology and displays the calculations through v_A
-and w_A. The correspondences below apply also to v15–v20; see MANUSCRIPT_V14_REPORT.md
+and w_A. The correspondences below apply also to v15–v21; see MANUSCRIPT_V14_REPORT.md
 and its two review reports. Literal signs, theorem hypotheses and conclusions,
 all numbered displays, diagrams, labels, Lean theorems and registered inputs
 are preserved. The literal synonym and lemma captions change; no new Lean
@@ -107,6 +107,15 @@ quantifier. The theorem proof, model proof and D.4 translation are consistent.
 No new proof or theorem obligation is introduced. See
 [v20 report](MANUSCRIPT_V20_REPORT.md).
 
+## V21 abstract and introduction (2 November 2026)
+
+The abstract now states that Došen and Petrić conjectured the category is not
+maximal, then gives the disproof by collapse. The general opening and redundant
+elementary preorder paraphrases are omitted as requested. The §1 citation to
+§14.2, printed p.322, remains. The descriptive universal collapse statement and
+all mathematical hypotheses are unchanged. No correspondence row changes.
+See [v21 report](MANUSCRIPT_V21_REPORT.md).
+
 ## Three milestones and full-paper endpoint
 
 | Milestone | Actual result | Status |
@@ -196,11 +205,11 @@ closure are recorded in the final evidence. No mathematical claim in the paper's
 current scope remains assigned to an unproved field or deferred implementation
 target. Historical reports are not independent verification of this final scope.
 
-## Appendix D: registered statements and proof correspondence (v20)
+## Appendix D: registered statements and proof correspondence (v21)
 
 All names below have prefix DosenPetric unless stated otherwise. These are
 existing proofs retained in both immutable registered sources, not new results.
-V20 preserves v19's hyperlinks targeting version 2, 5dbee39bea09539bd130f729e82636419f71f920,
+V21 preserves v19's hyperlinks targeting version 2, 5dbee39bea09539bd130f729e82636419f71f920,
 matching the author's newly supplied bibliography. Exact paths, declaration
 lines and hashes for all 49 linked names are in the v19 linked-declarations
 record. The preceding v16–v18 sources and version-1 link records remain preserved.

@@ -1,25 +1,19 @@
 # Coverage and next proof obligations
 
-Current manuscript: v20, dated November 1, 2026, 23 pages. The result is
-stated descriptively: adjoining any equation between parallel arrows not
-derivable from the defining equations, with closure under arrow operations
-and uniform formula substitution, collapses the category to a preorder.
-Section 2 explains the quotient and that this universal property is called
-maximality. Theorem 2.1 is restated with the equivalent quotient conclusion;
-its proof, the model proof and Appendix D.4 agree. Thinness of the quotient
-is equivalent to totality by Congruence.quotient_thin_iff_total, already proved
-in the registered source at DosenPetric/CongruenceQuotient.lean:93.
+Current manuscript: v21, dated November 2, 2026, 23 pages. The abstract
+states the conjecture explicitly and disproves it by the collapse result.
+At the author's request, the general opening about categorical proof theory
+is removed, and the abstract and introduction omit the redundant elementary
+paraphrase of preorder. The model-corollary summary also says “is a preorder”.
+The precise conjecture citation remains in the introduction.
 
-The other six statement bodies, twelve numbered displays, thirteen diagrams,
-34 labels, seventeen footnotes, both proof routes, Appendix A and its references
-remain. The exact author-supplied Palomar v2 BibTeX and 49 declaration links
-are unchanged. All earlier releases and frozen inputs remain. See the
-[v20 report](MANUSCRIPT_V20_REPORT.md) and
-[writing review](reviews/V20_WRITING_REVIEW_2026-11-01.md).
-Earlier reports retain their dated scope. The completed formalization and
-[reverse content audit](FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md) remain
-the mathematical basis; this wording change does not repeat proof/kernel/
-Palomar checks or registration. No arXiv upload has occurred.
+All seven statement bodies, twelve numbered displays, thirteen diagrams,
+34 labels, seventeen footnotes, both proof routes, Appendix A and its references,
+the supplied v2 BibTeX and 49 source links remain. All previous releases and
+frozen inputs are preserved. See the [v21 report](MANUSCRIPT_V21_REPORT.md)
+and [writing review](reviews/V21_WRITING_REVIEW_2026-11-02.md).
+The completed formalization is unchanged; no successful proof/kernel/Palomar
+check or registration is repeated. No arXiv upload has occurred.
 
 ## Current complete full-paper formalization (29 October 2026)
 
