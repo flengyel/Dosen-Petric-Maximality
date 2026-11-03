@@ -1,5 +1,16 @@
 # Manuscript corrections and source errata
 
+## V24 review implementation (3 November 2026)
+
+All theorem and declaration mappings remain. Appendix D.4 explicitly retains
+substitution closure when applying the dichotomy. D.5 explains the weakening
+step and describes the common factorization directly; the normal-form equality
+is about the original morphism. The footnote identifies the normalized endpoint
+hom-sets, and the faithfulness transfer points to the occurrence-preserving
+equivalence in Section 3. Morphism terminology changes no formal statement.
+See [v24 report](MANUSCRIPT_V24_REPORT.md) and
+[implementation review](reviews/V24_IMPLEMENTATION_REVIEW_2026-11-03.md).
+
 ## Implement the full v22 review: v23 (2 November 2026)
 
 The author requested direct implementation and reiterated the removal of empty
@@ -1191,4 +1202,5 @@ require their own local committed-byte delivery; prior deliveries stay complete.
 The author supplied verbatim replacements for the Challenge opening, registry abstract, PrimitiveCongruence docstring and Total docstring. These are applied throughout the Challenge and corresponding production comments. Derives is explained as generated equivalence closed under composition, conjunction and disjunction. Empty qualifiers and the phrase structural-diagram constructions are removed from the submitted prose; the metadata names each diagram identity and gives manuscript/Lean correspondence. The v13 manuscript is cited at immutable commit 84d913d4ab30490ddf9c51788ed89ea5c7e9a601 and remains unchanged.
 
 The complete before/after text and diff are PALOMAR_PROSE_UPDATE_BEFORE_AFTER.md; the continuous preview is PALOMAR_PROSE_UPDATE_PUBLIC_PREVIEW.md; the local preparation and writing reports record the verification scope. All mathematical source tokens, selected theorem types and proof terms are preserved. Version 1 and source 2e771844077fd8cebfbe365230f13d4dd13a75b1 remain immutable. This is preparation for an ordinary update, expected version 2, with official preflight, pre-intake agreement and review-specific registration consent recorded as separate stages. No active registry citation or manuscript release changes during preparation.
+
 

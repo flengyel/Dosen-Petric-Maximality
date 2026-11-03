@@ -12,14 +12,18 @@ and its [registration report](docs/PALOMAR_REGISTRATION_REPORT.md) remain preser
 The earlier [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
 describes version 1.
 
-The arXiv package is ready in [submission/arxiv-v23](submission/arxiv-v23/README.md).
-V23 implements the accepted review: the introduction follows the argument,
-literature comparisons appear at their points of use, and Appendix C explains
-the two rank corrections in the cut-elimination argument used for Boolean
-Coherence. Empty modifiers are removed and the Notation citation is pinned.
-See the [v23 report](docs/MANUSCRIPT_V23_REPORT.md),
-[implementation review](docs/reviews/V23_IMPLEMENTATION_REVIEW_2026-11-02.md), and
-[complete TeX diff](provenance/manuscript-v23-review-20261102/v22-to-v23.diff).
+The corrected paper is [v24 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v24.pdf) and
+[TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v24.tex), dated November 3, 2026, 23 pages.
+The source package is in [submission/arxiv-v24](submission/arxiv-v24/README.md).
+V24 implements the accepted v23 review: explicit substitution closure in
+Appendix D.4, explained compound weakening, precise hom-sets and references,
+and consistent morphism terminology. All earlier manuscripts remain.
+See the [v24 report](docs/MANUSCRIPT_V24_REPORT.md),
+[implementation review](docs/reviews/V24_IMPLEMENTATION_REVIEW_2026-11-03.md), and
+[TeX diff](provenance/manuscript-v24-review-20261103/v23-to-v24.diff).
+The [Palomar update preparation](docs/PALOMAR_V24_UPDATE_PREPARATION.md) records
+the synchronized metadata candidate and remaining service steps. Version 2
+remains registered; a source commit or tag alone does not update the registry.
 
 V18 revises the abstract after consulting Knuth–Larrabee–Roberts. Its nine
 sentences introduce proof identifications, state maximality and its significance,
@@ -84,8 +88,8 @@ publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
-Current manuscript: [v23 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v23.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v23.tex), dated November 2, 2026, 23 pages. All v4–v22 releases remain preserved.
-The [v23 report](docs/MANUSCRIPT_V23_REPORT.md) records the applied review,
+Current manuscript: [v24 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v24.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v24.tex), dated November 3, 2026, 23 pages. All v4–v23 releases remain preserved.
+The [v24 report](docs/MANUSCRIPT_V24_REPORT.md) records the corrections,
 matching builds and preservation.
 Every manuscript revision increments its version; completed authorized main
 work is pushed before readiness is reported, as recorded in AGENTS.md.
@@ -761,4 +765,5 @@ The latest registered source is `5dbee39bea09539bd130f729e82636419f71f920`;
 version 1 retains `2e771844077fd8cebfbe365230f13d4dd13a75b1`. Official full preflight,
 service verification, the author's separate review-specific consent and
 version-2 registration are complete. ArXiv submission remains a separate step.
+
 

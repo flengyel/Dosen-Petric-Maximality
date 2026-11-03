@@ -1,24 +1,18 @@
-# arXiv preparation: manuscript v23
+# arXiv preparation: manuscript v24
 
-2 November 2026. V23, 23 pages. All earlier releases remain, including the
-[v22 preparation report](history/ARXIV_PREPARATION_V22_2026-11-02.md).
+3 November 2026. V24, 23 pages. All earlier releases remain.
 No arXiv upload has occurred.
 
-- [PDF](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v23.pdf)
-- [TeX](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v23.tex)
-- [Source archive](../submission/arxiv-v23/Dosen-Petric-Maximality-v23-arxiv-source.tar.gz)
-- [Submission fields](../submission/arxiv-v23/submission-fields.json)
-- [Package instructions](../submission/arxiv-v23/README.md)
-- [Release report](MANUSCRIPT_V23_REPORT.md)
-- [Implementation review](reviews/V23_IMPLEMENTATION_REVIEW_2026-11-02.md)
+- [PDF](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v24.pdf)
+- [TeX](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v24.tex)
+- [Source archive](../submission/arxiv-v24/Dosen-Petric-Maximality-v24-arxiv-source.tar.gz)
+- [Submission fields](../submission/arxiv-v24/submission-fields.json)
+- [Release report](MANUSCRIPT_V24_REPORT.md)
+- [Palomar update preparation](PALOMAR_V24_UPDATE_PREPARATION.md)
 
-The source and independently extracted four-file archive compile to matching
-text, coordinates and bibliography. All 23 pages were visually inspected.
-The final log has one underfull bibliography paragraph from the pinned Notation
-URL, with no visible layout defect. It has no unresolved citations/references,
-overfull boxes or duplicate destinations.
-
-The exact supplied Palomar v2 citation, registered proof, classifications,
-author details and AI disclosure remain. Registration is not repeated. The
-author selects an arXiv-supported license and checks the server preview.
-Windows Downloads delivery could not be performed from this environment.
+The manuscript and extracted source package compile with matching text,
+coordinates and bibliography. All registered Lean links and the supplied
+Palomar v2 bibliography remain unchanged. The registry citation stays at v2
+until an ordinary update is registered and verified. The author selects the
+arXiv-supported license and checks its server preview. No WSL Downloads copy
+is claimed from this environment.

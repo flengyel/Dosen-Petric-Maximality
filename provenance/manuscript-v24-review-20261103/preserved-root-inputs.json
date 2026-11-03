@@ -1,0 +1,89 @@
+{
+  "base_commit": "fae7998fde12ee460f15fa632252472f4e7f37c8",
+  "root_entries": [
+    {
+      "path": ".github",
+      "sha": "fbb2fe85b88dac80727acb882e04f7b9de3e8161",
+      "type": "tree",
+      "mode": "040000"
+    },
+    {
+      "path": ".gitignore",
+      "sha": "5d6bb9d8738f586b49537fffc35aeb783d9262b7",
+      "type": "blob",
+      "mode": "100644"
+    },
+    {
+      "path": "Challenge.lean",
+      "sha": "598ff26fc6fd9fd98b05b995c097d666afd0bcce",
+      "type": "blob",
+      "mode": "100644"
+    },
+    {
+      "path": "Checks",
+      "sha": "ec4148f05748f0e0e434030cb57c315386bff74a",
+      "type": "tree",
+      "mode": "040000"
+    },
+    {
+      "path": "DosenPetric.lean",
+      "sha": "2c12a1a7b80719018ae8a0292f5afc845b4c156d",
+      "type": "blob",
+      "mode": "100644"
+    },
+    {
+      "path": "DosenPetric",
+      "sha": "be5bcbf42d78b7f579d36a7773d1b171099fb605",
+      "type": "tree",
+      "mode": "040000"
+    },
+    {
+      "path": "LICENSE",
+      "sha": "8dada3edaf50dbc082c9a125058f25def75e625a",
+      "type": "blob",
+      "mode": "100644"
+    },
+    {
+      "path": "Solution.lean",
+      "sha": "490fb97f5eee626ca79f26caaa89946bf619288c",
+      "type": "blob",
+      "mode": "100644"
+    },
+    {
+      "path": "comparator.json",
+      "sha": "3cb8c021a020f34a40a113deb9c52c506b7b4783",
+      "type": "blob",
+      "mode": "100644"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha": "92c5d00dfc7bea7770960ef16c772f97afbbce78",
+      "type": "blob",
+      "mode": "100644"
+    },
+    {
+      "path": "lakefile.toml",
+      "sha": "05dcc7830467cbea7e6f57f43dc37af71a2bdc53",
+      "type": "blob",
+      "mode": "100644"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha": "a6aff065db2882c535684f8c5bcd4f16e9a23915",
+      "type": "blob",
+      "mode": "100644"
+    },
+    {
+      "path": "palomar",
+      "sha": "120cf3a8a51a4e48fd55dfb7b9bc76d4c10c2966",
+      "type": "tree",
+      "mode": "040000"
+    },
+    {
+      "path": "scripts",
+      "sha": "8900cf074fb23fe388f6cfbb62a742b4cb957881",
+      "type": "tree",
+      "mode": "040000"
+    }
+  ]
+}

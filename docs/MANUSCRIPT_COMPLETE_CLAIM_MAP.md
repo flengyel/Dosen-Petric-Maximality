@@ -15,7 +15,7 @@ the existing symmetric-fold deduction. V14, dated November 1, 2026, uses the
 hostile and mathematical-writing plugins for the complete preprint. It gives
 explicit arrow/functor types, uses literal and occurrence map, follows the
 source's dissociativity terminology and displays the calculations through v_A
-and w_A. The correspondences below apply also to v15–v23; see MANUSCRIPT_V14_REPORT.md
+and w_A. The correspondences below apply also to v15–v24; see MANUSCRIPT_V14_REPORT.md
 and its two review reports. Literal signs, theorem hypotheses and conclusions,
 all numbered displays, diagrams, labels, Lean theorems and registered inputs
 are preserved. The literal synonym and lemma captions change; no new Lean
@@ -133,6 +133,17 @@ coherence appendix attributes the union-zero equation to the zero law together
 with the product, coproduct and dissociativity equations, without faithfulness.
 See [v23 report](MANUSCRIPT_V23_REPORT.md) and the retained v22 review.
 
+## V24 review implementation (3 November 2026)
+
+All theorem and declaration mappings remain. Appendix D.4 explicitly retains
+substitution closure when applying the dichotomy. D.5 explains the weakening
+step and describes the common factorization directly; the normal-form equality
+is about the original morphism. The footnote identifies the normalized endpoint
+hom-sets, and the faithfulness transfer points to the occurrence-preserving
+equivalence in Section 3. Morphism terminology changes no formal statement.
+See [v24 report](MANUSCRIPT_V24_REPORT.md) and
+[implementation review](reviews/V24_IMPLEMENTATION_REVIEW_2026-11-03.md).
+
 ## Three milestones and full-paper endpoint
 
 | Milestone | Actual result | Status |
@@ -222,11 +233,11 @@ closure are recorded in the final evidence. No mathematical claim in the paper's
 current scope remains assigned to an unproved field or deferred implementation
 target. Historical reports are not independent verification of this final scope.
 
-## Appendix D: registered statements and proof correspondence (v23)
+## Appendix D: registered statements and proof correspondence (v24)
 
 All names below have prefix DosenPetric unless stated otherwise. These are
 existing proofs retained in both immutable registered sources, not new results.
-V23 preserves v19's hyperlinks targeting version 2, 5dbee39bea09539bd130f729e82636419f71f920,
+V24 preserves v19's hyperlinks targeting version 2, 5dbee39bea09539bd130f729e82636419f71f920,
 matching the author's newly supplied bibliography. Exact paths, declaration
 lines and hashes for all 49 linked names are in the v19 linked-declarations
 record. The preceding v16–v18 sources and version-1 link records remain preserved.
@@ -278,4 +289,5 @@ The five separately selected Palomar declarations remain the five in D.3.
 These additional source links do not create new selections or a registration.
 The full-paper endpoint, both proof routes and every old claim-map row remain.
 No extra empty-P/constant-substitution/cardinality deduction is added to v16.
+
 

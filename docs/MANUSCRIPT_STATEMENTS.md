@@ -1,17 +1,16 @@
 # Manuscript v7: statements and formal scope
 
-Current manuscript: v23, dated November 2, 2026, 23 pages. It implements the
-accepted correctness, citation and writing review. The introduction follows
-the proof and moves detailed literature comparisons to their points of use.
-Appendix C identifies the cut-elimination argument used in Boolean Coherence
-and gives both strict rank decreases. Arrow terms replaces raw terms; the
-empty-union and equational-derivation sentences are made precise.
-All seven numbered statements, both maximality proofs, Appendix A, displayed
-equations, diagrams, labels and 49 declaration destinations are preserved.
-The exact Palomar v2 citation and registered source remain. See the
-[v23 report](MANUSCRIPT_V23_REPORT.md) and
-[implementation review](reviews/V23_IMPLEMENTATION_REVIEW_2026-11-02.md).
-No Lean rebuild, kernel replay, new registration or arXiv upload was performed.
+Current manuscript: v24, dated November 3, 2026, 23 pages. It implements the
+accepted v23 hostile-referee and mathematical-writing corrections: explicit
+substitution closure in Appendix D.4; an explanation of compound weakening;
+precise normal-form hom-sets and internal references; and morphism terminology.
+The technical expression arrow term, exact Lean names, both maximality proofs,
+all equations and diagrams, and the registered v2 source links are preserved.
+The parameter recap is removed and the term/quotient square has a labelled pointer.
+See [v24 report](MANUSCRIPT_V24_REPORT.md) and
+[implementation review](reviews/V24_IMPLEMENTATION_REVIEW_2026-11-03.md).
+Palomar v2 remains the registered version. A synchronized metadata candidate is
+prepared for the requested ordinary update; no new registry version is claimed.
 
 ## Current complete full-paper formalization (29 October 2026)
 
@@ -1023,4 +1022,5 @@ complete rewrite dispatch, macro/tied-site ranks and broader elimination/coheren
 | Cut-free logical reconstruction | opposite_conjL_eliminated/opposite_disjR_eliminated | Actual cut-free atomized witnesses with exact equality from the child witness. |
 | Same-degree recursive call | opposite_conjL_descent/opposite_disjR_descent and both rank_step lemmas | Complete inherited original-child cleanliness and strict selected-rank descent, before rebuilding. |
 | Prefix/suffix logical comparison | prefixSide_logical, prefixSide_join/split, suffixLogicalSide_join/split | Actual association and unit comparisons; product-coordinate pentagon is proved and instantiated. |
+
 

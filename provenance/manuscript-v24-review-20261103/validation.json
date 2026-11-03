@@ -1,0 +1,97 @@
+{
+  "base_commit": "fae7998fde12ee460f15fa632252472f4e7f37c8",
+  "manuscript_version": 24,
+  "pages": 23,
+  "source_lines": 1786,
+  "preservation": {
+    "numbered_equations": {
+      "count": 12,
+      "byte_identical": true
+    },
+    "displayed_formulas": {
+      "count": 77,
+      "byte_identical": true
+    },
+    "diagrams": {
+      "count": 13,
+      "byte_identical": true
+    },
+    "lean_links": {
+      "count": 56,
+      "byte_identical": true
+    },
+    "verbatim_blocks": {
+      "count": 2,
+      "byte_identical": true
+    },
+    "statements": {
+      "count": 7,
+      "identical_modulo_authorized_terminology": true
+    },
+    "proofs": {
+      "count": 6,
+      "identical_modulo_authorized_terminology": true
+    },
+    "labels": {
+      "old_preserved": 34,
+      "added": [
+        "app:terms-equations"
+      ],
+      "unresolved_source_references": []
+    },
+    "bibliographies": {
+      "count": 2,
+      "byte_identical": true
+    }
+  },
+  "v23_source_hash_unchanged": true,
+  "source_and_archive_text_and_coordinates_identical": true,
+  "source_and_archive_bibliography_identical": true,
+  "distinct_linked_declarations": 49,
+  "build_exits": [
+    {
+      "step": "latex1",
+      "exit": 0
+    },
+    {
+      "step": "bibtex",
+      "exit": 0
+    },
+    {
+      "step": "latex2",
+      "exit": 0
+    },
+    {
+      "step": "latex3",
+      "exit": 0
+    }
+  ],
+  "archive_build_exits": [
+    {
+      "step": "latex1",
+      "exit": 0
+    },
+    {
+      "step": "bibtex",
+      "exit": 0
+    },
+    {
+      "step": "latex2",
+      "exit": 0
+    },
+    {
+      "step": "latex3",
+      "exit": 0
+    }
+  ],
+  "final_warnings": [
+    "Underfull \\hbox (badness 2556) in paragraph at lines 61--66"
+  ],
+  "warning_assessment": "One underfull bibliography paragraph caused by the pinned Notation URL; within the margins. No unresolved citations or references, overfull boxes or duplicate destinations.",
+  "visual_review": "All 23 final PDF pages inspected; Appendix C forced break removed to eliminate an otherwise empty page holding two concluding sentences of Appendix B.",
+  "lean_build_or_kernel_replay": false,
+  "new_palomar_registration": false,
+  "arxiv_uploaded": false,
+  "windows_downloads_delivery": false,
+  "windows_delivery_reason": "The author Windows/WSL filesystem is unavailable in this environment."
+}

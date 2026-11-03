@@ -1,5 +1,8 @@
-Current phase (2 November 2026): Palomar version 2 is registered and verified;
-arXiv v23 preparation is complete. No arXiv upload has occurred.
+Current phase (3 November 2026): Palomar version 2 remains registered;
+corrected manuscript v24 and synchronized metadata candidate are prepared.
+The author requests an ordinary registry update. No new version is registered.
+Read PALOMAR_V24_UPDATE_PREPARATION.md for the exact remaining service steps.
+No arXiv upload has occurred.
 
 The author subsequently requested pushing v14. Its three commits through
 9e46cdca7f2fe2f59983ecf324e08a80ad09c81a were pushed to remote main and the
@@ -36,7 +39,7 @@ error was established. The author accepted all seven and requested source
 footnotes and an explanation for mathematicians unfamiliar with proof assistants.
 V16 incorporates them and uses the formal proof to improve the paper. V15 is
 preserved; v17 implements the later terminology/layout corrections. Any further
-revision must be v24 or later. Keep the exact registered
+revision must be v25 or later. Keep the exact registered
 inputs and reuse passed checks.
 Evidence is under provenance/reverse-manuscript-audit-20261101/; reports are
 delivered from committed bytes to
@@ -55,8 +58,9 @@ Earlier v1-cited manuscripts and both frozen sources remain preserved.
 After receiving the exact review, digest and publication explanation, the author
 explicitly authorized registration. The digest-bound request was accepted;
 authenticated status and the public entry/indexes confirm completed registration.
-Do not repeat intake, register POST, passed preflight, service verification,
-proof builds or kernel replays. The read-only publication monitor has completed.
+Do not repeat the completed v2 intake or registration. The newly requested
+ordinary update requires its own candidate preflight, service verification and
+review. Preserve v2 evidence and do not claim it verifies a new candidate. The read-only publication monitor has completed.
 Do not restart it. The exact original review, consent digest, credential,
 private responses and request receipt remain ignored in
 .codex-work/palomar-v2-service-20261031/private/. The private direct submission
@@ -72,29 +76,25 @@ Retain the version-1 Cloudflare diagnostic as historical evidence for version 1.
 The preceding version-1 continuation is preserved in
 history/CODEX_NEXT_SESSION_V1_20261101.txt. Keep both immutable source snapshots.
 
-Current manuscript: v23, dated November 2, 2026, 23 pages. It implements the
-accepted correctness, citation and writing review. The introduction follows
-the proof and moves detailed literature comparisons to their points of use.
-Appendix C identifies the cut-elimination argument used in Boolean Coherence
-and gives both strict rank decreases. Arrow terms replaces raw terms; the
-empty-union and equational-derivation sentences are made precise.
-All seven numbered statements, both maximality proofs, Appendix A, displayed
-equations, diagrams, labels and 49 declaration destinations are preserved.
-The exact Palomar v2 citation and registered source remain. See the
-[v23 report](MANUSCRIPT_V23_REPORT.md) and
-[implementation review](reviews/V23_IMPLEMENTATION_REVIEW_2026-11-02.md).
-No Lean rebuild, kernel replay, new registration or arXiv upload was performed.
+Current manuscript: v24, dated November 3, 2026, 23 pages. It implements the
+accepted v23 hostile-referee and mathematical-writing corrections: explicit
+substitution closure in Appendix D.4; an explanation of compound weakening;
+precise normal-form hom-sets and internal references; and morphism terminology.
+The technical expression arrow term, exact Lean names, both maximality proofs,
+all equations and diagrams, and the registered v2 source links are preserved.
+The parameter recap is removed and the term/quotient square has a labelled pointer.
+See [v24 report](MANUSCRIPT_V24_REPORT.md) and
+[implementation review](reviews/V24_IMPLEMENTATION_REVIEW_2026-11-03.md).
+Palomar v2 remains the registered version. A synchronized metadata candidate is
+prepared for the requested ordinary update; no new registry version is claimed.
 
-Upload: submission/arxiv-v23/Dosen-Petric-Maximality-v23-arxiv-source.tar.gz.
-Four members: main.tex, main.bbl, references_v23.bib and palomar_v23.bib.
-Both builds produce matching 23-page text and coordinates. All pages were
-visually inspected. One underfull bibliography paragraph from the pinned URL
-is visually acceptable; there are no unresolved citations or references.
-Evidence: provenance/manuscript-v23-review-20261102/.
-The author requested direct implementation; no Codex implementation is pending.
-Windows Downloads delivery was unavailable in this environment. The new files
-are supplied directly and retained in the public repository. Do not record a
-Windows copy as completed. Preserve earlier deliveries and the WSL stash.
+Upload package: submission/arxiv-v24/Dosen-Petric-Maximality-v24-arxiv-source.tar.gz.
+Four members: main.tex, main.bbl, references_v24.bib and palomar_v24.bib.
+Both builds produce matching 23-page text and coordinates.
+Evidence: provenance/manuscript-v24-review-20261103/.
+The manuscript and Lean-source links continue to cite registered v2 pending
+successful registration of a successor. No new service review is preapproved.
+Windows/WSL Downloads is unavailable in this environment; no copy is claimed.
 
 No arXiv upload or new license selection has occurred. The author selects the
 arXiv-supported license and checks the server preview in the submission account.
@@ -103,4 +103,5 @@ after actual arXiv submission, continue Local connectedness in recursion
 categories and essential incompleteness under the author's instructions.
 Preserve the existing stash and all other projects. Deliver every report from
 committed bytes to Downloads, preserving differing copies and verifying hashes.
+
 
