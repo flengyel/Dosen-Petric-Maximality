@@ -1,0 +1,47 @@
+{
+  "recorded_at": "2026-11-03T06:46:41.726664+00:00",
+  "submission_id": "j92h1fl2enqs",
+  "candidate_commit": "76a4ea71f257746bb6ea2cb2e686e85914c7347c",
+  "last_confirmed_submission_status": "awaiting-review",
+  "last_confirmed_status_at": "2026-11-03T06:26:12.655176+00:00",
+  "requests": [
+    {
+      "endpoint_role": "submission-latest",
+      "utc": "2026-11-03T06:44:37.839614+00:00",
+      "http_status": 500,
+      "response_sha256": "f1272a7b52c56549f1229d03448379caaf3d6caf7d3f1faedd3457962f4f8723",
+      "retry_after": null
+    },
+    {
+      "endpoint_role": "review-latest",
+      "utc": "2026-11-03T06:45:11.433448+00:00",
+      "http_status": 500,
+      "response_sha256": "f1272a7b52c56549f1229d03448379caaf3d6caf7d3f1faedd3457962f4f8723",
+      "retry_after": null
+    },
+    {
+      "endpoint_role": "health-latest",
+      "utc": "2026-11-03T06:44:37.766489+00:00",
+      "http_status": 200,
+      "response_sha256": "4062edaf750fb8074e7e83e0c9028c94e32468a8b6f1614774328ef045150f93",
+      "retry_after": null
+    },
+    {
+      "endpoint_role": "versions-readback",
+      "utc": "2026-11-03T06:45:53.519223+00:00",
+      "http_status": 200,
+      "response_sha256": "09446e12459eba1edfcf9a16d6321caa3830e60994f1987f395b4fa54e1a31a2",
+      "retry_after": null
+    }
+  ],
+  "html_error_title": "Palomar could not complete that just now — Palomar",
+  "review_received": false,
+  "registration_requested_by_agent": false,
+  "last_confirmed_public_versions": [
+    1,
+    2
+  ],
+  "fresh_intake_started": false,
+  "passing_checks_repeated": false,
+  "monitor_error_handling_corrected": true
+}

@@ -1,10 +1,12 @@
-# Palomar v3 update: service verification passed; review pending
+# Palomar v3 update: verification passed; status and review APIs unavailable
 
 3 November 2026. The ordinary update was authenticated as submission
 **`j92h1fl2enqs`** at 06:04:55 UTC, after the earlier temporary intake failures.
 Palomar has completed mechanical verification of the exact candidate with
 `status: pass` and no errors. The requested update is **not registered**. The
-service review is pending; no registration request has been made.
+last confirmed service state was `awaiting-review`. The status and review APIs
+now return HTTP 500, so current review progress cannot be confirmed. No
+registration request has been made.
 
 ## Fixed release and completed preflight
 
@@ -73,14 +75,41 @@ completed successfully. Its complete mechanical report has `status: pass`,
 root configuration, five selected declarations and input hashes were checked
 against the fixed candidate. Lean, NanoDa and con-ron passed. The separate
 [service verification report](PALOMAR_V3_SERVICE_VERIFICATION_REPORT.md)
-records the evidence. The authenticated state is `awaiting-review`; no review
-has yet been retrieved. The private status-page shortcut was
+records the evidence. The last successful authenticated check, at 06:26:12 UTC,
+reported `awaiting-review`; no review has been retrieved. The private status-page shortcut was
 delivered under `Downloads/Dosen-Petric-Palomar-v3-Private-20261103/`; it
 contains a bearer credential and is excluded from Git.
 
 Version 3 remains unconfirmed, as does the prepared citation's publication
 condition. The author has not approved unseen review material. Opening the
 submission page does not constitute a registration instruction.
+
+## Refresh failure after successful verification
+
+The author's submission page reported “Could not refresh this submission.
+Retrying.” The saved authenticated status request returned HTTP **500** at
+06:31:13 UTC and again at 06:44:37 UTC. A separate request to the review
+endpoint returned HTTP **500** at 06:45:11 UTC. Both endpoints served the
+generic HTML error page titled “Palomar could not complete that just now —
+Palomar”, rather than their normal JSON response.
+
+A contemporaneous health request returned HTTP 200 with `{"ok":true}`; that
+generic endpoint does not establish that submission status or review retrieval
+works. The independent public version index remained available at 06:45:53
+UTC and listed registered versions 1 and 2 only. It did not list version 3.
+
+This is a server-side refresh/retrieval failure. No failed proof check or
+requested candidate correction was returned. The retained full preflight and
+service mechanical verification remain passing results; current review
+progress is unknown while these endpoints fail. No review, service consent
+digest or registration confirmation has been received.
+
+The background monitor stopped at the first HTML error because its code tried
+to parse that response as successful status JSON. This local error handling
+has been corrected: non-200 responses leave the last confirmed state intact,
+are retained privately, and are followed by the required wait before another
+check. Monitoring continues against the same submission. No new intake or
+verification has been started.
 
 ## Preserved state and continuation
 
@@ -108,7 +137,7 @@ Only then send the digest-bound registration request. Verify public version
 3 at the exact candidate before describing the prepared citation as confirmed.
 Any different version or commit stops final publication; the tag must remain.
 
-Both reports and the selected public evidence are delivered from committed
+The reports and selected public evidence are delivered from committed
 bytes to `/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/`, with
 conflict preservation and a verified delivery receipt. This status does not
 claim completion of the requested registration.
