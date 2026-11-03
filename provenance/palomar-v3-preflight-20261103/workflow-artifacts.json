@@ -1,0 +1,25 @@
+{
+  "total_count": 1,
+  "artifacts": [
+    {
+      "id": 13205289687,
+      "node_id": "MDg6QXJ0aWZhY3QxMzIwNTI4OTY4Nw==",
+      "name": "mechanical-report-preflight001",
+      "size_in_bytes": 11228,
+      "url": "https://api.github.com/repos/flengyel/Dosen-Petric-Maximality/actions/artifacts/13205289687",
+      "archive_download_url": "https://api.github.com/repos/flengyel/Dosen-Petric-Maximality/actions/artifacts/13205289687/zip",
+      "expired": false,
+      "digest": "sha256:a6c4c63f1b24417bd2445c5094cfeedef2e73f373c0fd2d710ee448aa15479f1",
+      "created_at": "2026-11-03T05:07:03Z",
+      "updated_at": "2026-11-03T05:07:03Z",
+      "expires_at": "2027-02-01T04:56:26Z",
+      "workflow_run": {
+        "id": 41580971518,
+        "repository_id": 1429087498,
+        "head_repository_id": 1429087498,
+        "head_branch": "dosen-petric-v25-palomar-v3",
+        "head_sha": "76a4ea71f257746bb6ea2cb2e686e85914c7347c"
+      }
+    }
+  ]
+}

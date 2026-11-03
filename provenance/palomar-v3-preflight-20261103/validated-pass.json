@@ -1,0 +1,85 @@
+{
+  "utc": "2026-11-03T05:09:52.854891+00:00",
+  "repository": "flengyel/Dosen-Petric-Maximality",
+  "commit": "76a4ea71f257746bb6ea2cb2e686e85914c7347c",
+  "durable_tag": "dosen-petric-v25-palomar-v3",
+  "run_id": 41580971518,
+  "run_url": "https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41580971518",
+  "status": "pass",
+  "errors": [],
+  "mechanical_report_sha256": "61c666fbe96eea6346716ab7ceafa7a3ffa4e13e9ea1633e65fb5aefe5a8706b",
+  "execution_profile": "palomar-standard-v1",
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "bindings": {
+    "challenge": {
+      "path": "Challenge.lean",
+      "sha256": "ad8c0322978f4f9da3f44070eac45b0e0e2ec5b9f67c929bfbaa37aa662819ef"
+    },
+    "solution": {
+      "path": "Solution.lean",
+      "sha256": "418b69bd252a93b7f420be67f5d0418a1a39f79e17988cd81dfe0f2eec4f9b91"
+    },
+    "comparator": {
+      "path": "comparator.json",
+      "sha256": "db36e6b9256356ca97a16be363a878b1feb337afd3217ef86096a29218290abb"
+    },
+    "formalization": {
+      "path": "formalization.yaml",
+      "sha256": "a7e44e18506ed45cfe0fa749eabe7f0dfc9f8151da4eb5b76f0e8d279a9da358"
+    },
+    "lake_manifest": {
+      "path": "lake-manifest.json",
+      "sha256": "01a12079da418a0c2cb55ddb97259aeb6b1a66c9ccc15b222e172b17f56c5822"
+    },
+    "lakefile": {
+      "path": "lakefile.toml",
+      "sha256": "1a20167e2938ffcc6ffeca143dfd65883be292f2ffd039953fb5ea24fc188796"
+    },
+    "license": {
+      "path": "LICENSE",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    }
+  },
+  "selected_theorems": [
+    "DosenPetric.Palomar.maximality",
+    "DosenPetric.Palomar.short_maximality",
+    "DosenPetric.Palomar.congruence_dichotomy",
+    "DosenPetric.Palomar.identity_ne_zero",
+    "DosenPetric.Palomar.no_top_to_bot"
+  ],
+  "kernels": [
+    {
+      "argv": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/nanoda_bin"
+      ],
+      "name": "nanoda"
+    },
+    {
+      "argv": [
+        "/home/runner/work/_temp/palomar/trusted-checker-update/con-ron",
+        "--jobs=2",
+        "--verified"
+      ],
+      "name": "con-ron"
+    }
+  ],
+  "kernel_attempts": [
+    {
+      "argv": [
+        "/home/runner/work/_temp/palomar/trusted-checker-update/con-ron",
+        "--jobs=2",
+        "--verified"
+      ],
+      "budget_seconds": 1800,
+      "detail": "con-ron: accepted 9639 declarations (--verified)\n\ncon-ron: 2 inductive blocks modelled in-process: Lean.Syntax, DosenPetric.TraceTree (51 generated records, checked by the fold as declarations and not counted as records of the file)\ncon-ron: 2 declarations hoisted ahead of the pinned Nat operations they ground: Nat.mul._f, Nat.mul",
+      "exit_code": 0,
+      "name": "con-ron",
+      "reason": "complete",
+      "status": "accepted"
+    }
+  ],
+  "warnings": [
+    "configured Challenge source exceeds the preferred 32 KiB / 300-line review surface"
+  ],
+  "reused_prior_version_preflight": false
+}

@@ -1,0 +1,57 @@
+{
+  "recorded_at": "2026-11-03T05:39:01.864314+00:00",
+  "repository": "flengyel/Dosen-Petric-Maximality",
+  "candidate_commit": "76a4ea71f257746bb6ea2cb2e686e85914c7347c",
+  "durable_tag": "dosen-petric-v25-palomar-v3",
+  "registry_id": "PALOMAR-2026-10-30-000014",
+  "intended_version": 3,
+  "confirmed_registered_version": 2,
+  "official_full_preflight": {
+    "status": "pass",
+    "run_id": 41580971518,
+    "url": "https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41580971518",
+    "report_sha256": "61c666fbe96eea6346716ab7ceafa7a3ffa4e13e9ea1633e65fb5aefe5a8706b"
+  },
+  "update_status": "blocked_at_intake_by_service_unavailability",
+  "intake_attempts": [
+    {
+      "utc": "2026-11-03T05:30:56.416584+00:00",
+      "http_status": 503,
+      "error": "submission intake is temporarily unavailable",
+      "retry_after": null
+    },
+    {
+      "utc": "2026-11-03T05:34:12.586820+00:00",
+      "http_status": 503,
+      "error": "submission intake is temporarily unavailable",
+      "retry_after": null
+    },
+    {
+      "utc": "2026-11-03T05:37:39.118357+00:00",
+      "http_status": 503,
+      "error": "submission intake is temporarily unavailable",
+      "retry_after": null
+    }
+  ],
+  "service_health": {
+    "ok": true
+  },
+  "authenticated_submission_id": null,
+  "challenge_received": false,
+  "temporary_authentication_tag_created": false,
+  "secret_gist_created": false,
+  "service_verification_started": false,
+  "review_received": false,
+  "registration_consent_requested": false,
+  "registration_requested": false,
+  "version_3_registration_confirmed": false,
+  "arxiv_uploaded": false,
+  "durable_tag_changed": false,
+  "frozen_release_changed": false,
+  "resume": {
+    "reuse_exact_candidate_full_preflight": true,
+    "preflight_validation_staging": ".codex-work/palomar-v3-update-20261103/preflight/validated-pass.json",
+    "private_attempt_staging": ".codex-work/palomar-v3-update-20261103/private/",
+    "next_action": "Recheck exact registration identity and successor, then retry ordinary intake after service availability is restored; require approval of the exact returned review before registration."
+  }
+}

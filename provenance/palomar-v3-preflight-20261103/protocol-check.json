@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-03T05:03:21.800172+00:00",
+  "upstream_heads": {
+    "PalomarPolicy": "28bd48b9b71bbb2a82c718ce761d5a4220ef8e60",
+    "PalomarSubmission": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7"
+  },
+  "protocol_files": {
+    "submission-README.md": {
+      "sha256": "f0bbde0352c97da9a2dda8816b69eb1a12747b1dc8acdeec6a52ade33eb48a1f",
+      "bytes": 27986
+    },
+    "CONTRIBUTING.md": {
+      "sha256": "868afa4b641d1b983343f82f7fb0c1e3b43e298db481382a539d255ecc25e2cc",
+      "bytes": 59487
+    },
+    "specification.md": {
+      "sha256": "4e5371b14c9f256fc39e6ac6cab7c599db2950b6a2fa250aad676bf0555eea29",
+      "bytes": 26556
+    },
+    "llms.txt": {
+      "sha256": "86a23b3014634d39273fe184b049c140e27e8cad8f32c4f634bc2ee447551941",
+      "bytes": 22049
+    }
+  }
+}
