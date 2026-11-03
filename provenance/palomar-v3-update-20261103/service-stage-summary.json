@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-11-03T05:52:14.558858+00:00",
+  "recorded_at": "2026-11-03T06:12:02.509249+00:00",
   "repository": "flengyel/Dosen-Petric-Maximality",
   "candidate_commit": "76a4ea71f257746bb6ea2cb2e686e85914c7347c",
   "durable_tag": "dosen-petric-v25-palomar-v3",
@@ -12,7 +12,7 @@
     "url": "https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41580971518",
     "report_sha256": "61c666fbe96eea6346716ab7ceafa7a3ffa4e13e9ea1633e65fb5aefe5a8706b"
   },
-  "update_status": "blocked_at_intake_by_service_unavailability",
+  "update_status": "service_verification_passed_review_pending",
   "intake_attempts": [
     {
       "utc": "2026-11-03T05:30:56.416584+00:00",
@@ -42,11 +42,11 @@
   "service_health": {
     "ok": true
   },
-  "authenticated_submission_id": null,
-  "challenge_received": false,
-  "temporary_authentication_tag_created": false,
-  "secret_gist_created": false,
-  "service_verification_started": false,
+  "authenticated_submission_id": "j92h1fl2enqs",
+  "challenge_received": true,
+  "temporary_authentication_tag_created": true,
+  "secret_gist_created": true,
+  "service_verification_started": true,
   "review_received": false,
   "registration_consent_requested": false,
   "registration_requested": false,
@@ -58,6 +58,22 @@
     "reuse_exact_candidate_full_preflight": true,
     "preflight_validation_staging": ".codex-work/palomar-v3-update-20261103/preflight/validated-pass.json",
     "private_attempt_staging": ".codex-work/palomar-v3-update-20261103/private/",
-    "next_action": "Recheck exact registration identity and successor, then retry ordinary intake after service availability is restored; require approval of the exact returned review before registration."
+    "next_action": "Monitor existing authenticated submission j92h1fl2enqs. Do not repeat intake or passing exact-candidate full preflight. Deliver exact returned review privately and obtain approval of its digest before registration."
+  },
+  "access_proof_cleanup": {
+    "completed_at": "2026-11-03T06:05:00.902590+00:00",
+    "temporary_tag_deleted": true,
+    "secret_gist_deleted": true,
+    "both_readback_http_status": 404
+  },
+  "authenticated_at": "2026-11-03T06:04:55.969430+00:00",
+  "service_workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41587644731",
+  "service_verification": {
+    "status": "pass",
+    "run_id": 41587644731,
+    "url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41587644731",
+    "report_sha256": "a99c3d7e48ac5383e9c3f6bad564284f836eeab879e1fe2c4d1f5f8d0a0066b8",
+    "execution_profile": "palomar-namespace-16x32-v1",
+    "errors": []
   }
 }

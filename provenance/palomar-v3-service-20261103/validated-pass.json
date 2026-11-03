@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-11-03T06:11:40.477441+00:00",
+  "candidate_commit": "76a4ea71f257746bb6ea2cb2e686e85914c7347c",
+  "repository": "flengyel/Dosen-Petric-Maximality",
+  "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "run_id": 41587644731,
+  "run_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41587644731",
+  "status": "pass",
+  "errors": [],
+  "mechanical_report_sha256": "a99c3d7e48ac5383e9c3f6bad564284f836eeab879e1fe2c4d1f5f8d0a0066b8",
+  "execution_profile": "palomar-namespace-16x32-v1",
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "bindings": {
+    "challenge": {
+      "path": "Challenge.lean",
+      "sha256": "ad8c0322978f4f9da3f44070eac45b0e0e2ec5b9f67c929bfbaa37aa662819ef"
+    },
+    "solution": {
+      "path": "Solution.lean",
+      "sha256": "418b69bd252a93b7f420be67f5d0418a1a39f79e17988cd81dfe0f2eec4f9b91"
+    },
+    "comparator": {
+      "path": "comparator.json",
+      "sha256": "db36e6b9256356ca97a16be363a878b1feb337afd3217ef86096a29218290abb"
+    },
+    "formalization": {
+      "path": "formalization.yaml",
+      "sha256": "a7e44e18506ed45cfe0fa749eabe7f0dfc9f8151da4eb5b76f0e8d279a9da358"
+    },
+    "lake_manifest": {
+      "path": "lake-manifest.json",
+      "sha256": "01a12079da418a0c2cb55ddb97259aeb6b1a66c9ccc15b222e172b17f56c5822"
+    },
+    "lakefile": {
+      "path": "lakefile.toml",
+      "sha256": "1a20167e2938ffcc6ffeca143dfd65883be292f2ffd039953fb5ea24fc188796"
+    },
+    "license": {
+      "path": "LICENSE",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    }
+  },
+  "selected_theorems": [
+    "DosenPetric.Palomar.maximality",
+    "DosenPetric.Palomar.short_maximality",
+    "DosenPetric.Palomar.congruence_dichotomy",
+    "DosenPetric.Palomar.identity_ne_zero",
+    "DosenPetric.Palomar.no_top_to_bot"
+  ],
+  "kernels": [
+    {
+      "argv": [
+        "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/nanoda_bin"
+      ],
+      "name": "nanoda"
+    },
+    {
+      "argv": [
+        "/home/runner/work/_temp/palomar/trusted-checker-update/con-ron",
+        "--jobs=2",
+        "--verified"
+      ],
+      "name": "con-ron"
+    }
+  ],
+  "warnings": [
+    "configured Challenge source exceeds the preferred 32 KiB / 300-line review surface"
+  ],
+  "registration_status": "not_registered"
+}

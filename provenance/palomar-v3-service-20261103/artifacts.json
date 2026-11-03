@@ -1,0 +1,25 @@
+{
+  "total_count": 1,
+  "artifacts": [
+    {
+      "id": 13208164821,
+      "node_id": "MDg6QXJ0aWZhY3QxMzIwODE2NDgyMQ==",
+      "name": "mechanical-report-j92h1fl2enqs",
+      "size_in_bytes": 11284,
+      "url": "https://api.github.com/repos/PalomarRegistry/PalomarSubmission/actions/artifacts/13208164821",
+      "archive_download_url": "https://api.github.com/repos/PalomarRegistry/PalomarSubmission/actions/artifacts/13208164821/zip",
+      "expired": false,
+      "digest": "sha256:4a6af8f23876adc471c14258050bd57f3cdb16efd655024569b2578b02e8b189",
+      "created_at": "2026-11-03T06:10:13Z",
+      "updated_at": "2026-11-03T06:10:13Z",
+      "expires_at": "2027-02-01T06:04:57Z",
+      "workflow_run": {
+        "id": 41587644731,
+        "repository_id": 1315859183,
+        "head_repository_id": 1315859183,
+        "head_branch": "main",
+        "head_sha": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7"
+      }
+    }
+  ]
+}

@@ -1,9 +1,10 @@
-# Palomar v3 update: preflight passed; intake unavailable
+# Palomar v3 update: service verification passed; review pending
 
-3 November 2026. The requested update is **not registered**. The remaining
-work is blocked at Palomar's intake service, before authentication or service
-verification. No review has been received and no registration decision has
-been requested from the author.
+3 November 2026. The ordinary update was authenticated as submission
+**`j92h1fl2enqs`** at 06:04:55 UTC, after the earlier temporary intake failures.
+Palomar has completed mechanical verification of the exact candidate with
+`status: pass` and no errors. The requested update is **not registered**. The
+service review is pending; no registration request has been made.
 
 ## Fixed release and completed preflight
 
@@ -55,17 +56,31 @@ an admission-limit 429. It does not establish an account suspension. The
 public code can issue this generic refusal when its intake limiter is missing
 or pending-state listing fails; only server-side diagnostics distinguish them.
 
-No request returned a pending secret, challenge, submission ID or bearer
-credential. No temporary authentication tag or secret gist was created.
-There is therefore no authenticated v3 status/approval URL, no service
-verification result, and no review to approve. No registration request was
-made. The author has not approved unseen review material.
+The retry at approximately 06:04 UTC succeeded. The registration identity
+and version index were checked immediately before intake: the existing record
+still had versions 1 and 2 and did not include the candidate. The ordinary
+request named the existing registry ID and exact candidate.
 
-The versions, repository and exact registration-identity indexes were read
-before intake and rechecked before the attempts. They identify the existing
-result, registered versions 1 and 2, and the original registered commits.
-The candidate is not in the registered-commit list. Version 3 remains
-unconfirmed, as does the prepared citation's publication condition.
+The documented temporary tag and fresh secret gist established the saved
+account's access. Authentication returned submission `j92h1fl2enqs` at
+06:04:55 UTC. Both temporary artifacts were deleted immediately; readback
+confirmed HTTP 404 for each at 06:05:00 UTC. The durable release tag was not
+used as an authentication tag and was not changed.
+
+The [service verification workflow, run 41587644731](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/41587644731)
+completed successfully. Its complete mechanical report has `status: pass`,
+`phase: verification`, `stage: complete` and `errors: []`. The exact source,
+root configuration, five selected declarations and input hashes were checked
+against the fixed candidate. Lean, NanoDa and con-ron passed. The separate
+[service verification report](PALOMAR_V3_SERVICE_VERIFICATION_REPORT.md)
+records the evidence. The authenticated state is `awaiting-review`; no review
+has yet been retrieved. The private status-page shortcut was
+delivered under `Downloads/Dosen-Petric-Palomar-v3-Private-20261103/`; it
+contains a bearer credential and is excluded from Git.
+
+Version 3 remains unconfirmed, as does the prepared citation's publication
+condition. The author has not approved unseen review material. Opening the
+submission page does not constitute a registration instruction.
 
 ## Preserved state and continuation
 
@@ -80,10 +95,12 @@ The complete passing preflight and its validation are retained in
 Exact private requests/responses and the guarded continuation helpers remain
 under `.codex-work/palomar-v3-update-20261103/`, outside public Git.
 
-When intake is restored, recheck the registration identity and expected
-successor, then resume the ordinary update using this exact candidate and
-the passed full preflight. Complete the temporary-tag/fresh-secret-gist proof
-in one sitting and delete its artifacts after successful verification.
+Continue the existing authenticated submission, using the saved private
+state. Do not create another submission or repeat the passed exact-candidate
+full preflight. Respect the service's status/review polling limits. The passed service
+mechanical report and its validation are retained in
+`provenance/palomar-v3-service-20261103/`.
+
 Deliver the exact returned review and its service digest privately, explain
 permanent publication of the record, source-preservation evidence and
 redacted archived review, and obtain the author's decision on those bytes.
