@@ -1,0 +1,138 @@
+{
+  "utc": "2026-11-03T15:22:10.646121+00:00",
+  "candidate_commit": "76a4ea71f257746bb6ea2cb2e686e85914c7347c",
+  "durable_tag": "dosen-petric-v25-palomar-v3",
+  "frozen_release_unchanged": true,
+  "files": [
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/PALOMAR_V3_PREFLIGHT_REPORT.md",
+      "bytes": 4518,
+      "sha256": "ba09930a4e7dc6e38055ea922d2ee79445155bf55b4fbbaaf5b2f2b4e58d9439",
+      "verified_byte_for_byte": true,
+      "repository_path": "docs/PALOMAR_V3_PREFLIGHT_REPORT.md",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/PALOMAR_V3_UPDATE_STATUS-a07c3625c5b8.md",
+      "bytes": 3064,
+      "sha256": "a07c3625c5b872b4fd822eaa50b3255c2ab93239b05950d4f376144090f208f3",
+      "verified_byte_for_byte": true,
+      "repository_path": "docs/PALOMAR_V3_UPDATE_STATUS.md",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/PALOMAR_V3_SERVICE_VERIFICATION_REPORT.md",
+      "bytes": 3575,
+      "sha256": "926d10ffbd4348bd4ae759a3d232f1540a18bbcce2ab119785e13c008af83225",
+      "verified_byte_for_byte": true,
+      "repository_path": "docs/PALOMAR_V3_SERVICE_VERIFICATION_REPORT.md",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/PALOMAR_V3_REGISTRATION_REPORT.md",
+      "bytes": 8943,
+      "sha256": "c98bb58b6f5f3276ead9e5e4e7dad13a2ac03d0acd3ac8032feeac399a44d0f5",
+      "verified_byte_for_byte": true,
+      "repository_path": "docs/PALOMAR_V3_REGISTRATION_REPORT.md",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/PALOMAR_V3_UPDATE_STATUS_BEFORE_REGISTRATION_20261103.md",
+      "bytes": 8249,
+      "sha256": "3f0370f5963f4db8749bb119cfcf8f38f93d0963919a577a6fd9b3f8faae5fcd",
+      "verified_byte_for_byte": true,
+      "repository_path": "docs/history/PALOMAR_V3_UPDATE_STATUS_BEFORE_REGISTRATION_20261103.md",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/official-full-preflight-mechanical-report.json",
+      "bytes": 96436,
+      "sha256": "61c666fbe96eea6346716ab7ceafa7a3ffa4e13e9ea1633e65fb5aefe5a8706b",
+      "verified_byte_for_byte": true,
+      "repository_path": "provenance/palomar-v3-preflight-20261103/mechanical-report.json",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/official-full-preflight-validation.json",
+      "bytes": 2966,
+      "sha256": "f0543d2085ff058d80fc91c848b422bba8f3f4b1c57b21be1c1456be973ec56e",
+      "verified_byte_for_byte": true,
+      "repository_path": "provenance/palomar-v3-preflight-20261103/validated-pass.json",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/service-mechanical-report.json",
+      "bytes": 96730,
+      "sha256": "a99c3d7e48ac5383e9c3f6bad564284f836eeab879e1fe2c4d1f5f8d0a0066b8",
+      "verified_byte_for_byte": true,
+      "repository_path": "provenance/palomar-v3-service-20261103/mechanical-report.json",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/service-verification-validation.json",
+      "bytes": 2341,
+      "sha256": "d4efc7241cee7fd7c4c67fdfd049b9ad172d254bc8cac1f7812a87004ac91005",
+      "verified_byte_for_byte": true,
+      "repository_path": "provenance/palomar-v3-service-20261103/validated-pass.json",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/service-stage-summary-368a8fd5f4a1.json",
+      "bytes": 4323,
+      "sha256": "368a8fd5f4a10374203be6824a0479c8d5f27d4758ff535f509e1c3cbc5a5035",
+      "verified_byte_for_byte": true,
+      "repository_path": "provenance/palomar-v3-update-20261103/service-stage-summary.json",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/refresh-error-diagnostic.json",
+      "bytes": 1615,
+      "sha256": "20ce7f067517f804afd61f7947db5e443de36f66face2e4a22ceed2eee3ee209",
+      "verified_byte_for_byte": true,
+      "repository_path": "provenance/palomar-v3-update-20261103/refresh-error-diagnostic.json",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/versions-during-refresh-error.json",
+      "bytes": 568,
+      "sha256": "09446e12459eba1edfcf9a16d6321caa3830e60994f1987f395b4fa54e1a31a2",
+      "verified_byte_for_byte": true,
+      "repository_path": "provenance/palomar-v3-update-20261103/versions-during-refresh-error.json",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/Palomar-v3-public-entry.json",
+      "bytes": 8270,
+      "sha256": "c9f429df96665ba2582ef7f65a5229b223d699efffd4e5bea47c4371635b9b88",
+      "verified_byte_for_byte": true,
+      "repository_path": "provenance/palomar-v3-registration-20261103/entry.json",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/Palomar-v3-published-review.json",
+      "bytes": 8151,
+      "sha256": "bdd0ff7cd9e32608dd825b43f863997452c764dc89679c9cd21ca14c177a591a",
+      "verified_byte_for_byte": true,
+      "repository_path": "provenance/palomar-v3-registration-20261103/evidence/review.json",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/Palomar-v3-public-readback-verification.json",
+      "bytes": 1212,
+      "sha256": "c0c620cb39e8c99726374cd8664ee02ebc5d90cbb86f3817d5cbc43a90539df3",
+      "verified_byte_for_byte": true,
+      "repository_path": "provenance/palomar-v3-registration-20261103/public-readback-verification.json",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/Palomar-v3-source-tag-verification.json",
+      "bytes": 525,
+      "sha256": "54575510eb5ff98f1b0086f143e4082ea30e49ccd53fc3e2aabd9952419dbdf0",
+      "verified_byte_for_byte": true,
+      "repository_path": "provenance/palomar-v3-registration-20261103/source-tag-verification.json",
+      "source_commit": "95413c402b97eee7bf30fc84c00da06cf8a5a9a9"
+    }
+  ],
+  "copy_failures": 0,
+  "conflicting_files_preserved": true
+}
