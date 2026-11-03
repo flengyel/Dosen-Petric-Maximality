@@ -1,0 +1,50 @@
+{
+  "utc": "2026-11-03T05:52:40.186649+00:00",
+  "candidate_commit": "76a4ea71f257746bb6ea2cb2e686e85914c7347c",
+  "durable_tag": "dosen-petric-v25-palomar-v3",
+  "frozen_release_unchanged": true,
+  "files": [
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/PALOMAR_V3_PREFLIGHT_REPORT.md",
+      "bytes": 4518,
+      "sha256": "ba09930a4e7dc6e38055ea922d2ee79445155bf55b4fbbaaf5b2f2b4e58d9439",
+      "verified_byte_for_byte": true,
+      "repository_path": "docs/PALOMAR_V3_PREFLIGHT_REPORT.md",
+      "source_commit": "d65f30e23a6f209fcb169e98dc3cd3ed93f84eae"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/PALOMAR_V3_UPDATE_STATUS-78de3eda7974.md",
+      "bytes": 5462,
+      "sha256": "78de3eda79747e93d3ea3a4a35c1ac982910e3df4391d2dc14347fcfcd064106",
+      "verified_byte_for_byte": true,
+      "repository_path": "docs/PALOMAR_V3_UPDATE_STATUS.md",
+      "source_commit": "d65f30e23a6f209fcb169e98dc3cd3ed93f84eae"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/official-full-preflight-mechanical-report.json",
+      "bytes": 96436,
+      "sha256": "61c666fbe96eea6346716ab7ceafa7a3ffa4e13e9ea1633e65fb5aefe5a8706b",
+      "verified_byte_for_byte": true,
+      "repository_path": "provenance/palomar-v3-preflight-20261103/mechanical-report.json",
+      "source_commit": "d65f30e23a6f209fcb169e98dc3cd3ed93f84eae"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/official-full-preflight-validation.json",
+      "bytes": 2966,
+      "sha256": "f0543d2085ff058d80fc91c848b422bba8f3f4b1c57b21be1c1456be973ec56e",
+      "verified_byte_for_byte": true,
+      "repository_path": "provenance/palomar-v3-preflight-20261103/validated-pass.json",
+      "source_commit": "d65f30e23a6f209fcb169e98dc3cd3ed93f84eae"
+    },
+    {
+      "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-Palomar-v3-20261103/service-stage-summary-2e68e06a276d.json",
+      "bytes": 2339,
+      "sha256": "2e68e06a276d060eb224ca6892fa31932ea2c7388d8eccf91beeb3dec052de63",
+      "verified_byte_for_byte": true,
+      "repository_path": "provenance/palomar-v3-update-20261103/service-stage-summary.json",
+      "source_commit": "d65f30e23a6f209fcb169e98dc3cd3ed93f84eae"
+    }
+  ],
+  "copy_failures": 0,
+  "conflicting_files_preserved": true
+}
