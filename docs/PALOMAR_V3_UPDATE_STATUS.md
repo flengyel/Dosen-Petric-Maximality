@@ -28,15 +28,16 @@ push/maintain access and repo, workflow and gist scopes. No repository tag
 ruleset was reported. The ordinary existing-ID update request was prepared
 for the exact candidate with authorization relationship `maintainer`.
 
-Three spaced requests to `POST https://submit.palomar-registry.org/api/submit`
+Four spaced requests to `POST https://submit.palomar-registry.org/api/submit`
 received HTTP **503**, each with exactly this response:
 
 ```json
 {"error":"submission intake is temporarily unavailable"}
 ```
 
-The response times were 05:30:56, 05:34:12 and 05:37:39 UTC on 3 November
-2026. No Retry-After value was available in the retained retry response
+The response times were 05:30:56, 05:34:12, 05:37:39 and 05:50:45 UTC on
+3 November 2026. The fourth attempt followed the pause spent delivering the
+reports and returned the same refusal. No Retry-After value was available in the retained retry response
 headers; the retries were separated by more than three minutes. A separate
 `GET /healthz` returned HTTP 200 with `{"ok":true}`. That endpoint confirms
 the Worker responds; it does not establish that intake is available.

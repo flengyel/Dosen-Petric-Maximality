@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-11-03T05:39:01.864314+00:00",
+  "recorded_at": "2026-11-03T05:52:14.558858+00:00",
   "repository": "flengyel/Dosen-Petric-Maximality",
   "candidate_commit": "76a4ea71f257746bb6ea2cb2e686e85914c7347c",
   "durable_tag": "dosen-petric-v25-palomar-v3",
@@ -28,6 +28,12 @@
     },
     {
       "utc": "2026-11-03T05:37:39.118357+00:00",
+      "http_status": 503,
+      "error": "submission intake is temporarily unavailable",
+      "retry_after": null
+    },
+    {
+      "utc": "2026-11-03T05:50:45.700888+00:00",
       "http_status": 503,
       "error": "submission intake is temporarily unavailable",
       "retry_after": null
