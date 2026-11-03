@@ -12,18 +12,24 @@ and its [registration report](docs/PALOMAR_REGISTRATION_REPORT.md) remain preser
 The earlier [HTML delivery diagnostic](docs/PALOMAR_RENDER_DELIVERY_DIAGNOSTIC.md)
 describes version 1.
 
-The corrected paper is [v24 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v24.pdf) and
-[TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v24.tex), dated November 3, 2026, 23 pages.
-The source package is in [submission/arxiv-v24](submission/arxiv-v24/README.md).
-V24 implements the accepted v23 review: explicit substitution closure in
-Appendix D.4, explained compound weakening, precise hom-sets and references,
-and consistent morphism terminology. All earlier manuscripts remain.
-See the [v24 report](docs/MANUSCRIPT_V24_REPORT.md),
-[implementation review](docs/reviews/V24_IMPLEMENTATION_REVIEW_2026-11-03.md), and
-[TeX diff](provenance/manuscript-v24-review-20261103/v23-to-v24.diff).
-The [Palomar update preparation](docs/PALOMAR_V24_UPDATE_PREPARATION.md) records
-the synchronized metadata candidate and remaining service steps. Version 2
-remains registered; a source commit or tag alone does not update the registry.
+The current paper is the [v25 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v25.pdf) and
+[TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v25.tex), dated November 2, 2026, 23 pages.
+Release name: **`dosen-petric-v25-palomar-v3`**.
+This is the candidate for the requested Palomar version-3 update; registration
+is pending. The [source package](submission/arxiv-v25/README.md) must not be
+uploaded to arXiv until the version-3 record is confirmed at the tagged commit.
+
+The paper's 56 Lean hyperlinks and the metadata's manuscript references use
+the fixed release tag. Its name was assigned before the commit was created.
+The tag must be created at the completed candidate and never moved; Palomar
+receives that commit's full SHA. The prepared v3 citation will then refer to
+the same release without another manuscript edit. No moving latest link is used.
+
+See the [release report](docs/MANUSCRIPT_V25_REPORT.md),
+[Codex instructions](docs/PALOMAR_V25_CODEX_HANDOFF.md), and
+[release manifest](provenance/palomar-v3-candidate/release-v25.json).
+The [v24 manuscript](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v24.pdf)
+and all earlier releases remain preserved.
 
 V18 revises the abstract after consulting Knuth–Larrabee–Roberts. Its nine
 sentences introduce proof identifications, state maximality and its significance,
@@ -88,9 +94,9 @@ publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
-Current manuscript: [v24 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v24.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v24.tex), dated November 3, 2026, 23 pages. All v4–v23 releases remain preserved.
-The [v24 report](docs/MANUSCRIPT_V24_REPORT.md) records the corrections,
-matching builds and preservation.
+Current manuscript: [v25 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v25.pdf) and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v25.tex), dated November 2, 2026, 23 pages. Fixed release `dosen-petric-v25-palomar-v3`; v3 registration pending. All v4–v24 releases remain preserved.
+The [v25 report](docs/MANUSCRIPT_V25_REPORT.md) records the fixed release links,
+matching builds and preserved mathematics.
 Every manuscript revision increments its version; completed authorized main
 work is pushed before readiness is reported, as recorded in AGENTS.md.
 

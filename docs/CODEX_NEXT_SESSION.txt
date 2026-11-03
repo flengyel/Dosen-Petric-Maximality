@@ -1,107 +1,38 @@
-Current phase (3 November 2026): Palomar version 2 remains registered;
-corrected manuscript v24 and synchronized metadata candidate are prepared.
-The author requests an ordinary registry update. No new version is registered.
-Read PALOMAR_V24_UPDATE_PREPARATION.md for the exact remaining service steps.
-No arXiv upload has occurred.
+Current task: finish the fixed-release Palomar update for manuscript v25.
+Release name: dosen-petric-v25-palomar-v3.
+Read docs/PALOMAR_V25_CODEX_HANDOFF.md and docs/MANUSCRIPT_V25_REPORT.md.
+The author authorized the paper links, release name, commit, fixed tag and
+necessary synchronization. No repeated approval is needed for those steps.
 
-The author subsequently requested pushing v14. Its three commits through
-9e46cdca7f2fe2f59983ecf324e08a80ad09c81a were pushed to remote main and the
-remote ref was verified. These commits were made after Palomar registration;
-the exact registered source 5dbee39bea09539bd130f729e82636419f71f920 was already
-public before registration. Keep completed authorized public work synchronized
-before reporting readiness; do not silently leave a local-only release.
-Check the exact public source and remote synchronization before future intake
-or registration. Preserve the frozen candidate when later documentation advances.
+V25 is a 23-page release candidate. All 56 Lean links use the fixed release
+name, and metadata's current manuscript/claim-map links use it as well.
+The mathematical source and all 49 declaration path/line targets are unchanged.
+The prepared v3 registry citation remains conditional on actual registration
+of version 3 at the tagged commit; there is no moving latest-version link.
 
-The v14 exposition review identified omitted written calculations, not missing
-Lean proofs. The expanded steps already occur in Collapse.lean and
-PresentationSymmetricFold.lean, byte-identical to the registered version-2 source.
-The registry's five selections are entry points; the complete claim map records
-the broader development. Do not describe compression in the paper as an
-unproved formal claim without identifying the declaration that is missing.
+The tag-creation workflow verifies the release manifest and creates the exact
+tag only if absent. Confirm the remote tag resolves to the release commit;
+an existing different target is an error, never grounds for a forced update.
+The final delivery message supplies the candidate SHA. Resolve it from the
+tag and require agreement. Then run/reuse the official full preflight for
+that exact commit and perform the ordinary Palomar update under
+PALOMAR-2026-10-30-000014. The earlier v24 candidate
+c23fc48a109a08e74dae6ade9dcc9ee665b6f224 is superseded and must not be submitted.
 
-Reverse content audit completed on 1 November 2026: read
-FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md,
-reviews/REVERSE_AUDIT_HOSTILE_2026-11-01.md and
-reviews/REVERSE_AUDIT_WRITING_2026-11-01.md. The production inventory has 850
-modules, 719 in the Gentzen family. Detailed mathematical reading and all-module
-inventory/import coverage are distinguished in the scope record. Seven
-candidate additions concern the full relation after substitution, concrete
-q/e inverses, union, substitution action laws, retract transport, global signs
-and converse under negation, and the coherence proof architecture.
-The first two and the substitution action laws are the highest-priority
-exposition additions. Reduced union laws pass to B(P) by the proved recovery
-maps; there is no separately named Presentation.union declaration. Constant-only
-substitution closure, empty-P thinness and finite hom bounds are deductions,
-not separately selected theorem statements. Existing source counterexamples
-concern implementation candidates; no new source erratum or main-theorem
-error was established. The author accepted all seven and requested source
-footnotes and an explanation for mathematicians unfamiliar with proof assistants.
-V16 incorporates them and uses the formal proof to improve the paper. V15 is
-preserved; v17 implements the later terminology/layout corrections. Any further
-revision must be v25 or later. Keep the exact registered
-inputs and reuse passed checks.
-Evidence is under provenance/reverse-manuscript-audit-20261101/; reports are
-delivered from committed bytes to
-/mnt/c/Users/fleng/Downloads/Dosen-Petric-Reverse-Audit-20261101/.
+Preserve the registered v1/v2 proof snapshots, existing checks and unrelated
+work/stashes. No Lean source changed. Do not repeat passed checks of identical
+inputs except the official new-candidate preflight required by the service.
+Version 2 source remains 5dbee39bea09539bd130f729e82636419f71f920.
 
-Registered identity: PALOMAR-2026-10-30-000014, version 2.
-https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=2
-Immutable version-2 source: 5dbee39bea09539bd130f729e82636419f71f920.
-Submission: txdu0y3got1o. Repository: flengyel/Dosen-Petric-Maximality;
-root comparator.json and formalization.yaml; Lean 4.35.0.
-Version 1 and source 2e771844077fd8cebfbe365230f13d4dd13a75b1 remain available.
-The author subsequently supplied the exact version-2 BibTeX; v19 now cites
-version 2. Its declaration links and fields use the version-2 source above.
-Earlier v1-cited manuscripts and both frozen sources remain preserved.
+Follow the documented temporary-tag/secret-gist authentication, separate from
+this fixed source-release tag. Deliver the exact service review and publication
+effect before requesting the final digest-bound registration decision.
+Once v3 is registered and read back at the exact tagged commit, the prepared
+paper citation becomes usable without any change to the frozen release.
+If the actual version is not 3, stop final publication; do not move the tag.
 
-After receiving the exact review, digest and publication explanation, the author
-explicitly authorized registration. The digest-bound request was accepted;
-authenticated status and the public entry/indexes confirm completed registration.
-Do not repeat the completed v2 intake or registration. The newly requested
-ordinary update requires its own candidate preflight, service verification and
-review. Preserve v2 evidence and do not claim it verifies a new candidate. The read-only publication monitor has completed.
-Do not restart it. The exact original review, consent digest, credential,
-private responses and request receipt remain ignored in
-.codex-work/palomar-v2-service-20261031/private/. The private direct submission
-shortcut is delivered in the author's existing private Downloads directory.
-Only publicly registered archived review material belongs in public provenance.
-
-Read PALOMAR_V2_REGISTRATION_REPORT.md and
-provenance/palomar-v2-registration-20261101/public-readback-verification.json.
-All four public evidence files, all 13 served render files, the exact rendered
-opening and five unchanged statement types, the version/identity indexes and
-the native source tag verified. No version-2 served-render mismatch was found.
-Retain the version-1 Cloudflare diagnostic as historical evidence for version 1.
-The preceding version-1 continuation is preserved in
-history/CODEX_NEXT_SESSION_V1_20261101.txt. Keep both immutable source snapshots.
-
-Current manuscript: v24, dated November 3, 2026, 23 pages. It implements the
-accepted v23 hostile-referee and mathematical-writing corrections: explicit
-substitution closure in Appendix D.4; an explanation of compound weakening;
-precise normal-form hom-sets and internal references; and morphism terminology.
-The technical expression arrow term, exact Lean names, both maximality proofs,
-all equations and diagrams, and the registered v2 source links are preserved.
-The parameter recap is removed and the term/quotient square has a labelled pointer.
-See [v24 report](MANUSCRIPT_V24_REPORT.md) and
-[implementation review](reviews/V24_IMPLEMENTATION_REVIEW_2026-11-03.md).
-Palomar v2 remains the registered version. A synchronized metadata candidate is
-prepared for the requested ordinary update; no new registry version is claimed.
-
-Upload package: submission/arxiv-v24/Dosen-Petric-Maximality-v24-arxiv-source.tar.gz.
-Four members: main.tex, main.bbl, references_v24.bib and palomar_v24.bib.
-Both builds produce matching 23-page text and coordinates.
-Evidence: provenance/manuscript-v24-review-20261103/.
-The manuscript and Lean-source links continue to cite registered v2 pending
-successful registration of a successor. No new service review is preapproved.
-Windows/WSL Downloads is unavailable in this environment; no copy is claimed.
-
-No arXiv upload or new license selection has occurred. The author selects the
-arXiv-supported license and checks the server preview in the submission account.
-Apache-2.0 publication authorization remains recorded. Palomar precedes arXiv;
-after actual arXiv submission, continue Local connectedness in recursion
-categories and essential incompleteness under the author's instructions.
-Preserve the existing stash and all other projects. Deliver every report from
-committed bytes to Downloads, preserving differing copies and verifying hashes.
-
-
+The arXiv package is submission/arxiv-v25/Dosen-Petric-Maximality-v25-arxiv-source.tar.gz.
+No arXiv upload has occurred. Do not upload while registration is pending.
+Windows Downloads is unavailable in this ChatGPT environment. Deliver final
+reports from committed bytes in WSL, preserving differing files and checking hashes.
+The preceding continuation is docs/history/CODEX_NEXT_SESSION_V24_2026-11-03.txt.

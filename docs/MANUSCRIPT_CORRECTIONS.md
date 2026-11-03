@@ -1,5 +1,17 @@
 # Manuscript corrections and source errata
 
+## V25 fixed release links (2 November 2026)
+
+The release is `dosen-petric-v25-palomar-v3`. All 56 source link occurrences retain
+their paths, line anchors and visible declaration names, replacing only the
+Git ref. Metadata refers to this same release. Mathematical statements,
+proofs, diagrams, labels, abstract and definitions are unchanged from v24.
+The formalization bibliography identifies the release, and the registry
+bibliography is prepared for v3. This is a candidate until that actual record
+is confirmed at the tagged commit. No floating latest URL is used.
+See [v25 report](MANUSCRIPT_V25_REPORT.md) and
+[Codex handoff](PALOMAR_V25_CODEX_HANDOFF.md).
+
 ## V24 review implementation (3 November 2026)
 
 All theorem and declaration mappings remain. Appendix D.4 explicitly retains

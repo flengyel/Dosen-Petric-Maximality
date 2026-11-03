@@ -1,0 +1,32 @@
+name: Tag v25 Palomar candidate
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - provenance/palomar-v3-candidate/release-v25.json
+
+permissions:
+  contents: read
+
+concurrency:
+  group: dosen-petric-v25-palomar-v3-tag
+  cancel-in-progress: false
+
+jobs:
+  tag:
+    if: github.repository == 'flengyel/Dosen-Petric-Maximality'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the exact candidate
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 2
+          persist-credentials: true
+      - name: Create the fixed release tag without replacing an existing tag
+        run: python3 scripts/tag_v25_release.py
+

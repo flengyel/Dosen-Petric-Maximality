@@ -22,13 +22,13 @@ classification:
   - 03F07
   - 18A32
 sources:
-- title: Maximality of the Došen–Petrić Boolean Category, version 24
+- title: Maximality of the Došen–Petrić Boolean Category, version 25
   authors:
   - Florian Lengyel
   type: paper
   relationship: formalizes
-  id: https://github.com/flengyel/Dosen-Petric-Maximality/blob/59e20c7b907d97a4e76e89b69adb560383e458ba/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v24.tex
-  location: Theorem 2.1; Sections 2–6; Appendices A–E; November 3, 2026.
+  id: https://github.com/flengyel/Dosen-Petric-Maximality/blob/dosen-petric-v25-palomar-v3/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v25.tex
+  location: Theorem 2.1; Sections 2–6; Appendices A–E; November 2, 2026.
   author_endorsement: participated
   note: The manuscript states maximality as Theorem 2.1, gives the q_A/e_A proof in Sections 4–5 and the
     symmetric-fold proof in Section 6, and states the model corollary as Corollary 5.3. Section 3 and
@@ -49,7 +49,7 @@ sources:
   author_endorsement: not-contacted
   note: The development proves the cut-elimination and coherence results used for the category presented
     in Sections 14.2–14.3. The maximality theorem is stated in Lengyel's manuscript. Appendix C of manuscript
-    v24 corrects the rank comparisons on pp.260 and 262; the corresponding Lean equations and inequalities
+    v25 corrects the rank comparisons on pp.260 and 262; the corresponding Lean equations and inequalities
     are listed below.
 - title: Isomorphic formulae in classical propositional logic
   authors:
@@ -60,28 +60,28 @@ sources:
   id: https://doi.org/10.1002/malq.201020020
   location: Mathematical Logic Quarterly 58 (2012), 5–17; Lemma 7; author version arXiv:0912.1271v3.
   author_endorsement: not-contacted
-  note: Lemma 7 constructs an isomorphism from a bijection of occurrences. Manuscript v24, Section 5,
+  note: Lemma 7 constructs an isomorphism from a bijection of occurrences. Manuscript v25, Section 5,
     relates this construction to the displayed q_A and e_A morphisms. ShortProof.q_definition, ShortProof.e_definition
     and their inverse equations prove that these morphisms are isomorphisms in the category presented
     by the defining equations.
 related_formalizations: []
 status:
   scope: |-
-    The five selected declarations state two proofs of maximality, the congruence dichotomy, the distinction between the identity and zero endomorphism of each variable, and the absence of a morphism from the terminal object to the initial object. The first three declarations assume that P is nonempty, as in manuscript v24, Theorem 2.1. Version 2 is registered as PALOMAR-2026-10-30-000014 at source 5dbee39bea09539bd130f729e82636419f71f920. This manuscript and metadata revision is a candidate for an ordinary update under the same identifier; it is not a newly registered version. Versions 1 and 2 and their source commits remain preserved.
+    The five selected declarations state two proofs of maximality, the congruence dichotomy, the distinction between the identity and zero endomorphism of each variable, and the absence of a morphism from the terminal object to the initial object. The first three declarations assume that P is nonempty, as in manuscript v25, Theorem 2.1. Version 2 is registered as PALOMAR-2026-10-30-000014 at source 5dbee39bea09539bd130f729e82636419f71f920. The fixed release tag dosen-petric-v25-palomar-v3 identifies the single candidate commit containing the v25 manuscript, its PDF, the Lean sources and this metadata. This is a candidate for an ordinary update under the same identifier, not a registered version 3. The manuscript citation to version 3 anticipates registration at this exact candidate commit and must not be presented as confirmed until the service returns version 3 with that source. The superseded v24 candidate c23fc48a109a08e74dae6ade9dcc9ee665b6f224 is not the submission candidate. Versions 1 and 2 and their source commits remain preserved.
 
-    The development also proves cut elimination and Boolean coherence. The declarations DosenPetric.Reduced.Gentzen.cut_elimination and atomized_cut_elimination are in DosenPetric/GentzenCutElimination.lean. DosenPetric.Presentation.coherence is in DosenPetric/PresentationCoherence.lean and corresponds to manuscript v24, Theorem 3.1. These results supply the cut-elimination and coherence inputs from Proof-Theoretical Coherence.
+    The development also proves cut elimination and Boolean coherence. The declarations DosenPetric.Reduced.Gentzen.cut_elimination and atomized_cut_elimination are in DosenPetric/GentzenCutElimination.lean. DosenPetric.Presentation.coherence is in DosenPetric/PresentationCoherence.lean and corresponds to manuscript v25, Theorem 3.1. These results supply the cut-elimination and coherence inputs from Proof-Theoretical Coherence.
 
-    The model corollary is manuscript v24, Corollary 5.3. DosenPetric.PresentationSemantics.model_corollary and model_corollary_interpretations, in DosenPetric/SemanticModelCorollary.lean, prove the conclusion for models of the full presentation, using agreement under all valuations and interpretations.
+    The model corollary is manuscript v25, Corollary 5.3. DosenPetric.PresentationSemantics.model_corollary and model_corollary_interpretations, in DosenPetric/SemanticModelCorollary.lean, prove the conclusion for models of the full presentation, using agreement under all valuations and interpretations.
 
-    Manuscript v24, Section 3 and Appendix A, describe occurrence substitution by tagged blocks and finite-ordinal coordinates. DosenPetric.Formula.expand and contract are inverse bijections. Formula.substitution_count and substitution_index in DosenPetric/FormulaSubstitutionOrdinals.lean, and PatternProfiles.actual_ordinal_square in DosenPetric/PatternSubstitutionOrdinals.lean, identify the tagged construction with the finite-ordinal coordinates. ProfileComposition.Data.coordinate_oneBased in DosenPetric/ProfileComposition.lean gives the one-based coordinate formula.
+    Manuscript v25, Section 3 and Appendix A, describe occurrence substitution by tagged blocks and finite-ordinal coordinates. DosenPetric.Formula.expand and contract are inverse bijections. Formula.substitution_count and substitution_index in DosenPetric/FormulaSubstitutionOrdinals.lean, and PatternProfiles.actual_ordinal_square in DosenPetric/PatternSubstitutionOrdinals.lean, identify the tagged construction with the finite-ordinal coordinates. ProfileComposition.Data.coordinate_oneBased in DosenPetric/ProfileComposition.lean gives the one-based coordinate formula.
 
-    Manuscript v24, Appendix B, displays the first-injection triangle, the zero-identity path of five morphisms and the zero-law square for equations (1), (2) and (3). DosenPetric.Presentation.ManuscriptDiagrams.first_triangle, zero_diagram, zero_primitive and zero_square, in DosenPetric/ManuscriptStructuralDiagrams.lean, prove their identities.
+    Manuscript v25, Appendix B, displays the first-injection triangle, the zero-identity path of five morphisms and the zero-law square for equations (1), (2) and (3). DosenPetric.Presentation.ManuscriptDiagrams.first_triangle, zero_diagram, zero_primitive and zero_square, in DosenPetric/ManuscriptStructuralDiagrams.lean, prove their identities.
 
-    Manuscript v24, Appendix C, corrects two rank descriptions in Proof-Theoretical Coherence. For p.260, DosenPetric.Reduced.Gentzen.BlockedLeftDisj.gamma_equation and gamma_first_descent/gamma_second_descent prove the equation and both strict recursive rank comparisons; see DosenPetric/GentzenBlockedLeftGammaDisj.lean and GentzenBlockedLeftGammaDisjRank.lean. For p.262, BlockedDisjFirst.source_equation, fresh_principal_rank, fresh_total_rank and fresh_total_rank_ge_two prove the equation, the fresh right rank of one and the total rank of at least two; see DosenPetric/GentzenBlockedDisjFirstEquation.lean and GentzenAppendixCFreshRight.lean.
+    Manuscript v25, Appendix C, corrects two rank descriptions in Proof-Theoretical Coherence. For p.260, DosenPetric.Reduced.Gentzen.BlockedLeftDisj.gamma_equation and gamma_first_descent/gamma_second_descent prove the equation and both strict recursive rank comparisons; see DosenPetric/GentzenBlockedLeftGammaDisj.lean and GentzenBlockedLeftGammaDisjRank.lean. For p.262, BlockedDisjFirst.source_equation, fresh_principal_rank, fresh_total_rank and fresh_total_rank_ge_two prove the equation, the fresh right rank of one and the total rank of at least two; see DosenPetric/GentzenBlockedDisjFirstEquation.lean and GentzenAppendixCFreshRight.lean.
 
-    The complete mathematical source is 630c4b6e47da16a1434476a211fd29ce6adc5569. The correspondence for manuscript v24 is docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md at commit 59e20c7b907d97a4e76e89b69adb560383e458ba. The additional results above belong to the full development; the Comparator selection consists of the five declarations listed in alignment.statements.
+    The complete source snapshot is https://github.com/flengyel/Dosen-Petric-Maximality/tree/dosen-petric-v25-palomar-v3. The correspondence for manuscript v25 is https://github.com/flengyel/Dosen-Petric-Maximality/blob/dosen-petric-v25-palomar-v3/docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md. The complete-development milestone 630c4b6e47da16a1434476a211fd29ce6adc5569 is retained as historical provenance; the current source and correspondence links use the fixed release tag. The additional results above belong to the full development; the Comparator selection consists of the five declarations listed in alignment.statements.
 
-    Manuscript v24, Appendix D, states the five registered declarations and their assumptions, relates congruences on terms and quotient morphisms, and explains the proof of coherence. Appendix E gives the q_A/e_A inverse constructions and the one-sided split comparisons used in that proof. These explanations describe results already present in the registered Lean source.
+    Manuscript v25, Appendix D, states the five registered declarations and their assumptions, relates congruences on terms and quotient morphisms, and explains the proof of coherence. Appendix E gives the q_A/e_A inverse constructions and the one-sided split comparisons used in that proof. These explanations describe results already present in the registered Lean source.
   sorry_count: 0
   sorry_in_definitions: 0
   axioms:
@@ -114,51 +114,56 @@ review:
   notes: The author-side full-development reviews are docs/reviews/FULL_PAPER_6A66B14_REVIEW.md and FULL_PAPER_6A66B14_WRITING.md.
     The statement and definition correspondence reviews are docs/reviews/PALOMAR_REGISTRATION_REVIEW.md
     and PALOMAR_REGISTRATION_WRITING.md. The manuscript v13 statement, literature and hostile reviews
-    are docs/reviews/V13_STATEMENT_REVIEW_2026-10-31.md, V13_LITERATURE_REVIEW_2026-10-31.md and V13_HOSTILE_REVIEW_2026-10-31.md
-    at commit 84d913d4ab30490ddf9c51788ed89ea5c7e9a601. The v23 review and v24 implementation review are
-    docs/reviews/V23_JOINT_HOSTILE_WRITING_REVIEW_2026-11-03.md and V24_IMPLEMENTATION_REVIEW_2026-11-03.md
-    at commit 59e20c7b907d97a4e76e89b69adb560383e458ba. These are AI-assisted author-side reviews. Registration evidence for version
+    are docs/reviews/V13_STATEMENT_REVIEW_2026-10-31.md, V13_LITERATURE_REVIEW_2026-10-31.md and V13_HOSTILE_REVIEW_2026-10-31.md;
+    their historical reviewed source is 84d913d4ab30490ddf9c51788ed89ea5c7e9a601. The v23 review and v24 implementation review are
+    docs/reviews/V23_JOINT_HOSTILE_WRITING_REVIEW_2026-11-03.md and V24_IMPLEMENTATION_REVIEW_2026-11-03.md.
+    All these reports are retained in the fixed release snapshot at
+    https://github.com/flengyel/Dosen-Petric-Maximality/tree/dosen-petric-v25-palomar-v3/docs/reviews.
+    These are AI-assisted author-side reviews. Registration evidence for version
     2 is recorded in docs/PALOMAR_V2_REGISTRATION_REPORT.md; version 1 evidence remains in docs/PALOMAR_REGISTRATION_REPORT.md
-    and docs/PALOMAR_REGISTRATION_LOCAL_REPORT.md. The v24 manuscript review and implementation checks
-    do not constitute a new Lean build, kernel replay, service review, or registration for this candidate.
+    and docs/PALOMAR_REGISTRATION_LOCAL_REPORT.md. The v25 revision changes publication references and
+    release metadata. The author-side manuscript reviews and implementation checks do not constitute
+    a new Lean build, kernel replay, service review, or registration for this candidate. Version 2 remains
+    the confirmed registered version; the candidate's anticipated version 3 citation is conditional on
+    registration of the commit identified by the fixed release tag.
 alignment:
   namespace: DosenPetric.Palomar
   statements:
-  - source: Manuscript v24, Theorem 2.1; symmetric-fold proof in Section 6.
+  - source: Manuscript v25, Theorem 2.1; symmetric-fold proof in Section 6.
     lean: DosenPetric.Palomar.maximality
     module: Solution
     status: proved
     note: The symmetric-fold proof uses Presentation.fragment_maximality for the quotient by Derives.
       DosenPetric/PalomarCorrespondence.lean proves the relation correspondence between terms and quotient
       morphisms.
-  - source: Manuscript v24, Theorem 2.1; q_A/e_A proof in Sections 4–5.
+  - source: Manuscript v25, Theorem 2.1; q_A/e_A proof in Sections 4–5.
     lean: DosenPetric.Palomar.short_maximality
     module: Solution
     status: proved
     note: The q_A/e_A proof uses Isolation.normalized_literal_context, ContextualCollapse.all_contexts
       and ShortProof.total. Its proof is independent of the invocation of fragment_maximality in the symmetric-fold
       proof.
-  - source: Manuscript v24, Theorem 2.1 and Appendix D.3, equality/totality dichotomy.
+  - source: Manuscript v25, Theorem 2.1 and Appendix D.3, equality/totality dichotomy.
     lean: DosenPetric.Palomar.congruence_dichotomy
     module: Solution
     status: proved
     note: Equality of quotient morphisms is the relation Derives on their representatives. The correspondence
       with full proof congruences and the preservation of totality are proved in DosenPetric/PalomarCorrespondence.lean.
-  - source: Manuscript v24, Section 3 and Appendix D.3, nonzero variable identity.
+  - source: Manuscript v25, Section 3 and Appendix D.3, nonzero variable identity.
     lean: DosenPetric.Palomar.identity_ne_zero
     module: Solution
     status: proved
     note: Presentation.identity_ne_primitive_zero proves that the variable identity differs from the primitive
       zero endomorphism in the quotient by Derives.
-  - source: Manuscript v24, Appendix D.3, empty terminal-to-initial hom-set.
+  - source: Manuscript v25, Appendix D.3, empty terminal-to-initial hom-set.
     lean: DosenPetric.Palomar.no_top_to_bot
     module: Solution
     status: proved
     note: Presentation.empty_hom, proved by the truth interpretation, rules out any arrow term from the
       terminal object to the initial object.
   broader_correspondence:
-    manuscript: https://github.com/flengyel/Dosen-Petric-Maximality/blob/59e20c7b907d97a4e76e89b69adb560383e458ba/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v24.tex
-    claim_map: https://github.com/flengyel/Dosen-Petric-Maximality/blob/59e20c7b907d97a4e76e89b69adb560383e458ba/docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md
+    manuscript: https://github.com/flengyel/Dosen-Petric-Maximality/blob/dosen-petric-v25-palomar-v3/manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v25.tex
+    claim_map: https://github.com/flengyel/Dosen-Petric-Maximality/blob/dosen-petric-v25-palomar-v3/docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md
     scope: The scope field identifies the manuscript anchors, Lean declarations and source modules for
       cut elimination, Boolean coherence, the model corollary, occurrence substitution and its finite-ordinal
       coordinates, all three Appendix B diagrams, and the Appendix C rank comparisons. Appendices D–E

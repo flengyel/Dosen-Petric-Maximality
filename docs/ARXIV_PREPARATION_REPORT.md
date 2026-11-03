@@ -1,18 +1,17 @@
-# arXiv preparation: manuscript v24
+# V25 arXiv package — awaiting Palomar registration
 
-3 November 2026. V24, 23 pages. All earlier releases remain.
-No arXiv upload has occurred.
+2 November 2026. V25, 23 pages. Release `dosen-petric-v25-palomar-v3`.
 
-- [PDF](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v24.pdf)
-- [TeX](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v24.tex)
-- [Source archive](../submission/arxiv-v24/Dosen-Petric-Maximality-v24-arxiv-source.tar.gz)
-- [Submission fields](../submission/arxiv-v24/submission-fields.json)
-- [Release report](MANUSCRIPT_V24_REPORT.md)
-- [Palomar update preparation](PALOMAR_V24_UPDATE_PREPARATION.md)
+- [PDF](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v25.pdf)
+- [TeX](../manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v25.tex)
+- [Package](../submission/arxiv-v25/README.md)
+- [Release report](MANUSCRIPT_V25_REPORT.md)
+- [Codex handoff](PALOMAR_V25_CODEX_HANDOFF.md)
 
-The manuscript and extracted source package compile with matching text,
-coordinates and bibliography. All registered Lean links and the supplied
-Palomar v2 bibliography remain unchanged. The registry citation stays at v2
-until an ordinary update is registered and verified. The author selects the
-arXiv-supported license and checks its server preview. No WSL Downloads copy
-is claimed from this environment.
+The mathematical content is preserved from v24. The fixed release tag replaces
+the Git ref in the 56 Lean hyperlinks and names the source release in the
+bibliography. The planned v3 registry entry is version-specific.
+
+The package is built and checked, but the v3 citation is prepared candidate data.
+Do not upload to arXiv until Palomar confirms version 3 at the exact tagged commit.
+No arXiv upload or new license selection has occurred. All earlier files remain.

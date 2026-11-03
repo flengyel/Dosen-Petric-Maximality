@@ -15,7 +15,7 @@ the existing symmetric-fold deduction. V14, dated November 1, 2026, uses the
 hostile and mathematical-writing plugins for the complete preprint. It gives
 explicit arrow/functor types, uses literal and occurrence map, follows the
 source's dissociativity terminology and displays the calculations through v_A
-and w_A. The correspondences below apply also to v15–v24; see MANUSCRIPT_V14_REPORT.md
+and w_A. The correspondences below apply also to v15–v25; see MANUSCRIPT_V14_REPORT.md
 and its two review reports. Literal signs, theorem hypotheses and conclusions,
 all numbered displays, diagrams, labels, Lean theorems and registered inputs
 are preserved. The literal synonym and lemma captions change; no new Lean
@@ -144,6 +144,18 @@ equivalence in Section 3. Morphism terminology changes no formal statement.
 See [v24 report](MANUSCRIPT_V24_REPORT.md) and
 [implementation review](reviews/V24_IMPLEMENTATION_REVIEW_2026-11-03.md).
 
+## V25 fixed release links (2 November 2026)
+
+The release is `dosen-petric-v25-palomar-v3`. All 56 source link occurrences retain
+their paths, line anchors and visible declaration names, replacing only the
+Git ref. Metadata refers to this same release. Mathematical statements,
+proofs, diagrams, labels, abstract and definitions are unchanged from v24.
+The formalization bibliography identifies the release, and the registry
+bibliography is prepared for v3. This is a candidate until that actual record
+is confirmed at the tagged commit. No floating latest URL is used.
+See [v25 report](MANUSCRIPT_V25_REPORT.md) and
+[Codex handoff](PALOMAR_V25_CODEX_HANDOFF.md).
+
 ## Three milestones and full-paper endpoint
 
 | Milestone | Actual result | Status |
@@ -233,7 +245,7 @@ closure are recorded in the final evidence. No mathematical claim in the paper's
 current scope remains assigned to an unproved field or deferred implementation
 target. Historical reports are not independent verification of this final scope.
 
-## Appendix D: registered statements and proof correspondence (v24)
+## Appendix D: registered statements and proof correspondence (v25)
 
 All names below have prefix DosenPetric unless stated otherwise. These are
 existing proofs retained in both immutable registered sources, not new results.

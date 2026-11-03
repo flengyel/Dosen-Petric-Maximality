@@ -1,16 +1,16 @@
 # Coverage and next proof obligations
 
-Current manuscript: v24, dated November 3, 2026, 23 pages. It implements the
-accepted v23 hostile-referee and mathematical-writing corrections: explicit
-substitution closure in Appendix D.4; an explanation of compound weakening;
-precise normal-form hom-sets and internal references; and morphism terminology.
-The technical expression arrow term, exact Lean names, both maximality proofs,
-all equations and diagrams, and the registered v2 source links are preserved.
-The parameter recap is removed and the term/quotient square has a labelled pointer.
-See [v24 report](MANUSCRIPT_V24_REPORT.md) and
-[implementation review](reviews/V24_IMPLEMENTATION_REVIEW_2026-11-03.md).
-Palomar v2 remains the registered version. A synchronized metadata candidate is
-prepared for the requested ordinary update; no new registry version is claimed.
+Current manuscript: v25, dated November 2, 2026, 23 pages; release candidate
+`dosen-petric-v25-palomar-v3` for the anticipated Palomar version-3 update.
+All 56 Lean-source link occurrences use this fixed tag. Their 49 distinct
+declaration targets and all mathematical text remain unchanged from v24.
+The source bibliography names the same release; the version-3 registry citation
+is prepared candidate data and is not evidence of completed registration.
+The tag, paper, metadata and submitted commit must identify one snapshot.
+Never move or reuse the tag. No floating latest-version link is used.
+See [v25 report](MANUSCRIPT_V25_REPORT.md) and
+[Codex handoff](PALOMAR_V25_CODEX_HANDOFF.md).
+V24 and all registered v1/v2 snapshots remain preserved.
 
 ## Current complete full-paper formalization (29 October 2026)
 

@@ -1,0 +1,60 @@
+{
+  "base_commit": "c23fc48a109a08e74dae6ade9dcc9ee665b6f224",
+  "release_tag": "dosen-petric-v25-palomar-v3",
+  "pages": 23,
+  "source_and_archive_text_and_coordinates_identical": true,
+  "source_and_archive_bibliography_identical": true,
+  "visible_changed_pages_from_v24": [
+    1,
+    23
+  ],
+  "visual_review": "Pages 1 and 23 inspected at full page size; all other page text and coordinates are byte-identical as extracted by PyMuPDF to the previously inspected v24 pages.",
+  "lean_link_occurrences_in_source": 56,
+  "pdf_link_annotations_including_wrapped_links": 63,
+  "distinct_lean_declaration_targets": 49,
+  "all_declaration_paths_line_anchors_and_link_labels_preserved": true,
+  "build_exits": [
+    {
+      "step": "latex1",
+      "exit": 0
+    },
+    {
+      "step": "bibtex",
+      "exit": 0
+    },
+    {
+      "step": "latex2",
+      "exit": 0
+    },
+    {
+      "step": "latex3",
+      "exit": 0
+    }
+  ],
+  "archive_build_exits": [
+    {
+      "step": "latex1",
+      "exit": 0
+    },
+    {
+      "step": "bibtex",
+      "exit": 0
+    },
+    {
+      "step": "latex2",
+      "exit": 0
+    },
+    {
+      "step": "latex3",
+      "exit": 0
+    }
+  ],
+  "final_warnings": [
+    "Underfull \\hbox (badness 2556) in paragraph at lines 61--66"
+  ],
+  "warning_assessment": "One unchanged underfull bibliography paragraph at the pinned Notation URL, within margins. No unresolved references or citations, overfull boxes or duplicate destinations.",
+  "new_lean_build_or_kernel_replay": false,
+  "registry_status_at_preparation": "pending",
+  "anticipated_registry_version": 3,
+  "arxiv_uploaded": false
+}
