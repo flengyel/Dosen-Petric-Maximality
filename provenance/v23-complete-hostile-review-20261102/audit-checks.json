@@ -1,0 +1,423 @@
+{
+  "reviewed_snapshot": "f16f66814faf4902e1f3059766a34eb96bab038d",
+  "manuscript_version": 23,
+  "source_sha256": "b34afdb82b1f36731ef9c1d8cb6a369b07fc40a71e3189cf3c093677f3b303c2",
+  "pdf_sha256": "732ce3d7886fc837b8297273ca1d33a50346ebc5b0e74a55d2b047cf52dce0c1",
+  "lean_link_occurrences": 56,
+  "distinct_link_destinations": 49,
+  "linked_destinations": [
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/CommonAtomicFactorization.lean",
+      "line": 123,
+      "line_text": "theorem faithful_of_positive_coherence (hC : PositiveCoherence P) : Faithful P := by",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/CommonAtomicFactorization.lean",
+      "line": 51,
+      "line_text": "def commonAtomicFactor {A B : NormalForm P} (t₁ t₂ : Term P A B) : CommonAtomicFactor t₁ t₂ := by",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/FormulaSubstitutionLaws.lean",
+      "line": 11,
+      "line_text": "theorem subst_identity (A : Formula P) : A.subst Formula.var = A := by",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/FormulaSubstitutionLaws.lean",
+      "line": 20,
+      "line_text": "theorem subst_composition (σ : P → Formula R) (τ : R → Formula T) (A : Formula P) :",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenDistributiveEpi.lean",
+      "line": 57,
+      "line_text": "theorem section_comparison (X A B : NormalForm P) :",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenDistributiveMono.lean",
+      "line": 54,
+      "line_text": "theorem comparison_retraction (A B R : NormalForm P) :",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenMixNormalForm.lean",
+      "line": 37,
+      "line_text": "theorem mix_normal_form {Γ Δ : List (NormalForm P)} (g : G P Γ Δ) (hg : g.MixOnly) :",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenNormalExpansion.lean",
+      "line": 45,
+      "line_text": "theorem dnf_expansion (A : NormalForm P) :",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenNormalExpansion.lean",
+      "line": 62,
+      "line_text": "theorem cnf_expansion (A : NormalForm P) :",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenPositiveCoherence.lean",
+      "line": 14,
+      "line_text": "theorem represented_coherence {A B : NormalForm P} (f g : Hom A B)",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenPositiveCoherence.lean",
+      "line": 31,
+      "line_text": "theorem positive_coherence : PositiveCoherence P := by",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenPureNormalForms.lean",
+      "line": 84,
+      "line_text": "theorem faithful {f g : Hom A B} (hf : HasPureNormalForm f) (hg : HasPureNormalForm g)",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/GentzenPurePositiveCoherence.lean",
+      "line": 14,
+      "line_text": "theorem pure_positive_coherence {A B : NormalForm P} (f g : Term P A B)",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/Isolation.lean",
+      "line": 219,
+      "line_text": "theorem normalized_literal_context (N : Normalization C) (labels : SignedLabelPreservation I)",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PalomarCorrespondence.lean",
+      "line": 121,
+      "line_text": "theorem raw_distinct_iff {A B : Formula P} (f g : Term P A B) :",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PalomarDefinitions.lean",
+      "line": 14,
+      "line_text": "structure PrimitiveCongruence (P : Type u) where",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PalomarDefinitions.lean",
+      "line": 31,
+      "line_text": "def Closed : Prop := ∀ (σ : P → Formula P) {A B} {f g : Term P A B},",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PalomarMaximality.lean",
+      "line": 17,
+      "line_text": "theorem maximality [Nonempty P] (R : PrimitiveCongruence P) (closed : R.Closed)",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PalomarMaximality.lean",
+      "line": 27,
+      "line_text": "theorem short_maximality [Nonempty P] (R : PrimitiveCongruence P) (closed : R.Closed)",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationCoherence.lean",
+      "line": 13,
+      "line_text": "theorem coherence {A B : Formula P} {f g : Hom A B}",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationNegationOccurrence.lean",
+      "line": 25,
+      "line_text": "theorem occurrence_negate {A B : Formula P} (f : Hom A B) (x : A.Occ) (y : B.Occ) :",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortE.lean",
+      "line": 13,
+      "line_text": "def sourceConjTerm (X Y A B : Formula P) :",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortE.lean",
+      "line": 21,
+      "line_text": "def sectionTerm (X A B : Formula P) :",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortE.lean",
+      "line": 30,
+      "line_text": "def eInverseTerm (A : Formula P) : Term P (.conj A (.disj A .top)) (.conj A A) :=",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortE.lean",
+      "line": 44,
+      "line_text": "theorem e_eInverse (A : Formula P) : comp (e A) (eInverse A) = id _ := by",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortE.lean",
+      "line": 50,
+      "line_text": "theorem eInverse_e (A : Formula P) : comp (eInverse A) (e A) = id _ := by",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortProjection.lean",
+      "line": 86,
+      "line_text": "theorem total : Q.Total := by",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortQ.lean",
+      "line": 17,
+      "line_text": "def qInverseTerm (A : Formula P) : Term P (.disj A .top) (.disj (.conj A .bot) .top) :=",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortQ.lean",
+      "line": 32,
+      "line_text": "theorem q_qInverse (A : Formula P) : comp (q A) (qInverse A) = id _ := by",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationShortQ.lean",
+      "line": 46,
+      "line_text": "theorem qInverse_q (A : Formula P) : comp (qInverse A) (q A) = id _ := by",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationSignedLabels.lean",
+      "line": 73,
+      "line_text": "theorem occurrence_signedLabel {A B : Formula P} (f : Hom A B)",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationSubstitutionActionQuotient.lean",
+      "line": 39,
+      "line_text": "theorem substitute_identity {A B : Formula P} (f : Hom A B) :",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationSubstitutionActionQuotient.lean",
+      "line": 44,
+      "line_text": "theorem substitute_composition (σ : P → Formula R) (τ : R → Formula T)",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationSubstitutionActionQuotient.lean",
+      "line": 57,
+      "line_text": "theorem substitute_ext (σ τ : P → Formula R) (h : ∀ p, σ p = τ p)",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/PresentationSubstitutionRelation.lean",
+      "line": 61,
+      "line_text": "theorem occurrence_substitute_expanded (σ : P → Formula R) {A B : Formula P} (f : Hom A B)",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedCoherence.lean",
+      "line": 17,
+      "line_text": "theorem boolean_coherence {A B : Formula P} {f g : Presentation.Hom A B}",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedDualRelations.lean",
+      "line": 20,
+      "line_text": "theorem dual_relation {A B : NormalForm P} (f : Term P A B)",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedFiniteUnion.lean",
+      "line": 57,
+      "line_text": "theorem eq_of_members (w v : Hom A B) (fs gs : List (Hom A B))",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedQuotientReduction.lean",
+      "line": 21,
+      "line_text": "def reduceHom {A B : Formula P} (f : Presentation.Hom A B) : Hom (normal A) (normal B) :=",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedRecovery.lean",
+      "line": 26,
+      "line_text": "def recoverHom {A B : Formula P} (f : Hom (normal A) (normal B)) : Presentation.Hom A B :=",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedUnion.lean",
+      "line": 131,
+      "line_text": "theorem union_assoc {A B : NormalForm P} (f g h : Hom A B) :",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedUnion.lean",
+      "line": 145,
+      "line_text": "theorem union_id_zero (A : NormalForm P) : union (id A) (zero A) = id A := by",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedUnion.lean",
+      "line": 80,
+      "line_text": "theorem union_pre {X A B : NormalForm P} (h : Hom X A) (f g : Hom A B) :",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedUnion.lean",
+      "line": 85,
+      "line_text": "theorem union_post {A B C : NormalForm P} (f g : Hom A B) (h : Hom B C) :",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedUnion.lean",
+      "line": 90,
+      "line_text": "theorem union_comm {A B : NormalForm P} (f g : Hom A B) : union f g = union g f := by",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/ReducedUnion.lean",
+      "line": 97,
+      "line_text": "theorem union_idem {A B : NormalForm P} (f : Hom A B) : union f f = f := by",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/Substitution.lean",
+      "line": 74,
+      "line_text": "theorem context_retract {A B : Formula P} (m : C.Hom A B) (n : C.Hom B A)",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/Substitution.lean",
+      "line": 90,
+      "line_text": "theorem all_contexts (U : Substitution S Z) (D : DoubleNegation C) (closed : U.Closed Q)",
+      "matches_worktree": true
+    },
+    {
+      "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+      "path": "DosenPetric/SubstitutionFiberRelations.lean",
+      "line": 48,
+      "line_text": "theorem lift_composition {X : Type v} {Y : Type v'} {Z : Type v''}",
+      "matches_worktree": true
+    }
+  ],
+  "selected_signature_whitespace_normalized_matches": {
+    "maximality": true,
+    "short_maximality": true,
+    "congruence_dichotomy": true,
+    "identity_ne_zero": true,
+    "no_top_to_bot": true
+  },
+  "production_module_count": 849,
+  "prohibited_raw_token_matches": [
+    {
+      "path": "DosenPetric/ReducedOccurrences.lean",
+      "line": 121,
+      "text": "/-- Conditional transfer only: its premise is not supplied as a mathematical axiom. -/",
+      "classification": "Comment explicitly saying its premise is not supplied as an axiom; not a declaration."
+    }
+  ],
+  "small_relation_checks": {
+    "section_identity": true,
+    "not_inverse": true,
+    "cross_pairs_present": true
+  },
+  "proof_builds_repeated": false,
+  "production_module_count_including_root_aggregator": 850,
+  "production_proof_hole_or_custom_axiom_matches": 0,
+  "primary_source_retrievals": [
+    {
+      "name": "FreeBool",
+      "url": "https://www.lix.polytechnique.fr/Labo/Lutz.Strassburger/papers/FreeBool.pdf",
+      "path": "/tmp/dp-v23-hostile-primary-sources/FreeBool.pdf",
+      "bytes": 272232,
+      "sha256": "615fe7381685cb6231cdf8e9decda29f42d06ebfb21068611ded88fac31749cb",
+      "reused": true
+    },
+    {
+      "name": "FP",
+      "url": "https://carstenfuehrmann.org/papers/order-enriched-models-for-classical-sequent-calculus.pdf",
+      "path": "/tmp/dp-v23-hostile-primary-sources/FP.pdf",
+      "bytes": 11743066,
+      "sha256": "27be0e45f75f0c5d9a30e1deccbe376d800cb7b95e6f8f8d8036bc231f9f7c92",
+      "reused": true
+    },
+    {
+      "name": "medial",
+      "url": "https://www.lix.polytechnique.fr/Labo/Lutz.Strassburger/papers/medial.pdf",
+      "path": "/tmp/dp-v23-hostile-primary-sources/medial.pdf",
+      "bytes": 673506,
+      "sha256": "b00f226293e37bd40dad84dbb637ed0f37a347e80e0ad54208eff4b28e96afb0",
+      "reused": true
+    },
+    {
+      "name": "DPSplit",
+      "url": "https://arxiv.org/pdf/0902.0742v7",
+      "path": "/tmp/dp-v23-hostile-primary-sources/DPSplit.pdf",
+      "bytes": 433507,
+      "sha256": "bc9b2e226fad392edf76bf777a2cd2ae12038940a3a1c2b55bf1d4f74ec105b8"
+    },
+    {
+      "name": "Notation",
+      "url": "https://raw.githubusercontent.com/flengyel/notes/42eaccdccf6413fe4d643a347fab33edafb1c056/logic/The-Unbearable-Notation-of-Logic_v8.pdf",
+      "path": "/tmp/dp-v23-hostile-primary-sources/Notation.pdf",
+      "bytes": 656950,
+      "sha256": "d3697f59f6fb34f5293ad3fe9ab58e3c9bfea1558132f8090529ec326dcaf055"
+    }
+  ],
+  "labels": 34,
+  "reference_occurrences": 83,
+  "missing_labels": [],
+  "production_changes_from_registered_source": [],
+  "root_aggregator_prohibited_token_matches": [],
+  "lean_toolchain": "leanprover/lean4:v4.35.0"
+}
