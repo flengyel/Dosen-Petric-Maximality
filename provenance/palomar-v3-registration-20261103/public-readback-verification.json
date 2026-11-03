@@ -1,0 +1,27 @@
+{
+  "utc": "2026-11-03T15:18:56.107092+00:00",
+  "id": "PALOMAR-2026-10-30-000014",
+  "version": 3,
+  "source_commit": "76a4ea71f257746bb6ea2cb2e686e85914c7347c",
+  "durable_tag": "dosen-petric-v25-palomar-v3",
+  "submission_id": "j92h1fl2enqs",
+  "registered_at": "2026-11-03T15:09:39Z",
+  "registered_url": "https://palomar-registry.org/entry?id=PALOMAR-2026-10-30-000014&version=3",
+  "entry_sha256": "c9f429df96665ba2582ef7f65a5229b223d699efffd4e5bea47c4371635b9b88",
+  "title_and_abstract_match_candidate": true,
+  "version_25_manuscript_source_matches_candidate": true,
+  "earlier_versions_preserved": [
+    1,
+    2
+  ],
+  "verified_evidence_files": 4,
+  "mechanical_archive_identical_to_service_artifact": true,
+  "public_review_sha256": "bdd0ff7cd9e32608dd825b43f863997452c764dc89679c9cd21ca14c177a591a",
+  "evidence_tree_sha256": "db3958ea3264452f73b9a569411387332d08ba3e572b0b9c087fbbac71a38249",
+  "render_tree_sha256": "3837ef5166cef1fdb7ec321886f59100eecf745017c5106a0fd70945df09fda3",
+  "verified_served_render_files": 13,
+  "total_served_render_files": 13,
+  "render_mismatches": [],
+  "version_specific_bibtex_matches_confirmed_record": true,
+  "citation_source": "manuscript/palomar_v25.bib"
+}

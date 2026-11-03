@@ -1,0 +1,137 @@
+{
+  "utc": "2026-11-03T15:18:55.818188+00:00",
+  "files": [
+    {
+      "path": "-verso-docs.json",
+      "http_status": 200,
+      "bytes": 54232,
+      "expected_bytes": 54232,
+      "sha256": "f1669aee45be78182db99151416da80683191651ff2d534ed6a2891c9ed2e746",
+      "expected_sha256": "f1669aee45be78182db99151416da80683191651ff2d534ed6a2891c9ed2e746",
+      "matches": true,
+      "cloudflare_insights_markup_present": false
+    },
+    {
+      "path": "-verso-search/README.txt",
+      "http_status": 200,
+      "bytes": 4716,
+      "expected_bytes": 4716,
+      "sha256": "c2592e93a155651c869ea357d9b4c8bbd28920eb841b6a7c984841fd5fe9993a",
+      "expected_sha256": "c2592e93a155651c869ea357d9b4c8bbd28920eb841b6a7c984841fd5fe9993a",
+      "matches": true,
+      "cloudflare_insights_markup_present": false
+    },
+    {
+      "path": "-verso-search/domain-mappers.d.ts",
+      "http_status": 200,
+      "bytes": 120,
+      "expected_bytes": 120,
+      "sha256": "b347aa85cd1497191ce7e7166ef113e7c4c83f79345a6a4f7816a2155a5f7665",
+      "expected_sha256": "b347aa85cd1497191ce7e7166ef113e7c4c83f79345a6a4f7816a2155a5f7665",
+      "matches": true,
+      "cloudflare_insights_markup_present": false
+    },
+    {
+      "path": "-verso-search/fuzzysort.d.ts",
+      "http_status": 200,
+      "bytes": 2845,
+      "expected_bytes": 2845,
+      "sha256": "7c3f3de27ad6eb8ab420f1aade753483e1a597820ff7b5d80fa210e1c6f7c4e5",
+      "expected_sha256": "7c3f3de27ad6eb8ab420f1aade753483e1a597820ff7b5d80fa210e1c6f7c4e5",
+      "matches": true,
+      "cloudflare_insights_markup_present": false
+    },
+    {
+      "path": "-verso-search/jsconfig.json",
+      "http_status": 200,
+      "bytes": 233,
+      "expected_bytes": 233,
+      "sha256": "6ae5ab90515f1ad5d923aca1616366dc67a1961b78c0285d02e4182791df7796",
+      "expected_sha256": "6ae5ab90515f1ad5d923aca1616366dc67a1961b78c0285d02e4182791df7796",
+      "matches": true,
+      "cloudflare_insights_markup_present": false
+    },
+    {
+      "path": "-verso-search/licenses.md",
+      "http_status": 200,
+      "bytes": 2274,
+      "expected_bytes": 2274,
+      "sha256": "437e3dad49ac48ebfeabcaaf4c020b6580b13690b24ca0c5b31e4f3c797b0e43",
+      "expected_sha256": "437e3dad49ac48ebfeabcaaf4c020b6580b13690b24ca0c5b31e4f3c797b0e43",
+      "matches": true,
+      "cloudflare_insights_markup_present": false
+    },
+    {
+      "path": "Challenge/index.html",
+      "http_status": 200,
+      "bytes": 996118,
+      "expected_bytes": 996118,
+      "sha256": "eabc7b25a3384e839ce24c5e023bd044f98bd7e433ee80dd8107ea0454ea1c02",
+      "expected_sha256": "eabc7b25a3384e839ce24c5e023bd044f98bd7e433ee80dd8107ea0454ea1c02",
+      "matches": true,
+      "cloudflare_insights_markup_present": false
+    },
+    {
+      "path": "challenge-metadata.json",
+      "http_status": 200,
+      "bytes": 2848,
+      "expected_bytes": 2848,
+      "sha256": "a70f2cab879ef3c232a6ad838789d4ac06b8b26a8d7cb02a799de1d145f1156d",
+      "expected_sha256": "a70f2cab879ef3c232a6ad838789d4ac06b8b26a8d7cb02a799de1d145f1156d",
+      "matches": true,
+      "cloudflare_insights_markup_present": false
+    },
+    {
+      "path": "palomar-render.css",
+      "http_status": 200,
+      "bytes": 44274,
+      "expected_bytes": 44274,
+      "sha256": "f16b4aa1e470cb136215b68cf37d60122ed4cfb3daf1ff3d761f87867a24f8d7",
+      "expected_sha256": "f16b4aa1e470cb136215b68cf37d60122ed4cfb3daf1ff3d761f87867a24f8d7",
+      "matches": true,
+      "cloudflare_insights_markup_present": false
+    },
+    {
+      "path": "palomar-sanitize.js",
+      "http_status": 200,
+      "bytes": 16471,
+      "expected_bytes": 16471,
+      "sha256": "37003e46e52ea8ca4ab4dc59e99a5fa35c4db8e029abddd7c4996df8b94815f6",
+      "expected_sha256": "37003e46e52ea8ca4ab4dc59e99a5fa35c4db8e029abddd7c4996df8b94815f6",
+      "matches": true,
+      "cloudflare_insights_markup_present": false
+    },
+    {
+      "path": "palomar-verso.js",
+      "http_status": 200,
+      "bytes": 7820,
+      "expected_bytes": 7820,
+      "sha256": "332773edafa3ac712ec3fba31d4c6ece2339693958873a9020a9be1bddb22538",
+      "expected_sha256": "332773edafa3ac712ec3fba31d4c6ece2339693958873a9020a9be1bddb22538",
+      "matches": true,
+      "cloudflare_insights_markup_present": false
+    },
+    {
+      "path": "search/index.html",
+      "http_status": 200,
+      "bytes": 12030,
+      "expected_bytes": 12030,
+      "sha256": "140520877e6b7442f471c668ffe209523e1ae312b5cae4e691711b7f9f48cb66",
+      "expected_sha256": "140520877e6b7442f471c668ffe209523e1ae312b5cae4e691711b7f9f48cb66",
+      "matches": true,
+      "cloudflare_insights_markup_present": false
+    },
+    {
+      "path": "xref.json",
+      "http_status": 200,
+      "bytes": 34282,
+      "expected_bytes": 34282,
+      "sha256": "6e212c5a49e7db6bc9e3500c6012527d3af03e1392f4def43f8064d65d9e2137",
+      "expected_sha256": "6e212c5a49e7db6bc9e3500c6012527d3af03e1392f4def43f8064d65d9e2137",
+      "matches": true,
+      "cloudflare_insights_markup_present": false
+    }
+  ],
+  "verified": 13,
+  "total": 13
+}

@@ -1,18 +1,18 @@
 {
-  "recorded_at": "2026-11-03T06:46:41.726664+00:00",
+  "recorded_at": "2026-11-03T15:20:51.296050+00:00",
   "repository": "flengyel/Dosen-Petric-Maximality",
   "candidate_commit": "76a4ea71f257746bb6ea2cb2e686e85914c7347c",
   "durable_tag": "dosen-petric-v25-palomar-v3",
   "registry_id": "PALOMAR-2026-10-30-000014",
   "intended_version": 3,
-  "confirmed_registered_version": 2,
+  "confirmed_registered_version": 3,
   "official_full_preflight": {
     "status": "pass",
     "run_id": 41580971518,
     "url": "https://github.com/flengyel/Dosen-Petric-Maximality/actions/runs/41580971518",
     "report_sha256": "61c666fbe96eea6346716ab7ceafa7a3ffa4e13e9ea1633e65fb5aefe5a8706b"
   },
-  "update_status": "service_verification_passed_status_and_review_api_http_500",
+  "update_status": "registered_public_readback_verified",
   "intake_attempts": [
     {
       "utc": "2026-11-03T05:30:56.416584+00:00",
@@ -47,10 +47,10 @@
   "temporary_authentication_tag_created": true,
   "secret_gist_created": true,
   "service_verification_started": true,
-  "review_received": false,
+  "review_received": true,
   "registration_consent_requested": false,
-  "registration_requested": false,
-  "version_3_registration_confirmed": false,
+  "registration_requested": true,
+  "version_3_registration_confirmed": true,
   "arxiv_uploaded": false,
   "durable_tag_changed": false,
   "frozen_release_changed": false,
@@ -58,7 +58,7 @@
     "reuse_exact_candidate_full_preflight": true,
     "preflight_validation_staging": ".codex-work/palomar-v3-update-20261103/preflight/validated-pass.json",
     "private_attempt_staging": ".codex-work/palomar-v3-update-20261103/private/",
-    "next_action": "Continue existing submission at service polling intervals; retain passing preflight and service evidence. Current status and review endpoints return HTTP 500. Retrieve the exact review once service recovers, deliver it privately and request approval before digest-bound registration."
+    "next_action": "Registration complete. Preserve frozen release and private original review/credential. Do not repeat intake, checks, registration or polling; no arXiv upload was authorized."
   },
   "access_proof_cleanup": {
     "completed_at": "2026-11-03T06:05:00.902590+00:00",
@@ -76,15 +76,33 @@
     "execution_profile": "palomar-namespace-16x32-v1",
     "errors": []
   },
-  "last_confirmed_submission_status": "awaiting-review",
-  "last_confirmed_status_at": "2026-11-03T06:26:12.655176+00:00",
-  "current_review_progress": "unknown_while_status_and_review_endpoints_fail",
+  "last_confirmed_submission_status": "registered",
+  "last_confirmed_status_at": "2026-11-03T15:20:51.296050+00:00",
+  "current_review_progress": "registered_archived_review_public",
   "refresh_failure": {
     "diagnostic": "provenance/palomar-v3-update-20261103/refresh-error-diagnostic.json",
     "status_endpoint_http_status": 500,
     "review_endpoint_http_status": 500,
     "health_endpoint_http_status": 200,
     "public_versions": [
+      1,
+      2
+    ],
+    "historical_interruption_resolved": true
+  },
+  "registration_requested_by_author": true,
+  "registration_requested_by_agent": false,
+  "registration_consent_confirmed": true,
+  "automatic_monitoring": "finished_registered",
+  "registration": {
+    "version": 3,
+    "commit": "76a4ea71f257746bb6ea2cb2e686e85914c7347c",
+    "url": "https://palomar-registry.org/entry?id=PALOMAR-2026-10-30-000014&version=3",
+    "registered_at": "2026-11-03T15:09:39Z",
+    "public_archived_review_sha256": "bdd0ff7cd9e32608dd825b43f863997452c764dc89679c9cd21ca14c177a591a",
+    "source_preservation_receipt_sha256": "fd2fad3296000fe04a8fedbf3b36187aa3fa3c23cb4e8c4b64a744838f951704",
+    "public_readback": "provenance/palomar-v3-registration-20261103/public-readback-verification.json",
+    "earlier_versions_preserved": [
       1,
       2
     ]

@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-11-03T15:20:51.296050+00:00",
+  "submission_id": "j92h1fl2enqs",
+  "repository": "flengyel/Dosen-Petric-Maximality",
+  "commit": "76a4ea71f257746bb6ea2cb2e686e85914c7347c",
+  "status": "registered",
+  "registration_consent": true,
+  "consent_method": "Author accepted on the Palomar web page; no agent POST /register was made.",
+  "consent_digest_echo": "Not echoed by status API; original review and exact service digest retained privately.",
+  "registered_url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000014&version=3",
+  "registration_events": [
+    {
+      "at": "2026-11-03T15:00:59Z",
+      "status": "review-ready",
+      "note": "The submitter asked for this result to be registered"
+    },
+    {
+      "at": "2026-11-03T15:09:34Z",
+      "status": "review-ready",
+      "note": "Registration is starting"
+    },
+    {
+      "at": "2026-11-03T15:10:09Z",
+      "status": "review-ready",
+      "note": "Prepared the registry record; registration is pending review of the database change"
+    },
+    {
+      "at": "2026-11-03T15:12:11Z",
+      "status": "registered",
+      "note": "Registered as PALOMAR-2026-10-30-000014 version 3"
+    }
+  ]
+}
