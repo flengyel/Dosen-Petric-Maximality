@@ -1,0 +1,28 @@
+{
+  "source_check_evidence": {
+    "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-V23-Review-20261102/HOSTILE_AUDIT_CHECKS.json",
+    "bytes": 16357,
+    "sha256": "f5f92c3ca42c09ba38136da0f655c8255ab314df5884a1ef8493da870a7dd4a1",
+    "verified_byte_for_byte": true,
+    "repository_path": "provenance/v23-complete-hostile-review-20261102/audit-checks.json",
+    "source_commit": "e6bcaf019c34c28215a2be5d7ec47fcd54e1b38c"
+  },
+  "utc": "2026-11-03T03:18:54.455727+00:00",
+  "reviewed_manuscript_version": 23,
+  "reviewed_manuscript_commit": "f16f66814faf4902e1f3059766a34eb96bab038d",
+  "reviewed_file_sha256": {
+    "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v23.tex": "b34afdb82b1f36731ef9c1d8cb6a369b07fc40a71e3189cf3c093677f3b303c2",
+    "manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v23.pdf": "732ce3d7886fc837b8297273ca1d33a50346ebc5b0e74a55d2b047cf52dce0c1"
+  },
+  "manuscript_bytes_unchanged": true,
+  "report": {
+    "downloads_path": "/mnt/c/Users/fleng/Downloads/Dosen-Petric-V23-Review-20261102/V23_COMPLETE_HOSTILE_REPORT_2026-11-02.md",
+    "bytes": 37258,
+    "sha256": "18f45126de0fa09e516b58dcf42b12ad70fd4e53d645aeaf49725e5096048540",
+    "verified_byte_for_byte": true,
+    "repository_path": "docs/reviews/V23_COMPLETE_HOSTILE_REPORT_2026-11-02.md",
+    "source_commit": "e6bcaf019c34c28215a2be5d7ec47fcd54e1b38c"
+  },
+  "copy_failures": 0,
+  "conflicting_files_preserved": true
+}
