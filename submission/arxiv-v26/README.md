@@ -18,6 +18,6 @@ The proof links retain `dosen-petric-v25-palomar-v3` at
 `76a4ea71f257746bb6ea2cb2e686e85914c7347c`. That registered snapshot contains v25;
 v26 is a later exposition revision. The tag and registered metadata remain fixed.
 
-No arXiv submission is made by preparing this package. The submission metadata
-retains the unresolved arXiv license choice. See
+The author has selected the arXiv.org perpetual, non-exclusive license 1.0.
+No arXiv submission is made by preparing this package. See
 [revision report](../../docs/MANUSCRIPT_V26_REPORT.md).
