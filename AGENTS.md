@@ -1,5 +1,27 @@
 # Project instructions
 
+## Current publication state — 13 November 2026
+
+The current manuscript is v26, dated November 13, 2026. It adds the construction
+of the common factorization in Appendix D.5 and one sentence identifying the
+dependencies of the inverse and split-comparison proofs in Appendix E.
+Preserve the theorem statements, hypotheses, displayed identities, diagrams,
+registered Lean sources and the derived-negation argument in Appendix D.4.
+Do not insert review references or editorial-process narration into the paper.
+See docs/MANUSCRIPT_V26_REPORT.md and the v26 review reports in docs/reviews/.
+
+Palomar version 3 is registered at 76a4ea71f257746bb6ea2cb2e686e85914c7347c,
+with fixed tag dosen-petric-v25-palomar-v3. Read
+docs/PALOMAR_V3_REGISTRATION_REPORT.md for the completed result. The v26 paper
+retains this proof-source tag and the version-specific v3 citation. It is not a
+new Palomar submission. Do not move the tag, modify the frozen v25 assets or
+formalization.yaml, or repeat the completed registration. This current state
+supersedes the pending-v3 instructions retained in the dated sections below.
+
+The current source package is submission/arxiv-v26/. The preceding continuation
+is preserved in docs/history/CODEX_NEXT_SESSION_V25_2026-11-13.txt. Further
+manuscript revisions must use v27 or later.
+
 ## Division of work
 
 ChatGPT research/review sessions prepare Codex instructions, check and referee
@@ -26,8 +48,8 @@ other checkouts, including FailureOfComposition and Categorical_Rice_Shapiro.
 Read `docs/CODEX_FULL_MANUSCRIPT_FORMALIZATION.md`,
 `docs/CODEX_NEXT_SESSION.txt`, `docs/MANUSCRIPT_STATEMENTS.md`,
 `docs/MANUSCRIPT_COVERAGE.md`, and
-`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v25, dated November 2, 2026;
-v4–v24 remain preserved. V8
+`docs/PALOMAR_REQUIREMENTS.md`. The current manuscript in `manuscript/` is v26, dated November 13, 2026;
+v4–v25 remain preserved. V8
 updated the formalization status/date/source citation. V9 adds the author-requested
 Codex disclosure, author-responsibility sentence and verified Palomar citation,
 and updates the date. MSC 2020 Primary 03G30; Secondary 03F07, 18A32 is preserved.
@@ -189,7 +211,7 @@ named source statements, transfer from Reduced through recovery, and further
 mathematical deductions. DNF/CNF expansions are retracts, not distributivity
 isomorphisms. The union theorem is named in Reduced, not Presentation.
 The accepted additions are resolved in docs/MANUSCRIPT_CORRECTIONS.md and mapped
-in docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md. Any further text revision must be v26
+in docs/MANUSCRIPT_COMPLETE_CLAIM_MAP.md. Any further text revision must be v27
 or later. Preserve the fixed source links and explain their mathematical role.
 The audit does not reopen the completed mathematical contract or frozen inputs.
 

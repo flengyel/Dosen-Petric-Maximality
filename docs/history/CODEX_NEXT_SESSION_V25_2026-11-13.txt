@@ -1,0 +1,38 @@
+Current task: finish the fixed-release Palomar update for manuscript v25.
+Release name: dosen-petric-v25-palomar-v3.
+Read docs/PALOMAR_V25_CODEX_HANDOFF.md and docs/MANUSCRIPT_V25_REPORT.md.
+The author authorized the paper links, release name, commit, fixed tag and
+necessary synchronization. No repeated approval is needed for those steps.
+
+V25 is a 23-page release candidate. All 56 Lean links use the fixed release
+name, and metadata's current manuscript/claim-map links use it as well.
+The mathematical source and all 49 declaration path/line targets are unchanged.
+The prepared v3 registry citation remains conditional on actual registration
+of version 3 at the tagged commit; there is no moving latest-version link.
+
+The tag-creation workflow verifies the release manifest and creates the exact
+tag only if absent. Confirm the remote tag resolves to the release commit;
+an existing different target is an error, never grounds for a forced update.
+The final delivery message supplies the candidate SHA. Resolve it from the
+tag and require agreement. Then run/reuse the official full preflight for
+that exact commit and perform the ordinary Palomar update under
+PALOMAR-2026-10-30-000014. The earlier v24 candidate
+c23fc48a109a08e74dae6ade9dcc9ee665b6f224 is superseded and must not be submitted.
+
+Preserve the registered v1/v2 proof snapshots, existing checks and unrelated
+work/stashes. No Lean source changed. Do not repeat passed checks of identical
+inputs except the official new-candidate preflight required by the service.
+Version 2 source remains 5dbee39bea09539bd130f729e82636419f71f920.
+
+Follow the documented temporary-tag/secret-gist authentication, separate from
+this fixed source-release tag. Deliver the exact service review and publication
+effect before requesting the final digest-bound registration decision.
+Once v3 is registered and read back at the exact tagged commit, the prepared
+paper citation becomes usable without any change to the frozen release.
+If the actual version is not 3, stop final publication; do not move the tag.
+
+The arXiv package is submission/arxiv-v25/Dosen-Petric-Maximality-v25-arxiv-source.tar.gz.
+No arXiv upload has occurred. Do not upload while registration is pending.
+Windows Downloads is unavailable in this ChatGPT environment. Deliver final
+reports from committed bytes in WSL, preserving differing files and checking hashes.
+The preceding continuation is docs/history/CODEX_NEXT_SESSION_V24_2026-11-03.txt.

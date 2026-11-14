@@ -15,7 +15,7 @@ the existing symmetric-fold deduction. V14, dated November 1, 2026, uses the
 hostile and mathematical-writing plugins for the complete preprint. It gives
 explicit arrow/functor types, uses literal and occurrence map, follows the
 source's dissociativity terminology and displays the calculations through v_A
-and w_A. The correspondences below apply also to v15–v25; see MANUSCRIPT_V14_REPORT.md
+and w_A. The correspondences below apply also to v15–v26; see MANUSCRIPT_V14_REPORT.md
 and its two review reports. Literal signs, theorem hypotheses and conclusions,
 all numbered displays, diagrams, labels, Lean theorems and registered inputs
 are preserved. The literal synonym and lemma captions change; no new Lean
@@ -156,6 +156,24 @@ is confirmed at the tagged commit. No floating latest URL is used.
 See [v25 report](MANUSCRIPT_V25_REPORT.md) and
 [Codex handoff](PALOMAR_V25_CODEX_HANDOFF.md).
 
+## V26 factorization construction and proof dependencies (13 November 2026)
+
+Appendix D.5 now explains the existing common-factorization construction.
+The correspondence is:
+
+| Added explanation | Existing declaration |
+| --- | --- |
+| Remove one eta/epsilon constructor and repeat until the middle term is positive | `Reduced.atomicFactor`, `AtomicFactorization.lean` |
+| Factor the conjunction of two terms; lift the diagonal and projections through the common added formulas | `Reduced.commonAtomicFactor`, `CommonAtomicFactorization.lean` |
+| Compose with endpoint zero maps to obtain the full-support occurrence relations | `AtomicPorts.masked_factor` and `AtomicPorts.masked_support`, `AtomicPortOccurrences.lean` |
+| Use coherence for q_A/e_A inverses, and presentation equations for the split comparisons needed in coherence | Existing Appendix E correspondences below |
+
+No theorem, Lean declaration or registered input changes. The proof links
+remain pinned to dosen-petric-v25-palomar-v3, registered as Palomar version 3
+at 76a4ea71f257746bb6ea2cb2e686e85914c7347c. V26 is a later exposition revision.
+See [v26 report](MANUSCRIPT_V26_REPORT.md) and
+[completed registration](PALOMAR_V3_REGISTRATION_REPORT.md).
+
 ## Three milestones and full-paper endpoint
 
 | Milestone | Actual result | Status |
@@ -245,7 +263,7 @@ closure are recorded in the final evidence. No mathematical claim in the paper's
 current scope remains assigned to an unproved field or deferred implementation
 target. Historical reports are not independent verification of this final scope.
 
-## Appendix D: registered statements and proof correspondence (v25)
+## Appendix D: registered statements and proof correspondence (v26)
 
 All names below have prefix DosenPetric unless stated otherwise. These are
 existing proofs retained in both immutable registered sources, not new results.

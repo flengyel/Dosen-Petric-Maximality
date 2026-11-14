@@ -1,5 +1,22 @@
 # Manuscript corrections and source errata
 
+## V26 factorization and proof dependencies (13 November 2026)
+
+Appendix D.5 explains the construction of its common factorization: extraction
+of one negation constructor at a time, a common expansion obtained from the
+conjunction of the two terms, the lifted diagonal and projections, and the
+zero endomorphisms on added factors that yield the stated occurrence relations.
+Appendix E identifies the use of Boolean Coherence for the inverse identities
+and the direct equational derivation of the split comparisons used in its proof.
+
+The theorem statements and registered proof sources are unchanged. The v3
+citation and source tag dosen-petric-v25-palomar-v3 are retained; version 3 was
+registered on 3 November at 76a4ea71f257746bb6ea2cb2e686e85914c7347c.
+V26 is not a new registry version. See [v26 report](MANUSCRIPT_V26_REPORT.md),
+[hostile review](reviews/V26_HOSTILE_REVIEW_2026-11-13.md),
+[writing review](reviews/V26_WRITING_REVIEW_2026-11-13.md) and
+[registration report](PALOMAR_V3_REGISTRATION_REPORT.md).
+
 ## V25 fixed release links (2 November 2026)
 
 The release is `dosen-petric-v25-palomar-v3`. All 56 source link occurrences retain

@@ -1,0 +1,72 @@
+--- v25.tex
++++ v26.tex
+@@ -6,7 +6,7 @@
+ \usepackage{array}
+ \usepackage[numbers]{natbib}
+ \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+-\hypersetup{pdftitle={Maximality of the Dosen--Petric Boolean Category (v25)},pdfauthor={Florian Lengyel}}
++\hypersetup{pdftitle={Maximality of the Dosen--Petric Boolean Category (v26)},pdfauthor={Florian Lengyel}}
+ \renewcommand{\theHequation}{\thesection.\arabic{equation}}
+ \newtheorem{theorem}{Theorem}[section]
+ \newtheorem{lemma}[theorem]{Lemma}
+@@ -18,7 +18,7 @@
+ \newcommand{\FormulaSet}{\operatorname{Form}}
+ \title{Maximality of the Do\v{s}en--Petri\'c Boolean Category}
+ \author{Florian Lengyel\thanks{Email: \href{mailto:flengyel@gradcenter.cuny.edu}{\texttt{flengyel@gradcenter.cuny.edu}}}}
+-\date{November 2, 2026\quad(v25)}
++\date{November 13, 2026\quad(v26)}
+ \begin{document}
+ \maketitle
+ 
+@@ -1620,8 +1620,28 @@
+  G[f_0]=(a\times b)(G[f]),\qquad
+  G[g_0]=(a\times b)(G[g]).
+ \]
+-The right sides are direct images of relations. Thus equality
+-of $G[f]$ and $G[g]$ gives equality of the middle relations.
++The right sides are direct images of relations.
++
++To construct these data, factor $f\wedge g:A\wedge A\to B\wedge B$
++by induction on the number of $\eta_p$ and $\epsilon_p$
++constructors. Extracting an $\eta_p$ adds $\neg p\vee p$ as a
++conjunct at the source; extracting an $\epsilon_p$ adds
++$p\wedge\neg p$ as a disjunct at the target. Each step removes
++one such constructor from the middle term, leaving a positive
++middle term when the induction terminates. Extend the diagonal
++$\Delta_A:A\to A\wedge A$ and the projections
++$\pi_i^{B,B}:B\wedge B\to B$, for $i=1,2$, by identities on
++the added formulas. Composing with these extensions gives two
++positive terms with source $A'$ and target $B'$; naturality of
++the extracted prefixes and suffixes gives the common morphisms
++$u$ and $v$. Finally, precompose and postcompose these terms
++with endomorphisms of $A'$ and $B'$ formed from $1_A$ and
++$1_B$, respectively, and zero endomorphisms on the added
++conjunction factors and disjunction summands.
++These endomorphisms preserve the factorizations and give the
++displayed direct-image relations.
++
++Thus equality of $G[f]$ and $G[g]$ gives equality of the middle relations.
+ Positive coherence equates $[f_0]$ and $[g_0]$, and the
+ factorizations give $[f]=[g]$.\footnote{\raggedright Lean:
+ \href{https://github.com/flengyel/Dosen-Petric-Maximality/blob/dosen-petric-v25-palomar-v3/DosenPetric/CommonAtomicFactorization.lean\#L51}{\texttt{Reduced.\allowbreak{}commonAtomicFactor}} and
+@@ -1636,7 +1656,10 @@
+ \label{app:explicit-inverses}
+ 
+ We construct inverses for the morphisms in
+-Lemma~\ref{lem:structural-isos}. Throughout this appendix,
++Lemma~\ref{lem:structural-isos}. The inverse identities below
++use Boolean Coherence, whereas the split-comparison identities
++required to prove it follow directly from the presentation equations.
++Throughout this appendix,
+ \[
+  \alpha^\star_{X,Y,Z}:(X\star Y)\star Z\longrightarrow
+           X\star(Y\star Z),\qquad
+@@ -1779,7 +1802,7 @@
+ \small
+ \setlength{\bibsep}{2pt}
+ \bibliographystyle{unsrtnat}
+-\bibliography{references_v25,palomar_v25}
++\bibliography{references_v26,palomar_v26}
+ \endgroup
+ \end{document}
+ 
