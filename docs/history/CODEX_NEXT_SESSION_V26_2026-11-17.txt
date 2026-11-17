@@ -1,0 +1,33 @@
+Current manuscript: v26, dated 13 November 2026.
+Read docs/MANUSCRIPT_V26_REPORT.md and its two review reports in docs/reviews/.
+
+V26 adds the construction of the common factorization in Appendix D.5 and
+one sentence distinguishing the use of Boolean Coherence for the q_A/e_A
+inverse identities from the equational split-comparison proofs required for
+coherence. The theorems, Lean sources, immutable proof links, version-specific
+Palomar citation and Appendix D.4 derived-negation argument are preserved.
+
+Palomar version 3 is registered:
+- Registry ID: PALOMAR-2026-10-30-000014.
+- Commit: 76a4ea71f257746bb6ea2cb2e686e85914c7347c.
+- Fixed proof-source tag: dosen-petric-v25-palomar-v3.
+- Evidence: docs/PALOMAR_V3_REGISTRATION_REPORT.md.
+
+V26 is an exposition revision citing this registered proof. It does not create
+a new registry version or move the registered tag. Preserve the frozen v25
+manuscript/package, formalization.yaml, registry inputs and registration evidence.
+Do not repeat the completed preflight or registration for v3.
+
+The current arXiv source package is:
+submission/arxiv-v26/Dosen-Petric-Maximality-v26-arxiv-source.tar.gz
+It includes main.tex, main.bbl, references_v26.bib and palomar_v26.bib.
+An arXiv submission requires its own authorized task and license selection.
+No arXiv upload is authorized by this manuscript revision.
+
+Preserve unrelated work and stashes. Further manuscript text revisions must be
+v27 or later. Push completed authorized main work before reporting it delivered.
+Copy reports from committed bytes to /mnt/c/Users/fleng/Downloads when working
+in WSL2, preserving differing files and checking hashes.
+
+The preceding continuation is preserved byte for byte in
+docs/history/CODEX_NEXT_SESSION_V25_2026-11-13.txt.

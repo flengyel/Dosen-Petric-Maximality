@@ -1,11 +1,21 @@
 # Došen–Petrić maximality in Lean
 
-## Current manuscript and registered proof (13 November 2026)
+## Current manuscript and registered proof (17 November 2026)
 
-The current paper is the [v26 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v26.pdf)
-and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v26.tex),
-dated November 13, 2026, 23 pages. The [source package](submission/arxiv-v26/README.md)
+The current paper is the [v27 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v27.pdf)
+and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v27.tex),
+dated November 17, 2026, 23 pages. The [source package](submission/arxiv-v27/README.md)
 contains the TeX source, generated bibliography and both BibTeX databases.
+
+V27 revises the abstract to state the congruence dichotomy and identify both
+proof routes. The body of v26 is unchanged. See the
+[v27 report](docs/MANUSCRIPT_V27_REPORT.md),
+[abstract hostile review](docs/reviews/V27_ABSTRACT_HOSTILE_2026-11-17.md) and
+[abstract writing review](docs/reviews/V27_ABSTRACT_WRITING_2026-11-17.md).
+
+The v27 package is prepared as a replacement for the existing arXiv submission.
+The author selected the arXiv perpetual, non-exclusive license, version 1.0.
+Preparation of this package does not establish that the replacement was uploaded.
 
 V26 explains the common factorization in Appendix D.5, including the
 extraction of the negation constructors, the common factors obtained from
@@ -21,12 +31,13 @@ The proof is registered as
 at commit `76a4ea71f257746bb6ea2cb2e686e85914c7347c`, with the fixed tag
 **`dosen-petric-v25-palomar-v3`**. The [registration report](docs/PALOMAR_V3_REGISTRATION_REPORT.md)
 records completed verification, registration and public readback.
-The v26 paper retains this version-specific citation and the same immutable
+The v27 paper retains this version-specific citation and the same immutable
 Lean source links. It is a later exposition revision, not a new registry version.
 The registered v25 snapshot, its metadata and tag remain unchanged.
 
-The [v25 manuscript](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v25.pdf),
-its [release report](docs/MANUSCRIPT_V25_REPORT.md),
+The [v26 manuscript](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v26.pdf),
+[v25 manuscript](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v25.pdf),
+the [v25 release report](docs/MANUSCRIPT_V25_REPORT.md),
 [version 2](docs/PALOMAR_V2_REGISTRATION_REPORT.md),
 [version 1](docs/PALOMAR_REGISTRATION_REPORT.md) and all earlier manuscripts
 remain preserved. Preparation-time instructions about pending v3 registration
@@ -56,7 +67,7 @@ give the coherence construction, inverses and split-comparison maps. The
 [hostile review](docs/reviews/V16_HOSTILE_REVIEW_2026-11-01.md) and
 [writing review](docs/reviews/V16_WRITING_REVIEW_2026-11-01.md) retain that broader
 review's scope. Both proof routes, all appendices, the supplied citation,
-MSC codes, disclosure and every previous release remain. No arXiv upload has occurred.
+MSC codes, disclosure and every previous release remain.
 
 The [reverse audit](docs/FORMALIZATION_TO_MANUSCRIPT_AUDIT_2026-11-01.md)
 inventories all 850 production modules and distinguishes named theorems,
@@ -95,12 +106,12 @@ publication order is Palomar Registry registration first, then arXiv submission.
 
 ## Current complete full-paper formalization (29 October 2026)
 
-Current manuscript: [v26 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v26.pdf)
-and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v26.tex),
-dated November 13, 2026, 23 pages. It cites registered version 3 through the
-fixed proof-source release `dosen-petric-v25-palomar-v3`. All v4–v25 manuscripts
-remain preserved. The [v26 report](docs/MANUSCRIPT_V26_REPORT.md) records the
-local exposition additions and their checks.
+Current manuscript: [v27 PDF](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v27.pdf)
+and [TeX](manuscript/Maximality_of_the_Dosen_Petric_Boolean_Category_v27.tex),
+dated November 17, 2026, 23 pages. It cites registered version 3 through the
+fixed proof-source release `dosen-petric-v25-palomar-v3`. All v4–v26 manuscripts
+remain preserved. The [v27 report](docs/MANUSCRIPT_V27_REPORT.md) records the
+abstract revision and its checks.
 Every manuscript revision increments its version; completed authorized main
 work is pushed before readiness is reported, as recorded in AGENTS.md.
 

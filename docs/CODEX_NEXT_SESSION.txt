@@ -1,33 +1,36 @@
-Current manuscript: v26, dated 13 November 2026.
-Read docs/MANUSCRIPT_V26_REPORT.md and its two review reports in docs/reviews/.
+Current manuscript: v27, dated 17 November 2026.
+Read docs/MANUSCRIPT_V27_REPORT.md and:
+- docs/reviews/V27_ABSTRACT_HOSTILE_2026-11-17.md
+- docs/reviews/V27_ABSTRACT_WRITING_2026-11-17.md
 
-V26 adds the construction of the common factorization in Appendix D.5 and
-one sentence distinguishing the use of Boolean Coherence for the q_A/e_A
-inverse identities from the equational split-comparison proofs required for
-coherence. The theorems, Lean sources, immutable proof links, version-specific
-Palomar citation and Appendix D.4 derived-negation argument are preserved.
+V27 revises the abstract to state the congruence dichotomy and identify both
+maximality proof routes. Apart from version/date and bibliography filenames,
+the body of v26 is unchanged. Preserve both proofs, every appendix, the
+registered Lean sources, immutable source links and version-specific citation.
 
-Palomar version 3 is registered:
+The v27 source package is prepared as a replacement for the existing arXiv
+submission:
+submission/arxiv-v27/Dosen-Petric-Maximality-v27-arxiv-source.tar.gz
+It includes main.tex, main.bbl, references_v27.bib and palomar_v27.bib.
+The author has chosen the arXiv perpetual, non-exclusive license, version 1.0.
+Retain this selection. Do not report the replacement uploaded without checking
+the result of the upload.
+
+Palomar version 3 remains registered:
 - Registry ID: PALOMAR-2026-10-30-000014.
 - Commit: 76a4ea71f257746bb6ea2cb2e686e85914c7347c.
 - Fixed proof-source tag: dosen-petric-v25-palomar-v3.
 - Evidence: docs/PALOMAR_V3_REGISTRATION_REPORT.md.
 
-V26 is an exposition revision citing this registered proof. It does not create
-a new registry version or move the registered tag. Preserve the frozen v25
-manuscript/package, formalization.yaml, registry inputs and registration evidence.
+V27 creates no new registry version. Preserve the frozen v25 manuscript/package,
+formalization.yaml, registry inputs, registration evidence and fixed tag.
 Do not repeat the completed preflight or registration for v3.
 
-The current arXiv source package is:
-submission/arxiv-v26/Dosen-Petric-Maximality-v26-arxiv-source.tar.gz
-It includes main.tex, main.bbl, references_v26.bib and palomar_v26.bib.
-An arXiv submission requires its own authorized task and license selection.
-No arXiv upload is authorized by this manuscript revision.
-
-Preserve unrelated work and stashes. Further manuscript text revisions must be
-v27 or later. Push completed authorized main work before reporting it delivered.
-Copy reports from committed bytes to /mnt/c/Users/fleng/Downloads when working
-in WSL2, preserving differing files and checking hashes.
+Preserve all preceding manuscripts/packages, unrelated work and stashes.
+Further manuscript revisions must use v28 or later. Push completed authorized
+main work before reporting it delivered. Copy reports from committed bytes to
+/mnt/c/Users/fleng/Downloads when working in WSL2, preserving differing files
+and checking hashes.
 
 The preceding continuation is preserved byte for byte in
-docs/history/CODEX_NEXT_SESSION_V25_2026-11-13.txt.
+docs/history/CODEX_NEXT_SESSION_V26_2026-11-17.txt.

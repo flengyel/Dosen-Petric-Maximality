@@ -1,5 +1,21 @@
 # Manuscript corrections and source errata
 
+## V27 abstract and congruence dichotomy (17 November 2026)
+
+The abstract states the equality-or-totality dichotomy for proof congruences
+closed under uniform formula substitution and identifies the two maximality
+proof routes. This replaces the repeated model-corollary summary. The body of
+v26, including its factorization explanation and proof-dependency sentence,
+is unchanged. The date, version and bibliography filenames advance to v27.
+
+The immutable Lean links and Palomar version-3 citation are preserved.
+The replacement source package retains the author's arXiv perpetual,
+non-exclusive license selection, version 1.0. Package preparation does not
+establish that the arXiv replacement has been uploaded.
+See [v27 report](MANUSCRIPT_V27_REPORT.md),
+[abstract hostile review](reviews/V27_ABSTRACT_HOSTILE_2026-11-17.md) and
+[abstract writing review](reviews/V27_ABSTRACT_WRITING_2026-11-17.md).
+
 ## V26 factorization and proof dependencies (13 November 2026)
 
 Appendix D.5 explains the construction of its common factorization: extraction

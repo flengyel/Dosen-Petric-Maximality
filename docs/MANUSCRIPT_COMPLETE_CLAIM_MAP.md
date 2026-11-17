@@ -15,7 +15,7 @@ the existing symmetric-fold deduction. V14, dated November 1, 2026, uses the
 hostile and mathematical-writing plugins for the complete preprint. It gives
 explicit arrow/functor types, uses literal and occurrence map, follows the
 source's dissociativity terminology and displays the calculations through v_A
-and w_A. The correspondences below apply also to v15–v26; see MANUSCRIPT_V14_REPORT.md
+and w_A. The correspondences below apply also to v15–v27; see MANUSCRIPT_V14_REPORT.md
 and its two review reports. Literal signs, theorem hypotheses and conclusions,
 all numbered displays, diagrams, labels, Lean theorems and registered inputs
 are preserved. The literal synonym and lemma captions change; no new Lean
@@ -174,6 +174,21 @@ at 76a4ea71f257746bb6ea2cb2e686e85914c7347c. V26 is a later exposition revision.
 See [v26 report](MANUSCRIPT_V26_REPORT.md) and
 [completed registration](PALOMAR_V3_REGISTRATION_REPORT.md).
 
+## V27 abstract and registered dichotomy (17 November 2026)
+
+The abstract explicitly states the equality-or-totality dichotomy for proof
+congruences preserved by uniform formula substitution and identifies the two
+maximality proof routes. The dichotomy corresponds to
+`DosenPetric.Palomar.congruence_dichotomy`; the two routes correspond to
+`DosenPetric.Palomar.maximality` and `DosenPetric.Palomar.short_maximality`.
+These are the existing statements registered in Palomar version 3.
+
+No claim or declaration is added. The body of v26, registered inputs and fixed
+proof-source tag dosen-petric-v25-palomar-v3 remain unchanged. See
+[v27 report](MANUSCRIPT_V27_REPORT.md),
+[abstract hostile review](reviews/V27_ABSTRACT_HOSTILE_2026-11-17.md) and
+[abstract writing review](reviews/V27_ABSTRACT_WRITING_2026-11-17.md).
+
 ## Three milestones and full-paper endpoint
 
 | Milestone | Actual result | Status |
@@ -263,7 +278,7 @@ closure are recorded in the final evidence. No mathematical claim in the paper's
 current scope remains assigned to an unproved field or deferred implementation
 target. Historical reports are not independent verification of this final scope.
 
-## Appendix D: registered statements and proof correspondence (v26)
+## Appendix D: registered statements and proof correspondence (v27)
 
 All names below have prefix DosenPetric unless stated otherwise. These are
 existing proofs retained in both immutable registered sources, not new results.
